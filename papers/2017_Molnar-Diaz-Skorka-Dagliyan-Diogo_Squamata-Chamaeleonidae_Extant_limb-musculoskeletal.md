@@ -1,0 +1,76 @@
+# Molnar, Diaz Jr., Skorka, Dagliyan & Diogo 2017 — Comparative musculoskeletal anatomy of chameleon limbs
+
+## Citation
+
+Molnar JL, Diaz RE Jr, Skorka T, Dagliyan G, Diogo R. 2017. Comparative musculoskeletal anatomy of chameleon limbs, with implications for the evolution of arboreal locomotion in lizards and for teratology. *Journal of Morphology* 278: 1241–1261. doi:10.1002/jmor.20708.
+
+## Question
+
+What is the comparative myology of the forelimb and hindlimb in chameleons, given that their **zygodactyl autopodia** (digits split into two opposable "super-digits" by a deep cleft) and modified carpals/tarsals are unique among tetrapods? Are these radical skeletal modifications matched by equally radical muscle reorganization, or is the muscle anatomy conservative? And what is the relevance of the chameleon "split-hand/split-foot" autopodial pattern to human ectrodactyly (split-hand/split-foot malformation, SHFM)?
+
+## Taxa and material
+
+- ***Chamaeleo calyptratus*** (Veiled Chameleon) — 3 captive adult females, 13–14 cm SVL, frozen, left limbs dissected.
+- ***Trioceros melleri*** (Meller's Chameleon) — 1 wild-caught subadult, 27 cm SVL, alcohol-preserved, both sides dissected.
+- ***Aspidoscelis uniparens*** (Desert Grassland Whiptail; Teiidae) — 3 captive adult females, 6.5–7 cm SVL, frozen — used as the comparative non-arboreal lizard outgroup.
+- Phylogeny: Chamaeleonidae diverged from Agamidae 126–120 Ma (Acrodonta); crown Chamaeleonidae 60–65 Ma. >200 extant species.
+
+## Time frame
+
+Extant. Family is Late Cretaceous/Early Tertiary in origin per Okajima & Kumazawa 2010, Tolley et al. 2013.
+
+## Methods
+
+- **Iodine-contrast-stained micro-CT** (PTA: phosphotungstic acid) — visualizes muscle differentiation in 3D without dissection.
+- **Standard gross dissection** of the same specimens after CT.
+- **Comparative tabulation** of all forelimb and hindlimb muscles (Tables 2, 3) with synonymy and presence/absence across *C. calyptratus*, *T. melleri*, *A. uniparens*.
+
+## Findings
+
+1. **The headline finding: chameleon appendicular muscle anatomy is "surprisingly conservative"** despite radical skeletal modifications. **No muscles are absent** that are present in other lizards, and **no extra muscles** are present. Number and identity of autopodial muscles are essentially plesiomorphic for squamates, reptiles, and tetrapods generally.
+2. **The few autopodial muscle modifications are concentrated around the cleft.** Six derived features:
+   - **Syndactyly + zygodactyly**: digits 1–3 fused into one "super-digit" and 4–5 into the other in the manus; digits 1–2 vs. 3–5 in the pes.
+   - **Shortened metacarpals + modified carpals/tarsals.**
+   - **Broad V-shaped plantar and palmar aponeuroses** in the cleft between the super-digits.
+   - **Oblique orientation of the superficial short flexors (flexores breves superficiales)** originating from these aponeuroses — same muscles as in other lizards, but reoriented to act as **adductors of the super-digits** (Mivart 1870 already named these "adductor digiti tertii/quarti" recognizing the functional shift).
+   - **Absence of intermetacarpales and intermetatarsales between the digits separated by the cleft** — **the only number-of-muscles change** in chameleons. Most pentadactyl tetrapods have 4 of these per autopod; chameleons have only 3 (within each super-digit, not spanning the cleft).
+   - **Well-developed abductor digiti minimi + abductor pollicis/hallucis brevis muscles** — act as powerful super-digit abductors.
+3. **Shoulder modifications enhance arboreal kinematics** (extending Peterson 1973): longer m. serratus anterior bellies (girdle slides on body wall), loss/fusion of coracoid head of triceps, more proximal pectoralis + deltoideus insertions (greater shoulder mobility at the cost of leverage), more axially-aligned deltoideus scapularis insertion (consistent with more sagittal limb orientation in arboreal locomotion).
+4. **Pelvic modifications.** Ilium longer + nearly vertical (vs. caudally directed in *Aspidoscelis*); pelvis mediolaterally compressed (allows leg closer to sagittal plane); cartilaginous supra-ilium reported in one *Chamaeleo* species (Baur 1886) but **not observed** in *T. melleri* or *C. calyptratus* here.
+5. **Knee joint convergent with mammals.** Femoral condyles **symmetrical** (unique among lizards), knee axis perpendicular to femur — allows parasagittal flexion-extension. M. caudofemoralis longus origin smaller in chameleons, consistent with their slow locomotor speeds (Russell & Bauer 2008).
+6. **Foot rotation supports arboreal locomotion.** M. extensor digitorum longus inserts on metatarsal 3 only in chameleons (vs. metatarsals 2 + 3 in *Aspidoscelis*) — facilitates ankle rotation as the foot leaves the ground.
+7. **Forelimb ↔ hindlimb topological correspondences** (extending Mivart 1870) revisited in chameleons. Striking resemblance between forearm-manus and leg-pes muscles is most obvious in chameleons. Authors: this is **homoplasy via co-option of similar developmental programs**, NOT serial homology in the historical morphological sense (Diogo et al. 2013; Diogo & Molnar 2014). Pectoral and pelvic girdles + their proximal muscles are *not* topologically correspondent — the resemblance is concentrated distally.
+8. **Three corrections to Mivart 1870's correspondence list**:
+   - (a) m. brachioradialis is dorsal (extensor), so cannot correspond to part of m. gastrocnemius externus as Mivart proposed.
+   - (b) m. tibialis anterior corresponds to m. extensor carpi radialis (not m. extensor digitorum as Mivart said).
+   - (c) m. tibialis posterior corresponds to m. palmaris profundus I (not m. flexor carpi radialis as Mivart said).
+9. **Carpal/tarsal homology revision.** Pisiform develops from ulnare; **plantar ossicle** (sensu Mivart 1870) develops from fibulare (= topological ulnare equivalent). Recent mouse data show pisiform shares developmental mechanisms with calcaneum, so the chameleon "plantar ossicle" should be redesignated **calcaneum** — the squamate-literature synonymy of calcaneum with the fibulare + intermedium complex is therefore inaccurate. Carpal intermedium developmentally closer to radius; tarsal intermedium developmentally closer to fibula.
+10. **Chameleon autopodium as a model for human ectrodactyly (split-hand/split-foot malformation, SHFM).** Phenotypically the most similar non-pathological tetrapod limb to ectrodactyly: midline cleft, loss of intermetacarpales/intermetatarsales facing the cleft. Differs in that chameleons retain a full pentadactyl complement and normal phalangeal counts, whereas SHFM patients lose mid-digital elements. Cleft formation in chameleon limb buds occurs via **interdigital cell death** at the clefting site (Diaz & Trainor 2015), similar in mechanism to the AER (Apical Ectodermal Ridge) destabilization implicated in human SHFM. Authors propose chameleons as the first non-pathological tetrapod model for studying the developmental origin of ectrodactyly.
+
+## Key figures
+
+- **Figs. 1–2.** Forelimb skeletal anatomy + complete forelimb myology of *C. calyptratus* with the V-shaped palmar aponeurosis and reoriented short flexors highlighted.
+- **Figs. 3–4.** Hindlimb skeletal anatomy + hindlimb myology, same scheme.
+- **Tables 2, 3.** **The crucial reference tables** — muscle-by-muscle synonymy and presence/absence across *C. calyptratus*, *T. melleri*, *A. uniparens*. Use these as the comparative dictionary for any chameleon vs. lizard myology comparison.
+- **Movies 1, 2.** Animated 3D PTA-CT muscle reconstructions — accessible through the JMOR supplement; useful for student visualization.
+
+## Limitations
+
+- **Two chameleon species** sampled (*C. calyptratus*, *T. melleri*) — both within Chamaeleoninae. The other two subfamilies (Brookesiinae) are not represented; >200 chameleon species exist with substantial body-size and limb-proportion variation.
+- ***Aspidoscelis*** is a teiid, not the closest non-arboreal outgroup — the closest sister-group comparison to Chamaeleonidae would be Agamidae (which the authors don't dissect here). The "conservative chameleon myology" claim is therefore against a relatively distant lizard reference.
+- **Captive specimens for *C. calyptratus*** — possible developmental abnormalities from captive conditions, though no aberrant phenotypes noted.
+- **Iodine PTA contrast staining** can shrink tissue and overstate certain bony reliefs; CT measurements were qualitatively confirmed by dissection but not quantitatively cross-validated.
+- **The teratology argument** (chameleon as model for human ectrodactyly) is a hypothesis, not yet experimentally tested in chameleon limb buds with SHFM-relevant gene perturbations.
+- **The "hopeful monster" alternative explanation** (rapid morphological transition via facilitated evolution / homeorhesis; Diogo 2017) is acknowledged as alternative but not weighed against the gradualist arboreal-coevolution hypothesis.
+- **Cartilaginous supra-ilium** discrepancy with Baur 1886 — possibly real interspecific variation or possibly a preservation/staining artifact in this study; not resolved.
+
+## Relevance to comparative anatomy teaching
+
+A model-quality comparative myology paper that should sit alongside Herrel et al. 2001 (chameleon hyolingual apparatus) for any chameleon or arboreal-locomotion teaching unit:
+
+- **Conservatism of muscle anatomy under radical skeletal modification.** The headline lesson — chameleons have a deeply derived skeleton (zygodactyly, syndactyly, modified carpals/tarsals, vertical ilium, mammal-like knee) but their muscles are essentially the squamate baseline, with only three or four genuinely derived features (cleft aponeurosis, intermetacarpales loss, oriented short flexors, larger short abductors). Useful for the lecture on **how independent skeleton and muscle evolution can be** — pair with the upcoming Allen et al. 2014 crocodilian limb architecture paper and Gambaryan et al. 2015 monotreme myology for cross-clade comparisons.
+- **Mivart 1870 revisited.** The serial-homology-of-limbs question has been a recurring theme in this library (Diogo & Ziermann 2015 for chondrichthyans rejected limb serial homology; this paper makes the same point for chameleons — distal correspondence is convergent co-option, proximal/girdle correspondence is absent). Pair with Diogo & Ziermann 2015 + the upcoming 2014 LimbSerialHomology_Diogo (also already processed as 2014_Diogo-Molnar) for a three-paper teaching unit on **why "serial homology" of fore/hindlimbs is the wrong framing**.
+- **Function-driven muscle reorientation without changing identity.** The flexores breves superficiales become functional adductors in chameleons by reorienting fibres along the V-aponeurosis, **without changing their origins, insertions, or names**. A clean teaching example of how the same muscle can do a different job in a derived skeletal context. Compare with Wake 1993 (caecilian interhyoideus posterior reused as a jaw adductor via the retroarticular process lever).
+- **Connection to human teratology.** Chameleon as a non-pathological model for split-hand/split-foot malformation is a teaching hook — connects classical comparative anatomy to human medicine via developmental biology. Useful for the EvoDevo lecture, especially paired with **Fabrezi et al. 2016** (ceratophryid morphological novelties through the heterochrony/heterotopy/heterotypy framework).
+- **Carpal/tarsal homology revision (pisiform/plantar ossicle = calcaneum).** Worth flagging because it changes how to read the older squamate literature on tarsal homologies. A small but cumulatively important nomenclature correction.
+- **Iodine PTA contrast μCT** as a workflow worth noting — non-destructive 3D visualization of muscle anatomy in small specimens; complements the CT-before-dissection theme from Gambaryan et al. 2015 (monotremes) and Lyson et al. 2014 (turtle ventilation).

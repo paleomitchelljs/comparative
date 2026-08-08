@@ -1,0 +1,2680 @@
+{
+  "$schema": "../docs/SCHEMA.md",
+  "region": "Forearm and hand",
+  "muscles": [
+    {
+      "id": "extensor-antebrachii-carpi-radialis",
+      "name": "Extensor antebrachii et carpi radialis",
+      "region": "forearm",
+      "subregion": "radial extensor complex",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal (extensor) mass of the forearm.",
+      "synonyms": [
+        "extensor radialis longus + extensor radialis brevis (Straus 1941a,b)",
+        "extensor carpi radialis (Abdala & Moro 2006; Abdala et al. 2008)",
+        "extensor radialis superficialis + extensor carpi intermedius + extensor radialis profundus (Haines 1939; Walker 1973)",
+        "extensor carpi radialis longus and brevis (mammals)",
+        "extensor metacarpi radialis (birds, partim)"
+      ],
+      "consensus": {
+        "origin": "Lateral epicondyle of the humerus and the adjacent supracondylar ridge.",
+        "insertion": "Radius, proximal carpals, or (in mammals and some anurans) the metacarpals.",
+        "action": "Extends the wrist and abducts (radially deviates) the manus; contributes to elbow extension.",
+        "innervation": "Radial nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "radius",
+          "carpals",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensor antebrachii et carpi radialis",
+          "present": "yes",
+          "insertion": "Radius and proximal carpals — the plesiomorphic tetrapod condition.",
+          "note": "Includes the extensor radialis longus + brevis sensu Straus (1941a,b).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Extensor antebrachii et carpi radialis",
+          "present": "yes",
+          "note": "In Phyllomedusa and other grasping tree frogs the insertion shifts distally onto the metacarpals, convergently with mammals.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Extensor antebrachii et carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Extensor antebrachii et carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Extensor antebrachii et carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Extensor antebrachii et carpi radialis",
+          "present": "yes",
+          "note": "Very likely includes the 'extensor metacarpi radialis' and the 'supinator' sensu Meyers (1996).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Extensor carpi radialis longus + brevis",
+          "present": "yes",
+          "origin": "Lateral supracondylar ridge and lateral epicondyle of the humerus.",
+          "insertion": "Bases of metacarpals II and III.",
+          "action": "Extends and abducts the hand at the wrist.",
+          "innervation": "Radial nerve (C6–C7).",
+          "note": "The distal shift of insertion from carpus to metacarpus is a mammalian derived condition.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "A stable row across all six reptile/amphibian columns plus mammals. The interesting variable is not presence but the proximodistal level of insertion, which shifted distally independently in mammals and in some anurans.",
+        "related": [
+          "extensor-digitorum",
+          "brachioradialis",
+          "extensor-antebrachii-carpi-ulnaris"
+        ],
+        "teaching": "Ties directly to Abdala & Diogo's finding that distal insertion shifts track fine digital control, and that mammals are not unique in achieving it."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "extensor-antebrachii-carpi-ulnaris",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "region": "forearm",
+      "subregion": "ulnar extensor complex",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "extensor ulnaris (Straus 1941a,b; Haines 1939)",
+        "extensor carpi ulnaris (Walker 1973; Abdala et al. 2008)",
+        "flexor ulnaris (Meers 2003)",
+        "extensor carpi ulnaris + anconeus quartus (Holmes 1977)",
+        "extensor metacarpi ulnaris (Shellswell & Wolpert 1977; Meyers 1996)"
+      ],
+      "consensus": {
+        "origin": "Lateral epicondyle of the humerus.",
+        "insertion": "Ulna, ulnare, or metacarpal V.",
+        "action": "Extends the wrist and adducts (ulnarly deviates) the manus.",
+        "innervation": "Radial nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "ulna",
+          "ulnare",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensor antebrachii et carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Extensor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Extensor antebrachii et carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Extensor antebrachii et carpi ulnaris",
+          "present": "yes",
+          "note": "= extensor carpi ulnaris + anconeus quartus sensu Holmes (1977).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Extensor antebrachii et carpi ulnaris",
+          "present": "yes",
+          "note": "Confusingly called flexor ulnaris by Meers (2003) despite being a dorsal-mass, radial-innervated muscle.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Extensor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Extensor carpi ulnaris",
+          "present": "yes",
+          "origin": "Lateral epicondyle of the humerus and the posterior border of the ulna.",
+          "insertion": "Base of metacarpal V.",
+          "action": "Extends and adducts the hand at the wrist.",
+          "innervation": "Radial nerve, posterior interosseous branch (C7–C8).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Constant across Tetrapoda. Meers's (2003) 'flexor ulnaris' for the crocodylian muscle is a naming hazard, not a homology claim — the muscle is an extensor by mass, nerve and action.",
+        "related": [
+          "extensor-antebrachii-carpi-radialis",
+          "anconeus",
+          "flexor-carpi-ulnaris"
+        ],
+        "teaching": "Good demonstration that a muscle's name may contradict its innervation and mass assignment; the nerve wins."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "extensor-digitorum",
+      "name": "Extensor digitorum",
+      "region": "forearm",
+      "subregion": "digital extensor",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "extensor digitorum communis (Ribbing 1907; Walker 1973)",
+        "extensor digitorum communis longus (Gaupp 1896)",
+        "humerodorsalis (Haines 1939)",
+        "extensor digitorum longus (Abdala et al. 2008; Holmes 1977; Dilkes 2000; Meers 2003)",
+        "extensor longus communis (Dilkes 2000)",
+        "extensor carpi ulnaris longus (Meers 2003)"
+      ],
+      "consensus": {
+        "origin": "Lateral epicondyle of the humerus.",
+        "insertion": "Dorsal aponeuroses of the digits.",
+        "action": "Extends the digits, and secondarily the wrist.",
+        "innervation": "Radial nerve, deep (posterior interosseous) branch."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "phalanges",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Extensor digitorum communis",
+          "present": "yes",
+          "origin": "Lateral epicondyle of the humerus by the common extensor tendon.",
+          "insertion": "Extensor expansions of digits II–V.",
+          "action": "Extends the digits at the metacarpophalangeal and interphalangeal joints.",
+          "innervation": "Posterior interosseous nerve (C7–C8).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal across limbed tetrapods; one of the least contested rows in Table 1 despite six different names.",
+        "related": [
+          "extensores-digitorum-breves",
+          "extensor-antebrachii-carpi-radialis"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "extensores-digitorum-breves",
+      "name": "Extensores digitorum breves",
+      "region": "hand",
+      "subregion": "dorsal intrinsic",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass, intrinsic to the manus.",
+      "synonyms": [
+        "extensores digiti brevis (Abdala et al. 2008; Abdala & Moro 2006)",
+        "extensor digitorum brevis communis (Holmes 1977)",
+        "extensores breves superficiales + extensores breves medii (Gaupp 1896)",
+        "extensores breves digitorum superficiales + profundi (Ribbing 1938)"
+      ],
+      "consensus": {
+        "origin": "Distal radius/ulna, carpals, and metacarpals — dorsal surface.",
+        "insertion": "Dorsal aponeuroses of the digits.",
+        "action": "Extends the digits; fine positional control independent of the long extensor.",
+        "innervation": "Radial nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "radius",
+          "ulna",
+          "carpals",
+          "metacarpals"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "present": "variable",
+          "note": "Largely lost or reduced in the therian manus, though a dorsal intrinsic layer persists in some taxa. Abdala & Diogo note that the reduction of the intrinsic hand musculature is a mammalian trend, not a mammalian elaboration.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "A conserved dorsal intrinsic layer of the manus across non-mammalian tetrapods. Its reduction in mammals is part of the broader loss of intrinsic hand muscles that Abdala & Diogo highlight.",
+        "related": [
+          "extensor-digitorum",
+          "dorsometacarpales"
+        ],
+        "teaching": "Supporting evidence for the claim that human hands have fewer intrinsic muscles than lizard or salamander hands."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "abductor-pollicis-longus",
+      "name": "Abductor pollicis longus",
+      "region": "forearm",
+      "subregion": "deep dorsal",
+      "mass": "dorsal",
+      "developmental": "Somitic; deep dorsal mass.",
+      "synonyms": [
+        "supinator manus (Haines 1939; Walker 1973; Holmes 1977)",
+        "abductor et extensor digiti I (Brooks 1889; Ribbing 1907; Howell 1936a,b; Straus 1941a,b)",
+        "abductor indicis longus (Gaupp 1896; Manzano et al. 2008)",
+        "abductor longus pollicis (Abdala & Moro 2006)",
+        "abductor digit 1 (Ribbing 1938)"
+      ],
+      "consensus": {
+        "origin": "Dorsal surface of the ulna and/or radius and the interosseous membrane.",
+        "insertion": "Base of metacarpal I — or of the most radial metacarpal present.",
+        "action": "Abducts and extends the first (most radial) digit; supinates the manus in sprawling taxa.",
+        "innervation": "Radial nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "ulna",
+          "radius",
+          "interosseous membrane"
+        ],
+        "insertion": [
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Abductor et extensor digiti I",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "insertion": "Digit 2, not digit 1.",
+          "note": "The key case. Adult anurans have lost digit 1, so the most radial digit is digit 2 — and the abductor pollicis longus homologue attaches to it. What determines the attachment is the POSITION of the digit (most radial), not its embryological identity.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "origin": "Ulna.",
+          "insertion": "Metacarpal I.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "origin": "Posterior surfaces of the ulna, radius and interosseous membrane.",
+          "insertion": "Base of metacarpal I.",
+          "action": "Abducts and extends the thumb at the carpometacarpal joint.",
+          "innervation": "Posterior interosseous nerve (C7–C8).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Homology of the muscle is secure; what varies is which digit it lands on. Ribbing (1907) argued that Gaupp's (1896) anuran 'abductor pollicis' actually corresponds to the pronator quadratus rather than the abductor pollicis brevis — a caution that the anuran forearm nomenclature is unusually tangled.",
+        "related": [
+          "abductor-digiti-minimi",
+          "abductor-pollicis-brevis",
+          "supinator"
+        ],
+        "teaching": "The flagship position-versus-identity example. Pair with the urodele abductor digiti minimi (digit 4) and the counter-case in chickens where digit identity does appear to matter."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "brachioradialis",
+      "name": "Brachioradialis",
+      "region": "forearm",
+      "subregion": "radial extensor complex",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "tractor radii (Haines 1939; Walker 1973; Wyneken 2001; Abdala et al. 2008)",
+        "supinator (Meers 2003)"
+      ],
+      "consensus": {
+        "origin": "Lateral supracondylar ridge of the humerus.",
+        "insertion": "Distal radius.",
+        "action": "Flexes the elbow; in mammals, brings the forearm to mid-pronation.",
+        "innervation": "Radial nerve."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "radius"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "note": "Not an independent muscle in Ambystoma.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Brachioradialis",
+          "present": "yes",
+          "note": "= tractor radii sensu Haines (1939), Walker (1973), Wyneken (2001).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "variable",
+          "note": "Absent in Timon but seemingly present in Sphenodon.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Brachioradialis",
+          "present": "yes",
+          "note": "Appears to correspond to the 'supinator' sensu Meers (2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "uncertain",
+          "note": "Marked '– [but see text]'.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Brachioradialis",
+          "present": "yes",
+          "origin": "Proximal two-thirds of the lateral supracondylar ridge.",
+          "insertion": "Styloid process of the radius.",
+          "action": "Flexes the elbow, strongest in mid-pronation.",
+          "innervation": "Radial nerve (C5–C6).",
+          "note": "Anomalous among the radial-innervated group in being an elbow flexor rather than an extensor.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Present in turtles, crocodylians, Sphenodon and mammals; absent or uncertain in amphibians, most lepidosaurs and birds. Whether this reflects an ancestral muscle with several losses or repeated differentiation from the radial extensor mass is unresolved.",
+        "related": [
+          "extensor-antebrachii-carpi-radialis",
+          "humeroradialis",
+          "supinator"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "supinator",
+      "name": "Supinator",
+      "region": "forearm",
+      "subregion": "deep dorsal",
+      "mass": "dorsal",
+      "developmental": "Somitic; deep dorsal mass.",
+      "synonyms": [
+        "supinator brevis",
+        "'supinator' (Meers 2003 — crocodylian usage, = brachioradialis)",
+        "'supinator' (Meyers 1996 — avian usage, part of extensor antebrachii et carpi radialis)",
+        "'supinator manus' (Haines 1939; Holmes 1977 — = abductor pollicis longus)"
+      ],
+      "consensus": {
+        "origin": "Lateral epicondyle of the humerus, the supinator crest of the ulna, and the radial collateral and annular ligaments.",
+        "insertion": "Proximal third of the radius, wrapping around its lateral and anterior surfaces.",
+        "action": "Supinates the forearm, independently of elbow position.",
+        "innervation": "Radial nerve, deep branch — which pierces the muscle and continues as the posterior interosseous nerve."
+      },
+      "attachments": {
+        "origin": [
+          "humerus",
+          "ulna"
+        ],
+        "insertion": [
+          "radius"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "theria",
+          "name": "Supinator",
+          "present": "yes",
+          "origin": "Lateral epicondyle, supinator crest of the ulna, annular and radial collateral ligaments.",
+          "insertion": "Lateral, posterior and anterior surfaces of the proximal radius.",
+          "action": "Supinates the forearm.",
+          "innervation": "Deep branch of the radial nerve (C6–C7).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "uncertain",
+          "note": "Squamates have limited forearm rotation and no unambiguous supinator. Reports of a lepidosaur 'supinator' generally refer to a brachioradialis-like or abductor-pollicis-longus-like muscle.",
+          "sources": [
+            "abdala-diogo-2010",
+            "molnar-etal-2017"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "note": "Meers (2003) applies the name 'supinator' to what Abdala & Diogo identify as the brachioradialis. This is a naming collision, not a record of the mammalian supinator.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "uncertain",
+        "notes": "Included chiefly as a terminology anchor. 'Supinator' is applied by different authors to at least three non-homologous muscles: the crocodylian brachioradialis (Meers 2003), part of the avian extensor antebrachii et carpi radialis (Meyers 1996), and — as 'supinator manus' — the abductor pollicis longus (Haines 1939; Holmes 1977). The therian supinator as a discrete deep antebrachial muscle has no confidently identified counterpart outside Mammalia.",
+        "openQuestion": "Is the therian supinator a mammalian differentiation from the deep dorsal antebrachial mass, or does it correspond to one of the reptilian muscles that carry the name?",
+        "related": [
+          "brachioradialis",
+          "pronator-teres",
+          "abductor-pollicis-longus"
+        ],
+        "teaching": "The worst single name in the comparative forearm literature. Use it to make the point that a name in a table is a pointer to a description, never a homology claim on its own."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014",
+        "molnar-etal-2017"
+      ]
+    },
+    {
+      "id": "anconeus",
+      "name": "Anconeus",
+      "region": "forearm",
+      "subregion": "elbow",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass. Often described as a detached distal part of the triceps field.",
+      "synonyms": [
+        "epicondylo-cubitalis (Gaupp 1896)",
+        "extensor antebrachii ulnaris (Ribbing 1907)",
+        "anconeus quartus (Holmes 1977)",
+        "ectepicondylo-ulnaris (Meyers 1996; Maxwell & Larsson 2007)"
+      ],
+      "consensus": {
+        "origin": "Lateral epicondyle of the humerus.",
+        "insertion": "Olecranon and proximal dorsal ulna.",
+        "action": "Extends the elbow; stabilises the ulna during pronation/supination.",
+        "innervation": "Radial nerve."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "ulna"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "variable",
+          "note": "Absent in Ambystoma ordinarium, but Haines (1939) reports it in other urodeles such as Salamandra.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Anconeus",
+          "present": "yes",
+          "note": "= epicondylo-cubitalis sensu Gaupp (1896).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "variable",
+          "note": "Absent in Trachemys but present in Testudo, Pelomedusa, Chelodina and Emys.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "variable",
+          "note": "Absent in Timon but present in at least some lepidosaurs, including Sphenodon.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Anconeus",
+          "present": "yes",
+          "note": "= anconeus quartus sensu Holmes (1977).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Anconeus",
+          "present": "yes",
+          "origin": "Posterior lateral epicondyle of the humerus.",
+          "insertion": "Lateral olecranon and proximal posterior ulna.",
+          "action": "Assists elbow extension; abducts the ulna in pronation.",
+          "innervation": "Radial nerve (C7–C8).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Highly variable at the species level within every major clade — present in some turtles and not others, some lepidosaurs and not others, some urodeles and not others. This intraclade variability is itself the finding: the anconeus separates from and refuses to the triceps field readily.",
+        "related": [
+          "epitrochleoanconeus",
+          "extensor-antebrachii-carpi-ulnaris",
+          "triceps-brachii"
+        ],
+        "teaching": "A caution against reading a single exemplar species as representative of its clade."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "epitrochleoanconeus",
+      "name": "Epitrochleoanconeus",
+      "region": "forearm",
+      "subregion": "elbow",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "flexor antebrachii ulnaris (McMurrich 1903a; Ribbing 1907, 1938)",
+        "epitrochleo-cubitalis (Gaupp 1896; Manzano et al. 2008b)",
+        "entepicondylo-ulnaris (Maxwell & Larsson 2007)",
+        "part of flexor carpi ulnaris (Walker 1973; Abdala et al. 2008)"
+      ],
+      "consensus": {
+        "origin": "Medial epicondyle (entepicondyle) of the humerus.",
+        "insertion": "Olecranon / proximal ulna, medially.",
+        "action": "Flexes the elbow and stabilises the medial side of the joint; in mammals it forms part of the cubital tunnel roof over the ulnar nerve.",
+        "innervation": "Ulnar nerve."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "ulna"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Epitrochleoanconeus (anconeus epitrochlearis)",
+          "present": "variable",
+          "note": "Present in many mammals; in humans it is an inconstant muscle replaced by Osborne's ligament over the cubital tunnel.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in all six non-mammalian columns of Table 1. Note the contrast with the anconeus: similar name, opposite mass (ventral vs dorsal) and opposite nerve (ulnar vs radial).",
+        "related": [
+          "anconeus",
+          "flexor-carpi-ulnaris",
+          "triceps-brachii"
+        ],
+        "teaching": "Pair the anconeus and epitrochleoanconeus explicitly. Near-identical names, opposite sides of the elbow, opposite nerves. A good exam question."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "flexor-carpi-ulnaris",
+      "name": "Flexor carpi ulnaris",
+      "region": "forearm",
+      "subregion": "ulnar flexor complex",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) mass.",
+      "synonyms": [
+        "part of flexor antebrachii et carpi ulnaris (Diogo & Abdala 2007; Diogo 2007)"
+      ],
+      "consensus": {
+        "origin": "Medial epicondyle of the humerus and the proximal ulna.",
+        "insertion": "Ulnare/pisiform and metacarpal V.",
+        "action": "Flexes and adducts (ulnarly deviates) the wrist.",
+        "innervation": "Ulnar nerve (C7–T1)."
+      },
+      "attachments": {
+        "origin": [
+          "humerus",
+          "ulna"
+        ],
+        "insertion": [
+          "carpals",
+          "pisiform",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "note": "Part of the flexor antebrachii et carpi ulnaris sensu Diogo & Abdala (2007).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "note": "Dilkes (2000): present in all major extant reptile groups.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "origin": "Medial epicondyle (humeral head) and olecranon/posterior ulna (ulnar head).",
+          "insertion": "Pisiform, hamate and base of metacarpal V.",
+          "action": "Flexes and adducts the hand.",
+          "innervation": "Ulnar nerve (C7–T1).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal. Ulnar innervation is constant and is the criterion that separates it from the extensor carpi ulnaris despite similar names and adjacent positions.",
+        "related": [
+          "flexor-carpi-radialis",
+          "epitrochleoanconeus",
+          "extensor-antebrachii-carpi-ulnaris"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "flexor-carpi-radialis",
+      "name": "Flexor carpi radialis",
+      "region": "forearm",
+      "subregion": "radial flexor complex",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "flexor antebrachii et carpi radialis (urodeles)",
+        "flexor carpi radialis (McMurrich 1903a,b)",
+        "pronator superficialis (Sullivan 1962; Shellswell & Wolpert 1977; Meyers 1996; Dilkes 2000)"
+      ],
+      "consensus": {
+        "origin": "Medial epicondyle of the humerus.",
+        "insertion": "Bases of metacarpals II and III, or the distal radius/carpals in plesiomorphic taxa.",
+        "action": "Flexes and abducts (radially deviates) the wrist.",
+        "innervation": "Median nerve (C6–C7)."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "radius",
+          "carpals",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexor antebrachii et carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "note": "In turtles the pronator teres and flexor carpi radialis are usually distinct muscles, though Holmes designated the pronator teres a 'head of the flexor carpi radialis'.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "note": "Seems to correspond to the pronator superficialis sensu Sullivan (1962), Shellswell & Wolpert (1977), Meyers (1996) and Dilkes (2000).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "origin": "Medial epicondyle by the common flexor tendon.",
+          "insertion": "Bases of metacarpals II and III.",
+          "action": "Flexes and abducts the hand.",
+          "innervation": "Median nerve (C6–C7).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Constant across Tetrapoda. The boundary with the pronator teres is fluid — Holmes (1977) and Dilkes (2000) treat them as one muscle in several taxa, Abdala & Diogo separate them.",
+        "related": [
+          "pronator-teres",
+          "flexor-carpi-ulnaris",
+          "flexor-digitorum-longus"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "pronator-teres",
+      "name": "Pronator teres",
+      "region": "forearm",
+      "subregion": "pronator group",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "flexor antebrachii radialis (Ribbing 1907)",
+        "pronator radii teres (Holmes 1977)",
+        "part of flexor carpi radialis (Holmes 1977; Dilkes 2000)",
+        "pronator profundus (Sullivan 1962; Shellswell & Wolpert 1977; Meyers 1996; Dilkes 2000)"
+      ],
+      "consensus": {
+        "origin": "Medial epicondyle of the humerus (and the coronoid process of the ulna in mammals).",
+        "insertion": "Lateral surface of the radial shaft.",
+        "action": "Pronates the forearm; assists elbow flexion.",
+        "innervation": "Median nerve (C6–C7)."
+      },
+      "attachments": {
+        "origin": [
+          "humerus",
+          "ulna"
+        ],
+        "insertion": [
+          "radius"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "note": "Not differentiated in Ambystoma; the urodele forearm lacks a discrete pronator teres.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Pronator teres",
+          "present": "yes",
+          "note": "Ribbing (1907) and Gaupp (1896) disagreed about which anuran muscle this is — flexor antebrachii lateralis superficialis + profundus, or flexor antebrachii medialis.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Pronator teres",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Pronator teres",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Pronator teres",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Pronator teres",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Pronator teres",
+          "present": "yes",
+          "origin": "Medial epicondyle (humeral head) and coronoid process of the ulna (ulnar head).",
+          "insertion": "Middle of the lateral radial shaft.",
+          "action": "Pronates the forearm.",
+          "innervation": "Median nerve (C6–C7).",
+          "note": "The median nerve passes between the two heads — a common entrapment site.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Present in every column except Caudata. Its absence in urodeles is consistent with the limited forearm rotation of a sprawling, aquatic-ancestral limb; pronation capability increases with the differentiation of this muscle.",
+        "related": [
+          "pronator-quadratus",
+          "flexor-carpi-radialis",
+          "supinator"
+        ],
+        "teaching": "Useful for linking muscle differentiation to a functional capability — forearm rotation — that appears above the urodele node."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "pronator-quadratus",
+      "name": "Pronator quadratus",
+      "region": "forearm",
+      "subregion": "pronator group",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass.",
+      "synonyms": [
+        "pronator profundus (Ribbing 1907; Straus 1942; Walthall & Ashley-Ross 2006; Moro & Abdala 2004; Abdala et al. 2008)"
+      ],
+      "consensus": {
+        "origin": "Distal ventral (anterior) surface of the ulna.",
+        "insertion": "Distal ventral surface of the radius.",
+        "action": "Pronates the forearm; binds the distal radioulnar joint.",
+        "innervation": "Median nerve, anterior interosseous branch (C7–T1)."
+      },
+      "attachments": {
+        "origin": [
+          "ulna"
+        ],
+        "insertion": [
+          "radius"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "note": "Ribbing (1907) held that Gaupp's (1896) anuran 'abductor pollicis' is in fact the pronator quadratus, not the abductor pollicis brevis.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "note": "Probably corresponds to part of Walker's (1973) pronator profundus; the remainder is the pronator accessorius.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "origin": "Distal quarter of the anterior ulna.",
+          "insertion": "Distal quarter of the anterior radius.",
+          "action": "Pronates the forearm; the prime mover for unresisted pronation.",
+          "innervation": "Anterior interosseous nerve (C7–T1).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in all six non-mammalian columns and in mammals — unlike the pronator teres, which urodeles lack. The deep pronator is therefore the plesiomorphic member of the pronator group.",
+        "related": [
+          "pronator-teres",
+          "pronator-accessorius"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "pronator-accessorius",
+      "name": "Pronator accessorius",
+      "region": "forearm",
+      "subregion": "pronator group",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass.",
+      "synonyms": [
+        "part of pronator profundus (Walker 1973)"
+      ],
+      "consensus": {
+        "origin": "Distal ulna, deep to the pronator quadratus.",
+        "insertion": "Distal radius and adjacent carpals.",
+        "action": "Assists pronation.",
+        "innervation": "Median nerve, anterior interosseous branch."
+      },
+      "attachments": {
+        "origin": [
+          "ulna"
+        ],
+        "insertion": [
+          "radius",
+          "carpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Pronator accessorius",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Pronator accessorius",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "uncertain",
+        "notes": "Present only in turtles and lepidosaurs on this sampling. Walker (1973) treated it and the pronator quadratus together as a single 'pronator profundus', so the split is Abdala & Diogo's interpretation rather than a universally accepted division.",
+        "related": [
+          "pronator-quadratus"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "flexor-digitorum-longus",
+      "name": "Flexor digitorum longus / communis",
+      "region": "forearm",
+      "subregion": "digital flexor",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "palmaris superficialis (McMurrich 1903a)",
+        "flexor primordialis communis (Ribbing 1907)",
+        "flexor digitorum communis longus (Manzano 1996; Manzano et al. 2008b)",
+        "flexor primordialis communis + flexor accessorius communis (Ribbing 1907)",
+        "palmaris communis (Holmes 1977; Dilkes 2000)",
+        "flexor accessorius communis (Ribbing 1938)"
+      ],
+      "consensus": {
+        "origin": "Medial epicondyle of the humerus, with additional heads from the radius and ulna.",
+        "insertion": "Palmar surfaces of the phalanges, via a common tendon plate that divides into digital tendons.",
+        "action": "Flexes the digits and the wrist; the principal grasping muscle.",
+        "innervation": "Median and ulnar nerves."
+      },
+      "attachments": {
+        "origin": [
+          "humerus",
+          "radius",
+          "ulna"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexor digitorum communis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Flexor digitorum communis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "note": "= flexor primordialis communis + flexor accessorius communis sensu Ribbing (1907).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "note": "Probably also includes the 'pronator radii teres' sensu McMurrich (1903a) and Holmes (1977), at least in Sphenodon and lizards.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Flexor digitorum superficialis + flexor digitorum profundus",
+          "present": "yes",
+          "origin": "Medial epicondyle, coronoid process, radius (superficialis); anteromedial ulna and interosseous membrane (profundus).",
+          "insertion": "Middle phalanges (superficialis) and distal phalanges (profundus) of digits II–V.",
+          "action": "Flexes the digits.",
+          "innervation": "Median nerve; the ulnar half of the profundus by the ulnar nerve.",
+          "note": "The mammalian split into superficial and deep layers with staggered phalangeal insertions is a derived elaboration of a single ancestral flexor plate.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The long digital flexor is universal. What varies is the degree of subdivision — a single plate in amphibians and reptiles, two layers with different insertion levels in mammals.",
+        "related": [
+          "flexor-accessorius-lateralis",
+          "flexor-carpi-radialis",
+          "flexores-breves-superficiales",
+          "lumbricales",
+          "palmaris-longus"
+        ],
+        "teaching": "Good for showing that a mammalian 'novelty' (superficialis/profundus) is a subdivision of something already present, not a new muscle."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "palmaris-longus",
+      "name": "'Palmaris longus'",
+      "region": "forearm",
+      "subregion": "digital flexor",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Medial epicondyle of the humerus.",
+        "insertion": "Palmar aponeurosis.",
+        "action": "Tenses the palmar aponeurosis; weak wrist flexion.",
+        "innervation": "Median nerve."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "palmar aponeurosis"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "uncertain",
+          "note": "Marked '– [but see text]'.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "'Palmaris longus'",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "variable",
+          "note": "Absent in Timon, but some lepidosaurs do have a comparable structure.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Palmaris longus",
+          "present": "variable",
+          "note": "Absent in roughly 15% of humans unilaterally or bilaterally, and absent in many other mammals.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "uncertain",
+        "notes": "Quoted deliberately. Abdala & Diogo list this as one of the two structures (with the 'rhomboideus') whose homology with the mammalian muscle of the same name is explicitly under-supported. Their stated requirement: a detailed analysis of the innervation and development of the 'rhomboideus' and 'palmaris longus' across a broader sample of amphibian and reptilian taxa.",
+        "openQuestion": "Is the turtle 'palmaris longus' homologous with the mammalian palmaris longus, or an independently differentiated superficial flexor?",
+        "related": [
+          "flexor-digitorum-longus",
+          "rhomboideus"
+        ],
+        "teaching": "An honest example of a named, textbook-familiar muscle whose deep homology is not actually established."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "contrahentium-caput-longum",
+      "name": "Contrahentium caput longum",
+      "region": "forearm",
+      "subregion": "deep ventral",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass.",
+      "synonyms": [
+        "ulnocarpalis (McMurrich 1903a,b; Straus 1942; Bunnell 1942)",
+        "ulnocarpalis + intercarpalis (Gaupp 1896)"
+      ],
+      "consensus": {
+        "origin": "Distal ulna.",
+        "insertion": "Carpus, giving rise to the contrahentes digitorum.",
+        "action": "Flexes and adducts the digits toward the axis of the hand.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "ulna"
+        ],
+        "insertion": [
+          "carpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Contrahentium caput longum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Contrahentium caput longum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "variable",
+          "note": "Abdala & Diogo report that a few lizards may have a small muscle somewhat resembling the contrahentium caput longum of Ambystoma.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "An amphibian muscle lost in amniotes, retaining only its distal derivatives (the contrahentes digitorum). One of the clearest cases of plesiomorphic retention in Lissamphibia.",
+        "related": [
+          "contrahentes-digitorum"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "flexor-accessorius-lateralis",
+      "name": "Flexor accessorius lateralis",
+      "region": "forearm",
+      "subregion": "deep ventral",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass.",
+      "synonyms": [
+        "caput dorsale of flexor palmaris profundus (Straus 1942)",
+        "palmaris profundus III (McMurrich 1903a)",
+        "flexor accessorius (Ribbing 1907)",
+        "palmaris profundus (Gaupp 1896; Straus 1942; Manzano et al. 2008b)"
+      ],
+      "consensus": {
+        "origin": "Ulna and/or radius, deep in the antebrachium.",
+        "insertion": "Deep palmar flexor tendons.",
+        "action": "Assists digital flexion.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "ulna",
+          "radius"
+        ],
+        "insertion": [
+          "carpals",
+          "flexor tendons"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexor accessorius lateralis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Flexor accessorius",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "note": "Absent as an independent muscle in extant amniotes.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Lissamphibian retention; absent as an independent muscle throughout extant Amniota.",
+        "related": [
+          "flexor-accessorius-medialis",
+          "flexor-digitorum-longus"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "flexor-accessorius-medialis",
+      "name": "Flexor accessorius medialis",
+      "region": "forearm",
+      "subregion": "deep ventral",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass.",
+      "synonyms": [
+        "caput volare of flexor palmaris profundus (Straus 1942)"
+      ],
+      "consensus": {
+        "origin": "Ulna, deep in the antebrachium.",
+        "insertion": "Deep palmar flexor tendons.",
+        "action": "Assists digital flexion.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "ulna"
+        ],
+        "insertion": [
+          "flexor tendons"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexor accessorius medialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "note": "Absent as an independent muscle in extant amniotes.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Present only in urodeles among the sampled taxa — the most restricted distribution in the forearm table.",
+        "related": [
+          "flexor-accessorius-lateralis"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "flexores-breves-superficiales",
+      "name": "Flexores breves superficiales",
+      "region": "hand",
+      "subregion": "superficial palmar layer",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral intrinsic layer of the manus.",
+      "synonyms": [
+        "flexores digitorum breves superficiales (McMurrich 1903a,b)",
+        "flexor brevis superficialis (Walker 1973)",
+        "flexores digiti brevis superficiales (Abdala et al. 2008)",
+        "flexores breves sublimes (Holmes 1977)"
+      ],
+      "consensus": {
+        "origin": "Palmar aponeurosis and carpal region.",
+        "insertion": "Proximal phalanges.",
+        "action": "Flexes the digits at the metacarpophalangeal joints.",
+        "innervation": "Ulnar and median nerves."
+      },
+      "attachments": {
+        "origin": [
+          "carpals",
+          "palmar aponeurosis"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "note": "Includes part of the flexores breves sublimes sensu Holmes (1977) and probably the flexor digiti quinti and/or transversus palmaris sensu Meers (2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in all six non-mammalian columns. Part of the three-layer intrinsic palmar system (superficiales, contrahentes, profundi) that mammals largely reduce.",
+        "related": [
+          "contrahentes-digitorum",
+          "flexor-digitorum-longus",
+          "flexores-breves-profundi",
+          "lumbricales"
+        ],
+        "teaching": "Introduce the three intrinsic layers together — superficiales, contrahentes, profundi — then show what mammals kept."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "contrahentes-digitorum",
+      "name": "Contrahentes digitorum",
+      "region": "hand",
+      "subregion": "middle palmar layer",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral intrinsic layer of the manus.",
+      "synonyms": [
+        "part of flexores digitorum breves medii (McMurrich 1903a,b; Lewis 1989)",
+        "flexores digitorum intermedii (Holmes 1977; Meers 2003)",
+        "adductor digiti minimi (partim, Walker 1973)",
+        "adductor pollicis (partim, Manzano et al. 2008b)"
+      ],
+      "consensus": {
+        "origin": "Carpus and the palmar aponeurosis, along the axis of the hand.",
+        "insertion": "Proximal phalanges, drawing the digits toward the hand's axis.",
+        "action": "Adducts the digits toward the axial digit.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "carpals",
+          "metacarpals"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "note": "Probably includes the adductor pollicis sensu Manzano et al. (2008b).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "note": "Includes the adductor digiti minimi sensu Walker (1973).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "note": "Include the flexor digitorum V transversus I and II of Abdala & Moro (2006).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Adductor pollicis (+ palmar interossei)",
+          "present": "variable",
+          "note": "The mammalian adductor pollicis is generally regarded as a surviving contrahens; the rest of the layer is lost.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present across all non-mammalian columns; reduced to the adductor pollicis (and possibly some palmar interossei) in mammals. This layer is a large part of why lizard and salamander hands have more intrinsic muscles than human hands.",
+        "related": [
+          "flexores-breves-superficiales",
+          "flexores-breves-profundi",
+          "contrahentium-caput-longum"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "flexores-breves-profundi",
+      "name": "Flexores breves profundi",
+      "region": "hand",
+      "subregion": "deep palmar layer",
+      "mass": "ventral",
+      "developmental": "Somitic; deepest ventral intrinsic layer of the manus.",
+      "synonyms": [
+        "flexores digitorum breves profundi (McMurrich 1903a,b; Ribbing 1938; Holmes 1977)",
+        "flexores digiti brevis profundus (Abdala & Moro 2006)",
+        "flexor digitorum intermedius digiti V (Meers 2003)",
+        "interossei (mammals, partim)"
+      ],
+      "consensus": {
+        "origin": "Metacarpals, deep in the palm.",
+        "insertion": "Proximal phalanges and the sesamoids at the metacarpophalangeal joints.",
+        "action": "Flexes the metacarpophalangeal joints; with the intermetacarpales, controls digit spread.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "metacarpals"
+        ],
+        "insertion": [
+          "phalanges",
+          "sesamoids"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Interossei (palmar and dorsal)",
+          "present": "yes",
+          "note": "The mammalian interossei are generally derived from the flexores breves profundi together with the intermetacarpales.",
+          "action": "Abduct and adduct the digits; flex the metacarpophalangeal joints.",
+          "innervation": "Ulnar nerve, deep branch (C8–T1).",
+          "sources": [
+            "abdala-diogo-2010",
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal, and the layer with the clearest mammalian continuation (the interossei). Note the boundary problem with the intermetacarpales — different authors assign the interossei to one, the other, or both.",
+        "related": [
+          "contrahentes-digitorum",
+          "flexores-breves-superficiales",
+          "intermetacarpales"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "lumbricales",
+      "name": "Lumbricales",
+      "region": "hand",
+      "subregion": "palmar intrinsic",
+      "mass": "ventral",
+      "developmental": "Somitic; differentiate from the long digital flexor tendons.",
+      "synonyms": [
+        "lumbricalis (Abdala et al. 2008)"
+      ],
+      "consensus": {
+        "origin": "Tendons of the long digital flexor.",
+        "insertion": "Extensor (dorsal) expansions of the digits.",
+        "action": "Flex the metacarpophalangeal joints while extending the interphalangeal joints — the muscles that convert a claw grip into a flat grip.",
+        "innervation": "Median and ulnar nerves."
+      },
+      "attachments": {
+        "origin": [
+          "flexor tendons"
+        ],
+        "insertion": [
+          "phalanges",
+          "extensor expansion"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "variable",
+          "note": "Absent in Ambystoma ordinarium, but McMurrich (1903a,b) reports lumbricales in other urodeles such as Ambystoma tigrinum.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Lumbricales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Lumbricales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Lumbricales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Lumbricales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Lumbricals",
+          "present": "yes",
+          "origin": "Tendons of flexor digitorum profundus.",
+          "insertion": "Radial side of the extensor expansions of digits II–V.",
+          "innervation": "Median nerve (lumbricals 1–2), ulnar nerve (lumbricals 3–4).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present across most tetrapods; lost in birds. Their derivation from flexor tendon rather than from bone is unusual and consistent across taxa, which strengthens the homology.",
+        "related": [
+          "flexor-digitorum-longus",
+          "flexores-breves-superficiales"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "intermetacarpales",
+      "name": "Intermetacarpales",
+      "region": "hand",
+      "subregion": "intermetacarpal",
+      "mass": "ventral",
+      "developmental": "Somitic; intrinsic to the manus.",
+      "synonyms": [
+        "transversi metacarpi (Gaupp 1896)",
+        "transversi metacarporum (Burton 1998)",
+        "transversus metacarpi superficialis + profundus (Manzano 1996)",
+        "intermetacarpales I and II (Abdala & Moro 2006)",
+        "part of interossei dorsales (Meers 2003)"
+      ],
+      "consensus": {
+        "origin": "Adjacent surfaces of neighbouring metacarpals.",
+        "insertion": "Neighbouring metacarpals and the proximal phalanges.",
+        "action": "Draw the metacarpals together; control the spread of the hand.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "metacarpals"
+        ],
+        "insertion": [
+          "metacarpals",
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Intermetacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Intermetacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Intermetacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Intermetacarpales",
+          "present": "yes",
+          "note": "Lizards often have four 'intermetacarpales I'.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Intermetacarpales",
+          "present": "yes",
+          "note": "Part of the interossei dorsales sensu Meers (2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Intermetacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Interossei (partim)",
+          "present": "yes",
+          "note": "Contribute, with the flexores breves profundi, to the mammalian interossei.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal. The persistent difficulty is the boundary with the flexores breves profundi in taxa where authors lump both as 'interossei'.",
+        "related": [
+          "flexores-breves-profundi",
+          "dorsometacarpales"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "dorsometacarpales",
+      "name": "Dorsometacarpales",
+      "region": "hand",
+      "subregion": "dorsal intrinsic",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal intrinsic layer of the manus.",
+      "synonyms": [
+        "part of interossei dorsales (Walker 1973; Meers 2003)"
+      ],
+      "consensus": {
+        "origin": "Dorsal surfaces of the metacarpals.",
+        "insertion": "Dorsal aponeuroses and proximal phalanges.",
+        "action": "Extend and spread the digits.",
+        "innervation": "Radial nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "metacarpals"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "uncertain",
+          "note": "Marked '– [see text]'.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Dorsometacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Dorsometacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Dorsometacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Dorsometacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Dorsometacarpales",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The dorsal counterpart of the intermetacarpales. Frequently subsumed into 'interossei dorsales' by authors who do not separate dorsal from ventral intrinsic layers.",
+        "related": [
+          "intermetacarpales",
+          "extensores-digitorum-breves"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "abductor-pollicis-brevis",
+      "name": "Abductor pollicis brevis",
+      "region": "hand",
+      "subregion": "thenar",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral intrinsic layer of the manus.",
+      "synonyms": [
+        "abductor brevis pollici (Abdala & Moro 2006)",
+        "abductor metacarpi I (Meers 2003)",
+        "abductor alulae / abductor indicis (birds — Meyers 1996; Sullivan 1962; Shellswell & Wolpert 1977)"
+      ],
+      "consensus": {
+        "origin": "Radial carpals and the flexor retinaculum.",
+        "insertion": "Base of the proximal phalanx of the most radial digit.",
+        "action": "Abducts the most radial digit.",
+        "innervation": "Median nerve (recurrent branch)."
+      },
+      "attachments": {
+        "origin": [
+          "carpals",
+          "flexor retinaculum"
+        ],
+        "insertion": [
+          "phalanges",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "variable",
+          "note": "Seemingly absent in Ambystoma ordinarium.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Abductor pollicis brevis",
+          "present": "yes",
+          "note": "Ribbing (1907) held that Gaupp's (1896) 'abductor pollicis' is the pronator quadratus, not this muscle.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Abductor pollicis brevis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Abductor pollicis brevis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Abductor pollicis brevis",
+          "present": "yes",
+          "note": "= abductor metacarpi I sensu Meers (2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Abductor alulae",
+          "present": "yes",
+          "note": "The 'abductor alulae' sensu Meyers (1996) corresponds to the 'abductor indicis' sensu Sullivan (1962) and goes to digit 1 (= digit 2 according to embryology) — so it seemingly corresponds to the abductor pollicis brevis.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Abductor pollicis brevis",
+          "present": "yes",
+          "origin": "Flexor retinaculum, scaphoid and trapezium.",
+          "insertion": "Radial side of the base of the proximal phalanx of the thumb.",
+          "innervation": "Recurrent branch of the median nerve (C8–T1).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Present in nearly all columns. The avian case is entangled with the unresolved bird digit-identity problem: the muscle goes to the digit that is 1 by position but 2 by embryology.",
+        "related": [
+          "abductor-pollicis-longus",
+          "abductor-digiti-minimi"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "abductor-digiti-minimi",
+      "name": "Abductor digiti minimi",
+      "region": "hand",
+      "subregion": "hypothenar",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral intrinsic layer of the manus.",
+      "synonyms": [
+        "extensor lateralis digiti IV (Walthall & Ashley-Ross 2006)",
+        "abductor primus digiti V (Gaupp 1896)",
+        "abductor digitorum V (Abdala et al. 2008; Abdala & Moro 2006)",
+        "abductor metacarpi V (Meers 2003)"
+      ],
+      "consensus": {
+        "origin": "Ulnar carpals (pisiform) and the flexor retinaculum.",
+        "insertion": "Base of the proximal phalanx of the most ulnar digit.",
+        "action": "Abducts the most ulnar digit.",
+        "innervation": "Ulnar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "carpals",
+          "pisiform"
+        ],
+        "insertion": [
+          "phalanges",
+          "metacarpals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "insertion": "Digit 4, not digit 5.",
+          "note": "In Taricha and Ambystoma the muscle attaches to digit 4 because digit 5 is absent — the ulnar counterpart of the anuran abductor pollicis longus case. The muscle finds the most ulnar digit available.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "note": "Absent in chickens even though a most-ulnar digit is present. Abdala & Diogo treat this as the counter-case: here the specific IDENTITY of the digit (3 by fossils and Hox, 4 by embryology) seems to matter, not merely its position. They flag it as an open problem.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "origin": "Pisiform and the tendon of flexor carpi ulnaris.",
+          "insertion": "Ulnar side of the base of the proximal phalanx of digit V.",
+          "innervation": "Deep branch of the ulnar nerve (C8–T1).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The muscle's homology is secure; the interest is entirely in which digit it lands on. Urodeles: digit 4 (positional). Birds: absent despite an available digit (identity-dependent). These two cells are the crux of Abdala & Diogo's position-versus-identity argument.",
+        "openQuestion": "Why is the abductor digiti minimi absent in chickens when the most ulnar digit is present? Resolution depends on the unsettled bird digit-identity question.",
+        "related": [
+          "abductor-pollicis-longus",
+          "abductor-pollicis-brevis"
+        ],
+        "teaching": "Teach this cell together with the anuran abductor pollicis longus. The pair sets up position-based attachment; the bird cell breaks it. That tension is the lesson."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    }
+  ]
+}

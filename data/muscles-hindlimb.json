@@ -1,0 +1,1948 @@
+{
+  "$schema": "../docs/SCHEMA.md",
+  "region": "Pelvic girdle, thigh, leg and foot",
+  "note": "Serial correspondences to forelimb muscles are recorded in `homology.serial`. Following Diogo & Molnar (2014), a listed correspondence is a claim of TOPOLOGICAL equivalence only. It is not a claim of serial homology in the strict (ancestral-duplication) sense, and in several documented cases the two muscles derive from different anlagen.",
+  "muscles": [
+    {
+      "id": "puboischiofemoralis-internus",
+      "name": "Puboischiofemoralis internus",
+      "region": "pelvic",
+      "subregion": "dorsal pelvic",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal (extensor) mass of the pelvic limb bud.",
+      "synonyms": [
+        "iliacus + psoas major (mammals)",
+        "sartorius (from the anterior head)",
+        "puboischiofemoralis internus A–D (Prikryl et al. 2009 letter codes, anurans)"
+      ],
+      "consensus": {
+        "origin": "Internal (medial) surface of the pubis and ilium, and the ventral surfaces of the posterior trunk vertebrae.",
+        "insertion": "Proximal femur, on or near the trochanter.",
+        "action": "Protracts (flexes) and medially rotates the femur; the principal hip protractor of sprawling tetrapods.",
+        "innervation": "Femoral nerve (L2–L4) and direct branches of the lumbar plexus."
+      },
+      "attachments": {
+        "origin": [
+          "pubis",
+          "ilium",
+          "lumbar vertebrae"
+        ],
+        "insertion": [
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Puboischiofemoralis internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Puboischiofemoralis internus A–D",
+          "present": "yes",
+          "note": "Prikryl et al. (2009) letter codes are used deliberately in place of the mammalian-sounding names ('iliacus', 'sartorius', 'pectineus') that earlier authors applied to these muscles, because those names imply homologies that do not hold.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Puboischiofemoralis internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Puboischiofemoralis internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Puboischiofemoralis internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Puboischiofemoralis internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Iliacus + psoas major (+ sartorius)",
+          "present": "yes",
+          "origin": "Iliac fossa; bodies and transverse processes of T12–L5.",
+          "insertion": "Lesser trochanter of the femur.",
+          "action": "Flexes the hip; the principal hip flexor.",
+          "innervation": "Femoral nerve (L2–L4); direct branches L1–L3.",
+          "note": "Diogo & Molnar follow Walker & Homberger (1997) in deriving the mammalian sartorius from the ANTERIOR HEAD of puboischiofemoralis internus — not from the reptilian 'ambiens', as is commonly stated.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "A stable row across Tetrapoda. Its subdivision in mammals into iliacus, psoas major and sartorius is a derived elaboration.",
+        "serial": {
+          "forelimb": "subcoracoscapularis",
+          "basis": "topological",
+          "caution": "Topological correspondence only — the pelvic and pectoral internal girdle muscles were not acquired at the same time."
+        },
+        "related": [
+          "ambiens",
+          "iliofemoralis",
+          "puboischiofemoralis-externus"
+        ],
+        "teaching": "The sartorius derivation is a good correction to a widespread textbook claim."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "puboischiofemoralis-externus",
+      "name": "Puboischiofemoralis externus",
+      "region": "pelvic",
+      "subregion": "ventral pelvic",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) mass.",
+      "synonyms": [
+        "obturator externus + quadratus femoris + gemelli (mammals)"
+      ],
+      "consensus": {
+        "origin": "External (lateral/ventral) surfaces of the pubis and ischium.",
+        "insertion": "Proximal femur, ventrally.",
+        "action": "Adducts and laterally rotates the femur.",
+        "innervation": "Obturator nerve (L2–L4)."
+      },
+      "attachments": {
+        "origin": [
+          "pubis",
+          "ischium"
+        ],
+        "insertion": [
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Puboischiofemoralis externus",
+          "present": "yes",
+          "note": "Deeply blended with the 'pubofemoralis' (= adductor femoris) in Necturus (Walker 1954).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Puboischiofemoralis externus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Puboischiofemoralis externus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Puboischiofemoralis externus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Puboischiofemoralis externus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Puboischiofemoralis externus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "synapsida-stem",
+          "name": "Puboischiofemoralis externus",
+          "present": "inferred",
+          "note": "Reconstructed from the ventral pelvic plate and the trochanteric region; its relative size is one of the variables Bishop & Pierce use to infer posture.",
+          "sources": [
+            "bishop-pierce-2024"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Obturator externus, quadratus femoris, gemelli",
+          "present": "yes",
+          "origin": "External surface of the obturator membrane and adjacent pubis and ischium.",
+          "insertion": "Trochanteric fossa of the femur.",
+          "action": "Laterally rotates the thigh; stabilises the hip.",
+          "innervation": "Obturator nerve (L3–L4).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The obturator nerve is the constant marker for this field across Tetrapoda.",
+        "serial": {
+          "forelimb": "coracobrachialis",
+          "basis": "topological"
+        },
+        "related": [
+          "adductor-femoris",
+          "ischiotrochantericus",
+          "puboischiofemoralis-internus"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014",
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "id": "iliofemoralis",
+      "name": "Iliofemoralis",
+      "region": "pelvic",
+      "subregion": "dorsal pelvic",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "gluteus medius + gluteus minimus (mammals)",
+        "iliofemoralis externus/internus (archosaurs)"
+      ],
+      "consensus": {
+        "origin": "Lateral surface of the ilium.",
+        "insertion": "Proximal femur, on or near the greater trochanter.",
+        "action": "Abducts the femur; in erect-limbed taxa, the principal hip abductor and pelvic stabiliser during single-limb support.",
+        "innervation": "Superior gluteal nerve (L4–S1)."
+      },
+      "attachments": {
+        "origin": [
+          "ilium"
+        ],
+        "insertion": [
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Iliofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Iliofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Iliofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Iliofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Iliofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Iliofemoralis (iliotrochantericus complex)",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "synapsida-stem",
+          "name": "Iliofemoralis",
+          "present": "inferred",
+          "note": "Its expansion, tracked through the enlargement of the iliac blade, is central to Bishop & Pierce's argument that erect hindlimb posture was acquired late in the therian stem lineage.",
+          "sources": [
+            "bishop-pierce-2024"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Gluteus medius + gluteus minimus",
+          "present": "yes",
+          "origin": "Gluteal surface of the ilium.",
+          "insertion": "Greater trochanter of the femur.",
+          "action": "Abduct and medially rotate the thigh; prevent pelvic drop during the stance phase.",
+          "innervation": "Superior gluteal nerve (L4–S1).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal in Tetrapoda. The functional transformation — from a modest abductor in a sprawling limb to the principal pelvic stabiliser in a parasagittal one — happens without any change in identity, origin, insertion or nerve.",
+        "serial": {
+          "forelimb": "deltoideus-scapularis",
+          "basis": "topological"
+        },
+        "related": [
+          "caudofemoralis",
+          "gluteus-maximus",
+          "puboischiofemoralis-internus"
+        ],
+        "teaching": "The best single muscle for showing that posture change is a change in mechanics, not in anatomy. Same muscle, same nerve, radically different role."
+      },
+      "sources": [
+        "diogo-molnar-2014",
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "id": "caudofemoralis",
+      "name": "Caudofemoralis",
+      "region": "pelvic",
+      "subregion": "caudo-appendicular",
+      "mass": "ventral",
+      "developmental": "Somitic; derived from the caudal axial musculature, not from the limb bud proper.",
+      "synonyms": [
+        "caudofemoralis longus",
+        "caudofemoralis brevis",
+        "caudi-femoralis",
+        "piriformis (mammals — proposed)"
+      ],
+      "consensus": {
+        "origin": "Ventrolateral surfaces of the caudal vertebrae and their transverse processes (longus); the posterolateral ilium (brevis).",
+        "insertion": "Fourth trochanter of the femur.",
+        "action": "The principal femoral retractor of non-mammalian tetrapods — the main propulsive muscle of the hindlimb in sprawling and archosaurian locomotion.",
+        "innervation": "Ventral rami of the caudal spinal nerves; inferior gluteal nerve territory in mammals."
+      },
+      "attachments": {
+        "origin": [
+          "caudal vertebrae",
+          "ilium"
+        ],
+        "insertion": [
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Caudofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "variable",
+          "note": "Reduced with the loss of the tail; the urostyle replaces the caudal series.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Caudofemoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Caudofemoralis longus + brevis",
+          "present": "yes",
+          "action": "Primary femoral retractor; drives the propulsive stroke in lizard locomotion.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Caudofemoralis longus + brevis",
+          "present": "yes",
+          "note": "Large and well developed; inserts on a prominent fourth trochanter.",
+          "sources": [
+            "diogo-molnar-2014",
+            "allen-etal-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Caudofemoralis (reduced)",
+          "present": "yes",
+          "note": "Greatly reduced with the shortening of the tail to the pygostyle and the shift to a knee-driven, femur-held-horizontal gait. Its reduction is a defining event in the theropod–bird locomotor transition.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "synapsida-stem",
+          "name": "Caudofemoralis",
+          "present": "inferred",
+          "note": "Progressive reduction along the synapsid stem, tracked through the reduction of the fourth trochanter.",
+          "sources": [
+            "bishop-pierce-2024"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "present": "variable",
+          "note": "Largely lost; the fourth trochanter is absent. A caudofemoralis persists in some marsupials and in taxa with muscular tails. The piriformis has been proposed as a remnant.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Presence and size track the fourth trochanter directly, making this the most reliably reconstructed hindlimb muscle in fossils. Its independent reduction in birds and in mammals accompanies two separate shifts away from tail-driven femoral retraction.",
+        "serial": {
+          "forelimb": null,
+          "basis": "none",
+          "caution": "No forelimb counterpart. The caudofemoralis is a clean falsification of any expectation of one-to-one fore/hindlimb correspondence."
+        },
+        "related": [
+          "gluteus-maximus",
+          "iliofemoralis",
+          "ischioflexorius"
+        ],
+        "teaching": "The single best fossil-muscle example: a bony landmark (the fourth trochanter) that reads directly as muscle presence, size and locomotor mode across 300 million years."
+      },
+      "sources": [
+        "diogo-molnar-2014",
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "id": "extensor-iliotibialis",
+      "name": "Extensor iliotibialis / iliotibialis",
+      "region": "thigh",
+      "subregion": "dorsal thigh",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "ilioextensorius (urodeles, posterior head)",
+        "iliotibialis (urodeles, anterior head)",
+        "triceps femoris (partim)",
+        "tensor fasciae latae + rectus femoris (mammals)"
+      ],
+      "consensus": {
+        "origin": "Dorsal/lateral ilium.",
+        "insertion": "Tibia, via the knee extensor apparatus.",
+        "action": "Extends the knee; protracts the femur.",
+        "innervation": "Femoral nerve."
+      },
+      "attachments": {
+        "origin": [
+          "ilium"
+        ],
+        "insertion": [
+          "tibia",
+          "patella"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensor iliotibialis",
+          "present": "yes",
+          "note": "In salamanders this is usually a SINGLE muscle, often with anterior and posterior heads named 'iliotibialis' and 'ilioextensorius' respectively (Appleton 1928). Diogo & Molnar, following Gadow (1882) and Walker (1954), hold that this single muscle corresponds to the femorotibialis, iliotibialis AND 'ambiens' of lizards together — against Kardong's (2002) three-way split.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Extensor iliotibialis A/B",
+          "present": "yes",
+          "note": "Diogo & Molnar use letter codes rather than the mammalian names ('gluteus maximus', 'tensor fasciae latae') applied by earlier authors, because those homologies do not hold.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Iliotibialis (+ femorotibialis, + 'ambiens')",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Iliotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Iliotibialis lateralis / cranialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Rectus femoris + tensor fasciae latae",
+          "present": "yes",
+          "origin": "Anterior inferior iliac spine (rectus femoris); iliac crest (tensor fasciae latae).",
+          "insertion": "Patella and tibial tuberosity via the patellar ligament; iliotibial tract.",
+          "action": "Extends the knee; flexes the hip.",
+          "innervation": "Femoral nerve (L2–L4); superior gluteal nerve (tensor fasciae latae).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "contested",
+        "notes": "The urodele/reptile correspondence is actively disputed. Kardong (2002) derives the reptilian femorotibialis, iliotibialis and 'ambiens' from three distinct salamander muscles; Gadow (1882), Walker (1954) and Diogo & Molnar derive all three from a single salamander extensor iliotibialis. The dissections in Diogo & Molnar (2014) support the latter.",
+        "openQuestion": "One salamander muscle or three? The answer changes how many separate acquisitions are needed in the reptile lineage.",
+        "serial": {
+          "forelimb": "triceps-brachii",
+          "basis": "topological",
+          "caution": "Both are the principal extensor of the second limb joint, but the correspondence is functional and topological, not developmental."
+        },
+        "related": [
+          "femorotibialis",
+          "ambiens"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "femorotibialis",
+      "name": "Femorotibialis",
+      "region": "thigh",
+      "subregion": "dorsal thigh",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "vastus lateralis + vastus medialis + vastus intermedius (mammals)"
+      ],
+      "consensus": {
+        "origin": "Shaft of the femur.",
+        "insertion": "Tibia, via the knee extensor apparatus.",
+        "action": "Extends the knee. Because it does not cross the hip, it is a pure knee extensor.",
+        "innervation": "Femoral nerve."
+      },
+      "attachments": {
+        "origin": [
+          "femur"
+        ],
+        "insertion": [
+          "tibia",
+          "patella"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "variable",
+          "note": "Not separated from the extensor iliotibialis in salamanders under the Gadow/Walker/Diogo & Molnar reading.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Femorotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Femorotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Femorotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Vastus lateralis, medialis and intermedius",
+          "present": "yes",
+          "origin": "Greater trochanter, linea aspera, and anterior/lateral femoral shaft.",
+          "insertion": "Patella, then the tibial tuberosity via the patellar ligament.",
+          "action": "Extend the knee.",
+          "innervation": "Femoral nerve (L2–L4).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The femorotibialis → vasti correspondence is one of the least contested in the hindlimb. Together with the rectus femoris (from extensor iliotibialis) it forms the mammalian quadriceps — a composite of two different ancestral muscles, which is why the rectus femoris crosses the hip and the vasti do not.",
+        "serial": {
+          "forelimb": "brachialis",
+          "basis": "topological"
+        },
+        "related": [
+          "extensor-iliotibialis"
+        ],
+        "teaching": "Explains a fact students memorise without understanding: why one of the four quadriceps heads flexes the hip and three do not. They are not four parts of one muscle; they are two muscles."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "ambiens",
+      "name": "'Ambiens'",
+      "region": "thigh",
+      "subregion": "dorsal thigh",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass. Romer (1942) and Jones (1979) emphasise that it is a DORSAL muscle despite its ventral position.",
+      "synonyms": [
+        "pubotibialis (partim, confusingly)",
+        "sartorius (mammals — rejected by Diogo & Molnar)"
+      ],
+      "consensus": {
+        "origin": "Pubis, near the acetabulum.",
+        "insertion": "Tibia (and in some archosaurs, via the digital flexor tendons).",
+        "action": "Protracts the femur and extends the knee.",
+        "innervation": "Femoral nerve — dorsal-mass territory."
+      },
+      "attachments": {
+        "origin": [
+          "pubis"
+        ],
+        "insertion": [
+          "tibia"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "note": "Not present as a separate muscle; part of the undivided extensor iliotibialis.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "'Ambiens'",
+          "present": "yes",
+          "note": "Reptiles may have both an 'ambiens' and a 'pubifemoralis'; the two names are sometimes used as synonyms (Russell & Bauer 2008), which is a persistent source of confusion.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "'Ambiens'",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "'Ambiens'",
+          "present": "yes",
+          "note": "In birds the ambiens tendon famously passes to the digital flexors, an arrangement once invoked (incorrectly) as an automatic perching mechanism.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "present": "no",
+          "note": "Diogo & Molnar reject the classical derivation of the mammalian sartorius from the 'ambiens'; they derive the sartorius from the anterior head of puboischiofemoralis internus (Walker & Homberger 1997).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "contested",
+        "notes": "The critical diagnostic is that the 'ambiens' is a DORSAL muscle sitting in a ventral position. The amphibian 'pubifemoralis', which looks superficially similar in dorsal view, is a deep VENTRAL muscle and corresponds instead to the reptilian adductor femoris. Diogo & Molnar make this call explicitly and reject the ambiens→sartorius derivation.",
+        "serial": {
+          "forelimb": null,
+          "basis": "none"
+        },
+        "related": [
+          "extensor-iliotibialis",
+          "adductor-femoris",
+          "puboischiofemoralis-internus"
+        ],
+        "teaching": "A worked example of using mass assignment (dorsal vs ventral) rather than position to settle a homology dispute."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "adductor-femoris",
+      "name": "Adductor femoris",
+      "region": "thigh",
+      "subregion": "ventral thigh",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass.",
+      "synonyms": [
+        "'pubifemoralis' / 'pubofemoralis' (amphibians)",
+        "adductor magnus + adductor longus + adductor brevis (mammals)"
+      ],
+      "consensus": {
+        "origin": "Ventral surface of the pelvic girdle (pubis and ischium).",
+        "insertion": "Ventral surface of the femur.",
+        "action": "Adducts and retracts the femur.",
+        "innervation": "Obturator nerve (with a sciatic contribution to the adductor magnus in mammals)."
+      },
+      "attachments": {
+        "origin": [
+          "pubis",
+          "ischium"
+        ],
+        "insertion": [
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "'Pubifemoralis'",
+          "present": "yes",
+          "note": "Diogo & Molnar's dissections support the amphibian 'pubifemoralis' = reptilian adductor femoris, against the alternative that it corresponds to the 'ambiens'. Both are deep ventral muscles lying just dorsal to the pubotibialis and running from the ventral girdle to the ventral femur; the 'ambiens' is dorsal.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Adductor femoris",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Adductor femoris",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Adductor femoris",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Adductor femoris",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Adductor magnus, longus and brevis",
+          "present": "yes",
+          "origin": "Inferior pubic ramus and ischial tuberosity.",
+          "insertion": "Linea aspera and adductor tubercle of the femur.",
+          "action": "Adduct and extend the thigh.",
+          "innervation": "Obturator nerve (L2–L4); the hamstring part of adductor magnus by the tibial division of the sciatic nerve.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Diogo & Molnar note that almost all amphibian–reptile ventral pelvic/thigh homologies are straightforward and consensual, with exactly two exceptions: the amphibian 'pubifemoralis' and 'ischiofemoralis'. They resolve both — pubifemoralis = adductor femoris, ischiofemoralis = ischiotrochantericus.",
+        "serial": {
+          "forelimb": "pectoralis",
+          "basis": "topological"
+        },
+        "related": [
+          "ambiens",
+          "ischiotrochantericus",
+          "puboischiofemoralis-externus",
+          "puboischiotibialis"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "ischiotrochantericus",
+      "name": "Ischiotrochantericus",
+      "region": "thigh",
+      "subregion": "ventral pelvic",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "'ischiofemoralis' (amphibians)",
+        "obturator internus (mammals — proposed)"
+      ],
+      "consensus": {
+        "origin": "Internal surface of the ischium.",
+        "insertion": "Trochanteric region of the proximal femur.",
+        "action": "Laterally rotates the femur; stabilises the hip.",
+        "innervation": "Sacral plexus branches; nerve to obturator internus in mammals."
+      },
+      "attachments": {
+        "origin": [
+          "ischium"
+        ],
+        "insertion": [
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "'Ischiofemoralis'",
+          "present": "yes",
+          "note": "Most authors (and Diogo & Molnar) hold that the amphibian 'ischiofemoralis' corresponds to the reptilian ischiotrochantericus; Gadow (1882) was a minority voice for adductor femoris. Walker (1954, p. 94) defends the ischiotrochantericus reading.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Ischiotrochantericus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Ischiotrochantericus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Ischiotrochantericus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Obturator internus (+ gemelli)",
+          "present": "yes",
+          "origin": "Internal surface of the obturator membrane and adjacent ischium and pubis.",
+          "insertion": "Medial surface of the greater trochanter.",
+          "action": "Laterally rotates the extended thigh; abducts the flexed thigh.",
+          "innervation": "Nerve to obturator internus (L5–S2).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "One of the two contested amphibian ventral pelvic muscles resolved by Diogo & Molnar (the other being 'pubifemoralis').",
+        "serial": {
+          "forelimb": "subcoracoscapularis",
+          "basis": "topological"
+        },
+        "related": [
+          "adductor-femoris",
+          "puboischiofemoralis-externus"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "puboischiotibialis",
+      "name": "Puboischiotibialis",
+      "region": "thigh",
+      "subregion": "ventral thigh",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "gracilis (mammals)",
+        "gracilis major + gracilis minor (anurans)"
+      ],
+      "consensus": {
+        "origin": "Ventral pelvic girdle — pubis and ischium.",
+        "insertion": "Medial surface of the proximal tibia.",
+        "action": "Adducts the thigh and flexes the knee.",
+        "innervation": "Obturator nerve."
+      },
+      "attachments": {
+        "origin": [
+          "pubis",
+          "ischium"
+        ],
+        "insertion": [
+          "tibia"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Puboischiotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Gracilis major + gracilis minor",
+          "present": "yes",
+          "note": "Two heads in anurans versus one in mammals. Both derive from the puboischiotibialis, but via different heads — so the anuran and mammalian 'gracilis' are not straightforwardly equivalent.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Puboischiotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Puboischiotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Gracilis",
+          "present": "yes",
+          "origin": "Body and inferior ramus of the pubis.",
+          "insertion": "Superior medial tibia (pes anserinus).",
+          "action": "Adducts the thigh; flexes and medially rotates the leg.",
+          "innervation": "Obturator nerve (L2–L4).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Diogo & Molnar single out the gracilis as the one muscle for which the last common ancestor of tetrapods probably had a directly corresponding individual muscle in the modern human sense — the muscles printed in bold in their Table 1. Every other human hindlimb muscle is a subdivision or recombination.",
+        "serial": {
+          "forelimb": null,
+          "basis": "none"
+        },
+        "related": [
+          "ischioflexorius",
+          "adductor-femoris"
+        ],
+        "teaching": "A one-line answer to 'which of my leg muscles would a salamander recognise?' — essentially just the gracilis."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "ischioflexorius",
+      "name": "Ischioflexorius / flexor tibialis",
+      "region": "thigh",
+      "subregion": "ventral thigh",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass.",
+      "synonyms": [
+        "flexor tibialis externus + internus",
+        "flexor cruris et tarsi tibialis",
+        "semitendinosus + semimembranosus + biceps femoris (mammals — the hamstrings)"
+      ],
+      "consensus": {
+        "origin": "Ischium (ischial tuberosity).",
+        "insertion": "Proximal tibia and/or fibula; in some taxa continuing to the tarsus.",
+        "action": "Flexes the knee and retracts (extends) the hip.",
+        "innervation": "Sciatic nerve, tibial division."
+      },
+      "attachments": {
+        "origin": [
+          "ischium"
+        ],
+        "insertion": [
+          "tibia",
+          "fibula",
+          "tarsals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Ischioflexorius",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "'Semitendinosus'",
+          "present": "yes",
+          "note": "A false-friend name. The anuran 'semitendinosus' is not homologous to the mammalian muscle of that name.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexor tibialis externus + internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Flexor tibialis externus + internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexor cruris lateralis + medialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Semitendinosus, semimembranosus, biceps femoris",
+          "present": "yes",
+          "origin": "Ischial tuberosity; the short head of biceps femoris from the linea aspera.",
+          "insertion": "Medial tibia (semitendinosus, semimembranosus); head of the fibula (biceps femoris).",
+          "action": "Extend the hip and flex the knee.",
+          "innervation": "Tibial division of the sciatic nerve; the short head of biceps femoris by the common fibular division.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The hamstring group derives from this field, but the correspondences head-by-head are not settled. Diogo & Molnar reject the classical claim (Gregory & Camp 1918; Romer 1922; Haines 1935) that the mammalian tenuissimus is the caudal head of biceps femoris; following Jones (1979) they derive tenuissimus from a dorsal tail-region muscle homologous with the reptilian 'flexor cruris tarsi dorsalis'.",
+        "serial": {
+          "forelimb": "triceps-brachii",
+          "basis": "topological",
+          "caution": "Frequently asserted; the two are innervated by different divisions and derive from opposite masses (hamstrings ventral, triceps dorsal). This correspondence should be treated as functional analogy."
+        },
+        "related": [
+          "puboischiotibialis",
+          "caudofemoralis"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "gluteus-maximus",
+      "name": "Gluteus maximus",
+      "region": "pelvic",
+      "subregion": "dorsal pelvic",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "femorococcygeus (partim)"
+      ],
+      "consensus": {
+        "origin": "Posterior ilium, sacrum, coccyx and sacrotuberous ligament.",
+        "insertion": "Gluteal tuberosity of the femur and the iliotibial tract.",
+        "action": "Extends and laterally rotates the hip; principal muscle of the erect-posture power stroke.",
+        "innervation": "Inferior gluteal nerve (L5–S2)."
+      },
+      "attachments": {
+        "origin": [
+          "ilium",
+          "sacrum",
+          "caudal vertebrae"
+        ],
+        "insertion": [
+          "femur",
+          "iliotibial tract"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "theria",
+          "name": "Gluteus maximus",
+          "present": "yes",
+          "note": "Diogo & Molnar note innervation differences between humans and rats: the human gluteus maximus is supplied by the inferior gluteal nerve alone, the rat muscle by that nerve plus the inferior branch of the superior gluteal nerve. One of several cases where innervation differs between mammals for muscles otherwise treated as identical.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "'Gluteus maximus'",
+          "present": "no",
+          "note": "A false-friend name. The anuran muscle called 'gluteus maximus' is not homologous to the mammalian one; Diogo & Molnar use 'extensor iliotibialis B' instead.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "synapsida-stem",
+          "present": "inferred",
+          "note": "The enlargement of this field along the synapsid stem is part of the erect-posture transition documented by Bishop & Pierce.",
+          "sources": [
+            "bishop-pierce-2024"
+          ],
+          "name": "Gluteal (dorsal iliac) mass"
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "A mammalian differentiation from the dorsal iliac field. Its name is applied to non-homologous muscles in the anuran literature — one of the clearest cases in Diogo & Molnar's list of false-friend names ('tensor fasciae latae', 'gluteus maximus', 'gemellus', 'obturator externus', 'quadratus femoris', 'obturator internus', 'pectineus', 'adductor longus', 'iliacus', 'sartorius', 'semitendinosus', 'adductor magnus' — none homologous in anurans to the human muscles of the same name).",
+        "serial": {
+          "forelimb": "deltoideus-scapularis",
+          "basis": "topological"
+        },
+        "related": [
+          "iliofemoralis",
+          "caudofemoralis"
+        ],
+        "teaching": "The anchor for the false-friend-names lesson. Twelve human muscle names are applied to non-homologous anuran muscles."
+      },
+      "sources": [
+        "diogo-molnar-2014",
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "id": "gastrocnemius",
+      "name": "Gastrocnemius",
+      "region": "leg",
+      "subregion": "ventral/flexor leg",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) mass of the crus.",
+      "synonyms": [
+        "femorocruralis (partim)",
+        "flexor primordialis communis (partim)",
+        "triceps surae (with soleus)"
+      ],
+      "consensus": {
+        "origin": "Distal femur, by medial and lateral heads (and from the tibia in some taxa).",
+        "insertion": "Calcaneum/fibulare, via the Achilles tendon.",
+        "action": "Plantarflexes the ankle; flexes the knee.",
+        "innervation": "Tibial nerve (S1–S2)."
+      },
+      "attachments": {
+        "origin": [
+          "femur",
+          "tibia"
+        ],
+        "insertion": [
+          "calcaneum",
+          "tarsals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Gastrocnemius",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Gastrocnemius",
+          "present": "yes",
+          "action": "The principal jump-propulsion muscle; hypertrophied relative to all other anuran leg muscles.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Gastrocnemius",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Gastrocnemius",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "allen-etal-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Gastrocnemius",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Gastrocnemius",
+          "present": "yes",
+          "origin": "Medial and lateral femoral condyles.",
+          "insertion": "Calcaneal tuberosity via the calcaneal (Achilles) tendon.",
+          "action": "Plantarflexes the foot; flexes the knee.",
+          "innervation": "Tibial nerve (S1–S2).",
+          "note": "Kardong (2002) derived the mammalian gastrocnemius from the femorotibial ('internal') head; Diogo & Molnar discuss and qualify this.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal across Tetrapoda. Head count and the femoral versus tibial origin vary.",
+        "serial": {
+          "forelimb": "flexor-digitorum-longus",
+          "basis": "topological",
+          "caution": "The crural and antebrachial flexor masses correspond as fields, but muscle-for-muscle mapping within them is unreliable."
+        },
+        "related": [
+          "flexor-digitorum-longus-hl"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "tibialis-anterior",
+      "name": "Tibialis anterior",
+      "region": "leg",
+      "subregion": "dorsal/extensor leg",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal (extensor) mass of the crus.",
+      "synonyms": [
+        "extensor cruris tibialis",
+        "tibialis anticus"
+      ],
+      "consensus": {
+        "origin": "Proximal tibia and the interosseous membrane.",
+        "insertion": "Medial tarsals and the base of metatarsal I.",
+        "action": "Dorsiflexes the ankle; inverts the foot.",
+        "innervation": "Deep fibular (peroneal) nerve (L4–L5)."
+      },
+      "attachments": {
+        "origin": [
+          "tibia",
+          "interosseous membrane"
+        ],
+        "insertion": [
+          "tarsals",
+          "metatarsals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensor cruris tibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Tibialis anterior",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Tibialis anterior",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Tibialis anterior",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Tibialis cranialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Tibialis anterior",
+          "present": "yes",
+          "origin": "Lateral condyle and proximal lateral tibia; interosseous membrane.",
+          "insertion": "Medial cuneiform and base of metatarsal I.",
+          "action": "Dorsiflexes and inverts the foot.",
+          "innervation": "Deep fibular nerve (L4–L5).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "serial": {
+          "forelimb": "extensor-antebrachii-carpi-radialis",
+          "basis": "topological"
+        },
+        "related": [
+          "extensor-digitorum-longus-hl",
+          "fibularis-group"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "extensor-digitorum-longus-hl",
+      "name": "Extensor digitorum longus (pes)",
+      "region": "leg",
+      "subregion": "dorsal/extensor leg",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass of the crus.",
+      "synonyms": [
+        "extensor digitorum communis"
+      ],
+      "consensus": {
+        "origin": "Lateral tibial condyle, proximal fibula and the interosseous membrane.",
+        "insertion": "Dorsal aponeuroses of the digits.",
+        "action": "Extends the toes; dorsiflexes the ankle.",
+        "innervation": "Deep fibular nerve (L5–S1)."
+      },
+      "attachments": {
+        "origin": [
+          "tibia",
+          "fibula",
+          "interosseous membrane"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Extensor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Extensor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Extensor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Extensor digitorum longus",
+          "present": "yes",
+          "origin": "Lateral tibial condyle, anterior fibula, interosseous membrane.",
+          "insertion": "Extensor expansions of digits II–V.",
+          "innervation": "Deep fibular nerve (L5–S1).",
+          "note": "In humans the fibularis tertius derives from the extensor digitorum longus anlage (Lewis 1910). In rats the fibularis digiti quinti derives from the extensor digiti quinti anlage. The two are therefore NOT homologous, despite both being called a 'fibularis' and both being innervated by the deep fibular nerve.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The muscle itself is straightforward; the interest is in its derivatives. The human fibularis tertius / rat fibularis digiti quinti case is one of Diogo & Molnar's cleanest demonstrations that shared name plus shared nerve still does not establish homology.",
+        "serial": {
+          "forelimb": "extensor-digitorum",
+          "basis": "topological",
+          "note": "In rats, the short extensors of digits 2 and 3 are fused in BOTH limbs — extensor indicis in the forelimb, extensor digitorum brevis in the hindlimb. Diogo & Molnar show these fusions are independently derived, producing apparent serial similarity by parallelism."
+        },
+        "related": [
+          "tibialis-anterior",
+          "fibularis-group"
+        ],
+        "teaching": "The rat double-fusion case is the single most economical illustration of parallelism masquerading as serial homology."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "fibularis-group",
+      "name": "Fibularis (peroneus) group",
+      "region": "leg",
+      "subregion": "lateral leg",
+      "mass": "dorsal",
+      "developmental": "Somitic; lateral compartment of the crus, dorsal mass.",
+      "synonyms": [
+        "peroneus longus / brevis / tertius / digiti quinti",
+        "fibularis longus / brevis"
+      ],
+      "consensus": {
+        "origin": "Lateral surface of the fibula.",
+        "insertion": "Metatarsals and lateral tarsals.",
+        "action": "Everts the foot; plantarflexes (longus, brevis) or dorsiflexes (tertius).",
+        "innervation": "Superficial fibular nerve (longus, brevis); deep fibular nerve (tertius, digiti quinti)."
+      },
+      "attachments": {
+        "origin": [
+          "fibula"
+        ],
+        "insertion": [
+          "metatarsals",
+          "tarsals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "Fibularis longus + brevis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Fibularis longus + brevis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Fibularis longus, brevis (+ tertius in humans, digiti quinti in rats)",
+          "present": "yes",
+          "action": "Evert the foot; the longus also supports the transverse arch.",
+          "innervation": "Superficial fibular nerve (L5–S1) for longus and brevis.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "contested",
+        "notes": "Diogo & Molnar dwell on this group because the innervation is diagnostic and cuts against the obvious grouping. The fibularis tertius and fibularis digiti quinti are innervated by the DEEP fibular nerve — which supplies short extensors such as extensor digitorum brevis — not by the superficial fibular nerve that supplies the true lateral muscles fibularis longus and brevis. Deriving them from the lateral mass would require the innervation to have changed; deriving them from the extensor anlage does not.",
+        "openQuestion": "Diogo & Molnar state explicitly that a firm answer requires a much more extensive analysis including innervation and developmental data.",
+        "serial": {
+          "forelimb": null,
+          "basis": "none"
+        },
+        "related": [
+          "extensor-digitorum-longus-hl",
+          "tibialis-anterior"
+        ],
+        "teaching": "Innervation as a decisive argument. Two muscles sit in the lateral compartment and carry a lateral-compartment name, but their nerve says they belong to the extensor group."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "popliteus",
+      "name": "Popliteus",
+      "region": "leg",
+      "subregion": "ventral/flexor leg",
+      "mass": "ventral",
+      "developmental": "Somitic; derived from the interosseus cruris.",
+      "synonyms": [
+        "interosseus cruris (ancestral)"
+      ],
+      "consensus": {
+        "origin": "Lateral femoral condyle.",
+        "insertion": "Posterior proximal tibia.",
+        "action": "Unlocks the extended knee by rotating the tibia; medially rotates the leg.",
+        "innervation": "Tibial nerve (L4–S1)."
+      },
+      "attachments": {
+        "origin": [
+          "femur"
+        ],
+        "insertion": [
+          "tibia"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "theria",
+          "name": "Popliteus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Interosseus cruris",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The popliteus derives from the interosseus cruris.",
+        "serial": {
+          "forelimb": "pronator-teres",
+          "basis": "topological",
+          "caution": "This is Diogo & Molnar's headline counter-example. The popliteus and pronator teres are frequently listed as forelimb–hindlimb topological equivalents, but they derive from DIFFERENT anlagen: popliteus from the interosseus cruris, pronator teres from the flexor antebrachii et carpi radialis. The true ontogenetic counterparts are hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus."
+        },
+        "related": [
+          "tibialis-posterior"
+        ],
+        "teaching": "The cleanest single case for separating topological correspondence from developmental correspondence. Worth teaching verbatim."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "tibialis-posterior",
+      "name": "Tibialis posterior",
+      "region": "leg",
+      "subregion": "deep ventral/flexor leg",
+      "mass": "ventral",
+      "developmental": "Somitic; deep ventral mass of the crus.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Interosseous membrane and the adjacent tibia and fibula.",
+        "insertion": "Navicular, cuneiforms and the bases of the middle metatarsals.",
+        "action": "Inverts the foot; plantarflexes the ankle; supports the medial longitudinal arch.",
+        "innervation": "Tibial nerve (L4–L5)."
+      },
+      "attachments": {
+        "origin": [
+          "tibia",
+          "fibula",
+          "interosseous membrane"
+        ],
+        "insertion": [
+          "tarsals",
+          "metatarsals"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "theria",
+          "name": "Tibialis posterior",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Tibialis posterior",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "serial": {
+          "forelimb": "pronator-quadratus",
+          "basis": "developmental",
+          "note": "Diogo & Molnar identify hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus (pronator quadratus) as the REAL ontogenetic counterparts — as against the popliteus/pronator teres pairing, which is topological only."
+        },
+        "related": [
+          "popliteus"
+        ],
+        "teaching": "The positive half of the popliteus lesson: this is what a developmentally supported correspondence looks like."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "flexor-digitorum-longus-hl",
+      "name": "Flexor digitorum longus (pes)",
+      "region": "leg",
+      "subregion": "ventral/flexor leg",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass of the crus.",
+      "synonyms": [
+        "flexor primordialis communis",
+        "flexor digitorum communis"
+      ],
+      "consensus": {
+        "origin": "Posterior tibia and fibula.",
+        "insertion": "Plantar surfaces of the distal phalanges.",
+        "action": "Flexes the toes; plantarflexes the ankle.",
+        "innervation": "Tibial nerve (L5–S2)."
+      },
+      "attachments": {
+        "origin": [
+          "tibia",
+          "fibula"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexor primordialis communis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "note": "Together with the flexor hallucis longus, forms the tendon system that produces automatic toe flexion when the ankle flexes — the mechanism of perching.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "origin": "Posterior tibia.",
+          "insertion": "Distal phalanges of digits II–V.",
+          "innervation": "Tibial nerve (L5–S2).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "serial": {
+          "forelimb": "flexor-digitorum-longus",
+          "basis": "topological",
+          "note": "Among the strongest forelimb–hindlimb correspondences. Diogo & Molnar's Fig. 3 shows that the distal (zeugopodial and autopodial) muscles of the salamander fore and hind limbs are strikingly similar, while the proximal (girdle and stylopodial) muscles are clearly different."
+        },
+        "related": [
+          "gastrocnemius",
+          "flexores-breves-superficiales-pes"
+        ],
+        "teaching": "The distal-greater-than-proximal similarity gradient is visible in a single salamander dissection."
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "flexores-breves-superficiales-pes",
+      "name": "Flexores breves superficiales (pes)",
+      "region": "foot",
+      "subregion": "superficial plantar layer",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral intrinsic layer of the pes.",
+      "synonyms": [
+        "flexor digitorum brevis (mammals)"
+      ],
+      "consensus": {
+        "origin": "Calcaneum and the plantar aponeurosis.",
+        "insertion": "Middle phalanges.",
+        "action": "Flexes the toes at the metatarsophalangeal and proximal interphalangeal joints.",
+        "innervation": "Medial plantar nerve (tibial)."
+      },
+      "attachments": {
+        "origin": [
+          "calcaneum",
+          "plantar aponeurosis"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Flexor digitorum brevis",
+          "present": "yes",
+          "innervation": "Medial plantar nerve (S1–S2).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "serial": {
+          "forelimb": "flexores-breves-superficiales",
+          "basis": "topological",
+          "note": "Part of the strongly corresponding distal muscle set."
+        },
+        "related": [
+          "contrahentes-digitorum-pes",
+          "flexor-digitorum-longus-hl",
+          "flexores-breves-profundi-pes"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "contrahentes-digitorum-pes",
+      "name": "Contrahentes digitorum (pes)",
+      "region": "foot",
+      "subregion": "middle plantar layer",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral intrinsic layer of the pes.",
+      "synonyms": [
+        "adductor hallucis (mammals, partim)"
+      ],
+      "consensus": {
+        "origin": "Tarsus and the plantar aponeurosis.",
+        "insertion": "Proximal phalanges.",
+        "action": "Adducts the toes toward the foot's axis.",
+        "innervation": "Lateral plantar nerve (tibial)."
+      },
+      "attachments": {
+        "origin": [
+          "tarsals",
+          "metatarsals"
+        ],
+        "insertion": [
+          "phalanges"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Adductor hallucis",
+          "present": "variable",
+          "note": "As in the hand, the contrahens layer is largely lost in mammals, with the adductor hallucis surviving as its principal representative.",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "serial": {
+          "forelimb": "contrahentes-digitorum",
+          "basis": "topological"
+        },
+        "related": [
+          "flexores-breves-superficiales-pes",
+          "flexores-breves-profundi-pes"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "flexores-breves-profundi-pes",
+      "name": "Flexores breves profundi (pes)",
+      "region": "foot",
+      "subregion": "deep plantar layer",
+      "mass": "ventral",
+      "developmental": "Somitic; deepest ventral intrinsic layer of the pes.",
+      "synonyms": [
+        "interossei plantares + dorsales (mammals)"
+      ],
+      "consensus": {
+        "origin": "Metatarsals.",
+        "insertion": "Proximal phalanges and metatarsophalangeal sesamoids.",
+        "action": "Flexes the metatarsophalangeal joints; abducts and adducts the toes.",
+        "innervation": "Lateral plantar nerve, deep branch."
+      },
+      "attachments": {
+        "origin": [
+          "metatarsals"
+        ],
+        "insertion": [
+          "phalanges",
+          "sesamoids"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Interossei (plantar and dorsal)",
+          "present": "yes",
+          "innervation": "Deep branch of the lateral plantar nerve (S2–S3).",
+          "sources": [
+            "diogo-molnar-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "serial": {
+          "forelimb": "flexores-breves-profundi",
+          "basis": "topological",
+          "note": "One of the strongest distal correspondences: the same three-layer plantar/palmar system in both limbs."
+        },
+        "related": [
+          "contrahentes-digitorum-pes",
+          "flexores-breves-superficiales-pes"
+        ]
+      },
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    }
+  ]
+}

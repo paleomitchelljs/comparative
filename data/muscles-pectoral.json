@@ -1,0 +1,2342 @@
+{
+  "$schema": "../docs/SCHEMA.md",
+  "region": "Pectoral girdle and arm",
+  "muscles": [
+    {
+      "id": "protractor-pectoralis",
+      "name": "Protractor pectoralis / cucullaris",
+      "region": "pectoral",
+      "subregion": "head–trunk interface",
+      "mass": "branchial",
+      "developmental": "Branchiomeric. Derives from cranial paraxial/lateral plate mesoderm caudal to the last pharyngeal arch, not from somites — the defining muscle of the head–trunk boundary.",
+      "synonyms": [
+        "cucullaris",
+        "trapezius (mammals)",
+        "protractor pectoralis",
+        "levator scapulae (partim, some authors)",
+        "sternocleidomastoideus (mammals, partim)"
+      ],
+      "consensus": {
+        "origin": "Fascia over the occiput and anterior epaxial/axial musculature; in gnathostome fishes, the dorsal edge of the branchial region.",
+        "insertion": "Dorsal margin of the pectoral girdle — scapula, suprascapula, or cleithrum.",
+        "action": "Protracts and stabilises the pectoral girdle against the head and axial skeleton; in mammals, elevates and rotates the scapula.",
+        "innervation": "Accessory nerve (CN XI) or its non-mammalian equivalent — caudal branchial branches of the vagus complex. Not spinal."
+      },
+      "attachments": {
+        "origin": [
+          "occiput",
+          "cervical fascia",
+          "branchial arches"
+        ],
+        "insertion": [
+          "scapula",
+          "cleithrum",
+          "clavicle",
+          "suprascapula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Cucullaris",
+          "present": "yes",
+          "origin": "Epaxial fascia dorsal to the branchial arches.",
+          "insertion": "Epibranchial/pharyngobranchial elements and the dorsal scapular process of the pectoral girdle.",
+          "action": "Elevates the branchial arches and stabilises the girdle.",
+          "innervation": "Vagus (X), caudal branchial branches.",
+          "sources": [
+            "ziermann-etal-2014",
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Protractor pectoralis",
+          "present": "yes",
+          "note": "In Lepisosteus the cucullaris develops from the same cranial mesoderm population as the branchial constrictors, supporting a branchiomeric rather than somitic origin.",
+          "innervation": "Branchial vagus.",
+          "sources": [
+            "naumann-etal-2017"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Protractor pectoralis (cucullaris)",
+          "present": "yes",
+          "origin": "Fascia over the otic capsule and the first few axial segments.",
+          "insertion": "Anterodorsal margin of the suprascapula.",
+          "action": "Draws the girdle anterodorsally.",
+          "innervation": "Accessory nerve equivalent; developmentally distinct from the levator scapulae, which is somitic.",
+          "note": "Sefton et al. (2016) show the cucullaris and the somitic levator scapulae are separable by developmental origin even where they are topographically adjacent — the strongest available test of this homology.",
+          "sources": [
+            "sefton-etal-2016",
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Protractor pectoralis",
+          "present": "yes",
+          "origin": "Occipital region and cervical fascia.",
+          "insertion": "Anterior margin of the scapula and suprascapula.",
+          "innervation": "Accessory nerve (XI).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Protractor pectoralis (episternocleidomastoideus, partim)",
+          "present": "yes",
+          "innervation": "Accessory nerve (XI).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Cucullaris capitis / cucullaris cervicis",
+          "present": "yes",
+          "insertion": "Clavicle and scapula.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Trapezius (+ sternocleidomastoideus)",
+          "present": "yes",
+          "origin": "Nuchal line, nuchal ligament, and spinous processes of the cervical and thoracic vertebrae.",
+          "insertion": "Spine of the scapula, acromion, and clavicle.",
+          "action": "Elevates, retracts and rotates the scapula.",
+          "innervation": "Accessory nerve (CN XI), with proprioceptive contribution from C3–C4.",
+          "note": "The mammalian trapezius and sternocleidomastoid are subdivisions of a single cucullaris field. Their retention of CN XI innervation, despite lying entirely within the neck and trunk, is the classic evidence that innervation tracks developmental origin rather than topographic position.",
+          "sources": [
+            "sefton-etal-2016"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Homology of the cucullaris across gnathostomes is supported by three independent lines: branchiomeric developmental origin, accessory/vagal innervation, and consistent topology between the occiput and the girdle. Sefton et al. (2016) resolved the long-standing question of whether the tetrapod cucullaris is head or trunk muscle in favour of head.",
+        "related": [
+          "branchial-constrictors",
+          "hypobranchial-muscles",
+          "levator-scapulae",
+          "serratus-anterior"
+        ],
+        "teaching": "The single best example of innervation as a homology criterion. A muscle that ends up in the shoulder still carries a cranial nerve."
+      },
+      "sources": [
+        "sefton-etal-2016",
+        "naumann-etal-2017",
+        "ziermann-etal-2014",
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "serratus-anterior",
+      "name": "Serratus anterior",
+      "region": "pectoral",
+      "subregion": "axio-appendicular",
+      "mass": "somitic-axial",
+      "developmental": "Somitic (abaxial); derived from the ventrolateral lips of the cervical and anterior thoracic somites.",
+      "synonyms": [
+        "serratus ventralis",
+        "serrati (sensu Howell 1937)",
+        "serratus magnus",
+        "levator scapulae ventralis (partim)"
+      ],
+      "consensus": {
+        "origin": "Lateral surfaces of the anterior ribs and/or the transverse processes of the cervical vertebrae, by a series of digitations.",
+        "insertion": "Medial (costal) surface of the scapula, typically along and near its vertebral border.",
+        "action": "Suspends the trunk from the girdle in a sling; protracts, retracts and rotates the scapula depending on which digitations contract.",
+        "innervation": "Long thoracic nerve (ventral rami of the anterior spinal nerves entering the brachial plexus; C5–C7 in mammals)."
+      },
+      "attachments": {
+        "origin": [
+          "ribs",
+          "cervical transverse processes"
+        ],
+        "insertion": [
+          "scapula",
+          "suprascapula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "note": "Part of the 'serrati' sensu Howell (1937a).",
+          "origin": "Anterior ribs and transverse processes.",
+          "insertion": "Medial surface of the suprascapular cartilage and scapula.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "note": "Part of the 'serrati' sensu Howell (1935, 1937b).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "note": "Retained despite the carapace; the girdle sits inside the rib cage in turtles, so the sling geometry is unlike that of any other tetrapod.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "note": "= serratus ventralis sensu Kardong & Zalisko (1998), Kardong (2002).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "note": "= serratus ventralis sensu Meers (2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Serratus ventralis",
+          "present": "yes",
+          "origin": "Ribs 1–8 and the cervical transverse processes by discrete slips.",
+          "insertion": "Medial face of the scapula along the vertebral border.",
+          "action": "Principal weight-bearing sling; in Tachyglossus it is very large, consistent with the forceful digging stroke.",
+          "sources": [
+            "gambaryan-etal-2015"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Serratus anterior (serratus ventralis)",
+          "present": "yes",
+          "origin": "Ribs 1–8/9.",
+          "insertion": "Medial scapular border, concentrated at the inferior angle.",
+          "action": "Protracts and upwardly rotates the scapula; holds the medial border against the thorax.",
+          "innervation": "Long thoracic nerve (C5–C7).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in every limbed tetrapod examined; a stable row across all six columns of Abdala & Diogo's Table 1. Subdivision into cervical and thoracic parts is a mammalian elaboration, not a new muscle.",
+        "related": [
+          "costocoracoideus",
+          "levator-scapulae",
+          "protractor-pectoralis",
+          "rhomboideus"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "rhomboideus",
+      "name": "'Rhomboideus'",
+      "region": "pectoral",
+      "subregion": "axio-appendicular",
+      "mass": "somitic-axial",
+      "developmental": "Somitic (abaxial).",
+      "synonyms": [
+        "rhomboideus superficialis",
+        "rhomboideus profundus",
+        "basiscapularis (some authors, disputed)"
+      ],
+      "consensus": {
+        "origin": "Axial skeleton — occiput, nuchal ligament, or the neural spines of the anterior vertebrae.",
+        "insertion": "Vertebral (dorsal) border of the scapula or suprascapula.",
+        "action": "Retracts and elevates the scapula; holds the vertebral border against the trunk.",
+        "innervation": "Dorsal scapular nerve in mammals (C4–C5)."
+      },
+      "attachments": {
+        "origin": [
+          "occiput",
+          "nuchal ligament",
+          "thoracic neural spines"
+        ],
+        "insertion": [
+          "scapula",
+          "suprascapula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "note": "Howell (1937b) and Abdala & Diogo's own dissections find no rhomboid muscle in urodeles. Some authors' 'basiscapularis' in urodeles runs occiput-to-scapula and is innervated by ventral rami of spinal nerves 1–2, but Smith (1926) himself listed basiscapularis as a synonym of the levator scapulae, not of a rhomboideus.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "'Rhomboideus'",
+          "present": "yes",
+          "note": "Confirmed by dissection in Rhinella and described by Escariz de Peverelli (1965) in Bufo arenarum.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "note": "Never described in turtles and not found in Abdala & Diogo's dissections. Loss would be unsurprising given the carapace rigidly links the axial skeleton to the girdle.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "no",
+          "note": "Never described in lepidosaurs and not found by dissection.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "'Rhomboideus'",
+          "present": "yes",
+          "note": "Reported by Howell (1937b), Dilkes (2000), Meers (2003) and confirmed by dissection.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "'Rhomboideus' (superficialis + profundus)",
+          "present": "yes",
+          "note": "Sullivan (1962, 1967) report both a rhomboideus superficialis and a rhomboideus profundus.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Rhomboideus (capitis, cervicis, thoracis)",
+          "present": "yes",
+          "origin": "Nuchal line/ligament and thoracic neural spines.",
+          "insertion": "Vertebral border of the scapula.",
+          "innervation": "Dorsal scapular nerve (C4–C5).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "contested",
+        "notes": "The name is quoted deliberately. Abdala & Diogo argue that on their phylogeny it is more parsimonious to treat the 'rhomboideus' as independently acquired in anurans, archosaurs and mammals (three steps) than as ancestral to Tetrapoda and lost in urodeles, turtles and lepidosaurs (four steps). The parsimony margin is one step, so the result is fragile — and it requires three independent origins of a muscle with the same origin, insertion, orientation and function. They flag the missing evidence explicitly: detailed dorsal pectoral muscle studies in more lepidosaurs and urodeles.",
+        "openQuestion": "Is the archosaur 'rhomboideus' homologous to the anuran and mammalian rhomboideus, or a convergent axio-scapular muscle? Innervation and development data for the anuran and crocodylian muscles would settle it.",
+        "related": [
+          "levator-scapulae",
+          "palmaris-longus",
+          "serratus-anterior"
+        ],
+        "teaching": "A worked example of parsimony being decisive by a single step, and of why authors quote a muscle name."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "levator-scapulae",
+      "name": "Levator scapulae",
+      "region": "pectoral",
+      "subregion": "axio-appendicular",
+      "mass": "somitic-axial",
+      "developmental": "Somitic. In Ambystoma it derives mainly from somite 3 (Piekarski & Olsson 2007); Piatt (1938) implicated somites 2–4 together with the hypobranchial muscles.",
+      "synonyms": [
+        "thoracico-scapularis (Jouffroy 1971)",
+        "levator scapulae superioris",
+        "opercularis (some authors, urodeles)",
+        "basiscapularis (Smith 1926)",
+        "omotransversarius (mammals, partim)",
+        "levator scapulae ventralis"
+      ],
+      "consensus": {
+        "origin": "Cranium (often the cartilaginous operculum in urodeles) or the transverse process of the atlas and anterior cervical vertebrae.",
+        "insertion": "Anterodorsal margin of the scapula/suprascapula.",
+        "action": "Elevates and protracts the scapula.",
+        "innervation": "Ventral rami of the first and second spinal nerves; in Ambystoma also by the hypoglossal nerve."
+      },
+      "attachments": {
+        "origin": [
+          "cranium",
+          "operculum",
+          "atlas transverse process",
+          "cervical transverse processes"
+        ],
+        "insertion": [
+          "scapula",
+          "suprascapula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "origin": "Cranium, often the cartilaginous operculum.",
+          "insertion": "Suprascapula.",
+          "action": "Elevates the girdle; the opercular portion is part of the aquatic sound-reception pathway.",
+          "innervation": "First spinal nerve and hypoglossal nerve.",
+          "note": "Voluminous in urodeles and includes the columellaris and opercularis of Duellman & Trueb (1986) and Carroll (2007). Piekarski & Olsson (2007) showed its development and innervation differ from those of the protractor pectoralis, refuting the older claim that the urodele levator scapulae derives from the cucullaris.",
+          "sources": [
+            "abdala-diogo-2010",
+            "sefton-etal-2016"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Levator scapulae superioris",
+          "present": "yes",
+          "note": "In anurans such as Rana the ancestral urodele muscle is fully differentiated into two separate muscles: the levator scapulae superioris and the opercularis. The name 'opercularis' should therefore be restricted to anurans.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "origin": "Mainly the transverse process of the atlas.",
+          "insertion": "Scapula.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Levator scapulae (+ levator scapulae ventralis / omotransversarius)",
+          "present": "yes",
+          "origin": "Ventral tubercle of the atlantal wing (levator scapulae ventralis); cervical transverse processes.",
+          "insertion": "Cranial border of the scapula.",
+          "sources": [
+            "gambaryan-etal-2015"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Levator scapulae (+ omotransversarius)",
+          "present": "yes",
+          "origin": "Transverse processes of C1–C4.",
+          "insertion": "Vertebral border of the scapula near the superior angle.",
+          "innervation": "C3–C4 ventral rami and the dorsal scapular nerve.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Distinguished from the protractor pectoralis/cucullaris by somitic rather than branchiomeric origin and by spinal rather than accessory innervation, despite adjacent topology. The urodele 'opercularis' is part of this muscle, not a separate one.",
+        "related": [
+          "hypobranchial-muscles",
+          "opercularis",
+          "protractor-pectoralis",
+          "rhomboideus",
+          "serratus-anterior"
+        ],
+        "teaching": "Pair with the cucullaris. Two adjacent occiput-to-scapula muscles with different germ layers of origin and different nerves — topology alone cannot separate them, development and innervation can."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "sefton-etal-2016",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "id": "opercularis",
+      "name": "Opercularis",
+      "region": "pectoral",
+      "subregion": "axio-appendicular",
+      "mass": "somitic-axial",
+      "developmental": "Somitic; a differentiated portion of the ancestral levator scapulae field.",
+      "synonyms": [
+        "columellaris (Carroll 2007)"
+      ],
+      "consensus": {
+        "origin": "Suprascapular cartilage.",
+        "insertion": "Operculum of the otic capsule (the cartilaginous plate in the fenestra ovalis).",
+        "action": "Transmits substrate-borne vibration from the forelimb and girdle to the inner ear; also braces the girdle.",
+        "innervation": "Ventral rami of the anterior spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          "suprascapula"
+        ],
+        "insertion": [
+          "operculum",
+          "otic capsule"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "anura",
+          "name": "Opercularis",
+          "present": "yes",
+          "note": "Only in anurans is this a discrete muscle. Together with the levator scapulae superioris it accounts for the single urodele levator scapulae.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "note": "The structure called 'opercularis' in urodeles is topologically part of the levator scapulae, not an independent muscle (Hetherington & Tugaoen 1990).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "An anuran autapomorphy arising by subdivision of the levator scapulae. Functionally striking: it is a limb-girdle muscle that inserts on the ear.",
+        "related": [
+          "levator-scapulae"
+        ],
+        "teaching": "Terminology trap. 'Opercularis' in an amphibian paper means different things depending on whether the animal is a frog or a salamander."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "sternocoracoideus",
+      "name": "Sternocoracoideus",
+      "region": "pectoral",
+      "subregion": "axio-appendicular",
+      "mass": "somitic-axial",
+      "developmental": "Somitic (abaxial).",
+      "synonyms": [
+        "sternocoracoid superior / inferior (Howell 1937b)",
+        "subclavius (mammals — see homology note)"
+      ],
+      "consensus": {
+        "origin": "Sternum.",
+        "insertion": "Coracoid.",
+        "action": "Draws the coracoid toward the sternum, stabilising the girdle's ventral articulation.",
+        "innervation": "Ventral rami of the anterior brachial plexus; nerve to subclavius (C5–C6) in mammals."
+      },
+      "attachments": {
+        "origin": [
+          "sternum"
+        ],
+        "insertion": [
+          "coracoid",
+          "clavicle"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "note": "Howell (1937b) confirms it is not a distinct muscle in urodeles or anurans.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Sternocoracoideus",
+          "present": "yes",
+          "note": "Often divided into superficial and deep heads in Iguana and Sphenodon (Holmes 1977; Dilkes 2000).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "variable",
+          "note": "Fürbringer (1876), Walker (1973), Holmes (1977) and Dilkes (2000) hold that it is not present as an independent muscle in crocodylians or turtles.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Sternocoracoideus",
+          "present": "yes",
+          "note": "Present according to Dilkes (2000).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Sternocoracoideus",
+          "present": "yes",
+          "note": "Ornithorhynchus retains both a costocoracoideus and a sternocoracoideus (Howell 1937b), consistent with its retained coracoid.",
+          "sources": [
+            "gambaryan-etal-2015",
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Subclavius",
+          "present": "yes",
+          "origin": "First rib and its costal cartilage.",
+          "insertion": "Inferior surface of the clavicle.",
+          "action": "Depresses and stabilises the clavicle.",
+          "innervation": "Nerve to subclavius (C5–C6).",
+          "note": "Howell (1937b) argued the placental subclavius corresponds to the sternocoracoideus of other tetrapods, the coracoid having been lost and its attachment transferred to the clavicle.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "contested",
+        "notes": "The sternocoracoideus–subclavius correspondence follows Howell (1937b) and is reviewed in detail by Diogo et al. (2009a). Mivart (1869) instead suggested the subclavius was part of the amphibian procoracohumeralis; Romer (1924) rejected this, deriving teres minor and deltoideus clavicularis from procoracohumeralis instead. The distribution is patchy enough (present in lepidosaurs, birds, monotremes; absent or disputed in turtles, crocodylians, amphibians) that independent acquisition cannot be excluded.",
+        "related": [
+          "costocoracoideus",
+          "deltoideus-clavicularis"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "id": "costocoracoideus",
+      "name": "Costocoracoideus",
+      "region": "pectoral",
+      "subregion": "axio-appendicular",
+      "mass": "somitic-axial",
+      "developmental": "Somitic (abaxial).",
+      "synonyms": [
+        "costoscapularis (Howell 1936a, 1937b; Holmes 1977)",
+        "costosternocoracoideus (Holmes 1977; Dilkes 2000)"
+      ],
+      "consensus": {
+        "origin": "Anterior ribs.",
+        "insertion": "Coracoid.",
+        "action": "Draws the coracoid toward the ribs; girdle stabilisation.",
+        "innervation": "Ventral rami of the anterior brachial plexus."
+      },
+      "attachments": {
+        "origin": [
+          "ribs"
+        ],
+        "insertion": [
+          "coracoid"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "note": "Walker (1973): not present as a distinct muscle in turtles.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Costocoracoideus",
+          "present": "yes",
+          "note": "Frequently divided into pars superficialis and pars profunda.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Costocoracoideus",
+          "present": "yes",
+          "note": "Usually divided into pars superficialis and pars profunda (Meers 2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "note": "Dilkes (2000): not present as an independent muscle in birds.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Costocoracoideus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "gambaryan-etal-2015"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Costoscapularis",
+          "present": "variable",
+          "note": "Howell (1937b) reports a 'costoscapularis' in placentals, the coracoid attachment having shifted to the scapula.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Restricted to lepidosaurs, crocodylians and monotremes among the taxa surveyed. The homologies of the reptilian costocoracoideus and sternocoracoideus with the mammalian subclavius are reviewed by Diogo et al. (2009a).",
+        "related": [
+          "sternocoracoideus",
+          "serratus-anterior"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "pectoralis",
+      "name": "Pectoralis",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) muscle mass of the limb bud.",
+      "synonyms": [
+        "pectoralis major (Wyneken 2001)",
+        "pectoralis pars thoracica (Maxwell & Larsson 2007)",
+        "pectoralis superficialis / profundus (mammals)"
+      ],
+      "consensus": {
+        "origin": "Sternum, clavicle, interclavicle and adjacent ventral structures — a broad fan across the ventral midline.",
+        "insertion": "Deltopectoral crest of the humerus.",
+        "action": "Adducts and retracts the humerus; the principal propulsive muscle of the forelimb in sprawling gaits and the main downstroke muscle in flight.",
+        "innervation": "Pectoral nerves — ventral (flexor) division of the brachial plexus."
+      },
+      "attachments": {
+        "origin": [
+          "sternum",
+          "clavicle",
+          "interclavicle",
+          "ventral ribs",
+          "sternal keel"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Ventral fin muscle mass (undivided)",
+          "present": "no",
+          "note": "Chondrichthyans have an undivided ventral (adductor/depressor) fin mass; no discrete pectoralis is differentiated.",
+          "sources": [
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Pectoralis",
+          "present": "inferred",
+          "note": "Reconstructed in Eusthenopteron, Tiktaalik and Acanthostega on the basis of a ventral humeral process/crest homologous with the deltopectoral crest. Confidence level II–III (osteological correlate plus phylogenetic bracket).",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Pectoralis",
+          "present": "yes",
+          "origin": "Ventral fascia and sternum.",
+          "insertion": "Proximal humerus.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Pectoralis",
+          "present": "yes",
+          "action": "In anurans the pectoralis is a principal landing-force absorber rather than a propulsive muscle; its enlargement is part of the saltatory forelimb complex.",
+          "sources": [
+            "abdala-diogo-2010",
+            "sigurdsen-etal-2012"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Pectoralis",
+          "present": "yes",
+          "note": "= pectoralis major sensu Wyneken (2001).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Pectoralis",
+          "present": "yes",
+          "origin": "Sternum, interclavicle and the sternal ribs.",
+          "insertion": "Deltopectoral crest of the humerus.",
+          "innervation": "Pectoral branches arising from the ventral divisions of the brachial plexus; in South American lizards the plexus is typically formed from spinal nerves 5–9 with considerable interspecific variation in root composition (Navarro et al. 2023).",
+          "note": "Present in all major extant reptilian clades (Fürbringer 1876; Walker 1973; Holmes 1977; Dilkes 2000).",
+          "sources": [
+            "abdala-diogo-2010",
+            "navarro-etal-2023",
+            "freitas-etal-2017"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Pectoralis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "allen-etal-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Pectoralis",
+          "present": "yes",
+          "origin": "Sternal keel (carina), furcula and sternocoracoclavicular membrane.",
+          "insertion": "Deltopectoral crest of the humerus.",
+          "action": "Wing downstroke. The largest muscle in the body of most flying birds.",
+          "note": "Includes the pectoralis pars thoracica sensu Maxwell & Larsson (2007).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Pectoralis (superficialis + profundus)",
+          "present": "yes",
+          "origin": "Sternum, interclavicle and clavicle — monotremes retain the reptilian ventral girdle elements, so the origin is more extensive than in therians.",
+          "insertion": "Deltopectoral crest.",
+          "sources": [
+            "gambaryan-etal-2015"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Pectoralis major / pectoralis profundus",
+          "present": "yes",
+          "origin": "Sternum, clavicle, costal cartilages.",
+          "insertion": "Crest of the greater tubercle / deltopectoral crest.",
+          "action": "Adducts and medially rotates the humerus.",
+          "innervation": "Medial and lateral pectoral nerves (C5–T1).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in every limbed tetrapod. One of the least ambiguous rows in the comparative tables — origin, insertion, innervation and ventral-mass derivation are all congruent.",
+        "related": [
+          "supracoracoideus",
+          "coracobrachialis"
+        ],
+        "teaching": "Use as the anchor when introducing the ventral/flexor mass. Everything else in the ventral mass can be located relative to it."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "molnar-etal-2018",
+        "gambaryan-etal-2015",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "supracoracoideus",
+      "name": "Supracoracoideus",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral mass, but see homology note on the mammalian supraspinatus/infraspinatus.",
+      "synonyms": [
+        "coracohumeralis (Howell 1935, 1936a, 1937b)",
+        "pectoralis secundus (Jollie 1962)",
+        "supraspinatus + infraspinatus (mammals)"
+      ],
+      "consensus": {
+        "origin": "Lateral (external) surface of the coracoid and scapula, anterior/dorsal to the pectoralis origin.",
+        "insertion": "Proximal humerus, on or near the deltopectoral crest and greater tubercle.",
+        "action": "Protracts and abducts the humerus. In birds, uniquely, it is the upstroke muscle.",
+        "innervation": "Supracoracoid nerve; suprascapular nerve (C5–C6) in mammals."
+      },
+      "attachments": {
+        "origin": [
+          "coracoid",
+          "scapula"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Supracoracoideus",
+          "present": "inferred",
+          "note": "Reconstructed from the scapulocoracoid lateral surface in Devonian tetrapodomorphs.",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "origin": "Sternal keel, deep to the pectoralis.",
+          "insertion": "Dorsal surface of the humerus, via a tendon that passes through the foramen triosseum.",
+          "action": "Wing upstroke. The tendon is redirected over the shoulder by the triosseal canal so that a ventrally placed muscle produces a dorsal pull — the pulley arrangement that permits both flight strokes to be powered from below the body's centre of mass.",
+          "note": "= pectoralis secundus sensu Jollie (1962).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Supraspinatus + infraspinatus (+ supracoracoideus remnant)",
+          "present": "yes",
+          "note": "Monotremes are the critical intermediate: the scapular spine is incipient and the supracoracoideus field is only partly divided into the therian supraspinatus and infraspinatus.",
+          "sources": [
+            "gambaryan-etal-2015",
+            "fahn-lai-etal-2020"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Supraspinatus and infraspinatus",
+          "present": "yes",
+          "origin": "Supraspinous and infraspinous fossae of the scapula, either side of the scapular spine.",
+          "insertion": "Greater tubercle of the humerus.",
+          "action": "Supraspinatus abducts and stabilises; infraspinatus laterally rotates.",
+          "innervation": "Suprascapular nerve (C5–C6).",
+          "note": "The migration of this muscle from the coracoid to the lateral scapula, and its division by the newly evolved scapular spine, is one of the defining events of the synapsid pectoral transformation.",
+          "sources": [
+            "ercoli-etal-2014",
+            "fahn-lai-etal-2020"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The supracoracoideus → supraspinatus + infraspinatus transformation is well supported by shared suprascapular innervation and by the monotreme intermediate condition. The avian supracoracoideus is homologous to the reptilian muscle; only its tendon path is novel.",
+        "related": [
+          "deltoideus-scapularis",
+          "pectoralis",
+          "subcoracoscapularis"
+        ],
+        "teaching": "Two independent teaching payloads: (1) the synapsid coracoid-to-scapula migration, readable directly off the monotreme condition; (2) the avian triosseal pulley, where homology is preserved but mechanics are inverted."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015",
+        "fahn-lai-etal-2020",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "deltoideus-scapularis",
+      "name": "Deltoideus scapularis",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal (extensor) muscle mass of the limb bud.",
+      "synonyms": [
+        "dorsalis scapulae (Smith 1926; Howell 1935, 1936a, 1937b; Romer 1944)",
+        "dorsal or scapular part of deltoideus (Walker 1973; Wyneken 2001)",
+        "part of acromialis (Ribbing 1938)",
+        "deltoideus scapularis"
+      ],
+      "consensus": {
+        "origin": "Lateral surface of the scapula and suprascapula.",
+        "insertion": "Deltopectoral crest of the humerus.",
+        "action": "Abducts, protracts and laterally rotates the humerus; antagonist of the pectoralis.",
+        "innervation": "Axillary nerve — dorsal (extensor) division of the brachial plexus (C5–C6)."
+      },
+      "attachments": {
+        "origin": [
+          "scapula",
+          "suprascapula"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Deltoideus",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "note": "Corresponds to the dorsalis scapulae of Smith (1926), Howell (1937b), Romer (1944), Walthall & Ashley-Ross (2006).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "note": "Part of the acromialis sensu Ribbing (1938); part of the deltoideus sensu Jollie (1962).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Deltoideus, pars scapularis (spinous part)",
+          "present": "yes",
+          "origin": "Spine of the scapula.",
+          "insertion": "Deltoid tuberosity of the humerus.",
+          "innervation": "Axillary nerve (C5–C6).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in all six of Abdala & Diogo's columns and in mammals. Together with the deltoideus clavicularis it forms the deltoid complex; the boundary between the two varies with the degree of girdle ossification.",
+        "related": [
+          "deltoideus-clavicularis",
+          "supracoracoideus",
+          "scapulohumeralis-anterior"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "deltoideus-clavicularis",
+      "name": "Deltoideus clavicularis / procoracohumeralis",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "procoracohumeralis (amphibians)",
+        "ventral or clavicular part of deltoideus (Walker 1973; Wyneken 2001)",
+        "scapularis inferior (Fürbringer 1876)",
+        "part of acromialis (Ribbing 1938)",
+        "deltoideus pars acromialis / clavicularis (mammals)"
+      ],
+      "consensus": {
+        "origin": "Clavicle, procoracoid, or acromion.",
+        "insertion": "Deltopectoral crest of the humerus, anterior to the deltoideus scapularis insertion.",
+        "action": "Protracts and abducts the humerus.",
+        "innervation": "Axillary nerve — dorsal division."
+      },
+      "attachments": {
+        "origin": [
+          "clavicle",
+          "procoracoid",
+          "acromion"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Procoracohumeralis",
+          "present": "yes",
+          "note": "The amphibian name reflects the procoracoid origin; the muscle is the same field as the amniote deltoideus clavicularis.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Procoracohumeralis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Deltoideus clavicularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Deltoideus clavicularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Deltoideus clavicularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Deltoideus clavicularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Deltoideus, pars acromialis and pars clavicularis",
+          "present": "yes",
+          "origin": "Acromion and lateral third of the clavicle.",
+          "insertion": "Deltoid tuberosity.",
+          "action": "Abducts and flexes the humerus.",
+          "innervation": "Axillary nerve (C5–C6).",
+          "note": "Romer (1924) derived the mammalian teres minor and deltoideus clavicularis from the procoracohumeralis, against Mivart's (1869) suggestion that the subclavius came from this field.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Continuous across Tetrapoda; the name changes with the girdle element that carries the origin (procoracoid in amphibians, clavicle/acromion in amniotes), not with the muscle's identity.",
+        "related": [
+          "deltoideus-scapularis",
+          "scapulohumeralis-anterior",
+          "sternocoracoideus"
+        ],
+        "teaching": "A clean example of a muscle renamed for its bony origin rather than for any change in the muscle itself — exactly the kind of synonymy the comparative tables exist to dissolve."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "scapulohumeralis-anterior",
+      "name": "Scapulohumeralis anterior",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "scapulohumeralis cranialis (Dilkes 2000; Maxwell & Larsson 2007)",
+        "teres minor (mammals — proposed)"
+      ],
+      "consensus": {
+        "origin": "Lateral surface of the scapula, anteroventral to the glenoid.",
+        "insertion": "Proximal humerus near the greater tubercle.",
+        "action": "Protracts and laterally rotates the humerus; stabilises the glenohumeral joint.",
+        "innervation": "Axillary nerve — dorsal division."
+      },
+      "attachments": {
+        "origin": [
+          "scapula"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Scapulohumeralis anterior",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Scapulohumeralis anterior",
+          "present": "yes",
+          "note": "= scapulohumeralis cranialis sensu Dilkes (2000) and Maxwell & Larsson (2007).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Teres minor",
+          "present": "yes",
+          "origin": "Lateral border of the scapula.",
+          "insertion": "Greater tubercle of the humerus.",
+          "action": "Laterally rotates the humerus.",
+          "innervation": "Axillary nerve (C5–C6).",
+          "note": "Romer (1924) derived teres minor from the procoracohumeralis field rather than from scapulohumeralis anterior; the two hypotheses have not been decisively separated.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "uncertain",
+        "notes": "Patchy distribution (lepidosaurs and birds, absent in turtles, crocodylians and amphibians) makes the amniote-wide homology hypothesis weak. The correspondence with mammalian teres minor is proposed but unresolved — see the competing Romer (1924) derivation from procoracohumeralis.",
+        "openQuestion": "Is scapulohumeralis anterior a single retained muscle with multiple losses, or independently differentiated in lepidosaurs and birds?",
+        "related": [
+          "deltoideus-clavicularis",
+          "deltoideus-scapularis",
+          "scapulohumeralis-posterior"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "scapulohumeralis-posterior",
+      "name": "Scapulohumeralis posterior",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "scapulohumeralis caudalis (Meers 2003; Dilkes 2000; Maxwell & Larsson 2007)"
+      ],
+      "consensus": {
+        "origin": "Lateral surface of the scapula posterodorsal to the glenoid.",
+        "insertion": "Proximal humerus.",
+        "action": "Retracts and laterally rotates the humerus.",
+        "innervation": "Axillary nerve — dorsal division."
+      },
+      "attachments": {
+        "origin": [
+          "scapula"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "uncertain",
+          "note": "Abdala & Diogo mark this cell '– [but see text]' — absent in Timon lepidus but discussed as possibly present in other lepidosaurs.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Scapulohumeralis posterior",
+          "present": "yes",
+          "note": "= scapulohumeralis caudalis sensu Meers (2003).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Scapulohumeralis posterior",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "An archosaur muscle on the sampling in Abdala & Diogo (2010). Widely used in archosaur fossil muscle reconstruction because it leaves a scar posterodorsal to the glenoid.",
+        "related": [
+          "scapulohumeralis-anterior",
+          "subcoracoscapularis"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "subcoracoscapularis",
+      "name": "Subcoracoscapularis",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "subscapularis (Ecker 1889; Walker 1973; Holmes 1977; Dilkes 2000; Wyneken 2001)",
+        "subscapularis + subcoracoideus (Holmes 1977; Sullivan 1962, 1967)"
+      ],
+      "consensus": {
+        "origin": "Medial (internal) surface of the scapula and coracoid.",
+        "insertion": "Lesser tubercle / medial process of the proximal humerus.",
+        "action": "Adducts and medially rotates the humerus; a principal glenohumeral stabiliser.",
+        "innervation": "Subscapular nerves (C5–C7)."
+      },
+      "attachments": {
+        "origin": [
+          "scapula",
+          "coracoid"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Subcoracoscapularis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Subcoracoscapularis",
+          "present": "variable",
+          "note": "Reported in urodeles by Smith (1926), Romer (1944) and Kardong (2002), but Abdala & Diogo flag the identification as needing confirmation.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "note": "= subscapularis sensu Ecker (1889).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "note": "= subscapularis + subcoracoideus sensu Holmes (1977) and Dilkes (2000).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Subscapularis",
+          "present": "yes",
+          "origin": "Subscapular fossa (medial surface of the scapula).",
+          "insertion": "Lesser tubercle of the humerus.",
+          "action": "Medially rotates the humerus; anterior stabiliser of the shoulder (rotator cuff).",
+          "innervation": "Upper and lower subscapular nerves (C5–C6).",
+          "note": "The coracoid contribution is lost with the coracoid itself; only the scapular head persists in therians.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Consistent across Tetrapoda. The 'subcoraco-' prefix records the coracoid head present wherever a coracoid persists; its loss in therians is a consequence of girdle reduction, not of muscle loss.",
+        "related": [
+          "latissimus-dorsi",
+          "scapulohumeralis-posterior",
+          "supracoracoideus",
+          "teres-major"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "teres-major",
+      "name": "Teres major",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass. Frequently differentiates in association with the latissimus dorsi.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Posterior (caudal) border and inferior angle of the scapula.",
+        "insertion": "Proximal humerus, adjacent to or shared with the latissimus dorsi insertion.",
+        "action": "Retracts, adducts and medially rotates the humerus.",
+        "innervation": "Lower subscapular / thoracodorsal nerve — dorsal division."
+      },
+      "attachments": {
+        "origin": [
+          "scapula"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Teres major",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "uncertain",
+          "note": "Marked '– [but see text]' by Abdala & Diogo.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Teres major",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Teres major",
+          "present": "yes",
+          "origin": "Inferior angle and lower lateral border of the scapula.",
+          "insertion": "Crest of the lesser tubercle of the humerus, with the latissimus dorsi.",
+          "action": "Adducts, extends and medially rotates the humerus.",
+          "innervation": "Lower subscapular nerve (C5–C6).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "uncertain",
+        "notes": "Distribution is scattered — present in turtles, crocodylians and mammals, absent in amphibians and birds, uncertain in lepidosaurs. This pattern is more easily read as repeated differentiation from the latissimus dorsi/subcoracoscapularis field than as a single ancestral muscle with three losses.",
+        "openQuestion": "Is the turtle/crocodylian teres major homologous with the mammalian one, or convergent?",
+        "related": [
+          "latissimus-dorsi",
+          "subcoracoscapularis"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "id": "latissimus-dorsi",
+      "name": "Latissimus dorsi",
+      "region": "pectoral",
+      "subregion": "girdle–humerus",
+      "mass": "dorsal",
+      "developmental": "Somitic (abaxial); dorsal muscle mass.",
+      "synonyms": [
+        "dorsalis scapulae (partim, some older usage)"
+      ],
+      "consensus": {
+        "origin": "Thoracolumbar fascia and the neural spines of the posterior thoracic and lumbar vertebrae; in non-mammalian tetrapods, the dorsal fascia over the anterior trunk.",
+        "insertion": "Proximal humerus, on or near the crest of the lesser tubercle / deltopectoral region.",
+        "action": "Retracts (extends) and adducts the humerus; the principal recovery-stroke muscle in sprawling locomotion.",
+        "innervation": "Thoracodorsal nerve (C6–C8) — dorsal (extensor) division of the brachial plexus."
+      },
+      "attachments": {
+        "origin": [
+          "thoracolumbar fascia",
+          "thoracic neural spines",
+          "ribs"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Latissimus dorsi",
+          "present": "inferred",
+          "note": "Among the more confidently reconstructed muscles in Devonian tetrapodomorphs; a dorsal humeral scar is widely interpreted as its insertion.",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "origin": "Dorsal fascia over the anterior trunk myomeres.",
+          "insertion": "Proximal humerus.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "note": "Retained despite the carapace; origin shifts onto the internal surface of the shell.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "origin": "Dorsal fascia over the anterior trunk.",
+          "insertion": "Proximal humerus.",
+          "innervation": "Thoracodorsal equivalent from the dorsal divisions of the brachial plexus.",
+          "note": "In Varanus komodoensis the muscle is large and its humeral insertion is confluent with that of the teres complex (Kępa et al. 2023).",
+          "sources": [
+            "abdala-diogo-2010",
+            "kepa-etal-2023",
+            "navarro-etal-2023"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "allen-etal-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "monotremata",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "gambaryan-etal-2015"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "origin": "Thoracolumbar fascia, spinous processes T7–L5, iliac crest, lower ribs.",
+          "insertion": "Floor of the intertubercular groove of the humerus.",
+          "action": "Extends, adducts and medially rotates the humerus.",
+          "innervation": "Thoracodorsal nerve (C6–C8).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Unbroken across every taxon sampled and one of the few muscles whose insertion is reliably identifiable on fossil humeri. Its dorsal-mass derivation and thoracodorsal innervation are constant.",
+        "related": [
+          "teres-major",
+          "subcoracoscapularis"
+        ],
+        "teaching": "Best single muscle for demonstrating that a large axio-appendicular muscle can survive a radical girdle rebuild (turtle shell, bird flight apparatus) without losing identity."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "molnar-etal-2018",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "triceps-brachii",
+      "name": "Triceps brachii",
+      "region": "arm",
+      "subregion": "brachium",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal (extensor) muscle mass.",
+      "synonyms": [
+        "anconeus complex (partim, older usage)",
+        "triceps + scapulotriceps + humerotriceps (birds)"
+      ],
+      "consensus": {
+        "origin": "Scapula near the glenoid (scapular head) plus one or more humeral heads along the shaft.",
+        "insertion": "Olecranon process of the ulna.",
+        "action": "Extends the elbow; the scapular head also retracts the humerus.",
+        "innervation": "Radial nerve (C6–T1) — the defining nerve of the dorsal/extensor mass."
+      },
+      "attachments": {
+        "origin": [
+          "scapula",
+          "coracoid",
+          "humerus"
+        ],
+        "insertion": [
+          "ulna"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Triceps",
+          "present": "inferred",
+          "note": "Inferred from the olecranon and from humeral shaft rugosities.",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Triceps brachii",
+          "present": "yes",
+          "note": "Multi-headed in urodeles, with scapular and several humeral heads.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Triceps brachii",
+          "present": "yes",
+          "action": "In anurans, a major decelerator during landing rather than a propulsive extensor.",
+          "sources": [
+            "abdala-diogo-2010",
+            "sigurdsen-etal-2012"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Triceps brachii",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Triceps brachii",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Triceps brachii",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "allen-etal-2014"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Triceps brachii (scapulotriceps + humerotriceps)",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Triceps brachii (long, lateral, medial heads)",
+          "present": "yes",
+          "origin": "Infraglenoid tubercle of the scapula (long head); posterior humerus above and below the radial groove (lateral, medial heads).",
+          "insertion": "Olecranon of the ulna.",
+          "action": "Extends the forearm; the long head also extends and adducts the arm.",
+          "innervation": "Radial nerve (C6–C8).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in every tetrapod examined. The number of heads varies freely (three in mammals, more in urodeles and crocodylians) without disturbing the identity of the complex — a useful reminder that head count is not a homology criterion.",
+        "related": [
+          "anconeus",
+          "epitrochleoanconeus"
+        ],
+        "teaching": "The canonical dorsal-mass muscle: origin on the girdle and humerus, insertion on the ulna, radial innervation, elbow extension. Every other extensor can be introduced by reference to it."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "brachialis",
+      "name": "Brachialis / humeroantebrachialis",
+      "region": "arm",
+      "subregion": "brachium",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) mass.",
+      "synonyms": [
+        "humeroantebrachialis (amphibians)",
+        "brachialis inferior (Romer 1944; Walker 1973; Holmes 1977; Dilkes 2000; Wyneken 2001)",
+        "part of biceps (Romer 1944)",
+        "brachialis (Howell 1937b)"
+      ],
+      "consensus": {
+        "origin": "Anterior surface of the humeral shaft, distal to the deltopectoral crest.",
+        "insertion": "Proximal ulna (and radius in some taxa).",
+        "action": "Flexes the elbow. Because it crosses only the elbow, it is the pure elbow flexor regardless of forearm position.",
+        "innervation": "Musculocutaneous nerve (C5–C6) — ventral division."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "ulna",
+          "radius"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Humeroantebrachialis",
+          "present": "yes",
+          "note": "In urodeles the brachialis field is not separated from the biceps field; the single muscle is called humeroantebrachialis.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Humeroantebrachialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Brachialis",
+          "present": "yes",
+          "origin": "Anterior surface of the distal half of the humerus.",
+          "insertion": "Coronoid process and tuberosity of the ulna.",
+          "action": "Flexes the elbow.",
+          "innervation": "Musculocutaneous nerve (C5–C6), with a variable radial contribution.",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The amphibian humeroantebrachialis and the amniote brachialis occupy the same field. Note the naming hazard: 'humeroantebrachialis' is used by Diogo & Abdala (2007) for the lepidosaur BICEPS, not the brachialis. Always check which sense an author intends.",
+        "related": [
+          "biceps-brachii",
+          "coracobrachialis",
+          "humeroradialis"
+        ],
+        "teaching": "A terminology trap worth setting deliberately: the same name denotes different muscles in the urodele and lepidosaur literature."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "biceps-brachii",
+      "name": "Biceps brachii / coracoradialis",
+      "region": "arm",
+      "subregion": "brachium",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) mass.",
+      "synonyms": [
+        "coracoradialis (anurans, some urodeles)",
+        "humeroantebrachialis (Diogo & Abdala 2007 — lepidosaur usage)",
+        "short and long heads of biceps brachii (Jouffroy 1971)"
+      ],
+      "consensus": {
+        "origin": "Coracoid or scapula near the glenoid — the muscle spans the shoulder as well as the elbow.",
+        "insertion": "Radius (radial tuberosity), and via the bicipital aponeurosis to the antebrachial fascia in mammals.",
+        "action": "Flexes the elbow and supinates the forearm; weak shoulder flexion.",
+        "innervation": "Musculocutaneous nerve (C5–C6) — ventral division."
+      },
+      "attachments": {
+        "origin": [
+          "coracoid",
+          "scapula"
+        ],
+        "insertion": [
+          "radius",
+          "ulna"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "variable",
+          "note": "Absent in Ambystoma ordinarium, but a coracoradialis is present in other urodeles.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Coracoradialis",
+          "present": "yes",
+          "note": "The anuran name records the coracoid origin and radial insertion directly.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "note": "= humeroantebrachialis sensu Diogo & Abdala (2007) and Diogo (2007); = short and long heads of biceps brachii sensu Jouffroy (1971).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Biceps brachii (long and short heads)",
+          "present": "yes",
+          "origin": "Supraglenoid tubercle (long head) and coracoid process (short head) of the scapula.",
+          "insertion": "Radial tuberosity and bicipital aponeurosis.",
+          "action": "Supinates the forearm and flexes the elbow.",
+          "innervation": "Musculocutaneous nerve (C5–C6).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The coracoradialis/biceps field is continuous across Tetrapoda, distinguished from the brachialis by crossing the shoulder and inserting on the radius. Both are musculocutaneous-innervated, confirming shared ventral-mass derivation.",
+        "related": [
+          "brachialis",
+          "coracobrachialis"
+        ]
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "coracobrachialis",
+      "name": "Coracobrachialis",
+      "region": "arm",
+      "subregion": "brachium",
+      "mass": "ventral",
+      "developmental": "Somitic; ventral (flexor) mass.",
+      "synonyms": [
+        "coracobrachialis magnus + brevis (Walker 1973; Wyneken 2001)",
+        "coracobrachialis superficialis/longus + profundus/brevis (Howell 1936a; Romer 1944; Jollie 1962; Holmes 1977; Dilkes 2000)",
+        "coracobrachialis cranialis + caudalis (birds)",
+        "coracobrachialis anterior + posterior (Jollie 1962)"
+      ],
+      "consensus": {
+        "origin": "Coracoid.",
+        "insertion": "Medial or ventral surface of the humeral shaft.",
+        "action": "Adducts and protracts (flexes) the humerus.",
+        "innervation": "Musculocutaneous nerve (C5–C7) — ventral division."
+      },
+      "attachments": {
+        "origin": [
+          "coracoid"
+        ],
+        "insertion": [
+          "humerus"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "tetrapodomorpha-stem",
+          "name": "Coracobrachialis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018",
+            "molnar-diogo-2021"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "note": "Corresponds to the coracobrachialis longus/superficialis of Walthall & Ashley-Ross (2006).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "note": "= coracobrachialis magnus + coracobrachialis brevis sensu Walker (1973) and Wyneken (2001).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "note": "= coracobrachialis superficialis/longus + coracobrachialis profundus/brevis of earlier authors.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "note": "= coracobrachialis brevis sensu Holmes (1977) and Dilkes (2000).",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "note": "= coracobrachialis longus + brevis, or cranialis + caudalis, or anterior + posterior, depending on author.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "origin": "Coracoid process of the scapula.",
+          "insertion": "Medial surface of the mid-humeral shaft.",
+          "action": "Flexes and adducts the arm.",
+          "innervation": "Musculocutaneous nerve (C5–C7).",
+          "sources": [
+            "ercoli-etal-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Universal across Tetrapoda. Subdivision into two or three parts is frequent and independent; the number of parts carries no phylogenetic signal on its own. This muscle has the longest synonym list in the pectoral table — six naming schemes for the same field.",
+        "related": [
+          "biceps-brachii",
+          "brachialis",
+          "pectoralis"
+        ],
+        "teaching": "Best illustration of why Abdala & Diogo's tables exist: the same muscle appears under six naming schemes across the literature."
+      },
+      "sources": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "id": "humeroradialis",
+      "name": "Humeroradialis",
+      "region": "arm",
+      "subregion": "brachium",
+      "mass": "dorsal",
+      "developmental": "Somitic; dorsal mass.",
+      "synonyms": [
+        "deltoides propatagialis (Romer 1944)",
+        "tensor patagii (Jollie 1962)",
+        "tensor propatagii (Sullivan 1962, 1967)",
+        "tensor propatagialis (Meers 2003)"
+      ],
+      "consensus": {
+        "origin": "Proximal humerus.",
+        "insertion": "Radius.",
+        "action": "Flexes the elbow; in birds, tenses the propatagium — the leading-edge membrane of the wing.",
+        "innervation": "Radial nerve — dorsal division."
+      },
+      "attachments": {
+        "origin": [
+          "humerus"
+        ],
+        "insertion": [
+          "radius",
+          "propatagium"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "present": "no",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "present": "uncertain",
+          "note": "Marked '– [but see text]'.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Humeroradialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Humeroradialis / tensor propatagialis",
+          "present": "yes",
+          "action": "Tenses the propatagium, controlling the leading-edge camber of the wing.",
+          "note": "A striking case of exaptation: an archosaur elbow flexor recruited into the flight apparatus.",
+          "sources": [
+            "abdala-diogo-2010"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "An archosaur muscle on this sampling. The bird tensor propatagialis is the same muscle as the crocodylian humeroradialis; the many bird-specific names obscure a straightforward homology.",
+        "related": [
+          "brachialis",
+          "brachioradialis"
+        ],
+        "teaching": "The propatagial tensor is a genuinely good exaptation example, and one that students can see in any bird wing."
+      },
+      "sources": [
+        "abdala-diogo-2010"
+      ]
+    }
+  ]
+}

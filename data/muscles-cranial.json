@@ -1,0 +1,872 @@
+{
+  "$schema": "../docs/SCHEMA.md",
+  "region": "Cranial musculature",
+  "note": "Cranial muscles are organised by pharyngeal arch of origin. Arch identity, marked by cranial nerve, is the primary homology criterion here and is far more constraining than in the limb: Abdala & Diogo (2010) note that in the head each rhombomeric neural crest population forms both the connective tissue of specific muscles and their attachment sites, so cranial muscle attachment is identity-bound in a way limb attachment is not.",
+  "muscles": [
+    {
+      "id": "adductor-mandibulae",
+      "name": "Adductor mandibulae complex",
+      "region": "cranial",
+      "subregion": "mandibular arch (arch 1)",
+      "arch": 1,
+      "mass": "branchiomeric",
+      "developmental": "First (mandibular) pharyngeal arch mesoderm; connective tissue from mandibular-stream neural crest.",
+      "synonyms": [
+        "adductor mandibulae externus / internus / posterior",
+        "capiti-mandibularis",
+        "masseter + temporalis + pterygoids (mammals)",
+        "pseudotemporalis",
+        "zygomaticomandibularis"
+      ],
+      "consensus": {
+        "origin": "Lateral and dorsal surfaces of the palatoquadrate or its ossified derivatives — in amniotes, the temporal region of the skull.",
+        "insertion": "Medial, dorsal and lateral surfaces of the lower jaw (Meckel's cartilage or the dentary and adjacent bones).",
+        "action": "Adducts (closes) the lower jaw. The principal biting muscle in all gnathostomes.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division — invariant across Gnathostomata."
+      },
+      "attachments": {
+        "origin": [
+          "palatoquadrate",
+          "temporal fossa",
+          "quadrate",
+          "pterygoid",
+          "zygomatic arch"
+        ],
+        "insertion": [
+          "mandible",
+          "coronoid process",
+          "Meckel's cartilage"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "petromyzontida",
+          "present": "no",
+          "note": "Lampreys have no jaws. Their feeding musculature (velar and lingual apparatus) is not homologous with the gnathostome adductor complex, though some of it is mandibular-arch derived and trigeminal-innervated.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "chondrichthyes",
+          "name": "Adductor mandibulae",
+          "present": "yes",
+          "origin": "Palatoquadrate.",
+          "insertion": "Meckel's cartilage.",
+          "innervation": "CN V.",
+          "note": "Relatively undivided, giving the plesiomorphic gnathostome condition.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Adductor mandibulae A1–A3, Aω",
+          "present": "yes",
+          "note": "Extensively subdivided in teleosts in correlation with the mobile upper jaw.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Adductor mandibulae externus (pars superficialis, media, profunda), pseudotemporalis, zygomaticomandibularis, adductor mandibulae posterior",
+          "present": "yes",
+          "origin": "Temporal region — the emarginated or fully roofed temporal skull, with the trochlear redirection over the otic capsule (the turtle-specific pulley).",
+          "insertion": "Coronar aponeurosis and the medial and dorsal surfaces of the lower jaw.",
+          "action": "Jaw adduction; the trochlear arrangement redirects the muscle line of action over the otic process.",
+          "innervation": "CN V.",
+          "note": "Werneburg (2011) resolves this complex into discrete muscular units, each with its own innervation pattern, and supplies an exhaustive synonym list keyed to the historical literature back to Bojanus (1819–21).",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Adductor mandibulae externus, pseudotemporalis, pterygomandibularis",
+          "present": "yes",
+          "note": "Johnston (2014) treats the homology of the squamate jaw adductor subdivisions; the boundaries between named parts differ substantially between authors.",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Adductor mandibulae (levator mandibulae externus, longus, articularis)",
+          "present": "yes",
+          "note": "Johnston (2011) analyses the adductor mandibulae in basal anurans; the innervation pattern (whether branches pass lateral or medial to the trigeminal ganglion) is the key homology criterion.",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Masseter, temporalis, medial and lateral pterygoid",
+          "present": "yes",
+          "origin": "Zygomatic arch (masseter); temporal fossa (temporalis); pterygoid plates (pterygoids).",
+          "insertion": "Mandibular ramus, angle, coronoid process and condylar neck.",
+          "action": "Elevate the mandible; the pterygoids also produce lateral and protrusive movements.",
+          "innervation": "Mandibular division of CN V.",
+          "note": "The mammalian subdivision into masseter and temporalis accompanies the shift of the jaw joint from quadrate–articular to squamosal–dentary and the recruitment of the postdentary bones into the middle ear.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match.",
+        "related": [
+          "depressor-mandibulae",
+          "intermandibularis",
+          "levator-arcus-palatini"
+        ],
+        "teaching": "Establish CN V = arch 1 = jaw closing first, then show that the mammalian masseter/temporalis split is a rearrangement within an ancient field, not a new muscle system."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019",
+        "werneburg-2011"
+      ]
+    },
+    {
+      "id": "intermandibularis",
+      "name": "Intermandibularis",
+      "region": "cranial",
+      "subregion": "mandibular arch (arch 1)",
+      "arch": 1,
+      "mass": "branchiomeric",
+      "developmental": "First pharyngeal arch mesoderm.",
+      "synonyms": [
+        "mylohyoideus (mammals, partim)",
+        "anterior digastric (mammals)",
+        "tensor tympani",
+        "tensor veli palatini",
+        "intermandibularis anterior / posterior"
+      ],
+      "consensus": {
+        "origin": "Medial surface of one mandibular ramus.",
+        "insertion": "A midline raphe, or the contralateral ramus.",
+        "action": "Raises the floor of the mouth; compresses the buccal cavity. Central to suction feeding and to buccal pumping.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          "mandible"
+        ],
+        "insertion": [
+          "mandible",
+          "midline raphe",
+          "hyoid"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Intermandibularis",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Intermandibularis",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Intermandibularis",
+          "present": "yes",
+          "action": "Buccal pumping for lung ventilation and for gape control during suction feeding.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Intermandibularis",
+          "present": "yes",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Mylohyoid, anterior digastric, tensor tympani, tensor veli palatini",
+          "present": "yes",
+          "action": "Elevate the floor of the mouth; the tensor tympani damps the tympanic membrane.",
+          "innervation": "Mandibular division of CN V — the nerve identifies these as arch 1 derivatives even though tensor tympani lies in the middle ear.",
+          "note": "The middle-ear muscles are the strongest available demonstration of arch identity persisting through radical functional relocation.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present across Gnathostomata with invariant trigeminal innervation. The mammalian derivatives (tensor tympani, tensor veli palatini, anterior digastric) illustrate the point better than any limb example: a muscle that ends up inside the ear still carries CN V.",
+        "related": [
+          "adductor-mandibulae",
+          "interhyoideus",
+          "stapedius"
+        ],
+        "teaching": "Pair the tensor tympani (CN V, arch 1) with the stapedius (CN VII, arch 2) — two tiny muscles millimetres apart in the middle ear, from different arches, with different nerves. The best available proof that arch identity is durable."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019",
+        "werneburg-2011"
+      ]
+    },
+    {
+      "id": "depressor-mandibulae",
+      "name": "Depressor mandibulae",
+      "region": "cranial",
+      "subregion": "hyoid arch (arch 2)",
+      "arch": 2,
+      "mass": "branchiomeric",
+      "developmental": "Second (hyoid) pharyngeal arch mesoderm.",
+      "synonyms": [
+        "constrictor hyoideus dorsalis (partim)",
+        "posterior digastric (mammals)",
+        "levator hyomandibulae"
+      ],
+      "consensus": {
+        "origin": "Posterior skull roof — squamosal, otic region, or the hyomandibula.",
+        "insertion": "Retroarticular process of the lower jaw.",
+        "action": "Depresses (opens) the lower jaw.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "attachments": {
+        "origin": [
+          "squamosal",
+          "otic capsule",
+          "hyomandibula"
+        ],
+        "insertion": [
+          "mandible",
+          "retroarticular process"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Constrictor hyoideus dorsalis (levator hyomandibulae)",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "origin": "Posterolateral skull, dorsally from the quadrate.",
+          "insertion": "Retroarticular process.",
+          "innervation": "CN VII.",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Posterior belly of digastric",
+          "present": "yes",
+          "origin": "Mastoid notch of the temporal bone.",
+          "insertion": "Intermediate tendon, tethered to the hyoid.",
+          "action": "Depresses the mandible; elevates the hyoid.",
+          "innervation": "Facial nerve (CN VII).",
+          "note": "The mammalian digastric is a chimaera: the anterior belly is arch 1 (CN V), the posterior belly arch 2 (CN VII). Two muscles from two arches joined end to end by a tendon.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Jaw opening is an arch 2 (CN VII) function, jaw closing an arch 1 (CN V) function, throughout Gnathostomata. The digastric preserves both in one named muscle.",
+        "related": [
+          "adductor-mandibulae",
+          "interhyoideus",
+          "stapedius"
+        ],
+        "teaching": "The digastric is the cleanest single dissection for making the arch system tangible — one muscle, two nerves, two arches, one tendon."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019",
+        "werneburg-2011"
+      ]
+    },
+    {
+      "id": "interhyoideus",
+      "name": "Interhyoideus / constrictor hyoideus ventralis",
+      "region": "cranial",
+      "subregion": "hyoid arch (arch 2)",
+      "arch": 2,
+      "mass": "branchiomeric",
+      "developmental": "Second pharyngeal arch mesoderm.",
+      "synonyms": [
+        "constrictor hyoideus ventralis",
+        "sphincter colli",
+        "platysma + facial expression muscles (mammals)",
+        "stylohyoideus"
+      ],
+      "consensus": {
+        "origin": "Hyoid arch elements (ceratohyal, hyomandibula) or the associated fascia.",
+        "insertion": "Midline raphe of the throat, or the skin.",
+        "action": "Constricts the pharyngeal floor; in mammals, moves the facial skin.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "attachments": {
+        "origin": [
+          "ceratohyal",
+          "hyomandibula",
+          "styloid process"
+        ],
+        "insertion": [
+          "midline raphe",
+          "skin",
+          "hyoid"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Constrictor hyoideus ventralis",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Interhyoideus",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Constrictor colli / interhyoideus",
+          "present": "yes",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Constrictor colli / sphincter colli",
+          "present": "yes",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Muscles of facial expression, platysma, stylohyoid, stapedius",
+          "present": "yes",
+          "origin": "Facial skeleton and the superficial cervical fascia; the styloid process for stylohyoid.",
+          "insertion": "Dermis of the face and neck.",
+          "action": "Facial expression; sphincteric control of the oral and orbital apertures.",
+          "innervation": "Facial nerve (CN VII) throughout.",
+          "note": "The entire mammalian facial expression apparatus is a hyoid-arch derivative — a sheet that began as a pharyngeal constrictor and migrated onto the face. Its universal CN VII innervation is why a facial nerve lesion paralyses expression on one whole side.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The transformation of a pharyngeal constrictor sheet into the mammalian facial musculature is tracked by constant CN VII innervation. This is arguably the most dramatic functional relocation of any vertebrate muscle field.",
+        "related": [
+          "depressor-mandibulae",
+          "stapedius",
+          "intermandibularis"
+        ],
+        "teaching": "Directly clinically relevant: explains why Bell's palsy affects the whole hemiface plus the stapedius (hyperacusis) but spares chewing (CN V, arch 1)."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019",
+        "werneburg-2011"
+      ]
+    },
+    {
+      "id": "stapedius",
+      "name": "Stapedius / depressor hyomandibulae",
+      "region": "cranial",
+      "subregion": "hyoid arch (arch 2)",
+      "arch": 2,
+      "mass": "branchiomeric",
+      "developmental": "Second pharyngeal arch mesoderm — the same arch as the stapes/hyomandibula it acts on.",
+      "synonyms": [
+        "depressor hyomandibulae",
+        "stapedius"
+      ],
+      "consensus": {
+        "origin": "Otic region / pyramidal eminence.",
+        "insertion": "Stapes (or hyomandibula), on its neck.",
+        "action": "Damps stapedial movement, attenuating loud sound.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "attachments": {
+        "origin": [
+          "otic capsule",
+          "pyramidal eminence"
+        ],
+        "insertion": [
+          "stapes",
+          "hyomandibula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Depressor hyomandibulae",
+          "present": "yes",
+          "note": "Acts on the hyomandibula in its original role as a jaw suspensory element.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Stapedius",
+          "present": "yes",
+          "action": "Attenuates loud sound by stiffening the ossicular chain.",
+          "innervation": "Facial nerve (CN VII).",
+          "note": "The muscle followed the hyomandibula through its transformation into the stapes, from jaw suspension into hearing, without changing arch or nerve.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The hyomandibula→stapes transformation is one of the best-documented in vertebrate evolution, and the muscle acting on it tracked the element throughout.",
+        "related": [
+          "depressor-mandibulae",
+          "interhyoideus",
+          "intermandibularis",
+          "levator-arcus-palatini"
+        ],
+        "teaching": "Teach with the tensor tympani. Two middle-ear muscles, two arches, two nerves, both retained through a wholesale change of function."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019"
+      ]
+    },
+    {
+      "id": "branchial-constrictors",
+      "name": "Branchial constrictors and levators",
+      "region": "cranial",
+      "subregion": "branchial arches (arches 3–7)",
+      "arch": "3–7",
+      "mass": "branchiomeric",
+      "developmental": "Posterior pharyngeal arch mesoderm.",
+      "synonyms": [
+        "constrictores branchiales",
+        "levatores arcuum branchialium",
+        "pharyngeal constrictors (mammals)",
+        "stylopharyngeus",
+        "cricothyroid",
+        "intrinsic laryngeal muscles"
+      ],
+      "consensus": {
+        "origin": "Branchial arch elements and the adjacent fascia.",
+        "insertion": "Adjacent branchial elements and the midline raphe.",
+        "action": "Compress and expand the branchial chamber for gill ventilation; in tetrapods, swallowing and vocalisation.",
+        "innervation": "Glossopharyngeal nerve (CN IX) for arch 3; vagus nerve (CN X) for arches 4–7."
+      },
+      "attachments": {
+        "origin": [
+          "branchial arches",
+          "thyroid cartilage",
+          "cricoid cartilage"
+        ],
+        "insertion": [
+          "branchial arches",
+          "pharyngeal raphe",
+          "arytenoid cartilage"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "myxini",
+          "name": "Branchial constrictors",
+          "present": "yes",
+          "note": "Hagfish branchial musculature is difficult to homologise cell-for-cell with the gnathostome series; Oisi et al. (2013) provide the developmental basis.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "petromyzontida",
+          "name": "Branchial constrictors",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "chondrichthyes",
+          "name": "Constrictores + levatores arcuum branchialium",
+          "present": "yes",
+          "innervation": "CN IX (arch 3), CN X (arches 4–7).",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Branchial musculature",
+          "present": "yes",
+          "note": "Naumann et al. (2017) trace the development of the branchial muscles and the cucullaris in Lepisosteus, showing they share a cranial mesoderm source.",
+          "sources": [
+            "naumann-etal-2017"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Levator + depressor laryngis, constrictor laryngis, dilatator laryngis",
+          "present": "yes",
+          "note": "Werneburg (2011) documents the laryngeal muscles as branchial-arch derivatives with distinct innervation.",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Pharyngeal constrictors, stylopharyngeus, cricothyroid, intrinsic laryngeal muscles",
+          "present": "yes",
+          "action": "Swallowing and phonation.",
+          "innervation": "Stylopharyngeus by CN IX (arch 3); pharyngeal constrictors and laryngeal muscles by CN X (arches 4–6).",
+          "note": "The stylopharyngeus is the only mammalian muscle innervated by CN IX — the sole surviving arch 3 muscle.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Arch-by-arch innervation is preserved from cyclostomes to mammals. The reduction of the posterior arch series in tetrapods leaves the pharyngeal and laryngeal muscles as the surviving remnants of a gill-ventilation system.",
+        "related": [
+          "protractor-pectoralis"
+        ],
+        "teaching": "The stylopharyngeus is a memorable single fact: one muscle, one nerve, one arch, the last of its kind."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019",
+        "naumann-etal-2017",
+        "werneburg-2011"
+      ]
+    },
+    {
+      "id": "extraocular-muscles",
+      "name": "Extraocular muscles",
+      "region": "cranial",
+      "subregion": "prechordal / somitomeric",
+      "arch": null,
+      "mass": "extraocular",
+      "developmental": "Prechordal plate and cranial paraxial mesoderm — NOT pharyngeal arch derived. Distinct from every other cranial muscle group in origin.",
+      "synonyms": [
+        "rectus superior / inferior / medialis (internus, nasalis) / lateralis (externus)",
+        "obliquus superior / inferior",
+        "retractor bulbi",
+        "levator palpebrae superioris"
+      ],
+      "consensus": {
+        "origin": "Around the optic foramen and the orbital wall.",
+        "insertion": "Sclera of the eyeball.",
+        "action": "Rotate the eye about three axes; retractor bulbi withdraws the globe.",
+        "innervation": "Oculomotor (CN III): rectus superior, inferior, medialis, obliquus inferior, levator palpebrae. Trochlear (CN IV): obliquus superior. Abducens (CN VI): rectus lateralis, retractor bulbi."
+      },
+      "attachments": {
+        "origin": [
+          "orbit",
+          "optic foramen",
+          "interorbital septum"
+        ],
+        "insertion": [
+          "sclera",
+          "eyelid"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "petromyzontida",
+          "name": "Extraocular muscles",
+          "present": "yes",
+          "note": "Lampreys have a full set of six extraocular muscles with the same three-nerve pattern, establishing that the system predates jaws. The innervation assignments differ in detail from the gnathostome arrangement.",
+          "sources": [
+            "ziermann-etal-2014",
+            "fritzsch-2023"
+          ]
+        },
+        {
+          "taxon": "chondrichthyes",
+          "name": "Extraocular muscles",
+          "present": "yes",
+          "innervation": "CN III, IV, VI in the standard gnathostome pattern.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Rectus superior, inferior, anterior, posterior; obliquus superior, inferior; retractor bulbi; ciliaris; sphincter and dilatator pupillae; transversalis oculi",
+          "present": "yes",
+          "origin": "Around the optic foramen and the anterodorsal corner of the optic cavity.",
+          "insertion": "Eyeball; the ciliary and iridial muscles onto intraocular structures.",
+          "innervation": "CN III for rectus anterior, inferior, superior, obliquus inferior, ciliaris, dilatator and sphincter pupillae, transversalis oculi; CN IV for obliquus superior.",
+          "note": "Werneburg (2011) records ten distinct ocular muscular units in turtles, including intraocular muscles absent from most vertebrate accounts. Turtles (like birds) have striated intraocular muscles, so pupillary control is partly voluntary.",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Four recti, two obliques, levator palpebrae superioris",
+          "present": "yes",
+          "action": "Rotate the globe; elevate the upper lid.",
+          "innervation": "CN III, IV, VI.",
+          "note": "Retractor bulbi is retained in many mammals but lost in humans and other primates.",
+          "sources": [
+            "fritzsch-2023"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The most conserved muscle group in the vertebrate head: same six muscles, same three nerves, from lampreys to mammals. Their non-branchiomeric origin makes them the exception that defines the arch system — they are the cranial muscles that are not arch muscles.",
+        "related": [],
+        "teaching": "Use as the control case. If cranial muscle homology were merely a matter of position, the extraocular muscles would not be so much more stable than the arch muscles; their stability is a consequence of a developmentally distinct and functionally rigid system.",
+        "caveat": "Fritzsch (2023) is a preprint and has not been peer reviewed. Cite the primary sources it points to rather than the preprint itself."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "werneburg-2011",
+        "fritzsch-2023"
+      ]
+    },
+    {
+      "id": "hypobranchial-muscles",
+      "name": "Hypobranchial muscles",
+      "region": "cranial",
+      "subregion": "hypobranchial (somitic)",
+      "arch": null,
+      "mass": "somitic",
+      "developmental": "Occipital and anterior trunk somites. The myoblasts migrate forward beneath the pharynx, which is why they are somitic muscles in a cranial position — and why the hypoglossal nerve, a spinal nerve in origin, ends up cranial.",
+      "synonyms": [
+        "coracomandibularis",
+        "coracohyoideus",
+        "coracobranchialis",
+        "geniohyoideus",
+        "sternohyoideus",
+        "genioglossus",
+        "hyoglossus",
+        "styloglossus",
+        "intrinsic tongue muscles",
+        "infrahyoid (strap) muscles"
+      ],
+      "consensus": {
+        "origin": "Pectoral girdle (coracoid/sternum) and the hyoid.",
+        "insertion": "Hyoid, mandible and the tongue.",
+        "action": "Depress the hyoid and the lower jaw; protrude and shape the tongue. In fishes, expand the buccal cavity for suction feeding.",
+        "innervation": "Hypoglossal nerve (CN XII) and the ansa cervicalis (C1–C3) — spinal in origin, not branchiomeric."
+      },
+      "attachments": {
+        "origin": [
+          "coracoid",
+          "sternum",
+          "hyoid",
+          "mandible"
+        ],
+        "insertion": [
+          "hyoid",
+          "mandible",
+          "tongue"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "petromyzontida",
+          "name": "Hypobranchial musculature",
+          "present": "yes",
+          "note": "Present but with a different arrangement; the lamprey lingual apparatus is not homologous to the gnathostome tongue.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "chondrichthyes",
+          "name": "Coracomandibularis, coracohyoideus, coracobranchialis",
+          "present": "yes",
+          "origin": "Coracoid bar of the pectoral girdle.",
+          "insertion": "Mandible, hyoid and branchial arches.",
+          "action": "Depress the jaw and hyoid, expanding the orobranchial chamber for suction feeding.",
+          "innervation": "Ventral rami of the occipital and anterior spinal nerves.",
+          "note": "The coracoid origin makes the mechanical link between the pectoral girdle and the feeding apparatus explicit — the same link that must be broken for a neck to evolve.",
+          "sources": [
+            "ziermann-etal-2014",
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Geniohyoideus, rectus cervicis",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Geniohyoideus, coracohyoideus, genioglossus, hyoglossus",
+          "present": "yes",
+          "innervation": "CN XII.",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Genioglossus, hyoglossus, styloglossus, intrinsic tongue muscles; geniohyoid; infrahyoid strap muscles",
+          "present": "yes",
+          "origin": "Sternum, clavicle, scapula, hyoid, mandible.",
+          "insertion": "Hyoid and tongue.",
+          "action": "Tongue movement for speech, mastication and swallowing; hyoid depression.",
+          "innervation": "CN XII for the tongue muscles (except palatoglossus, CN X); ansa cervicalis (C1–C3) for the infrahyoid muscles.",
+          "note": "The palatoglossus is the exception that confirms the rule: it is the only 'tongue' muscle innervated by CN X, because it is a soft-palate (arch 4) muscle rather than a hypobranchial one.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The hypobranchial muscles are somitic muscles in the head, and this is exactly what CN XII records — it is a fused series of occipital spinal nerves, not a true cranial nerve of the branchiomeric type. Diogo & Ziermann (2015) connect the loosening of the coracoid-to-mandible link with the origin of the vertebrate neck.",
+        "related": [
+          "protractor-pectoralis",
+          "levator-scapulae"
+        ],
+        "teaching": "Answers a question students always have: why does a nerve numbered among the twelve cranial nerves behave like a spinal nerve? Because it is one."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019",
+        "diogo-ziermann-2015",
+        "werneburg-2011"
+      ]
+    },
+    {
+      "id": "levator-arcus-palatini",
+      "name": "Levator arcus palatini / spiracular musculature",
+      "region": "cranial",
+      "subregion": "mandibular arch (arch 1)",
+      "arch": 1,
+      "mass": "branchiomeric",
+      "developmental": "First pharyngeal arch mesoderm, dorsal division.",
+      "synonyms": [
+        "levator palatoquadrati",
+        "dilatator operculi (partim)",
+        "spiracularis"
+      ],
+      "consensus": {
+        "origin": "Otic and postorbital region of the neurocranium.",
+        "insertion": "Palatoquadrate or its derivatives; the spiracular region.",
+        "action": "Elevates and abducts the palatoquadrate; controls the spiracle where one is present.",
+        "innervation": "Trigeminal nerve (CN V)."
+      },
+      "attachments": {
+        "origin": [
+          "neurocranium",
+          "otic capsule"
+        ],
+        "insertion": [
+          "palatoquadrate",
+          "hyomandibula",
+          "spiracle"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Levator palatoquadrati, spiracularis",
+          "present": "yes",
+          "note": "The spiracle is the reduced first (mandibular) gill slit; its musculature is arch 1 and trigeminal.",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Levator arcus palatini, dilatator operculi",
+          "present": "yes",
+          "action": "Abducts the suspensorium during suction feeding.",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "present": "no",
+          "note": "Lost with the incorporation of the palatoquadrate into the middle ear and the fusion of the suspensorium to the braincase."
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The spiracular series is important for the origin of the tetrapod middle ear: the spiracular pouch is the ancestor of the tympanic cavity, and the mandibular-arch identity of the region is preserved by trigeminal innervation. Gai et al. (2022) trace the spiracular sequence through the fossil record.",
+        "related": [
+          "adductor-mandibulae",
+          "stapedius"
+        ],
+        "teaching": "Connects jaw suspension, gill slits and the middle ear in one developmental field."
+      },
+      "sources": [
+        "ziermann-etal-2014",
+        "ziermann-diogo-2019"
+      ]
+    }
+  ]
+}

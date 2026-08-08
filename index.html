@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vertebrate Muscle Homology &amp; Topology</title>
+<meta name="description" content="Search vertebrate muscles for origin, insertion, action, innervation, taxonomic occurrence and homology hypotheses, sourced to the primary literature.">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1 class="wordmark">Muscle Homology <span>&amp; Topology</span></h1>
+    <div class="searchwrap">
+      <input id="search" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Search a muscle, a synonym, or a bone — e.g. latissimus, dorsalis scapulae, humerus">
+    </div>
+    <div class="masthead-actions">
+      <button class="ghost" id="btn-browse" aria-pressed="true">Muscles</button>
+      <button class="ghost" id="btn-topology" aria-pressed="false">Attachments</button>
+      <button class="ghost" id="btn-theme" title="Toggle light/dark">◐</button>
+    </div>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="sidebar" id="sidebar"></aside>
+  <main id="main"><div class="empty">Loading data…</div></main>
+</div>
+
+<footer class="foot">
+  <p><strong>Scope and status.</strong> Every anatomical statement here is a paraphrase of a cited source, not a verbatim quotation, and every homology claim is a hypothesis attributed to a named author. Confidence labels reflect the strength of support reported in the source literature, not certainty.</p>
+  <p><strong>Reading the taxon tables.</strong> A blank or absent row means the muscle was not found in the exemplar species examined by that source. It does not mean the muscle is absent from the whole clade — Abdala &amp; Diogo (2010) document several muscles present in one lizard and absent in another. <em>Inferred</em> marks fossil reconstructions, which are bracket-and-correlate inferences rather than observations.</p>
+  <p><strong>Serial correspondences</strong> between forelimb and hindlimb muscles follow Diogo &amp; Molnar (2014) and denote <em>topological</em> equivalence. They are not claims of serial homology in the strict ancestral-duplication sense, which that paper rejects.</p>
+  <p id="footcount"></p>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

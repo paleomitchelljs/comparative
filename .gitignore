@@ -1,0 +1,66 @@
+# ---------------------------------------------------------------------------
+# Primary literature — NEVER commit.
+# The papers/ directory holds copyrighted PDFs. Only the markdown reading
+# notes and extracted data are version controlled.
+# ---------------------------------------------------------------------------
+*.pdf
+*.PDF
+*.epub
+*.djvu
+
+# Supplementary material that often ships alongside papers
+papers/**/*.docx
+papers/**/*.xlsx
+papers/**/*.zip
+papers/**/*.tar.gz
+
+# Raw pdftotext dumps (regenerable from the PDFs; also copyrighted text)
+papers/extracted/
+data/raw/
+
+# ---------------------------------------------------------------------------
+# macOS
+# ---------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+
+# ---------------------------------------------------------------------------
+# Editors / IDEs
+# ---------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ---------------------------------------------------------------------------
+# Node / web tooling
+# ---------------------------------------------------------------------------
+node_modules/
+dist/
+build/
+.cache/
+*.log
+npm-debug.log*
+yarn-error.log*
+.env
+.env.local
+
+# ---------------------------------------------------------------------------
+# Python (data-munging scripts)
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# ---------------------------------------------------------------------------
+# Claude Code local settings (machine-specific)
+# ---------------------------------------------------------------------------
+.claude/settings.local.json

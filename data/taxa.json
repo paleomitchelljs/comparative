@@ -1,0 +1,207 @@
+{
+  "$comment": "Operational taxonomic units used as columns in the muscle occurrence tables. `rank` is informal. `path` gives the nesting used to build the phylogenetic sort order and the indentation in the UI; it is a pragmatic consensus topology, not a formal analysis. Note that Abdala & Diogo (2010) place Testudines as archosauromorphs sister to Crocodylia + Aves; that placement is followed here.",
+  "topology": {
+    "name": "Vertebrata",
+    "children": [
+      {
+        "name": "Cyclostomata",
+        "children": [
+          { "name": "Myxini", "taxon": "myxini" },
+          { "name": "Petromyzontida", "taxon": "petromyzontida" }
+        ]
+      },
+      {
+        "name": "Gnathostomata",
+        "children": [
+          { "name": "Chondrichthyes", "taxon": "chondrichthyes" },
+          {
+            "name": "Osteichthyes",
+            "children": [
+              { "name": "Actinopterygii", "taxon": "actinopterygii" },
+              {
+                "name": "Sarcopterygii",
+                "children": [
+                  { "name": "Dipnoi", "taxon": "dipnoi" },
+                  { "name": "Tetrapodomorpha (stem)", "taxon": "tetrapodomorpha-stem" },
+                  {
+                    "name": "Tetrapoda",
+                    "children": [
+                      {
+                        "name": "Amphibia",
+                        "children": [
+                          { "name": "Caudata", "taxon": "caudata" },
+                          { "name": "Anura", "taxon": "anura" }
+                        ]
+                      },
+                      {
+                        "name": "Amniota",
+                        "children": [
+                          {
+                            "name": "Reptilia",
+                            "children": [
+                              { "name": "Lepidosauria", "taxon": "lepidosauria" },
+                              { "name": "Testudines", "taxon": "testudines" },
+                              { "name": "Crocodylia", "taxon": "crocodylia" },
+                              { "name": "Aves", "taxon": "aves" }
+                            ]
+                          },
+                          {
+                            "name": "Synapsida",
+                            "children": [
+                              { "name": "Synapsida (stem)", "taxon": "synapsida-stem" },
+                              { "name": "Monotremata", "taxon": "monotremata" },
+                              { "name": "Theria", "taxon": "theria" }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "taxa": [
+    {
+      "id": "myxini",
+      "label": "Hagfishes",
+      "clade": "Myxini",
+      "exemplars": ["Eptatretus burgeri"],
+      "age": "Extant",
+      "color": "#7b6a94",
+      "notes": "Cyclostome outgroup. Included chiefly for cranial/branchial muscle polarity."
+    },
+    {
+      "id": "petromyzontida",
+      "label": "Lampreys",
+      "clade": "Petromyzontida",
+      "exemplars": ["Petromyzon marinus", "Lampetra"],
+      "age": "Extant",
+      "color": "#7b6a94",
+      "notes": "Agnathan outgroup for cranial muscles; lacks paired appendages, so appendicular rows are structurally absent rather than lost."
+    },
+    {
+      "id": "chondrichthyes",
+      "label": "Cartilaginous fishes",
+      "clade": "Chondrichthyes",
+      "exemplars": ["Squalus acanthias", "Scyliorhinus canicula", "Leucoraja erinacea"],
+      "age": "Extant",
+      "color": "#3f7d94",
+      "notes": "Plesiomorphic gnathostome condition for paired-appendage muscles: undivided dorsal (levator/extensor) and ventral (depressor/flexor) fin masses."
+    },
+    {
+      "id": "actinopterygii",
+      "label": "Ray-finned fishes",
+      "clade": "Actinopterygii",
+      "exemplars": ["Lepisosteus oculatus", "Danio rerio", "Amia calva"],
+      "age": "Extant",
+      "color": "#3f7d94",
+      "notes": "Used mainly for branchial/cucullaris development (Naumann et al. 2017) and head-muscle patterning."
+    },
+    {
+      "id": "dipnoi",
+      "label": "Lungfishes",
+      "clade": "Dipnoi",
+      "exemplars": ["Neoceratodus forsteri", "Protopterus"],
+      "age": "Extant",
+      "color": "#4a8f6d",
+      "notes": "Closest extant sarcopterygian outgroup to tetrapods; fin musculature still largely a two-mass (dorsal/ventral) system."
+    },
+    {
+      "id": "tetrapodomorpha-stem",
+      "label": "Stem tetrapodomorphs",
+      "clade": "Tetrapodomorpha (stem)",
+      "exemplars": ["Eusthenopteron foordi", "Tiktaalik roseae", "Acanthostega gunnari"],
+      "age": "Late Devonian",
+      "color": "#8a6a3f",
+      "fossil": true,
+      "notes": "Muscle reconstructions are inferences from osteological correlates bracketed by Dipnoi and Amphibia (Molnar et al. 2018; Molnar & Diogo 2021). Treat all entries as hypotheses, not observations."
+    },
+    {
+      "id": "caudata",
+      "label": "Salamanders",
+      "clade": "Caudata",
+      "exemplars": ["Ambystoma ordinarium", "Ambystoma mexicanum", "Salamandra salamandra", "Taricha"],
+      "age": "Extant",
+      "color": "#4a8f6d",
+      "notes": "Primary extant proxy for the plesiomorphic tetrapod limb muscle bauplan in Abdala & Diogo (2010) and Diogo & Molnar (2014)."
+    },
+    {
+      "id": "anura",
+      "label": "Frogs and toads",
+      "clade": "Anura",
+      "exemplars": ["Rhinella arenarum", "Litoria caerulea", "Phyllomedusa sauvagi", "Xenopus laevis"],
+      "age": "Extant",
+      "color": "#4a8f6d",
+      "notes": "Highly derived limb musculature. Digit-1 loss shifts 'pollicis' muscles onto digit 2 — the standard example of positional rather than identity-based attachment."
+    },
+    {
+      "id": "testudines",
+      "label": "Turtles",
+      "clade": "Testudines",
+      "exemplars": ["Trachemys scripta", "Testudo graeca", "Pelodiscus sinensis", "Emydura subglobosa"],
+      "age": "Extant",
+      "color": "#c08a3e",
+      "notes": "Carapace rigidly links axial skeleton and girdle, and several axio-appendicular muscles are absent as discrete units. Cranial data follow Werneburg (2011)."
+    },
+    {
+      "id": "lepidosauria",
+      "label": "Lizards, snakes, tuatara",
+      "clade": "Lepidosauria",
+      "exemplars": ["Timon lepidus", "Sphenodon punctatus", "Iguana iguana", "Varanus komodoensis", "Chamaeleo calyptratus"],
+      "age": "Extant",
+      "color": "#c08a3e",
+      "notes": "Most densely sampled reptilian group in Abdala & Diogo (2010) (>50 squamate species)."
+    },
+    {
+      "id": "crocodylia",
+      "label": "Crocodilians",
+      "clade": "Crocodylia",
+      "exemplars": ["Caiman latirostris", "Alligator mississippiensis", "Crocodylus"],
+      "age": "Extant",
+      "color": "#c08a3e",
+      "notes": "Extant phylogenetic bracket partner (with Aves) for archosaur fossil muscle reconstruction."
+    },
+    {
+      "id": "aves",
+      "label": "Birds",
+      "clade": "Aves",
+      "exemplars": ["Gallus domesticus", "Cairina moschata", "Coturnix"],
+      "age": "Extant",
+      "color": "#c08a3e",
+      "notes": "The single conspicuous departure from the conservative tetrapod forelimb pattern; the flight apparatus reorganises the pectoral and antebrachial musculature."
+    },
+    {
+      "id": "synapsida-stem",
+      "label": "Stem synapsids",
+      "clade": "Synapsida (stem)",
+      "exemplars": ["Dimetrodon", "Ophiacodon", "Thrinaxodon"],
+      "age": "Permian – Triassic",
+      "color": "#8a6a3f",
+      "fossil": true,
+      "notes": "Muscle reconstructions bracketed by Reptilia and Mammalia (Bishop & Pierce 2024). Hypotheses, not observations."
+    },
+    {
+      "id": "monotremata",
+      "label": "Monotremes",
+      "clade": "Monotremata",
+      "exemplars": ["Tachyglossus aculeatus", "Zaglossus bruijni", "Ornithorhynchus anatinus"],
+      "age": "Extant",
+      "color": "#a8524e",
+      "notes": "Retains a reptile-like pectoral girdle (coracoid, interclavicle) with mammalian muscle differentiation — the key intermediate for reading synapsid pectoral evolution (Gambaryan et al. 2015)."
+    },
+    {
+      "id": "theria",
+      "label": "Marsupials and placentals",
+      "clade": "Theria",
+      "exemplars": ["Rattus norvegicus", "Galictis cuja", "Homo sapiens", "Mustela"],
+      "age": "Extant",
+      "color": "#a8524e",
+      "notes": "Reference terminal for most clinical/veterinary muscle names. Rattus is the mammalian column in Diogo & Molnar (2014)."
+    }
+  ]
+}
