@@ -134,18 +134,34 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match.",
+        "notes": "The single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match. Johnston (2011, 2014) resolves this complex into a folded sheet whose components are identified by where they insert into an inverted U wrapped around the adductor mandibulae posterior; those components are recorded separately here.",
         "related": [
+          "adductor-mandibulae-externus",
+          "adductor-mandibulae-internus",
+          "adductor-mandibulae-lateralis",
+          "adductor-mandibulae-longus",
+          "adductor-mandibulae-posterior",
           "depressor-mandibulae",
           "intermandibularis",
+          "levator-anguli-oris",
           "levator-arcus-palatini"
         ],
         "teaching": "Establish CN V = arch 1 = jaw closing first, then show that the mammalian masseter/temporalis split is a rearrangement within an ancient field, not a new muscle system."
       },
       "sources": [
-        "ziermann-etal-2014",
+        "johnston-2011",
+        "johnston-2014",
+        "werneburg-2011",
         "ziermann-diogo-2019",
-        "werneburg-2011"
+        "ziermann-etal-2014"
+      ],
+      "complexOf": [
+        "adductor-mandibulae-internus",
+        "adductor-mandibulae-longus",
+        "adductor-mandibulae-externus",
+        "adductor-mandibulae-lateralis",
+        "adductor-mandibulae-posterior",
+        "levator-anguli-oris"
       ]
     },
     {
@@ -1028,6 +1044,521 @@
         "ziermann-etal-2014",
         "ziermann-diogo-2019"
       ]
+    },
+    {
+      "id": "adductor-mandibulae-internus",
+      "name": "Adductor mandibulae internus",
+      "region": "cranial",
+      "subregion": "mandibular arch — adductor complex, medial limb of the U",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 1,
+      "developmental": "First (mandibular) pharyngeal arch mesoderm.",
+      "synonyms": [
+        "pseudotemporalis",
+        "pterygoideus (as a separated component)",
+        "adductor mandibulae internus pars pterygoideus"
+      ],
+      "consensus": {
+        "origin": "Dorsal braincase medial to the orbit, and the pterygoid.",
+        "insertion": "Mandible, medial to its articulation with the quadrate; via a flat tendon in anurans.",
+        "action": "Adducts the mandible; the medial limb of the adductor sheet.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "braincase-dorsal",
+            "side": "dorsal"
+          },
+          {
+            "element": "pterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Adductor mandibulae internus (medial division)",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Adductor mandibulae internus (rostral + caudal parts)",
+          "present": "yes",
+          "origin": "Dorsal braincase medial to the eye; in Leiopelma the origin extends further rostrally than in Ascaphus or most other frogs.",
+          "insertion": "Mandible immediately medial to the quadrate–mandibular articulation, by a flat tendon.",
+          "note": "Two parts merging into one another. Johnston prefers 'adductor mandibulae' to 'levator mandibulae' for anurans, to align with usage across gnathostomes.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "braincase-dorsal",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "medial"
+              }
+            ]
+          },
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Adductor mandibulae internus / pseudotemporalis + pterygoideus",
+          "present": "yes",
+          "sources": [
+            "johnston-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Pseudotemporalis + pterygoideus",
+          "present": "yes",
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Medial and lateral pterygoid",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Johnston (2011, 2014) models the adductor complex as a folded sheet whose insertion on the mandible forms an inverted U wrapped around the insertion of the adductor mandibulae posterior. Components are identified by WHERE THEY INSERT INTO THAT U, not by which side of a trigeminal branch they lie on — the criterion the older literature used and which does not survive comparison across gnathostomes. The pterygoideus is a separated component of the internus rather than an independent muscle.",
+        "related": [
+          "adductor-mandibulae",
+          "adductor-mandibulae-posterior",
+          "adductor-mandibulae-longus"
+        ],
+        "teaching": "Use with the other components to show that a 'muscle' in the older literature is often one limb of a continuous sheet."
+      },
+      "sources": [
+        "johnston-2011",
+        "johnston-2014",
+        "werneburg-2011",
+        "ziermann-diogo-2019"
+      ],
+      "complex": "adductor-mandibulae"
+    },
+    {
+      "id": "adductor-mandibulae-longus",
+      "name": "Adductor mandibulae longus",
+      "region": "cranial",
+      "subregion": "mandibular arch — adductor complex, dorsal limb of the U",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 1,
+      "developmental": "First (mandibular) pharyngeal arch mesoderm.",
+      "synonyms": [
+        "adductor mandibulae externus pars profunda (partim)"
+      ],
+      "consensus": {
+        "origin": "Dorsal to the otic capsule.",
+        "insertion": "Mandible, at the dorsal border, deep to the externus.",
+        "action": "Adducts the mandible.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "otic-capsule",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "anura",
+          "name": "Adductor mandibulae longus",
+          "present": "yes",
+          "origin": "Dorsal to the otic capsule.",
+          "insertion": "Dorsal border of the mandible.",
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Adductor mandibulae externus profundus",
+          "present": "yes",
+          "note": "McDowell (1986) proposed that this component is ABSENT in colubroid snakes — one of the two moves that reconciles lizard and snake adductor anatomy.",
+          "sources": [
+            "johnston-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Johnston (2011, 2014) models the adductor complex as a folded sheet whose insertion on the mandible forms an inverted U wrapped around the insertion of the adductor mandibulae posterior. Components are identified by WHERE THEY INSERT INTO THAT U, not by which side of a trigeminal branch they lie on — the criterion the older literature used and which does not survive comparison across gnathostomes.",
+        "openQuestion": "Whether the profundus component is genuinely lost in colubroid snakes, as McDowell (1986) proposed and Johnston (2014) endorses, or merely rearranged.",
+        "related": [
+          "adductor-mandibulae",
+          "adductor-mandibulae-internus",
+          "adductor-mandibulae-externus"
+        ]
+      },
+      "sources": [
+        "johnston-2011",
+        "johnston-2014"
+      ],
+      "complex": "adductor-mandibulae"
+    },
+    {
+      "id": "adductor-mandibulae-externus",
+      "name": "Adductor mandibulae externus",
+      "region": "cranial",
+      "subregion": "mandibular arch — adductor complex, lateral limb of the U",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 1,
+      "developmental": "First (mandibular) pharyngeal arch mesoderm.",
+      "synonyms": [
+        "MAME",
+        "adductor mandibulae externus superficialis / medialis"
+      ],
+      "consensus": {
+        "origin": "Temporal region of the skull.",
+        "insertion": "Mandible, on and near its dorsolateral border.",
+        "action": "Adducts the mandible; usually the bulkiest component.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "temporal-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "lateral"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "anura",
+          "name": "Adductor mandibulae externus",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Adductor mandibulae externus superficialis + medialis",
+          "present": "yes",
+          "note": "In lizards the components are layered lateral to medial; in macrostomatan snakes they appear layered rostral to caudal. Johnston (2014) shows the folded-sheet model reconciles the two.",
+          "sources": [
+            "johnston-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Adductor mandibulae externus (pars superficialis, media, profunda)",
+          "present": "yes",
+          "insertion": "Coronar aponeurosis and the mandible.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "temporal-fossa"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coronar-aponeurosis"
+              },
+              {
+                "element": "mandible"
+              }
+            ]
+          },
+          "sources": [
+            "werneburg-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Masseter + temporalis",
+          "present": "yes",
+          "sources": [
+            "ziermann-diogo-2019"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Johnston (2011, 2014) models the adductor complex as a folded sheet whose insertion on the mandible forms an inverted U wrapped around the insertion of the adductor mandibulae posterior. Components are identified by WHERE THEY INSERT INTO THAT U, not by which side of a trigeminal branch they lie on — the criterion the older literature used and which does not survive comparison across gnathostomes. Snake adductors were long thought to have a different configuration from lizards; the difference is in the folding, not in the components.",
+        "related": [
+          "adductor-mandibulae",
+          "adductor-mandibulae-lateralis",
+          "adductor-mandibulae-longus",
+          "adductor-mandibulae-posterior",
+          "levator-anguli-oris"
+        ],
+        "teaching": "The lizard-versus-snake case is a good demonstration that apparent reorganisation can be a change in geometry rather than in composition."
+      },
+      "sources": [
+        "johnston-2011",
+        "johnston-2014",
+        "werneburg-2011",
+        "ziermann-diogo-2019"
+      ],
+      "complex": "adductor-mandibulae"
+    },
+    {
+      "id": "adductor-mandibulae-lateralis",
+      "name": "Adductor mandibulae lateralis",
+      "region": "cranial",
+      "subregion": "mandibular arch — adductor complex, outermost limb of the U",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 1,
+      "developmental": "First (mandibular) pharyngeal arch mesoderm.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Lateral surface of the temporal region.",
+        "insertion": "Mandible, laterally, outside the externus insertion.",
+        "action": "Adducts the mandible.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "temporal-fossa",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "lateral"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "anura",
+          "name": "Adductor mandibulae lateralis",
+          "present": "yes",
+          "note": "Johnston (2011) recognises a separate lateralis in Leiopelma and Ascaphus, distinct from the externus.",
+          "sources": [
+            "johnston-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "uncertain",
+        "notes": "Johnston (2011, 2014) models the adductor complex as a folded sheet whose insertion on the mandible forms an inverted U wrapped around the insertion of the adductor mandibulae posterior. Components are identified by WHERE THEY INSERT INTO THAT U, not by which side of a trigeminal branch they lie on — the criterion the older literature used and which does not survive comparison across gnathostomes. Recognised as a discrete component in basal anurans; its identity elsewhere is not established.",
+        "related": [
+          "adductor-mandibulae",
+          "adductor-mandibulae-externus"
+        ]
+      },
+      "sources": [
+        "johnston-2011"
+      ],
+      "complex": "adductor-mandibulae"
+    },
+    {
+      "id": "adductor-mandibulae-posterior",
+      "name": "Adductor mandibulae posterior",
+      "region": "cranial",
+      "subregion": "mandibular arch — the axis the U folds around",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 1,
+      "developmental": "First (mandibular) pharyngeal arch mesoderm.",
+      "synonyms": [
+        "adductor mandibulae posterior"
+      ],
+      "consensus": {
+        "origin": "Quadrate.",
+        "insertion": "Mandible, at the centre of the inverted U formed by the other components.",
+        "action": "Adducts the mandible; the axis of the folded sheet.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Adductor mandibulae posterior",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Adductor mandibulae posterior",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Adductor mandibulae posterior",
+          "present": "yes",
+          "sources": [
+            "johnston-2014"
+          ]
+        },
+        {
+          "taxon": "testudines",
+          "name": "Adductor mandibulae posterior",
+          "present": "yes",
+          "origin": "Dorsally from the quadrate.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "quadrate",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible"
+              }
+            ]
+          },
+          "sources": [
+            "werneburg-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Johnston (2011, 2014) treats this as being of DIFFERENT homology from the rest of the adductor group. It is the axis the folded sheet wraps around, not one of its limbs, and separating it is what makes the rest of the complex resolvable.",
+        "related": [
+          "adductor-mandibulae",
+          "adductor-mandibulae-internus",
+          "adductor-mandibulae-externus"
+        ],
+        "teaching": "The single most important distinction in the complex: everything else folds around this."
+      },
+      "sources": [
+        "johnston-2011",
+        "johnston-2014",
+        "werneburg-2011"
+      ],
+      "complex": "adductor-mandibulae"
+    },
+    {
+      "id": "levator-anguli-oris",
+      "name": "Levator anguli oris",
+      "region": "cranial",
+      "subregion": "mandibular arch — most superficial layer",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "layer": "superficialis",
+      "arch": 1,
+      "developmental": "First (mandibular) pharyngeal arch mesoderm.",
+      "synonyms": [
+        "LAO",
+        "levator anguli oris"
+      ],
+      "consensus": {
+        "origin": "Temporal and orbital region, superficial to the adductor sheet.",
+        "insertion": "Rictal plate (Mundplatte) at the corner of the mouth; in some snakes the venom gland or the mandible directly.",
+        "action": "Draws the corner of the mouth; in snakes, involved in gape and in venom-gland mechanics.",
+        "innervation": "Trigeminal nerve (CN V), mandibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "temporal-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "rictal-plate"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "anura",
+          "name": "Levator anguli oris",
+          "present": "variable",
+          "note": "Newly defined in Ascaphus truei by Johnston (2011); not found in Leiopelma hochstetteri.",
+          "sources": [
+            "johnston-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Levator anguli oris",
+          "present": "yes",
+          "note": "The most superficial layer of the typical lepidosaurian pattern, attaching to the rictal plate. McDowell (1986) identified the rostral 'external adductor' component of colubroid snakes as this muscle, modified around the venom gland — the second of the two moves reconciling lizard and snake anatomy.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "temporal-fossa"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "rictal-plate"
+              }
+            ]
+          },
+          "sources": [
+            "johnston-2014"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Its identification is the crux of the lizard–snake problem. In colubroid snakes the rictal plate becomes the venom gland, so parts of the muscle insert on the gland or straight onto the mandible instead.",
+        "openQuestion": "Johnston (2014) notes that authors after McDowell (1986) neither adopted nor extended his model; the homology is endorsed here but is not consensus.",
+        "related": [
+          "adductor-mandibulae",
+          "adductor-mandibulae-externus"
+        ],
+        "teaching": "A muscle whose insertion target itself evolved into a novel organ — the venom gland."
+      },
+      "sources": [
+        "johnston-2011",
+        "johnston-2014"
+      ],
+      "complex": "adductor-mandibulae"
     }
   ]
 }

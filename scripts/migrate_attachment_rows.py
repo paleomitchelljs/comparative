@@ -54,6 +54,10 @@ SIDES = {
     ("femur", "linea-aspera"): "posterior",
     ("femur", "femoral-condyles"): "distal",
     ("tibia", "tibial-tuberosity"): "proximal",
+    ("tibia", "cnemial-crest"): "proximal",
+    ("pubis", None): "ventral",
+    ("ischium", None): "posterior",
+    ("ilium", None): "lateral",
     ("ilium", "iliac-crest"): "dorsal",
     ("ischium", "ischial-tuberosity"): "posterior",
     ("sternum", "sternal-keel"): "ventral",
@@ -64,6 +68,11 @@ SIDES = {
     ("carpals", "ulnare"): "lateral",
     # Whole-bone attachments with a documented aspect.
     ("scapula", None): "lateral",
+    ("humerus", None): "proximal",
+    ("ribs", None): "lateral",
+    ("quadrate", None): "dorsal",
+    ("temporal-fossa", None): "lateral",
+    ("braincase-dorsal", None): "dorsal",
     ("coracoid", None): "ventral",
     ("suprascapula", None): "dorsal",
 }

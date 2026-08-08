@@ -26,7 +26,8 @@ SEED = {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
-        "crocodylia":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
+        "crocodylia": {"origin": ["coracoid"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010", "klinkhamer-etal-2017"],
+                       "shiftNote": "Fleshy origin on the proximo-lateral coracoid, covering the entire humeral head; fleshy insertion on the ventro-lateral humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder (Klinkhamer et al. 2017)."},
         "aves": {"origin": ["sternal-keel"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                  "shiftNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."},
         "monotremata": {"origin": ["coracoid", "scapula"], "insertion": ["greater-tubercle"], "sources": ["gambaryan-etal-2015", "fahn-lai-etal-2020"],
@@ -89,7 +90,8 @@ SEED = {
     "caudofemoralis": {
         "lepidosauria": {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014"],
                          "shiftNote": "Inserts on the fourth trochanter, whose size reads directly as femoral-retractor power."},
-        "crocodylia":   {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014", "allen-etal-2014"]},
+        "crocodylia": {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014", "allen-etal-2014", "klinkhamer-etal-2017"],
+                       "shiftNote": "Klinkhamer et al. distinguish caudofemoralis longus (caudal vertebrae) from brevis (ilium); both converge on the fourth trochanter."},
         "testudines":   {"origin": ["caudal-vertebrae"], "insertion": ["femur"], "sources": ["diogo-molnar-2014"]},
         "synapsida-stem": {"origin": ["caudal-vertebrae"], "insertion": ["fourth-trochanter"], "sources": ["bishop-pierce-2024"],
                            "shiftNote": "Progressive reduction of the fourth trochanter along the synapsid stem tracks the loss of tail-driven femoral retraction."},
@@ -121,8 +123,45 @@ SEED = {
         "theria": {"origin": ["sternum", "clavicle", "scapula", "hyoid"], "insertion": ["hyoid", "tongue"], "sources": ["ziermann-diogo-2019"],
                    "shiftNote": "With the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead."},
     },
+    # --- Crocodylus porosus, from Klinkhamer et al. (2017) digital dissection.
+    # Their descriptions name an explicit aspect for nearly every attachment,
+    # which is the densest source of `side` values in the dataset.
+    "levator-scapulae": {
+        "crocodylia": {"origin": ["ribs"], "insertion": ["scapula"], "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the anterior scapular border from its anterodistal tip to the glenohumeral joint."},
+    },
+    "costocoracoideus": {
+        "crocodylia": {"origin": ["ribs"], "insertion": ["coracoid"], "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Klinkhamer et al. separate a costocoracoideus profundus originating on the lateral margin of the first few ribs."},
+    },
+    "serratus-anterior": {
+        "crocodylia": {"origin": ["ribs"], "insertion": ["scapula"], "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Originates from the ventrolateral ribs and inserts by tendon along the entire medio-posterior scapular margin — a broad, thin girdle extensor."},
+    },
+    "scapulohumeralis-posterior": {
+        "crocodylia": {"origin": ["scapula"], "insertion": ["humerus"], "sources": ["klinkhamer-etal-2017", "abdala-diogo-2010"],
+                       "shiftNote": "Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."},
+    },
+    "femorotibialis": {
+        "crocodylia": {"origin": ["femur"], "insertion": ["cnemial-crest"], "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."},
+    },
+    "ambiens": {
+        "crocodylia": {"origin": ["pubis"], "insertion": ["tibia"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."},
+    },
+    "ischioflexorius": {
+        "crocodylia": {"origin": ["ischium", "ilium"], "insertion": ["tibia"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Flexor tibialis internus is four-part in Crocodylus: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium; FTI3 from the proximo-lateral ischium."},
+    },
+    "extensor-iliotibialis": {
+        "crocodylia": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Iliotibialis 3 arises deep to iliotibialis 2 on the central lateral ilium by tendon and inserts fleshy onto the distal third of the dorso-lateral femur."},
+    },
     "iliofemoralis": {
         "lepidosauria": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["diogo-molnar-2014"]},
+        "crocodylia": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Origin on the lateral ilium; the femorotibialis internus tendon arises distal and anterior to it, which is the landmark Klinkhamer et al. use to separate the two."},
         "synapsida-stem": {"origin": ["ilium", "iliac-crest"], "insertion": ["greater-trochanter"], "sources": ["bishop-pierce-2024"],
                            "shiftNote": "Expansion of the iliac blade along the synapsid stem tracks the enlargement of this field and the shift toward erect posture."},
         "theria": {"origin": ["ilium", "iliac-crest"], "insertion": ["greater-trochanter"], "sources": ["diogo-molnar-2014"],

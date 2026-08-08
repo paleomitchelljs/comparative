@@ -82,6 +82,13 @@ Each level partitions the level above, so it drills. And because L1–L3 are
 conserved while L4–L5 are where change happens, the phylogeny view has somewhere
 stable to hang the changes off.
 
+**A caveat the sources forced.** Johnston (2011, 2014) shows that for the jaw
+adductors the reverse holds: he explicitly rejects trigeminal-branch position as
+a homology criterion in favour of *where a component inserts* into the inverted U
+of the folded sheet. So attachment beats innervation there. The general claim is
+not "innervation wins" but "use whichever signal is stable in the system you are
+in" — labile attachment in the limb, labile nerve topography in the jaw.
+
 **Origin/insertion keeps a real job** — just not this one. It becomes (a) the
 cross-cutting index it already is, and (b) the *drawing instruction* for the
 diagram: the edge you render between a muscle and a skeletal element. It is what
@@ -93,29 +100,24 @@ you draw, not what you navigate.
 
 Each phase is independently shippable and leaves the site working.
 
-### Phase 1 — complete the hierarchy fields *(small, mechanical)*
+### Phase 1 — hierarchy fields and the attachment model — **DONE**
 
-Add to every muscle record:
+`segment` on all 92 records; `layer` on 41 of 77 appendicular ones, inherited
+through `derivatives` from the ancestral fin muscle where Diogo et al. (2016)
+support it and left blank otherwise.
 
-- `layer` — currently only on the 7 fin records. Needs assigning across the other
-  79. Mostly determinable from existing `subregion` text ("ventral superficial",
-  "deep dorsal", "superficial palmar layer").
-- `segment` — `girdle │ stylopod │ zeugopod │ autopod`. Almost entirely derivable
-  from `region`: pectoral/pelvic → girdle, arm/thigh → stylopod, forearm/leg →
-  zeugopod, hand/foot → autopod. Write it explicitly anyway; the cranial and fin
-  records need hand assignment.
+Went further than planned, on the project owner's steer that attachment change is
+itself data and that bone-first is how students reason. `data/skeleton.json` now
+holds 121 attachment sites with a `partOf` hierarchy, per-taxon presence and
+osteological-correlate flags, and attachments are `{element, side, landmark}`
+rows rather than flat strings.
 
-Extend `validate.py` with both enums. **Nothing else in this plan works without
-this**, and it unblocks everything else.
+### Phase 2 — hierarchical and bone-first browse — **DONE**
 
-### Phase 2 — hierarchical browse *(no new data)*
-
-Replace the flat sidebar facets with a nested, collapsible tree following L0→L3,
-each node showing its muscle count. Clicking a node filters the list; clicking
-through to L4 opens the record that already exists.
-
-This alone satisfies "click a region or muscle group and it brings you to small
-subdivisions". Worth shipping before anything visual.
+Two views shipped: **Skeleton** (bone-first drill-down with a taxon selector) and
+**Mass & layer** (the L0→L3 hierarchy). Attachment shifts are computed by diffing
+per-taxon rows, hierarchy-aware so that a move to a finer landmark reads as a
+refinement rather than a transition.
 
 ### Phase 3 — phylogeny view *(the "changes along the phylogeny" ask)*
 
@@ -185,12 +187,14 @@ same four-cell classification.
 
 ## Suggested order
 
-1 → 2 → 3 → 5 → 4.
+Phases 1 and 2 are done. Remaining: **3 → 5 → 4**, with two data actions first.
 
-Phase 4 is the most visible but the most expensive, and it depends on both the
-hierarchy fields (1) and the skeletal vocabulary. Phases 2 and 3 deliver most of
-the stated goal — drill-down plus phylogenetic change — with no new data
-collection at all.
+See [`GAPS.md`](GAPS.md) for the measured picture. The short version: the
+presence matrix is dense (92 × 16, complete) so **phase 3 needs no new data**,
+but per-taxon attachments cover only 13% of occurrences and are absent entirely
+for fish, fossil taxa, the hand and the foot — so **phase 4 should be scoped to
+the pectoral girdle and arm** until that improves, or it will draw the consensus
+and label it as sixteen different animals.
 
 ## What would change my mind about the spine
 

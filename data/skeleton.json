@@ -867,6 +867,27 @@
       }
     },
     {
+      "id": "cnemial-crest",
+      "label": "Cnemial crest",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "tibia",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "crocodylia",
+          "aves",
+          "lepidosauria"
+        ],
+        "note": "Proximal tibial crest receiving the knee extensor tendon; prominent in archosaurs.",
+        "sources": [
+          "klinkhamer-etal-2017"
+        ]
+      }
+    },
+    {
       "id": "fibula",
       "label": "Fibula",
       "kind": "bone",
@@ -1656,6 +1677,54 @@
         "default": "no",
         "present": [
           "aves"
+        ]
+      }
+    },
+    {
+      "id": "rictal-plate",
+      "label": "Rictal plate (Mundplatte)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "lepidosauria",
+          "anura"
+        ],
+        "note": "Cartilage at the corner of the mouth carrying the levator anguli oris. In colubroid snakes it is elaborated into the venom gland, which is why parts of the levator anguli oris there insert on the gland rather than the plate.",
+        "sources": [
+          "johnston-2011",
+          "johnston-2014"
+        ]
+      }
+    },
+    {
+      "id": "braincase-dorsal",
+      "label": "Dorsal braincase",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes",
+        "note": "Rostral origin of the adductor internus in anurans, medial to the eye.",
+        "sources": [
+          "johnston-2011"
+        ]
+      }
+    },
+    {
+      "id": "coronar-aponeurosis",
+      "label": "Coronar aponeurosis",
+      "kind": "aponeurosis",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "variable",
+        "note": "Tendinous sheet receiving much of the adductor complex in turtles.",
+        "sources": [
+          "werneburg-2011"
         ]
       }
     }

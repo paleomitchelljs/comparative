@@ -236,8 +236,24 @@
           "present": "yes",
           "note": "= serratus ventralis sensu Meers (2003).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Originates from the ventrolateral ribs and inserts by tendon along the entire medio-posterior scapular margin — a broad, thin girdle extensor."
         },
         {
           "taxon": "aves",
@@ -506,8 +522,24 @@
           "name": "Levator scapulae",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the anterior scapular border from its anterodistal tip to the glenohumeral joint."
         },
         {
           "taxon": "aves",
@@ -784,7 +816,8 @@
           "attachments": {
             "origin": [
               {
-                "element": "ribs"
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -878,8 +911,24 @@
           "present": "yes",
           "note": "Usually divided into pars superficialis and pars profunda (Meers 2003).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Klinkhamer et al. separate a costocoracoideus profundus originating on the lateral margin of the first few ribs."
         },
         {
           "taxon": "aves",
@@ -1012,7 +1061,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1058,7 +1108,8 @@
                 "element": "interclavicle"
               },
               {
-                "element": "ribs"
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -1162,7 +1213,8 @@
                 "element": "clavicle"
               },
               {
-                "element": "ribs"
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -1265,7 +1317,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1298,7 +1351,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1323,7 +1377,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1333,25 +1388,25 @@
           "name": "Supracoracoideus",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "coracoid",
                 "side": "ventral"
-              },
-              {
-                "element": "scapula",
-                "side": "lateral"
               }
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
               }
             ]
-          }
+          },
+          "attachmentNote": "Fleshy origin on the proximo-lateral coracoid, covering the entire humeral head; fleshy insertion on the ventro-lateral humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder (Klinkhamer et al. 2017)."
         },
         {
           "taxon": "aves",
@@ -1374,7 +1429,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           },
@@ -1652,7 +1708,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           },
@@ -1673,7 +1730,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1693,7 +1751,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1713,7 +1772,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -1734,7 +1794,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           },
@@ -1968,8 +2029,24 @@
           "present": "yes",
           "note": "= scapulohumeralis caudalis sensu Meers (2003).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."
         },
         {
           "taxon": "aves",
@@ -2082,7 +2159,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -2108,7 +2186,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -2133,7 +2212,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -2158,7 +2238,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -2379,7 +2460,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -2403,12 +2485,14 @@
           "attachments": {
             "origin": [
               {
-                "element": "ribs"
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           },
@@ -2473,12 +2557,14 @@
                 "element": "thoracic-neural-spines"
               },
               {
-                "element": "ribs"
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -2563,7 +2649,8 @@
                 "side": "lateral"
               },
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ],
             "insertion": [
@@ -2611,7 +2698,8 @@
                 "side": "ventral"
               },
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ],
             "insertion": [
@@ -2658,7 +2746,8 @@
                 "side": "lateral"
               },
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ],
             "insertion": [
@@ -3022,7 +3111,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -3061,7 +3151,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -3092,7 +3183,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           }
@@ -3118,7 +3210,8 @@
             ],
             "insertion": [
               {
-                "element": "humerus"
+                "element": "humerus",
+                "side": "proximal"
               }
             ]
           },

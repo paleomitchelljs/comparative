@@ -331,7 +331,8 @@
           "attachments": {
             "origin": [
               {
-                "element": "ilium"
+                "element": "ilium",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -346,8 +347,23 @@
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur"
+              }
+            ]
+          },
+          "attachmentNote": "Origin on the lateral ilium; the femorotibialis internus tendon arises distal and anterior to it, which is the landmark Klinkhamer et al. use to separate the two."
         },
         {
           "taxon": "aves",
@@ -368,7 +384,8 @@
           "attachments": {
             "origin": [
               {
-                "element": "ilium"
+                "element": "ilium",
+                "side": "lateral"
               },
               {
                 "element": "ilium",
@@ -400,7 +417,8 @@
           "attachments": {
             "origin": [
               {
-                "element": "ilium"
+                "element": "ilium",
+                "side": "lateral"
               },
               {
                 "element": "ilium",
@@ -524,7 +542,8 @@
                 "element": "caudal-vertebrae"
               },
               {
-                "element": "ilium"
+                "element": "ilium",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -544,7 +563,8 @@
           "note": "Large and well developed; inserts on a prominent fourth trochanter.",
           "sources": [
             "allen-etal-2014",
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -552,7 +572,8 @@
                 "element": "caudal-vertebrae"
               },
               {
-                "element": "ilium"
+                "element": "ilium",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -562,7 +583,8 @@
                 "landmark": "fourth-trochanter"
               }
             ]
-          }
+          },
+          "attachmentNote": "Klinkhamer et al. distinguish caudofemoralis longus (caudal vertebrae) from brevis (ilium); both converge on the fourth trochanter."
         },
         {
           "taxon": "aves",
@@ -701,8 +723,23 @@
           "name": "Iliotibialis",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur"
+              }
+            ]
+          },
+          "attachmentNote": "Iliotibialis 3 arises deep to iliotibialis 2 on the central lateral ilium by tendon and inserts fleshy onto the distal third of the dorso-lateral femur."
         },
         {
           "taxon": "aves",
@@ -797,8 +834,24 @@
           "name": "Femorotibialis",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "proximal",
+                "landmark": "cnemial-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."
         },
         {
           "taxon": "aves",
@@ -890,8 +943,23 @@
           "name": "'Ambiens'",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia"
+              }
+            ]
+          },
+          "attachmentNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."
         },
         {
           "taxon": "aves",
@@ -1300,8 +1368,27 @@
           "name": "Flexor tibialis externus + internus",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "side": "posterior"
+              },
+              {
+                "element": "ilium",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia"
+              }
+            ]
+          },
+          "attachmentNote": "Flexor tibialis internus is four-part in Crocodylus: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium; FTI3 from the proximo-lateral ischium."
         },
         {
           "taxon": "aves",

@@ -57,11 +57,15 @@ for why that matters.
 
 ## What's in it
 
-86 muscle records, 519 taxon occurrences, 23 sources, 16 operational taxa.
+92 muscle records, 537 taxon occurrences, 121 skeletal elements, 37 sources, 16 operational taxa.
+
+Every PDF in `papers/` is accounted for in `data/sources.json`, including two
+declared out of scope. Measured coverage and what is still missing:
+[`docs/GAPS.md`](docs/GAPS.md).
 
 | Region | Records | Principal source |
 |---|---|---|
-| Cranial | 9 | Werneburg 2011; Ziermann & Diogo 2019; Ziermann et al. 2014 |
+| Cranial | 15 | Werneburg 2011; Johnston 2011, 2014; Ziermann & Diogo 2019 |
 | Ancestral paired fin | 7 | Diogo et al. 2016 |
 | Pectoral girdle and arm | 21 | Abdala & Diogo 2010; Molnar et al. 2018 |
 | Forearm and hand | 27 | Abdala & Diogo 2010; Ercoli et al. 2014 |
@@ -215,11 +219,11 @@ Origin/insertion becomes what you *draw*, not what you navigate.
   name the sources that hold the numbers; several are already in `papers/`
   (Allen et al. 2014; Ercoli et al. 2014; Fahn-Lai et al. 2020). The schema has
   no field for these yet — roadmap phase 5.
-- **`side` is recorded on only ~100 of 471 attachment rows**, and `layer` on 34
-  of 86 muscles. Both are deliberately left blank rather than guessed; filling
-  them is source work, not scripting.
-- **Taxon-specific attachments exist for 14 muscles.** The rest inherit the
-  consensus and are marked `inherited` — that means unrecorded, not confirmed.
+See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short: taxon-specific
+attachments cover 13% of present occurrences and are absent entirely for fish,
+fossil taxa, the hand and the foot; `side` is on 31% of rows and `landmark` on 9%;
+`layer` resolves for 53% of appendicular muscles; there is no architecture field
+and no axial musculature.
 - **The stem-tetrapodomorph column is pectoral-only**, limited to what Molnar et
   al. (2018) reconstruct.
 - **Monotreme and stem-synapsid rows are sparse** relative to the detail

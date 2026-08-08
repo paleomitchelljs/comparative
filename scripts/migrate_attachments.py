@@ -93,7 +93,10 @@ def main(write: bool) -> int:
             for side in ("origin", "insertion"):
                 out = []
                 for term in att.get(side, []):
-                    if term in valid:          # already migrated
+                    if isinstance(term, dict):  # already structured into rows
+                        out.append(term)
+                        continue
+                    if term in valid:          # already an id
                         out.append(term)
                     elif term in MAP:
                         out.append(MAP[term]); changed += 1
