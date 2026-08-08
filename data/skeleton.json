@@ -1,0 +1,1663 @@
+{
+  "$comment": "Controlled vocabulary of skeletal and soft-tissue attachment sites. Every `attachments` reference in data/muscles-*.json resolves to an `id` here. Three things this buys that a free-string list did not: (1) `partOf` gives the bone-first browse a drill-down (pectoral girdle -> scapula -> acromion); (2) `presence` records where an element is absent, so the interface can show that a muscle's attachment had to move rather than silently dropping the row; (3) `correlate: true` marks sites that leave a recognisable osteological trace, which is the entry point for fossil reconstruction. Presence statements are sourced; where a source is not yet attached the claim is standard comparative anatomy and flagged `sourced: false`.",
+  "kinds": [
+    "bone",
+    "cartilage",
+    "group",
+    "aponeurosis",
+    "membrane",
+    "ligament",
+    "fascia",
+    "soft"
+  ],
+  "sides": [
+    "proximal",
+    "distal",
+    "anterior",
+    "posterior",
+    "medial",
+    "lateral",
+    "dorsal",
+    "ventral"
+  ],
+  "segments": [
+    "cranial",
+    "axial",
+    "girdle",
+    "stylopod",
+    "zeugopod",
+    "autopod",
+    "fin"
+  ],
+  "elements": [
+    {
+      "id": "pectoral-girdle",
+      "label": "Pectoral girdle",
+      "kind": "group",
+      "region": "pectoral",
+      "segment": "girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "scapula",
+      "label": "Scapula",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "scapular-spine",
+      "label": "Scapular spine",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "partial": [
+          "monotremata"
+        ],
+        "note": "A therian novelty. Incipient in monotremes, which is why the monotreme shoulder is the readable intermediate: it divides the ancestral supracoracoideus field into supraspinatus and infraspinatus.",
+        "sources": [
+          "gambaryan-etal-2015",
+          "fahn-lai-etal-2020"
+        ]
+      }
+    },
+    {
+      "id": "supraspinous-fossa",
+      "label": "Supraspinous fossa",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "ercoli-etal-2014"
+        ]
+      }
+    },
+    {
+      "id": "infraspinous-fossa",
+      "label": "Infraspinous fossa",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "ercoli-etal-2014"
+        ]
+      }
+    },
+    {
+      "id": "subscapular-fossa",
+      "label": "Subscapular fossa",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "acromion",
+      "label": "Acromion",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata",
+          "theria"
+        ],
+        "sources": [
+          "gambaryan-etal-2015"
+        ]
+      }
+    },
+    {
+      "id": "glenoid",
+      "label": "Glenoid",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "suprascapula",
+      "label": "Suprascapula",
+      "kind": "cartilage",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata",
+          "anura",
+          "testudines",
+          "lepidosauria"
+        ],
+        "note": "Cartilaginous dorsal extension of the scapula. Its loss in mammals shifts several axio-appendicular insertions onto the scapular border itself.",
+        "sources": [
+          "abdala-diogo-2010"
+        ]
+      }
+    },
+    {
+      "id": "coracoid-process",
+      "label": "Coracoid process",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "note": "All that remains of the coracoid in therians, fused to the scapula. Muscles that arose from the coracoid bone in other tetrapods — biceps brachii and coracobrachialis — arise from this process instead.",
+        "sources": [
+          "ercoli-etal-2014"
+        ]
+      }
+    },
+    {
+      "id": "coracoid",
+      "label": "Coracoid",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ],
+        "note": "Lost as an independent ossification in therians, surviving only as the coracoid process of the scapula. This single loss forces the origin of the supracoracoideus onto the lateral scapula and removes the coracoid head of the subcoracoscapularis — the clearest case in the dataset of an attachment moving because its bone disappeared.",
+        "sources": [
+          "gambaryan-etal-2015",
+          "fahn-lai-etal-2020"
+        ]
+      }
+    },
+    {
+      "id": "procoracoid",
+      "label": "Procoracoid",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata",
+          "anura"
+        ],
+        "note": "Carries the origin of the procoracohumeralis — the amphibian name for what amniotes call the deltoideus clavicularis. The muscle is renamed for the bone, not for any change in the muscle.",
+        "sources": [
+          "abdala-diogo-2010"
+        ]
+      }
+    },
+    {
+      "id": "cleithrum",
+      "label": "Cleithrum",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Dermal element linking the pectoral girdle to the skull in fishes. Its loss along the tetrapod stem is what frees the girdle from the head and permits a neck.",
+        "sources": [
+          "diogo-etal-2016",
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "clavicle",
+      "label": "Clavicle",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "crocodylia"
+        ],
+        "variable": [
+          "theria"
+        ],
+        "note": "Reduced or absent in many cursorial mammals; fused into the furcula in birds.",
+        "sources": [
+          "abdala-diogo-2010"
+        ]
+      }
+    },
+    {
+      "id": "interclavicle",
+      "label": "Interclavicle",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "testudines",
+          "lepidosauria",
+          "crocodylia",
+          "monotremata"
+        ],
+        "note": "Retained in monotremes, which is a large part of why the monotreme pectoralis has a more extensive origin than the therian one.",
+        "sources": [
+          "gambaryan-etal-2015"
+        ]
+      }
+    },
+    {
+      "id": "furcula",
+      "label": "Furcula",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "abdala-diogo-2010"
+        ]
+      }
+    },
+    {
+      "id": "sternum",
+      "label": "Sternum",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "sternal-keel",
+      "label": "Sternal keel (carina)",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "sternum",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "note": "Carries both the pectoralis and the supracoracoideus. The whole flight apparatus is powered from below the centre of mass because the supracoracoideus tendon is redirected dorsally through the foramen triosseum.",
+        "sources": [
+          "abdala-diogo-2010"
+        ]
+      }
+    },
+    {
+      "id": "humerus",
+      "label": "Humerus",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "petromyzontida",
+          "myxini"
+        ]
+      }
+    },
+    {
+      "id": "deltopectoral-crest",
+      "label": "Deltopectoral crest",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "The single most useful osteological correlate in the pectoral appendage. Its presence and shape is the primary evidence for reconstructing the pectoralis, supracoracoideus and deltoid complex in fossil taxa.",
+        "sources": [
+          "molnar-etal-2018",
+          "molnar-diogo-2021"
+        ]
+      }
+    },
+    {
+      "id": "greater-tubercle",
+      "label": "Greater tubercle",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "lesser-tubercle",
+      "label": "Lesser tubercle",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "lateral-epicondyle",
+      "label": "Lateral epicondyle (ectepicondyle)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "synonyms": [
+        "ectepicondyle"
+      ],
+      "presence": {
+        "default": "yes",
+        "note": "Common origin of the extensor (dorsal-mass, radial-innervated) forearm musculature throughout Tetrapoda."
+      }
+    },
+    {
+      "id": "medial-epicondyle",
+      "label": "Medial epicondyle (entepicondyle)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "synonyms": [
+        "entepicondyle"
+      ],
+      "presence": {
+        "default": "yes",
+        "note": "Common origin of the flexor (ventral-mass) forearm musculature. Diogo & Molnar (2014) follow Sigurdsen & Bolt (2009) in reidentifying the salamander 'ulnar condyle' of Francis (1934) as the entepicondyle.",
+        "sources": [
+          "diogo-molnar-2014"
+        ]
+      }
+    },
+    {
+      "id": "supracondylar-ridge",
+      "label": "Supracondylar ridge",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "radius",
+      "label": "Radius",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii"
+        ]
+      }
+    },
+    {
+      "id": "radial-tuberosity",
+      "label": "Radial tuberosity",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "radius",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "ulna",
+      "label": "Ulna",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii"
+        ]
+      }
+    },
+    {
+      "id": "olecranon",
+      "label": "Olecranon",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "ulna",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "Insertion of the triceps throughout Tetrapoda; a reliable fossil indicator of elbow extensor leverage.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "coronoid-process-ulna",
+      "label": "Coronoid process of ulna",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "ulna",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "supinator-crest",
+      "label": "Supinator crest",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "ulna",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "carpals",
+      "label": "Carpals",
+      "kind": "group",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "pisiform",
+      "label": "Pisiform",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "ulnare",
+      "label": "Ulnare",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "metacarpals",
+      "label": "Metacarpals",
+      "kind": "group",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "phalanges-manus",
+      "label": "Phalanges (manus)",
+      "kind": "group",
+      "region": "forelimb",
+      "segment": "autopod",
+      "synonyms": [
+        "phalanges"
+      ],
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "sesamoids-manus",
+      "label": "Sesamoids (manus)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "synonyms": [
+        "sesamoids"
+      ],
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "pelvic-girdle",
+      "label": "Pelvic girdle",
+      "kind": "group",
+      "region": "pelvic",
+      "segment": "girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "ilium",
+      "label": "Ilium",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "Expansion of the iliac blade along the synapsid stem tracks the enlargement of the iliofemoralis/gluteal field and is central to Bishop & Pierce's (2024) argument that erect posture was acquired late.",
+        "sources": [
+          "bishop-pierce-2024"
+        ]
+      }
+    },
+    {
+      "id": "iliac-crest",
+      "label": "Iliac crest",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "ilium",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "ischium",
+      "label": "Ischium",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "ischial-tuberosity",
+      "label": "Ischial tuberosity",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "ischium",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "pubis",
+      "label": "Pubis",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "acetabulum",
+      "label": "Acetabulum",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "obturator-membrane",
+      "label": "Obturator membrane",
+      "kind": "membrane",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "femur",
+      "label": "Femur",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii"
+        ]
+      }
+    },
+    {
+      "id": "greater-trochanter",
+      "label": "Greater trochanter",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "lesser-trochanter",
+      "label": "Lesser trochanter",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ]
+      }
+    },
+    {
+      "id": "fourth-trochanter",
+      "label": "Fourth trochanter",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "lepidosauria",
+          "testudines",
+          "crocodylia",
+          "synapsida-stem"
+        ],
+        "reduced": [
+          "aves"
+        ],
+        "absent": [
+          "theria"
+        ],
+        "note": "The best single fossil-muscle landmark in the vertebrate skeleton. It carries the caudofemoralis, so its size reads directly as femoral-retractor power, and its independent reduction in birds and loss in mammals marks two separate departures from tail-driven locomotion.",
+        "sources": [
+          "diogo-molnar-2014",
+          "bishop-pierce-2024"
+        ]
+      }
+    },
+    {
+      "id": "trochanteric-fossa",
+      "label": "Trochanteric fossa",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "linea-aspera",
+      "label": "Linea aspera",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "femoral-condyles",
+      "label": "Femoral condyles",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "patella",
+      "label": "Patella",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves",
+          "theria"
+        ],
+        "note": "Independently acquired in birds and mammals; a sesamoid in the knee extensor tendon."
+      }
+    },
+    {
+      "id": "tibia",
+      "label": "Tibia",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii"
+        ]
+      }
+    },
+    {
+      "id": "tibial-tuberosity",
+      "label": "Tibial tuberosity",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "tibia",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "fibula",
+      "label": "Fibula",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii"
+        ]
+      }
+    },
+    {
+      "id": "tarsals",
+      "label": "Tarsals",
+      "kind": "group",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "calcaneum",
+      "label": "Calcaneum (fibulare)",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "correlate": true,
+      "synonyms": [
+        "fibulare"
+      ],
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "metatarsals",
+      "label": "Metatarsals",
+      "kind": "group",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "phalanges-pes",
+      "label": "Phalanges (pes)",
+      "kind": "group",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "sesamoids-pes",
+      "label": "Sesamoids (pes)",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "fin-radials",
+      "label": "Fin radials",
+      "kind": "cartilage",
+      "region": "fin",
+      "segment": "fin",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "No tetrapod counterpart. The tetrapod autopod is a novelty rather than a transformed radial series — see Diogo et al. (2016) on the distal tendon primordium.",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "fin-rays",
+      "label": "Fin rays (lepidotrichia)",
+      "kind": "bone",
+      "region": "fin",
+      "segment": "fin",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "axial-skeleton",
+      "label": "Axial skeleton",
+      "kind": "group",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "caudal-vertebrae",
+      "label": "Caudal vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes",
+        "reduced": [
+          "aves"
+        ],
+        "absent": [
+          "anura"
+        ],
+        "note": "Replaced by the urostyle in anurans and shortened to the pygostyle in birds — both associated with caudofemoralis reduction."
+      }
+    },
+    {
+      "id": "lumbar-vertebrae",
+      "label": "Lumbar vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "thoracic-neural-spines",
+      "label": "Thoracic neural spines",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "cervical-transverse-processes",
+      "label": "Cervical transverse processes",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "atlas-transverse-process",
+      "label": "Atlas transverse process",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "cervical-transverse-processes",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "sacrum",
+      "label": "Sacrum",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "ribs",
+      "label": "Ribs",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "neurocranium",
+      "label": "Neurocranium",
+      "kind": "group",
+      "region": "cranial",
+      "segment": "cranial",
+      "synonyms": [
+        "cranium"
+      ],
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "occiput",
+      "label": "Occiput",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "otic-capsule",
+      "label": "Otic capsule",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "pyramidal-eminence",
+      "label": "Pyramidal eminence",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "otic-capsule",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "operculum",
+      "label": "Operculum (otic)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "otic-capsule",
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata",
+          "anura"
+        ],
+        "note": "Cartilaginous plate in the fenestra ovalis. Target of the opercularis, a pectoral-girdle muscle that inserts on the ear — the amphibian substrate-vibration pathway.",
+        "sources": [
+          "abdala-diogo-2010"
+        ]
+      }
+    },
+    {
+      "id": "temporal-fossa",
+      "label": "Temporal fossa",
+      "kind": "group",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "Configuration of the temporal openings constrains adductor mandibulae volume and orientation; the primary osteological handle on jaw muscle reconstruction in fossils.",
+        "sources": [
+          "werneburg-2011"
+        ]
+      }
+    },
+    {
+      "id": "squamosal",
+      "label": "Squamosal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "zygomatic-arch",
+      "label": "Zygomatic arch",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "theria",
+          "monotremata"
+        ]
+      }
+    },
+    {
+      "id": "pterygoid",
+      "label": "Pterygoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "quadrate",
+      "label": "Quadrate",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ],
+        "note": "Incorporated into the mammalian middle ear as the incus."
+      }
+    },
+    {
+      "id": "palatoquadrate",
+      "label": "Palatoquadrate",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "sources": [
+          "ziermann-etal-2014"
+        ]
+      }
+    },
+    {
+      "id": "mandible",
+      "label": "Mandible",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "myxini",
+          "petromyzontida"
+        ]
+      }
+    },
+    {
+      "id": "coronoid-process-mandible",
+      "label": "Coronoid process of mandible",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "retroarticular-process",
+      "label": "Retroarticular process",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "meckels-cartilage",
+      "label": "Meckel's cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii"
+        ]
+      }
+    },
+    {
+      "id": "hyomandibula",
+      "label": "Hyomandibula",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "Transformed into the stapes in tetrapods; the depressor hyomandibulae becomes the stapedius, keeping arch 2 identity and CN VII innervation throughout.",
+        "sources": [
+          "ziermann-etal-2014"
+        ]
+      }
+    },
+    {
+      "id": "stapes",
+      "label": "Stapes",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "sources": [
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "hyoid",
+      "label": "Hyoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "ceratohyal",
+      "label": "Ceratohyal",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "styloid-process",
+      "label": "Styloid process",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "branchial-arches",
+      "label": "Branchial arches",
+      "kind": "group",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "myxini",
+          "petromyzontida",
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "caudata"
+        ]
+      }
+    },
+    {
+      "id": "thyroid-cartilage",
+      "label": "Thyroid cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ]
+      }
+    },
+    {
+      "id": "cricoid-cartilage",
+      "label": "Cricoid cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "arytenoid-cartilage",
+      "label": "Arytenoid cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "spiracle",
+      "label": "Spiracle",
+      "kind": "group",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii"
+        ],
+        "note": "The reduced first (mandibular) gill slit. Its pouch is the ancestor of the tympanic cavity, and the region keeps trigeminal innervation throughout."
+      }
+    },
+    {
+      "id": "orbit",
+      "label": "Orbit",
+      "kind": "group",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "optic-foramen",
+      "label": "Optic foramen",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "orbit",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "interorbital-septum",
+      "label": "Interorbital septum",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "orbit",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "sclera",
+      "label": "Sclera",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "eyelid",
+      "label": "Eyelid",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "tongue",
+      "label": "Tongue",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "interosseous-membrane",
+      "label": "Interosseous membrane",
+      "kind": "membrane",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "palmar-aponeurosis",
+      "label": "Palmar aponeurosis",
+      "kind": "aponeurosis",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "plantar-aponeurosis",
+      "label": "Plantar aponeurosis",
+      "kind": "aponeurosis",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "flexor-retinaculum",
+      "label": "Flexor retinaculum",
+      "kind": "ligament",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "flexor-tendons",
+      "label": "Flexor tendons",
+      "kind": "soft",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "extensor-expansion",
+      "label": "Extensor expansion",
+      "kind": "aponeurosis",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "thoracolumbar-fascia",
+      "label": "Thoracolumbar fascia",
+      "kind": "fascia",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "nuchal-ligament",
+      "label": "Nuchal ligament",
+      "kind": "ligament",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "cervical-fascia",
+      "label": "Cervical fascia",
+      "kind": "fascia",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "iliotibial-tract",
+      "label": "Iliotibial tract",
+      "kind": "fascia",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "midline-raphe",
+      "label": "Midline raphe",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "pharyngeal-raphe",
+      "label": "Pharyngeal raphe",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "body-wall",
+      "label": "Body wall",
+      "kind": "soft",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "skin",
+      "label": "Skin",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "propatagium",
+      "label": "Propatagium",
+      "kind": "soft",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ]
+      }
+    }
+  ]
+}

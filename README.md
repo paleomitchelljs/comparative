@@ -7,7 +7,7 @@ from a hundred-year-old paper, or a bone — and get:
 2. **Insertion**
 3. **Action**
 4. **Innervation**
-5. **Occurrences** across 15 taxa from hagfish to placentals
+5. **Occurrences** across 16 taxa from hagfish to placentals
 6. **Homologies** — what the muscle is called in each group, how well the
    correspondence is supported, and who disagrees
 
@@ -84,13 +84,37 @@ This matters for more than completeness: it is the natural root of the drill-dow
 hierarchy proposed in [`docs/ROADMAP.md`](docs/ROADMAP.md), and it corrects the
 textbook claim that fish fins had only two muscle masses.
 
-## Two views
+## Three views
 
 **Muscles** — search and filter by region, taxon, or homology confidence.
 
-**Attachments** — the topology index, inverted. Each skeletal element lists every
-muscle that originates from and inserts on it. Answers "what attaches to the
-coracoid?" directly.
+**Skeleton** — bone-first, and the pedagogical entry point: drill down through
+the skeleton (pectoral girdle → scapula → acromion), see what originates and
+inserts at each level, and optionally restrict to one taxon. Elements that taxon
+lacks are flagged rather than hidden, so "the coracoid is gone, therefore this
+muscle had to move" is visible rather than inferred.
+
+**Mass & layer** — the homology spine: developmental origin (dorsal/ventral mass,
+or pharyngeal arch) → layer → proximodistal segment. This is the axis that
+survives deep transitions, since every tetrapod limb muscle is a subdivision of
+an ancestral fin mass.
+
+### Attachments carry the structure
+
+An attachment is a row of **bone → side → landmark**, and a muscle touching
+several sides or landmarks of one bone gets several rows:
+
+| Taxon | Type | Bone | Side | Landmark |
+|---|---|---|---|---|
+| Caudata | origin | Coracoid | ventral | — |
+| Caudata | origin | Scapula | lateral | — |
+| Theria | origin | Scapula | lateral | Supraspinous fossa |
+| Theria | origin | Scapula | lateral | Infraspinous fossa |
+
+Because attachments are recorded per taxon, **shifts are computed rather than
+asserted** — each taxon is diffed against the earliest one with data on record.
+The diff is hierarchy-aware, so `humerus → greater tubercle` reads as a
+refinement in resolution, not as a muscle moving.
 
 ## How to read the tables
 
@@ -116,17 +140,30 @@ coracoid?" directly.
 
 ```
 index.html              the app
-assets/                 app.js, styles.css — vanilla, no dependencies
+assets/
+  app.js                search, list, detail, navigation
+  skeleton.js           bone-first browse, hierarchy browse, attachment diffing
+  styles.css            vanilla CSS, light/dark
 data/
   taxa.json             operational taxa + the topology that orders them
   sources.json          bibliography
+  skeleton.json         attachment-site ontology: partOf, presence, correlates
   muscles-*.json        muscle records, split by region
   raw/                  git-ignored: verbatim extractions, curation aids only
-docs/SCHEMA.md          data model and how to add records
+docs/
+  SCHEMA.md             data model and how to add records
+  ROADMAP.md            path to the visual interface
 scripts/
+  build.sh              runs the whole data build in dependency order
   validate.py           schema + referential integrity. Exits non-zero on error
-  symmetrise_links.py   closes the related-muscle graph
-  extract_werneburg_appendix.py   parses Werneburg 2011 Appendix 1 from the PDF
+  export_matrix.py      long-format CSVs for downstream analysis
+  migrate_attachments.py         free strings -> skeleton ids
+  migrate_attachment_rows.py     ids -> element/side/landmark rows
+  assign_hierarchy.py            segment + layer
+  seed_occurrence_attachments.py taxon-specific attachments
+  symmetrise_links.py            closes the related-muscle graph
+  extract_werneburg_appendix.py  parses Werneburg 2011 Appendix 1 from the PDF
+export/                 git-ignored: generated CSVs
 papers/                 reading notes (tracked); PDFs (NOT tracked)
 ```
 
@@ -144,9 +181,11 @@ repository is public.
 ## Maintaining it
 
 ```sh
-python3 scripts/validate.py              # must exit clean before committing
-python3 scripts/symmetrise_links.py --write
+./scripts/build.sh --write     # migrations + seeds in order, then validate
+python3 scripts/export_matrix.py   # regenerate the analysis CSVs
 ```
+
+The build scripts are idempotent, so re-running is always safe.
 
 The validator checks that every source key resolves, every taxon reference
 resolves, every `related` and `serial.forelimb` link points at a real muscle,
@@ -176,8 +215,11 @@ Origin/insertion becomes what you *draw*, not what you navigate.
   name the sources that hold the numbers; several are already in `papers/`
   (Allen et al. 2014; Ercoli et al. 2014; Fahn-Lai et al. 2020). The schema has
   no field for these yet — roadmap phase 5.
-- **`layer` is only populated on the fin records.** Needed across all 86 before
-  the hierarchical browse can be built — roadmap phase 1.
+- **`side` is recorded on only ~100 of 471 attachment rows**, and `layer` on 34
+  of 86 muscles. Both are deliberately left blank rather than guessed; filling
+  them is source work, not scripting.
+- **Taxon-specific attachments exist for 14 muscles.** The rest inherit the
+  consensus and are marked `inherited` — that means unrecorded, not confirmed.
 - **The stem-tetrapodomorph column is pectoral-only**, limited to what Molnar et
   al. (2018) reconstruct.
 - **Monotreme and stem-synapsid rows are sparse** relative to the detail

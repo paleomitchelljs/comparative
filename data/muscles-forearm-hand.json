@@ -7,7 +7,15 @@
       "name": "Extensor antebrachii et carpi radialis",
       "region": "forearm",
       "subregion": "radial extensor complex",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal (extensor) mass of the forearm.",
       "synonyms": [
         "extensor radialis longus + extensor radialis brevis (Straus 1941a,b)",
@@ -24,12 +32,20 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "radius",
-          "carpals",
-          "metacarpals"
+          {
+            "element": "radius"
+          },
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -41,7 +57,25 @@
           "note": "Includes the extensor radialis longus + brevis sensu Straus (1941a,b).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              },
+              {
+                "element": "carpals"
+              }
+            ]
+          },
+          "attachmentNote": "Plesiomorphic tetrapod condition: insertion stops at the radius and proximal carpals."
         },
         {
           "taxon": "anura",
@@ -50,7 +84,22 @@
           "note": "In Phyllomedusa and other grasping tree frogs the insertion shifts distally onto the metacarpals, convergently with mammals.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "In Phyllomedusa and other grasping tree frogs the insertion has shifted distally onto the metacarpals — the same shift mammals made, independently."
         },
         {
           "taxon": "testudines",
@@ -58,7 +107,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              },
+              {
+                "element": "carpals"
+              }
+            ]
+          }
         },
         {
           "taxon": "lepidosauria",
@@ -66,7 +132,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              },
+              {
+                "element": "carpals"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -74,7 +157,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              },
+              {
+                "element": "carpals"
+              }
+            ]
+          }
         },
         {
           "taxon": "aves",
@@ -96,7 +196,27 @@
           "note": "The distal shift of insertion from carpus to metacarpus is a mammalian derived condition.",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "supracondylar-ridge"
+              },
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "Distal migration onto the metacarpals, correlated with finer digital control — and convergent with the anuran condition."
         }
       ],
       "homology": {
@@ -119,6 +239,7 @@
       "name": "Extensor antebrachii et carpi ulnaris",
       "region": "forearm",
       "subregion": "ulnar extensor complex",
+      "segment": "zeugopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -136,12 +257,20 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "ulna",
-          "ulnare",
-          "metacarpals"
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -228,7 +357,15 @@
       "name": "Extensor digitorum",
       "region": "forearm",
       "subregion": "digital extensor",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
         "extensor digitorum communis (Ribbing 1907; Walker 1973)",
@@ -246,11 +383,17 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "phalanges",
-          "metacarpals"
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -333,6 +476,7 @@
       "name": "Extensores digitorum breves",
       "region": "hand",
       "subregion": "dorsal intrinsic",
+      "segment": "autopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass, intrinsic to the manus.",
       "synonyms": [
@@ -349,13 +493,23 @@
       },
       "attachments": {
         "origin": [
-          "radius",
-          "ulna",
-          "carpals",
-          "metacarpals"
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -434,7 +588,9 @@
       "name": "Abductor pollicis longus",
       "region": "forearm",
       "subregion": "deep dorsal",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "profundus",
       "developmental": "Somitic; deep dorsal mass.",
       "synonyms": [
         "supinator manus (Haines 1939; Walker 1973; Holmes 1977)",
@@ -451,12 +607,20 @@
       },
       "attachments": {
         "origin": [
-          "ulna",
-          "radius",
-          "interosseous membrane"
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "radius"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
         ],
         "insertion": [
-          "metacarpals"
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -544,7 +708,15 @@
       "name": "Brachioradialis",
       "region": "forearm",
       "subregion": "radial extensor complex",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "adductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
         "tractor radii (Haines 1939; Walker 1973; Wyneken 2001; Abdala et al. 2008)",
@@ -558,10 +730,14 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "radius"
+          {
+            "element": "radius"
+          }
         ]
       },
       "occurrences": [
@@ -647,7 +823,9 @@
       "name": "Supinator",
       "region": "forearm",
       "subregion": "deep dorsal",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "profundus",
       "developmental": "Somitic; deep dorsal mass.",
       "synonyms": [
         "supinator brevis",
@@ -663,11 +841,17 @@
       },
       "attachments": {
         "origin": [
-          "humerus",
-          "ulna"
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "radius"
+          {
+            "element": "radius"
+          }
         ]
       },
       "occurrences": [
@@ -723,6 +907,7 @@
       "name": "Anconeus",
       "region": "forearm",
       "subregion": "elbow",
+      "segment": "zeugopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass. Often described as a detached distal part of the triceps field.",
       "synonyms": [
@@ -739,10 +924,14 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ]
       },
       "occurrences": [
@@ -827,6 +1016,7 @@
       "name": "Epitrochleoanconeus",
       "region": "forearm",
       "subregion": "elbow",
+      "segment": "zeugopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
@@ -843,10 +1033,14 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ]
       },
       "occurrences": [
@@ -927,7 +1121,15 @@
       "name": "Flexor carpi ulnaris",
       "region": "forearm",
       "subregion": "ulnar flexor complex",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "abductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral (flexor) mass.",
       "synonyms": [
         "part of flexor antebrachii et carpi ulnaris (Diogo & Abdala 2007; Diogo 2007)"
@@ -940,13 +1142,23 @@
       },
       "attachments": {
         "origin": [
-          "humerus",
-          "ulna"
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "carpals",
-          "pisiform",
-          "metacarpals"
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "pisiform"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -1032,6 +1244,7 @@
       "name": "Flexor carpi radialis",
       "region": "forearm",
       "subregion": "radial flexor complex",
+      "segment": "zeugopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
@@ -1047,12 +1260,20 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "radius",
-          "carpals",
-          "metacarpals"
+          {
+            "element": "radius"
+          },
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -1138,6 +1359,7 @@
       "name": "Pronator teres",
       "region": "forearm",
       "subregion": "pronator group",
+      "segment": "zeugopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
@@ -1154,11 +1376,17 @@
       },
       "attachments": {
         "origin": [
-          "humerus",
-          "ulna"
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "radius"
+          {
+            "element": "radius"
+          }
         ]
       },
       "occurrences": [
@@ -1245,7 +1473,15 @@
       "name": "Pronator quadratus",
       "region": "forearm",
       "subregion": "pronator group",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "abductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; deep ventral mass.",
       "synonyms": [
         "pronator profundus (Ribbing 1907; Straus 1942; Walthall & Ashley-Ross 2006; Moro & Abdala 2004; Abdala et al. 2008)"
@@ -1258,10 +1494,14 @@
       },
       "attachments": {
         "origin": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "radius"
+          {
+            "element": "radius"
+          }
         ]
       },
       "occurrences": [
@@ -1346,6 +1586,7 @@
       "name": "Pronator accessorius",
       "region": "forearm",
       "subregion": "pronator group",
+      "segment": "zeugopod",
       "mass": "ventral",
       "developmental": "Somitic; deep ventral mass.",
       "synonyms": [
@@ -1359,11 +1600,17 @@
       },
       "attachments": {
         "origin": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "radius",
-          "carpals"
+          {
+            "element": "radius"
+          },
+          {
+            "element": "carpals"
+          }
         ]
       },
       "occurrences": [
@@ -1428,7 +1675,15 @@
       "name": "Flexor digitorum longus / communis",
       "region": "forearm",
       "subregion": "digital flexor",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "abductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
         "palmaris superficialis (McMurrich 1903a)",
@@ -1446,12 +1701,20 @@
       },
       "attachments": {
         "origin": [
-          "humerus",
-          "radius",
-          "ulna"
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -1541,6 +1804,7 @@
       "name": "'Palmaris longus'",
       "region": "forearm",
       "subregion": "digital flexor",
+      "segment": "zeugopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral mass.",
       "synonyms": [],
@@ -1552,10 +1816,14 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "palmar aponeurosis"
+          {
+            "element": "palmar-aponeurosis"
+          }
         ]
       },
       "occurrences": [
@@ -1633,7 +1901,9 @@
       "name": "Contrahentium caput longum",
       "region": "forearm",
       "subregion": "deep ventral",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "profundus",
       "developmental": "Somitic; deep ventral mass.",
       "synonyms": [
         "ulnocarpalis (McMurrich 1903a,b; Straus 1942; Bunnell 1942)",
@@ -1647,10 +1917,14 @@
       },
       "attachments": {
         "origin": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "carpals"
+          {
+            "element": "carpals"
+          }
         ]
       },
       "occurrences": [
@@ -1716,7 +1990,9 @@
       "name": "Flexor accessorius lateralis",
       "region": "forearm",
       "subregion": "deep ventral",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "profundus",
       "developmental": "Somitic; deep ventral mass.",
       "synonyms": [
         "caput dorsale of flexor palmaris profundus (Straus 1942)",
@@ -1732,12 +2008,20 @@
       },
       "attachments": {
         "origin": [
-          "ulna",
-          "radius"
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "radius"
+          }
         ],
         "insertion": [
-          "carpals",
-          "flexor tendons"
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "flexor-tendons"
+          }
         ]
       },
       "occurrences": [
@@ -1804,7 +2088,9 @@
       "name": "Flexor accessorius medialis",
       "region": "forearm",
       "subregion": "deep ventral",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "profundus",
       "developmental": "Somitic; deep ventral mass.",
       "synonyms": [
         "caput volare of flexor palmaris profundus (Straus 1942)"
@@ -1817,10 +2103,14 @@
       },
       "attachments": {
         "origin": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ],
         "insertion": [
-          "flexor tendons"
+          {
+            "element": "flexor-tendons"
+          }
         ]
       },
       "occurrences": [
@@ -1885,7 +2175,9 @@
       "name": "Flexores breves superficiales",
       "region": "hand",
       "subregion": "superficial palmar layer",
+      "segment": "autopod",
       "mass": "ventral",
+      "layer": "superficialis",
       "developmental": "Somitic; ventral intrinsic layer of the manus.",
       "synonyms": [
         "flexores digitorum breves superficiales (McMurrich 1903a,b)",
@@ -1901,11 +2193,17 @@
       },
       "attachments": {
         "origin": [
-          "carpals",
-          "palmar aponeurosis"
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "palmar-aponeurosis"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -1979,7 +2277,9 @@
       "name": "Contrahentes digitorum",
       "region": "hand",
       "subregion": "middle palmar layer",
+      "segment": "autopod",
       "mass": "ventral",
+      "layer": "intermediate",
       "developmental": "Somitic; ventral intrinsic layer of the manus.",
       "synonyms": [
         "part of flexores digitorum breves medii (McMurrich 1903a,b; Lewis 1989)",
@@ -1995,11 +2295,17 @@
       },
       "attachments": {
         "origin": [
-          "carpals",
-          "metacarpals"
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -2082,7 +2388,9 @@
       "name": "Flexores breves profundi",
       "region": "hand",
       "subregion": "deep palmar layer",
+      "segment": "autopod",
       "mass": "ventral",
+      "layer": "profundus",
       "developmental": "Somitic; deepest ventral intrinsic layer of the manus.",
       "synonyms": [
         "flexores digitorum breves profundi (McMurrich 1903a,b; Ribbing 1938; Holmes 1977)",
@@ -2098,11 +2406,17 @@
       },
       "attachments": {
         "origin": [
-          "metacarpals"
+          {
+            "element": "metacarpals"
+          }
         ],
         "insertion": [
-          "phalanges",
-          "sesamoids"
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "sesamoids-manus"
+          }
         ]
       },
       "occurrences": [
@@ -2185,6 +2499,7 @@
       "name": "Lumbricales",
       "region": "hand",
       "subregion": "palmar intrinsic",
+      "segment": "autopod",
       "mass": "ventral",
       "developmental": "Somitic; differentiate from the long digital flexor tendons.",
       "synonyms": [
@@ -2198,11 +2513,17 @@
       },
       "attachments": {
         "origin": [
-          "flexor tendons"
+          {
+            "element": "flexor-tendons"
+          }
         ],
         "insertion": [
-          "phalanges",
-          "extensor expansion"
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "extensor-expansion"
+          }
         ]
       },
       "occurrences": [
@@ -2283,6 +2604,7 @@
       "name": "Intermetacarpales",
       "region": "hand",
       "subregion": "intermetacarpal",
+      "segment": "autopod",
       "mass": "ventral",
       "developmental": "Somitic; intrinsic to the manus.",
       "synonyms": [
@@ -2300,11 +2622,17 @@
       },
       "attachments": {
         "origin": [
-          "metacarpals"
+          {
+            "element": "metacarpals"
+          }
         ],
         "insertion": [
-          "metacarpals",
-          "phalanges"
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -2385,6 +2713,7 @@
       "name": "Dorsometacarpales",
       "region": "hand",
       "subregion": "dorsal intrinsic",
+      "segment": "autopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal intrinsic layer of the manus.",
       "synonyms": [
@@ -2398,10 +2727,14 @@
       },
       "attachments": {
         "origin": [
-          "metacarpals"
+          {
+            "element": "metacarpals"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -2471,6 +2804,7 @@
       "name": "Abductor pollicis brevis",
       "region": "hand",
       "subregion": "thenar",
+      "segment": "autopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral intrinsic layer of the manus.",
       "synonyms": [
@@ -2486,12 +2820,20 @@
       },
       "attachments": {
         "origin": [
-          "carpals",
-          "flexor retinaculum"
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
         ],
         "insertion": [
-          "phalanges",
-          "metacarpals"
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [
@@ -2575,6 +2917,7 @@
       "name": "Abductor digiti minimi",
       "region": "hand",
       "subregion": "hypothenar",
+      "segment": "autopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral intrinsic layer of the manus.",
       "synonyms": [
@@ -2591,12 +2934,20 @@
       },
       "attachments": {
         "origin": [
-          "carpals",
-          "pisiform"
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "pisiform"
+          }
         ],
         "insertion": [
-          "phalanges",
-          "metacarpals"
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "metacarpals"
+          }
         ]
       },
       "occurrences": [

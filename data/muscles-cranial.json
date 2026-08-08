@@ -8,8 +8,9 @@
       "name": "Adductor mandibulae complex",
       "region": "cranial",
       "subregion": "mandibular arch (arch 1)",
-      "arch": 1,
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": 1,
       "developmental": "First (mandibular) pharyngeal arch mesoderm; connective tissue from mandibular-stream neural crest.",
       "synonyms": [
         "adductor mandibulae externus / internus / posterior",
@@ -26,16 +27,34 @@
       },
       "attachments": {
         "origin": [
-          "palatoquadrate",
-          "temporal fossa",
-          "quadrate",
-          "pterygoid",
-          "zygomatic arch"
+          {
+            "element": "palatoquadrate"
+          },
+          {
+            "element": "temporal-fossa"
+          },
+          {
+            "element": "quadrate"
+          },
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "zygomatic-arch"
+          }
         ],
         "insertion": [
-          "mandible",
-          "coronoid process",
-          "Meckel's cartilage"
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "side": "dorsal",
+            "landmark": "coronoid-process-mandible"
+          },
+          {
+            "element": "meckels-cartilage"
+          }
         ]
       },
       "occurrences": [
@@ -134,8 +153,9 @@
       "name": "Intermandibularis",
       "region": "cranial",
       "subregion": "mandibular arch (arch 1)",
-      "arch": 1,
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": 1,
       "developmental": "First pharyngeal arch mesoderm.",
       "synonyms": [
         "mylohyoideus (mammals, partim)",
@@ -152,12 +172,20 @@
       },
       "attachments": {
         "origin": [
-          "mandible"
+          {
+            "element": "mandible"
+          }
         ],
         "insertion": [
-          "mandible",
-          "midline raphe",
-          "hyoid"
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "midline-raphe"
+          },
+          {
+            "element": "hyoid"
+          }
         ]
       },
       "occurrences": [
@@ -227,8 +255,9 @@
       "name": "Depressor mandibulae",
       "region": "cranial",
       "subregion": "hyoid arch (arch 2)",
-      "arch": 2,
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": 2,
       "developmental": "Second (hyoid) pharyngeal arch mesoderm.",
       "synonyms": [
         "constrictor hyoideus dorsalis (partim)",
@@ -243,13 +272,25 @@
       },
       "attachments": {
         "origin": [
-          "squamosal",
-          "otic capsule",
-          "hyomandibula"
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "otic-capsule"
+          },
+          {
+            "element": "hyomandibula"
+          }
         ],
         "insertion": [
-          "mandible",
-          "retroarticular process"
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "side": "posterior",
+            "landmark": "retroarticular-process"
+          }
         ]
       },
       "occurrences": [
@@ -339,8 +380,9 @@
       "name": "Interhyoideus / constrictor hyoideus ventralis",
       "region": "cranial",
       "subregion": "hyoid arch (arch 2)",
-      "arch": 2,
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": 2,
       "developmental": "Second pharyngeal arch mesoderm.",
       "synonyms": [
         "constrictor hyoideus ventralis",
@@ -356,14 +398,27 @@
       },
       "attachments": {
         "origin": [
-          "ceratohyal",
-          "hyomandibula",
-          "styloid process"
+          {
+            "element": "hyoid",
+            "landmark": "ceratohyal"
+          },
+          {
+            "element": "hyomandibula"
+          },
+          {
+            "element": "styloid-process"
+          }
         ],
         "insertion": [
-          "midline raphe",
-          "skin",
-          "hyoid"
+          {
+            "element": "midline-raphe"
+          },
+          {
+            "element": "skin"
+          },
+          {
+            "element": "hyoid"
+          }
         ]
       },
       "occurrences": [
@@ -434,8 +489,9 @@
       "name": "Stapedius / depressor hyomandibulae",
       "region": "cranial",
       "subregion": "hyoid arch (arch 2)",
-      "arch": 2,
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": 2,
       "developmental": "Second pharyngeal arch mesoderm — the same arch as the stapes/hyomandibula it acts on.",
       "synonyms": [
         "depressor hyomandibulae",
@@ -449,12 +505,21 @@
       },
       "attachments": {
         "origin": [
-          "otic capsule",
-          "pyramidal eminence"
+          {
+            "element": "otic-capsule"
+          },
+          {
+            "element": "otic-capsule",
+            "landmark": "pyramidal-eminence"
+          }
         ],
         "insertion": [
-          "stapes",
-          "hyomandibula"
+          {
+            "element": "stapes"
+          },
+          {
+            "element": "hyomandibula"
+          }
         ]
       },
       "occurrences": [
@@ -500,8 +565,9 @@
       "name": "Branchial constrictors and levators",
       "region": "cranial",
       "subregion": "branchial arches (arches 3–7)",
-      "arch": "3–7",
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": "3–7",
       "developmental": "Posterior pharyngeal arch mesoderm.",
       "synonyms": [
         "constrictores branchiales",
@@ -519,14 +585,26 @@
       },
       "attachments": {
         "origin": [
-          "branchial arches",
-          "thyroid cartilage",
-          "cricoid cartilage"
+          {
+            "element": "branchial-arches"
+          },
+          {
+            "element": "thyroid-cartilage"
+          },
+          {
+            "element": "cricoid-cartilage"
+          }
         ],
         "insertion": [
-          "branchial arches",
-          "pharyngeal raphe",
-          "arytenoid cartilage"
+          {
+            "element": "branchial-arches"
+          },
+          {
+            "element": "pharyngeal-raphe"
+          },
+          {
+            "element": "arytenoid-cartilage"
+          }
         ]
       },
       "occurrences": [
@@ -606,8 +684,9 @@
       "name": "Extraocular muscles",
       "region": "cranial",
       "subregion": "prechordal / somitomeric",
-      "arch": null,
+      "segment": "cranial",
       "mass": "extraocular",
+      "arch": null,
       "developmental": "Prechordal plate and cranial paraxial mesoderm — NOT pharyngeal arch derived. Distinct from every other cranial muscle group in origin.",
       "synonyms": [
         "rectus superior / inferior / medialis (internus, nasalis) / lateralis (externus)",
@@ -623,13 +702,23 @@
       },
       "attachments": {
         "origin": [
-          "orbit",
-          "optic foramen",
-          "interorbital septum"
+          {
+            "element": "orbit"
+          },
+          {
+            "element": "optic-foramen"
+          },
+          {
+            "element": "interorbital-septum"
+          }
         ],
         "insertion": [
-          "sclera",
-          "eyelid"
+          {
+            "element": "sclera"
+          },
+          {
+            "element": "eyelid"
+          }
         ]
       },
       "occurrences": [
@@ -694,8 +783,9 @@
       "name": "Hypobranchial muscles",
       "region": "cranial",
       "subregion": "hypobranchial (somitic)",
-      "arch": null,
+      "segment": "cranial",
       "mass": "somitic",
+      "arch": null,
       "developmental": "Occipital and anterior trunk somites. The myoblasts migrate forward beneath the pharynx, which is why they are somitic muscles in a cranial position — and why the hypoglossal nerve, a spinal nerve in origin, ends up cranial.",
       "synonyms": [
         "coracomandibularis",
@@ -717,15 +807,30 @@
       },
       "attachments": {
         "origin": [
-          "coracoid",
-          "sternum",
-          "hyoid",
-          "mandible"
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "mandible"
+          }
         ],
         "insertion": [
-          "hyoid",
-          "mandible",
-          "tongue"
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "tongue"
+          }
         ]
       },
       "occurrences": [
@@ -748,9 +853,28 @@
           "innervation": "Ventral rami of the occipital and anterior spinal nerves.",
           "note": "The coracoid origin makes the mechanical link between the pectoral girdle and the feeding apparatus explicit — the same link that must be broken for a neck to evolve.",
           "sources": [
-            "ziermann-etal-2014",
-            "diogo-ziermann-2015"
-          ]
+            "diogo-ziermann-2015",
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible"
+              },
+              {
+                "element": "hyoid"
+              },
+              {
+                "element": "branchial-arches"
+              }
+            ]
+          },
+          "attachmentNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck."
         },
         {
           "taxon": "caudata",
@@ -780,7 +904,33 @@
           "note": "The palatoglossus is the exception that confirms the rule: it is the only 'tongue' muscle innervated by CN X, because it is a soft-palate (arch 4) muscle rather than a hypobranchial one.",
           "sources": [
             "ziermann-diogo-2019"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "clavicle"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "hyoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyoid"
+              },
+              {
+                "element": "tongue"
+              }
+            ]
+          },
+          "attachmentNote": "With the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead."
         }
       ],
       "homology": {
@@ -804,8 +954,9 @@
       "name": "Levator arcus palatini / spiracular musculature",
       "region": "cranial",
       "subregion": "mandibular arch (arch 1)",
-      "arch": 1,
+      "segment": "cranial",
       "mass": "branchiomeric",
+      "arch": 1,
       "developmental": "First pharyngeal arch mesoderm, dorsal division.",
       "synonyms": [
         "levator palatoquadrati",
@@ -820,13 +971,23 @@
       },
       "attachments": {
         "origin": [
-          "neurocranium",
-          "otic capsule"
+          {
+            "element": "neurocranium"
+          },
+          {
+            "element": "otic-capsule"
+          }
         ],
         "insertion": [
-          "palatoquadrate",
-          "hyomandibula",
-          "spiracle"
+          {
+            "element": "palatoquadrate"
+          },
+          {
+            "element": "hyomandibula"
+          },
+          {
+            "element": "spiracle"
+          }
         ]
       },
       "occurrences": [

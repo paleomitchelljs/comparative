@@ -8,6 +8,7 @@
       "name": "Abductor superficialis",
       "region": "fin",
       "subregion": "ventral superficial",
+      "segment": "fin",
       "mass": "ventral",
       "layer": "superficialis",
       "ancestralNode": "LCA of extant gnathostomes",
@@ -24,15 +25,29 @@
       },
       "attachments": {
         "origin": [
-          "pectoral girdle",
-          "pelvic girdle",
-          "body wall"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "pelvic-girdle"
+          },
+          {
+            "element": "body-wall"
+          }
         ],
         "insertion": [
-          "fin radials",
-          "fin rays",
-          "humerus",
-          "femur"
+          {
+            "element": "fin-radials"
+          },
+          {
+            "element": "fin-rays"
+          },
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -121,6 +136,7 @@
       "name": "Abductor profundus",
       "region": "fin",
       "subregion": "ventral deep",
+      "segment": "fin",
       "mass": "ventral",
       "layer": "profundus",
       "ancestralNode": "LCA of extant gnathostomes",
@@ -137,13 +153,23 @@
       },
       "attachments": {
         "origin": [
-          "pectoral girdle",
-          "pelvic girdle"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "pelvic-girdle"
+          }
         ],
         "insertion": [
-          "fin radials",
-          "humerus",
-          "femur"
+          {
+            "element": "fin-radials"
+          },
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -228,6 +254,7 @@
       "name": "Adductor superficialis",
       "region": "fin",
       "subregion": "dorsal superficial",
+      "segment": "fin",
       "mass": "dorsal",
       "layer": "superficialis",
       "ancestralNode": "LCA of extant gnathostomes",
@@ -244,15 +271,29 @@
       },
       "attachments": {
         "origin": [
-          "pectoral girdle",
-          "pelvic girdle",
-          "body wall"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "pelvic-girdle"
+          },
+          {
+            "element": "body-wall"
+          }
         ],
         "insertion": [
-          "fin radials",
-          "fin rays",
-          "humerus",
-          "femur"
+          {
+            "element": "fin-radials"
+          },
+          {
+            "element": "fin-rays"
+          },
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -334,6 +375,7 @@
       "name": "Adductor profundus",
       "region": "fin",
       "subregion": "dorsal deep",
+      "segment": "fin",
       "mass": "dorsal",
       "layer": "profundus",
       "ancestralNode": "LCA of extant gnathostomes",
@@ -350,13 +392,23 @@
       },
       "attachments": {
         "origin": [
-          "pectoral girdle",
-          "pelvic girdle"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "pelvic-girdle"
+          }
         ],
         "insertion": [
-          "fin radials",
-          "humerus",
-          "femur"
+          {
+            "element": "fin-radials"
+          },
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -434,6 +486,7 @@
       "name": "Pterygialis cranialis",
       "region": "fin",
       "subregion": "preaxial",
+      "segment": "fin",
       "mass": "ventral",
       "layer": "preaxial",
       "ancestralNode": "LCA of extant gnathostomes",
@@ -449,13 +502,23 @@
       },
       "attachments": {
         "origin": [
-          "pectoral girdle",
-          "pelvic girdle"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "pelvic-girdle"
+          }
         ],
         "insertion": [
-          "fin radials",
-          "radius",
-          "tibia"
+          {
+            "element": "fin-radials"
+          },
+          {
+            "element": "radius"
+          },
+          {
+            "element": "tibia"
+          }
         ]
       },
       "occurrences": [
@@ -531,6 +594,7 @@
       "name": "Pterygialis caudalis",
       "region": "fin",
       "subregion": "postaxial",
+      "segment": "fin",
       "mass": "dorsal",
       "layer": "postaxial",
       "ancestralNode": "LCA of extant bony fishes (Osteichthyes)",
@@ -546,13 +610,23 @@
       },
       "attachments": {
         "origin": [
-          "pectoral girdle",
-          "pelvic girdle"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "pelvic-girdle"
+          }
         ],
         "insertion": [
-          "fin radials",
-          "ulna",
-          "fibula"
+          {
+            "element": "fin-radials"
+          },
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "fibula"
+          }
         ]
       },
       "occurrences": [
@@ -626,6 +700,7 @@
       "name": "Retractor lateralis ventralis pectoralis",
       "region": "fin",
       "subregion": "primaxial (axial to girdle)",
+      "segment": "fin",
       "mass": "somitic-axial",
       "layer": "primaxial",
       "ancestralNode": "Osteichthyes",
@@ -639,13 +714,24 @@
       },
       "attachments": {
         "origin": [
-          "axial skeleton",
-          "body wall"
+          {
+            "element": "axial-skeleton"
+          },
+          {
+            "element": "body-wall"
+          }
         ],
         "insertion": [
-          "pectoral girdle",
-          "cleithrum",
-          "scapula"
+          {
+            "element": "pectoral-girdle"
+          },
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
         ]
       },
       "occurrences": [

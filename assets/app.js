@@ -21,21 +21,28 @@ const state = {
   taxaById: new Map(),
   taxonOrder: new Map(),
   sources: new Map(),
+  elements: [],
+  elementsById: new Map(),
+  skeletonTaxon: '',
   index: [],
   query: '',
   filters: { region: null, taxon: null, confidence: null },
-  view: 'browse',        // browse | detail | topology
+  view: 'browse',        // browse | detail | skeleton | hierarchy
   current: null
 };
 
 /* ---------- boot ---------- */
 
 async function boot() {
-  const [taxaDoc, sourcesDoc, ...muscleDocs] = await Promise.all([
+  const [taxaDoc, sourcesDoc, skeletonDoc, ...muscleDocs] = await Promise.all([
     fetchJSON('data/taxa.json'),
     fetchJSON('data/sources.json'),
+    fetchJSON('data/skeleton.json'),
     ...DATA_FILES.map(fetchJSON)
   ]);
+
+  state.elements = skeletonDoc.elements;
+  skeletonDoc.elements.forEach(e => state.elementsById.set(e.id, e));
 
   state.taxa = taxaDoc.taxa;
   taxaDoc.taxa.forEach(t => state.taxaById.set(t.id, t));
@@ -90,12 +97,20 @@ function buildIndex() {
       (o.synonyms || []).forEach(s => push(s, 'synonym'));
     });
 
-    const bones = new Set();
-    (m.occurrences || []).forEach(() => {});
-    ['origin', 'insertion'].forEach(side => {
-      ((m.attachments || {})[side] || []).forEach(b => bones.add(b));
-    });
-    bones.forEach(b => push(b, 'attachment'));
+    /* Index every skeletal element the muscle touches, in every taxon — both the
+       bone and any landmark — so a search for "humerus" finds muscles recorded
+       only on the deltopectoral crest, and searching a landmark works too. */
+    const els = new Set();
+    const collect = att => ['origin', 'insertion'].forEach(side =>
+      (att?.[side] || []).forEach(r => {
+        if (!r) return;
+        if (typeof r === 'string') { els.add(r); return; }
+        if (r.element) els.add(r.element);
+        if (r.landmark) els.add(r.landmark);
+      }));
+    collect(m.attachments);
+    (m.occurrences || []).forEach(o => collect(o.attachments));
+    els.forEach(id => push(state.elementsById.get(id)?.label || id, 'attachment'));
 
     return { muscle: m, terms };
   });
@@ -170,9 +185,15 @@ function render({ keepScroll = false } = {}) {
   renderSidebar();
   const main = document.getElementById('main');
 
-  if (state.view === 'topology') { main.innerHTML = renderTopology(); }
+  if (state.view === 'skeleton') { main.innerHTML = renderSkeleton(); }
+  else if (state.view === 'hierarchy') { main.innerHTML = renderHierarchy(); }
   else if (state.view === 'detail' && state.current) { main.innerHTML = renderDetail(state.current); }
   else { main.innerHTML = renderList(); }
+
+  const picker = main.querySelector('#skel-taxon');
+  if (picker) picker.addEventListener('change', () => {
+    state.skeletonTaxon = picker.value; render({ keepScroll: true });
+  });
 
   main.querySelectorAll('[data-goto]').forEach(el => {
     el.addEventListener('click', ev => { ev.preventDefault(); openMuscle(el.dataset.goto); });
@@ -264,6 +285,7 @@ function renderDetail(m) {
       <section class="block"><h3>Consensus description</h3>${oia}</section>
       ${syn}
       <section class="block"><h3>Occurrence by taxon</h3>${renderOccTable(m)}</section>
+      ${renderAttachmentBlock(m)}
       ${renderHomologyBlock(m, h)}
       ${renderAncestry(m)}
       ${renderRelated(m, h)}
@@ -385,20 +407,13 @@ function renderAncestry(m) {
 
 function renderRelated(m, h) {
   const rel = (h.related || []).map(id => state.byId.get(id)).filter(Boolean);
-  const att = m.attachments || {};
-  const bones = [...new Set([...(att.origin || []), ...(att.insertion || [])])];
-  if (!rel.length && !bones.length) return '';
+  if (!rel.length) return '';
 
   let out = `<section class="block"><h3>Connections</h3>`;
   if (rel.length) {
     out += `<p class="synonyms" style="margin-bottom:.4rem">Topologically or developmentally adjacent:</p>
       <div class="pills" style="margin-bottom:1rem">
       ${rel.map(r => `<a class="pill" data-goto="${r.id}">${esc(r.name)}</a>`).join('')}</div>`;
-  }
-  if (bones.length) {
-    out += `<p class="synonyms" style="margin-bottom:.4rem">Skeletal elements involved:</p>
-      <div class="pills">${bones.map(b =>
-        `<a class="pill" href="#bone=${encodeURIComponent(b)}">${esc(b)}</a>`).join('')}</div>`;
   }
   return out + `</section>`;
 }
@@ -415,48 +430,6 @@ function renderSources(m) {
       <span class="meta">${esc(s.role || '')}${s.notes ? ` · notes: ${esc(s.notes)}` : ''}</span></li>`).join('');
   return `<section class="block"><h3>Sources</h3><ol class="refs">${items}</ol></section>`;
 }
-
-/* ---------- topology (attachment) view ---------- */
-
-function boneMap() {
-  const map = new Map();
-  state.muscles.forEach(m => {
-    ['origin', 'insertion'].forEach(side => {
-      ((m.attachments || {})[side] || []).forEach(b => {
-        if (!map.has(b)) map.set(b, { origin: [], insertion: [] });
-        map.get(b)[side].push(m);
-      });
-    });
-  });
-  return map;
-}
-
-function renderTopology() {
-  const map = boneMap();
-  const q = normalise(state.query);
-  let bones = [...map.keys()].sort();
-  if (q) bones = bones.filter(b => normalise(b).includes(q));
-
-  if (!bones.length) return `<div class="empty">No skeletal element matches “${esc(state.query)}”.</div>`;
-
-  const cards = bones.map(b => {
-    const e = map.get(b);
-    const list = arr => arr.length
-      ? arr.map(m => `<a data-goto="${m.id}">${esc(m.name)}</a>`).join('<span class="sep">, </span>')
-      : '<span class="sep">—</span>';
-    return `<div class="bonecard" id="bone-${esc(slug(b))}">
-      <h4>${esc(b)}</h4>
-      <div class="grp"><b>Origin of (${e.origin.length})</b>${list(e.origin)}</div>
-      <div class="grp"><b>Insertion of (${e.insertion.length})</b>${list(e.insertion)}</div>
-    </div>`;
-  }).join('');
-
-  return `<div class="resultbar"><strong>${bones.length}</strong> skeletal elements.
-    Each card lists the muscles that take origin from and insert on that element.</div>
-    <div class="boneindex">${cards}</div>`;
-}
-
-const slug = s => s.toLowerCase().replace(/[^a-z0-9]+/g, '-');
 
 /* ---------- sidebar ---------- */
 
@@ -517,8 +490,10 @@ const setHash = id => { history.replaceState(null, '', id ? `#${id}` : location.
 function applyHash() {
   const h = decodeURIComponent(location.hash.slice(1));
   if (!h) return;
-  if (h.startsWith('bone=')) {
-    state.view = 'topology'; state.query = h.slice(5);
+  if (h.startsWith('element=')) {
+    const el = state.elementsById.get(h.slice(8));
+    state.view = 'skeleton';
+    state.query = el ? el.label : h.slice(8);
     document.getElementById('search').value = state.query;
     syncViewButtons();
     return;
@@ -527,8 +502,11 @@ function applyHash() {
 }
 
 function syncViewButtons() {
-  document.getElementById('btn-browse').setAttribute('aria-pressed', String(state.view !== 'topology'));
-  document.getElementById('btn-topology').setAttribute('aria-pressed', String(state.view === 'topology'));
+  const on = v => String(state.view === v);
+  document.getElementById('btn-browse').setAttribute('aria-pressed',
+    String(state.view === 'browse' || state.view === 'detail'));
+  document.getElementById('btn-skeleton').setAttribute('aria-pressed', on('skeleton'));
+  document.getElementById('btn-hierarchy').setAttribute('aria-pressed', on('hierarchy'));
 }
 
 function wireUI() {
@@ -543,12 +521,14 @@ function wireUI() {
     }, 90);
   });
 
-  document.getElementById('btn-browse').addEventListener('click', () => {
-    state.view = 'browse'; state.current = null; setHash(''); syncViewButtons(); render();
-  });
-  document.getElementById('btn-topology').addEventListener('click', () => {
-    state.view = 'topology'; state.current = null; syncViewButtons(); render();
-  });
+  const nav = { 'btn-browse': 'browse', 'btn-skeleton': 'skeleton', 'btn-hierarchy': 'hierarchy' };
+  for (const [id, view] of Object.entries(nav)) {
+    document.getElementById(id).addEventListener('click', () => {
+      state.view = view; state.current = null;
+      if (view === 'browse') setHash('');
+      syncViewButtons(); render();
+    });
+  }
 
   const themeBtn = document.getElementById('btn-theme');
   themeBtn.addEventListener('click', () => {

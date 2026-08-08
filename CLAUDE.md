@@ -38,9 +38,20 @@ shared anlagen; put known anlage mismatches in `caution`.
 **Quote disputed muscle names in `name`** — `"'Rhomboideus'"`, `"'Ambiens'"`.
 This follows the sources' own convention and the UI renders it verbatim.
 
-**`attachments` vocabulary must stay consistent.** It is matched as a literal
-string to build the Attachments view. Lowercase singular bone names: `humerus`,
-not `Humerus` or `the humerus`.
+**Attachments are element/side/landmark rows, not strings.** `element` is
+always the bone; subsites go in `landmark` and must be `partOf` that bone. Every
+id resolves to `data/skeleton.json`. A muscle on several sides or landmarks of
+one bone gets several rows.
+
+**Never invent a `side`.** Absent means unrecorded. The same goes for a taxon's
+attachments: leaving an occurrence without `attachments` correctly reads as "not
+recorded", whereas copying the consensus asserts an observation nobody made.
+
+**Rebuild with `./scripts/build.sh --write`,** which runs the migrations and
+seeds in dependency order and then validates. The scripts are idempotent.
+
+**Regenerate analysis exports with `scripts/export_matrix.py`.** `export/` is
+git-ignored — it is derived, never a source of truth.
 
 **`related` is an undirected graph.** Record a link once, then run
 `symmetrise_links.py --write`. Do not hand-curate both directions.

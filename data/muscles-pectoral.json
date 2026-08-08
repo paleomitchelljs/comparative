@@ -7,6 +7,7 @@
       "name": "Protractor pectoralis / cucullaris",
       "region": "pectoral",
       "subregion": "head–trunk interface",
+      "segment": "girdle",
       "mass": "branchial",
       "developmental": "Branchiomeric. Derives from cranial paraxial/lateral plate mesoderm caudal to the last pharyngeal arch, not from somites — the defining muscle of the head–trunk boundary.",
       "synonyms": [
@@ -24,15 +25,31 @@
       },
       "attachments": {
         "origin": [
-          "occiput",
-          "cervical fascia",
-          "branchial arches"
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "cervical-fascia"
+          },
+          {
+            "element": "branchial-arches"
+          }
         ],
         "insertion": [
-          "scapula",
-          "cleithrum",
-          "clavicle",
-          "suprascapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "clavicle"
+          },
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
         ]
       },
       "occurrences": [
@@ -139,6 +156,7 @@
       "name": "Serratus anterior",
       "region": "pectoral",
       "subregion": "axio-appendicular",
+      "segment": "girdle",
       "mass": "somitic-axial",
       "developmental": "Somitic (abaxial); derived from the ventrolateral lips of the cervical and anterior thoracic somites.",
       "synonyms": [
@@ -155,12 +173,22 @@
       },
       "attachments": {
         "origin": [
-          "ribs",
-          "cervical transverse processes"
+          {
+            "element": "ribs"
+          },
+          {
+            "element": "cervical-transverse-processes"
+          }
         ],
         "insertion": [
-          "scapula",
-          "suprascapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
         ]
       },
       "occurrences": [
@@ -265,6 +293,7 @@
       "name": "'Rhomboideus'",
       "region": "pectoral",
       "subregion": "axio-appendicular",
+      "segment": "girdle",
       "mass": "somitic-axial",
       "developmental": "Somitic (abaxial).",
       "synonyms": [
@@ -280,13 +309,25 @@
       },
       "attachments": {
         "origin": [
-          "occiput",
-          "nuchal ligament",
-          "thoracic neural spines"
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "nuchal-ligament"
+          },
+          {
+            "element": "thoracic-neural-spines"
+          }
         ],
         "insertion": [
-          "scapula",
-          "suprascapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
         ]
       },
       "occurrences": [
@@ -373,6 +414,7 @@
       "name": "Levator scapulae",
       "region": "pectoral",
       "subregion": "axio-appendicular",
+      "segment": "girdle",
       "mass": "somitic-axial",
       "developmental": "Somitic. In Ambystoma it derives mainly from somite 3 (Piekarski & Olsson 2007); Piatt (1938) implicated somites 2–4 together with the hypobranchial muscles.",
       "synonyms": [
@@ -391,14 +433,30 @@
       },
       "attachments": {
         "origin": [
-          "cranium",
-          "operculum",
-          "atlas transverse process",
-          "cervical transverse processes"
+          {
+            "element": "neurocranium"
+          },
+          {
+            "element": "otic-capsule",
+            "landmark": "operculum"
+          },
+          {
+            "element": "cervical-transverse-processes",
+            "landmark": "atlas-transverse-process"
+          },
+          {
+            "element": "cervical-transverse-processes"
+          }
         ],
         "insertion": [
-          "scapula",
-          "suprascapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
         ]
       },
       "occurrences": [
@@ -504,6 +562,7 @@
       "name": "Opercularis",
       "region": "pectoral",
       "subregion": "axio-appendicular",
+      "segment": "girdle",
       "mass": "somitic-axial",
       "developmental": "Somitic; a differentiated portion of the ancestral levator scapulae field.",
       "synonyms": [
@@ -517,11 +576,19 @@
       },
       "attachments": {
         "origin": [
-          "suprascapula"
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
         ],
         "insertion": [
-          "operculum",
-          "otic capsule"
+          {
+            "element": "otic-capsule",
+            "landmark": "operculum"
+          },
+          {
+            "element": "otic-capsule"
+          }
         ]
       },
       "occurrences": [
@@ -532,7 +599,22 @@
           "note": "Only in anurans is this a discrete muscle. Together with the levator scapulae superioris it accounts for the single urodele levator scapulae.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "suprascapula",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "otic-capsule",
+                "landmark": "operculum"
+              }
+            ]
+          },
+          "attachmentNote": "A pectoral girdle muscle inserting on the ear. Anuran-only, and only in anurans is it a discrete muscle."
         },
         {
           "taxon": "caudata",
@@ -560,6 +642,7 @@
       "name": "Sternocoracoideus",
       "region": "pectoral",
       "subregion": "axio-appendicular",
+      "segment": "girdle",
       "mass": "somitic-axial",
       "developmental": "Somitic (abaxial).",
       "synonyms": [
@@ -574,11 +657,18 @@
       },
       "attachments": {
         "origin": [
-          "sternum"
+          {
+            "element": "sternum"
+          }
         ],
         "insertion": [
-          "coracoid",
-          "clavicle"
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "clavicle"
+          }
         ]
       },
       "occurrences": [
@@ -611,7 +701,20 @@
           "note": "Often divided into superficial and deep heads in Iguana and Sphenodon (Holmes 1977; Dilkes 2000).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -628,7 +731,20 @@
           "note": "Present according to Dilkes (2000).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ]
+          }
         },
         {
           "taxon": "monotremata",
@@ -636,9 +752,22 @@
           "present": "yes",
           "note": "Ornithorhynchus retains both a costocoracoideus and a sternocoracoideus (Howell 1937b), consistent with its retained coracoid.",
           "sources": [
-            "gambaryan-etal-2015",
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "gambaryan-etal-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ]
+          }
         },
         {
           "taxon": "theria",
@@ -651,7 +780,20 @@
           "note": "Howell (1937b) argued the placental subclavius corresponds to the sternocoracoideus of other tetrapods, the coracoid having been lost and its attachment transferred to the clavicle.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "clavicle"
+              }
+            ]
+          },
+          "attachmentNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology."
         }
       ],
       "homology": {
@@ -672,6 +814,7 @@
       "name": "Costocoracoideus",
       "region": "pectoral",
       "subregion": "axio-appendicular",
+      "segment": "girdle",
       "mass": "somitic-axial",
       "developmental": "Somitic (abaxial).",
       "synonyms": [
@@ -686,10 +829,15 @@
       },
       "attachments": {
         "origin": [
-          "ribs"
+          {
+            "element": "ribs"
+          }
         ],
         "insertion": [
-          "coracoid"
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
         ]
       },
       "occurrences": [
@@ -777,7 +925,15 @@
       "name": "Pectoralis",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "ventral",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "abductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral (flexor) muscle mass of the limb bud.",
       "synonyms": [
         "pectoralis major (Wyneken 2001)",
@@ -792,14 +948,28 @@
       },
       "attachments": {
         "origin": [
-          "sternum",
-          "clavicle",
-          "interclavicle",
-          "ventral ribs",
-          "sternal keel"
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "clavicle"
+          },
+          {
+            "element": "interclavicle"
+          },
+          {
+            "element": "ribs"
+          },
+          {
+            "element": "sternum",
+            "side": "ventral",
+            "landmark": "sternal-keel"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -830,7 +1000,22 @@
           "insertion": "Proximal humerus.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "body-wall"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "anura",
@@ -861,9 +1046,29 @@
           "note": "Present in all major extant reptilian clades (Fürbringer 1876; Walker 1973; Holmes 1977; Dilkes 2000).",
           "sources": [
             "abdala-diogo-2010",
-            "navarro-etal-2023",
-            "freitas-etal-2017"
-          ]
+            "freitas-etal-2017",
+            "navarro-etal-2023"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "interclavicle"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -884,7 +1089,27 @@
           "note": "Includes the pectoralis pars thoracica sensu Maxwell & Larsson (2007).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum",
+                "side": "ventral",
+                "landmark": "sternal-keel"
+              },
+              {
+                "element": "furcula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Origin concentrated on the carina; the largest muscle in the body of most flying birds."
         },
         {
           "taxon": "monotremata",
@@ -894,7 +1119,28 @@
           "insertion": "Deltopectoral crest.",
           "sources": [
             "gambaryan-etal-2015"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "interclavicle"
+              },
+              {
+                "element": "clavicle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "More extensive origin than in therians because monotremes retain the interclavicle."
         },
         {
           "taxon": "theria",
@@ -906,7 +1152,27 @@
           "innervation": "Medial and lateral pectoral nerves (C5–T1).",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "clavicle"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal",
+                "landmark": "greater-tubercle"
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -930,7 +1196,15 @@
       "name": "Supracoracoideus",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "ventral",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "abductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral mass, but see homology note on the mammalian supraspinatus/infraspinatus.",
       "synonyms": [
         "coracohumeralis (Howell 1935, 1936a, 1937b)",
@@ -945,11 +1219,19 @@
       },
       "attachments": {
         "origin": [
-          "coracoid",
-          "scapula"
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -969,7 +1251,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "anura",
@@ -985,7 +1284,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "lepidosauria",
@@ -993,7 +1309,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -1001,7 +1334,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "aves",
@@ -1013,7 +1363,22 @@
           "note": "= pectoralis secundus sensu Jollie (1962).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum",
+                "side": "ventral",
+                "landmark": "sternal-keel"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          },
+          "attachmentNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."
         },
         {
           "taxon": "monotremata",
@@ -1021,9 +1386,29 @@
           "present": "yes",
           "note": "Monotremes are the critical intermediate: the scapular spine is incipient and the supracoracoideus field is only partly divided into the therian supraspinatus and infraspinatus.",
           "sources": [
-            "gambaryan-etal-2015",
-            "fahn-lai-etal-2020"
-          ]
+            "fahn-lai-etal-2020",
+            "gambaryan-etal-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal",
+                "landmark": "greater-tubercle"
+              }
+            ]
+          },
+          "attachmentNote": "The scapular spine is only incipient, so the supracoracoideus field is just beginning to divide into supraspinatus and infraspinatus. The readable intermediate."
         },
         {
           "taxon": "theria",
@@ -1037,7 +1422,29 @@
           "sources": [
             "ercoli-etal-2014",
             "fahn-lai-etal-2020"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral",
+                "landmark": "supraspinous-fossa"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral",
+                "landmark": "infraspinous-fossa"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal",
+                "landmark": "greater-tubercle"
+              }
+            ]
+          },
+          "attachmentNote": "Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus."
         }
       ],
       "homology": {
@@ -1062,7 +1469,15 @@
       "name": "Deltoideus scapularis",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal (extensor) muscle mass of the limb bud.",
       "synonyms": [
         "dorsalis scapulae (Smith 1926; Howell 1935, 1936a, 1937b; Romer 1944)",
@@ -1078,11 +1493,19 @@
       },
       "attachments": {
         "origin": [
-          "scapula",
-          "suprascapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1176,6 +1599,7 @@
       "name": "Deltoideus clavicularis / procoracohumeralis",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -1193,12 +1617,22 @@
       },
       "attachments": {
         "origin": [
-          "clavicle",
-          "procoracoid",
-          "acromion"
+          {
+            "element": "clavicle"
+          },
+          {
+            "element": "procoracoid"
+          },
+          {
+            "element": "scapula",
+            "side": "distal",
+            "landmark": "acromion"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1209,7 +1643,20 @@
           "note": "The amphibian name reflects the procoracoid origin; the muscle is the same field as the amniote deltoideus clavicularis.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "procoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          },
+          "attachmentNote": "Called procoracohumeralis in amphibians purely because the origin sits on the procoracoid."
         },
         {
           "taxon": "anura",
@@ -1217,7 +1664,19 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "procoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "testudines",
@@ -1225,7 +1684,19 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "lepidosauria",
@@ -1233,7 +1704,19 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -1241,7 +1724,21 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          },
+          "attachmentNote": "Crocodylians have no clavicle, so despite the name the origin sits on the scapula — which is why Fürbringer (1876) called this muscle the scapularis inferior."
         },
         {
           "taxon": "aves",
@@ -1262,7 +1759,27 @@
           "note": "Romer (1924) derived the mammalian teres minor and deltoideus clavicularis from the procoracohumeralis, against Mivart's (1869) suggestion that the subclavius came from this field.",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "distal",
+                "landmark": "acromion"
+              },
+              {
+                "element": "clavicle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "The muscle is renamed at every step for the bone that happens to carry its origin, though the muscle itself is continuous across Tetrapoda."
         }
       ],
       "homology": {
@@ -1285,6 +1802,7 @@
       "name": "Scapulohumeralis anterior",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -1299,10 +1817,15 @@
       },
       "attachments": {
         "origin": [
-          "scapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1384,6 +1907,7 @@
       "name": "Scapulohumeralis posterior",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -1397,10 +1921,15 @@
       },
       "attachments": {
         "origin": [
-          "scapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1468,7 +1997,15 @@
       "name": "Subcoracoscapularis",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "adductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
         "subscapularis (Ecker 1889; Walker 1973; Holmes 1977; Dilkes 2000; Wyneken 2001)",
@@ -1482,11 +2019,19 @@
       },
       "attachments": {
         "origin": [
-          "scapula",
-          "coracoid"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1523,7 +2068,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "lepidosauria",
@@ -1532,7 +2094,24 @@
           "note": "= subscapularis + subcoracoideus sensu Holmes (1977) and Dilkes (2000).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -1540,7 +2119,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "aves",
@@ -1548,7 +2144,24 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "theria",
@@ -1561,7 +2174,24 @@
           "note": "The coracoid contribution is lost with the coracoid itself; only the scapular head persists in therians.",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "medial",
+                "landmark": "subscapular-fossa"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal",
+                "landmark": "lesser-tubercle"
+              }
+            ]
+          },
+          "attachmentNote": "The coracoid head is gone with the coracoid itself; only the scapular head persists, which is why the mammalian muscle is 'subscapularis' rather than 'subcoraco-scapularis'."
         }
       ],
       "homology": {
@@ -1584,6 +2214,7 @@
       "name": "Teres major",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass. Frequently differentiates in association with the latissimus dorsi.",
       "synonyms": [],
@@ -1595,10 +2226,15 @@
       },
       "attachments": {
         "origin": [
-          "scapula"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1678,7 +2314,15 @@
       "name": "Latissimus dorsi",
       "region": "pectoral",
       "subregion": "girdle–humerus",
+      "segment": "girdle",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic (abaxial); dorsal muscle mass.",
       "synonyms": [
         "dorsalis scapulae (partim, some older usage)"
@@ -1691,12 +2335,20 @@
       },
       "attachments": {
         "origin": [
-          "thoracolumbar fascia",
-          "thoracic neural spines",
-          "ribs"
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "thoracic-neural-spines"
+          },
+          {
+            "element": "ribs"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -1718,7 +2370,19 @@
           "insertion": "Proximal humerus.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "body-wall"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "anura",
@@ -1735,7 +2399,20 @@
           "note": "Retained despite the carapace; origin shifts onto the internal surface of the shell.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          },
+          "attachmentNote": "Origin transferred onto the internal surface of the carapace, which is built from the ribs."
         },
         {
           "taxon": "lepidosauria",
@@ -1786,7 +2463,25 @@
           "innervation": "Thoracodorsal nerve (C6–C8).",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracolumbar-fascia"
+              },
+              {
+                "element": "thoracic-neural-spines"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -1809,6 +2504,7 @@
       "name": "Triceps brachii",
       "region": "arm",
       "subregion": "brachium",
+      "segment": "stylopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal (extensor) muscle mass.",
       "synonyms": [
@@ -1823,12 +2519,22 @@
       },
       "attachments": {
         "origin": [
-          "scapula",
-          "coracoid",
-          "humerus"
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "ulna"
+          {
+            "element": "ulna"
+          }
         ]
       },
       "occurrences": [
@@ -1849,7 +2555,25 @@
           "note": "Multi-headed in urodeles, with scapular and several humeral heads.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "proximal",
+                "landmark": "olecranon"
+              }
+            ]
+          }
         },
         {
           "taxon": "anura",
@@ -1875,7 +2599,29 @@
           "present": "yes",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "humerus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "proximal",
+                "landmark": "olecranon"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -1904,7 +2650,25 @@
           "innervation": "Radial nerve (C6–C8).",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "proximal",
+                "landmark": "olecranon"
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -1926,6 +2690,7 @@
       "name": "Brachialis / humeroantebrachialis",
       "region": "arm",
       "subregion": "brachium",
+      "segment": "stylopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral (flexor) mass.",
       "synonyms": [
@@ -1942,11 +2707,17 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "ulna",
-          "radius"
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "radius"
+          }
         ]
       },
       "occurrences": [
@@ -2032,7 +2803,15 @@
       "name": "Biceps brachii / coracoradialis",
       "region": "arm",
       "subregion": "brachium",
+      "segment": "stylopod",
       "mass": "ventral",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "abductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral (flexor) mass.",
       "synonyms": [
         "coracoradialis (anurans, some urodeles)",
@@ -2047,12 +2826,22 @@
       },
       "attachments": {
         "origin": [
-          "coracoid",
-          "scapula"
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
         ],
         "insertion": [
-          "radius",
-          "ulna"
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna"
+          }
         ]
       },
       "occurrences": [
@@ -2088,7 +2877,20 @@
           "note": "= humeroantebrachialis sensu Diogo & Abdala (2007) and Diogo (2007); = short and long heads of biceps brachii sensu Jouffroy (1971).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -2116,7 +2918,28 @@
           "innervation": "Musculocutaneous nerve (C5–C6).",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "coracoid-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal",
+                "landmark": "radial-tuberosity"
+              }
+            ]
+          },
+          "attachmentNote": "The short head arises from the coracoid process — the fused remnant of the coracoid — rather than from a coracoid bone."
         }
       ],
       "homology": {
@@ -2137,7 +2960,15 @@
       "name": "Coracobrachialis",
       "region": "arm",
       "subregion": "brachium",
+      "segment": "stylopod",
       "mass": "ventral",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "abductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral (flexor) mass.",
       "synonyms": [
         "coracobrachialis magnus + brevis (Walker 1973; Wyneken 2001)",
@@ -2153,10 +2984,15 @@
       },
       "attachments": {
         "origin": [
-          "coracoid"
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
         ],
         "insertion": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ]
       },
       "occurrences": [
@@ -2176,7 +3012,20 @@
           "note": "Corresponds to the coracobrachialis longus/superficialis of Walthall & Ashley-Ross (2006).",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "anura",
@@ -2202,7 +3051,20 @@
           "note": "= coracobrachialis superficialis/longus + coracobrachialis profundus/brevis of earlier authors.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -2220,7 +3082,20 @@
           "note": "= coracobrachialis longus + brevis, or cranialis + caudalis, or anterior + posterior, depending on author.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          }
         },
         {
           "taxon": "theria",
@@ -2232,7 +3107,22 @@
           "innervation": "Musculocutaneous nerve (C5–C7).",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "coracoid-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus"
+              }
+            ]
+          },
+          "attachmentNote": "Origin transfers to the coracoid process as the coracoid bone is lost."
         }
       ],
       "homology": {
@@ -2255,6 +3145,7 @@
       "name": "Humeroradialis",
       "region": "arm",
       "subregion": "brachium",
+      "segment": "stylopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -2271,11 +3162,17 @@
       },
       "attachments": {
         "origin": [
-          "humerus"
+          {
+            "element": "humerus"
+          }
         ],
         "insertion": [
-          "radius",
-          "propatagium"
+          {
+            "element": "radius"
+          },
+          {
+            "element": "propatagium"
+          }
         ]
       },
       "occurrences": [

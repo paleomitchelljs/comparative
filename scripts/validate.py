@@ -16,7 +16,8 @@ MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
 PRESENCE = {"yes", "no", "variable", "uncertain", "inferred"}
 CONFIDENCE = {"well-supported", "moderate", "contested", "uncertain"}
 SERIAL_BASIS = {"topological", "developmental", "none"}
-LAYERS = {"superficialis", "profundus", "preaxial", "postaxial", "primaxial"}
+LAYERS = {"superficialis", "profundus", "intermediate", "preaxial", "postaxial", "primaxial"}
+SEGMENTS = {"cranial", "axial", "girdle", "stylopod", "zeugopod", "autopod", "fin"}
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -42,9 +43,69 @@ def main():
 
     taxa_doc = load(ROOT / "data/taxa.json")
     sources_doc = load(ROOT / "data/sources.json")
+    skeleton_doc = load(ROOT / "data/skeleton.json")
 
     taxon_ids = {t["id"] for t in taxa_doc["taxa"]}
     source_keys = {s["key"] for s in sources_doc["sources"]}
+    element_ids = {e["id"] for e in skeleton_doc["elements"]}
+    side_terms = set(skeleton_doc.get("sides", []))
+
+    # Skeleton internal consistency.
+    kinds = set(skeleton_doc["kinds"])
+    segments = set(skeleton_doc["segments"])
+    seen_elements = set()
+    for e in skeleton_doc["elements"]:
+        eid = e.get("id")
+        if not eid:
+            err("skeleton.json: element without an id")
+            continue
+        if eid in seen_elements:
+            err(f"skeleton.json: duplicate element id '{eid}'")
+        seen_elements.add(eid)
+        if e.get("kind") not in kinds:
+            err(f"skeleton.json:{eid}: kind '{e.get('kind')}' not in {sorted(kinds)}")
+        if e.get("segment") not in segments:
+            err(f"skeleton.json:{eid}: segment '{e.get('segment')}' not in {sorted(segments)}")
+        parent = e.get("partOf")
+        if parent and parent not in element_ids:
+            err(f"skeleton.json:{eid}: partOf '{parent}' is not an element")
+        pres = e.get("presence", {})
+        if pres.get("default") not in {"yes", "no", "variable"}:
+            err(f"skeleton.json:{eid}: presence.default must be yes/no/variable")
+        for key in ("present", "absent", "variable", "partial", "reduced"):
+            for tid in pres.get(key, []):
+                if tid not in taxon_ids:
+                    err(f"skeleton.json:{eid}: presence.{key} lists unknown taxon '{tid}'")
+        for k in pres.get("sources", []):
+            if k not in source_keys:
+                err(f"skeleton.json:{eid}: unknown source key '{k}'")
+
+    by_id = {e["id"]: e for e in skeleton_doc["elements"] if e.get("id")}
+
+    def lineage(eid):
+        out, cur = [], eid
+        while cur and cur not in out:
+            out.append(cur)
+            cur = by_id.get(cur, {}).get("partOf")
+        return out
+
+    def present_in(eid, tid):
+        p = by_id.get(eid, {}).get("presence", {})
+        if tid in p.get("absent", []):
+            return False
+        if p.get("default") == "no":
+            return tid in (p.get("present", []) + p.get("partial", []) + p.get("reduced", []))
+        return True
+
+    # partOf must not cycle, or the bone-first drill-down recurses forever.
+    for eid in by_id:
+        seen, cur = set(), eid
+        while cur:
+            if cur in seen:
+                err(f"skeleton.json: partOf cycle involving '{eid}'")
+                break
+            seen.add(cur)
+            cur = by_id.get(cur, {}).get("partOf")
 
     # Every taxon in the topology must be defined, and vice versa.
     topo_ids = set()
@@ -92,12 +153,47 @@ def main():
             if key not in source_keys:
                 err(f"{where}: unknown source key '{key}'")
 
+        def check_rows(att, label, taxon=None):
+            """An attachment row is {element, side?, landmark?}. The landmark must
+            sit inside the element, or the bone-first drill-down would file it in
+            the wrong place."""
+            for side_key in ("origin", "insertion"):
+                for row in att.get(side_key, []):
+                    if not isinstance(row, dict):
+                        err(f"{label}: attachments.{side_key} entry is not an "
+                            f"element/side/landmark row: {row!r}")
+                        continue
+                    el = row.get("element")
+                    if el not in element_ids:
+                        err(f"{label}: attachments.{side_key} element '{el}' "
+                            f"is not in skeleton.json")
+                        continue
+                    if row.get("side") and row["side"] not in side_terms:
+                        err(f"{label}: side '{row['side']}' not in {sorted(side_terms)}")
+                    lm = row.get("landmark")
+                    if lm:
+                        if lm not in element_ids:
+                            err(f"{label}: landmark '{lm}' is not in skeleton.json")
+                        elif el not in lineage(lm):
+                            err(f"{label}: landmark '{lm}' is not part of '{el}'")
+                    if taxon:
+                        for ref in filter(None, (el, lm)):
+                            if not present_in(ref, taxon):
+                                err(f"{label}: attaches to '{ref}', which "
+                                    f"skeleton.json records as absent in {taxon}")
+
+        check_rows(m.get("attachments", {}), where)
+
         seen_taxa = Counter()
         for occ in m.get("occurrences", []):
             tid = occ.get("taxon")
             if tid not in taxon_ids:
                 err(f"{where}: occurrence references unknown taxon '{tid}'")
             seen_taxa[tid] += 1
+
+            check_rows(occ.get("attachments", {}), f"{where}/{tid}", taxon=tid)
+            if occ.get("attachments") and not occ.get("sources"):
+                warn(f"{where}/{tid}: taxon-specific attachments with no source")
 
             pres = occ.get("present", "yes")
             if pres not in PRESENCE:
@@ -148,6 +244,20 @@ def main():
             err(f"{where}: layer='{layer}' not in {sorted(LAYERS)}")
         if m.get("region") == "fin" and not layer:
             warn(f"{where}: fin muscle without a `layer`")
+
+        seg = m.get("segment")
+        if seg and seg not in SEGMENTS:
+            err(f"{where}: segment='{seg}' not in {sorted(SEGMENTS)}")
+        if not seg:
+            warn(f"{where}: no `segment` (run scripts/assign_hierarchy.py --write)")
+
+        ls = m.get("layerSource")
+        if ls:
+            if ls.get("from") not in muscles:
+                err(f"{where}: layerSource.from '{ls.get('from')}' is not a muscle")
+            for k in ls.get("sources", []):
+                if k not in source_keys:
+                    err(f"{where}: layerSource unknown source key '{k}'")
 
         serial = hom.get("serial")
         if serial:

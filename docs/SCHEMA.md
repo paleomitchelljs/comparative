@@ -6,6 +6,7 @@ Three kinds of file live in `data/`:
 |---|---|
 | `taxa.json` | Operational taxa and the topology that orders them |
 | `sources.json` | Bibliography, keyed by `key` |
+| `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
 | `muscles-*.json` | Muscle records, split by anatomical region |
 
 `scripts/validate.py` enforces everything below. Run it before committing.
@@ -62,7 +63,7 @@ So each record has:
 | `developmental` | | Embryonic origin. This is often the decisive homology evidence — state it when known |
 | `synonyms` | | Every other name for this muscle, **with the author who used it**. These are indexed for search, so they are how a reader arrives from an old paper |
 | `consensus` | | `{origin, insertion, action, innervation}` — the generalised description |
-| `attachments` | | `{origin: [], insertion: []}` — normalised skeletal element names. Drives the Attachments view; keep the vocabulary consistent (`humerus`, not `Humerus` or `the humerus`) |
+| `attachments` | | `{origin: [row], insertion: [row]}` where a row is `{element, side?, landmark?}` — see below. Also valid on **occurrence** rows, which is where taxon-specific attachment is recorded |
 | `occurrences` | ✔ | See below |
 | `homology` | | See below |
 | `sources` | ✔ | Array of `sources.json` keys |
@@ -114,6 +115,45 @@ only that the two muscles occupy corresponding positions. Where the developmenta
 anlagen are known to differ — as for popliteus and pronator teres — say so in
 `caution`. Reserve `basis: "developmental"` for correspondences that survive that
 test.
+
+### `attachments` — element / side / landmark rows
+
+```jsonc
+"attachments": {
+  "origin": [
+    { "element": "scapula", "side": "lateral", "landmark": "supraspinous-fossa" },
+    { "element": "scapula", "side": "lateral", "landmark": "infraspinous-fossa" }
+  ],
+  "insertion": [
+    { "element": "humerus", "side": "proximal", "landmark": "greater-tubercle" }
+  ]
+}
+```
+
+- `element` — required, an `id` from `skeleton.json`. Always the **bone**, never a
+  subsite; subsites go in `landmark`.
+- `side` — optional, from `skeleton.json.sides`. Absent means *unrecorded*, not
+  *no side*. Never guess it.
+- `landmark` — optional, an `id` whose `partOf` chain reaches `element`. The
+  validator enforces containment, because a landmark filed under the wrong bone
+  silently corrupts the bone-first drill-down.
+
+A muscle touching several sides or landmarks of one bone gets **several rows**.
+That is the whole point of the row form: a flat list could not say that the
+therian supracoracoideus arises from two distinct fossae.
+
+**Placement decides meaning.** On a muscle, `attachments` is the *consensus*. On
+an occurrence, it is what a source records *for that taxon*. Only the second
+kind is evidence of a shift, which is why the app computes shifts by diffing
+occurrence rows and never by diffing against the consensus.
+
+The diff is hierarchy-aware: `humerus` → `greater-tubercle` is reported as a
+**refinement**, not a gain plus a loss, because it is the same attachment at
+finer resolution.
+
+Attachments to elements a taxon lacks are a validation **error**. That check
+caught a real mistake during authoring — a crocodylian "deltoideus clavicularis"
+recorded as arising from a clavicle, which crocodylians do not have.
 
 ### `derivatives` — fin-to-limb ancestry
 
@@ -172,13 +212,37 @@ records in this dataset — the two will differ and should not be reconciled.
 
 ---
 
+## `skeleton.json`
+
+| Field | Notes |
+|---|---|
+| `id`, `label`, `kind` | `kind` from the file's `kinds` list |
+| `region`, `segment` | `segment` from the file's `segments` list |
+| `partOf` | Parent element. Builds the bone-first drill-down; cycles are an error |
+| `correlate` | `true` if the site leaves a recognisable osteological trace — the entry point for fossil reconstruction |
+| `presence` | `{default, present[], absent[], partial[], reduced[], variable[], note, sources}` |
+| `synonyms` | |
+
+`presence` is what lets the interface say a muscle's attachment *had to move*
+rather than silently dropping a row. It is also enforced: attaching a muscle to
+an element its taxon lacks fails validation.
+
 ## Adding a muscle
 
 1. Read the source. Add it to `sources.json` if new.
 2. Write the record into the matching `data/muscles-*.json`.
-3. `python3 scripts/symmetrise_links.py --write`
-4. `python3 scripts/validate.py` — must exit clean.
-5. Reload the page. No build step.
+3. `./scripts/build.sh --write` — runs migrations, seeds and validation in order.
+4. Reload the page. No build step for the site itself.
+
+## Getting the data out
+
+`python3 scripts/export_matrix.py` writes long-format CSVs to `export/`
+(git-ignored): `attachments.csv`, `presence.csv`, `elements.csv`, `muscles.csv`.
+
+`attachments.csv` is one row per muscle × taxon × origin/insertion × element ×
+landmark, carrying `side`, `is_correlate`, `inherited` and `sources`. Filter
+`inherited == FALSE` for observed data only. `presence.csv` is the character
+matrix in long form, ready for comparative methods.
 
 ## On wording
 

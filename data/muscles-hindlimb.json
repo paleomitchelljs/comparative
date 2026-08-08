@@ -8,7 +8,15 @@
       "name": "Puboischiofemoralis internus",
       "region": "pelvic",
       "subregion": "dorsal pelvic",
+      "segment": "girdle",
       "mass": "dorsal",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "adductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal (extensor) mass of the pelvic limb bud.",
       "synonyms": [
         "iliacus + psoas major (mammals)",
@@ -23,12 +31,20 @@
       },
       "attachments": {
         "origin": [
-          "pubis",
-          "ilium",
-          "lumbar vertebrae"
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "lumbar-vertebrae"
+          }
         ],
         "insertion": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -119,7 +135,15 @@
       "name": "Puboischiofemoralis externus",
       "region": "pelvic",
       "subregion": "ventral pelvic",
+      "segment": "girdle",
       "mass": "ventral",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "abductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral (flexor) mass.",
       "synonyms": [
         "obturator externus + quadratus femoris + gemelli (mammals)"
@@ -132,11 +156,17 @@
       },
       "attachments": {
         "origin": [
-          "pubis",
-          "ischium"
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium"
+          }
         ],
         "insertion": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -234,7 +264,15 @@
       "name": "Iliofemoralis",
       "region": "pelvic",
       "subregion": "dorsal pelvic",
+      "segment": "girdle",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
         "gluteus medius + gluteus minimus (mammals)",
@@ -248,10 +286,14 @@
       },
       "attachments": {
         "origin": [
-          "ilium"
+          {
+            "element": "ilium"
+          }
         ],
         "insertion": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -285,7 +327,19 @@
           "present": "yes",
           "sources": [
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur"
+              }
+            ]
+          }
         },
         {
           "taxon": "crocodylia",
@@ -310,7 +364,27 @@
           "note": "Its expansion, tracked through the enlargement of the iliac blade, is central to Bishop & Pierce's argument that erect hindlimb posture was acquired late in the therian stem lineage.",
           "sources": [
             "bishop-pierce-2024"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium"
+              },
+              {
+                "element": "ilium",
+                "side": "dorsal",
+                "landmark": "iliac-crest"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "proximal",
+                "landmark": "greater-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Expansion of the iliac blade along the synapsid stem tracks the enlargement of this field and the shift toward erect posture."
         },
         {
           "taxon": "theria",
@@ -322,7 +396,27 @@
           "innervation": "Superior gluteal nerve (L4–S1).",
           "sources": [
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium"
+              },
+              {
+                "element": "ilium",
+                "side": "dorsal",
+                "landmark": "iliac-crest"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "proximal",
+                "landmark": "greater-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Same muscle, same nerve, same attachments — but in a parasagittal limb it becomes the principal pelvic stabiliser during single-limb support."
         }
       ],
       "homology": {
@@ -349,6 +443,7 @@
       "name": "Caudofemoralis",
       "region": "pelvic",
       "subregion": "caudo-appendicular",
+      "segment": "girdle",
       "mass": "ventral",
       "developmental": "Somitic; derived from the caudal axial musculature, not from the limb bud proper.",
       "synonyms": [
@@ -365,11 +460,17 @@
       },
       "attachments": {
         "origin": [
-          "caudal vertebrae",
-          "ilium"
+          {
+            "element": "caudal-vertebrae"
+          },
+          {
+            "element": "ilium"
+          }
         ],
         "insertion": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -395,7 +496,19 @@
           "present": "yes",
           "sources": [
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "caudal-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur"
+              }
+            ]
+          }
         },
         {
           "taxon": "lepidosauria",
@@ -404,7 +517,25 @@
           "action": "Primary femoral retractor; drives the propulsive stroke in lizard locomotion.",
           "sources": [
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "caudal-vertebrae"
+              },
+              {
+                "element": "ilium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "posterior",
+                "landmark": "fourth-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Inserts on the fourth trochanter, whose size reads directly as femoral-retractor power."
         },
         {
           "taxon": "crocodylia",
@@ -412,9 +543,26 @@
           "present": "yes",
           "note": "Large and well developed; inserts on a prominent fourth trochanter.",
           "sources": [
-            "diogo-molnar-2014",
-            "allen-etal-2014"
-          ]
+            "allen-etal-2014",
+            "diogo-molnar-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "caudal-vertebrae"
+              },
+              {
+                "element": "ilium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "posterior",
+                "landmark": "fourth-trochanter"
+              }
+            ]
+          }
         },
         {
           "taxon": "aves",
@@ -432,7 +580,22 @@
           "note": "Progressive reduction along the synapsid stem, tracked through the reduction of the fourth trochanter.",
           "sources": [
             "bishop-pierce-2024"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "caudal-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "posterior",
+                "landmark": "fourth-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Progressive reduction of the fourth trochanter along the synapsid stem tracks the loss of tail-driven femoral retraction."
         },
         {
           "taxon": "theria",
@@ -469,7 +632,15 @@
       "name": "Extensor iliotibialis / iliotibialis",
       "region": "thigh",
       "subregion": "dorsal thigh",
+      "segment": "stylopod",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
         "ilioextensorius (urodeles, posterior head)",
@@ -485,11 +656,17 @@
       },
       "attachments": {
         "origin": [
-          "ilium"
+          {
+            "element": "ilium"
+          }
         ],
         "insertion": [
-          "tibia",
-          "patella"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "patella"
+          }
         ]
       },
       "occurrences": [
@@ -571,6 +748,7 @@
       "name": "Femorotibialis",
       "region": "thigh",
       "subregion": "dorsal thigh",
+      "segment": "stylopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -584,11 +762,17 @@
       },
       "attachments": {
         "origin": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ],
         "insertion": [
-          "tibia",
-          "patella"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "patella"
+          }
         ]
       },
       "occurrences": [
@@ -658,6 +842,7 @@
       "name": "'Ambiens'",
       "region": "thigh",
       "subregion": "dorsal thigh",
+      "segment": "stylopod",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass. Romer (1942) and Jones (1979) emphasise that it is a DORSAL muscle despite its ventral position.",
       "synonyms": [
@@ -672,10 +857,14 @@
       },
       "attachments": {
         "origin": [
-          "pubis"
+          {
+            "element": "pubis"
+          }
         ],
         "insertion": [
-          "tibia"
+          {
+            "element": "tibia"
+          }
         ]
       },
       "occurrences": [
@@ -745,6 +934,7 @@
       "name": "Adductor femoris",
       "region": "thigh",
       "subregion": "ventral thigh",
+      "segment": "stylopod",
       "mass": "ventral",
       "developmental": "Somitic; deep ventral mass.",
       "synonyms": [
@@ -759,11 +949,17 @@
       },
       "attachments": {
         "origin": [
-          "pubis",
-          "ischium"
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium"
+          }
         ],
         "insertion": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -844,6 +1040,7 @@
       "name": "Ischiotrochantericus",
       "region": "thigh",
       "subregion": "ventral pelvic",
+      "segment": "stylopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
@@ -858,10 +1055,14 @@
       },
       "attachments": {
         "origin": [
-          "ischium"
+          {
+            "element": "ischium"
+          }
         ],
         "insertion": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ]
       },
       "occurrences": [
@@ -932,6 +1133,7 @@
       "name": "Puboischiotibialis",
       "region": "thigh",
       "subregion": "ventral thigh",
+      "segment": "stylopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
@@ -946,11 +1148,17 @@
       },
       "attachments": {
         "origin": [
-          "pubis",
-          "ischium"
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium"
+          }
         ],
         "insertion": [
-          "tibia"
+          {
+            "element": "tibia"
+          }
         ]
       },
       "occurrences": [
@@ -1022,7 +1230,15 @@
       "name": "Ischioflexorius / flexor tibialis",
       "region": "thigh",
       "subregion": "ventral thigh",
+      "segment": "stylopod",
       "mass": "ventral",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "abductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
         "flexor tibialis externus + internus",
@@ -1037,12 +1253,20 @@
       },
       "attachments": {
         "origin": [
-          "ischium"
+          {
+            "element": "ischium"
+          }
         ],
         "insertion": [
-          "tibia",
-          "fibula",
-          "tarsals"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "tarsals"
+          }
         ]
       },
       "occurrences": [
@@ -1122,6 +1346,7 @@
       "name": "Gluteus maximus",
       "region": "pelvic",
       "subregion": "dorsal pelvic",
+      "segment": "girdle",
       "mass": "dorsal",
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
@@ -1135,13 +1360,23 @@
       },
       "attachments": {
         "origin": [
-          "ilium",
-          "sacrum",
-          "caudal vertebrae"
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "sacrum"
+          },
+          {
+            "element": "caudal-vertebrae"
+          }
         ],
         "insertion": [
-          "femur",
-          "iliotibial tract"
+          {
+            "element": "femur"
+          },
+          {
+            "element": "iliotibial-tract"
+          }
         ]
       },
       "occurrences": [
@@ -1196,6 +1431,7 @@
       "name": "Gastrocnemius",
       "region": "leg",
       "subregion": "ventral/flexor leg",
+      "segment": "zeugopod",
       "mass": "ventral",
       "developmental": "Somitic; ventral (flexor) mass of the crus.",
       "synonyms": [
@@ -1211,12 +1447,20 @@
       },
       "attachments": {
         "origin": [
-          "femur",
-          "tibia"
+          {
+            "element": "femur"
+          },
+          {
+            "element": "tibia"
+          }
         ],
         "insertion": [
-          "calcaneum",
-          "tarsals"
+          {
+            "element": "calcaneum"
+          },
+          {
+            "element": "tarsals"
+          }
         ]
       },
       "occurrences": [
@@ -1297,7 +1541,15 @@
       "name": "Tibialis anterior",
       "region": "leg",
       "subregion": "dorsal/extensor leg",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal (extensor) mass of the crus.",
       "synonyms": [
         "extensor cruris tibialis",
@@ -1311,12 +1563,20 @@
       },
       "attachments": {
         "origin": [
-          "tibia",
-          "interosseous membrane"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
         ],
         "insertion": [
-          "tarsals",
-          "metatarsals"
+          {
+            "element": "tarsals"
+          },
+          {
+            "element": "metatarsals"
+          }
         ]
       },
       "occurrences": [
@@ -1393,7 +1653,15 @@
       "name": "Extensor digitorum longus (pes)",
       "region": "leg",
       "subregion": "dorsal/extensor leg",
+      "segment": "zeugopod",
       "mass": "dorsal",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "adductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; dorsal mass of the crus.",
       "synonyms": [
         "extensor digitorum communis"
@@ -1406,12 +1674,20 @@
       },
       "attachments": {
         "origin": [
-          "tibia",
-          "fibula",
-          "interosseous membrane"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -1475,6 +1751,7 @@
       "name": "Fibularis (peroneus) group",
       "region": "leg",
       "subregion": "lateral leg",
+      "segment": "zeugopod",
       "mass": "dorsal",
       "developmental": "Somitic; lateral compartment of the crus, dorsal mass.",
       "synonyms": [
@@ -1489,11 +1766,17 @@
       },
       "attachments": {
         "origin": [
-          "fibula"
+          {
+            "element": "fibula"
+          }
         ],
         "insertion": [
-          "metatarsals",
-          "tarsals"
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "tarsals"
+          }
         ]
       },
       "occurrences": [
@@ -1547,7 +1830,15 @@
       "name": "Popliteus",
       "region": "leg",
       "subregion": "ventral/flexor leg",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "profundus",
+      "layerSource": {
+        "from": "adductor-profundus",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; derived from the interosseus cruris.",
       "synonyms": [
         "interosseus cruris (ancestral)"
@@ -1560,10 +1851,14 @@
       },
       "attachments": {
         "origin": [
-          "femur"
+          {
+            "element": "femur"
+          }
         ],
         "insertion": [
-          "tibia"
+          {
+            "element": "tibia"
+          }
         ]
       },
       "occurrences": [
@@ -1606,7 +1901,9 @@
       "name": "Tibialis posterior",
       "region": "leg",
       "subregion": "deep ventral/flexor leg",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "profundus",
       "developmental": "Somitic; deep ventral mass of the crus.",
       "synonyms": [],
       "consensus": {
@@ -1617,13 +1914,23 @@
       },
       "attachments": {
         "origin": [
-          "tibia",
-          "fibula",
-          "interosseous membrane"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
         ],
         "insertion": [
-          "tarsals",
-          "metatarsals"
+          {
+            "element": "tarsals"
+          },
+          {
+            "element": "metatarsals"
+          }
         ]
       },
       "occurrences": [
@@ -1665,7 +1972,15 @@
       "name": "Flexor digitorum longus (pes)",
       "region": "leg",
       "subregion": "ventral/flexor leg",
+      "segment": "zeugopod",
       "mass": "ventral",
+      "layer": "superficialis",
+      "layerSource": {
+        "from": "abductor-superficialis",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      },
       "developmental": "Somitic; ventral mass of the crus.",
       "synonyms": [
         "flexor primordialis communis",
@@ -1679,11 +1994,17 @@
       },
       "attachments": {
         "origin": [
-          "tibia",
-          "fibula"
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "fibula"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -1746,7 +2067,9 @@
       "name": "Flexores breves superficiales (pes)",
       "region": "foot",
       "subregion": "superficial plantar layer",
+      "segment": "autopod",
       "mass": "ventral",
+      "layer": "superficialis",
       "developmental": "Somitic; ventral intrinsic layer of the pes.",
       "synonyms": [
         "flexor digitorum brevis (mammals)"
@@ -1759,11 +2082,17 @@
       },
       "attachments": {
         "origin": [
-          "calcaneum",
-          "plantar aponeurosis"
+          {
+            "element": "calcaneum"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -1815,7 +2144,9 @@
       "name": "Contrahentes digitorum (pes)",
       "region": "foot",
       "subregion": "middle plantar layer",
+      "segment": "autopod",
       "mass": "ventral",
+      "layer": "intermediate",
       "developmental": "Somitic; ventral intrinsic layer of the pes.",
       "synonyms": [
         "adductor hallucis (mammals, partim)"
@@ -1828,11 +2159,17 @@
       },
       "attachments": {
         "origin": [
-          "tarsals",
-          "metatarsals"
+          {
+            "element": "tarsals"
+          },
+          {
+            "element": "metatarsals"
+          }
         ],
         "insertion": [
-          "phalanges"
+          {
+            "element": "phalanges-manus"
+          }
         ]
       },
       "occurrences": [
@@ -1882,7 +2219,9 @@
       "name": "Flexores breves profundi (pes)",
       "region": "foot",
       "subregion": "deep plantar layer",
+      "segment": "autopod",
       "mass": "ventral",
+      "layer": "profundus",
       "developmental": "Somitic; deepest ventral intrinsic layer of the pes.",
       "synonyms": [
         "interossei plantares + dorsales (mammals)"
@@ -1895,11 +2234,17 @@
       },
       "attachments": {
         "origin": [
-          "metatarsals"
+          {
+            "element": "metatarsals"
+          }
         ],
         "insertion": [
-          "phalanges",
-          "sesamoids"
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "sesamoids-manus"
+          }
         ]
       },
       "occurrences": [

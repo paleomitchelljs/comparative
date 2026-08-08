@@ -373,3 +373,87 @@ footer.foot {
 }
 footer.foot a { color: var(--link); }
 footer.foot p { margin: 0 0 0.5rem; }
+
+/* ---------- taxon picker ---------- */
+.taxonbar {
+  display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+  font-family: var(--font-ui); font-size: 0.85rem; margin-bottom: 1rem;
+  padding: 0.7rem 0.9rem; background: var(--bg-sunken);
+  border: 1px solid var(--rule); border-radius: 6px;
+}
+.taxonbar label { color: var(--ink-3); }
+.taxonbar select {
+  font: inherit; color: var(--ink); background: var(--bg-panel);
+  border: 1px solid var(--rule); border-radius: 5px; padding: 0.3rem 0.5rem; max-width: 100%;
+}
+
+/* ---------- skeleton / hierarchy drill-down ---------- */
+.skeltree { display: grid; gap: 0.35rem; }
+
+details.elnode { border: 1px solid var(--rule); border-radius: 6px; background: var(--bg-panel); }
+details.elnode + details.elnode { margin-top: 0.35rem; }
+details.elnode > summary {
+  display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap;
+  padding: 0.55rem 0.85rem; cursor: pointer; list-style: none;
+  font-family: var(--font-ui); font-size: 0.88rem;
+}
+details.elnode > summary::-webkit-details-marker { display: none; }
+details.elnode > summary::before {
+  content: "▸"; color: var(--ink-3); font-size: 0.7rem; flex: none; transition: transform .12s;
+}
+details.elnode[open] > summary::before { transform: rotate(90deg); }
+details.elnode > summary:hover { background: var(--bg-sunken); }
+.elname { font-weight: 600; color: var(--ink); }
+.elkind { font-size: 0.72rem; color: var(--ink-3); text-transform: uppercase; letter-spacing: 0.05em; }
+details.elnode .count {
+  margin-left: auto; font-variant-numeric: tabular-nums;
+  font-size: 0.78rem; color: var(--ink-3);
+  background: var(--bg-sunken); padding: 0.05rem 0.4rem; border-radius: 10px;
+}
+.elbody { padding: 0 0.85rem 0.7rem 1.6rem; font-family: var(--font-ui); font-size: 0.84rem; }
+.elbody .grp { margin-bottom: 0.5rem; }
+.elbody .grp b {
+  display: block; color: var(--ink-3); font-size: 0.66rem;
+  text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.15rem; font-weight: 600;
+}
+.elbody a { color: var(--link); text-decoration: none; cursor: pointer; }
+.elbody a:hover { text-decoration: underline; }
+.elkids { margin-top: 0.5rem; }
+details.elnode.d1 { background: var(--bg-sunken); }
+details.elnode.d2 { background: var(--bg-panel); }
+
+.chip.corr {
+  background: var(--accent-soft); color: var(--accent);
+  border-color: transparent; font-weight: 600;
+}
+
+/* attachment shift diff */
+.gain { color: var(--ok); font-weight: 600; }
+.loss { color: var(--warn); font-weight: 600; }
+.refine { color: var(--ink-3); }
+.refine::before { content: "≈ "; }
+
+/* ---------- attachment rows: bone > side > landmark ---------- */
+.attachgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
+.attach-h {
+  margin: 0 0 0.4rem; font-family: var(--font-ui); font-size: 0.68rem;
+  text-transform: uppercase; letter-spacing: 0.07em; color: var(--ink-3); font-weight: 600;
+}
+table.attach { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
+table.attach td { padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+table.attach tr:last-child td { border-bottom: none; }
+table.attach .a-bone { font-weight: 600; width: 40%; }
+table.attach .a-side {
+  font-family: var(--font-ui); font-size: 0.74rem; color: var(--ink-2);
+  text-transform: uppercase; letter-spacing: 0.05em; width: 22%;
+}
+table.attach .a-lm { font-family: var(--font-ui); font-size: 0.8rem; }
+table.attach a { color: var(--link); text-decoration: none; }
+table.attach a:hover { text-decoration: underline; }
+.rowsep { color: var(--ink-3); }
+table.attachmatrix { min-width: 560px; table-layout: auto; }
+table.attachmatrix td, table.attachmatrix th { padding: 0.4rem 0.6rem; }
+table.attachmatrix .a-kind {
+  font-family: var(--font-ui); font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--ink-3); vertical-align: top;
+}
