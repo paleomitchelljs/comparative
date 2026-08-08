@@ -23,8 +23,17 @@ python3 -m http.server 8000
 # then open http://localhost:8000
 ```
 
-To publish: enable GitHub Pages on the `main` branch, root directory. The site is
-static and works as-is.
+## Deployment
+
+Deployed to GitHub Pages by `.github/workflows/pages.yml` on every push to
+`main`. **One-time setup:** repository *Settings → Pages → Source →* **GitHub
+Actions**.
+
+Actions rather than "deploy from branch" for one reason: it gates the deploy on
+`scripts/validate.py`. A broken cross-reference in `data/` produces a page that
+loads and then renders wrong, which is worse than a failed build. The workflow
+also refuses to publish if the related-muscle graph is asymmetric or if a PDF has
+crept into git.
 
 ## The problem this solves
 
@@ -48,11 +57,12 @@ for why that matters.
 
 ## What's in it
 
-79 muscle records, 486 taxon occurrences, 21 sources, 15 operational taxa.
+86 muscle records, 519 taxon occurrences, 23 sources, 16 operational taxa.
 
 | Region | Records | Principal source |
 |---|---|---|
 | Cranial | 9 | Werneburg 2011; Ziermann & Diogo 2019; Ziermann et al. 2014 |
+| Ancestral paired fin | 7 | Diogo et al. 2016 |
 | Pectoral girdle and arm | 21 | Abdala & Diogo 2010; Molnar et al. 2018 |
 | Forearm and hand | 27 | Abdala & Diogo 2010; Ercoli et al. 2014 |
 | Pelvic girdle and hindlimb | 22 | Diogo & Molnar 2014; Bishop & Pierce 2024 |
@@ -61,6 +71,18 @@ Coverage is uneven by design: it follows the papers in `papers/`. The tetrapod
 pectoral and forelimb is densest because Abdala & Diogo (2010) tabulate six taxa
 against every muscle. Cranial records are organised by pharyngeal arch and are
 broader but shallower.
+
+### The fin region is the root, not another region
+
+`data/muscles-fin.json` holds the ancestral paired-fin muscles — five per fin in
+the gnathostome LCA, six in the osteichthyan LCA (Diogo et al. 2016) — from
+which the entire tetrapod appendicular musculature is derived by subdivision.
+Each carries `derivatives`, so a record links forward to the tetrapod muscles it
+became, and every tetrapod muscle shows what it came from.
+
+This matters for more than completeness: it is the natural root of the drill-down
+hierarchy proposed in [`docs/ROADMAP.md`](docs/ROADMAP.md), and it corrects the
+textbook claim that fish fins had only two muscle masses.
 
 ## Two views
 
@@ -134,19 +156,29 @@ legal. It also warns about present-but-uncited rows and never-cited sources.
 Adding a muscle means editing one JSON file and reloading the page. See
 [`docs/SCHEMA.md`](docs/SCHEMA.md).
 
+## Where this is going
+
+[`docs/ROADMAP.md`](docs/ROADMAP.md) sets out the path to a visual, clickable
+interface — drill down from a region into subdivisions, and see how a group
+changes along the phylogeny. Short version: the spine should be **developmental
+mass and layer**, not attachment points, because attachments are the most labile
+attribute a muscle has and the bones themselves come and go along the tree.
+Origin/insertion becomes what you *draw*, not what you navigate.
+
 ## Known gaps
 
-- **Fish and fossil coverage is thin.** Chondrichthyan and actinopterygian rows
-  exist mainly as outgroup polarity for cranial muscles. The Devonian
-  tetrapodomorph column is limited to the pectoral muscles Molnar et al. (2018)
-  reconstruct.
 - **Cranial records are coarse.** The adductor mandibulae is one record covering
   a complex that Werneburg (2011) resolves into a dozen units in turtles alone.
   `scripts/extract_werneburg_appendix.py` produces the structured source data for
   splitting it further.
 - **No axial musculature.** Epaxial and hypaxial series are entirely absent.
-- **No muscle architecture data.** Several sources in `papers/` (Allen et al.
-  2014; Ercoli et al. 2014; Fahn-Lai et al. 2020) report PCSA, fascicle length
-  and mass fractions. The schema has no field for these yet.
+- **No muscle architecture data.** Mansuit & Herrel (2021) frame this gap and
+  name the sources that hold the numbers; several are already in `papers/`
+  (Allen et al. 2014; Ercoli et al. 2014; Fahn-Lai et al. 2020). The schema has
+  no field for these yet — roadmap phase 5.
+- **`layer` is only populated on the fin records.** Needed across all 86 before
+  the hierarchical browse can be built — roadmap phase 1.
+- **The stem-tetrapodomorph column is pectoral-only**, limited to what Molnar et
+  al. (2018) reconstruct.
 - **Monotreme and stem-synapsid rows are sparse** relative to the detail
   available in Gambaryan et al. (2015).

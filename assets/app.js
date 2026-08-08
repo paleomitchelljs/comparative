@@ -3,10 +3,11 @@
 
 /* Proximal-to-distal within each appendage, head first. Alphabetical order would
    scatter the forelimb series across the list. */
-const REGION_ORDER = ['cranial', 'pectoral', 'arm', 'forearm', 'hand', 'pelvic', 'thigh', 'leg', 'foot'];
+const REGION_ORDER = ['cranial', 'fin', 'pectoral', 'arm', 'forearm', 'hand', 'pelvic', 'thigh', 'leg', 'foot'];
 const regionRank = r => { const i = REGION_ORDER.indexOf(r); return i === -1 ? 99 : i; };
 
 const DATA_FILES = [
+  'data/muscles-fin.json',
   'data/muscles-pectoral.json',
   'data/muscles-forearm-hand.json',
   'data/muscles-hindlimb.json',
@@ -235,6 +236,7 @@ function renderDetail(m) {
     m._regionLabel && `<span class="chip">${esc(m._regionLabel)}</span>`,
     m.subregion && `<span class="chip">${esc(m.subregion)}</span>`,
     m.mass && `<span class="chip">${esc(m.mass)} mass</span>`,
+    m.layer && `<span class="chip">${esc(m.layer)}</span>`,
     m.arch != null && `<span class="chip">arch ${esc(String(m.arch))}</span>`,
     h.confidence && `<span class="chip conf-${esc(h.confidence)}">homology: ${esc(h.confidence)}</span>`
   ].filter(Boolean).join('');
@@ -263,6 +265,7 @@ function renderDetail(m) {
       ${syn}
       <section class="block"><h3>Occurrence by taxon</h3>${renderOccTable(m)}</section>
       ${renderHomologyBlock(m, h)}
+      ${renderAncestry(m)}
       ${renderRelated(m, h)}
       ${renderSources(m)}
     </div>
@@ -338,6 +341,45 @@ function renderHomologyBlock(m, h) {
   }
   if (h.caveat) out += `<div class="callout caution"><h4>Source caveat</h4><p>${esc(h.caveat)}</p></div>`;
   if (h.teaching) out += `<div class="callout teach"><h4>Teaching use</h4><p>${esc(h.teaching)}</p></div>`;
+  return out + `</section>`;
+}
+
+/* Ancestry runs both ways from one curated edge: a fin muscle lists what it gave
+   rise to, and every tetrapod muscle finds its ancestor by scanning for itself. */
+function renderAncestry(m) {
+  const d = m.derivatives || {};
+  const hasForward = (d.pectoral || []).length || (d.pelvic || []).length;
+
+  const ancestors = state.muscles.filter(f =>
+    ['pectoral', 'pelvic'].some(k => ((f.derivatives || {})[k] || []).includes(m.id)));
+
+  if (!hasForward && !ancestors.length) return '';
+
+  const link = id => {
+    const t = state.byId.get(id);
+    return t ? `<a class="pill" data-goto="${t.id}">${esc(t.name)}</a>` : '';
+  };
+
+  let out = `<section class="block"><h3>Fin-to-limb ancestry</h3>`;
+
+  if (m.ancestralNode) {
+    out += `<div class="callout"><h4>First appears</h4><p>${esc(m.ancestralNode)}</p></div>`;
+  }
+
+  if (hasForward) {
+    out += `<p class="synonyms" style="margin-bottom:.4rem">Subdivided in tetrapods into:</p>`;
+    for (const [appendage, ids] of Object.entries(d)) {
+      if (!ids.length) continue;
+      out += `<p class="synonyms" style="margin:.5rem 0 .3rem"><strong>${esc(appendage)}</strong></p>
+        <div class="pills" style="margin-bottom:.5rem">${ids.map(link).join('')}</div>`;
+    }
+  }
+
+  if (ancestors.length) {
+    out += `<p class="synonyms" style="margin-bottom:.4rem">Derived from the ancestral fin muscle:</p>
+      <div class="pills">${ancestors.map(a => link(a.id)).join('')}</div>`;
+  }
+
   return out + `</section>`;
 }
 

@@ -45,6 +45,21 @@ not `Humerus` or `the humerus`.
 **`related` is an undirected graph.** Record a link once, then run
 `symmetrise_links.py --write`. Do not hand-curate both directions.
 
+**`derivatives` is a DIRECTED graph and must not be symmetrised.** It runs from
+an ancestral fin muscle to its tetrapod descendants. The app computes the reverse
+edge by scanning, so tetrapod records carry no ancestry field. Keep it curated in
+`data/muscles-fin.json` only.
+
+**Three link types, three meanings — don't conflate them.**
+`related` = topologically or developmentally adjacent, undirected.
+`derivatives` = ancestor → descendant through evolutionary time, directed.
+`homology.serial` = forelimb ↔ hindlimb within one animal, topological not
+genealogical, and rejected as strict serial homology by Diogo & Molnar (2014).
+
+**`muscleCount` in `taxa.json` is the source's published count for its exemplar
+species**, not a count of records in this dataset. The two differ. Do not
+"fix" the discrepancy.
+
 ## Regenerating source extractions
 
 ```sh

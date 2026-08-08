@@ -1,0 +1,78 @@
+name: Deploy to GitHub Pages
+
+# Actions rather than "deploy from branch" for one reason: it lets the dataset be
+# validated before it ships. A broken cross-reference in data/*.json produces a
+# page that loads and then quietly renders wrong, which is worse than a failed
+# build. validate.py exits non-zero and the deploy stops.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it mid-publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate dataset
+        run: python3 scripts/validate.py
+
+      - name: Check the related-muscle graph is symmetric
+        run: |
+          python3 scripts/symmetrise_links.py > /tmp/links.txt
+          cat /tmp/links.txt
+          if grep -q "back-links missing" /tmp/links.txt; then
+            echo "::error::Run 'python3 scripts/symmetrise_links.py --write' and commit the result."
+            exit 1
+          fi
+
+      - name: Confirm no PDFs are tracked
+        run: |
+          if git ls-files | grep -i '\.pdf$'; then
+            echo "::error::A PDF is tracked in git. Check .gitignore."
+            exit 1
+          fi
+          echo "No tracked PDFs."
+
+  deploy:
+    needs: validate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/configure-pages@v5
+
+      # The site is static and served from the repo root. Nothing to build —
+      # excluding the working directories keeps the artifact small.
+      - name: Stage site
+        run: |
+          mkdir -p _site
+          cp -r index.html assets data _site/
+          cp README.md _site/ 2>/dev/null || true
+          du -sh _site
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

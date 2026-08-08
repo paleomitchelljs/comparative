@@ -16,6 +16,7 @@ MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
 PRESENCE = {"yes", "no", "variable", "uncertain", "inferred"}
 CONFIDENCE = {"well-supported", "moderate", "contested", "uncertain"}
 SERIAL_BASIS = {"topological", "developmental", "none"}
+LAYERS = {"superficialis", "profundus", "preaxial", "postaxial", "primaxial"}
 
 errors: list[str] = []
 warnings: list[str] = []
@@ -127,6 +128,26 @@ def main():
         for ref in hom.get("related", []):
             if ref not in muscles:
                 err(f"{where}: homology.related points at unknown muscle '{ref}'")
+
+        # `derivatives` links an ancestral fin muscle to the tetrapod muscles it
+        # gave rise to. Directed, not symmetric — the app renders the reverse
+        # edge ("derived from") by scanning, so only one direction is curated.
+        derivs = m.get("derivatives", {})
+        if derivs:
+            if m.get("region") != "fin":
+                warn(f"{where}: has `derivatives` but region is not 'fin'")
+            for appendage, refs in derivs.items():
+                if appendage not in {"pectoral", "pelvic"}:
+                    err(f"{where}: derivatives key '{appendage}' not in ['pectoral', 'pelvic']")
+                for ref in refs:
+                    if ref not in muscles:
+                        err(f"{where}: derivatives.{appendage} points at unknown muscle '{ref}'")
+
+        layer = m.get("layer")
+        if layer and layer not in LAYERS:
+            err(f"{where}: layer='{layer}' not in {sorted(LAYERS)}")
+        if m.get("region") == "fin" and not layer:
+            warn(f"{where}: fin muscle without a `layer`")
 
         serial = hom.get("serial")
         if serial:

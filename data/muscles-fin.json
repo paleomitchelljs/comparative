@@ -1,0 +1,700 @@
+{
+  "$schema": "../docs/SCHEMA.md",
+  "region": "Ancestral paired-fin musculature",
+  "note": "The muscle set from which the entire tetrapod appendicular musculature is derived by subdivision. Diogo et al. (2016) reconstruct five muscles per paired fin in the last common ancestor of extant gnathostomes and six in the LCA of extant bony fishes, against the older textbook account of a simple two-mass (adductor/abductor) fin. Records here carry `layer` (superficialis / profundus) as well as `mass` (dorsal / ventral): those two axes give the four-cell classification — abductor superficialis, abductor profundus, adductor superficialis, adductor profundus — that Mansuit & Herrel (2021) use to compare muscle architecture from bichir to horse. Because these muscles are ancestral to BOTH appendages, `derivatives` is split into `pectoral` and `pelvic`.",
+  "muscles": [
+    {
+      "id": "abductor-superficialis",
+      "name": "Abductor superficialis",
+      "region": "fin",
+      "subregion": "ventral superficial",
+      "mass": "ventral",
+      "layer": "superficialis",
+      "ancestralNode": "LCA of extant gnathostomes",
+      "developmental": "Ventral (abductor) fin muscle mass. In tetrapods this becomes the flexor mass, following the internal rotation of the paired appendages that turned the ventrolateral abductor musculature toward the body.",
+      "synonyms": [
+        "abductor (depressor) superficialis",
+        "ventral superficial fin mass"
+      ],
+      "consensus": {
+        "origin": "Ventral surface of the girdle, and in plesiomorphic taxa the adjacent body wall.",
+        "insertion": "Ventral surface of the fin, extending distally to the fin rays. In sarcopterygians it is partially segmented proximo-distally by tendinous intersections.",
+        "action": "Depresses (adducts) the fin.",
+        "innervation": "Ventral rami of the spinal nerves supplying the appendage — the ventral/flexor division."
+      },
+      "attachments": {
+        "origin": [
+          "pectoral girdle",
+          "pelvic girdle",
+          "body wall"
+        ],
+        "insertion": [
+          "fin radials",
+          "fin rays",
+          "humerus",
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Abductor superficialis",
+          "present": "yes",
+          "origin": "Ventral pectoral or pelvic girdle bar.",
+          "insertion": "Ventral surface of the basal and radial cartilages.",
+          "action": "Depresses the fin.",
+          "note": "One of five muscles per paired fin in Squalus — the plesiomorphic gnathostome condition.",
+          "sources": [
+            "diogo-etal-2016",
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Abductor superficialis",
+          "present": "yes",
+          "note": "Present in both appendages of Polypterus. Together with the abductor profundus this is the poorly differentiated superficial/deep ventral mass that characterises plesiomorphic actinopterygian fins.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "actinistia",
+          "name": "Abductor superficialis",
+          "present": "yes",
+          "insertion": "Extends from the girdle to the distal fin, segmented proximo-distally by tendinous intersections that lie at the level of the major fin BONES rather than between them.",
+          "note": "The intersection position differs from the tetrapod developmental pattern, where intersections form in the region of the joints.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Abductor superficialis",
+          "present": "yes",
+          "note": "Present in both appendages; the pelvic fin retains the complex sarcopterygian condition while the pectoral fin is secondarily simplified.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Pectoralis, flexor digitorum communis, flexor antebrachii et carpi ulnaris, coracobrachialis (forelimb)",
+          "present": "yes",
+          "note": "Not one muscle but the whole developmentally ventral superficial series. Ambystoma developmental data show the superficial ventral layer of girdle, arm and forearm comprises pectoralis, flexor digitorum communis, flexor antebrachii et carpi ulnaris, coracobrachialis, humeroantebrachialis and flexor antebrachii et carpi radialis — of which the last two derive instead from pterygialis cranialis.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "pectoralis",
+          "flexor-digitorum-longus",
+          "flexor-carpi-ulnaris",
+          "coracobrachialis"
+        ],
+        "pelvic": [
+          "ischioflexorius",
+          "flexor-digitorum-longus-hl",
+          "flexores-breves-superficiales-pes"
+        ]
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Diogo et al. (2016) are the first to propose that the abductor and adductor superficialis are homologous with the superficial muscles running from body wall or girdle all the way to the autopodium in tetrapods. The idea is Gadow's (1882): muscles that originally spanned the whole appendage became proximo-distally partitioned at the joints during the fins-to-limbs transition. The novel part is the developmental and comparative evidence, which Gadow lacked.",
+        "openQuestion": "Gadow's partitioning scenario contradicts the assumption in some fossil reconstructions (e.g. Bishop 2014 on Ossinodus) that stem-tetrapod muscles ancestrally crossed only one joint. The two readings give different muscle maps for the same bones.",
+        "related": [
+          "abductor-profundus",
+          "adductor-superficialis",
+          "pterygialis-cranialis"
+        ],
+        "teaching": "The best single antidote to the 'fish fins had two muscles' claim in textbooks."
+      },
+      "sources": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021"
+      ]
+    },
+    {
+      "id": "abductor-profundus",
+      "name": "Abductor profundus",
+      "region": "fin",
+      "subregion": "ventral deep",
+      "mass": "ventral",
+      "layer": "profundus",
+      "ancestralNode": "LCA of extant gnathostomes",
+      "developmental": "Deep layer of the ventral (abductor) fin muscle mass.",
+      "synonyms": [
+        "abductor (depressor) profundus",
+        "ventral deep fin mass"
+      ],
+      "consensus": {
+        "origin": "Ventral girdle, close to the fin articulation.",
+        "insertion": "Ventral surface of the proximal fin skeleton.",
+        "action": "Depresses and stabilises the fin base.",
+        "innervation": "Ventral rami of the appendicular spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          "pectoral girdle",
+          "pelvic girdle"
+        ],
+        "insertion": [
+          "fin radials",
+          "humerus",
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Abductor profundus",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016",
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Abductor profundus",
+          "present": "yes",
+          "note": "In Polypterus the deep groups contribute most of the fin muscle mass — the reverse of the tetrapod condition.",
+          "sources": [
+            "diogo-etal-2016",
+            "mansuit-herrel-2021"
+          ]
+        },
+        {
+          "taxon": "actinistia",
+          "name": "Abductor profundus (+ supinator series)",
+          "present": "yes",
+          "note": "In Latimeria the deep ventral mass has given rise to a proximo-distal series of supinators. Supinator 1, the most proximal, connects the girdle to both the first and second fin elements.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Abductor profundus",
+          "present": "yes",
+          "origin": "Ventral aspect of the pectoral girdle near the shoulder joint.",
+          "insertion": "Ventral surface of the proximal humerus-equivalent.",
+          "note": "A short, parallel-fibred triangular muscle. Diogo et al. describe it as 'strikingly similar' to the salamander supracoracoideus in attachments, fibre orientation and overall configuration — the clearest single fin-to-limb muscle correspondence in the paper.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Supracoracoideus (+ coracoradialis, deep ventral series)",
+          "present": "yes",
+          "note": "The supracoracoideus is the second-most-superficial ventral pectoral muscle developmentally in salamanders, matching the abductor profundus position in fish. Latimeria supinator 1 corresponds to the coracoradialis: both are the most proximal of the deep ventral muscles, running from the girdle along the humerus to the radius.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "supracoracoideus",
+          "biceps-brachii",
+          "pronator-quadratus",
+          "flexores-breves-profundi"
+        ],
+        "pelvic": [
+          "puboischiofemoralis-externus",
+          "tibialis-posterior",
+          "flexores-breves-profundi-pes"
+        ]
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The abductor profundus → supracoracoideus correspondence rests on shared developmental layer position in salamanders plus close morphological similarity in the dipnoan. The deeper derivatives (supinator/pronator series) are argued by the same topological reasoning applied along the proximo-distal axis.",
+        "related": [
+          "abductor-superficialis",
+          "adductor-profundus"
+        ],
+        "teaching": "Pair the dipnoan abductor profundus with the salamander supracoracoideus side by side — the resemblance carries the argument without needing the phylogeny."
+      },
+      "sources": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021"
+      ]
+    },
+    {
+      "id": "adductor-superficialis",
+      "name": "Adductor superficialis",
+      "region": "fin",
+      "subregion": "dorsal superficial",
+      "mass": "dorsal",
+      "layer": "superficialis",
+      "ancestralNode": "LCA of extant gnathostomes",
+      "developmental": "Dorsal (adductor / 'levator') fin muscle mass. Becomes the extensor mass in tetrapods.",
+      "synonyms": [
+        "adductor (levator) superficialis",
+        "dorsal superficial fin mass"
+      ],
+      "consensus": {
+        "origin": "Dorsal surface of the girdle and the adjacent body wall.",
+        "insertion": "Dorsal surface of the fin, extending distally to the fin rays.",
+        "action": "Elevates (abducts) the fin.",
+        "innervation": "Dorsal rami of the appendicular spinal nerves — the dorsal/extensor division."
+      },
+      "attachments": {
+        "origin": [
+          "pectoral girdle",
+          "pelvic girdle",
+          "body wall"
+        ],
+        "insertion": [
+          "fin radials",
+          "fin rays",
+          "humerus",
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Adductor superficialis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016",
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Adductor superficialis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "actinistia",
+          "name": "Adductor superficialis",
+          "present": "yes",
+          "note": "In Latimeria the dorsal muscles of each fin have clear one-to-one correspondences with the ventral muscles of the same fin — the fin is close to a mirror image about its own plane.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Adductor superficialis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Dorsal superficial series (latissimus dorsi, deltoideus, extensor digitorum and relatives)",
+          "present": "yes",
+          "note": "The dorsal counterpart of the abductor superficialis argument: superficial dorsal muscles running from girdle to autopodium, partitioned proximo-distally.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "latissimus-dorsi",
+          "deltoideus-scapularis",
+          "extensor-digitorum",
+          "extensor-antebrachii-carpi-radialis"
+        ],
+        "pelvic": [
+          "iliofemoralis",
+          "extensor-iliotibialis",
+          "extensor-digitorum-longus-hl",
+          "tibialis-anterior"
+        ]
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Mirror argument to the abductor superficialis, and equally dependent on Gadow's partitioning scenario. The dorsal/ventral distinction is the most durable thing about appendicular muscles: it is confirmed independently by innervation, since dorsal-mass derivatives take the radial and axillary nerves and ventral-mass derivatives the median, ulnar and musculocutaneous.",
+        "related": [
+          "adductor-profundus",
+          "abductor-superficialis",
+          "pterygialis-caudalis"
+        ],
+        "teaching": "Establish the dorsal/ventral mass split at the fish level and every tetrapod limb muscle can be placed within it."
+      },
+      "sources": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021"
+      ]
+    },
+    {
+      "id": "adductor-profundus",
+      "name": "Adductor profundus",
+      "region": "fin",
+      "subregion": "dorsal deep",
+      "mass": "dorsal",
+      "layer": "profundus",
+      "ancestralNode": "LCA of extant gnathostomes",
+      "developmental": "Deep layer of the dorsal (adductor) fin muscle mass.",
+      "synonyms": [
+        "adductor (levator) profundus",
+        "dorsal deep fin mass"
+      ],
+      "consensus": {
+        "origin": "Dorsal girdle near the fin articulation.",
+        "insertion": "Dorsal surface of the proximal fin skeleton.",
+        "action": "Elevates and stabilises the fin base.",
+        "innervation": "Dorsal rami of the appendicular spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          "pectoral girdle",
+          "pelvic girdle"
+        ],
+        "insertion": [
+          "fin radials",
+          "humerus",
+          "femur"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Adductor profundus",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016",
+            "diogo-ziermann-2015"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Adductor profundus",
+          "present": "yes",
+          "note": "With the abductor profundus, contributes most of the paired-fin muscle mass in actinopterygians.",
+          "sources": [
+            "diogo-etal-2016",
+            "mansuit-herrel-2021"
+          ]
+        },
+        {
+          "taxon": "actinistia",
+          "name": "Adductor profundus (+ pronator series)",
+          "present": "yes",
+          "note": "Gave rise to a proximo-distal series of pronators. The Eusthenopteron humerus preserves osteological correlates of a muscle corresponding to Latimeria pronator 1 — a rare direct fossil check on a soft-tissue homology.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Adductor profundus",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Deep dorsal series (subcoracoscapularis, supinator, pronator relatives)",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "subcoracoscapularis",
+          "supinator",
+          "brachioradialis"
+        ],
+        "pelvic": [
+          "puboischiofemoralis-internus",
+          "popliteus"
+        ]
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The deep dorsal mass gave rise to the pronator series in sarcopterygian fins, as the deep ventral mass gave rise to the supinators. The Eusthenopteron pronator-1 correlate is the strongest palaeontological support for any correspondence in this file.",
+        "related": [
+          "adductor-superficialis",
+          "abductor-profundus"
+        ]
+      },
+      "sources": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021"
+      ]
+    },
+    {
+      "id": "pterygialis-cranialis",
+      "name": "Pterygialis cranialis",
+      "region": "fin",
+      "subregion": "preaxial",
+      "mass": "ventral",
+      "layer": "preaxial",
+      "ancestralNode": "LCA of extant gnathostomes",
+      "developmental": "Preaxial (radial/tibial side) muscle derived from the ventral (abductor) fin musculature.",
+      "synonyms": [
+        "coracometapterygialis I and II (Polypterus, sensu Wilhelm et al. 2015)"
+      ],
+      "consensus": {
+        "origin": "Anterior (preaxial) margin of the girdle.",
+        "insertion": "Preaxial margin of the fin skeleton.",
+        "action": "Draws the fin anteriorly; controls the leading edge.",
+        "innervation": "Ventral rami of the appendicular spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          "pectoral girdle",
+          "pelvic girdle"
+        ],
+        "insertion": [
+          "fin radials",
+          "radius",
+          "tibia"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "name": "Pterygialis cranialis",
+          "present": "yes",
+          "note": "One of the five ancestral gnathostome fin muscles.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Pterygialis cranialis",
+          "present": "yes",
+          "note": "= coracometapterygialis I and II of the Polypterus pectoral fin sensu Wilhelm et al.; present in both appendages per Diogo et al.'s own observations.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "actinistia",
+          "name": "Pterygialis cranialis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Pterygialis cranialis",
+          "present": "yes",
+          "note": "In the pelvic fin, similar to the salamander ischioflexorius.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Humeroantebrachialis + flexor antebrachii et carpi radialis (forelimb); ischioflexorius (hindlimb)",
+          "present": "yes",
+          "note": "The forelimb call rests on a developmental observation: in salamanders the preaxial flexor antebrachii et carpi radialis differentiates from a DIFFERENT primordium than the postaxial flexor antebrachii et carpi ulnaris and flexor digitorum communis. That separate primordium is the pterygialis cranialis. Distally the ischioflexorius includes the flexor cruris et tarsi tibialis, the preaxial leg muscle corresponding to the preaxial forearm muscle.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "brachialis",
+          "flexor-carpi-radialis"
+        ],
+        "pelvic": [
+          "ischioflexorius"
+        ]
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "One of the two axial-margin fin muscles (with pterygialis caudalis) that are older than any proximo-distal segmentation. Note the exception this creates: humeroantebrachialis and flexor antebrachii et carpi radialis are developmentally ventral superficial muscles but derive from pterygialis cranialis, not from abductor superficialis like their neighbours.",
+        "related": [
+          "pterygialis-caudalis",
+          "abductor-superficialis"
+        ],
+        "teaching": "Shows that a separate embryonic primordium can override apparent layer membership — a concrete case of developmental evidence beating topological appearance."
+      },
+      "sources": [
+        "diogo-etal-2016"
+      ]
+    },
+    {
+      "id": "pterygialis-caudalis",
+      "name": "Pterygialis caudalis",
+      "region": "fin",
+      "subregion": "postaxial",
+      "mass": "dorsal",
+      "layer": "postaxial",
+      "ancestralNode": "LCA of extant bony fishes (Osteichthyes)",
+      "developmental": "Postaxial (ulnar/fibular side) muscle derived from the dorsal (adductor / 'levator') fin musculature.",
+      "synonyms": [
+        "zonopropterygialis (Polypterus pectoral fin, sensu Wilhelm et al. 2015)"
+      ],
+      "consensus": {
+        "origin": "Posterior (postaxial) margin of the girdle.",
+        "insertion": "Postaxial margin of the fin skeleton.",
+        "action": "Draws the fin posteriorly; controls the trailing edge.",
+        "innervation": "Dorsal rami of the appendicular spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          "pectoral girdle",
+          "pelvic girdle"
+        ],
+        "insertion": [
+          "fin radials",
+          "ulna",
+          "fibula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "chondrichthyes",
+          "present": "no",
+          "note": "Absent. This muscle is the sixth added at the osteichthyan node — the difference between the five-muscle gnathostome fin and the six-muscle bony fish fin.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Pterygialis caudalis",
+          "present": "yes",
+          "note": "= 'zonopropterygialis' of the Polypterus pectoral fin sensu Wilhelm et al.; Diogo et al. find it in both appendages. Its shared presence in Polypterus and Latimeria is what places its origin at the osteichthyan LCA.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "actinistia",
+          "name": "Pterygialis caudalis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Pterygialis caudalis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Part of triceps + extensor antebrachii et carpi ulnaris (forelimb); tenuissimus + extensor cruris et tarsi fibularis (hindlimb)",
+          "present": "yes",
+          "note": "Both derivatives lie on the postaxial side and develop from the dorsal mass. The extensor cruris et tarsi fibularis is the mirror image — dorsal instead of ventral, fibular instead of tibial — of the flexor cruris et tarsi tibialis, and is probably subsumed into the tenuissimus in Ambystoma.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "triceps-brachii",
+          "extensor-antebrachii-carpi-ulnaris"
+        ],
+        "pelvic": [
+          "ischioflexorius"
+        ]
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "Diogo et al. note that although pterygialis cranialis is ventrally derived and pterygialis caudalis dorsally derived, in some fishes ventral muscles differentiate postaxially and dorsal muscles preaxially — so the mass assignment is a generalisation, not a rule.",
+        "openQuestion": "The derivation of the mammalian tenuissimus is contested independently by Diogo & Molnar (2014), who derive it from a dorsal tail-region muscle via the reptilian flexor cruris tarsi dorsalis. The two accounts need reconciling.",
+        "related": [
+          "pterygialis-cranialis",
+          "adductor-superficialis"
+        ]
+      },
+      "sources": [
+        "diogo-etal-2016"
+      ]
+    },
+    {
+      "id": "retractor-lateralis-ventralis-pectoralis",
+      "name": "Retractor lateralis ventralis pectoralis",
+      "region": "fin",
+      "subregion": "primaxial (axial to girdle)",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "ancestralNode": "Osteichthyes",
+      "developmental": "Primaxial: somitic muscle connecting axial skeleton to the pectoral girdle, as distinct from the abaxial muscles of the fin proper.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Axial skeleton and axial musculature.",
+        "insertion": "Pectoral girdle.",
+        "action": "Retracts and stabilises the pectoral girdle against the trunk.",
+        "innervation": "Ventral rami of the anterior spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          "axial skeleton",
+          "body wall"
+        ],
+        "insertion": [
+          "pectoral girdle",
+          "cleithrum",
+          "scapula"
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "actinistia",
+          "name": "Retractor lateralis ventralis pectoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "dipnoi",
+          "name": "Retractor lateralis ventralis pectoralis",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Serratus anterior + levator scapulae",
+          "present": "yes",
+          "note": "The homology rests on these being the only muscles in either taxon that connect the axial skeleton to the pectoral girdle — i.e. the only primaxial muscles. The retractor lateralis ventralis / serratus anterior correspondence was proposed by earlier authors and is endorsed here.",
+          "sources": [
+            "diogo-etal-2016"
+          ]
+        }
+      ],
+      "derivatives": {
+        "pectoral": [
+          "serratus-anterior",
+          "levator-scapulae"
+        ],
+        "pelvic": []
+      },
+      "homology": {
+        "confidence": "moderate",
+        "notes": "A useful negative result sits alongside this record. The caudofemoralis of Ambystoma, the levator lateralis of Latimeria and the abductor dorsolateralis of Neoceratodus all originate from axial skeleton or axial muscle, so all three fall in the abaxial/primaxial group — but Diogo et al. explicitly decline to homologise them, because the Latimeria levator lateralis belongs to the dorsal musculature while the tetrapod caudofemoralis belongs to the ventral. Shared axial attachment is not sufficient for homology.",
+        "related": [
+          "serratus-anterior",
+          "levator-scapulae",
+          "caudofemoralis"
+        ],
+        "teaching": "The clearest case in the fin dataset of authors refusing a homology that topology alone would support."
+      },
+      "sources": [
+        "diogo-etal-2016"
+      ]
+    }
+  ]
+}

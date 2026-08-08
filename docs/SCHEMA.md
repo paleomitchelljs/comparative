@@ -52,10 +52,13 @@ So each record has:
 |---|---|---|
 | `id` | ✔ | kebab-case, unique across **all** muscle files |
 | `name` | ✔ | Preferred name. Quote it (`"'Rhomboideus'"`) when the name itself is disputed |
-| `region` | ✔ | One of `cranial pectoral arm forearm hand pelvic thigh leg foot`. Drives sort order and the region facet |
+| `region` | ✔ | One of `cranial fin pectoral arm forearm hand pelvic thigh leg foot`. Drives sort order and the region facet |
 | `subregion` | | Free text, e.g. `"axio-appendicular"` |
 | `mass` | | `dorsal` / `ventral` for limb muscles (the two fundamental limb-bud masses); `branchiomeric`, `somitic`, `somitic-axial`, `extraocular` for cranial |
+| `layer` | | `superficialis` · `profundus` · `preaxial` · `postaxial` · `primaxial`. With `mass`, gives the four-cell classification (abductor/adductor × superficialis/profundus) that Mansuit & Herrel (2021) use to compare architecture across the whole fin-to-limb transition. Currently populated on `region: "fin"` records; see `docs/ROADMAP.md` phase 1 |
 | `arch` | | Pharyngeal arch number, or a string like `"3–7"`. Cranial records only |
+| `ancestralNode` | | Where the muscle first appears, e.g. `"LCA of extant gnathostomes"`. Fin records |
+| `derivatives` | | `{pectoral: [], pelvic: []}` — muscle `id`s this ancestral fin muscle gave rise to. See below |
 | `developmental` | | Embryonic origin. This is often the decisive homology evidence — state it when known |
 | `synonyms` | | Every other name for this muscle, **with the author who used it**. These are indexed for search, so they are how a reader arrives from an old paper |
 | `consensus` | | `{origin, insertion, action, innervation}` — the generalised description |
@@ -112,6 +115,29 @@ anlagen are known to differ — as for popliteus and pronator teres — say so i
 `caution`. Reserve `basis: "developmental"` for correspondences that survive that
 test.
 
+### `derivatives` — fin-to-limb ancestry
+
+```jsonc
+"derivatives": {
+  "pectoral": ["pectoralis", "flexor-digitorum-longus"],
+  "pelvic":   ["ischioflexorius"]
+}
+```
+
+Records in `data/muscles-fin.json` are the ancestral paired-fin muscles from
+which the whole tetrapod appendicular musculature is derived by subdivision
+(Diogo et al. 2016). `derivatives` names what each gave rise to, split by
+appendage because these muscles are ancestral to both.
+
+Unlike `related`, this edge is **directed and curated in one direction only**.
+The app derives the reverse ("derived from the ancestral fin muscle") by
+scanning, so a tetrapod muscle needs no field of its own — and correctly shows
+multiple ancestors where they exist (the ischioflexorius has three).
+
+Do not confuse `derivatives` with `homology.serial`. `derivatives` is ancestor →
+descendant through time. `serial` is forelimb ↔ hindlimb within one animal, and
+is topological rather than genealogical.
+
 ---
 
 ## `taxa.json`
@@ -121,7 +147,13 @@ appear in every occurrence table. Every `taxon` referenced in the tree must be
 defined in `taxa`, and vice versa — the validator checks both directions.
 
 Taxon fields: `id`, `label` (common name), `clade`, `exemplars`, `age`, `color`,
-`fossil` (bool), `notes`.
+`fossil` (bool), `notes`, and optionally `muscleCount`.
+
+`muscleCount` is `{pectoral, pelvic, total, source}`, optionally with
+`excludingAutopod`. These are the published per-appendage counts from Diogo et
+al. (2016) and drive the muscle-count trajectory in the planned phylogeny view.
+They are counts *reported by that source for its exemplar species*, not counts of
+records in this dataset — the two will differ and should not be reconciled.
 
 ---
 

@@ -6,31 +6,59 @@
       {
         "name": "Cyclostomata",
         "children": [
-          { "name": "Myxini", "taxon": "myxini" },
-          { "name": "Petromyzontida", "taxon": "petromyzontida" }
+          {
+            "name": "Myxini",
+            "taxon": "myxini"
+          },
+          {
+            "name": "Petromyzontida",
+            "taxon": "petromyzontida"
+          }
         ]
       },
       {
         "name": "Gnathostomata",
         "children": [
-          { "name": "Chondrichthyes", "taxon": "chondrichthyes" },
+          {
+            "name": "Chondrichthyes",
+            "taxon": "chondrichthyes"
+          },
           {
             "name": "Osteichthyes",
             "children": [
-              { "name": "Actinopterygii", "taxon": "actinopterygii" },
+              {
+                "name": "Actinopterygii",
+                "taxon": "actinopterygii"
+              },
               {
                 "name": "Sarcopterygii",
                 "children": [
-                  { "name": "Dipnoi", "taxon": "dipnoi" },
-                  { "name": "Tetrapodomorpha (stem)", "taxon": "tetrapodomorpha-stem" },
+                  {
+                    "name": "Actinistia",
+                    "taxon": "actinistia"
+                  },
+                  {
+                    "name": "Dipnoi",
+                    "taxon": "dipnoi"
+                  },
+                  {
+                    "name": "Tetrapodomorpha (stem)",
+                    "taxon": "tetrapodomorpha-stem"
+                  },
                   {
                     "name": "Tetrapoda",
                     "children": [
                       {
                         "name": "Amphibia",
                         "children": [
-                          { "name": "Caudata", "taxon": "caudata" },
-                          { "name": "Anura", "taxon": "anura" }
+                          {
+                            "name": "Caudata",
+                            "taxon": "caudata"
+                          },
+                          {
+                            "name": "Anura",
+                            "taxon": "anura"
+                          }
                         ]
                       },
                       {
@@ -39,18 +67,39 @@
                           {
                             "name": "Reptilia",
                             "children": [
-                              { "name": "Lepidosauria", "taxon": "lepidosauria" },
-                              { "name": "Testudines", "taxon": "testudines" },
-                              { "name": "Crocodylia", "taxon": "crocodylia" },
-                              { "name": "Aves", "taxon": "aves" }
+                              {
+                                "name": "Lepidosauria",
+                                "taxon": "lepidosauria"
+                              },
+                              {
+                                "name": "Testudines",
+                                "taxon": "testudines"
+                              },
+                              {
+                                "name": "Crocodylia",
+                                "taxon": "crocodylia"
+                              },
+                              {
+                                "name": "Aves",
+                                "taxon": "aves"
+                              }
                             ]
                           },
                           {
                             "name": "Synapsida",
                             "children": [
-                              { "name": "Synapsida (stem)", "taxon": "synapsida-stem" },
-                              { "name": "Monotremata", "taxon": "monotremata" },
-                              { "name": "Theria", "taxon": "theria" }
+                              {
+                                "name": "Synapsida (stem)",
+                                "taxon": "synapsida-stem"
+                              },
+                              {
+                                "name": "Monotremata",
+                                "taxon": "monotremata"
+                              },
+                              {
+                                "name": "Theria",
+                                "taxon": "theria"
+                              }
                             ]
                           }
                         ]
@@ -70,7 +119,9 @@
       "id": "myxini",
       "label": "Hagfishes",
       "clade": "Myxini",
-      "exemplars": ["Eptatretus burgeri"],
+      "exemplars": [
+        "Eptatretus burgeri"
+      ],
       "age": "Extant",
       "color": "#7b6a94",
       "notes": "Cyclostome outgroup. Included chiefly for cranial/branchial muscle polarity."
@@ -79,7 +130,10 @@
       "id": "petromyzontida",
       "label": "Lampreys",
       "clade": "Petromyzontida",
-      "exemplars": ["Petromyzon marinus", "Lampetra"],
+      "exemplars": [
+        "Petromyzon marinus",
+        "Lampetra"
+      ],
       "age": "Extant",
       "color": "#7b6a94",
       "notes": "Agnathan outgroup for cranial muscles; lacks paired appendages, so appendicular rows are structurally absent rather than lost."
@@ -88,34 +142,86 @@
       "id": "chondrichthyes",
       "label": "Cartilaginous fishes",
       "clade": "Chondrichthyes",
-      "exemplars": ["Squalus acanthias", "Scyliorhinus canicula", "Leucoraja erinacea"],
+      "exemplars": [
+        "Squalus acanthias",
+        "Scyliorhinus canicula",
+        "Leucoraja erinacea"
+      ],
       "age": "Extant",
       "color": "#3f7d94",
-      "notes": "Plesiomorphic gnathostome condition for paired-appendage muscles: undivided dorsal (levator/extensor) and ventral (depressor/flexor) fin masses."
+      "notes": "Plesiomorphic gnathostome condition for paired-appendage muscles: undivided dorsal (levator/extensor) and ventral (depressor/flexor) fin masses.",
+      "muscleCount": {
+        "pectoral": 5,
+        "pelvic": 5,
+        "total": 10,
+        "source": "diogo-etal-2016"
+      }
     },
     {
       "id": "actinopterygii",
       "label": "Ray-finned fishes",
       "clade": "Actinopterygii",
-      "exemplars": ["Lepisosteus oculatus", "Danio rerio", "Amia calva"],
+      "exemplars": [
+        "Polypterus senegalus",
+        "Polypterus delhezi",
+        "Lepisosteus oculatus",
+        "Danio rerio",
+        "Amia calva"
+      ],
       "age": "Extant",
       "color": "#3f7d94",
-      "notes": "Used mainly for branchial/cucullaris development (Naumann et al. 2017) and head-muscle patterning."
+      "notes": "Polypterus is the exemplar for appendicular muscles as the plesiomorphic extant actinopterygian (Diogo et al. 2016); Lepisosteus for branchial/cucullaris development (Naumann et al. 2017). Each paired fin has six muscles — the five-muscle gnathostome set plus the postaxial pterygialis caudalis.",
+      "muscleCount": {
+        "pectoral": 6,
+        "pelvic": 6,
+        "total": 12,
+        "source": "diogo-etal-2016"
+      }
+    },
+    {
+      "id": "actinistia",
+      "label": "Coelacanth",
+      "clade": "Actinistia",
+      "exemplars": [
+        "Latimeria chalumnae"
+      ],
+      "age": "Extant",
+      "color": "#4a8f6d",
+      "muscleCount": {
+        "pectoral": 20,
+        "pelvic": 15,
+        "total": 35,
+        "source": "diogo-etal-2016"
+      },
+      "notes": "Sister group to Dipnoi + Tetrapoda. Long excluded from fins-to-limbs discussion on the grounds that dipnoans are phylogenetically closer to tetrapods — which Diogo et al. (2016) argue was a mistake, because the dipnoan pectoral fin is secondarily simplified while Latimeria retains the plesiomorphic sarcopterygian condition. 14 of its pectoral muscles have one-to-one topological correspondences with pelvic muscles."
     },
     {
       "id": "dipnoi",
       "label": "Lungfishes",
       "clade": "Dipnoi",
-      "exemplars": ["Neoceratodus forsteri", "Protopterus"],
+      "exemplars": [
+        "Neoceratodus forsteri",
+        "Protopterus"
+      ],
       "age": "Extant",
       "color": "#4a8f6d",
-      "notes": "Closest extant sarcopterygian outgroup to tetrapods; fin musculature still largely a two-mass (dorsal/ventral) system."
+      "muscleCount": {
+        "pectoral": 5,
+        "pelvic": 25,
+        "total": 30,
+        "source": "diogo-etal-2016"
+      },
+      "notes": "Closest extant sarcopterygian outgroup to tetrapods. The pectoral fin has only five muscles, but this is a derived dipnoan simplification, not the ancestral condition — the pelvic fin retains 25. Reading tetrapod ancestry off the lungfish pectoral fin therefore understates the ancestral complexity."
     },
     {
       "id": "tetrapodomorpha-stem",
       "label": "Stem tetrapodomorphs",
       "clade": "Tetrapodomorpha (stem)",
-      "exemplars": ["Eusthenopteron foordi", "Tiktaalik roseae", "Acanthostega gunnari"],
+      "exemplars": [
+        "Eusthenopteron foordi",
+        "Tiktaalik roseae",
+        "Acanthostega gunnari"
+      ],
       "age": "Late Devonian",
       "color": "#8a6a3f",
       "fossil": true,
@@ -125,16 +231,37 @@
       "id": "caudata",
       "label": "Salamanders",
       "clade": "Caudata",
-      "exemplars": ["Ambystoma ordinarium", "Ambystoma mexicanum", "Salamandra salamandra", "Taricha"],
+      "exemplars": [
+        "Ambystoma ordinarium",
+        "Ambystoma mexicanum",
+        "Salamandra salamandra",
+        "Taricha"
+      ],
       "age": "Extant",
       "color": "#4a8f6d",
-      "notes": "Primary extant proxy for the plesiomorphic tetrapod limb muscle bauplan in Abdala & Diogo (2010) and Diogo & Molnar (2014)."
+      "notes": "Primary extant proxy for the plesiomorphic tetrapod limb muscle bauplan in Abdala & Diogo (2010) and Diogo & Molnar (2014).",
+      "muscleCount": {
+        "pectoral": 48,
+        "pelvic": 59,
+        "total": 107,
+        "excludingAutopod": {
+          "pectoral": 28,
+          "pelvic": 27,
+          "total": 55
+        },
+        "source": "diogo-etal-2016"
+      }
     },
     {
       "id": "anura",
       "label": "Frogs and toads",
       "clade": "Anura",
-      "exemplars": ["Rhinella arenarum", "Litoria caerulea", "Phyllomedusa sauvagi", "Xenopus laevis"],
+      "exemplars": [
+        "Rhinella arenarum",
+        "Litoria caerulea",
+        "Phyllomedusa sauvagi",
+        "Xenopus laevis"
+      ],
       "age": "Extant",
       "color": "#4a8f6d",
       "notes": "Highly derived limb musculature. Digit-1 loss shifts 'pollicis' muscles onto digit 2 — the standard example of positional rather than identity-based attachment."
@@ -143,7 +270,12 @@
       "id": "testudines",
       "label": "Turtles",
       "clade": "Testudines",
-      "exemplars": ["Trachemys scripta", "Testudo graeca", "Pelodiscus sinensis", "Emydura subglobosa"],
+      "exemplars": [
+        "Trachemys scripta",
+        "Testudo graeca",
+        "Pelodiscus sinensis",
+        "Emydura subglobosa"
+      ],
       "age": "Extant",
       "color": "#c08a3e",
       "notes": "Carapace rigidly links axial skeleton and girdle, and several axio-appendicular muscles are absent as discrete units. Cranial data follow Werneburg (2011)."
@@ -152,7 +284,13 @@
       "id": "lepidosauria",
       "label": "Lizards, snakes, tuatara",
       "clade": "Lepidosauria",
-      "exemplars": ["Timon lepidus", "Sphenodon punctatus", "Iguana iguana", "Varanus komodoensis", "Chamaeleo calyptratus"],
+      "exemplars": [
+        "Timon lepidus",
+        "Sphenodon punctatus",
+        "Iguana iguana",
+        "Varanus komodoensis",
+        "Chamaeleo calyptratus"
+      ],
       "age": "Extant",
       "color": "#c08a3e",
       "notes": "Most densely sampled reptilian group in Abdala & Diogo (2010) (>50 squamate species)."
@@ -161,7 +299,11 @@
       "id": "crocodylia",
       "label": "Crocodilians",
       "clade": "Crocodylia",
-      "exemplars": ["Caiman latirostris", "Alligator mississippiensis", "Crocodylus"],
+      "exemplars": [
+        "Caiman latirostris",
+        "Alligator mississippiensis",
+        "Crocodylus"
+      ],
       "age": "Extant",
       "color": "#c08a3e",
       "notes": "Extant phylogenetic bracket partner (with Aves) for archosaur fossil muscle reconstruction."
@@ -170,7 +312,11 @@
       "id": "aves",
       "label": "Birds",
       "clade": "Aves",
-      "exemplars": ["Gallus domesticus", "Cairina moschata", "Coturnix"],
+      "exemplars": [
+        "Gallus domesticus",
+        "Cairina moschata",
+        "Coturnix"
+      ],
       "age": "Extant",
       "color": "#c08a3e",
       "notes": "The single conspicuous departure from the conservative tetrapod forelimb pattern; the flight apparatus reorganises the pectoral and antebrachial musculature."
@@ -179,7 +325,11 @@
       "id": "synapsida-stem",
       "label": "Stem synapsids",
       "clade": "Synapsida (stem)",
-      "exemplars": ["Dimetrodon", "Ophiacodon", "Thrinaxodon"],
+      "exemplars": [
+        "Dimetrodon",
+        "Ophiacodon",
+        "Thrinaxodon"
+      ],
       "age": "Permian – Triassic",
       "color": "#8a6a3f",
       "fossil": true,
@@ -189,7 +339,11 @@
       "id": "monotremata",
       "label": "Monotremes",
       "clade": "Monotremata",
-      "exemplars": ["Tachyglossus aculeatus", "Zaglossus bruijni", "Ornithorhynchus anatinus"],
+      "exemplars": [
+        "Tachyglossus aculeatus",
+        "Zaglossus bruijni",
+        "Ornithorhynchus anatinus"
+      ],
       "age": "Extant",
       "color": "#a8524e",
       "notes": "Retains a reptile-like pectoral girdle (coracoid, interclavicle) with mammalian muscle differentiation — the key intermediate for reading synapsid pectoral evolution (Gambaryan et al. 2015)."
@@ -198,7 +352,12 @@
       "id": "theria",
       "label": "Marsupials and placentals",
       "clade": "Theria",
-      "exemplars": ["Rattus norvegicus", "Galictis cuja", "Homo sapiens", "Mustela"],
+      "exemplars": [
+        "Rattus norvegicus",
+        "Galictis cuja",
+        "Homo sapiens",
+        "Mustela"
+      ],
       "age": "Extant",
       "color": "#a8524e",
       "notes": "Reference terminal for most clinical/veterinary muscle names. Rattus is the mammalian column in Diogo & Molnar (2014)."
