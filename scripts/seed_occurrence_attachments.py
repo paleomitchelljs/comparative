@@ -86,20 +86,20 @@ SEED = {
     # numbered muscular units Werneburg resolves for that muscle, so the element
     # lists are the union across those units, not one belly's attachments.
     "adductor-mandibulae-externus": {
-        "testudines": {"origin": ["parietal", "squamosal", "postorbital", "quadrate", "quadratojugal",
+        "testudines": {"origin": ["parietal", "squamosal", "postorbital", "palatoquadrate-quadrate", "quadratojugal",
                                   "jugal", "prootic", "opisthotic", "supraoccipital"],
                        "insertion": ["coronar-aponeurosis", "surangular", "coronoid", "dentary", "angular"],
                        "sources": ["werneburg-2011"],
                        "shiftNote": "Aggregated across the seven units Werneburg resolves (pars superficialis, media, profunda and their subdivisions). The wide origin over the skull roof and braincase, and the redirection of the line of action over the otic process, are what the turtle trochlear arrangement buys."},
     },
     "adductor-mandibulae-posterior": {
-        "testudines": {"origin": ["quadrate", "parietal", "postorbital", "prootic"],
+        "testudines": {"origin": ["palatoquadrate-quadrate", "parietal", "postorbital", "prootic"],
                        "insertion": ["articular"],
                        "sources": ["werneburg-2011"],
                        "shiftNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011)."},
     },
     "depressor-mandibulae": {
-        "testudines": {"origin": ["squamosal", "quadrate", "quadratojugal", "opisthotic", "jugal"],
+        "testudines": {"origin": ["squamosal", "palatoquadrate-quadrate", "quadratojugal", "opisthotic", "jugal"],
                        "insertion": ["articular", "angular"],
                        "sources": ["werneburg-2011"],
                        "shiftNote": "One to two heads from the caudal, lateral and dorsal squamosal, occasionally the quadrate or quadratojugal; inserts partly by tendon on the posterior and ventral articular and the retroarticular process. Werneburg lists 13 synonyms for this muscle alone."},
@@ -132,6 +132,62 @@ SEED = {
         "aves": {"origin": ["sternum", "ribs"], "insertion": ["coracoid"],
                  "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
                  "shiftNote": "The only muscle on the internal surface of the thoracic cavity. From the dorsal surface of the craniolateral sternum (processus craniolateralis) and the first rib, to a large depression on the dorsal surface of the coracoid base. Matsuoka & Hasegawa suggest it keeps the coracoid-sternum connection flexible."},
+    },
+    # --- Anuran hand and foot, Blotto et al. (2020). The autopod regions had
+    # zero taxon-specific attachments before this; the monograph describes every
+    # intrinsic muscle of Triprion petasatus with explicit origin and insertion.
+    "flexores-breves-superficiales": {
+        "anura": {"origin": ["aponeurosis-plantaris"], "insertion": ["phalanges-manus"],
+                  "sources": ["blotto-etal-2020"],
+                  "shiftNote": "Despite the plural name, a single muscular body in Triprion, on the lateroplantar tarsal surface and ventrally concealed by the aponeurosis plantaris."},
+    },
+    "contrahentes-digitorum": {
+        "anura": {"origin": ["distal-carpals"], "insertion": ["phalanges-manus"],
+                  "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
+                  "shiftNote": "The contrahens indicis arises by tendon from the mediodistal distal carpal 3-4-5 and inserts on the lateropalmar surface of the basal phalanx of digit II; the contrahens digiti V arises lateral to it. A separate contrahens serves the prepollex."},
+    },
+    "flexores-breves-profundi": {
+        "anura": {"origin": ["distal-carpals"], "insertion": ["metacarpals", "prepollex"],
+                  "sources": ["blotto-etal-2020"],
+                  "shiftNote": "The medial flexor indicis brevis profundus arises by tendon from the medial distal carpal 3-4-5 and inserts fleshily on the mediopalmar metacarpal II and on the ligament connecting the prepollex."},
+    },
+    "lumbricales": {
+        "anura": {"origin": ["distal-carpals", "flexor-tendons"], "insertion": ["metacarpals", "phalanges-manus"],
+                  "sources": ["blotto-etal-2020"],
+                  "shiftNote": "Blotto et al. separate lumbricales breves (from distal carpal 3-4-5, inserting at the metacarpophalangeal joint) from lumbricales longi (from the tendines superficiales, in medial and lateral slips) — a distinction the amniote literature does not make."},
+    },
+    "abductor-pollicis-brevis": {
+        "anura": {"origin": ["distal-carpals"], "insertion": ["prepollex"],
+                  "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
+                  "shiftNote": "In anurans the preaxial muscles serve the PREPOLLEX, not digit 1 — the adductor pollicis arises tendinously from distal carpal 3-4-5 and inserts on the palmar and distal prepollex. Digit 1 is absent, and the muscles that would serve it attach to the preaxial element instead."},
+    },
+    "abductor-digiti-minimi": {
+        "anura": {"origin": ["fibulare"], "insertion": ["metatarsals"],
+                  "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
+                  "shiftNote": "Recorded from the FOOT: a large muscle with fleshy origin over almost the whole dorsolateral fibulare, inserting by short tendon on the dorsal and proximal metatarsal V."},
+    },
+    "extensores-digitorum-breves": {
+        "anura": {"origin": ["radiale", "carpals"], "insertion": ["phalanges-manus"],
+                  "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
+                  "shiftNote": "The extensor indicis brevis superficialis arises continuously from the radiale and the short ligament joining radiale and ulnare, lateral to the extensor carpi radialis tendon that attaches to element Y."},
+    },
+    "contrahentium-caput-longum": {
+        "anura": {"origin": ["ligamentum-calcanei"], "insertion": ["tibiale"],
+                  "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
+                  "shiftNote": "In the foot: a single muscle from the medial ligamentum calcanei, inserting fleshily along the distal three-quarters of the ventral tibiale, independent of the tibialis posterior."},
+    },
+    "contrahentes-digitorum-pes": {
+        "anura": {"origin": ["tarsals"], "insertion": ["phalanges-pes"],
+                  "sources": ["blotto-etal-2020"],
+                  "shiftNote": "Blotto et al. record a full contrahens series in the anuran foot, including one serving the prehallux."},
+    },
+    "flexores-breves-superficiales-pes": {
+        "anura": {"origin": ["aponeurosis-plantaris", "tarsals"], "insertion": ["phalanges-pes"],
+                  "sources": ["blotto-etal-2020"]},
+    },
+    "flexores-breves-profundi-pes": {
+        "anura": {"origin": ["metatarsals", "tarsals"], "insertion": ["phalanges-pes", "prehallux"],
+                  "sources": ["blotto-etal-2020"]},
     },
     "supracoracoideus": {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},

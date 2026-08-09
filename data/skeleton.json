@@ -2574,6 +2574,181 @@
           "prikryl-etal-2009"
         ]
       }
+    },
+    {
+      "id": "prepollex",
+      "label": "Prepollex",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura",
+          "caudata"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ],
+        "note": "A preaxial element medial to digit I. In anurans it carries its own musculature — adductor pollicis, a contrahens, flexores breves profundi slips — so it behaves as a digit even though it is not one. Relevant to the position-versus-identity argument: anurans lost digit 1 yet the preaxial muscles found something to attach to."
+      }
+    },
+    {
+      "id": "prehallux",
+      "label": "Prehallux",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura",
+          "caudata"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ],
+        "note": "Pedal counterpart of the prepollex, with its own abductor and flexor musculature in anurans."
+      }
+    },
+    {
+      "id": "distal-carpals",
+      "label": "Distal carpals",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "Blotto et al. (2020) refer the origin of most anuran intrinsic hand muscles to the fused distal carpal 3-4-5.",
+        "sources": [
+          "blotto-etal-2020"
+        ]
+      }
+    },
+    {
+      "id": "radiale",
+      "label": "Radiale",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "anura",
+          "caudata",
+          "lepidosauria",
+          "testudines"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ]
+      }
+    },
+    {
+      "id": "element-y",
+      "label": "Element Y",
+      "kind": "cartilage",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ],
+        "note": "An anuran carpal element receiving the extensor carpi radialis tendon."
+      }
+    },
+    {
+      "id": "tibiale",
+      "label": "Tibiale",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "anura",
+          "caudata",
+          "lepidosauria"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ],
+        "note": "Elongated with the fibulare into the anuran tarsal segment that lengthens the jumping limb."
+      }
+    },
+    {
+      "id": "fibulare",
+      "label": "Fibulare",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "correlate": true,
+      "synonyms": [
+        "calcaneum (partim)"
+      ],
+      "presence": {
+        "default": "variable",
+        "present": [
+          "anura",
+          "caudata",
+          "lepidosauria"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ]
+      }
+    },
+    {
+      "id": "ligamentum-calcanei",
+      "label": "Ligamentum calcanei",
+      "kind": "ligament",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ]
+      }
+    },
+    {
+      "id": "aponeurosis-plantaris",
+      "label": "Aponeurosis plantaris",
+      "kind": "aponeurosis",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "blotto-etal-2020"
+        ]
+      }
     }
   ]
 }

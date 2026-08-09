@@ -2,7 +2,7 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 95 muscles · 557 occurrences · 167 skeletal elements · 54 sources · 16 taxa.
+**State:** 95 muscles · 560 occurrences · 176 skeletal elements · 54 sources · 16 taxa.
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -15,26 +15,38 @@ scope. Duplicates are removed as they are found.
 the number that decides whether attachment change is analysable or merely
 illustrated.
 
-| Region | Muscles | Occurrences | With attachments | %att | Landmarks |
+| Region | Muscles | Occurrences | With attachments | %att | Was |
 |---|---:|---:|---:|---:|---:|
-| fin | 7 | 32 | 13 | **41%** | 3 |
-| pectoral | 16 | 96 | 36 | **38%** | 24 |
-| arm | 5 | 33 | 9 | 27% | 9 |
-| pelvic | 5 | 33 | 8 | 24% | 8 |
-| cranial | 15 | 60 | 10 | 17% | 19 |
-| thigh | 7 | 36 | 5 | 14% | 3 |
-| forearm | 18 | 94 | 6 | **6%** | 12 |
-| **hand** | 9 | 59 | **0** | **0%** | 0 |
-| **leg** | 7 | 27 | **0** | **0%** | 0 |
-| **foot** | 3 | 9 | **0** | **0%** | 0 |
-| **axial** | 3 | 20 | **0** | **0%** | 2 |
+| fin | 7 | 32 | 13 | 41% | 41% |
+| pectoral | 16 | 96 | 36 | 38% | 38% |
+| arm | 5 | 33 | 9 | 27% | 27% |
+| **foot** | 3 | 12 | 3 | **25%** | 0% |
+| pelvic | 5 | 33 | 8 | 24% | 24% |
+| cranial | 15 | 60 | 10 | 17% | 17% |
+| thigh | 7 | 36 | 5 | 14% | 14% |
+| **hand** | 9 | 59 | 7 | **12%** | 0% |
+| forearm | 18 | 94 | 7 | 7% | 6% |
+| **leg** | 7 | 27 | **0** | **0%** | 0% |
+| **axial** | 3 | 20 | **0** | **0%** | — |
 
-**The autopod is the hole.** Hand, leg and foot hold 19 muscles and 95
-occurrences with *zero* taxon-specific attachments. The forearm at 6% is barely
-better despite being the largest single region.
+Overall 20%, up from 17%.
 
-Blotto et al. (2020) — 156 pages on anuran hand and foot musculature — is now in
-`papers/` and unmined. It is the single largest available fix.
+**The autopod is half fixed.** Blotto et al. (2020) has now been mined: the hand
+went 0% → 12%, the foot 0% → 25%, and Anura as a whole 7% → 25%. That work also
+added nine anuran autopod elements the ontology lacked — prepollex, prehallux,
+distal carpal 3-4-5, radiale, element Y, tibiale, fibulare, ligamentum calcanei,
+aponeurosis plantaris — and three anuran occurrence rows for pes muscles that had
+no anuran record at all.
+
+The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
+muscles that would serve it — adductor pollicis, a contrahens, flexores breves
+profundi slips — attach to the prepollex instead. That is the position-versus-
+identity argument with a bone attached to it rather than just a digit number.
+
+**What Blotto does not fix:** the leg (zeugopod) is still 0%, and the hand
+remains low because Blotto covers Anura only — the other eight tetrapod columns
+still inherit the consensus. The forearm at 7% is the largest region with the
+least attachment detail.
 
 **Axial is newly present but skeletal.** Three records (epaxial, hypaxial,
 caudal) from Schilling (2011), covering the division that everything else is

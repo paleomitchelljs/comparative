@@ -338,8 +338,7 @@
             ],
             "insertion": [
               {
-                "element": "femur",
-                "landmark": "greater-trochanter"
+                "element": "femur"
               }
             ]
           }
@@ -361,8 +360,7 @@
             ],
             "insertion": [
               {
-                "element": "femur",
-                "landmark": "greater-trochanter"
+                "element": "femur"
               }
             ]
           },
@@ -527,8 +525,7 @@
             ],
             "insertion": [
               {
-                "element": "femur",
-                "landmark": "fourth-trochanter"
+                "element": "femur"
               }
             ]
           }
@@ -642,6 +639,7 @@
           "caution": "No forelimb counterpart. The caudofemoralis is a clean falsification of any expectation of one-to-one fore/hindlimb correspondence."
         },
         "related": [
+          "caudal-musculature",
           "gluteus-maximus",
           "iliofemoralis",
           "ischioflexorius",
@@ -1398,8 +1396,7 @@
             "origin": [
               {
                 "element": "ischium",
-                "side": "posterior",
-                "landmark": "ischial-tuberosity"
+                "side": "posterior"
               },
               {
                 "element": "ilium",
@@ -2216,6 +2213,30 @@
           ]
         },
         {
+          "taxon": "anura",
+          "name": "Mm. flexores breves superficiales",
+          "present": "yes",
+          "note": "A single muscular body in Triprion despite the plural name, on the lateroplantar tarsus beneath the aponeurosis plantaris.",
+          "sources": [
+            "blotto-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "aponeurosis-plantaris"
+              },
+              {
+                "element": "tarsals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              }
+            ]
+          }
+        },
+        {
           "taxon": "lepidosauria",
           "name": "Flexores breves superficiales",
           "present": "yes",
@@ -2247,6 +2268,7 @@
         ]
       },
       "sources": [
+        "blotto-etal-2020",
         "diogo-molnar-2014"
       ]
     },
@@ -2293,6 +2315,28 @@
           ]
         },
         {
+          "taxon": "anura",
+          "name": "Mm. contrahentes digitorum pedis",
+          "present": "yes",
+          "note": "Blotto et al. (2020) record a full contrahens series in the anuran foot, including one serving the prehallux — the pedal counterpart of the prepollex contrahens in the hand.",
+          "sources": [
+            "blotto-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tarsals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              }
+            ]
+          },
+          "attachmentNote": "Blotto et al. record a full contrahens series in the anuran foot, including one serving the prehallux."
+        },
+        {
           "taxon": "lepidosauria",
           "name": "Contrahentes digitorum",
           "present": "yes",
@@ -2322,6 +2366,7 @@
         ]
       },
       "sources": [
+        "blotto-etal-2020",
         "diogo-molnar-2014"
       ]
     },
@@ -2368,6 +2413,33 @@
           ]
         },
         {
+          "taxon": "anura",
+          "name": "Mm. flexores breves profundi",
+          "present": "yes",
+          "note": "Includes slips serving the prehallux.",
+          "sources": [
+            "blotto-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metatarsals"
+              },
+              {
+                "element": "tarsals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              },
+              {
+                "element": "prehallux"
+              }
+            ]
+          }
+        },
+        {
           "taxon": "lepidosauria",
           "name": "Flexores breves profundi",
           "present": "yes",
@@ -2398,6 +2470,7 @@
         ]
       },
       "sources": [
+        "blotto-etal-2020",
         "diogo-molnar-2014"
       ]
     }

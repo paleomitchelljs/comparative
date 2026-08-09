@@ -73,6 +73,13 @@ SIDES = {
     ("mandible", "retroarticular-process"): "posterior",
     ("tarsals", "calcaneum"): "posterior",
     ("carpals", "pisiform"): "medial",
+    ("carpals", "distal-carpals"): "distal",
+    ("carpals", "radiale"): "medial",
+    ("carpals", "prepollex"): "medial",
+    ("carpals", "element-y"): "medial",
+    ("tarsals", "tibiale"): "medial",
+    ("tarsals", "fibulare"): "lateral",
+    ("tarsals", "prehallux"): "medial",
     ("carpals", "ulnare"): "lateral",
     # Whole-bone attachments with a documented aspect.
     ("scapula", None): "lateral",
