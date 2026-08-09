@@ -29,7 +29,9 @@ const state = {
   phyloScope: 'all',
   index: [],
   query: '',
-  filters: { region: null, taxon: null, confidence: null },
+  // Keys must match FACET_MATCH — filtered() iterates these.
+  filters: { region: null, segment: null, mass: null, layer: null,
+             taxon: null, confidence: null },
   view: 'browse',        // browse | detail | skeleton | hierarchy | phylogeny
   current: null
 };
@@ -116,6 +118,35 @@ function buildIndex() {
     (m.occurrences || []).forEach(o => collect(o.attachments));
     els.forEach(id => push(state.elementsById.get(id)?.label || id, 'attachment'));
 
+    /* The descriptive fields. The page has always claimed these are searchable
+       — "origin, insertion, action, innervation" is in the meta description —
+       and two of the four returned nothing at all: "femoral nerve" matched no
+       record, "abduct" matched nine of the eighteen that describe it.
+
+       These are prose, not labels, so they are scored with a penalty (see
+       scoreTerm). A muscle whose NAME starts with "flexor" must outrank one
+       whose action happens to contain "flexes". */
+    const c = m.consensus || {};
+    push(c.action, 'action');
+    push(c.innervation, 'innervation');
+    push(c.origin, 'origin');
+    push(c.insertion, 'insertion');
+    push(m.developmental, 'development');
+
+    /* Classification terms, so "somitic", "profundus" or "zeugopod" find their
+       records from the search box as well as from the facets. */
+    push(m.subregion, 'group');
+    push(m.mass, 'group');
+    push(m.layer, 'group');
+    push(m.segment, 'group');
+
+    /* Taxon-specific descriptions, which is where the disagreements live. */
+    (m.occurrences || []).forEach(o => {
+      const clade = state.taxaById.get(o.taxon)?.clade || o.taxon;
+      ['action', 'innervation', 'origin', 'insertion'].forEach(k => push(o[k], k, clade));
+      (o.parts || []).forEach(p => push(p.name, 'part', clade));
+    });
+
     return { muscle: m, terms };
   });
 }
@@ -133,7 +164,7 @@ function search(qRaw) {
   for (const entry of state.index) {
     let best = null, bestScore = Infinity;
     for (const t of entry.terms) {
-      const s = scoreTerm(t.norm, q, words);
+      const s = scoreTerm(t.norm, q, words, t.kind);
       if (s !== null && s < bestScore) { bestScore = s; best = t; }
     }
     if (best) out.push({ muscle: entry.muscle, score: bestScore, hit: best });
@@ -142,9 +173,23 @@ function search(qRaw) {
   return out;
 }
 
+/* What kind of text matched, as a penalty band. A name is what the reader
+   typed at; a description merely contains their word. Without this, indexing
+   the prose fields would let "flexor carpi ulnaris" be outranked by any record
+   whose action string happens to say "flexes", because both are word-prefix
+   matches and the raw score cannot tell them apart.
+
+   Bands are wider than the 0-4 match scale so they never interleave: every
+   name match beats every description match, whatever the match quality. */
+const KIND_PENALTY = {
+  name: 0, synonym: 0, 'taxon-name': 0,
+  attachment: 10, part: 10, group: 10,
+  origin: 20, insertion: 20, action: 20, innervation: 20, development: 20,
+};
+
 /* Lower score = better. Exact < prefix < word-prefix < substring < all-words-present. */
-function scoreTerm(norm, q, words) {
-  const kindPenalty = 0;
+function scoreTerm(norm, q, words, kind) {
+  const kindPenalty = KIND_PENALTY[kind] ?? 20;
   if (norm === q) return 0 + kindPenalty;
   if (norm.startsWith(q)) return 1 + kindPenalty;
   if (norm.split(' ').some(w => w.startsWith(q))) return 2 + kindPenalty;
@@ -155,12 +200,28 @@ function scoreTerm(norm, q, words) {
 
 /* ---------- filtering ---------- */
 
+/* One predicate per facet, shared by the filter and the sidebar counts so the
+   two cannot drift apart about what a facet means.
+
+   The classification facets test for equality against a field that may be
+   absent. That is deliberate: `layer` is recorded for 56% of records, and a
+   muscle with no layer belongs under no layer button. Unrecorded is not a
+   value, and putting those records everywhere or nowhere-but-visible would
+   both misreport it. */
+const FACET_MATCH = {
+  region: (m, v) => m.region === v,
+  segment: (m, v) => m.segment === v,
+  mass: (m, v) => m.mass === v,
+  layer: (m, v) => m.layer === v,
+  confidence: (m, v) => (m.homology || {}).confidence === v,
+  taxon: (m, v) => presenceFor(m, v) !== null,
+};
+
 function filtered() {
   let rows = search(state.query);
-  const f = state.filters;
-  if (f.region) rows = rows.filter(r => r.muscle.region === f.region);
-  if (f.confidence) rows = rows.filter(r => (r.muscle.homology || {}).confidence === f.confidence);
-  if (f.taxon) rows = rows.filter(r => presenceFor(r.muscle, f.taxon) !== null);
+  for (const [key, val] of Object.entries(state.filters)) {
+    if (val) rows = rows.filter(r => FACET_MATCH[key](r.muscle, val));
+  }
   // Rank by relevance when searching; alphabetically within region when browsing.
   if (!state.query) {
     rows.sort((a, b) =>
@@ -231,15 +292,29 @@ function renderList() {
     ${state.query ? `matching “${esc(state.query)}”` : ''}
     ${activeFilterLabel()}</div>`;
 
+  const HIT_LABEL = {
+    'taxon-name': 'name', synonym: 'also known as', attachment: 'attaches to',
+    part: 'part', group: 'group', development: 'development',
+    origin: 'origin', insertion: 'insertion',
+    action: 'action', innervation: 'innervation',
+  };
+  /* Descriptions run to a couple of hundred characters. Trim on a word so the
+     card stays a card. */
+  const excerpt = (s, n = 110) => s.length <= n ? s
+    : s.slice(0, s.lastIndexOf(' ', n) + 1 || n).trimEnd() + '…';
+
   const cards = rows.map(({ muscle: m, hit }) => {
     const conf = (m.homology || {}).confidence;
     const nTaxa = (m.occurrences || []).filter(o => (o.present || 'yes') !== 'no').length;
     let hitLine = '';
     if (hit && hit.kind !== 'name') {
-      const label = hit.kind === 'taxon-name' ? `${esc(hit.extra)} name`
-                  : hit.kind === 'attachment' ? 'attaches to'
-                  : 'also known as';
-      hitLine = `<div class="hit">${label}: <em>${esc(hit.text)}</em></div>`;
+      /* Say which field matched. Without this a prose hit is baffling — the
+         card shows a muscle whose name has nothing to do with what was typed
+         and gives no reason. `extra` carries the clade for taxon-specific
+         rows, so a hit on the therian innervation says so. */
+      const base = HIT_LABEL[hit.kind] || 'also known as';
+      const label = hit.extra ? `${esc(hit.extra)} ${base}` : base;
+      hitLine = `<div class="hit">${label}: <em>${esc(excerpt(hit.text))}</em></div>`;
     }
     return `<article class="mcard" data-goto="${m.id}" tabindex="0">
       <h4>${esc(m.name)}</h4>
@@ -254,6 +329,9 @@ function renderList() {
 function activeFilterLabel() {
   const f = state.filters, parts = [];
   if (f.region) parts.push(`in <strong>${esc(f.region)}</strong>`);
+  if (f.segment) parts.push(`segment <strong>${esc(f.segment)}</strong>`);
+  if (f.mass) parts.push(`<strong>${esc(f.mass)}</strong> mass`);
+  if (f.layer) parts.push(`layer <strong>${esc(f.layer)}</strong>`);
   if (f.taxon) parts.push(`recorded for <strong>${esc(state.taxaById.get(f.taxon).clade)}</strong>`);
   if (f.confidence) parts.push(`homology <strong>${esc(f.confidence)}</strong>`);
   return parts.join(' · ');
@@ -495,16 +573,29 @@ function renderSidebar() {
   const rows = search(state.query);
   const el = document.getElementById('sidebar');
 
-  const count = (key, val) => rows.filter(r =>
-    key === 'region' ? r.muscle.region === val
-    : key === 'confidence' ? (r.muscle.homology || {}).confidence === val
-    : presenceFor(r.muscle, val) !== null).length;
+  const count = (key, val) => rows.filter(r => FACET_MATCH[key](r.muscle, val)).length;
 
   const regions = [...new Set(state.muscles.map(m => m.region))]
     .sort((a, b) => regionRank(a) - regionRank(b));
   const confs = ['well-supported', 'moderate', 'contested', 'uncertain'];
   const taxaSorted = [...state.taxa].sort(
     (a, b) => (state.taxonOrder.get(a.id) ?? 99) - (state.taxonOrder.get(b.id) ?? 99));
+
+  /* Proximodistal for segment, superficial-to-deep then axis for layer: these
+     vocabularies have their own order and alphabetising them would hide it.
+     Values present in the data but missing from these lists still appear, at
+     the end, so a new term shows up rather than silently vanishing. */
+  const ordered = (field, order) => {
+    const found = new Set(state.muscles.map(m => m[field]).filter(Boolean));
+    return [...order.filter(v => found.has(v)),
+            ...[...found].filter(v => !order.includes(v)).sort()];
+  };
+  const segments = ordered('segment',
+    ['cranial', 'axial', 'girdle', 'stylopod', 'zeugopod', 'autopod', 'fin']);
+  const masses = ordered('mass',
+    ['dorsal', 'ventral', 'somitic', 'somitic-axial', 'branchiomeric', 'extraocular']);
+  const layers = ordered('layer',
+    ['superficialis', 'intermediate', 'profundus', 'preaxial', 'postaxial', 'primaxial']);
 
   const facet = (title, key, items) => `
     <div class="facet"><h3>${title}</h3><ul>
@@ -518,8 +609,12 @@ function renderSidebar() {
       }).join('')}
     </ul></div>`;
 
+  const plain = v => ({ value: v, label: v });
   el.innerHTML =
-    facet('Region', 'region', regions.map(r => ({ value: r, label: r }))) +
+    facet('Region', 'region', regions.map(plain)) +
+    facet('Segment', 'segment', segments.map(plain)) +
+    facet('Developmental mass', 'mass', masses.map(plain)) +
+    facet('Layer', 'layer', layers.map(plain)) +
     facet('Recorded in taxon', 'taxon', taxaSorted.map(t => ({ value: t.id, label: t.clade, color: t.color }))) +
     facet('Homology confidence', 'confidence', confs.map(c => ({ value: c, label: c })));
 

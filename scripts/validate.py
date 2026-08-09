@@ -19,6 +19,16 @@ SERIAL_BASIS = {"topological", "developmental", "none"}
 LAYERS = {"superficialis", "profundus", "intermediate", "preaxial", "postaxial", "primaxial"}
 SEGMENTS = {"cranial", "axial", "girdle", "stylopod", "zeugopod", "autopod", "fin"}
 
+# `region` and `mass` were the two classification fields with no enforced
+# vocabulary, and both drifted: `mass` carried a lone "branchial" against
+# thirteen "branchiomeric", and SCHEMA.md's region list had fallen behind the
+# addition of "axial". Neither is visible until the field becomes a facet, at
+# which point a typo renders as its own button.
+REGIONS = {"cranial", "axial", "fin", "pectoral", "arm", "forearm", "hand",
+           "pelvic", "thigh", "leg", "foot"}
+MASSES = {"dorsal", "ventral", "somitic", "somitic-axial", "branchiomeric",
+          "extraocular"}
+
 # How far one homology group has been split in one taxon. Ordered: a field that
 # is `single` in a salamander, `heads` in a frog and `divided` in a mammal has
 # differentiated twice. Absent means unrecorded, never `single` — the same
@@ -406,6 +416,14 @@ def main():
             err(f"{where}: segment='{seg}' not in {sorted(SEGMENTS)}")
         if not seg:
             warn(f"{where}: no `segment` (run scripts/assign_hierarchy.py --write)")
+
+        region = m.get("region")
+        if region and region not in REGIONS:
+            err(f"{where}: region='{region}' not in {sorted(REGIONS)}")
+
+        mass = m.get("mass")
+        if mass and mass not in MASSES:
+            err(f"{where}: mass='{mass}' not in {sorted(MASSES)}")
 
         ls = m.get("layerSource")
         if ls:

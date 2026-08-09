@@ -53,9 +53,9 @@ So each record has:
 |---|---|---|
 | `id` | ✔ | kebab-case, unique across **all** muscle files |
 | `name` | ✔ | Preferred name. Quote it (`"'Rhomboideus'"`) when the name itself is disputed |
-| `region` | ✔ | One of `cranial fin pectoral arm forearm hand pelvic thigh leg foot`. Drives sort order and the region facet |
+| `region` | ✔ | One of `cranial axial fin pectoral arm forearm hand pelvic thigh leg foot`. Drives sort order and the region facet. Enforced |
 | `subregion` | | Free text, e.g. `"axio-appendicular"` |
-| `mass` | | `dorsal` / `ventral` for limb muscles (the two fundamental limb-bud masses); `branchiomeric`, `somitic`, `somitic-axial`, `extraocular` for cranial |
+| `mass` | | `dorsal` / `ventral` for limb muscles (the two fundamental limb-bud masses); `branchiomeric`, `somitic`, `somitic-axial`, `extraocular` for cranial and axial. Enforced |
 | `layer` | | `superficialis` · `profundus` · `preaxial` · `postaxial` · `primaxial`. With `mass`, gives the four-cell classification (abductor/adductor × superficialis/profundus) that Mansuit & Herrel (2021) use to compare architecture across the whole fin-to-limb transition. Currently populated on `region: "fin"` records; see `docs/ROADMAP.md` phase 1 |
 | `arch` | | Pharyngeal arch number, or a string like `"3–7"`. Cranial records only |
 | `ancestralNode` | | Where the muscle first appears, e.g. `"LCA of extant gnathostomes"`. Fin records |
