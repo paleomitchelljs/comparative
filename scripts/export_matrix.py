@@ -123,6 +123,30 @@ def main(outdir: pathlib.Path) -> int:
                             ";".join(occ.get("sources", []))])
                 rows += 1
 
+    # ---- architecture.csv ---------------------------------------------------
+    with open(outdir / "architecture.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["muscle_id", "muscle_name", "region", "taxon_id", "species", "n",
+                    "part", "abbr", "mass_g_mean", "mass_g_sd",
+                    "fascicle_mm_mean", "fascicle_mm_sd", "pcsa_cm2_mean", "pcsa_cm2_sd",
+                    "sources"])
+        arch_n = 0
+        for m in muscles:
+            for occ in m.get("occurrences", []):
+                a = occ.get("architecture")
+                if not a:
+                    continue
+                for pt in a.get("parts", []):
+                    g = lambda k, f: (pt.get(k) or {}).get(f, "")
+                    w.writerow([m["id"], m["name"], m.get("region", ""), occ["taxon"],
+                                a.get("species", ""), a.get("n", ""),
+                                pt.get("name", ""), pt.get("abbr", ""),
+                                g("mass_g", "mean"), g("mass_g", "sd"),
+                                g("fascicleLength_mm", "mean"), g("fascicleLength_mm", "sd"),
+                                g("pcsa_cm2", "mean"), g("pcsa_cm2", "sd"),
+                                ";".join(a.get("sources", []))])
+                    arch_n += 1
+
     # ---- elements.csv -------------------------------------------------------
     with open(outdir / "elements.csv", "w", newline="") as fh:
         w = csv.writer(fh)
@@ -154,6 +178,7 @@ def main(outdir: pathlib.Path) -> int:
                         present, ";".join(m.get("synonyms", [])), ";".join(m.get("sources", []))])
 
     print(f"attachments.csv  {n} rows")
+    print(f"architecture.csv {arch_n} rows")
     print(f"presence.csv     {rows} rows")
     print(f"elements.csv     {len(skel['elements'])} rows")
     print(f"muscles.csv      {len(muscles)} rows")

@@ -80,8 +80,33 @@
           "insertion": "Extends from the girdle to the distal fin, segmented proximo-distally by tendinous intersections that lie at the level of the major fin BONES rather than between them.",
           "note": "The intersection position differs from the tetrapod developmental pattern, where intersections form in the region of the joints.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "extracleithrum"
+              },
+              {
+                "element": "clavicle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              },
+              {
+                "element": "fin-radials",
+                "side": "anterior",
+                "landmark": "preaxial-radials"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the medial faces of cleithrum, extracleithrum and clavicle ventral to the articular process, by broad aponeurosis onto the lepidotrichial bases."
         },
         {
           "taxon": "dipnoi",
@@ -89,8 +114,31 @@
           "present": "yes",
           "note": "Present in both appendages; the pelvic fin retains the complex sarcopterygian condition while the pectoral fin is secondarily simplified.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle"
+              },
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials"
+              },
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the lateral faces of clavicle, cleithrum and scapulocoracoid ventral to the articular process. The ventral mirror of the adductor superficialis, and likewise partitioned by tendinous sheets at the axial joints."
         },
         {
           "taxon": "caudata",
@@ -198,8 +246,22 @@
           "present": "yes",
           "note": "In Latimeria the deep ventral mass has given rise to a proximo-distal series of supinators. Supinator 1, the most proximal, connects the girdle to both the first and second fin elements.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-axial-elements"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the medial endoskeleton ventral to the articular process, onto the deep face of the abductor superficialis. Source of the supinator series in Latimeria."
         },
         {
           "taxon": "dipnoi",
@@ -209,8 +271,22 @@
           "insertion": "Ventral surface of the proximal humerus-equivalent.",
           "note": "A short, parallel-fibred triangular muscle. Diogo et al. describe it as 'strikingly similar' to the salamander supracoracoideus in attachments, fibre orientation and overall configuration — the clearest single fin-to-limb muscle correspondence in the paper.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-axial-elements"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the scapulocoracoid adjacent and ventral to the articular process, onto the postaxial border of the first axial element."
         },
         {
           "taxon": "caudata",
@@ -320,16 +396,55 @@
           "present": "yes",
           "note": "In Latimeria the dorsal muscles of each fin have clear one-to-one correspondences with the ventral muscles of the same fin — the fin is close to a mirror image about its own plane.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              },
+              {
+                "element": "fin-radials",
+                "side": "anterior",
+                "landmark": "preaxial-radials"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the posteromedial cleithrum between anocleithrum and endoskeleton, by a broad tendon onto the bases of the lepidotrichia, with bundles joining pronators 2-3 onto the preaxial radials."
         },
         {
           "taxon": "dipnoi",
           "name": "Adductor superficialis",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials"
+              },
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: arises from the cleithrum and the scapulocoracoid dorsal to the articular process, inserting by aponeurosis onto the distal radials and the bases of the lepidotrichia. The sheet is divided by tendinous partitions that land on the joints between axial elements — Gadow's proximo-distal partitioning, visible in a living fish."
         },
         {
           "taxon": "caudata",
@@ -437,16 +552,47 @@
           "present": "yes",
           "note": "Gave rise to a proximo-distal series of pronators. The Eusthenopteron humerus preserves osteological correlates of a muscle corresponding to Latimeria pronator 1 — a rare direct fossil check on a soft-tissue homology.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-axial-elements"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the medial cleithrum and endoskeleton at the articular process, onto the deep face of the adductor superficialis. In Latimeria this deep layer has given rise to the pronator series along the axis."
         },
         {
           "taxon": "dipnoi",
           "name": "Adductor profundus",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-axial-elements"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the scapulocoracoid dorsal to the articular process onto the dorsal face of the first axial element."
         },
         {
           "taxon": "caudata",
@@ -545,8 +691,22 @@
           "name": "Pterygialis cranialis",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pelvic-lateral-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Pelvic fin: from the ventral face of the lateral process of the pelvis, running along the preaxial border to the preaxial lepidotrichial bases. In the pectoral fin it arises instead from the abductor superficialis itself."
         },
         {
           "taxon": "dipnoi",
@@ -554,8 +714,24 @@
           "present": "yes",
           "note": "In the pelvic fin, similar to the salamander ischioflexorius.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubic-ramus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "anterior",
+                "landmark": "preaxial-radials"
+              }
+            ]
+          },
+          "attachmentNote": "Recorded from the PELVIC fin — the dipnoan pectoral fin is secondarily simplified to five muscles and lacks it. From the caudolateral face of the pubic ramus to the distal end of the first preaxial radial."
         },
         {
           "taxon": "caudata",
@@ -652,16 +828,44 @@
           "name": "Pterygialis caudalis",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fin-axial-elements"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Pectoral fin: from the postaxial borders of the first to third axial elements together with pronators and supinators 2-4, inserting on the postaxial border between the adductor and abductor superficialis aponeuroses — a postaxial muscle sitting between the dorsal and ventral sheets."
         },
         {
           "taxon": "dipnoi",
           "name": "Pterygialis caudalis",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "midline-raphe"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-axial-elements"
+              }
+            ]
+          },
+          "attachmentNote": "Recorded from the PELVIC fin. From a midline raphe shared with its contralateral partner to the distal medial edge of the first axial element."
         },
         {
           "taxon": "caudata",
@@ -748,8 +952,23 @@
           "name": "Retractor lateralis ventralis pectoralis",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "diogo-etal-2016-si"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "cleithrum"
+              }
+            ]
+          },
+          "attachmentNote": "From a cranial rib to the medial face of the cleithrum — the only muscle connecting axial skeleton to pectoral girdle in the dipnoan, which is the basis for homologising it with the tetrapod serratus anterior and levator scapulae."
         },
         {
           "taxon": "caudata",

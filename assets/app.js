@@ -286,6 +286,7 @@ function renderDetail(m) {
       ${syn}
       <section class="block"><h3>Occurrence by taxon</h3>${renderOccTable(m)}</section>
       ${renderAttachmentBlock(m)}
+      ${renderArchitecture(m)}
       ${renderHomologyBlock(m, h)}
       ${renderAncestry(m)}
       ${renderRelated(m, h)}

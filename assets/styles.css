@@ -457,3 +457,6 @@ table.attachmatrix .a-kind {
   font-family: var(--font-ui); font-size: 0.72rem; text-transform: uppercase;
   letter-spacing: 0.05em; color: var(--ink-3); vertical-align: top;
 }
+table.archtable { min-width: 460px; table-layout: auto; }
+table.archtable .numcell { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+table.archtable .sd { color: var(--ink-3); font-size: 0.82em; }

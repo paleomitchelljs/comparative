@@ -339,6 +339,43 @@ function renderHierarchy() {
   return out;
 }
 
+
+/* ---------- muscle architecture ---------- */
+
+/* PCSA is the force proxy, fascicle length the excursion/velocity proxy. Showing
+   them side by side is the point: a short-fascicled, high-PCSA muscle and a
+   long-fascicled, low-PCSA one do different jobs at the same joint. */
+function renderArchitecture(m) {
+  const rows = (m.occurrences || [])
+    .filter(o => o.architecture)
+    .sort((a, b) => (state.taxonOrder.get(a.taxon) ?? 99) - (state.taxonOrder.get(b.taxon) ?? 99));
+  if (!rows.length) return '';
+
+  let out = `<section class="block"><h3>Muscle architecture</h3>`;
+  for (const occ of rows) {
+    const a = occ.architecture;
+    const t = state.taxaById.get(occ.taxon) || { clade: occ.taxon };
+    const num = v => v && typeof v.mean === 'number'
+      ? `${v.mean}<span class="sd"> ± ${v.sd ?? '—'}</span>` : '<span class="sep">—</span>';
+    out += `<p class="synonyms" style="margin:.2rem 0 .5rem">
+        <strong>${esc(t.clade)}</strong> — ${esc(a.species || '')}${a.n ? `, n = ${a.n}` : ''}
+        ${(a.sources || []).map(k => sourceLink(k)).join(' ')}</p>
+      <div class="tablewrap"><table class="occ archtable">
+        <thead><tr><th>Part</th><th>Mass (g)</th><th>Fascicle (mm)</th><th>PCSA (cm²)</th></tr></thead><tbody>
+        ${(a.parts || []).map(pt => `<tr>
+          <td>${esc(pt.name)}${pt.abbr ? ` <span class="sep">(${esc(pt.abbr)})</span>` : ''}</td>
+          <td class="numcell">${num(pt.mass_g)}</td>
+          <td class="numcell">${num(pt.fascicleLength_mm)}</td>
+          <td class="numcell">${num(pt.pcsa_cm2)}</td></tr>`).join('')}
+      </tbody></table></div>`;
+    if (a.comparison) {
+      out += `<p class="cellnote">Compared in the source against
+        ${esc(a.comparison.species)}${a.comparison.n ? `, n = ${a.comparison.n}` : ''}.</p>`;
+    }
+  }
+  return out + `</section>`;
+}
+
 /* ---------- attachment block for the muscle detail page ---------- */
 
 function renderAttachmentBlock(m) {

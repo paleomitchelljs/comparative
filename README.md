@@ -57,7 +57,7 @@ for why that matters.
 
 ## What's in it
 
-92 muscle records, 537 taxon occurrences, 121 skeletal elements, 37 sources, 16 operational taxa.
+92 muscle records, 537 taxon occurrences, 154 skeletal elements, 42 sources, 16 operational taxa.
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
 declared out of scope. Measured coverage and what is still missing:
@@ -161,6 +161,7 @@ scripts/
   build.sh              runs the whole data build in dependency order
   validate.py           schema + referential integrity. Exits non-zero on error
   export_matrix.py      long-format CSVs for downstream analysis
+  extract_werneburg_appendix.py  parses Werneburg 2011 Appendix 1 into 78 units
   migrate_attachments.py         free strings -> skeleton ids
   migrate_attachment_rows.py     ids -> element/side/landmark rows
   assign_hierarchy.py            segment + layer
@@ -219,11 +220,12 @@ Origin/insertion becomes what you *draw*, not what you navigate.
   name the sources that hold the numbers; several are already in `papers/`
   (Allen et al. 2014; Ercoli et al. 2014; Fahn-Lai et al. 2020). The schema has
   no field for these yet — roadmap phase 5.
-See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short: taxon-specific
-attachments cover 13% of present occurrences and are absent entirely for fish,
-fossil taxa, the hand and the foot; `side` is on 31% of rows and `landmark` on 9%;
-`layer` resolves for 53% of appendicular muscles; there is no architecture field
-and no axial musculature.
+See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short:
+taxon-specific attachments cover 18% of present occurrences — complete for the
+lungfish and coelacanth, **zero for the hand, leg and foot**; `side` is on 30% of
+rows and `landmark` on 11%; `layer` resolves for 53% of appendicular muscles;
+architecture data exists for four muscles (cheetah forelimb) with the pipeline in
+place for more; there is still no axial musculature.
 - **The stem-tetrapodomorph column is pectoral-only**, limited to what Molnar et
   al. (2018) reconstruct.
 - **Monotreme and stem-synapsid rows are sparse** relative to the detail

@@ -1727,6 +1727,511 @@
           "werneburg-2011"
         ]
       }
+    },
+    {
+      "id": "scapulocoracoid",
+      "label": "Scapulocoracoid",
+      "kind": "cartilage",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Endoskeletal pectoral girdle of fishes, bearing the articular process for the fin. It is the element that becomes the separate scapula and coracoid of tetrapods.",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "articular-process-pectoral",
+      "label": "Articular process (pectoral)",
+      "kind": "cartilage",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapulocoracoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "The fin articulation on the scapulocoracoid. Diogo et al. (2016) use it as the landmark separating dorsal (adductor) from ventral (abductor) muscle origins — the fish equivalent of the glenoid.",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "anocleithrum",
+      "label": "Anocleithrum",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinistia",
+          "dipnoi",
+          "tetrapodomorpha-stem"
+        ],
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "extracleithrum",
+      "label": "Extracleithrum",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinistia"
+        ],
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "pubic-ramus",
+      "label": "Pubic ramus (pelvic plate)",
+      "kind": "cartilage",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "Ramus of the fish pelvic plate. Diogo et al. (2016) record several pelvic fin muscles arising from its dorsal, medial and caudolateral faces.",
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "pelvic-lateral-process",
+      "label": "Lateral process of pelvis",
+      "kind": "cartilage",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "fin-axial-elements",
+      "label": "Axial (metapterygial) elements",
+      "kind": "cartilage",
+      "region": "fin",
+      "segment": "fin",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "tetrapodomorpha-stem"
+        ],
+        "note": "The proximo-distal series of the metapterygial axis. Its first and second elements correspond to the tetrapod stylopod and zeugopod; the pronator and supinator series attach segmentally along it.",
+        "sources": [
+          "diogo-etal-2016",
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "preaxial-radials",
+      "label": "Preaxial radials",
+      "kind": "cartilage",
+      "region": "fin",
+      "segment": "fin",
+      "partOf": "fin-radials",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "sources": [
+          "diogo-etal-2016"
+        ]
+      }
+    },
+    {
+      "id": "skull-roof",
+      "label": "Skull roof",
+      "kind": "group",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "parietal",
+      "label": "Parietal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "Principal origin surface for the adductor mandibulae in taxa with an open or emarginated temporal region.",
+        "sources": [
+          "werneburg-2011"
+        ]
+      }
+    },
+    {
+      "id": "frontal",
+      "label": "Frontal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "nasal",
+      "label": "Nasal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "aves"
+        ]
+      }
+    },
+    {
+      "id": "prefrontal",
+      "label": "Prefrontal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria",
+          "aves"
+        ]
+      }
+    },
+    {
+      "id": "postorbital",
+      "label": "Postorbital",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria",
+          "aves"
+        ]
+      }
+    },
+    {
+      "id": "jugal",
+      "label": "Jugal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "quadratojugal",
+      "label": "Quadratojugal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "skull-roof",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ]
+      }
+    },
+    {
+      "id": "supraoccipital",
+      "label": "Supraoccipital",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "occiput",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "basioccipital",
+      "label": "Basioccipital",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "occiput",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "prootic",
+      "label": "Prootic",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "otic-capsule",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "opisthotic",
+      "label": "Opisthotic",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "otic-capsule",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "basisphenoid",
+      "label": "Basisphenoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "palatine",
+      "label": "Palatine",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "vomer",
+      "label": "Vomer",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "maxilla",
+      "label": "Maxilla",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "premaxilla",
+      "label": "Premaxilla",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "dentary",
+      "label": "Dentary",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "The sole bone of the therian lower jaw; elsewhere one of several, with the postdentary series carrying part of the adductor insertion.",
+        "sources": [
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "surangular",
+      "label": "Surangular",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ],
+        "note": "Major adductor insertion surface in non-mammalian tetrapods.",
+        "sources": [
+          "werneburg-2011"
+        ]
+      }
+    },
+    {
+      "id": "angular",
+      "label": "Angular",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ],
+        "note": "Incorporated into the mammalian middle ear or lost as the dentary takes over the jaw joint.",
+        "sources": [
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "articular",
+      "label": "Articular",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ],
+        "note": "Forms the jaw joint with the quadrate in non-mammals; becomes the malleus in mammals, which is why the mammalian jaw joint is squamosal-dentary instead.",
+        "sources": [
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "coronoid",
+      "label": "Coronoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "theria"
+        ],
+        "note": "Incorporated into the mammalian middle ear or lost as the dentary takes over the jaw joint.",
+        "sources": [
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "eye-bulbus",
+      "label": "Eyeball",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "sclera",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "corpus-hyoidei",
+      "label": "Corpus hyoidei",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "cornu-branchiale",
+      "label": "Cornu branchiale",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "testudines",
+          "caudata",
+          "anura"
+        ],
+        "sources": [
+          "werneburg-2011"
+        ]
+      }
     }
   ]
 }

@@ -236,7 +236,22 @@
           "present": "yes",
           "sources": [
             "werneburg-2011"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "mandible",
+                "side": "anterior",
+                "landmark": "dentary"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midline-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Werneburg resolves a pars principalis and a further unit; both run from the medial dentary to the midline."
         },
         {
           "taxon": "theria",
@@ -343,7 +358,42 @@
           "innervation": "CN VII.",
           "sources": [
             "werneburg-2011"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "squamosal"
+              },
+              {
+                "element": "quadrate",
+                "side": "dorsal"
+              },
+              {
+                "element": "quadratojugal"
+              },
+              {
+                "element": "otic-capsule",
+                "side": "posterior",
+                "landmark": "opisthotic"
+              },
+              {
+                "element": "jugal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "posterior",
+                "landmark": "articular"
+              },
+              {
+                "element": "mandible",
+                "side": "ventral",
+                "landmark": "angular"
+              }
+            ]
+          },
+          "attachmentNote": "One to two heads from the caudal, lateral and dorsal squamosal, occasionally the quadrate or quadratojugal; inserts partly by tendon on the posterior and ventral articular and the retroarticular process. Werneburg lists 13 synonyms for this muscle alone."
         },
         {
           "taxon": "lepidosauria",
@@ -460,7 +510,28 @@
           "present": "yes",
           "sources": [
             "werneburg-2011"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "squamosal"
+              },
+              {
+                "element": "occiput",
+                "side": "dorsal",
+                "landmark": "supraoccipital"
+              },
+              {
+                "element": "hyoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midline-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "The constrictor colli complex, six units in Werneburg's scheme. Its spread from the hyoid onto the posterior skull is the sheet that in mammals becomes the facial musculature."
         },
         {
           "taxon": "lepidosauria",
@@ -767,7 +838,29 @@
           "note": "Werneburg (2011) records ten distinct ocular muscular units in turtles, including intraocular muscles absent from most vertebrate accounts. Turtles (like birds) have striated intraocular muscles, so pupillary control is partly voluntary.",
           "sources": [
             "werneburg-2011"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "optic-foramen"
+              },
+              {
+                "element": "interorbital-septum"
+              },
+              {
+                "element": "frontal"
+              },
+              {
+                "element": "basisphenoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "eye-bulbus"
+              }
+            ]
+          },
+          "attachmentNote": "Eight units around the optic foramen and the anterodorsal optic cavity, all inserting on the eyeball. Werneburg additionally records intraocular muscles (ciliaris, sphincter and dilatator pupillae, transversalis oculi) that most vertebrate accounts omit; turtles, like birds, have striated intraocular muscle."
         },
         {
           "taxon": "theria",
@@ -1286,7 +1379,38 @@
           "attachments": {
             "origin": [
               {
-                "element": "temporal-fossa"
+                "element": "parietal"
+              },
+              {
+                "element": "squamosal"
+              },
+              {
+                "element": "postorbital"
+              },
+              {
+                "element": "quadrate",
+                "side": "dorsal"
+              },
+              {
+                "element": "quadratojugal"
+              },
+              {
+                "element": "jugal"
+              },
+              {
+                "element": "otic-capsule",
+                "side": "anterior",
+                "landmark": "prootic"
+              },
+              {
+                "element": "otic-capsule",
+                "side": "posterior",
+                "landmark": "opisthotic"
+              },
+              {
+                "element": "occiput",
+                "side": "dorsal",
+                "landmark": "supraoccipital"
               }
             ],
             "insertion": [
@@ -1294,13 +1418,31 @@
                 "element": "coronar-aponeurosis"
               },
               {
-                "element": "mandible"
+                "element": "mandible",
+                "side": "lateral",
+                "landmark": "surangular"
+              },
+              {
+                "element": "mandible",
+                "side": "dorsal",
+                "landmark": "coronoid"
+              },
+              {
+                "element": "mandible",
+                "side": "anterior",
+                "landmark": "dentary"
+              },
+              {
+                "element": "mandible",
+                "side": "ventral",
+                "landmark": "angular"
               }
             ]
           },
           "sources": [
             "werneburg-2011"
-          ]
+          ],
+          "attachmentNote": "Aggregated across the seven units Werneburg resolves (pars superficialis, media, profunda and their subdivisions). The wide origin over the skull roof and braincase, and the redirection of the line of action over the otic process, are what the turtle trochlear arrangement buys."
         },
         {
           "taxon": "theria",
@@ -1450,17 +1592,31 @@
               {
                 "element": "quadrate",
                 "side": "dorsal"
+              },
+              {
+                "element": "parietal"
+              },
+              {
+                "element": "postorbital"
+              },
+              {
+                "element": "otic-capsule",
+                "side": "anterior",
+                "landmark": "prootic"
               }
             ],
             "insertion": [
               {
-                "element": "mandible"
+                "element": "mandible",
+                "side": "posterior",
+                "landmark": "articular"
               }
             ]
           },
           "sources": [
             "werneburg-2011"
-          ]
+          ],
+          "attachmentNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011)."
         }
       ],
       "homology": {

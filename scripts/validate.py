@@ -192,6 +192,21 @@ def main():
             seen_taxa[tid] += 1
 
             check_rows(occ.get("attachments", {}), f"{where}/{tid}", taxon=tid)
+
+            arch = occ.get("architecture")
+            if arch:
+                for k in arch.get("sources", []):
+                    if k not in source_keys:
+                        err(f"{where}/{tid}: architecture unknown source key '{k}'")
+                if not arch.get("sources"):
+                    err(f"{where}/{tid}: architecture block with no source")
+                if not arch.get("species"):
+                    warn(f"{where}/{tid}: architecture with no sampled species")
+                for part in arch.get("parts", []):
+                    for metric in ("mass_g", "fascicleLength_mm", "pcsa_cm2"):
+                        v = part.get(metric)
+                        if v is not None and not isinstance(v.get("mean"), (int, float)):
+                            err(f"{where}/{tid}: architecture {part.get('name')}.{metric} has no numeric mean")
             if occ.get("attachments") and not occ.get("sources"):
                 warn(f"{where}/{tid}: taxon-specific attachments with no source")
 

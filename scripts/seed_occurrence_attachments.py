@@ -22,6 +22,109 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # muscle id -> taxon id -> {origin, insertion, sources, shiftNote}
 SEED = {
+    # --- Fish paired-fin attachments, Diogo et al. (2016) Supplementary Tables
+    # S1-S4 (Neoceratodus pectoral/pelvic, Latimeria pectoral/pelvic). These take
+    # the sarcopterygian fish columns from no attachment data at all to the
+    # best-attested part of the fin record. `appendage` in each note says which
+    # fin the attachment is recorded from, because the fin muscle records are
+    # ancestral to both and Neoceratodus differs sharply between them.
+    "adductor-superficialis": {
+        "dipnoi": {"origin": ["cleithrum", "scapulocoracoid"], "insertion": ["fin-radials", "fin-rays"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "Pectoral fin: arises from the cleithrum and the scapulocoracoid dorsal to the articular process, inserting by aponeurosis onto the distal radials and the bases of the lepidotrichia. The sheet is divided by tendinous partitions that land on the joints between axial elements — Gadow's proximo-distal partitioning, visible in a living fish."},
+        "actinistia": {"origin": ["cleithrum"], "insertion": ["fin-rays", "preaxial-radials"],
+                       "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                       "shiftNote": "Pectoral fin: from the posteromedial cleithrum between anocleithrum and endoskeleton, by a broad tendon onto the bases of the lepidotrichia, with bundles joining pronators 2-3 onto the preaxial radials."},
+    },
+    "adductor-profundus": {
+        "dipnoi": {"origin": ["scapulocoracoid"], "insertion": ["fin-axial-elements"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "Pectoral fin: from the scapulocoracoid dorsal to the articular process onto the dorsal face of the first axial element."},
+        "actinistia": {"origin": ["cleithrum", "scapulocoracoid"], "insertion": ["fin-axial-elements"],
+                       "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                       "shiftNote": "Pectoral fin: from the medial cleithrum and endoskeleton at the articular process, onto the deep face of the adductor superficialis. In Latimeria this deep layer has given rise to the pronator series along the axis."},
+    },
+    "abductor-superficialis": {
+        "dipnoi": {"origin": ["clavicle", "cleithrum", "scapulocoracoid"], "insertion": ["fin-radials", "fin-rays"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "Pectoral fin: from the lateral faces of clavicle, cleithrum and scapulocoracoid ventral to the articular process. The ventral mirror of the adductor superficialis, and likewise partitioned by tendinous sheets at the axial joints."},
+        "actinistia": {"origin": ["cleithrum", "extracleithrum", "clavicle"], "insertion": ["fin-rays", "preaxial-radials"],
+                       "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                       "shiftNote": "Pectoral fin: from the medial faces of cleithrum, extracleithrum and clavicle ventral to the articular process, by broad aponeurosis onto the lepidotrichial bases."},
+    },
+    "abductor-profundus": {
+        "dipnoi": {"origin": ["scapulocoracoid"], "insertion": ["fin-axial-elements"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "Pectoral fin: from the scapulocoracoid adjacent and ventral to the articular process, onto the postaxial border of the first axial element."},
+        "actinistia": {"origin": ["scapulocoracoid"], "insertion": ["fin-axial-elements"],
+                       "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                       "shiftNote": "Pectoral fin: from the medial endoskeleton ventral to the articular process, onto the deep face of the abductor superficialis. Source of the supinator series in Latimeria."},
+    },
+    "pterygialis-cranialis": {
+        "dipnoi": {"origin": ["pubic-ramus"], "insertion": ["preaxial-radials"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "Recorded from the PELVIC fin — the dipnoan pectoral fin is secondarily simplified to five muscles and lacks it. From the caudolateral face of the pubic ramus to the distal end of the first preaxial radial."},
+        "actinistia": {"origin": ["pelvic-lateral-process"], "insertion": ["fin-rays"],
+                       "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                       "shiftNote": "Pelvic fin: from the ventral face of the lateral process of the pelvis, running along the preaxial border to the preaxial lepidotrichial bases. In the pectoral fin it arises instead from the abductor superficialis itself."},
+    },
+    "pterygialis-caudalis": {
+        "dipnoi": {"origin": ["midline-raphe"], "insertion": ["fin-axial-elements"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "Recorded from the PELVIC fin. From a midline raphe shared with its contralateral partner to the distal medial edge of the first axial element."},
+        "actinistia": {"origin": ["fin-axial-elements"], "insertion": ["fin-rays"],
+                       "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                       "shiftNote": "Pectoral fin: from the postaxial borders of the first to third axial elements together with pronators and supinators 2-4, inserting on the postaxial border between the adductor and abductor superficialis aponeuroses — a postaxial muscle sitting between the dorsal and ventral sheets."},
+    },
+    "retractor-lateralis-ventralis-pectoralis": {
+        "dipnoi": {"origin": ["ribs"], "insertion": ["cleithrum"],
+                   "sources": ["diogo-etal-2016", "diogo-etal-2016-si"],
+                   "shiftNote": "From a cranial rib to the medial face of the cleithrum — the only muscle connecting axial skeleton to pectoral girdle in the dipnoan, which is the basis for homologising it with the tetrapod serratus anterior and levator scapulae."},
+    },
+    # --- Turtle cranial attachments, from Werneburg (2011) Appendix 1 via
+    # scripts/extract_werneburg_appendix.py. Each entry aggregates the several
+    # numbered muscular units Werneburg resolves for that muscle, so the element
+    # lists are the union across those units, not one belly's attachments.
+    "adductor-mandibulae-externus": {
+        "testudines": {"origin": ["parietal", "squamosal", "postorbital", "quadrate", "quadratojugal",
+                                  "jugal", "prootic", "opisthotic", "supraoccipital"],
+                       "insertion": ["coronar-aponeurosis", "surangular", "coronoid", "dentary", "angular"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "Aggregated across the seven units Werneburg resolves (pars superficialis, media, profunda and their subdivisions). The wide origin over the skull roof and braincase, and the redirection of the line of action over the otic process, are what the turtle trochlear arrangement buys."},
+    },
+    "adductor-mandibulae-posterior": {
+        "testudines": {"origin": ["quadrate", "parietal", "postorbital", "prootic"],
+                       "insertion": ["articular"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011)."},
+    },
+    "depressor-mandibulae": {
+        "testudines": {"origin": ["squamosal", "quadrate", "quadratojugal", "opisthotic", "jugal"],
+                       "insertion": ["articular", "angular"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "One to two heads from the caudal, lateral and dorsal squamosal, occasionally the quadrate or quadratojugal; inserts partly by tendon on the posterior and ventral articular and the retroarticular process. Werneburg lists 13 synonyms for this muscle alone."},
+    },
+    "intermandibularis": {
+        "testudines": {"origin": ["dentary"], "insertion": ["midline-raphe"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "Werneburg resolves a pars principalis and a further unit; both run from the medial dentary to the midline."},
+    },
+    "interhyoideus": {
+        "testudines": {"origin": ["squamosal", "supraoccipital", "hyoid"], "insertion": ["midline-raphe"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "The constrictor colli complex, six units in Werneburg's scheme. Its spread from the hyoid onto the posterior skull is the sheet that in mammals becomes the facial musculature."},
+    },
+    "hypobranchial-muscles": {
+        "testudines": {"origin": ["hyoid", "dentary"], "insertion": ["corpus-hyoidei", "hyoid"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin."},
+    },
+    "extraocular-muscles": {
+        "testudines": {"origin": ["optic-foramen", "interorbital-septum", "frontal", "basisphenoid"],
+                       "insertion": ["eye-bulbus"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "Eight units around the optic foramen and the anterodorsal optic cavity, all inserting on the eyeball. Werneburg additionally records intraocular muscles (ciliaris, sphincter and dilatator pupillae, transversalis oculi) that most vertebrate accounts omit; turtles, like birds, have striated intraocular muscle."},
+    },
     "supracoracoideus": {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
