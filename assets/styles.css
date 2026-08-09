@@ -460,3 +460,34 @@ table.attachmatrix .a-kind {
 table.archtable { min-width: 460px; table-layout: auto; }
 table.archtable .numcell { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
 table.archtable .sd { color: var(--ink-3); font-size: 0.82em; }
+
+/* ---------- phylogeny view ---------- */
+.phylowrap { padding: 0.5rem 0.25rem; border: 1px solid var(--rule); border-radius: 6px; background: var(--bg-panel); }
+svg.phylotree { display: block; font-family: var(--font-ui); }
+svg.phylotree text { fill: var(--ink); font-size: 12px; }
+svg.phylotree .phylo-internal { fill: var(--ink-3); font-size: 10.5px; letter-spacing: 0.03em; }
+svg.phylotree .mc { fill: var(--ink-3); font-size: 10px; }
+svg.phylotree .phylo-badge rect { fill: var(--bg-sunken); stroke: var(--rule); }
+svg.phylotree .phylo-badge text { font-size: 10px; fill: var(--ink-2); font-variant-numeric: tabular-nums; }
+svg.phylotree .phylo-tip text { font-weight: 600; }
+
+.phylolegend {
+  display: flex; flex-wrap: wrap; gap: 0.9rem; align-items: center;
+  font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-3);
+  margin: 0.7rem 0 1.4rem;
+}
+.phylolegend i { display: inline-block; width: 16px; height: 3px; border-radius: 2px; margin-right: 0.35rem; vertical-align: middle; }
+
+.elbody .grp b.gain, .occ .grp b.gain { color: var(--ok); }
+.elbody .grp b.loss, .occ .grp b.loss { color: var(--warn); }
+
+/* muscle-count trajectory */
+.counttraj { display: grid; gap: 0.3rem; font-family: var(--font-ui); font-size: 0.82rem; }
+.ctrow { display: grid; grid-template-columns: 150px minmax(60px, 1fr) auto; gap: 0.7rem; align-items: center; }
+.ctname { font-weight: 600; color: var(--ink); }
+.ctbar { background: var(--bg-sunken); border-radius: 3px; height: 12px; overflow: hidden; }
+.ctbar i { display: block; height: 100%; border-radius: 3px; }
+.ctval { font-variant-numeric: tabular-nums; color: var(--ink-2); white-space: nowrap; }
+@media (max-width: 640px) { .ctrow { grid-template-columns: 110px 1fr; } .ctval { grid-column: 2; } }
+svg.phylotree .phylo-badge.equivocal rect { stroke-dasharray: 3 2; }
+svg.phylotree .phylo-badge.equivocal text { fill: var(--mod); }

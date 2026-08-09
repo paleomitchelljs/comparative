@@ -88,7 +88,7 @@ This matters for more than completeness: it is the natural root of the drill-dow
 hierarchy proposed in [`docs/ROADMAP.md`](docs/ROADMAP.md), and it corrects the
 textbook claim that fish fins had only two muscle masses.
 
-## Three views
+## Four views
 
 **Muscles** — search and filter by region, taxon, or homology confidence.
 
@@ -102,6 +102,14 @@ muscle had to move" is visible rather than inferred.
 or pharyngeal arch) → layer → proximodistal segment. This is the axis that
 survives deep transitions, since every tetrapod limb muscle is a subdivision of
 an ancestral fin mass.
+
+**Phylogeny** — where muscles were gained and lost along the tree, optimised by
+Fitch parsimony rather than read off the tip states. Missing data constrains
+nothing; `variable` and `inferred` tips are scored polymorphic; and placements
+that depend on the root-state convention are marked equivocal rather than
+presented as results. Also plots the published per-appendage muscle counts, where
+the striking result is that most of the fin-to-limb change had already happened
+*before* the sarcopterygian last common ancestor.
 
 ### Attachments carry the structure
 

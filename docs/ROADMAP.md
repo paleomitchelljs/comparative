@@ -119,7 +119,32 @@ Two views shipped: **Skeleton** (bone-first drill-down with a taxon selector) an
 per-taxon rows, hierarchy-aware so that a move to a finer landmark reads as a
 refinement rather than a transition.
 
-### Phase 3 — phylogeny view *(the "changes along the phylogeny" ask)*
+### Phase 3 — phylogeny view — **DONE**
+
+Shipped as the **Phylogeny** view. Branch states are optimised by **Fitch
+parsimony** over the topology in `taxa.json` (`assets/phylogeny.js`), not read off
+the tip states. Across all 92 muscles it infers 22 gains and 15 losses over 26
+informative characters.
+
+Three decisions that the honest reading forced, all surfaced in the interface:
+
+- **Missing data constrains nothing.** A taxon with no occurrence row is left
+  unscored. Treating absence of data as absence of the muscle would invent losses
+  across the whole fish end of the tree, where sampling is thinnest.
+- **`variable`, `uncertain` and `inferred` are scored polymorphic**, not forced
+  to presence or absence. `variable` means a source found the muscle in some
+  species of a clade and not others; `inferred` is a fossil reconstruction.
+- **Equivocal placements are marked, not hidden.** Where the root state is
+  ambiguous — both states cost the same number of steps — the convention used is
+  *absent at the root*, since muscles are acquired rather than primitively
+  universal. Flip that and gains become losses elsewhere at identical cost. 19 of
+  the 37 inferred changes are equivocal in this sense and carry a `?`.
+
+`tests/fitch.test.js` covers the optimisation, and runs in CI. It exists because
+the first implementation silently reported "no change" whenever the root state
+was ambiguous — the one failure mode that looks like a clean result.
+
+<details><summary>Original plan</summary>
 
 The presence data is **already a character matrix**: 86 muscles × 16 taxa, with
 states `yes │ no │ variable │ uncertain │ inferred`. The topology is already in
@@ -145,6 +170,8 @@ binary characters on a fixed topology and would be defensible.
 Second, `variable` and `inferred` are not binary states. `variable` means the
 source found the muscle in some species of the clade and not others — mapping it
 as either presence or absence is wrong. Render it as a distinct branch state.
+
+</details>
 
 ### Phase 4 — the clickable anatomical diagram
 
@@ -187,7 +214,7 @@ same four-cell classification.
 
 ## Suggested order
 
-Phases 1 and 2 are done. Remaining: **3 → 5 → 4**, with two data actions first.
+Phases 1, 2 and 3 are done. Remaining: **5 → 4**.
 
 See [`GAPS.md`](GAPS.md) for the measured picture. The short version: the
 presence matrix is dense (92 × 16, complete) so **phase 3 needs no new data**,

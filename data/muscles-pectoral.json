@@ -1139,7 +1139,8 @@
           "action": "Wing downstroke. The largest muscle in the body of most flying birds.",
           "note": "Includes the pectoralis pars thoracica sensu Maxwell & Larsson (2007).",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "matsuoka-hasegawa-2007"
           ],
           "attachments": {
             "origin": [
@@ -1150,6 +1151,10 @@
               },
               {
                 "element": "furcula"
+              },
+              {
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -1160,7 +1165,7 @@
               }
             ]
           },
-          "attachmentNote": "Origin concentrated on the carina; the largest muscle in the body of most flying birds."
+          "attachmentNote": "In Cygnus the origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is indirect, onto the surface of underlying muscle. Both pectoralis muscles together are about 11% of body mass."
         },
         {
           "taxon": "monotremata",
@@ -2636,8 +2641,26 @@
           "name": "Latissimus dorsi",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "matsuoka-hasegawa-2007"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracic-neural-spines"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "clavicle"
+              }
+            ]
+          },
+          "attachmentNote": "Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone, and inserting on the medial margins of the dorsal clavicle and the scapula."
         },
         {
           "taxon": "monotremata",
@@ -3392,10 +3415,14 @@
           "present": "yes",
           "note": "= coracobrachialis longus + brevis, or cranialis + caudalis, or anterior + posterior, depending on author.",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "matsuoka-hasegawa-2007"
           ],
           "attachments": {
             "origin": [
+              {
+                "element": "sternum"
+              },
               {
                 "element": "coracoid",
                 "side": "ventral"
@@ -3404,10 +3431,12 @@
             "insertion": [
               {
                 "element": "humerus",
-                "side": "proximal"
+                "side": "proximal",
+                "landmark": "tuberculum-ventrale"
               }
             ]
-          }
+          },
+          "attachmentNote": "Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus."
         },
         {
           "taxon": "theria",

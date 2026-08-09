@@ -125,6 +125,14 @@ SEED = {
                        "sources": ["werneburg-2011"],
                        "shiftNote": "Eight units around the optic foramen and the anterodorsal optic cavity, all inserting on the eyeball. Werneburg additionally records intraocular muscles (ciliaris, sphincter and dilatator pupillae, transversalis oculi) that most vertebrate accounts omit; turtles, like birds, have striated intraocular muscle."},
     },
+    # --- Avian pectoral attachments, Matsuoka & Hasegawa (2007) on Cygnus cygnus.
+    # Organised by bone in the original, and written for palaeontologists working
+    # back from fossils, so the attachment descriptions are unusually precise.
+    "sternocoracoideus": {
+        "aves": {"origin": ["sternum", "ribs"], "insertion": ["coracoid"],
+                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
+                 "shiftNote": "The only muscle on the internal surface of the thoracic cavity. From the dorsal surface of the craniolateral sternum (processus craniolateralis) and the first rib, to a large depression on the dorsal surface of the coracoid base. Matsuoka & Hasegawa suggest it keeps the coracoid-sternum connection flexible."},
+    },
     "supracoracoideus": {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
@@ -149,8 +157,9 @@ SEED = {
     "pectoralis": {
         "caudata":    {"origin": ["sternum", "body-wall"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["sternum", "interclavicle", "ribs"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010", "freitas-etal-2017"]},
-        "aves": {"origin": ["sternal-keel", "furcula"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010"],
-                 "shiftNote": "Origin concentrated on the carina; the largest muscle in the body of most flying birds."},
+        "aves": {"origin": ["sternal-keel", "furcula", "ribs"], "insertion": ["deltopectoral-crest"],
+                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
+                 "shiftNote": "In Cygnus the origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is indirect, onto the surface of underlying muscle. Both pectoralis muscles together are about 11% of body mass."},
         "monotremata": {"origin": ["sternum", "interclavicle", "clavicle"], "insertion": ["deltopectoral-crest"], "sources": ["gambaryan-etal-2015"],
                         "shiftNote": "More extensive origin than in therians because monotremes retain the interclavicle."},
         "theria": {"origin": ["sternum", "clavicle", "ribs"], "insertion": ["greater-tubercle"], "sources": ["ercoli-etal-2014"]},
@@ -181,6 +190,9 @@ SEED = {
         "caudata":    {"origin": ["body-wall"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines": {"origin": ["ribs"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                        "shiftNote": "Origin transferred onto the internal surface of the carapace, which is built from the ribs."},
+        "aves": {"origin": ["thoracic-neural-spines"], "insertion": ["scapula", "clavicle"],
+                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
+                 "shiftNote": "Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone, and inserting on the medial margins of the dorsal clavicle and the scapula."},
         "theria": {"origin": ["thoracolumbar-fascia", "thoracic-neural-spines", "ribs"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"]},
     },
     "sternocoracoideus": {
@@ -216,7 +228,9 @@ SEED = {
     "coracobrachialis": {
         "caudata":      {"origin": ["coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
-        "aves":         {"origin": ["coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
+        "aves": {"origin": ["sternum", "coracoid"], "insertion": ["tuberculum-ventrale"],
+                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
+                 "shiftNote": "Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus."},
         "theria": {"origin": ["coracoid-process"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"],
                    "shiftNote": "Origin transfers to the coracoid process as the coracoid bone is lost."},
     },
@@ -250,6 +264,9 @@ SEED = {
                        "shiftNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."},
     },
     "ambiens": {
+        "lepidosauria": {"origin": ["acetabulum-ventral-edge"], "insertion": ["trochanteric-fossa"],
+                         "sources": ["tomanska-etal-2025", "diogo-molnar-2014"],
+                         "shiftNote": "In Varanus komodoensis the muscle has dorsal and ventral heads; the dorsal attaches to the ventral edge of the acetabulum and the ventral lies anteriorly, both converging on the femur at the intertrochanteric fossa."},
         "crocodylia": {"origin": ["pubis"], "insertion": ["tibia"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
                        "shiftNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."},
     },

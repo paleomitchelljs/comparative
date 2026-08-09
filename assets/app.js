@@ -24,10 +24,12 @@ const state = {
   elements: [],
   elementsById: new Map(),
   skeletonTaxon: '',
+  topology: null,
+  phyloScope: 'all',
   index: [],
   query: '',
   filters: { region: null, taxon: null, confidence: null },
-  view: 'browse',        // browse | detail | skeleton | hierarchy
+  view: 'browse',        // browse | detail | skeleton | hierarchy | phylogeny
   current: null
 };
 
@@ -41,6 +43,7 @@ async function boot() {
     ...DATA_FILES.map(fetchJSON)
   ]);
 
+  state.topology = taxaDoc.topology;
   state.elements = skeletonDoc.elements;
   skeletonDoc.elements.forEach(e => state.elementsById.set(e.id, e));
 
@@ -185,10 +188,16 @@ function render({ keepScroll = false } = {}) {
   renderSidebar();
   const main = document.getElementById('main');
 
-  if (state.view === 'skeleton') { main.innerHTML = renderSkeleton(); }
+  if (state.view === 'phylogeny') { main.innerHTML = renderPhylogeny(); }
+  else if (state.view === 'skeleton') { main.innerHTML = renderSkeleton(); }
   else if (state.view === 'hierarchy') { main.innerHTML = renderHierarchy(); }
   else if (state.view === 'detail' && state.current) { main.innerHTML = renderDetail(state.current); }
   else { main.innerHTML = renderList(); }
+
+  const scope = main.querySelector('#phylo-scope');
+  if (scope) scope.addEventListener('change', () => {
+    state.phyloScope = scope.value; render({ keepScroll: true });
+  });
 
   const picker = main.querySelector('#skel-taxon');
   if (picker) picker.addEventListener('change', () => {
@@ -508,6 +517,7 @@ function syncViewButtons() {
     String(state.view === 'browse' || state.view === 'detail'));
   document.getElementById('btn-skeleton').setAttribute('aria-pressed', on('skeleton'));
   document.getElementById('btn-hierarchy').setAttribute('aria-pressed', on('hierarchy'));
+  document.getElementById('btn-phylogeny').setAttribute('aria-pressed', on('phylogeny'));
 }
 
 function wireUI() {
@@ -522,7 +532,8 @@ function wireUI() {
     }, 90);
   });
 
-  const nav = { 'btn-browse': 'browse', 'btn-skeleton': 'skeleton', 'btn-hierarchy': 'hierarchy' };
+  const nav = { 'btn-browse': 'browse', 'btn-skeleton': 'skeleton',
+                'btn-hierarchy': 'hierarchy', 'btn-phylogeny': 'phylogeny' };
   for (const [id, view] of Object.entries(nav)) {
     document.getElementById(id).addEventListener('click', () => {
       state.view = view; state.current = null;

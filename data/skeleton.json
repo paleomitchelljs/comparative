@@ -380,7 +380,10 @@
           "molnar-etal-2018",
           "molnar-diogo-2021"
         ]
-      }
+      },
+      "synonyms": [
+        "crista pectoralis (Aves)"
+      ]
     },
     {
       "id": "greater-tubercle",
@@ -2230,6 +2233,40 @@
         ],
         "sources": [
           "werneburg-2011"
+        ]
+      }
+    },
+    {
+      "id": "tuberculum-ventrale",
+      "label": "Tuberculum ventrale",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "note": "Ventral tubercle of the avian proximal humerus; receives the coracobrachialis caudalis.",
+        "sources": [
+          "matsuoka-hasegawa-2007"
+        ]
+      }
+    },
+    {
+      "id": "acetabulum-ventral-edge",
+      "label": "Ventral edge of acetabulum",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "acetabulum",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "sources": [
+          "tomanska-etal-2025"
         ]
       }
     }
