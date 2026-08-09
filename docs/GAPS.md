@@ -2,7 +2,7 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 97 muscles · 570 occurrences · 197 skeletal elements · 57 sources · 16 taxa.
+**State:** 98 muscles · 573 occurrences · 197 skeletal elements · 58 sources · 16 taxa.
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -238,11 +238,26 @@ copy exists.
 |---|---|---|
 | **Hattori & Tsuihiji (2021)** | Europe PMC | Sauropsid pedal homology; contested anterior tibial muscles |
 | **Pereyra et al. (2024)** | PMC, green OA | *Caiman* crural and pedal myology in seven layers; **first pedal osteological correlates** for a crocodylian |
+| **Allen et al. (2021)** | Europe PMC | Crocodylian↔avian pelvic limb homology table; avian names for 13 records; the iliofibularis |
 
 Pereyra et al. took Crocodylia from nothing in the leg and foot to 38% overall,
 and their fine metatarsal striae are now recorded as correlates. They report that
 most correlates vary little between crocodylian species, which is the condition
 for using them on fossils.
+
+Allen et al. (2021) supplied avian nomenclature for 13 hindlimb records from
+their Table 1, and settled a naming question the dataset had left open — 54 of
+55 avian occurrences are now named. They also **corroborate the contested
+anterior tibial homology**: they equate the crocodylian extensor digitorum longus
+with the avian *m. tibialis cranialis*, which is Hattori & Tsuihiji's reading
+rather than the classical one. The two papers work on different problems —
+homology versus moment arms — so the agreement is not circular. The records stay
+`contested`, but the balance of evidence has moved.
+
+Their method is also the template for roadmap phase 4: fit geometric primitives
+to joints, trace muscle paths from origin to insertion, compute moment arms. That
+is precisely what this dataset's attachment records are for, and it is what makes
+`side` and `landmark` resolution worth chasing rather than decorative.
 
 ## What is still unmined in `papers/`
 

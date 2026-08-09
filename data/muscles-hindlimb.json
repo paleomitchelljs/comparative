@@ -91,11 +91,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Puboischiofemoralis internus",
+          "name": "M. iliofemoralis internus + iliotrochantericus cranialis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "= crocodylian puboischiofemoralis internus 1-2. Hip flexors and medial rotators; Allen et al. find hip medial-rotator moment arms roughly doubling along the bird line."
         },
         {
           "taxon": "theria",
@@ -127,6 +129,7 @@
         "teaching": "The sartorius derivation is a good correction to a widespread textbook claim."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014"
       ]
     },
@@ -213,11 +216,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Puboischiofemoralis externus",
+          "name": "M. obturatorius lateralis + medialis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "= crocodylian puboischiofemoralis externus 1-3."
         },
         {
           "taxon": "synapsida-stem",
@@ -255,8 +260,9 @@
         ]
       },
       "sources": [
-        "diogo-molnar-2014",
-        "bishop-pierce-2024"
+        "allen-etal-2021",
+        "bishop-pierce-2024",
+        "diogo-molnar-2014"
       ]
     },
     {
@@ -370,11 +376,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Iliofemoralis (iliotrochantericus complex)",
+          "name": "M. iliofemoralis externus",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "Hip abductor."
         },
         {
           "taxon": "synapsida-stem",
@@ -497,11 +505,13 @@
         "related": [
           "caudofemoralis",
           "gluteus-maximus",
+          "iliofibularis",
           "puboischiofemoralis-internus"
         ],
         "teaching": "The best single muscle for showing that posture change is a change in mechanics, not in anatomy. Same muscle, same nerve, radically different role."
       },
       "sources": [
+        "allen-etal-2021",
         "bishop-pierce-2024",
         "diogo-molnar-2014",
         "hudson-etal-2011b"
@@ -636,10 +646,11 @@
         },
         {
           "taxon": "aves",
-          "name": "Caudofemoralis (reduced)",
+          "name": "M. caudofemoralis pars caudalis + pars pelvica",
           "present": "yes",
-          "note": "Greatly reduced with the shortening of the tail to the pygostyle and the shift to a knee-driven, femur-held-horizontal gait. Its reduction is a defining event in the theropod–bird locomotor transition.",
+          "note": "Greatly reduced with the shortening of the tail to the pygostyle and the shift to a knee-driven, femur-held-horizontal gait. Its reduction is a defining event in the theropod–bird locomotor transition. Allen et al. (2021) split the avian muscle into pars caudalis (= crocodylian caudofemoralis longus) and pars pelvica (= brevis). Its leverage declines across several nodes along the bird line.",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
           ]
         },
@@ -694,8 +705,9 @@
         "teaching": "The single best fossil-muscle example: a bony landmark (the fourth trochanter) that reads directly as muscle presence, size and locomotor mode across 300 million years."
       },
       "sources": [
-        "diogo-molnar-2014",
-        "bishop-pierce-2024"
+        "allen-etal-2021",
+        "bishop-pierce-2024",
+        "diogo-molnar-2014"
       ]
     },
     {
@@ -792,11 +804,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Iliotibialis lateralis / cranialis",
+          "name": "M. iliotibialis cranialis + lateralis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "= crocodylian iliotibialis 1-3."
         },
         {
           "taxon": "theria",
@@ -857,8 +871,126 @@
         ]
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b"
+      ]
+    },
+    {
+      "id": "iliofibularis",
+      "name": "Iliofibularis",
+      "region": "thigh",
+      "subregion": "dorsal thigh",
+      "segment": "stylopod",
+      "mass": "dorsal",
+      "layer": "superficialis",
+      "developmental": "Somitic; dorsal (extensor) mass.",
+      "synonyms": [
+        "biceps femoris (mammals — proposed)",
+        "M. iliofibularis"
+      ],
+      "consensus": {
+        "origin": "Lateral surface of the ilium, posterior to the iliofemoralis origin.",
+        "insertion": "Proximal fibula, via a broad tendon.",
+        "action": "Extends the hip and flexes the knee; stabilises the femur during the stance phase.",
+        "innervation": "Sciatic nerve, fibular division."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. iliofibularis",
+          "present": "yes",
+          "origin": "Posterior abdominal margin of the ilium.",
+          "insertion": "Proximal tibia via a broad tendon.",
+          "note": "Tomańska et al. (2025) report it stabilising the pelvic region and femur during movement in Varanus komodoensis, allowing hip abduction. Dick & Clemente (2016) include it among the major varanid locomotor muscles.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ]
+          },
+          "sources": [
+            "dick-clemente-2016",
+            "tomanska-etal-2025"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "M. iliofibularis",
+          "present": "yes",
+          "note": "Its insertion marks the iliofibular tubercle on the fibular shaft, which Pereyra et al. (2024) use as the landmark for the fibularis longus origin.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fibula",
+                "landmark": "iliofibular-tubercle",
+                "side": "proximal"
+              }
+            ]
+          },
+          "sources": [
+            "allen-etal-2021",
+            "pereyra-etal-2024"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "M. iliofibularis",
+          "present": "yes",
+          "note": "Name retained across the crocodylian–avian transition. Allen et al. (2021) find knee-flexor leverage declining relative to knee extensors along the bird line, which is the leverage change underlying the shift from hip-driven to knee-driven propulsion.",
+          "sources": [
+            "allen-etal-2021"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "One of the muscles whose name survives unchanged from crocodylians to birds in Allen et al.'s (2021) table. Its correspondence with the mammalian biceps femoris is proposed but not settled — Diogo & Molnar (2014) treat the hamstring group as deriving from the ischioflexorius field rather than from a single iliofibularis.",
+        "openQuestion": "Is the amniote iliofibularis the homologue of the mammalian biceps femoris, or does the hamstring group derive wholesale from the ischioflexorius field?",
+        "serial": {
+          "forelimb": null,
+          "basis": "none"
+        },
+        "related": [
+          "iliofemoralis",
+          "ischioflexorius",
+          "fibularis-group"
+        ],
+        "teaching": "A muscle spanning hip and knee whose declining leverage is measurable along the bird line — a case where a function claim rests on geometry, not on presence or absence."
+      },
+      "sources": [
+        "allen-etal-2021",
+        "dick-clemente-2016",
+        "tomanska-etal-2025",
+        "pereyra-etal-2024"
       ]
     },
     {
@@ -936,11 +1068,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Femorotibialis",
+          "name": "M. femorotibialis lateralis + medialis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "= crocodylian femorotibialis externus and internus."
         },
         {
           "taxon": "theria",
@@ -1031,6 +1165,7 @@
         "teaching": "Explains a fact students memorise without understanding: why one of the four quadriceps heads flexes the hip and three do not. They are not four parts of one muscle; they are two muscles."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b"
       ]
@@ -1129,10 +1264,11 @@
         },
         {
           "taxon": "aves",
-          "name": "'Ambiens'",
+          "name": "M. ambiens",
           "present": "yes",
-          "note": "In birds the ambiens tendon famously passes to the digital flexors, an arrangement once invoked (incorrectly) as an automatic perching mechanism.",
+          "note": "In birds the ambiens tendon famously passes to the digital flexors, an arrangement once invoked (incorrectly) as an automatic perching mechanism. Hip flexor and knee extensor; the name is retained across the transition.",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
           ]
         },
@@ -1160,6 +1296,7 @@
         "teaching": "A worked example of using mass assignment (dorsal vs ventral) rather than position to settle a homology dispute."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014"
       ]
     },
@@ -1246,11 +1383,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Adductor femoris",
+          "name": "M. puboischiofemoralis medialis + lateralis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "= crocodylian adductor femoris 1 and 2 respectively."
         },
         {
           "taxon": "theria",
@@ -1327,6 +1466,7 @@
         ]
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b"
       ]
@@ -1389,11 +1529,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Ischiotrochantericus",
+          "name": "M. ischiofemoralis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "Hip extensor and lateral rotator."
         },
         {
           "taxon": "theria",
@@ -1421,6 +1563,7 @@
         ]
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014"
       ]
     },
@@ -1621,11 +1764,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Flexor cruris lateralis + medialis",
+          "name": "M. flexor cruris medialis + flexor cruris lateralis pars pelvica",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "= crocodylian flexor tibialis internus 3 and flexor tibialis externus. Crocodylian flexor tibialis internus 1 is LOST between Avialae and Aves — one of the few outright losses in their table."
         },
         {
           "taxon": "theria",
@@ -1712,11 +1857,13 @@
           "caution": "Frequently asserted; the two are innervated by different divisions and derive from opposite masses (hamstrings ventral, triceps dorsal). This correspondence should be treated as functional analogy."
         },
         "related": [
-          "puboischiotibialis",
-          "caudofemoralis"
+          "caudofemoralis",
+          "iliofibularis",
+          "puboischiotibialis"
         ]
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b"
       ]
@@ -1912,11 +2059,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Gastrocnemius",
+          "name": "M. gastrocnemius",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "Ankle plantarflexor."
         },
         {
           "taxon": "theria",
@@ -1976,6 +2125,7 @@
         ]
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b"
       ]
@@ -2075,6 +2225,7 @@
           "name": "Tibialis cranialis (classical) / extensor digitorum longus (Hattori & Tsuihiji 2021)",
           "present": "uncertain",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014",
             "hattori-tsuihiji-2021"
           ],
@@ -2119,10 +2270,11 @@
           "extensor-digitorum-longus-hl",
           "fibularis-group"
         ],
-        "notes": "Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail.",
+        "notes": "Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail. Allen et al. (2021) independently adopt the revised scheme in their crocodylian-to-avian homology table, equating the crocodylian extensor digitorum longus with the avian m. tibialis cranialis. That is a second line of support for Hattori & Tsuihiji's reading against the classical one, from authors working on moment arms rather than on homology, so the agreement is not circular.",
         "openQuestion": "Is the avian tibialis cranialis the homologue of the non-avian tibialis anterior (Romer's scheme, followed by most of the literature) or of the non-avian extensor digitorum longus (Hattori & Tsuihiji 2021)? The two schemes imply different attachment histories across the archosaur stem, so fossil muscle reconstruction in theropods depends on which is right."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hattori-tsuihiji-2021"
       ]
@@ -2236,6 +2388,7 @@
           "name": "Extensor digitorum longus",
           "present": "uncertain",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014",
             "hattori-tsuihiji-2021"
           ],
@@ -2256,7 +2409,7 @@
       ],
       "homology": {
         "confidence": "contested",
-        "notes": "The muscle itself is straightforward; the interest is in its derivatives. The human fibularis tertius / rat fibularis digiti quinti case is one of Diogo & Molnar's cleanest demonstrations that shared name plus shared nerve still does not establish homology. Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail.",
+        "notes": "The muscle itself is straightforward; the interest is in its derivatives. The human fibularis tertius / rat fibularis digiti quinti case is one of Diogo & Molnar's cleanest demonstrations that shared name plus shared nerve still does not establish homology. Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail. Allen et al. (2021) independently adopt the revised scheme in their crocodylian-to-avian homology table, equating the crocodylian extensor digitorum longus with the avian m. tibialis cranialis. That is a second line of support for Hattori & Tsuihiji's reading against the classical one, from authors working on moment arms rather than on homology, so the agreement is not circular.",
         "serial": {
           "forelimb": "extensor-digitorum",
           "basis": "topological",
@@ -2269,6 +2422,7 @@
         "teaching": "The rat double-fusion case is the single most economical illustration of parallelism masquerading as serial homology."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "hattori-tsuihiji-2021",
         "pereyra-etal-2024"
@@ -2345,11 +2499,13 @@
         },
         {
           "taxon": "aves",
-          "name": "Fibularis longus + brevis",
+          "name": "M. fibularis longus + brevis",
           "present": "yes",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
-          ]
+          ],
+          "note": "Names retained; longus plantarflexes, brevis dorsiflexes."
         },
         {
           "taxon": "theria",
@@ -2372,11 +2528,13 @@
         },
         "related": [
           "extensor-digitorum-longus-hl",
+          "iliofibularis",
           "tibialis-anterior"
         ],
         "teaching": "Innervation as a decisive argument. Two muscles sit in the lateral compartment and carry a lateral-compartment name, but their nerve says they belong to the extensor group."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "pereyra-etal-2024"
       ]
@@ -2624,10 +2782,11 @@
         },
         {
           "taxon": "aves",
-          "name": "Flexor digitorum longus",
+          "name": "M. flexor digitorum longus",
           "present": "yes",
-          "note": "Together with the flexor hallucis longus, forms the tendon system that produces automatic toe flexion when the ankle flexes — the mechanism of perching.",
+          "note": "Together with the flexor hallucis longus, forms the tendon system that produces automatic toe flexion when the ankle flexes — the mechanism of perching. Ankle plantarflexor.",
           "sources": [
+            "allen-etal-2021",
             "diogo-molnar-2014"
           ]
         },
@@ -2657,6 +2816,7 @@
         "teaching": "The distal-greater-than-proximal similarity gradient is visible in a single salamander dissection."
       },
       "sources": [
+        "allen-etal-2021",
         "diogo-molnar-2014",
         "pereyra-etal-2024"
       ]

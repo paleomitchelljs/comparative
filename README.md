@@ -57,7 +57,7 @@ for why that matters.
 
 ## What's in it
 
-97 muscle records, 570 taxon occurrences, 197 skeletal elements, 57 sources, 16 operational taxa.
+98 muscle records, 573 taxon occurrences, 197 skeletal elements, 58 sources, 16 operational taxa.
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
 declared out of scope. Measured coverage and what is still missing:
