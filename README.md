@@ -104,6 +104,10 @@ inserts at each level, and optionally restrict to one taxon. Elements that taxon
 lacks are flagged rather than hidden, so "the coracoid is gone, therefore this
 muscle had to move" is visible rather than inferred.
 
+Elements are homology groups: the hyomandibula, columella and stapes are one
+record shown under the selected taxon's own name, so the shark's depressor
+hyomandibulae and the mammal's stapedius are visibly on the same bone.
+
 **Mass & layer** — the homology spine: developmental origin (dorsal/ventral mass,
 or pharyngeal arch) → layer → proximodistal segment. This is the axis that
 survives deep transitions, since every tetrapod limb muscle is a subdivision of
@@ -165,7 +169,8 @@ assets/
 data/
   taxa.json             operational taxa + the topology that orders them
   sources.json          bibliography
-  skeleton.json         attachment-site ontology: partOf, presence, correlates
+  skeleton.json         attachment-site ontology: partOf, presence, correlates,
+                        per-taxon names for homologous elements
   muscles-*.json        muscle records, split by region
   raw/                  git-ignored: verbatim extractions, curation aids only
 docs/

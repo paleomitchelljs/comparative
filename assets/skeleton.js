@@ -139,6 +139,17 @@ function attachmentShifts(muscle) {
 
 /* ---------- element presence ---------- */
 
+/* What this element is called in a given taxon. Elements are homology groups —
+   the hyomandibula of a shark and the stapes of a mammal are one element — so the
+   label shown has to follow the taxon being viewed. */
+function elementLabel(elementId, taxonId) {
+  const e = state.elementsById.get(elementId);
+  if (!e) return elementId;
+  if (!taxonId || !e.taxonNames) return e.label;
+  const hit = e.taxonNames.find(tn => (tn.taxa || []).includes(taxonId));
+  return hit ? hit.name : e.label;
+}
+
 function elementPresentIn(elementId, taxonId) {
   const e = state.elementsById.get(elementId);
   if (!e) return 'unknown';
@@ -175,11 +186,18 @@ function musclesAtElement(elementId, taxonId) {
 
 /* ---------- skeleton view ---------- */
 
+/* Skeletal elements before soft tissue, then alphabetical. File order is a
+   record of when things were added, which is not a useful browse order. */
+const KIND_RANK = { group: 0, bone: 1, cartilage: 2, ligament: 3, aponeurosis: 4,
+                    membrane: 5, fascia: 6, soft: 7 };
+
 function skeletonRoots() {
-  return state.elements.filter(e => !e.partOf);
+  return state.elements.filter(e => !e.partOf).sort((a, b) =>
+    (KIND_RANK[a.kind] ?? 9) - (KIND_RANK[b.kind] ?? 9) || a.label.localeCompare(b.label));
 }
 
-const childrenOf = id => state.elements.filter(e => e.partOf === id);
+const childrenOf = id => state.elements.filter(e => e.partOf === id).sort((a, b) =>
+  (KIND_RANK[a.kind] ?? 9) - (KIND_RANK[b.kind] ?? 9) || a.label.localeCompare(b.label));
 
 /* Count muscles on this element AND everything nested inside it, so a collapsed
    parent still tells you whether it is worth opening. */
@@ -217,7 +235,10 @@ function renderSkeleton() {
     if (!roots.length) continue;
     const cards = roots.map(e => renderElementNode(e, taxonId, q, 0)).filter(Boolean).join('');
     if (!cards) continue;
-    body += `<section class="block"><h3>${esc(region)}</h3><div class="skeltree">${cards}</div></section>`;
+    const n = roots.reduce((acc, e) => acc + subtreeCount(e.id, taxonId), 0);
+    body += `<details class="elnode region"${q ? ' open' : ''}>
+      <summary><span class="elname">${esc(region)}</span><span class="count">${n}</span></summary>
+      <div class="elbody"><div class="skeltree">${cards}</div></div></details>`;
   }
 
   return taxonPicker + (body ||
@@ -249,18 +270,21 @@ function renderElementNode(e, taxonId, q, depth) {
   ].join('');
 
   const note = (e.presence || {}).note;
-  const open = depth < 1 || q ? ' open' : '';
+  const alias = taxonId && elementLabel(e.id, taxonId) !== e.label ? e.label : null;
+  const open = q ? ' open' : '';
 
   return `<details class="elnode d${depth}"${open}>
     <summary>
-      <span class="elname">${esc(e.label)}</span>
+      <span class="elname">${esc(elementLabel(e.id, taxonId))}</span>
       <span class="elkind">${esc(e.kind)}</span>
       ${badges}
       <span class="count">${total}</span>
     </summary>
     <div class="elbody">
       ${absentHere ? `<p class="cellnote">Absent in ${esc(state.taxaById.get(taxonId).clade)}.</p>` : ''}
+      ${alias ? `<p class="cellnote">Elsewhere: ${esc(alias)}</p>` : ''}
       ${note ? `<p class="cellnote">${esc(note)}</p>` : ''}
+      ${e.transformation ? `<p class="cellnote">${esc(e.transformation)}</p>` : ''}
       ${(here.origin.length || here.insertion.length) ? `
         <div class="grp"><b>Origin of (${here.origin.length})</b>${list(here.origin)}</div>
         <div class="grp"><b>Insertion of (${here.insertion.length})</b>${list(here.insertion)}</div>` : ''}
@@ -309,13 +333,13 @@ function renderHierarchy() {
     const layers = groups.get(key);
     const n = [...layers.values()].reduce((a, s) => a + [...s.values()].reduce((b, l) => b + l.length, 0), 0);
 
-    out += `<details class="elnode d0" ${q ? 'open' : ''}>
+    out += `<details class="elnode d0"${q ? ' open' : ''}>
       <summary><span class="elname">${esc(label)}</span><span class="count">${n}</span></summary>
       <div class="elbody">`;
 
     for (const [layer, segs] of [...layers.entries()].sort()) {
       const ln = [...segs.values()].reduce((a, l) => a + l.length, 0);
-      out += `<details class="elnode d1" open>
+      out += `<details class="elnode d1"${q ? ' open' : ''}>
         <summary><span class="elname">${esc(layer)}</span><span class="count">${ln}</span></summary>
         <div class="elbody">`;
       const segEntries = [...segs.entries()].sort(
@@ -414,10 +438,10 @@ function renderAttachmentBlock(m) {
                  <span class="swatch" style="background:${esc(t.color)}"></span>
                  <span class="clade">${esc(t.clade)}</span></div></td>` : ''}
             ${i === 0 ? `<td rowspan="${rows.length}" class="a-kind">${kind}</td>` : ''}
-            <td class="a-bone"><a href="#element=${encodeURIComponent(r.element)}">${esc(state.elementsById.get(r.element)?.label || r.element)}</a></td>
+            <td class="a-bone"><a href="#element=${encodeURIComponent(r.element)}">${esc(elementLabel(r.element, occ.taxon))}</a></td>
             <td class="a-side">${r.side ? esc(r.side) : '<span class="sep">—</span>'}</td>
             <td class="a-lm">${lm
-              ? `<a href="#element=${encodeURIComponent(r.landmark)}">${esc(lm.label)}</a>`
+              ? `<a href="#element=${encodeURIComponent(r.landmark)}">${esc(elementLabel(r.landmark, occ.taxon))}</a>`
                 + (lm.correlate ? ' <span class="chip corr">correlate</span>' : '')
               : '<span class="sep">—</span>'}</td>
           </tr>`;

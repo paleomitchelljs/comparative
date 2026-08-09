@@ -221,7 +221,44 @@ records in this dataset — the two will differ and should not be reconciled.
 | `partOf` | Parent element. Builds the bone-first drill-down; cycles are an error |
 | `correlate` | `true` if the site leaves a recognisable osteological trace — the entry point for fossil reconstruction |
 | `presence` | `{default, present[], absent[], partial[], reduced[], variable[], note, sources}` |
+| `taxonNames` | `[{taxa: [], name}]` — what this element is called in each taxon. See below |
+| `transformation` | What happens to the element across the tree; shown on the element |
+| `derivedFrom` | Another element this one splits off from (fission, not renaming) |
 | `synonyms` | |
+
+### Elements are homology groups too
+
+`hyomandibula` and `stapes` were once separate entries with perfectly
+complementary presence — fish and tetrapods. That is the signature of **one
+element recorded under two names**, and it is exactly the mistake the muscle
+records exist to avoid. It also broke the interface: the shark's depressor
+hyomandibulae and the mammal's stapedius appeared to attach to different bones,
+when the whole point is that they attach to the same one.
+
+So an element is a homology group, with names as per-taxon attributes:
+
+```jsonc
+{
+  "id": "hyomandibula-stapes",
+  "label": "Hyomandibula / stapes",          // neutral cross-taxon label
+  "taxonNames": [
+    { "taxa": ["chondrichthyes", "actinopterygii"], "name": "Hyomandibula" },
+    { "taxa": ["lepidosauria", "aves"], "name": "Columella (stapes)" },
+    { "taxa": ["theria"], "name": "Stapes" }
+  ],
+  "transformation": "One element throughout. …"
+}
+```
+
+The interface shows the taxon's own name when a taxon is selected, and the
+neutral label otherwise. A taxon may appear in only one `taxonNames` entry.
+
+Currently merged: hyomandibula/columella/stapes, palatoquadrate/quadrate/incus,
+articular/malleus, angular/ectotympanic.
+
+**`derivedFrom` is for fission, not renaming.** The scapula and coracoid each
+`derivedFrom` the `scapulocoracoid`: one ancestral element became two, so they
+cannot be merged into one record the way a rename can.
 
 `presence` is what lets the interface say a muscle's attachment *had to move*
 rather than silently dropping a row. It is also enforced: attaching a muscle to

@@ -49,7 +49,8 @@
       "partOf": "pectoral-girdle",
       "presence": {
         "default": "yes"
-      }
+      },
+      "derivedFrom": "scapulocoracoid"
     },
     {
       "id": "scapular-spine",
@@ -211,7 +212,8 @@
           "gambaryan-etal-2015",
           "fahn-lai-etal-2020"
         ]
-      }
+      },
+      "derivedFrom": "scapulocoracoid"
     },
     {
       "id": "procoracoid",
@@ -1024,82 +1026,36 @@
       }
     },
     {
-      "id": "caudal-vertebrae",
-      "label": "Caudal vertebrae",
-      "kind": "bone",
-      "region": "axial",
-      "segment": "axial",
-      "partOf": "axial-skeleton",
-      "presence": {
-        "default": "yes",
-        "reduced": [
-          "aves"
-        ],
-        "absent": [
-          "anura"
-        ],
-        "note": "Replaced by the urostyle in anurans and shortened to the pygostyle in birds — both associated with caudofemoralis reduction."
-      }
-    },
-    {
-      "id": "lumbar-vertebrae",
-      "label": "Lumbar vertebrae",
-      "kind": "bone",
-      "region": "axial",
-      "segment": "axial",
-      "partOf": "axial-skeleton",
-      "presence": {
-        "default": "yes"
-      }
-    },
-    {
       "id": "thoracic-neural-spines",
-      "label": "Thoracic neural spines",
+      "label": "Neural spines (thoracic)",
       "kind": "bone",
       "region": "axial",
       "segment": "axial",
-      "partOf": "axial-skeleton",
+      "partOf": "thoracic-vertebrae",
       "presence": {
         "default": "yes"
       }
     },
     {
       "id": "cervical-transverse-processes",
-      "label": "Cervical transverse processes",
+      "label": "Transverse processes (cervical)",
       "kind": "bone",
       "region": "axial",
       "segment": "axial",
-      "partOf": "axial-skeleton",
+      "partOf": "cervical-vertebrae",
       "presence": {
         "default": "yes"
       }
     },
     {
       "id": "atlas-transverse-process",
-      "label": "Atlas transverse process",
+      "label": "Transverse process of atlas",
       "kind": "bone",
       "region": "axial",
       "segment": "axial",
-      "partOf": "cervical-transverse-processes",
+      "partOf": "atlas",
       "presence": {
         "default": "yes"
-      }
-    },
-    {
-      "id": "sacrum",
-      "label": "Sacrum",
-      "kind": "bone",
-      "region": "axial",
-      "segment": "axial",
-      "partOf": "axial-skeleton",
-      "presence": {
-        "default": "yes",
-        "absent": [
-          "chondrichthyes",
-          "actinopterygii",
-          "actinistia",
-          "dipnoi"
-        ]
       }
     },
     {
@@ -1236,39 +1192,6 @@
       }
     },
     {
-      "id": "quadrate",
-      "label": "Quadrate",
-      "kind": "bone",
-      "region": "cranial",
-      "segment": "cranial",
-      "presence": {
-        "default": "yes",
-        "absent": [
-          "theria"
-        ],
-        "note": "Incorporated into the mammalian middle ear as the incus."
-      }
-    },
-    {
-      "id": "palatoquadrate",
-      "label": "Palatoquadrate",
-      "kind": "cartilage",
-      "region": "cranial",
-      "segment": "cranial",
-      "presence": {
-        "default": "no",
-        "present": [
-          "chondrichthyes",
-          "actinopterygii",
-          "actinistia",
-          "dipnoi"
-        ],
-        "sources": [
-          "ziermann-etal-2014"
-        ]
-      }
-    },
-    {
       "id": "mandible",
       "label": "Mandible",
       "kind": "bone",
@@ -1315,50 +1238,16 @@
       "kind": "cartilage",
       "region": "cranial",
       "segment": "cranial",
-      "presence": {
-        "default": "variable",
-        "present": [
-          "chondrichthyes",
-          "actinopterygii"
-        ]
-      }
-    },
-    {
-      "id": "hyomandibula",
-      "label": "Hyomandibula",
-      "kind": "bone",
-      "region": "cranial",
-      "segment": "cranial",
-      "presence": {
-        "default": "no",
-        "present": [
-          "chondrichthyes",
-          "actinopterygii",
-          "actinistia",
-          "dipnoi"
-        ],
-        "note": "Transformed into the stapes in tetrapods; the depressor hyomandibulae becomes the stapedius, keeping arch 2 identity and CN VII innervation throughout.",
-        "sources": [
-          "ziermann-etal-2014"
-        ]
-      }
-    },
-    {
-      "id": "stapes",
-      "label": "Stapes",
-      "kind": "bone",
-      "region": "cranial",
-      "segment": "cranial",
+      "partOf": "mandible",
+      "transformation": "The endoskeletal core of the lower jaw, present in every jawed vertebrate. In chondrichthyans it IS the lower jaw; in bony fishes and tetrapods a series of dermal bones ensheaths it, and it persists inside them.",
       "presence": {
         "default": "yes",
         "absent": [
-          "chondrichthyes",
-          "actinopterygii",
-          "actinistia",
-          "dipnoi"
+          "myxini",
+          "petromyzontida"
         ],
         "sources": [
-          "ziermann-diogo-2019"
+          "ziermann-etal-2014"
         ]
       }
     },
@@ -2140,18 +2029,48 @@
     },
     {
       "id": "angular",
-      "label": "Angular",
+      "label": "Angular / ectotympanic",
       "kind": "bone",
       "region": "cranial",
       "segment": "cranial",
       "partOf": "mandible",
       "correlate": true,
+      "synonyms": [
+        "ectotympanic",
+        "tympanic ring"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "actinopterygii",
+            "actinistia",
+            "dipnoi",
+            "caudata",
+            "anura",
+            "testudines",
+            "lepidosauria",
+            "crocodylia",
+            "aves",
+            "synapsida-stem"
+          ],
+          "name": "Angular"
+        },
+        {
+          "taxa": [
+            "monotremata",
+            "theria"
+          ],
+          "name": "Ectotympanic"
+        }
+      ],
+      "transformation": "A postdentary dermal bone that becomes the ring supporting the mammalian tympanic membrane.",
       "presence": {
         "default": "yes",
         "absent": [
-          "theria"
+          "myxini",
+          "petromyzontida",
+          "chondrichthyes"
         ],
-        "note": "Incorporated into the mammalian middle ear or lost as the dentary takes over the jaw joint.",
         "sources": [
           "ziermann-diogo-2019"
         ]
@@ -2159,18 +2078,47 @@
     },
     {
       "id": "articular",
-      "label": "Articular",
+      "label": "Articular / malleus",
       "kind": "bone",
       "region": "cranial",
       "segment": "cranial",
-      "partOf": "mandible",
+      "partOf": "meckels-cartilage",
       "correlate": true,
+      "synonyms": [
+        "malleus"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "chondrichthyes",
+            "actinopterygii",
+            "actinistia",
+            "dipnoi",
+            "caudata",
+            "anura",
+            "testudines",
+            "lepidosauria",
+            "crocodylia",
+            "aves",
+            "synapsida-stem"
+          ],
+          "name": "Articular"
+        },
+        {
+          "taxa": [
+            "monotremata",
+            "theria"
+          ],
+          "name": "Malleus"
+        }
+      ],
+      "transformation": "The ossified posterior end of Meckel's cartilage. It meets the quadrate at the jaw joint in non-mammals and becomes the malleus in mammals — the partner of the quadrate/incus, moving into the ear together with it.",
       "presence": {
         "default": "yes",
         "absent": [
-          "theria"
+          "myxini",
+          "petromyzontida"
         ],
-        "note": "Forms the jaw joint with the quadrate in non-mammals; becomes the malleus in mammals, which is why the mammalian jaw joint is squamosal-dentary instead.",
         "sources": [
           "ziermann-diogo-2019"
         ]
@@ -2268,6 +2216,233 @@
         "sources": [
           "tomanska-etal-2025"
         ]
+      }
+    },
+    {
+      "id": "hyomandibula-stapes",
+      "label": "Hyomandibula / stapes",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "correlate": true,
+      "synonyms": [
+        "columella auris",
+        "stapes",
+        "hyomandibula"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "chondrichthyes",
+            "actinopterygii",
+            "actinistia",
+            "dipnoi",
+            "tetrapodomorpha-stem"
+          ],
+          "name": "Hyomandibula"
+        },
+        {
+          "taxa": [
+            "caudata",
+            "anura",
+            "testudines",
+            "lepidosauria",
+            "crocodylia",
+            "aves"
+          ],
+          "name": "Columella (stapes)"
+        },
+        {
+          "taxa": [
+            "synapsida-stem",
+            "monotremata",
+            "theria"
+          ],
+          "name": "Stapes"
+        }
+      ],
+      "transformation": "One element throughout. The hyomandibula braces the jaw joint against the braincase in fishes; with the tetrapod jaw suspension it is freed and becomes the sound-conducting columella, and the stapes of mammals. The muscle acting on it followed it the whole way — the depressor hyomandibulae of a shark is the stapedius of a mammal, still on the facial nerve.",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "myxini",
+          "petromyzontida"
+        ],
+        "sources": [
+          "ziermann-etal-2014",
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "palatoquadrate-quadrate",
+      "label": "Palatoquadrate / quadrate",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "correlate": true,
+      "synonyms": [
+        "quadrate",
+        "palatoquadrate",
+        "incus"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "chondrichthyes",
+            "actinopterygii",
+            "actinistia",
+            "dipnoi"
+          ],
+          "name": "Palatoquadrate"
+        },
+        {
+          "taxa": [
+            "caudata",
+            "anura",
+            "testudines",
+            "lepidosauria",
+            "crocodylia",
+            "aves",
+            "synapsida-stem"
+          ],
+          "name": "Quadrate"
+        },
+        {
+          "taxa": [
+            "monotremata",
+            "theria"
+          ],
+          "name": "Incus"
+        }
+      ],
+      "transformation": "The upper jaw cartilage of the first pharyngeal arch. Its posterior end ossifies as the quadrate and carries the jaw joint in non-mammals; in mammals it leaves the jaw entirely and becomes the incus, which is why the mammalian jaw joint is squamosal-dentary instead of quadrate-articular.",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "myxini",
+          "petromyzontida"
+        ],
+        "sources": [
+          "ziermann-etal-2014",
+          "ziermann-diogo-2019"
+        ]
+      }
+    },
+    {
+      "id": "vertebral-column",
+      "label": "Vertebral column",
+      "kind": "group",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "axial-skeleton",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "cervical-vertebrae",
+      "label": "Cervical vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "A distinct cervical series requires the girdle to be freed from the skull, which happens with the loss of the cleithrum along the tetrapod stem."
+      }
+    },
+    {
+      "id": "atlas",
+      "label": "Atlas",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "cervical-vertebrae",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "thoracic-vertebrae",
+      "label": "Thoracic vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "lumbar-vertebrae",
+      "label": "Lumbar vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "aves"
+        ]
+      }
+    },
+    {
+      "id": "sacral-vertebrae",
+      "label": "Sacral vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "The sacrum is a tetrapod novelty: fishes have no vertebrae fused to a pelvic girdle, because the pelvic fin girdle floats free of the axial skeleton. Fusing them is what lets a hindlimb transmit thrust to the body.",
+        "sources": [
+          "diogo-molnar-2014"
+        ]
+      }
+    },
+    {
+      "id": "caudal-vertebrae",
+      "label": "Caudal vertebrae",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "presence": {
+        "default": "yes",
+        "reduced": [
+          "aves"
+        ],
+        "absent": [
+          "anura"
+        ],
+        "note": "Replaced by the urostyle in anurans and shortened to the pygostyle in birds — both associated with caudofemoralis reduction."
       }
     }
   ]

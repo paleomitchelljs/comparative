@@ -38,6 +38,13 @@ shared anlagen; put known anlage mismatches in `caution`.
 **Quote disputed muscle names in `name`** — `"'Rhomboideus'"`, `"'Ambiens'"`.
 This follows the sources' own convention and the UI renders it verbatim.
 
+**Skeletal elements are homology groups, like muscles.** One element, per-taxon
+names in `taxonNames`. Never create a second element because a taxon calls it
+something else — that is how hyomandibula and stapes ended up as separate rows,
+making the shark's depressor hyomandibulae and the mammal's stapedius look like
+they attached to different bones. `derivedFrom` is for genuine fission
+(scapulocoracoid -> scapula + coracoid), not for renaming.
+
 **Attachments are element/side/landmark rows, not strings.** `element` is
 always the bone; subsites go in `landmark` and must be `partOf` that bone. Every
 id resolves to `data/skeleton.json`. A muscle on several sides or landmarks of

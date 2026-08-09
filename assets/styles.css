@@ -505,3 +505,7 @@ svg.phylotree .phylo-tip text { font-weight: 600; }
 @media (max-width: 640px) { .ctrow { grid-template-columns: 110px 1fr; } .ctval { grid-column: 2; } }
 svg.phylotree .phylo-badge.equivocal rect { stroke-dasharray: 3 2; }
 svg.phylotree .phylo-badge.equivocal text { fill: var(--mod); }
+details.elnode.region { border-color: var(--rule-strong); }
+details.elnode.region > summary { padding: 0.7rem 0.9rem; }
+details.elnode.region > summary .elname { text-transform: capitalize; font-size: 0.95rem; }
+details.elnode.region > .elbody { padding-left: 1rem; }

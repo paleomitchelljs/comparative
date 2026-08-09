@@ -80,6 +80,24 @@ def main():
             if k not in source_keys:
                 err(f"skeleton.json:{eid}: unknown source key '{k}'")
 
+        # taxonNames is the element-level equivalent of a muscle's occurrence
+        # names: one element, different names in different taxa. It is what
+        # stops a homologous element being split into two rows.
+        named = []
+        for tn in e.get("taxonNames", []):
+            if not tn.get("name"):
+                err(f"skeleton.json:{eid}: taxonNames entry without a name")
+            for tid in tn.get("taxa", []):
+                if tid not in taxon_ids:
+                    err(f"skeleton.json:{eid}: taxonNames lists unknown taxon '{tid}'")
+                if tid in named:
+                    err(f"skeleton.json:{eid}: taxon '{tid}' named more than once")
+                named.append(tid)
+
+        df = e.get("derivedFrom")
+        if df and df not in element_ids:
+            err(f"skeleton.json:{eid}: derivedFrom '{df}' is not an element")
+
     by_id = {e["id"]: e for e in skeleton_doc["elements"] if e.get("id")}
 
     def lineage(eid):

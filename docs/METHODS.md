@@ -26,6 +26,19 @@ reflect the strength of support reported in the literature, not certainty.
 (2010) document several muscles present in one lizard and absent in another; that
 is what `variable` is for.
 
+## Skeletal elements
+
+Elements are homology groups, like muscles. One element, different names in
+different taxa: the hyomandibula of a shark, the columella of a lizard and the
+stapes of a mammal are one record, and the interface shows whichever name fits
+the taxon you have selected. Where an ancestral element *split* — the
+scapulocoracoid into scapula and coracoid — the descendants are separate records
+linked by `derivedFrom`.
+
+`presence` records where an element is absent, which is what lets the interface
+say a muscle's attachment *had to move* rather than silently dropping a row.
+Attaching a muscle to an element its taxon lacks is a validation error.
+
 ## Attachments
 
 An attachment is a row of **bone → side → landmark**. A muscle touching several
