@@ -22,16 +22,24 @@ python3 scripts/migrate_attachments.py $FLAG
 step "2. segment + layer (layer inherited via derivatives where sourced)"
 python3 scripts/assign_hierarchy.py $FLAG
 
-step "3. taxon-specific attachments for documented shifts"
+step "3. skeletal elements for the Taricha attachment sites"
+python3 scripts/seed_walthall_skeleton.py $FLAG
+
+step "4. Walthall & Ashley-Ross Caudata records and occurrences"
+# Must precede the occurrence-attachment seed: it creates the pes records that
+# seed's relocated anuran and crocodylian pedal rows land on.
+python3 scripts/seed_walthall_taricha.py $FLAG
+
+step "5. taxon-specific attachments for documented shifts"
 python3 scripts/seed_occurrence_attachments.py $FLAG
 
-step "4. attachments -> element / side / landmark rows"
+step "6. attachments -> element / side / landmark rows"
 python3 scripts/migrate_attachment_rows.py $FLAG
 
-step "5. close the related-muscle graph"
+step "7. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "6. validate"
+  step "8. validate"
   python3 scripts/validate.py
 fi

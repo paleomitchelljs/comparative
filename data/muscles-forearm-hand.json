@@ -54,10 +54,11 @@
           "taxon": "caudata",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
-          "insertion": "Radius and proximal carpals — the plesiomorphic tetrapod condition.",
+          "insertion": "Almost the whole anterolateral surface of the radius, and the lateral surface of the radiale.",
           "note": "Includes the extensor radialis longus + brevis sensu Straus (1941a,b).",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -76,7 +77,8 @@
               }
             ]
           },
-          "attachmentNote": "Plesiomorphic tetrapod condition: insertion stops at the radius and proximal carpals."
+          "attachmentNote": "Plesiomorphic tetrapod condition: insertion stops at the radius and proximal carpals.",
+          "origin": "Proximal part of the lateral epicondyle of the humerus."
         },
         {
           "taxon": "anura",
@@ -232,7 +234,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -280,8 +283,32 @@
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Distal part of the lateral epicondyle of the humerus.",
+          "insertion": "Posterolateral face of the ulna, and the ulnare and intermedium.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "lateral"
+              },
+              {
+                "element": "ulnare"
+              },
+              {
+                "element": "intermedium-manus"
+              }
+            ]
+          },
+          "attachmentNote": "The postaxial mirror of the extensor antebrachii et carpi radialis, taking the distal part of the same epicondyle where that muscle takes the proximal part."
         },
         {
           "taxon": "anura",
@@ -350,7 +377,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -403,8 +431,26 @@
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Lateral epicondyle of the humerus.",
+          "insertion": "Dorsal surfaces of the proximal phalanges of digits II, III and IV, by paired tendons.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "The most superficial forearm muscle in dorsal view. It serves digits II-IV only — the salamander manus has four digits, digit V having been lost."
         },
         {
           "taxon": "anura",
@@ -469,7 +515,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -519,8 +566,25 @@
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Carpals at the bases of digits II, III and IV.",
+          "insertion": "Dorsal surface of the proximal end of the terminal phalanx of each digit, by long tendons.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Serves digits II-IV, matching the extensor digitorum communis and reflecting the four-digit salamander manus."
         },
         {
           "taxon": "anura",
@@ -571,22 +635,7 @@
             "abdala-diogo-2010",
             "pereyra-etal-2024"
           ],
-          "attachments": {
-            "origin": [
-              {
-                "element": "astragalus"
-              },
-              {
-                "element": "calcaneum"
-              }
-            ],
-            "insertion": [
-              {
-                "element": "phalanges-pes"
-              }
-            ]
-          },
-          "attachmentNote": "Recorded from the FOOT: extensor digitorum brevis superficialis arises from the astragalar hollow and lateral calcaneum; the deep layer arises from the proximodorsal metatarsals, whose fine striations run parallel to the metatarsal long axis."
+          "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record."
         },
         {
           "taxon": "aves",
@@ -615,7 +664,8 @@
         "teaching": "Supporting evidence for the claim that human hands have fewer intrinsic muscles than lizard or salamander hands."
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -664,8 +714,28 @@
           "name": "Abductor et extensor digiti I",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Radiale and intermedium.",
+          "insertion": "Distal end of the first metacarpal.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "radiale"
+              },
+              {
+                "element": "intermedium-manus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Recorded as m. abductor et extensor digiti I. Wholly intrinsic to the hand — it takes no origin in the forearm, unlike the amniote abductor pollicis longus, which is why the name transfers badly."
         },
         {
           "taxon": "anura",
@@ -735,7 +805,8 @@
         "teaching": "The flagship position-versus-identity example. Pair with the urodele abductor digiti minimi (digit 4) and the counter-case in chickens where digit identity does appear to matter."
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1208,8 +1279,34 @@
           "present": "yes",
           "note": "Part of the flexor antebrachii et carpi ulnaris sensu Diogo & Abdala (2007).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Distal portion of the medial epicondyle of the humerus.",
+          "insertion": "Much of the posterior edge of the ulna, with a slip to the lateral faces of the ulnare and intermedium.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "posterior"
+              },
+              {
+                "element": "ulnare",
+                "side": "lateral"
+              },
+              {
+                "element": "intermedium-manus",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Described as the mirror image of the flexor antebrachii et carpi radialis. The four muscles taking the two epicondyles — two flexors medially, two extensors laterally, each pair split proximal and distal — are the clearest instance of the dorsal/ventral mirroring the paper reports for the antebrachium."
         },
         {
           "taxon": "anura",
@@ -1276,7 +1373,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1322,8 +1420,29 @@
           "name": "Flexor antebrachii et carpi radialis",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Proximal portion of the medial epicondyle of the humerus.",
+          "insertion": "Anterior face of the radius, with a slip crossing the wrist to the radiale.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "anterior"
+              },
+              {
+                "element": "radiale"
+              }
+            ]
+          },
+          "attachmentNote": "Obscured along most of its length by the flexor digitorum communis. Preaxial member of the pair that divides the medial epicondyle between them."
         },
         {
           "taxon": "anura",
@@ -1391,7 +1510,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1550,8 +1670,35 @@
           "name": "Pronator quadratus",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Medial side of the ulna, the ulnare and the intermedium.",
+          "insertion": "Radiale and the base of the first metacarpal.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "medial"
+              },
+              {
+                "element": "ulnare"
+              },
+              {
+                "element": "intermedium-manus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radiale"
+              },
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Recorded as m. pronator profundus. It crosses from the postaxial to the preaxial side of the wrist, which is what makes it a pronator rather than a flexor."
         },
         {
           "taxon": "anura",
@@ -1612,13 +1759,15 @@
         "confidence": "well-supported",
         "notes": "Present in all six non-mammalian columns and in mammals — unlike the pronator teres, which urodeles lack. The deep pronator is therefore the plesiomorphic member of the pronator group.",
         "related": [
-          "pronator-teres",
-          "pronator-accessorius"
+          "interosseus-cruris",
+          "pronator-accessorius",
+          "pronator-teres"
         ]
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1763,8 +1912,29 @@
           "name": "Flexor digitorum communis",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Medial epicondyle of the humerus.",
+          "insertion": "Palmar aponeurosis, continuing as four tendons to the proximal end of the distal phalanx of each digit.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Walthall & Ashley-Ross use flexor digitorum communis; Francis (1934) called the same muscle flexor primordialis communis, the name used for its hindlimb counterpart here. The aponeurosis, not the bone, is the functional insertion — the tendons are its continuation."
         },
         {
           "taxon": "anura",
@@ -1836,7 +2006,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1973,8 +2144,25 @@
           "name": "Contrahentium caput longum",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Internal surface of the ulna and the fascia connecting radius and ulna.",
+          "insertion": "An extensive tendon connecting the carpal bones.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals"
+              }
+            ]
+          },
+          "attachmentNote": "Its insertion tendon is itself the origin of the contrahentes digitorum, so the two form a chain from the zeugopod to the phalanges."
         },
         {
           "taxon": "anura",
@@ -1984,19 +2172,7 @@
             "abdala-diogo-2010",
             "blotto-etal-2020"
           ],
-          "attachments": {
-            "origin": [
-              {
-                "element": "ligamentum-calcanei"
-              }
-            ],
-            "insertion": [
-              {
-                "element": "tibiale"
-              }
-            ]
-          },
-          "attachmentNote": "In the foot: a single muscle from the medial ligamentum calcanei, inserting fleshily along the distal three-quarters of the ventral tibiale, independent of the tibialis posterior."
+          "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record."
         },
         {
           "taxon": "testudines",
@@ -2036,7 +2212,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2084,8 +2261,32 @@
           "name": "Flexor accessorius lateralis",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Distal end of the ulna, the ulnare and the intermedium.",
+          "insertion": "Dorsal surface of the palmar fascia.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "distal"
+              },
+              {
+                "element": "ulnare"
+              },
+              {
+                "element": "intermedium-manus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Fibres run diagonally toward the radius and first digit. Inserting on the deep face of an aponeurosis is what lets it tension the palm rather than move a bone."
         },
         {
           "taxon": "anura",
@@ -2134,7 +2335,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2173,8 +2375,32 @@
           "name": "Flexor accessorius medialis",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Approximately the distal third of the ulna, the ulnare and the intermedium.",
+          "insertion": "Dorsal side of the palmar fascia.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "distal"
+              },
+              {
+                "element": "ulnare"
+              },
+              {
+                "element": "intermedium-manus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Distinguished from the lateral accessory only by a more extensive origin — the two are otherwise parallel-fibred straps with the same insertion."
         },
         {
           "taxon": "anura",
@@ -2221,7 +2447,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2266,8 +2493,26 @@
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Dorsal surface of the palmar fascia.",
+          "insertion": "Lateral edges of the distal ends of the metacarpals.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "palmar-aponeurosis",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Slips lie on both sides of the metacarpals of digits II and III, but only on the medial side for digits I and IV — an asymmetry across the hand that tracks the axis of the manus."
         },
         {
           "taxon": "anura",
@@ -2276,20 +2521,7 @@
           "sources": [
             "abdala-diogo-2010",
             "blotto-etal-2020"
-          ],
-          "attachments": {
-            "origin": [
-              {
-                "element": "aponeurosis-plantaris"
-              }
-            ],
-            "insertion": [
-              {
-                "element": "phalanges-manus"
-              }
-            ]
-          },
-          "attachmentNote": "Despite the plural name, a single muscular body in Triprion, on the lateroplantar tarsal surface and ventrally concealed by the aponeurosis plantaris."
+          ]
         },
         {
           "taxon": "testudines",
@@ -2337,7 +2569,8 @@
         "teaching": "Introduce the three intrinsic layers together — superficiales, contrahentes, profundi — then show what mammals kept."
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2382,8 +2615,25 @@
           "name": "Contrahentes digitorum",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "The insertion tendon of the contrahentium caput longum, and the carpals.",
+          "insertion": "Proximal end of the proximal phalanx of each digit.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Lies deep to the insertion tendons of the flexores breves superficiales. Part of its origin is tendinous rather than skeletal, on the contrahentium caput longum tendon."
         },
         {
           "taxon": "anura",
@@ -2462,7 +2712,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2507,8 +2758,28 @@
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Carpals at the bases of their respective digits.",
+          "insertion": "Chiefly the metacarpal, and also the proximal end of the proximal phalanx, of each digit.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "The deepest of the short flexor layers."
         },
         {
           "taxon": "anura",
@@ -2590,7 +2861,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2760,8 +3032,24 @@
           "name": "Intermetacarpales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Radial side of each metacarpal.",
+          "insertion": "Ulnar side of the adjacent metacarpal.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "metacarpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "Roughly triangular, spanning metacarpal to metacarpal without reaching a phalanx."
         },
         {
           "taxon": "anura",
@@ -2824,7 +3112,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -3088,11 +3377,30 @@
           "taxon": "caudata",
           "name": "Abductor digiti minimi",
           "present": "yes",
-          "insertion": "Digit 4, not digit 5.",
+          "insertion": "Lateral edge of the fourth metacarpal.",
           "note": "In Taricha and Ambystoma the muscle attaches to digit 4 because digit 5 is absent — the ulnar counterpart of the anuran abductor pollicis longus case. The muscle finds the most ulnar digit available.",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Ulnare and intermedium.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulnare"
+              },
+              {
+                "element": "intermedium-manus"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Recorded as m. extensor lateralis digiti IV. It serves digit IV because digit V is absent from the salamander manus — the same postaxial position as the amniote abductor digiti minimi on digit V, one digit over. A case where matching by digit number and matching by position give different answers."
         },
         {
           "taxon": "anura",
@@ -3102,19 +3410,7 @@
             "abdala-diogo-2010",
             "blotto-etal-2020"
           ],
-          "attachments": {
-            "origin": [
-              {
-                "element": "fibulare"
-              }
-            ],
-            "insertion": [
-              {
-                "element": "metatarsals"
-              }
-            ]
-          },
-          "attachmentNote": "Recorded from the FOOT: a large muscle with fleshy origin over almost the whole dorsolateral fibulare, inserting by short tendon on the dorsal and proximal metatarsal V."
+          "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record."
         },
         {
           "taxon": "testudines",
@@ -3171,7 +3467,8 @@
         "teaching": "Teach this cell together with the anuran abductor pollicis longus. The pair sets up position-based attachment; the bird cell breaks it. That tension is the lesson."
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     }
   ]

@@ -391,7 +391,16 @@
         ]
       },
       "synonyms": [
-        "crista pectoralis (Aves)"
+        "crista pectoralis (Aves)",
+        "crista ventralis (Caudata)"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "caudata"
+          ],
+          "name": "Crista ventralis"
+        }
       ]
     },
     {
@@ -3290,6 +3299,126 @@
           "werneburg-preuschoft-2024"
         ],
         "note": "Werneburg & Preuschoft (2024) treat the temporal bars as struts resisting the compressive and tensile stresses of biting; the pattern of openings between them follows from where those stresses run, rather than being an arbitrary taxonomic character."
+      }
+    },
+    {
+      "id": "ypsiloid-cartilage",
+      "label": "Ypsiloid cartilage",
+      "kind": "cartilage",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata"
+        ],
+        "note": "Y-shaped cartilage projecting forward from the anterior margin of the pubis. Anchors the anterior continuation of the rectus abdominis and receives the m. ypsiloideus.",
+        "sources": [
+          "walthall-ashley-ross-2006"
+        ]
+      }
+    },
+    {
+      "id": "thoracic-transverse-processes",
+      "label": "Transverse processes (trunk)",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "thoracic-vertebrae",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "caudal-transverse-processes",
+      "label": "Transverse processes (caudal)",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "caudal-vertebrae",
+      "correlate": true,
+      "presence": {
+        "default": "yes",
+        "note": "Origin of the caudofemoralis and of the tail-to-girdle muscles. In Taricha the caudofemoralis takes the fourth and fifth caudal transverse processes — a countable segmental address, which makes this one of the few attachment sites that can be scored by position along the column rather than by bone alone.",
+        "sources": [
+          "walthall-ashley-ross-2006"
+        ]
+      }
+    },
+    {
+      "id": "intermedium-manus",
+      "label": "Intermedium (carpal)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "caudata"
+        ],
+        "note": "Proximal carpal between radiale and ulnare, retained in salamanders and reduced or fused in most amniotes. Serially corresponds to the tarsal intermedium but is a separate element.",
+        "sources": [
+          "walthall-ashley-ross-2006"
+        ]
+      }
+    },
+    {
+      "id": "intermedium-pes",
+      "label": "Intermedium (tarsal)",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "caudata"
+        ],
+        "note": "Proximal tarsal between tibiale and fibulare. Serial counterpart of the carpal intermedium; separate element for the same reason radiale and tibiale are separate.",
+        "sources": [
+          "walthall-ashley-ross-2006"
+        ]
+      }
+    },
+    {
+      "id": "centrale-pes",
+      "label": "Centrale (tarsal)",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "caudata"
+        ],
+        "note": "Central tarsal of the primitive tetrapod ankle, retained in salamanders.",
+        "sources": [
+          "walthall-ashley-ross-2006"
+        ]
+      }
+    },
+    {
+      "id": "distal-tarsals",
+      "label": "Distal tarsals",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "Distal tarsal row. Origin of the intrinsic pedal muscles — the serial counterpart of the distal carpal row in the manus.",
+        "sources": [
+          "walthall-ashley-ross-2006"
+        ]
       }
     }
   ]

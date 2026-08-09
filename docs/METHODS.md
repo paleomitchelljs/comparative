@@ -52,6 +52,20 @@ record the consensus is shown and marked *inherited* — that means nobody has
 recorded it, not that it is known to match. Inherited rows naming a bone the
 taxon lacks are dropped rather than asserted.
 
+**A fused element is scored as its components, not as a new element.** The
+salamander pubo-ischiac plate is recorded as `pubis` plus `ischium`, because
+giving the plate a record of its own would put the salamander's
+puboischiofemoralis on a different bone from every other tetrapod's — the same
+mistake as splitting the hyomandibula from the stapes. `derivedFrom` runs the
+other way, for genuine fission (scapulocoracoid into scapula and coracoid).
+
+**Where a source's term is ambiguous, no landmark is asserted.** A muscle whose
+origin is described as the femoral "crista ventralis" is scored as `femur` /
+ventral, not as the fourth trochanter; a "spine of the tibia" as `tibia` /
+anterior, not the cnemial crest. Each identification is plausible and
+unestablished, and asserting it would manufacture an osteological correlate that
+no source claims.
+
 **Attachment shifts are computed**, by diffing each taxon's recorded attachments
 against the earliest taxon with data. The diff is hierarchy-aware: `humerus →
 greater tubercle` is a refinement in resolution, not a muscle moving.
@@ -100,6 +114,11 @@ Branch states are optimised by **Fitch parsimony** over the fixed topology in
 **Missing data constrains nothing.** A taxon with no occurrence row is left
 unscored. Treating absence of data as absence of the muscle would invent losses
 wherever sampling is thin, which is most of the fish end of this tree.
+
+A record scored in only one taxon is the mirror of this: it optimises as a gain on
+that branch, which is the correct parsimony statement given the data but reads
+like an apomorphy. Several intrinsic pedal muscles are currently in that state,
+scored from *Taricha torosa* alone. Each says so in its occurrence note.
 
 **Polymorphic tips.** `variable`, `uncertain` and `inferred` are scored as
 {absent, present} rather than forced either way. None is an observation of

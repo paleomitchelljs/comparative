@@ -80,15 +80,39 @@
           "taxon": "caudata",
           "name": "Protractor pectoralis (cucullaris)",
           "present": "yes",
-          "origin": "Fascia over the otic capsule and the first few axial segments.",
-          "insertion": "Anterodorsal margin of the suprascapula.",
+          "origin": "Dorsal fascia and the posterior surface of the skull.",
+          "insertion": "Anterior head onto the lateral surfaces of the procoracoid and scapula; posterior head onto the anterolateral border of the scapula.",
           "action": "Draws the girdle anterodorsally.",
           "innervation": "Accessory nerve equivalent; developmentally distinct from the levator scapulae, which is somitic.",
           "note": "Sefton et al. (2016) show the cucullaris and the somitic levator scapulae are separable by developmental origin even where they are topographically adjacent — the strongest available test of this homology.",
           "sources": [
             "sefton-etal-2016",
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "procoracoid",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Two heads arising together and diverging posteriorly. The anterior head lands between the procoracohumeralis and the dorsalis scapulae, which is the topological fix on its identity."
         },
         {
           "taxon": "lepidosauria",
@@ -146,10 +170,11 @@
         "teaching": "The single best example of innervation as a homology criterion. A muscle that ends up in the shoulder still carries a cranial nerve."
       },
       "sources": [
-        "sefton-etal-2016",
+        "abdala-diogo-2010",
         "naumann-etal-2017",
-        "ziermann-etal-2014",
-        "abdala-diogo-2010"
+        "sefton-etal-2016",
+        "walthall-ashley-ross-2006",
+        "ziermann-etal-2014"
       ]
     },
     {
@@ -652,9 +677,10 @@
         {
           "taxon": "caudata",
           "present": "no",
-          "note": "The structure called 'opercularis' in urodeles is topologically part of the levator scapulae, not an independent muscle (Hetherington & Tugaoen 1990).",
+          "note": "The structure called 'opercularis' in urodeles is topologically part of the levator scapulae, not an independent muscle (Hetherington & Tugaoen 1990). Walthall & Ashley-Ross (2006) disagree in practice, describing a discrete strap-like m. opercularis in Taricha running from the cartilaginous operculum of the otic capsule to the anterior edge of the suprascapula — and assigning it the opposite origin and insertion to the anuran record here. Presence is left at 'no' because a single dissection does not settle the homology argument, but the disagreement is the point: the same structure is a muscle or a part of one depending on which criterion is applied.",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ]
         }
       ],
@@ -667,7 +693,8 @@
         "teaching": "Terminology trap. 'Opercularis' in an amphibian paper means different things depending on whether the animal is a frog or a salamander."
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -763,12 +790,17 @@
           "present": "yes",
           "note": "Present according to Dilkes (2000).",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "matsuoka-hasegawa-2007"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "sternum"
+              },
+              {
+                "element": "ribs",
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -777,7 +809,8 @@
                 "side": "ventral"
               }
             ]
-          }
+          },
+          "attachmentNote": "The only muscle on the internal surface of the thoracic cavity. From the dorsal surface of the craniolateral sternum (processus craniolateralis) and the first rib, to a large depression on the dorsal surface of the coracoid base. Matsuoka & Hasegawa suggest it keeps the coracoid-sternum connection flexible."
         },
         {
           "taxon": "monotremata",
@@ -1047,10 +1080,11 @@
           "taxon": "caudata",
           "name": "Pectoralis",
           "present": "yes",
-          "origin": "Ventral fascia and sternum.",
-          "insertion": "Proximal humerus.",
+          "origin": "Midline aponeurosis, sternum, and the tendinous inscriptions of the rectus abdominis.",
+          "insertion": "Crista ventralis of the humerus.",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -1067,7 +1101,8 @@
                 "side": "proximal"
               }
             ]
-          }
+          },
+          "attachmentNote": "The insertion resolves to the crista ventralis — the salamander name for the deltopectoral crest — rather than to the proximal humerus generally. A refinement in resolution, not a shift."
         },
         {
           "taxon": "anura",
@@ -1314,7 +1349,8 @@
         "gambaryan-etal-2015",
         "ghetie-etal-1976",
         "molnar-etal-2018",
-        "schreiweis-1982"
+        "schreiweis-1982",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1377,7 +1413,8 @@
           "name": "Supracoracoideus",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -1396,7 +1433,10 @@
                 "side": "proximal"
               }
             ]
-          }
+          },
+          "origin": "Ventral superficial surface of the coracoid cartilage.",
+          "insertion": "Crista ventralis of the humerus, adjacent to the pectoralis insertion.",
+          "attachmentNote": "Fan-shaped and parallel-fibred, its posterior part lying deep to the pectoralis and inserting beside it on the same crest. In salamanders the supracoracoideus is still a ventral adductor; the dorsal, wing-elevating role it takes in birds requires the triosseal canal, which does not exist here."
         },
         {
           "taxon": "anura",
@@ -1643,7 +1683,8 @@
         "fahn-lai-etal-2020",
         "gambaryan-etal-2015",
         "ghetie-etal-1976",
-        "schreiweis-1982"
+        "schreiweis-1982",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1707,8 +1748,26 @@
           "present": "yes",
           "note": "Corresponds to the dorsalis scapulae of Smith (1926), Howell (1937b), Romer (1944), Walthall & Ashley-Ross (2006).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Dorsolateral surface of the suprascapular cartilage.",
+          "insertion": "Crista ventralis of the humerus.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "suprascapula",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "The fibres pass around the anterior side of the humerus to reach a ventral crest — a dorsal girdle muscle with a ventral insertion, which is what lets it elevate the humerus."
         },
         {
           "taxon": "anura",
@@ -1776,7 +1835,8 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
-        "ghetie-etal-1976"
+        "ghetie-etal-1976",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -1828,7 +1888,8 @@
           "present": "yes",
           "note": "The amphibian name reflects the procoracoid origin; the muscle is the same field as the amniote deltoideus clavicularis.",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -1843,7 +1904,9 @@
               }
             ]
           },
-          "attachmentNote": "Called procoracohumeralis in amphibians purely because the origin sits on the procoracoid."
+          "attachmentNote": "Called procoracohumeralis in amphibians purely because the origin sits on the procoracoid.",
+          "origin": "Procoracoid cartilage.",
+          "insertion": "Anterior surface of the proximal humerus."
         },
         {
           "taxon": "anura",
@@ -1985,7 +2048,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2578,10 +2642,11 @@
           "taxon": "caudata",
           "name": "Latissimus dorsi",
           "present": "yes",
-          "origin": "Dorsal fascia over the anterior trunk myomeres.",
-          "insertion": "Proximal humerus.",
+          "origin": "Dorsal fascia.",
+          "insertion": "Posterior surface of the crista ventralis of the humerus, by a strong tendon.",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -2595,7 +2660,8 @@
                 "side": "proximal"
               }
             ]
-          }
+          },
+          "attachmentNote": "The largest dorsal shoulder muscle, but its origin is entirely fascial — no bony attachment, so no correlate. The insertion is on the posterior face of the same crest that receives the pectoralis and supracoracoideus."
         },
         {
           "taxon": "anura",
@@ -2769,7 +2835,8 @@
         "ercoli-etal-2014",
         "ghetie-etal-1976",
         "molnar-etal-2018",
-        "schreiweis-1982"
+        "schreiweis-1982",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -2824,11 +2891,12 @@
         },
         {
           "taxon": "caudata",
-          "name": "Triceps brachii",
+          "name": "Triceps brachii (anconaeus group)",
           "present": "yes",
           "note": "Multi-headed in urodeles, with scapular and several humeral heads.",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -2848,7 +2916,10 @@
                 "landmark": "olecranon"
               }
             ]
-          }
+          },
+          "origin": "Four heads: coracoid (anconaeus coracoideus, by a long tendon); scapula posterior to the glenoid and the joint capsule (anconaeus scapularis medialis); proximal two-thirds of the lateral face of the humerus (anconaeus humeralis lateralis); the whole posterior face of the humerus (anconaeus humeralis medialis).",
+          "insertion": "Olecranon process of the ulna.",
+          "attachmentNote": "Four separately named heads, two girdle and two humeral, converging on one olecranon insertion. The coracoid and scapular heads unite about midway along the humerus. This is the clearest case in the dataset of a muscle whose head count is a naming decision: Mivart (1869) and Davison (1895) called the whole complex 'triceps', Francis (1934) named all four."
         },
         {
           "taxon": "anura",
@@ -3038,7 +3109,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -3083,8 +3155,26 @@
           "present": "yes",
           "note": "In urodeles the brachialis field is not separated from the biceps field; the single muscle is called humeroantebrachialis.",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
+          ],
+          "origin": "Anterior surface of the proximal humerus.",
+          "insertion": "Proximal end of the radius.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Thick and parallel-fibred, crossing only the elbow. It has no girdle head, which is the difference from the amniote biceps brachii and the reason the two are not interchangeable."
         },
         {
           "taxon": "anura",
@@ -3151,7 +3241,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "walthall-ashley-ross-2006"
       ]
     },
     {
@@ -3368,7 +3459,8 @@
           "present": "yes",
           "note": "Corresponds to the coracobrachialis longus/superficialis of Walthall & Ashley-Ross (2006).",
           "sources": [
-            "abdala-diogo-2010"
+            "abdala-diogo-2010",
+            "walthall-ashley-ross-2006"
           ],
           "attachments": {
             "origin": [
@@ -3383,7 +3475,10 @@
                 "side": "proximal"
               }
             ]
-          }
+          },
+          "origin": "Posterolateral surface of the coracoid.",
+          "insertion": "Medial face of the distal end of the humerus.",
+          "attachmentNote": "Its fibres run along the axis of the humerus to a distal insertion, so it retracts rather than adducts. Walthall & Ashley-Ross call it coracobrachialis longus; Abdala & Diogo record longus and superficialis as the same muscle."
         },
         {
           "taxon": "anura",
@@ -3506,7 +3601,8 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
-        "ghetie-etal-1976"
+        "ghetie-etal-1976",
+        "walthall-ashley-ross-2006"
       ]
     },
     {

@@ -114,11 +114,6 @@ SEED = {
                        "sources": ["werneburg-2011"],
                        "shiftNote": "The constrictor colli complex, six units in Werneburg's scheme. Its spread from the hyoid onto the posterior skull is the sheet that in mammals becomes the facial musculature."},
     },
-    "hypobranchial-muscles": {
-        "testudines": {"origin": ["hyoid", "dentary"], "insertion": ["corpus-hyoidei", "hyoid"],
-                       "sources": ["werneburg-2011"],
-                       "shiftNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin."},
-    },
     "extraocular-muscles": {
         "testudines": {"origin": ["optic-foramen", "interorbital-septum", "frontal", "basisphenoid"],
                        "insertion": ["eye-bulbus"],
@@ -128,19 +123,9 @@ SEED = {
     # --- Avian pectoral attachments, Matsuoka & Hasegawa (2007) on Cygnus cygnus.
     # Organised by bone in the original, and written for palaeontologists working
     # back from fossils, so the attachment descriptions are unusually precise.
-    "sternocoracoideus": {
-        "aves": {"origin": ["sternum", "ribs"], "insertion": ["coracoid"],
-                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
-                 "shiftNote": "The only muscle on the internal surface of the thoracic cavity. From the dorsal surface of the craniolateral sternum (processus craniolateralis) and the first rib, to a large depression on the dorsal surface of the coracoid base. Matsuoka & Hasegawa suggest it keeps the coracoid-sternum connection flexible."},
-    },
     # --- Anuran hand and foot, Blotto et al. (2020). The autopod regions had
     # zero taxon-specific attachments before this; the monograph describes every
     # intrinsic muscle of Triprion petasatus with explicit origin and insertion.
-    "flexores-breves-superficiales": {
-        "anura": {"origin": ["aponeurosis-plantaris"], "insertion": ["phalanges-manus"],
-                  "sources": ["blotto-etal-2020"],
-                  "shiftNote": "Despite the plural name, a single muscular body in Triprion, on the lateroplantar tarsal surface and ventrally concealed by the aponeurosis plantaris."},
-    },
     "contrahentes-digitorum": {
         "anura": {"origin": ["distal-carpals"], "insertion": ["phalanges-manus"],
                   "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
@@ -161,33 +146,20 @@ SEED = {
                   "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
                   "shiftNote": "In anurans the preaxial muscles serve the PREPOLLEX, not digit 1 — the adductor pollicis arises tendinously from distal carpal 3-4-5 and inserts on the palmar and distal prepollex. Digit 1 is absent, and the muscles that would serve it attach to the preaxial element instead."},
     },
-    "abductor-digiti-minimi": {
+    "abductor-digiti-minimi-pes": {
         "anura": {"origin": ["fibulare"], "insertion": ["metatarsals"],
                   "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
-                  "shiftNote": "Recorded from the FOOT: a large muscle with fleshy origin over almost the whole dorsolateral fibulare, inserting by short tendon on the dorsal and proximal metatarsal V."},
+                  "shiftNote": "A large muscle with fleshy origin over almost the whole dorsolateral fibulare, inserting by short tendon on the dorsal and proximal metatarsal V."},
     },
     "extensores-digitorum-breves": {
         "anura": {"origin": ["radiale", "carpals"], "insertion": ["phalanges-manus"],
                   "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
                   "shiftNote": "The extensor indicis brevis superficialis arises continuously from the radiale and the short ligament joining radiale and ulnare, lateral to the extensor carpi radialis tendon that attaches to element Y."},
     },
-    "contrahentium-caput-longum": {
+    "contrahentium-caput-longum-pes": {
         "anura": {"origin": ["ligamentum-calcanei"], "insertion": ["tibiale"],
                   "sources": ["blotto-etal-2020", "abdala-diogo-2010"],
-                  "shiftNote": "In the foot: a single muscle from the medial ligamentum calcanei, inserting fleshily along the distal three-quarters of the ventral tibiale, independent of the tibialis posterior."},
-    },
-    "contrahentes-digitorum-pes": {
-        "anura": {"origin": ["tarsals"], "insertion": ["phalanges-pes"],
-                  "sources": ["blotto-etal-2020"],
-                  "shiftNote": "Blotto et al. record a full contrahens series in the anuran foot, including one serving the prehallux."},
-    },
-    "flexores-breves-superficiales-pes": {
-        "anura": {"origin": ["aponeurosis-plantaris", "tarsals"], "insertion": ["phalanges-pes"],
-                  "sources": ["blotto-etal-2020"]},
-    },
-    "flexores-breves-profundi-pes": {
-        "anura": {"origin": ["metatarsals", "tarsals"], "insertion": ["phalanges-pes", "prehallux"],
-                  "sources": ["blotto-etal-2020"]},
+                  "shiftNote": "A single muscle from the medial ligamentum calcanei, inserting fleshily along the distal three-quarters of the ventral tibiale, independent of the tibialis posterior."},
     },
     # --- Varanid hindlimb, Dick & Clemente (2016) Table 1, compiled from Snyder,
     # Gans et al., Reilly and Anzai et al. The leg region had no taxon-specific
@@ -197,24 +169,12 @@ SEED = {
                          "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
                          "shiftNote": "From the puboischiadic ligament to the ventral femoral shaft; adducts and protracts the femur, active in both stance and swing."},
     },
-    "femorotibialis": {
-        "lepidosauria": {"origin": ["femur"], "insertion": ["cnemial-crest"],
-                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
-                         "shiftNote": "Fleshy origin along the entire femoral shaft; joins the iliotibialis tendon to insert on the cnemial crest. Knee extensor, active in both stance and swing."},
-    },
-    "flexor-digitorum-longus-hl": {
-        "lepidosauria": {"origin": ["femoral-epicondyle-lateral"], "insertion": ["phalanges-pes"],
-                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
-                         "shiftNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."},
-    },
+    # --- Caiman yacare crural and pedal muscles, Pereyra et al. (2024).
+    # Crocodylia had nothing in the leg or foot regions before this.
     "gastrocnemius": {
         "lepidosauria": {"origin": ["tibia"], "insertion": ["phalanges-pes"],
                          "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
                          "shiftNote": "From the ventral proximal tibia and the distal ventral tibial crest, by a broad aponeurosis onto the proximolateral margins of the first three phalanges — not onto a calcaneum, unlike the mammalian condition."},
-    },
-    # --- Caiman yacare crural and pedal muscles, Pereyra et al. (2024).
-    # Crocodylia had nothing in the leg or foot regions before this.
-    "gastrocnemius": {
         "crocodylia": {"origin": ["femoral-epicondyle-lateral", "tibia"], "insertion": ["calcaneum"],
                        "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
                        "shiftNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon."},
@@ -235,26 +195,37 @@ SEED = {
                        "shiftNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which."},
     },
     "flexor-digitorum-longus-hl": {
+        "lepidosauria": {"origin": ["femoral-epicondyle-lateral"], "insertion": ["phalanges-pes"],
+                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
+                         "shiftNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."},
         "crocodylia": {"origin": ["femoral-epicondyle-lateral", "femur"], "insertion": ["ungual-phalanges"],
                        "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
                        "shiftNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III."},
     },
     "flexores-breves-superficiales-pes": {
+        "anura": {"origin": ["aponeurosis-plantaris", "tarsals"], "insertion": ["phalanges-pes"],
+                  "sources": ["blotto-etal-2020"],
+                  "shiftNote": "Despite the plural name, a single muscular body in Triprion, on the lateroplantar tarsal surface and ventrally concealed by the aponeurosis plantaris."},
         "crocodylia": {"origin": ["calcaneum"], "insertion": ["phalanges-pes"],
                        "sources": ["pereyra-etal-2024"],
                        "shiftNote": "Flexor digitorum brevis superficialis, digits I-IV, from the ventral calcaneum with digit-specific variation. Layer 1 of the seven-layer pedal scheme Pereyra et al. set out."},
     },
     "flexores-breves-profundi-pes": {
+        "anura": {"origin": ["metatarsals", "tarsals"], "insertion": ["phalanges-pes", "prehallux"],
+                  "sources": ["blotto-etal-2020"]},
         "crocodylia": {"origin": ["metatarsals", "metatarsal-striae", "calcaneum"], "insertion": ["phalanges-pes"],
                        "sources": ["pereyra-etal-2024"],
                        "shiftNote": "Flexor digitorum brevis profundus, digits I-IV, from metatarsals I-III and V and the distal calcaneum. The metatarsal origins are marked by fine striae — the pedal correlates Pereyra et al. identify for the first time."},
     },
-    "extensores-digitorum-breves": {
+    "extensores-digitorum-breves-pes": {
         "crocodylia": {"origin": ["astragalus", "calcaneum"], "insertion": ["phalanges-pes"],
                        "sources": ["pereyra-etal-2024", "abdala-diogo-2010"],
-                       "shiftNote": "Recorded from the FOOT: extensor digitorum brevis superficialis arises from the astragalar hollow and lateral calcaneum; the deep layer arises from the proximodorsal metatarsals, whose fine striations run parallel to the metatarsal long axis."},
+                       "shiftNote": "Extensor digitorum brevis superficialis arises from the astragalar hollow and lateral calcaneum; the deep layer arises from the proximodorsal metatarsals, whose fine striations run parallel to the metatarsal long axis."},
     },
     "contrahentes-digitorum-pes": {
+        "anura": {"origin": ["tarsals"], "insertion": ["phalanges-pes"],
+                  "sources": ["blotto-etal-2020"],
+                  "shiftNote": "Blotto et al. record a full contrahens series in the anuran foot, including one serving the prehallux."},
         "crocodylia": {"origin": ["metatarsals", "metatarsal-striae"], "insertion": ["metatarsals"],
                        "sources": ["pereyra-etal-2024"],
                        "shiftNote": "The interdigiti dorsales and ventrales of Pereyra et al., running between successive metatarsals; their origins are marked by longitudinally oriented fine striae on the proximolateral metatarsal surfaces."},
@@ -323,7 +294,9 @@ SEED = {
     },
     "sternocoracoideus": {
         "lepidosauria": {"origin": ["sternum"], "insertion": ["coracoid"], "sources": ["abdala-diogo-2010"]},
-        "aves":         {"origin": ["sternum"], "insertion": ["coracoid"], "sources": ["abdala-diogo-2010"]},
+        "aves": {"origin": ["sternum", "ribs"], "insertion": ["coracoid"],
+                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
+                 "shiftNote": "The only muscle on the internal surface of the thoracic cavity. From the dorsal surface of the craniolateral sternum (processus craniolateralis) and the first rib, to a large depression on the dorsal surface of the coracoid base. Matsuoka & Hasegawa suggest it keeps the coracoid-sternum connection flexible."},
         "monotremata":  {"origin": ["sternum"], "insertion": ["coracoid"], "sources": ["gambaryan-etal-2015"]},
         "theria": {"origin": ["ribs"], "insertion": ["clavicle"], "sources": ["abdala-diogo-2010"],
                    "shiftNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology."},
@@ -362,6 +335,9 @@ SEED = {
                    "shiftNote": "Origin transfers to the coracoid process as the coracoid bone is lost."},
     },
     "hypobranchial-muscles": {
+        "testudines": {"origin": ["hyoid", "dentary"], "insertion": ["corpus-hyoidei", "hyoid"],
+                       "sources": ["werneburg-2011"],
+                       "shiftNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin."},
         "chondrichthyes": {"origin": ["pectoral-girdle"], "insertion": ["mandible", "hyoid", "branchial-arches"], "sources": ["ziermann-etal-2014", "diogo-ziermann-2015"],
                            "shiftNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck."},
         "theria": {"origin": ["sternum", "clavicle", "scapula", "hyoid"], "insertion": ["hyoid", "tongue"], "sources": ["ziermann-diogo-2019"],
@@ -387,6 +363,9 @@ SEED = {
                        "shiftNote": "Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."},
     },
     "femorotibialis": {
+        "lepidosauria": {"origin": ["femur"], "insertion": ["cnemial-crest"],
+                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
+                         "shiftNote": "Fleshy origin along the entire femoral shaft; joins the iliotibialis tendon to insert on the cnemial crest. Knee extensor, active in both stance and swing."},
         "crocodylia": {"origin": ["femur"], "insertion": ["cnemial-crest"], "sources": ["klinkhamer-etal-2017"],
                        "shiftNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."},
     },
