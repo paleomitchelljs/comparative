@@ -372,7 +372,8 @@ function renderElementNode(e, taxonId, q, depth) {
   /* Both directions of the fusion edge. The forward one is curated on the
      compound; the reverse is derived by scanning, the same way the app derives
      a tetrapod muscle's fin ancestry rather than storing it twice. */
-  const elLink = id => `<b>${esc(elementLabel(id, taxonId))}</b>`;
+  const elLink = id =>
+    `<a href="#element=${encodeURIComponent(id)}">${esc(elementLabel(id, taxonId))}</a>`;
   const fusedInto = state.elements.filter(x => (x.fusedFrom || []).includes(e.id));
   const fusionLines = [
     e.fusedFrom ? `Fused from ${e.fusedFrom.map(elLink).join(', ')}.` : '',
