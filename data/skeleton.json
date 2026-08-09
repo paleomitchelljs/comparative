@@ -2444,6 +2444,136 @@
         ],
         "note": "Replaced by the urostyle in anurans and shortened to the pygostyle in birds — both associated with caudofemoralis reduction."
       }
+    },
+    {
+      "id": "horizontal-septum",
+      "label": "Horizontal septum",
+      "kind": "soft",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "yes",
+        "note": "The connective-tissue sheet dividing epaxial from hypaxial musculature. It is the boundary that defines the two, and it is marked by the split of the spinal nerve into dorsal and ventral rami.",
+        "sources": [
+          "schilling-2011"
+        ]
+      }
+    },
+    {
+      "id": "myosepta",
+      "label": "Myosepta",
+      "kind": "soft",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "note": "Segmental connective-tissue partitions between myomeres. Tetrapod axial muscles lose strict segmental septation as they reorganise into longitudinal tracts.",
+        "sources": [
+          "schilling-2011"
+        ]
+      }
+    },
+    {
+      "id": "neural-spine",
+      "label": "Neural spines",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "transverse-process",
+      "label": "Transverse processes",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "vertebral-centrum",
+      "label": "Vertebral centra",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "linea-alba",
+      "label": "Linea alba",
+      "kind": "soft",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ]
+      }
+    },
+    {
+      "id": "costal-cartilage",
+      "label": "Costal cartilages",
+      "kind": "cartilage",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "ribs",
+      "presence": {
+        "default": "variable"
+      }
+    },
+    {
+      "id": "pygostyle",
+      "label": "Pygostyle",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "caudal-vertebrae",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ]
+      }
+    },
+    {
+      "id": "urostyle",
+      "label": "Urostyle",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "vertebral-column",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "note": "Fused post-sacral rod replacing the anuran tail. Its rigidity is part of the saltatory apparatus.",
+        "sources": [
+          "prikryl-etal-2009"
+        ]
+      }
     }
   ]
 }

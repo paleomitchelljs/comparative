@@ -57,7 +57,7 @@ for why that matters.
 
 ## What's in it
 
-92 muscle records, 537 taxon occurrences, 154 skeletal elements, 42 sources, 16 operational taxa.
+95 muscle records, 557 taxon occurrences, 167 skeletal elements, 54 sources, 16 operational taxa.
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
 declared out of scope. Measured coverage and what is still missing:
@@ -66,6 +66,7 @@ declared out of scope. Measured coverage and what is still missing:
 | Region | Records | Principal source |
 |---|---|---|
 | Cranial | 15 | Werneburg 2011; Johnston 2011, 2014; Ziermann & Diogo 2019 |
+| Axial | 3 | Schilling 2011; Cieri 2018 |
 | Ancestral paired fin | 7 | Diogo et al. 2016 |
 | Pectoral girdle and arm | 21 | Abdala & Diogo 2010; Molnar et al. 2018 |
 | Forearm and hand | 27 | Abdala & Diogo 2010; Ercoli et al. 2014 |
@@ -234,7 +235,6 @@ Origin/insertion becomes what you *draw*, not what you navigate.
   a complex that Werneburg (2011) resolves into a dozen units in turtles alone.
   `scripts/extract_werneburg_appendix.py` produces the structured source data for
   splitting it further.
-- **No axial musculature.** Epaxial and hypaxial series are entirely absent.
 - **No muscle architecture data.** Mansuit & Herrel (2021) frame this gap and
   name the sources that hold the numbers; several are already in `papers/`
   (Allen et al. 2014; Ercoli et al. 2014; Fahn-Lai et al. 2020). The schema has

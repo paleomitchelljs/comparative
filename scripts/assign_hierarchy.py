@@ -20,7 +20,7 @@ import sys
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 REGION_SEGMENT = {
-    "cranial": "cranial", "fin": "fin",
+    "cranial": "cranial", "axial": "axial", "fin": "fin",
     "pectoral": "girdle", "arm": "stylopod", "forearm": "zeugopod", "hand": "autopod",
     "pelvic": "girdle", "thigh": "stylopod", "leg": "zeugopod", "foot": "autopod",
 }

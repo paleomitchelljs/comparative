@@ -1,0 +1,357 @@
+{
+  "$schema": "../docs/SCHEMA.md",
+  "region": "Axial musculature",
+  "note": "The plesiomorphic locomotor engine of the vertebrate body (Schilling 2011). Two divisions separated by the horizontal septum and marked by the split of the spinal nerve: epaxial above, on dorsal rami; hypaxial below, on ventral rami. That nerve boundary is the same kind of evidence that anchors the dorsal/ventral limb masses, and it is why axial muscles belong in this dataset rather than beside it — the appendicular system is built on top of the axial one and takes over from it.",
+  "muscles": [
+    {
+      "id": "epaxial-musculature",
+      "name": "Epaxial musculature",
+      "region": "axial",
+      "subregion": "dorsal to the horizontal septum",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic (primaxial); myotome dorsal to the horizontal septum. Innervated by the DORSAL rami of the spinal nerves — the defining criterion.",
+      "synonyms": [
+        "dorsalis trunci (amphibians)",
+        "perivertebral musculature (partim)"
+      ],
+      "consensus": {
+        "origin": "Neural spines, transverse processes, zygapophyses and the vertebral centra; in fishes, the myosepta.",
+        "insertion": "Successive vertebrae, ribs and the skull; the tracts span many segments in amniotes.",
+        "action": "Plesiomorphically mobilisation — lateral bending for swimming. In tetrapods it additionally stabilises the trunk against inertial and limb-muscle forces; in mammals it also serves sagittal mobility and stabilises against the inertia of the body's centre of mass.",
+        "innervation": "Dorsal rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "side": "dorsal",
+            "landmark": "neural-spine"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "side": "dorsal"
+          },
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "petromyzontida",
+          "name": "Myomeric axial musculature",
+          "present": "yes",
+          "note": "Segmental myomeres separated by myosepta, undivided into tracts. Axial-based locomotion in its plesiomorphic form.",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "chondrichthyes",
+          "name": "Epaxial myomeres",
+          "present": "yes",
+          "note": "Divided from the hypaxial by the horizontal septum, but still strictly segmental.",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "actinopterygii",
+          "name": "Epaxial myomeres",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Dorsalis trunci",
+          "present": "yes",
+          "note": "Retains much of the segmental fish arrangement; lateral undulation still contributes to locomotion alongside the limbs.",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "name": "Dorsalis trunci",
+          "present": "yes",
+          "note": "Greatly shortened with the reduced presacral column and the urostyle.",
+          "sources": [
+            "schilling-2011",
+            "prikryl-etal-2009"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Transversospinalis, longissimus, iliocostalis",
+          "present": "yes",
+          "note": "Reorganised into three longitudinal, polysegmental tracts — the amniote condition. Cieri (2018) documents the regionalisation along the varanid column.",
+          "sources": [
+            "schilling-2011",
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Transversospinalis, longissimus, iliocostalis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Epaxial tracts (reduced)",
+          "present": "yes",
+          "note": "Much reduced with the rigid synsacrum and shortened tail.",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Transversospinal system, longissimus, iliocostalis",
+          "present": "yes",
+          "origin": "Neural spines, transverse processes and the sacrum.",
+          "insertion": "Successive vertebrae, ribs and the occiput.",
+          "action": "Stabilises the trunk against sagittal components of limb-muscle action; permits and controls the sagittal bending of the mammalian back.",
+          "note": "The transversospinal muscle is further subdivided into the transversospinal system (multifidus, semispinalis and relatives). Schilling ties this to the evolution of a mobile lumbar region and a rib-free lumbar segment.",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Epaxial identity is defined by position dorsal to the horizontal septum and by dorsal-ramus innervation, both of which hold from lampreys to mammals. The three amniote tracts are a reorganisation within that field, not new muscles. Schilling maps the character states onto a phylogeny and infers the ancestral condition at each node.",
+        "related": [
+          "hypaxial-musculature",
+          "protractor-pectoralis"
+        ],
+        "teaching": "The clearest case that innervation defines a muscle field: the dorsal/ventral ramus split is the same logic as the dorsal/ventral limb masses, and it is visible in a single cross-section."
+      },
+      "sources": [
+        "schilling-2011",
+        "cieri-2018"
+      ]
+    },
+    {
+      "id": "hypaxial-musculature",
+      "name": "Hypaxial musculature",
+      "region": "axial",
+      "subregion": "ventral to the horizontal septum",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; myotome ventral to the horizontal septum. Innervated by the VENTRAL rami of the spinal nerves. The abaxial part of this field is what migrates into the limb bud and becomes the appendicular musculature.",
+      "synonyms": [
+        "ventral trunk musculature",
+        "abdominal wall musculature"
+      ],
+      "consensus": {
+        "origin": "Ventral surfaces of the vertebrae, the ribs, and the pelvic girdle.",
+        "insertion": "Ribs, sternum, linea alba and the pelvic girdle.",
+        "action": "Lateral bending in fishes; in tetrapods, trunk stabilisation, ventilation and support of the viscera against gravity.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "side": "ventral"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs"
+          },
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "linea-alba"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "petromyzontida",
+          "name": "Hypaxial myomeres",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "chondrichthyes",
+          "name": "Hypaxial myomeres",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "caudata",
+          "name": "Abdominal wall + subvertebral musculature",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Subvertebralis, obliquus externus/internus, transversus abdominis, rectus abdominis, intercostales",
+          "present": "yes",
+          "note": "Cieri (2018) records the regional differentiation of these along the varanid trunk, which bears on how much of lateral undulation survives alongside limb-driven locomotion.",
+          "sources": [
+            "schilling-2011",
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Subvertebralis + abdominal wall series",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Quadratus lumborum, psoas minor, obliquus externus/internus, transversus abdominis, rectus abdominis, intercostales",
+          "present": "yes",
+          "action": "The rectus abdominis is the most important sagittal flexor of the mammalian trunk; the subvertebral muscles are correlated with the evolution of a mobile lumbar region.",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Ventral-ramus innervation is the constant. The important connection for this dataset is developmental: the abaxial portion of the hypaxial field is the source of the appendicular musculature, so the limb muscles are hypaxial derivatives that migrated out. That is why the limb's ventral (flexor) mass keeps ventral-division nerves.",
+        "related": [
+          "epaxial-musculature",
+          "abductor-superficialis",
+          "hypobranchial-muscles"
+        ],
+        "teaching": "Answers the question students ask once they meet the dorsal/ventral limb masses: where did those masses come from? They are the hypaxial field, migrated."
+      },
+      "sources": [
+        "schilling-2011",
+        "cieri-2018"
+      ]
+    },
+    {
+      "id": "caudal-musculature",
+      "name": "Caudal musculature",
+      "region": "axial",
+      "subregion": "tail",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; the post-sacral continuation of the epaxial and hypaxial series.",
+      "synonyms": [
+        "caudofemoralis (as an abaxial derivative)",
+        "ilio-/ischiocaudalis",
+        "m. caudalis"
+      ],
+      "consensus": {
+        "origin": "Caudal vertebrae — their centra, neural spines, transverse processes and haemal arches.",
+        "insertion": "Successive caudal vertebrae; the caudofemoralis leaves the series to insert on the femur.",
+        "action": "Tail movement; in taxa with a large tail, also counterbalance and — through the caudofemoralis — femoral retraction.",
+        "innervation": "Dorsal and ventral rami of the caudal spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "caudata",
+          "name": "Caudal epaxial and hypaxial series",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "anura",
+          "present": "no",
+          "note": "Lost with the tail; the urostyle replaces the caudal series.",
+          "sources": [
+            "prikryl-etal-2009"
+          ]
+        },
+        {
+          "taxon": "lepidosauria",
+          "name": "Caudal musculature (ilio-, ischio- and caudofemoralis series)",
+          "present": "yes",
+          "note": "Tomańska et al. (2024) describe the Komodo dragon tail as a substantial locomotor and defensive organ, with caudal muscle mass contributing counterbalance during bipedal rearing.",
+          "sources": [
+            "schilling-2011",
+            "tomanska-etal-2024"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "Caudal musculature",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "aves",
+          "name": "Caudal musculature (reduced)",
+          "present": "variable",
+          "note": "Reduced to the pygostyle and its rectricial muscles.",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "present": "variable",
+          "note": "Retained in taxa with a muscular tail, reduced in others.",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The caudal series is the post-sacral continuation of the trunk musculature. Its interest for this dataset is the caudofemoralis, which leaves the axial series to reach the femur and so becomes an abaxial, appendicular muscle — the one muscle that crosses the boundary this file is organised around.",
+        "related": [
+          "caudofemoralis",
+          "epaxial-musculature",
+          "hypaxial-musculature"
+        ],
+        "teaching": "Pair with the caudofemoralis and the fourth trochanter: the tail powers the hindlimb in most tetrapods, and both bird and mammal locomotion required breaking that link."
+      },
+      "sources": [
+        "schilling-2011",
+        "tomanska-etal-2024"
+      ]
+    }
+  ]
+}

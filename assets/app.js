@@ -3,10 +3,11 @@
 
 /* Proximal-to-distal within each appendage, head first. Alphabetical order would
    scatter the forelimb series across the list. */
-const REGION_ORDER = ['cranial', 'fin', 'pectoral', 'arm', 'forearm', 'hand', 'pelvic', 'thigh', 'leg', 'foot'];
+const REGION_ORDER = ['cranial', 'axial', 'fin', 'pectoral', 'arm', 'forearm', 'hand', 'pelvic', 'thigh', 'leg', 'foot'];
 const regionRank = r => { const i = REGION_ORDER.indexOf(r); return i === -1 ? 99 : i; };
 
 const DATA_FILES = [
+  'data/muscles-axial.json',
   'data/muscles-fin.json',
   'data/muscles-pectoral.json',
   'data/muscles-forearm-hand.json',
