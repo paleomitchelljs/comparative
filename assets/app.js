@@ -24,6 +24,8 @@ const state = {
   sources: new Map(),
   elements: [],
   elementsById: new Map(),
+  nerves: [],
+  nervesById: new Map(),
   skeletonTaxon: '',
   topology: null,
   phyloScope: 'all',
@@ -39,16 +41,20 @@ const state = {
 /* ---------- boot ---------- */
 
 async function boot() {
-  const [taxaDoc, sourcesDoc, skeletonDoc, ...muscleDocs] = await Promise.all([
+  const [taxaDoc, sourcesDoc, skeletonDoc, nervesDoc, ...muscleDocs] = await Promise.all([
     fetchJSON('data/taxa.json'),
     fetchJSON('data/sources.json'),
     fetchJSON('data/skeleton.json'),
+    fetchJSON('data/nerves.json'),
     ...DATA_FILES.map(fetchJSON)
   ]);
 
   state.topology = taxaDoc.topology;
   state.elements = skeletonDoc.elements;
   skeletonDoc.elements.forEach(e => state.elementsById.set(e.id, e));
+
+  state.nerves = nervesDoc.nerves;
+  nervesDoc.nerves.forEach(n => state.nervesById.set(n.id, n));
 
   state.taxa = taxaDoc.taxa;
   taxaDoc.taxa.forEach(t => state.taxaById.set(t.id, t));
@@ -147,6 +153,30 @@ function buildIndex() {
       (o.parts || []).forEach(p => push(p.name, 'part', clade));
     });
 
+    /* Nerves, each with its whole ancestor chain, so "radial nerve" finds the
+       supinator (which is on the deep branch) and "brachial plexus" finds
+       everything below it. Synonyms and per-taxon names come too, which is how
+       "supracoracoid nerve" reaches the mammalian supraspinatus — a name that
+       appears in no prose string on that record. Prose search alone could do
+       none of this: it can only match the words a description happens to use. */
+    const nerveIds = new Set();
+    const addNerve = id => {
+      let cur = id, guard = 0;
+      while (cur && !nerveIds.has(cur) && guard++ < 20) {
+        nerveIds.add(cur);
+        cur = state.nervesById.get(cur)?.partOf;
+      }
+    };
+    (m.nerves || []).forEach(r => addNerve(r.nerve));
+    (m.occurrences || []).forEach(o => (o.nerves || []).forEach(r => addNerve(r.nerve)));
+    nerveIds.forEach(id => {
+      const n = state.nervesById.get(id);
+      if (!n) return;
+      push(n.label, 'nerve');
+      (n.synonyms || []).forEach(s => push(s, 'nerve'));
+      (n.taxonNames || []).forEach(tn => push(tn.name, 'nerve'));
+    });
+
     return { muscle: m, terms };
   });
 }
@@ -183,7 +213,7 @@ function search(qRaw) {
    name match beats every description match, whatever the match quality. */
 const KIND_PENALTY = {
   name: 0, synonym: 0, 'taxon-name': 0,
-  attachment: 10, part: 10, group: 10,
+  attachment: 10, part: 10, group: 10, nerve: 10,
   origin: 20, insertion: 20, action: 20, innervation: 20, development: 20,
 };
 
@@ -355,6 +385,7 @@ function renderDetail(m) {
     ${defRow('Insertion', c.insertion)}
     ${defRow('Action', c.action)}
     ${defRow('Innervation', c.innervation)}
+    ${renderNerves(m)}
     ${defRow('Development', m.developmental)}
   </dl>`;
 
@@ -385,6 +416,51 @@ function renderDetail(m) {
 
 const defRow = (label, val) => val
   ? `<dt>${label}</dt><dd>${esc(val)}</dd>` : '';
+
+/* The nerve's own name, plus the chain it descends through. The chain is the
+   informative part: it is what says the supinator's supply is a dorsal-division
+   nerve, and therefore agrees with the muscle sitting in the dorsal limb-bud
+   mass. Shown as a trail rather than a single chip so that agreement — or a
+   disagreement worth arguing about — is legible without leaving the page. */
+function nerveTrail(id) {
+  const out = [];
+  let cur = id, guard = 0;
+  while (cur && guard++ < 20) {
+    const n = state.nervesById.get(cur);
+    if (!n) break;
+    out.unshift(n);
+    cur = n.partOf;
+  }
+  return out;
+}
+
+function nerveDivision(id) {
+  return nerveTrail(id).reverse().find(n => n.division)?.division || null;
+}
+
+function renderNerves(holder, taxonId) {
+  const rows = holder.nerves;
+  if (!rows || !rows.length) return '';
+  const items = rows.map(r => {
+    const trail = nerveTrail(r.nerve);
+    if (!trail.length) return '';
+    const leaf = trail[trail.length - 1];
+    const label = taxonId
+      ? (leaf.taxonNames || []).find(tn => (tn.taxa || []).includes(taxonId))?.name || leaf.label
+      : leaf.label;
+    const div = nerveDivision(r.nerve);
+    return `<li>
+      <span class="nerve-name">${esc(label)}</span>
+      ${r.segments ? `<span class="nerve-seg">${esc(r.segments)}</span>` : ''}
+      ${div ? `<span class="nerve-div nerve-div-${esc(div)}">${esc(div)}</span>` : ''}
+      ${trail.length > 1
+        ? `<span class="nerve-trail">${trail.slice(0, -1).map(n => esc(n.label)).join(' › ')}</span>`
+        : ''}
+      ${r.note ? `<span class="cellnote">${esc(r.note)}</span>` : ''}
+    </li>`;
+  }).join('');
+  return `<dt>Nerve</dt><dd><ul class="nerves">${items}</ul></dd>`;
+}
 
 /* Inline citation for a table cell. Links to the DOI where we have one so the
    claim is one click from its source. */
@@ -421,6 +497,7 @@ function renderOccTable(m) {
       <td><span class="pres pres-${esc(present)}">${esc(present)}</span></td>
       <td>${o.name ? `<span class="localname">${esc(o.name)}</span>` : '<span class="pres-no">—</span>'}
         ${renderDivision(o)}
+        ${o.nerves ? `<dl class="oia occ-nerves">${renderNerves(o, o.taxon)}</dl>` : ''}
         ${micro ? `<div class="microdl">${micro}</div>` : ''}
         ${o.note ? `<div class="cellnote">${esc(o.note)}</div>` : ''}
         ${cites ? `<div class="cites">${cites}</div>` : ''}</td>

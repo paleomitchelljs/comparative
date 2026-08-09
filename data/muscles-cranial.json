@@ -77,7 +77,12 @@
           "sources": [
             "ziermann-etal-2014"
           ],
-          "division": "single"
+          "division": "single",
+          "nerves": [
+            {
+              "nerve": "trigeminal"
+            }
+          ]
         },
         {
           "taxon": "actinopterygii",
@@ -142,6 +147,11 @@
             {
               "name": "Adductor mandibulae posterior",
               "muscle": "adductor-mandibulae-posterior"
+            }
+          ],
+          "nerves": [
+            {
+              "nerve": "trigeminal"
             }
           ]
         },
@@ -217,6 +227,11 @@
             {
               "name": "Pterygoideus lateralis"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
           ]
         }
       ],
@@ -252,6 +267,11 @@
         "adductor-mandibulae-lateralis",
         "adductor-mandibulae-posterior",
         "levator-anguli-oris"
+      ],
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
       ]
     },
     {
@@ -369,6 +389,11 @@
             {
               "name": "Tensor veli palatini"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
           ]
         }
       ],
@@ -387,6 +412,11 @@
         "werneburg-2011",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
       ]
     },
     {
@@ -499,7 +529,12 @@
               }
             ]
           },
-          "attachmentNote": "One to two heads from the caudal, lateral and dorsal squamosal, occasionally the quadrate or quadratojugal; inserts partly by tendon on the posterior and ventral articular and the retroarticular process. Werneburg lists 13 synonyms for this muscle alone."
+          "attachmentNote": "One to two heads from the caudal, lateral and dorsal squamosal, occasionally the quadrate or quadratojugal; inserts partly by tendon on the posterior and ventral articular and the retroarticular process. Werneburg lists 13 synonyms for this muscle alone.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         },
         {
           "taxon": "lepidosauria",
@@ -528,6 +563,11 @@
           "note": "The mammalian digastric is a chimaera: the anterior belly is arch 1 (CN V), the posterior belly arch 2 (CN VII). Two muscles from two arches joined end to end by a tendon.",
           "sources": [
             "ziermann-diogo-2019"
+          ],
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
           ]
         }
       ],
@@ -545,6 +585,11 @@
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
         "werneburg-2011"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
       ]
     },
     {
@@ -674,7 +719,12 @@
               "name": "Stapedius"
             }
           ],
-          "partsOpen": true
+          "partsOpen": true,
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -691,6 +741,11 @@
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
         "werneburg-2011"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
       ]
     },
     {
@@ -751,6 +806,11 @@
           "sources": [
             "clack-etal-2016",
             "ziermann-diogo-2019"
+          ],
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
           ]
         }
       ],
@@ -770,6 +830,11 @@
         "gai-etal-2022",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
       ]
     },
     {
@@ -853,6 +918,14 @@
             {
               "name": "Levatores arcuum branchialium"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "glossopharyngeal"
+            },
+            {
+              "nerve": "vagus"
+            }
           ]
         },
         {
@@ -913,7 +986,15 @@
               "name": "Intrinsic laryngeal muscles"
             }
           ],
-          "partsOpen": true
+          "partsOpen": true,
+          "nerves": [
+            {
+              "nerve": "glossopharyngeal"
+            },
+            {
+              "nerve": "vagus"
+            }
+          ]
         }
       ],
       "homology": {
@@ -930,6 +1011,14 @@
         "werneburg-2011",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "glossopharyngeal"
+        },
+        {
+          "nerve": "vagus"
+        }
       ]
     },
     {
@@ -992,6 +1081,17 @@
           "innervation": "CN III, IV, VI in the standard gnathostome pattern.",
           "sources": [
             "ziermann-etal-2014"
+          ],
+          "nerves": [
+            {
+              "nerve": "oculomotor"
+            },
+            {
+              "nerve": "trochlear"
+            },
+            {
+              "nerve": "abducens"
+            }
           ]
         },
         {
@@ -1026,7 +1126,15 @@
               }
             ]
           },
-          "attachmentNote": "Eight units around the optic foramen and the anterodorsal optic cavity, all inserting on the eyeball. Werneburg additionally records intraocular muscles (ciliaris, sphincter and dilatator pupillae, transversalis oculi) that most vertebrate accounts omit; turtles, like birds, have striated intraocular muscle."
+          "attachmentNote": "Eight units around the optic foramen and the anterodorsal optic cavity, all inserting on the eyeball. Werneburg additionally records intraocular muscles (ciliaris, sphincter and dilatator pupillae, transversalis oculi) that most vertebrate accounts omit; turtles, like birds, have striated intraocular muscle.",
+          "nerves": [
+            {
+              "nerve": "oculomotor"
+            },
+            {
+              "nerve": "trochlear"
+            }
+          ]
         },
         {
           "taxon": "theria",
@@ -1066,6 +1174,17 @@
               "membership": "variable",
               "note": "Retained in many mammals, lost in humans and other primates."
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "oculomotor"
+            },
+            {
+              "nerve": "trochlear"
+            },
+            {
+              "nerve": "abducens"
+            }
           ]
         }
       ],
@@ -1080,6 +1199,17 @@
         "ziermann-etal-2014",
         "werneburg-2011",
         "fritzsch-2023"
+      ],
+      "nerves": [
+        {
+          "nerve": "oculomotor"
+        },
+        {
+          "nerve": "trochlear"
+        },
+        {
+          "nerve": "abducens"
+        }
       ]
     },
     {
@@ -1190,6 +1320,11 @@
             {
               "name": "Coracobranchialis"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
           ]
         },
         {
@@ -1253,6 +1388,11 @@
             {
               "name": "Hyoglossus"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "hypoglossal"
+            }
           ]
         },
         {
@@ -1314,7 +1454,18 @@
               "name": "Infrahyoid strap muscles"
             }
           ],
-          "partsOpen": true
+          "partsOpen": true,
+          "nerves": [
+            {
+              "nerve": "hypoglossal"
+            },
+            {
+              "nerve": "vagus"
+            },
+            {
+              "nerve": "ansa-cervicalis"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1332,6 +1483,14 @@
         "ziermann-diogo-2019",
         "diogo-ziermann-2015",
         "werneburg-2011"
+      ],
+      "nerves": [
+        {
+          "nerve": "hypoglossal"
+        },
+        {
+          "nerve": "ansa-cervicalis"
+        }
       ]
     },
     {
@@ -1433,6 +1592,11 @@
         "jayaram-etal-1983",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
       ]
     },
     {
@@ -1583,7 +1747,12 @@
         "werneburg-2011",
         "ziermann-diogo-2019"
       ],
-      "complex": "adductor-mandibulae"
+      "complex": "adductor-mandibulae",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ]
     },
     {
       "id": "adductor-mandibulae-longus",
@@ -1652,7 +1821,12 @@
         "johnston-2011",
         "johnston-2014"
       ],
-      "complex": "adductor-mandibulae"
+      "complex": "adductor-mandibulae",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ]
     },
     {
       "id": "adductor-mandibulae-externus",
@@ -1834,7 +2008,12 @@
         "werneburg-preuschoft-2024",
         "ziermann-diogo-2019"
       ],
-      "complex": "adductor-mandibulae"
+      "complex": "adductor-mandibulae",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ]
     },
     {
       "id": "adductor-mandibulae-lateralis",
@@ -1888,7 +2067,12 @@
       "sources": [
         "johnston-2011"
       ],
-      "complex": "adductor-mandibulae"
+      "complex": "adductor-mandibulae",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ]
     },
     {
       "id": "adductor-mandibulae-posterior",
@@ -1998,7 +2182,12 @@
         "werneburg-2011",
         "werneburg-maier-2019"
       ],
-      "complex": "adductor-mandibulae"
+      "complex": "adductor-mandibulae",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ]
     },
     {
       "id": "levator-anguli-oris",
@@ -2078,7 +2267,12 @@
         "johnston-2011",
         "johnston-2014"
       ],
-      "complex": "adductor-mandibulae"
+      "complex": "adductor-mandibulae",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ]
     }
   ]
 }

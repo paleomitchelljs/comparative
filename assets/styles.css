@@ -330,6 +330,22 @@ table.occ tr.absent td { color: var(--ink-3); background: var(--bg-sunken); }
 .callout.caution { border-left-color: var(--mod); background: var(--mod-bg); }
 .callout.caution h4 { color: var(--mod); }
 
+/* Nerves: the name, its spinal levels, and the plexus chain above it */
+ul.nerves { list-style: none; margin: 0; padding: 0; }
+ul.nerves li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem;
+  margin-bottom: 0.3rem; }
+.nerve-name { font-weight: 600; }
+.nerve-seg { font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-3); }
+.nerve-div {
+  font-family: var(--font-ui); font-size: 0.68rem; text-transform: uppercase;
+  letter-spacing: 0.03em; padding: 0.1rem 0.35rem; border-radius: 3px;
+}
+.nerve-div-dorsal { color: var(--ok); background: var(--ok-bg); }
+.nerve-div-ventral { color: var(--accent); background: var(--accent-soft); }
+.nerve-trail { font-family: var(--font-ui); font-size: 0.74rem; color: var(--ink-3); }
+.occ-nerves { margin: 0.5rem 0 0; }
+.occ-nerves dt { font-size: 0.7rem; }
+
 /* Link pills */
 .pills { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .pill {

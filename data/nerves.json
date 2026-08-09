@@ -1,0 +1,428 @@
+{
+  "$comment": "Nerves as homology groups, on the same pattern as skeleton.json: one record per nerve, names as per-taxon attributes. A nerve is the most conservative homology signal in the dataset — METHODS.md records that innervation is the stable criterion for the limb masses and the epaxial/hypaxial division, and it is what identifies the mammalian tensor tympani as an arch 1 muscle and the stapedius as an arch 2 one after both were relocated into the middle ear.\n\nThere is deliberately NO `presence` block. Scoring 16 taxa against every nerve would be 700 assertions the sources here do not make: named peripheral nerves of the limb are tetrapod descriptions, and the fin nerves homologous to them are not individually named in this literature. Absence of a record for a taxon means unrecorded, exactly as it does for a muscle occurrence.",
+  "kinds": ["cranial", "spinal", "plexus", "division", "peripheral", "branch"],
+  "divisions": ["dorsal", "ventral"],
+  "nerves": [
+    {
+      "id": "oculomotor",
+      "label": "Oculomotor nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 3,
+      "note": "Supplies four of the six extraocular muscles: recti superior, inferior and medialis, and obliquus inferior."
+    },
+    {
+      "id": "trochlear",
+      "label": "Trochlear nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 4,
+      "note": "Supplies the obliquus superior alone."
+    },
+    {
+      "id": "trigeminal",
+      "label": "Trigeminal nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 5,
+      "arch": 1,
+      "note": "The arch 1 nerve. Its territory is invariant across Gnathostomata, which is why it identifies mandibular-arch derivatives wherever they end up."
+    },
+    {
+      "id": "trigeminal-mandibular",
+      "label": "Mandibular division of the trigeminal",
+      "kind": "branch",
+      "region": "cranial",
+      "cn": 5,
+      "arch": 1,
+      "partOf": "trigeminal",
+      "synonyms": ["V3"],
+      "note": "Carries the motor supply to the whole adductor mandibulae field, and to the tensor tympani and tensor veli palatini after they leave the jaw."
+    },
+    {
+      "id": "abducens",
+      "label": "Abducens nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 6,
+      "note": "Supplies the rectus lateralis and, where present, the retractor bulbi."
+    },
+    {
+      "id": "facial",
+      "label": "Facial nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 7,
+      "arch": 2,
+      "note": "The arch 2 nerve. Its universal supply to the mammalian facial musculature — a hyoid-arch sheet that migrated onto the face — is why one lesion paralyses expression on a whole side."
+    },
+    {
+      "id": "glossopharyngeal",
+      "label": "Glossopharyngeal nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 9,
+      "arch": 3,
+      "note": "The arch 3 nerve. In mammals the stylopharyngeus is the only muscle it supplies — the sole surviving arch 3 muscle."
+    },
+    {
+      "id": "vagus",
+      "label": "Vagus nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 10,
+      "arch": "4–7",
+      "note": "Supplies the post-trigeminal branchial arches. The palatoglossus is on CN X rather than CN XII because it is a soft-palate muscle, not a hypobranchial one."
+    },
+    {
+      "id": "vagus-branchial",
+      "label": "Branchial branches of the vagus",
+      "kind": "branch",
+      "region": "cranial",
+      "arch": "4–7",
+      "partOf": "vagus",
+      "note": "The caudal branchial branches. In non-mammals these carry the fibres that mammals describe as the accessory nerve."
+    },
+    {
+      "id": "accessory",
+      "label": "Accessory nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 11,
+      "taxonNames": [
+        { "taxa": ["theria", "monotremata"], "name": "Accessory nerve (CN XI)" }
+      ],
+      "note": "A mammalian description; elsewhere the same supply runs with the caudal branchial branches of the vagus complex. Not spinal, despite its course. The trapezius and sternocleidomastoid keep it while lying entirely in the neck and trunk, which is the classic demonstration that innervation tracks developmental origin rather than topographic position.",
+      "related": ["vagus-branchial"]
+    },
+    {
+      "id": "hypoglossal",
+      "label": "Hypoglossal nerve",
+      "kind": "cranial",
+      "region": "cranial",
+      "cn": 12,
+      "note": "Spinal in origin rather than branchiomeric — it supplies the hypobranchial muscles, which are somitic. Its separation from the anterior spinal nerves is variable in non-amniotes."
+    },
+    {
+      "id": "dorsal-rami",
+      "label": "Dorsal rami of the spinal nerves",
+      "kind": "spinal",
+      "region": "axial",
+      "note": "The epaxial supply. The split of the spinal nerve into dorsal and ventral rami is the definition of the epaxial/hypaxial boundary, and is more reliable than the horizontal septum, which is not always traceable."
+    },
+    {
+      "id": "ventral-rami",
+      "label": "Ventral rami of the spinal nerves",
+      "kind": "spinal",
+      "region": "axial",
+      "note": "The hypaxial supply, and the source of the limb plexuses."
+    },
+    {
+      "id": "ansa-cervicalis",
+      "label": "Ansa cervicalis",
+      "kind": "branch",
+      "region": "axial",
+      "partOf": "ventral-rami",
+      "note": "C1–C3. Supplies the infrahyoid strap muscles, which are hypobranchial and therefore somitic."
+    },
+    {
+      "id": "brachial-plexus",
+      "label": "Brachial plexus",
+      "kind": "plexus",
+      "region": "forelimb",
+      "partOf": "ventral-rami",
+      "note": "Root composition varies between and within species. Navarro et al. (2023) find South American lizard plexuses typically formed from spinal nerves 5–9, with considerable interspecific variation."
+    },
+    {
+      "id": "brachial-dorsal-division",
+      "label": "Dorsal (extensor) division of the brachial plexus",
+      "kind": "division",
+      "region": "forelimb",
+      "division": "dorsal",
+      "partOf": "brachial-plexus",
+      "note": "Supplies the dorsal limb-bud mass. Every muscle in this dataset with mass: dorsal in the forelimb should be on a nerve below this node — a check the data can now run on itself."
+    },
+    {
+      "id": "brachial-ventral-division",
+      "label": "Ventral (flexor) division of the brachial plexus",
+      "kind": "division",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "brachial-plexus"
+    },
+    {
+      "id": "axillary",
+      "label": "Axillary nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "dorsal",
+      "partOf": "brachial-dorsal-division"
+    },
+    {
+      "id": "radial",
+      "label": "Radial nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "dorsal",
+      "partOf": "brachial-dorsal-division",
+      "note": "The defining nerve of the dorsal/extensor mass."
+    },
+    {
+      "id": "radial-deep",
+      "label": "Deep branch of the radial nerve",
+      "kind": "branch",
+      "region": "forelimb",
+      "division": "dorsal",
+      "partOf": "radial",
+      "synonyms": ["Posterior interosseous nerve"],
+      "note": "Pierces the supinator and continues as the posterior interosseous nerve."
+    },
+    {
+      "id": "musculocutaneous",
+      "label": "Musculocutaneous nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "brachial-ventral-division"
+    },
+    {
+      "id": "median",
+      "label": "Median nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "brachial-ventral-division"
+    },
+    {
+      "id": "median-anterior-interosseous",
+      "label": "Anterior interosseous nerve",
+      "kind": "branch",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "median"
+    },
+    {
+      "id": "median-recurrent",
+      "label": "Recurrent branch of the median nerve",
+      "kind": "branch",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "median",
+      "note": "The thenar supply."
+    },
+    {
+      "id": "ulnar",
+      "label": "Ulnar nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "brachial-ventral-division"
+    },
+    {
+      "id": "ulnar-deep",
+      "label": "Deep branch of the ulnar nerve",
+      "kind": "branch",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "ulnar",
+      "note": "Supplies most of the intrinsic hand musculature — the interossei, the ulnar lumbricals and the adductor pollicis."
+    },
+    {
+      "id": "suprascapular",
+      "label": "Suprascapular nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "partOf": "brachial-plexus",
+      "taxonNames": [
+        { "taxa": ["caudata", "anura", "lepidosauria", "testudines", "crocodylia"], "name": "Supracoracoid nerve" }
+      ],
+      "note": "The supracoracoid nerve of non-mammals and the mammalian suprascapular nerve supply the same field — the supracoracoideus and its therian derivatives, supraspinatus and infraspinatus.\n\nDeliberately carries no `division`: it leaves the upper trunk before the plexus splits into dorsal and ventral divisions. That is not a technicality here — it is why a ventral-mass muscle can keep this nerve while migrating onto the lateral face of the scapula, which is exactly what the supracoracoideus did."
+    },
+    {
+      "id": "subscapular",
+      "label": "Subscapular nerves",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "dorsal",
+      "partOf": "brachial-dorsal-division",
+      "note": "Upper and lower. The lower subscapular and thoracodorsal nerves are often described together."
+    },
+    {
+      "id": "thoracodorsal",
+      "label": "Thoracodorsal nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "dorsal",
+      "partOf": "brachial-dorsal-division",
+      "note": "Supplies the latissimus dorsi. Its dorsal-division identity is what places the latissimus in the dorsal mass despite its axial origin."
+    },
+    {
+      "id": "long-thoracic",
+      "label": "Long thoracic nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "partOf": "brachial-plexus",
+      "note": "Arises from the ventral rami directly rather than from either division — consistent with the serratus being primaxial."
+    },
+    {
+      "id": "dorsal-scapular",
+      "label": "Dorsal scapular nerve",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "partOf": "brachial-plexus",
+      "note": "Supplies the rhomboids and levator scapulae, both primaxial."
+    },
+    {
+      "id": "pectoral-nerves",
+      "label": "Pectoral nerves",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "brachial-ventral-division",
+      "note": "Medial and lateral in mammals."
+    },
+    {
+      "id": "nerve-to-subclavius",
+      "label": "Nerve to subclavius",
+      "kind": "peripheral",
+      "region": "forelimb",
+      "division": "ventral",
+      "partOf": "brachial-ventral-division"
+    },
+    {
+      "id": "lumbosacral-plexus",
+      "label": "Lumbosacral plexus",
+      "kind": "plexus",
+      "region": "hindlimb",
+      "partOf": "ventral-rami"
+    },
+    {
+      "id": "lumbosacral-dorsal-division",
+      "label": "Dorsal (extensor) division of the lumbosacral plexus",
+      "kind": "division",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "lumbosacral-plexus"
+    },
+    {
+      "id": "lumbosacral-ventral-division",
+      "label": "Ventral (flexor) division of the lumbosacral plexus",
+      "kind": "division",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "lumbosacral-plexus"
+    },
+    {
+      "id": "femoral",
+      "label": "Femoral nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "lumbosacral-dorsal-division",
+      "note": "Dorsal-mass territory, which is why the puboischiofemoralis internus and its mammalian derivatives sit in the dorsal mass despite acting as hip flexors."
+    },
+    {
+      "id": "obturator",
+      "label": "Obturator nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "lumbosacral-ventral-division"
+    },
+    {
+      "id": "sciatic",
+      "label": "Sciatic nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "partOf": "lumbosacral-plexus",
+      "note": "Carries both divisions in one sheath, splitting into tibial (ventral) and common fibular (dorsal) components."
+    },
+    {
+      "id": "tibial",
+      "label": "Tibial nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "sciatic",
+      "synonyms": ["Tibial division of the sciatic"]
+    },
+    {
+      "id": "common-fibular",
+      "label": "Common fibular nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "sciatic",
+      "synonyms": ["Common peroneal nerve", "Fibular division of the sciatic"]
+    },
+    {
+      "id": "deep-fibular",
+      "label": "Deep fibular nerve",
+      "kind": "branch",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "common-fibular",
+      "synonyms": ["Deep peroneal nerve"]
+    },
+    {
+      "id": "superficial-fibular",
+      "label": "Superficial fibular nerve",
+      "kind": "branch",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "common-fibular",
+      "synonyms": ["Superficial peroneal nerve"]
+    },
+    {
+      "id": "medial-plantar",
+      "label": "Medial plantar nerve",
+      "kind": "branch",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "tibial",
+      "note": "The pedal serial counterpart of the median nerve's territory in the hand."
+    },
+    {
+      "id": "lateral-plantar",
+      "label": "Lateral plantar nerve",
+      "kind": "branch",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "tibial",
+      "note": "The pedal serial counterpart of the ulnar nerve's territory in the hand."
+    },
+    {
+      "id": "lateral-plantar-deep",
+      "label": "Deep branch of the lateral plantar nerve",
+      "kind": "branch",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "lateral-plantar"
+    },
+    {
+      "id": "superior-gluteal",
+      "label": "Superior gluteal nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "lumbosacral-dorsal-division"
+    },
+    {
+      "id": "inferior-gluteal",
+      "label": "Inferior gluteal nerve",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "dorsal",
+      "partOf": "lumbosacral-dorsal-division"
+    },
+    {
+      "id": "nerve-to-obturator-internus",
+      "label": "Nerve to obturator internus",
+      "kind": "peripheral",
+      "region": "hindlimb",
+      "division": "ventral",
+      "partOf": "lumbosacral-plexus",
+      "note": "Mammalian. Elsewhere the ischiotrochantericus field is supplied by sacral plexus branches that are not separately named in these sources."
+    }
+  ]
+}

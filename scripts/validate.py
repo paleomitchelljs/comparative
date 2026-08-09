@@ -54,6 +54,39 @@ def load(path):
         return json.load(fh)
 
 
+def check_nerves(holder, label, nerves_by_id, source_keys):
+    """`nerves` is a list of {nerve, segments?, note?} rows.
+
+    Placement follows `attachments`: on the muscle it is the consensus, on an
+    occurrence it is what a source records for that taxon.
+    """
+    rows = holder.get("nerves")
+    if rows is None:
+        return []
+    if not isinstance(rows, list) or not rows:
+        err(f"{label}: `nerves` must be a non-empty list")
+        return []
+
+    seen, ids = set(), []
+    for i, row in enumerate(rows):
+        at = f"{label}: nerves[{i}]"
+        if not isinstance(row, dict):
+            err(f"{at} is not a {{nerve, segments?}} row: {row!r}")
+            continue
+        nid = row.get("nerve")
+        if nid not in nerves_by_id:
+            err(f"{at} nerve '{nid}' is not in nerves.json")
+            continue
+        if nid in seen:
+            err(f"{at} repeats nerve '{nid}'")
+        seen.add(nid)
+        ids.append(nid)
+        for key in row.get("sources", []):
+            if key not in source_keys:
+                err(f"{at} unknown source key '{key}'")
+    return ids
+
+
 def check_division(occ, label, present, muscles, source_keys):
     """How far this homology group is split in this taxon.
 
@@ -131,11 +164,58 @@ def main():
     taxa_doc = load(ROOT / "data/taxa.json")
     sources_doc = load(ROOT / "data/sources.json")
     skeleton_doc = load(ROOT / "data/skeleton.json")
+    nerves_doc = load(ROOT / "data/nerves.json")
 
     taxon_ids = {t["id"] for t in taxa_doc["taxa"]}
     source_keys = {s["key"] for s in sources_doc["sources"]}
     element_ids = {e["id"] for e in skeleton_doc["elements"]}
     side_terms = set(skeleton_doc.get("sides", []))
+    nerves_by_id = {n["id"]: n for n in nerves_doc["nerves"]}
+
+    # Nerve internal consistency. Nerves are homology groups on the same
+    # pattern as skeletal elements: one record, names as per-taxon attributes.
+    nerve_kinds = set(nerves_doc["kinds"])
+    nerve_divisions = set(nerves_doc["divisions"])
+    for n in nerves_doc["nerves"]:
+        nid = n.get("id")
+        where = f"nerves.json:{nid}"
+        if not nid:
+            err("nerves.json: a nerve has no id")
+            continue
+        if n.get("kind") not in nerve_kinds:
+            err(f"{where}: kind='{n.get('kind')}' not in {sorted(nerve_kinds)}")
+        if n.get("division") and n["division"] not in nerve_divisions:
+            err(f"{where}: division='{n['division']}' not in {sorted(nerve_divisions)}")
+        parent = n.get("partOf")
+        if parent and parent not in nerves_by_id:
+            err(f"{where}: partOf '{parent}' is not a nerve")
+        for tn in n.get("taxonNames", []):
+            for tid in tn.get("taxa", []):
+                if tid not in taxon_ids:
+                    err(f"{where}: taxonNames lists unknown taxon '{tid}'")
+        for k in n.get("sources", []):
+            if k not in source_keys:
+                err(f"{where}: unknown source key '{k}'")
+
+    for nid in nerves_by_id:
+        seen_n, cur = set(), nid
+        while cur:
+            if cur in seen_n:
+                err(f"nerves.json: partOf cycle involving '{nid}'")
+                break
+            seen_n.add(cur)
+            cur = nerves_by_id.get(cur, {}).get("partOf")
+
+    def nerve_division(nid):
+        """A nerve's limb-bud division, inherited from its parent — the deep
+        branch of the radial is dorsal because the radial is."""
+        cur, guard = nid, 0
+        while cur and guard < 20:
+            n = nerves_by_id.get(cur, {})
+            if n.get("division"):
+                return n["division"]
+            cur, guard = n.get("partOf"), guard + 1
+        return None
 
     # Skeleton internal consistency.
     kinds = set(skeleton_doc["kinds"])
@@ -364,6 +444,7 @@ def main():
                 err(f"{where}/{tid}: present='{pres}' not in {sorted(PRESENCE)}")
 
             check_division(occ, f"{where}/{tid}", pres, muscles, source_keys)
+            check_nerves(occ, f"{where}/{tid}", nerves_by_id, source_keys)
 
             if pres != "no" and not occ.get("sources"):
                 warn(f"{where}/{tid}: present but no source cited")
@@ -420,6 +501,19 @@ def main():
         region = m.get("region")
         if region and region not in REGIONS:
             err(f"{where}: region='{region}' not in {sorted(REGIONS)}")
+
+        # The whole reason to structure innervation: a limb muscle's nerve
+        # should sit in the division of the plexus matching its limb-bud mass.
+        # Where it does not, either the mass or the nerve is wrong, or the
+        # muscle is a genuinely interesting exception — all three are worth
+        # surfacing, so this warns rather than erroring.
+        nerve_ids = check_nerves(m, where, nerves_by_id, source_keys)
+        if m.get("mass") in {"dorsal", "ventral"} and nerve_ids:
+            divs = {nerve_division(n) for n in nerve_ids}
+            divs.discard(None)
+            if divs and m["mass"] not in divs:
+                warn(f"{where}: mass='{m['mass']}' but its nerves are "
+                     f"{sorted(divs)} division ({', '.join(nerve_ids)})")
 
         mass = m.get("mass")
         if mass and mass not in MASSES:

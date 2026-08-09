@@ -15,6 +15,7 @@ Writes:
   parts.csv         one row per named subunit, long form under division.csv
   elements.csv      the skeletal ontology, flattened with lineage
   fusions.csv       skeletal fusion and fission events, one row per taxon
+  innervation.csv   muscle x nerve, with plexus division and mass agreement
   muscles.csv       one row per muscle with hierarchy fields
 
 Nothing here is derived or imputed beyond what the app itself shows: `inherited`
@@ -222,6 +223,57 @@ def main(outdir: pathlib.Path) -> int:
                         ";".join(e.get("fusedFrom", [])), e.get("derivedFrom", ""),
                         ";".join(p.get("sources", []))])
 
+    # ---- innervation.csv ----------------------------------------------------
+    #
+    # One row per muscle x scope x nerve, carrying the nerve's inherited limb-bud
+    # division and its chain up to the plexus. `scope` is "consensus" or a taxon
+    # id, following the same placement rule as attachments.
+    #
+    # `division_agrees` compares the nerve's division against the muscle's
+    # `mass`. That is the cross-check the structured nerves exist for: a limb
+    # muscle's supply should sit in the division of the plexus matching the
+    # limb-bud mass it came from, and a disagreement is either a data error or
+    # something worth writing about.
+    nerves_doc = load("nerves.json")
+    nerve_by_id = {n["id"]: n for n in nerves_doc["nerves"]}
+
+    def nerve_chain(nid):
+        out, cur, guard = [], nid, 0
+        while cur and guard < 20:
+            out.append(cur)
+            cur, guard = nerve_by_id.get(cur, {}).get("partOf"), guard + 1
+        return out
+
+    def nerve_div(nid):
+        for x in nerve_chain(nid):
+            d = nerve_by_id.get(x, {}).get("division")
+            if d:
+                return d
+        return ""
+
+    with open(outdir / "innervation.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["muscle_id", "muscle_name", "region", "mass", "scope",
+                    "nerve_id", "nerve_label", "nerve_kind", "cranial_nerve",
+                    "arch", "division", "division_agrees", "segments", "chain"])
+        nerve_n = 0
+        for m in muscles:
+            scopes = [("consensus", m)] + [(o["taxon"], o) for o in m.get("occurrences", [])]
+            for scope, holder in scopes:
+                for r in holder.get("nerves") or []:
+                    nid = r["nerve"]
+                    nrec = nerve_by_id.get(nid, {})
+                    d = nerve_div(nid)
+                    agrees = ""
+                    if d and m.get("mass") in ("dorsal", "ventral"):
+                        agrees = "TRUE" if d == m["mass"] else "FALSE"
+                    w.writerow([m["id"], m["name"], m.get("region", ""), m.get("mass", ""),
+                                scope, nid, nrec.get("label", ""), nrec.get("kind", ""),
+                                nrec.get("cn", ""), nrec.get("arch", ""), d, agrees,
+                                r.get("segments", ""),
+                                ">".join(reversed(nerve_chain(nid)))])
+                    nerve_n += 1
+
     # ---- fusions.csv --------------------------------------------------------
     #
     # Skeletal fusion and fission as one long-format character: one row per
@@ -275,6 +327,7 @@ def main(outdir: pathlib.Path) -> int:
     print(f"parts.csv        {part_n} rows")
     print(f"elements.csv     {len(skel['elements'])} rows")
     print(f"fusions.csv      {fuse_n} rows")
+    print(f"innervation.csv  {nerve_n} rows")
     print(f"muscles.csv      {len(muscles)} rows")
     print(f"-> {outdir}")
     return 0

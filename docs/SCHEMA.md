@@ -7,6 +7,7 @@ Three kinds of file live in `data/`:
 | `taxa.json` | Operational taxa and the topology that orders them |
 | `sources.json` | Bibliography, keyed by `key` |
 | `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
+| `nerves.json` | Nerves as homology groups: `partOf` chain to the plexus, limb-bud division, per-taxon names |
 | `muscles-*.json` | Muscle records, split by anatomical region |
 
 `scripts/validate.py` enforces everything below. Run it before committing.
@@ -346,6 +347,57 @@ ancestry is derived rather than stored twice.
 rather than silently dropping a row. It is also enforced: attaching a muscle to
 an element its taxon lacks fails validation.
 
+## `nerves.json`
+
+Nerves are homology groups, like skeletal elements: one record, names as
+per-taxon attributes. The supracoracoid nerve of a lizard and the suprascapular
+nerve of a mammal are one record, because they supply one field.
+
+| Field | Notes |
+|---|---|
+| `id`, `label`, `kind` | `kind` from the file's `kinds` list |
+| `region` | `cranial` · `axial` · `forelimb` · `hindlimb` |
+| `cn` | Cranial nerve number |
+| `arch` | Pharyngeal arch supplied — the criterion that survives relocation |
+| `partOf` | Parent nerve or plexus. Builds the chain; cycles are an error |
+| `division` | `dorsal` / `ventral` limb-bud division, **inherited** down `partOf` |
+| `taxonNames`, `synonyms`, `note` | |
+
+**There is no `presence` block, deliberately.** Scoring 16 taxa against 49
+nerves would be 700 assertions these sources do not make: the named peripheral
+nerves are tetrapod descriptions and the homologous fin nerves are not
+individually named in this literature. Absent means unrecorded, as everywhere
+else.
+
+### On a muscle
+
+```jsonc
+"nerves": [ { "nerve": "radial-deep", "segments": "C7–C8", "note": "…" } ]
+```
+
+Placement follows `attachments`: on the muscle it is the consensus, on an
+occurrence it is what a source records for that taxon. The prose `innervation`
+stays and is not replaced — it says things ids cannot, such as which half of a
+muscle takes which nerve, or that a contribution is variable.
+
+`segments` is attached only where a string names one nerve, because a string
+naming two nerves and one range does not say which is which.
+
+### Why it earns its place
+
+`division` is inherited down `partOf`, so the deep branch of the radial is
+dorsal because the radial is. That gives a **cross-check the dataset can run on
+itself**: a limb muscle's nerve should sit in the division matching its
+`mass`, since both track the limb bud. The validator warns where they disagree.
+
+It currently tests 75 limb muscles and 75 agree. Getting there corrected two
+things — the suprascapular nerve was filed under the dorsal division when it
+leaves the upper trunk before the divisions split, and the caudofemoralis had
+been given an inferior gluteal supply by a seed rule reading a phrase that only
+located its mammalian homologue. One genuine exception survives, at occurrence
+level: the short head of biceps femoris is the one hamstring on the dorsal
+division.
+
 ## Adding a muscle
 
 1. Read the source. Add it to `sources.json` if new.
@@ -363,6 +415,10 @@ an element its taxon lacks fails validation.
 landmark, carrying `side`, `is_correlate`, `inherited` and `sources`. Filter
 `inherited == FALSE` for observed data only. `presence.csv` is the character
 matrix in long form, ready for comparative methods.
+
+`innervation.csv` is one row per muscle × scope × nerve, carrying the inherited
+`division`, the `chain` up to the plexus, and `division_agrees` — the mass
+cross-check, as a filterable column.
 
 `division.csv` is the differentiation character: one row per muscle × taxon with
 `division_rank` (0 single, 1 heads, 2 divided; blank for `variable`) and the two

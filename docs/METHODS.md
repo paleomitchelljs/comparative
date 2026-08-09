@@ -100,6 +100,13 @@ not reliable predictors of muscle size across 30 frog species, and report
 many-to-one form-function mapping. Treat a correlate as evidence that a muscle
 attached there, not as a measurement of it.
 
+Innervation is now structured as well as written out: every muscle carries
+`nerves` pointing into `data/nerves.json`, where nerves are homology groups with
+a `partOf` chain to the plexus. Because the dorsal/ventral division is inherited
+down that chain, the dataset can check a limb muscle's nerve against its
+limb-bud `mass` — the two should agree, and the validator says so when they do
+not. See [`SCHEMA.md`](SCHEMA.md).
+
 Conversely, several sources here weight **attachment geometry over innervation**
 where nerve topography turns out to be labile: Johnston (2011, 2014) on the jaw
 adductors, Winterbottom (1973) on the same complex in teleosts, and Hattori &

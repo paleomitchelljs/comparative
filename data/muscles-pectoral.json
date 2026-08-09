@@ -64,6 +64,11 @@
           "sources": [
             "ziermann-etal-2014",
             "diogo-ziermann-2015"
+          ],
+          "nerves": [
+            {
+              "nerve": "vagus-branchial"
+            }
           ]
         },
         {
@@ -74,6 +79,11 @@
           "innervation": "Branchial vagus.",
           "sources": [
             "naumann-etal-2017"
+          ],
+          "nerves": [
+            {
+              "nerve": "vagus-branchial"
+            }
           ]
         },
         {
@@ -112,7 +122,12 @@
               }
             ]
           },
-          "attachmentNote": "Two heads arising together and diverging posteriorly. The anterior head lands between the procoracohumeralis and the dorsalis scapulae, which is the topological fix on its identity."
+          "attachmentNote": "Two heads arising together and diverging posteriorly. The anterior head lands between the procoracohumeralis and the dorsalis scapulae, which is the topological fix on its identity.",
+          "nerves": [
+            {
+              "nerve": "accessory"
+            }
+          ]
         },
         {
           "taxon": "lepidosauria",
@@ -123,6 +138,11 @@
           "innervation": "Accessory nerve (XI).",
           "sources": [
             "abdala-diogo-2010"
+          ],
+          "nerves": [
+            {
+              "nerve": "accessory"
+            }
           ]
         },
         {
@@ -132,6 +152,11 @@
           "innervation": "Accessory nerve (XI).",
           "sources": [
             "abdala-diogo-2010"
+          ],
+          "nerves": [
+            {
+              "nerve": "accessory"
+            }
           ]
         },
         {
@@ -163,6 +188,12 @@
             {
               "name": "Sternocleidomastoideus"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "accessory",
+              "segments": "C3–C4"
+            }
           ]
         }
       ],
@@ -184,6 +215,14 @@
         "sefton-etal-2016",
         "walthall-ashley-ross-2006",
         "ziermann-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "accessory"
+        },
+        {
+          "nerve": "vagus-branchial"
+        }
       ]
     },
     {
@@ -319,6 +358,12 @@
           "innervation": "Long thoracic nerve (C5–C7).",
           "sources": [
             "ercoli-etal-2014"
+          ],
+          "nerves": [
+            {
+              "nerve": "long-thoracic",
+              "segments": "C5–C7"
+            }
           ]
         }
       ],
@@ -337,6 +382,17 @@
         "abdala-diogo-2010",
         "gambaryan-etal-2015",
         "ercoli-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "long-thoracic"
+        },
+        {
+          "nerve": "ventral-rami"
+        },
+        {
+          "nerve": "brachial-plexus"
+        }
       ]
     },
     {
@@ -463,6 +519,12 @@
             {
               "name": "Rhomboideus thoracis"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "dorsal-scapular",
+              "segments": "C4–C5"
+            }
           ]
         }
       ],
@@ -479,6 +541,12 @@
       },
       "sources": [
         "abdala-diogo-2010"
+      ],
+      "nerves": [
+        {
+          "nerve": "dorsal-scapular",
+          "segments": "C4–C5"
+        }
       ]
     },
     {
@@ -544,6 +612,11 @@
           "sources": [
             "abdala-diogo-2010",
             "sefton-etal-2016"
+          ],
+          "nerves": [
+            {
+              "nerve": "hypoglossal"
+            }
           ]
         },
         {
@@ -643,6 +716,14 @@
               "name": "Omotransversarius",
               "membership": "disputed"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            },
+            {
+              "nerve": "dorsal-scapular"
+            }
           ]
         }
       ],
@@ -663,6 +744,14 @@
         "abdala-diogo-2010",
         "sefton-etal-2016",
         "gambaryan-etal-2015"
+      ],
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        },
+        {
+          "nerve": "hypoglossal"
+        }
       ]
     },
     {
@@ -745,6 +834,11 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
       ]
     },
     {
@@ -910,7 +1004,13 @@
               }
             ]
           },
-          "attachmentNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology."
+          "attachmentNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology.",
+          "nerves": [
+            {
+              "nerve": "nerve-to-subclavius",
+              "segments": "C5–C6"
+            }
+          ]
         }
       ],
       "homology": {
@@ -924,6 +1024,17 @@
       "sources": [
         "abdala-diogo-2010",
         "gambaryan-etal-2015"
+      ],
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        },
+        {
+          "nerve": "brachial-plexus"
+        },
+        {
+          "nerve": "nerve-to-subclavius"
+        }
       ]
     },
     {
@@ -1051,6 +1162,14 @@
       },
       "sources": [
         "abdala-diogo-2010"
+      ],
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        },
+        {
+          "nerve": "brachial-plexus"
+        }
       ]
     },
     {
@@ -1206,7 +1325,15 @@
                 "landmark": "deltopectoral-crest"
               }
             ]
-          }
+          },
+          "nerves": [
+            {
+              "nerve": "pectoral-nerves"
+            },
+            {
+              "nerve": "brachial-plexus"
+            }
+          ]
         },
         {
           "taxon": "crocodylia",
@@ -1390,7 +1517,13 @@
                 }
               }
             ]
-          }
+          },
+          "nerves": [
+            {
+              "nerve": "pectoral-nerves",
+              "segments": "C5–T1"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1410,6 +1543,14 @@
         "molnar-etal-2018",
         "schreiweis-1982",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "pectoral-nerves"
+        },
+        {
+          "nerve": "brachial-plexus"
+        }
       ]
     },
     {
@@ -1745,6 +1886,12 @@
             {
               "name": "Infraspinatus"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "suprascapular",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -1766,6 +1913,12 @@
         "ghetie-etal-1976",
         "schreiweis-1982",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "suprascapular",
+          "segments": "C5–C6"
+        }
       ]
     },
     {
@@ -1901,6 +2054,12 @@
           "innervation": "Axillary nerve (C5–C6).",
           "sources": [
             "ercoli-etal-2014"
+          ],
+          "nerves": [
+            {
+              "nerve": "axillary",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -1918,6 +2077,14 @@
         "ercoli-etal-2014",
         "ghetie-etal-1976",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "axillary"
+        },
+        {
+          "nerve": "brachial-dorsal-division"
+        }
       ]
     },
     {
@@ -2123,6 +2290,12 @@
             {
               "name": "Pars clavicularis"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "axillary",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -2140,6 +2313,11 @@
         "abdala-diogo-2010",
         "ercoli-etal-2014",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
       ]
     },
     {
@@ -2230,6 +2408,12 @@
           "note": "Romer (1924) derived teres minor from the procoracohumeralis field rather than from scapulohumeralis anterior; the two hypotheses have not been decisively separated.",
           "sources": [
             "ercoli-etal-2014"
+          ],
+          "nerves": [
+            {
+              "nerve": "axillary",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -2245,6 +2429,11 @@
       },
       "sources": [
         "abdala-diogo-2010"
+      ],
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
       ]
     },
     {
@@ -2351,6 +2540,11 @@
       },
       "sources": [
         "abdala-diogo-2010"
+      ],
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
       ]
     },
     {
@@ -2557,7 +2751,13 @@
               }
             ]
           },
-          "attachmentNote": "The coracoid head is gone with the coracoid itself; only the scapular head persists, which is why the mammalian muscle is 'subscapularis' rather than 'subcoraco-scapularis'."
+          "attachmentNote": "The coracoid head is gone with the coracoid itself; only the scapular head persists, which is why the mammalian muscle is 'subscapularis' rather than 'subcoraco-scapularis'.",
+          "nerves": [
+            {
+              "nerve": "subscapular",
+              "segments": "C5–C6"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2573,6 +2773,12 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "subscapular",
+          "segments": "C5–C7"
+        }
       ]
     },
     {
@@ -2659,6 +2865,12 @@
           "innervation": "Lower subscapular nerve (C5–C6).",
           "sources": [
             "ercoli-etal-2014"
+          ],
+          "nerves": [
+            {
+              "nerve": "subscapular",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -2673,6 +2885,14 @@
       },
       "sources": [
         "abdala-diogo-2010"
+      ],
+      "nerves": [
+        {
+          "nerve": "subscapular"
+        },
+        {
+          "nerve": "thoracodorsal"
+        }
       ]
     },
     {
@@ -2797,6 +3017,14 @@
             "abdala-diogo-2010",
             "kepa-etal-2023",
             "navarro-etal-2023"
+          ],
+          "nerves": [
+            {
+              "nerve": "thoracodorsal"
+            },
+            {
+              "nerve": "brachial-dorsal-division"
+            }
           ]
         },
         {
@@ -2908,7 +3136,13 @@
                 }
               }
             ]
-          }
+          },
+          "nerves": [
+            {
+              "nerve": "thoracodorsal",
+              "segments": "C6–C8"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2927,6 +3161,14 @@
         "molnar-etal-2018",
         "schreiweis-1982",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "thoracodorsal"
+        },
+        {
+          "nerve": "brachial-dorsal-division"
+        }
       ]
     },
     {
@@ -3206,6 +3448,12 @@
             {
               "name": "Caput mediale"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "radial",
+              "segments": "C6–C8"
+            }
           ]
         }
       ],
@@ -3222,6 +3470,12 @@
         "abdala-diogo-2010",
         "ercoli-etal-2014",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "radial",
+          "segments": "C6–T1"
+        }
       ]
     },
     {
@@ -3338,6 +3592,12 @@
           "innervation": "Musculocutaneous nerve (C5–C6), with a variable radial contribution.",
           "sources": [
             "ercoli-etal-2014"
+          ],
+          "nerves": [
+            {
+              "nerve": "musculocutaneous",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -3355,6 +3615,12 @@
         "abdala-diogo-2010",
         "ercoli-etal-2014",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "musculocutaneous",
+          "segments": "C5–C6"
+        }
       ]
     },
     {
@@ -3508,6 +3774,12 @@
             {
               "name": "Caput breve"
             }
+          ],
+          "nerves": [
+            {
+              "nerve": "musculocutaneous",
+              "segments": "C5–C6"
+            }
           ]
         }
       ],
@@ -3522,6 +3794,12 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "musculocutaneous",
+          "segments": "C5–C6"
+        }
       ]
     },
     {
@@ -3706,7 +3984,13 @@
               }
             ]
           },
-          "attachmentNote": "Origin transfers to the coracoid process as the coracoid bone is lost."
+          "attachmentNote": "Origin transfers to the coracoid process as the coracoid bone is lost.",
+          "nerves": [
+            {
+              "nerve": "musculocutaneous",
+              "segments": "C5–C7"
+            }
+          ]
         }
       ],
       "homology": {
@@ -3724,6 +4008,12 @@
         "ercoli-etal-2014",
         "ghetie-etal-1976",
         "walthall-ashley-ross-2006"
+      ],
+      "nerves": [
+        {
+          "nerve": "musculocutaneous",
+          "segments": "C5–C7"
+        }
       ]
     },
     {
@@ -3821,6 +4111,11 @@
       },
       "sources": [
         "abdala-diogo-2010"
+      ],
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
       ]
     }
   ]
