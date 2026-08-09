@@ -136,13 +136,23 @@
         "related": [
           "caudal-musculature",
           "hypaxial-musculature",
-          "protractor-pectoralis"
+          "iliocostalis",
+          "longissimus-dorsi",
+          "protractor-pectoralis",
+          "supracostalis-dorsus-brevis",
+          "transversospinalis"
         ],
         "teaching": "The clearest case that innervation defines a muscle field: the dorsal/ventral ramus split is the same logic as the dorsal/ventral limb masses, and it is visible in a single cross-section."
       },
       "sources": [
-        "schilling-2011",
-        "cieri-2018"
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complexOf": [
+        "longissimus-dorsi",
+        "iliocostalis",
+        "transversospinalis",
+        "supracostalis-dorsus-brevis"
       ]
     },
     {
@@ -246,13 +256,27 @@
           "abductor-superficialis",
           "caudal-musculature",
           "epaxial-musculature",
-          "hypobranchial-muscles"
+          "hypobranchial-muscles",
+          "intercostales-externi",
+          "intercostales-interni",
+          "levator-costae",
+          "obliquus-externus",
+          "rectus-abdominis",
+          "transversus-abdominis"
         ],
         "teaching": "Answers the question students ask once they meet the dorsal/ventral limb masses: where did those masses come from? They are the hypaxial field, migrated."
       },
       "sources": [
-        "schilling-2011",
-        "cieri-2018"
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complexOf": [
+        "obliquus-externus",
+        "intercostales-externi",
+        "intercostales-interni",
+        "transversus-abdominis",
+        "rectus-abdominis",
+        "levator-costae"
       ]
     },
     {
@@ -354,6 +378,786 @@
         "schilling-2011",
         "tomanska-etal-2024"
       ]
+    },
+    {
+      "id": "longissimus-dorsi",
+      "name": "Longissimus dorsi",
+      "region": "axial",
+      "subregion": "epaxial — longitudinal tract",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; myotome dorsal to the horizontal septum, on the dorsal rami.",
+      "synonyms": [
+        "longissimus thoracis et lumborum (mammals)"
+      ],
+      "consensus": {
+        "origin": "Transverse processes and the ilium, spanning many segments.",
+        "insertion": "Transverse processes and ribs of more cranial vertebrae; the skull in some taxa.",
+        "action": "Lateral bending and, in mammals, sagittal extension; trunk stabilisation.",
+        "innervation": "Dorsal rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          },
+          {
+            "element": "ilium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          },
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. longissimus dorsi",
+          "present": "yes",
+          "note": "Cieri (2018) refers the detailed attachment tendons of longissimus, transversospinalis and iliocostalis to Gasc (1981), Ritter (1995) and Tsuihiji (2007) rather than redescribing them.",
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "M. longissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "M. longissimus thoracis et lumborum",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "One of the three longitudinal epaxial tracts of amniotes. The aponeurosis dividing it from the iliocostalis is itself a muscle attachment site in varanids — it carries the supracostalis dorsus brevis.",
+        "related": [
+          "epaxial-musculature",
+          "iliocostalis",
+          "supracostalis-dorsus-brevis",
+          "transversospinalis"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "epaxial-musculature"
+    },
+    {
+      "id": "iliocostalis",
+      "name": "Iliocostalis",
+      "region": "axial",
+      "subregion": "epaxial — longitudinal tract",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; myotome dorsal to the horizontal septum, on the dorsal rami.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Ilium and the ribs.",
+        "insertion": "Ribs and transverse processes of more cranial vertebrae.",
+        "action": "Lateral bending; rib and trunk stabilisation.",
+        "innervation": "Dorsal rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. iliocostalis",
+          "present": "yes",
+          "note": "Cieri (2018) describes it as very thin in Varanus exanthematicus.",
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "M. iliocostalis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "M. iliocostalis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The most lateral of the three epaxial tracts.",
+        "related": [
+          "epaxial-musculature",
+          "longissimus-dorsi",
+          "transversospinalis"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "epaxial-musculature"
+    },
+    {
+      "id": "transversospinalis",
+      "name": "Transversospinalis",
+      "region": "axial",
+      "subregion": "epaxial — longitudinal tract",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; myotome dorsal to the horizontal septum, on the dorsal rami.",
+      "synonyms": [
+        "transversospinal system (mammals)",
+        "multifidus",
+        "semispinalis",
+        "spinalis"
+      ],
+      "consensus": {
+        "origin": "Transverse processes and articular processes.",
+        "insertion": "Neural spines of more cranial vertebrae.",
+        "action": "Extension and rotation of the vertebral column; segmental stabilisation.",
+        "innervation": "Dorsal rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. transversospinalis",
+          "present": "yes",
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "crocodylia",
+          "name": "M. transversospinalis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Transversospinal system (multifidus, semispinalis and relatives)",
+          "present": "yes",
+          "note": "Subdivided into several entities in mammals; Schilling (2011) ties that subdivision to the evolution of a mobile, rib-free lumbar region.",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The medial epaxial tract, and the one that elaborates most in mammals.",
+        "related": [
+          "epaxial-musculature",
+          "longissimus-dorsi",
+          "iliocostalis"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "epaxial-musculature"
+    },
+    {
+      "id": "supracostalis-dorsus-brevis",
+      "name": "Supracostalis dorsus brevis",
+      "region": "axial",
+      "subregion": "epaxial — segmental costal",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; myotome dorsal to the horizontal septum, on the dorsal rami.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "The aponeurosis dividing the longissimus from the iliocostalis.",
+        "insertion": "Dorsal aspect of each dorsal rib, one- to two-thirds of the way down its length.",
+        "action": "Lifts each rib independently of its neighbours. Cieri (2018) positions it to produce caliper motion of the ribs — rotation about a dorsoventral axis.",
+        "innervation": "Dorsal rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. supracostalis dorsus brevis",
+          "present": "yes",
+          "origin": "Aponeurosis dividing longissimus from iliocostalis.",
+          "insertion": "Dorsal aspect of each dorsal rib, one- to two-thirds down its length.",
+          "note": "Segmentally divided into triangular sheets; strongly developed in Varanus exanthematicus. Its insertion tendons are continuous with those of the obliquus externus superficialis.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracolumbar-fascia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "sources": [
+            "cieri-2018"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "One of two muscles Cieri (2018) finds in Varanus exanthematicus and NOT in Iguana iguana, the other being the levator costae. Both take origin from the vertebral column or its fascia rather than from adjacent ribs, so each rib can be moved independently — a different mechanical arrangement from the rib-to-rib intercostal series.",
+        "openQuestion": "Whether these two muscles are varanid novelties or more widely distributed among squamates is open; Cieri notes that basic body-wall muscle descriptions are lacking for most reptiles.",
+        "related": [
+          "epaxial-musculature",
+          "levator-costae",
+          "longissimus-dorsi",
+          "obliquus-externus"
+        ],
+        "teaching": "A concrete case where adding a muscle changes what the skeleton can do: rib-to-vertebra muscles allow independent rib motion that rib-to-rib muscles cannot."
+      },
+      "sources": [
+        "cieri-2018"
+      ],
+      "complex": "epaxial-musculature"
+    },
+    {
+      "id": "levator-costae",
+      "name": "Levator costae",
+      "region": "axial",
+      "subregion": "hypaxial — segmental costal",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "primaxial",
+      "developmental": "Somitic; myotome ventral to the horizontal septum, on the ventral rami.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Dorsocaudal aspect of the diapophysis.",
+        "insertion": "Fanning out onto the proximal part of the articulating rib.",
+        "action": "Elevates each rib relative to its own vertebra.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "diapophysis",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs",
+            "side": "proximal"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. levator costae",
+          "present": "yes",
+          "origin": "Dorsocaudal aspect of the diapophysis.",
+          "insertion": "Proximal rib, by fanning fibres.",
+          "note": "A small muscle deep to the longissimus dorsi and the external intercostal, connecting each rib to its articulating vertebra. Absent in Iguana iguana.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "landmark": "diapophysis",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs",
+                "side": "proximal"
+              }
+            ]
+          },
+          "sources": [
+            "cieri-2018"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "The hypaxial counterpart of the supracostalis dorsus brevis, and the second of the two muscles Cieri finds in Varanus but not Iguana. Note the pair straddles the horizontal septum: one epaxial on dorsal rami, one hypaxial on ventral rami, doing mechanically similar jobs.",
+        "related": [
+          "hypaxial-musculature",
+          "supracostalis-dorsus-brevis",
+          "intercostales-externi"
+        ],
+        "teaching": "Two muscles with the same mechanical role on opposite sides of the epaxial/hypaxial boundary — a reminder that the division is developmental and neural, not functional."
+      },
+      "sources": [
+        "cieri-2018"
+      ],
+      "complex": "hypaxial-musculature"
+    },
+    {
+      "id": "obliquus-externus",
+      "name": "Obliquus externus",
+      "region": "axial",
+      "subregion": "hypaxial — body wall, layer 1",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "superficialis",
+      "developmental": "Somitic; myotome ventral to the horizontal septum, on the ventral rami.",
+      "synonyms": [
+        "obliquus externus superficialis + profundus"
+      ],
+      "consensus": {
+        "origin": "Margin between the rectus abdominis lateralis and ventralis.",
+        "insertion": "Lateral aspect of the dorsal ribs, about a third of the way down, by short tendons.",
+        "action": "Compresses the body wall; contributes to ventilation and trunk stabilisation.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "linea-alba"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. obliquus externus (superficialis + profundus)",
+          "present": "yes",
+          "note": "Well developed in Varanus exanthematicus. The superficialis covers the lateral body wall; its insertion tendons are continuous with those of the supracostalis dorsus brevis, so the epaxial and hypaxial sheets meet at the rib.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "linea-alba"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ]
+          },
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "M. obliquus externus abdominis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Outermost of the four body-wall layers Cieri (2018) recognises: obliquus externus, intercostales externi, intercostales interni, transversus, from superficial to deep.",
+        "related": [
+          "hypaxial-musculature",
+          "intercostales-externi",
+          "rectus-abdominis",
+          "supracostalis-dorsus-brevis",
+          "transversus-abdominis"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "hypaxial-musculature"
+    },
+    {
+      "id": "intercostales-externi",
+      "name": "Intercostales externi",
+      "region": "axial",
+      "subregion": "hypaxial — body wall, layer 2",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "superficialis",
+      "developmental": "Somitic; myotome ventral to the horizontal septum, on the ventral rami.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Cranial aspect of each rib.",
+        "insertion": "Caudal aspect of the next most cranial rib.",
+        "action": "Draws successive ribs together; ventilation.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs",
+            "side": "posterior"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "Mm. intercostales externi",
+          "present": "yes",
+          "note": "Fibres course dorsocranially at about 15° above the long axis of the body, covering the costal cartilages of the floating ribs and the dorsal third of the sternal portion of each true rib.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs",
+                "side": "posterior"
+              }
+            ]
+          },
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Mm. intercostales externi",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Rib-to-rib, unlike the levator costae and supracostalis dorsus brevis, which run rib-to-vertebra. Cieri's fibre-angle measurements (about 15° here against about 60° for the interni) are what distinguish the two layers.",
+        "related": [
+          "hypaxial-musculature",
+          "intercostales-interni",
+          "levator-costae",
+          "obliquus-externus"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "hypaxial-musculature"
+    },
+    {
+      "id": "intercostales-interni",
+      "name": "Intercostales interni",
+      "region": "axial",
+      "subregion": "hypaxial — body wall, layer 3",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "profundus",
+      "developmental": "Somitic; myotome ventral to the horizontal septum, on the ventral rami.",
+      "synonyms": [],
+      "consensus": {
+        "origin": "Cranial aspect of each dorsal rib.",
+        "insertion": "Sternocostal joints in the region of the true ribs; ventral aspect of each floating rib.",
+        "action": "Opposes the externi; ventilation.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "true-ribs",
+            "landmark": "sternocostal-joint"
+          },
+          {
+            "element": "floating-ribs",
+            "side": "ventral"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "Mm. intercostales interni",
+          "present": "yes",
+          "note": "Course caudodorsally at about 60° above the long axis between the dorsal ribs, and parallel to it between the sternal segments of the true ribs.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "true-ribs",
+                "landmark": "sternocostal-joint"
+              },
+              {
+                "element": "floating-ribs",
+                "side": "ventral"
+              }
+            ]
+          },
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "Mm. intercostales interni",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Third of the four body-wall layers.",
+        "related": [
+          "hypaxial-musculature",
+          "intercostales-externi",
+          "transversus-abdominis"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "hypaxial-musculature"
+    },
+    {
+      "id": "transversus-abdominis",
+      "name": "Transversus abdominis",
+      "region": "axial",
+      "subregion": "hypaxial — body wall, layer 4",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "profundus",
+      "developmental": "Somitic; myotome ventral to the horizontal septum, on the ventral rami.",
+      "synonyms": [
+        "transversus"
+      ],
+      "consensus": {
+        "origin": "Medial fascia deep to the sternum, and the fascia at the lateral margin of the rectus abdominis caudal to the sternum.",
+        "insertion": "Cranial aspect of the ventral quarter of the vertebral portion of each bipartite dorsal rib; the lumbodorsal fascia caudal to those ribs.",
+        "action": "Compresses the abdomen; supports the viscera.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "linea-alba"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs",
+            "side": "ventral"
+          },
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. transversus",
+          "present": "yes",
+          "note": "The deepest and thinnest of the body-wall muscles in Varanus exanthematicus.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "linea-alba"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs",
+                "side": "ventral"
+              },
+              {
+                "element": "thoracolumbar-fascia"
+              }
+            ]
+          },
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "M. transversus abdominis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Deepest of the four body-wall layers.",
+        "related": [
+          "hypaxial-musculature",
+          "intercostales-interni",
+          "obliquus-externus",
+          "rectus-abdominis"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "hypaxial-musculature"
+    },
+    {
+      "id": "rectus-abdominis",
+      "name": "Rectus abdominis",
+      "region": "axial",
+      "subregion": "hypaxial — ventral longitudinal",
+      "segment": "axial",
+      "mass": "somitic-axial",
+      "layer": "superficialis",
+      "developmental": "Somitic; myotome ventral to the horizontal septum, on the ventral rami.",
+      "synonyms": [
+        "rectus abdominis lateralis + ventralis"
+      ],
+      "consensus": {
+        "origin": "Pubis and the ventral pelvic girdle.",
+        "insertion": "Sternum, costal cartilages and the linea alba.",
+        "action": "Flexes the trunk. Schilling (2011) calls it the most important sagittal flexor of the mammalian trunk.",
+        "innervation": "Ventral rami of the spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "linea-alba"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "lepidosauria",
+          "name": "M. rectus abdominis (ventralis + lateralis)",
+          "present": "yes",
+          "note": "Cieri (2018) distinguishes a main ventral belly from a superficial rectus abdominis lateralis; the margin between them carries the origin of the obliquus externus superficialis.",
+          "sources": [
+            "cieri-2018"
+          ]
+        },
+        {
+          "taxon": "theria",
+          "name": "M. rectus abdominis",
+          "present": "yes",
+          "sources": [
+            "schilling-2011"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The ventral longitudinal member of the hypaxial series, outside the four transverse body-wall layers.",
+        "related": [
+          "hypaxial-musculature",
+          "transversus-abdominis",
+          "obliquus-externus"
+        ]
+      },
+      "sources": [
+        "cieri-2018",
+        "schilling-2011"
+      ],
+      "complex": "hypaxial-musculature"
     }
   ]
 }

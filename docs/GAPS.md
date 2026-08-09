@@ -2,7 +2,7 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 98 muscles · 573 occurrences · 197 skeletal elements · 59 sources · 16 taxa.
+**State:** 108 muscles · 534 present occurrences · 202 skeletal elements · 59 sources · 16 taxa.
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -27,7 +27,7 @@ illustrated.
 | thigh | 36 | 6 | 17% | 14% |
 | **hand** | 59 | 8 | **14%** | 0% |
 | forearm | 94 | 7 | 7% | 6% |
-| **axial** | 20 | 0 | **0%** | — |
+| **axial** | 41 | 6 | **15%** | — |
 
 Overall **23%**, from 17%. Architecture records 10, from 4. Osteological
 correlates carrying a muscle: 59 of 75 (79%).
@@ -266,7 +266,6 @@ is precisely what this dataset's attachment records are for, and it is what make
 |---|---|
 | **Leavey et al. (2024)**, **Přikryl et al. (2009)** | Anuran pelvis and hindlimb detail |
 | **Schreiweis (1982)** | Penguin appendicular myology |
-| **Cieri (2018)** | Squamate axial detail, to split the coarse axial records |
 | Werneburg & Maier (2019), Werneburg & Preuschoft (2024), Gai et al. (2022), Miyashita (2016), Clack et al. (2016), Higashiyama et al. (2016) | Cranial detail and the spiracular/ear sequence |
 | Demuth et al. (2022) | Method for 3D muscle volumes from skeletal geometry — read before phase 4 |
 

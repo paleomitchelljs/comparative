@@ -57,7 +57,7 @@ for why that matters.
 
 ## What's in it
 
-98 muscle records, 573 taxon occurrences, 197 skeletal elements, 59 sources, 16 operational taxa.
+108 muscle records, 202 skeletal elements, 59 sources, 16 operational taxa.
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
 declared out of scope. Measured coverage and what is still missing:
@@ -66,7 +66,7 @@ declared out of scope. Measured coverage and what is still missing:
 | Region | Records | Principal source |
 |---|---|---|
 | Cranial | 15 | Werneburg 2011; Johnston 2011, 2014; Ziermann & Diogo 2019 |
-| Axial | 3 | Schilling 2011; Cieri 2018 |
+| Axial | 13 | Schilling 2011; Cieri 2018 |
 | Ancestral paired fin | 9 | Diogo et al. 2016; Winterbottom 1973 |
 | Pectoral girdle and arm | 21 | Abdala & Diogo 2010; Molnar et al. 2018 |
 | Forearm and hand | 27 | Abdala & Diogo 2010; Ercoli et al. 2014 |

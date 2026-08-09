@@ -3127,6 +3127,109 @@
           "pereyra-etal-2024"
         ]
       }
+    },
+    {
+      "id": "diapophysis",
+      "label": "Diapophysis",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "transverse-process",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia",
+          "aves",
+          "testudines"
+        ],
+        "sources": [
+          "cieri-2018"
+        ],
+        "note": "The rib-bearing facet on the transverse process. Origin of the levator costae in varanids, which is one of the two muscles connecting each rib independently to the vertebral column."
+      }
+    },
+    {
+      "id": "cervical-ribs",
+      "label": "Cervical ribs",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "ribs",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia",
+          "aves"
+        ],
+        "sources": [
+          "cieri-2018"
+        ],
+        "note": "Cieri (2018) reports three to four in most varanids examined."
+      }
+    },
+    {
+      "id": "true-ribs",
+      "label": "True ribs",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "ribs",
+      "presence": {
+        "default": "yes",
+        "absent": [
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "sources": [
+          "cieri-2018"
+        ],
+        "note": "Reach the sternum by a sternal portion of calcified cartilage; three in most varanids."
+      }
+    },
+    {
+      "id": "floating-ribs",
+      "label": "Floating ribs",
+      "kind": "bone",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "ribs",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia",
+          "theria"
+        ],
+        "sources": [
+          "cieri-2018"
+        ],
+        "note": "Bony vertebral portion plus a costal cartilage that does not reach the sternum."
+      }
+    },
+    {
+      "id": "sternocostal-joint",
+      "label": "Sternocostal joint",
+      "kind": "cartilage",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": "true-ribs",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia",
+          "aves",
+          "theria"
+        ],
+        "sources": [
+          "cieri-2018"
+        ]
+      }
     }
   ]
 }
