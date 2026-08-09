@@ -212,6 +212,53 @@ SEED = {
                          "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
                          "shiftNote": "From the ventral proximal tibia and the distal ventral tibial crest, by a broad aponeurosis onto the proximolateral margins of the first three phalanges — not onto a calcaneum, unlike the mammalian condition."},
     },
+    # --- Caiman yacare crural and pedal muscles, Pereyra et al. (2024).
+    # Crocodylia had nothing in the leg or foot regions before this.
+    "gastrocnemius": {
+        "crocodylia": {"origin": ["femoral-epicondyle-lateral", "tibia"], "insertion": ["calcaneum"],
+                       "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
+                       "shiftNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon."},
+    },
+    "tibialis-anterior": {
+        "crocodylia": {"origin": ["tibia"], "insertion": ["metatarsals"],
+                       "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
+                       "shiftNote": "From the proximomedial tibia to the dorsolateral proximal metatarsals I-II; the metatarsal bases carry coarse rugosities marking the insertion."},
+    },
+    "fibularis-group": {
+        "crocodylia": {"origin": ["fibula", "iliofibular-tubercle"], "insertion": ["metatarsals"],
+                       "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
+                       "shiftNote": "Fibularis longus arises on the fibular shaft distal to the iliofibular tubercle; brevis from the distal fibular shaft and the anterior tibial aponeurosis. Both insert on the anterior surface of metatarsal V."},
+    },
+    "extensor-digitorum-longus-hl": {
+        "crocodylia": {"origin": ["femoral-extensor-fossa", "femoral-epicondyle-lateral"], "insertion": ["metatarsals"],
+                       "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
+                       "shiftNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which."},
+    },
+    "flexor-digitorum-longus-hl": {
+        "crocodylia": {"origin": ["femoral-epicondyle-lateral", "femur"], "insertion": ["ungual-phalanges"],
+                       "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
+                       "shiftNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III."},
+    },
+    "flexores-breves-superficiales-pes": {
+        "crocodylia": {"origin": ["calcaneum"], "insertion": ["phalanges-pes"],
+                       "sources": ["pereyra-etal-2024"],
+                       "shiftNote": "Flexor digitorum brevis superficialis, digits I-IV, from the ventral calcaneum with digit-specific variation. Layer 1 of the seven-layer pedal scheme Pereyra et al. set out."},
+    },
+    "flexores-breves-profundi-pes": {
+        "crocodylia": {"origin": ["metatarsals", "metatarsal-striae", "calcaneum"], "insertion": ["phalanges-pes"],
+                       "sources": ["pereyra-etal-2024"],
+                       "shiftNote": "Flexor digitorum brevis profundus, digits I-IV, from metatarsals I-III and V and the distal calcaneum. The metatarsal origins are marked by fine striae — the pedal correlates Pereyra et al. identify for the first time."},
+    },
+    "extensores-digitorum-breves": {
+        "crocodylia": {"origin": ["astragalus", "calcaneum"], "insertion": ["phalanges-pes"],
+                       "sources": ["pereyra-etal-2024", "abdala-diogo-2010"],
+                       "shiftNote": "Recorded from the FOOT: extensor digitorum brevis superficialis arises from the astragalar hollow and lateral calcaneum; the deep layer arises from the proximodorsal metatarsals, whose fine striations run parallel to the metatarsal long axis."},
+    },
+    "contrahentes-digitorum-pes": {
+        "crocodylia": {"origin": ["metatarsals", "metatarsal-striae"], "insertion": ["metatarsals"],
+                       "sources": ["pereyra-etal-2024"],
+                       "shiftNote": "The interdigiti dorsales and ventrales of Pereyra et al., running between successive metatarsals; their origins are marked by longitudinally oriented fine striae on the proximolateral metatarsal surfaces."},
+    },
     "supracoracoideus": {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},

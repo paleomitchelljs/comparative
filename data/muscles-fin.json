@@ -15,6 +15,8 @@
       "developmental": "Ventral (abductor) fin muscle mass. In tetrapods this becomes the flexor mass, following the internal rotation of the paired appendages that turned the ventrolateral abductor musculature toward the body.",
       "synonyms": [
         "abductor (depressor) superficialis",
+        "abductor pectoralis superficialis (Greene et al. 1913)",
+        "arcuo-clavicularis (Winterbottom 1973)",
         "ventral superficial fin mass"
       ],
       "consensus": {
@@ -70,8 +72,25 @@
           "present": "yes",
           "note": "Present in both appendages of Polypterus. Together with the abductor profundus this is the poorly differentiated superficial/deep ventral mass that characterises plesiomorphic actinopterygian fins.",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "winterbottom-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "cleithrum-flange"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Teleost condition: origin chiefly or entirely on the lateral cleithrum and the posterolateral side of its anterolateral flange, occasionally from the coracoid or even the radials. Insertion diffuse in generalised fishes, consolidating into tendons on the outer anterior bases of the fin rays in more advanced forms — seldom a tendon to the marginal ray."
         },
         {
           "taxon": "actinistia",
@@ -170,6 +189,7 @@
         "related": [
           "abductor-profundus",
           "adductor-superficialis",
+          "arrector-ventralis",
           "hypaxial-musculature",
           "pterygialis-cranialis"
         ],
@@ -177,7 +197,8 @@
       },
       "sources": [
         "diogo-etal-2016",
-        "mansuit-herrel-2021"
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
       ]
     },
     {
@@ -191,7 +212,10 @@
       "ancestralNode": "LCA of extant gnathostomes",
       "developmental": "Deep layer of the ventral (abductor) fin muscle mass.",
       "synonyms": [
+        "abducteurs profonds",
         "abductor (depressor) profundus",
+        "abductor medius",
+        "abductor pectoralis profundus",
         "ventral deep fin mass"
       ],
       "consensus": {
@@ -238,8 +262,22 @@
           "note": "In Polypterus the deep groups contribute most of the fin muscle mass — the reverse of the tetrapod condition.",
           "sources": [
             "diogo-etal-2016",
-            "mansuit-herrel-2021"
-          ]
+            "mansuit-herrel-2021",
+            "winterbottom-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "The deep layer of the ventrolateral (abductor) mass. Winterbottom notes the dorsomedial adductor mass separates into two layers before the abductor mass does, judging from Elops."
         },
         {
           "taxon": "actinistia",
@@ -323,7 +361,8 @@
       },
       "sources": [
         "diogo-etal-2016",
-        "mansuit-herrel-2021"
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
       ]
     },
     {
@@ -337,7 +376,9 @@
       "ancestralNode": "LCA of extant gnathostomes",
       "developmental": "Dorsal (adductor / 'levator') fin muscle mass. Becomes the extensor mass in tetrapods.",
       "synonyms": [
+        "adducteur externe",
         "adductor (levator) superficialis",
+        "adductor pectoralis superficialis",
         "dorsal superficial fin mass"
       ],
       "consensus": {
@@ -388,8 +429,25 @@
           "name": "Adductor superficialis",
           "present": "yes",
           "sources": [
-            "diogo-etal-2016"
-          ]
+            "diogo-etal-2016",
+            "winterbottom-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Dorsomedial mass; the first of the two masses to separate into superficial and deep layers."
         },
         {
           "taxon": "actinistia",
@@ -475,15 +533,17 @@
         "confidence": "moderate",
         "notes": "Mirror argument to the abductor superficialis, and equally dependent on Gadow's partitioning scenario. The dorsal/ventral distinction is the most durable thing about appendicular muscles: it is confirmed independently by innervation, since dorsal-mass derivatives take the radial and axillary nerves and ventral-mass derivatives the median, ulnar and musculocutaneous.",
         "related": [
-          "adductor-profundus",
           "abductor-superficialis",
+          "adductor-profundus",
+          "arrector-dorsalis",
           "pterygialis-caudalis"
         ],
         "teaching": "Establish the dorsal/ventral mass split at the fish level and every tetrapod limb muscle can be placed within it."
       },
       "sources": [
         "diogo-etal-2016",
-        "mansuit-herrel-2021"
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
       ]
     },
     {
@@ -497,7 +557,9 @@
       "ancestralNode": "LCA of extant gnathostomes",
       "developmental": "Deep layer of the dorsal (adductor) fin muscle mass.",
       "synonyms": [
+        "adducteur interne",
         "adductor (levator) profundus",
+        "adductor pectoralis profundus",
         "dorsal deep fin mass"
       ],
       "consensus": {
@@ -544,8 +606,22 @@
           "note": "With the abductor profundus, contributes most of the paired-fin muscle mass in actinopterygians.",
           "sources": [
             "diogo-etal-2016",
-            "mansuit-herrel-2021"
-          ]
+            "mansuit-herrel-2021",
+            "winterbottom-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays"
+              }
+            ]
+          },
+          "attachmentNote": "Deep layer of the dorsomedial mass."
         },
         {
           "taxon": "actinistia",
@@ -625,7 +701,8 @@
       },
       "sources": [
         "diogo-etal-2016",
-        "mansuit-herrel-2021"
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
       ]
     },
     {
@@ -1000,6 +1077,152 @@
       },
       "sources": [
         "diogo-etal-2016"
+      ]
+    },
+    {
+      "id": "arrector-ventralis",
+      "name": "Arrector ventralis",
+      "region": "fin",
+      "subregion": "marginal ray, ventral",
+      "segment": "fin",
+      "mass": "ventral",
+      "layer": "superficialis",
+      "ancestralNode": "Actinopterygii (teleost differentiation)",
+      "developmental": "Separates from the abductor-arrector anlage — developmentally the first section of the ventrolateral mass to differentiate (Jessen, in Winterbottom 1973).",
+      "synonyms": [
+        "arrector ventralis",
+        "abductor radialis (partim)"
+      ],
+      "consensus": {
+        "origin": "Lateral cleithrum, ventrolateral to the abductor superficialis.",
+        "insertion": "Marginal (anteriormost) fin ray, ventrolaterally.",
+        "action": "Independent control of the leading-edge ray — the basis of the fine pectoral-fin manoeuvring that ray-finned fishes use for braking, turning and hovering.",
+        "innervation": "Ventral rami of the appendicular spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays",
+            "landmark": "marginal-fin-ray"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "actinopterygii",
+          "name": "Arrector ventralis",
+          "present": "yes",
+          "origin": "Lateral cleithrum.",
+          "insertion": "Marginal fin ray, ventrolaterally.",
+          "note": "Winterbottom describes the generalised teleost pectoral fin as a pair of muscles either side of the girdle plus a powerful muscle to the marginal ray — arrector ventralis ventrolaterally, arrector dorsalis dorsomedially. All remaining rays are served by a single undifferentiated sheet.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays",
+                "landmark": "marginal-fin-ray"
+              }
+            ]
+          },
+          "sources": [
+            "winterbottom-1973"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "A ray-finned differentiation with no tetrapod counterpart: it serves a single fin ray, and fin rays have no homologue in the tetrapod autopod. Its interest is as a contrast — teleosts achieved fine appendage control by specialising muscles onto individual rays, tetrapods by subdividing masses along a proximo-distal skeletal axis.",
+        "related": [
+          "abductor-superficialis",
+          "arrector-dorsalis"
+        ],
+        "teaching": "Two different solutions to the same problem of fine appendage control, from the same ancestral two-mass fin."
+      },
+      "sources": [
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "id": "arrector-dorsalis",
+      "name": "Arrector dorsalis",
+      "region": "fin",
+      "subregion": "marginal ray, dorsal",
+      "segment": "fin",
+      "mass": "dorsal",
+      "layer": "superficialis",
+      "ancestralNode": "Actinopterygii (teleost differentiation)",
+      "developmental": "Dorsomedial counterpart of the arrector ventralis, from the adductor mass.",
+      "synonyms": [
+        "arrector dorsalis",
+        "adductor radialis (partim)"
+      ],
+      "consensus": {
+        "origin": "Medial cleithrum and scapulocoracoid.",
+        "insertion": "Marginal fin ray, dorsomedially.",
+        "action": "Elevates and rotates the leading-edge ray.",
+        "innervation": "Dorsal rami of the appendicular spinal nerves."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays",
+            "landmark": "marginal-fin-ray"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "taxon": "actinopterygii",
+          "name": "Arrector dorsalis",
+          "present": "yes",
+          "attachments": {
+            "origin": [
+              {
+                "element": "cleithrum"
+              },
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-rays",
+                "landmark": "marginal-fin-ray"
+              }
+            ]
+          },
+          "sources": [
+            "winterbottom-1973"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "See the arrector ventralis. Together they are the teleost solution to leading-edge control.",
+        "related": [
+          "adductor-superficialis",
+          "arrector-ventralis"
+        ]
+      },
+      "sources": [
+        "winterbottom-1973"
       ]
     }
   ]

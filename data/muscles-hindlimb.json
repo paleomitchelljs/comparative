@@ -1888,9 +1888,27 @@
           "name": "Gastrocnemius",
           "present": "yes",
           "sources": [
+            "allen-etal-2014",
             "diogo-molnar-2014",
-            "allen-etal-2014"
-          ]
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femoral-condyles",
+                "landmark": "femoral-epicondyle-lateral"
+              },
+              {
+                "element": "tibia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "calcaneum"
+              }
+            ]
+          },
+          "attachmentNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon."
         },
         {
           "taxon": "aves",
@@ -2035,8 +2053,22 @@
           "name": "Tibialis anterior",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "From the proximomedial tibia to the dorsolateral proximal metatarsals I-II; the metatarsal bases carry coarse rugosities marking the insertion."
         },
         {
           "taxon": "aves",
@@ -2172,6 +2204,34 @@
           }
         },
         {
+          "taxon": "crocodylia",
+          "name": "Extensor digitorum longus",
+          "present": "yes",
+          "note": "From the lateral femoral extensor fossa and condyle to the proximodorsal metatarsals III-IV.",
+          "sources": [
+            "diogo-molnar-2014",
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur",
+                "landmark": "femoral-extensor-fossa"
+              },
+              {
+                "element": "femoral-condyles",
+                "landmark": "femoral-epicondyle-lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which."
+        },
+        {
           "taxon": "aves",
           "name": "Extensor digitorum longus",
           "present": "uncertain",
@@ -2210,7 +2270,8 @@
       },
       "sources": [
         "diogo-molnar-2014",
-        "hattori-tsuihiji-2021"
+        "hattori-tsuihiji-2021",
+        "pereyra-etal-2024"
       ]
     },
     {
@@ -2256,6 +2317,33 @@
           ]
         },
         {
+          "taxon": "crocodylia",
+          "name": "Fibularis longus + brevis",
+          "present": "yes",
+          "note": "Both insert on the anterior surface of metatarsal V.",
+          "sources": [
+            "diogo-molnar-2014",
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula"
+              },
+              {
+                "element": "fibula",
+                "landmark": "iliofibular-tubercle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "Fibularis longus arises on the fibular shaft distal to the iliofibular tubercle; brevis from the distal fibular shaft and the anterior tibial aponeurosis. Both insert on the anterior surface of metatarsal V."
+        },
+        {
           "taxon": "aves",
           "name": "Fibularis longus + brevis",
           "present": "yes",
@@ -2289,7 +2377,8 @@
         "teaching": "Innervation as a decisive argument. Two muscles sit in the lateral compartment and carry a lateral-compartment name, but their nerve says they belong to the extensor group."
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
       ]
     },
     {
@@ -2507,6 +2596,33 @@
           "attachmentNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."
         },
         {
+          "taxon": "crocodylia",
+          "name": "Flexor digitorum longus",
+          "present": "yes",
+          "note": "Femoral origin; inserts on the proximoventral unguals I-III.",
+          "sources": [
+            "diogo-molnar-2014",
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femoral-condyles",
+                "landmark": "femoral-epicondyle-lateral"
+              },
+              {
+                "element": "femur"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ungual-phalanges"
+              }
+            ]
+          },
+          "attachmentNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III."
+        },
+        {
           "taxon": "aves",
           "name": "Flexor digitorum longus",
           "present": "yes",
@@ -2541,7 +2657,8 @@
         "teaching": "The distal-greater-than-proximal similarity gradient is visible in a single salamander dissection."
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
       ]
     },
     {
@@ -2619,6 +2736,28 @@
           ]
         },
         {
+          "taxon": "crocodylia",
+          "name": "Flexor digitorum brevis superficialis",
+          "present": "yes",
+          "note": "Layer 1 of the seven-layer pedal scheme.",
+          "sources": [
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "calcaneum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              }
+            ]
+          },
+          "attachmentNote": "Flexor digitorum brevis superficialis, digits I-IV, from the ventral calcaneum with digit-specific variation. Layer 1 of the seven-layer pedal scheme Pereyra et al. set out."
+        },
+        {
           "taxon": "theria",
           "name": "Flexor digitorum brevis",
           "present": "yes",
@@ -2643,7 +2782,8 @@
       },
       "sources": [
         "blotto-etal-2020",
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
       ]
     },
     {
@@ -2719,6 +2859,31 @@
           ]
         },
         {
+          "taxon": "crocodylia",
+          "name": "Interdigiti dorsales + ventrales",
+          "present": "yes",
+          "note": "Running between successive metatarsals.",
+          "sources": [
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metatarsals"
+              },
+              {
+                "element": "metatarsal-striae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "The interdigiti dorsales and ventrales of Pereyra et al., running between successive metatarsals; their origins are marked by longitudinally oriented fine striae on the proximolateral metatarsal surfaces."
+        },
+        {
           "taxon": "theria",
           "name": "Adductor hallucis",
           "present": "variable",
@@ -2741,7 +2906,8 @@
       },
       "sources": [
         "blotto-etal-2020",
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
       ]
     },
     {
@@ -2822,6 +2988,34 @@
           ]
         },
         {
+          "taxon": "crocodylia",
+          "name": "Flexor digitorum brevis profundus",
+          "present": "yes",
+          "note": "Deep flexor layer; metatarsal origins marked by fine striae.",
+          "sources": [
+            "pereyra-etal-2024"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metatarsals"
+              },
+              {
+                "element": "metatarsal-striae"
+              },
+              {
+                "element": "calcaneum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              }
+            ]
+          },
+          "attachmentNote": "Flexor digitorum brevis profundus, digits I-IV, from metatarsals I-III and V and the distal calcaneum. The metatarsal origins are marked by fine striae — the pedal correlates Pereyra et al. identify for the first time."
+        },
+        {
           "taxon": "theria",
           "name": "Interossei (plantar and dorsal)",
           "present": "yes",
@@ -2845,7 +3039,8 @@
       },
       "sources": [
         "blotto-etal-2020",
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
       ]
     }
   ]

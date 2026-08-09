@@ -2,7 +2,7 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 95 muscles · 560 occurrences · 188 skeletal elements · 55 sources · 16 taxa.
+**State:** 97 muscles · 570 occurrences · 197 skeletal elements · 57 sources · 16 taxa.
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -15,21 +15,26 @@ scope. Duplicates are removed as they are found.
 the number that decides whether attachment change is analysable or merely
 illustrated.
 
-| Region | Occurrences | With attachments | %att | Two passes ago |
+| Region | Occurrences | With attachments | %att | Three passes ago |
 |---|---:|---:|---:|---:|
-| fin | 32 | 13 | 41% | 41% |
+| **fin** | 34 | 19 | **56%** | 41% |
+| **foot** | 15 | 6 | **40%** | 0% |
 | pectoral | 96 | 36 | 38% | 38% |
+| **leg** | 30 | 9 | **30%** | 0% |
 | arm | 33 | 9 | 27% | 27% |
-| **foot** | 12 | 3 | **25%** | 0% |
 | pelvic | 33 | 8 | 24% | 24% |
 | cranial | 60 | 10 | 17% | 17% |
-| **thigh** | 36 | 6 | **17%** | 14% |
-| **leg** | 27 | 4 | **15%** | 0% |
-| **hand** | 59 | 7 | **12%** | 0% |
+| thigh | 36 | 6 | 17% | 14% |
+| **hand** | 59 | 8 | **14%** | 0% |
 | forearm | 94 | 7 | 7% | 6% |
 | **axial** | 20 | 0 | **0%** | — |
 
-Overall 21%, from 17%. Architecture records 10, from 4.
+Overall **23%**, from 17%. Architecture records 10, from 4. Osteological
+correlates carrying a muscle: 59 of 75 (79%).
+
+The autopod is no longer the hole — **the forearm is**, at 7% across 94
+occurrences, the largest region with the least attachment detail. Axial is 0% by
+construction: the three records are whole muscle tracts, not individual muscles.
 
 **The autopod is half fixed.** Blotto et al. (2020) has now been mined: the hand
 went 0% → 12%, the foot 0% → 25%, and Anura as a whole 7% → 25%. That work also
@@ -222,11 +227,27 @@ grounds that nerve-muscle specificity is itself variable across taxa. That is th
 reverse of the priority used elsewhere in this dataset. Both positions are
 defensible and the dataset now holds both.
 
+## Fetched from the web this pass
+
+Open-access papers can be pulled by DOI without a local copy. Wiley and PeerJ
+block direct fetching, but Europe PMC and PubMed Central serve the full text —
+including **green** OA, where the publisher page is paywalled but a repository
+copy exists.
+
+| Source | Route | What it gave |
+|---|---|---|
+| **Hattori & Tsuihiji (2021)** | Europe PMC | Sauropsid pedal homology; contested anterior tibial muscles |
+| **Pereyra et al. (2024)** | PMC, green OA | *Caiman* crural and pedal myology in seven layers; **first pedal osteological correlates** for a crocodylian |
+
+Pereyra et al. took Crocodylia from nothing in the leg and foot to 38% overall,
+and their fine metatarsal striae are now recorded as correlates. They report that
+most correlates vary little between crocodylian species, which is the condition
+for using them on fossils.
+
 ## What is still unmined in `papers/`
 
 | Source | Would fix |
 |---|---|
-| **Winterbottom (1973)**, 93 pp | Teleost muscle synonymy; the actinopterygian naming gap |
 | **Leavey et al. (2024)**, **Přikryl et al. (2009)** | Anuran pelvis and hindlimb detail |
 | **Schreiweis (1982)** | Penguin appendicular myology |
 | **Cieri (2018)** | Squamate axial detail, to split the coarse axial records |

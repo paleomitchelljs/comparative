@@ -2957,6 +2957,176 @@
       "presence": {
         "default": "yes"
       }
+    },
+    {
+      "id": "cleithrum-flange",
+      "label": "Anterolateral flange of cleithrum",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "cleithrum",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "winterbottom-1973"
+        ],
+        "note": "Where present, carries much of the abductor superficialis origin in teleosts."
+      }
+    },
+    {
+      "id": "marginal-fin-ray",
+      "label": "Marginal fin ray",
+      "kind": "bone",
+      "region": "fin",
+      "segment": "fin",
+      "partOf": "fin-rays",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "winterbottom-1973"
+        ],
+        "note": "The anteriormost ray, served by its own arrector muscles in teleosts — the first differentiation out of the abductor-arrector anlage."
+      }
+    },
+    {
+      "id": "palatal-arch",
+      "label": "Palatal arch",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii",
+          "actinistia",
+          "dipnoi"
+        ],
+        "sources": [
+          "winterbottom-1973"
+        ],
+        "note": "Origin surface of the teleost adductor mandibulae."
+      }
+    },
+    {
+      "id": "meckelian-fossa",
+      "label": "Meckelian fossa",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "meckels-cartilage",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "winterbottom-1973"
+        ],
+        "note": "Occupied by section Aω of the teleost adductor mandibulae."
+      }
+    },
+    {
+      "id": "astragalus",
+      "label": "Astragalus",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "tarsals",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "crocodylia",
+          "lepidosauria",
+          "theria",
+          "aves"
+        ],
+        "sources": [
+          "pereyra-etal-2024"
+        ],
+        "note": "Its hollow carries the origin of the extensor digitorum brevis superficialis in Caiman."
+      }
+    },
+    {
+      "id": "iliofibular-tubercle",
+      "label": "Iliofibular tubercle",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "fibula",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "crocodylia",
+          "lepidosauria"
+        ],
+        "sources": [
+          "pereyra-etal-2024"
+        ],
+        "note": "Landmark on the fibular shaft; the fibularis longus arises distal to it."
+      }
+    },
+    {
+      "id": "femoral-extensor-fossa",
+      "label": "Femoral extensor fossa",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "crocodylia"
+        ],
+        "sources": [
+          "pereyra-etal-2024"
+        ]
+      }
+    },
+    {
+      "id": "metatarsal-striae",
+      "label": "Metatarsal striations",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "metatarsals",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "crocodylia"
+        ],
+        "sources": [
+          "pereyra-etal-2024"
+        ],
+        "note": "Fine striae, longitudinal or parallel to the metatarsal long axis, marking the origins of the deep pedal series. Pereyra et al. (2024) identify these as pedal muscle correlates for the first time; because they vary little between crocodylian species they are usable on fossil archosaurs."
+      }
+    },
+    {
+      "id": "ungual-phalanges",
+      "label": "Ungual phalanges",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "phalanges-pes",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "sources": [
+          "pereyra-etal-2024"
+        ]
+      }
     }
   ]
 }
