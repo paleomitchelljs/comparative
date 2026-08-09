@@ -16,6 +16,8 @@ Writes:
   elements.csv      the skeletal ontology, flattened with lineage
   fusions.csv       skeletal fusion and fission events, one row per taxon
   innervation.csv   muscle x nerve, with plexus division and mass agreement
+  joints.csv        the joint ontology: which bone surfaces articulate
+  actions.csv       muscle x joint x motion, checked against what it spans
   muscles.csv       one row per muscle with hierarchy fields
 
 Nothing here is derived or imputed beyond what the app itself shows: `inherited`
@@ -28,6 +30,9 @@ import csv
 import json
 import pathlib
 import sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import jointgraph
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
@@ -274,6 +279,59 @@ def main(outdir: pathlib.Path) -> int:
                                 ">".join(reversed(nerve_chain(nid)))])
                     nerve_n += 1
 
+    # ---- actions.csv --------------------------------------------------------
+    #
+    # One row per muscle x scope x joint x motion, plus `spans` — whether the
+    # muscle's attachments actually cross that joint. The two are independent
+    # (a claim from a source against a derivation from attachments), so the
+    # column is a check, not a restatement. FALSE means either a scoring error
+    # or a muscle acting through another's tendon; both are worth filtering for.
+    #
+    # `joints.csv` is the ontology itself, one row per joint x side x element,
+    # which is the long form of "distal femur articulates with proximal tibia".
+    joints_doc = load("joints.json")
+    graph = jointgraph.build(joints_doc, by_id)
+    joint_by_id = {j["id"]: j for j in joints_doc["joints"]}
+
+    with open(outdir / "joints.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["joint_id", "joint_label", "region", "kind", "crossing",
+                    "side", "element_id", "element_label", "element_side",
+                    "landmark_id", "motions", "sources"])
+        joint_n = 0
+        for j in joints_doc["joints"]:
+            prox = {r.get("element") for r in j.get("proximal", [])}
+            dist = {r.get("element") for r in j.get("distal", [])}
+            crossing = j.get("crossing", "serial" if prox == dist else "chain")
+            for side_key in ("proximal", "distal"):
+                for r in j.get(side_key, []):
+                    w.writerow([j["id"], j["label"], j.get("region", ""), j["kind"],
+                                crossing, side_key, r.get("element", ""),
+                                by_id.get(r.get("element"), {}).get("label", ""),
+                                r.get("side", ""), r.get("landmark", ""),
+                                ";".join(j.get("motions", [])),
+                                ";".join(j.get("sources", []))])
+                    joint_n += 1
+
+    with open(outdir / "actions.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["muscle_id", "muscle_name", "region", "scope",
+                    "joint_id", "joint_label", "joint_region", "motion", "spans"])
+        act_n = 0
+        for m in muscles:
+            spans = graph.spanned_by(m.get("attachments"))
+            scopes = [("consensus", m)] + [(o["taxon"], o) for o in m.get("occurrences", [])]
+            for scope, holder in scopes:
+                for r in holder.get("actions") or []:
+                    jid = r.get("joint")
+                    j = joint_by_id.get(jid, {})
+                    w.writerow([m["id"], m["name"], m.get("region", ""), scope,
+                                jid, j.get("label", ""), j.get("region", ""),
+                                r.get("motion", ""),
+                                "" if not spans or jid in graph.exempt
+                                else ("TRUE" if jid in spans else "FALSE")])
+                    act_n += 1
+
     # ---- fusions.csv --------------------------------------------------------
     #
     # Skeletal fusion and fission as one long-format character: one row per
@@ -328,6 +386,8 @@ def main(outdir: pathlib.Path) -> int:
     print(f"elements.csv     {len(skel['elements'])} rows")
     print(f"fusions.csv      {fuse_n} rows")
     print(f"innervation.csv  {nerve_n} rows")
+    print(f"joints.csv       {joint_n} rows")
+    print(f"actions.csv      {act_n} rows")
     print(f"muscles.csv      {len(muscles)} rows")
     print(f"-> {outdir}")
     return 0

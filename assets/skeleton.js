@@ -236,6 +236,94 @@ function attachmentShifts(muscle) {
   return shifts.length ? { reference: ref, shifts } : null;
 }
 
+/* ---------- joints ---------- */
+
+/* Joints are edges in a graph whose nodes are bones, so the joints a muscle
+   crosses can be DERIVED from its attachments instead of asserted. A muscle
+   running from the ilium to the tibia crosses the hip and the knee, and nobody
+   has to write that down — which matters because writing it down twice is how
+   the two drift apart.
+
+   Serial joints (intervertebral, interphalangeal) name the same element on both
+   sides. They form no edge and are excluded here: a long digital flexor reaches
+   the interphalangeal joints through the metacarpophalangeal joint, and the
+   graph would have no way to represent that. Actions may still point at them. */
+function jointGraph() {
+  if (state._jointGraph) return state._jointGraph;
+  const adj = new Map();
+  const link = (a, b, joint) => {
+    if (!adj.has(a)) adj.set(a, []);
+    adj.get(a).push({ to: b, joint });
+  };
+  for (const j of state.joints || []) {
+    const p = new Set((j.proximal || []).map(r => r.element));
+    const d = new Set((j.distal || []).map(r => r.element));
+    for (const a of p) for (const b of d) {
+      if (a === b) continue;                 // serial joint: no edge
+      link(a, b, j.id);
+      link(b, a, j.id);
+    }
+  }
+  return (state._jointGraph = adj);
+}
+
+/* An attachment names a bone or a landmark on one; walk up `partOf` until
+   reaching something the joint graph knows about. The deltopectoral crest
+   resolves to the humerus, the ilium to the pelvic girdle. */
+function jointNode(elementId) {
+  const adj = jointGraph();
+  let cur = elementId, guard = 0;
+  while (cur && guard++ < 20) {
+    if (adj.has(cur)) return cur;
+    cur = state.elementsById.get(cur)?.partOf;
+  }
+  return null;
+}
+
+/* Shortest path between two bones; the joints crossed are the edges on it. */
+function jointsBetween(fromId, toId) {
+  const adj = jointGraph();
+  const a = jointNode(fromId), b = jointNode(toId);
+  if (!a || !b || a === b) return [];
+  const prev = new Map([[a, null]]);
+  const queue = [a];
+  while (queue.length) {
+    const cur = queue.shift();
+    if (cur === b) break;
+    for (const edge of adj.get(cur) || []) {
+      if (prev.has(edge.to)) continue;
+      prev.set(edge.to, { from: cur, joint: edge.joint });
+      queue.push(edge.to);
+    }
+  }
+  if (!prev.has(b)) return [];
+  const out = [];
+  for (let cur = b; prev.get(cur); cur = prev.get(cur).from) out.unshift(prev.get(cur).joint);
+  return out;
+}
+
+/* Every joint this muscle spans, over whichever attachments are on record for
+   the taxon — the consensus when a taxon has none of its own. */
+function jointsCrossed(muscle, taxonId) {
+  const att = attachmentsFor(muscle, taxonId);
+  const ends = side => [...new Set((att[side] || [])
+    .map(r => r.landmark || r.element).filter(Boolean))];
+  const out = new Set();
+  for (const o of ends('origin')) {
+    for (const i of ends('insertion')) {
+      jointsBetween(o, i).forEach(j => out.add(j));
+    }
+  }
+  return [...out];
+}
+
+const jointLabel = (id, taxonId) => {
+  const j = state.jointsById.get(id);
+  if (!j) return id;
+  if (!taxonId || !j.taxonNames) return j.label;
+  return j.taxonNames.find(tn => (tn.taxa || []).includes(taxonId))?.name || j.label;
+};
+
 /* ---------- element presence ---------- */
 
 /* What this element is called in a given taxon. Elements are homology groups —

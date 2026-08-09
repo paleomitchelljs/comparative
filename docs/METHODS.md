@@ -100,6 +100,15 @@ not reliable predictors of muscle size across 30 frog species, and report
 many-to-one form-function mapping. Treat a correlate as evidence that a muscle
 attached there, not as a measurement of it.
 
+Actions are structured as well as written out: every muscle carries `actions`
+pointing at `data/joints.json`, where a joint records which bone surfaces
+articulate. Because joints are stored as ordered pairs they form a graph over
+the skeleton, so the joints a muscle crosses are **derived** from its
+attachments rather than asserted — and a stated action can then be checked
+against them. Four muscles act on joints they do not span, all of them through
+another muscle's tendons; the check reports rather than corrects, because the
+graph cannot follow a tendon.
+
 Innervation is now structured as well as written out: every muscle carries
 `nerves` pointing into `data/nerves.json`, where nerves are homology groups with
 a `partOf` chain to the plexus. Because the dorsal/ventral division is inherited

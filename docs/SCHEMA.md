@@ -8,6 +8,7 @@ Three kinds of file live in `data/`:
 | `sources.json` | Bibliography, keyed by `key` |
 | `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
 | `nerves.json` | Nerves as homology groups: `partOf` chain to the plexus, limb-bud division, per-taxon names |
+| `joints.json` | Joints as homology groups: which bone surfaces articulate, and what motions happen there |
 | `muscles-*.json` | Muscle records, split by anatomical region |
 
 `scripts/validate.py` enforces everything below. Run it before committing.
@@ -398,6 +399,76 @@ located its mammalian homologue. One genuine exception survives, at occurrence
 level: the short head of biceps femoris is the one hamstring on the dorsal
 division.
 
+## `joints.json`
+
+A joint is a homology group like everything else: the salamander's knee and the
+human's are one record. It is stored as two sides, each a list of
+element/side/landmark rows in **exactly the form attachments use**.
+
+```jsonc
+{
+  "id": "knee",
+  "kind": "synovial",
+  "proximal": [{ "element": "femur", "side": "distal" }],
+  "distal":   [{ "element": "tibia", "side": "proximal" },
+               { "element": "fibula", "side": "proximal" }],
+  "motions": ["flexion", "extension", "rotation-medial", "rotation-lateral"],
+  "taxonNames": [{ "taxa": ["aves"], "name": "Femorotibial joint" }]
+}
+```
+
+`proximal`/`distal` runs outward from the body axis. In the axial and cranial
+joints, where that has no clear meaning, `proximal` holds the more axial element
+by convention — the pairing is what matters, not the labels.
+
+No `presence` block: a joint exists where its bones exist, and `skeleton.json`
+already says where that is.
+
+### Joints are edges, so crossings are derived
+
+Ordering the two sides makes the joints a graph over bones, and the joints a
+muscle crosses then fall out of its attachments by shortest path. A muscle from
+the ilium to the tibia crosses hip and knee, and **nobody writes that down** —
+which matters, because writing it down twice is how two facts drift apart.
+
+`crossing` marks the joints that are not chain links and must be exempt from any
+"does it span this?" test:
+
+| `crossing` | Means |
+|---|---|
+| `chain` (default) | A normal link between two bones |
+| `serial` | Both sides name the same element — intervertebral, interphalangeal. A long digital flexor reaches the IP joints *through* the MCP joint |
+| `parallel` | The two bones of one segment — radioulnar, tibiofibular. The biceps supinates by rotating the radius against the ulna while attaching only to the radius |
+
+### `actions` on a muscle
+
+```jsonc
+"actions": [ { "joint": "knee", "motion": "flexion" },
+             { "joint": "hip",  "motion": "extension" } ]
+```
+
+Placement follows `attachments` and `nerves`: record level is the consensus,
+occurrence level is what a source records for that taxon. The prose `action`
+stays — it carries the qualifications that do not survive reduction to a verb,
+such as an action holding only in sprawling posture.
+
+`stabilisation` is resisting movement rather than a direction of it, so it
+applies to any joint and is not listed per joint.
+
+### The check this buys
+
+An action's joint should be one the muscle spans. The two are independent — a
+claim from a source against a derivation from attachments — so the comparison is
+a real check, and `actions.csv` exports it as `spans`.
+
+Four muscles currently fail it and all four are correct: the contrahentium caput
+longum, both flexor accessorii and the abductor digiti minimi (pes) act on the
+digits **through another muscle's tendons**, which the graph cannot follow. That
+is also why the seed reports mismatches instead of correcting them. An earlier
+version reassigned any unspanned action to the single spanned joint permitting
+that motion; it fixed the triceps and broke the contrahentium, replacing a right
+answer with a confident wrong one.
+
 ## Adding a muscle
 
 1. Read the source. Add it to `sources.json` if new.
@@ -415,6 +486,11 @@ division.
 landmark, carrying `side`, `is_correlate`, `inherited` and `sources`. Filter
 `inherited == FALSE` for observed data only. `presence.csv` is the character
 matrix in long form, ready for comparative methods.
+
+`joints.csv` is the joint ontology in long form — one row per joint × side ×
+element, which is what "the distal femur articulates with the proximal tibia"
+looks like as data. `actions.csv` is one row per muscle × scope × joint ×
+motion, with `spans` recording whether the attachments cross that joint.
 
 `innervation.csv` is one row per muscle × scope × nerve, carrying the inherited
 `division`, the `chain` up to the plexus, and `division_agrees` — the mass

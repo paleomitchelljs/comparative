@@ -330,6 +330,16 @@ table.occ tr.absent td { color: var(--ink-3); background: var(--bg-sunken); }
 .callout.caution { border-left-color: var(--mod); background: var(--mod-bg); }
 .callout.caution h4 { color: var(--mod); }
 
+/* Actions: joint and motion, with the joints the attachments say it spans */
+ul.acts { list-style: none; margin: 0; padding: 0; }
+ul.acts li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.45rem;
+  margin-bottom: 0.25rem; }
+.act-joint { font-weight: 600; }
+.act-motion { font-family: var(--font-ui); font-size: 0.8rem; color: var(--ink-2); }
+.act-unspanned .act-joint { border-bottom: 1px dotted var(--mod); }
+.spans { margin-top: 0.4rem; font-family: var(--font-ui); font-size: 0.78rem;
+  color: var(--ink-3); }
+
 /* Nerves: the name, its spinal levels, and the plexus chain above it */
 ul.nerves { list-style: none; margin: 0; padding: 0; }
 ul.nerves li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem;

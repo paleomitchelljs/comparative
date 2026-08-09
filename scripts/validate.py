@@ -10,6 +10,9 @@ import pathlib
 import sys
 from collections import Counter
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+import jointgraph
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
 
@@ -165,12 +168,15 @@ def main():
     sources_doc = load(ROOT / "data/sources.json")
     skeleton_doc = load(ROOT / "data/skeleton.json")
     nerves_doc = load(ROOT / "data/nerves.json")
+    joints_doc = load(ROOT / "data/joints.json")
 
     taxon_ids = {t["id"] for t in taxa_doc["taxa"]}
     source_keys = {s["key"] for s in sources_doc["sources"]}
     element_ids = {e["id"] for e in skeleton_doc["elements"]}
     side_terms = set(skeleton_doc.get("sides", []))
     nerves_by_id = {n["id"]: n for n in nerves_doc["nerves"]}
+    joints_by_id = {j["id"]: j for j in joints_doc["joints"]}
+    motion_terms = set(joints_doc["motions"])
 
     # Nerve internal consistency. Nerves are homology groups on the same
     # pattern as skeletal elements: one record, names as per-taxon attributes.
@@ -304,6 +310,48 @@ def main():
         if p.get("default") == "no":
             return tid in (p.get("present", []) + p.get("partial", []) + p.get("reduced", []))
         return True
+
+    # Joint internal consistency. A joint's two sides use exactly the
+    # element/side/landmark row form that attachments use, so the same
+    # containment rule applies: a landmark must sit inside its element.
+    joint_kinds = set(joints_doc["kinds"])
+    for j in joints_doc["joints"]:
+        jid = j.get("id")
+        where = f"joints.json:{jid}"
+        if not jid:
+            err("joints.json: a joint has no id")
+            continue
+        if j.get("kind") not in joint_kinds:
+            err(f"{where}: kind='{j.get('kind')}' not in {sorted(joint_kinds)}")
+        if not j.get("proximal") or not j.get("distal"):
+            err(f"{where}: a joint needs both a proximal and a distal side")
+        for side_key in ("proximal", "distal"):
+            for row in j.get(side_key, []):
+                el = row.get("element")
+                if el not in element_ids:
+                    err(f"{where}: {side_key} element '{el}' is not in skeleton.json")
+                    continue
+                if row.get("side") and row["side"] not in side_terms:
+                    err(f"{where}: {side_key} side '{row['side']}' not in {sorted(side_terms)}")
+                lm = row.get("landmark")
+                if lm and lm not in element_ids:
+                    err(f"{where}: {side_key} landmark '{lm}' is not in skeleton.json")
+                elif lm and el not in lineage(lm):
+                    err(f"{where}: {side_key} landmark '{lm}' is not part of '{el}'")
+        for mo in j.get("motions", []):
+            if mo not in motion_terms:
+                err(f"{where}: motion '{mo}' not in {sorted(motion_terms)}")
+        if not j.get("motions"):
+            warn(f"{where}: no motions listed, so no action can point at it")
+        for tn in j.get("taxonNames", []):
+            for tid in tn.get("taxa", []):
+                if tid not in taxon_ids:
+                    err(f"{where}: taxonNames lists unknown taxon '{tid}'")
+        for k in j.get("sources", []):
+            if k not in source_keys:
+                err(f"{where}: unknown source key '{k}'")
+
+    graph = jointgraph.build(joints_doc, by_id)
 
     # partOf must not cycle, or the bone-first drill-down recurses forever.
     for eid in by_id:
@@ -507,6 +555,39 @@ def main():
         # Where it does not, either the mass or the nerve is wrong, or the
         # muscle is a genuinely interesting exception — all three are worth
         # surfacing, so this warns rather than erroring.
+        # `actions` point at joints. A muscle can only act on a joint it spans,
+        # and the joint graph knows which those are from the attachments — so
+        # this is one half of the data checking the other, with nothing
+        # asserted twice. Serial joints (intervertebral, interphalangeal) form
+        # no graph edge and are exempt; a muscle with no consensus attachments
+        # cannot be checked at all.
+        act_rows = m.get("actions")
+        if act_rows is not None:
+            if not isinstance(act_rows, list) or not act_rows:
+                err(f"{where}: `actions` must be a non-empty list")
+                act_rows = []
+            spans = graph.spanned_by(m.get("attachments"))
+            for i, row in enumerate(act_rows):
+                at = f"{where}: actions[{i}]"
+                if not isinstance(row, dict):
+                    err(f"{at} is not a {{joint, motion}} row: {row!r}")
+                    continue
+                jid, motion = row.get("joint"), row.get("motion")
+                if jid not in joints_by_id:
+                    err(f"{at} joint '{jid}' is not in joints.json")
+                    continue
+                if motion not in motion_terms:
+                    err(f"{at} motion='{motion}' not in {sorted(motion_terms)}")
+                # `stabilisation` is resisting movement rather than a direction
+                # of it, so it applies to any joint and is not listed per joint.
+                elif motion != "stabilisation" and \
+                        motion not in joints_by_id[jid].get("motions", []):
+                    warn(f"{at} '{motion}' is not listed among the motions of "
+                         f"'{jid}'")
+                if spans and jid not in spans and jid not in graph.exempt:
+                    warn(f"{at} acts on '{jid}' but its attachments do not span "
+                         f"it (spans: {', '.join(sorted(spans)) or 'nothing'})")
+
         nerve_ids = check_nerves(m, where, nerves_by_id, source_keys)
         if m.get("mass") in {"dorsal", "ventral"} and nerve_ids:
             divs = {nerve_division(n) for n in nerve_ids}

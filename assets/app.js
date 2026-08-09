@@ -26,6 +26,8 @@ const state = {
   elementsById: new Map(),
   nerves: [],
   nervesById: new Map(),
+  joints: [],
+  jointsById: new Map(),
   skeletonTaxon: '',
   topology: null,
   phyloScope: 'all',
@@ -41,11 +43,12 @@ const state = {
 /* ---------- boot ---------- */
 
 async function boot() {
-  const [taxaDoc, sourcesDoc, skeletonDoc, nervesDoc, ...muscleDocs] = await Promise.all([
+  const [taxaDoc, sourcesDoc, skeletonDoc, nervesDoc, jointsDoc, ...muscleDocs] = await Promise.all([
     fetchJSON('data/taxa.json'),
     fetchJSON('data/sources.json'),
     fetchJSON('data/skeleton.json'),
     fetchJSON('data/nerves.json'),
+    fetchJSON('data/joints.json'),
     ...DATA_FILES.map(fetchJSON)
   ]);
 
@@ -55,6 +58,9 @@ async function boot() {
 
   state.nerves = nervesDoc.nerves;
   nervesDoc.nerves.forEach(n => state.nervesById.set(n.id, n));
+
+  state.joints = jointsDoc.joints;
+  jointsDoc.joints.forEach(j => state.jointsById.set(j.id, j));
 
   state.taxa = taxaDoc.taxa;
   taxaDoc.taxa.forEach(t => state.taxaById.set(t.id, t));
@@ -177,6 +183,22 @@ function buildIndex() {
       (n.taxonNames || []).forEach(tn => push(tn.name, 'nerve'));
     });
 
+    /* Joints, both those acted on and those the attachments say it spans, plus
+       the motion terms. "flexion" and "knee" both reach the femorotibialis,
+       and the per-taxon joint names come too — searching "mesotarsal" finds
+       the avian ankle muscles, whose own descriptions never use the word. */
+    const jointIds = new Set((m.actions || []).map(a => a.joint));
+    if (typeof jointsCrossed === 'function') {
+      jointsCrossed(m, null).forEach(j => jointIds.add(j));
+    }
+    jointIds.forEach(id => {
+      const j = state.jointsById.get(id);
+      if (!j) return;
+      push(j.label, 'joint');
+      (j.taxonNames || []).forEach(tn => push(tn.name, 'joint'));
+    });
+    (m.actions || []).forEach(a => push(a.motion, 'motion'));
+
     return { muscle: m, terms };
   });
 }
@@ -213,7 +235,7 @@ function search(qRaw) {
    name match beats every description match, whatever the match quality. */
 const KIND_PENALTY = {
   name: 0, synonym: 0, 'taxon-name': 0,
-  attachment: 10, part: 10, group: 10, nerve: 10,
+  attachment: 10, part: 10, group: 10, nerve: 10, joint: 10, motion: 10,
   origin: 20, insertion: 20, action: 20, innervation: 20, development: 20,
 };
 
@@ -325,6 +347,7 @@ function renderList() {
   const HIT_LABEL = {
     'taxon-name': 'name', synonym: 'also known as', attachment: 'attaches to',
     part: 'part', group: 'group', development: 'development',
+    joint: 'crosses', motion: 'motion',
     origin: 'origin', insertion: 'insertion',
     action: 'action', innervation: 'innervation',
   };
@@ -384,6 +407,7 @@ function renderDetail(m) {
     ${defRow('Origin', c.origin)}
     ${defRow('Insertion', c.insertion)}
     ${defRow('Action', c.action)}
+    ${renderActions(m)}
     ${defRow('Innervation', c.innervation)}
     ${renderNerves(m)}
     ${defRow('Development', m.developmental)}
@@ -436,6 +460,44 @@ function nerveTrail(id) {
 
 function nerveDivision(id) {
   return nerveTrail(id).reverse().find(n => n.division)?.division || null;
+}
+
+/* Actions as joint + motion, alongside the joints the attachments say the
+   muscle spans. The two are independent: actions come from what a source
+   claims, spanning from where the muscle attaches. Showing them together is
+   the point — a muscle listed as acting on a joint it does not span is either
+   a scoring error or one that acts through another muscle's tendon, and both
+   are worth seeing. */
+function renderActions(m, taxonId) {
+  const rows = m.actions;
+  const spans = typeof jointsCrossed === 'function' ? jointsCrossed(m, taxonId || null) : [];
+  if (!rows && !spans.length) return '';
+
+  const acted = new Set((rows || []).map(r => r.joint));
+  const byJoint = new Map();
+  for (const r of rows || []) {
+    if (!byJoint.has(r.joint)) byJoint.set(r.joint, []);
+    byJoint.get(r.joint).push(r.motion);
+  }
+
+  const acts = [...byJoint].map(([jid, motions]) => {
+    const off = spans.length && !spans.includes(jid);
+    return `<li class="act${off ? ' act-unspanned' : ''}"
+      ${off ? 'title="Acts here without spanning the joint — through a tendon, or a scoring error"' : ''}>
+      <span class="act-joint">${esc(jointLabel(jid, taxonId))}</span>
+      <span class="act-motion">${motions.map(esc).join(', ')}</span></li>`;
+  }).join('');
+
+  /* Joints it spans but is not recorded as acting on. Not an error — most
+     muscles cross a joint they do not move — but it is what makes the list
+     readable as "these are the joints in play". */
+  const passive = spans.filter(j => !acted.has(j));
+
+  return `<dt>Joints</dt><dd>
+    ${acts ? `<ul class="acts">${acts}</ul>` : ''}
+    ${passive.length ? `<div class="spans">also crosses
+      ${passive.map(j => `<span class="chip">${esc(jointLabel(j, taxonId))}</span>`).join(' ')}</div>` : ''}
+  </dd>`;
 }
 
 function renderNerves(holder, taxonId) {

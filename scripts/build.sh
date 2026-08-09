@@ -45,10 +45,13 @@ python3 scripts/seed_division.py $FLAG
 step "9. innervation prose -> nerves.json ids"
 python3 scripts/seed_nerves.py $FLAG
 
-step "10. close the related-muscle graph"
+step "10. action prose -> joints.json {joint, motion}"
+python3 scripts/seed_actions.py $FLAG
+
+step "11. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "11. validate"
+  step "12. validate"
   python3 scripts/validate.py
 fi

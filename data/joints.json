@@ -1,0 +1,660 @@
+{
+  "$comment": "Joints as homology groups, on the same pattern as skeleton.json and nerves.json: one record, names as per-taxon attributes. The salamander's knee and the human's are one joint.\n\nA joint is stored as two SIDES — `proximal` and `distal` — each a list of element/side/landmark rows in exactly the form attachments use. That ordering is what lets the app treat joints as edges in a graph of bones, so the joints a muscle crosses are DERIVED from its attachments rather than asserted: origin on the ilium and insertion on the tibia crosses hip and knee, and nobody has to write that down twice.\n\nProximal/distal is read outward from the body axis. For the axial and cranial joints, where that has no clear meaning, `proximal` holds the more axial element by convention and the pairing is what matters, not the labels.\n\nThere is no `presence` block: a joint exists where its bones exist, which skeleton.json already records. Deriving it keeps one fact in one place.",
+  "kinds": [
+    "synovial",
+    "cartilaginous",
+    "fibrous",
+    "ligamentous",
+    "muscular",
+    "composite"
+  ],
+  "motions": [
+    "flexion",
+    "extension",
+    "abduction",
+    "adduction",
+    "rotation-medial",
+    "rotation-lateral",
+    "pronation",
+    "supination",
+    "protraction",
+    "retraction",
+    "elevation",
+    "depression",
+    "inversion",
+    "eversion",
+    "opening",
+    "closing",
+    "lateral-bending",
+    "axial-rotation",
+    "stabilisation"
+  ],
+  "joints": [
+    {
+      "id": "jaw-joint",
+      "label": "Jaw joint",
+      "region": "cranial",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "palatoquadrate-quadrate"
+        }
+      ],
+      "distal": [
+        {
+          "element": "mandible",
+          "landmark": "articular"
+        }
+      ],
+      "motions": [
+        "opening",
+        "closing"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "chondrichthyes",
+            "actinopterygii",
+            "actinistia",
+            "dipnoi",
+            "caudata",
+            "anura",
+            "testudines",
+            "lepidosauria",
+            "crocodylia",
+            "aves"
+          ],
+          "name": "Quadrate–articular joint"
+        },
+        {
+          "taxa": [
+            "theria",
+            "monotremata"
+          ],
+          "name": "Temporomandibular joint (squamosal–dentary)"
+        }
+      ],
+      "note": "The element pair here is the ANCESTRAL jaw joint. In mammals the load-bearing joint moved to squamosal–dentary and the quadrate and articular were recruited into the middle ear as incus and malleus — which is why they are one element record with two names. The adductor musculature stayed with the mandible throughout.",
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "suspensorium",
+      "label": "Suspensorium",
+      "region": "cranial",
+      "kind": "composite",
+      "proximal": [
+        {
+          "element": "neurocranium"
+        }
+      ],
+      "distal": [
+        {
+          "element": "palatoquadrate-quadrate"
+        }
+      ],
+      "motions": [
+        "elevation",
+        "depression",
+        "abduction",
+        "adduction"
+      ],
+      "note": "The articulation of the upper jaw with the braincase. Its mobility is what the levator arcus palatini and the dilatator operculi act on, and abducting it is a large part of how a suction-feeding fish expands the buccal cavity. It ceases to be a mobile joint in tetrapods, where the palatoquadrate is incorporated into the skull and its posterior part becomes the quadrate.",
+      "sources": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "id": "craniovertebral",
+      "label": "Craniovertebral joint",
+      "region": "cranial",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "neurocranium"
+        }
+      ],
+      "distal": [
+        {
+          "element": "vertebral-column",
+          "side": "anterior"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "lateral-bending",
+        "axial-rotation"
+      ],
+      "note": "The head–trunk interface. Its mobility depends on the pectoral girdle first detaching from the skull, which is why the protractor pectoralis field and the neck appear together."
+    },
+    {
+      "id": "hyoid-suspension",
+      "label": "Hyoid suspension",
+      "region": "cranial",
+      "kind": "ligamentous",
+      "proximal": [
+        {
+          "element": "hyomandibula-stapes"
+        }
+      ],
+      "distal": [
+        {
+          "element": "hyoid"
+        }
+      ],
+      "motions": [
+        "elevation",
+        "depression"
+      ],
+      "note": "Suspensory rather than a free joint. In tetrapods the hyomandibula becomes the stapes and the suspensory role disappears; the hyoid apparatus is then slung in soft tissue."
+    },
+    {
+      "id": "intervertebral",
+      "label": "Intervertebral joints",
+      "region": "axial",
+      "kind": "composite",
+      "crossing": "serial",
+      "proximal": [
+        {
+          "element": "vertebral-column"
+        }
+      ],
+      "distal": [
+        {
+          "element": "vertebral-column"
+        }
+      ],
+      "motions": [
+        "lateral-bending",
+        "flexion",
+        "extension",
+        "axial-rotation",
+        "stabilisation"
+      ],
+      "note": "A serial joint, so both sides name the same element and it forms no edge in the crossing graph. It is here because the epaxial and hypaxial muscles act on it and their actions need somewhere to point.",
+      "sources": [
+        "schilling-2011"
+      ]
+    },
+    {
+      "id": "costovertebral",
+      "label": "Costovertebral joint",
+      "region": "axial",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "vertebral-column"
+        }
+      ],
+      "distal": [
+        {
+          "element": "ribs",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "elevation",
+        "depression",
+        "rotation-medial"
+      ],
+      "note": "Cieri (2018) treats rib rotation about a dorsoventral axis — caliper motion — as distinct from the bucket-handle motion usually assumed from mammals.",
+      "sources": [
+        "cieri-2018"
+      ]
+    },
+    {
+      "id": "sacroiliac",
+      "label": "Sacroiliac joint",
+      "region": "pelvic",
+      "kind": "composite",
+      "proximal": [
+        {
+          "element": "vertebral-column",
+          "side": "posterior"
+        }
+      ],
+      "distal": [
+        {
+          "element": "pelvic-girdle",
+          "landmark": "ilium"
+        }
+      ],
+      "motions": [
+        "stabilisation"
+      ],
+      "note": "The load path from hindlimb to axial skeleton. Absent in fishes, whose pelvic girdle floats in the body wall."
+    },
+    {
+      "id": "girdle-axial",
+      "label": "Pectoral girdle to axial skeleton",
+      "region": "pectoral",
+      "kind": "muscular",
+      "proximal": [
+        {
+          "element": "axial-skeleton"
+        }
+      ],
+      "distal": [
+        {
+          "element": "pectoral-girdle"
+        }
+      ],
+      "motions": [
+        "protraction",
+        "retraction",
+        "elevation",
+        "depression"
+      ],
+      "note": "Muscular rather than bony in most tetrapods — the girdle is slung from the trunk by the serratus and rhomboid sheets. That sling is the primaxial musculature, and it is what a clavicle or interclavicle braces where one is present.",
+      "sources": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "id": "shoulder",
+      "label": "Shoulder joint",
+      "region": "pectoral",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "pectoral-girdle",
+          "landmark": "glenoid"
+        }
+      ],
+      "distal": [
+        {
+          "element": "humerus",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "abduction",
+        "adduction",
+        "rotation-medial",
+        "rotation-lateral",
+        "protraction",
+        "retraction"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "theria",
+            "monotremata"
+          ],
+          "name": "Glenohumeral joint"
+        }
+      ],
+      "note": "The glenoid is formed by scapula and coracoid together where both are present, and by the scapula alone in therians after the coracoid is reduced to a process — a loss that moves the supracoracoideus origin onto the lateral scapula."
+    },
+    {
+      "id": "elbow",
+      "label": "Elbow joint",
+      "region": "forelimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "humerus",
+          "side": "distal"
+        }
+      ],
+      "distal": [
+        {
+          "element": "radius",
+          "side": "proximal"
+        },
+        {
+          "element": "ulna",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension"
+      ],
+      "note": "Humerus against both zeugopodial elements. The radial and ulnar halves are separated in some descriptions; they are one joint here because the muscles crossing them are the same."
+    },
+    {
+      "id": "radioulnar",
+      "label": "Radioulnar joint",
+      "region": "forelimb",
+      "kind": "synovial",
+      "crossing": "parallel",
+      "proximal": [
+        {
+          "element": "radius"
+        }
+      ],
+      "distal": [
+        {
+          "element": "ulna"
+        }
+      ],
+      "motions": [
+        "pronation",
+        "supination"
+      ],
+      "note": "Between the two zeugopodial elements rather than along the limb. Free rotation here is a mammalian specialisation; in sprawling tetrapods the two bones move together and the pronator/supinator muscles act on the whole antebrachium."
+    },
+    {
+      "id": "wrist",
+      "label": "Wrist joint",
+      "region": "forelimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "radius",
+          "side": "distal"
+        },
+        {
+          "element": "ulna",
+          "side": "distal"
+        }
+      ],
+      "distal": [
+        {
+          "element": "carpals"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "abduction",
+        "adduction"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "theria",
+            "monotremata"
+          ],
+          "name": "Radiocarpal joint"
+        }
+      ]
+    },
+    {
+      "id": "carpometacarpal",
+      "label": "Carpometacarpal joints",
+      "region": "forelimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "carpals",
+          "landmark": "distal-carpals"
+        }
+      ],
+      "distal": [
+        {
+          "element": "metacarpals",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "abduction",
+        "adduction"
+      ]
+    },
+    {
+      "id": "metacarpophalangeal",
+      "label": "Metacarpophalangeal joints",
+      "region": "forelimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "metacarpals",
+          "side": "distal"
+        }
+      ],
+      "distal": [
+        {
+          "element": "phalanges-manus",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "abduction",
+        "adduction"
+      ]
+    },
+    {
+      "id": "interphalangeal-manus",
+      "label": "Interphalangeal joints of the hand",
+      "region": "forelimb",
+      "kind": "synovial",
+      "crossing": "serial",
+      "proximal": [
+        {
+          "element": "phalanges-manus"
+        }
+      ],
+      "distal": [
+        {
+          "element": "phalanges-manus"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension"
+      ],
+      "note": "Serial, so both sides name the same element and it forms no graph edge — the long digital flexors reach it through the metacarpophalangeal joint."
+    },
+    {
+      "id": "hip",
+      "label": "Hip joint",
+      "region": "pelvic",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "pelvic-girdle",
+          "landmark": "acetabulum"
+        }
+      ],
+      "distal": [
+        {
+          "element": "femur",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "abduction",
+        "adduction",
+        "rotation-medial",
+        "rotation-lateral",
+        "protraction",
+        "retraction"
+      ],
+      "note": "The acetabulum is formed by ilium, ischium and pubis together. Its orientation is the single largest correlate of posture — laterally facing in sprawlers, ventrally in parasagittal walkers."
+    },
+    {
+      "id": "knee",
+      "label": "Knee joint",
+      "region": "hindlimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "femur",
+          "side": "distal"
+        }
+      ],
+      "distal": [
+        {
+          "element": "tibia",
+          "side": "proximal"
+        },
+        {
+          "element": "fibula",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "rotation-medial",
+        "rotation-lateral"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "aves"
+          ],
+          "name": "Femorotibial joint"
+        }
+      ],
+      "note": "The serial counterpart of the elbow, and the joint the femorotibialis and ischioflexorius fields act on throughout Tetrapoda. In birds the knee takes over from the hip as the principal propulsive joint as the caudofemoralis is reduced."
+    },
+    {
+      "id": "tibiofibular",
+      "label": "Tibiofibular joint",
+      "region": "hindlimb",
+      "kind": "fibrous",
+      "crossing": "parallel",
+      "proximal": [
+        {
+          "element": "tibia"
+        }
+      ],
+      "distal": [
+        {
+          "element": "fibula"
+        }
+      ],
+      "motions": [
+        "stabilisation"
+      ],
+      "note": "The serial counterpart of the radioulnar joint, but it never acquires free rotation — the crus does not pronate."
+    },
+    {
+      "id": "ankle",
+      "label": "Ankle joint",
+      "region": "hindlimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "tibia",
+          "side": "distal"
+        },
+        {
+          "element": "fibula",
+          "side": "distal"
+        }
+      ],
+      "distal": [
+        {
+          "element": "tarsals"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "inversion",
+        "eversion",
+        "pronation",
+        "supination"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "theria",
+            "monotremata"
+          ],
+          "name": "Talocrural joint"
+        },
+        {
+          "taxa": [
+            "crocodylia"
+          ],
+          "name": "Crurotarsal joint"
+        },
+        {
+          "taxa": [
+            "aves",
+            "lepidosauria"
+          ],
+          "name": "Mesotarsal joint"
+        }
+      ],
+      "note": "The one joint in the limb whose position is not conserved. It runs between crus and tarsus in mammals, through the tarsus in birds and lepidosaurs, and between astragalus and calcaneum in crocodylians — so 'the ankle' names topologically different joints across the tree. Muscles crossing it are still comparable; the bones they cross between are not.",
+      "sources": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "id": "tarsometatarsal",
+      "label": "Tarsometatarsal joints",
+      "region": "hindlimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "tarsals",
+          "landmark": "distal-tarsals"
+        }
+      ],
+      "distal": [
+        {
+          "element": "metatarsals",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension"
+      ],
+      "note": "Obliterated in birds, where the distal tarsals fuse with the metatarsals into the tarsometatarsus."
+    },
+    {
+      "id": "metatarsophalangeal",
+      "label": "Metatarsophalangeal joints",
+      "region": "hindlimb",
+      "kind": "synovial",
+      "proximal": [
+        {
+          "element": "metatarsals",
+          "side": "distal"
+        }
+      ],
+      "distal": [
+        {
+          "element": "phalanges-pes",
+          "side": "proximal"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension",
+        "abduction",
+        "adduction"
+      ]
+    },
+    {
+      "id": "interphalangeal-pes",
+      "label": "Interphalangeal joints of the foot",
+      "region": "hindlimb",
+      "kind": "synovial",
+      "crossing": "serial",
+      "proximal": [
+        {
+          "element": "phalanges-pes"
+        }
+      ],
+      "distal": [
+        {
+          "element": "phalanges-pes"
+        }
+      ],
+      "motions": [
+        "flexion",
+        "extension"
+      ],
+      "note": "Serial, like its counterpart in the hand."
+    }
+  ]
+}
