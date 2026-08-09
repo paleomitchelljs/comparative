@@ -157,13 +157,17 @@ button.ghost[aria-pressed="true"] { background: var(--accent-soft); border-color
   margin: 0 auto;
   padding: 1.5rem;
   display: grid;
-  grid-template-columns: 290px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   gap: 1.75rem;
   align-items: start;
 }
+.shell > aside.sidebar { display: none; }
+
+.shell.filters-open { grid-template-columns: 250px minmax(0, 1fr); }
+.shell.filters-open > aside.sidebar { display: block; }
 
 @media (max-width: 900px) {
-  .shell { grid-template-columns: 1fr; }
+  .shell.filters-open { grid-template-columns: 1fr; }
   aside.sidebar { position: static; max-height: none; }
 }
 
@@ -367,12 +371,22 @@ ol.refs a { color: var(--link); }
 .crumb button:hover { text-decoration: underline; }
 
 footer.foot {
-  max-width: var(--maxw); margin: 0 auto; padding: 2rem 1.5rem 3rem;
-  font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-3);
-  border-top: 1px solid var(--rule); margin-top: 2rem; line-height: 1.6;
+  max-width: var(--maxw); margin: 2rem auto 0; padding: 1rem 1.5rem 2.5rem;
+  font-family: var(--font-ui); font-size: 0.76rem; color: var(--ink-3);
+  border-top: 1px solid var(--rule);
 }
-footer.foot a { color: var(--link); }
-footer.foot p { margin: 0 0 0.5rem; }
+footer.foot a { color: var(--link); text-decoration: none; }
+footer.foot a:hover { text-decoration: underline; }
+footer.foot p { margin: 0; }
+
+/* One-line note under a view heading. Deliberately small: the muscles are the
+   content, the method lives in docs/METHODS.md. */
+.viewnote {
+  font-family: var(--font-ui); font-size: 0.76rem; color: var(--ink-3);
+  margin: 0.35rem 0 0.9rem; line-height: 1.5;
+}
+.viewnote a { color: var(--link); }
+.viewnote code { font-size: 0.95em; background: var(--bg-sunken); padding: 0 0.25rem; border-radius: 3px; }
 
 /* ---------- taxon picker ---------- */
 .taxonbar {

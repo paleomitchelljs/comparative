@@ -216,7 +216,7 @@ function render({ keepScroll = false } = {}) {
   const total = state.muscles.length;
   const occ = state.muscles.reduce((n, m) => n + (m.occurrences || []).length, 0);
   document.getElementById('footcount').textContent =
-    `${total} muscle records · ${occ} taxon occurrences · ${state.sources.size} sources · ${state.taxa.length} operational taxa.`;
+    ` · ${total} muscles · ${occ} occurrences · ${state.sources.size} sources · ${state.taxa.length} taxa`;
 }
 
 function renderList() {
@@ -475,6 +475,10 @@ function renderSidebar() {
     facet('Recorded in taxon', 'taxon', taxaSorted.map(t => ({ value: t.id, label: t.clade, color: t.color }))) +
     facet('Homology confidence', 'confidence', confs.map(c => ({ value: c, label: c })));
 
+  const active = Object.values(state.filters).filter(Boolean).length;
+  const fb = document.getElementById('btn-filters');
+  if (fb) fb.textContent = active ? `Filters · ${active}` : 'Filters';
+
   el.querySelectorAll('[data-facet]').forEach(btn => {
     btn.addEventListener('click', () => {
       const k = btn.dataset.facet, v = btn.dataset.value;
@@ -541,6 +545,17 @@ function wireUI() {
       syncViewButtons(); render();
     });
   }
+
+  const shell = document.getElementById('shell');
+  const filtersBtn = document.getElementById('btn-filters');
+  const setFilters = on => {
+    shell.classList.toggle('filters-open', on);
+    filtersBtn.setAttribute('aria-pressed', String(on));
+    try { localStorage.setItem('filtersOpen', on ? '1' : '0'); } catch {}
+  };
+  setFilters((() => { try { return localStorage.getItem('filtersOpen') === '1'; } catch { return false; } })());
+  filtersBtn.addEventListener('click', () =>
+    setFilters(!shell.classList.contains('filters-open')));
 
   const themeBtn = document.getElementById('btn-theme');
   themeBtn.addEventListener('click', () => {

@@ -241,29 +241,9 @@ function renderPhylogeny() {
 
   return `
     ${renderPhyloControls(scope, muscles.length)}
-    <div class="callout caution"><h4>What this is, and is not</h4>
-      <p>Branch states are optimised by <strong>Fitch parsimony</strong> over the fixed
-      topology in <code>taxa.json</code>, not read off the tip states. A muscle with no
-      occurrence row for a taxon is left unscored and constrains nothing — treating
-      absence of data as absence of the muscle would invent losses wherever sampling
-      is thin, which is most of the fish end of this tree.</p>
-      <p><strong>Polymorphic tips.</strong> <code>variable</code>, <code>uncertain</code> and
-      <code>inferred</code> are scored as {absent, present} rather than forced either way.
-      <code>variable</code> means a source found the muscle in some species of a clade and
-      not others; <code>inferred</code> is a fossil reconstruction. Neither is an observation
-      of presence, and neither should push a transition onto a branch by itself.</p>
-      <p><strong>Equivocal placements</strong> are marked with <code>?</code> on the tree and
-      flagged in the table below. They arise where the state at the root of the tree is
-      itself ambiguous — both states cost the same number of steps — so the convention
-      used here (absent at the root, since muscles are acquired rather than primitively
-      universal) decides where the change is drawn. Flip that assumption and the gains
-      become losses elsewhere at identical cost.
-      ${equivocalTotal ? `<strong>${equivocalTotal}</strong> of the changes shown are equivocal in this sense.` : ''}</p>
-      <p><strong>One topology, no support.</strong> The tree is a pragmatic consensus —
-      including Abdala &amp; Diogo's placement of turtles as archosauromorphs — and the
-      counts would change under a different one. There are no branch supports here
-      because none are computed.</p>
-    </div>
+    <p class="viewnote">Fitch parsimony over a fixed topology. <code>?</code> marks
+      changes whose placement depends on the root-state convention${equivocalTotal ? ` (${equivocalTotal} here)` : ''}.
+      <a href="https://github.com/paleomitchelljs/comparative/blob/main/docs/METHODS.md#the-phylogeny-view" target="_blank" rel="noopener">Method</a></p>
     <div class="tablewrap phylowrap">${svg}</div>
     ${renderPhyloLegend()}
     ${renderPhyloDetail(root, byNode)}
@@ -299,11 +279,9 @@ function renderPhyloControls(scope, n) {
 
 const renderPhyloLegend = () => `
   <div class="phylolegend">
-    <span><i style="background:var(--ok)"></i> net gains on branch</span>
-    <span><i style="background:var(--warn)"></i> net losses</span>
-    <span><i style="background:var(--mod)"></i> equal gains and losses</span>
-    <span><i style="background:var(--rule-strong)"></i> no inferred change</span>
-    <span class="sep">Branch thickness scales with the number of changes.</span>
+    <span><i style="background:var(--ok)"></i> gains</span>
+    <span><i style="background:var(--warn)"></i> losses</span>
+    <span><i style="background:var(--mod)"></i> both</span>
   </div>`;
 
 function renderPhyloDetail(root, byNode) {
@@ -341,7 +319,7 @@ function renderCountTrajectory() {
   if (!withCounts.length) return '';
   const max = Math.max(...withCounts.map(t => t.muscleCount.total));
 
-  return `<section class="block"><h3>Published muscle counts per appendage pair</h3>
+  return `<section class="block"><h3>Muscle counts per appendage pair</h3>
     <div class="counttraj">
       ${withCounts.map(t => {
         const c = t.muscleCount;
@@ -354,10 +332,7 @@ function renderCountTrajectory() {
         </div>`;
       }).join('')}
     </div>
-    <p class="cellnote">Counts are Diogo et al. (2016) for their exemplar species, not counts of
-    records in this dataset. The interesting comparison is <em>Polypterus</em> → <em>Latimeria</em>
-    (a jump of 23) against <em>Latimeria</em> → <em>Ambystoma</em> excluding the autopod
-    (a jump of 20): most of the change had already happened before the sarcopterygian
-    last common ancestor.</p>
+    <p class="viewnote">Published counts for exemplar species (Diogo et al. 2016), not
+    records here. <a href="https://github.com/paleomitchelljs/comparative/blob/main/docs/METHODS.md#muscle-counts" target="_blank" rel="noopener">Why they matter</a></p>
   </section>`;
 }

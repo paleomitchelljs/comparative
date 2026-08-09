@@ -21,22 +21,23 @@
       <button class="ghost" id="btn-skeleton" aria-pressed="false">Skeleton</button>
       <button class="ghost" id="btn-hierarchy" aria-pressed="false">Mass &amp; layer</button>
       <button class="ghost" id="btn-phylogeny" aria-pressed="false">Phylogeny</button>
+      <button class="ghost" id="btn-filters" title="Show or hide filters" aria-pressed="false">Filters</button>
       <button class="ghost" id="btn-theme" title="Toggle light/dark">◐</button>
     </div>
   </div>
 </header>
 
-<div class="shell">
+<div class="shell" id="shell">
   <aside class="sidebar" id="sidebar"></aside>
   <main id="main"><div class="empty">Loading data…</div></main>
 </div>
 
 <footer class="foot">
-  <p><strong>Scope and status.</strong> Every anatomical statement here is a paraphrase of a cited source, not a verbatim quotation, and every homology claim is a hypothesis attributed to a named author. Confidence labels reflect the strength of support reported in the source literature, not certainty.</p>
-  <p><strong>Reading the taxon tables.</strong> A blank or absent row means the muscle was not found in the exemplar species examined by that source. It does not mean the muscle is absent from the whole clade — Abdala &amp; Diogo (2010) document several muscles present in one lizard and absent in another. <em>Inferred</em> marks fossil reconstructions, which are bracket-and-correlate inferences rather than observations.</p>
-  <p><strong>Attachments.</strong> The <em>Skeleton</em> view is bone-first: pick an element, see what attaches to it, optionally as recorded in one taxon. Where a taxon has no attachments on record, the consensus is shown and marked <em>inherited</em> — that means nobody has recorded it, not that it is known to match. Attachment shifts on a muscle page are <em>computed</em> by diffing recorded attachments against the earliest taxon with data, so they are derived from the dataset rather than asserted.</p>
-  <p><strong>Serial correspondences</strong> between forelimb and hindlimb muscles follow Diogo &amp; Molnar (2014) and denote <em>topological</em> equivalence. They are not claims of serial homology in the strict ancestral-duplication sense, which that paper rejects.</p>
-  <p id="footcount"></p>
+  <p><a href="https://github.com/paleomitchelljs/comparative/blob/main/docs/METHODS.md" target="_blank" rel="noopener">How to read this</a> ·
+     <a href="https://github.com/paleomitchelljs/comparative/blob/main/docs/GAPS.md" target="_blank" rel="noopener">Coverage &amp; gaps</a> ·
+     <a href="https://github.com/paleomitchelljs/comparative/blob/main/docs/SCHEMA.md" target="_blank" rel="noopener">Data model</a> ·
+     <a href="https://github.com/paleomitchelljs/comparative" target="_blank" rel="noopener">Source</a>
+     <span id="footcount"></span></p>
 </footer>
 
 <script src="assets/app.js"></script>

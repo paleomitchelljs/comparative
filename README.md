@@ -88,6 +88,12 @@ This matters for more than completeness: it is the natural root of the drill-dow
 hierarchy proposed in [`docs/ROADMAP.md`](docs/ROADMAP.md), and it corrects the
 textbook claim that fish fins had only two muscle masses.
 
+## Interface
+
+Methodological notes live in [`docs/METHODS.md`](docs/METHODS.md), not on the
+pages — the interface is for muscles. Filters are collapsed by default behind the
+**Filters** button; the count on the button shows how many are active.
+
 ## Four views
 
 **Muscles** — search and filter by region, taxon, or homology confidence.

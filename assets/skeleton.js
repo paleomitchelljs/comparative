@@ -220,14 +220,8 @@ function renderSkeleton() {
     body += `<section class="block"><h3>${esc(region)}</h3><div class="skeltree">${cards}</div></section>`;
   }
 
-  const hint = taxonId
-    ? `Showing the attachments recorded for <strong>${esc(state.taxaById.get(taxonId).clade)}</strong>.
-       Elements that taxon lacks are marked; a muscle listed on a parent element is one whose
-       attachment is recorded only at that coarser level.`
-    : `Showing every attachment in the dataset, pooled across taxa. Pick a taxon to see one animal's arrangement.`;
-
-  return taxonPicker +
-    `<div class="resultbar">${hint}</div>` + (body || `<div class="empty">No skeletal element matches “${esc(state.query)}”.</div>`);
+  return taxonPicker + (body ||
+    `<div class="empty">No skeletal element matches “${esc(state.query)}”.</div>`);
 }
 
 function renderElementNode(e, taxonId, q, depth) {
@@ -265,7 +259,7 @@ function renderElementNode(e, taxonId, q, depth) {
       <span class="count">${total}</span>
     </summary>
     <div class="elbody">
-      ${absentHere ? `<p class="cellnote">This element does not exist in ${esc(state.taxaById.get(taxonId).clade)}. Any muscle that attached here in other taxa has had to attach somewhere else.</p>` : ''}
+      ${absentHere ? `<p class="cellnote">Absent in ${esc(state.taxaById.get(taxonId).clade)}.</p>` : ''}
       ${note ? `<p class="cellnote">${esc(note)}</p>` : ''}
       ${(here.origin.length || here.insertion.length) ? `
         <div class="grp"><b>Origin of (${here.origin.length})</b>${list(here.origin)}</div>
@@ -306,9 +300,7 @@ function renderHierarchy() {
 
   const SEG_ORDER = ['fin', 'girdle', 'stylopod', 'zeugopod', 'autopod', 'cranial', 'axial', '—'];
 
-  let out = `<div class="resultbar">Grouped by developmental origin, then layer, then proximodistal segment.
-    This is the axis that survives deep transitions — the dorsal/ventral split is confirmed independently
-    by innervation, and every tetrapod limb muscle is a subdivision of an ancestral fin mass.</div>`;
+  let out = '';
 
   const massKeys = [...groups.keys()].sort();
   for (const key of massKeys) {
@@ -351,7 +343,7 @@ function renderArchitecture(m) {
     .sort((a, b) => (state.taxonOrder.get(a.taxon) ?? 99) - (state.taxonOrder.get(b.taxon) ?? 99));
   if (!rows.length) return '';
 
-  let out = `<section class="block"><h3>Muscle architecture</h3>`;
+  let out = `<section class="block"><h3>Architecture</h3>`;
   for (const occ of rows) {
     const a = occ.architecture;
     const t = state.taxaById.get(occ.taxon) || { clade: occ.taxon };
@@ -369,8 +361,7 @@ function renderArchitecture(m) {
           <td class="numcell">${num(pt.pcsa_cm2)}</td></tr>`).join('')}
       </tbody></table></div>`;
     if (a.comparison) {
-      out += `<p class="cellnote">Compared in the source against
-        ${esc(a.comparison.species)}${a.comparison.n ? `, n = ${a.comparison.n}` : ''}.</p>`;
+      out += `<p class="viewnote">vs ${esc(a.comparison.species)}${a.comparison.n ? `, n = ${a.comparison.n}` : ''}</p>`;
     }
   }
   return out + `</section>`;
@@ -440,9 +431,7 @@ function renderAttachmentBlock(m) {
   const analysis = attachmentShifts(m);
   if (analysis) {
     const refName = state.taxaById.get(analysis.reference)?.clade || analysis.reference;
-    out += `<div class="callout"><h4>Attachment shifts</h4>
-      <p>Computed by comparing each taxon's recorded attachments against
-      <strong>${esc(refName)}</strong>, the earliest taxon here with attachments on record.</p></div>
+    out += `<h4 class="attach-h" style="margin-top:1.25rem">Shifts from ${esc(refName)}</h4>
       <div class="tablewrap"><table class="occ">
       <colgroup><col class="c-taxon"><col class="c-body"></colgroup>
       <thead><tr><th>Taxon</th><th>Change from ${esc(refName)}</th></tr></thead><tbody>`;
