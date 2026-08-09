@@ -79,6 +79,16 @@ function elementLineage(id) {
 
 const isWithin = (a, b) => elementLineage(a).includes(b);
 
+/* `skeleton.json.sides` is four independent axes, not one flat vocabulary.
+   Terms are only comparable within an axis: "proximal" and "posterior" are not
+   alternatives, they answer different questions about the same attachment. */
+const SIDE_AXES = [
+  ['proximal', 'distal'],
+  ['anterior', 'posterior'],
+  ['medial', 'lateral'],
+  ['dorsal', 'ventral'],
+];
+
 /* Returns the taxa whose attachments differ from the reference, with the
    specific elements gained and lost on each side. This is the computed
    character — derived from the data, not hand-authored.
@@ -102,31 +112,71 @@ function attachmentShifts(muscle) {
        gain plus a loss. */
     const finest = r => r.landmark || r.element;
 
+    /* The sides recorded for one element, as a set. An absent `side` means
+       unrecorded — never "no side" — so it contributes nothing. */
+    const sidesOf = (rows, id) => new Set(
+      rows.filter(r => finest(r) === id).map(r => r.side).filter(Boolean));
+
     const diff = side => {
       const A = base[side] || [], B = here[side] || [];
       const a = A.map(finest), b = B.map(finest);
-      const gained = [], lost = [], refined = [];
+      const gained = [], lost = [], refined = [], moved = [];
 
+      /* One entry per element, not per row: a bone named on three rows because
+         three of its surfaces are scored is still one bone gained or lost. */
+      const seenB = new Set();
       for (const r of B) {
         const x = finest(r);
-        if (a.includes(x)) continue;
+        if (a.includes(x) || seenB.has(x)) continue;
+        seenB.add(x);
         const coarser = a.find(y => isWithin(x, y));
         if (coarser) refined.push({ from: coarser, to: x, row: r });
         else gained.push({ id: x, row: r });
       }
+      const seenA = new Set();
       for (const r of A) {
         const y = finest(r);
-        if (b.includes(y)) continue;
+        if (b.includes(y) || seenA.has(y)) continue;
+        seenA.add(y);
         if (refined.some(k => k.from === y)) continue;
         if (b.some(x => isWithin(y, x))) continue;
         lost.push({ id: y, row: r });
       }
-      return { gained, lost, refined };
+
+      /* Same element in both taxa, different surface of it. This is a real
+         attachment shift and the element-level diff cannot see it, because both
+         taxa name the same bone.
+
+         Compared one axis at a time. `side` runs on four independent axes and
+         a term from one says nothing about another: a fibular attachment
+         recorded as "posterior" in a salamander and "proximal" in a lizard has
+         not migrated, it has been described along a different axis by each
+         source. Only where both taxa name a side on the SAME axis is there
+         anything to compare.
+
+         Within an axis, disjoint sets — ventral against dorsal — are a
+         migration across the bone. Overlapping but unequal sets are at least as
+         likely to be one source describing the attachment more fully than the
+         other, so they are reported without counting as substantive. */
+      for (const id of new Set(a.filter(x => b.includes(x)))) {
+        const from = sidesOf(A, id), to = sidesOf(B, id);
+        if (!from.size || !to.size) continue;
+        for (const axis of SIDE_AXES) {
+          const f = axis.filter(s => from.has(s)), t = axis.filter(s => to.has(s));
+          if (!f.length || !t.length) continue;
+          const shared = f.filter(s => t.includes(s));
+          if (shared.length === f.length && shared.length === t.length) continue;
+          moved.push({ id, from: f, to: t, substantive: shared.length === 0 });
+        }
+      }
+
+      return { gained, lost, refined, moved };
     };
 
     const o = diff('origin'), i = diff('insertion');
-    const real = d => d.gained.length || d.lost.length;
-    if (real(o) || real(i) || o.refined.length || i.refined.length) {
+    const real = d => d.gained.length || d.lost.length || d.moved.some(mv => mv.substantive);
+    const any = d => real(d) || d.refined.length || d.moved.length;
+    if (any(o) || any(i)) {
       shifts.push({
         taxon: occ.taxon, origin: o, insertion: i,
         substantive: real(o) || real(i),
@@ -473,6 +523,9 @@ function renderAttachmentBlock(m) {
         if (d.lost.length) bits.push(`<span class="loss">− ${d.lost.map(l => label(l.id)).join(', ')}</span>`);
         if (d.refined.length) bits.push(`<span class="refine">${d.refined
           .map(r => `${label(r.from)} → ${label(r.to)}`).join('; ')}</span>`);
+        d.moved.forEach(mv => bits.push(
+          `<span class="${mv.substantive ? 'move' : 'refine'}">${label(mv.id)}: ` +
+          `${esc(mv.from.join('/'))} → ${esc(mv.to.join('/'))}</span>`));
         return bits.length ? `<div><b>${side}</b> ${bits.join(' ')}</div>` : '';
       };
       out += `<tr${s.substantive ? '' : ' class="absent"'}>
