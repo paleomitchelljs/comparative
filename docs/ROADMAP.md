@@ -175,6 +175,19 @@ as either presence or absence is wrong. Render it as a distinct branch state.
 
 ### Phase 4 — the clickable anatomical diagram
 
+**Read first:** Demuth et al. (2022) on three-dimensional polygonal muscle
+modelling, and Allen et al. (2021), who do it in anger across the bird line —
+fit geometric primitives to joints, trace muscle paths from origin to insertion,
+compute moment arms across joint angles. That is what this dataset's attachment
+records are ultimately for, and it is the argument for chasing `side` and
+`landmark` resolution rather than treating them as decoration.
+
+**Read also:** Leavey et al. (2024), who find that bone lengths and pelvic crest
+sizes are generally *not* reliable predictors of muscle size across 30 frog
+species, with many-to-one form-function mapping. Correlates locate an attachment;
+they do not size the muscle that made it. A diagram that scales muscle bands to
+bone dimensions would be asserting something the data reject.
+
 The big lift, and where origin/insertion finally drives the visuals.
 
 **Recommendation: schematic, not accurate.** Anatomically faithful figures for

@@ -2,7 +2,12 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 108 muscles · 534 present occurrences · 202 skeletal elements · 59 sources · 16 taxa.
+**State:** 108 muscles · 535 present occurrences · 205 skeletal elements · 58 sources · 16 taxa.
+
+**Every source in `papers/` is now mined or accounted for.** Five remain uncited in
+records: two declared out of scope (catfish brain, cardiac review), two methods and
+framing papers cited in the docs instead (Demuth et al. 2022, Richardson 2022), and
+one with no muscle-level content (Huynen et al. 2014, moa *tbx5*).
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -15,22 +20,22 @@ scope. Duplicates are removed as they are found.
 the number that decides whether attachment change is analysable or merely
 illustrated.
 
-| Region | Occurrences | With attachments | %att | Three passes ago |
+| Region | Muscles | Occurrences | With attachments | %att |
 |---|---:|---:|---:|---:|
-| **fin** | 34 | 19 | **56%** | 41% |
-| **foot** | 15 | 6 | **40%** | 0% |
-| pectoral | 96 | 36 | 38% | 38% |
-| **leg** | 30 | 9 | **30%** | 0% |
-| arm | 33 | 9 | 27% | 27% |
-| pelvic | 33 | 8 | 24% | 24% |
-| cranial | 60 | 10 | 17% | 17% |
-| thigh | 36 | 6 | 17% | 14% |
-| **hand** | 59 | 8 | **14%** | 0% |
-| forearm | 94 | 7 | 7% | 6% |
-| **axial** | 41 | 6 | **15%** | — |
+| fin | 9 | 34 | 19 | **56%** |
+| foot | 3 | 15 | 6 | 40% |
+| pectoral | 16 | 96 | 36 | 38% |
+| leg | 7 | 30 | 9 | 30% |
+| arm | 5 | 33 | 9 | 27% |
+| pelvic | 5 | 33 | 8 | 24% |
+| thigh | 8 | 40 | 8 | 20% |
+| cranial | 15 | 60 | 10 | 17% |
+| axial | 13 | 41 | 6 | 15% |
+| hand | 9 | 59 | 8 | 14% |
+| **forearm** | 18 | 94 | 7 | **7%** |
 
-Overall **23%**, from 17%. Architecture records 10, from 4. Osteological
-correlates carrying a muscle: 59 of 75 (79%).
+Overall 24%. Landmark resolution 15%. Correlates carrying a muscle 76%.
+Architecture records 21 across two taxa.
 
 The autopod is no longer the hole — **the forearm is**, at 7% across 94
 occurrences, the largest region with the least attachment detail. Axial is 0% by
@@ -62,41 +67,38 @@ column.
 
 ## 2. Underreported taxonomic groups
 
-| Taxon | Occurrences | With attachments | Regions covered | Missing regions |
-|---|---:|---:|---:|---|
-| Dipnoi | 7 | 7 (100%) | 1 | everything but fin |
-| Actinistia | 7 | 6 (86%) | 1 | everything but fin |
-| Synapsida (stem) | 4 | 2 (50%) | 1 | all but thigh |
-| Monotremata | 7 | 3 (43%) | 1 | all but pectoral |
-| Crocodylia | 55 | 14 (25%) | 8 | cranial, fin, foot |
-| Testudines | 50 | 12 (24%) | 6 | axial, fin, thigh, leg, foot |
-| Lepidosauria | 76 | 13 (17%) | 10 | fin |
-| Theria | 73 | 12 (16%) | 10 | fin |
-| Caudata | 66 | 7 (11%) | **11 (all)** | — |
-| Aves | 54 | 6 (11%) | 9 | fin, foot |
-| Anura | 56 | 4 (7%) | 9 | fin, foot |
-| Chondrichthyes | 19 | 1 (5%) | 4 | most appendicular |
-| Actinopterygii | 12 | 0 (0%) | 4 | most appendicular |
-| Tetrapodomorpha (stem) | 7 | 0 (0%) | 2 | most |
-| Petromyzontida | 5 | 0 (0%) | 2 | most |
-| Myxini | 1 | 0 (0%) | 1 | most |
+| Taxon | Occurrences | With attachments | %att |
+|---|---:|---:|---:|
+| Dipnoi | 7 | 7 | **100%** |
+| Actinistia | 7 | 6 | 86% |
+| Synapsida (stem) | 4 | 2 | 50% |
+| Actinopterygii | 14 | 6 | 43% |
+| Monotremata | 7 | 3 | 43% |
+| Crocodylia | 65 | 24 | 37% |
+| Lepidosauria | 87 | 24 | 28% |
+| Anura | 60 | 15 | 25% |
+| Testudines | 50 | 12 | 24% |
+| Theria | 81 | 12 | 15% |
+| Aves | 55 | 7 | 13% |
+| Caudata | 66 | 7 | 11% |
+| Chondrichthyes | 19 | 1 | 5% |
+| **Tetrapodomorpha (stem)** | 7 | **0** | **0%** |
+| Petromyzontida | 5 | 0 | 0% |
+| Myxini | 1 | 0 | 0% |
 
-Two different kinds of thin:
+Actinopterygii is no longer the weak column — Winterbottom (1973) took it from 0
+to 43%. **Caudata is now the anomaly**: it covers all eleven regions, the widest
+of any taxon, at 11% attachment coverage. It is the reference taxon for the
+plesiomorphic tetrapod condition throughout this dataset, and it is among the
+thinnest for attachment detail. That is the highest-leverage single column to
+improve.
 
-**Deep but narrow** — Dipnoi, Actinistia, Monotremata, stem synapsids have
-excellent attachment coverage over very few muscles. They are single-region
-columns, which is honest: those sources covered one appendage.
+**Theria at 15% and Aves at 13%** are similarly broad-but-shallow, and both have
+architecture data but little attachment structure.
 
-**Broad but shallow** — Caudata covers all eleven regions but only 11% of its
-occurrences carry attachments. Anura and Aves are similar. These are the columns
-where the muscle *roster* is good and the attachment detail is not.
-
-**Genuinely underreported:** Actinopterygii (12 occurrences, 0 attachments) is
-the weakest column with a real literature behind it. *Polypterus* appendicular
-attachments are not in the Diogo et al. supplementary the way the sarcopterygian
-ones are, and Winterbottom (1973) — a 93-page teleost synonymy, still unmined —
-would at least fix the naming. Myxini and Petromyzontida are thin by nature
-(1 and 5 occurrences) and will stay that way.
+**Tetrapodomorpha (stem) at 0%** is the fossil column, and its attachments would
+have to come from osteological correlates rather than dissection — Molnar et al.
+(2018) Tables S1-S6 are the source, still unfetched.
 
 ## 3. Is the skeletal mapping keeping pace?
 

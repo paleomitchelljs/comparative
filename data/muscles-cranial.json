@@ -82,8 +82,9 @@
           "taxon": "actinopterygii",
           "name": "Adductor mandibulae A1–A3, Aω",
           "present": "yes",
-          "note": "Extensively subdivided in teleosts in correlation with the mobile upper jaw.",
+          "note": "Extensively subdivided in teleosts in correlation with the mobile upper jaw. Jayaram et al. (1983) describe the mandibular and hyoid muscle complexes in three species of the catfish genus Arius and find the myological differences taxonomically informative at species level — a reminder that the subdivision pattern varies below the clade level this dataset records.",
           "sources": [
+            "jayaram-etal-1983",
             "ziermann-diogo-2019"
           ]
         },
@@ -134,7 +135,7 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match. Johnston (2011, 2014) resolves this complex into a folded sheet whose components are identified by where they insert into an inverted U wrapped around the adductor mandibulae posterior; those components are recorded separately here.",
+        "notes": "The single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match. Johnston (2011, 2014) resolves this complex into a folded sheet whose components are identified by where they insert into an inverted U wrapped around the adductor mandibulae posterior; those components are recorded separately here. Miyashita (2016) sets out the mandibular-confinement hypothesis for the origin of the jaw, which is the background for why cyclostome feeding musculature is not homologised with this complex despite both being trigeminal and mandibular-arch derived.",
         "related": [
           "adductor-mandibulae-externus",
           "adductor-mandibulae-internus",
@@ -149,8 +150,10 @@
         "teaching": "Establish CN V = arch 1 = jaw closing first, then show that the mammalian masseter/temporalis split is a rearrangement within an ancient field, not a new muscle system."
       },
       "sources": [
+        "jayaram-etal-1983",
         "johnston-2011",
         "johnston-2014",
+        "miyashita-2016",
         "werneburg-2011",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
@@ -218,8 +221,10 @@
           "name": "Intermandibularis",
           "present": "yes",
           "sources": [
+            "jayaram-etal-1983",
             "ziermann-diogo-2019"
-          ]
+          ],
+          "note": "Described for Arius by Jayaram et al. (1983), alongside the protractor hyoidei."
         },
         {
           "taxon": "caudata",
@@ -276,9 +281,10 @@
         "teaching": "Pair the tensor tympani (CN V, arch 1) with the stapedius (CN VII, arch 2) — two tiny muscles millimetres apart in the middle ear, from different arches, with different nerves. The best available proof that arch identity is durable."
       },
       "sources": [
-        "ziermann-etal-2014",
+        "jayaram-etal-1983",
+        "werneburg-2011",
         "ziermann-diogo-2019",
-        "werneburg-2011"
+        "ziermann-etal-2014"
       ]
     },
     {
@@ -623,15 +629,16 @@
           "present": "yes",
           "action": "Attenuates loud sound by stiffening the ossicular chain.",
           "innervation": "Facial nerve (CN VII).",
-          "note": "The muscle followed the hyomandibula through its transformation into the stapes, from jaw suspension into hearing, without changing arch or nerve.",
+          "note": "The muscle followed the hyomandibula through its transformation into the stapes, from jaw suspension into hearing, without changing arch or nerve. Clack et al. (2016) collect the fossil evidence for the ear across vertebrates; the hyomandibula-to-stapes transformation this muscle followed is treated there in detail.",
           "sources": [
+            "clack-etal-2016",
             "ziermann-diogo-2019"
           ]
         }
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The hyomandibula→stapes transformation is one of the best-documented in vertebrate evolution, and the muscle acting on it tracked the element throughout.",
+        "notes": "The hyomandibula→stapes transformation is one of the best-documented in vertebrate evolution, and the muscle acting on it tracked the element throughout. The spiracular sequence of Gai et al. (2022) is the skeletal counterpart of this muscle's history: the pouch it sits beside becomes the tympanic cavity.",
         "related": [
           "depressor-mandibulae",
           "interhyoideus",
@@ -641,8 +648,10 @@
         "teaching": "Teach with the tensor tympani. Two middle-ear muscles, two arches, two nerves, both retained through a wholesale change of function."
       },
       "sources": [
-        "ziermann-etal-2014",
-        "ziermann-diogo-2019"
+        "clack-etal-2016",
+        "gai-etal-2022",
+        "ziermann-diogo-2019",
+        "ziermann-etal-2014"
       ]
     },
     {
@@ -751,17 +760,18 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "Arch-by-arch innervation is preserved from cyclostomes to mammals. The reduction of the posterior arch series in tetrapods leaves the pharyngeal and laryngeal muscles as the surviving remnants of a gill-ventilation system.",
+        "notes": "Arch-by-arch innervation is preserved from cyclostomes to mammals. The reduction of the posterior arch series in tetrapods leaves the pharyngeal and laryngeal muscles as the surviving remnants of a gill-ventilation system. Higashiyama et al. (2016) document the branchial and intestinal portions of the vagus and their cardiac branches, which is the innervation context for the posterior arch series.",
         "related": [
           "protractor-pectoralis"
         ],
         "teaching": "The stylopharyngeus is a memorable single fact: one muscle, one nerve, one arch, the last of its kind."
       },
       "sources": [
-        "ziermann-etal-2014",
-        "ziermann-diogo-2019",
+        "higashiyama-etal-2016",
         "naumann-etal-2017",
-        "werneburg-2011"
+        "werneburg-2011",
+        "ziermann-diogo-2019",
+        "ziermann-etal-2014"
       ]
     },
     {
@@ -1114,6 +1124,7 @@
           "present": "yes",
           "action": "Abducts the suspensorium during suction feeding.",
           "sources": [
+            "jayaram-etal-1983",
             "ziermann-diogo-2019"
           ]
         },
@@ -1125,7 +1136,7 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "notes": "The spiracular series is important for the origin of the tetrapod middle ear: the spiracular pouch is the ancestor of the tympanic cavity, and the mandibular-arch identity of the region is preserved by trigeminal innervation. Gai et al. (2022) trace the spiracular sequence through the fossil record.",
+        "notes": "The spiracular series is important for the origin of the tetrapod middle ear: the spiracular pouch is the ancestor of the tympanic cavity, and the mandibular-arch identity of the region is preserved by trigeminal innervation. Gai et al. (2022) trace the spiracular sequence through the fossil record. Gai et al. (2022) trace the spiracular region from jawless fishes to tetrapods, which is the fossil evidence behind treating the spiracular pouch as antecedent to the tympanic cavity — a claim this record previously made without a source.",
         "related": [
           "adductor-mandibulae",
           "stapedius"
@@ -1133,8 +1144,10 @@
         "teaching": "Connects jaw suspension, gill slits and the middle ear in one developmental field."
       },
       "sources": [
-        "ziermann-etal-2014",
-        "ziermann-diogo-2019"
+        "gai-etal-2022",
+        "jayaram-etal-1983",
+        "ziermann-diogo-2019",
+        "ziermann-etal-2014"
       ]
     },
     {
@@ -1453,7 +1466,7 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "notes": "Johnston (2011, 2014) models the adductor complex as a folded sheet whose insertion on the mandible forms an inverted U wrapped around the insertion of the adductor mandibulae posterior. Components are identified by WHERE THEY INSERT INTO THAT U, not by which side of a trigeminal branch they lie on — the criterion the older literature used and which does not survive comparison across gnathostomes. Snake adductors were long thought to have a different configuration from lizards; the difference is in the folding, not in the components.",
+        "notes": "Johnston (2011, 2014) models the adductor complex as a folded sheet whose insertion on the mandible forms an inverted U wrapped around the insertion of the adductor mandibulae posterior. Components are identified by WHERE THEY INSERT INTO THAT U, not by which side of a trigeminal branch they lie on — the criterion the older literature used and which does not survive comparison across gnathostomes. Snake adductors were long thought to have a different configuration from lizards; the difference is in the folding, not in the components. Werneburg & Preuschoft (2024) give the osteological side of this muscle: they treat the temporal bars as struts resisting the compressive and tensile stresses of biting, so the pattern of temporal openings is a consequence of where adductor force is transmitted rather than an arbitrary character. That makes the temporal configuration usable as evidence about adductor volume and orientation in fossils.",
         "related": [
           "adductor-mandibulae",
           "adductor-mandibulae-lateralis",
@@ -1467,6 +1480,7 @@
         "johnston-2011",
         "johnston-2014",
         "werneburg-2011",
+        "werneburg-preuschoft-2024",
         "ziermann-diogo-2019"
       ],
       "complex": "adductor-mandibulae"
@@ -1610,9 +1624,11 @@
             ]
           },
           "sources": [
-            "werneburg-2011"
+            "werneburg-2011",
+            "werneburg-maier-2019"
           ],
-          "attachmentNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011)."
+          "attachmentNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011).",
+          "note": "Werneburg & Maier (2019) show the palatoquadrate this muscle arises from is fused to the braincase in turtles, and that cryptodires and pleurodires build that fixation differently — cryptodires via an ossified ascending process (the epipterygoid) bridged ventrally by the pterygoid, pleurodires by appositional bone of the quadrate with the parietal's descending process forming the braincase wall. The muscle's origin surface is therefore not developmentally the same structure in the two clades."
         }
       ],
       "homology": {
@@ -1628,7 +1644,8 @@
       "sources": [
         "johnston-2011",
         "johnston-2014",
-        "werneburg-2011"
+        "werneburg-2011",
+        "werneburg-maier-2019"
       ],
       "complex": "adductor-mandibulae"
     },

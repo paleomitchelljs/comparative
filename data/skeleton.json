@@ -48,7 +48,10 @@
       "segment": "girdle",
       "partOf": "pectoral-girdle",
       "presence": {
-        "default": "yes"
+        "default": "yes",
+        "sources": [
+          "chen-etal-2025"
+        ]
       },
       "derivedFrom": "scapulocoracoid"
     },
@@ -209,8 +212,9 @@
         ],
         "note": "Lost as an independent ossification in therians, surviving only as the coracoid process of the scapula. This single loss forces the origin of the supracoracoideus onto the lateral scapula and removes the coracoid head of the subcoracoscapularis — the clearest case in the dataset of an attachment moving because its bone disappeared.",
         "sources": [
-          "gambaryan-etal-2015",
-          "fahn-lai-etal-2020"
+          "chen-etal-2025",
+          "fahn-lai-etal-2020",
+          "gambaryan-etal-2015"
         ]
       },
       "derivedFrom": "scapulocoracoid"
@@ -311,8 +315,10 @@
           "aves"
         ],
         "sources": [
-          "abdala-diogo-2010"
-        ]
+          "abdala-diogo-2010",
+          "chen-etal-2025"
+        ],
+        "note": "Chen et al. (2025) score this region across crown birds in an osteological character matrix; their scoring conventions are the reference for how these elements are delimited here."
       }
     },
     {
@@ -345,9 +351,10 @@
         "present": [
           "aves"
         ],
-        "note": "Carries both the pectoralis and the supracoracoideus. The whole flight apparatus is powered from below the centre of mass because the supracoracoideus tendon is redirected dorsally through the foramen triosseum.",
+        "note": "Carries both the pectoralis and the supracoracoideus. The whole flight apparatus is powered from below the centre of mass because the supracoracoideus tendon is redirected dorsally through the foramen triosseum. Chen et al. (2025) score this region across crown birds in an osteological character matrix; their scoring conventions are the reference for how these elements are delimited here.",
         "sources": [
-          "abdala-diogo-2010"
+          "abdala-diogo-2010",
+          "chen-etal-2025"
         ]
       }
     },
@@ -2764,6 +2771,7 @@
           "aves"
         ],
         "sources": [
+          "chen-etal-2025",
           "hattori-tsuihiji-2021"
         ],
         "note": "Fused tibia and proximal tarsals in birds."
@@ -2783,6 +2791,7 @@
           "aves"
         ],
         "sources": [
+          "chen-etal-2025",
           "hattori-tsuihiji-2021"
         ],
         "note": "Fused distal tarsals and metatarsals II-IV in birds. Its proximal dorsal tuberosities are the insertion correlate for the m. tibialis cranialis."
@@ -3229,6 +3238,58 @@
         "sources": [
           "cieri-2018"
         ]
+      }
+    },
+    {
+      "id": "epipterygoid",
+      "label": "Epipterygoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "palatoquadrate-quadrate",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "testudines",
+          "lepidosauria"
+        ],
+        "sources": [
+          "werneburg-maier-2019"
+        ],
+        "note": "The ossified ascending process of the palatoquadrate. Werneburg & Maier (2019) show it forms the secondary lateral braincase wall in cryptodire turtles, while pleurodires build that wall from the descending process of the parietal instead, having no extended ascending process to ossify."
+      }
+    },
+    {
+      "id": "basipterygoid-process",
+      "label": "Basipterygoid process",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "basisphenoid",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "sources": [
+          "werneburg-maier-2019"
+        ],
+        "note": "Its reduction is one of four character complexes Werneburg & Maier (2019) tie to the akinetic turtle skull."
+      }
+    },
+    {
+      "id": "temporal-bar",
+      "label": "Temporal bar / arcade",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "temporal-fossa",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "sources": [
+          "werneburg-preuschoft-2024"
+        ],
+        "note": "Werneburg & Preuschoft (2024) treat the temporal bars as struts resisting the compressive and tensile stresses of biting; the pattern of openings between them follows from where those stresses run, rather than being an arbitrary taxonomic character."
       }
     }
   ]

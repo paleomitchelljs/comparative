@@ -56,6 +56,25 @@ taxon lacks are dropped rather than asserted.
 against the earliest taxon with data. The diff is hierarchy-aware: `humerus →
 greater tubercle` is a refinement in resolution, not a muscle moving.
 
+## What correlates can and cannot do
+
+An osteological correlate locates an attachment. It does not size the muscle.
+Leavey et al. (2024) find that bone lengths and pelvic crest sizes are generally
+not reliable predictors of muscle size across 30 frog species, and report
+many-to-one form-function mapping. Treat a correlate as evidence that a muscle
+attached there, not as a measurement of it.
+
+Conversely, several sources here weight **attachment geometry over innervation**
+where nerve topography turns out to be labile: Johnston (2011, 2014) on the jaw
+adductors, Winterbottom (1973) on the same complex in teleosts, and Hattori &
+Tsuihiji (2021) on the pedal muscles. Elsewhere — the limb masses, the
+epaxial/hypaxial division — innervation is the stable signal and attachment is
+the labile one. The dataset does not rank the criteria globally; it records which
+one each source relied on and why.
+
+For the conceptual background on what a homology claim is, Richardson (2022)
+reviews the theories and models in play.
+
 ## Homology and serial correspondence
 
 Muscle records are **homology groups**, not muscles-in-an-animal. The same muscle

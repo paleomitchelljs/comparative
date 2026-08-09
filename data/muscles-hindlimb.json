@@ -20,8 +20,11 @@
       "developmental": "Somitic; dorsal (extensor) mass of the pelvic limb bud.",
       "synonyms": [
         "iliacus + psoas major (mammals)",
-        "sartorius (from the anterior head)",
-        "puboischiofemoralis internus A–D (Prikryl et al. 2009 letter codes, anurans)"
+        "iliacus externus (anuran usage)",
+        "iliacus internus (anuran usage)",
+        "pectineus (anuran usage, sensu Noble 1922)",
+        "puboischiofemoralis internus A–D (Prikryl et al. 2009 letter codes, anurans)",
+        "sartorius (from the anterior head)"
       ],
       "consensus": {
         "origin": "Internal (medial) surface of the pubis and ilium, and the ventral surfaces of the posterior trunk vertebrae.",
@@ -60,9 +63,10 @@
           "taxon": "anura",
           "name": "Puboischiofemoralis internus A–D",
           "present": "yes",
-          "note": "Prikryl et al. (2009) letter codes are used deliberately in place of the mammalian-sounding names ('iliacus', 'sartorius', 'pectineus') that earlier authors applied to these muscles, because those names imply homologies that do not hold.",
+          "note": "Prikryl et al. (2009) letter codes are used deliberately in place of the mammalian-sounding names ('iliacus', 'sartorius', 'pectineus') that earlier authors applied to these muscles, because those names imply homologies that do not hold. The anuran iliacus externus and internus belong to this field. Note the unresolved 'pectineus' — Noble (1922) placed it here, others in the externus.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "prikryl-etal-2009"
           ]
         },
         {
@@ -130,7 +134,8 @@
       },
       "sources": [
         "allen-etal-2021",
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "prikryl-etal-2009"
       ]
     },
     {
@@ -149,7 +154,8 @@
       },
       "developmental": "Somitic; ventral (flexor) mass.",
       "synonyms": [
-        "obturator externus + quadratus femoris + gemelli (mammals)"
+        "obturator externus + quadratus femoris + gemelli (mammals)",
+        "pectineus (anuran usage)"
       ],
       "consensus": {
         "origin": "External (lateral/ventral) surfaces of the pubis and ischium.",
@@ -187,8 +193,10 @@
           "name": "Puboischiofemoralis externus",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "prikryl-etal-2009"
+          ],
+          "note": "Přikryl et al. (2009) note that the anuran 'pectineus' was identified as puboischiofemoralis EXTERNUS by Hoffmann (1873-78) and Iordansky & Morozov (1994), but as puboischiofemoralis INTERNUS by Noble (1922). The primary literature disagrees about which of the two it is, not merely about what to call it."
         },
         {
           "taxon": "testudines",
@@ -262,7 +270,8 @@
       "sources": [
         "allen-etal-2021",
         "bishop-pierce-2024",
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "prikryl-etal-2009"
       ]
     },
     {
@@ -282,6 +291,7 @@
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
         "gluteus medius + gluteus minimus (mammals)",
+        "iliofemoralis (anuran usage)",
         "iliofemoralis externus/internus (archosaurs)"
       ],
       "consensus": {
@@ -317,7 +327,9 @@
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "leavey-etal-2024",
+            "prikryl-etal-2009"
           ]
         },
         {
@@ -536,14 +548,17 @@
           "iliofibularis",
           "puboischiofemoralis-internus"
         ],
-        "teaching": "The best single muscle for showing that posture change is a change in mechanics, not in anatomy. Same muscle, same nerve, radically different role."
+        "teaching": "The best single muscle for showing that posture change is a change in mechanics, not in anatomy. Same muscle, same nerve, radically different role.",
+        "caveat": "Leavey et al. (2024), using diceCT on 30 frog species across five locomotor modes, report that bone lengths and pelvic crest sizes are generally NOT reliable predictors of muscle size, and find many-to-one form-function mapping. That is a direct caution against reading muscle proportions off skeletal proportions in fossils, which is the inference osteological correlates are usually recruited for. Correlates locate an attachment; they do not size the muscle that made it."
       },
       "sources": [
         "allen-etal-2021",
         "bishop-pierce-2024",
         "diogo-molnar-2014",
         "hudson-etal-2011b",
-        "hutchinson-etal-2015"
+        "hutchinson-etal-2015",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
       ]
     },
     {
@@ -596,7 +611,8 @@
           "present": "variable",
           "note": "Reduced with the loss of the tail; the urostyle replaces the caudal series.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "leavey-etal-2024"
           ]
         },
         {
@@ -759,13 +775,15 @@
           "ischioflexorius",
           "retractor-lateralis-ventralis-pectoralis"
         ],
-        "teaching": "The single best fossil-muscle example: a bony landmark (the fourth trochanter) that reads directly as muscle presence, size and locomotor mode across 300 million years."
+        "teaching": "The single best fossil-muscle example: a bony landmark (the fourth trochanter) that reads directly as muscle presence, size and locomotor mode across 300 million years.",
+        "caveat": "Leavey et al. (2024), using diceCT on 30 frog species across five locomotor modes, report that bone lengths and pelvic crest sizes are generally NOT reliable predictors of muscle size, and find many-to-one form-function mapping. That is a direct caution against reading muscle proportions off skeletal proportions in fossils, which is the inference osteological correlates are usually recruited for. Correlates locate an attachment; they do not size the muscle that made it."
       },
       "sources": [
         "allen-etal-2021",
         "bishop-pierce-2024",
         "diogo-molnar-2014",
-        "hutchinson-etal-2015"
+        "hutchinson-etal-2015",
+        "leavey-etal-2024"
       ]
     },
     {
@@ -784,10 +802,13 @@
       },
       "developmental": "Somitic; dorsal mass.",
       "synonyms": [
+        "cruralis (anuran usage)",
+        "glutaeus maximus (anuran usage)",
         "ilioextensorius (urodeles, posterior head)",
+        "iliotibialis (anuran usage)",
         "iliotibialis (urodeles, anterior head)",
-        "triceps femoris (partim)",
-        "tensor fasciae latae + rectus femoris (mammals)"
+        "tensor fasciae latae + rectus femoris (mammals)",
+        "triceps femoris (partim)"
       ],
       "consensus": {
         "origin": "Dorsal/lateral ilium.",
@@ -824,9 +845,11 @@
           "taxon": "anura",
           "name": "Extensor iliotibialis A/B",
           "present": "yes",
-          "note": "Diogo & Molnar use letter codes rather than the mammalian names ('gluteus maximus', 'tensor fasciae latae') applied by earlier authors, because those homologies do not hold.",
+          "note": "Diogo & Molnar use letter codes rather than the mammalian names ('gluteus maximus', 'tensor fasciae latae') applied by earlier authors, because those homologies do not hold. Přikryl et al. (2009) list the anuran muscle as 'glutaeus maximus (iliotibialis)'. It is NOT homologous with the mammalian gluteus maximus — one of the twelve false-friend names Diogo & Molnar (2014) identify.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "leavey-etal-2024",
+            "prikryl-etal-2009"
           ]
         },
         {
@@ -970,13 +993,16 @@
         "related": [
           "femorotibialis",
           "ambiens"
-        ]
+        ],
+        "caveat": "Leavey et al. (2024), using diceCT on 30 frog species across five locomotor modes, report that bone lengths and pelvic crest sizes are generally NOT reliable predictors of muscle size, and find many-to-one form-function mapping. That is a direct caution against reading muscle proportions off skeletal proportions in fossils, which is the inference osteological correlates are usually recruited for. Correlates locate an attachment; they do not size the muscle that made it."
       },
       "sources": [
         "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b",
-        "hutchinson-etal-2015"
+        "hutchinson-etal-2015",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
       ]
     },
     {
@@ -989,8 +1015,9 @@
       "layer": "superficialis",
       "developmental": "Somitic; dorsal (extensor) mass.",
       "synonyms": [
+        "M. iliofibularis",
         "biceps femoris (mammals — proposed)",
-        "M. iliofibularis"
+        "iliofibularis (anuran usage)"
       ],
       "consensus": {
         "origin": "Lateral surface of the ilium, posterior to the iliofemoralis origin.",
@@ -1100,6 +1127,15 @@
               }
             ]
           }
+        },
+        {
+          "taxon": "anura",
+          "present": "yes",
+          "name": "iliofibularis",
+          "note": "Present in anurans under the same name; Přikryl et al. (2009) describe it attaching to the knee aponeurosis, partly covering the head of the fibula.",
+          "sources": [
+            "prikryl-etal-2009"
+          ]
         }
       ],
       "homology": {
@@ -1122,6 +1158,7 @@
         "dick-clemente-2016",
         "hutchinson-etal-2015",
         "pereyra-etal-2024",
+        "prikryl-etal-2009",
         "tomanska-etal-2025"
       ]
     },
@@ -1815,7 +1852,10 @@
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
         "gracilis (mammals)",
-        "gracilis major + gracilis minor (anurans)"
+        "gracilis major (anuran usage)",
+        "gracilis major + gracilis minor (anurans)",
+        "gracilis minor (anuran usage)",
+        "puboischiotibialis sensu Mivart 1869 and Iordansky & Morozov 1994"
       ],
       "consensus": {
         "origin": "Ventral pelvic girdle — pubis and ischium.",
@@ -1851,9 +1891,10 @@
           "taxon": "anura",
           "name": "Gracilis major + gracilis minor",
           "present": "yes",
-          "note": "Two heads in anurans versus one in mammals. Both derive from the puboischiotibialis, but via different heads — so the anuran and mammalian 'gracilis' are not straightforwardly equivalent.",
+          "note": "Two heads in anurans versus one in mammals. Both derive from the puboischiotibialis, but via different heads — so the anuran and mammalian 'gracilis' are not straightforwardly equivalent. The anuran gracilis major is Mivart's and Iordansky & Morozov's puboischiotibialis (Přikryl et al. 2009).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "prikryl-etal-2009"
           ]
         },
         {
@@ -1899,7 +1940,8 @@
         "teaching": "A one-line answer to 'which of my leg muscles would a salamander recognise?' — essentially just the gracilis."
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "prikryl-etal-2009"
       ]
     },
     {
@@ -1918,8 +1960,12 @@
       },
       "developmental": "Somitic; ventral mass.",
       "synonyms": [
-        "flexor tibialis externus + internus",
+        "caudalipuboischiotibialis sensu Francis 1934",
         "flexor cruris et tarsi tibialis",
+        "flexor tibialis externus + internus",
+        "ischioflexorius sensu Hoffmann 1873-78 and Mivart 1869",
+        "semimembranosus (anuran usage)",
+        "semitendinosus (anuran usage)",
         "semitendinosus + semimembranosus + biceps femoris (mammals — the hamstrings)"
       ],
       "consensus": {
@@ -1960,9 +2006,11 @@
           "taxon": "anura",
           "name": "'Semitendinosus'",
           "present": "yes",
-          "note": "A false-friend name. The anuran 'semitendinosus' is not homologous to the mammalian muscle of that name.",
+          "note": "A false-friend name. The anuran 'semitendinosus' is not homologous to the mammalian muscle of that name. Přikryl et al. (2009) record that the anuran 'semimembranosus' was called ischioflexorius by Hoffmann and caudalipuboischiotibialis by Francis, while the anuran 'semitendinosus' was called ischioflexorius by Mivart and puboischiotibialis by Hoffmann. Two muscles, four names, two of them shared — which is what Diogo & Molnar mean by false friends.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "leavey-etal-2024",
+            "prikryl-etal-2009"
           ]
         },
         {
@@ -2098,12 +2146,15 @@
           "caudofemoralis",
           "iliofibularis",
           "puboischiotibialis"
-        ]
+        ],
+        "caveat": "Leavey et al. (2024), using diceCT on 30 frog species across five locomotor modes, report that bone lengths and pelvic crest sizes are generally NOT reliable predictors of muscle size, and find many-to-one form-function mapping. That is a direct caution against reading muscle proportions off skeletal proportions in fossils, which is the inference osteological correlates are usually recruited for. Correlates locate an attachment; they do not size the muscle that made it."
       },
       "sources": [
         "allen-etal-2021",
         "diogo-molnar-2014",
-        "hudson-etal-2011b"
+        "hudson-etal-2011b",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
       ]
     },
     {
