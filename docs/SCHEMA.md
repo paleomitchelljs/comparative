@@ -79,12 +79,69 @@ different from a source reporting absence.
 | `present` | | `yes` (default) · `no` · `variable` · `uncertain` · `inferred`. Use `inferred` for fossil reconstructions and `variable` when a source reports it in some species of the clade and not others |
 | `name` | ✔ if present | What this muscle is called **in that taxon's literature** |
 | `origin`, `insertion`, `action`, `innervation` | | Taxon-specific values. Omit when they match the consensus — the UI falls back to it |
+| `division` | | How far this homology group is split in this taxon. See below |
+| `parts` | | The named subunits. Required by `division` states other than `single` |
+| `partsOpen` | | `true` where the source's enumeration is explicitly incomplete |
+| `divisionNote` | | Why the division is what it is, or who disputes it |
 | `note` | | Where the interesting disagreement goes |
 | `sources` | ✔ if present | Per-row citation. This is what makes a claim checkable |
 
 `present: "no"` means *this source examined this taxon and did not find the
 muscle*. It does not mean the muscle is absent from the clade. Abdala & Diogo
 (2010) repeatedly document muscles present in one lizard and absent in another.
+
+### `division` — how far the group has split in this taxon
+
+A homology group is one muscle in a salamander and four in a mammal. That
+difference is the differentiation signal the dataset exists to capture, and it
+used to live inside the occurrence `name` as prose — `"Iliacus + psoas major (+
+sartorius)"` — where nothing could count it.
+
+```jsonc
+"division": "divided",
+"parts": [
+  { "name": "Iliacus" },
+  { "name": "Psoas major" },
+  { "name": "Sartorius", "membership": "disputed",
+    "note": "Diogo & Molnar derive it from the anterior head of this muscle, "
+            "against the common claim that it comes from the reptilian 'ambiens'." }
+],
+"divisionNote": "…"
+```
+
+| State | Means |
+|---|---|
+| `single` | A source examined this taxon and found **one** undivided muscle |
+| `heads` | One muscle with several named heads or partes — the biceps |
+| `divided` | Several **separate** named muscles — iliacus, psoas major, sartorius |
+| `variable` | The clade contains more than one of the above |
+
+`single`, `heads` and `divided` are **ordered**: a field that is single in a
+salamander, heads in a frog and divided in a mammal has differentiated twice.
+`variable` is polymorphic and deliberately unranked. **Omitting `division`
+entirely means unrecorded** — the same distinction `present` draws, and for the
+same reason: absence of a statement is not a statement of absence, and scoring an
+unexamined taxon as `single` would manufacture a differentiation event on the
+branch leading to whichever taxon someone happened to study.
+
+Part fields: `name` (required), `membership`, `muscle`, `note`, `sources`.
+
+`membership` is `established` (default), `disputed` or `variable`. It exists
+because parenthetical parts in the literature are usually contested rather than
+merely additional. The gemelli are claimed by both the puboischiofemoralis
+externus and the ischiotrochantericus; the fibularis tertius is human and the
+fibularis digiti quinti is rat. Dropping either would make the count look settled.
+This is why the export gives `n_parts_firm` and `n_parts_max` rather than one
+number.
+
+`muscle` optionally links a part to its own homology-group record where the
+dataset has one. It stays optional and is never inferred from the name — a part
+is a name in a taxon, not a record.
+
+**Do not use `parts` on fin records.** Their occurrence names list the tetrapod
+muscles each ancestral fin muscle gave rise to, which is `derivatives` — already
+curated, and already reversed by the app. Recording it twice gives one fact two
+homes.
 
 ### Homology block
 
@@ -274,12 +331,18 @@ an element its taxon lacks fails validation.
 ## Getting the data out
 
 `python3 scripts/export_matrix.py` writes long-format CSVs to `export/`
-(git-ignored): `attachments.csv`, `presence.csv`, `elements.csv`, `muscles.csv`.
+(git-ignored): `attachments.csv`, `presence.csv`, `division.csv`, `parts.csv`,
+`elements.csv`, `muscles.csv`.
 
 `attachments.csv` is one row per muscle × taxon × origin/insertion × element ×
 landmark, carrying `side`, `is_correlate`, `inherited` and `sources`. Filter
 `inherited == FALSE` for observed data only. `presence.csv` is the character
 matrix in long form, ready for comparative methods.
+
+`division.csv` is the differentiation character: one row per muscle × taxon with
+`division_rank` (0 single, 1 heads, 2 divided; blank for `variable`) and the two
+part counts. `parts.csv` is the long form beneath it, one row per named subunit,
+so disputed parts can be included or excluded by filtering.
 
 ## On wording
 

@@ -52,7 +52,8 @@
           "note": "Segmental myomeres separated by myosepta, undivided into tracts. Axial-based locomotion in its plesiomorphic form.",
           "sources": [
             "schilling-2011"
-          ]
+          ],
+          "division": "single"
         },
         {
           "taxon": "chondrichthyes",
@@ -98,6 +99,21 @@
           "sources": [
             "schilling-2011",
             "cieri-2018"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Transversospinalis",
+              "muscle": "transversospinalis"
+            },
+            {
+              "name": "Longissimus",
+              "muscle": "longissimus-dorsi"
+            },
+            {
+              "name": "Iliocostalis",
+              "muscle": "iliocostalis"
+            }
           ]
         },
         {
@@ -106,6 +122,21 @@
           "present": "yes",
           "sources": [
             "schilling-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Transversospinalis",
+              "muscle": "transversospinalis"
+            },
+            {
+              "name": "Longissimus",
+              "muscle": "longissimus-dorsi"
+            },
+            {
+              "name": "Iliocostalis",
+              "muscle": "iliocostalis"
+            }
           ]
         },
         {
@@ -127,6 +158,21 @@
           "note": "The transversospinal muscle is further subdivided into the transversospinal system (multifidus, semispinalis and relatives). Schilling ties this to the evolution of a mobile lumbar region and a rib-free lumbar segment.",
           "sources": [
             "schilling-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Transversospinal system",
+              "muscle": "transversospinalis"
+            },
+            {
+              "name": "Longissimus",
+              "muscle": "longissimus-dorsi"
+            },
+            {
+              "name": "Iliocostalis",
+              "muscle": "iliocostalis"
+            }
           ]
         }
       ],
@@ -219,6 +265,15 @@
           "present": "yes",
           "sources": [
             "schilling-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Abdominal wall musculature"
+            },
+            {
+              "name": "Subvertebral musculature"
+            }
           ]
         },
         {
@@ -229,6 +284,31 @@
           "sources": [
             "schilling-2011",
             "cieri-2018"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Subvertebralis"
+            },
+            {
+              "name": "Obliquus externus",
+              "muscle": "obliquus-externus"
+            },
+            {
+              "name": "Obliquus internus"
+            },
+            {
+              "name": "Transversus abdominis",
+              "muscle": "transversus-abdominis"
+            },
+            {
+              "name": "Rectus abdominis",
+              "muscle": "rectus-abdominis"
+            },
+            {
+              "name": "Intercostales",
+              "muscle": "intercostales-externi"
+            }
           ]
         },
         {
@@ -237,7 +317,17 @@
           "present": "yes",
           "sources": [
             "schilling-2011"
-          ]
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Subvertebralis"
+            },
+            {
+              "name": "Abdominal wall series"
+            }
+          ],
+          "partsOpen": true
         },
         {
           "taxon": "theria",
@@ -246,6 +336,34 @@
           "action": "The rectus abdominis is the most important sagittal flexor of the mammalian trunk; the subvertebral muscles are correlated with the evolution of a mobile lumbar region.",
           "sources": [
             "schilling-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Quadratus lumborum"
+            },
+            {
+              "name": "Psoas minor"
+            },
+            {
+              "name": "Obliquus externus",
+              "muscle": "obliquus-externus"
+            },
+            {
+              "name": "Obliquus internus"
+            },
+            {
+              "name": "Transversus abdominis",
+              "muscle": "transversus-abdominis"
+            },
+            {
+              "name": "Rectus abdominis",
+              "muscle": "rectus-abdominis"
+            },
+            {
+              "name": "Intercostales",
+              "muscle": "intercostales-externi"
+            }
           ]
         }
       ],
@@ -318,7 +436,17 @@
           "present": "yes",
           "sources": [
             "schilling-2011"
-          ]
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Caudal epaxial series"
+            },
+            {
+              "name": "Caudal hypaxial series"
+            }
+          ],
+          "partsOpen": true
         },
         {
           "taxon": "anura",
@@ -594,7 +722,17 @@
           "note": "Subdivided into several entities in mammals; Schilling (2011) ties that subdivision to the evolution of a mobile, rib-free lumbar region.",
           "sources": [
             "schilling-2011"
-          ]
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Multifidus"
+            },
+            {
+              "name": "Semispinalis"
+            }
+          ],
+          "partsOpen": true
         }
       ],
       "homology": {
@@ -810,6 +948,15 @@
           },
           "sources": [
             "cieri-2018"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Obliquus externus superficialis"
+            },
+            {
+              "name": "Obliquus externus profundus"
+            }
           ]
         },
         {
@@ -1185,6 +1332,15 @@
           "note": "Cieri (2018) distinguishes a main ventral belly from a superficial rectus abdominis lateralis; the margin between them carries the origin of the obliquus externus superficialis.",
           "sources": [
             "cieri-2018"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Rectus abdominis ventralis"
+            },
+            {
+              "name": "Rectus abdominis lateralis"
+            }
           ]
         },
         {

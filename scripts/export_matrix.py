@@ -11,6 +11,8 @@ whether the value was observed or inherited from the consensus.
 Writes:
   attachments.csv   muscle x taxon x side x element x landmark, one row each
   presence.csv      muscle x taxon presence states — a character matrix
+  division.csv      muscle x taxon differentiation states and part counts
+  parts.csv         one row per named subunit, long form under division.csv
   elements.csv      the skeletal ontology, flattened with lineage
   muscles.csv       one row per muscle with hierarchy fields
 
@@ -123,6 +125,60 @@ def main(outdir: pathlib.Path) -> int:
                             ";".join(occ.get("sources", []))])
                 rows += 1
 
+    # ---- division.csv (differentiation character) ---------------------------
+    #
+    # Two files, because the question has two shapes. `division.csv` is the
+    # character matrix: one row per muscle x taxon, with the ordered state and a
+    # part count, ready to optimise on the tree the way presence already is.
+    # `parts.csv` is the long form underneath it, one row per named subunit, so
+    # a disputed part can be included or dropped by filtering rather than by
+    # re-reading the JSON.
+    #
+    # `n_parts_firm` counts only parts whose membership is established;
+    # `n_parts_max` counts every part listed. Where the two differ the count is
+    # a range, not a number, and `parts_open` marks the source enumerating
+    # rather than finishing — so `n_parts_max` is itself a floor there.
+    with open(outdir / "division.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["muscle_id", "muscle_name", "region", "taxon_id", "taxon_order",
+                    "division", "division_rank", "n_parts_firm", "n_parts_max",
+                    "parts_open", "sources"])
+        # single < heads < divided. `variable` is polymorphic and deliberately
+        # unranked: it means the clade contains more than one state.
+        rank = {"single": 0, "heads": 1, "divided": 2}
+        div_n = 0
+        for m in muscles:
+            for occ in m.get("occurrences", []):
+                d = occ.get("division")
+                if not d:
+                    continue
+                parts = occ.get("parts", [])
+                firm = [x for x in parts
+                        if (x.get("membership") or "established") == "established"]
+                w.writerow([m["id"], m["name"], m.get("region", ""), occ["taxon"],
+                            taxon_order.get(occ["taxon"], ""),
+                            d, rank.get(d, ""),
+                            len(firm) if parts else (1 if d == "single" else ""),
+                            len(parts) if parts else (1 if d == "single" else ""),
+                            "TRUE" if occ.get("partsOpen") else "FALSE",
+                            ";".join(occ.get("sources", []))])
+                div_n += 1
+
+    with open(outdir / "parts.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["muscle_id", "muscle_name", "taxon_id", "division",
+                    "part", "membership", "part_muscle_id", "note", "sources"])
+        part_n = 0
+        for m in muscles:
+            for occ in m.get("occurrences", []):
+                for x in occ.get("parts", []):
+                    w.writerow([m["id"], m["name"], occ["taxon"], occ.get("division", ""),
+                                x.get("name", ""),
+                                x.get("membership") or "established",
+                                x.get("muscle", ""), x.get("note", ""),
+                                ";".join(x.get("sources") or occ.get("sources", []))])
+                    part_n += 1
+
     # ---- architecture.csv ---------------------------------------------------
     with open(outdir / "architecture.csv", "w", newline="") as fh:
         w = csv.writer(fh)
@@ -182,6 +238,8 @@ def main(outdir: pathlib.Path) -> int:
     print(f"attachments.csv  {n} rows")
     print(f"architecture.csv {arch_n} rows")
     print(f"presence.csv     {rows} rows")
+    print(f"division.csv     {div_n} rows")
+    print(f"parts.csv        {part_n} rows")
     print(f"elements.csv     {len(skel['elements'])} rows")
     print(f"muscles.csv      {len(muscles)} rows")
     print(f"-> {outdir}")

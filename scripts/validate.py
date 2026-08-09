@@ -19,6 +19,14 @@ SERIAL_BASIS = {"topological", "developmental", "none"}
 LAYERS = {"superficialis", "profundus", "intermediate", "preaxial", "postaxial", "primaxial"}
 SEGMENTS = {"cranial", "axial", "girdle", "stylopod", "zeugopod", "autopod", "fin"}
 
+# How far one homology group has been split in one taxon. Ordered: a field that
+# is `single` in a salamander, `heads` in a frog and `divided` in a mammal has
+# differentiated twice. Absent means unrecorded, never `single` — the same
+# distinction `present` draws, and for the same reason.
+DIVISION = {"single", "heads", "divided", "variable"}
+DIVISION_WITH_PARTS = {"heads", "divided", "variable"}
+MEMBERSHIP = {"established", "disputed", "variable"}
+
 errors: list[str] = []
 warnings: list[str] = []
 
@@ -34,6 +42,75 @@ def warn(msg):
 def load(path):
     with open(path) as fh:
         return json.load(fh)
+
+
+def check_division(occ, label, present, muscles, source_keys):
+    """How far this homology group is split in this taxon.
+
+    `division` is the scalar; `parts` names the pieces. The pairing is enforced
+    both ways, because either half alone is a claim the other contradicts: parts
+    without a division state do not say whether they are heads of one muscle or
+    separate muscles, and `divided` without parts asserts a split it cannot
+    name.
+    """
+    div = occ.get("division")
+    parts = occ.get("parts")
+
+    if div is None and parts is None:
+        return
+
+    if div is not None and div not in DIVISION:
+        err(f"{label}: division='{div}' not in {sorted(DIVISION)}")
+        return
+
+    if parts is not None and div is None:
+        err(f"{label}: has `parts` but no `division` state")
+    if div == "single" and parts:
+        err(f"{label}: division='single' cannot carry `parts`")
+    if div in DIVISION_WITH_PARTS and not parts:
+        err(f"{label}: division='{div}' but no `parts` listed")
+
+    # Dividing a muscle the source did not find is incoherent.
+    if present == "no" and div:
+        err(f"{label}: present='no' but division='{div}'")
+
+    if div and not occ.get("sources"):
+        warn(f"{label}: division='{div}' with no source cited")
+
+    if not parts:
+        return
+
+    if div in {"heads", "divided"} and len(parts) < 2:
+        err(f"{label}: division='{div}' needs at least two parts, got {len(parts)}")
+
+    seen = set()
+    for i, part in enumerate(parts):
+        at = f"{label}: parts[{i}]"
+        if not isinstance(part, dict):
+            err(f"{at} is not an object: {part!r}")
+            continue
+        name = part.get("name")
+        if not name:
+            err(f"{at} has no name")
+        elif name in seen:
+            err(f"{at} duplicates the name '{name}'")
+        else:
+            seen.add(name)
+
+        mem = part.get("membership", "established")
+        if mem not in MEMBERSHIP:
+            err(f"{at} membership='{mem}' not in {sorted(MEMBERSHIP)}")
+
+        # Optional link to this part's own homology-group record, where the
+        # dataset has one. A part is a name in a taxon, not a record, so the
+        # link stays optional and is never inferred from the name.
+        ref = part.get("muscle")
+        if ref is not None and ref not in muscles:
+            err(f"{at} muscle='{ref}' is not a muscle record")
+
+        for key in part.get("sources", []):
+            if key not in source_keys:
+                err(f"{at} unknown source key '{key}'")
 
 
 def main():
@@ -232,6 +309,8 @@ def main():
             pres = occ.get("present", "yes")
             if pres not in PRESENCE:
                 err(f"{where}/{tid}: present='{pres}' not in {sorted(PRESENCE)}")
+
+            check_division(occ, f"{where}/{tid}", pres, muscles, source_keys)
 
             if pres != "no" and not occ.get("sources"):
                 warn(f"{where}/{tid}: present but no source cited")

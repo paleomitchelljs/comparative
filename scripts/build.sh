@@ -36,10 +36,13 @@ python3 scripts/seed_occurrence_attachments.py $FLAG
 step "6. attachments -> element / side / landmark rows"
 python3 scripts/migrate_attachment_rows.py $FLAG
 
-step "7. close the related-muscle graph"
+step "7. taxon-specific division into parts"
+python3 scripts/seed_division.py $FLAG
+
+step "8. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "8. validate"
+  step "9. validate"
   python3 scripts/validate.py
 fi

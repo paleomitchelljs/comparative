@@ -342,6 +342,7 @@ function renderOccTable(m) {
         <span class="common">${esc(t.label || '')}</span></td>
       <td><span class="pres pres-${esc(present)}">${esc(present)}</span></td>
       <td>${o.name ? `<span class="localname">${esc(o.name)}</span>` : '<span class="pres-no">—</span>'}
+        ${renderDivision(o)}
         ${micro ? `<div class="microdl">${micro}</div>` : ''}
         ${o.note ? `<div class="cellnote">${esc(o.note)}</div>` : ''}
         ${cites ? `<div class="cites">${cites}</div>` : ''}</td>
@@ -352,6 +353,52 @@ function renderOccTable(m) {
     <colgroup><col class="c-taxon"><col class="c-pres"><col class="c-body"></colgroup>
     <thead><tr><th>Taxon</th><th>Present</th><th>Local name, attachments, notes and source</th></tr></thead>
     <tbody>${rows}</tbody></table></div>`;
+}
+
+/* How far the homology group is split in this taxon.
+
+   `single` is a claim — a source looked and found one muscle — so it is shown,
+   not treated as the empty case. An occurrence with no `division` says nothing
+   either way and renders nothing, the same convention `present` follows.
+
+   Parts whose membership is argued or varies are marked rather than dropped:
+   the sartorius and the gemelli are each claimed by two fields, and hiding that
+   would make the count look settled when it is not. */
+const DIVISION_LABEL = {
+  single: 'undivided',
+  heads: 'one muscle, several heads',
+  divided: 'divided into separate muscles',
+  variable: 'division varies within the clade',
+};
+
+function renderDivision(o) {
+  if (!o.division) return '';
+  const firm = (o.parts || []).filter(x => (x.membership || 'established') === 'established');
+  /* A "+" means the firm count is a floor — either some parts are disputed or
+     the source stopped short of a full list — so the count reads as a range and
+     takes the plural regardless. */
+  const open = o.parts && (o.parts.length !== firm.length || o.partsOpen);
+  const count = o.parts
+    ? `<span class="chip">${firm.length}${open ? '+' : ''} part${firm.length === 1 && !open ? '' : 's'}</span>`
+    : '';
+
+  const parts = (o.parts || []).map(x => {
+    const mem = x.membership || 'established';
+    const rec = x.muscle ? state.byId.get(x.muscle) : null;
+    const body = rec
+      ? `<a class="pill" data-goto="${esc(rec.id)}">${esc(x.name)}</a>`
+      : `<span class="pill flat">${esc(x.name)}</span>`;
+    const tag = mem === 'established' ? ''
+      : `<span class="memtag mem-${esc(mem)}" title="${esc(x.note || mem)}">${esc(mem)}</span>`;
+    return `<li>${body}${tag}${x.note ? `<span class="cellnote">${esc(x.note)}</span>` : ''}</li>`;
+  }).join('');
+
+  return `<div class="division div-${esc(o.division)}">
+    <span class="divstate">${esc(DIVISION_LABEL[o.division] || o.division)}</span> ${count}
+    ${parts ? `<ul class="parts">${parts}</ul>` : ''}
+    ${o.partsOpen ? `<span class="cellnote">The source's list is open — the count is a floor.</span>` : ''}
+    ${o.divisionNote ? `<div class="cellnote">${esc(o.divisionNote)}</div>` : ''}
+  </div>`;
 }
 
 function renderHomologyBlock(m, h) {

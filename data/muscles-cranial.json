@@ -76,7 +76,8 @@
           "note": "Relatively undivided, giving the plesiomorphic gnathostome condition.",
           "sources": [
             "ziermann-etal-2014"
-          ]
+          ],
+          "division": "single"
         },
         {
           "taxon": "actinopterygii",
@@ -86,6 +87,25 @@
           "sources": [
             "jayaram-etal-1983",
             "ziermann-diogo-2019"
+          ],
+          "division": "variable",
+          "parts": [
+            {
+              "name": "A1",
+              "membership": "variable"
+            },
+            {
+              "name": "A2",
+              "membership": "variable"
+            },
+            {
+              "name": "A3",
+              "membership": "variable"
+            },
+            {
+              "name": "Aω",
+              "membership": "variable"
+            }
           ]
         },
         {
@@ -99,6 +119,30 @@
           "note": "Werneburg (2011) resolves this complex into discrete muscular units, each with its own innervation pattern, and supplies an exhaustive synonym list keyed to the historical literature back to Bojanus (1819–21).",
           "sources": [
             "werneburg-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Adductor mandibulae externus pars superficialis",
+              "muscle": "adductor-mandibulae-externus"
+            },
+            {
+              "name": "Adductor mandibulae externus pars media"
+            },
+            {
+              "name": "Adductor mandibulae externus pars profunda"
+            },
+            {
+              "name": "Pseudotemporalis",
+              "muscle": "adductor-mandibulae-internus"
+            },
+            {
+              "name": "Zygomaticomandibularis"
+            },
+            {
+              "name": "Adductor mandibulae posterior",
+              "muscle": "adductor-mandibulae-posterior"
+            }
           ]
         },
         {
@@ -108,6 +152,20 @@
           "note": "Johnston (2014) treats the homology of the squamate jaw adductor subdivisions; the boundaries between named parts differ substantially between authors.",
           "sources": [
             "werneburg-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Adductor mandibulae externus",
+              "muscle": "adductor-mandibulae-externus"
+            },
+            {
+              "name": "Pseudotemporalis",
+              "muscle": "adductor-mandibulae-internus"
+            },
+            {
+              "name": "Pterygomandibularis"
+            }
           ]
         },
         {
@@ -117,6 +175,20 @@
           "note": "Johnston (2011) analyses the adductor mandibulae in basal anurans; the innervation pattern (whether branches pass lateral or medial to the trigeminal ganglion) is the key homology criterion.",
           "sources": [
             "werneburg-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Levator mandibulae externus",
+              "muscle": "adductor-mandibulae-externus"
+            },
+            {
+              "name": "Levator mandibulae longus",
+              "muscle": "adductor-mandibulae-longus"
+            },
+            {
+              "name": "Levator mandibulae articularis"
+            }
           ]
         },
         {
@@ -130,6 +202,21 @@
           "note": "The mammalian subdivision into masseter and temporalis accompanies the shift of the jaw joint from quadrate–articular to squamosal–dentary and the recruitment of the postdentary bones into the middle ear.",
           "sources": [
             "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Masseter"
+            },
+            {
+              "name": "Temporalis"
+            },
+            {
+              "name": "Pterygoideus medialis"
+            },
+            {
+              "name": "Pterygoideus lateralis"
+            }
           ]
         }
       ],
@@ -267,6 +354,21 @@
           "note": "The middle-ear muscles are the strongest available demonstration of arch identity persisting through radical functional relocation.",
           "sources": [
             "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Mylohyoid"
+            },
+            {
+              "name": "Digastricus, anterior belly"
+            },
+            {
+              "name": "Tensor tympani"
+            },
+            {
+              "name": "Tensor veli palatini"
+            }
           ]
         }
       ],
@@ -556,7 +658,23 @@
           "note": "The entire mammalian facial expression apparatus is a hyoid-arch derivative — a sheet that began as a pharyngeal constrictor and migrated onto the face. Its universal CN VII innervation is why a facial nerve lesion paralyses expression on one whole side.",
           "sources": [
             "ziermann-diogo-2019"
-          ]
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Muscles of facial expression"
+            },
+            {
+              "name": "Platysma"
+            },
+            {
+              "name": "Stylohyoid"
+            },
+            {
+              "name": "Stapedius"
+            }
+          ],
+          "partsOpen": true
         }
       ],
       "homology": {
@@ -726,6 +844,15 @@
           "innervation": "CN IX (arch 3), CN X (arches 4–7).",
           "sources": [
             "ziermann-etal-2014"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Constrictores arcuum branchialium"
+            },
+            {
+              "name": "Levatores arcuum branchialium"
+            }
           ]
         },
         {
@@ -744,6 +871,21 @@
           "note": "Werneburg (2011) documents the laryngeal muscles as branchial-arch derivatives with distinct innervation.",
           "sources": [
             "werneburg-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Levator laryngis"
+            },
+            {
+              "name": "Depressor laryngis"
+            },
+            {
+              "name": "Constrictor laryngis"
+            },
+            {
+              "name": "Dilatator laryngis"
+            }
           ]
         },
         {
@@ -755,7 +897,23 @@
           "note": "The stylopharyngeus is the only mammalian muscle innervated by CN IX — the sole surviving arch 3 muscle.",
           "sources": [
             "ziermann-diogo-2019"
-          ]
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Pharyngeal constrictors"
+            },
+            {
+              "name": "Stylopharyngeus"
+            },
+            {
+              "name": "Cricothyroid"
+            },
+            {
+              "name": "Intrinsic laryngeal muscles"
+            }
+          ],
+          "partsOpen": true
         }
       ],
       "homology": {
@@ -879,6 +1037,35 @@
           "note": "Retractor bulbi is retained in many mammals but lost in humans and other primates.",
           "sources": [
             "fritzsch-2023"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Rectus superior"
+            },
+            {
+              "name": "Rectus inferior"
+            },
+            {
+              "name": "Rectus medialis"
+            },
+            {
+              "name": "Rectus lateralis"
+            },
+            {
+              "name": "Obliquus superior"
+            },
+            {
+              "name": "Obliquus inferior"
+            },
+            {
+              "name": "Levator palpebrae superioris"
+            },
+            {
+              "name": "Retractor bulbi",
+              "membership": "variable",
+              "note": "Retained in many mammals, lost in humans and other primates."
+            }
           ]
         }
       ],
@@ -991,7 +1178,19 @@
               }
             ]
           },
-          "attachmentNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck."
+          "attachmentNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracomandibularis"
+            },
+            {
+              "name": "Coracohyoideus"
+            },
+            {
+              "name": "Coracobranchialis"
+            }
+          ]
         },
         {
           "taxon": "caudata",
@@ -999,6 +1198,15 @@
           "present": "yes",
           "sources": [
             "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Geniohyoideus"
+            },
+            {
+              "name": "Rectus cervicis"
+            }
           ]
         },
         {
@@ -1030,7 +1238,22 @@
               }
             ]
           },
-          "attachmentNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin."
+          "attachmentNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Geniohyoideus"
+            },
+            {
+              "name": "Coracohyoideus"
+            },
+            {
+              "name": "Genioglossus"
+            },
+            {
+              "name": "Hyoglossus"
+            }
+          ]
         },
         {
           "taxon": "theria",
@@ -1069,7 +1292,29 @@
               }
             ]
           },
-          "attachmentNote": "With the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead."
+          "attachmentNote": "With the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Genioglossus"
+            },
+            {
+              "name": "Hyoglossus"
+            },
+            {
+              "name": "Styloglossus"
+            },
+            {
+              "name": "Intrinsic tongue muscles"
+            },
+            {
+              "name": "Geniohyoid"
+            },
+            {
+              "name": "Infrahyoid strap muscles"
+            }
+          ],
+          "partsOpen": true
         }
       ],
       "homology": {
@@ -1138,6 +1383,15 @@
           "note": "The spiracle is the reduced first (mandibular) gill slit; its musculature is arch 1 and trigeminal.",
           "sources": [
             "ziermann-etal-2014"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Levator palatoquadrati"
+            },
+            {
+              "name": "Spiracularis"
+            }
           ]
         },
         {
@@ -1148,6 +1402,15 @@
           "sources": [
             "jayaram-etal-1983",
             "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Levator arcus palatini"
+            },
+            {
+              "name": "Dilatator operculi"
+            }
           ]
         },
         {
@@ -1241,6 +1504,15 @@
           },
           "sources": [
             "johnston-2011"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Rostral part"
+            },
+            {
+              "name": "Caudal part"
+            }
           ]
         },
         {
@@ -1249,6 +1521,15 @@
           "present": "yes",
           "sources": [
             "johnston-2014"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Pseudotemporalis"
+            },
+            {
+              "name": "Pterygoideus"
+            }
           ]
         },
         {
@@ -1257,6 +1538,15 @@
           "present": "yes",
           "sources": [
             "werneburg-2011"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Pseudotemporalis"
+            },
+            {
+              "name": "Pterygoideus"
+            }
           ]
         },
         {
@@ -1265,6 +1555,15 @@
           "present": "yes",
           "sources": [
             "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Pterygoideus medialis"
+            },
+            {
+              "name": "Pterygoideus lateralis"
+            }
           ]
         }
       ],
@@ -1403,6 +1702,15 @@
           "note": "In lizards the components are layered lateral to medial; in macrostomatan snakes they appear layered rostral to caudal. Johnston (2014) shows the folded-sheet model reconciles the two.",
           "sources": [
             "johnston-2014"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Adductor mandibulae externus superficialis"
+            },
+            {
+              "name": "Adductor mandibulae externus medialis"
+            }
           ]
         },
         {
@@ -1475,7 +1783,19 @@
           "sources": [
             "werneburg-2011"
           ],
-          "attachmentNote": "Aggregated across the seven units Werneburg resolves (pars superficialis, media, profunda and their subdivisions). The wide origin over the skull roof and braincase, and the redirection of the line of action over the otic process, are what the turtle trochlear arrangement buys."
+          "attachmentNote": "Aggregated across the seven units Werneburg resolves (pars superficialis, media, profunda and their subdivisions). The wide origin over the skull roof and braincase, and the redirection of the line of action over the otic process, are what the turtle trochlear arrangement buys.",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Pars superficialis"
+            },
+            {
+              "name": "Pars media"
+            },
+            {
+              "name": "Pars profunda"
+            }
+          ]
         },
         {
           "taxon": "theria",
@@ -1483,6 +1803,15 @@
           "present": "yes",
           "sources": [
             "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Masseter"
+            },
+            {
+              "name": "Temporalis"
+            }
           ]
         }
       ],
