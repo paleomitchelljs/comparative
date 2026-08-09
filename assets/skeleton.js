@@ -374,16 +374,19 @@ function renderArchitecture(m) {
     const num = v => v && typeof v.mean === 'number'
       ? `${v.mean}<span class="sd"> ± ${v.sd ?? '—'}</span>` : '<span class="sep">—</span>';
     out += `<p class="synonyms" style="margin:.2rem 0 .5rem">
-        <strong>${esc(t.clade)}</strong> — ${esc(a.species || '')}${a.n ? `, n = ${a.n}` : ''}
+        <strong>${esc(t.clade)}</strong> — ${esc(a.species || '')}${a.n ? `, n = ${a.n}` : ''}${a.bodyMass_kg ? `, ${a.bodyMass_kg} kg` : ''}
         ${(a.sources || []).map(k => sourceLink(k)).join(' ')}</p>
       <div class="tablewrap"><table class="occ archtable">
-        <thead><tr><th>Part</th><th>Mass (g)</th><th>Fascicle (mm)</th><th>PCSA (cm²)</th></tr></thead><tbody>
+        <thead><tr><th>Part</th><th>Mass (g)</th><th>Fascicle (mm)</th><th>Pennation (°)</th><th>PCSA (cm²)</th><th>F<sub>max</sub> (N)</th></tr></thead><tbody>
         ${(a.parts || []).map(pt => `<tr>
           <td>${esc(pt.name)}${pt.abbr ? ` <span class="sep">(${esc(pt.abbr)})</span>` : ''}</td>
           <td class="numcell">${num(pt.mass_g)}</td>
           <td class="numcell">${num(pt.fascicleLength_mm)}</td>
-          <td class="numcell">${num(pt.pcsa_cm2)}</td></tr>`).join('')}
+          <td class="numcell">${num(pt.pennation_deg)}</td>
+          <td class="numcell">${num(pt.pcsa_cm2)}</td>
+          <td class="numcell">${num(pt.maxIsometricForce_N)}</td></tr>`).join('')}
       </tbody></table></div>`;
+    if (a.note) out += `<p class="viewnote">${esc(a.note)}</p>`;
     if (a.comparison) {
       out += `<p class="viewnote">vs ${esc(a.comparison.species)}${a.comparison.n ? `, n = ${a.comparison.n}` : ''}</p>`;
     }

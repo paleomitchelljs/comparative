@@ -2,7 +2,7 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 98 muscles · 573 occurrences · 197 skeletal elements · 58 sources · 16 taxa.
+**State:** 98 muscles · 573 occurrences · 197 skeletal elements · 59 sources · 16 taxa.
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -239,6 +239,7 @@ copy exists.
 | **Hattori & Tsuihiji (2021)** | Europe PMC | Sauropsid pedal homology; contested anterior tibial muscles |
 | **Pereyra et al. (2024)** | PMC, green OA | *Caiman* crural and pedal myology in seven layers; **first pedal osteological correlates** for a crocodylian |
 | **Allen et al. (2021)** | Europe PMC | Crocodylian↔avian pelvic limb homology table; avian names for 13 records; the iliofibularis |
+| **Hutchinson et al. (2015)** | Europe PMC | Ostrich pelvic limb architecture — **first avian architecture data**; 11 records |
 
 Pereyra et al. took Crocodylia from nothing in the leg and foot to 38% overall,
 and their fine metatarsal striae are now recorded as correlates. They report that

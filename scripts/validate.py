@@ -221,7 +221,8 @@ def main():
                 if not arch.get("species"):
                     warn(f"{where}/{tid}: architecture with no sampled species")
                 for part in arch.get("parts", []):
-                    for metric in ("mass_g", "fascicleLength_mm", "pcsa_cm2"):
+                    for metric in ("mass_g", "fascicleLength_mm", "pcsa_cm2",
+                                   "pennation_deg", "maxIsometricForce_N"):
                         v = part.get(metric)
                         if v is not None and not isinstance(v.get("mean"), (int, float)):
                             err(f"{where}/{tid}: architecture {part.get('name')}.{metric} has no numeric mean")

@@ -129,7 +129,7 @@ def main(outdir: pathlib.Path) -> int:
         w.writerow(["muscle_id", "muscle_name", "region", "taxon_id", "species", "n",
                     "part", "abbr", "mass_g_mean", "mass_g_sd",
                     "fascicle_mm_mean", "fascicle_mm_sd", "pcsa_cm2_mean", "pcsa_cm2_sd",
-                    "sources"])
+                    "pennation_deg", "max_isometric_force_N", "body_mass_kg", "sources"])
         arch_n = 0
         for m in muscles:
             for occ in m.get("occurrences", []):
@@ -144,6 +144,8 @@ def main(outdir: pathlib.Path) -> int:
                                 g("mass_g", "mean"), g("mass_g", "sd"),
                                 g("fascicleLength_mm", "mean"), g("fascicleLength_mm", "sd"),
                                 g("pcsa_cm2", "mean"), g("pcsa_cm2", "sd"),
+                                g("pennation_deg", "mean"), g("maxIsometricForce_N", "mean"),
+                                a.get("bodyMass_kg", ""),
                                 ";".join(a.get("sources", []))])
                     arch_n += 1
 
