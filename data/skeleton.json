@@ -2749,6 +2749,214 @@
           "blotto-etal-2020"
         ]
       }
+    },
+    {
+      "id": "tibiotarsus",
+      "label": "Tibiotarsus",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "tibia",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ],
+        "note": "Fused tibia and proximal tarsals in birds."
+      }
+    },
+    {
+      "id": "tarsometatarsus",
+      "label": "Tarsometatarsus",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "metatarsals",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ],
+        "note": "Fused distal tarsals and metatarsals II-IV in birds. Its proximal dorsal tuberosities are the insertion correlate for the m. tibialis cranialis."
+      }
+    },
+    {
+      "id": "cnemial-crest-cranial",
+      "label": "Cranial cnemial crest",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "cnemial-crest",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ]
+      }
+    },
+    {
+      "id": "cnemial-crest-lateral",
+      "label": "Lateral cnemial crest",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "cnemial-crest",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ]
+      }
+    },
+    {
+      "id": "phalangeal-lip",
+      "label": "Proximodorsal phalangeal lips",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "phalanges-pes",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ],
+        "note": "Insertion correlate for the pedal extensor series; recognisable in fossils."
+      }
+    },
+    {
+      "id": "fossa-metatarsi-i",
+      "label": "Fossa metatarsi I",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "metatarsals",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ],
+        "note": "Origin correlate for the m. interosseus dorsalis digiti II."
+      }
+    },
+    {
+      "id": "puboischiadic-ligament",
+      "label": "Puboischiadic ligament",
+      "kind": "ligament",
+      "region": "pelvic",
+      "segment": "girdle",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia",
+          "testudines"
+        ],
+        "sources": [
+          "dick-clemente-2016"
+        ]
+      }
+    },
+    {
+      "id": "ilioischiadic-ligament",
+      "label": "Ilioischiadic ligament",
+      "kind": "ligament",
+      "region": "pelvic",
+      "segment": "girdle",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia"
+        ],
+        "sources": [
+          "dick-clemente-2016"
+        ]
+      }
+    },
+    {
+      "id": "intertrochanteric-notch",
+      "label": "Intertrochanteric notch",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia"
+        ],
+        "sources": [
+          "dick-clemente-2016"
+        ]
+      }
+    },
+    {
+      "id": "femoral-trochanter",
+      "label": "Femoral trochanter",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "lepidosauria",
+          "crocodylia",
+          "testudines"
+        ],
+        "sources": [
+          "dick-clemente-2016"
+        ],
+        "note": "The varanid trochanter receiving the caudofemoralis; homologous with the fourth trochanter of archosaurs."
+      }
+    },
+    {
+      "id": "femoral-epicondyle-lateral",
+      "label": "Lateral femoral epicondyle",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femoral-condyles",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
+    },
+    {
+      "id": "femoral-epicondyle-medial",
+      "label": "Medial femoral epicondyle",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femoral-condyles",
+      "correlate": true,
+      "presence": {
+        "default": "yes"
+      }
     }
   ]
 }

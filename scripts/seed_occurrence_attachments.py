@@ -189,6 +189,29 @@ SEED = {
         "anura": {"origin": ["metatarsals", "tarsals"], "insertion": ["phalanges-pes", "prehallux"],
                   "sources": ["blotto-etal-2020"]},
     },
+    # --- Varanid hindlimb, Dick & Clemente (2016) Table 1, compiled from Snyder,
+    # Gans et al., Reilly and Anzai et al. The leg region had no taxon-specific
+    # attachments at all before this.
+    "adductor-femoris": {
+        "lepidosauria": {"origin": ["puboischiadic-ligament"], "insertion": ["femur"],
+                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
+                         "shiftNote": "From the puboischiadic ligament to the ventral femoral shaft; adducts and protracts the femur, active in both stance and swing."},
+    },
+    "femorotibialis": {
+        "lepidosauria": {"origin": ["femur"], "insertion": ["cnemial-crest"],
+                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
+                         "shiftNote": "Fleshy origin along the entire femoral shaft; joins the iliotibialis tendon to insert on the cnemial crest. Knee extensor, active in both stance and swing."},
+    },
+    "flexor-digitorum-longus-hl": {
+        "lepidosauria": {"origin": ["femoral-epicondyle-lateral"], "insertion": ["phalanges-pes"],
+                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
+                         "shiftNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."},
+    },
+    "gastrocnemius": {
+        "lepidosauria": {"origin": ["tibia"], "insertion": ["phalanges-pes"],
+                         "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
+                         "shiftNote": "From the ventral proximal tibia and the distal ventral tibial crest, by a broad aponeurosis onto the proximolateral margins of the first three phalanges — not onto a calcaneum, unlike the mammalian condition."},
+    },
     "supracoracoideus": {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
@@ -259,8 +282,9 @@ SEED = {
                    "shiftNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology."},
     },
     "caudofemoralis": {
-        "lepidosauria": {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014"],
-                         "shiftNote": "Inserts on the fourth trochanter, whose size reads directly as femoral-retractor power."},
+        "lepidosauria": {"origin": ["caudal-vertebrae"], "insertion": ["femoral-trochanter"],
+                         "sources": ["diogo-molnar-2014", "dick-clemente-2016"],
+                         "shiftNote": "Longus arises from the proximal third of the tail and caudal vertebrae 4-14, inserting by broad tendon on the femoral trochanter plus a second tendon onto the lateral menisci of the knee; brevis arises from the transverse processes of the four most anterior postsacral vertebrae. Femur retraction and long-axis rotation, active in stance."},
         "crocodylia": {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014", "allen-etal-2014", "klinkhamer-etal-2017"],
                        "shiftNote": "Klinkhamer et al. distinguish caudofemoralis longus (caudal vertebrae) from brevis (ilium); both converge on the fourth trochanter."},
         "testudines":   {"origin": ["caudal-vertebrae"], "insertion": ["femur"], "sources": ["diogo-molnar-2014"]},
@@ -320,8 +344,8 @@ SEED = {
                        "shiftNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."},
     },
     "ambiens": {
-        "lepidosauria": {"origin": ["acetabulum-ventral-edge"], "insertion": ["trochanteric-fossa"],
-                         "sources": ["tomanska-etal-2025", "diogo-molnar-2014"],
+        "lepidosauria": {"origin": ["acetabulum-ventral-edge", "pubis"], "insertion": ["intertrochanteric-notch"],
+                         "sources": ["tomanska-etal-2025", "diogo-molnar-2014", "dick-clemente-2016"],
                          "shiftNote": "In Varanus komodoensis the muscle has dorsal and ventral heads; the dorsal attaches to the ventral edge of the acetabulum and the ventral lies anteriorly, both converging on the femur at the intertrochanteric fossa."},
         "crocodylia": {"origin": ["pubis"], "insertion": ["tibia"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
                        "shiftNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."},
@@ -335,7 +359,8 @@ SEED = {
                        "shiftNote": "Iliotibialis 3 arises deep to iliotibialis 2 on the central lateral ilium by tendon and inserts fleshy onto the distal third of the dorso-lateral femur."},
     },
     "iliofemoralis": {
-        "lepidosauria": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["diogo-molnar-2014"]},
+        "lepidosauria": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["diogo-molnar-2014", "dick-clemente-2016"],
+                         "shiftNote": "From the anterior iliac blade, sharing an intramuscular septum with the puboischiotibialis; the belly wraps the posterior femoral border to insert proximally. Femur abductor, active in swing."},
         "crocodylia": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
                        "shiftNote": "Origin on the lateral ilium; the femorotibialis internus tendon arises distal and anterior to it, which is the landmark Klinkhamer et al. use to separate the two."},
         "synapsida-stem": {"origin": ["ilium", "iliac-crest"], "insertion": ["greater-trochanter"], "sources": ["bishop-pierce-2024"],

@@ -327,6 +327,7 @@
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
+            "dick-clemente-2016",
             "diogo-molnar-2014"
           ],
           "attachments": {
@@ -341,7 +342,8 @@
                 "element": "femur"
               }
             ]
-          }
+          },
+          "attachmentNote": "From the anterior iliac blade, sharing an intramuscular septum with the puboischiotibialis; the belly wraps the posterior femoral border to insert proximally. Femur abductor, active in swing."
         },
         {
           "taxon": "crocodylia",
@@ -413,7 +415,8 @@
           "action": "Abduct and medially rotate the thigh; prevent pelvic drop during the stance phase.",
           "innervation": "Superior gluteal nerve (L4–S1).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "hudson-etal-2011b"
           ],
           "attachments": {
             "origin": [
@@ -435,7 +438,53 @@
               }
             ]
           },
-          "attachmentNote": "Same muscle, same nerve, same attachments — but in a parasagittal limb it becomes the principal pelvic stabiliser during single-limb support."
+          "attachmentNote": "Same muscle, same nerve, same attachments — but in a parasagittal limb it becomes the principal pelvic stabiliser during single-limb support.",
+          "architecture": {
+            "species": "Acinonyx jubatus",
+            "n": 8,
+            "sources": [
+              "hudson-etal-2011b"
+            ],
+            "comparison": {
+              "species": "Canis lupus familiaris (greyhound)",
+              "n": 9,
+              "source": "hudson-etal-2011b"
+            },
+            "parts": [
+              {
+                "name": "Gluteus medius",
+                "abbr": "GM",
+                "mass_g": {
+                  "mean": 136,
+                  "sd": 18.0
+                },
+                "fascicleLength_mm": {
+                  "mean": 6.4,
+                  "sd": 1.18
+                },
+                "pcsa_cm2": {
+                  "mean": 23.4,
+                  "sd": 7.1
+                }
+              },
+              {
+                "name": "Gluteus profundus",
+                "abbr": "GP",
+                "mass_g": {
+                  "mean": 17.6,
+                  "sd": 4.5
+                },
+                "fascicleLength_mm": {
+                  "mean": 2.9,
+                  "sd": 0.61
+                },
+                "pcsa_cm2": {
+                  "mean": 6.7,
+                  "sd": 2.4
+                }
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -453,8 +502,9 @@
         "teaching": "The best single muscle for showing that posture change is a change in mechanics, not in anatomy. Same muscle, same nerve, radically different role."
       },
       "sources": [
+        "bishop-pierce-2024",
         "diogo-molnar-2014",
-        "bishop-pierce-2024"
+        "hudson-etal-2011b"
       ]
     },
     {
@@ -536,27 +586,23 @@
           "present": "yes",
           "action": "Primary femoral retractor; drives the propulsive stroke in lizard locomotion.",
           "sources": [
+            "dick-clemente-2016",
             "diogo-molnar-2014"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "caudal-vertebrae"
-              },
-              {
-                "element": "ilium",
-                "side": "lateral"
               }
             ],
             "insertion": [
               {
                 "element": "femur",
-                "side": "posterior",
-                "landmark": "fourth-trochanter"
+                "landmark": "femoral-trochanter"
               }
             ]
           },
-          "attachmentNote": "Inserts on the fourth trochanter, whose size reads directly as femoral-retractor power."
+          "attachmentNote": "Longus arises from the proximal third of the tail and caudal vertebrae 4-14, inserting by broad tendon on the femoral trochanter plus a second tendon onto the lateral menisci of the knee; brevis arises from the transverse processes of the four most anterior postsacral vertebrae. Femur retraction and long-axis rotation, active in stance."
         },
         {
           "taxon": "crocodylia",
@@ -761,8 +807,39 @@
           "action": "Extends the knee; flexes the hip.",
           "innervation": "Femoral nerve (L2–L4); superior gluteal nerve (tensor fasciae latae).",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hudson-etal-2011b"
+          ],
+          "architecture": {
+            "species": "Acinonyx jubatus",
+            "n": 8,
+            "sources": [
+              "hudson-etal-2011b"
+            ],
+            "comparison": {
+              "species": "Canis lupus familiaris (greyhound)",
+              "n": 9,
+              "source": "hudson-etal-2011b"
+            },
+            "parts": [
+              {
+                "name": "Rectus femoris",
+                "abbr": "RF",
+                "mass_g": {
+                  "mean": 160,
+                  "sd": 75.0
+                },
+                "fascicleLength_mm": {
+                  "mean": 5.4,
+                  "sd": 1.33
+                },
+                "pcsa_cm2": {
+                  "mean": 31.3,
+                  "sd": 11.9
+                }
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -780,7 +857,8 @@
         ]
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hudson-etal-2011b"
       ]
     },
     {
@@ -873,8 +951,71 @@
           "action": "Extend the knee.",
           "innervation": "Femoral nerve (L2–L4).",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hudson-etal-2011b"
+          ],
+          "architecture": {
+            "species": "Acinonyx jubatus",
+            "n": 8,
+            "sources": [
+              "hudson-etal-2011b"
+            ],
+            "comparison": {
+              "species": "Canis lupus familiaris (greyhound)",
+              "n": 9,
+              "source": "hudson-etal-2011b"
+            },
+            "parts": [
+              {
+                "name": "Vastus lateralis",
+                "abbr": "VL",
+                "mass_g": {
+                  "mean": 214,
+                  "sd": 63.2
+                },
+                "fascicleLength_mm": {
+                  "mean": 7.6,
+                  "sd": 1.85
+                },
+                "pcsa_cm2": {
+                  "mean": 30.7,
+                  "sd": 8.7
+                }
+              },
+              {
+                "name": "Vastus medialis",
+                "abbr": "VM",
+                "mass_g": {
+                  "mean": 119,
+                  "sd": 19.6
+                },
+                "fascicleLength_mm": {
+                  "mean": 6.3,
+                  "sd": 1.95
+                },
+                "pcsa_cm2": {
+                  "mean": 22.0,
+                  "sd": 5.4
+                }
+              },
+              {
+                "name": "Vastus intermedius",
+                "abbr": "VI",
+                "mass_g": {
+                  "mean": 38.1,
+                  "sd": 24.4
+                },
+                "fascicleLength_mm": {
+                  "mean": 6.5,
+                  "sd": 2.01
+                },
+                "pcsa_cm2": {
+                  "mean": 7.1,
+                  "sd": 5.3
+                }
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -890,7 +1031,8 @@
         "teaching": "Explains a fact students memorise without understanding: why one of the four quadriceps heads flexes the hip and three do not. They are not four parts of one muscle; they are two muscles."
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hudson-etal-2011b"
       ]
     },
     {
@@ -938,6 +1080,7 @@
           "present": "yes",
           "note": "Reptiles may have both an 'ambiens' and a 'pubifemoralis'; the two names are sometimes used as synonyms (Russell & Bauer 2008), which is a persistent source of confusion.",
           "sources": [
+            "dick-clemente-2016",
             "diogo-molnar-2014",
             "tomanska-etal-2025"
           ],
@@ -946,13 +1089,16 @@
               {
                 "element": "acetabulum",
                 "landmark": "acetabulum-ventral-edge"
+              },
+              {
+                "element": "pubis",
+                "side": "ventral"
               }
             ],
             "insertion": [
               {
                 "element": "femur",
-                "side": "proximal",
-                "landmark": "trochanteric-fossa"
+                "landmark": "intertrochanteric-notch"
               }
             ]
           },
@@ -1073,8 +1219,22 @@
           "name": "Adductor femoris",
           "present": "yes",
           "sources": [
+            "dick-clemente-2016",
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "puboischiadic-ligament"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur"
+              }
+            ]
+          },
+          "attachmentNote": "From the puboischiadic ligament to the ventral femoral shaft; adducts and protracts the femur, active in both stance and swing."
         },
         {
           "taxon": "crocodylia",
@@ -1101,8 +1261,55 @@
           "action": "Adduct and extend the thigh.",
           "innervation": "Obturator nerve (L2–L4); the hamstring part of adductor magnus by the tibial division of the sciatic nerve.",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hudson-etal-2011b"
+          ],
+          "architecture": {
+            "species": "Acinonyx jubatus",
+            "n": 8,
+            "sources": [
+              "hudson-etal-2011b"
+            ],
+            "comparison": {
+              "species": "Canis lupus familiaris (greyhound)",
+              "n": 9,
+              "source": "hudson-etal-2011b"
+            },
+            "parts": [
+              {
+                "name": "Adductor magnus",
+                "abbr": "AM",
+                "mass_g": {
+                  "mean": 316,
+                  "sd": 63.2
+                },
+                "fascicleLength_mm": {
+                  "mean": 16.0,
+                  "sd": 4.3
+                },
+                "pcsa_cm2": {
+                  "mean": 22.9,
+                  "sd": 8.9
+                }
+              },
+              {
+                "name": "Adductor brevis",
+                "abbr": "AB",
+                "mass_g": {
+                  "mean": 103,
+                  "sd": 11.9
+                },
+                "fascicleLength_mm": {
+                  "mean": 11.6,
+                  "sd": 3.4
+                },
+                "pcsa_cm2": {
+                  "mean": 10.3,
+                  "sd": 3.8
+                }
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -1120,7 +1327,8 @@
         ]
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hudson-etal-2011b"
       ]
     },
     {
@@ -1428,8 +1636,71 @@
           "action": "Extend the hip and flex the knee.",
           "innervation": "Tibial division of the sciatic nerve; the short head of biceps femoris by the common fibular division.",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hudson-etal-2011b"
+          ],
+          "architecture": {
+            "species": "Acinonyx jubatus",
+            "n": 8,
+            "sources": [
+              "hudson-etal-2011b"
+            ],
+            "comparison": {
+              "species": "Canis lupus familiaris (greyhound)",
+              "n": 9,
+              "source": "hudson-etal-2011b"
+            },
+            "parts": [
+              {
+                "name": "Biceps femoris",
+                "abbr": "BF",
+                "mass_g": {
+                  "mean": 295,
+                  "sd": 46.5
+                },
+                "fascicleLength_mm": {
+                  "mean": 14.6,
+                  "sd": 4.9
+                },
+                "pcsa_cm2": {
+                  "mean": 24.6,
+                  "sd": 12.3
+                }
+              },
+              {
+                "name": "Semitendinosus",
+                "abbr": "ST",
+                "mass_g": {
+                  "mean": 121,
+                  "sd": 29.5
+                },
+                "fascicleLength_mm": {
+                  "mean": 10.0,
+                  "sd": 1.38
+                },
+                "pcsa_cm2": {
+                  "mean": 13.1,
+                  "sd": 4.5
+                }
+              },
+              {
+                "name": "Semimembranosus",
+                "abbr": "SM",
+                "mass_g": {
+                  "mean": 332,
+                  "sd": 55.4
+                },
+                "fascicleLength_mm": {
+                  "mean": 25.4,
+                  "sd": 6.39
+                },
+                "pcsa_cm2": {
+                  "mean": 15.0,
+                  "sd": 5.8
+                }
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -1446,7 +1717,8 @@
         ]
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hudson-etal-2011b"
       ]
     },
     {
@@ -1594,8 +1866,22 @@
           "name": "Gastrocnemius",
           "present": "yes",
           "sources": [
+            "dick-clemente-2016",
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              }
+            ]
+          },
+          "attachmentNote": "From the ventral proximal tibia and the distal ventral tibial crest, by a broad aponeurosis onto the proximolateral margins of the first three phalanges — not onto a calcaneum, unlike the mammalian condition."
         },
         {
           "taxon": "crocodylia",
@@ -1624,8 +1910,39 @@
           "innervation": "Tibial nerve (S1–S2).",
           "note": "Kardong (2002) derived the mammalian gastrocnemius from the femorotibial ('internal') head; Diogo & Molnar discuss and qualify this.",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hudson-etal-2011b"
+          ],
+          "architecture": {
+            "species": "Acinonyx jubatus",
+            "n": 8,
+            "sources": [
+              "hudson-etal-2011b"
+            ],
+            "comparison": {
+              "species": "Canis lupus familiaris (greyhound)",
+              "n": 9,
+              "source": "hudson-etal-2011b"
+            },
+            "parts": [
+              {
+                "name": "Gastrocnemius, lateral head",
+                "abbr": "GL",
+                "mass_g": {
+                  "mean": 31.1,
+                  "sd": 6.7
+                },
+                "fascicleLength_mm": {
+                  "mean": 2.5,
+                  "sd": 0.82
+                },
+                "pcsa_cm2": {
+                  "mean": 13.9,
+                  "sd": 3.9
+                }
+              }
+            ]
+          }
         }
       ],
       "homology": {
@@ -1641,7 +1958,8 @@
         ]
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hudson-etal-2011b"
       ]
     },
     {
@@ -1722,11 +2040,29 @@
         },
         {
           "taxon": "aves",
-          "name": "Tibialis cranialis",
-          "present": "yes",
+          "name": "Tibialis cranialis (classical) / extensor digitorum longus (Hattori & Tsuihiji 2021)",
+          "present": "uncertain",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hattori-tsuihiji-2021"
+          ],
+          "note": "Which avian muscle this record corresponds to is exactly what Hattori & Tsuihiji (2021) dispute. Scored uncertain rather than picking a side.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia",
+                "landmark": "cnemial-crest",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals",
+                "landmark": "tarsometatarsus",
+                "side": "proximal"
+              }
+            ]
+          }
         },
         {
           "taxon": "theria",
@@ -1742,7 +2078,7 @@
         }
       ],
       "homology": {
-        "confidence": "well-supported",
+        "confidence": "contested",
         "serial": {
           "forelimb": "extensor-antebrachii-carpi-radialis",
           "basis": "topological"
@@ -1750,10 +2086,13 @@
         "related": [
           "extensor-digitorum-longus-hl",
           "fibularis-group"
-        ]
+        ],
+        "notes": "Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail.",
+        "openQuestion": "Is the avian tibialis cranialis the homologue of the non-avian tibialis anterior (Romer's scheme, followed by most of the literature) or of the non-avian extensor digitorum longus (Hattori & Tsuihiji 2021)? The two schemes imply different attachment histories across the archosaur stem, so fossil muscle reconstruction in theropods depends on which is right."
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021"
       ]
     },
     {
@@ -1804,7 +2143,8 @@
           "name": "Extensor digitorum longus",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "hattori-tsuihiji-2021"
           ]
         },
         {
@@ -1812,16 +2152,34 @@
           "name": "Extensor digitorum longus",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hattori-tsuihiji-2021"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "landmark": "phalangeal-lip",
+                "side": "dorsal"
+              }
+            ]
+          }
         },
         {
           "taxon": "aves",
           "name": "Extensor digitorum longus",
-          "present": "yes",
+          "present": "uncertain",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "hattori-tsuihiji-2021"
+          ],
+          "note": "See the tibialis anterior record: which avian muscle is the homologue is disputed."
         },
         {
           "taxon": "theria",
@@ -1837,21 +2195,22 @@
         }
       ],
       "homology": {
-        "confidence": "well-supported",
-        "notes": "The muscle itself is straightforward; the interest is in its derivatives. The human fibularis tertius / rat fibularis digiti quinti case is one of Diogo & Molnar's cleanest demonstrations that shared name plus shared nerve still does not establish homology.",
+        "confidence": "contested",
+        "notes": "The muscle itself is straightforward; the interest is in its derivatives. The human fibularis tertius / rat fibularis digiti quinti case is one of Diogo & Molnar's cleanest demonstrations that shared name plus shared nerve still does not establish homology. Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail.",
         "serial": {
           "forelimb": "extensor-digitorum",
           "basis": "topological",
           "note": "In rats, the short extensors of digits 2 and 3 are fused in BOTH limbs — extensor indicis in the forelimb, extensor digitorum brevis in the hindlimb. Diogo & Molnar show these fusions are independently derived, producing apparent serial similarity by parallelism."
         },
         "related": [
-          "tibialis-anterior",
-          "fibularis-group"
+          "fibularis-group",
+          "tibialis-anterior"
         ],
         "teaching": "The rat double-fusion case is the single most economical illustration of parallelism masquerading as serial homology."
       },
       "sources": [
-        "diogo-molnar-2014"
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021"
       ]
     },
     {
@@ -2129,8 +2488,23 @@
           "name": "Flexor digitorum longus",
           "present": "yes",
           "sources": [
+            "dick-clemente-2016",
             "diogo-molnar-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femoral-condyles",
+                "landmark": "femoral-epicondyle-lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              }
+            ]
+          },
+          "attachmentNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."
         },
         {
           "taxon": "aves",

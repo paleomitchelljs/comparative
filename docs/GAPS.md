@@ -2,7 +2,7 @@
 
 Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
 
-**State:** 95 muscles · 560 occurrences · 176 skeletal elements · 54 sources · 16 taxa.
+**State:** 95 muscles · 560 occurrences · 188 skeletal elements · 55 sources · 16 taxa.
 
 Every PDF in `papers/` has a `sources.json` entry, including two declared out of
 scope. Duplicates are removed as they are found.
@@ -15,21 +15,21 @@ scope. Duplicates are removed as they are found.
 the number that decides whether attachment change is analysable or merely
 illustrated.
 
-| Region | Muscles | Occurrences | With attachments | %att | Was |
-|---|---:|---:|---:|---:|---:|
-| fin | 7 | 32 | 13 | 41% | 41% |
-| pectoral | 16 | 96 | 36 | 38% | 38% |
-| arm | 5 | 33 | 9 | 27% | 27% |
-| **foot** | 3 | 12 | 3 | **25%** | 0% |
-| pelvic | 5 | 33 | 8 | 24% | 24% |
-| cranial | 15 | 60 | 10 | 17% | 17% |
-| thigh | 7 | 36 | 5 | 14% | 14% |
-| **hand** | 9 | 59 | 7 | **12%** | 0% |
-| forearm | 18 | 94 | 7 | 7% | 6% |
-| **leg** | 7 | 27 | **0** | **0%** | 0% |
-| **axial** | 3 | 20 | **0** | **0%** | — |
+| Region | Occurrences | With attachments | %att | Two passes ago |
+|---|---:|---:|---:|---:|
+| fin | 32 | 13 | 41% | 41% |
+| pectoral | 96 | 36 | 38% | 38% |
+| arm | 33 | 9 | 27% | 27% |
+| **foot** | 12 | 3 | **25%** | 0% |
+| pelvic | 33 | 8 | 24% | 24% |
+| cranial | 60 | 10 | 17% | 17% |
+| **thigh** | 36 | 6 | **17%** | 14% |
+| **leg** | 27 | 4 | **15%** | 0% |
+| **hand** | 59 | 7 | **12%** | 0% |
+| forearm | 94 | 7 | 7% | 6% |
+| **axial** | 20 | 0 | **0%** | — |
 
-Overall 20%, up from 17%.
+Overall 21%, from 17%. Architecture records 10, from 4.
 
 **The autopod is half fixed.** Blotto et al. (2020) has now been mined: the hand
 went 0% → 12%, the foot 0% → 25%, and Anura as a whole 7% → 25%. That work also
@@ -195,17 +195,41 @@ is worth a targeted source hunt.
 
 ---
 
+## Mined this pass
+
+| Source | What it gave |
+|---|---|
+| **Blotto et al. (2020)** | Anuran hand and foot; 9 autopod elements incl. prepollex/prehallux; hand 0→12%, foot 0→25% |
+| **Dick & Clemente (2016)** | Varanid hindlimb attachments from their Table 1; **leg 0→15%**, thigh 14→17% |
+| **Hudson et al. (2011) hindlimb** | Cheetah hindlimb architecture for 6 muscles — mass, fascicle length, PCSA |
+| **Hattori & Tsuihiji (2021)** | Pedal homology and osteological correlates; fetched from Europe PMC, no local PDF |
+
+### One substantive homology change
+
+Hattori & Tsuihiji (2021) propose that the classical homologies of the anterior
+tibial muscles are **swapped**: avian *m. tibialis cranialis* is the homologue of
+the non-avian *m. extensor digitorum longus*, and avian *EDL* of the non-avian
+*m. tibialis anterior*. Their argument is that this requires no drastic change in
+attachment sites, whereas the classical scheme — descending from Romer (1923-27)
+and, they note, used uncritically by palaeontologists for a century — does.
+
+Both `tibialis-anterior` and `extensor-digitorum-longus-hl` are now marked
+`contested`, with the avian rows scored `uncertain` rather than picking a side.
+
+Worth flagging a methodological disagreement this creates: Hattori & Tsuihiji
+weight morphological and functional congruence **over innervation**, on the
+grounds that nerve-muscle specificity is itself variable across taxa. That is the
+reverse of the priority used elsewhere in this dataset. Both positions are
+defensible and the dataset now holds both.
+
 ## What is still unmined in `papers/`
 
 | Source | Would fix |
 |---|---|
-| **Blotto et al. (2020)**, 156 pp | Anuran hand and foot — the 0% autopod regions |
 | **Winterbottom (1973)**, 93 pp | Teleost muscle synonymy; the actinopterygian naming gap |
 | **Leavey et al. (2024)**, **Přikryl et al. (2009)** | Anuran pelvis and hindlimb detail |
-| **Dick & Clemente (2016)** | Varanid architecture — the squamate counterpart to Hudson |
 | **Schreiweis (1982)** | Penguin appendicular myology |
 | **Cieri (2018)** | Squamate axial detail, to split the coarse axial records |
-| **Hudson et al. (2011)** hindlimb | Cheetah hindlimb architecture (forelimb is done) |
 | Werneburg & Maier (2019), Werneburg & Preuschoft (2024), Gai et al. (2022), Miyashita (2016), Clack et al. (2016), Higashiyama et al. (2016) | Cranial detail and the spiracular/ear sequence |
 | Demuth et al. (2022) | Method for 3D muscle volumes from skeletal geometry — read before phase 4 |
 
