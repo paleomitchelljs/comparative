@@ -281,6 +281,7 @@ records in this dataset — the two will differ and should not be reconciled.
 | `taxonNames` | `[{taxa: [], name}]` — what this element is called in each taxon. See below |
 | `transformation` | What happens to the element across the tree; shown on the element |
 | `derivedFrom` | Another element this one splits off from (fission, not renaming) |
+| `fusedFrom` | The elements that merged to form this one. The inverse of `derivedFrom`. Never combine with `partOf` |
 | `synonyms` | |
 
 ### Elements are homology groups too
@@ -316,6 +317,30 @@ articular/malleus, angular/ectotympanic.
 **`derivedFrom` is for fission, not renaming.** The scapula and coracoid each
 `derivedFrom` the `scapulocoracoid`: one ancestral element became two, so they
 cannot be merged into one record the way a rename can.
+
+**`fusedFrom` is the inverse — several elements became one.** The tarsometatarsus
+is `fusedFrom` the distal tarsals and metatarsals; the tibiotarsus from the tibia
+and proximal tarsals.
+
+```jsonc
+{
+  "id": "tarsometatarsus",
+  "fusedFrom": ["distal-tarsals", "metatarsals"],
+  "presence": { "default": "no", "present": ["aves"] }
+}
+```
+
+It must **never** be written as `partOf` a component, and the validator rejects
+carrying both. `partOf` means containment within one bone and the attachment
+diff reads it as such, so filing the tarsometatarsus under the metatarsals made
+an avian insertion on it report as a *refinement* of a crocodylian metatarsal
+insertion — the same category as humerus → greater tubercle. The diff now has a
+category for fusion, in both directions (a taxon may be the unfused one), and
+treats it as a change in the skeleton rather than a shift of the muscle.
+
+Only the compound carries the edge. The reverse — "this bone was incorporated
+into that one" — is derived by scanning, the same way a tetrapod muscle's fin
+ancestry is derived rather than stored twice.
 
 `presence` is what lets the interface say a muscle's attachment *had to move*
 rather than silently dropping a row. It is also enforced: attaching a muscle to

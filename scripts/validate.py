@@ -175,6 +175,29 @@ def main():
         if df and df not in element_ids:
             err(f"skeleton.json:{eid}: derivedFrom '{df}' is not an element")
 
+        # `fusedFrom` is the inverse of `derivedFrom`: several elements became
+        # one. It must NOT be `partOf`, which the attachment diff reads as
+        # containment — that is what made a bird's tarsometatarsal insertion
+        # look like a more precise reading of a crocodylian metatarsal one.
+        fused = e.get("fusedFrom")
+        if fused is not None:
+            if not isinstance(fused, list) or not fused:
+                err(f"skeleton.json:{eid}: fusedFrom must be a non-empty list")
+            else:
+                if e.get("partOf"):
+                    err(f"skeleton.json:{eid}: has both partOf and fusedFrom — "
+                        f"a fusion product is not a part of its components")
+                if eid in fused:
+                    err(f"skeleton.json:{eid}: fusedFrom includes itself")
+                for c in fused:
+                    if c not in element_ids:
+                        err(f"skeleton.json:{eid}: fusedFrom '{c}' is not an element")
+                if len(set(fused)) != len(fused):
+                    err(f"skeleton.json:{eid}: fusedFrom repeats a component")
+                if not pres.get("present"):
+                    warn(f"skeleton.json:{eid}: fusedFrom but presence lists no "
+                         f"taxa — a fusion happens somewhere in particular")
+
     by_id = {e["id"]: e for e in skeleton_doc["elements"] if e.get("id")}
 
     def lineage(eid):
@@ -201,6 +224,26 @@ def main():
                 break
             seen.add(cur)
             cur = by_id.get(cur, {}).get("partOf")
+
+    # fusedFrom must not cycle either, and a component cannot be absent from a
+    # taxon that has the compound: a bird cannot have a tarsometatarsus without
+    # having the metatarsals that went into it.
+    def fusion_walk(eid, seen):
+        if eid in seen:
+            err(f"skeleton.json: fusedFrom cycle involving '{eid}'")
+            return
+        for c in by_id.get(eid, {}).get("fusedFrom", []):
+            fusion_walk(c, seen | {eid})
+
+    for eid, e in by_id.items():
+        if not e.get("fusedFrom"):
+            continue
+        fusion_walk(eid, set())
+        for tid in e.get("presence", {}).get("present", []):
+            for c in e["fusedFrom"]:
+                if not present_in(c, tid):
+                    err(f"skeleton.json:{eid}: fused from '{c}', which is "
+                        f"recorded as absent in {tid}")
 
     # Every taxon in the topology must be defined, and vice versa.
     topo_ids = set()

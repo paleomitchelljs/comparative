@@ -2563,14 +2563,17 @@
       "kind": "bone",
       "region": "axial",
       "segment": "axial",
-      "partOf": "caudal-vertebrae",
       "correlate": true,
       "presence": {
         "default": "no",
         "present": [
           "aves"
         ]
-      }
+      },
+      "fusedFrom": [
+        "caudal-vertebrae"
+      ],
+      "transformation": "The distal caudal vertebrae fused into a single plate."
     },
     {
       "id": "urostyle",
@@ -2772,7 +2775,6 @@
       "kind": "bone",
       "region": "hindlimb",
       "segment": "zeugopod",
-      "partOf": "tibia",
       "correlate": true,
       "presence": {
         "default": "no",
@@ -2784,7 +2786,13 @@
           "hattori-tsuihiji-2021"
         ],
         "note": "Fused tibia and proximal tarsals in birds."
-      }
+      },
+      "fusedFrom": [
+        "tibia",
+        "astragalus",
+        "calcaneum"
+      ],
+      "transformation": "Tibia fused with the proximal tarsals (astragalus and calcaneum)."
     },
     {
       "id": "tarsometatarsus",
@@ -2792,7 +2800,6 @@
       "kind": "bone",
       "region": "hindlimb",
       "segment": "autopod",
-      "partOf": "metatarsals",
       "correlate": true,
       "presence": {
         "default": "no",
@@ -2804,7 +2811,12 @@
           "hattori-tsuihiji-2021"
         ],
         "note": "Fused distal tarsals and metatarsals II-IV in birds. Its proximal dorsal tuberosities are the insertion correlate for the m. tibialis cranialis."
-      }
+      },
+      "fusedFrom": [
+        "distal-tarsals",
+        "metatarsals"
+      ],
+      "transformation": "Distal tarsals fused with metatarsals II-IV. Metatarsal I remains free, so the metatarsal series is not wholly absorbed."
     },
     {
       "id": "cnemial-crest-cranial",

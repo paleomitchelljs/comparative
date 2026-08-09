@@ -79,6 +79,34 @@ function elementLineage(id) {
 
 const isWithin = (a, b) => elementLineage(a).includes(b);
 
+/* Everything that went into an element, transitively. Distinct from
+   `elementLineage`: `partOf` is containment within one bone, `fusedFrom` is
+   several bones having become one. Conflating them is what made a bird's
+   tarsometatarsal insertion read as a more precise version of a crocodylian
+   metatarsal one. */
+function fusionComponents(id) {
+  const out = new Set();
+  (function walk(x) {
+    for (const c of state.elementsById.get(x)?.fusedFrom || []) {
+      if (out.has(c)) continue;
+      out.add(c);
+      walk(c);
+    }
+  })(id);
+  return out;
+}
+
+/* True where `compound` absorbed `part` — directly, or through a component that
+   itself contains it. The second case matters: the tarsometatarsus is fused
+   from the metatarsals, so an attachment on the fossa metatarsi I is inside
+   something the tarsometatarsus absorbed. */
+const absorbed = (compound, part) => {
+  for (const c of fusionComponents(compound)) {
+    if (c === part || isWithin(part, c)) return true;
+  }
+  return false;
+};
+
 /* `skeleton.json.sides` is four independent axes, not one flat vocabulary.
    Terms are only comparable within an axis: "proximal" and "posterior" are not
    alternatives, they answer different questions about the same attachment. */
@@ -120,7 +148,7 @@ function attachmentShifts(muscle) {
     const diff = side => {
       const A = base[side] || [], B = here[side] || [];
       const a = A.map(finest), b = B.map(finest);
-      const gained = [], lost = [], refined = [], moved = [];
+      const gained = [], lost = [], refined = [], moved = [], fused = [];
 
       /* One entry per element, not per row: a bone named on three rows because
          three of its surfaces are scored is still one bone gained or lost. */
@@ -129,6 +157,21 @@ function attachmentShifts(muscle) {
         const x = finest(r);
         if (a.includes(x) || seenB.has(x)) continue;
         seenB.add(x);
+        /* Fusion before containment. The muscle has not moved and nobody has
+           been more precise — the bone it attaches to has absorbed its
+           neighbours, which is a fact about the skeleton, not the muscle.
+           Checked both ways round, because the reference taxon is whichever
+           one happens to be scored first and may be the fused one. */
+        const absorbedFrom = a.find(y => absorbed(x, y));
+        if (absorbedFrom) {
+          fused.push({ from: absorbedFrom, to: x, row: r, separated: false });
+          continue;
+        }
+        const compound = a.find(y => absorbed(y, x));
+        if (compound) {
+          fused.push({ from: compound, to: x, row: r, separated: true });
+          continue;
+        }
         const coarser = a.find(y => isWithin(x, y));
         if (coarser) refined.push({ from: coarser, to: x, row: r });
         else gained.push({ id: x, row: r });
@@ -139,7 +182,11 @@ function attachmentShifts(muscle) {
         if (b.includes(y) || seenA.has(y)) continue;
         seenA.add(y);
         if (refined.some(k => k.from === y)) continue;
+        if (fused.some(k => k.from === y)) continue;
         if (b.some(x => isWithin(y, x))) continue;
+        /* The reverse case: the reference names a compound and this taxon names
+           one of its components, i.e. the element is unfused here. */
+        if (b.some(x => absorbed(y, x))) continue;
         lost.push({ id: y, row: r });
       }
 
@@ -170,12 +217,14 @@ function attachmentShifts(muscle) {
         }
       }
 
-      return { gained, lost, refined, moved };
+      return { gained, lost, refined, moved, fused };
     };
 
     const o = diff('origin'), i = diff('insertion');
+    /* A fusion is a change in the skeleton, not in where the muscle attaches,
+       so it is reported but does not make the row a substantive muscle shift. */
     const real = d => d.gained.length || d.lost.length || d.moved.some(mv => mv.substantive);
-    const any = d => real(d) || d.refined.length || d.moved.length;
+    const any = d => real(d) || d.refined.length || d.moved.length || d.fused.length;
     if (any(o) || any(i)) {
       shifts.push({
         taxon: occ.taxon, origin: o, insertion: i,
@@ -316,8 +365,21 @@ function renderElementNode(e, taxonId, q, depth) {
     e.correlate ? `<span class="chip corr" title="Leaves a recognisable osteological trace">osteological correlate</span>` : '',
     absentHere ? `<span class="chip conf-contested">absent in this taxon</span>` : '',
     presence === 'partial' ? `<span class="chip conf-moderate">incipient</span>` : '',
-    presence === 'reduced' ? `<span class="chip conf-moderate">reduced</span>` : ''
+    presence === 'reduced' ? `<span class="chip conf-moderate">reduced</span>` : '',
+    e.fusedFrom ? `<span class="chip fuse" title="Formed by fusion — its components stay findable">fused element</span>` : ''
   ].join('');
+
+  /* Both directions of the fusion edge. The forward one is curated on the
+     compound; the reverse is derived by scanning, the same way the app derives
+     a tetrapod muscle's fin ancestry rather than storing it twice. */
+  const elLink = id => `<b>${esc(elementLabel(id, taxonId))}</b>`;
+  const fusedInto = state.elements.filter(x => (x.fusedFrom || []).includes(e.id));
+  const fusionLines = [
+    e.fusedFrom ? `Fused from ${e.fusedFrom.map(elLink).join(', ')}.` : '',
+    fusedInto.length ? `Incorporated into ${fusedInto.map(x => elLink(x.id)).join(', ')}
+      in ${esc(fusedInto.flatMap(x => (x.presence || {}).present || [])
+        .map(t => state.taxaById.get(t)?.clade || t).join(', ') || 'some taxa')}.` : ''
+  ].filter(Boolean).join(' ');
 
   const note = (e.presence || {}).note;
   const alias = taxonId && elementLabel(e.id, taxonId) !== e.label ? e.label : null;
@@ -334,6 +396,7 @@ function renderElementNode(e, taxonId, q, depth) {
       ${absentHere ? `<p class="cellnote">Absent in ${esc(state.taxaById.get(taxonId).clade)}.</p>` : ''}
       ${alias ? `<p class="cellnote">Elsewhere: ${esc(alias)}</p>` : ''}
       ${note ? `<p class="cellnote">${esc(note)}</p>` : ''}
+      ${fusionLines ? `<p class="cellnote fusion">${fusionLines}</p>` : ''}
       ${e.transformation ? `<p class="cellnote">${esc(e.transformation)}</p>` : ''}
       ${(here.origin.length || here.insertion.length) ? `
         <div class="grp"><b>Origin of (${here.origin.length})</b>${list(here.origin)}</div>
@@ -526,6 +589,10 @@ function renderAttachmentBlock(m) {
         d.moved.forEach(mv => bits.push(
           `<span class="${mv.substantive ? 'move' : 'refine'}">${label(mv.id)}: ` +
           `${esc(mv.from.join('/'))} → ${esc(mv.to.join('/'))}</span>`));
+        if (d.fused.length) bits.push(`<span class="fusedin">${d.fused
+          .map(f => f.separated
+            ? `${label(f.to)} unfused from ${label(f.from)}`
+            : `${label(f.from)} fused into ${label(f.to)}`).join('; ')}</span>`);
         return bits.length ? `<div><b>${side}</b> ${bits.join(' ')}</div>` : '';
       };
       out += `<tr${s.substantive ? '' : ' class="absent"'}>

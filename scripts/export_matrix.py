@@ -14,6 +14,7 @@ Writes:
   division.csv      muscle x taxon differentiation states and part counts
   parts.csv         one row per named subunit, long form under division.csv
   elements.csv      the skeletal ontology, flattened with lineage
+  fusions.csv       skeletal fusion and fission events, one row per taxon
   muscles.csv       one row per muscle with hierarchy fields
 
 Nothing here is derived or imputed beyond what the app itself shows: `inherited`
@@ -210,14 +211,46 @@ def main(outdir: pathlib.Path) -> int:
         w = csv.writer(fh)
         w.writerow(["element_id", "label", "kind", "region", "segment", "part_of",
                     "lineage", "is_correlate", "presence_default",
-                    "present_in", "absent_in", "sources"])
+                    "present_in", "absent_in", "fused_from", "derived_from", "sources"])
         for e in skel["elements"]:
             p = e.get("presence", {})
             w.writerow([e["id"], e["label"], e["kind"], e.get("region", ""), e.get("segment", ""),
                         e.get("partOf", ""), ">".join(reversed(lineage(e["id"]))),
                         "TRUE" if e.get("correlate") else "FALSE",
                         p.get("default", ""), ";".join(p.get("present", [])),
-                        ";".join(p.get("absent", [])), ";".join(p.get("sources", []))])
+                        ";".join(p.get("absent", [])),
+                        ";".join(e.get("fusedFrom", [])), e.get("derivedFrom", ""),
+                        ";".join(p.get("sources", []))])
+
+    # ---- fusions.csv --------------------------------------------------------
+    #
+    # Skeletal fusion and fission as one long-format character: one row per
+    # compound x component x taxon. `event` is `fusion` where several elements
+    # became one and `fission` where one became several, so the two read off the
+    # same column and can be counted on the same tree.
+    #
+    # A fusion is scored in the taxa where the compound is present; a fission in
+    # the taxa where the DERIVED element is present, since that is where the
+    # split has happened.
+    with open(outdir / "fusions.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["event", "compound_id", "compound_label", "component_id",
+                    "component_label", "taxon_id", "taxon_order", "region",
+                    "segment", "note", "sources"])
+        fuse_n = 0
+        for e in skel["elements"]:
+            p = e.get("presence", {})
+            pairs = [("fusion", c) for c in e.get("fusedFrom", [])]
+            if e.get("derivedFrom"):
+                pairs.append(("fission", e["derivedFrom"]))
+            for event, other in pairs:
+                for tid in p.get("present", []) or [""]:
+                    w.writerow([event, e["id"], e["label"], other,
+                                by_id.get(other, {}).get("label", other),
+                                tid, taxon_order.get(tid, ""),
+                                e.get("region", ""), e.get("segment", ""),
+                                p.get("note", ""), ";".join(p.get("sources", []))])
+                    fuse_n += 1
 
     # ---- muscles.csv --------------------------------------------------------
     with open(outdir / "muscles.csv", "w", newline="") as fh:
@@ -241,6 +274,7 @@ def main(outdir: pathlib.Path) -> int:
     print(f"division.csv     {div_n} rows")
     print(f"parts.csv        {part_n} rows")
     print(f"elements.csv     {len(skel['elements'])} rows")
+    print(f"fusions.csv      {fuse_n} rows")
     print(f"muscles.csv      {len(muscles)} rows")
     print(f"-> {outdir}")
     return 0

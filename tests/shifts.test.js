@@ -10,13 +10,19 @@
 const fs = require('fs');
 const path = require('path');
 
-/* A small skeleton: humerus with two landmarks, plus an unrelated bone. */
+/* A small skeleton: humerus with two landmarks, plus unrelated bones and one
+   fusion product standing in for the tarsometatarsus. */
 const ELEMENTS = [
   { id: 'humerus', label: 'Humerus' },
   { id: 'deltopectoral-crest', label: 'Deltopectoral crest', partOf: 'humerus' },
   { id: 'greater-tubercle', label: 'Greater tubercle', partOf: 'humerus' },
   { id: 'scapula', label: 'Scapula' },
   { id: 'coracoid', label: 'Coracoid' },
+  { id: 'metatarsals', label: 'Metatarsals' },
+  { id: 'fossa-metatarsi-i', label: 'Fossa metatarsi I', partOf: 'metatarsals' },
+  { id: 'distal-tarsals', label: 'Distal tarsals' },
+  { id: 'tarsometatarsus', label: 'Tarsometatarsus',
+    fusedFrom: ['distal-tarsals', 'metatarsals'] },
 ];
 
 global.esc = s => String(s);
@@ -46,6 +52,7 @@ function check(label, refRows, cmpRows, expected) {
     ...d.lost.map(l => `-${l.id}`),
     ...d.refined.map(r => `~${r.from}>${r.to}`),
     ...d.moved.map(m => `${m.substantive ? '!' : '?'}${m.id}:${m.from.join('/')}>${m.to.join('/')}`),
+    ...d.fused.map(f => `${f.separated ? '/' : '@'}${f.from}>${f.to}`),
   ].join(',');
   const got = !s ? '(none)'
     : [`o[${fmt(s.origin)}]`, `i[${fmt(s.insertion)}]`,
@@ -157,6 +164,51 @@ check('bone gained on three surfaces — reported once',
                 { element: 'humerus', side: 'ventral' },
                 { element: 'humerus', side: 'anterior' }] },
   'o[] i[+humerus,-scapula] substantive');
+
+/* --- fusion: the skeleton changed, not the attachment --- */
+
+/* The live case. Tibialis anterior inserts on the metatarsals in a crocodylian
+   and on the tarsometatarsus in a bird. While the tarsometatarsus hung off the
+   metatarsals by `partOf`, this reported as a refinement — the same category as
+   humerus to greater tubercle, i.e. one author being more precise. It is a bone
+   that has absorbed its neighbours. */
+check('component to the compound that absorbed it — a fusion, not a refinement',
+  { insertion: [{ element: 'metatarsals' }] },
+  { insertion: [{ element: 'tarsometatarsus' }] },
+  'o[] i[@metatarsals>tarsometatarsus] resolution-only');
+
+check('landmark inside an absorbed component — still a fusion',
+  { insertion: [{ element: 'metatarsals', landmark: 'fossa-metatarsi-i' }] },
+  { insertion: [{ element: 'tarsometatarsus' }] },
+  'o[] i[@fossa-metatarsi-i>tarsometatarsus] resolution-only');
+
+/* Reading it the other way round must not invent a gain plus a loss. The
+   reference taxon is whichever one is scored first on the topology, so it is
+   often the fused one and the comparison runs backwards. */
+check('compound to component — unfused here, not a gain and a loss',
+  { insertion: [{ element: 'tarsometatarsus' }] },
+  { insertion: [{ element: 'metatarsals' }] },
+  'o[] i[/tarsometatarsus>metatarsals] resolution-only');
+
+/* A fusion is a fact about the skeleton. It must not be dressed up as the
+   muscle having moved, or every avian hindlimb record would report a shift. */
+check('fusion alone is never substantive',
+  { origin: [{ element: 'distal-tarsals' }], insertion: [{ element: 'metatarsals' }] },
+  { origin: [{ element: 'tarsometatarsus' }], insertion: [{ element: 'tarsometatarsus' }] },
+  'o[@distal-tarsals>tarsometatarsus] i[@metatarsals>tarsometatarsus] resolution-only');
+
+/* But a real move alongside a fusion still counts. */
+check('a genuine gain alongside a fusion stays substantive',
+  { insertion: [{ element: 'metatarsals' }] },
+  { insertion: [{ element: 'tarsometatarsus' }, { element: 'scapula' }] },
+  'o[] i[+scapula,@metatarsals>tarsometatarsus] substantive');
+
+/* Unrelated bones must not be swept into the fusion just because the compound
+   exists in the same skeleton. */
+check('an unabsorbed bone is still a gain and a loss',
+  { insertion: [{ element: 'humerus' }] },
+  { insertion: [{ element: 'tarsometatarsus' }] },
+  'o[] i[+tarsometatarsus,-humerus] substantive');
 
 /* --- reference selection --- */
 

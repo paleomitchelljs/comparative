@@ -470,6 +470,11 @@ details.elnode.d2 { background: var(--bg-panel); }
 /* Same bone, different surface of it — a shift the element-level diff cannot see. */
 .move { color: var(--accent); font-weight: 600; }
 .move::before { content: "↷ "; }
+/* The skeleton changed, not the attachment. */
+.fusedin { color: var(--unc); }
+.fusedin::before { content: "⊕ "; }
+.cellnote.fusion { color: var(--unc); }
+.chip.fuse { color: var(--unc); border-color: var(--unc); }
 
 /* ---------- attachment rows: bone > side > landmark ---------- */
 .attachgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }

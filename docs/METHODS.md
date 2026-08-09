@@ -52,12 +52,34 @@ record the consensus is shown and marked *inherited* — that means nobody has
 recorded it, not that it is known to match. Inherited rows naming a bone the
 taxon lacks are dropped rather than asserted.
 
-**A fused element is scored as its components, not as a new element.** The
-salamander pubo-ischiac plate is recorded as `pubis` plus `ischium`, because
-giving the plate a record of its own would put the salamander's
+**A fusion must never break the homology of what fused.** There are two ways to
+honour that, and which one applies depends on the source.
+
+*Score the components* where the source decomposes the compound. The salamander
+pubo-ischiac plate is recorded as `pubis` plus `ischium`, because Walthall &
+Ashley-Ross gloss the plate that way and the muscles can be assigned to each.
+Giving the plate a record of its own would put the salamander's
 puboischiofemoralis on a different bone from every other tetrapod's — the same
-mistake as splitting the hyomandibula from the stapes. `derivedFrom` runs the
-other way, for genuine fission (scapulocoracoid into scapula and coracoid).
+mistake as splitting the hyomandibula from the stapes.
+
+*Record the compound with `fusedFrom`* where the source treats it as the unit of
+observation. Hattori & Tsuihiji record avian attachments on the tarsometatarsus;
+splitting those across distal tarsals and metatarsals would assert which
+component a muscle reaches when the source does not say. So the tarsometatarsus,
+tibiotarsus and pygostyle are elements in their own right, each naming what went
+into it.
+
+What they must **not** be is `partOf` a component, which is how all three were
+filed until they were migrated. `partOf` means containment within one bone and
+the attachment diff reads it that way, so a bird inserting on the tarsometatarsus
+compared against a crocodylian inserting on the metatarsals reported as a
+*refinement* — one author being more precise than another. It is a bone that has
+absorbed its neighbours. The diff now reports that as its own category, and
+because it is a change in the skeleton rather than in where the muscle attaches,
+it does not count as a substantive shift.
+
+`derivedFrom` runs the other way, for genuine fission (scapulocoracoid into
+scapula and coracoid). `fusions.csv` exports both directions as one character.
 
 **Where a source's term is ambiguous, no landmark is asserted.** A muscle whose
 origin is described as the femoral "crista ventralis" is scored as `femur` /
