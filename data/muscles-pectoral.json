@@ -4027,6 +4027,23 @@
           }
         },
         {
+          "taxon": "crocodylomorph-stem",
+          "name": "Biceps brachii",
+          "present": "inferred",
+          "sources": [
+            "bodenham-etal-2026"
+          ],
+          "note": "Inferred from the biceps tubercle — an anteroposterior ridge on the lateroventral coracoid, named by Walker (1972) and treated as homologous across early crocodylomorphs by Crush (1980). Level I inference: the coracoid origin is bracketed by both Crocodylia and Aves.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "landmark": "biceps-tubercle"
+              }
+            ]
+          }
+        },
+        {
           "taxon": "crocodylia",
           "name": "Biceps brachii",
           "present": "yes",
@@ -4111,6 +4128,7 @@
       },
       "sources": [
         "abdala-diogo-2010",
+        "bodenham-etal-2026",
         "ercoli-etal-2014"
       ],
       "nerves": [
@@ -4252,6 +4270,23 @@
           }
         },
         {
+          "taxon": "crocodylomorph-stem",
+          "name": "Coracobrachialis",
+          "present": "inferred",
+          "sources": [
+            "bodenham-etal-2026"
+          ],
+          "note": "Inferred from a circular depression near the posterior margin of the lateroventral coracoid, shared with Dromicosuchus (NCSM 13733) and Terrestrisuchus. Crush (1980) read it as the attachment of the coracobrachialis anterior. Recorded here as an ORIGIN, which is this dataset's convention for the coracoid end; Crush and Bodenham et al. both word it as an insertion.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "landmark": "coracoid-depression"
+              }
+            ]
+          }
+        },
+        {
           "taxon": "crocodylia",
           "name": "Coracobrachialis",
           "present": "yes",
@@ -4347,6 +4382,7 @@
       },
       "sources": [
         "abdala-diogo-2010",
+        "bodenham-etal-2026",
         "ercoli-etal-2014",
         "ghetie-etal-1976",
         "walthall-ashley-ross-2006"

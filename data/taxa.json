@@ -76,12 +76,26 @@
                                 "taxon": "testudines"
                               },
                               {
-                                "name": "Crocodylia",
-                                "taxon": "crocodylia"
-                              },
-                              {
-                                "name": "Aves",
-                                "taxon": "aves"
+                                "name": "Archosauria",
+                                "children": [
+                                  {
+                                    "name": "Pseudosuchia",
+                                    "children": [
+                                      {
+                                        "name": "Crocodylomorpha (stem)",
+                                        "taxon": "crocodylomorph-stem"
+                                      },
+                                      {
+                                        "name": "Crocodylia",
+                                        "taxon": "crocodylia"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "name": "Aves",
+                                    "taxon": "aves"
+                                  }
+                                ]
                               }
                             ]
                           },
@@ -294,6 +308,21 @@
       "age": "Extant",
       "color": "#c08a3e",
       "notes": "Most densely sampled reptilian group in Abdala & Diogo (2010) (>50 squamate species)."
+    },
+    {
+      "id": "crocodylomorph-stem",
+      "label": "Stem crocodylomorphs",
+      "clade": "Crocodylomorpha (stem)",
+      "exemplars": [
+        "Dromicosuchus grallator",
+        "Sphenosuchus acutus",
+        "Terrestrisuchus gracilis",
+        "Junggarsuchus sloani"
+      ],
+      "age": "Late Triassic – Early Jurassic",
+      "color": "#8a6a3f",
+      "fossil": true,
+      "notes": "Gracile, long-limbed, erect-postured crocodylomorphs outside crown Crocodylia — the sphenosuchian grade. Muscle entries are inferences from osteological correlates bracketed by Crocodylia and Aves (Sues et al. 2003 for Dromicosuchus grallator, UNC 15574). Treat all entries as hypotheses, not observations. Correlates shared by both brackets are level I inferences; crocodylian-only correlates are level II' and should say so in the occurrence note. Note that these animals are gracile and erect-limbed, so scar development need not match the sprawling caimans most correlate maps are drawn from."
     },
     {
       "id": "crocodylia",

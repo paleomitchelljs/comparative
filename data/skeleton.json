@@ -792,6 +792,7 @@
         "present": [
           "lepidosauria",
           "testudines",
+          "crocodylomorph-stem",
           "crocodylia",
           "synapsida-stem"
         ],
@@ -804,7 +805,8 @@
         "note": "The best single fossil-muscle landmark in the vertebrate skeleton. It carries the caudofemoralis, so its size reads directly as femoral-retractor power, and its independent reduction in birds and loss in mammals marks two separate departures from tail-driven locomotion.",
         "sources": [
           "diogo-molnar-2014",
-          "bishop-pierce-2024"
+          "bishop-pierce-2024",
+          "bodenham-etal-2026"
         ]
       }
     },
@@ -3430,6 +3432,44 @@
         "note": "Distal tarsal row. Origin of the intrinsic pedal muscles — the serial counterpart of the distal carpal row in the manus.",
         "sources": [
           "walthall-ashley-ross-2006"
+        ]
+      }
+    },
+    {
+      "id": "biceps-tubercle",
+      "label": "Biceps tubercle",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "coracoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "crocodylomorph-stem"
+        ],
+        "note": "An anteroposterior ridge on the lateroventral coracoid, most prominent anteriorly. Named by Walker (1972) and treated as homologous across early crocodylomorphs by Crush (1980); Bodenham et al. report it in Galahadosuchus and compare it with Terrestrisuchus and Dromicosuchus. Scored only for the stem column because no source here identifies it in crown Crocodylia.",
+        "sources": [
+          "bodenham-etal-2026"
+        ]
+      }
+    },
+    {
+      "id": "coracoid-depression",
+      "label": "Coracoid depression",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "coracoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "crocodylomorph-stem"
+        ],
+        "note": "A circular depression near the posterior margin of the lateroventral coracoid, present in Galahadosuchus, Dromicosuchus (NCSM 13733) and Terrestrisuchus. Crush (1980) read it as the coracobrachialis anterior attachment.",
+        "sources": [
+          "bodenham-etal-2026"
         ]
       }
     }
