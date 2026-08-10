@@ -107,7 +107,20 @@ muscle had to move" is visible rather than inferred.
 
 Elements are homology groups: the hyomandibula, columella and stapes are one
 record shown under the selected taxon's own name, so the shark's depressor
-hyomandibulae and the mammal's stapedius are visibly on the same bone.
+hyomandibulae and the mammal's stapedius are visibly on the same bone. **So are
+muscles** — pick Theria and the scapula lists *Supraspinatus and infraspinatus*,
+*Subscapularis* and *Teres minor*, not *Supracoracoideus*, *Subcoracoscapularis*
+and *Scapulohumeralis anterior*.
+
+The view defaults to **only attachments a source records for the selected
+taxon**. That is a much shorter list than the consensus fallback — 12 of Theria's
+81 muscles, 1 of Chondrichthyes' 19 — and the shortness is the honest answer.
+Switching the *showing* selector adds the consensus back, tagged `unrecorded`.
+
+**Find a muscle by the two bones it spans.** Pick two elements and get every
+muscle touching both, with which end is which. `scapula` + `humerus` under Theria
+returns eight muscles; typing the same two words into the search box returns two,
+neither of them right, because search matches one label at a time.
 
 **Mass & layer** — the homology spine: developmental origin (dorsal/ventral mass,
 or pharyngeal arch) → layer → proximodistal segment. This is the axis that

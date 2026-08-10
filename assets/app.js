@@ -29,6 +29,13 @@ const state = {
   joints: [],
   jointsById: new Map(),
   skeletonTaxon: '',
+  /* `recorded` shows only attachments a source states for the selected taxon;
+     `all` falls back to the consensus where nobody has recorded one. Recorded
+     is the default because the fallback is an assumption, not an observation —
+     it covers 69 of Theria's 81 muscles and 18 of Chondrichthyes' 19. */
+  skeletonSource: 'recorded',
+  boneA: '',
+  boneB: '',
   topology: null,
   phyloScope: 'all',
   index: [],
@@ -289,6 +296,25 @@ function presenceFor(m, taxonId) {
   return o.present || 'yes';
 }
 
+/* ---------- naming ---------- */
+
+/* A name belongs to an occurrence, not to the homology group, so any view with
+   a taxon selected has to show that taxon's name. The group's preferred label
+   is a fallback and nothing more: a student with a cat open in front of them
+   should read "Subscapularis", not "Subcoracoscapularis", and "Teres minor",
+   not "Scapulohumeralis anterior". Both are already in the record. */
+function muscleLabel(m, taxonId) {
+  if (!taxonId) return m.name;
+  const o = (m.occurrences || []).find(x => x.taxon === taxonId);
+  return (o && o.name) ? o.name : m.name;
+}
+
+/* Some occurrence names are a list of the taxon's muscles rather than one name
+   — the therian hypobranchials run to eleven — so anywhere the name sits in a
+   dense list it is clipped, with the whole string kept in the tooltip. */
+const clip = (s, n = 110) => s.length <= n ? s
+  : s.slice(0, s.lastIndexOf(' ', n) + 1 || n).trimEnd() + '…';
+
 /* ---------- rendering ---------- */
 
 /* Re-rendering usually makes the document shorter (a search narrows the list, a
@@ -308,15 +334,21 @@ function render({ keepScroll = false } = {}) {
   else if (state.view === 'detail' && state.current) { main.innerHTML = renderDetail(state.current); }
   else { main.innerHTML = renderList(); }
 
-  const scope = main.querySelector('#phylo-scope');
-  if (scope) scope.addEventListener('change', () => {
-    state.phyloScope = scope.value; render({ keepScroll: true });
-  });
-
-  const picker = main.querySelector('#skel-taxon');
-  if (picker) picker.addEventListener('change', () => {
-    state.skeletonTaxon = picker.value; render({ keepScroll: true });
-  });
+  /* Every select in a view body writes one state key and re-renders in place.
+     Keeping the scroll position matters here: changing the taxon or the
+     attachment source is a comparison, and being thrown back to the top of a
+     long tree makes it impossible to see what changed. */
+  const bindSelect = (id, key) => {
+    const el = main.querySelector('#' + id);
+    if (el) el.addEventListener('change', () => {
+      state[key] = el.value; render({ keepScroll: true });
+    });
+  };
+  bindSelect('phylo-scope', 'phyloScope');
+  bindSelect('skel-taxon', 'skeletonTaxon');
+  bindSelect('skel-source', 'skeletonSource');
+  bindSelect('bone-a', 'boneA');
+  bindSelect('bone-b', 'boneB');
 
   main.querySelectorAll('[data-goto]').forEach(el => {
     el.addEventListener('click', ev => { ev.preventDefault(); openMuscle(el.dataset.goto); });
@@ -351,14 +383,16 @@ function renderList() {
     origin: 'origin', insertion: 'insertion',
     action: 'action', innervation: 'innervation',
   };
-  /* Descriptions run to a couple of hundred characters. Trim on a word so the
-     card stays a card. */
-  const excerpt = (s, n = 110) => s.length <= n ? s
-    : s.slice(0, s.lastIndexOf(' ', n) + 1 || n).trimEnd() + '…';
+  /* With a taxon facet on, the card is about that taxon, so it takes that
+     taxon's name for the muscle and demotes the group label to the sub-line.
+     Without one there is no taxon to name it in, and the group label leads. */
+  const taxonId = state.filters.taxon;
 
   const cards = rows.map(({ muscle: m, hit }) => {
     const conf = (m.homology || {}).confidence;
     const nTaxa = (m.occurrences || []).filter(o => (o.present || 'yes') !== 'no').length;
+    const local = muscleLabel(m, taxonId);
+    const renamed = local !== m.name;
     let hitLine = '';
     if (hit && hit.kind !== 'name') {
       /* Say which field matched. Without this a prose hit is baffling — the
@@ -367,11 +401,12 @@ function renderList() {
          rows, so a hit on the therian innervation says so. */
       const base = HIT_LABEL[hit.kind] || 'also known as';
       const label = hit.extra ? `${esc(hit.extra)} ${base}` : base;
-      hitLine = `<div class="hit">${label}: <em>${esc(excerpt(hit.text))}</em></div>`;
+      hitLine = `<div class="hit">${label}: <em>${esc(clip(hit.text))}</em></div>`;
     }
     return `<article class="mcard" data-goto="${m.id}" tabindex="0">
-      <h4>${esc(m.name)}</h4>
-      <div class="sub">${esc(m._regionLabel)} · ${esc(m.subregion || '')} · present in ${nTaxa} taxa${conf ? ` · ${esc(conf)}` : ''}</div>
+      <h4 title="${esc(local)}">${esc(clip(local, 64))}</h4>
+      ${renamed ? `<div class="groupname">group: ${esc(m.name)}</div>` : ''}
+      <div class="sub">${esc(m._regionLabel)}${m.subregion ? ` · ${esc(m.subregion)}` : ''} · present in ${nTaxa} taxa${conf ? ` · ${esc(conf)}` : ''}</div>
       ${hitLine}
     </article>`;
   }).join('');

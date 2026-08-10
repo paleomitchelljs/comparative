@@ -209,7 +209,9 @@ aside.sidebar {
 }
 .resultbar strong { color: var(--ink); font-weight: 600; }
 
-.cardgrid { display: grid; gap: 0.6rem; }
+/* 126 records in one column is eleven thousand pixels of scroll. The cards are
+   short, so they tile. */
+.cardgrid { display: grid; gap: 0.6rem; grid-template-columns: repeat(auto-fill, minmax(310px, 1fr)); }
 
 .mcard {
   background: var(--bg-panel);
@@ -223,6 +225,12 @@ aside.sidebar {
 .mcard:hover { border-color: var(--rule-strong); border-left-color: var(--accent); transform: translateX(1px); }
 .mcard h4 { margin: 0 0 0.2rem; font-size: 1.02rem; font-weight: 600; }
 .mcard .sub { font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-3); }
+/* The homology group behind a taxon-specific name. Quiet: the name the reader
+   is holding a specimen of comes first, the group label is the cross-reference. */
+.groupname {
+  font-family: var(--font-ui); font-size: 0.72rem; color: var(--ink-3);
+  font-style: italic; display: block; margin: -0.1rem 0 0.2rem;
+}
 .mcard .hit { font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-2); margin-top: 0.35rem; }
 .mcard .hit em { color: var(--accent); font-style: normal; font-weight: 600; }
 
@@ -487,6 +495,37 @@ details.elnode.d2 { background: var(--bg-panel); }
   background: var(--accent-soft); color: var(--accent);
   border-color: transparent; font-weight: 600;
 }
+
+/* ---------- recorded vs inherited ---------- */
+
+/* An inherited row is the consensus standing in for an observation nobody made.
+   It has to look different from a scored one or the view asserts four hundred
+   things the sources do not say. */
+.inh-tag {
+  font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
+  letter-spacing: 0.06em; font-weight: 700; white-space: nowrap;
+  color: var(--unc); background: var(--unc-bg);
+  padding: 0.05rem 0.3rem; border-radius: 3px; margin-left: 0.25rem;
+}
+.elbody a.inh, table.bonepair tr.inh a { color: var(--ink-3); font-style: italic; }
+table.bonepair tr.inh td { background: var(--bg-sunken); }
+
+/* Elements the taxon lacks and nothing attaches to: kept, but out of the way. */
+.absentlist { color: var(--ink-3); margin-top: 0.6rem; }
+.absentlist a { color: var(--ink-3); text-decoration: underline dotted; }
+.absentlist a:hover { color: var(--link); }
+
+/* ---------- bone-pair lookup ---------- */
+.bonelookup { margin-bottom: 1.25rem; }
+.bonelookup .taxonbar { margin-bottom: 0.6rem; background: var(--accent-soft); border-color: var(--accent); }
+.bonelookup .taxonbar label { color: var(--ink-2); }
+.bonelookup select { max-width: 15rem; }
+table.bonepair { table-layout: auto; min-width: 520px; }
+table.bonepair td, table.bonepair th { padding: 0.45rem 0.7rem; }
+table.bonepair a { color: var(--link); text-decoration: none; }
+table.bonepair a:hover { text-decoration: underline; }
+table.bonepair .groupname { margin-top: 0.1rem; }
+table.bonepair .bp-taxa { font-family: var(--font-ui); font-size: 0.76rem; color: var(--ink-3); }
 
 /* attachment shift diff */
 .gain { color: var(--ok); font-weight: 600; }

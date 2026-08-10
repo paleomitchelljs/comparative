@@ -48,9 +48,17 @@ sides or landmarks of one bone gets several rows.
 - On an **occurrence**, it is what a source records for that taxon.
 
 Only the second is evidence of a shift. Where a taxon has no attachments on
-record the consensus is shown and marked *inherited* — that means nobody has
-recorded it, not that it is known to match. Inherited rows naming a bone the
-taxon lacks are dropped rather than asserted.
+record the consensus can be shown in its place, marked `unrecorded` — that means
+nobody has recorded it, not that it is known to match. Inherited rows naming a
+bone the taxon lacks are dropped rather than asserted.
+
+**The Skeleton view defaults to recorded rows only**, because inheriting is the
+majority case and not a small one: 69 of Theria's 81 muscles, 48 of 55 in Aves,
+18 of 19 in Chondrichthyes. Showing those unmarked turned the consensus into
+roughly four hundred observations no source makes. The *showing* selector opens
+the fallback back up when you want the generalised attachment, and every
+inherited entry is then tagged and greyed. `attachments.csv` has carried the
+same distinction as its `inherited` column throughout.
 
 **A fusion must never break the homology of what fused.** There are two ways to
 honour that, and which one applies depends on the source.
@@ -194,7 +202,22 @@ ancestor.
 
 **Skeleton** — bone-first. Drill down through the skeleton, see what originates
 and inserts at each level, optionally as recorded in one taxon. Elements a taxon
-lacks are flagged rather than hidden.
+lacks are flagged rather than hidden; where nothing attaches to them either,
+they collapse to one line at the foot of their parent rather than filling the
+list with empty nodes.
+
+The same view carries the **bone-pair lookup**: name two elements and get the
+muscles that touch both, with which end is which. It takes the pair unordered
+because a student can see which two bones a muscle spans well before they can
+tell its origin from its insertion. Matching runs up and down the `partOf`
+chain, so asking for the humerus finds a muscle scored on the deltopectoral
+crest. Search cannot do this — every indexed term is a single label, so no term
+can contain two bone names.
+
+**With a taxon selected, muscles are named as that taxon names them.** Names are
+attributes of occurrences, so the same record reads *Subscapularis* under Theria
+and *Subcoracoscapularis* with no taxon selected; the homology group's label
+follows underneath as the cross-reference.
 
 **Mass & layer** — developmental origin → layer → proximodistal segment. The axis
 that survives deep transitions.

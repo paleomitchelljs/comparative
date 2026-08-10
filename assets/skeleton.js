@@ -349,12 +349,24 @@ function elementPresentIn(elementId, taxonId) {
   return p.default || 'unknown';
 }
 
-/* muscles attaching to an element, optionally narrowed to one taxon */
-function musclesAtElement(elementId, taxonId) {
+/* Muscles attaching to an element, optionally narrowed to one taxon.
+   Each hit carries whether it was RECORDED for that taxon or inherited from the
+   consensus, because the two are different claims and the bone-first view used
+   to render them identically. Inheriting is the majority case — 69 of Theria's
+   81 muscles, 18 of Chondrichthyes' 19 — so collapsing the distinction turned
+   the consensus into four hundred observations nobody made.
+
+   `mode` is `recorded` (drop inherited hits) or `all` (keep and mark them). */
+function musclesAtElement(elementId, taxonId, mode) {
+  const src = mode || state.skeletonSource || 'all';
+  const cacheKey = `${elementId}|${taxonId || ''}|${src}`;
+  const cache = state._maeCache || (state._maeCache = new Map());
+  if (cache.has(cacheKey)) return cache.get(cacheKey);
+
   const origin = [], insertion = [];
   for (const m of state.muscles) {
     const taxa = taxonId ? [taxonId] : (m.occurrences || []).map(o => o.taxon);
-    let hitO = false, hitI = false;
+    let oRec = false, oInh = false, iRec = false, iInh = false;
     for (const t of taxa) {
       if (taxonId) {
         const occ = (m.occurrences || []).find(o => o.taxon === t);
@@ -362,13 +374,21 @@ function musclesAtElement(elementId, taxonId) {
       }
       const a = attachmentsFor(m, t);
       const touches = rows => (rows || []).some(r => rowElements(r).includes(elementId));
-      if (touches(a.origin)) hitO = true;
-      if (touches(a.insertion)) hitI = true;
+      /* Across all taxa combined, one taxon having it on record is enough to
+         call the hit recorded — the consensus is only the answer where nothing
+         better exists anywhere. */
+      if (touches(a.origin)) { if (a.inherited) oInh = true; else oRec = true; }
+      if (touches(a.insertion)) { if (a.inherited) iInh = true; else iRec = true; }
     }
-    if (hitO) origin.push(m);
-    if (hitI) insertion.push(m);
+    const keep = (rec, inh) => rec ? { muscle: m, inherited: false }
+      : (inh && src !== 'recorded') ? { muscle: m, inherited: true } : null;
+    const o = keep(oRec, oInh), i = keep(iRec, iInh);
+    if (o) origin.push(o);
+    if (i) insertion.push(i);
   }
-  return { origin, insertion };
+  const out = { origin, insertion };
+  cache.set(cacheKey, out);
+  return out;
 }
 
 /* ---------- skeleton view ---------- */
@@ -387,28 +407,69 @@ const childrenOf = id => state.elements.filter(e => e.partOf === id).sort((a, b)
   (KIND_RANK[a.kind] ?? 9) - (KIND_RANK[b.kind] ?? 9) || a.label.localeCompare(b.label));
 
 /* Count muscles on this element AND everything nested inside it, so a collapsed
-   parent still tells you whether it is worth opening. */
-function subtreeCount(elementId, taxonId) {
-  const here = musclesAtElement(elementId, taxonId);
+   parent still tells you whether it is worth opening. Counted under the same
+   `mode` the body will render, or the badge promises rows that are not there. */
+function subtreeCount(elementId, taxonId, mode) {
+  const here = musclesAtElement(elementId, taxonId, mode);
   let n = here.origin.length + here.insertion.length;
-  for (const c of childrenOf(elementId)) n += subtreeCount(c.id, taxonId);
+  for (const c of childrenOf(elementId)) n += subtreeCount(c.id, taxonId, mode);
   return n;
+}
+
+/* Elements the taxon lacks that also carry no muscle are noise at full weight:
+   under Theria the pectoral girdle opens on anocleithrum, cleithrum, coracoid,
+   extracleithrum, furcula and interclavicle — six empty nodes, alphabetically
+   ahead of the scapula. That the coracoid is gone is worth saying, so they are
+   demoted to one line rather than hidden. A search overrides the demotion, so
+   looking for the cleithrum still finds it. */
+function partitionAbsent(els, taxonId, q, mode) {
+  if (!taxonId || q) return { shown: els, absent: [] };
+  const shown = [], absent = [];
+  for (const e of els) {
+    const gone = elementPresentIn(e.id, taxonId) === 'no'
+      && subtreeCount(e.id, taxonId, mode) === 0;
+    (gone ? absent : shown).push(e);
+  }
+  return { shown, absent };
+}
+
+function absentLine(absent, taxonId) {
+  if (!absent.length) return '';
+  const clade = state.taxaById.get(taxonId)?.clade || taxonId;
+  return `<p class="cellnote absentlist">Absent in ${esc(clade)}: ${absent.map(e =>
+    `<a href="#element=${encodeURIComponent(e.id)}">${esc(e.label)}</a>`).join(', ')}</p>`;
 }
 
 function renderSkeleton() {
   const taxonId = state.skeletonTaxon;
+  const mode = state.skeletonSource;
   const q = normalise(state.query);
 
-  const taxonPicker = `
+  const controls = `
     <div class="taxonbar">
-      <label for="skel-taxon">Show attachments as recorded in</label>
+      <label for="skel-taxon">Attachments in</label>
       <select id="skel-taxon">
         <option value="">all taxa combined</option>
         ${[...state.taxa]
           .sort((a, b) => (state.taxonOrder.get(a.id) ?? 99) - (state.taxonOrder.get(b.id) ?? 99))
           .map(t => `<option value="${t.id}" ${t.id === taxonId ? 'selected' : ''}>${esc(t.clade)} — ${esc(t.label)}</option>`).join('')}
       </select>
+      <label for="skel-source">showing</label>
+      <select id="skel-source">
+        <option value="recorded" ${mode === 'recorded' ? 'selected' : ''}>only what a source records</option>
+        <option value="all" ${mode === 'all' ? 'selected' : ''}>plus the consensus where unrecorded</option>
+      </select>
     </div>`;
+
+  const note = mode === 'recorded'
+    ? `<p class="viewnote">Showing only attachments a source states for the selected taxon.
+         Most taxa are scored for a minority of their muscles, so these lists are short
+         by design — switch to <em>plus the consensus</em> for the generalised attachment
+         of the rest, marked as unrecorded.</p>`
+    : `<p class="viewnote">Entries marked <span class="inh-tag">unrecorded</span> are the
+         consensus standing in for an observation nobody has made in this taxon. They are
+         not evidence of anything: the shift table on a muscle page ignores them, and so
+         should you.</p>`;
 
   const regions = ['pectoral', 'forelimb', 'pelvic', 'hindlimb', 'axial', 'cranial', 'fin'];
   const byRegion = new Map(regions.map(r => [r, []]));
@@ -420,33 +481,176 @@ function renderSkeleton() {
   let body = '';
   for (const [region, roots] of byRegion) {
     if (!roots.length) continue;
-    const cards = roots.map(e => renderElementNode(e, taxonId, q, 0)).filter(Boolean).join('');
-    if (!cards) continue;
-    const n = roots.reduce((acc, e) => acc + subtreeCount(e.id, taxonId), 0);
+    const n = roots.reduce((acc, e) => acc + subtreeCount(e.id, taxonId, mode), 0);
+    /* A region a taxon has nothing in — the fin under Theria — is a heading over
+       an empty box. Drop it rather than make it look like a finding. */
+    if (!n && taxonId && !q) continue;
+    const { shown, absent } = partitionAbsent(roots, taxonId, q, mode);
+    const cards = shown.map(e => renderElementNode(e, taxonId, q, 0)).filter(Boolean).join('');
+    if (!cards && !absent.length) continue;
     body += `<details class="elnode region"${q ? ' open' : ''}>
       <summary><span class="elname">${esc(region)}</span><span class="count">${n}</span></summary>
-      <div class="elbody"><div class="skeltree">${cards}</div></div></details>`;
+      <div class="elbody">${cards ? `<div class="skeltree">${cards}</div>` : ''}
+        ${absentLine(absent, taxonId)}</div></details>`;
   }
 
-  return taxonPicker + (body ||
+  return controls + renderBoneLookup(taxonId, mode) + note + (body ||
     `<div class="empty">No skeletal element matches “${esc(state.query)}”.</div>`);
 }
 
+/* ---------- find a muscle by the two bones it spans ---------- */
+
+/* The question a student in a lab actually has. They can see which two bones a
+   muscle runs between long before they can tell origin from insertion, so the
+   lookup takes the pair unordered and reports which end is which, rather than
+   making them guess first and get nothing.
+
+   Search cannot answer this: every indexed term is one label, so no term can
+   contain two bone names and `scapula humerus` matches on stray prose instead
+   of on the deltoideus scapularis. */
+
+/* Only elements something actually attaches to. The rest can only ever return
+   nothing, and there are 41 of them. */
+function attachedElementIds() {
+  if (state._attachedEls) return state._attachedEls;
+  const s = new Set();
+  const eat = a => ['origin', 'insertion'].forEach(k =>
+    (a?.[k] || []).forEach(r => rowElements(r).forEach(x => s.add(x))));
+  for (const m of state.muscles) {
+    eat(m.attachments);
+    (m.occurrences || []).forEach(o => eat(o.attachments));
+  }
+  return (state._attachedEls = s);
+}
+
+/* An attachment on the deltopectoral crest is an attachment on the humerus, so
+   the test runs up and down the `partOf` chain. Both directions: picking the
+   bone finds muscles scored on its landmarks, and picking a landmark finds
+   muscles scored only on the bone as a whole. */
+const rowTouches = (rows, sel) => (rows || []).some(r =>
+  rowElements(r).some(x => x === sel || isWithin(x, sel) || isWithin(sel, x)));
+
+function musclesBetween(aId, bId, taxonId, mode) {
+  const out = [];
+  for (const m of state.muscles) {
+    const taxa = taxonId ? [taxonId] : (m.occurrences || []).map(o => o.taxon);
+    const roles = { a: new Set(), b: new Set() };
+    const hitTaxa = [];
+    let anyRecorded = false;
+    for (const t of taxa) {
+      const occ = (m.occurrences || []).find(o => o.taxon === t);
+      if (!occ || (occ.present || 'yes') === 'no') continue;
+      const att = attachmentsFor(m, t);
+      if (att.inherited && mode === 'recorded') continue;
+      const role = sel => {
+        const r = [];
+        if (rowTouches(att.origin, sel)) r.push('origin');
+        if (rowTouches(att.insertion, sel)) r.push('insertion');
+        return r;
+      };
+      const ra = role(aId), rb = aId === bId ? role(aId) : role(bId);
+      if (!ra.length || !rb.length) continue;
+      ra.forEach(x => roles.a.add(x));
+      rb.forEach(x => roles.b.add(x));
+      hitTaxa.push(t);
+      if (!att.inherited) anyRecorded = true;
+    }
+    if (hitTaxa.length) {
+      out.push({ muscle: m, roles, taxa: hitTaxa, inherited: !anyRecorded });
+    }
+  }
+  return out.sort((x, y) =>
+    regionRank(x.muscle.region) - regionRank(y.muscle.region) ||
+    x.muscle.name.localeCompare(y.muscle.name));
+}
+
+function renderBoneLookup(taxonId, mode) {
+  const ids = attachedElementIds();
+  const REGION_ORDER_EL = ['pectoral', 'forelimb', 'pelvic', 'hindlimb', 'axial', 'cranial', 'fin'];
+  const opts = sel => {
+    const byRegion = new Map();
+    for (const id of ids) {
+      const e = state.elementsById.get(id);
+      if (!e) continue;
+      const r = e.region || 'other';
+      if (!byRegion.has(r)) byRegion.set(r, []);
+      byRegion.get(r).push(e);
+    }
+    const groups = [...byRegion.entries()].sort((a, b) =>
+      (REGION_ORDER_EL.indexOf(a[0]) + 1 || 99) - (REGION_ORDER_EL.indexOf(b[0]) + 1 || 99));
+    return `<option value="">— any —</option>` + groups.map(([r, els]) =>
+      `<optgroup label="${esc(r)}">${els
+        .sort((a, b) => elementLabel(a.id, taxonId).localeCompare(elementLabel(b.id, taxonId)))
+        .map(e => `<option value="${esc(e.id)}" ${e.id === sel ? 'selected' : ''}>${esc(elementLabel(e.id, taxonId))}</option>`)
+        .join('')}</optgroup>`).join('');
+  };
+
+  const a = state.boneA, b = state.boneB;
+  let results = '';
+
+  if (a && b) {
+    const rows = musclesBetween(a, b, taxonId, mode);
+    const head = `<th>${esc(elementLabel(a, taxonId))}</th><th>${esc(elementLabel(b, taxonId))}</th>`;
+    const cell = set => set.size
+      ? [...set].sort().reverse().join(' + ')
+      : '<span class="sep">—</span>';
+    results = rows.length
+      ? `<div class="tablewrap"><table class="occ bonepair">
+          <thead><tr><th>Muscle</th>${head}${taxonId ? '' : '<th>Recorded in</th>'}</tr></thead>
+          <tbody>${rows.map(r => {
+            const label = muscleLabel(r.muscle, taxonId);
+            return `<tr class="${r.inherited ? 'inh' : ''}">
+              <td><a data-goto="${r.muscle.id}" href="#${esc(r.muscle.id)}">${esc(clip(label, 64))}</a>
+                ${r.inherited ? `<span class="inh-tag" title="Consensus attachment — no source records this taxon">unrecorded</span>` : ''}
+                ${label !== r.muscle.name ? `<span class="groupname">group: ${esc(r.muscle.name)}</span>` : ''}</td>
+              <td class="a-kind">${cell(r.roles.a)}</td>
+              <td class="a-kind">${cell(r.roles.b)}</td>
+              ${taxonId ? '' : `<td class="bp-taxa">${r.taxa
+                .map(t => esc(state.taxaById.get(t)?.clade || t)).join(', ')}</td>`}
+            </tr>`;
+          }).join('')}</tbody></table></div>`
+      : `<p class="cellnote">Nothing on record attaches to both${taxonId
+          ? ` in ${esc(state.taxaById.get(taxonId)?.clade || taxonId)}`
+          : ''}${mode === 'recorded' ? ' — try the consensus fallback in the bar above' : ''}.</p>`;
+  }
+
+  return `<div class="bonelookup">
+    <div class="taxonbar">
+      <label for="bone-a">Find a muscle attaching to</label>
+      <select id="bone-a">${opts(a)}</select>
+      <label for="bone-b">and to</label>
+      <select id="bone-b">${opts(b)}</select>
+    </div>
+    ${results}
+  </div>`;
+}
+
 function renderElementNode(e, taxonId, q, depth) {
+  const mode = state.skeletonSource;
   const kids = childrenOf(e.id);
-  const here = musclesAtElement(e.id, taxonId);
-  const total = subtreeCount(e.id, taxonId);
+  const here = musclesAtElement(e.id, taxonId, mode);
+  const total = subtreeCount(e.id, taxonId, mode);
 
   const matches = !q || normalise(e.label).includes(q) ||
     (e.synonyms || []).some(s => normalise(s).includes(q));
-  const kidHtml = kids.map(k => renderElementNode(k, taxonId, q, depth + 1)).filter(Boolean).join('');
+  const { shown: kidsShown, absent: kidsAbsent } = partitionAbsent(kids, taxonId, q, mode);
+  const kidHtml = kidsShown.map(k => renderElementNode(k, taxonId, q, depth + 1)).filter(Boolean).join('');
   if (q && !matches && !kidHtml) return '';
 
   const presence = taxonId ? elementPresentIn(e.id, taxonId) : (e.presence || {}).default;
   const absentHere = taxonId && (presence === 'no');
 
+  /* The taxon's own name for the muscle, not the homology group's label. With
+     Theria selected this is the difference between reading "Subscapularis" and
+     "Subcoracoscapularis"; the group name stays in the tooltip. */
   const list = arr => arr.length
-    ? arr.map(m => `<a data-goto="${m.id}">${esc(m.name)}</a>`).join('<span class="sep">, </span>')
+    ? arr.map(({ muscle: m, inherited }) => {
+        const label = muscleLabel(m, taxonId);
+        const title = label === m.name ? m.name : `${label} — ${m.name}`;
+        return `<a data-goto="${m.id}" href="#${esc(m.id)}" class="${inherited ? 'inh' : ''}"
+          title="${esc(title)}${inherited ? ' (consensus — not recorded for this taxon)' : ''}"
+          >${esc(clip(label, 52))}</a>${inherited ? '<span class="inh-tag">unrecorded</span>' : ''}`;
+      }).join('<span class="sep">, </span>')
     : '<span class="sep">—</span>';
 
   const badges = [
@@ -491,6 +695,7 @@ function renderElementNode(e, taxonId, q, depth) {
         <div class="grp"><b>Origin of (${here.origin.length})</b>${list(here.origin)}</div>
         <div class="grp"><b>Insertion of (${here.insertion.length})</b>${list(here.insertion)}</div>` : ''}
       ${kidHtml ? `<div class="elkids">${kidHtml}</div>` : ''}
+      ${absentLine(kidsAbsent, taxonId)}
     </div>
   </details>`;
 }
