@@ -172,6 +172,17 @@ def main():
 
     taxon_ids = {t["id"] for t in taxa_doc["taxa"]}
     source_keys = {s["key"] for s in sources_doc["sources"]}
+    # Collapsing the list into a set hides a repeated key, and a repeated key is
+    # a live bug rather than clutter: the app builds its bibliography as a Map,
+    # so the later entry silently wins. That is how the Klinkhamer 2017 record
+    # spent a while pointing at a `pdf` filename with `notes: null`, and why the
+    # source count read 58, 59, 62 and 63 in four different places.
+    if len(source_keys) != len(sources_doc["sources"]):
+        seen = set()
+        for s in sources_doc["sources"]:
+            if s["key"] in seen:
+                err(f"sources.json: duplicate key '{s['key']}'")
+            seen.add(s["key"])
     element_ids = {e["id"] for e in skeleton_doc["elements"]}
     side_terms = set(skeleton_doc.get("sides", []))
     nerves_by_id = {n["id"]: n for n in nerves_doc["nerves"]}

@@ -123,8 +123,8 @@ refinement rather than a transition.
 
 Shipped as the **Phylogeny** view. Branch states are optimised by **Fitch
 parsimony** over the topology in `taxa.json` (`assets/phylogeny.js`), not read off
-the tip states. Across all 92 muscles it infers 22 gains and 15 losses over 26
-informative characters.
+the tip states. Across all 126 muscles it infers gains and losses over the informative
+characters; the live totals are on the view itself.
 
 Three decisions that the honest reading forced, all surfaced in the interface:
 
@@ -191,7 +191,7 @@ bone dimensions would be asserting something the data reject.
 The big lift, and where origin/insertion finally drives the visuals.
 
 **Recommendation: schematic, not accurate.** Anatomically faithful figures for
-16 taxa × 4 regions is not a realistic hand-drawing job, and inaccurate art that
+19 taxa × 4 regions is not a realistic hand-drawing job, and inaccurate art that
 looks accurate is worse than an obvious diagram. Draw one **schematic
 appendage** — girdle, stylopod, zeugopod, autopod as blocks — and one schematic
 head with the arches as bands. Then:

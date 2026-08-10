@@ -42,6 +42,15 @@ jobs:
             exit 1
           fi
 
+      # The docs quote coverage figures, and a coverage document whose figures
+      # are wrong is worse than one with none, because it gets quoted onward.
+      - name: Check the measured counts in the docs are current
+        run: |
+          python3 scripts/doc_counts.py || {
+            echo "::error::Run 'python3 scripts/doc_counts.py --write' and commit the result."
+            exit 1
+          }
+
       - name: Unit tests
         run: |
           for t in tests/*.test.js; do

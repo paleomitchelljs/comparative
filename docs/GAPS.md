@@ -1,8 +1,21 @@
 # Coverage and gaps
 
-Measured, not estimated. Regenerate with `python3 scripts/export_matrix.py`.
+Measured, not estimated. Every figure between `<!-- counts:… -->` markers is
+generated — **run `python3 scripts/doc_counts.py --write` after touching
+`data/`**, and never edit those numbers by hand. The prose around them is
+curated and the script leaves it alone.
 
-**State:** 126 muscles · 517 present occurrences · 212 skeletal elements · 59 sources · 16 taxa.
+A present occurrence is one whose `present` is not `no`, so `variable`,
+`uncertain` and `inferred` count. The resolution figures are over **observed**
+attachment rows only: a consensus row is one row inherited by up to nineteen
+taxa, and counting it once per taxon inflated `side` and `landmark` coverage in
+earlier passes.
+
+**State:**
+
+<!-- counts:headline -->
+126 muscle records · 571 present occurrences · 214 skeletal elements · 62 sources · 19 operational taxa
+<!-- /counts:headline -->
 
 **Every source in `papers/` is now mined or accounted for.** Five remain uncited in
 records: two declared out of scope (catfish brain, cardiac review), two methods and
@@ -20,78 +33,67 @@ scope. Duplicates are removed as they are found.
 the number that decides whether attachment change is analysable or merely
 illustrated.
 
-| Region | Muscles | Occurrences | With attachments | %att |
+<!-- counts:regions -->
+| Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| **foot** | 11 | 26 | 19 | **73%** |
-| fin | 9 | 35 | 19 | 54% |
+| foot | 11 | 26 | 19 | 73% |
+| fin | 9 | 34 | 19 | 56% |
+| arm | 5 | 38 | 20 | 53% |
 | leg | 10 | 33 | 15 | 45% |
-| pelvic | 8 | 37 | 14 | 38% |
-| thigh | 10 | 45 | 17 | 38% |
-| pectoral | 16 | 119 | 38 | 32% |
-| arm | 5 | 36 | 10 | 28% |
-| axial | 15 | 47 | 11 | 23% |
-| hand | 9 | 61 | 11 | 18% |
-| cranial | 15 | 62 | 11 | 18% |
-| **forearm** | 18 | 118 | 16 | **14%** |
+| pelvic | 8 | 39 | 17 | 44% |
+| thigh | 10 | 44 | 19 | 43% |
+| pectoral | 16 | 96 | 41 | 43% |
+| forearm | 18 | 96 | 23 | 24% |
+| axial | 15 | 46 | 11 | 24% |
+| hand | 9 | 59 | 11 | 19% |
+| cranial | 15 | 60 | 11 | 18% |
+| **all** | 126 | 571 | 206 | **36%** |
+<!-- /counts:regions -->
 
-Overall 34%. Landmark resolution 14% of rows. Correlates carrying a muscle 78%.
-Architecture records 21 across two taxa.
-
-**The autopod is no longer the hole — the forearm is.** Walthall & Ashley-Ross
-(2006) took the foot from 40% to 73% and the leg from 30% to 45% in one pass, and
-created eleven pedal records where there had been three. The forearm at 14% across
-118 occurrences is now the largest region with the least attachment detail, and it
-is the one place where the salamander column is nearly complete while every other
-tetrapod column still inherits the consensus.
-
-Axial is no longer 0%: the body wall now has the rectus abdominis, the three
-oblique layers and the ypsiloideus scored for Caudata, alongside the three coarse
-tract records from Schilling (2011).
-
-**The autopod is half fixed.** Blotto et al. (2020) has now been mined: the hand
-went 0% → 12%, the foot 0% → 25%, and Anura as a whole 7% → 25%. That work also
-added nine anuran autopod elements the ontology lacked — prepollex, prehallux,
-distal carpal 3-4-5, radiale, element Y, tibiale, fibulare, ligamentum calcanei,
-aponeurosis plantaris — and three anuran occurrence rows for pes muscles that had
-no anuran record at all.
+**The forearm and the hand are the holes now.** Walthall & Ashley-Ross (2006)
+took the foot to 73% and the leg to 45% in one pass, and Blotto et al. (2020)
+opened the anuran autopod, but the forearm and hand still sit at the bottom of
+the table across the largest occurrence counts in the dataset. Both are places
+where the salamander column is nearly complete and every other tetrapod column
+inherits the consensus.
 
 The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
 muscles that would serve it — adductor pollicis, a contrahens, flexores breves
 profundi slips — attach to the prepollex instead. That is the position-versus-
 identity argument with a bone attached to it rather than just a digit number.
 
-**What Blotto does not fix:** the leg (zeugopod) is still 0%, and the hand
-remains low because Blotto covers Anura only — the other eight tetrapod columns
-still inherit the consensus. The forearm at 7% is the largest region with the
-least attachment detail.
-
-**Axial is newly present but skeletal.** Three records (epaxial, hypaxial,
-caudal) from Schilling (2011), covering the division that everything else is
-built on. They are deliberately coarse: Schilling reviews tracts, not individual
-muscles. Splitting the transversospinal system, longissimus and iliocostalis into
-separate records is the obvious next step, with Cieri (2018) for the squamate
-column.
+**Axial is no longer the empty region.** The body wall now carries the rectus
+abdominis, the three oblique layers and the ypsiloideus scored for Caudata,
+alongside the coarse tract records from Schilling (2011), who reviews tracts
+rather than individual muscles. Splitting the transversospinal system,
+longissimus and iliocostalis into separate records is the next step, with Cieri
+(2018) for the squamate column.
 
 ## 2. Underreported taxonomic groups
 
-| Taxon | Occurrences | With attachments | %att |
+<!-- counts:taxa -->
+| Taxon | Present occurrences | Scored | %att |
 |---|---:|---:|---:|
-| Dipnoi | 7 | 7 | **100%** |
+| Dipnoi | 7 | 7 | 100% |
+| Pseudosuchia (stem) | 1 | 1 | 100% |
+| Crocodylomorpha (stem) | 3 | 3 | 100% |
+| Crocodyliformes (stem) | 7 | 7 | 100% |
 | Actinistia | 7 | 6 | 86% |
-| **Caudata** | 88 | 61 | **69%** |
+| Caudata | 88 | 61 | 69% |
+| Crocodylia | 66 | 38 | 58% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Actinopterygii | 14 | 6 | 43% |
 | Monotremata | 7 | 3 | 43% |
-| Crocodylia | 66 | 24 | 36% |
 | Lepidosauria | 87 | 25 | 29% |
 | Testudines | 50 | 13 | 26% |
 | Anura | 62 | 14 | 23% |
 | Theria | 81 | 12 | 15% |
 | Aves | 55 | 7 | 13% |
 | Chondrichthyes | 19 | 1 | 5% |
-| **Tetrapodomorpha (stem)** | 7 | **0** | **0%** |
-| Petromyzontida | 5 | 0 | 0% |
 | Myxini | 1 | 0 | 0% |
+| Petromyzontida | 5 | 0 | 0% |
+| Tetrapodomorpha (stem) | 7 | 0 | 0% |
+<!-- /counts:taxa -->
 
 **Caudata was the anomaly and is now the reference column.** It went from 11% to
 69% on Walthall & Ashley-Ross (2006), which states an origin and an insertion for
@@ -112,13 +114,15 @@ have to come from osteological correlates rather than dissection — Molnar et a
 
 Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 
+<!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 212, of which 173 (82%) carry at least one muscle attachment |
-| Attachment rows | 930 |
-| Rows naming a **landmark** | 130 (14%) |
-| Rows naming a **side** | 316 (**34%**) |
-| Osteological correlates | 80 flagged, 62 (78%) carry a muscle |
+| Elements | 214, of which 175 (82%) carry at least one attachment |
+| Observed attachment rows | 549 |
+| Rows naming a **landmark** | 107 (19%) |
+| Rows naming a **side** | 273 (50%) |
+| Osteological correlates | 82 flagged, 64 carry a muscle |
+<!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
 `origin`/`insertion` prose named a landmark — "olecranon", "fourth trochanter",
@@ -139,9 +143,8 @@ palaeontologist would look at first, and the dataset currently says nothing abou
 what pulls on them. The count rose because recent passes added correlates faster
 than they added the muscles that use them.
 
-**Side resolution overtook landmark resolution this pass** — 34% of rows now name
-an aspect, against 14% naming a landmark. Walthall & Ashley-Ross state an aspect
-for nearly every attachment ("posterolateral face of the fibula", "internal
+**Side resolution runs well ahead of landmark resolution.** Walthall &
+Ashley-Ross state an aspect for nearly every attachment ("posterolateral face of the fibula", "internal
 (dorsal) face of the pubo-ischiac plate") while rarely naming a named process, so
 the salamander column is well resolved on side and poorly on landmark. That is a
 property of how salamanders are described, not a defect in the scoring: their
@@ -149,62 +152,73 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 
 **Elements per muscle, by region** — a rough parity check:
 
-| Region | Muscles | Elements | Ratio |
+<!-- counts:parity -->
+| Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| axial | 3 | 25 | 8.3 |
-| cranial | 15 | 60 | 4.0 |
-| pelvic | 5 | 11 | 2.2 |
-| pectoral | 16 | 22 | 1.4 |
-| hindlimb | 17 | 19 | 1.1 |
-| forelimb | 32 | 26 | 0.8 |
-| fin | 7 | 4 | 0.6 |
+| cranial | 21 | 51 | 2.4 |
+| hindlimb | 42 | 33 | 0.8 |
+| axial | 31 | 24 | 0.8 |
+| pectoral | 32 | 21 | 0.7 |
+| fin | 8 | 5 | 0.6 |
+| forelimb | 51 | 29 | 0.6 |
+| pelvic | 25 | 12 | 0.5 |
+<!-- /counts:parity -->
 
-The forelimb and fin are the two places where the skeleton is thinner than the
-musculature it has to support. The fin especially: four elements (radials, rays,
-axial elements, preaxial radials) carrying seven muscles across four taxa, when
-Diogo et al. distinguish individual axial elements and named radial series. Fin
-skeletal detail is the correlate of the fin muscle detail already recorded.
+The pelvis, fin and forelimb are where the skeleton is thinnest relative to the
+musculature hung off it. The fin especially: radials, rays, axial elements and
+preaxial radials, carrying every fin muscle in the dataset, when Diogo et al.
+distinguish individual axial elements and named radial series. Fin skeletal
+detail is the correlate of the fin muscle detail already recorded. Cranial runs
+the other way at 2.4 elements per muscle, which is what a coarse adductor
+mandibulae complex sitting over a finely divided skull looks like.
 
 ---
 
-Every PDF in `papers/` now has a `sources.json` entry. Four were byte-identical
-duplicates and were deleted; two are declared out of scope (a catfish brain, a
-review of cardiac evolution) and are listed only so the folder is fully
-accounted for.
+Every PDF in `papers/` now has a `sources.json` entry. Five were byte-identical
+duplicates; two are declared out of scope (a catfish brain, a review of cardiac
+evolution) and are listed only so the folder is fully accounted for. The fifth
+duplicate had also produced two `sources.json` entries under one `key`, which
+the app resolves by letting the later one win — so the bibliography quietly
+showed the entry with no reading notes. `validate.py` now rejects a repeated
+key.
 
 ---
 
 ## The one gap that blocks everything downstream
 
-**Taxon-specific attachments: 178 of 517 present occurrences (34%).**
+<!-- counts:scored -->
+**Taxon-specific attachments: 206 of 571 present occurrences (36%).**
+<!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
 3) computes gains and losses from per-taxon records; the diagram (phase 4) draws
-per-taxon bands. Both degrade to showing the consensus repeated 16 times if the
+per-taxon bands. Both degrade to showing the consensus repeated 19 times if the
 occurrences are empty.
 
-It is also the number that decides whether "attachment change is data" is true in
-practice. At 34% a computed shift table is analysable for some comparisons and not
-others, and the distribution matters more than the total: no region is empty any
-longer, but a shift is only computable where **two** taxa are scored for the same
-muscle. Caudata at 69% raises the ceiling for every tetrapod comparison, because
+It is also the number that decides whether "attachment change is data" is true
+in practice. At this level a computed shift table is analysable for some
+comparisons and not others, and the distribution matters more than the total: no
+region is empty any longer, but a shift is only computable where **two** taxa
+are scored for the same muscle. Caudata at 69% raises the ceiling for every tetrapod comparison, because
 it is one end of most of them.
 
 ### Where the hole is
 
-| Region | Muscles | Taxon-attachment rows |
+<!-- counts:holes -->
+| Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 38 |
-| fin | 9 | 19 |
-| foot | 11 | 19 |
-| thigh | 10 | 17 |
-| forearm | 18 | 16 |
-| leg | 10 | 15 |
-| pelvic | 8 | 14 |
-| axial | 15 | 11 |
-| cranial | 15 | 11 |
-| hand | 9 | 11 |
-| arm | 5 | 10 |
+| pectoral | 16 | 109 |
+| forearm | 18 | 63 |
+| foot | 11 | 56 |
+| cranial | 15 | 55 |
+| fin | 9 | 51 |
+| thigh | 10 | 44 |
+| arm | 5 | 42 |
+| leg | 10 | 41 |
+| pelvic | 8 | 35 |
+| hand | 9 | 28 |
+| axial | 15 | 25 |
+<!-- /counts:holes -->
 
 No region is at zero. The distribution is now flat enough that the limiting factor
 is no longer which regions are covered but **how many taxa are covered per

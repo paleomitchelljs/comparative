@@ -325,6 +325,12 @@ function resetScroll() {
 }
 
 function render({ keepScroll = false } = {}) {
+  /* Every path that changes `state.view` ends in a render, so syncing the nav
+     here is the only way it cannot drift. Doing it at the call sites missed
+     four of them — openMuscle, the breadcrumb, typing in the search box and
+     clicking a facet — so opening a muscle from the Skeleton view left
+     "Skeleton" lit while a detail page was on screen. */
+  syncViewButtons();
   renderSidebar();
   const main = document.getElementById('main');
 
@@ -826,7 +832,6 @@ function applyHash() {
     state.view = 'skeleton';
     state.query = el ? el.label : h.slice(8);
     document.getElementById('search').value = state.query;
-    syncViewButtons();
     return;
   }
   if (state.byId.has(h)) { state.current = state.byId.get(h); state.view = 'detail'; }
@@ -859,7 +864,7 @@ function wireUI() {
     document.getElementById(id).addEventListener('click', () => {
       state.view = view; state.current = null;
       if (view === 'browse') setHash('');
-      syncViewButtons(); render();
+      render();
     });
   }
 
@@ -894,8 +899,6 @@ function wireUI() {
     const card = ev.target.closest?.('.mcard');
     if (card) openMuscle(card.dataset.goto);
   });
-
-  syncViewButtons();
 }
 
 /* ---------- utils ---------- */

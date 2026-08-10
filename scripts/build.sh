@@ -51,7 +51,10 @@ python3 scripts/seed_actions.py $FLAG
 step "11. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
+step "12. measured counts in README.md and docs/GAPS.md"
+python3 scripts/doc_counts.py $FLAG
+
 if [ "$FLAG" = "--write" ]; then
-  step "12. validate"
+  step "13. validate"
   python3 scripts/validate.py
 fi

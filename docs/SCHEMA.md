@@ -364,7 +364,7 @@ nerve of a mammal are one record, because they supply one field.
 | `division` | `dorsal` / `ventral` limb-bud division, **inherited** down `partOf` |
 | `taxonNames`, `synonyms`, `note` | |
 
-**There is no `presence` block, deliberately.** Scoring 16 taxa against 49
+**There is no `presence` block, deliberately.** Scoring 19 taxa against 49
 nerves would be 700 assertions these sources do not make: the named peripheral
 nerves are tetrapod descriptions and the homologous fin nerves are not
 individually named in this literature. Absent means unrecorded, as everywhere
