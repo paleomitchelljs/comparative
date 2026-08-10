@@ -385,8 +385,25 @@
           "present": "yes",
           "note": "Confusingly called flexor ulnaris by Meers (2003) despite being a dorsal-mass, radial-innervated muscle.",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Reported as extensor carpi ulnaris, tendinous from the lateral condyle to the dorsal manus."
         },
         {
           "taxon": "aves",
@@ -438,6 +455,7 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "klinkhamer-etal-2017",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [
@@ -1172,6 +1190,22 @@
           ]
         },
         {
+          "taxon": "crocodyliform-stem",
+          "name": "Supinator",
+          "present": "inferred",
+          "sources": [
+            "godoy-etal-2016"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "radius"
+              }
+            ]
+          },
+          "attachmentNote": "An insertion surface on the radius."
+        },
+        {
           "taxon": "crocodylia",
           "present": "no",
           "note": "Meers (2003) applies the name 'supinator' to what Abdala & Diogo identify as the brachioradialis. This is a naming collision, not a record of the mammalian supinator.",
@@ -1194,6 +1228,7 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "godoy-etal-2016",
         "molnar-etal-2017"
       ],
       "nerves": [
@@ -1594,8 +1629,25 @@
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Tendinous at the distomedial humerus, fleshy at the ventral carpus."
         },
         {
           "taxon": "aves",
@@ -1646,6 +1698,7 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "klinkhamer-etal-2017",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [
@@ -1908,8 +1961,25 @@
           "name": "Pronator teres",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Tendinous at the ventrodistal humerus, fleshy on the ventral carpus. Note the carpal rather than radial insertion — Klinkhamer et al. report it that way for Crocodylus."
         },
         {
           "taxon": "aves",
@@ -1957,7 +2027,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "klinkhamer-etal-2017"
       ],
       "nerves": [
         {
@@ -2075,12 +2146,44 @@
           ]
         },
         {
+          "taxon": "crocodyliform-stem",
+          "name": "Pronator quadratus",
+          "present": "inferred",
+          "sources": [
+            "godoy-etal-2016"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna"
+              }
+            ]
+          },
+          "attachmentNote": "A discrete origin fossa on the ulna — the same proximal-ulnar origin Klinkhamer et al. report for Crocodylus."
+        },
+        {
           "taxon": "crocodylia",
           "name": "Pronator quadratus",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Fleshy at the proximomedial ulna to the posterodistal radius."
         },
         {
           "taxon": "aves",
@@ -2127,6 +2230,8 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "godoy-etal-2016",
+        "klinkhamer-etal-2017",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [
@@ -2350,8 +2455,24 @@
           "name": "Flexor digitorum longus",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus"
+              }
+            ]
+          },
+          "attachmentNote": "Tendinous at both ends; reaches digit 2 of the manus."
         },
         {
           "taxon": "aves",
@@ -2413,6 +2534,7 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "klinkhamer-etal-2017",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [

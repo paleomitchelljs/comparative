@@ -123,6 +123,24 @@
           ]
         },
         {
+          "taxon": "pseudosuchia-stem",
+          "name": "Puboischiofemoralis internus (PIFI 2)",
+          "present": "inferred",
+          "sources": [
+            "liparini-schultz-2013"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "femur",
+                "landmark": "greater-trochanter",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur."
+        },
+        {
           "taxon": "crocodylia",
           "name": "Puboischiofemoralis internus",
           "present": "yes",
@@ -207,6 +225,7 @@
       "sources": [
         "allen-etal-2021",
         "diogo-molnar-2014",
+        "liparini-schultz-2013",
         "prikryl-etal-2009",
         "walthall-ashley-ross-2006"
       ],
@@ -918,6 +937,23 @@
           }
         },
         {
+          "taxon": "crocodyliform-stem",
+          "name": "Caudofemoralis",
+          "present": "inferred",
+          "sources": [
+            "godoy-etal-2016"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "femur",
+                "landmark": "fourth-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "A rough convexity identified as the fourth trochanter, continuing distally as a faint ridge bearing insertion scars."
+        },
+        {
           "taxon": "crocodylia",
           "name": "Caudofemoralis longus + brevis",
           "present": "yes",
@@ -1061,6 +1097,7 @@
         "bishop-pierce-2024",
         "bodenham-etal-2026",
         "diogo-molnar-2014",
+        "godoy-etal-2016",
         "hutchinson-etal-2015",
         "leavey-etal-2024",
         "walthall-ashley-ross-2006"
@@ -1204,6 +1241,24 @@
               "muscle": "ambiens"
             }
           ]
+        },
+        {
+          "taxon": "crocodyliform-stem",
+          "name": "Iliotibialis 1 and 2",
+          "present": "inferred",
+          "sources": [
+            "godoy-etal-2016"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pelvic-girdle",
+                "landmark": "ilium",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Rugosities on the dorsal surface of the supraacetabular crest. Godoy et al. note the surface is unusually extensively rugose in P. sera, implying a larger attachment area than in comparable notosuchians."
         },
         {
           "taxon": "crocodylia",
@@ -1380,6 +1435,7 @@
       "sources": [
         "allen-etal-2021",
         "diogo-molnar-2014",
+        "godoy-etal-2016",
         "hudson-etal-2011b",
         "hutchinson-etal-2015",
         "leavey-etal-2024",
@@ -2204,8 +2260,24 @@
           "name": "Adductor femoris",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "klinkhamer-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Fleshy at the ventrolateral ischium, tendinous at the ventromedial femur."
         },
         {
           "taxon": "aves",
@@ -2334,6 +2406,7 @@
         "allen-etal-2021",
         "diogo-molnar-2014",
         "hudson-etal-2011b",
+        "klinkhamer-etal-2017",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [

@@ -82,8 +82,16 @@
                                     "name": "Pseudosuchia",
                                     "children": [
                                       {
+                                        "name": "Pseudosuchia (stem)",
+                                        "taxon": "pseudosuchia-stem"
+                                      },
+                                      {
                                         "name": "Crocodylomorpha (stem)",
                                         "taxon": "crocodylomorph-stem"
+                                      },
+                                      {
+                                        "name": "Crocodyliformes (stem)",
+                                        "taxon": "crocodyliform-stem"
                                       },
                                       {
                                         "name": "Crocodylia",
@@ -310,6 +318,20 @@
       "notes": "Most densely sampled reptilian group in Abdala & Diogo (2010) (>50 squamate species)."
     },
     {
+      "id": "pseudosuchia-stem",
+      "label": "Stem pseudosuchians",
+      "clade": "Pseudosuchia (stem)",
+      "exemplars": [
+        "Prestosuchus chiniquensis",
+        "Batrachotomus kupferzellensis",
+        "Postosuchus kirkpatricki"
+      ],
+      "age": "Middle – Late Triassic",
+      "color": "#8a6a3f",
+      "fossil": true,
+      "notes": "Large-bodied loricatan pseudosuchians outside Crocodylomorpha — the 'rauisuchian' grade. Liparini & Schultz (2013) reconstruct the thigh musculature of Prestosuchus under Witmer's inference levels and state them explicitly, which is why entries here carry the level in the occurrence note. Hypotheses, not observations."
+    },
+    {
       "id": "crocodylomorph-stem",
       "label": "Stem crocodylomorphs",
       "clade": "Crocodylomorpha (stem)",
@@ -323,6 +345,20 @@
       "color": "#8a6a3f",
       "fossil": true,
       "notes": "Gracile, long-limbed, erect-postured crocodylomorphs outside crown Crocodylia — the sphenosuchian grade. Muscle entries are inferences from osteological correlates bracketed by Crocodylia and Aves (Sues et al. 2003 for Dromicosuchus grallator, UNC 15574). Treat all entries as hypotheses, not observations. Correlates shared by both brackets are level I inferences; crocodylian-only correlates are level II' and should say so in the occurrence note. Note that these animals are gracile and erect-limbed, so scar development need not match the sprawling caimans most correlate maps are drawn from."
+    },
+    {
+      "id": "crocodyliform-stem",
+      "label": "Stem crocodyliforms",
+      "clade": "Crocodyliformes (stem)",
+      "exemplars": [
+        "Pissarrachampsa sera",
+        "Baurusuchus",
+        "Araripesuchus tsangatsangana"
+      ],
+      "age": "Cretaceous",
+      "color": "#8a6a3f",
+      "fossil": true,
+      "notes": "Notosuchian crocodyliforms — inside Crocodylomorpha, outside crown Crocodylia, and roughly 130 Myr younger than the sphenosuchian grade, which is why they are a separate column rather than folded into [[crocodylomorph-stem]]. Godoy et al. (2016) label muscle scars directly on the described bones. Hypotheses, not observations."
     },
     {
       "id": "crocodylia",
