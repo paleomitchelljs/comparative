@@ -115,7 +115,6 @@ scored or deleted.
 
 | Source | per pg | Would close |
 |---|---:|---|
-| **Springer & Johnson (2015)** | 5.9 | Branchial arch muscles in eels — outgroup detail for the constrictor records |
 | **Pereyra et al. (2019)** | 4.2 | **Correlates, not rows.** See its reading note |
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
 | **Bauer (1997)** | 3.6 | Urodele jaw openers on CN VII |
@@ -123,6 +122,18 @@ scored or deleted.
 
 ### Done since this file was written
 
+**Springer & Johnson (2015)** — Actinopterygii 46% → 50%. One row, for *Protanguilla
+palau*, and it is the largest single occurrence in `branchial-constrictors`: fifteen
+units against ten in the axolotl and two in the shark. Measured 5.3 per page, close to
+the 5.9 recorded. The absences are characters here too — obliquus dorsalis 3, adductores
+1-3, recti 1 and 2 and R4Cm are all recorded absent, and the paper's nine anguilliform
+synapomorphies are what the attachments were gathered for. **It forced the branchial
+basket into the skeleton**: `epibranchials`, `pharyngobranchials` and `hypobranchials`
+are now elements, because a rectus dorsalis running from one epibranchial onto the
+PRECEDING one cannot be expressed against a single `branchial-arches` group. The
+ceratobranchial did not get a new element — the ray-finned fishes joined
+`cornu-branchiale`, which already held it for turtles and salamanders, with a
+`taxonNames` entry. Five more eel species are described in full and still unmined.
 **Sigurdsen et al. (2012)** — Anura 35% → 43%. Seven rows for *Leiopelma
 hochstetteri* and two for *Xenopus laevis*, and one correction: **the paper examines no
 *Rhinella*,** yet both rows citing it sat on *Rhinella arenarum* because

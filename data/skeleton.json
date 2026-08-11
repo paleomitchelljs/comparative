@@ -2223,17 +2223,28 @@
       "presence": {
         "default": "variable",
         "present": [
+          "actinopterygii",
           "testudines",
           "caudata",
           "anura"
         ],
         "sources": [
-          "werneburg-2011"
-        ]
+          "werneburg-2011",
+          "springer-johnson-2015"
+        ],
+        "note": "The ceratobranchial of a fish and the cornu branchiale of a salamander or turtle are one element under two names. The ventral gill-arch muscles of eels run from it to the hypobranchials."
       },
       "synonyms": [
         "ceratobranchial",
         "branchial horn"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "actinopterygii"
+          ],
+          "name": "Ceratobranchial"
+        }
       ]
     },
     {
@@ -3894,6 +3905,76 @@
       },
       "synonyms": [
         "epicoracoid cartilage"
+      ]
+    },
+    {
+      "id": "epibranchials",
+      "label": "Epibranchials",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "branchial-arches",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "springer-johnson-2015"
+        ],
+        "note": "Dorsal elements of the branchial arches, numbered 1-4 in teleosts. Added because the dorsal gill-arch muscles run between them — a levator externus onto its own epibranchial, a rectus dorsalis from one onto the PRECEDING one — and `branchial-arches` as a single group cannot express that."
+      },
+      "synonyms": [
+        "Eb1-4",
+        "epibranchial"
+      ]
+    },
+    {
+      "id": "pharyngobranchials",
+      "label": "Pharyngobranchials",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "branchial-arches",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "springer-johnson-2015"
+        ],
+        "note": "Most dorsal elements of the branchial arches, carrying the upper pharyngeal toothplates and the insertions of the levatores interni and the transversus dorsalis."
+      },
+      "synonyms": [
+        "Pb2-3",
+        "pharyngobranchial",
+        "infrapharyngobranchial"
+      ]
+    },
+    {
+      "id": "hypobranchials",
+      "label": "Hypobranchials",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "branchial-arches",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "springer-johnson-2015"
+        ],
+        "note": "Ventral elements of the branchial arches, between the ceratobranchials and the basibranchial series. Springer & Johnson make one of them a character: hypobranchial 3 is cartilaginous or absent in eels and largely ossified in all other elopomorphs and most other teleosts, which they identify as an anguilliform synapomorphy not previously noted."
+      },
+      "synonyms": [
+        "Hb1-3",
+        "hypobranchial"
       ]
     }
   ]

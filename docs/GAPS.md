@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 634 present occurrences · 234 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 635 present occurrences · 237 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -50,11 +50,11 @@ illustrated.
 | arm | 5 | 51 | 34 | 67% |
 | fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
-| cranial | 15 | 59 | 33 | 56% |
+| cranial | 15 | 60 | 34 | 57% |
 | forearm | 18 | 116 | 64 | 55% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| **all** | 126 | 634 | 395 | **62%** |
+| **all** | 126 | 635 | 396 | **62%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -110,9 +110,9 @@ back in for Aves.
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 90 | 68 | 76% |
 | Lepidosauria | 105 | 67 | 64% |
+| Actinopterygii | 14 | 7 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Aves | 79 | 39 | 49% |
-| Actinopterygii | 13 | 6 | 46% |
 | Anura | 70 | 30 | 43% |
 | Monotremata | 7 | 3 | 43% |
 | Chondrichthyes | 19 | 7 | 37% |
@@ -134,6 +134,15 @@ species. McKitrick (1991) supplied the loon forelimb and Jones et al. (2019) the
 pigeon head, and between them they answer the objection recorded below — that the
 avian sources were either synonymy tables or the wrong kind of animal. Both are
 single-specimen descriptive works, which is what the column needed.
+
+**The branchial basket is now resolved in the skeleton.** `epibranchials`,
+`pharyngobranchials` and `hypobranchials` were added for Springer & Johnson's eel,
+because the dorsal gill-arch muscles run between individual arch elements — a rectus
+dorsalis from one epibranchial onto the preceding one — and the single
+`branchial-arches` group could not express it. The ceratobranchial deliberately did
+*not* get a new element: the ray-finned fishes joined `cornu-branchiale`, which
+already held that element for turtles, salamanders and frogs. One element, per-taxon
+names, which is the rule that keeps the hyomandibula and the stapes together.
 
 **Chondrichthyes at 37% is now the sharpest gap at the fish end**, and the one a
 single source could most change: Dearden et al. (2020) covers both an elasmobranch
@@ -210,11 +219,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 234, of which 201 (86%) carry at least one attachment |
-| Observed attachment rows | 1036 |
-| Rows naming a **landmark** | 235 (23%) |
-| Rows naming a **side** | 600 (58%) |
-| Osteological correlates | 97 flagged, 81 carry a muscle |
+| Elements | 237, of which 204 (86%) carry at least one attachment |
+| Observed attachment rows | 1045 |
+| Rows naming a **landmark** | 235 (22%) |
+| Rows naming a **side** | 601 (58%) |
+| Osteological correlates | 100 flagged, 84 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -248,7 +257,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 21 | 57 | 2.7 |
+| cranial | 21 | 60 | 2.9 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 33 | 26 | 0.8 |
 | pectoral | 32 | 24 | 0.8 |
@@ -280,7 +289,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 395 of 634 present occurrences (62%).**
+**Taxon-specific attachments: 396 of 635 present occurrences (62%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -302,7 +311,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 210 |
 | forearm | 18 | 161 |
-| cranial | 15 | 127 |
+| cranial | 15 | 136 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
