@@ -117,10 +117,19 @@ scored or deleted.
 |---|---:|---|
 | **Pereyra et al. (2019)** | 4.2 | **Correlates, not rows.** See its reading note |
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
-| **Sánchez et al. (2019)** | 3.4 | Theria forearm and hand, in felids. Short but dense |
 
 ### Done since this file was written
 
+**Sánchez et al. (2019)** — forearm 55% → 58%, Theria 86% → 88%. Nine rows and three
+species: *Panthera onca*, *Leopardus pardalis*, *Leopardus geoffroyi*. Measured 3.3 per
+page; "short but dense" was right, because almost every statement is a comparison
+between the three. Three rows exist purely to hold a disagreement — five palmaris longus
+tendons in the jaguar and ocelot against four in Geoffroy's cat, one lateral digital
+extensor belly against two, a more proximal abductor digiti I longus origin against a
+less proximal one. **The third mis-mapped species this session**: it was pinned to *Felis
+catus*, which appears in it twice as a comparison. And a caution worth keeping: THE HAND
+REGION DID NOT MOVE, because the paper's hand content sits on forearm-region records. A
+forelimb paper is not automatically a hand paper.
 **Bauer (1997)** — cranial 57% → 58%, and the dataset's 127th muscle record. Reached
 because Ziermann & Diogo flagged the **ceratomandibularis** as variable across urodeles
 and there was nowhere to put it. Measured 3.5 per page against 3.6, the closest the

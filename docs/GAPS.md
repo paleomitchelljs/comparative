@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-127 muscle records · 637 present occurrences · 239 skeletal elements · 104 sources · 19 operational taxa
+127 muscle records · 646 present occurrences · 239 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -50,11 +50,11 @@ illustrated.
 | arm | 5 | 51 | 34 | 67% |
 | fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
+| forearm | 18 | 125 | 73 | 58% |
 | cranial | 16 | 62 | 36 | 58% |
-| forearm | 18 | 116 | 64 | 55% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| **all** | 127 | 637 | 398 | **62%** |
+| **all** | 127 | 646 | 407 | **63%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -102,7 +102,7 @@ back in for Aves.
 | Pseudosuchia (stem) | 1 | 1 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
-| Theria | 64 | 55 | 86% |
+| Theria | 73 | 64 | 88% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 60 | 48 | 80% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
@@ -218,9 +218,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 239, of which 206 (86%) carry at least one attachment |
-| Observed attachment rows | 1055 |
-| Rows naming a **landmark** | 235 (22%) |
-| Rows naming a **side** | 605 (57%) |
+| Observed attachment rows | 1078 |
+| Rows naming a **landmark** | 239 (22%) |
+| Rows naming a **side** | 621 (58%) |
 | Osteological correlates | 101 flagged, 85 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -287,7 +287,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 398 of 637 present occurrences (62%).**
+**Taxon-specific attachments: 407 of 646 present occurrences (63%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -308,7 +308,7 @@ it is one end of most of them.
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
 | pectoral | 16 | 210 |
-| forearm | 18 | 161 |
+| forearm | 18 | 184 |
 | cranial | 16 | 146 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |

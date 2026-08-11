@@ -78,7 +78,9 @@ SOURCE_SPECIES = {
     "velez-garcia-etal-2023": "potos-flavus",
     "westphal-etal-2019": "amphisbaenia-generalised",
     "bishop-pierce-2024": "dimetrodon-sp",
-    "sanchez-etal-2019": "felis-catus",
+    # Not Felis catus, which appears twice as a comparison: the animals are a jaguar,
+    # an ocelot and a Geoffroy's cat, and each row names its own in prose.
+    "sanchez-etal-2019": "panthera-onca",
     "gyambibi-lemelin-2013": "homo-sapiens",
     "lemelin-diogo-2016": "homo-sapiens",
 }
