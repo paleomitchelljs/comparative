@@ -1,6 +1,6 @@
 # What is left to mine, and how
 
-273 present occurrences still have no attachment rows. This file lists the
+243 present occurrences still have no attachment rows. This file lists the
 sources that could close them, ranked by whether they will actually work.
 
 Regenerate the numbers with `python3 scripts/doc_counts.py --write`. The
@@ -82,19 +82,25 @@ Meers. Where no published equivalence exists, say so in the note — as
 
 | Clade | Unscored | Concentrated in |
 |---|---:|---|
-| Aves | 43 | forearm 10, hand 7, thigh 7 |
-| Lepidosauria | 41 | forearm 8, axial 7, cranial 7, pectoral 7 |
+| Aves | 40 | forearm 10, hand 7, thigh 7 |
 | Anura | 40 | forearm 13, pectoral 8, cranial 7 |
+| Lepidosauria | 38 | forearm 8, axial 7, pectoral 7 |
 | Testudines | 37 | forearm 13, hand 9, pectoral 5 |
-| Caudata | 27 | fin 7, cranial 4 |
-| Theria | 25 | axial 9, cranial 9 |
-| Crocodylia | 18 | axial 6, forearm 5 |
+| Caudata | 26 | fin 7, cranial 4, hand 3 |
 | Chondrichthyes | 12 | fin 5, cranial 4 |
+| Crocodylia | 12 | forearm 5, pelvic 2, thigh 2 |
+| Theria | 9 | hand 3, axial 2, foot 2 |
 | Tetrapodomorpha (stem) | 9 | pectoral 4, arm 3 |
-| everything else | 21 | agnathans, actinopterygians, monotremes |
+| everything else | 20 | agnathans, monotremes, stem synapsids, the coelacanth |
 
 **Forearm and hand are the largest regions across every tetrapod column**, and
 no single source covers them broadly — it goes one animal at a time.
+
+Two of these numbers fell without a paper being read. Theria dropped from 25 to 9
+and Crocodylia from 18 to 12 because the base-layer pass removed rows attributed to
+animals their sources never examined, and Lepidosauria and Caudata lost one or two
+the same way. A shrinking gap is not always progress — check whether rows were
+scored or deleted.
 
 ---
 
@@ -102,7 +108,6 @@ no single source covers them broadly — it goes one animal at a time.
 
 | Source | per pg | Would close |
 |---|---:|---|
-| **Jones et al. (2019)** | 6.3 | Aves cranial, contrast CT of a pigeon head |
 | **Springer & Johnson (2015)** | 5.9 | Branchial arch muscles in eels — outgroup detail for the constrictor records |
 | **Sigurdsen et al. (2012)** | 4.3 | Anura pectoral and forelimb |
 | **Ziermann & Diogo (2013)** | 4.2 | Caudata cranial, with development — the axolotl |
@@ -113,6 +118,17 @@ no single source covers them broadly — it goes one animal at a time.
 
 ### Done since this file was written
 
+**Jones et al. (2019)** — cranial 35% → 46%, Aves 42% → 49%. Ten rows and 33 named
+parts for one *Columba livia*, which gave the avian cranial column its first
+attachment data of any kind. Measured 5.0 per page against the 6.3 recorded here, and
+still easily worth it: the structure matters more than the density, because every
+muscle carries an explicit Origin / Path / Insertion / Function. Two rules got their
+first real workout — the postorbital process scored on the squamosal because birds
+have no postorbital bone and the validator would rightly have refused it, and the
+protractor pterygoidei et quadrati placed on `levator-arcus-palatini` with the note
+saying the homology rests on position and CN V rather than on any source here. Still
+in it: the neck muscles, and the ligaments that carry part of the depressor mandibulae
+origin.
 **McKitrick (1991)** — Aves 30% → 42%, thirteen rows for *Gavia immer* CM 2320 plus
 one sourced absence in *Pelecanoides garnoti*, the supinator. Measured at 6.0 per
 page rather than the 6.3 recorded here, which is close enough that the check did its

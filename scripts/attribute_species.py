@@ -63,6 +63,7 @@ SOURCE_SPECIES = {
     "fisher-goodman-1955": "grus-americana",
     "mckitrick-1991": "gavia-immer",
     "boumans-etal-2015": "tyto-furcata",
+    "jones-etal-2019": "columba-livia",
     # naumann-etal-2017 is two species, not one — see SURVEY_EXEMPLARS.
     "omura-etal-2014": "necturus-maculosus",
     "molnar-etal-2017": "chamaeleo-calyptratus",

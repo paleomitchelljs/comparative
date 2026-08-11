@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 613 present occurrences · 232 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 623 present occurrences · 233 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -53,23 +53,26 @@ illustrated.
 | forearm | 18 | 116 | 64 | 55% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| cranial | 15 | 46 | 16 | 35% |
-| **all** | 126 | 613 | 370 | **60%** |
+| cranial | 15 | 56 | 26 | 46% |
+| **all** | 126 | 623 | 380 | **61%** |
 <!-- /counts:regions -->
 
-**Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
-al. (2012) and the forearm and hand off the floor on Zaaf et al. (1999), leaving
-the head as the one region still under 20% — and 60 present occurrences deep.
-Forearm and hand are still second and third, and still carry the two largest
-occurrence counts in the dataset, so they remain the biggest absolute gap even at
-31% and 24%.
+**Cranial was the hole and is climbing.** It sat under 20% for several passes with
+the head barely scored in any taxon. Huber et al. (2011) took the shark's six
+muscles, and Jones et al. (2019) then took the whole avian jaw, throat and orbit
+from a contrast-CT digital dissection of one *Columba livia* — ten rows, 33 named
+parts. Cranial is now 46%.
 
-Nothing in `papers/` fixes the forearm and hand across taxa at once; it goes one
-column at a time. Meers (2003) is the largest single remaining bite —
-crocodylian forelimb, and the one naming scheme from Abdala & Diogo's Tables 1-3
-not yet held in full. For the cranial region the batch holds Dearden et al.
-(2020) for Chondrichthyes, Ziermann & Diogo (2013) for Caudata, Jones et al.
-(2019) for Aves and Anderson (2008) across all of them.
+**Hand is the floor now, at 47%, and the forearm and hand still carry the two
+largest occurrence counts in the dataset**, so they remain the biggest absolute
+gap. Nothing in `papers/` fixes them across taxa at once; it goes one column at a
+time. Meers (2003) is the largest single remaining bite — crocodylian forelimb, and
+the one naming scheme from Abdala & Diogo's Tables 1-3 not yet held in full. For
+the cranial region what is left is Dearden et al. (2020) for Chondrichthyes,
+Ziermann & Diogo (2013) for Caudata — already cited for four salamander rows in the
+re-attribution pass but not yet mined for attachments — Bauer (1997) for the
+urodele jaw openers, and Anderson (2008) as a cross-check across all of them. **The
+mammalian head remains the one column with no source at all.**
 
 The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
 muscles that would serve it — adductor pollicis, a contrahens, flexores breves
@@ -107,9 +110,9 @@ back in for Aves.
 | Caudata | 87 | 61 | 70% |
 | Lepidosauria | 105 | 67 | 64% |
 | Synapsida (stem) | 4 | 2 | 50% |
+| Aves | 79 | 39 | 49% |
 | Actinopterygii | 13 | 6 | 46% |
 | Monotremata | 7 | 3 | 43% |
-| Aves | 69 | 29 | 42% |
 | Chondrichthyes | 19 | 7 | 37% |
 | Anura | 62 | 22 | 35% |
 | Testudines | 50 | 13 | 26% |
@@ -124,10 +127,16 @@ uses for the plesiomorphic tetrapod condition, the consensus rows that every oth
 tetrapod column inherits are now anchored to a scored column rather than to a
 composite. It is also the only taxon whose body wall is scored.
 
-**Aves at 13% is now the broad-but-shallow column**, with architecture data and
-almost no attachment structure. Chondrichthyes at 5% is the sharpest gap at the
-fish end and the one a single source could most change: Dearden et al. (2020)
-covers both an elasmobranch and a holocephalan.
+**Aves is no longer the broad-but-shallow column.** It was 13% with architecture
+data and almost no attachment structure; it is now 49% on two passes and five
+species. McKitrick (1991) supplied the loon forelimb and Jones et al. (2019) the
+pigeon head, and between them they answer the objection recorded below — that the
+avian sources were either synonymy tables or the wrong kind of animal. Both are
+single-specimen descriptive works, which is what the column needed.
+
+**Chondrichthyes at 37% is now the sharpest gap at the fish end**, and the one a
+single source could most change: Dearden et al. (2020) covers both an elasmobranch
+and a holocephalan, and Didier (1987) is a holocephalan myology thesis.
 
 **Theria was the largest gap and is now level with Caudata at 69%.** Ercoli et al.
 (2012) took it from 15% to 38% across the hindlimb, lumbar region and tail; Ercoli
@@ -200,11 +209,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 232, of which 197 (85%) carry at least one attachment |
-| Observed attachment rows | 958 |
-| Rows naming a **landmark** | 228 (24%) |
-| Rows naming a **side** | 555 (58%) |
-| Osteological correlates | 96 flagged, 80 carry a muscle |
+| Elements | 233, of which 199 (85%) carry at least one attachment |
+| Observed attachment rows | 999 |
+| Rows naming a **landmark** | 230 (23%) |
+| Rows naming a **side** | 586 (59%) |
+| Osteological correlates | 97 flagged, 81 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -238,7 +247,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 21 | 54 | 2.6 |
+| cranial | 21 | 56 | 2.7 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 32 | 26 | 0.8 |
 | forelimb | 51 | 37 | 0.7 |
@@ -270,7 +279,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 370 of 613 present occurrences (60%).**
+**Taxon-specific attachments: 380 of 623 present occurrences (61%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -292,11 +301,11 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 201 |
 | forearm | 18 | 161 |
+| cranial | 15 | 104 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
 | arm | 5 | 67 |
-| cranial | 15 | 63 |
 | foot | 11 | 63 |
 | fin | 9 | 57 |
 | pelvic | 8 | 54 |
