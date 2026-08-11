@@ -1616,6 +1616,53 @@
             ]
           },
           "attachmentNote": "Rectus femoris from the quadriceps tuberosity of the ilium and the cranial hip capsule to the anterodorsal patellar margin; tensor fasciae latae from a small area of the iliac wing, inserting not on bone but through the fascia lata onto gluteus superficialis, biceps femoris, sartorius and the crural fascia."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Iliotibialis (+ femorotibialis, + 'ambiens')",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Iliotibialis"
+            },
+            {
+              "name": "Femorotibialis",
+              "membership": "disputed",
+              "muscle": "femorotibialis"
+            },
+            {
+              "name": "'Ambiens'",
+              "membership": "disputed",
+              "muscle": "ambiens"
+            }
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              },
+              {
+                "element": "pubis"
+              },
+              {
+                "element": "femur"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
         }
       ],
       "homology": {
@@ -2881,6 +2928,32 @@
             ]
           },
           "attachmentNote": "Obturator internus from the medial surface of the obturator foramen, turning over the dorsal margin of the ischium to reach the proximal trochanteric fossa. Frequently divided into two bellies near the origin and partially fused there with the gemelli, which this dataset assigns to the puboischiofemoralis externus — the membership dispute the parts list records."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Ischiotrochantericus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "landmark": "ischial-tuberosity"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "distal",
+                "landmark": "fourth-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Inserts on the **distal** edge of the trochanter, against the proximal edge in Eublepharis."
         }
       ],
       "homology": {
@@ -3121,6 +3194,36 @@
             ]
           },
           "attachmentNote": "Gracilis: a band from the ventral pelvic symphysis, fusing cranially with the insertion of the abdominal muscles, to the craniomedial tibia just proximal to the semitendinosus insertion."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Puboischiotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis"
+              },
+              {
+                "element": "puboischiadic-ligament"
+              },
+              {
+                "element": "ilioischiadic-ligament"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
         }
       ],
       "homology": {
@@ -3503,6 +3606,43 @@
             ]
           },
           "attachmentNote": "The hamstring field, and the origins are what make it one field: biceps femoris from the dorsal ischial tuberosity, semitendinosus from the ischial tuberosity AND the transverse processes of the first three caudal vertebrae, semimembranosus from the caudal ramus of the ischium. The caudal-vertebral head is the one worth noting — a thigh muscle taking origin from the tail. Insertions run to the tibia in all three, with semimembranosus also on the medial femoral epicondyle and biceps femoris on the lateral."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Flexor tibialis externus + internus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Flexor tibialis externus"
+            },
+            {
+              "name": "Flexor tibialis internus"
+            }
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilioischiadic-ligament"
+              },
+              {
+                "element": "ischium",
+                "landmark": "ischial-tuberosity"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
         }
       ],
       "homology": {
@@ -4228,6 +4368,33 @@
             ]
           },
           "attachmentNote": "Tibialis cranialis from the craniolateral proximal quarter of the tibia including the lateral condyle and the lateral margin of the cnemial crest, from the proximal interosseous membrane, and by a second tendinous head from the cranial head of the fibula. Inserts on the medial aspect of the ventral tubercle at the base of metatarsal I."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Tibialis anterior",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              },
+              {
+                "element": "flexor-tendons"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. The insertion tendon additionally contributes to the lateral digital tendon, which Eublepharis's does not."
         }
       ],
       "homology": {
@@ -4723,6 +4890,38 @@
             ]
           },
           "attachmentNote": "Fibularis brevis from the anterolateral and caudolateral surfaces of the middle of the fibula in two bellies; fibularis longus running along the cranial and lateral fibula. Both round the lateral malleolus. Scored at the fibula and metatarsals only: the paper distinguishes the two muscles' fibular fields more finely than a single row can carry."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Fibularis longus + brevis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Fibularis longus"
+            },
+            {
+              "name": "Fibularis brevis"
+            }
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
         }
       ],
       "homology": {
@@ -4861,6 +5060,31 @@
             ]
           },
           "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Scored from Zaaf et al.'s M. popliteus: from the proximal fibula, partly muscular and partly tendinous onto the anterolateral tibial shaft. This record's Lepidosauria occurrence is named 'interosseus cruris', the name Abdala & Diogo use for the same tibiofibular muscle."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Interosseus cruris",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
         }
       ],
       "homology": {
@@ -5437,6 +5661,34 @@
             ]
           },
           "attachmentNote": "Flexor digitorum brevis, taking origin by an aponeurosis from the insertion of the flexor digitorum superficialis tendon at the plantar surface of the calcaneal tubercle. Its tendons split around those of flexor digitorum profundus, forming the rings the deep tendons pass through, and insert on the plantar and proximal aspects of the middle phalanges of II–V and the proximal phalanx of digit I."
+        },
+        {
+          "species": "gekko-gecko",
+          "speciesBasis": "note",
+          "name": "Flexores breves superficiales",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metatarsals",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes"
+              },
+              {
+                "element": "metatarsals",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Digit by digit: the distal end of metatarsal I for digit I, of the second phalanx for III and IV, and of the first phalanx for II and V — where Eublepharis inserts on the terminal phalanx throughout."
         }
       ],
       "homology": {

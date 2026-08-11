@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 571 present occurrences · 218 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 592 present occurrences · 218 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| foot | 11 | 26 | 21 | 81% |
-| leg | 10 | 33 | 25 | 76% |
-| thigh | 10 | 44 | 33 | 75% |
+| foot | 11 | 27 | 22 | 81% |
+| leg | 10 | 36 | 28 | 78% |
+| thigh | 10 | 48 | 37 | 77% |
+| arm | 5 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
-| arm | 5 | 38 | 22 | 58% |
-| pectoral | 16 | 96 | 55 | 57% |
+| pectoral | 16 | 98 | 57 | 58% |
 | fin | 9 | 34 | 19 | 56% |
-| forearm | 18 | 96 | 45 | 47% |
-| hand | 9 | 59 | 26 | 44% |
+| forearm | 18 | 103 | 52 | 50% |
+| hand | 9 | 62 | 29 | 47% |
 | axial | 15 | 46 | 14 | 30% |
 | cranial | 15 | 60 | 11 | 18% |
-| **all** | 126 | 571 | 294 | **51%** |
+| **all** | 126 | 592 | 315 | **53%** |
 <!-- /counts:regions -->
 
 **Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
@@ -96,7 +96,7 @@ longissimus and iliocostalis into separate records is the next step, with Cieri
 | Crocodylia | 66 | 48 | 73% |
 | Caudata | 88 | 61 | 69% |
 | Theria | 81 | 56 | 69% |
-| Lepidosauria | 87 | 46 | 53% |
+| Lepidosauria | 108 | 67 | 62% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Actinopterygii | 14 | 6 | 43% |
 | Monotremata | 7 | 3 | 43% |
@@ -180,9 +180,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 218, of which 185 (85%) carry at least one attachment |
-| Observed attachment rows | 804 |
-| Rows naming a **landmark** | 183 (23%) |
-| Rows naming a **side** | 444 (55%) |
+| Observed attachment rows | 862 |
+| Rows naming a **landmark** | 200 (23%) |
+| Rows naming a **side** | 476 (55%) |
 | Osteological correlates | 85 flagged, 71 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -249,7 +249,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 294 of 571 present occurrences (51%).**
+**Taxon-specific attachments: 315 of 592 present occurrences (53%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -269,16 +269,16 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 147 |
-| forearm | 18 | 122 |
-| thigh | 10 | 91 |
-| leg | 10 | 70 |
-| hand | 9 | 69 |
-| foot | 11 | 60 |
+| pectoral | 16 | 153 |
+| forearm | 18 | 142 |
+| thigh | 10 | 104 |
+| leg | 10 | 77 |
+| hand | 9 | 75 |
+| foot | 11 | 63 |
 | cranial | 15 | 55 |
 | pelvic | 8 | 54 |
+| arm | 5 | 52 |
 | fin | 9 | 51 |
-| arm | 5 | 49 |
 | axial | 15 | 36 |
 <!-- /counts:holes -->
 
@@ -466,6 +466,15 @@ records. Ordered by the gap each would close.
 | **Sánchez et al. (2019)** | Felid forearm and hand. The therian forelimb is currently scored entirely from a mustelid, and the cat is the animal most labs actually use |
 | **Gyambibi & Lemelin (2013); Lemelin & Diogo (2016)** | Primate forearm and hand, quantitative in the first case. Hand is the second-thinnest region at 36% |
 | **Diogo et al. (2016, marsupials)** | Whether the therian rows are therian or merely eutherian — the column is scored from placental exemplars throughout |
+
+**Zaaf et al. (1999) is now scored as two species.** Its differences column
+records *Gekko gecko* against *Eublepharis macularius* for every fore- and
+hindlimb muscle, and a blank in that column is an observation of sameness rather
+than a gap — so both geckos carry rows, 21 each. Ten of the pairs disagree, and
+two disagree about **which bone**: the extensor carpi ulnaris inserts on the
+ulnare in *Eublepharis* and the pisiform in *Gekko*, and the latissimus dorsi
+shifts from the dorsal to the lateral humerus. Those were prose in an
+`attachmentNote` until species-level scoring gave them somewhere to live.
 
 Mined from this batch so far: **Ercoli et al. (2012)** (19 occurrences, Theria
 15% to 38%), **Zaaf et al. (1999)** (21 occurrences, Lepidosauria 29% to 53%),
