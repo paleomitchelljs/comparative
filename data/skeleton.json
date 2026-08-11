@@ -313,14 +313,16 @@
       "presence": {
         "default": "no",
         "present": [
+          "tetrapodomorpha-stem",
           "testudines",
           "lepidosauria",
           "crocodylia",
           "monotremata"
         ],
-        "note": "Retained in monotremes, which is a large part of why the monotreme pectoralis has a more extensive origin than the therian one.",
+        "note": "Present from the stem tetrapods onward; scars on its ventral surface, distinct from the dermal ornament, are tentatively read as part of the origin of superficial ventral muscles such as the pectoralis. Retained in monotremes, which is a large part of why the monotreme pectoralis has a more extensive origin than the therian one.",
         "sources": [
-          "gambaryan-etal-2015"
+          "gambaryan-etal-2015",
+          "molnar-etal-2018"
         ]
       }
     },
@@ -3623,6 +3625,196 @@
           "huber-etal-2011"
         ],
         "note": "Carries the spiracularis insertion with the distal hyomandibula, forming the anterior wall of the spiracular valve."
+      }
+    },
+    {
+      "id": "ventral-cleithral-ridge",
+      "label": "Ventral cleithral ridge",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "cleithrum",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Anteroposterior ridge on the ventral cleithrum of Sauripterus, Gogonasus and Eusthenopteron, read as the anterior extent of the pectoralis origin. Molnar et al. homologise it with the longitudinal ridge that carries the abductor superficialis origin on the cleithrum and clavicle of Neoceratodus, on the grounds that those two muscles are themselves homologous. The cleithral attachment of the pectoralis was lost before the cleithrum was.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "ventral-humeral-ridge",
+      "label": "Ventral humeral ridge (oblique ventral ridge)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "The undivided ventral ridge of the tetrapodomorph humerus, confluent with the entepicondyle in Gogonasus, Eusthenopteron and Tiktaalik and separate in Panderichthys. Part of it carries the pectoralis insertion. The distinct pectoralis process that separates out of it is a tetrapod character, so a row on this ridge is deliberately coarser than one on the deltopectoral crest.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "latissimus-dorsi-process",
+      "label": "Latissimus dorsi process",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Proximal dorsal humerus. One or more oblique ridges in Tiktaalik, Panderichthys and Acanthostega; a distinct, often spike-like process in later stem tetrapods such as Baphetes and Pederpes. Its appearance at the last common ancestor of Elpistostegalia is what Molnar et al. read as the separation of the latissimus dorsi from the deltoideus. Absent in Eusthenopteron and Gogonasus, and disputed in the rhizodontids: Jeffery (2001) reads the Strepsodus and Rhizodus processes as part of the ventral ridge or as breakage. Recorded under this name only for the stem taxa surveyed here — the homologue in Iguana is an unnamed prominence.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "supinator-process",
+      "label": "Supinator process",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Convex process on the anterior edge of the humerus, two-thirds of the way along in Acanthostega and often continuing as a ridge toward the ectepicondyle. It is confluent with the deltoid process as a single deltoid-supinator ridge in Eusthenopteron, Gogonasus, Barameda and Rhizodus, which Molnar et al. treat as leaving the deltoideus and brachioradialis attachments indistinguishable — for muscle reconstruction the long argument over whether the two processes are separate in those taxa changes nothing. Read as the brachioradialis ('supinator longus') origin from Eryops onward.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "scapulohumeral-depression",
+      "label": "Scapulohumeral depression",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Depression proximal and anterior to the latissimus dorsi attachment on the dorsal humerus, taken as the procoracohumeralis insertion — Coates's 'scapulohumeralis-like muscle' in Acanthostega. Described elsewhere as a shallow concavity, or as a rugose ridge behind one.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "ventral-median-ridge-radius",
+      "label": "Ventral median ridge of the radius",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "radius",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "One of the four longitudinal ridges of the stem-tetrapod radius in Bishop's terminology, usually carrying obvious muscle scars, read as the humeroantebrachialis insertion. Molnar et al.'s character mapping puts its first appearance at the last common ancestor of crown tetrapods, where it marks the separation of the humeroantebrachialis from the flexor antebrachii et carpi radialis — yet their own description lists it among the ridges of the Acanthostega and Pederpes radius. The rows scored on it carry that tension.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "dorsomesial-ridge-radius",
+      "label": "Dorsomesial ridge of the radius",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "radius",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Read as the brachioradialis ('supinator longus') insertion in Ossinodus. There is no break in the muscle scarring between this ridge and the proximoventral ridge, so Bishop's two insertions may not be separate muscles' worth of scarring at all.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "proximoventral-ridge-radius",
+      "label": "Proximoventral ridge of the radius",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "radius",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Read as the extensor carpi radialis insertion in Ossinodus. See the dorsomesial ridge for why the two insertions may not be separate.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "ventral-radial-crest",
+      "label": "Ventral radial crest",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "radius",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Prominent in Ossinodus and carrying no muscle scarring itself; what Bishop reads as the flexor antebrachii et carpi radialis insertion is the scarred face between it and the ventral median ridge. Possibly the 'distal ventral keel' of Eryops, and so the radial flexor ridge of Pawley & Warren.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
+      }
+    },
+    {
+      "id": "posterior-ulnar-crest",
+      "label": "Posterior ulnar crest (extensor crest)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "ulna",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Posterior flange or ridge confluent with the olecranon, present in every stem tetrapod here whose ulna is preserved and absent in tetrapodomorph fish. Molnar et al. read the pair of features as the separation of the triceps from the extensor antebrachii et carpi ulnaris at the last common ancestor of Tetrapoda. The crest itself is a boundary between the dorsal and ventral forearm musculature rather than an attachment, so no muscle is scored on it.",
+        "sources": [
+          "molnar-etal-2018"
+        ]
       }
     }
   ]

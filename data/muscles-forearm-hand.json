@@ -51,6 +51,42 @@
       },
       "occurrences": [
         {
+          "species": "acanthostega-gunnari",
+          "speciesBasis": "note",
+          "name": "Extensor carpi radialis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "radius",
+                "landmark": "proximoventral-ridge-radius"
+              }
+            ]
+          },
+          "attachmentNote": "Acanthostega gunnari. The proximoventral ridge of the radius, present here and in Pederpes and read by Bishop (2014) in Ossinodus as the extensor carpi radialis insertion. No origin is scored: the ectepicondyle carries the forearm extensors as a group, and Molnar et al. do not divide that group between individual muscles in this taxon — the forearm extensors as a mass are among their highest-confidence reconstructions, the individual muscles within it are not."
+        },
+        {
+          "species": "ossinodus-pueri",
+          "speciesBasis": "note",
+          "name": "Extensor carpi radialis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "radius",
+                "landmark": "proximoventral-ridge-radius"
+              }
+            ]
+          },
+          "attachmentNote": "Ossinodus pueri. The proximoventral ridge of the radius (Bishop 2014), one of the muscles Molnar et al. reconstruct fairly confidently here. See the brachioradialis row for why the two radial insertions may be one continuous field of scarring."
+        },
+        {
           "species": "taricha-torosa",
           "speciesBasis": "source",
           "name": "Extensor antebrachii et carpi radialis",
@@ -267,6 +303,7 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "molnar-etal-2018",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [
@@ -329,6 +366,34 @@
         ]
       },
       "occurrences": [
+        {
+          "species": "acanthostega-gunnari",
+          "speciesBasis": "note",
+          "name": "Extensor antebrachii et carpi ulnaris",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Acanthostega gunnari. Scored on the posterior ulna with no landmark, deliberately. The posterior ulnar crest is present, and its appearance together with the olecranon is what Molnar et al. read as the separation of this muscle from the triceps at the last common ancestor of Tetrapoda — but in crown tetrapods the crest is identified as the BOUNDARY between the dorsal and ventral forearm musculature rather than as an attachment, so naming it as the insertion would assert more than the source does."
+        },
+        {
+          "species": "ossinodus-pueri",
+          "speciesBasis": "note",
+          "name": "Extensor antebrachii et carpi ulnaris",
+          "present": "inferred",
+          "note": "Ossinodus pueri. Among the muscles Molnar et al. reconstruct 'fairly confidently' here by combining their character mapping with Bishop's (2014) scars, but they do not itemise which scar carries it, so no attachment row is scored.",
+          "sources": [
+            "molnar-etal-2018"
+          ]
+        },
         {
           "species": "taricha-torosa",
           "speciesBasis": "source",
@@ -545,6 +610,7 @@
         "abdala-diogo-2010",
         "ercoli-etal-2014",
         "klinkhamer-etal-2017",
+        "molnar-etal-2018",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [
@@ -1305,6 +1371,49 @@
       },
       "occurrences": [
         {
+          "species": "acanthostega-gunnari",
+          "speciesBasis": "note",
+          "name": "Brachioradialis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "supinator-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "landmark": "dorsomesial-ridge-radius"
+              }
+            ]
+          },
+          "attachmentNote": "Acanthostega gunnari. Origin from the convex supinator process on the anterior edge of the humerus, two-thirds of the way along (Coates 1996); the identification of the muscle comes from Eryops, where the supinator process carries the 'supinator longus' (Miner 1925), and from captorhinids, not from this taxon. Insertion on the dorsomesial ridge of the radius, one of the four ridges Bishop (2014) read on the Ossinodus radius and which Molnar et al. report as present here and in Pederpes. Bishop found no break in the scarring between the dorsomesial and proximoventral ridges, so this insertion and the extensor carpi radialis's may not be separate."
+        },
+        {
+          "species": "ossinodus-pueri",
+          "speciesBasis": "note",
+          "name": "Brachioradialis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "radius",
+                "landmark": "dorsomesial-ridge-radius"
+              }
+            ]
+          },
+          "attachmentNote": "Ossinodus pueri. The dorsomesial ridge of the radius, read by Bishop (2014) as the insertion of the brachioradialis ('supinator longus'), with the caution he attaches: there is no break in the muscle scarring between this ridge and the proximoventral ridge, so this insertion and the extensor carpi radialis's may not be separate. Godfrey (1989) made the same kind of reading for the two mesial ridges of the Greererpeton radius, as the boundary between the extensor and flexor masses. Molnar et al. place the separation of the two muscles at Elpistostegalia, marked by a scar or facet distal to the supinator ridge."
+        },
+        {
           "species": "ambystoma-ordinarium",
           "speciesBasis": "survey",
           "present": "no",
@@ -1421,7 +1530,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014"
+        "ercoli-etal-2014",
+        "molnar-etal-2018"
       ],
       "nerves": [
         {
@@ -2281,6 +2391,24 @@
       },
       "occurrences": [
         {
+          "species": "ossinodus-pueri",
+          "speciesBasis": "note",
+          "name": "Flexor antebrachii et carpi radialis",
+          "present": "inferred",
+          "sources": [
+            "molnar-etal-2018"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Ossinodus pueri. An area of scarring on the face of the radius between the ventral radial crest and the ventral median ridge, read by Bishop (2014) as the insertion — the prominent crest itself carries no scarring. Scored as radius/ventral with no landmark, because the attachment is the surface between two named ridges rather than either of them. Molnar et al. place the separation of this muscle from the humeroantebrachialis at the last common ancestor of crown tetrapods, marked by the appearance of the ventral median ridge."
+        },
+        {
           "species": "taricha-torosa",
           "speciesBasis": "source",
           "name": "Flexor antebrachii et carpi radialis",
@@ -2466,6 +2594,7 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "molnar-etal-2018",
         "walthall-ashley-ross-2006"
       ],
       "nerves": [

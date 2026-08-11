@@ -1,6 +1,6 @@
 # What is left to mine, and how
 
-277 present occurrences still have no attachment rows. This file lists the
+273 present occurrences still have no attachment rows. This file lists the
 sources that could close them, ranked by whether they will actually work.
 
 Regenerate the numbers with `python3 scripts/doc_counts.py --write`. The
@@ -28,7 +28,7 @@ Divide. The number is **origin/insertion mentions per page**:
 | **2 – 4** | Mixed. Descriptions exist but are thin or buried in tables | Worth opening; expect a slower pass |
 | **< 2** | Not a descriptive paper — a model, a morphometric study, an atlas, a review | Do **not** plan rows around it. It may still be valuable for architecture, correlates or nomenclature |
 
-Three more things to check before scoring:
+Four more things to check before scoring:
 
 1. **Ligatures.** Older PDFs use `ﬂ` and `ﬁ`, which break every grep. Replace
    them first or you will conclude a paper has no flexors.
@@ -36,8 +36,23 @@ Three more things to check before scoring:
    `pdftotext` (no `-layout`) if reading order matters, `-layout` if table
    columns matter. Check that a heading actually sits above its own text — in
    Widrig et al. the deltoid section is half somebody else's muscle.
-3. **The species.** Every row needs one. If the paper dissects an animal the
+3. **Whether the tables are text.** Grep for a caption, then for a row of it.
+   Molnar et al.'s Tables 2 and 4–6 — the homology table and the three
+   character mappings, the tables this file had named as the only route into
+   the fossil column — extract as captions with nothing under them, because
+   they are images. Four rows of pdftotext output between a caption and the
+   next paragraph means the table is a picture and the prose is the route.
+4. **The species.** Every row needs one. If the paper dissects an animal the
    corpus does not list, add it to `data/species.json` first.
+
+**The species has to be named in the row's own prose.**
+`attribute_species.py` reattributes every occurrence from scratch on each build,
+and its first rule is the binomial in `note`, `attachmentNote`, `divisionNote` or
+`name`. A source keyed to one primary species — Molnar et al. to *Eusthenopteron
+foordi* — will pull every unnamed row of its clade onto that species and the
+validator will then reject the duplicates. So write the binomial into the row,
+and name **other** fossil taxa by genus alone, or the row migrates to whichever
+one it mentions first.
 
 ## How: scoring a row
 
@@ -73,9 +88,10 @@ Meers. Where no published equivalence exists, say so in the note — as
 | Testudines | 37 | forearm 13, hand 9, pectoral 5 |
 | Caudata | 27 | fin 7, cranial 4 |
 | Theria | 25 | axial 9, cranial 9 |
-| Chondrichthyes | 18 | cranial 10, fin 5 |
 | Crocodylia | 18 | axial 6, forearm 5 |
-| everything else | 28 | mostly fossil and agnathan columns |
+| Chondrichthyes | 12 | fin 5, cranial 4 |
+| Tetrapodomorpha (stem) | 9 | pectoral 4, arm 3 |
+| everything else | 21 | agnathans, actinopterygians, monotremes |
 
 **Forearm and hand are the largest regions across every tetrapod column**, and
 no single source covers them broadly — it goes one animal at a time.
@@ -86,7 +102,6 @@ no single source covers them broadly — it goes one animal at a time.
 
 | Source | per pg | Would close |
 |---|---:|---|
-| **Molnar et al. (2018)** | 7.1 | The stem-tetrapodomorph column, currently 0% — its Tables S1–S6 are the only route |
 | **McKitrick (1991)** | 6.3 | Aves forelimb, from a loon. A third neognath |
 | **Jones et al. (2019)** | 6.3 | Aves cranial, contrast CT of a pigeon head |
 | **Springer & Johnson (2015)** | 5.9 | Branchial arch muscles in eels — outgroup detail for the constrictor records |
@@ -99,6 +114,13 @@ no single source covers them broadly — it goes one animal at a time.
 
 ### Done since this file was written
 
+**Molnar et al. (2018)** — Tetrapodomorpha (stem) 0% → 79%, from 7 occurrences to
+42 across four species. Not from the supplementary tables this file had named:
+they are not in the PDF, and Tables 4–6 are images. The route was **§III**, the
+per-taxon review of correlates, read against the confidence gradient in §V and
+the conclusions — which is also what forced four of the seven existing rows down
+from `inferred` to `uncertain`. Still to take from it: *Pederpes finneyae*,
+*Ichthyostega* and *Panderichthys*, all described in the same section.
 **Huber et al. (2011)** — Chondrichthyes 5% → 37%, cranial from 10 unscored to 4.
 **Schreiweis (1982)** — five *Eudyptes* rows; Aves 13% → 28%.
 **Zaaf et al. (1999)**, second gecko — Lepidosauria to 62%, ten of the twenty-one

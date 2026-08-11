@@ -119,6 +119,21 @@ no source claims.
 against the earliest taxon with data. The diff is hierarchy-aware: `humerus →
 greater tubercle` is a refinement in resolution, not a muscle moving.
 
+For thirteen forelimb muscles that earliest taxon is now a **fossil**. Scoring the
+stem-tetrapodomorph column from Molnar et al. (2018) put *Eusthenopteron*,
+*Tiktaalik*, *Acanthostega* or *Ossinodus* ahead of Caudata on the topology, so
+the pectoralis, the deltoid complex, the triceps and most of the forearm are
+diffed against a Devonian or Carboniferous scar rather than a salamander
+dissection. The heading names the reference, and the intent is that a scar is
+earlier evidence than a dissection. But **`uncertain` rows are excluded from being
+the reference**, because that state means the source declines to call the
+identification settled — Molnar et al. report no compelling evidence that the
+latissimus dorsi, coracobrachialis, subcoracoscapularis or triceps existed as
+separate muscles in *Eusthenopteron* — and a baseline nobody stands behind would
+report every tetrapod as having shifted away from it. Such a row is still
+compared, just never compared *to*. It is the same rule the phylogeny view applies
+when it refuses to let `uncertain` place a transition.
+
 ## What correlates can and cannot do
 
 An osteological correlate locates an attachment. It does not size the muscle.

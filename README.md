@@ -62,7 +62,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-126 muscle records · 597 present occurrences · 221 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 632 present occurrences · 231 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -265,7 +265,8 @@ Origin/insertion becomes what you *draw*, not what you navigate.
   (Allen et al. 2014; Ercoli et al. 2014; Fahn-Lai et al. 2020). The schema has
   no field for these yet — roadmap phase 5.
 - **The stem-tetrapodomorph column is pectoral-only**, limited to what Molnar et
-  al. (2018) reconstruct, and carries no attachments at all.
+  al. (2018) reconstruct — the pectoral girdle, arm and forearm of four species,
+  with nothing axial, cranial or hindlimb.
 - **Monotreme and stem-synapsid rows are sparse** relative to the detail
   available in Gambaryan et al. (2015).
 - **The taxa most often on a dissection bench are the thinnest columns.**
@@ -276,5 +277,5 @@ Origin/insertion becomes what you *draw*, not what you navigate.
 See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **55%** of 597 present occurrences. The thinnest columns of any size are Testudines at 26%, Aves at 28%, Anura at 35%; the thinnest regions are cranial, axial, hand. `side` is on 55% of observed rows and `landmark` on 23%; `layer` resolves for 56 of 96 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **57%** of 632 present occurrences. The thinnest columns of any size are Testudines at 26%, Aves at 28%, Anura at 35%; the thinnest regions are cranial, axial, hand. `side` is on 57% of observed rows and `landmark` on 24%; `layer` resolves for 56 of 96 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->

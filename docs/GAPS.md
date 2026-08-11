@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 597 present occurrences · 221 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 632 present occurrences · 231 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 11 | 27 | 22 | 81% |
 | leg | 10 | 36 | 28 | 78% |
 | thigh | 10 | 48 | 37 | 77% |
-| pectoral | 16 | 103 | 62 | 60% |
-| arm | 5 | 39 | 23 | 59% |
+| pectoral | 16 | 120 | 80 | 67% |
+| arm | 5 | 45 | 28 | 62% |
+| fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
-| fin | 9 | 34 | 19 | 56% |
-| forearm | 18 | 103 | 52 | 50% |
+| forearm | 18 | 110 | 58 | 53% |
 | hand | 9 | 62 | 29 | 47% |
 | axial | 15 | 46 | 14 | 30% |
 | cranial | 15 | 60 | 17 | 28% |
-| **all** | 126 | 597 | 326 | **55%** |
+| **all** | 126 | 632 | 359 | **57%** |
 <!-- /counts:regions -->
 
 **Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
@@ -93,6 +93,7 @@ longissimus and iliocostalis into separate records is the next step, with Cieri
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Actinistia | 7 | 6 | 86% |
+| Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Crocodylia | 66 | 48 | 73% |
 | Caudata | 88 | 61 | 69% |
 | Theria | 81 | 56 | 69% |
@@ -106,7 +107,6 @@ longissimus and iliocostalis into separate records is the next step, with Cieri
 | Testudines | 50 | 13 | 26% |
 | Myxini | 1 | 0 | 0% |
 | Petromyzontida | 5 | 0 | 0% |
-| Tetrapodomorpha (stem) | 7 | 0 | 0% |
 <!-- /counts:taxa -->
 
 **Caudata was the anomaly and is now the reference column.** It went from 11% to
@@ -168,9 +168,14 @@ Those rows are *Eublepharis macularius*, with the *Gekko gecko* differences in
 a different part of one, which is the sharpest available warning against reading
 any single lizard as the clade.
 
-**Tetrapodomorpha (stem) at 0%** is the fossil column, and its attachments would
-have to come from osteological correlates rather than dissection — Molnar et al.
-(2018) Tables S1-S6 are the source, still unfetched.
+**Tetrapodomorpha (stem) moved 0% to 79%**, and it is the one column where the
+attachments are osteological correlates rather than dissection. Molnar et al.
+(2018) §III describes them taxon by taxon, which is what let the column go from
+seven occurrences on one species to 42 across four: *Eusthenopteron foordi*,
+*Tiktaalik roseae*, *Acanthostega gunnari* and *Ossinodus pueri*. Read the
+percentage with that in mind — a scored row here is an inference from a scar, and
+six rows are `uncertain` precisely because the source declines to call the muscle
+separate.
 
 ## 3. Is the skeletal mapping keeping pace?
 
@@ -179,11 +184,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 221, of which 188 (85%) carry at least one attachment |
-| Observed attachment rows | 890 |
-| Rows naming a **landmark** | 205 (23%) |
-| Rows naming a **side** | 489 (55%) |
-| Osteological correlates | 85 flagged, 71 carry a muscle |
+| Elements | 231, of which 196 (85%) carry at least one attachment |
+| Observed attachment rows | 934 |
+| Rows naming a **landmark** | 224 (24%) |
+| Rows naming a **side** | 529 (57%) |
+| Osteological correlates | 95 flagged, 79 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -220,9 +225,9 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | cranial | 21 | 54 | 2.6 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 32 | 26 | 0.8 |
-| pectoral | 32 | 22 | 0.7 |
+| pectoral | 32 | 23 | 0.7 |
+| forelimb | 51 | 36 | 0.7 |
 | fin | 8 | 5 | 0.6 |
-| forelimb | 51 | 29 | 0.6 |
 | pelvic | 25 | 14 | 0.6 |
 <!-- /counts:parity -->
 
@@ -249,7 +254,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 326 of 597 present occurrences (55%).**
+**Taxon-specific attachments: 359 of 632 present occurrences (57%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -269,16 +274,16 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 167 |
-| forearm | 18 | 142 |
+| pectoral | 16 | 191 |
+| forearm | 18 | 149 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
 | cranial | 15 | 69 |
 | foot | 11 | 63 |
+| arm | 5 | 59 |
+| fin | 9 | 57 |
 | pelvic | 8 | 54 |
-| arm | 5 | 52 |
-| fin | 9 | 51 |
 | axial | 15 | 36 |
 <!-- /counts:holes -->
 
@@ -493,7 +498,7 @@ The outstanding fetches are external:
 
 | Source | Would fix |
 |---|---|
-| **Molnar et al. (2018) Tables S1–S6** | Stem-tetrapodomorph attachments — the only route to the 0% fossil column |
+| **Molnar et al. (2018) Tables S1–S6** | The per-taxon character scoring. No longer blocking — the fossil column was scored from their §III instead — but the matrices would settle which correlates each fossil actually carries, where the prose reports a node reconstruction rather than a specimen |
 | Anuran, chelonian or therian equivalents of Walthall & Ashley-Ross | The columns that would make the salamander scores comparable |
 
 *A salamander source other than* Taricha *is no longer outstanding* — Omura et al.

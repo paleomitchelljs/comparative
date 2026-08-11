@@ -63,12 +63,24 @@ function attachmentsFor(muscle, taxonId) {
   };
 }
 
-/* The plesiomorphic reference for a shift comparison. Caudata is the standard
-   proxy for the ancestral tetrapod condition in every source here; for muscles
-   with no salamander row we fall back to the earliest taxon on the topology. */
+/* The plesiomorphic reference for a shift comparison: the earliest taxon on the
+   topology with recorded attachments. Caudata held that place for most of the
+   forelimb until the stem-tetrapodomorph column was scored from Molnar et al.
+   (2018), and now thirteen muscles are diffed against a fossil instead — which
+   is the intended behaviour, since a Devonian scar is genuinely earlier evidence
+   than a salamander dissection, and the heading names the reference either way.
+
+   `uncertain` rows are excluded. That state means the source itself declines to
+   call the identification settled — for Eusthenopteron, Molnar et al. report
+   "no compelling evidence" that the latissimus dorsi, coracobrachialis or
+   subcoracoscapularis existed as separate muscles — and making such a row the
+   baseline would report every tetrapod as having shifted away from an attachment
+   nobody stands behind. This is the same rule phylogeny.js applies when it
+   refuses to let `uncertain` drive a transition; `inferred` stays eligible,
+   because a reconstruction is a positive claim about a specimen. */
 function referenceTaxonFor(muscle) {
   const documented = (muscle.occurrences || [])
-    .filter(o => o.attachments)
+    .filter(o => o.attachments && o.present !== 'uncertain')
     .sort((a, b) => (state.taxonOrder.get(a.taxon) ?? 99) - (state.taxonOrder.get(b.taxon) ?? 99));
   return documented.length ? documented[0].taxon : null;   // clade-level reference
 }

@@ -280,6 +280,23 @@ check('between two products of the same fission — a real move',
   if (!ok) failures++;
 })();
 
+/* An `uncertain` row is one the source declines to stand behind. It may be
+   compared, but it must not become the thing everything else is compared to, or
+   every taxon reads as having shifted away from an unsupported attachment. */
+(function uncertainIsNotTheReference() {
+  const muscle = { occurrences: [
+    { taxon: 'caudata', present: 'uncertain',
+      attachments: { origin: [{ element: 'cleithrum' }] } },
+    { taxon: 'lepidosauria', attachments: { origin: [{ element: 'coracoid' }] } },
+    { taxon: 'theria', attachments: { origin: [{ element: 'scapula' }] } },
+  ] };
+  const a = attachmentShifts(muscle);
+  const ok = a && a.reference === 'lepidosauria'
+    && a.shifts.map(s => s.taxon).sort().join() === 'caudata,theria';
+  console.log(`  ${ok ? 'ok   ' : 'FAIL '} an uncertain row is compared but is not the reference`);
+  if (!ok) failures++;
+})();
+
 (function singleScoredTaxonYieldsNothing() {
   const muscle = { occurrences: [
     { taxon: 'caudata', attachments: { origin: [{ element: 'scapula' }] } },

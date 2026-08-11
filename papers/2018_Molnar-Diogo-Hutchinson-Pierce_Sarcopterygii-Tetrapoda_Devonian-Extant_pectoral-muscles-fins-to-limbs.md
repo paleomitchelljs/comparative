@@ -78,3 +78,67 @@ Extant Phylogenetic Bracket (Witmer 1995) with extended taxon-sampling: osteolog
 - Abstract: "*Based on this review and meta-analysis, we postulate a stepwise sequence of specific appendicular muscle acquisitions, splits, and fusions that led from the ancestral sarcopterygian pectoral fin to the ancestral tetrapod forelimb.*"
 - Conclusions §4: "*Our review of the evidence suggests that reconstructions that show tetrapod-like pectoral appendicular muscles in tetrapodomorph fish – such as Eusthenopteron – should be regarded as highly speculative, whereas reconstructions of tetrapod-like pectoral limb muscles in stem tetrapods – such as Ossinodus – are supported by both fossil and comparative data.*"
 - Conclusions §1 [on Ahlberg 1989 synapomorphy]: "*the dorsal and ventral processes of the humerus are a synapomorphy of sarcopterygians and that they are homologous with the entepicondyle and ectepicondyle of tetrapods.*"
+
+---
+
+## What was mined from it (2026-08-11)
+
+Source key: `molnar-etal-2018`. **Tetrapodomorpha (stem) went 0% → 79%**, from 7
+occurrences on one species to 42 across four: *Eusthenopteron foordi*, *Tiktaalik
+roseae*, *Acanthostega gunnari* and *Ossinodus pueri* (added to
+`data/species.json` in this pass).
+
+**Not from the supplementary tables.** `MINING.md` had named Tables S1–S6 as the
+only route into this column. They are not in the PDF, and Tables 2 and 4–6 — the
+homology table and the three character mappings — are **images**: `pdftotext`
+gives their captions and nothing under them. The route is §III, "Review of
+osteological correlates in fossil sarcopterygians", which walks the girdle,
+humerus and radius/ulna taxon by taxon, read against §IV's proposed homologies,
+§V's node reconstructions and the confidence gradient in the paragraph before the
+Conclusions.
+
+**The confidence gradient is the mining instrument.** For *Eusthenopteron*, the
+highest-confidence muscles are the deltoideus, pectoralis and the forearm flexor
+and extensor **masses**; the procoracohumeralis and supracoracoideus follow on
+homology grounds. But: "*The subcoracoscapularis, coracobrachialis longus and
+brevis, latissimus dorsi, triceps, and other individual forearm muscles were
+reconstructed by Andrews & Westoll (1970a), but we did not find compelling
+evidence that they existed as separate muscles in early tetrapodomorph fish.*"
+
+That sentence contradicts what the dataset already had. Four of the seven existing
+*Eusthenopteron* rows cited this paper for muscles it declines to support, and two
+of their notes were wrong on its own evidence:
+
+- the triceps note read "inferred from the olecranon" — tetrapodomorph-fish ulnae
+  **lack** an ossified olecranon; it and the posterior ulnar crest appear at
+  Tetrapoda, and their appearance is what marks the triceps separating from the
+  extensor antebrachii et carpi ulnaris;
+- the latissimus dorsi note claimed a dorsal humeral scar as its insertion — the
+  latissimus dorsi process is **absent** in *Eusthenopteron* and first appears at
+  Elpistostegalia.
+
+Those four are now `uncertain`, with the attributions kept and attributed to
+Andrews & Westoll. Six `uncertain` rows in total, including *Tiktaalik*'s
+pectoralis (no pectoralis process) and subcoracoscapularis (the node
+reconstruction puts a correlate here; the specimen shows only generic deep dorsal
+rugosities, and the alternative phylogeny delays it).
+
+**Ten correlates added to `skeleton.json`**: `ventral-cleithral-ridge`,
+`ventral-humeral-ridge`, `latissimus-dorsi-process`, `supinator-process`,
+`scapulohumeral-depression`, the four Bishop ridges of the radius
+(`ventral-median-ridge-radius`, `dorsomesial-ridge-radius`,
+`proximoventral-ridge-radius`, `ventral-radial-crest`) and
+`posterior-ulnar-crest`. The interclavicle joined the stem column's presence list,
+which is what lets the *Ossinodus* pectoralis origin validate.
+
+**One internal tension recorded rather than resolved.** The ventral median ridge
+of the radius is listed among the four ridges of the *Acanthostega* radius and
+labelled in Fig. 10F, yet the character mapping puts its first appearance at the
+LCA of crown tetrapods, where it marks the humeroantebrachialis separating from
+the flexor antebrachii et carpi radialis. The rows follow the description of the
+bone and say so.
+
+**Still to take:** *Pederpes finneyae* (lateral fossa and posterior triangular
+region on the scapula, spike-like latissimus process, four radial ridges),
+*Ichthyostega* (pectoralis process separated by the prepectoral space) and
+*Panderichthys*. All are described in the same section.
