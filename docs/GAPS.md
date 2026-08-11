@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 626 present occurrences · 233 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 634 present occurrences · 234 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 11 | 27 | 22 | 81% |
 | leg | 10 | 36 | 28 | 78% |
 | thigh | 10 | 48 | 37 | 77% |
-| pectoral | 16 | 123 | 83 | 67% |
-| arm | 5 | 48 | 31 | 65% |
+| pectoral | 16 | 128 | 88 | 69% |
+| arm | 5 | 51 | 34 | 67% |
 | fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
 | cranial | 15 | 59 | 33 | 56% |
 | forearm | 18 | 116 | 64 | 55% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| **all** | 126 | 626 | 387 | **62%** |
+| **all** | 126 | 634 | 395 | **62%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -113,9 +113,9 @@ back in for Aves.
 | Synapsida (stem) | 4 | 2 | 50% |
 | Aves | 79 | 39 | 49% |
 | Actinopterygii | 13 | 6 | 46% |
+| Anura | 70 | 30 | 43% |
 | Monotremata | 7 | 3 | 43% |
 | Chondrichthyes | 19 | 7 | 37% |
-| Anura | 62 | 22 | 35% |
 | Testudines | 50 | 13 | 26% |
 | Myxini | 3 | 0 | 0% |
 | Petromyzontida | 3 | 0 | 0% |
@@ -210,10 +210,10 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 233, of which 200 (86%) carry at least one attachment |
-| Observed attachment rows | 1022 |
-| Rows naming a **landmark** | 230 (23%) |
-| Rows naming a **side** | 590 (58%) |
+| Elements | 234, of which 201 (86%) carry at least one attachment |
+| Observed attachment rows | 1036 |
+| Rows naming a **landmark** | 235 (23%) |
+| Rows naming a **side** | 600 (58%) |
 | Osteological correlates | 97 flagged, 81 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -251,8 +251,8 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | cranial | 21 | 57 | 2.7 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 33 | 26 | 0.8 |
+| pectoral | 32 | 24 | 0.8 |
 | forelimb | 51 | 37 | 0.7 |
-| pectoral | 32 | 23 | 0.7 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 26 | 14 | 0.5 |
 <!-- /counts:parity -->
@@ -280,7 +280,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 387 of 626 present occurrences (62%).**
+**Taxon-specific attachments: 395 of 634 present occurrences (62%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -300,13 +300,13 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 201 |
+| pectoral | 16 | 210 |
 | forearm | 18 | 161 |
 | cranial | 15 | 127 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
-| arm | 5 | 67 |
+| arm | 5 | 72 |
 | foot | 11 | 63 |
 | fin | 9 | 57 |
 | pelvic | 8 | 54 |

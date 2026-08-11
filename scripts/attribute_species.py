@@ -121,7 +121,10 @@ SURVEY_EXEMPLARS = {
     "werneburg-maier-2019": {"testudines": "trachemys-scripta"},
     "johnston-2014": {"lepidosauria": "timon-lepidus"},
     "navarro-etal-2023": {"lepidosauria": "timon-lepidus"},
-    "sigurdsen-etal-2012": {"anura": "rhinella-arenarum"},
+    # NOT Rhinella: Sigurdsen et al. examine no bufonid but Anaxyrus americanus, and
+    # their dissected and figured frogs are Leiopelma and Ascaphus. The old mapping was
+    # Abdala & Diogo's anuran exemplar borrowed for a paper that does not use it.
+    "sigurdsen-etal-2012": {"anura": "leiopelma-hochstetteri"},
     # The gar is the study animal; the axolotl is the comparison it is read against.
     "naumann-etal-2017": {"actinopterygii": "lepisosteus-osseus",
                           "caudata": "ambystoma-mexicanum"},

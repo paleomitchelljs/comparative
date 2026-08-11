@@ -86,15 +86,22 @@ Meers. Where no published equivalence exists, say so in the note — as
 | Anura | 40 | forearm 13, pectoral 8, cranial 7 |
 | Lepidosauria | 38 | forearm 8, axial 7, pectoral 7 |
 | Testudines | 37 | forearm 13, hand 9, pectoral 5 |
-| Caudata | 26 | fin 7, cranial 4, hand 3 |
-| Chondrichthyes | 12 | fin 5, cranial 4 |
+| Caudata | 22 | fin 7, hand 3, pectoral 3 |
+| Chondrichthyes | 12 | fin 5, cranial 4, axial 2 |
 | Crocodylia | 12 | forearm 5, pelvic 2, thigh 2 |
 | Theria | 9 | hand 3, axial 2, foot 2 |
-| Tetrapodomorpha (stem) | 9 | pectoral 4, arm 3 |
+| Tetrapodomorpha (stem) | 9 | pectoral 4, arm 3, forearm 1 |
 | everything else | 20 | agnathans, monotremes, stem synapsids, the coelacanth |
 
 **Forearm and hand are the largest regions across every tetrapod column**, and
 no single source covers them broadly — it goes one animal at a time.
+
+**This table counts unscored rows, so a new species does not move it.** Anura still
+reads 40 after the Sigurdsen pass, because those nine rows were *added* — a second and
+third frog, both fully scored — while the eight unscored *Rhinella* rows are still
+there. The percentage in `GAPS.md` went 35% to 43%; the gap did not close. Read the two
+numbers together: this table is what is left to score in animals already present, and
+the percentage is how much of what is present is scored.
 
 Two of these numbers fell without a paper being read. Theria dropped from 25 to 9
 and Crocodylia from 18 to 12 because the base-layer pass removed rows attributed to
@@ -109,7 +116,6 @@ scored or deleted.
 | Source | per pg | Would close |
 |---|---:|---|
 | **Springer & Johnson (2015)** | 5.9 | Branchial arch muscles in eels — outgroup detail for the constrictor records |
-| **Sigurdsen et al. (2012)** | 4.3 | Anura pectoral and forelimb |
 | **Pereyra et al. (2019)** | 4.2 | **Correlates, not rows.** See its reading note |
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
 | **Bauer (1997)** | 3.6 | Urodele jaw openers on CN VII |
@@ -117,6 +123,19 @@ scored or deleted.
 
 ### Done since this file was written
 
+**Sigurdsen et al. (2012)** — Anura 35% → 43%. Seven rows for *Leiopelma
+hochstetteri* and two for *Xenopus laevis*, and one correction: **the paper examines no
+*Rhinella*,** yet both rows citing it sat on *Rhinella arenarum* because
+`attribute_species.py` had borrowed Abdala & Diogo's anuran exemplar for it. Its
+figured frogs are *Leiopelma* and *Ascaphus*. Measured 3.8 per page, not 4.3. It also
+fixes the nomenclature three records depend on — anuran "deltoid" = caudate
+procoracohumeralis = amniote deltoideus clavicularis; anuran "dorsalis scapulae" =
+amniote deltoideus scapularis — and it puts a real disagreement on the board:
+`subcoracoscapularis` is `no` in *Leiopelma* against `yes` in *Rhinella*, so Anura now
+computes as `variable`. **What is left in it is *Triadobatrachus*, and it is blocked on
+structure rather than effort: there is no stem-salientian operational taxon.** Adding
+one — with *Prosalirus*, *Czatkobatrachus*, *Amphibamus* and *Doleserpeton* — is the
+`taxa.json` topology change that pass would need.
 **Ziermann & Diogo (2013)** — cranial 46% → 56%, Caudata 70% → 76%. Seven rows for
 *Ambystoma mexicanum*, reached because an audit found it cited for five rows with none
 of them scored. Measured **3.3** per page, not the 4.2 recorded here, which put it in

@@ -270,7 +270,8 @@ SEED = {
     "deltoideus-clavicularis": {
         "caudata":      {"origin": ["procoracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                          "shiftNote": "Called procoracohumeralis in amphibians purely because the origin sits on the procoracoid."},
-        "anura":        {"origin": ["procoracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
+        "anura": {"species": "rhinella-arenarum",  # Abdala & Diogo's anuran exemplar; Sigurdsen et al.'s Leiopelma row on this record is scored from that paper
+                   "origin": ["procoracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["clavicle"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["clavicle"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "crocodylia": {"origin": ["scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
