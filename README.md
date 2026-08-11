@@ -52,13 +52,17 @@ deltoideus scapularis and the latissimus dorsi, because different authors have
 used that name for both.
 
 The underlying record is a **homology group**, not a muscle-in-an-animal. Names
-are attributes of taxon-specific occurrences. See [`docs/SCHEMA.md`](docs/SCHEMA.md)
+are attributes of occurrences, and **an occurrence is one species** — *Taricha
+torosa*, *Galictis cuja*, *Grus americana*. Clades are rolled up from them:
+Aves is what *Gallus*, the ostrich, the tinamou, the crane and the penguin are
+computed to agree on, and where they disagree the clade is `variable` because the
+rows say so rather than because somebody typed it. See [`docs/SCHEMA.md`](docs/SCHEMA.md)
 for why that matters.
 
 ## What's in it
 
 <!-- counts:headline -->
-126 muscle records · 571 present occurrences · 214 skeletal elements · 62 sources · 19 operational taxa
+126 muscle records · 571 present occurrences · 218 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -186,7 +190,9 @@ assets/
   skeleton.js           bone-first browse, hierarchy browse, attachment diffing
   styles.css            vanilla CSS, light/dark
 data/
-  taxa.json             operational taxa + the topology that orders them
+  species.json          the unit of observation — one record per animal dissected
+  taxa.json             operational taxa + topology. DERIVED: every clade-level
+                        statement is computed from the species
   sources.json          bibliography
   skeleton.json         attachment-site ontology: partOf, presence, correlates,
                         per-taxon names for homologous elements
@@ -269,5 +275,5 @@ Origin/insertion becomes what you *draw*, not what you navigate.
 See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **36%** of 571 present occurrences. The thinnest columns of any size are Aves at 13%, Theria at 15%, Anura at 23%; the thinnest regions are cranial, hand, axial. `side` is on 50% of observed rows and `landmark` on 19%; `layer` resolves for 56 of 96 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **51%** of 571 present occurrences. The thinnest columns of any size are Aves at 22%, Testudines at 26%, Anura at 35%; the thinnest regions are cranial, axial, hand. `side` is on 55% of observed rows and `landmark` on 23%; `layer` resolves for 56 of 96 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->

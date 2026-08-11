@@ -4,7 +4,8 @@ Three kinds of file live in `data/`:
 
 | File | Holds |
 |---|---|
-| `taxa.json` | Operational taxa and the topology that orders them |
+| `taxa.json` | Operational taxa and the topology that orders them. **Derived data** — every clade-level statement is computed from the species below |
+| `species.json` | The unit of observation: one record per animal anybody dissected |
 | `sources.json` | Bibliography, keyed by `key` |
 | `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
 | `nerves.json` | Nerves as homology groups: `partOf` chain to the plexus, limb-bud division, per-taxon names |
@@ -12,6 +13,69 @@ Three kinds of file live in `data/`:
 | `muscles-*.json` | Muscle records, split by anatomical region |
 
 `scripts/validate.py` enforces everything below. Run it before committing.
+
+---
+
+## The other central decision: species are the unit of observation
+
+An occurrence is **one species**, observed by one set of sources. It is not a
+clade. `Aves` is not a row anybody wrote — it is what *Gallus*, the ostrich, the
+tinamou, the crane, the penguin and the loon are computed to agree on.
+
+This replaced a model in which each clade had one row standing for whichever
+animal its source happened to dissect, and that model was actively losing data:
+
+- Zaaf et al.'s two geckos insert the extensor carpi ulnaris on **different
+  carpals** — the ulnare in *Eublepharis*, the pisiform in *Gekko*. Under one
+  Lepidosauria row, one of those observations had to be demoted to prose.
+- Ercoli et al.'s rows are *Galictis cuja*, a semi-fossorial mustelid, and had to
+  carry a written warning not to read them as the mammalian condition.
+- A penguin and a whooping crane could not both be scored, because "the Aves
+  column" could only hold one of them — so descriptive sources were **turned
+  away** for being too derived, which is not a judgement a dataset should make.
+
+### What a clade rollup computes
+
+| Field | Rule |
+|---|---|
+| `present` | Species agree → that state. Observed **yes** against observed **no** → `variable`. No species scored → `null`, unrecorded |
+| `division` | The same rule |
+| name | A clade has none. Its species' names are shown |
+| attachments | Not synthesised. The by-species table shows each; the muscle-level `attachments` remains the hand-written cross-tetrapod consensus |
+
+**`variable` is now a result, not a judgement.** It used to be typed in by
+whoever noticed that a source found a muscle in one lizard and not another. It is
+now what the rows say when they disagree, so it cannot be forgotten, applied
+inconsistently, or asserted without evidence.
+
+### `species.json`
+
+| Field | Notes |
+|---|---|
+| `id` | kebab-case, unique |
+| `binomial` | ✔ As the sources write it |
+| `clade` | ✔ The operational taxon in `taxa.json` this rolls up into |
+| `common` | Vernacular name, where there is one |
+| `fossil` | `true` for extinct species |
+| `note` | Why this animal is in the corpus, and what it is *not* representative of |
+
+### `speciesBasis`
+
+Every occurrence records **how** it was attributed to its species, because the
+migration that created them could not be certain for all 630:
+
+| Basis | Means |
+|---|---|
+| `note` | The row's own prose names the species. Strongest |
+| `source` | It cites a single-species study |
+| `survey` | It cites a multi-taxon survey, and that survey names an exemplar for this clade (Abdala & Diogo dissected *Timon lepidus*, *Caiman latirostris*, *Gallus*) |
+| `default` | Nothing better. The clade's first exemplar, and a guess — the interface labels these |
+
+`scripts/attribute_species.py --write` recomputes all of it and is idempotent.
+
+**`taxon` is never stored on an occurrence.** It is derived from
+`species.clade` at load. Storing it would be a second home for a fact that
+already has one, which is the thing this schema is most careful about.
 
 ---
 
@@ -72,12 +136,14 @@ So each record has:
 
 ### Occurrence row
 
-One per taxon, at most. Omit a taxon entirely if no source addresses it — that is
-different from a source reporting absence.
+One per **species**, at most — a muscle may carry several rows for one clade, and
+their agreement is what produces the clade's state. Omit a species entirely if no
+source addresses it; that is different from a source reporting absence.
 
 | Field | Req | Notes |
 |---|---|---|
-| `taxon` | ✔ | An `id` from `taxa.json` |
+| `species` | ✔ | An `id` from `species.json`. The clade is derived from it and is never stored |
+| `speciesBasis` | ✔ | How the attribution was made — see above |
 | `present` | | `yes` (default) · `no` · `variable` · `uncertain` · `inferred`. Use `inferred` for fossil reconstructions and `variable` when a source reports it in some species of the clade and not others |
 | `name` | ✔ if present | What this muscle is called **in that taxon's literature** |
 | `origin`, `insertion`, `action`, `innervation` | | Taxon-specific values. Omit when they match the consensus — the UI falls back to it |

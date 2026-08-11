@@ -18,6 +18,8 @@ import json
 import pathlib
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # muscle id -> taxon id -> {origin, insertion, sources, shiftNote}
@@ -414,7 +416,7 @@ def main(write: bool) -> int:
         if not m:
             problems.append(f"unknown muscle '{mid}'")
             continue
-        occs = {o["taxon"]: o for o in m.get("occurrences", [])}
+        occs = {speciesmap.clade_of(o): o for o in m.get("occurrences", [])}
         for tid, spec in per_taxon.items():
             occ = occs.get(tid)
             if not occ:

@@ -8,9 +8,25 @@
 const fs = require('fs');
 const path = require('path');
 
-global.state = { taxa: [], taxaById: new Map(), taxonOrder: new Map(), muscles: [], topology: null };
+global.state = { taxa: [], taxaById: new Map(), taxonOrder: new Map(), muscles: [],
+                 topology: null, speciesById: new Map() };
 global.esc = s => String(s);
 global.regionRank = () => 0;
+
+/* phylogeny.js asks app.js for the clade rollup. Reimplementing it here would
+   let the two drift, so the shim is deliberately thin and mirrors the rule the
+   real one states: species agree -> that state; observed presence against
+   observed absence -> polymorphic. */
+global.presenceFor = (muscle, clade) => {
+  const rows = (muscle.occurrences || []).filter(o => o.taxon === clade);
+  if (!rows.length) return null;
+  const states = new Set(rows.map(o => o.present || 'yes'));
+  if (states.size === 1) return [...states][0];
+  if (states.has('yes') && states.has('no')) return 'variable';
+  for (const s of ['variable', 'uncertain', 'inferred', 'yes', 'no'])
+    if (states.has(s)) return s;
+  return null;
+};
 eval(fs.readFileSync(path.join(__dirname, '..', 'assets', 'phylogeny.js'), 'utf8'));
 
 const TREE = { name: 'root', children: [
@@ -84,6 +100,43 @@ check('ambiguous 2–2 split resolves to gains under the absent-root convention'
   const clean = events.length === 1 && !events[0].equivocal;
   console.log(`  ${clean ? 'ok   ' : 'FAIL '} unambiguous placements are not flagged`);
   if (!clean) failures++;
+})();
+
+/* --- species rollup: the reason occurrences are keyed on species --- */
+
+/* Two species of one clade disagreeing is the case the old model could not
+   express — it had one row per clade, so one of the two observations had to be
+   dropped or softened to `variable` by hand. Now the clade is polymorphic
+   BECAUSE the rows disagree, and a polymorphic tip constrains nothing, so no
+   transition is placed on it. */
+(() => {
+  const root = annotateTree(structuredClone(TREE));
+  const muscle = { occurrences: [
+    { taxon: 'a', species: 'a-one', present: 'yes' },
+    { taxon: 'a', species: 'a-two', present: 'no' },   // same clade, disagrees
+    { taxon: 'b', present: 'yes' }, { taxon: 'c', present: 'yes' },
+    { taxon: 'd', present: 'yes' },
+  ] };
+  const { events } = transitionsFor(muscle, root);
+  const got = events.map(e => `${e.kind}@${e.node.name}`).sort().join(',') || '(none)';
+  const ok = got === '(none)';
+  console.log(`  ${ok ? 'ok   ' : 'FAIL '} two species of one clade disagree — clade is polymorphic, no transition`);
+  if (!ok) { failures++; console.log(`          got ${got}, expected (none)`); }
+})();
+
+(() => {
+  const root = annotateTree(structuredClone(TREE));
+  const muscle = { occurrences: [
+    { taxon: 'a', species: 'a-one', present: 'no' },
+    { taxon: 'a', species: 'a-two', present: 'no' },   // same clade, agrees
+    { taxon: 'b', present: 'yes' }, { taxon: 'c', present: 'yes' },
+    { taxon: 'd', present: 'yes' },
+  ] };
+  const { events } = transitionsFor(muscle, root);
+  const got = events.map(e => `${e.kind}@${e.node.name}`).sort().join(',') || '(none)';
+  const ok = got === 'loss@A';
+  console.log(`  ${ok ? 'ok   ' : 'FAIL '} two species agreeing on absence — clade is absent, loss placed`);
+  if (!ok) { failures++; console.log(`          got ${got}, expected loss@A`); }
 })();
 
 console.log(failures ? `\n${failures} failing` : '\nall passing');

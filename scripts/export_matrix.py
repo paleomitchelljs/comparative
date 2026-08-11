@@ -41,6 +41,29 @@ def load(name):
     return json.loads((ROOT / "data" / name).read_text())
 
 
+
+# Occurrences are keyed on species; the clade is derived. Every export keeps BOTH
+# columns, because a downstream analysis wants the species it was observed in and
+# the clade it rolls up to, and reconstructing either from the other outside the
+# repo is exactly the kind of re-derivation these files exist to prevent.
+def _species_index():
+    with open(ROOT / "data/species.json") as fh:
+        doc = json.load(fh)
+    return ({s["id"]: s.get("clade") for s in doc["species"]},
+            {s["id"]: s.get("binomial", s["id"]) for s in doc["species"]})
+
+
+SPECIES_CLADE, SPECIES_NAME = _species_index()
+
+
+def occ_taxon(occ):
+    return SPECIES_CLADE.get(occ.get("species"), "")
+
+
+def occ_species(occ):
+    return occ.get("species", "")
+
+
 def main(outdir: pathlib.Path) -> int:
     outdir.mkdir(parents=True, exist_ok=True)
 
@@ -84,14 +107,14 @@ def main(outdir: pathlib.Path) -> int:
     with open(outdir / "attachments.csv", "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["muscle_id", "muscle_name", "region", "segment", "mass", "layer",
-                    "taxon_id", "taxon_clade", "taxon_order", "attachment_type",
+                    "species_id", "species", "taxon_id", "taxon_clade", "taxon_order", "attachment_type",
                     "element_id", "element_label", "side", "landmark_id", "landmark_label",
                     "is_correlate", "inherited", "sources"])
         n = 0
         for m in muscles:
             cons = m.get("attachments", {})
             for occ in m.get("occurrences", []):
-                tid = occ["taxon"]
+                tid = occ_taxon(occ)
                 if (occ.get("present") or "yes") == "no":
                     continue
                 att, inherited = (occ["attachments"], False) if occ.get("attachments") else (cons, True)
@@ -105,6 +128,7 @@ def main(outdir: pathlib.Path) -> int:
                         w.writerow([
                             m["id"], m["name"], m.get("region", ""), m.get("segment", ""),
                             m.get("mass", ""), m.get("layer", ""),
+                            occ_species(occ), SPECIES_NAME.get(occ_species(occ), ""),
                             tid, next((t["clade"] for t in taxa_doc["taxa"] if t["id"] == tid), tid),
                             taxon_order.get(tid, ""),
                             kind, r.get("element", ""),
@@ -119,13 +143,15 @@ def main(outdir: pathlib.Path) -> int:
     with open(outdir / "presence.csv", "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["muscle_id", "muscle_name", "region", "mass", "layer", "segment",
-                    "taxon_id", "taxon_clade", "taxon_order", "state", "local_name", "sources"])
+                    "species_id", "species", "taxon_id", "taxon_clade", "taxon_order",
+                    "state", "local_name", "sources"])
         rows = 0
         for m in muscles:
             for occ in m.get("occurrences", []):
-                tid = occ["taxon"]
+                tid = occ_taxon(occ)
                 w.writerow([m["id"], m["name"], m.get("region", ""), m.get("mass", ""),
                             m.get("layer", ""), m.get("segment", ""),
+                            occ_species(occ), SPECIES_NAME.get(occ_species(occ), ""),
                             tid, next((t["clade"] for t in taxa_doc["taxa"] if t["id"] == tid), tid),
                             taxon_order.get(tid, ""),
                             occ.get("present", "yes"), occ.get("name", ""),
@@ -162,8 +188,8 @@ def main(outdir: pathlib.Path) -> int:
                 parts = occ.get("parts", [])
                 firm = [x for x in parts
                         if (x.get("membership") or "established") == "established"]
-                w.writerow([m["id"], m["name"], m.get("region", ""), occ["taxon"],
-                            taxon_order.get(occ["taxon"], ""),
+                w.writerow([m["id"], m["name"], m.get("region", ""), occ_species(occ), SPECIES_NAME.get(occ_species(occ), ""), occ_taxon(occ),
+                            taxon_order.get(occ_taxon(occ), ""),
                             d, rank.get(d, ""),
                             len(firm) if parts else (1 if d == "single" else ""),
                             len(parts) if parts else (1 if d == "single" else ""),
@@ -179,7 +205,7 @@ def main(outdir: pathlib.Path) -> int:
         for m in muscles:
             for occ in m.get("occurrences", []):
                 for x in occ.get("parts", []):
-                    w.writerow([m["id"], m["name"], occ["taxon"], occ.get("division", ""),
+                    w.writerow([m["id"], m["name"], occ_taxon(occ), occ.get("division", ""),
                                 x.get("name", ""),
                                 x.get("membership") or "established",
                                 x.get("muscle", ""), x.get("note", ""),
@@ -201,7 +227,7 @@ def main(outdir: pathlib.Path) -> int:
                     continue
                 for pt in a.get("parts", []):
                     g = lambda k, f: (pt.get(k) or {}).get(f, "")
-                    w.writerow([m["id"], m["name"], m.get("region", ""), occ["taxon"],
+                    w.writerow([m["id"], m["name"], m.get("region", ""), occ_taxon(occ),
                                 a.get("species", ""), a.get("n", ""),
                                 pt.get("name", ""), pt.get("abbr", ""),
                                 g("mass_g", "mean"), g("mass_g", "sd"),
@@ -263,7 +289,7 @@ def main(outdir: pathlib.Path) -> int:
                     "arch", "division", "division_agrees", "segments", "chain"])
         nerve_n = 0
         for m in muscles:
-            scopes = [("consensus", m)] + [(o["taxon"], o) for o in m.get("occurrences", [])]
+            scopes = [("consensus", m)] + [(occ_taxon(o), o) for o in m.get("occurrences", [])]
             for scope, holder in scopes:
                 for r in holder.get("nerves") or []:
                     nid = r["nerve"]
@@ -320,7 +346,7 @@ def main(outdir: pathlib.Path) -> int:
         act_n = 0
         for m in muscles:
             spans = graph.spanned_by(m.get("attachments"))
-            scopes = [("consensus", m)] + [(o["taxon"], o) for o in m.get("occurrences", [])]
+            scopes = [("consensus", m)] + [(occ_taxon(o), o) for o in m.get("occurrences", [])]
             for scope, holder in scopes:
                 for r in holder.get("actions") or []:
                     jid = r.get("joint")

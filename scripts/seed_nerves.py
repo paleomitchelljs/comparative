@@ -35,6 +35,8 @@ import pathlib
 import re
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 NERVES = ROOT / "data" / "nerves.json"
 MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
@@ -265,7 +267,7 @@ def main():
         for m in doc["muscles"]:
             holders = [(m, (m.get("consensus") or {}).get("innervation"), "consensus")]
             for o in m.get("occurrences", []):
-                holders.append((o, o.get("innervation"), o["taxon"]))
+                holders.append((o, o.get("innervation"), speciesmap.clade_of(o)))
 
             for holder, text, tag in holders:
                 if not text:

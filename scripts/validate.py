@@ -90,6 +90,55 @@ def check_nerves(holder, label, nerves_by_id, source_keys):
     return ids
 
 
+def check_occurrence_name(occ, label, muscle):
+    """An occurrence `name` names ONE thing in one taxon.
+
+    Where it instead enumerates the taxon's several muscles, that list has a
+    structured home already — `parts` for a homology group that has split,
+    `derivatives` for an ancestral fin muscle that became several tetrapod ones
+    — and writing it twice gives one fact two homes. It also leaks: names are
+    indexed at name priority and rendered as the card heading, so a prose list
+    of a dozen muscles came back as the top hit for any one of them, under a
+    paragraph-long title.
+
+    Warnings, not errors. Several of these need a collective term the sources
+    supply and this script cannot invent, so the job is to surface the list, not
+    to force a rewrite.
+    """
+    name = occ.get("name")
+    if not name:
+        return
+
+    parts = [p.get("name", "") for p in occ.get("parts", []) if isinstance(p, dict)]
+    low = name.lower()
+
+    # Re-listing what `parts` already holds. The threshold is three, not two,
+    # because naming a muscle after its two heads is how the sources do it —
+    # "Triceps brachii (scapulotriceps + humerotriceps)", "Deltoideus, pars
+    # acromialis and pars clavicularis" — and those are labels with a
+    # parenthetical, not enumerations standing in for one. At three the name has
+    # stopped being a name.
+    echoed = [p for p in parts if p and p.lower() in low]
+    if len(echoed) >= 3:
+        warn(f"{label}: name re-lists {len(echoed)} of its own `parts` "
+             f"({', '.join(echoed[:3])}{'…' if len(echoed) > 3 else ''}) — "
+             f"the parts are the home for that list")
+        return
+
+    derived = [d for k in ("pectoral", "pelvic")
+               for d in (muscle.get("derivatives", {}) or {}).get(k, [])]
+    if derived and sum(1 for d in derived if d.replace("-", " ") in low) >= 2:
+        warn(f"{label}: name re-lists this fin muscle's `derivatives` — "
+             f"ancestry is curated there and rendered from there")
+        return
+
+    # A list shape with no structured home at all: the list is the only record
+    # of the split, and nothing can count it.
+    if not parts and (low.count(";") >= 2 or low.count(",") >= 2):
+        warn(f"{label}: name looks like a list of several muscles but the "
+             f"occurrence has no `division`/`parts` to hold them")
+
+
 def check_division(occ, label, present, muscles, source_keys):
     """How far this homology group is split in this taxon.
 
@@ -171,6 +220,27 @@ def main():
     joints_doc = load(ROOT / "data/joints.json")
 
     taxon_ids = {t["id"] for t in taxa_doc["taxa"]}
+
+    # Species are the unit of observation; a clade is a rollup over them.
+    species_doc = load(ROOT / "data/species.json")
+    species_ids, species_clade = set(), {}
+    for sp in species_doc["species"]:
+        sid = sp.get("id")
+        if sid in species_ids:
+            err(f"species.json: duplicate id '{sid}'")
+        species_ids.add(sid)
+        if sp.get("clade") not in taxon_ids:
+            err(f"species.json:{sid}: clade '{sp.get('clade')}' is not a taxon in taxa.json")
+        species_clade[sid] = sp.get("clade")
+        for field in ("binomial", "clade"):
+            if not sp.get(field):
+                err(f"species.json:{sid}: missing `{field}`")
+
+    # Every operational taxon needs at least one species, or it can never be
+    # rolled up from anything.
+    for tid in taxon_ids:
+        if tid not in set(species_clade.values()):
+            warn(f"taxa.json:{tid}: no species in species.json rolls up into it")
     source_keys = {s["key"] for s in sources_doc["sources"]}
     # Collapsing the list into a set hides a repeated key, and a repeated key is
     # a live bug rather than clutter: the app builds its bibliography as a Map,
@@ -471,14 +541,21 @@ def main():
 
         check_rows(m.get("attachments", {}), where)
 
-        seen_taxa = Counter()
+        # An occurrence is one SPECIES observed by one set of sources. The clade
+        # it rolls up into is derived from species.json and is never stored — a
+        # muscle may therefore carry several rows for one clade (Gallus, the
+        # ostrich, the tinamou, a penguin), and their agreement or disagreement
+        # is what produces the clade's presence state.
+        seen_species = Counter()
         for occ in m.get("occurrences", []):
-            tid = occ.get("taxon")
-            if tid not in taxon_ids:
-                err(f"{where}: occurrence references unknown taxon '{tid}'")
-            seen_taxa[tid] += 1
+            sid = occ.get("species")
+            if sid not in species_ids:
+                err(f"{where}: occurrence references unknown species '{sid}'")
+                continue
+            tid = species_clade[sid]
+            seen_species[sid] += 1
 
-            check_rows(occ.get("attachments", {}), f"{where}/{tid}", taxon=tid)
+            check_rows(occ.get("attachments", {}), f"{where}/{sid}", taxon=tid)
 
             arch = occ.get("architecture")
             if arch:
@@ -502,8 +579,9 @@ def main():
             if pres not in PRESENCE:
                 err(f"{where}/{tid}: present='{pres}' not in {sorted(PRESENCE)}")
 
-            check_division(occ, f"{where}/{tid}", pres, muscles, source_keys)
-            check_nerves(occ, f"{where}/{tid}", nerves_by_id, source_keys)
+            check_division(occ, f"{where}/{sid}", pres, muscles, source_keys)
+            check_occurrence_name(occ, f"{where}/{sid}", m)
+            check_nerves(occ, f"{where}/{sid}", nerves_by_id, source_keys)
 
             if pres != "no" and not occ.get("sources"):
                 warn(f"{where}/{tid}: present but no source cited")
@@ -512,13 +590,19 @@ def main():
                 if key not in source_keys:
                     err(f"{where}/{tid}: unknown source key '{key}'")
 
-            # A present muscle should be named in that taxon, else the row says nothing.
-            if pres in {"yes", "inferred"} and not occ.get("name"):
+            # A present muscle should be named in that taxon, else the row says
+            # nothing — UNLESS it has no single name there to give. An ancestral
+            # fin muscle present in a tetrapod is the field that became several
+            # muscles, and those several are in `derivatives`. Demanding a name
+            # is what put a prose list of them in this slot in the first place.
+            subdivided = any((m.get("derivatives") or {}).get(k)
+                             for k in ("pectoral", "pelvic"))
+            if pres in {"yes", "inferred"} and not occ.get("name") and not subdivided:
                 warn(f"{where}/{tid}: present='{pres}' but no local name given")
 
-        for tid, n in seen_taxa.items():
+        for sid, n in seen_species.items():
             if n > 1:
-                err(f"{where}: taxon '{tid}' appears in {n} occurrence rows")
+                err(f"{where}: species '{sid}' appears in {n} occurrence rows")
 
         hom = m.get("homology", {})
         conf = hom.get("confidence")

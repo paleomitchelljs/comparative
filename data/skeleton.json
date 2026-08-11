@@ -49,8 +49,19 @@
       "partOf": "pectoral-girdle",
       "presence": {
         "default": "yes",
+        "absent": [
+          "myxini",
+          "petromyzontida",
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "tetrapodomorpha-stem"
+        ],
+        "note": "Absent as a separate element wherever the undivided scapulocoracoid is the girdle — the fishes and the stem tetrapodomorphs — and absent altogether in the agnathans, which have no paired appendages. `derivedFrom` carries the homology, so a muscle scored on the scapulocoracoid is still reachable from here.",
         "sources": [
-          "chen-etal-2025"
+          "chen-etal-2025",
+          "diogo-etal-2016"
         ]
       },
       "derivedFrom": "scapulocoracoid"
@@ -162,7 +173,7 @@
       "kind": "cartilage",
       "region": "pectoral",
       "segment": "girdle",
-      "partOf": "pectoral-girdle",
+      "partOf": "scapula",
       "presence": {
         "default": "no",
         "present": [
@@ -208,11 +219,19 @@
       "presence": {
         "default": "yes",
         "absent": [
+          "myxini",
+          "petromyzontida",
+          "chondrichthyes",
+          "actinopterygii",
+          "actinistia",
+          "dipnoi",
+          "tetrapodomorpha-stem",
           "theria"
         ],
-        "note": "Lost as an independent ossification in therians, surviving only as the coracoid process of the scapula. This single loss forces the origin of the supracoracoideus onto the lateral scapula and removes the coracoid head of the subcoracoscapularis — the clearest case in the dataset of an attachment moving because its bone disappeared.",
+        "note": "Two different absences. In the fishes and stem tetrapodomorphs there is no separate coracoid because the girdle is an undivided scapulocoracoid; `derivedFrom` carries that homology. In therians it is a genuine loss — an independent ossification surviving only as the coracoid process of the scapula, which forces the origin of the supracoracoideus onto the lateral scapula and removes the coracoid head of the subcoracoscapularis. That second case is the clearest example in the dataset of an attachment moving because its bone disappeared.",
         "sources": [
           "chen-etal-2025",
+          "diogo-etal-2016",
           "fahn-lai-etal-2020",
           "gambaryan-etal-2015"
         ]
@@ -3474,6 +3493,81 @@
           "bodenham-etal-2026"
         ]
       }
+    },
+    {
+      "id": "tuber-superius",
+      "label": "Tuber superius",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "ilium",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "Dorsal prominence of the anuran iliac shaft at the junction with the acetabular portion. It carries the shared origin of the iliofibularis and iliofemoralis on its posterolateral surface and the origin of the glutaeus maximus on its dorsolateral surface — three muscles on one process, which is what makes it worth scoring separately from the ilium."
+      }
+    },
+    {
+      "id": "crista-femoralis",
+      "label": "Crista femoralis",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "Crest running posteriorly from the proximal anuran femur, carrying the insertion of the iliofemoralis on its dorsal surface."
+      }
+    },
+    {
+      "id": "knee-aponeurosis",
+      "label": "Knee aponeurosis",
+      "kind": "aponeurosis",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "The common aponeurotic sheet over the anuran knee. Several thigh muscles that in other tetrapods reach bone insert here instead, so a large part of the anuran thigh leaves no osteological trace at its distal end."
+      }
+    },
+    {
+      "id": "tibiofibula",
+      "label": "Tibiofibula",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "correlate": true,
+      "fusedFrom": [
+        "tibia",
+        "fibula"
+      ],
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "Fused tibia and fibula of anurans. Recorded as a compound with `fusedFrom` rather than as `partOf` either component, so a comparison against a taxon with separate bones reads as a fusion of the skeleton and not as a muscle moving."
+      },
+      "transformation": "Tibia and fibula fused into a single element in anurans, one of the skeletal changes tied to the saltatory hindlimb."
     }
   ]
 }

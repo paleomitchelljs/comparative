@@ -46,7 +46,8 @@
       },
       "occurrences": [
         {
-          "taxon": "petromyzontida",
+          "species": "petromyzon-marinus",
+          "speciesBasis": "default",
           "name": "Myomeric axial musculature",
           "present": "yes",
           "note": "Segmental myomeres separated by myosepta, undivided into tracts. Axial-based locomotion in its plesiomorphic form.",
@@ -56,7 +57,8 @@
           "division": "single"
         },
         {
-          "taxon": "chondrichthyes",
+          "species": "callorhinchus-milii",
+          "speciesBasis": "default",
           "name": "Epaxial myomeres",
           "present": "yes",
           "note": "Divided from the hypaxial by the horizontal septum, but still strictly segmental.",
@@ -65,7 +67,8 @@
           ]
         },
         {
-          "taxon": "actinopterygii",
+          "species": "arius-sp",
+          "speciesBasis": "default",
           "name": "Epaxial myomeres",
           "present": "yes",
           "sources": [
@@ -73,7 +76,8 @@
           ]
         },
         {
-          "taxon": "caudata",
+          "species": "ambystoma-mexicanum",
+          "speciesBasis": "default",
           "name": "Dorsalis trunci",
           "present": "yes",
           "note": "Retains much of the segmental fish arrangement; lateral undulation still contributes to locomotion alongside the limbs.",
@@ -82,17 +86,36 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "Dorsalis trunci",
           "present": "yes",
           "note": "Greatly shortened with the reduced presacral column and the urostyle.",
           "sources": [
             "schilling-2011",
             "prikryl-etal-2009"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sacral-vertebrae"
+              },
+              {
+                "element": "vertebral-column",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "urostyle"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Longissimus dorsi, from the sacral and presacral vertebrae onto the urostyle, rotating it dorsally. In anurans the epaxial series has been rebuilt around a rigid trunk and a rod: it moves one bone rather than bending a column."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Transversospinalis, longissimus, iliocostalis",
           "present": "yes",
           "note": "Reorganised into three longitudinal, polysegmental tracts — the amniote condition. Cieri (2018) documents the regionalisation along the varanid column.",
@@ -117,7 +140,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "default",
           "name": "Transversospinalis, longissimus, iliocostalis",
           "present": "yes",
           "sources": [
@@ -140,7 +164,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "cygnus-cygnus",
+          "speciesBasis": "default",
           "name": "Epaxial tracts (reduced)",
           "present": "yes",
           "note": "Much reduced with the rigid synsacrum and shortened tail.",
@@ -149,7 +174,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "Transversospinal system, longissimus, iliocostalis",
           "present": "yes",
           "origin": "Neural spines, transverse processes and the sacrum.",
@@ -265,7 +291,8 @@
       },
       "occurrences": [
         {
-          "taxon": "petromyzontida",
+          "species": "petromyzon-marinus",
+          "speciesBasis": "default",
           "name": "Hypaxial myomeres",
           "present": "yes",
           "sources": [
@@ -273,7 +300,8 @@
           ]
         },
         {
-          "taxon": "chondrichthyes",
+          "species": "callorhinchus-milii",
+          "speciesBasis": "default",
           "name": "Hypaxial myomeres",
           "present": "yes",
           "sources": [
@@ -281,12 +309,15 @@
           ]
         },
         {
-          "taxon": "caudata",
+          "species": "necturus-maculosus",
+          "speciesBasis": "source",
           "name": "Abdominal wall + subvertebral musculature",
           "present": "yes",
           "sources": [
-            "schilling-2011"
+            "schilling-2011",
+            "omura-etal-2014"
           ],
+          "note": "How the hypaxial mass is apportioned tracks habitat across urodeles. Omura et al. weighed every trunk muscle in five species and found the lateral hypaxial layers taking roughly a quarter of trunk muscle mass each in the aquatic Amphiuma and Necturus against under a tenth in the terrestrial Hynobius and Ambystoma, with the rectus abdominis running the other way. The subvertebral portion rises with terrestriality alongside the epaxial mass. Proportions, not attachments — the sample is five species and three habitat classes, so it constrains what the hypaxial mass is FOR without saying where any part of it inserts.",
           "division": "divided",
           "parts": [
             {
@@ -298,7 +329,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Subvertebralis, obliquus externus/internus, transversus abdominis, rectus abdominis, intercostales",
           "present": "yes",
           "note": "Cieri (2018) records the regional differentiation of these along the varanid trunk, which bears on how much of lateral undulation survives alongside limb-driven locomotion.",
@@ -333,7 +365,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "default",
           "name": "Subvertebralis + abdominal wall series",
           "present": "yes",
           "sources": [
@@ -351,7 +384,8 @@
           "partsOpen": true
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "Quadratus lumborum, psoas minor, obliquus externus/internus, transversus abdominis, rectus abdominis, intercostales",
           "present": "yes",
           "action": "The rectus abdominis is the most important sagittal flexor of the mammalian trunk; the subvertebral muscles are correlated with the evolution of a mobile lumbar region.",
@@ -473,7 +507,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-mexicanum",
+          "speciesBasis": "default",
           "name": "Caudal epaxial and hypaxial series",
           "present": "yes",
           "sources": [
@@ -491,7 +526,8 @@
           "partsOpen": true
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "present": "no",
           "note": "Lost with the tail; the urostyle replaces the caudal series.",
           "sources": [
@@ -499,7 +535,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-komodoensis",
+          "speciesBasis": "source",
           "name": "Caudal musculature (ilio-, ischio- and caudofemoralis series)",
           "present": "yes",
           "note": "Tomańska et al. (2024) describe the Komodo dragon tail as a substantial locomotor and defensive organ, with caudal muscle mass contributing counterbalance during bipedal rearing.",
@@ -509,7 +546,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "default",
           "name": "Caudal musculature",
           "present": "yes",
           "sources": [
@@ -517,7 +555,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "cygnus-cygnus",
+          "speciesBasis": "default",
           "name": "Caudal musculature (reduced)",
           "present": "variable",
           "note": "Reduced to the pygostyle and its rectricial muscles.",
@@ -526,12 +565,34 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "present": "variable",
           "note": "Retained in taxa with a muscular tail, reduced in others.",
           "sources": [
-            "schilling-2011"
-          ]
+            "schilling-2011",
+            "ercoli-etal-2012"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "lumbar-vertebrae",
+                "side": "dorsal"
+              },
+              {
+                "element": "sacral-vertebrae"
+              },
+              {
+                "element": "caudal-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "caudal-vertebrae"
+              }
+            ]
+          },
+          "attachmentNote": "The sacrocaudalis series, dorsal and ventral, medial and lateral. The dorsalis medialis is the caudal continuation of the transversospinalis: its most cranial bundle arises from the caudal and dorsal spinous process of the last lumbar vertebra, subsequent bundles from the sacral and caudal spinous processes, inserting on the cranial ends of the anterior articular processes of caudal vertebrae. Each bundle spans about three vertebrae."
         }
       ],
       "homology": {
@@ -605,7 +666,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "M. longissimus dorsi",
           "present": "yes",
           "note": "Cieri (2018) refers the detailed attachment tendons of longissimus, transversospinalis and iliocostalis to Gasc (1981), Ritter (1995) and Tsuihiji (2007) rather than redescribing them.",
@@ -614,7 +676,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "default",
           "name": "M. longissimus dorsi",
           "present": "yes",
           "sources": [
@@ -622,7 +685,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "M. longissimus thoracis et lumborum",
           "present": "yes",
           "sources": [
@@ -698,7 +762,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "note",
           "name": "M. iliocostalis",
           "present": "yes",
           "note": "Cieri (2018) describes it as very thin in Varanus exanthematicus.",
@@ -707,7 +772,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "default",
           "name": "M. iliocostalis",
           "present": "yes",
           "sources": [
@@ -715,7 +781,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "M. iliocostalis",
           "present": "yes",
           "sources": [
@@ -790,7 +857,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "M. transversospinalis",
           "present": "yes",
           "sources": [
@@ -798,7 +866,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "default",
           "name": "M. transversospinalis",
           "present": "yes",
           "sources": [
@@ -806,12 +875,14 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Transversospinal system (multifidus, semispinalis and relatives)",
           "present": "yes",
           "note": "Subdivided into several entities in mammals; Schilling (2011) ties that subdivision to the evolution of a mobile, rib-free lumbar region.",
           "sources": [
-            "schilling-2011"
+            "schilling-2011",
+            "ercoli-etal-2012"
           ],
           "division": "divided",
           "parts": [
@@ -822,7 +893,29 @@
               "name": "Semispinalis"
             }
           ],
-          "partsOpen": true
+          "partsOpen": true,
+          "attachments": {
+            "origin": [
+              {
+                "element": "lumbar-vertebrae",
+                "side": "dorsal"
+              },
+              {
+                "element": "thoracolumbar-fascia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "lumbar-vertebrae",
+                "side": "dorsal"
+              },
+              {
+                "element": "sacral-vertebrae",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Lumbar sector only. The medialmost epaxial series, metameres largely fused with each other and with the thoracic continuation, from the lateral spinous processes and dorsal articular processes of all lumbar vertebrae but the last, plus the lumbodorsal fascia, onto the mammillary processes of the lumbar vertebrae and, for the last bundle, the intermediate sacral crest of S1-2. It is continuous caudally with the sacrocaudalis dorsalis medialis, which is why the tail and the back are one series and not two."
         }
       ],
       "homology": {
@@ -886,7 +979,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "note",
           "name": "M. supracostalis dorsus brevis",
           "present": "yes",
           "origin": "Aponeurosis dividing longissimus from iliocostalis.",
@@ -971,7 +1065,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "iguana-iguana",
+          "speciesBasis": "note",
           "name": "M. levator costae",
           "present": "yes",
           "origin": "Dorsocaudal aspect of the diapophysis.",
@@ -1056,7 +1151,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "note",
           "name": "M. obliquus externus (superficialis + profundus)",
           "present": "yes",
           "note": "Well developed in Varanus exanthematicus. The superficialis covers the lateral body wall; its insertion tendons are continuous with those of the supracostalis dorsus brevis, so the epaxial and hypaxial sheets meet at the rib.",
@@ -1087,7 +1183,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "M. obliquus externus abdominis",
           "present": "yes",
           "sources": [
@@ -1095,10 +1192,12 @@
           ]
         },
         {
-          "taxon": "caudata",
+          "species": "necturus-maculosus",
+          "speciesBasis": "note",
           "present": "yes",
           "sources": [
-            "walthall-ashley-ross-2006"
+            "walthall-ashley-ross-2006",
+            "omura-etal-2014"
           ],
           "name": "Obliquus externus",
           "origin": "Epaxial muscular fascia.",
@@ -1112,6 +1211,25 @@
             ]
           },
           "attachmentNote": "Fibres run dorsoanterior to ventroposterior at about 50 degrees to the body axis. Neither end reaches bone — both attachments are fascial, which is why the layer leaves no osteological correlate.",
+          "division": "variable",
+          "parts": [
+            {
+              "name": "Obliquus externus superficialis",
+              "membership": "variable",
+              "note": "Present as a distinct layer in Amphiuma, Cynops and Ambystoma; absent as such in Necturus and Hynobius, where the external oblique is undivided.",
+              "sources": [
+                "omura-etal-2014"
+              ]
+            },
+            {
+              "name": "Obliquus externus profundus",
+              "membership": "variable",
+              "sources": [
+                "omura-etal-2014"
+              ]
+            }
+          ],
+          "divisionNote": "Omura et al. dissected five urodeles of three habitat types and found the external oblique undivided in Necturus maculosus and Hynobius nigrescens but split into a superficialis and a profundus in Amphiuma tridactylum, Cynops pyrrhogaster and Ambystoma tigrinum. The whole lateral hypaxial stack likewise runs to two, three or four layers depending on species. The split does not track habitat — one aquatic and one terrestrial species share the undivided condition — so it is polymorphic within Caudata rather than a functional grade, and scoring the clade from any one exemplar would manufacture a transition.",
           "note": "Fibre angle is measured, not estimated: roughly 50 degrees to the body axis against roughly 145 degrees for the internal oblique, so the two layers cross at close to a right angle."
         }
       ],
@@ -1177,7 +1295,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Mm. intercostales externi",
           "present": "yes",
           "note": "Fibres course dorsocranially at about 15° above the long axis of the body, covering the costal cartilages of the floating ribs and the dorsal third of the sternal portion of each true rib.",
@@ -1200,7 +1319,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "Mm. intercostales externi",
           "present": "yes",
           "sources": [
@@ -1265,7 +1385,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Mm. intercostales interni",
           "present": "yes",
           "note": "Course caudodorsally at about 60° above the long axis between the dorsal ribs, and parallel to it between the sternal segments of the true ribs.",
@@ -1292,7 +1413,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "Mm. intercostales interni",
           "present": "yes",
           "sources": [
@@ -1360,7 +1482,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "note",
           "name": "M. transversus",
           "present": "yes",
           "note": "The deepest and thinnest of the body-wall muscles in Varanus exanthematicus.",
@@ -1388,7 +1511,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "M. transversus abdominis",
           "present": "yes",
           "sources": [
@@ -1396,7 +1520,8 @@
           ]
         },
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "present": "yes",
           "sources": [
             "walthall-ashley-ross-2006"
@@ -1479,7 +1604,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "M. rectus abdominis (ventralis + lateralis)",
           "present": "yes",
           "note": "Cieri (2018) distinguishes a main ventral belly from a superficial rectus abdominis lateralis; the margin between them carries the origin of the obliquus externus superficialis.",
@@ -1497,7 +1623,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "M. rectus abdominis",
           "present": "yes",
           "sources": [
@@ -1505,11 +1632,14 @@
           ]
         },
         {
-          "taxon": "caudata",
+          "species": "amphiuma-tridactylum",
+          "speciesBasis": "note",
           "present": "yes",
           "sources": [
-            "walthall-ashley-ross-2006"
+            "walthall-ashley-ross-2006",
+            "omura-etal-2014"
           ],
+          "note": "Separable as a discrete muscle only in the more terrestrial urodeles. Omura et al. could not distinguish it from the external and internal obliques in either aquatic species they dissected — Amphiuma tridactylum and Necturus maculosus — while it separated cleanly in the semi-aquatic Cynops and the terrestrial Hynobius and Ambystoma. It is also much the smallest share of trunk muscle mass in the aquatic species and the largest in the terrestrial ones, which is the load-bearing reading: a body held off the ground needs a ventral tie between the girdles, and a swimming one does not. The description below is Taricha torosa, where it is discrete.",
           "name": "Rectus abdominis",
           "origin": "Anterior border of the pubo-ischiac plate and the ypsiloid cartilage.",
           "insertion": "Sternum and pericardium superficially; the deep portion runs on as the rectus cervicis profundus to the hyoid.",
@@ -1587,7 +1717,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Obliquus internus",
           "present": "yes",
           "origin": "Connective tissue deep to the obliquus externus.",
@@ -1654,7 +1785,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Ypsiloideus",
           "present": "yes",
           "origin": "Anterior edge of the medial pubis.",

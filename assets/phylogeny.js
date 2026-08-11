@@ -34,13 +34,19 @@ function allNodes(node, out = []) {
    whatever the rest of the tree implies. */
 const STATE_PRESENT = 1, STATE_ABSENT = 0;
 
+/* Tips are clades, and a clade's state is the ROLLUP of its species — so a
+   muscle present in Gallus and absent in the ostrich makes Aves polymorphic,
+   computed from the two rows rather than from someone having typed `variable`.
+   That is the whole reason for scoring species: the disagreement is data, and
+   Fitch should see it as {absent, present} and place no transition on it. */
 function tipStates(muscle) {
   const out = new Map();
-  for (const occ of muscle.occurrences || []) {
-    const p = occ.present || 'yes';
-    if (p === 'yes') out.set(occ.taxon, new Set([STATE_PRESENT]));
-    else if (p === 'no') out.set(occ.taxon, new Set([STATE_ABSENT]));
-    else out.set(occ.taxon, new Set([STATE_ABSENT, STATE_PRESENT]));   // variable / uncertain / inferred
+  const clades = new Set((muscle.occurrences || []).map(o => o.taxon).filter(Boolean));
+  for (const clade of clades) {
+    const p = presenceFor(muscle, clade);
+    if (p === 'yes') out.set(clade, new Set([STATE_PRESENT]));
+    else if (p === 'no') out.set(clade, new Set([STATE_ABSENT]));
+    else if (p) out.set(clade, new Set([STATE_ABSENT, STATE_PRESENT]));
   }
   return out;
 }

@@ -22,6 +22,8 @@ the bone, per the rule in METHODS.md that an ambiguous term asserts no landmark.
 """
 import json, pathlib, sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = ["klinkhamer-etal-2017"]
 
@@ -121,7 +123,7 @@ def main():
         for m in doc["muscles"]:
             spec = SEED.get(m["id"])
             if not spec: continue
-            occ = next((o for o in m["occurrences"] if o["taxon"] == "crocodylia"), None)
+            occ = next((o for o in m["occurrences"] if speciesmap.clade_of(o) == "crocodylia"), None)
             if occ is None:
                 print(f"  MISS  {m['id']}: no crocodylia occurrence"); continue
             if occ.get("attachments"):

@@ -56,5 +56,6 @@ python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
   step "13. validate"
-  python3 scripts/validate.py
+  python3 scripts/attribute_species.py --write
+python3 scripts/validate.py
 fi

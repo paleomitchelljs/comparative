@@ -125,6 +125,32 @@ console.log('Search index and ranking');
      'an unknown term kind defaults to the prose band, never to the name band');
 })();
 
+/* --- specificity: the tiebreak within a band --- */
+
+(() => {
+  /* Both are word-prefix hits on a taxon name, so the match classes are equal
+     and only length separates them. An occurrence name that enumerated a dozen
+     muscles used to tie with a record actually called that, and won on the
+     alphabetical fallback. */
+  const bare = scoreTerm('tenuissimus', 'tenuissimus', ['tenuissimus'], 'taxon-name');
+  const buried = scoreTerm(
+    'part of triceps extensor antebrachii et carpi ulnaris forelimb tenuissimus ' +
+    'extensor cruris et tarsi fibularis hindlimb',
+    'tenuissimus', ['tenuissimus'], 'taxon-name');
+  ok(bare < buried, 'a bare name beats the same word buried in a long one',
+     `bare ${bare} vs buried ${buried}`);
+})();
+
+(() => {
+  /* And it must never reorder across bands: the longest possible name still
+     outranks the shortest possible prose match. */
+  const longName = scoreTerm('x'.repeat(500), 'x', ['x'], 'name');
+  const shortProse = scoreTerm('x', 'x', ['x'], 'action');
+  ok(longName < shortProse,
+     'specificity never lets a name fall into the prose band',
+     `name ${longName} vs prose ${shortProse}`);
+})();
+
 /* --- no false positives --- */
 
 (() => {

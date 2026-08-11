@@ -35,6 +35,8 @@ import json
 import pathlib
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SKELETON = ROOT / "data" / "skeleton.json"
 MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
@@ -107,7 +109,7 @@ def main():
     for path, mdoc in muscle_docs.items():
         for m in mdoc["muscles"]:
             holders = [("consensus", m)] + [
-                (o["taxon"], o) for o in m.get("occurrences", [])]
+                (speciesmap.clade_of(o), o) for o in m.get("occurrences", [])]
             for tag, holder in holders:
                 att = holder.get("attachments") or {}
                 for side_key in ("origin", "insertion"):

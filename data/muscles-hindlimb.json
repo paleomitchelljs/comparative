@@ -52,7 +52,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Puboischiofemoralis internus",
           "present": "yes",
           "sources": [
@@ -82,7 +83,8 @@
           "attachmentNote": "Passes anterior to the ilium to reach the hip. The pubo-ischiac plate is the fused ventral pelvic plate; it is scored here as pubis plus ischium, following the paper's own gloss of the ischium as the plate's posterior portion."
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "Puboischiofemoralis internus A–D",
           "present": "yes",
           "note": "Prikryl et al. (2009) letter codes are used deliberately in place of the mammalian-sounding names ('iliacus', 'sartorius', 'pectineus') that earlier authors applied to these muscles, because those names imply homologies that do not hold. The anuran iliacus externus and internus belong to this field. Note the unresolved 'pectineus' — Noble (1922) placed it here, others in the externus.",
@@ -104,10 +106,30 @@
             {
               "name": "Puboischiofemoralis internus D"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "medial"
+              },
+              {
+                "element": "ilium",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Iliacus internus and externus, which between them are this record's anuran occurrence. Internus arises on the inner surface of the ilium opposite the anterior acetabulum — variably instead on the anterior rounded margin of the acetabular portion — runs over the anterior acetabular margin and inserts along the proximal anteroventral femur beneath the iliacus externus. Externus arises on the iliac shaft."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Puboischiofemoralis internus",
           "present": "yes",
           "sources": [
@@ -115,7 +137,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Puboischiofemoralis internus",
           "present": "yes",
           "sources": [
@@ -123,7 +146,8 @@
           ]
         },
         {
-          "taxon": "pseudosuchia-stem",
+          "species": "prestosuchus-chiniquensis",
+          "speciesBasis": "source",
           "name": "Puboischiofemoralis internus (PIFI 2)",
           "present": "inferred",
           "sources": [
@@ -141,7 +165,8 @@
           "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Puboischiofemoralis internus",
           "present": "yes",
           "sources": [
@@ -149,7 +174,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "M. iliofemoralis internus + iliotrochantericus cranialis",
           "present": "yes",
           "sources": [
@@ -168,7 +194,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Iliacus + psoas major (+ sartorius)",
           "present": "yes",
           "origin": "Iliac fossa; bodies and transverse processes of T12–L5.",
@@ -177,7 +204,8 @@
           "innervation": "Femoral nerve (L2–L4); direct branches L1–L3.",
           "note": "Diogo & Molnar follow Walker & Homberger (1997) in deriving the mammalian sartorius from the ANTERIOR HEAD of puboischiofemoralis internus — not from the reptilian 'ambiens', as is commonly stated.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "division": "divided",
           "parts": [
@@ -204,7 +232,30 @@
               "joint": "hip",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "lumbar-vertebrae",
+                "side": "ventral"
+              },
+              {
+                "element": "ilium",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "landmark": "lesser-trochanter"
+              },
+              {
+                "element": "femur",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Iliopsoas: the psoas major head from the ventrolateral bodies and transverse-process bases of the last two or three lumbar vertebrae, the iliacus head from the arcuate line and ventral margin of the ilium, the two fusing before a common insertion on the lesser trochanter and secondarily the femoral neck. The sartorius, which this record's Theria occurrence also carries, runs instead from the iliac wing to the patella and the medial cnemial crest, and its rows are not merged in here."
         }
       ],
       "homology": {
@@ -294,7 +345,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Puboischiofemoralis externus",
           "present": "yes",
           "note": "Deeply blended with the 'pubofemoralis' (= adductor femoris) in Necturus (Walker 1954).",
@@ -325,17 +377,32 @@
           "attachmentNote": "An insertion covering two-thirds of the femoral shaft. Extensive fleshy attachments like this one are why femoral muscle scars in salamanders are poor guides to muscle boundaries."
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "Puboischiofemoralis externus",
           "present": "yes",
           "sources": [
             "diogo-molnar-2014",
             "prikryl-etal-2009"
           ],
-          "note": "Přikryl et al. (2009) note that the anuran 'pectineus' was identified as puboischiofemoralis EXTERNUS by Hoffmann (1873-78) and Iordansky & Morozov (1994), but as puboischiofemoralis INTERNUS by Noble (1922). The primary literature disagrees about which of the two it is, not merely about what to call it."
+          "note": "Přikryl et al. (2009) note that the anuran 'pectineus' was identified as puboischiofemoralis EXTERNUS by Hoffmann (1873-78) and Iordansky & Morozov (1994), but as puboischiofemoralis INTERNUS by Noble (1922). The primary literature disagrees about which of the two it is, not merely about what to call it.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Scored from the muscle Prikryl et al. call the pectineus, which Hoffmann and Iordansky & Morozov call the puboischiofemoralis externus — one of the twelve or so anuran names that mean something different in the mammalian literature. Ischium to femur; the review table does not resolve either end further."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Puboischiofemoralis externus",
           "present": "yes",
           "sources": [
@@ -343,7 +410,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Puboischiofemoralis externus",
           "present": "yes",
           "sources": [
@@ -351,7 +419,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Puboischiofemoralis externus",
           "present": "yes",
           "sources": [
@@ -359,7 +428,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "M. obturatorius lateralis + medialis",
           "present": "yes",
           "sources": [
@@ -378,7 +448,8 @@
           ]
         },
         {
-          "taxon": "synapsida-stem",
+          "species": "dimetrodon-sp",
+          "speciesBasis": "source",
           "name": "Puboischiofemoralis externus",
           "present": "inferred",
           "note": "Reconstructed from the ventral pelvic plate and the trochanteric region; its relative size is one of the variables Bishop & Pierce use to infer posture.",
@@ -387,7 +458,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Obturator externus, quadratus femoris, gemelli",
           "present": "yes",
           "origin": "External surface of the obturator membrane and adjacent pubis and ischium.",
@@ -395,7 +467,8 @@
           "action": "Laterally rotates the thigh; stabilises the hip.",
           "innervation": "Obturator nerve (L3–L4).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "division": "divided",
           "parts": [
@@ -426,7 +499,34 @@
               "joint": "hip",
               "motion": "stabilisation"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "side": "lateral"
+              },
+              {
+                "element": "ischium",
+                "landmark": "ischial-tuberosity"
+              },
+              {
+                "element": "pubis",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "landmark": "trochanteric-fossa"
+              },
+              {
+                "element": "femur",
+                "landmark": "greater-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Three muscles on one field. Obturator externus from the cranial, ventral and caudal margins of the obturator foramen on the lateral pelvis to the deep trochanteric fossa; quadratus femoris from the caudal lateral ischium to the caudodistal greater trochanter and distolateral fossa; gemelli from the ischial tuberosity and ischial body to the proximal fossa. All three reach the hip joint capsule."
         }
       ],
       "homology": {
@@ -507,7 +607,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
@@ -515,17 +616,36 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
             "diogo-molnar-2014",
             "leavey-etal-2024",
             "prikryl-etal-2009"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral",
+                "landmark": "tuber-superius"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "dorsal",
+                "landmark": "crista-femoralis"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Shares its origin on the posterolateral tuber superius with the iliofibularis — the two are slender and closely bound — and inserts on the dorsal surface of the crista femoralis, the crest running posteriorly from the proximal femur. Both ends are on named anuran processes, so this is one of the few thigh muscles here that leaves a correlate at each end."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
@@ -533,7 +653,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
@@ -556,7 +677,8 @@
           "attachmentNote": "From the anterior iliac blade, sharing an intramuscular septum with the puboischiotibialis; the belly wraps the posterior femoral border to insert proximally. Femur abductor, active in swing."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
@@ -579,7 +701,8 @@
           "attachmentNote": "Origin on the lateral ilium; the femorotibialis internus tendon arises distal and anterior to it, which is the landmark Klinkhamer et al. use to separate the two."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. iliofemoralis externus",
           "present": "yes",
           "sources": [
@@ -617,7 +740,8 @@
           }
         },
         {
-          "taxon": "synapsida-stem",
+          "species": "dimetrodon-sp",
+          "speciesBasis": "source",
           "name": "Iliofemoralis",
           "present": "inferred",
           "note": "Its expansion, tracked through the enlargement of the iliac blade, is central to Bishop & Pierce's argument that erect hindlimb posture was acquired late in the therian stem lineage.",
@@ -647,7 +771,8 @@
           "attachmentNote": "Expansion of the iliac blade along the synapsid stem tracks the enlargement of this field and the shift toward erect posture."
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "source",
           "name": "Gluteus medius + gluteus minimus",
           "present": "yes",
           "origin": "Gluteal surface of the ilium.",
@@ -832,7 +957,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Caudofemoralis",
           "present": "yes",
           "sources": [
@@ -858,7 +984,8 @@
           "attachmentNote": "The origin has a countable segmental address — caudals four and five — which is rare in this dataset and is what makes the caudofemoralis tractable in fossils. The insertion is given as the femoral crista ventralis; whether that ridge is the same structure as the amniote fourth trochanter is not settled here, so no landmark is asserted."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Reduced with the loss of the tail; the urostyle replaces the caudal series.",
           "sources": [
@@ -867,7 +994,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Caudofemoralis",
           "present": "yes",
           "sources": [
@@ -887,7 +1015,8 @@
           }
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Caudofemoralis longus + brevis",
           "present": "yes",
           "action": "Primary femoral retractor; drives the propulsive stroke in lizard locomotion.",
@@ -920,7 +1049,8 @@
           ]
         },
         {
-          "taxon": "crocodylomorph-stem",
+          "species": "galahadosuchus-sp",
+          "speciesBasis": "source",
           "name": "Caudofemoralis",
           "present": "inferred",
           "sources": [
@@ -937,7 +1067,8 @@
           }
         },
         {
-          "taxon": "crocodyliform-stem",
+          "species": "pissarrachampsa-sera",
+          "speciesBasis": "source",
           "name": "Caudofemoralis",
           "present": "inferred",
           "sources": [
@@ -954,7 +1085,8 @@
           "attachmentNote": "A rough convexity identified as the fourth trochanter, continuing distally as a faint ridge bearing insertion scars."
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Caudofemoralis longus + brevis",
           "present": "yes",
           "note": "Large and well developed; inserts on a prominent fourth trochanter.",
@@ -993,7 +1125,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. caudofemoralis pars caudalis + pars pelvica",
           "present": "yes",
           "note": "Greatly reduced with the shortening of the tail to the pygostyle and the shift to a knee-driven, femur-held-horizontal gait. Its reduction is a defining event in the theropod–bird locomotor transition. Allen et al. (2021) split the avian muscle into pars caudalis (= crocodylian caudofemoralis longus) and pars pelvica (= brevis). Its leverage declines across several nodes along the bird line.",
@@ -1040,7 +1173,8 @@
           ]
         },
         {
-          "taxon": "synapsida-stem",
+          "species": "dimetrodon-sp",
+          "speciesBasis": "source",
           "name": "Caudofemoralis",
           "present": "inferred",
           "note": "Progressive reduction along the synapsid stem, tracked through the reduction of the fourth trochanter.",
@@ -1064,11 +1198,13 @@
           "attachmentNote": "Progressive reduction of the fourth trochanter along the synapsid stem tracks the loss of tail-driven femoral retraction."
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "present": "variable",
-          "note": "Largely lost; the fourth trochanter is absent. A caudofemoralis persists in some marsupials and in taxa with muscular tails. The piriformis has been proposed as a remnant.",
+          "note": "Largely lost; the fourth trochanter is absent. A caudofemoralis persists in some marsupials and in taxa with muscular tails. The piriformis has been proposed as a remnant. Ercoli et al. dissected six hind limbs of the mustelid Galictis cuja — a carnivoran with a long, well-muscled tail, where a persistent gluteofemoralis would be least surprising — and record it as absent. In three of the six the caudal portion of the gluteus superficialis divided into extra bellies, which they suggest may be its remnant. A second candidate remnant, and one that disagrees with the piriformis proposal.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ]
         }
       ],
@@ -1161,7 +1297,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensor iliotibialis",
           "present": "yes",
           "note": "Single-headed in Taricha, against the two heads (pars anterior and posterior) usual in Cryptobranchus, Necturus, Salamandra, Pseudoeurycea, Ambystoma and Dicamptodon. The split tracks limb robustness rather than habitat or phylogeny: slender-limbed salamanders (Amphiuma, Typhlomolge, Bolitoglossa, Taricha) have one head, robust-limbed ones two, and aquatic and terrestrial species occur in both groups. Smith (1927) reported two heads in the congener Taricha granulosa, so the character may vary within the genus.",
@@ -1199,7 +1336,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "Extensor iliotibialis A/B",
           "present": "yes",
           "note": "Diogo & Molnar use letter codes rather than the mammalian names ('gluteus maximus', 'tensor fasciae latae') applied by earlier authors, because those homologies do not hold. Přikryl et al. (2009) list the anuran muscle as 'glutaeus maximus (iliotibialis)'. It is NOT homologous with the mammalian gluteus maximus — one of the twelve false-friend names Diogo & Molnar (2014) identify.",
@@ -1216,14 +1354,34 @@
             {
               "name": "Extensor iliotibialis B"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium"
+              },
+              {
+                "element": "ilium",
+                "side": "dorsal",
+                "landmark": "tuber-superius"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "knee-aponeurosis"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Cruralis and glutaeus maximus, this record's anuran A/B pair. Cruralis runs from the ilium to the knee aponeurosis; glutaeus maximus from the dorsolateral tuber superius onto the fascia of the distal cruralis rather than onto bone. Prikryl et al. note the glutaeus maximus origin is the one marked on their pelvic figure — it is a scoreable correlate."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Iliotibialis (+ femorotibialis, + 'ambiens')",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
           ],
           "division": "divided",
           "parts": [
@@ -1240,10 +1398,32 @@
               "membership": "disputed",
               "muscle": "ambiens"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              },
+              {
+                "element": "pubis"
+              },
+              {
+                "element": "femur"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. The whole knee-extensor field this record covers in lizards: iliotibialis from the lateral ilium by a broad aponeurosis, 'ambiens' aponeurotically from the pubis and proximoventral femur, femorotibialis from the femoral shaft by four bellies surrounding it. All three converge tendinously on the lateral surface of the tibial condyle."
         },
         {
-          "taxon": "crocodyliform-stem",
+          "species": "pissarrachampsa-sera",
+          "speciesBasis": "source",
           "name": "Iliotibialis 1 and 2",
           "present": "inferred",
           "sources": [
@@ -1261,7 +1441,8 @@
           "attachmentNote": "Rugosities on the dorsal surface of the supraacetabular crest. Godoy et al. note the surface is unusually extensively rugose in P. sera, implying a larger attachment area than in comparable notosuchians."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Iliotibialis",
           "present": "yes",
           "sources": [
@@ -1284,7 +1465,8 @@
           "attachmentNote": "Iliotibialis 3 arises deep to iliotibialis 2 on the central lateral ilium by tendon and inserts fleshy onto the distal third of the dorso-lateral femur."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. iliotibialis cranialis + lateralis",
           "present": "yes",
           "sources": [
@@ -1347,7 +1529,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "source",
           "name": "Rectus femoris + tensor fasciae latae",
           "present": "yes",
           "origin": "Anterior inferior iliac spine (rectus femoris); iliac crest (tensor fasciae latae).",
@@ -1356,7 +1539,8 @@
           "innervation": "Femoral nerve (L2–L4); superior gluteal nerve (tensor fasciae latae).",
           "sources": [
             "diogo-molnar-2014",
-            "hudson-etal-2011b"
+            "hudson-etal-2011b",
+            "ercoli-etal-2012"
           ],
           "architecture": {
             "species": "Acinonyx jubatus",
@@ -1414,7 +1598,24 @@
               "joint": "knee",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "patella",
+                "side": "anterior"
+              },
+              {
+                "element": "iliotibial-tract"
+              }
+            ]
+          },
+          "attachmentNote": "Rectus femoris from the quadriceps tuberosity of the ilium and the cranial hip capsule to the anterodorsal patellar margin; tensor fasciae latae from a small area of the iliac wing, inserting not on bone but through the fascia lata onto gluteus superficialis, biceps femoris, sartorius and the crural fascia."
         }
       ],
       "homology": {
@@ -1494,7 +1695,8 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-komodoensis",
+          "speciesBasis": "note",
           "name": "M. iliofibularis",
           "present": "yes",
           "origin": "Posterior abdominal margin of the ilium.",
@@ -1520,7 +1722,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "M. iliofibularis",
           "present": "yes",
           "note": "Its insertion marks the iliofibular tubercle on the fibular shaft, which Pereyra et al. (2024) use as the landmark for the fibularis longus origin.",
@@ -1545,7 +1748,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. iliofibularis",
           "present": "yes",
           "note": "Name retained across the crocodylian–avian transition. Allen et al. (2021) find knee-flexor leverage declining relative to knee extensors along the bird line, which is the leverage change underlying the shift from hip-driven to knee-driven propulsion.",
@@ -1582,16 +1786,37 @@
           }
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "present": "yes",
           "name": "iliofibularis",
           "note": "Present in anurans under the same name; Přikryl et al. (2009) describe it attaching to the knee aponeurosis, partly covering the head of the fibula.",
           "sources": [
             "prikryl-etal-2009"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral",
+                "landmark": "tuber-superius"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "knee-aponeurosis"
+              },
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. The dorsal member of the iliofibularis/iliofemoralis pair, sharing their origin on the tuber superius. Its distal half is exposed and attaches into the knee aponeurosis, in part covering the head of the fibula — so the fibular attachment is by way of the aponeurosis rather than directly onto bone."
         },
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "present": "yes",
           "sources": [
             "walthall-ashley-ross-2006"
@@ -1705,7 +1930,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Not separated from the extensor iliotibialis in salamanders under the Gadow/Walker/Diogo & Molnar reading.",
           "sources": [
@@ -1713,7 +1939,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Femorotibialis",
           "present": "yes",
           "sources": [
@@ -1737,7 +1964,8 @@
           "attachmentNote": "Fleshy origin along the entire femoral shaft; joins the iliotibialis tendon to insert on the cnemial crest. Knee extensor, active in both stance and swing."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Femorotibialis",
           "present": "yes",
           "sources": [
@@ -1761,7 +1989,8 @@
           "attachmentNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. femorotibialis lateralis + medialis",
           "present": "yes",
           "sources": [
@@ -1840,7 +2069,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "source",
           "name": "Vastus lateralis, medialis and intermedius",
           "present": "yes",
           "origin": "Greater trochanter, linea aspera, and anterior/lateral femoral shaft.",
@@ -1849,7 +2079,8 @@
           "innervation": "Femoral nerve (L2–L4).",
           "sources": [
             "diogo-molnar-2014",
-            "hudson-etal-2011b"
+            "hudson-etal-2011b",
+            "ercoli-etal-2012"
           ],
           "architecture": {
             "species": "Acinonyx jubatus",
@@ -1936,7 +2167,29 @@
               "joint": "knee",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur",
+                "side": "anterior"
+              },
+              {
+                "element": "femur",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "patella"
+              },
+              {
+                "element": "tibia",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "The three vasti, all femoral in origin and patellar in insertion — which is the character that separates them from the rectus femoris head of the same complex. Vastus lateralis from the cranioproximal femur medial to the greater trochanter base, to the lateral patellar margin and proximolateral tibia; vastus medialis from the craniomedial femoral neck and diaphysis to the medial and mediodistal patella."
         }
       ],
       "homology": {
@@ -2001,7 +2254,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Not present as a separate muscle; part of the undivided extensor iliotibialis.",
           "sources": [
@@ -2009,7 +2263,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-komodoensis",
+          "speciesBasis": "note",
           "name": "'Ambiens'",
           "present": "yes",
           "note": "Reptiles may have both an 'ambiens' and a 'pubifemoralis'; the two names are sometimes used as synonyms (Russell & Bauer 2008), which is a persistent source of confusion.",
@@ -2039,7 +2294,8 @@
           "attachmentNote": "In Varanus komodoensis the muscle has dorsal and ventral heads; the dorsal attaches to the ventral edge of the acetabulum and the ventral lies anteriorly, both converging on the femur at the intertrochanteric fossa."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "'Ambiens'",
           "present": "yes",
           "sources": [
@@ -2062,7 +2318,8 @@
           "attachmentNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. ambiens",
           "present": "yes",
           "note": "In birds the ambiens tendon famously passes to the digital flexors, an arrangement once invoked (incorrectly) as an automatic perching mechanism. Hip flexor and knee extensor; the name is retained across the transition.",
@@ -2116,7 +2373,8 @@
           }
         },
         {
-          "taxon": "theria",
+          "species": "rattus-norvegicus",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Diogo & Molnar reject the classical derivation of the mammalian sartorius from the 'ambiens'; they derive the sartorius from the anterior head of puboischiofemoralis internus (Walker & Homberger 1997).",
           "sources": [
@@ -2195,7 +2453,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "'Pubifemoralis'",
           "present": "yes",
           "note": "Diogo & Molnar's dissections support the amphibian 'pubifemoralis' = reptilian adductor femoris, against the alternative that it corresponds to the 'ambiens'. Both are deep ventral muscles lying just dorsal to the pubotibialis and running from the ventral girdle to the ventral femur; the 'ambiens' is dorsal.",
@@ -2226,7 +2485,8 @@
           "attachmentNote": "Recorded as m. pubifemoralis. The three ventral pelvis-to-femur muscles are separated by their sequence along the femur rather than by distinct attachment sites — internus anterior, pubifemoralis next, externus posterior."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Adductor femoris",
           "present": "yes",
           "sources": [
@@ -2234,7 +2494,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Adductor femoris",
           "present": "yes",
           "sources": [
@@ -2256,7 +2517,8 @@
           "attachmentNote": "From the puboischiadic ligament to the ventral femoral shaft; adducts and protracts the femur, active in both stance and swing."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Adductor femoris",
           "present": "yes",
           "sources": [
@@ -2280,7 +2542,8 @@
           "attachmentNote": "Fleshy at the ventrolateral ischium, tendinous at the ventromedial femur."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "M. puboischiofemoralis medialis + lateralis",
           "present": "yes",
           "sources": [
@@ -2299,7 +2562,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "source",
           "name": "Adductor magnus, longus and brevis",
           "present": "yes",
           "origin": "Inferior pubic ramus and ischial tuberosity.",
@@ -2308,7 +2572,8 @@
           "innervation": "Obturator nerve (L2–L4); the hamstring part of adductor magnus by the tibial division of the sciatic nerve.",
           "sources": [
             "diogo-molnar-2014",
-            "hudson-etal-2011b"
+            "hudson-etal-2011b",
+            "ercoli-etal-2012"
           ],
           "architecture": {
             "species": "Acinonyx jubatus",
@@ -2385,7 +2650,30 @@
               "joint": "hip",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis",
+                "side": "posterior"
+              },
+              {
+                "element": "ischium",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "posterior"
+              },
+              {
+                "element": "femur",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Adductor magnus and adductor brevis share a small origin on the caudal ramus of the pubis and the ischial ramus. Magnus inserts on the distal caudal femur in two areas just proximal to the condyles, sharing fibres with semimembranosus; brevis on the proximal third of the lateral femur. Adductor longus lies between pectineus and magnus and its origin is not scored here."
         }
       ],
       "homology": {
@@ -2457,7 +2745,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "'Ischiofemoralis'",
           "present": "yes",
           "note": "Most authors (and Diogo & Molnar) hold that the amphibian 'ischiofemoralis' corresponds to the reptilian ischiotrochantericus; Gadow (1882) was a minority voice for adductor femoris. Walker (1954, p. 94) defends the ischiotrochantericus reading.",
@@ -2484,7 +2773,34 @@
           "attachmentNote": "Recorded as m. ischiofemoralis, and the passage that fixes the plate's composition: the paper equates the ischium with the plate's posterior portion, which is what licenses scoring the plate as pubis plus ischium throughout."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
+          "name": "Ischiotrochantericus",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "landmark": "ischial-tuberosity"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "proximal",
+                "landmark": "fourth-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the ischial tuberosity onto the proximal edge of the trochanter; in Gekko onto its distal edge."
+        },
+        {
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Ischiotrochantericus",
           "present": "yes",
           "sources": [
@@ -2492,15 +2808,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
-          "name": "Ischiotrochantericus",
-          "present": "yes",
-          "sources": [
-            "diogo-molnar-2014"
-          ]
-        },
-        {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "M. ischiofemoralis",
           "present": "yes",
           "sources": [
@@ -2510,7 +2819,8 @@
           "note": "Hip extensor and lateral rotator."
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Obturator internus (+ gemelli)",
           "present": "yes",
           "origin": "Internal surface of the obturator membrane and adjacent ischium and pubis.",
@@ -2518,7 +2828,8 @@
           "action": "Laterally rotates the extended thigh; abducts the flexed thigh.",
           "innervation": "Nerve to obturator internus (L5–S2).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "division": "divided",
           "parts": [
@@ -2550,7 +2861,26 @@
               "joint": "hip",
               "motion": "rotation-lateral"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "side": "medial"
+              },
+              {
+                "element": "pubis",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "landmark": "trochanteric-fossa"
+              }
+            ]
+          },
+          "attachmentNote": "Obturator internus from the medial surface of the obturator foramen, turning over the dorsal margin of the ischium to reach the proximal trochanteric fossa. Frequently divided into two bellies near the origin and partially fused there with the gemelli, which this dataset assigns to the puboischiofemoralis externus — the membership dispute the parts list records."
         }
       ],
       "homology": {
@@ -2627,7 +2957,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Puboischiotibialis",
           "present": "yes",
           "sources": [
@@ -2669,7 +3000,8 @@
           "divisionNote": "Divided into proximal and distal sections by a tendinous inscription at about the level of the acetabulum in Taricha. Francis (1934) and Mivart (1869) describe it as an undivided sheet in Salamandra and Cryptobranchus, so the inscription is not general to salamanders."
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "Gracilis major + gracilis minor",
           "present": "yes",
           "note": "Two heads in anurans versus one in mammals. Both derive from the puboischiotibialis, but via different heads — so the anuran and mammalian 'gracilis' are not straightforwardly equivalent. The anuran gracilis major is Mivart's and Iordansky & Morozov's puboischiotibialis (Přikryl et al. 2009).",
@@ -2685,10 +3017,54 @@
             {
               "name": "Gracilis minor"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "knee-aponeurosis"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Gracilis major and gracilis minor, both ischium to knee aponeurosis. Mivart and Iordansky & Morozov call the major one the puboischiotibialis, which is this record's name."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
+          "name": "Puboischiotibialis",
+          "present": "yes",
+          "sources": [
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis"
+              },
+              {
+                "element": "puboischiadic-ligament"
+              },
+              {
+                "element": "ilioischiadic-ligament"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the pubic tubercle and both pelvic ligaments, tendinously onto the proximal tibial shaft. Two of its three origins are ligament rather than bone, which is why it leaves little for a fossil reconstruction to find."
+        },
+        {
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Puboischiotibialis",
           "present": "yes",
           "sources": [
@@ -2696,15 +3072,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
-          "name": "Puboischiotibialis",
-          "present": "yes",
-          "sources": [
-            "diogo-molnar-2014"
-          ]
-        },
-        {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Gracilis",
           "present": "yes",
           "origin": "Body and inferior ramus of the pubis.",
@@ -2712,7 +3081,8 @@
           "action": "Adducts the thigh; flexes and medially rotates the leg.",
           "innervation": "Obturator nerve (L2–L4).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "division": "single",
           "divisionNote": "One head, against two in anurans (Prikryl et al. 2009).",
@@ -2735,7 +3105,22 @@
               "joint": "knee",
               "motion": "rotation-medial"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Gracilis: a band from the ventral pelvic symphysis, fusing cranially with the insertion of the abdominal muscles, to the craniomedial tibia just proximal to the semitendinosus insertion."
         }
       ],
       "homology": {
@@ -2825,7 +3210,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Ischioflexorius",
           "present": "yes",
           "sources": [
@@ -2855,7 +3241,8 @@
           "note": "Only the distal section is fully separable from the puboischiotibialis in Taricha; the proximal section is incompletely divided from it and resists mechanical separation. Pseudoeurycea, Bolitoglossa, Paramesotriton and Onychodactylus share this. The character does not follow salamander phylogeny and must have arisen or been lost more than once."
         },
         {
-          "taxon": "anura",
+          "species": "discoglossus-pictus",
+          "speciesBasis": "source",
           "name": "'Semitendinosus'",
           "present": "yes",
           "note": "A false-friend name. The anuran 'semitendinosus' is not homologous to the mammalian muscle of that name. Přikryl et al. (2009) record that the anuran 'semimembranosus' was called ischioflexorius by Hoffmann and caudalipuboischiotibialis by Francis, while the anuran 'semitendinosus' was called ischioflexorius by Mivart and puboischiotibialis by Hoffmann. Two muscles, four names, two of them shared — which is what Diogo & Molnar mean by false friends.",
@@ -2863,14 +3250,37 @@
             "diogo-molnar-2014",
             "leavey-etal-2024",
             "prikryl-etal-2009"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium"
+              },
+              {
+                "element": "ilium",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "knee-aponeurosis"
+              },
+              {
+                "element": "tibiofibula",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Semitendinosus from the ischium to the knee aponeurosis, and semimembranosus — which Hoffmann calls the ischioflexorius, this record's own name — from the pars ascendens ilii and adjacent ischium onto the posterior knee capsule and the posterior proximal head of the tibiofibula. The semimembranosus is divided proximally by a tendinous inscription."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Flexor tibialis externus + internus",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
           ],
           "division": "divided",
           "parts": [
@@ -2880,10 +3290,29 @@
             {
               "name": "Flexor tibialis internus"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilioischiadic-ligament"
+              },
+              {
+                "element": "ischium",
+                "landmark": "ischial-tuberosity"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Flexor tibialis externus from the ilioischiadic ligament and flexor tibialis internus from that ligament and the ischial tuberosity, both onto the proximal tibia. Gekko adds a further part to each, the internus tendons meeting at the interarticular area of the knee."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Flexor tibialis externus + internus",
           "present": "yes",
           "sources": [
@@ -2919,7 +3348,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "M. flexor cruris medialis + flexor cruris lateralis pars pelvica",
           "present": "yes",
           "sources": [
@@ -2938,7 +3368,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "source",
           "name": "Semitendinosus, semimembranosus, biceps femoris",
           "present": "yes",
           "origin": "Ischial tuberosity; the short head of biceps femoris from the linea aspera.",
@@ -2947,7 +3378,8 @@
           "innervation": "Tibial division of the sciatic nerve; the short head of biceps femoris by the common fibular division.",
           "sources": [
             "diogo-molnar-2014",
-            "hudson-etal-2011b"
+            "hudson-etal-2011b",
+            "ercoli-etal-2012"
           ],
           "architecture": {
             "species": "Acinonyx jubatus",
@@ -3041,7 +3473,36 @@
               "joint": "knee",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium",
+                "landmark": "ischial-tuberosity"
+              },
+              {
+                "element": "ischium",
+                "side": "posterior"
+              },
+              {
+                "element": "caudal-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia"
+              },
+              {
+                "element": "femur",
+                "landmark": "femoral-epicondyle-medial"
+              },
+              {
+                "element": "femur",
+                "landmark": "femoral-epicondyle-lateral"
+              }
+            ]
+          },
+          "attachmentNote": "The hamstring field, and the origins are what make it one field: biceps femoris from the dorsal ischial tuberosity, semitendinosus from the ischial tuberosity AND the transverse processes of the first three caudal vertebrae, semimembranosus from the caudal ramus of the ischium. The caudal-vertebral head is the one worth noting — a thigh muscle taking origin from the tail. Insertions run to the tibia in all three, with semimembranosus also on the medial femoral epicondyle and biceps femoris on the lateral."
         }
       ],
       "homology": {
@@ -3129,16 +3590,38 @@
       },
       "occurrences": [
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Gluteus maximus",
           "present": "yes",
           "note": "Diogo & Molnar note innervation differences between humans and rats: the human gluteus maximus is supplied by the inferior gluteal nerve alone, the rat muscle by that nerve plus the inferior branch of the superior gluteal nerve. One of several cases where innervation differs between mammals for muscles otherwise treated as identical.",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              },
+              {
+                "element": "caudal-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "lateral",
+                "landmark": "greater-trochanter"
+              }
+            ]
+          },
+          "attachmentNote": "Gluteus superficialis: an aponeurotic head from the iliac crest and fleshy and tendinous fibres from the sacrocaudal aponeurosis over the first two caudal vertebrae, inserting on the lateral greater trochanter and onto the insertions of gluteus medius and tensor fasciae latae."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "'Gluteus maximus'",
           "present": "no",
           "note": "A false-friend name. The anuran muscle called 'gluteus maximus' is not homologous to the mammalian one; Diogo & Molnar use 'extensor iliotibialis B' instead.",
@@ -3147,7 +3630,8 @@
           ]
         },
         {
-          "taxon": "synapsida-stem",
+          "species": "dimetrodon-sp",
+          "speciesBasis": "source",
           "present": "inferred",
           "note": "The enlargement of this field along the synapsid stem is part of the erect-posture transition documented by Bishop & Pierce.",
           "sources": [
@@ -3229,7 +3713,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Gastrocnemius",
           "present": "yes",
           "sources": [
@@ -3239,7 +3724,8 @@
           "note": "Walthall & Ashley-Ross describe no discrete gastrocnemius in Taricha. The flexor primordialis communis occupies the position and takes the femoral epicondylar origin that the amniote gastrocnemius takes, and the paper treats it as one muscle. Recorded here without changing the presence state, since other sources score a gastrocnemius in Caudata; what this source shows is that the boundary between the two is a division that not every author makes."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Gastrocnemius",
           "present": "yes",
           "action": "The principal jump-propulsion muscle; hypertrophied relative to all other anuran leg muscles.",
@@ -3248,7 +3734,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Gastrocnemius",
           "present": "yes",
           "sources": [
@@ -3270,7 +3757,8 @@
           "attachmentNote": "From the ventral proximal tibia and the distal ventral tibial crest, by a broad aponeurosis onto the proximolateral margins of the first three phalanges — not onto a calcaneum, unlike the mammalian condition."
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Gastrocnemius",
           "present": "yes",
           "sources": [
@@ -3297,7 +3785,8 @@
           "attachmentNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. gastrocnemius",
           "present": "yes",
           "sources": [
@@ -3367,7 +3856,8 @@
           }
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "source",
           "name": "Gastrocnemius",
           "present": "yes",
           "origin": "Medial and lateral femoral condyles.",
@@ -3377,7 +3867,8 @@
           "note": "Kardong (2002) derived the mammalian gastrocnemius from the femorotibial ('internal') head; Diogo & Molnar discuss and qualify this.",
           "sources": [
             "diogo-molnar-2014",
-            "hudson-etal-2011b"
+            "hudson-etal-2011b",
+            "ercoli-etal-2012"
           ],
           "architecture": {
             "species": "Acinonyx jubatus",
@@ -3428,7 +3919,30 @@
               "joint": "knee",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur",
+                "landmark": "femoral-epicondyle-lateral"
+              },
+              {
+                "element": "femur",
+                "landmark": "femoral-epicondyle-medial"
+              },
+              {
+                "element": "femur",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tarsals",
+                "landmark": "calcaneum"
+              }
+            ]
+          },
+          "attachmentNote": "Lateral head by a strong tendon from the lateral femoral epicondyle and the lateral sesamoid of the knee, medial head from the medial epicondyle, both also from the caudal femoral diaphysis and the knee capsule. Inserts on the caudodorsal calcaneal tubercle, its tendon fusing with those of flexor digitorum superficialis and soleus to form the calcaneal tendon."
         }
       ],
       "homology": {
@@ -3516,7 +4030,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensor cruris tibialis",
           "present": "yes",
           "sources": [
@@ -3550,7 +4065,8 @@
           "attachmentNote": "Recorded as m. extensor cruris tibialis. Visible from both ventral and dorsal views as it fans from the femoral epicondyle across the anterior face of the tibia — three rows for one muscle on one bone, because it wraps."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Tibialis anterior",
           "present": "yes",
           "sources": [
@@ -3558,15 +4074,32 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Tibialis anterior",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the entire anterior surface of the tibia, tendinously onto digit I. In Gekko the tendon also contributes to the lateral digital tendon."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Tibialis anterior",
           "present": "yes",
           "sources": [
@@ -3588,7 +4121,8 @@
           "attachmentNote": "From the proximomedial tibia to the dorsolateral proximal metatarsals I-II; the metatarsal bases carry coarse rugosities marking the insertion."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "Tibialis cranialis (classical) / extensor digitorum longus (Hattori & Tsuihiji 2021)",
           "present": "uncertain",
           "sources": [
@@ -3642,7 +4176,8 @@
           }
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Tibialis anterior",
           "present": "yes",
           "origin": "Lateral condyle and proximal lateral tibia; interosseous membrane.",
@@ -3650,7 +4185,8 @@
           "action": "Dorsiflexes and inverts the foot.",
           "innervation": "Deep fibular nerve (L4–L5).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "nerves": [
             {
@@ -3667,7 +4203,31 @@
               "joint": "ankle",
               "motion": "inversion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia",
+                "side": "anterior",
+                "landmark": "cnemial-crest"
+              },
+              {
+                "element": "tibia",
+                "side": "proximal"
+              },
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Tibialis cranialis from the craniolateral proximal quarter of the tibia including the lateral condyle and the lateral margin of the cnemial crest, from the proximal interosseous membrane, and by a second tendinous head from the cranial head of the fibula. Inserts on the medial aspect of the ventral tubercle at the base of metatarsal I."
         }
       ],
       "homology": {
@@ -3753,7 +4313,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensor digitorum longus",
           "present": "yes",
           "sources": [
@@ -3780,7 +4341,8 @@
           "attachmentNote": "Thin, lying on the dorsal crus between the extensor tarsi tibialis and the extensor cruris et tarsi fibularis. Unlike its forelimb counterpart it stops at the metatarsals rather than reaching the phalanges."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Extensor digitorum longus",
           "present": "yes",
           "sources": [
@@ -3804,7 +4366,8 @@
           }
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Extensor digitorum longus",
           "present": "yes",
           "note": "From the lateral femoral extensor fossa and condyle to the proximodorsal metatarsals III-IV.",
@@ -3832,7 +4395,8 @@
           "attachmentNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "Extensor digitorum longus",
           "present": "uncertain",
           "sources": [
@@ -3871,7 +4435,8 @@
           }
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Extensor digitorum longus",
           "present": "yes",
           "origin": "Lateral tibial condyle, anterior fibula, interosseous membrane.",
@@ -3879,14 +4444,31 @@
           "innervation": "Deep fibular nerve (L5–S1).",
           "note": "In humans the fibularis tertius derives from the extensor digitorum longus anlage (Lewis 1910). In rats the fibularis digiti quinti derives from the extensor digiti quinti anlage. The two are therefore NOT homologous, despite both being called a 'fibularis' and both being innervated by the deep fibular nerve.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "nerves": [
             {
               "nerve": "deep-fibular",
               "segments": "L5–S1"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur",
+                "side": "lateral",
+                "landmark": "femoral-condyles"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Femoral, not tibial, in origin — from the lateral condyle of the femur and the aponeurosis over tibialis cranialis — so it crosses the knee as well as the ankle. Four flat tendons to the distal phalanges of digits II–V, fused en route with the tendons of extensor digitorum brevis and, on digit V, extensor digitorum lateralis."
         }
       ],
       "homology": {
@@ -3964,11 +4546,13 @@
       },
       "occurrences": [
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Fibularis longus + brevis",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
           ],
           "division": "divided",
           "parts": [
@@ -3978,10 +4562,24 @@
             {
               "name": "Fibularis brevis"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. M. peroneus, partly tendinous proximally and partly muscular from almost the whole fibula, onto the fifth metatarsal. Gekko has two slips."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Fibularis longus + brevis",
           "present": "yes",
           "note": "Both insert on the anterior surface of metatarsal V.",
@@ -4017,7 +4615,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. fibularis longus + brevis",
           "present": "yes",
           "sources": [
@@ -4064,13 +4663,15 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Fibularis longus, brevis (+ tertius in humans, digiti quinti in rats)",
           "present": "yes",
           "action": "Evert the foot; the longus also supports the transverse arch.",
           "innervation": "Superficial fibular nerve (L5–S1) for longus and brevis.",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "division": "variable",
           "parts": [
@@ -4102,7 +4703,26 @@
               "joint": "ankle",
               "motion": "eversion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula",
+                "side": "lateral"
+              },
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metatarsals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Fibularis brevis from the anterolateral and caudolateral surfaces of the middle of the fibula in two bellies; fibularis longus running along the cranial and lateral fibula. Both round the lateral malleolus. Scored at the fibula and metatarsals only: the paper distinguishes the two muscles' fibular fields more finely than a single row can carry."
         }
       ],
       "homology": {
@@ -4188,20 +4808,59 @@
       },
       "occurrences": [
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Popliteus",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur",
+                "side": "lateral",
+                "landmark": "femoral-condyles"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "medial"
+              },
+              {
+                "element": "tibia",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "By a thick short tendon from the lateral femoral condyle and the aponeurosis over the distal lateral femur, to the medial and caudal aspects of the proximal two-thirds of the tibia. Some fibres insert onto flexor digitorum medialis rather than bone."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Interosseus cruris",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tibia",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Scored from Zaaf et al.'s M. popliteus: from the proximal fibula, partly muscular and partly tendinous onto the anterolateral tibial shaft. This record's Lepidosauria occurrence is named 'interosseus cruris', the name Abdala & Diogo use for the same tibiofibular muscle."
         }
       ],
       "homology": {
@@ -4276,15 +4935,43 @@
       },
       "occurrences": [
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Tibialis posterior",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tibia",
+                "side": "posterior"
+              },
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "tarsals",
+                "side": "medial",
+                "landmark": "centrale-pes"
+              },
+              {
+                "element": "tarsals",
+                "side": "ventral",
+                "landmark": "distal-tarsals"
+              }
+            ]
+          },
+          "attachmentNote": "Tibialis caudalis from the caudal tibial shaft and the cranial, medial and caudal aspects of the fibular head, through the sulcus of the medial malleolus, to the medial and ventral surfaces of the centrale and tarsal I and to the sesamoid between them."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Tibialis posterior",
           "present": "yes",
           "sources": [
@@ -4370,7 +5057,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexor primordialis communis",
           "present": "yes",
           "sources": [
@@ -4407,7 +5095,8 @@
           "attachmentNote": "Recorded as m. flexor primordialis communis. Five tendons, against four in the hand — the pes retains digit V. Its function is given as pressing the sole against the ground rather than flexing the digits."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "varanus-exanthematicus",
+          "speciesBasis": "source",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "sources": [
@@ -4430,7 +5119,8 @@
           "attachmentNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "note": "Femoral origin; inserts on the proximoventral unguals I-III.",
@@ -4457,7 +5147,8 @@
           "attachmentNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III."
         },
         {
-          "taxon": "aves",
+          "species": "struthio-camelus",
+          "speciesBasis": "source",
           "name": "M. flexor digitorum longus",
           "present": "yes",
           "note": "Together with the flexor hallucis longus, forms the tendon system that produces automatic toe flexion when the ankle flexes — the mechanism of perching. Ankle plantarflexor.",
@@ -4495,21 +5186,42 @@
           }
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "origin": "Posterior tibia.",
           "insertion": "Distal phalanges of digits II–V.",
           "innervation": "Tibial nerve (L5–S2).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "nerves": [
             {
               "nerve": "tibial",
               "segments": "L5–S2"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "fibula",
+                "side": "posterior"
+              },
+              {
+                "element": "fibula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Flexor digitorum medialis from the caudal and caudomedial aspects of the fibular head, through the sulcus of the medial malleolus. It fuses with flexor digitorum lateralis at the distal tarsals into a tendinous sheet that divides into five tendons, which pass through the rings formed by flexor digitorum brevis and insert on the distal phalanges."
         }
       ],
       "homology": {
@@ -4589,7 +5301,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
@@ -4619,7 +5332,8 @@
           "attachmentNote": "Tripartite for every digit except the first, which lacks the phalangeal connection. The manus counterpart differs: there the slips flank the metacarpals of digits II and III but not I and IV."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Mm. flexores breves superficiales",
           "present": "yes",
           "note": "A single muscular body in Triprion despite the plural name, on the lateroplantar tarsus beneath the aponeurosis plantaris.",
@@ -4644,15 +5358,33 @@
           "attachmentNote": "Despite the plural name, a single muscular body in Triprion, on the lateroplantar tarsal surface and ventrally concealed by the aponeurosis plantaris."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
-            "diogo-molnar-2014"
-          ]
+            "diogo-molnar-2014",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metatarsals",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Flexor digitorum brevis of the pes, from the proximal extremity of the fifth metatarsal onto the terminal phalanx. Gekko differs digit by digit, inserting at the distal end of metatarsal I on digit I, of the second phalanx on III and IV, and of the first phalanx on II and V."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Flexor digitorum brevis superficialis",
           "present": "yes",
           "note": "Layer 1 of the seven-layer pedal scheme.",
@@ -4674,19 +5406,37 @@
           "attachmentNote": "Flexor digitorum brevis superficialis, digits I-IV, from the ventral calcaneum with digit-specific variation. Layer 1 of the seven-layer pedal scheme Pereyra et al. set out."
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Flexor digitorum brevis",
           "present": "yes",
           "innervation": "Medial plantar nerve (S1–S2).",
           "sources": [
-            "diogo-molnar-2014"
+            "diogo-molnar-2014",
+            "ercoli-etal-2012"
           ],
           "nerves": [
             {
               "nerve": "medial-plantar",
               "segments": "S1–S2"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "tarsals",
+                "side": "ventral",
+                "landmark": "calcaneum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Flexor digitorum brevis, taking origin by an aponeurosis from the insertion of the flexor digitorum superficialis tendon at the plantar surface of the calcaneal tubercle. Its tendons split around those of flexor digitorum profundus, forming the rings the deep tendons pass through, and insert on the plantar and proximal aspects of the middle phalanges of II–V and the proximal phalanx of digit I."
         }
       ],
       "homology": {
@@ -4755,7 +5505,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "sources": [
@@ -4783,7 +5534,8 @@
           "attachmentNote": "Passes from the tarsals along the ventral axis of the metatarsals. As in the hand, part of the origin is on the caput longum tendon rather than on bone."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Mm. contrahentes digitorum pedis",
           "present": "yes",
           "note": "Blotto et al. (2020) record a full contrahens series in the anuran foot, including one serving the prehallux — the pedal counterpart of the prepollex contrahens in the hand.",
@@ -4805,7 +5557,8 @@
           "attachmentNote": "Blotto et al. record a full contrahens series in the anuran foot, including one serving the prehallux."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "sources": [
@@ -4813,7 +5566,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Interdigiti dorsales + ventrales",
           "present": "yes",
           "note": "Running between successive metatarsals.",
@@ -4847,7 +5601,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "rattus-norvegicus",
+          "speciesBasis": "survey",
           "name": "Adductor hallucis",
           "present": "variable",
           "note": "As in the hand, the contrahens layer is largely lost in mammals, with the adductor hallucis surviving as its principal representative.",
@@ -4921,7 +5676,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -4929,7 +5685,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Mm. flexores breves profundi",
           "present": "yes",
           "note": "Includes slips serving the prehallux.",
@@ -4956,7 +5713,8 @@
           }
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -4964,7 +5722,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Flexor digitorum brevis profundus",
           "present": "yes",
           "note": "Deep flexor layer; metatarsal origins marked by fine striae.",
@@ -4992,7 +5751,8 @@
           "attachmentNote": "Flexor digitorum brevis profundus, digits I-IV, from metatarsals I-III and V and the distal calcaneum. The metatarsal origins are marked by fine striae — the pedal correlates Pereyra et al. identify for the first time."
         },
         {
-          "taxon": "theria",
+          "species": "rattus-norvegicus",
+          "speciesBasis": "survey",
           "name": "Interossei (plantar and dorsal)",
           "present": "yes",
           "innervation": "Deep branch of the lateral plantar nerve (S2–S3).",
@@ -5077,7 +5837,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Pubotibialis",
           "present": "yes",
           "origin": "Anterior edge and anterior ventral face of the pubo-ischiac plate.",
@@ -5166,7 +5927,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Femorofibularis",
           "present": "yes",
           "origin": "Ventral face of the distal end of the femur.",
@@ -5246,7 +6008,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Caudalipuboischiotibialis",
           "present": "yes",
           "origin": "Transverse process of the fourth caudal vertebra.",
@@ -5322,7 +6085,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Iliocaudalis",
           "present": "yes",
           "origin": "The first several caudal vertebrae.",
@@ -5395,7 +6159,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Ischiocaudalis",
           "present": "yes",
           "origin": "Transverse process of the fourth caudal vertebra.",
@@ -5468,7 +6233,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Extensor tarsi tibialis",
           "present": "yes",
           "origin": "Tibial epicondyle of the femur, next to the extensor cruris tibialis.",
@@ -5553,7 +6319,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Extensor cruris et tarsi fibularis",
           "present": "yes",
           "origin": "Fibular epicondyle of the femur.",
@@ -5640,7 +6407,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Interosseus cruris",
           "present": "yes",
           "origin": "Proximal part of the fibula, on the medial side.",
@@ -5731,7 +6499,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Pronator profundus",
           "present": "yes",
           "origin": "Medial side of the fibula.",
@@ -5821,7 +6590,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Caput longum musculorum contrahentium",
           "present": "yes",
           "origin": "Distal portion of the fibula, on the medial side.",
@@ -5846,7 +6616,8 @@
           "attachmentNote": "Thin, lying deep to the plantar fascia. Its insertion tendon is in turn the origin of the contrahentes digitorum, the same chained arrangement the hand shows."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Contrahentium caput longum",
           "present": "yes",
           "sources": [
@@ -5928,7 +6699,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Flexor accessorius lateralis",
           "present": "yes",
           "origin": "Lateral edge of the fibulare.",
@@ -6015,7 +6787,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Flexor accessorius medialis",
           "present": "yes",
           "origin": "Distal region of the fibula, the fibulare and the intermedium.",
@@ -6101,7 +6874,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Intermetatarsales",
           "present": "yes",
           "origin": "Metatarsals of adjacent digits.",
@@ -6179,7 +6953,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "origin": "Distal tarsal bones at the base of each digit.",
@@ -6204,7 +6979,8 @@
           "attachmentNote": "Five slips against three in the manus, which serves digits II-IV only. The difference is the salamander hand's missing digit V, not a difference in the muscle layer."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
@@ -6294,7 +7070,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Abductor et extensor digiti I",
           "present": "yes",
           "origin": "Intermedium and centrale.",
@@ -6392,7 +7169,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "note",
           "name": "Abductor digiti V",
           "present": "yes",
           "origin": "Ventral surface of the distal end of the fibula.",
@@ -6429,7 +7207,8 @@
           "attachmentNote": "An extensive fleshy insertion across three skeletal elements. The manus counterpart serves digit IV, because the salamander hand has lost digit V — the same muscle at the same margin, on a differently numbered digit."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "sources": [

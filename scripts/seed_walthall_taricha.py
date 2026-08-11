@@ -37,6 +37,8 @@ import json
 import pathlib
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SRC = "walthall-ashley-ross-2006"
 
@@ -82,14 +84,14 @@ STRIP = [
 
 PES_OCCURRENCES = {
     "extensores-digitorum-breves-pes": [
-        {"taxon": "crocodylia", "name": "Extensor digitorum brevis superficialis + profundus",
+        {"species": "caiman-yacare", "name": "Extensor digitorum brevis superficialis + profundus",
          "present": "yes",
          "note": "Recorded by Pereyra et al. (2024) in the foot. Previously filed on the "
                  "manus record of the same name for want of a pes counterpart.",
          "sources": ["pereyra-etal-2024", "abdala-diogo-2010"]},
     ],
     "abductor-digiti-minimi-pes": [
-        {"taxon": "anura", "name": "M. abductor digiti minimi", "present": "yes",
+        {"species": "triprion-petasatus", "name": "M. abductor digiti minimi", "present": "yes",
          "note": "Recorded by Blotto et al. (2020) in the foot, where it is a large muscle "
                  "lying lateral to the extensor digitorum longus. Previously filed on the "
                  "manus record of the same name; Blotto et al. describe a distinct abductor "
@@ -98,7 +100,7 @@ PES_OCCURRENCES = {
          "sources": ["blotto-etal-2020", "abdala-diogo-2010"]},
     ],
     "contrahentium-caput-longum-pes": [
-        {"taxon": "anura", "name": "M. contrahentium caput longum", "present": "yes",
+        {"species": "triprion-petasatus", "name": "M. contrahentium caput longum", "present": "yes",
          "note": "Recorded by Blotto et al. (2020) in the foot. Previously filed on the "
                  "forelimb record of the same name.",
          "sources": ["blotto-etal-2020", "abdala-diogo-2010"]},
@@ -453,7 +455,7 @@ def record(mid, name, region, file, subregion, segment, mass, layer, development
 
 
 def caudata(name, origin, insertion, note=None, att=None, attachmentNote=None, unsampled=True):
-    occ = {"taxon": "caudata", "name": name, "present": "yes",
+    occ = {"species": "taricha-torosa", "name": name, "present": "yes",
            "origin": origin, "insertion": insertion,
            "note": ((note + " " if note else "") + UNSAMPLED) if unsampled else note,
            "sources": [SRC]}
@@ -829,7 +831,7 @@ def main(write: bool) -> int:
         if not m:
             continue
         for occ in m.get("occurrences", []):
-            if occ["taxon"] != taxon or not occ.get("attachments"):
+            if speciesmap.clade_of(occ) != taxon or not occ.get("attachments"):
                 continue
             occ.pop("attachments", None)
             occ.pop("attachmentNote", None)
@@ -856,13 +858,13 @@ def main(write: bool) -> int:
             log.append(f"WARN  no destination record {mid}")
             continue
         m = entry[0]
-        have = {x["taxon"] for x in m.get("occurrences", [])}
+        have = {speciesmap.clade_of(x) for x in m.get("occurrences", [])}
         for occ in occs:
-            if occ["taxon"] in have:
+            if speciesmap.clade_of(occ) in have:
                 continue
             m.setdefault("occurrences", []).append(occ)
             m["sources"] = sorted(set(m.get("sources", [])) | set(occ["sources"]))
-            log.append(f"occ+  {mid}/{occ['taxon']} created (relocated from the forelimb record)")
+            log.append(f"occ+  {mid}/{occ['species']} created (relocated from the forelimb record)")
 
     # 4. caudata occurrences on existing records
     for mid, patch in OCC.items():
@@ -871,9 +873,9 @@ def main(write: bool) -> int:
             log.append(f"WARN  {mid} not found")
             continue
         m = entry[0]
-        occ = next((x for x in m.get("occurrences", []) if x["taxon"] == "caudata"), None)
+        occ = next((x for x in m.get("occurrences", []) if speciesmap.clade_of(x) == "caudata"), None)
         if occ is None:
-            occ = {"taxon": "caudata", "present": patch.get("present") or "yes", "sources": []}
+            occ = {"species": "taricha-torosa", "present": patch.get("present") or "yes", "sources": []}
             m.setdefault("occurrences", []).append(occ)
             log.append(f"occ+  {mid}/caudata created")
         for k, v in patch.items():

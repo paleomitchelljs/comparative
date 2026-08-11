@@ -38,6 +38,8 @@ import pathlib
 import re
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 REGION_ORDER = ['cranial', 'axial', 'fin', 'pectoral', 'arm', 'forearm', 'hand',
                 'pelvic', 'thigh', 'leg', 'foot']
@@ -121,7 +123,7 @@ def block_region_table(d):
 
 
 def block_taxon_table(d):
-    total, hit, _ = coverage(d, lambda m, o: o["taxon"])
+    total, hit, _ = coverage(d, lambda m, o: speciesmap.clade_of(o))
     rows = sorted(total, key=lambda k: (-hit[k] / total[k], d["order"].get(k, 99)))
     out = ["| Taxon | Present occurrences | Scored | %att |", "|---|---:|---:|---:|"]
     for k in rows:
@@ -147,14 +149,14 @@ def block_skeleton_table(d):
 
 
 def block_gaps_summary(d):
-    total, hit, _ = coverage(d, lambda m, o: o["taxon"])
+    total, hit, _ = coverage(d, lambda m, o: speciesmap.clade_of(o))
     ranked = sorted((k for k in total if total[k] >= 20), key=lambda k: hit[k] / total[k])
     worst = ", ".join(f"{d['clade'].get(k, k)} at {pct(hit[k], total[k])}" for k in ranked[:3])
     rtot, rhit, _ = coverage(d, lambda m, o: m["region"])
     rworst = sorted(rtot, key=lambda k: rhit[k] / rtot[k])[:3]
     obs = d["obs_rows"]
     appendicular = [m for m in d["muscles"] if m["region"] not in ("cranial", "axial")]
-    arch = [(m["id"], o["taxon"]) for m in d["muscles"] for o in m.get("occurrences", [])
+    arch = [(m["id"], speciesmap.clade_of(o)) for m in d["muscles"] for o in m.get("occurrences", [])
             if o.get("architecture")]
     return (
         f"Taxon-specific attachments cover **{pct(len(d['scored']), len(d['present']))}** of "

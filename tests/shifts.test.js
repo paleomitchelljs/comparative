@@ -16,8 +16,14 @@ const ELEMENTS = [
   { id: 'humerus', label: 'Humerus' },
   { id: 'deltopectoral-crest', label: 'Deltopectoral crest', partOf: 'humerus' },
   { id: 'greater-tubercle', label: 'Greater tubercle', partOf: 'humerus' },
-  { id: 'scapula', label: 'Scapula' },
-  { id: 'coracoid', label: 'Coracoid' },
+  { id: 'scapula', label: 'Scapula', derivedFrom: 'scapulocoracoid' },
+  /* Inside the scapula, and absent in the comparison taxon — the pair that
+     separates "described more coarsely" from "the site is gone". */
+  { id: 'suprascapula', label: 'Suprascapula', partOf: 'scapula',
+    presence: { default: 'yes', absent: ['lepidosauria'] } },
+  { id: 'coracoid', label: 'Coracoid', derivedFrom: 'scapulocoracoid' },
+  /* Fission: one ancestral bone became two. Not containment, and not fusion. */
+  { id: 'scapulocoracoid', label: 'Scapulocoracoid' },
   { id: 'metatarsals', label: 'Metatarsals' },
   { id: 'fossa-metatarsi-i', label: 'Fossa metatarsi I', partOf: 'metatarsals' },
   { id: 'distal-tarsals', label: 'Distal tarsals' },
@@ -27,6 +33,7 @@ const ELEMENTS = [
 
 global.esc = s => String(s);
 global.state = {
+  elements: ELEMENTS,                      // fissionLine scans this for derivedFrom
   elementsById: new Map(ELEMENTS.map(e => [e.id, e])),
   taxonOrder: new Map([['caudata', 0], ['lepidosauria', 1], ['theria', 2]]),
 };
@@ -53,6 +60,7 @@ function check(label, refRows, cmpRows, expected) {
     ...d.refined.map(r => `~${r.from}>${r.to}`),
     ...d.moved.map(m => `${m.substantive ? '!' : '?'}${m.id}:${m.from.join('/')}>${m.to.join('/')}`),
     ...d.fused.map(f => `${f.separated ? '/' : '@'}${f.from}>${f.to}`),
+    ...d.split.map(f => `%${f.from}>${f.to}`),
   ].join(',');
   const got = !s ? '(none)'
     : [`o[${fmt(s.origin)}]`, `i[${fmt(s.insertion)}]`,
@@ -88,6 +96,29 @@ check('two landmarks on one bone — both reported',
   { origin: [{ element: 'humerus', landmark: 'greater-tubercle' },
              { element: 'humerus', landmark: 'deltopectoral-crest' }] },
   'o[~humerus>greater-tubercle,~humerus>deltopectoral-crest] i[] resolution-only');
+
+/* The reverse of a refinement: the reference names the finer element and the
+   comparison taxon names the bone it sits in. The finer element is NOT reported
+   lost — one source simply described the site more coarsely than the other.
+
+   (The bone is still reported gained, so a coarsening reads as a one-sided
+   change. That asymmetry predates these tests and is pinned here rather than
+   asserted to be right: `refined` has no reverse category.) */
+check('landmark to the bone containing it — the landmark is not reported lost',
+  { origin: [{ element: 'humerus', landmark: 'greater-tubercle' }] },
+  { origin: [{ element: 'humerus' }] },
+  'o[+humerus] i[] substantive');
+
+/* Unless the taxon HAS no such landmark, in which case the loss is real and must
+   survive. The salamander deltoideus scapularis arises from the suprascapular
+   cartilage; crocodylians have no suprascapula, so its origin on the scapula
+   proper is an attachment forced onto a new site by a vanished bone — the exact
+   transition this table exists to surface. Suppressing it as "one source was
+   vaguer" would delete the finding. */
+check('landmark to its bone, where the taxon lacks the landmark — a real loss',
+  { origin: [{ element: 'scapula', landmark: 'suprascapula' }] },
+  { origin: [{ element: 'scapula' }] },
+  'o[+scapula,-suprascapula] i[] substantive');
 
 /* --- side: the reason this file exists --- */
 
@@ -209,6 +240,32 @@ check('an unabsorbed bone is still a gain and a loss',
   { insertion: [{ element: 'humerus' }] },
   { insertion: [{ element: 'tarsometatarsus' }] },
   'o[] i[+tarsometatarsus,-humerus] substantive');
+
+/* --- fission: `derivedFrom`, the third element relation --- */
+
+/* The scapulocoracoid became the scapula and the coracoid. A muscle scored on
+   one and then the other has not moved — the bone under it divided — so this is
+   a change in the skeleton, exactly like a fusion, and must not count as an
+   attachment shift. Before `derivedFrom` was traversable this reported as a
+   gain plus a loss at the fin-to-limb boundary. */
+check('ancestral element to one of its fission products — a split, not a move',
+  { origin: [{ element: 'scapulocoracoid' }] },
+  { origin: [{ element: 'scapula' }] },
+  'o[%scapulocoracoid>scapula] i[] resolution-only');
+
+check('and the other way round, since the reference may be the divided one',
+  { origin: [{ element: 'scapula' }] },
+  { origin: [{ element: 'scapulocoracoid' }] },
+  'o[%scapula>scapulocoracoid] i[] resolution-only');
+
+/* Siblings are NOT the same element. Both descend from the scapulocoracoid, but
+   a muscle moving from the coracoid to the scapula inside tetrapods has really
+   moved — that is the therian supracoracoideus, the best-documented attachment
+   change in the dataset, and folding the two together would erase it. */
+check('between two products of the same fission — a real move',
+  { origin: [{ element: 'coracoid' }] },
+  { origin: [{ element: 'scapula' }] },
+  'o[+scapula,-coracoid] i[] substantive');
 
 /* --- reference selection --- */
 

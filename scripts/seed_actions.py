@@ -35,6 +35,8 @@ import sys
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import jointgraph
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 JOINTS = ROOT / "data" / "joints.json"
 MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
@@ -270,7 +272,7 @@ def main():
             spans = graph.spanned_by(m.get("attachments"))
             holders = [(m, (m.get("consensus") or {}).get("action"), "consensus")]
             for o in m.get("occurrences", []):
-                holders.append((o, o.get("action"), o["taxon"]))
+                holders.append((o, o.get("action"), speciesmap.clade_of(o)))
             for holder, text, tag in holders:
                 if not text:
                     continue

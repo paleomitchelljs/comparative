@@ -35,6 +35,8 @@ import json
 import pathlib
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 E = "established"
@@ -566,7 +568,7 @@ def main():
             missing.append(f"{mid}/{tid}: no such muscle record")
             continue
         path, muscle = entry
-        occ = next((o for o in muscle.get("occurrences", []) if o["taxon"] == tid), None)
+        occ = next((o for o in muscle.get("occurrences", []) if speciesmap.clade_of(o) == tid), None)
         if occ is None:
             missing.append(f"{mid}/{tid}: muscle has no occurrence for that taxon")
             continue

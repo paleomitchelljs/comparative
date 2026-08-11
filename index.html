@@ -14,7 +14,14 @@
     <h1 class="wordmark">Muscle Homology <span>&amp; Topology</span></h1>
     <div class="searchwrap">
       <input id="search" type="search" autocomplete="off" spellcheck="false"
+             aria-label="Search a muscle, a synonym, a bone or a nerve"
              placeholder="Search a muscle, a synonym, or a bone — e.g. latissimus, dorsalis scapulae, humerus">
+    </div>
+    <!-- The one thing a student at a bench always knows is which animal is in
+         front of them. It scopes every view, so it lives here rather than
+         behind Filters. -->
+    <div class="taxonpick">
+      <select id="taxon" aria-label="Show everything as recorded for one animal"></select>
     </div>
     <div class="masthead-actions">
       <button class="ghost" id="btn-browse" aria-pressed="true">Muscles</button>

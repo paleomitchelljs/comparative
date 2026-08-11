@@ -14,16 +14,23 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 571 present occurrences · 214 skeletal elements · 62 sources · 19 operational taxa
+126 muscle records · 571 present occurrences · 218 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
-**Every source in `papers/` is now mined or accounted for.** Five remain uncited in
-records: two declared out of scope (catfish brain, cardiac review), two methods and
-framing papers cited in the docs instead (Demuth et al. 2022, Richardson 2022), and
-one with no muscle-level content (Huynen et al. 2014, moa *tbx5*).
+**Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
+file.** Both directions are checked; duplicates are removed as they are found.
 
-Every PDF in `papers/` has a `sources.json` entry, including two declared out of
-scope. Duplicates are removed as they are found.
+**A large batch of sources is catalogued but not yet mined.** 33 entries are
+uncited in records. Five are the long-standing cases — two declared out of scope
+(catfish brain, cardiac review), two methods and framing papers cited in the docs
+instead (Demuth et al. 2022, Richardson 2022), one with no muscle-level content
+(Huynen et al. 2014, moa *tbx5*). The rest are a recent intake, filed with
+`role` and `pdf` set so they can be worked through, and listed in
+[§6](#6-catalogued-but-not-yet-mined) with what each would close.
+
+The validator's `never cited` warnings are the worklist. That is the intended
+use: a catalogued source is a promise, and the warning is what stops the promise
+being forgotten.
 
 ---
 
@@ -36,26 +43,33 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| foot | 11 | 26 | 19 | 73% |
+| foot | 11 | 26 | 21 | 81% |
+| leg | 10 | 33 | 25 | 76% |
+| thigh | 10 | 44 | 33 | 75% |
+| pelvic | 8 | 39 | 23 | 59% |
+| arm | 5 | 38 | 22 | 58% |
+| pectoral | 16 | 96 | 55 | 57% |
 | fin | 9 | 34 | 19 | 56% |
-| arm | 5 | 38 | 20 | 53% |
-| leg | 10 | 33 | 15 | 45% |
-| pelvic | 8 | 39 | 17 | 44% |
-| thigh | 10 | 44 | 19 | 43% |
-| pectoral | 16 | 96 | 41 | 43% |
-| forearm | 18 | 96 | 23 | 24% |
-| axial | 15 | 46 | 11 | 24% |
-| hand | 9 | 59 | 11 | 19% |
+| forearm | 18 | 96 | 45 | 47% |
+| hand | 9 | 59 | 26 | 44% |
+| axial | 15 | 46 | 14 | 30% |
 | cranial | 15 | 60 | 11 | 18% |
-| **all** | 126 | 571 | 206 | **36%** |
+| **all** | 126 | 571 | 294 | **51%** |
 <!-- /counts:regions -->
 
-**The forearm and the hand are the holes now.** Walthall & Ashley-Ross (2006)
-took the foot to 73% and the leg to 45% in one pass, and Blotto et al. (2020)
-opened the anuran autopod, but the forearm and hand still sit at the bottom of
-the table across the largest occurrence counts in the dataset. Both are places
-where the salamander column is nearly complete and every other tetrapod column
-inherits the consensus.
+**Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
+al. (2012) and the forearm and hand off the floor on Zaaf et al. (1999), leaving
+the head as the one region still under 20% — and 60 present occurrences deep.
+Forearm and hand are still second and third, and still carry the two largest
+occurrence counts in the dataset, so they remain the biggest absolute gap even at
+31% and 24%.
+
+Nothing in `papers/` fixes the forearm and hand across taxa at once; it goes one
+column at a time. Meers (2003) is the largest single remaining bite —
+crocodylian forelimb, and the one naming scheme from Abdala & Diogo's Tables 1-3
+not yet held in full. For the cranial region the batch holds Dearden et al.
+(2020) for Chondrichthyes, Ziermann & Diogo (2013) for Caudata, Jones et al.
+(2019) for Aves and Anderson (2008) across all of them.
 
 The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
 muscles that would serve it — adductor pollicis, a contrahens, flexores breves
@@ -79,16 +93,16 @@ longissimus and iliocostalis into separate records is the next step, with Cieri
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Actinistia | 7 | 6 | 86% |
+| Crocodylia | 66 | 48 | 73% |
 | Caudata | 88 | 61 | 69% |
-| Crocodylia | 66 | 38 | 58% |
+| Theria | 81 | 56 | 69% |
+| Lepidosauria | 87 | 46 | 53% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Actinopterygii | 14 | 6 | 43% |
 | Monotremata | 7 | 3 | 43% |
-| Lepidosauria | 87 | 25 | 29% |
+| Anura | 62 | 22 | 35% |
 | Testudines | 50 | 13 | 26% |
-| Anura | 62 | 14 | 23% |
-| Theria | 81 | 12 | 15% |
-| Aves | 55 | 7 | 13% |
+| Aves | 55 | 12 | 22% |
 | Chondrichthyes | 19 | 1 | 5% |
 | Myxini | 1 | 0 | 0% |
 | Petromyzontida | 5 | 0 | 0% |
@@ -102,9 +116,57 @@ uses for the plesiomorphic tetrapod condition, the consensus rows that every oth
 tetrapod column inherits are now anchored to a scored column rather than to a
 composite. It is also the only taxon whose body wall is scored.
 
-**Theria at 15% and Aves at 13%** are now the broad-but-shallow columns, and both
-have architecture data but little attachment structure. Chondrichthyes at 5% is
-the sharpest gap at the fish end.
+**Aves at 13% is now the broad-but-shallow column**, with architecture data and
+almost no attachment structure. Chondrichthyes at 5% is the sharpest gap at the
+fish end and the one a single source could most change: Dearden et al. (2020)
+covers both an elasmobranch and a holocephalan.
+
+**Theria was the largest gap and is now level with Caudata at 69%.** Ercoli et al.
+(2012) took it from 15% to 38% across the hindlimb, lumbar region and tail; Ercoli
+et al. (2014) then took it to 69% across the forelimb. The second of those needed
+no new source — 25 Theria occurrences already cited that paper for their *names*
+and had no `attachments` block, which is worth stating as a general lesson: a
+source counting as "mined" because it is cited is not the same as a source mined
+for everything it holds. What remains unscored in Theria is the cranial region and
+the axial column.
+
+**Aves at 13% is source-limited, not effort-limited, and the limit is real.**
+Thirty of its 48 unscored rows cite only Abdala & Diogo (2010), whose Tables 1-3
+are synonymy tables — name against name across six taxa — with 36 origin or
+insertion mentions in 38 pages. It settles what a muscle is called, not where it
+attaches. The avian sources that *are* descriptive do not fit the column:
+Schreiweis (1982) is a penguin, whose flipper contradicts this taxon's stated
+exemplars (*Gallus*, *Cairina*, *Coturnix*); Ghetie et al. (1976) is a
+Latin-labelled plate atlas; Matsuoka & Hasegawa (2007) is eight pages on a swan
+with its attachment data in figure captions.
+
+The avian **hindlimb** rows cite Allen et al. (2021) and Hutchinson et al. (2015),
+and both are now in `papers/`. Neither closes them, and it is worth recording why:
+Hutchinson et al. is a musculoskeletal model whose attachments are digitised 3D
+coordinates rather than prose, and its **architecture table is already fully
+entered** — the eleven avian `architecture` blocks are its Table 2. Allen et al.
+is a moment-arm study whose contribution here, the crocodylian-to-avian homology
+table, is already carried in the occurrence names. A source can be cited, fully
+mined, and still leave a row unscored, because what it holds is not an attachment.
+
+**This is now fixed at the source.** `papers/` has since gained Fisher & Goodman
+(1955), a complete myology of the whooping crane running to 156 pages with an
+explicit `Origin.—` and `Insertion.—` for every muscle; Widrig et al. (2023) on
+tinamou pectoral morphology in 3D; and McKitrick (1991) on the loon forelimb. A
+crane is a flying neognath, far closer to this taxon's exemplars than a penguin,
+and between the three the column has a neognath, a palaeognath and a
+foot-propelled diver. Aves is no longer source-limited — it is simply unmined,
+and it is the largest remaining gap in the dataset.
+
+Fisher & Goodman is a scan with OCRed text, so it needs checking against the
+plates as it is worked through.
+
+**Lepidosauria moved 29% to 53%** on Zaaf et al. (1999), whose tables state an
+origin and an insertion for every fore- and hindlimb muscle in two gecko species.
+Those rows are *Eublepharis macularius*, with the *Gekko gecko* differences in
+`attachmentNote` — and four of those differences are a different bone rather than
+a different part of one, which is the sharpest available warning against reading
+any single lizard as the clade.
 
 **Tetrapodomorpha (stem) at 0%** is the fossil column, and its attachments would
 have to come from osteological correlates rather than dissection — Molnar et al.
@@ -117,11 +179,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 214, of which 175 (82%) carry at least one attachment |
-| Observed attachment rows | 549 |
-| Rows naming a **landmark** | 107 (19%) |
-| Rows naming a **side** | 273 (50%) |
-| Osteological correlates | 82 flagged, 64 carry a muscle |
+| Elements | 218, of which 185 (85%) carry at least one attachment |
+| Observed attachment rows | 804 |
+| Rows naming a **landmark** | 183 (23%) |
+| Rows naming a **side** | 444 (55%) |
+| Osteological correlates | 85 flagged, 71 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -156,12 +218,12 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 21 | 51 | 2.4 |
-| hindlimb | 42 | 33 | 0.8 |
-| axial | 31 | 24 | 0.8 |
-| pectoral | 32 | 21 | 0.7 |
+| hindlimb | 42 | 38 | 0.9 |
+| axial | 32 | 26 | 0.8 |
+| pectoral | 32 | 22 | 0.7 |
 | fin | 8 | 5 | 0.6 |
 | forelimb | 51 | 29 | 0.6 |
-| pelvic | 25 | 12 | 0.5 |
+| pelvic | 25 | 14 | 0.6 |
 <!-- /counts:parity -->
 
 The pelvis, fin and forelimb are where the skeleton is thinnest relative to the
@@ -187,7 +249,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 206 of 571 present occurrences (36%).**
+**Taxon-specific attachments: 294 of 571 present occurrences (51%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -207,17 +269,17 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 109 |
-| forearm | 18 | 63 |
-| foot | 11 | 56 |
+| pectoral | 16 | 147 |
+| forearm | 18 | 122 |
+| thigh | 10 | 91 |
+| leg | 10 | 70 |
+| hand | 9 | 69 |
+| foot | 11 | 60 |
 | cranial | 15 | 55 |
+| pelvic | 8 | 54 |
 | fin | 9 | 51 |
-| thigh | 10 | 44 |
-| arm | 5 | 42 |
-| leg | 10 | 41 |
-| pelvic | 8 | 35 |
-| hand | 9 | 28 |
-| axial | 15 | 25 |
+| arm | 5 | 49 |
+| axial | 15 | 36 |
 <!-- /counts:holes -->
 
 No region is at zero. The distribution is now flat enough that the limiting factor
@@ -315,6 +377,12 @@ A second salamander source is the obvious next acquisition.
 | **Blotto et al. (2020)** | Anuran hand and foot; 9 autopod elements incl. prepollex/prehallux; hand 0→12%, foot 0→25% |
 | **Dick & Clemente (2016)** | Varanid hindlimb attachments from their Table 1; **leg 0→15%**, thigh 14→17% |
 | **Hudson et al. (2011) hindlimb** | Cheetah hindlimb architecture for 6 muscles — mass, fascicle length, PCSA |
+| **Fisher & Goodman (1955)** | The avian column entire — but the scan is uneven: 83 of ~328 headings have a recoverable Origin paragraph, and plate-facing pages OCR to noise. Page-by-page work |
+| **Pereyra et al. (2019)** | NOT rows. Sharpey's fibre orientation at turtle pectoral attachments, in three classified patterns — evidence for what `correlate` asserts, and the way into §3's 18 unused correlates |
+| **Westphal et al. (2019)** | Amphisbaenian pectoral: all 17 shoulder muscles retained under any degree of limb reduction, with insertions shifting to connective tissue while origins stay put |
+| **Martins et al. (2019)** | Threadsnake head and neck, 18 species. Miniaturised burrowers — best for what varies within Squamata, not as a lepidosaur stand-in |
+| **Boumans et al. (2015)** | Barn owl cervical muscles, origin and insertion tabulated across 14 vertebrae |
+| **Vélez-García et al. (2023)** | Kinkajou shoulder and brachium — the second caniform against Galictis, which is what would show whether the therian forelimb rows are therian or mustelid |
 | **Hattori & Tsuihiji (2021)** | Pedal homology and osteological correlates; fetched from Europe PMC, no local PDF |
 
 ### One substantive homology change
@@ -368,18 +436,57 @@ to joints, trace muscle paths from origin to insertion, compute moment arms. Tha
 is precisely what this dataset's attachment records are for, and it is what makes
 `side` and `landmark` resolution worth chasing rather than decorative.
 
-## What is still unmined in `papers/`
+## 6. Catalogued but not yet mined
 
-Nothing in `papers/` is unmined. Five sources remain uncited in records and are
-accounted for above.
+A batch of 29 sources was filed into `papers/` and `sources.json` in one pass and
+has not been worked through. Each has `role`, `pdf` and where known a `doi`, so
+the question "what is this for" is already answered; what is missing is the
+records. Ordered by the gap each would close.
+
+| Source | Would close |
+|---|---|
+| **Jones et al. (2019)** | Avian cranial muscles from contrast CT. Aves is 13% and has no cranial attachments at all |
+| **Ziermann & Diogo (2013)** | Salamander cranial development, including muscles lost at metamorphosis — developmental evidence for the coarsest region |
+| **Collings & Richards (2019)** | Anuran pelvis and hindlimb, attachment-level, in a walking rather than jumping frog |
+| **Dearden et al. (2020)** | Chondrichthyan cranial muscles, elasmobranch *and* holocephalan. Chondrichthyes is the thinnest column at 5% |
+| **Huber et al. (2011)** | Reference summary for the same gap |
+| **Anderson (2008)** | Cranial nomenclature reconciled across gnathostomes — a whole-region cross-check rather than new rows |
+| **Diogo & Abdala (2007); Diogo (2008)** | The osteichthyan half of the pectoral and cranial homology arguments the tetrapod records rest on |
+| **Cole et al. (2011)** | Developmental origin for the pelvic fin muscles, which the fin records mostly assert topologically |
+| **Bauer (1997)** | Urodele jaw openers on CN VII — the half of the salamander cranial series development does not resolve |
+| **Wiseman et al. (2021); Cuff et al. (2022)** | Crocodylian and archosaur hindlimb attachment coordinates and muscle-size estimation |
+| **Mathou et al. (2023)** | Architecture for the axial column, which has none |
+| **O'Reilly et al. (2000); Reilly & White (2003)** | Axial function, and the epipubic bone — a skeletal element the dataset does not carry |
+| **Demuth et al. (2023)** | A stem archosaur earlier than any fossil column here |
+| **Springer & Johnson (2015); Lemell et al. (2002)** | Branchial and hyobranchial detail, outgroup and functional respectively |
+| **Didier (1987); Zhu (2011)** | Holocephalan myology and turtle plastron reduction. Both unpublished theses — check, do not defer to |
+| **Schlough; Lőw et al. (2016); OSU Extension (2009); Jacob & Pescatore** | Dissection vocabulary for mustelid, frog, salmonid and chicken, as Campbell (2007) supplied for the rat |
+| **Hattori & Tsuihiji (2021)** | Pedal muscles across all four sauropsid clades with osteological correlates named for most. The correlate gap in §3 — 18 flagged sites with no muscle on them — is what this closes, more than it closes rows |
+| **Lowie et al. (2018)** | Lizard forelimb flexors. Lepidosauria's forearm is its largest remaining region gap at 8 rows |
+| **Sánchez et al. (2019)** | Felid forearm and hand. The therian forelimb is currently scored entirely from a mustelid, and the cat is the animal most labs actually use |
+| **Gyambibi & Lemelin (2013); Lemelin & Diogo (2016)** | Primate forearm and hand, quantitative in the first case. Hand is the second-thinnest region at 36% |
+| **Diogo et al. (2016, marsupials)** | Whether the therian rows are therian or merely eutherian — the column is scored from placental exemplars throughout |
+
+Mined from this batch so far: **Ercoli et al. (2012)** (19 occurrences, Theria
+15% to 38%), **Zaaf et al. (1999)** (21 occurrences, Lepidosauria 29% to 53%),
+**Omura et al. (2014)**, **Prikryl et al. (2009)** (8 occurrences, Anura 23% to
+35%, plus four new elements), **Meers (2003)** (11 occurrences, Crocodylia 58% to
+75%) and **Campbell (2007)**; see the reading notes beside their PDFs. Zaaf et al. also holds the first architecture data for any lepidosaur
+(Tables 4-6), which is left unentered pending a schema decision on how to carry
+two species with two specimens each.
+
+## What is still unmined outside `papers/`
 
 The outstanding fetches are external:
 
 | Source | Would fix |
 |---|---|
 | **Molnar et al. (2018) Tables S1–S6** | Stem-tetrapodomorph attachments — the only route to the 0% fossil column |
-| A salamander source other than *Taricha* | Caudata is scored from one genus; the paper's own comparisons show several characters vary across salamanders |
 | Anuran, chelonian or therian equivalents of Walthall & Ashley-Ross | The columns that would make the salamander scores comparable |
+
+*A salamander source other than* Taricha *is no longer outstanding* — Omura et al.
+(2014) supplies it for the trunk, and confirms the concern: the external oblique
+and the separability of the rectus abdominis both vary across urodeles.
 
 ## Roadmap position
 

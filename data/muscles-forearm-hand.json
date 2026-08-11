@@ -51,7 +51,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
           "insertion": "Almost the whole anterolateral surface of the radius, and the lateral surface of the radiale.",
@@ -81,7 +82,8 @@
           "origin": "Proximal part of the lateral epicondyle of the humerus."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
           "note": "In Phyllomedusa and other grasping tree frogs the insertion shifts distally onto the metacarpals, convergently with mammals.",
@@ -105,7 +107,8 @@
           "attachmentNote": "In Phyllomedusa and other grasping tree frogs the insertion has shifted distally onto the metacarpals — the same shift mammals made, independently."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
           "sources": [
@@ -130,7 +133,8 @@
           }
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
           "sources": [
@@ -155,7 +159,8 @@
           }
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
           "sources": [
@@ -180,7 +185,8 @@
           }
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Extensor antebrachii et carpi radialis",
           "present": "yes",
           "note": "Very likely includes the 'extensor metacarpi radialis' and the 'supinator' sensu Meyers (1996).",
@@ -189,7 +195,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "source",
           "name": "Extensor carpi radialis longus + brevis",
           "present": "yes",
           "origin": "Lateral supracondylar ridge and lateral epicondyle of the humerus.",
@@ -323,7 +330,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -355,7 +363,8 @@
           "attachmentNote": "The postaxial mirror of the extensor antebrachii et carpi radialis, taking the distal part of the same epicondyle where that muscle takes the proximal part."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Extensor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -363,7 +372,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -371,16 +381,42 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "note": "= extensor carpi ulnaris + anconeus quartus sensu Holmes (1977).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              },
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Extensor carpi ulnaris from the ulnar condyle and proximal ulna, mainly onto the ulnare with a small expansion to the first metacarpal. In Gekko the insertion is restricted to the pisiform — a different carpal, and one of the clearest attachment differences between the two species."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "note": "Confusingly called flexor ulnaris by Meers (2003) despite being a dorsal-mass, radial-innervated muscle.",
@@ -406,7 +442,8 @@
           "attachmentNote": "Reported as extensor carpi ulnaris, tendinous from the lateral condyle to the dorsal manus."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Extensor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -414,7 +451,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Extensor carpi ulnaris",
           "present": "yes",
           "origin": "Lateral epicondyle of the humerus and the posterior border of the ulna.",
@@ -439,7 +477,27 @@
               "joint": "wrist",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              },
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Extensor carpi ulnaris from the laterodistal humeral ectepicondyle and the articular capsule, onto the lateral base of metacarpal V and the craniolateral base of the accessory carpal."
         }
       ],
       "homology": {
@@ -520,7 +578,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
@@ -546,7 +605,8 @@
           "attachmentNote": "The most superficial forearm muscle in dorsal view. It serves digits II-IV only — the salamander manus has four digits, digit V having been lost."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
@@ -554,7 +614,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
@@ -562,7 +623,34 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
+          "name": "Extensor digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Extensor digitorum longus, by tendon from the ulnar condyle onto the proximal ulnar side of metacarpals II-IV. Gekko has four distal tendinous branches inserting on both sides of metacarpals II-IV instead."
+        },
+        {
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
@@ -570,23 +658,38 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "grus-americana",
+          "speciesBasis": "note",
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Grus americana, from Fisher & Goodman's Origin/Insertion paragraphs. M. extensor digitorum communis: tendinous from the most distal part of the face of the ectepicondylar prominence, with **a wide vinculum passing posteriorly from the distal end of that tendon to insert along a line on the postero-anconal corner of the ulna, just anterior to the row of papillae for the secondary feathers** — a second, aponeurotic attachment tied directly to the flight-feather apparatus. The round tendon runs distad along the antero-anconal ulna, through the tendinal groove at its distal end, onto the fused area of metacarpals III and IV."
         },
         {
-          "taxon": "aves",
-          "name": "Extensor digitorum",
-          "present": "yes",
-          "sources": [
-            "abdala-diogo-2010"
-          ]
-        },
-        {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Extensor digitorum communis",
           "present": "yes",
           "origin": "Lateral epicondyle of the humerus by the common extensor tendon.",
@@ -607,7 +710,22 @@
               "joint": "metacarpophalangeal",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Extensor digitorum communis, from the distal ectepicondylar crest and tendinously near the humeral ectepicondyle, dividing into four principal tendons to the lateral digits. In three of six cases the belly was partly divided in its middle region."
         }
       ],
       "homology": {
@@ -678,7 +796,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
@@ -703,7 +822,8 @@
           "attachmentNote": "Serves digits II-IV, matching the extensor digitorum communis and reflecting the four-digit salamander manus."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
@@ -728,7 +848,8 @@
           "attachmentNote": "The extensor indicis brevis superficialis arises continuously from the radiale and the short ligament joining radiale and ulnare, lateral to the extensor carpi radialis tendon that attaches to element Y."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
@@ -736,25 +857,45 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
-          "name": "Extensores digitorum breves",
-          "present": "yes",
-          "sources": [
-            "abdala-diogo-2010"
-          ]
-        },
-        {
-          "taxon": "crocodylia",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
             "abdala-diogo-2010",
-            "pereyra-etal-2024"
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the ulnare onto the distalmost phalanx of digits I-V. In Gekko the insertion is on the antepenultimate phalanx except digit I, where it is the first phalanx."
+        },
+        {
+          "species": "caiman-yacare",
+          "speciesBasis": "source",
+          "name": "Extensores digitorum breves",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "pereyra-etal-2024",
+            "meers-2003"
           ],
           "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
@@ -762,7 +903,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "present": "variable",
           "note": "Largely lost or reduced in the therian manus, though a dorsal intrinsic layer persists in some taxa. Abdala & Diogo note that the reduction of the intrinsic hand musculature is a mammalian trend, not a mammalian elaboration.",
           "sources": [
@@ -837,7 +979,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Abductor et extensor digiti I",
           "present": "yes",
           "sources": [
@@ -865,7 +1008,8 @@
           "attachmentNote": "Recorded as m. abductor et extensor digiti I. Wholly intrinsic to the hand — it takes no origin in the forearm, unlike the amniote abductor pollicis longus, which is why the name transfers badly."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Abductor pollicis longus",
           "present": "yes",
           "insertion": "Digit 2, not digit 1.",
@@ -875,7 +1019,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Abductor pollicis longus",
           "present": "yes",
           "origin": "Ulna.",
@@ -885,7 +1030,33 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
+          "name": "Abductor pollicis longus",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "ventral",
+                "landmark": "olecranon"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Extensor ossis metacarpi pollicis, the squamate name for this muscle: from the distal border of the ventral surface of the ulna onto the radial border of metacarpal I. Scored on the ulna without a landmark for the distal border, which is not a named process here."
+        },
+        {
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Abductor pollicis longus",
           "present": "yes",
           "sources": [
@@ -893,7 +1064,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Abductor pollicis longus",
           "present": "yes",
           "sources": [
@@ -901,15 +1073,8 @@
           ]
         },
         {
-          "taxon": "aves",
-          "name": "Abductor pollicis longus",
-          "present": "yes",
-          "sources": [
-            "abdala-diogo-2010"
-          ]
-        },
-        {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Abductor pollicis longus",
           "present": "yes",
           "origin": "Posterior surfaces of the ulna, radius and interosseous membrane.",
@@ -934,7 +1099,26 @@
               "joint": "carpometacarpal",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "lateral"
+              },
+              {
+                "element": "radius",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Abductor digiti I longus: from the lateral surface of the ulnar AND radial diaphyses, its tendons held by a dedicated retinaculum in a groove at the craniomedial distal radius, inserting by two tendons at the first digit."
         }
       ],
       "homology": {
@@ -1011,7 +1195,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Not an independent muscle in Ambystoma.",
           "sources": [
@@ -1019,14 +1204,16 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Brachioradialis",
           "present": "yes",
           "note": "= tractor radii sensu Haines (1939), Walker (1973), Wyneken (2001).",
@@ -1035,7 +1222,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Absent in Timon but seemingly present in Sphenodon.",
           "sources": [
@@ -1043,7 +1231,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Brachioradialis",
           "present": "yes",
           "note": "Appears to correspond to the 'supinator' sensu Meers (2003).",
@@ -1052,7 +1241,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "uncertain",
           "note": "Marked '– [but see text]'.",
           "sources": [
@@ -1060,7 +1250,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Brachioradialis",
           "present": "yes",
           "origin": "Proximal two-thirds of the lateral supracondylar ridge.",
@@ -1086,7 +1277,27 @@
               "joint": "radioulnar",
               "motion": "pronation"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "posterior"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Supinator longus. From the humeral diaphysis immediately caudodistal to the brachialis origin, running up to the cranial surface of the ectepicondylar crest; origin length varied between specimens, in some reaching the proximal diaphysis near the humeral neck. Inserts on the craniomedial distal radius."
         }
       ],
       "homology": {
@@ -1157,7 +1368,8 @@
       },
       "occurrences": [
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Supinator",
           "present": "yes",
           "origin": "Lateral epicondyle, supinator crest of the ulna, annular and radial collateral ligaments.",
@@ -1178,19 +1390,57 @@
               "joint": "radioulnar",
               "motion": "supination"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Supinator brevis, from the articular capsule and lateral ligaments of the elbow immediately lateral to the humeral condyle, onto the cranial surface of the proximal two-thirds of the radius. Its origin is capsule and ligament rather than bone."
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "present": "uncertain",
           "note": "Squamates have limited forearm rotation and no unambiguous supinator. Reports of a lepidosaur 'supinator' generally refer to a brachioradialis-like or abductor-pollicis-longus-like muscle.",
           "sources": [
             "abdala-diogo-2010",
-            "molnar-etal-2017"
-          ]
+            "molnar-etal-2017",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Both supinators: longus from the outer edge of the humerus onto the lower two-thirds of the radius, brevis from the outer condyle along the whole radius. In Gekko the brevis origin is more proximal on the humerus."
         },
         {
-          "taxon": "crocodyliform-stem",
+          "species": "pissarrachampsa-sera",
+          "speciesBasis": "source",
           "name": "Supinator",
           "present": "inferred",
           "sources": [
@@ -1206,7 +1456,8 @@
           "attachmentNote": "An insertion surface on the radius."
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Meers (2003) applies the name 'supinator' to what Abdala & Diogo identify as the brachioradialis. This is a naming collision, not a record of the mammalian supinator.",
           "sources": [
@@ -1278,7 +1529,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "note",
           "present": "variable",
           "note": "Absent in Ambystoma ordinarium, but Haines (1939) reports it in other urodeles such as Salamandra.",
           "sources": [
@@ -1286,7 +1538,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Anconeus",
           "present": "yes",
           "note": "= epicondylo-cubitalis sensu Gaupp (1896).",
@@ -1295,7 +1548,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Absent in Trachemys but present in Testudo, Pelomedusa, Chelodina and Emys.",
           "sources": [
@@ -1303,7 +1557,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Absent in Timon but present in at least some lepidosaurs, including Sphenodon.",
           "sources": [
@@ -1311,14 +1566,16 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Anconeus",
           "present": "yes",
           "note": "= anconeus quartus sensu Holmes (1977).",
@@ -1327,7 +1584,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Anconeus",
           "present": "yes",
           "origin": "Posterior lateral epicondyle of the humerus.",
@@ -1356,7 +1614,24 @@
               "joint": "radioulnar",
               "motion": "pronation"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "posterior",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "lateral",
+                "landmark": "olecranon"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. From the caudal area of the last third of the humerus onto the articular capsule and the lateral surface of the olecranon."
         }
       ],
       "homology": {
@@ -1432,7 +1707,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "name": "Epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -1440,7 +1716,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -1448,7 +1725,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -1456,7 +1734,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -1464,7 +1743,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -1472,7 +1752,8 @@
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -1480,13 +1761,32 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Epitrochleoanconeus (anconeus epitrochlearis)",
           "present": "variable",
-          "note": "Present in many mammals; in humans it is an inconstant muscle replaced by Osborne's ligament over the cubital tunnel.",
+          "note": "Present in many mammals; in humans it is an inconstant muscle replaced by Osborne's ligament over the cubital tunnel. Not the muscle a rat or cat dissection guide calls the epitrochlearis. Campbell's rat guide describes that one as a thin medial sheet of the upper arm that EXTENDS the forearm — a latissimus-associated muscle reaching the olecranon — whereas the epitrochleoanconeus runs from the medial epicondyle to the olecranon over the ulnar nerve. The names differ by two letters and the muscles are not the same; no source held here establishes what the lab epitrochlearis is homologous to, so it has no record.",
           "sources": [
-            "ercoli-etal-2014"
-          ]
+            "ercoli-etal-2014",
+            "campbell-2007"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "medial",
+                "landmark": "olecranon"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. From the humerus distal to the caudal opening of the entepicondylar foramen, onto the medial and caudal surfaces of the olecranon, sharing fibres distally with the ulnar head of flexor carpi ulnaris. The entepicondylar foramen is a carnivoran feature and locates this origin precisely."
         }
       ],
       "homology": {
@@ -1565,7 +1865,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "note": "Part of the flexor antebrachii et carpi ulnaris sensu Diogo & Abdala (2007).",
@@ -1600,7 +1901,8 @@
           "attachmentNote": "Described as the mirror image of the flexor antebrachii et carpi radialis. The four muscles taking the two epicondyles — two flexors medially, two extensors laterally, each pair split proximal and distal — are the clearest instance of the dorsal/ventral mirroring the paper reports for the antebrachium."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -1608,7 +1910,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -1616,16 +1919,39 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "note": "Dilkes (2000): present in all major extant reptile groups.",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the ulnar condyle of the humerus and the entire laterodorsal border of the ulna onto the pisiform."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -1650,7 +1976,8 @@
           "attachmentNote": "Tendinous at the distomedial humerus, fleshy at the ventral carpus."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -1658,7 +1985,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "origin": "Medial epicondyle (humeral head) and olecranon/posterior ulna (ulnar head).",
@@ -1683,7 +2011,32 @@
               "joint": "wrist",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "posterior",
+                "landmark": "olecranon"
+              },
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              },
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Two heads: caput ulnare from the caudal and medial olecranon, caput humerale from the distal humeral entepicondyle. The ulnar head inserts on the lateral surface of the accessory carpal (pisiform) and the wrist fascia, its ligament continuing to the base of metacarpal V."
         }
       ],
       "homology": {
@@ -1757,7 +2110,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexor antebrachii et carpi radialis",
           "present": "yes",
           "sources": [
@@ -1786,7 +2140,8 @@
           "attachmentNote": "Obscured along most of its length by the flexor digitorum communis. Preaxial member of the pair that divides the medial epicondyle between them."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "sources": [
@@ -1794,7 +2149,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "note": "In turtles the pronator teres and flexor carpi radialis are usually distinct muscles, though Holmes designated the pronator teres a 'head of the flexor carpi radialis'.",
@@ -1803,7 +2159,38 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "radiale"
+              },
+              {
+                "element": "radius",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the inner condyle of the humerus, tendinously onto the radiale and muscularly onto the distal radius."
+        },
+        {
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "sources": [
@@ -1811,15 +2198,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
-          "name": "Flexor carpi radialis",
-          "present": "yes",
-          "sources": [
-            "abdala-diogo-2010"
-          ]
-        },
-        {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "note": "Seems to correspond to the pronator superficialis sensu Sullivan (1962), Shellswell & Wolpert (1977), Meyers (1996) and Dilkes (2000).",
@@ -1828,7 +2208,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "origin": "Medial epicondyle by the common flexor tendon.",
@@ -1853,7 +2234,23 @@
               "joint": "wrist",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. From the middle region of the medial end of the humeral entepicondyle, held by its own retinaculum at the radial carpal, inserting by two loose tendons onto the proximal palmar regions of metacarpals II and III."
         }
       ],
       "homology": {
@@ -1924,7 +2321,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Not differentiated in Ambystoma; the urodele forearm lacks a discrete pronator teres.",
           "sources": [
@@ -1932,7 +2330,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Pronator teres",
           "present": "yes",
           "note": "Ribbing (1907) and Gaupp (1896) disagreed about which anuran muscle this is — flexor antebrachii lateralis superficialis + profundus, or flexor antebrachii medialis.",
@@ -1941,7 +2340,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Pronator teres",
           "present": "yes",
           "sources": [
@@ -1949,7 +2349,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Pronator teres",
           "present": "yes",
           "sources": [
@@ -1957,7 +2358,8 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Pronator teres",
           "present": "yes",
           "sources": [
@@ -1982,7 +2384,8 @@
           "attachmentNote": "Tendinous at the ventrodistal humerus, fleshy on the ventral carpus. Note the carpal rather than radial insertion — Klinkhamer et al. report it that way for Crocodylus."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Pronator teres",
           "present": "yes",
           "sources": [
@@ -1990,7 +2393,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Pronator teres",
           "present": "yes",
           "origin": "Medial epicondyle (humeral head) and coronoid process of the ulna (ulnar head).",
@@ -2012,7 +2416,23 @@
               "joint": "radioulnar",
               "motion": "pronation"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. From the medioproximal and cranial region of the humeral entepicondyle in two bellies, onto the cranial surface of the mediodistal radius."
         }
       ],
       "homology": {
@@ -2085,7 +2505,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Pronator quadratus",
           "present": "yes",
           "sources": [
@@ -2120,7 +2541,8 @@
           "attachmentNote": "Recorded as m. pronator profundus. It crosses from the postaxial to the preaxial side of the wrist, which is what makes it a pronator rather than a flexor."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Pronator quadratus",
           "present": "yes",
           "note": "Ribbing (1907) held that Gaupp's (1896) anuran 'abductor pollicis' is in fact the pronator quadratus, not the abductor pollicis brevis.",
@@ -2129,7 +2551,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Pronator quadratus",
           "present": "yes",
           "note": "Probably corresponds to part of Walker's (1973) pronator profundus; the remainder is the pronator accessorius.",
@@ -2138,7 +2561,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Pronator quadratus",
           "present": "yes",
           "sources": [
@@ -2146,7 +2570,8 @@
           ]
         },
         {
-          "taxon": "crocodyliform-stem",
+          "species": "pissarrachampsa-sera",
+          "speciesBasis": "source",
           "name": "Pronator quadratus",
           "present": "inferred",
           "sources": [
@@ -2162,7 +2587,8 @@
           "attachmentNote": "A discrete origin fossa on the ulna — the same proximal-ulnar origin Klinkhamer et al. report for Crocodylus."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Pronator quadratus",
           "present": "yes",
           "sources": [
@@ -2186,7 +2612,8 @@
           "attachmentNote": "Fleshy at the proximomedial ulna to the posterodistal radius."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Pronator quadratus",
           "present": "yes",
           "sources": [
@@ -2194,7 +2621,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Pronator quadratus",
           "present": "yes",
           "origin": "Distal quarter of the anterior ulna.",
@@ -2215,7 +2643,22 @@
               "joint": "radioulnar",
               "motion": "pronation"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. The deepest muscle of the distal medial forearm: from the medial surface of the distal ulna onto the craniomedial and medial radius, its insertion continuous distally with the palmar radiocarpal and ulnocarpal ligaments."
         }
       ],
       "homology": {
@@ -2281,21 +2724,24 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Pronator accessorius",
           "present": "yes",
           "sources": [
@@ -2303,7 +2749,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Pronator accessorius",
           "present": "yes",
           "sources": [
@@ -2311,14 +2758,16 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
@@ -2396,7 +2845,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexor digitorum communis",
           "present": "yes",
           "sources": [
@@ -2425,7 +2875,8 @@
           "attachmentNote": "Walthall & Ashley-Ross use flexor digitorum communis; Francis (1934) called the same muscle flexor primordialis communis, the name used for its hindlimb counterpart here. The aponeurosis, not the bone, is the functional insertion — the tendons are its continuation."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Flexor digitorum communis",
           "present": "yes",
           "sources": [
@@ -2433,7 +2884,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "note": "= flexor primordialis communis + flexor accessorius communis sensu Ribbing (1907).",
@@ -2442,16 +2894,39 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "note": "Probably also includes the 'pronator radii teres' sensu McMurrich (1903a) and Holmes (1977), at least in Sphenodon and lizards.",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "distal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the medial part of the ulnar condyle and the distal two-thirds of the ulna, onto the terminal phalanges of digits I and II."
         },
         {
-          "taxon": "crocodylia",
+          "species": "crocodylus-porosus",
+          "speciesBasis": "source",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "sources": [
@@ -2475,15 +2950,37 @@
           "attachmentNote": "Tendinous at both ends; reaches digit 2 of the manus."
         },
         {
-          "taxon": "aves",
+          "species": "grus-americana",
+          "speciesBasis": "note",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              },
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ]
+          },
+          "attachmentNote": "Grus americana, from Fisher & Goodman's Origin/Insertion paragraphs. M. flexor digitorum profundus: fleshy from the postero-palmar surface of the ulna, from the distal extent of the distal superficial joint ligament out to about one-third of the ulna. Its tendon crosses the wrist beneath the superficial sheath and **hooks around the anterior aspect of the pisiform process of the metacarpus** — the avian carpometacarpus is fused, so the insertion is scored on the metacarpal series with the pisiform process named as the pulley."
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Flexor digitorum superficialis + flexor digitorum profundus",
           "present": "yes",
           "origin": "Medial epicondyle, coronoid process, radius (superficialis); anteromedial ulna and interosseous membrane (profundus).",
@@ -2516,7 +3013,29 @@
               "joint": "metacarpophalangeal",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna"
+              },
+              {
+                "element": "radius"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Flexor digitorum profundus, five heads: three humeral (caput humerale laterale, mediale and profundus), one ulnar and one with radial and ulnar origins. The superficialis is not independent — it arises from the surface of the profundus itself and sends three thin tendons to digits II-IV, which is why this record's Theria occurrence lists both."
         }
       ],
       "homology": {
@@ -2581,14 +3100,16 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "present": "uncertain",
           "note": "Marked '– [but see text]'.",
           "sources": [
@@ -2596,7 +3117,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "'Palmaris longus'",
           "present": "yes",
           "sources": [
@@ -2604,7 +3126,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Absent in Timon, but some lepidosaurs do have a comparable structure.",
           "sources": [
@@ -2612,27 +3135,45 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Palmaris longus",
           "present": "variable",
           "note": "Absent in roughly 15% of humans unilaterally or bilaterally, and absent in many other mammals.",
           "sources": [
             "ercoli-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. From the caudomedial margin of the distal humeral entepicondyle onto the palmar fascia, connected indirectly to the radial sesamoid and the accessory carpal. Its insertion is aponeurotic throughout, so it leaves no distal correlate."
         }
       ],
       "homology": {
@@ -2693,7 +3234,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Contrahentium caput longum",
           "present": "yes",
           "sources": [
@@ -2718,7 +3260,8 @@
           "attachmentNote": "Its insertion tendon is itself the origin of the contrahentes digitorum, so the two form a chain from the zeugopod to the phalanges."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Contrahentium caput longum",
           "present": "yes",
           "sources": [
@@ -2728,14 +3271,16 @@
           "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "present": "variable",
           "note": "Abdala & Diogo report that a few lizards may have a small muscle somewhat resembling the contrahentium caput longum of Ambystoma.",
           "sources": [
@@ -2743,14 +3288,16 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
@@ -2825,7 +3372,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexor accessorius lateralis",
           "present": "yes",
           "sources": [
@@ -2857,7 +3405,8 @@
           "attachmentNote": "Fibres run diagonally toward the radius and first digit. Inserting on the deep face of an aponeurosis is what lets it tension the palm rather than move a bone."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Flexor accessorius",
           "present": "yes",
           "sources": [
@@ -2865,7 +3414,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Absent as an independent muscle in extant amniotes.",
           "sources": [
@@ -2873,21 +3423,24 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
@@ -2950,7 +3503,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexor accessorius medialis",
           "present": "yes",
           "sources": [
@@ -2982,14 +3536,16 @@
           "attachmentNote": "Distinguished from the lateral accessory only by a more extensive origin — the two are otherwise parallel-fibred straps with the same insertion."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Absent as an independent muscle in extant amniotes.",
           "sources": [
@@ -2997,21 +3553,24 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "caiman-latirostris",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
@@ -3079,7 +3638,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
@@ -3105,7 +3665,8 @@
           "attachmentNote": "Slips lie on both sides of the metacarpals of digits II and III, but only on the medial side for digits I and IV — an asymmetry across the hand that tracks the axis of the manus."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
@@ -3114,7 +3675,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
@@ -3122,24 +3684,67 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Flexor digitorum brevis, from the ulnare onto the terminal phalanx. In Gekko the insertion is distally on the antepenultimate phalanx."
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "note": "Includes part of the flexores breves sublimes sensu Holmes (1977) and probably the flexor digiti quinti and/or transversus palmaris sensu Meers (2003).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "distal",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "flexor-tendons"
+              },
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = Mm. flexor digitorum brevis superficialis I-IV. A complex of small bipinnate bellies from the distal carpal row and tendinously from the overlying flexor digitorum longus, extending to the pisiform, each inserting by a discrete tendon onto the sides of one or more phalanges. Their tendons split at about mid-metacarpal to let the flexor digitorum longus tendons through. **Digit V appeared to lack such a muscle** in the specimens examined."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
@@ -3215,7 +3820,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "sources": [
@@ -3240,7 +3846,8 @@
           "attachmentNote": "Lies deep to the insertion tendons of the flexores breves superficiales. Part of its origin is tendinous rather than skeletal, on the contrahentium caput longum tendon."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "note": "Probably includes the adductor pollicis sensu Manzano et al. (2008b).",
@@ -3263,7 +3870,8 @@
           "attachmentNote": "The contrahens indicis arises by tendon from the mediodistal distal carpal 3-4-5 and inserts on the lateropalmar surface of the basal phalanx of digit II; the contrahens digiti V arises lateral to it. A separate contrahens serves the prepollex."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "note": "Includes the adductor digiti minimi sensu Walker (1973).",
@@ -3272,7 +3880,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "note": "Include the flexor digitorum V transversus I and II of Abdala & Moro (2006).",
@@ -3281,7 +3890,43 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "note",
+          "name": "Contrahentes digitorum",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "distal",
+                "landmark": "ulnare"
+              },
+              {
+                "element": "carpals",
+                "side": "distal",
+                "landmark": "distal-carpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "ventral"
+              },
+              {
+                "element": "metacarpals",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = Mm. flexores digitorum intermedii, the layer between the superficial and deep palmar musculature. The digit IV/V belly arises from the distal margin of the ulnare and lies in the plane of the lumbricals, usually inserting on the distal end of P1 of digit IV with a frequent accessory tendon to the distal metacarpal of digit V. The digit V belly arises from the distal carpal proximal to digit V and inserts on the ventral base of its P1. **Both are inconsistent** — Meers found the digit V belly commonly but not always, even within Alligator mississippiensis."
+        },
+        {
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Contrahentes digitorum",
           "present": "yes",
           "sources": [
@@ -3289,15 +3934,8 @@
           ]
         },
         {
-          "taxon": "aves",
-          "name": "Contrahentes digitorum",
-          "present": "yes",
-          "sources": [
-            "abdala-diogo-2010"
-          ]
-        },
-        {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "Adductor pollicis (+ palmar interossei)",
           "present": "variable",
           "note": "The mammalian adductor pollicis is generally regarded as a surviving contrahens; the rest of the layer is lost.",
@@ -3379,7 +4017,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -3407,7 +4046,8 @@
           "attachmentNote": "The deepest of the short flexor layers."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -3432,7 +4072,8 @@
           "attachmentNote": "The medial flexor indicis brevis profundus arises by tendon from the medial distal carpal 3-4-5 and inserts fleshily on the mediopalmar metacarpal II and on the ligament connecting the prepollex."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -3440,7 +4081,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -3448,7 +4090,38 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
+          "name": "Flexores breves profundi",
+          "present": "yes",
+          "sources": [
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "ventral",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = M. flexor digitorum profundus digiti I-V, and possibly also the flexor digitorum intermedius of digit V. From the ventral surface of the distal carpal row, extending slightly onto the metacarpal base, by a flat broad tendon onto the flexor process at the base of the first phalanx. In some Alligator the digit I tendon is irregularly divided in two."
+        },
+        {
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Flexores breves profundi",
           "present": "yes",
           "sources": [
@@ -3456,15 +4129,8 @@
           ]
         },
         {
-          "taxon": "aves",
-          "name": "Flexores breves profundi",
-          "present": "yes",
-          "sources": [
-            "abdala-diogo-2010"
-          ]
-        },
-        {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Interossei (palmar and dorsal)",
           "present": "yes",
           "note": "The mammalian interossei are generally derived from the flexores breves profundi together with the intermetacarpales.",
@@ -3493,7 +4159,29 @@
               "joint": "metacarpophalangeal",
               "motion": "flexion"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              },
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "sesamoids-manus"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Ten fleshy bellies, a medial and a lateral for each digit, arising at the proximal area of the corresponding metacarpal. The pair for digit III and the lateral belly for digit II arise from the plantar process of carpal III; the digit I bellies from metacarpal I, carpal I and marginally the radial sesamoid."
         }
       ],
       "homology": {
@@ -3555,7 +4243,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "note",
           "present": "variable",
           "note": "Absent in Ambystoma ordinarium, but McMurrich (1903a,b) reports lumbricales in other urodeles such as Ambystoma tigrinum.",
           "sources": [
@@ -3563,7 +4252,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Lumbricales",
           "present": "yes",
           "sources": [
@@ -3591,7 +4281,8 @@
           "attachmentNote": "Blotto et al. separate lumbricales breves (from distal carpal 3-4-5, inserting at the metacarpophalangeal joint) from lumbricales longi (from the tendines superficiales, in medial and lateral slips) — a distinction the amniote literature does not make."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Lumbricales",
           "present": "yes",
           "sources": [
@@ -3599,7 +4290,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Lumbricales",
           "present": "yes",
           "sources": [
@@ -3607,22 +4299,40 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Lumbricales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. From the digital extensions of the common flexor digitorum longus tendon onto the extensor aspect of the metacarpophalangeal joints — so they flex the carpometacarpal joint and extend the metacarpophalangeal joint at the same time. Origin is tendon, not bone, as in every other taxon scored here."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "sources": [
             "abdala-diogo-2010"
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Lumbricals",
           "present": "yes",
           "origin": "Tendons of flexor digitorum profundus.",
@@ -3638,7 +4348,21 @@
             {
               "nerve": "ulnar"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Four bellies for digits II-V, arising from the tendons of flexor digitorum profundus at the level of the proximal metacarpals and inserting by thin tendons onto the medial base of the proximal, sometimes the middle, phalanges. Origin is tendon, not bone."
         }
       ],
       "homology": {
@@ -3710,7 +4434,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Intermetacarpales",
           "present": "yes",
           "sources": [
@@ -3734,7 +4459,8 @@
           "attachmentNote": "Roughly triangular, spanning metacarpal to metacarpal without reaching a phalanx."
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Intermetacarpales",
           "present": "yes",
           "sources": [
@@ -3742,7 +4468,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Intermetacarpales",
           "present": "yes",
           "sources": [
@@ -3750,7 +4477,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Intermetacarpales",
           "present": "yes",
           "note": "Lizards often have four 'intermetacarpales I'.",
@@ -3759,16 +4487,38 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Intermetacarpales",
           "present": "yes",
           "note": "Part of the interossei dorsales sensu Meers (2003).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metacarpals",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = part of Mm. interossei dorsalae. M. interosseus dorsalis digiti II runs from the dorsomedial surface of metacarpal I, just distal to the deep extensor origins of digits I and II, onto the lateral surface of the metacarpophalangeal joint of digit II and the lateral distal third of metacarpal II. **Abdala & Diogo split Meers's interossei dorsalae between this record and the dorsometacarpales without saying which slips go where**, so the same rows sit on both and neither should be read as the whole complex."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Intermetacarpales",
           "present": "yes",
           "sources": [
@@ -3776,7 +4526,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
           "name": "Interossei (partim)",
           "present": "yes",
           "note": "Contribute, with the flexores breves profundi, to the mammalian interossei.",
@@ -3834,7 +4585,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "survey",
           "present": "uncertain",
           "note": "Marked '– [see text]'.",
           "sources": [
@@ -3842,7 +4594,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "rhinella-arenarum",
+          "speciesBasis": "survey",
           "name": "Dorsometacarpales",
           "present": "yes",
           "sources": [
@@ -3850,7 +4603,8 @@
           ]
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Dorsometacarpales",
           "present": "yes",
           "sources": [
@@ -3858,7 +4612,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Dorsometacarpales",
           "present": "yes",
           "sources": [
@@ -3866,15 +4621,37 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Dorsometacarpales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metacarpals",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = part of Mm. interossei dorsalae, the other half of the split described on the intermetacarpales. Abdala & Diogo assign this record and the intermetacarpales each to 'part of' Meers's interossei dorsalae without resolving the division, so these rows describe the complex rather than this record alone."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Dorsometacarpales",
           "present": "yes",
           "sources": [
@@ -3944,7 +4721,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "ambystoma-ordinarium",
+          "speciesBasis": "note",
           "present": "variable",
           "note": "Seemingly absent in Ambystoma ordinarium.",
           "sources": [
@@ -3952,7 +4730,8 @@
           ]
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Abductor pollicis brevis",
           "present": "yes",
           "note": "Ribbing (1907) held that Gaupp's (1896) 'abductor pollicis' is the pronator quadratus, not this muscle.",
@@ -3975,7 +4754,8 @@
           "attachmentNote": "In anurans the preaxial muscles serve the PREPOLLEX, not digit 1 — the adductor pollicis arises tendinously from distal carpal 3-4-5 and inserts on the palmar and distal prepollex. Digit 1 is absent, and the muscles that would serve it attach to the preaxial element instead."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Abductor pollicis brevis",
           "present": "yes",
           "sources": [
@@ -3983,7 +4763,8 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "timon-lepidus",
+          "speciesBasis": "survey",
           "name": "Abductor pollicis brevis",
           "present": "yes",
           "sources": [
@@ -3991,16 +4772,35 @@
           ]
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Abductor pollicis brevis",
           "present": "yes",
           "note": "= abductor metacarpi I sensu Meers (2003).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "ventral",
+                "landmark": "radiale"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = M. abductor metacarpi I. Fleshy from the ventrolateral surface of the radiale, by a stout tendon onto the proximolateral base of metacarpal I."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "name": "Abductor alulae",
           "present": "yes",
           "note": "The 'abductor alulae' sensu Meyers (1996) corresponds to the 'abductor indicis' sensu Sullivan (1962) and goes to digit 1 (= digit 2 according to embryology) — so it seemingly corresponds to the abductor pollicis brevis.",
@@ -4009,7 +4809,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Abductor pollicis brevis",
           "present": "yes",
           "origin": "Flexor retinaculum, scaphoid and trapezium.",
@@ -4023,7 +4824,26 @@
               "nerve": "median-recurrent",
               "segments": "C8–T1"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sesamoids-manus",
+                "side": "distal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "medial"
+              },
+              {
+                "element": "metacarpals",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Abductor digiti I brevis, from the distal margin of the radial sesamoid onto the medial surface of the proximal end of the proximal phalanx of digit I, sometimes with an extra fleshy insertion on the ventromedial metacarpal I. A muscle whose origin is a sesamoid rather than a bone of the carpus."
         }
       ],
       "homology": {
@@ -4089,7 +4909,8 @@
       },
       "occurrences": [
         {
-          "taxon": "caudata",
+          "species": "taricha-torosa",
+          "speciesBasis": "source",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "insertion": "Lateral edge of the fourth metacarpal.",
@@ -4118,7 +4939,8 @@
           "attachmentNote": "Recorded as m. extensor lateralis digiti IV. It serves digit IV because digit V is absent from the salamander manus — the same postaxial position as the amniote abductor digiti minimi on digit V, one digit over. A case where matching by digit number and matching by position give different answers."
         },
         {
-          "taxon": "anura",
+          "species": "triprion-petasatus",
+          "speciesBasis": "source",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "sources": [
@@ -4128,7 +4950,8 @@
           "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record."
         },
         {
-          "taxon": "testudines",
+          "species": "trachemys-scripta",
+          "speciesBasis": "survey",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "sources": [
@@ -4136,23 +4959,58 @@
           ]
         },
         {
-          "taxon": "lepidosauria",
+          "species": "eublepharis-macularius",
+          "speciesBasis": "note",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "zaaf-etal-1999"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the ulnare along the whole length of the ulnar edge of metacarpal V."
         },
         {
-          "taxon": "crocodylia",
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "distal",
+                "landmark": "pisiform"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. M. abductor metacarpi V, by fleshy attachment to the distal surface of the pisiform just distal to the insertion of flexor carpi ulnaris, inserting tendinously along the lateral surface of metacarpal V."
         },
         {
-          "taxon": "aves",
+          "species": "gallus-domesticus",
+          "speciesBasis": "survey",
           "present": "no",
           "note": "Absent in chickens even though a most-ulnar digit is present. Abdala & Diogo treat this as the counter-case: here the specific IDENTITY of the digit (3 by fossils and Hox, 4 by embryology) seems to matter, not merely its position. They flag it as an open problem.",
           "sources": [
@@ -4160,7 +5018,8 @@
           ]
         },
         {
-          "taxon": "theria",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "origin": "Pisiform and the tendon of flexor carpi ulnaris.",
@@ -4174,7 +5033,25 @@
               "nerve": "ulnar-deep",
               "segments": "C8–T1"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "sesamoids-manus"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja. Abductor digiti V, from the distal surface of the accessory carpal in two bellies: the medial onto the lateral sesamoid of digit V, the lateral onto the digit itself."
         }
       ],
       "homology": {

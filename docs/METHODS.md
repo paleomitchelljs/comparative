@@ -12,13 +12,32 @@ quotation. Every homology claim is a hypothesis attributed to a named author.
 Confidence labels (`well-supported`, `moderate`, `contested`, `uncertain`)
 reflect the strength of support reported in the literature, not certainty.
 
+## Species, and what a clade is
+
+Every observation is of **one species**. `Caudata` is not something anybody
+dissected; *Taricha torosa* is. The operational taxa are rollups, computed:
+species agree and the clade takes their state, species disagree and the clade is
+`variable`.
+
+So `variable` is a **result** here, not an opinion. Where you see it on a clade,
+two or more species were scored and they did not match — and the muscle page
+names which.
+
+Pick a species in the taxon selector to see one animal's rows. Pick the clade to
+see what its species agree on. The two answer different questions and the
+interface no longer conflates them.
+
+**Read a species row as one animal, not as its clade.** *Galictis cuja* is a
+semi-fossorial mustelid; *Nothoprocta* is a palaeognath; *Grus americana* is a
+crane. None of them is "the mammal", "the bird".
+
 ## Presence states
 
 | State | Means |
 |---|---|
 | `yes` | The cited source examined this taxon and found the muscle |
 | `no` | The source examined this taxon and did not find it |
-| `variable` | Found in some species of the clade and not others |
+| `variable` | On a species row: the source found it in some individuals and not others. On a clade, this state is **computed** — its species disagree |
 | `uncertain` | The source flags the identification as unresolved |
 | `inferred` | A fossil reconstruction — bracket-and-osteological-correlate, not an observation |
 

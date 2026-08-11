@@ -6,6 +6,12 @@
 const REGION_ORDER = ['cranial', 'axial', 'fin', 'pectoral', 'arm', 'forearm', 'hand', 'pelvic', 'thigh', 'leg', 'foot'];
 const regionRank = r => { const i = REGION_ORDER.indexOf(r); return i === -1 ? 99 : i; };
 
+/* Species are the unit of observation and clades are rolled up from them, so a
+   muscle may carry several rows for one clade — Gallus, an ostrich, a tinamou, a
+   penguin — and Aves is what they agree on. Nothing in the data stores a clade
+   on an occurrence; `_taxon` is derived at boot from species.json and is the one
+   piece of denormalisation in the app, kept because two dozen call sites read it
+   and because it can never drift: it is recomputed on every load. */
 const DATA_FILES = [
   'data/muscles-axial.json',
   'data/muscles-fin.json',
@@ -20,6 +26,9 @@ const state = {
   byId: new Map(),
   taxa: [],
   taxaById: new Map(),
+  species: [],
+  speciesById: new Map(),
+  speciesByClade: new Map(),
   taxonOrder: new Map(),
   sources: new Map(),
   elements: [],
@@ -28,7 +37,11 @@ const state = {
   nervesById: new Map(),
   joints: [],
   jointsById: new Map(),
-  skeletonTaxon: '',
+  /* ONE taxon, shared by every view. It used to be two — a `taxon` facet in the
+     sidebar and a separate select in the Skeleton view — which meant picking
+     Caudata in the muscle list and clicking Skeleton landed on "all taxa
+     combined". The animal on the bench does not change when you change tab. */
+  taxon: '',
   /* `recorded` shows only attachments a source states for the selected taxon;
      `all` falls back to the consensus where nobody has recorded one. Recorded
      is the default because the fallback is an assumption, not an observation —
@@ -40,9 +53,10 @@ const state = {
   phyloScope: 'all',
   index: [],
   query: '',
-  // Keys must match FACET_MATCH — filtered() iterates these.
+  // Keys must match FACET_MATCH — filtered() iterates these. Taxon is NOT one
+  // of them: it is global (state.taxon) and scopes every view, not just this list.
   filters: { region: null, segment: null, mass: null, layer: null,
-             taxon: null, confidence: null },
+             confidence: null },
   view: 'browse',        // browse | detail | skeleton | hierarchy | phylogeny
   current: null
 };
@@ -50,8 +64,9 @@ const state = {
 /* ---------- boot ---------- */
 
 async function boot() {
-  const [taxaDoc, sourcesDoc, skeletonDoc, nervesDoc, jointsDoc, ...muscleDocs] = await Promise.all([
+  const [taxaDoc, speciesDoc, sourcesDoc, skeletonDoc, nervesDoc, jointsDoc, ...muscleDocs] = await Promise.all([
     fetchJSON('data/taxa.json'),
+    fetchJSON('data/species.json'),
     fetchJSON('data/sources.json'),
     fetchJSON('data/skeleton.json'),
     fetchJSON('data/nerves.json'),
@@ -71,12 +86,24 @@ async function boot() {
 
   state.taxa = taxaDoc.taxa;
   taxaDoc.taxa.forEach(t => state.taxaById.set(t.id, t));
+
+  state.species = speciesDoc.species;
+  speciesDoc.species.forEach(sp => {
+    state.speciesById.set(sp.id, sp);
+    if (!state.speciesByClade.has(sp.clade)) state.speciesByClade.set(sp.clade, []);
+    state.speciesByClade.get(sp.clade).push(sp);
+  });
   flattenTopology(taxaDoc.topology, state.taxonOrder);
   sourcesDoc.sources.forEach(s => state.sources.set(s.key, s));
 
   muscleDocs.forEach(doc => {
     doc.muscles.forEach(m => {
       m._regionLabel = doc.region;
+      /* Derived, never stored. `taxon` is kept as the property name so the
+         views can go on asking "which clade is this row in" unchanged. */
+      (m.occurrences || []).forEach(o => {
+        o.taxon = state.speciesById.get(o.species)?.clade || null;
+      });
       state.muscles.push(m);
       state.byId.set(m.id, m);
     });
@@ -246,14 +273,24 @@ const KIND_PENALTY = {
   origin: 20, insertion: 20, action: 20, innervation: 20, development: 20,
 };
 
+/* How much of the matched term the query did NOT account for. A fraction, always
+   under 1, so it orders equally-classed matches without ever crossing a band.
+
+   Specificity, in other words: "tenuissimus" matching a bare `Tenuissimus` is a
+   better answer than the same word buried in a 125-character string, and the
+   raw match classes cannot tell them apart — both are word-prefix hits. Ranking
+   them equal is how an occurrence name that listed a dozen muscles came back as
+   the top hit for any one of them. */
+const specificity = (norm, q) => Math.min(0.9, Math.max(0, norm.length - q.length) / 200);
+
 /* Lower score = better. Exact < prefix < word-prefix < substring < all-words-present. */
 function scoreTerm(norm, q, words, kind) {
-  const kindPenalty = KIND_PENALTY[kind] ?? 20;
-  if (norm === q) return 0 + kindPenalty;
-  if (norm.startsWith(q)) return 1 + kindPenalty;
-  if (norm.split(' ').some(w => w.startsWith(q))) return 2 + kindPenalty;
-  if (norm.includes(q)) return 3 + kindPenalty;
-  if (words.length > 1 && words.every(w => norm.includes(w))) return 4 + kindPenalty;
+  const base = (KIND_PENALTY[kind] ?? 20) + specificity(norm, q);
+  if (norm === q) return 0 + base;
+  if (norm.startsWith(q)) return 1 + base;
+  if (norm.split(' ').some(w => w.startsWith(q))) return 2 + base;
+  if (norm.includes(q)) return 3 + base;
+  if (words.length > 1 && words.every(w => norm.includes(w))) return 4 + base;
   return null;
 }
 
@@ -273,28 +310,106 @@ const FACET_MATCH = {
   mass: (m, v) => m.mass === v,
   layer: (m, v) => m.layer === v,
   confidence: (m, v) => (m.homology || {}).confidence === v,
-  taxon: (m, v) => presenceFor(m, v) !== null,
 };
+
+/* Narrow a result set to one taxon, splitting off the muscles a source examined
+   that taxon for and did NOT find.
+
+   Three outcomes, and they are three different claims:
+     no occurrence row  — nobody addressed this taxon. Not a candidate, dropped.
+     present: "no"      — a source looked and found nothing. That is a finding,
+                          not a candidate: it belongs at the foot of the list,
+                          not among the muscles you might be holding.
+     anything else      — a candidate.
+
+   The middle case is why this exists. The taxon facet used to keep those rows
+   in the grid, so filtering to Caudata offered Teres major, 'Rhomboideus' and
+   Scapulohumeralis anterior as things to identify in a salamander, with nothing
+   on the card to say the source had ruled them out. The Skeleton view already
+   handles absent BONES this way (partitionAbsent / absentLine); this is the
+   same treatment for muscles. */
+function scopeToTaxon(rows, taxonId) {
+  if (!taxonId) return { rows, absent: [] };
+  const kept = [], absent = [];
+  for (const r of rows) {
+    const p = presenceFor(r.muscle, taxonId);
+    if (p === null) continue;
+    (p === 'no' ? absent : kept).push(p === 'no' ? r.muscle : r);
+  }
+  return { rows: kept, absent };
+}
 
 function filtered() {
   let rows = search(state.query);
   for (const [key, val] of Object.entries(state.filters)) {
     if (val) rows = rows.filter(r => FACET_MATCH[key](r.muscle, val));
   }
+  const scoped = scopeToTaxon(rows, state.taxon);
   // Rank by relevance when searching; alphabetically within region when browsing.
   if (!state.query) {
-    rows.sort((a, b) =>
+    scoped.rows.sort((a, b) =>
       regionRank(a.muscle.region) - regionRank(b.muscle.region) ||
       a.muscle.name.localeCompare(b.muscle.name));
   }
-  return rows;
+  return scoped;
 }
 
-function presenceFor(m, taxonId) {
-  const o = (m.occurrences || []).find(x => x.taxon === taxonId);
-  if (!o) return null;
-  return o.present || 'yes';
+/* Every row a clade has. There may be several — one per species — and that is
+   the point: Aves is Gallus AND the ostrich AND the tinamou AND the penguin. */
+const occurrencesIn = (m, id) => (m.occurrences || []).filter(o => o.taxon === id);
+
+/* A clade's presence, computed from its species rather than authored.
+
+   This is the change species-level scoring buys. `variable` used to be a
+   judgement someone typed in after reading that a source found a muscle in one
+   lizard and not another; now it is what the rows say when they disagree, and
+   it cannot be forgotten or applied inconsistently. A clade nobody has scored
+   returns null — unrecorded, as everywhere else. */
+function presenceFor(m, id) {
+  if (state.speciesById.has(id)) {                     // a species, not a clade
+    const o = (m.occurrences || []).find(x => x.species === id);
+    return o ? (o.present || 'yes') : null;
+  }
+  const rows = occurrencesIn(m, id);
+  if (!rows.length) return null;
+  const states = new Set(rows.map(o => o.present || 'yes'));
+  if (states.size === 1) return [...states][0];
+  // Observed presence set against observed absence IS the variable case.
+  if (states.has('yes') && states.has('no')) return 'variable';
+  // Otherwise the disagreement is between hedges; report the weakest claim.
+  for (const s of ['variable', 'uncertain', 'inferred', 'yes', 'no']) {
+    if (states.has(s)) return s;
+  }
+  return null;
 }
+
+/* Which species disagree, for the interface to show rather than hide. */
+function presenceSplit(m, id) {
+  const rows = occurrencesIn(m, id);
+  const by = new Map();
+  for (const o of rows) {
+    const p = o.present || 'yes';
+    if (!by.has(p)) by.set(p, []);
+    by.get(p).push(state.speciesById.get(o.species));
+  }
+  return by;
+}
+
+/* The clade the current selection belongs to, or the selection itself. */
+const cladeOf = id => state.speciesById.get(id)?.clade || id;
+
+/* What to call the current selection in prose: a binomial for a species, the
+   clade name for a clade. */
+const selectionLabel = id =>
+  state.speciesById.get(id)?.binomial || state.taxaById.get(id)?.clade || id;
+
+/* Muscles a source records for this taxon, absences excluded. Drives the counts
+   in the taxon picker, so the number beside "Caudata" is the number of cards
+   selecting Caudata will actually produce. */
+const recordedCount = id => state.muscles.reduce((n, m) => {
+  const p = presenceFor(m, id);
+  return n + (p !== null && p !== 'no' ? 1 : 0);
+}, 0);
 
 /* ---------- naming ---------- */
 
@@ -303,10 +418,16 @@ function presenceFor(m, taxonId) {
    is a fallback and nothing more: a student with a cat open in front of them
    should read "Subscapularis", not "Subcoracoscapularis", and "Teres minor",
    not "Scapulohumeralis anterior". Both are already in the record. */
-function muscleLabel(m, taxonId) {
-  if (!taxonId) return m.name;
-  const o = (m.occurrences || []).find(x => x.taxon === taxonId);
-  return (o && o.name) ? o.name : m.name;
+function muscleLabel(m, id) {
+  if (!id) return m.name;
+  if (state.speciesById.has(id)) {
+    const o = (m.occurrences || []).find(x => x.species === id);
+    return (o && o.name) ? o.name : m.name;
+  }
+  /* A clade has no name of its own — its species do. Take the first row that
+     carries one; where they disagree, the occurrence table shows all of them. */
+  const named = occurrencesIn(m, id).find(o => o.name);
+  return named ? named.name : m.name;
 }
 
 /* Some occurrence names are a list of the taxon's muscles rather than one name
@@ -351,7 +472,6 @@ function render({ keepScroll = false } = {}) {
     });
   };
   bindSelect('phylo-scope', 'phyloScope');
-  bindSelect('skel-taxon', 'skeletonTaxon');
   bindSelect('skel-source', 'skeletonSource');
   bindSelect('bone-a', 'boneA');
   bindSelect('bone-b', 'boneB');
@@ -372,15 +492,28 @@ function render({ keepScroll = false } = {}) {
 }
 
 function renderList() {
-  const rows = filtered();
+  const { rows, absent } = filtered();
+  const taxonId = state.taxon;
+  const clade = taxonId ? esc(selectionLabel(taxonId)) : '';
+
   if (!rows.length) {
-    return `<div class="empty">No muscle matches “${esc(state.query)}”.<br>
-            Try a synonym (<em>dorsalis scapulae</em>), a bone (<em>coracoid</em>), or clear the filters.</div>`;
+    /* An empty query with filters on is a real dead end — Myxini plus the thigh
+       — and quoting the empty search box at the reader ("No muscle matches “”")
+       names the wrong culprit. Say which constraint is doing the excluding. */
+    const what = state.query ? `matches “${esc(state.query)}”` : 'is on record';
+    const where = [taxonId && `in <strong>${clade}</strong>`, activeFilterLabel()]
+      .filter(Boolean).join(' · ');
+    return `<div class="empty">No muscle ${what}${where ? ` ${where}` : ''}.<br>
+            Try a synonym (<em>dorsalis scapulae</em>), a bone (<em>coracoid</em>), ${
+              taxonId ? 'another taxon, ' : ''}or clear the filters.</div>`
+           + absentBlock(absent, taxonId);
   }
 
+  const scope = [taxonId && `recorded in <strong>${clade}</strong>`, activeFilterLabel()]
+    .filter(Boolean).join(' · ');
   const bar = `<div class="resultbar"><strong>${rows.length}</strong> ${rows.length === 1 ? 'muscle' : 'muscles'}
     ${state.query ? `matching “${esc(state.query)}”` : ''}
-    ${activeFilterLabel()}</div>`;
+    ${scope}</div>`;
 
   const HIT_LABEL = {
     'taxon-name': 'name', synonym: 'also known as', attachment: 'attaches to',
@@ -389,16 +522,21 @@ function renderList() {
     origin: 'origin', insertion: 'insertion',
     action: 'action', innervation: 'innervation',
   };
-  /* With a taxon facet on, the card is about that taxon, so it takes that
+  /* With a taxon selected the card is about that taxon, so it takes that
      taxon's name for the muscle and demotes the group label to the sub-line.
      Without one there is no taxon to name it in, and the group label leads. */
-  const taxonId = state.filters.taxon;
-
   const cards = rows.map(({ muscle: m, hit }) => {
     const conf = (m.homology || {}).confidence;
     const nTaxa = (m.occurrences || []).filter(o => (o.present || 'yes') !== 'no').length;
     const local = muscleLabel(m, taxonId);
     const renamed = local !== m.name;
+    /* `yes` is the unmarked case and needs no chip. The others are hedged
+       records — some species of the clade, a flagged identification, a fossil
+       reconstruction — and a card that looks identical to a scored one would
+       pass all three off as observations. */
+    const pres = taxonId ? presenceFor(m, taxonId) : null;
+    const presChip = pres && pres !== 'yes'
+      ? `<span class="pres-tag pres-${esc(pres)}">${esc(pres)}</span>` : '';
     let hitLine = '';
     if (hit && hit.kind !== 'name') {
       /* Say which field matched. Without this a prose hit is baffling — the
@@ -410,14 +548,29 @@ function renderList() {
       hitLine = `<div class="hit">${label}: <em>${esc(clip(hit.text))}</em></div>`;
     }
     return `<article class="mcard" data-goto="${m.id}" tabindex="0">
-      <h4 title="${esc(local)}">${esc(clip(local, 64))}</h4>
+      <h4 title="${esc(local)}">${esc(clip(local, 64))}${presChip}</h4>
       ${renamed ? `<div class="groupname">group: ${esc(m.name)}</div>` : ''}
-      <div class="sub">${esc(m._regionLabel)}${m.subregion ? ` · ${esc(m.subregion)}` : ''} · present in ${nTaxa} taxa${conf ? ` · ${esc(conf)}` : ''}</div>
+      <div class="sub">${esc(m._regionLabel)}${m.subregion ? ` · ${esc(m.subregion)}` : ''} · present in ${nTaxa} ${nTaxa === 1 ? 'taxon' : 'taxa'}${conf ? ` · ${esc(conf)}` : ''}</div>
       ${hitLine}
     </article>`;
   }).join('');
 
-  return bar + `<div class="cardgrid">${cards}</div>`;
+  return bar + `<div class="cardgrid">${cards}</div>` + absentBlock(absent, taxonId);
+}
+
+/* The muscles a source examined this taxon for and did not find. Kept, because
+   "the salamander has no teres major" is a result worth reading, and demoted,
+   because it is not an answer to "what am I looking at". */
+function absentBlock(absent, taxonId) {
+  if (!absent.length || !taxonId) return '';
+  const clade = esc(selectionLabel(taxonId));
+  const links = absent
+    .sort((a, b) => regionRank(a.region) - regionRank(b.region) || a.name.localeCompare(b.name))
+    .map(m => `<a data-goto="${m.id}" href="#${esc(m.id)}">${esc(m.name)}</a>`)
+    .join('<span class="sep">, </span>');
+  return `<p class="cellnote absentlist"><strong>${absent.length}</strong> further
+    ${absent.length === 1 ? 'record was' : 'records were'} examined in ${clade}
+    and reported absent: ${links}</p>`;
 }
 
 function activeFilterLabel() {
@@ -426,7 +579,6 @@ function activeFilterLabel() {
   if (f.segment) parts.push(`segment <strong>${esc(f.segment)}</strong>`);
   if (f.mass) parts.push(`<strong>${esc(f.mass)}</strong> mass`);
   if (f.layer) parts.push(`layer <strong>${esc(f.layer)}</strong>`);
-  if (f.taxon) parts.push(`recorded for <strong>${esc(state.taxaById.get(f.taxon).clade)}</strong>`);
   if (f.confidence) parts.push(`homology <strong>${esc(f.confidence)}</strong>`);
   return parts.join(' · ');
 }
@@ -579,7 +731,8 @@ function sourceLink(key) {
 
 function renderOccTable(m) {
   const occ = [...(m.occurrences || [])].sort(
-    (a, b) => (state.taxonOrder.get(a.taxon) ?? 99) - (state.taxonOrder.get(b.taxon) ?? 99));
+    (a, b) => (state.taxonOrder.get(a.taxon) ?? 99) - (state.taxonOrder.get(b.taxon) ?? 99)
+           || String(a.species).localeCompare(String(b.species)));
   if (!occ.length) return `<p class="cellnote">No taxon-level records yet.</p>`;
 
   const rows = occ.map(o => {
@@ -593,12 +746,32 @@ function renderOccTable(m) {
 
     const cites = (o.sources || []).map(k => sourceLink(k)).join(' ');
 
+    /* An ancestral fin muscle has no name in a tetrapod because it is not one
+       muscle there — it is the field that became several. Those several are in
+       `derivatives`, rendered once under Fin-to-limb ancestry; naming them here
+       too would give one fact two homes, which is what `parts` exists to stop. */
+    const subdivided = !o.name && !absent &&
+      ['pectoral', 'pelvic'].some(k => ((m.derivatives || {})[k] || []).length);
+
+    /* The species is the observation; the clade is what it rolls up into. Showing
+       the binomial here is the difference between "birds have this" and "somebody
+       looked at an ostrich". */
+    const sp = state.speciesById.get(o.species);
     return `<tr class="${absent ? 'absent' : ''}">
       <td><div class="taxoncell"><span class="swatch" style="background:${esc(t.color)}"></span>
         <span class="clade">${esc(t.clade)}</span></div>
-        <span class="common">${esc(t.label || '')}</span></td>
+        ${sp ? `<span class="binomial">${esc(sp.binomial)}</span>` : ''}
+        <span class="common">${esc((sp && sp.common) || t.label || '')}</span>
+        ${o.speciesBasis && o.speciesBasis !== 'note' && o.speciesBasis !== 'source'
+          ? `<span class="basis" title="How this row was attributed to a species: ${
+              o.speciesBasis === 'survey'
+                ? 'the survey it cites names this species as its exemplar for the clade'
+                : 'no better evidence — the clade default, and a guess'}">${esc(o.speciesBasis)}</span>` : ''}</td>
       <td><span class="pres pres-${esc(present)}">${esc(present)}</span></td>
-      <td>${o.name ? `<span class="localname">${esc(o.name)}</span>` : '<span class="pres-no">—</span>'}
+      <td>${o.name ? `<span class="localname">${esc(o.name)}</span>`
+          : subdivided ? `<span class="localname subdiv">No single homologue — subdivided;
+              see <em>Fin-to-limb ancestry</em> below</span>`
+          : '<span class="pres-no">—</span>'}
         ${renderDivision(o)}
         ${o.nerves ? `<dl class="oia occ-nerves">${renderNerves(o, o.taxon)}</dl>` : ''}
         ${micro ? `<div class="microdl">${micro}</div>` : ''}
@@ -750,7 +923,10 @@ function renderSources(m) {
 /* ---------- sidebar ---------- */
 
 function renderSidebar() {
-  const rows = search(state.query);
+  /* Counted over the taxon-scoped set, not the whole dataset. With Caudata
+     selected the list can only ever show what Caudata has, so a Region badge
+     reading the global figure would promise cards that cannot appear. */
+  const rows = scopeToTaxon(search(state.query), state.taxon).rows;
   const el = document.getElementById('sidebar');
 
   const count = (key, val) => rows.filter(r => FACET_MATCH[key](r.muscle, val)).length;
@@ -758,8 +934,6 @@ function renderSidebar() {
   const regions = [...new Set(state.muscles.map(m => m.region))]
     .sort((a, b) => regionRank(a) - regionRank(b));
   const confs = ['well-supported', 'moderate', 'contested', 'uncertain'];
-  const taxaSorted = [...state.taxa].sort(
-    (a, b) => (state.taxonOrder.get(a.id) ?? 99) - (state.taxonOrder.get(b.id) ?? 99));
 
   /* Proximodistal for segment, superficial-to-deep then axis for layer: these
      vocabularies have their own order and alphabetising them would hide it.
@@ -795,7 +969,6 @@ function renderSidebar() {
     facet('Segment', 'segment', segments.map(plain)) +
     facet('Developmental mass', 'mass', masses.map(plain)) +
     facet('Layer', 'layer', layers.map(plain)) +
-    facet('Recorded in taxon', 'taxon', taxaSorted.map(t => ({ value: t.id, label: t.clade, color: t.color }))) +
     facet('Homology confidence', 'confidence', confs.map(c => ({ value: c, label: c })));
 
   const active = Object.values(state.filters).filter(Boolean).length;
@@ -846,7 +1019,58 @@ function syncViewButtons() {
   document.getElementById('btn-phylogeny').setAttribute('aria-pressed', on('phylogeny'));
 }
 
+/* The global taxon. Built once — the option list and its counts do not change —
+   and restored between sessions, because a student works through one animal
+   over several sittings and re-picking it every time is friction for nothing. */
+function wireTaxonPicker() {
+  const sel = document.getElementById('taxon');
+  if (!sel) return;
+
+  const sorted = [...state.taxa].sort(
+    (a, b) => (state.taxonOrder.get(a.id) ?? 99) - (state.taxonOrder.get(b.id) ?? 99));
+
+  /* Clades AND the species under them. A clade is a rollup and reads as one —
+     "Aves (consensus of 5 species)" — while a species is a single animal
+     somebody dissected. Picking the species is how you see what that animal
+     actually has, rather than what its clade agrees on. */
+  sel.innerHTML = `<option value="">All taxa — no animal selected</option>` +
+    sorted.map(t => {
+      const kids = (state.speciesByClade.get(t.id) || [])
+        .filter(sp => recordedCount(sp.id) > 0)
+        .sort((a, b) => recordedCount(b.id) - recordedCount(a.id));
+      const n = recordedCount(t.id);
+      const head = `<option value="${esc(t.id)}">${t.fossil ? '† ' : ''}${esc(t.clade)} — ${esc(t.label)} (${n}${
+        kids.length > 1 ? `, consensus of ${kids.length} species` : ''})</option>`;
+      const rows = kids.map(sp => `<option value="${esc(sp.id)}">    ${sp.fossil ? '† ' : ''}${
+        esc(sp.binomial)}${sp.common ? ` — ${esc(sp.common)}` : ''} (${recordedCount(sp.id)})</option>`).join('');
+      return `<optgroup label="${esc(t.clade)}">${head}${rows}</optgroup>`;
+    }).join('');
+
+  let saved = '';
+  try { saved = localStorage.getItem('taxon') || ''; } catch {}
+  if (saved && state.taxaById.has(saved)) state.taxon = saved;
+  sel.value = state.taxon;
+  sel.classList.toggle('on', !!state.taxon);
+
+  sel.addEventListener('change', () => {
+    state.taxon = sel.value;
+    sel.classList.toggle('on', !!state.taxon);
+    try { localStorage.setItem('taxon', state.taxon); } catch {}
+    /* A bone the new taxon lacks is no longer in the pair-lookup dropdowns, so
+       leaving the id in state would run a query against a control showing
+       "— any —". Drop the selection rather than the explanation. */
+    if (state.taxon && typeof elementPresentIn === 'function') {
+      for (const k of ['boneA', 'boneB']) {
+        if (state[k] && elementPresentIn(state[k], state.taxon) === 'no') state[k] = '';
+      }
+    }
+    render();
+  });
+}
+
 function wireUI() {
+  wireTaxonPicker();
+
   const input = document.getElementById('search');
   let t;
   input.addEventListener('input', () => {

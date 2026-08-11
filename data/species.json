@@ -1,0 +1,479 @@
+{
+  "$comment": "Species are the unit of observation. Operational taxa in taxa.json are DERIVED from these — a clade's presence, division and attachment consensus are computed from its species, never authored. See docs/SCHEMA.md.",
+  "species": [
+    {
+      "id": "latimeria-chalumnae",
+      "binomial": "Latimeria chalumnae",
+      "clade": "actinistia",
+      "common": "Coelacanth"
+    },
+    {
+      "id": "arius-sp",
+      "binomial": "Arius sp.",
+      "clade": "actinopterygii",
+      "common": "Sea catfish",
+      "note": "Declared partly out of scope; cranial only."
+    },
+    {
+      "id": "polypterus-delhezi",
+      "binomial": "Polypterus delhezi",
+      "clade": "actinopterygii",
+      "common": "Barred bichir"
+    },
+    {
+      "id": "polypterus-senegalus",
+      "binomial": "Polypterus senegalus",
+      "clade": "actinopterygii",
+      "common": "Senegal bichir"
+    },
+    {
+      "id": "teleostei-generalised",
+      "binomial": "Teleostei (generalised)",
+      "clade": "actinopterygii",
+      "note": "Winterbottom's descriptive synonymy is a survey of teleost muscle names rather than one dissection; rows citing it are a generalisation, not a specimen."
+    },
+    {
+      "id": "ascaphus-truei",
+      "binomial": "Ascaphus truei",
+      "clade": "anura",
+      "common": "Coastal tailed frog"
+    },
+    {
+      "id": "discoglossus-pictus",
+      "binomial": "Discoglossus pictus",
+      "clade": "anura",
+      "common": "Painted frog",
+      "note": "Prikryl et al.'s main dissection."
+    },
+    {
+      "id": "leiopelma-hochstetteri",
+      "binomial": "Leiopelma hochstetteri",
+      "clade": "anura",
+      "common": "Hochstetter's frog"
+    },
+    {
+      "id": "phlyctimantis-maculatus",
+      "binomial": "Phlyctimantis maculatus",
+      "clade": "anura",
+      "common": "Red-legged running frog",
+      "note": "A walking frog rather than a jumper. Formerly Kassina maculata."
+    },
+    {
+      "id": "rhinella-arenarum",
+      "binomial": "Rhinella arenarum",
+      "clade": "anura",
+      "common": "Argentine common toad",
+      "note": "Abdala & Diogo's anuran exemplar."
+    },
+    {
+      "id": "triprion-petasatus",
+      "binomial": "Triprion petasatus",
+      "clade": "anura",
+      "common": "Yucatecan casque-headed treefrog",
+      "note": "Blotto et al.'s standard reference for the four layers of hand and foot musculature."
+    },
+    {
+      "id": "xenopus-laevis",
+      "binomial": "Xenopus laevis",
+      "clade": "anura",
+      "common": "African clawed frog"
+    },
+    {
+      "id": "cygnus-cygnus",
+      "binomial": "Cygnus cygnus",
+      "clade": "aves",
+      "common": "Whooper swan"
+    },
+    {
+      "id": "gallus-domesticus",
+      "binomial": "Gallus domesticus",
+      "clade": "aves",
+      "common": "Chicken",
+      "note": "Abdala & Diogo's avian exemplar, and the bird most often dissected."
+    },
+    {
+      "id": "gavia-sp",
+      "binomial": "Gavia sp.",
+      "clade": "aves",
+      "common": "Loon",
+      "note": "Foot-propelled diver."
+    },
+    {
+      "id": "grus-americana",
+      "binomial": "Grus americana",
+      "clade": "aves",
+      "common": "Whooping crane",
+      "note": "Fisher & Goodman's complete neognath myology."
+    },
+    {
+      "id": "nothoprocta-pentlandii",
+      "binomial": "Nothoprocta pentlandii",
+      "clade": "aves",
+      "common": "Andean tinamou",
+      "note": "Palaeognath, in Widrig et al.'s 3D atlas."
+    },
+    {
+      "id": "pygoscelis-sp",
+      "binomial": "Pygoscelis sp.",
+      "clade": "aves",
+      "common": "Penguin",
+      "note": "Wing-propelled diver with a flipper. Previously refused as an Aves exemplar; under species-level scoring it is simply a data point."
+    },
+    {
+      "id": "struthio-camelus",
+      "binomial": "Struthio camelus",
+      "clade": "aves",
+      "common": "Ostrich",
+      "note": "Palaeognath; the source of the avian architecture data."
+    },
+    {
+      "id": "tyto-furcata",
+      "binomial": "Tyto furcata pratincola",
+      "clade": "aves",
+      "common": "American barn owl",
+      "note": "Cervical musculature at vertebra-by-vertebra resolution."
+    },
+    {
+      "id": "ambystoma-mexicanum",
+      "binomial": "Ambystoma mexicanum",
+      "clade": "caudata",
+      "common": "Axolotl"
+    },
+    {
+      "id": "ambystoma-ordinarium",
+      "binomial": "Ambystoma ordinarium",
+      "clade": "caudata",
+      "common": "Michoacan stream salamander",
+      "note": "Abdala & Diogo's caudate exemplar."
+    },
+    {
+      "id": "ambystoma-tigrinum",
+      "binomial": "Ambystoma tigrinum",
+      "clade": "caudata",
+      "common": "Tiger salamander",
+      "note": "Terrestrial, in Omura et al.'s habitat series."
+    },
+    {
+      "id": "amphiuma-tridactylum",
+      "binomial": "Amphiuma tridactylum",
+      "clade": "caudata",
+      "common": "Three-toed amphiuma",
+      "note": "Aquatic, elongate."
+    },
+    {
+      "id": "cynops-pyrrhogaster",
+      "binomial": "Cynops pyrrhogaster",
+      "clade": "caudata",
+      "common": "Japanese fire-bellied newt",
+      "note": "Semi-aquatic."
+    },
+    {
+      "id": "hynobius-nigrescens",
+      "binomial": "Hynobius nigrescens",
+      "clade": "caudata",
+      "common": "Japanese black salamander",
+      "note": "Terrestrial."
+    },
+    {
+      "id": "necturus-maculosus",
+      "binomial": "Necturus maculosus",
+      "clade": "caudata",
+      "common": "Mudpuppy",
+      "note": "The commonest teaching salamander, and aquatic in Omura et al.'s series."
+    },
+    {
+      "id": "taricha-torosa",
+      "binomial": "Taricha torosa",
+      "clade": "caudata",
+      "common": "California newt",
+      "note": "Walthall & Ashley-Ross's animal, and the source of most Caudata attachment rows."
+    },
+    {
+      "id": "callorhinchus-milii",
+      "binomial": "Callorhinchus milii",
+      "clade": "chondrichthyes",
+      "common": "Elephantfish",
+      "note": "Holocephalan, against the elasmobranch exemplars."
+    },
+    {
+      "id": "hydrolagus-colliei",
+      "binomial": "Hydrolagus colliei",
+      "clade": "chondrichthyes",
+      "common": "Spotted ratfish"
+    },
+    {
+      "id": "leucoraja-erinacea",
+      "binomial": "Leucoraja erinacea",
+      "clade": "chondrichthyes",
+      "common": "Little skate"
+    },
+    {
+      "id": "scyliorhinus-canicula",
+      "binomial": "Scyliorhinus canicula",
+      "clade": "chondrichthyes",
+      "common": "Small-spotted catshark"
+    },
+    {
+      "id": "squalus-acanthias",
+      "binomial": "Squalus acanthias",
+      "clade": "chondrichthyes",
+      "common": "Spiny dogfish",
+      "note": "The classroom shark, and the exemplar behind most chondrichthyan rows here."
+    },
+    {
+      "id": "alligator-mississippiensis",
+      "binomial": "Alligator mississippiensis",
+      "clade": "crocodylia",
+      "common": "American alligator",
+      "note": "Meers's main dissection."
+    },
+    {
+      "id": "caiman-latirostris",
+      "binomial": "Caiman latirostris",
+      "clade": "crocodylia",
+      "common": "Broad-snouted caiman",
+      "note": "Abdala & Diogo's crocodylian exemplar."
+    },
+    {
+      "id": "caiman-yacare",
+      "binomial": "Caiman yacare",
+      "clade": "crocodylia",
+      "common": "Yacare caiman",
+      "note": "Pereyra et al.'s crural and pedal myology."
+    },
+    {
+      "id": "crocodylus-niloticus",
+      "binomial": "Crocodylus niloticus",
+      "clade": "crocodylia",
+      "common": "Nile crocodile"
+    },
+    {
+      "id": "crocodylus-porosus",
+      "binomial": "Crocodylus porosus",
+      "clade": "crocodylia",
+      "common": "Saltwater crocodile"
+    },
+    {
+      "id": "pissarrachampsa-sera",
+      "binomial": "Pissarrachampsa sera",
+      "clade": "crocodyliform-stem",
+      "fossil": true
+    },
+    {
+      "id": "galahadosuchus-sp",
+      "binomial": "Galahadosuchus sp.",
+      "clade": "crocodylomorph-stem",
+      "fossil": true,
+      "note": "Bodenham et al.'s second non-crocodyliform crocodylomorph."
+    },
+    {
+      "id": "neoceratodus-forsteri",
+      "binomial": "Neoceratodus forsteri",
+      "clade": "dipnoi",
+      "common": "Australian lungfish"
+    },
+    {
+      "id": "amphisbaenia-generalised",
+      "binomial": "Amphisbaenia (generalised)",
+      "clade": "lepidosauria",
+      "note": "Westphal et al. compare several worm-lizard genera at different degrees of limb reduction rather than dissecting one; rows citing it are a within-clade generalisation."
+    },
+    {
+      "id": "chamaeleo-calyptratus",
+      "binomial": "Chamaeleo calyptratus",
+      "clade": "lepidosauria",
+      "common": "Veiled chameleon"
+    },
+    {
+      "id": "eublepharis-macularius",
+      "binomial": "Eublepharis macularius",
+      "clade": "lepidosauria",
+      "common": "Leopard gecko",
+      "note": "Ground-dwelling, and the base column in Zaaf et al."
+    },
+    {
+      "id": "gekko-gecko",
+      "binomial": "Gekko gecko",
+      "clade": "lepidosauria",
+      "common": "Tokay gecko",
+      "note": "Specialised climber. Differs from Eublepharis in which BONE several muscles reach."
+    },
+    {
+      "id": "iguana-iguana",
+      "binomial": "Iguana iguana",
+      "clade": "lepidosauria",
+      "common": "Green iguana"
+    },
+    {
+      "id": "sphenodon-punctatus",
+      "binomial": "Sphenodon punctatus",
+      "clade": "lepidosauria",
+      "common": "Tuatara"
+    },
+    {
+      "id": "timon-lepidus",
+      "binomial": "Timon lepidus",
+      "clade": "lepidosauria",
+      "common": "Ocellated lizard",
+      "note": "Abdala & Diogo's lepidosaur exemplar."
+    },
+    {
+      "id": "varanus-exanthematicus",
+      "binomial": "Varanus exanthematicus",
+      "clade": "lepidosauria",
+      "common": "Savannah monitor"
+    },
+    {
+      "id": "varanus-komodoensis",
+      "binomial": "Varanus komodoensis",
+      "clade": "lepidosauria",
+      "common": "Komodo dragon"
+    },
+    {
+      "id": "varanus-salvator",
+      "binomial": "Varanus salvator",
+      "clade": "lepidosauria",
+      "common": "Asian water monitor"
+    },
+    {
+      "id": "ornithorhynchus-anatinus",
+      "binomial": "Ornithorhynchus anatinus",
+      "clade": "monotremata",
+      "common": "Platypus"
+    },
+    {
+      "id": "tachyglossus-aculeatus",
+      "binomial": "Tachyglossus aculeatus",
+      "clade": "monotremata",
+      "common": "Short-beaked echidna"
+    },
+    {
+      "id": "eptatretus-burgeri",
+      "binomial": "Eptatretus burgeri",
+      "clade": "myxini",
+      "common": "Inshore hagfish"
+    },
+    {
+      "id": "petromyzon-marinus",
+      "binomial": "Petromyzon marinus",
+      "clade": "petromyzontida",
+      "common": "Sea lamprey"
+    },
+    {
+      "id": "prestosuchus-chiniquensis",
+      "binomial": "Prestosuchus chiniquensis",
+      "clade": "pseudosuchia-stem",
+      "fossil": true
+    },
+    {
+      "id": "dimetrodon-sp",
+      "binomial": "Dimetrodon sp.",
+      "clade": "synapsida-stem",
+      "fossil": true
+    },
+    {
+      "id": "ophiacodon-sp",
+      "binomial": "Ophiacodon sp.",
+      "clade": "synapsida-stem",
+      "fossil": true
+    },
+    {
+      "id": "thrinaxodon-sp",
+      "binomial": "Thrinaxodon sp.",
+      "clade": "synapsida-stem",
+      "fossil": true
+    },
+    {
+      "id": "chelonoidis-chilensis",
+      "binomial": "Chelonoidis chilensis",
+      "clade": "testudines",
+      "common": "Chaco tortoise",
+      "note": "Terrestrial, in Pereyra et al.'s histological series."
+    },
+    {
+      "id": "hydromedusa-tectifera",
+      "binomial": "Hydromedusa tectifera",
+      "clade": "testudines",
+      "common": "Argentine snake-necked turtle"
+    },
+    {
+      "id": "phrynops-hilarii",
+      "binomial": "Phrynops hilarii",
+      "clade": "testudines",
+      "common": "Hilaire's side-necked turtle"
+    },
+    {
+      "id": "trachemys-scripta",
+      "binomial": "Trachemys scripta",
+      "clade": "testudines",
+      "common": "Red-eared slider",
+      "note": "Abdala & Diogo's chelonian exemplar."
+    },
+    {
+      "id": "acanthostega-gunnari",
+      "binomial": "Acanthostega gunnari",
+      "clade": "tetrapodomorpha-stem",
+      "fossil": true
+    },
+    {
+      "id": "eusthenopteron-foordi",
+      "binomial": "Eusthenopteron foordi",
+      "clade": "tetrapodomorpha-stem",
+      "fossil": true
+    },
+    {
+      "id": "tiktaalik-roseae",
+      "binomial": "Tiktaalik roseae",
+      "clade": "tetrapodomorpha-stem",
+      "fossil": true
+    },
+    {
+      "id": "acinonyx-jubatus",
+      "binomial": "Acinonyx jubatus",
+      "clade": "theria",
+      "common": "Cheetah",
+      "note": "Hudson et al.'s functional anatomy, fore- and hindlimb."
+    },
+    {
+      "id": "felis-catus",
+      "binomial": "Felis catus",
+      "clade": "theria",
+      "common": "Cat",
+      "note": "The dissection-lab carnivoran, and the register most lab handouts are written in."
+    },
+    {
+      "id": "galictis-cuja",
+      "binomial": "Galictis cuja",
+      "clade": "theria",
+      "common": "Lesser grison",
+      "note": "Ercoli et al.'s animal; the source of most therian limb rows. A semi-fossorial mustelid, not a generalised mammal."
+    },
+    {
+      "id": "homo-sapiens",
+      "binomial": "Homo sapiens",
+      "clade": "theria",
+      "common": "Human"
+    },
+    {
+      "id": "monodelphis-domestica",
+      "binomial": "Monodelphis domestica",
+      "clade": "theria",
+      "common": "Grey short-tailed opossum",
+      "note": "Marsupial, against the placental exemplars."
+    },
+    {
+      "id": "potos-flavus",
+      "binomial": "Potos flavus",
+      "clade": "theria",
+      "common": "Kinkajou",
+      "note": "Arboreal procyonid; the second caniform against Galictis."
+    },
+    {
+      "id": "rattus-norvegicus",
+      "binomial": "Rattus norvegicus",
+      "clade": "theria",
+      "common": "Brown rat",
+      "note": "The dissection-lab rodent."
+    }
+  ]
+}

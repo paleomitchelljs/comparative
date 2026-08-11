@@ -26,6 +26,8 @@ import pathlib
 import re
 import sys
 
+import speciesmap
+
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 # A landmark mentioned after one of these is a positional reference, not an
@@ -58,7 +60,7 @@ def main(write: bool) -> int:
         docs[path] = doc
         for m in doc["muscles"]:
             holders = [(m, "consensus", m.get("consensus") or {})]
-            holders += [(o, o["taxon"], o) for o in m.get("occurrences", [])]
+            holders += [(o, speciesmap.clade_of(o), o) for o in m.get("occurrences", [])]
             for holder, label, textsrc in holders:
                 att = holder.get("attachments")
                 if not att:

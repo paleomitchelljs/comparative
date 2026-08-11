@@ -139,7 +139,31 @@ header.masthead {
   transform: rotate(45deg); pointer-events: none;
 }
 
+/* The global taxon. Sits with the search box rather than in the toolbar because
+   it is a statement about what you are looking at, not a view to switch to. */
+.taxonpick { flex: 0 1 auto; min-width: 0; }
+.taxonpick select {
+  font-family: var(--font-ui); font-size: 0.85rem;
+  max-width: 15rem; padding: 0.5rem 0.6rem;
+  color: var(--ink); background: var(--bg-sunken);
+  border: 1px solid var(--rule); border-radius: 6px; cursor: pointer;
+}
+.taxonpick select:hover { border-color: var(--rule-strong); }
+.taxonpick select:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+/* Something is selected: the list is no longer the whole dataset, and that has
+   to be visible without reading the option text. A select's `value` is a
+   property and not reflected to an attribute, so the class is set in JS. */
+.taxonpick select.on {
+  background: var(--accent-soft); border-color: var(--accent);
+  color: var(--accent); font-weight: 600;
+}
+
 .masthead-actions { display: flex; gap: 0.5rem; font-family: var(--font-ui); font-size: 0.82rem; }
+
+@media (max-width: 640px) {
+  .taxonpick { flex: 1 1 100%; }
+  .taxonpick select { max-width: none; width: 100%; }
+}
 
 button.ghost {
   font-family: var(--font-ui); font-size: 0.82rem;
@@ -233,6 +257,19 @@ aside.sidebar {
 }
 .mcard .hit { font-family: var(--font-ui); font-size: 0.78rem; color: var(--ink-2); margin-top: 0.35rem; }
 .mcard .hit em { color: var(--accent); font-style: normal; font-weight: 600; }
+
+/* A hedged record under the selected taxon — `variable`, `uncertain`,
+   `inferred`. Without it the card is indistinguishable from an observation. */
+.pres-tag {
+  font-family: var(--font-ui); font-size: 0.62rem; text-transform: uppercase;
+  letter-spacing: 0.06em; font-weight: 700; white-space: nowrap;
+  vertical-align: middle; margin-left: 0.4rem;
+  padding: 0.08rem 0.32rem; border-radius: 3px;
+  border: 1px solid currentColor;
+}
+.pres-tag.pres-variable { color: var(--mod); background: var(--mod-bg); border-color: transparent; }
+.pres-tag.pres-uncertain { color: var(--unc); background: var(--unc-bg); border-color: transparent; }
+.pres-tag.pres-inferred { color: var(--warn); background: var(--warn-bg); border-color: transparent; }
 
 /* ---------- Detail ---------- */
 
@@ -510,10 +547,18 @@ details.elnode.d2 { background: var(--bg-panel); }
 .elbody a.inh, table.bonepair tr.inh a { color: var(--ink-3); font-style: italic; }
 table.bonepair tr.inh td { background: var(--bg-sunken); }
 
-/* Elements the taxon lacks and nothing attaches to: kept, but out of the way. */
+/* Things the taxon does not have — a bone it lacks, a muscle a source looked
+   for and did not find. Kept, because that is a result; demoted, because it is
+   not an answer to "what am I holding". */
 .absentlist { color: var(--ink-3); margin-top: 0.6rem; }
 .absentlist a { color: var(--ink-3); text-decoration: underline dotted; }
 .absentlist a:hover { color: var(--link); }
+/* At the foot of the muscle grid rather than inside a drill-down node, it needs
+   its own separation from the cards above. */
+.cardgrid + .absentlist, .empty + .absentlist {
+  margin-top: 1.25rem; padding-top: 0.9rem; border-top: 1px solid var(--rule);
+}
+.absentlist strong { color: var(--ink-2); }
 
 /* ---------- bone-pair lookup ---------- */
 .bonelookup { margin-bottom: 1.25rem; }
@@ -539,6 +584,9 @@ table.bonepair .bp-taxa { font-family: var(--font-ui); font-size: 0.76rem; color
 .fusedin { color: var(--unc); }
 .fusedin::before { content: "⊕ "; }
 .cellnote.fusion { color: var(--unc); }
+/* The other direction through time: one bone became two. */
+.cellnote.fission { color: var(--mod); }
+.inh-tag.fis-tag { color: var(--mod); background: var(--mod-bg); }
 .chip.fuse { color: var(--unc); border-color: var(--unc); }
 
 /* ---------- attachment rows: bone > side > landmark ---------- */
@@ -603,3 +651,25 @@ details.elnode.region { border-color: var(--rule-strong); }
 details.elnode.region > summary { padding: 0.7rem 0.9rem; }
 details.elnode.region > summary .elname { text-transform: capitalize; font-size: 0.95rem; }
 details.elnode.region > .elbody { padding-left: 1rem; }
+
+/* ---------- species ---------- */
+/* The occurrence table's left column now names the animal, not just the clade:
+   the species is the observation and the clade is the rollup over it. */
+.binomial {
+  display: block; font-family: var(--font-body); font-style: italic;
+  font-size: 0.82rem; color: var(--ink-2); margin-top: 0.1rem;
+}
+/* The clade cell now stacks three things — clade, binomial, vernacular — so the
+   vernacular has to break rather than run on from the binomial. */
+.taxoncell + .binomial + .common,
+td .binomial + .common { display: block; }
+/* How the row was attributed to a species, shown only where it is weak enough
+   to be worth re-checking. `note` and `source` are silent. */
+.basis {
+  display: inline-block; margin-top: 0.2rem;
+  font-family: var(--font-ui); font-size: 0.6rem; text-transform: uppercase;
+  letter-spacing: 0.06em; font-weight: 700; cursor: help;
+  color: var(--unc); background: var(--unc-bg);
+  padding: 0.03rem 0.28rem; border-radius: 3px;
+}
+.taxonpick optgroup { font-style: normal; font-weight: 600; }
