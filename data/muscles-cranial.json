@@ -668,6 +668,58 @@
           ]
         },
         {
+          "species": "necturus-maculosus",
+          "speciesBasis": "note",
+          "name": "Depressor mandibulae anterior + posterior",
+          "present": "yes",
+          "innervation": "Facial nerve (CN VII).",
+          "sources": [
+            "bauer-1997"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Depressor mandibulae anterior"
+            },
+            {
+              "name": "Depressor mandibulae posterior"
+            }
+          ],
+          "divisionNote": "Necturus maculosus, adult. Two separate muscles, against ONE in the axolotl on the same record — where the levator hyoideus is integrated into an undivided depressor mandibulae. The names come from the constantly divided depressor of adult bolitoglossine plethodontids, all of which develop directly; Bauer's nomenclatural remarks trace 'depressor mandibulae' back to Humphry (1871), who used it for only the caudal part of the muscle in a metamorphosed Andrias.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "squamosal",
+                "side": "lateral"
+              },
+              {
+                "element": "otic-capsule"
+              },
+              {
+                "element": "prootic"
+              },
+              {
+                "element": "opisthotic"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "gonial"
+              },
+              {
+                "element": "gonial",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Necturus maculosus, adult. The anterior arises along the lateral surface of the upper half of the squamosal and, ventral to that, on the otic capsule — the prootic, the opisthotic and the cartilage between them — inserting on the gonial, some rostrolateral fibres reaching the bone directly and most attaching to a tendon that is continuous with the ceratomandibularis tendon. The posterior arises caudal and medioventral to it on the caudalmost squamosal, the opisthotic and the same cartilage, and inserts through a long broad tendon on the posteromedial gonial; that tendon begins level with the dorsal tip of the ceratohyal and is slightly longer than the belly. TWO EARLIER DESCRIPTIONS ARE CORRECTED HERE AND NEITHER IS SCORED: there are no fibres on the parietal, against Fischer (1864), and no origins on the neck vertebrae, against Ruge (1897). Kesteven (1942-45) also put the whole posterior insertion on the ceratohyal, which Bauer finds among urodeles only in Siren.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
+        },
+        {
           "species": "xenopus-laevis",
           "speciesBasis": "note",
           "name": "Depressor mandibulae",
@@ -768,11 +820,13 @@
         "related": [
           "adductor-mandibulae",
           "interhyoideus",
-          "stapedius"
+          "stapedius",
+          "ceratomandibularis"
         ],
         "teaching": "The digastric is the cleanest single dissection for making the arch system tangible — one muscle, two nerves, two arches, one tendon."
       },
       "sources": [
+        "bauer-1997",
         "jones-etal-2019",
         "ziermann-diogo-2013",
         "ziermann-etal-2014",
@@ -983,9 +1037,10 @@
         "confidence": "well-supported",
         "notes": "The transformation of a pharyngeal constrictor sheet into the mammalian facial musculature is tracked by constant CN VII innervation. This is arguably the most dramatic functional relocation of any vertebrate muscle field.",
         "related": [
+          "ceratomandibularis",
           "depressor-mandibulae",
-          "stapedius",
-          "intermandibularis"
+          "intermandibularis",
+          "stapedius"
         ],
         "teaching": "Directly clinically relevant: explains why Bell's palsy affects the whole hemiface plus the stapedius (hyperacusis) but spares chewing (CN V, arch 1)."
       },
@@ -999,6 +1054,114 @@
       "nerves": [
         {
           "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "ceratomandibularis",
+      "name": "Ceratomandibularis",
+      "region": "cranial",
+      "subregion": "hyoid arch (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 2,
+      "developmental": "Hyoid arch. Bauer's point is neurological: it is supplied by the facial nerve, which places it in arch 2 with the depressor mandibulae and against the branchial muscles it lies among.",
+      "synonyms": [
+        "CM (Bauer 1997)",
+        "branchiomandibularis (partim, some usage)"
+      ],
+      "consensus": {
+        "origin": "Anterior surface of the first ceratobranchial.",
+        "insertion": "The hyomandibular ligament, and through it the gonial; some fibres to the dorsal ceratohyal and some fused with the depressor mandibulae posterior.",
+        "action": "Opens the jaw, pulling the lower jaw down against the hyobranchial apparatus rather than against the skull.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "cornu-branchiale",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibular-ligament"
+          },
+          {
+            "element": "gonial"
+          },
+          {
+            "element": "ceratohyal",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "species": "necturus-maculosus",
+          "speciesBasis": "note",
+          "name": "Ceratomandibularis",
+          "present": "yes",
+          "innervation": "Facial nerve (CN VII).",
+          "sources": [
+            "bauer-1997"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cornu-branchiale",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibular-ligament"
+              },
+              {
+                "element": "gonial"
+              },
+              {
+                "element": "ceratohyal",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Necturus maculosus, adult. Origin on the upper two-thirds of the anterior surface of the first ceratobranchial, sparing the dorsalmost region, dorsal to the ceratohyoideus externus. Most of it inserts onto the HYOMANDIBULAR LIGAMENT together with the depressor mandibulae posterior, and so reaches the gonial only INDIRECTLY — the gonial row is that indirect attachment and the ligament row is the direct one, which is the distinction the two elements exist to keep. Two fibre bundles fuse with the depressor mandibulae posterior outright, and the ventralmost fibres attach to the caudal surface of the upturned dorsal end of the ceratohyal, just above where the ceratohyoideus externus ends.",
+          "note": "Necturus maculosus, adult, and Bauer's contrast is with every urodele larva and with Proteus: in those the ceratomandibularis is simple, while in Necturus it is HIGHLY COMPLEX, partly split by the fascia of origin of the interhyoideus posterior, whose medial layer pierces the muscle. He adds something no earlier worker reported — its deep fibres INTERMINGLE with those of the ceratohyoideus externus in two places, caudally where both attach to the ceratobranchial and rostrally near the posteroventral ceratohyal, while superficially the two are thoroughly separate. A muscle boundary that exists at the surface and not in depth.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "moderate",
+        "notes": "A jaw opener that pulls against the hyobranchial apparatus rather than the skull, and the reason the urodele jaw-opening system cannot be read as one muscle. Its state across urodeles is genuinely variable: Ziermann & Diogo (2013) report it as a distinct muscle in some obligate neotenes, completely fused to the branchiohyoideus and/or the depressor mandibulae in others, and missing altogether in others — and where it fuses with the depressor mandibulae, the levator hyoideus is fused there too. So an absence in this record may be a loss or may be a fusion, and no source here separates the two for any species but this one.",
+        "openQuestion": "Is the ceratomandibularis absent or merely fused in the urodeles reported to lack it? Bauer's fibre-level observation in Necturus — superficial separation with deep intermingling — suggests the question may not have a clean answer at the level of gross dissection.",
+        "related": [
+          "depressor-mandibulae",
+          "interhyoideus"
+        ],
+        "teaching": "The counterexample to 'jaw opening is the depressor mandibulae'. Here two CN VII muscles open the jaw, one from the skull and one from the gill skeleton, and only one of them reaches the jaw directly."
+      },
+      "sources": [
+        "bauer-1997",
+        "ziermann-diogo-2013"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "jaw-joint",
+          "motion": "depression"
+        },
+        {
+          "joint": "jaw-joint",
+          "motion": "opening"
         }
       ]
     },

@@ -117,11 +117,20 @@ scored or deleted.
 |---|---:|---|
 | **Pereyra et al. (2019)** | 4.2 | **Correlates, not rows.** See its reading note |
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
-| **Bauer (1997)** | 3.6 | Urodele jaw openers on CN VII |
 | **Sánchez et al. (2019)** | 3.4 | Theria forearm and hand, in felids. Short but dense |
 
 ### Done since this file was written
 
+**Bauer (1997)** — cranial 57% → 58%, and the dataset's 127th muscle record. Reached
+because Ziermann & Diogo flagged the **ceratomandibularis** as variable across urodeles
+and there was nowhere to put it. Measured 3.5 per page against 3.6, the closest the
+figure has come. Two rows for *Necturus maculosus*: the ceratomandibularis, which opens
+the jaw by pulling against the hyobranchial apparatus rather than the skull and reaches
+the gonial only THROUGH A LIGAMENT, and a `divided` depressor mandibulae against the
+axolotl's `single` on the same record. Two elements added — `gonial` and
+`hyomandibular-ligament` — and three earlier descriptions corrected in the note rather
+than scored. Still in it: the larval condition, *Proteus*, and five more salamanders
+that would turn the ceratomandibularis' variability into scored disagreement.
 **Springer & Johnson (2015)** — Actinopterygii 46% → 50%. One row, for *Protanguilla
 palau*, and it is the largest single occurrence in `branchial-constrictors`: fifteen
 units against ten in the axolotl and two in the shark. Measured 5.3 per page, close to

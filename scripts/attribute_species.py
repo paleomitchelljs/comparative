@@ -67,6 +67,7 @@ SOURCE_SPECIES = {
     "springer-johnson-2015": "protanguilla-palau",
     # naumann-etal-2017 is two species, not one — see SURVEY_EXEMPLARS.
     "omura-etal-2014": "necturus-maculosus",
+    "bauer-1997": "necturus-maculosus",
     "molnar-etal-2017": "chamaeleo-calyptratus",
     "freitas-etal-2017": "iguana-iguana",
     "tomanska-etal-2024": "varanus-komodoensis",

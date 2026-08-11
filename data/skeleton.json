@@ -3976,6 +3976,47 @@
         "Hb1-3",
         "hypobranchial"
       ]
+    },
+    {
+      "id": "gonial",
+      "label": "Gonial",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "mandible",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata"
+        ],
+        "sources": [
+          "bauer-1997"
+        ],
+        "note": "Small bone of the posterior urodele lower jaw, associated with Meckel's cartilage, and the insertion of every visceral jaw opener Bauer describes. Added because scoring those muscles on `mandible` generally would lose the distinction he draws between the depressor mandibulae reaching it DIRECTLY and the ceratomandibularis reaching it only through a ligament."
+      },
+      "synonyms": [
+        "goniale",
+        "Go (Bauer 1997)"
+      ]
+    },
+    {
+      "id": "hyomandibular-ligament",
+      "label": "Hyomandibular ligament",
+      "kind": "ligament",
+      "region": "cranial",
+      "segment": "cranial",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata"
+        ],
+        "sources": [
+          "bauer-1997"
+        ],
+        "note": "Carries most of the ceratomandibularis insertion in Necturus, which is why that muscle reaches the gonial indirectly. A muscle end that leaves no osteological trace, like the midventral raphe of the shark and the humeral feather tract of the loon."
+      }
     }
   ]
 }
