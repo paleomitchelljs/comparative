@@ -69,15 +69,10 @@ def p(name, membership=E, muscle=None, note=None):
 # seed_occurrence_attachments.py without the script ever reporting a problem.
 SEED: list[tuple[tuple[str, str], dict]] = [
     # ---------------- axial ----------------
-    (("epaxial-musculature", "petromyzontida"), {
+    (("epaxial-musculature", "myxini"), {
         "division": "single",
         "why": "Segmental myomeres, undivided into longitudinal tracts."}),
     (("epaxial-musculature", "lepidosauria"), {
-        "division": "divided",
-        "parts": [p("Transversospinalis", muscle="transversospinalis"),
-                  p("Longissimus", muscle="longissimus-dorsi"),
-                  p("Iliocostalis", muscle="iliocostalis")]}),
-    (("epaxial-musculature", "crocodylia"), {
         "division": "divided",
         "parts": [p("Transversospinalis", muscle="transversospinalis"),
                   p("Longissimus", muscle="longissimus-dorsi"),
@@ -99,23 +94,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
                   p("Transversus abdominis", muscle="transversus-abdominis"),
                   p("Rectus abdominis", muscle="rectus-abdominis"),
                   p("Intercostales", muscle="intercostales-externi")]}),
-    (("hypaxial-musculature", "crocodylia"), {
-        "division": "divided",
-        "partsOpen": True,
-        "parts": [p("Subvertebralis"), p("Abdominal wall series")]}),
-    (("hypaxial-musculature", "theria"), {
-        "division": "divided",
-        "parts": [p("Quadratus lumborum"), p("Psoas minor"),
-                  p("Obliquus externus", muscle="obliquus-externus"),
-                  p("Obliquus internus"),
-                  p("Transversus abdominis", muscle="transversus-abdominis"),
-                  p("Rectus abdominis", muscle="rectus-abdominis"),
-                  p("Intercostales", muscle="intercostales-externi")]}),
 
-    (("caudal-musculature", "caudata"), {
-        "division": "divided",
-        "partsOpen": True,
-        "parts": [p("Caudal epaxial series"), p("Caudal hypaxial series")]}),
 
     (("transversospinalis", "theria"), {
         "division": "divided",
@@ -163,18 +142,6 @@ SEED: list[tuple[tuple[str, str], dict]] = [
                   p("Zygomaticomandibularis"),
                   p("Adductor mandibulae posterior",
                     muscle="adductor-mandibulae-posterior")]}),
-    (("adductor-mandibulae", "lepidosauria"), {
-        "division": "divided",
-        "why": "Johnston (2014): the boundaries between the named parts differ "
-                "substantially between authors.",
-        "parts": [p("Adductor mandibulae externus",
-                    muscle="adductor-mandibulae-externus"),
-                  p("Pseudotemporalis", muscle="adductor-mandibulae-internus"),
-                  p("Pterygomandibularis")]}),
-    (("adductor-mandibulae", "theria"), {
-        "division": "divided",
-        "parts": [p("Masseter"), p("Temporalis"),
-                  p("Pterygoideus medialis"), p("Pterygoideus lateralis")]}),
 
     (("adductor-mandibulae-externus", "lepidosauria"), {
         "division": "heads",
@@ -186,9 +153,6 @@ SEED: list[tuple[tuple[str, str], dict]] = [
     (("adductor-mandibulae-externus", "testudines"), {
         "division": "heads",
         "parts": [p("Pars superficialis"), p("Pars media"), p("Pars profunda")]}),
-    (("adductor-mandibulae-externus", "theria"), {
-        "division": "divided",
-        "parts": [p("Masseter"), p("Temporalis")]}),
 
     (("adductor-mandibulae-internus", "anura"), {
         "division": "heads",
@@ -200,24 +164,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
     (("adductor-mandibulae-internus", "lepidosauria"), {
         "division": "divided",
         "parts": [p("Pseudotemporalis"), p("Pterygoideus")]}),
-    (("adductor-mandibulae-internus", "theria"), {
-        "division": "divided",
-        "parts": [p("Pterygoideus medialis"), p("Pterygoideus lateralis")]}),
 
-    (("intermandibularis", "theria"), {
-        "division": "divided",
-        "why": "The middle-ear muscles are arch identity surviving radical "
-                "functional relocation.",
-        "parts": [p("Mylohyoid"), p("Digastricus, anterior belly"),
-                  p("Tensor tympani"), p("Tensor veli palatini")]}),
-    (("interhyoideus", "theria"), {
-        "division": "divided",
-        "partsOpen": True,
-        "why": "The facial expression apparatus is a hyoid-arch sheet that "
-                "migrated onto the face; universal CN VII innervation is why a "
-                "facial nerve lesion paralyses one whole side.",
-        "parts": [p("Muscles of facial expression"), p("Platysma"),
-                  p("Stylohyoid"), p("Stapedius")]}),
 
     (("branchial-constrictors", "chondrichthyes"), {
         "division": "divided",
@@ -227,23 +174,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "division": "divided",
         "parts": [p("Levator laryngis"), p("Depressor laryngis"),
                   p("Constrictor laryngis"), p("Dilatator laryngis")]}),
-    (("branchial-constrictors", "theria"), {
-        "division": "divided",
-        "partsOpen": True,
-        "why": "The stylopharyngeus is the only mammalian muscle innervated by "
-                "CN IX — the sole surviving arch 3 muscle.",
-        "parts": [p("Pharyngeal constrictors"), p("Stylopharyngeus"),
-                  p("Cricothyroid"), p("Intrinsic laryngeal muscles")]}),
 
-    (("extraocular-muscles", "theria"), {
-        "division": "divided",
-        "parts": [p("Rectus superior"), p("Rectus inferior"),
-                  p("Rectus medialis"), p("Rectus lateralis"),
-                  p("Obliquus superior"), p("Obliquus inferior"),
-                  p("Levator palpebrae superioris"),
-                  p("Retractor bulbi", membership=V,
-                    note="Retained in many mammals, lost in humans and other "
-                         "primates.")]}),
 
     (("hypobranchial-muscles", "chondrichthyes"), {
         "division": "divided",
@@ -256,15 +187,6 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "division": "divided",
         "parts": [p("Geniohyoideus"), p("Coracohyoideus"),
                   p("Genioglossus"), p("Hyoglossus")]}),
-    (("hypobranchial-muscles", "theria"), {
-        "division": "divided",
-        "partsOpen": True,
-        "why": "The palatoglossus is the exception that confirms the rule: the "
-                "only 'tongue' muscle on CN X, because it is a soft-palate "
-                "(arch 4) muscle rather than a hypobranchial one.",
-        "parts": [p("Genioglossus"), p("Hyoglossus"), p("Styloglossus"),
-                  p("Intrinsic tongue muscles"), p("Geniohyoid"),
-                  p("Infrahyoid strap muscles")]}),
 
     (("levator-arcus-palatini", "chondrichthyes"), {
         "division": "divided",
@@ -509,6 +431,32 @@ SEED: list[tuple[tuple[str, str], dict]] = [
 
 # Rows that look like subdivisions and are not, or that belong somewhere else.
 EXCLUSIONS = {
+    ("epaxial-musculature", "crocodylia"):
+        "no row to divide — the crocodylia occurrence was lifted out of the base\n        layer, because schilling-2011 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("hypaxial-musculature", "crocodylia"):
+        "no row to divide — the crocodylia occurrence was lifted out of the base\n        layer, because schilling-2011 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("hypaxial-musculature", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because schilling-2011 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("caudal-musculature", "caudata"):
+        "no row to divide — the caudata occurrence was lifted out of the base\n        layer, because schilling-2011 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("adductor-mandibulae", "lepidosauria"):
+        "no row to divide — the lepidosauria occurrence was lifted out of the base\n        layer, because werneburg-2011 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("adductor-mandibulae", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("adductor-mandibulae-externus", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("adductor-mandibulae-internus", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("intermandibularis", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("interhyoideus", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("branchial-constrictors", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("extraocular-muscles", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because fritzsch-2023 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
+    ("hypobranchial-muscles", "theria"):
+        "no row to divide — the theria occurrence was lifted out of the base\n        layer, because ziermann-diogo-2019 examines no animal of that clade. The names it\n        enumerated are in the record's `synonyms`, which is what the search\n        index reads",
     ("abductor-superficialis", "caudata"):
         "fin record — the listed muscles are `derivatives`, not parts",
     ("abductor-profundus", "actinistia"):

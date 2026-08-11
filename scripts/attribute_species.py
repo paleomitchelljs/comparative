@@ -63,7 +63,7 @@ SOURCE_SPECIES = {
     "fisher-goodman-1955": "grus-americana",
     "mckitrick-1991": "gavia-sp",
     "boumans-etal-2015": "tyto-furcata",
-    "naumann-etal-2017": "ambystoma-mexicanum",
+    # naumann-etal-2017 is two species, not one — see SURVEY_EXEMPLARS.
     "omura-etal-2014": "necturus-maculosus",
     "molnar-etal-2017": "chamaeleo-calyptratus",
     "freitas-etal-2017": "iguana-iguana",
@@ -86,6 +86,9 @@ SURVEY_EXEMPLARS = {
         "caudata": "ambystoma-ordinarium", "anura": "rhinella-arenarum",
         "testudines": "trachemys-scripta", "lepidosauria": "timon-lepidus",
         "crocodylia": "caiman-latirostris", "aves": "gallus-domesticus",
+        # Tables 2 and 3 add "the mammal Rattus" to the six reptile and amphibian
+        # columns. Five hand and pectoral rows had been guessed onto a cheetah.
+        "theria": "rattus-norvegicus",
     },
     "diogo-molnar-2014": {
         "caudata": "ambystoma-ordinarium", "anura": "rhinella-arenarum",
@@ -118,6 +121,23 @@ SURVEY_EXEMPLARS = {
     "johnston-2014": {"lepidosauria": "timon-lepidus"},
     "navarro-etal-2023": {"lepidosauria": "timon-lepidus"},
     "sigurdsen-etal-2012": {"anura": "rhinella-arenarum"},
+    # The gar is the study animal; the axolotl is the comparison it is read against.
+    "naumann-etal-2017": {"actinopterygii": "lepisosteus-osseus",
+                          "caudata": "ambystoma-mexicanum"},
+    # Johnston dissected Leiopelma and Ascaphus and tested the folded-sheet model on
+    # comparative material from chondrichthyans to mammals; the cartilaginous fish in
+    # that material is Callorhinchus.
+    "johnston-2011": {"chondrichthyes": "callorhinchus-milii"},
+    # Ziermann & Diogo (2013) is the axolotl paper AND its anuran comparison. Their
+    # 2019 review is Scyliorhinus, Polypterus and Danio — it examines no tetrapod, so
+    # it gets no exemplars here however many tetrapod rows once cited it.
+    "ziermann-diogo-2013": {"caudata": "ambystoma-mexicanum", "anura": "xenopus-laevis"},
+    # Schilling (2011) deliberately has NO per-clade exemplar. It is a review whose
+    # only species-level data are the figures — Myxine, Etmopterus, Ambystoma
+    # tigrinum, Dipsosaurus, Microtus (Fig. 2) and Ambystoma maculatum, Dipsosaurus,
+    # Canis (Fig. 3) — and its crocodylian, avian and actinopterygian statements are
+    # cladogram synthesis with no animal behind them. Rows attributed to it name
+    # their species in prose instead, which is rule 1 and carries the evidence.
     "leavey-etal-2024": {"anura": "rhinella-arenarum"},
 }
 

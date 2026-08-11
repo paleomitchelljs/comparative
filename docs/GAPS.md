@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 632 present occurrences · 231 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 601 present occurrences · 231 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -51,10 +51,10 @@ illustrated.
 | fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
 | forearm | 18 | 110 | 58 | 53% |
+| axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| axial | 15 | 46 | 14 | 30% |
-| cranial | 15 | 60 | 17 | 28% |
-| **all** | 126 | 632 | 359 | **57%** |
+| cranial | 15 | 46 | 16 | 35% |
+| **all** | 126 | 601 | 358 | **60%** |
 <!-- /counts:regions -->
 
 **Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
@@ -76,12 +76,20 @@ muscles that would serve it — adductor pollicis, a contrahens, flexores breves
 profundi slips — attach to the prepollex instead. That is the position-versus-
 identity argument with a bone attached to it rather than just a digit number.
 
-**Axial is no longer the empty region.** The body wall now carries the rectus
-abdominis, the three oblique layers and the ypsiloideus scored for Caudata,
-alongside the coarse tract records from Schilling (2011), who reviews tracts
-rather than individual muscles. Splitting the transversospinal system,
-longissimus and iliocostalis into separate records is the next step, with Cieri
-(2018) for the squamate column.
+**Axial is no longer the empty region, and it is now 17 rows shorter.** The body
+wall carries the rectus abdominis, the three oblique layers and the ypsiloideus
+scored for Caudata, and the tracts are scored for *Varanus exanthematicus* from
+Cieri (2018). What left were the Schilling (2011) rows for taxa he does not
+examine — the crocodylian, avian, actinopterygian and cheetah rows were his
+Figure 1, a cladogram synthesis with no animal behind it. Seven of his rows
+stayed, re-attributed to the animals his Figures 2 and 3 actually show:
+*Myxine glutinosa*, *Etmopterus spinax*, *Ambystoma tigrinum*, *Microtus
+arvalis*, *Canis familiaris*. See [§7](#7-the-base-layer-species-and-source).
+
+**The crocodylian and avian axial columns are now empty, and that is a source
+gap, not a coverage regression.** Nothing in `papers/` describes crocodylian trunk
+musculature; Boumans et al. (2015) covers the avian *neck* and would be the way
+back in for Aves.
 
 ## 2. Underreported taxonomic groups
 
@@ -92,21 +100,21 @@ longissimus and iliocostalis into separate records is the next step, with Cieri
 | Pseudosuchia (stem) | 1 | 1 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
+| Theria | 64 | 55 | 86% |
 | Actinistia | 7 | 6 | 86% |
+| Crocodylia | 60 | 48 | 80% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
-| Crocodylia | 66 | 48 | 73% |
-| Caudata | 88 | 61 | 69% |
-| Theria | 81 | 56 | 69% |
-| Lepidosauria | 108 | 67 | 62% |
+| Caudata | 87 | 61 | 70% |
+| Lepidosauria | 105 | 67 | 64% |
 | Synapsida (stem) | 4 | 2 | 50% |
-| Actinopterygii | 14 | 6 | 43% |
+| Actinopterygii | 13 | 6 | 46% |
 | Monotremata | 7 | 3 | 43% |
 | Chondrichthyes | 19 | 7 | 37% |
 | Anura | 62 | 22 | 35% |
-| Aves | 60 | 17 | 28% |
+| Aves | 57 | 17 | 30% |
 | Testudines | 50 | 13 | 26% |
-| Myxini | 1 | 0 | 0% |
-| Petromyzontida | 5 | 0 | 0% |
+| Myxini | 3 | 0 | 0% |
+| Petromyzontida | 3 | 0 | 0% |
 <!-- /counts:taxa -->
 
 **Caudata was the anomaly and is now the reference column.** It went from 11% to
@@ -127,8 +135,16 @@ et al. (2014) then took it to 69% across the forelimb. The second of those neede
 no new source — 25 Theria occurrences already cited that paper for their *names*
 and had no `attachments` block, which is worth stating as a general lesson: a
 source counting as "mined" because it is cited is not the same as a source mined
-for everything it holds. What remains unscored in Theria is the cranial region and
-the axial column.
+for everything it holds.
+
+**Theria now reads 86%, and the jump is a deletion.** Its cranial column is
+*gone* — all ten therian cranial rows were guessed onto *Acinonyx jubatus*, an
+animal in this corpus because Hudson et al. measured a cheetah's limbs, and
+sourced to reviews that dissect no mammal. **No source in `papers/` describes a
+mammalian head.** That is the single clearest acquisition need in the dataset: a
+therian cranial myology would restore ten rows and the arch-identity teaching
+cases that go with them. The percentage rose because unscored rows left, which is
+worth remembering whenever a column improves without a paper being read.
 
 **Aves at 13% is source-limited, not effort-limited, and the limit is real.**
 Thirty of its 48 unscored rows cite only Abdala & Diogo (2010), whose Tables 1-3
@@ -185,9 +201,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 231, of which 196 (85%) carry at least one attachment |
-| Observed attachment rows | 934 |
+| Observed attachment rows | 928 |
 | Rows naming a **landmark** | 224 (24%) |
-| Rows naming a **side** | 529 (57%) |
+| Rows naming a **side** | 528 (57%) |
 | Osteological correlates | 95 flagged, 79 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -254,7 +270,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 359 of 632 present occurrences (57%).**
+**Taxon-specific attachments: 358 of 601 present occurrences (60%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -279,7 +295,7 @@ it is one end of most of them.
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
-| cranial | 15 | 69 |
+| cranial | 15 | 63 |
 | foot | 11 | 63 |
 | arm | 5 | 59 |
 | fin | 9 | 57 |
@@ -491,6 +507,61 @@ Mined from this batch so far: **Ercoli et al. (2012)** (19 occurrences, Theria
 75%) and **Campbell (2007)**; see the reading notes beside their PDFs. Zaaf et al. also holds the first architecture data for any lepidosaur
 (Tables 4-6), which is left unentered pending a schema decision on how to carry
 two species with two specimens each.
+
+## 7. The base layer: species and source
+
+**Every mined statement carries a species and a source. Clades, homology
+hypotheses and every other generalisation are layers on top of that, never stored
+as though they were observations.** The audit that established this found the
+sourcing sound — 0 present rows and 0 attachment rows without a citation, 0
+occurrences storing a clade — and the species tagging holed:
+
+| | Before | After |
+|---|---:|---:|
+| `speciesBasis: "note"` — the row's prose names the species | 159 | 181 |
+| `source` — a single-species study | 216 | 216 |
+| `survey` — a survey with a stated exemplar for the clade | 262 | 262 |
+| **`default` — a guess** | **54** | **0** |
+
+The 54 guesses resolved two ways, and which one applied turned entirely on
+**whether the cited source examined an animal of that clade**:
+
+**22 re-attributed.** The source names a species and the row pointed at the wrong
+one. Schilling (2011)'s hagfish is *Myxine glutinosa*, not a lamprey; his shark is
+*Etmopterus spinax*, not a holocephalan; his salamander is *Ambystoma tigrinum*
+and his mammals *Microtus arvalis* (Fig. 2) and *Canis familiaris* (Fig. 3).
+Naumann et al. (2017) is *Lepisosteus osseus*, not a catfish. Abdala & Diogo
+(2010)'s Tables 2–3 add "the mammal *Rattus*" to their six reptile and amphibian
+columns. Johnston (2011)'s cartilaginous fish is *Callorhinchus milii*. Four
+salamander cranial rows moved from Ziermann & Diogo's 2019 review to their 2013
+axolotl paper, which is where the observation is, and an anuran row to that
+paper's *Xenopus laevis*.
+
+Each of those rows now names its binomial **in its own prose**, which is
+`attribute_species.py`'s first rule, so the fix survives every rebuild and carries
+its evidence with it. Five species were added, each with a note on what it is
+*not* representative of.
+
+**31 lifted out.** The source is a review that examined no animal of that clade,
+so the row asserted an observation nobody made. A clade-level statement is derived
+data: it belongs in the record's `consensus`, `synonyms` or `homology.notes`. The
+substantive facts moved up — the avian epaxial reduction, the mammalian
+ventrovertebral series, the palatoglossus exception, the retractor bulbi's loss in
+primates — and 13 orphaned `division`/`parts` blocks moved into
+`seed_division.py`'s `EXCLUSIONS` with their reasons. What the rows enumerated is
+in `synonyms`, which is what the search index reads, so "masseter" still finds the
+adductor mandibulae.
+
+Two consequences worth stating plainly. The therian cranial column and the
+crocodylian and avian axial columns are now **empty**, and the percentages in §1
+and §2 *rose* because unscored rows left. And the clade-keyed seed tables
+(`seed_occurrence_attachments.py`, `seed_division.py`) are the same inversion in
+code — they key attachments and subdivisions on a taxon and land them on whichever
+row happens to belong to it. They work, but they are the next thing that should be
+species-keyed.
+
+Two pseudo-species remain in `species.json`: `teleostei-generalised` (6 rows) and
+`amphisbaenia-generalised` (3 rows). Both are clades wearing a species tag.
 
 ## What is still unmined outside `papers/`
 

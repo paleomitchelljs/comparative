@@ -342,8 +342,12 @@ SEED = {
                        "shiftNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin."},
         "chondrichthyes": {"origin": ["pectoral-girdle"], "insertion": ["mandible", "hyoid", "branchial-arches"], "sources": ["ziermann-etal-2014", "diogo-ziermann-2015"],
                            "shiftNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck."},
-        "theria": {"origin": ["sternum", "clavicle", "scapula", "hyoid"], "insertion": ["hyoid", "tongue"], "sources": ["ziermann-diogo-2019"],
-                   "shiftNote": "With the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead."},
+        # No therian entry. It cited Ziermann & Diogo (2019), which examines
+        # Scyliorhinus, Polypterus and Danio and no mammal, and it landed on a row
+        # whose species was a guess. The statement it carried — with the coracoid
+        # gone the infrahyoid muscles take origin from sternum, clavicle and scapula
+        # instead — is now in the record's `homology.notes`, which is where a
+        # generalisation with no animal behind it belongs.
     },
     # --- Crocodylus porosus, from Klinkhamer et al. (2017) digital dissection.
     # Their descriptions name an explicit aspect for nearly every attachment,

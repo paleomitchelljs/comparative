@@ -12,6 +12,18 @@ quotation. Every homology claim is a hypothesis attributed to a named author.
 Confidence labels (`well-supported`, `moderate`, `contested`, `uncertain`)
 reflect the strength of support reported in the literature, not certainty.
 
+**A statement in the base layer names a species and a source.** Everything else —
+what a clade is, what a homology group is, how a muscle field differentiated — is
+a layer computed or written on top of that. So an occurrence row is one animal as
+one paper reported it, and a review's claim about "mammals" is not an occurrence
+row: it goes in the record's `consensus`, `synonyms` or `homology.notes`, where it
+reads as the generalisation it is. Rows that broke this rule have been removed
+rather than repaired with a plausible species — the whole therian cranial column
+was attributed to a cheetah nobody dissected, and no source here describes a
+mammalian head. Where a source contradicts what the dataset already said, the
+source wins and the row is corrected or downgraded, with the disagreement written
+into the note. `docs/GAPS.md` §7 records the audit.
+
 ## Species, and what a clade is
 
 Every observation is of **one species**. `Caudata` is not something anybody

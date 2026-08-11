@@ -180,37 +180,14 @@
           ]
         },
         {
-          "species": "amphisbaenia-generalised",
-          "speciesBasis": "default",
-          "name": "Adductor mandibulae externus, pseudotemporalis, pterygomandibularis",
-          "present": "yes",
-          "note": "Johnston (2014) treats the homology of the squamate jaw adductor subdivisions; the boundaries between named parts differ substantially between authors.",
-          "sources": [
-            "werneburg-2011"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Adductor mandibulae externus",
-              "muscle": "adductor-mandibulae-externus"
-            },
-            {
-              "name": "Pseudotemporalis",
-              "muscle": "adductor-mandibulae-internus"
-            },
-            {
-              "name": "Pterygomandibularis"
-            }
-          ]
-        },
-        {
           "species": "ascaphus-truei",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Adductor mandibulae (levator mandibulae externus, longus, articularis)",
           "present": "yes",
-          "note": "Johnston (2011) analyses the adductor mandibulae in basal anurans; the innervation pattern (whether branches pass lateral or medial to the trigeminal ganglion) is the key homology criterion.",
+          "note": "Ascaphus truei, dissected by Johnston (2011) alongside Leiopelma. The innervation pattern — whether branches pass lateral or medial to the trigeminal ganglion — is the criterion the older literature used, and Johnston replaces it with insertion geometry: the components are identified by where they insert into the inverted U on the mandible.",
           "sources": [
-            "werneburg-2011"
+            "werneburg-2011",
+            "johnston-2011"
           ],
           "division": "divided",
           "parts": [
@@ -224,46 +201,6 @@
             },
             {
               "name": "Levator mandibulae articularis"
-            }
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Masseter, temporalis, medial and lateral pterygoid",
-          "present": "yes",
-          "origin": "Zygomatic arch (masseter); temporal fossa (temporalis); pterygoid plates (pterygoids).",
-          "insertion": "Mandibular ramus, angle, coronoid process and condylar neck.",
-          "action": "Elevate the mandible; the pterygoids also produce lateral and protrusive movements.",
-          "innervation": "Mandibular division of CN V.",
-          "note": "The mammalian subdivision into masseter and temporalis accompanies the shift of the jaw joint from quadrate–articular to squamosal–dentary and the recruitment of the postdentary bones into the middle ear.",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Masseter"
-            },
-            {
-              "name": "Temporalis"
-            },
-            {
-              "name": "Pterygoideus medialis"
-            },
-            {
-              "name": "Pterygoideus lateralis"
-            }
-          ],
-          "nerves": [
-            {
-              "nerve": "trigeminal-mandibular"
-            }
-          ],
-          "actions": [
-            {
-              "joint": "jaw-joint",
-              "motion": "elevation"
             }
           ]
         }
@@ -398,13 +335,15 @@
         },
         {
           "species": "ambystoma-mexicanum",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Intermandibularis",
           "present": "yes",
           "action": "Buccal pumping for lung ventilation and for gape control during suction feeding.",
           "sources": [
+            "ziermann-diogo-2013",
             "ziermann-diogo-2019"
-          ]
+          ],
+          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl developmental series, which is where the salamander observation actually is — their 2019 review, cited here before, examines Scyliorhinus, Polypterus and Danio and no salamander."
         },
         {
           "species": "trachemys-scripta",
@@ -429,38 +368,6 @@
             ]
           },
           "attachmentNote": "Werneburg resolves a pars principalis and a further unit; both run from the medial dentary to the midline."
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Mylohyoid, anterior digastric, tensor tympani, tensor veli palatini",
-          "present": "yes",
-          "action": "Elevate the floor of the mouth; the tensor tympani damps the tympanic membrane.",
-          "innervation": "Mandibular division of CN V — the nerve identifies these as arch 1 derivatives even though tensor tympani lies in the middle ear.",
-          "note": "The middle-ear muscles are the strongest available demonstration of arch identity persisting through radical functional relocation.",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Mylohyoid"
-            },
-            {
-              "name": "Digastricus, anterior belly"
-            },
-            {
-              "name": "Tensor tympani"
-            },
-            {
-              "name": "Tensor veli palatini"
-            }
-          ],
-          "nerves": [
-            {
-              "nerve": "trigeminal-mandibular"
-            }
-          ]
         }
       ],
       "homology": {
@@ -476,6 +383,7 @@
       "sources": [
         "jayaram-etal-1983",
         "werneburg-2011",
+        "ziermann-diogo-2013",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
       ],
@@ -555,21 +463,24 @@
         },
         {
           "species": "ambystoma-mexicanum",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Depressor mandibulae",
           "present": "yes",
           "sources": [
+            "ziermann-diogo-2013",
             "ziermann-diogo-2019"
-          ]
+          ],
+          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl series. They report the depressor mandibulae through development alongside the branchiohyoideus, which is the other CN VII muscle of the urodele jaw apparatus."
         },
         {
-          "species": "ascaphus-truei",
-          "speciesBasis": "default",
+          "species": "xenopus-laevis",
+          "speciesBasis": "note",
           "name": "Depressor mandibulae",
           "present": "yes",
           "sources": [
-            "ziermann-diogo-2019"
-          ]
+            "ziermann-diogo-2013"
+          ],
+          "note": "Xenopus laevis, the anuran of Ziermann & Diogo's (2013) developmental series. The row previously claimed a leiopelmatid, which that paper does not examine."
         },
         {
           "species": "trachemys-scripta",
@@ -620,49 +531,6 @@
               "nerve": "facial"
             }
           ]
-        },
-        {
-          "species": "amphisbaenia-generalised",
-          "speciesBasis": "default",
-          "name": "Depressor mandibulae",
-          "present": "yes",
-          "sources": [
-            "werneburg-2011"
-          ]
-        },
-        {
-          "species": "cygnus-cygnus",
-          "speciesBasis": "default",
-          "name": "Depressor mandibulae",
-          "present": "yes",
-          "sources": [
-            "werneburg-2011"
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Posterior belly of digastric",
-          "present": "yes",
-          "origin": "Mastoid notch of the temporal bone.",
-          "insertion": "Intermediate tendon, tethered to the hyoid.",
-          "action": "Depresses the mandible; elevates the hyoid.",
-          "innervation": "Facial nerve (CN VII).",
-          "note": "The mammalian digastric is a chimaera: the anterior belly is arch 1 (CN V), the posterior belly arch 2 (CN VII). Two muscles from two arches joined end to end by a tendon.",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "nerves": [
-            {
-              "nerve": "facial"
-            }
-          ],
-          "actions": [
-            {
-              "joint": "jaw-joint",
-              "motion": "opening"
-            }
-          ]
         }
       ],
       "homology": {
@@ -676,6 +544,7 @@
         "teaching": "The digastric is the cleanest single dissection for making the arch system tangible — one muscle, two nerves, two arches, one tendon."
       },
       "sources": [
+        "ziermann-diogo-2013",
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
         "werneburg-2011"
@@ -769,12 +638,14 @@
         },
         {
           "species": "ambystoma-mexicanum",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Interhyoideus",
           "present": "yes",
           "sources": [
+            "ziermann-diogo-2013",
             "ziermann-diogo-2019"
-          ]
+          ],
+          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl series."
         },
         {
           "species": "trachemys-scripta",
@@ -805,50 +676,6 @@
             ]
           },
           "attachmentNote": "The constrictor colli complex, six units in Werneburg's scheme. Its spread from the hyoid onto the posterior skull is the sheet that in mammals becomes the facial musculature."
-        },
-        {
-          "species": "amphisbaenia-generalised",
-          "speciesBasis": "default",
-          "name": "Constrictor colli / sphincter colli",
-          "present": "yes",
-          "sources": [
-            "werneburg-2011"
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Muscles of facial expression, platysma, stylohyoid, stapedius",
-          "present": "yes",
-          "origin": "Facial skeleton and the superficial cervical fascia; the styloid process for stylohyoid.",
-          "insertion": "Dermis of the face and neck.",
-          "action": "Facial expression; sphincteric control of the oral and orbital apertures.",
-          "innervation": "Facial nerve (CN VII) throughout.",
-          "note": "The entire mammalian facial expression apparatus is a hyoid-arch derivative — a sheet that began as a pharyngeal constrictor and migrated onto the face. Its universal CN VII innervation is why a facial nerve lesion paralyses expression on one whole side.",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Muscles of facial expression"
-            },
-            {
-              "name": "Platysma"
-            },
-            {
-              "name": "Stylohyoid"
-            },
-            {
-              "name": "Stapedius"
-            }
-          ],
-          "partsOpen": true,
-          "nerves": [
-            {
-              "nerve": "facial"
-            }
-          ]
         }
       ],
       "homology": {
@@ -862,6 +689,7 @@
         "teaching": "Directly clinically relevant: explains why Bell's palsy affects the whole hemiface plus the stapedius (hyperacusis) but spares chewing (CN V, arch 1)."
       },
       "sources": [
+        "ziermann-diogo-2013",
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
         "werneburg-2011"
@@ -919,24 +747,6 @@
           "note": "Acts on the hyomandibula in its original role as a jaw suspensory element.",
           "sources": [
             "ziermann-etal-2014"
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Stapedius",
-          "present": "yes",
-          "action": "Attenuates loud sound by stiffening the ossicular chain.",
-          "innervation": "Facial nerve (CN VII).",
-          "note": "The muscle followed the hyomandibula through its transformation into the stapes, from jaw suspension into hearing, without changing arch or nerve. Clack et al. (2016) collect the fossil evidence for the ear across vertebrates; the hyomandibula-to-stapes transformation this muscle followed is treated there in detail.",
-          "sources": [
-            "clack-etal-2016",
-            "ziermann-diogo-2019"
-          ],
-          "nerves": [
-            {
-              "nerve": "facial"
-            }
           ]
         }
       ],
@@ -1072,11 +882,11 @@
           "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. The superficial branchial constrictors take origin from the tendinous intersections between the dorsal and ventral series and insert on each of the gill slits, compressing the pharynx during the expulsion phase. Scored at the arch and the slit: the tendinous intersections are the real proximal attachment and have no element."
         },
         {
-          "species": "arius-sp",
-          "speciesBasis": "default",
+          "species": "lepisosteus-osseus",
+          "speciesBasis": "note",
           "name": "Branchial musculature",
           "present": "yes",
-          "note": "Naumann et al. (2017) trace the development of the branchial muscles and the cucullaris in Lepisosteus, showing they share a cranial mesoderm source.",
+          "note": "Lepisosteus osseus, the longnose gar. Naumann et al. trace the development of the branchial muscles and the cucullaris and find they share a cranial mesoderm source. The row previously named a catfish, which they do not examine.",
           "sources": [
             "naumann-etal-2017"
           ]
@@ -1103,42 +913,6 @@
             },
             {
               "name": "Dilatator laryngis"
-            }
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Pharyngeal constrictors, stylopharyngeus, cricothyroid, intrinsic laryngeal muscles",
-          "present": "yes",
-          "action": "Swallowing and phonation.",
-          "innervation": "Stylopharyngeus by CN IX (arch 3); pharyngeal constrictors and laryngeal muscles by CN X (arches 4–6).",
-          "note": "The stylopharyngeus is the only mammalian muscle innervated by CN IX — the sole surviving arch 3 muscle.",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Pharyngeal constrictors"
-            },
-            {
-              "name": "Stylopharyngeus"
-            },
-            {
-              "name": "Cricothyroid"
-            },
-            {
-              "name": "Intrinsic laryngeal muscles"
-            }
-          ],
-          "partsOpen": true,
-          "nerves": [
-            {
-              "nerve": "glossopharyngeal"
-            },
-            {
-              "nerve": "vagus"
             }
           ]
         }
@@ -1284,63 +1058,11 @@
               "nerve": "trochlear"
             }
           ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Four recti, two obliques, levator palpebrae superioris",
-          "present": "yes",
-          "action": "Rotate the globe; elevate the upper lid.",
-          "innervation": "CN III, IV, VI.",
-          "note": "Retractor bulbi is retained in many mammals but lost in humans and other primates.",
-          "sources": [
-            "fritzsch-2023"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Rectus superior"
-            },
-            {
-              "name": "Rectus inferior"
-            },
-            {
-              "name": "Rectus medialis"
-            },
-            {
-              "name": "Rectus lateralis"
-            },
-            {
-              "name": "Obliquus superior"
-            },
-            {
-              "name": "Obliquus inferior"
-            },
-            {
-              "name": "Levator palpebrae superioris"
-            },
-            {
-              "name": "Retractor bulbi",
-              "membership": "variable",
-              "note": "Retained in many mammals, lost in humans and other primates."
-            }
-          ],
-          "nerves": [
-            {
-              "nerve": "oculomotor"
-            },
-            {
-              "nerve": "trochlear"
-            },
-            {
-              "nerve": "abducens"
-            }
-          ]
         }
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The most conserved muscle group in the vertebrate head: same six muscles, same three nerves, from lampreys to mammals. Their non-branchiomeric origin makes them the exception that defines the arch system — they are the cranial muscles that are not arch muscles.",
+        "notes": "The most conserved muscle group in the vertebrate head: same six muscles, same three nerves, from lampreys to mammals. Their non-branchiomeric origin makes them the exception that defines the arch system — they are the cranial muscles that are not arch muscles. Fritzsch (2023) adds the one mammalian wrinkle: the retractor bulbi is retained in many mammals and lost in humans and other primates, so the six-muscle count is a primate simplification of a seven-muscle plan.",
         "related": [],
         "teaching": "Use as the control case. If cranial muscle homology were merely a matter of position, the extraocular muscles would not be so much more stable than the arch muscles; their stability is a consequence of a developmentally distinct and functionally rigid system.",
         "caveat": "Fritzsch (2023) is a preprint and has not been peer reviewed. Cite the primary sources it points to rather than the preprint itself."
@@ -1381,7 +1103,8 @@
         "hyoglossus",
         "styloglossus",
         "intrinsic tongue muscles",
-        "infrahyoid (strap) muscles"
+        "infrahyoid (strap) muscles",
+        "hyoglossus + styloglossus (mammals)"
       ],
       "consensus": {
         "origin": "Pectoral girdle (coracoid/sternum) and the hyoid.",
@@ -1487,10 +1210,11 @@
         },
         {
           "species": "ambystoma-mexicanum",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Geniohyoideus, rectus cervicis",
           "present": "yes",
           "sources": [
+            "ziermann-diogo-2013",
             "ziermann-diogo-2019"
           ],
           "division": "divided",
@@ -1501,7 +1225,8 @@
             {
               "name": "Rectus cervicis"
             }
-          ]
+          ],
+          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl series, which reports the geniohyoideus and rectus cervicis through development."
         },
         {
           "species": "trachemys-scripta",
@@ -1554,84 +1279,11 @@
               "nerve": "hypoglossal"
             }
           ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Genioglossus, hyoglossus, styloglossus, intrinsic tongue muscles; geniohyoid; infrahyoid strap muscles",
-          "present": "yes",
-          "origin": "Sternum, clavicle, scapula, hyoid, mandible.",
-          "insertion": "Hyoid and tongue.",
-          "action": "Tongue movement for speech, mastication and swallowing; hyoid depression.",
-          "innervation": "CN XII for the tongue muscles (except palatoglossus, CN X); ansa cervicalis (C1–C3) for the infrahyoid muscles.",
-          "note": "The palatoglossus is the exception that confirms the rule: it is the only 'tongue' muscle innervated by CN X, because it is a soft-palate (arch 4) muscle rather than a hypobranchial one.",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "attachments": {
-            "origin": [
-              {
-                "element": "sternum"
-              },
-              {
-                "element": "clavicle"
-              },
-              {
-                "element": "scapula",
-                "side": "lateral"
-              },
-              {
-                "element": "hyoid"
-              }
-            ],
-            "insertion": [
-              {
-                "element": "hyoid"
-              },
-              {
-                "element": "tongue"
-              }
-            ]
-          },
-          "attachmentNote": "With the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead.",
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Genioglossus"
-            },
-            {
-              "name": "Hyoglossus"
-            },
-            {
-              "name": "Styloglossus"
-            },
-            {
-              "name": "Intrinsic tongue muscles"
-            },
-            {
-              "name": "Geniohyoid"
-            },
-            {
-              "name": "Infrahyoid strap muscles"
-            }
-          ],
-          "partsOpen": true,
-          "nerves": [
-            {
-              "nerve": "hypoglossal"
-            },
-            {
-              "nerve": "vagus"
-            },
-            {
-              "nerve": "ansa-cervicalis"
-            }
-          ]
         }
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The hypobranchial muscles are somitic muscles in the head, and this is exactly what CN XII records — it is a fused series of occipital spinal nerves, not a true cranial nerve of the branchiomeric type. Diogo & Ziermann (2015) connect the loosening of the coracoid-to-mandible link with the origin of the vertebrate neck.",
+        "notes": "The hypobranchial muscles are somitic muscles in the head, and this is exactly what CN XII records — it is a fused series of occipital spinal nerves, not a true cranial nerve of the branchiomeric type. Diogo & Ziermann (2015) connect the loosening of the coracoid-to-mandible link with the origin of the vertebrate neck. Two mammalian details, previously carried by a row attributed to a cheetah that no source dissected: the palatoglossus is the exception that confirms the rule, being the only 'tongue' muscle on CN X because it is a soft-palate (arch 4) muscle rather than a hypobranchial one; and with the coracoid gone the infrahyoid muscles take origin from sternum, clavicle and scapula instead.",
         "related": [
           "hypaxial-musculature",
           "levator-scapulae",
@@ -1640,6 +1292,7 @@
         "teaching": "Answers a question students always have: why does a nerve numbered among the twelve cranial nerves behave like a spinal nerve? Because it is one."
       },
       "sources": [
+        "ziermann-diogo-2013",
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
         "diogo-ziermann-2015",
@@ -1814,7 +1467,8 @@
       "synonyms": [
         "pseudotemporalis",
         "pterygoideus (as a separated component)",
-        "adductor mandibulae internus pars pterygoideus"
+        "adductor mandibulae internus pars pterygoideus",
+        "pterygoideus medialis + lateralis (mammals)"
       ],
       "consensus": {
         "origin": "Dorsal braincase medial to the orbit, and the pterygoid.",
@@ -1842,12 +1496,13 @@
       "occurrences": [
         {
           "species": "callorhinchus-milii",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Adductor mandibulae internus (medial division)",
           "present": "yes",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "note": "Callorhinchus milii, the holocephalan in Johnston's comparative material — his model of the adductor complex as a folded sheet was tested from chondrichthyans to mammals, and this is the cartilaginous fish he tested it on. The medial division is identified by where it inserts into the inverted U on the mandible."
         },
         {
           "species": "ascaphus-truei",
@@ -1917,24 +1572,6 @@
             },
             {
               "name": "Pterygoideus"
-            }
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Medial and lateral pterygoid",
-          "present": "yes",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Pterygoideus medialis"
-            },
-            {
-              "name": "Pterygoideus lateralis"
             }
           ]
         }
@@ -2061,7 +1698,8 @@
       "developmental": "First (mandibular) pharyngeal arch mesoderm.",
       "synonyms": [
         "MAME",
-        "adductor mandibulae externus superficialis / medialis"
+        "adductor mandibulae externus superficialis / medialis",
+        "masseter + temporalis (mammals)"
       ],
       "consensus": {
         "origin": "Temporal region of the skull.",
@@ -2193,24 +1831,6 @@
             },
             {
               "name": "Pars profunda"
-            }
-          ]
-        },
-        {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "default",
-          "name": "Masseter + temporalis",
-          "present": "yes",
-          "sources": [
-            "ziermann-diogo-2019"
-          ],
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Masseter"
-            },
-            {
-              "name": "Temporalis"
             }
           ]
         }
@@ -2346,12 +1966,13 @@
       "occurrences": [
         {
           "species": "callorhinchus-milii",
-          "speciesBasis": "default",
+          "speciesBasis": "note",
           "name": "Adductor mandibulae posterior",
           "present": "yes",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "note": "Callorhinchus milii, from Johnston's comparative material. The adductor mandibulae posterior is the component the inverted U of the other insertions wraps around, which is what makes it the landmark for identifying the rest."
         },
         {
           "species": "ascaphus-truei",

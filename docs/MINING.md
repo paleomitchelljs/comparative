@@ -147,14 +147,29 @@ holocephalan, thesis) · Cuff et al. (2022) · Naumann et al. (2017)
 
 ---
 
+## Acquisitions the corpus needs
+
+Two columns are empty for want of a paper, not for want of a pass:
+
+- **A mammalian cranial myology.** All ten therian cranial rows were guesses on a
+  cheetah and are gone; nothing in `papers/` dissects a mammal's head. This would
+  restore the masseter/temporalis, digastric, facial-expression and middle-ear
+  cases, which are the best arch-identity teaching material in the dataset.
+- **Crocodylian trunk musculature.** The axial crocodylian rows came from
+  Schilling's cladogram, not from a crocodile. Boumans et al. (2015) would restore
+  the avian *neck*, but nothing here covers either trunk.
+
 ## Also outstanding
 
 - **Species-level rows the old model could not hold.** Schreiweis (1982) is a
   penguin and Martins et al. (2019) are threadsnakes; both were previously
   refused for being too derived to represent their clade. Under species scoring
   that objection is gone — roughly 30 rows.
-- **54 occurrences attributed `speciesBasis: "default"`.** Guesses. Find them in
-  the JSON or by the `DEFAULT` chip in the occurrence table.
+- ~~**54 occurrences attributed `speciesBasis: "default"`.**~~ Cleared: 22
+  re-attributed to the animal their source names, 31 lifted out of the base layer
+  as review-level clade claims. `GAPS.md` §7 has the accounting. **The `DEFAULT`
+  chip should now never appear** — if one does, a new row was added without naming
+  its species in prose and without a mapping in `attribute_species.py`.
 - **18 flagged correlates with no muscle on them** (`GAPS.md` §3). Pereyra et al.
   (2019) and Hattori & Tsuihiji (2021) are the way in.
 - **Architecture is entered for three species.** Zaaf et al. (1999) Tables 4–6
