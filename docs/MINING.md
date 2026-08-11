@@ -1,6 +1,6 @@
 # What is left to mine, and how
 
-243 present occurrences still have no attachment rows. This file lists the
+239 present occurrences still have no attachment rows. This file lists the
 sources that could close them, ranked by whether they will actually work.
 
 Regenerate the numbers with `python3 scripts/doc_counts.py --write`. The
@@ -110,7 +110,6 @@ scored or deleted.
 |---|---:|---|
 | **Springer & Johnson (2015)** | 5.9 | Branchial arch muscles in eels — outgroup detail for the constrictor records |
 | **Sigurdsen et al. (2012)** | 4.3 | Anura pectoral and forelimb |
-| **Ziermann & Diogo (2013)** | 4.2 | Caudata cranial, with development — the axolotl |
 | **Pereyra et al. (2019)** | 4.2 | **Correlates, not rows.** See its reading note |
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
 | **Bauer (1997)** | 3.6 | Urodele jaw openers on CN VII |
@@ -118,6 +117,18 @@ scored or deleted.
 
 ### Done since this file was written
 
+**Ziermann & Diogo (2013)** — cranial 46% → 56%, Caudata 70% → 76%. Seven rows for
+*Ambystoma mexicanum*, reached because an audit found it cited for five rows with none
+of them scored. Measured **3.3** per page, not the 4.2 recorded here, which put it in
+the mixed band — and the band's description held: the attachments are there but buried
+in a developmental narrative. It is the only source in the corpus giving LARVAL AND
+ADULT attachments for one animal, and four muscles move between them (Meckel's
+cartilage to the dentary, and the pseudotemporalis origin dorsally off the
+palatoquadrate onto the parietal and the first vertebrae). Two differentiation events
+run backwards here — the pseudotemporalis profundus and the levator hyoideus both
+become integrated into another muscle by adulthood. Next for this column: **Bauer
+(1997)** on the ceratomandibularis, which this paper reports as variable across
+urodeles.
 **Jones et al. (2019)** — cranial 35% → 46%, Aves 42% → 49%. Ten rows and 33 named
 parts for one *Columba livia*, which gave the avian cranial column its first
 attachment data of any kind. Measured 5.0 per page against the 6.3 recorded here, and

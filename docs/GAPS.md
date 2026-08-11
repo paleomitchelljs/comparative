@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 623 present occurrences · 233 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 626 present occurrences · 233 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -50,28 +50,29 @@ illustrated.
 | arm | 5 | 48 | 31 | 65% |
 | fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
+| cranial | 15 | 59 | 33 | 56% |
 | forearm | 18 | 116 | 64 | 55% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| cranial | 15 | 56 | 26 | 46% |
-| **all** | 126 | 623 | 380 | **61%** |
+| **all** | 126 | 626 | 387 | **62%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
 the head barely scored in any taxon. Huber et al. (2011) took the shark's six
 muscles, and Jones et al. (2019) then took the whole avian jaw, throat and orbit
 from a contrast-CT digital dissection of one *Columba livia* — ten rows, 33 named
-parts. Cranial is now 46%.
+parts. Ziermann & Diogo (2013) then took the axolotl, seven rows and the only larval
+*and* adult attachments in the corpus. Cranial is now 56%, up from under 20%.
 
 **Hand is the floor now, at 47%, and the forearm and hand still carry the two
 largest occurrence counts in the dataset**, so they remain the biggest absolute
 gap. Nothing in `papers/` fixes them across taxa at once; it goes one column at a
 time. Meers (2003) is the largest single remaining bite — crocodylian forelimb, and
 the one naming scheme from Abdala & Diogo's Tables 1-3 not yet held in full. For
-the cranial region what is left is Dearden et al. (2020) for Chondrichthyes,
-Ziermann & Diogo (2013) for Caudata — already cited for four salamander rows in the
-re-attribution pass but not yet mined for attachments — Bauer (1997) for the
-urodele jaw openers, and Anderson (2008) as a cross-check across all of them. **The
+the cranial region what is left is Dearden et al. (2020) for Chondrichthyes, Bauer
+(1997) for the urodele jaw openers — specifically the ceratomandibularis, which
+Ziermann & Diogo report as variable across urodeles — and Anderson (2008) as a
+cross-check across all of them. **The
 mammalian head remains the one column with no source at all.**
 
 The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
@@ -107,7 +108,7 @@ back in for Aves.
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 60 | 48 | 80% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
-| Caudata | 87 | 61 | 70% |
+| Caudata | 90 | 68 | 76% |
 | Lepidosauria | 105 | 67 | 64% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Aves | 79 | 39 | 49% |
@@ -209,10 +210,10 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 233, of which 199 (85%) carry at least one attachment |
-| Observed attachment rows | 999 |
+| Elements | 233, of which 200 (86%) carry at least one attachment |
+| Observed attachment rows | 1022 |
 | Rows naming a **landmark** | 230 (23%) |
-| Rows naming a **side** | 586 (59%) |
+| Rows naming a **side** | 590 (58%) |
 | Osteological correlates | 97 flagged, 81 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -247,9 +248,9 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 21 | 56 | 2.7 |
+| cranial | 21 | 57 | 2.7 |
 | hindlimb | 42 | 38 | 0.9 |
-| axial | 32 | 26 | 0.8 |
+| axial | 33 | 26 | 0.8 |
 | forelimb | 51 | 37 | 0.7 |
 | pectoral | 32 | 23 | 0.7 |
 | fin | 8 | 5 | 0.6 |
@@ -279,7 +280,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 380 of 623 present occurrences (61%).**
+**Taxon-specific attachments: 387 of 626 present occurrences (62%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -301,7 +302,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 201 |
 | forearm | 18 | 161 |
-| cranial | 15 | 104 |
+| cranial | 15 | 127 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |

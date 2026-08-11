@@ -131,6 +131,49 @@
           ]
         },
         {
+          "species": "ambystoma-mexicanum",
+          "speciesBasis": "note",
+          "name": "Adductor mandibulae A2 + A2-PVM + pseudotemporalis",
+          "present": "yes",
+          "innervation": "Trigeminal nerve (CN V), mandibular division.",
+          "sources": [
+            "ziermann-diogo-2013",
+            "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Adductor mandibulae A2"
+            },
+            {
+              "name": "Adductor mandibulae A2-PVM (posteroventromesial)"
+            },
+            {
+              "name": "Pseudotemporalis"
+            }
+          ],
+          "divisionNote": "Ambystoma mexicanum. Three adductors, and the criterion separating two of them is a nerve: the mandibular branch of the trigeminal (CN V3) runs BETWEEN the A2 and the A2-PVM. Worth reading against the pigeon, where Jones et al. find the adductor mandibulae externus lateral to both CN V2 and CN V3 where amniotes usually have it between them — the same nerve, used the same way, giving different answers in two taxa. Ziermann & Diogo note the anterior fibres of the A2-PVM look like part of the pseudotemporalis in both larva and adult.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "squamosal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "dentary",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum, adult (neotenic). The A2 arises from the squamosal and inserts dorsally on the dentary. In the LARVA both ends are different: it arises from the palatoquadrate and the orbital cartilage and inserts on Meckel's cartilage, and during development it swings from vertical to diagonal. The A2-PVM's attachments are given for the larva only — palatoquadrate at the commissura quadrato-cranialis anterior, onto Meckel's cartilage — so they are not scored here. This is a metamorphic shift of attachment inside one species, which is a different thing from the between-species shifts the rest of this dataset diffs.",
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
+          ]
+        },
+        {
           "species": "trachemys-scripta",
           "speciesBasis": "survey",
           "name": "Adductor mandibulae externus (pars superficialis, media, profunda), pseudotemporalis, zygomaticomandibularis, adductor mandibulae posterior",
@@ -294,6 +337,7 @@
         "jones-etal-2019",
         "miyashita-2016",
         "werneburg-2011",
+        "ziermann-diogo-2013",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
       ],
@@ -403,14 +447,45 @@
         {
           "species": "ambystoma-mexicanum",
           "speciesBasis": "note",
-          "name": "Intermandibularis",
+          "name": "Intermandibularis anterior + posterior",
           "present": "yes",
-          "action": "Buccal pumping for lung ventilation and for gape control during suction feeding.",
+          "innervation": "Trigeminal nerve (CN V), mandibular division.",
           "sources": [
             "ziermann-diogo-2013",
             "ziermann-diogo-2019"
           ],
-          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl developmental series, which is where the salamander observation actually is — their 2019 review, cited here before, examines Scyliorhinus, Polypterus and Danio and no salamander."
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Intermandibularis anterior"
+            },
+            {
+              "name": "Intermandibularis posterior"
+            }
+          ],
+          "divisionNote": "Ambystoma mexicanum. Two muscles with a clear gap between them. The anterior is the one muscle in the head whose development is always delayed relative to the others — not visible until the end of stage 38, where the rest of the mandibular arch is already banded muscle cells.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "dentary",
+                "side": "anterior"
+              },
+              {
+                "element": "dentary"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midline-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum, adult. The anterior stretches between the most anterior medial faces of the dentary; the posterior runs from the dentary to the median raphe, covering the anterior ventral half of the head. Both meet their contralateral partner in the raphe, and the posterior develops FROM its origin at Meckel's cartilage TOWARD that insertion, its fibres turning from posteromedial to latero-medial by stage 40. Two of the three taxa scored on this record now end at a raphe rather than on bone — the shark in Huber et al. and the pigeon in Jones et al. are the others — so the muscle's medial end is invisible to osteological reconstruction across gnathostomes, not just in one clade.",
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
+          ]
         },
         {
           "species": "trachemys-scripta",
@@ -561,13 +636,36 @@
         {
           "species": "ambystoma-mexicanum",
           "speciesBasis": "note",
-          "name": "Depressor mandibulae",
+          "name": "Depressor mandibulae (with levator hyoideus integrated)",
           "present": "yes",
+          "innervation": "Facial nerve (CN VII).",
           "sources": [
             "ziermann-diogo-2013",
             "ziermann-diogo-2019"
           ],
-          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl series. They report the depressor mandibulae through development alongside the branchiohyoideus, which is the other CN VII muscle of the urodele jaw apparatus."
+          "division": "single",
+          "divisionNote": "Ambystoma mexicanum, adult. Scored single because the levator hyoideus is not present as a distinct muscle in the adult — it is integrated into the depressor mandibulae. The ceratomandibularis is the other member of this complex, and its state across urodeles is genuinely variable: a distinct muscle in some obligate neotenes, completely fused to the branchiohyoideus and/or the depressor mandibulae in others, and missing in others again.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "dentary"
+              },
+              {
+                "element": "ceratohyal"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum. Two insertions on two different bones, because two muscles fused: the depressor mandibulae proper attaches to Meckel's cartilage in the larva and the dentary in the adult, while at stage 44 some medial fibres of the complex still reach the ceratohyal in a steep angle, which is what makes those recognisable as the levator hyoideus. The otic-capsule origin is the levator hyoideus's — Ziermann & Diogo define that muscle by an origin on the otic capsule and an insertion on the ceratohyal — carried here because the two are one muscle in the adult. The fibre orientations still separate them from stage 43: dorsal fibres more vertical, ventral fibres more diagonal. The branchiohyoideus shares the same anlage and runs from the ceratobranchial around behind the jaw joint to the ceratohyal; it has no record of its own here.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         },
         {
           "species": "xenopus-laevis",
@@ -771,13 +869,41 @@
         {
           "species": "ambystoma-mexicanum",
           "speciesBasis": "note",
-          "name": "Interhyoideus",
+          "name": "Interhyoideus (anterior + posterior)",
           "present": "yes",
+          "innervation": "Facial nerve (CN VII).",
           "sources": [
             "ziermann-diogo-2013",
             "ziermann-diogo-2019"
           ],
-          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl series."
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Interhyoideus anterior"
+            },
+            {
+              "name": "Interhyoideus posterior"
+            }
+          ],
+          "divisionNote": "Ambystoma mexicanum. A thin anterior and a thicker posterior part whose border is not always clear, which is why this is `heads` and not `divided`. They develop in that order, anterior before posterior.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ceratohyal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midline-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum, adult. From the ceratohyal to the median raphe. The reason this row matters more than its two elements suggest is Ziermann & Diogo's Fig. 3C: in the adult all the superficial ventral muscles are fused into ONE THIN SHEET, and can only be divided by their origins — the mandible for the intermandibularis posterior, the ceratohyal for the interhyoideus. The attachment is not merely where the muscle ends; here it is the only thing that makes two muscles two.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         },
         {
           "species": "trachemys-scripta",
@@ -1068,6 +1194,81 @@
           ]
         },
         {
+          "species": "ambystoma-mexicanum",
+          "speciesBasis": "note",
+          "name": "Levatores arcuum branchialium I-IV, subarcuales, levatores and depressores branchiarum, transversus ventralis IV",
+          "present": "yes",
+          "innervation": "Glossopharyngeal nerve (CN IX) and vagus nerve (CN X).",
+          "sources": [
+            "ziermann-diogo-2013",
+            "ziermann-diogo-2019"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Levator arcus branchialis I"
+            },
+            {
+              "name": "Levator arcus branchialis II"
+            },
+            {
+              "name": "Levator arcus branchialis III"
+            },
+            {
+              "name": "Levator arcus branchialis IV"
+            },
+            {
+              "name": "Subarcualis rectus I"
+            },
+            {
+              "name": "Subarcualis rectus II-IV"
+            },
+            {
+              "name": "Subarcualis obliquus II"
+            },
+            {
+              "name": "Subarcualis obliquus III"
+            },
+            {
+              "name": "Levatores and depressores branchiarum I-III"
+            },
+            {
+              "name": "Transversus ventralis IV"
+            }
+          ],
+          "divisionNote": "Ambystoma mexicanum. Ten units, which makes this the most divided this record is in any taxon and is what a functioning gill apparatus costs. The dorsal levatores develop before the true ventral branchial muscles.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "otic-capsule"
+              },
+              {
+                "element": "cornu-branchiale"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "cornu-branchiale"
+              },
+              {
+                "element": "ceratohyal"
+              },
+              {
+                "element": "corpus-hyoidei"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum. The levatores arcuum branchialium I-IV arise from the fascia cephalodorsalis covering the otic capsule, lateral to the epaxial muscles, each inserting on its own ceratobranchial — a fascial origin, so the otic-capsule row is the bone the fascia covers rather than the attachment itself. The ventral series is ceratobranchial-to-ceratobranchial and ceratobranchial-to-hyoid: subarcualis rectus I runs from ceratobranchial I to the ceratohyal in larva and adult alike, subarcualis rectus II-IV from ceratobranchial IV medially onto ceratobranchial I and ventrally onto II and III, and the subarcuales obliqui II and III arise from their own ceratobranchials and fuse before inserting together on the basibranchial. The levatores and depressores branchiarum I-III arise from the commissurae terminales, which are cartilage bars with no element here. Ceratobranchial is scored as `cornu-branchiale` and basibranchial as `corpus-hyoidei`, the dataset's names for those elements.",
+          "nerves": [
+            {
+              "nerve": "glossopharyngeal"
+            },
+            {
+              "nerve": "vagus"
+            }
+          ]
+        },
+        {
           "species": "trachemys-scripta",
           "speciesBasis": "survey",
           "name": "Levator + depressor laryngis, constrictor laryngis, dilatator laryngis",
@@ -1105,6 +1306,7 @@
         "higashiyama-etal-2016",
         "naumann-etal-2017",
         "werneburg-2011",
+        "ziermann-diogo-2013",
         "ziermann-diogo-2019",
         "ziermann-etal-2014"
       ],
@@ -1466,8 +1668,9 @@
         {
           "species": "ambystoma-mexicanum",
           "speciesBasis": "note",
-          "name": "Geniohyoideus, rectus cervicis",
+          "name": "Geniohyoideus, sternohyoideus, omohyoideus",
           "present": "yes",
+          "innervation": "Hypoglossal nerve (CN XII) and the cervical spinal nerves.",
           "sources": [
             "ziermann-diogo-2013",
             "ziermann-diogo-2019"
@@ -1481,7 +1684,33 @@
               "name": "Rectus cervicis"
             }
           ],
-          "note": "Ambystoma mexicanum, from Ziermann & Diogo's (2013) axolotl series, which reports the geniohyoideus and rectus cervicis through development."
+          "attachments": {
+            "origin": [
+              {
+                "element": "corpus-hyoidei"
+              },
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "dentary"
+              },
+              {
+                "element": "corpus-hyoidei"
+              },
+              {
+                "element": "cornu-branchiale"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum. The geniohyoideus develops from its origin at the basibranchial toward its insertion on Meckel's cartilage and/or the dentary, close to the origin of the intermandibularis anterior; in the adult it widens and closes the gap between the contralateral pair. The sternohyoideus is blended posteriorly with the RECTUS ABDOMINIS — the clearest statement in the corpus that this group is trunk muscle that migrated forward — and inserts on the hypobranchial, dorsally on the basibranchial and medially on the rostral end of ceratobranchial I. The omohyoideus derives ontogenetically from the sternohyoideus, stays deeply blended with it, and extends posterolaterally to the pectoral girdle, which is the girdle end of the link whose loosening Diogo & Ziermann tie to the origin of the neck.",
+          "nerves": [
+            {
+              "nerve": "hypoglossal"
+            }
+          ]
         },
         {
           "species": "trachemys-scripta",
@@ -1869,6 +2098,42 @@
           "note": "Callorhinchus milii, the holocephalan in Johnston's comparative material — his model of the adductor complex as a folded sheet was tested from chondrichthyans to mammals, and this is the cartilaginous fish he tested it on. The medial division is identified by where it inserts into the inverted U on the mandible."
         },
         {
+          "species": "ambystoma-mexicanum",
+          "speciesBasis": "note",
+          "name": "Pseudotemporalis",
+          "present": "yes",
+          "innervation": "Trigeminal nerve (CN V), mandibular division.",
+          "sources": [
+            "ziermann-diogo-2013",
+            "ziermann-diogo-2019"
+          ],
+          "division": "single",
+          "divisionNote": "Ambystoma mexicanum, adult. ONE undivided muscle, and that is the result rather than the starting point: the larva has a pseudotemporalis superficialis (the A3' of fishes) and a pseudotemporalis profundus (the A3''), the profundus visible from stage 39, and during larval development it becomes completely integrated into the main body of the muscle. A division event running backwards.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "parietal",
+                "side": "medial"
+              },
+              {
+                "element": "cervical-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "dentary",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Ambystoma mexicanum, adult. The origin has MOVED DORSALLY during development — dorsolateral on the palatoquadrate (orbital cartilage) in the larva, and in the adult from the midline of the parietal and caudally from the first vertebrae. That is a jaw muscle acquiring an axial origin, and it is why this row carries a vertebral element. Insertion caudodorsal on the dentary; in the larva both portions insert on Meckel's cartilage.",
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
+          ]
+        },
+        {
           "species": "ascaphus-truei",
           "speciesBasis": "source",
           "name": "Adductor mandibulae internus (rostral + caudal parts)",
@@ -2019,6 +2284,7 @@
         "johnston-2014",
         "jones-etal-2019",
         "werneburg-2011",
+        "ziermann-diogo-2013",
         "ziermann-diogo-2019"
       ],
       "complex": "adductor-mandibulae",
