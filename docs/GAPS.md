@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 592 present occurrences · 218 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 597 present occurrences · 218 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 11 | 27 | 22 | 81% |
 | leg | 10 | 36 | 28 | 78% |
 | thigh | 10 | 48 | 37 | 77% |
+| pectoral | 16 | 103 | 62 | 60% |
 | arm | 5 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
-| pectoral | 16 | 98 | 57 | 58% |
 | fin | 9 | 34 | 19 | 56% |
 | forearm | 18 | 103 | 52 | 50% |
 | hand | 9 | 62 | 29 | 47% |
 | axial | 15 | 46 | 14 | 30% |
 | cranial | 15 | 60 | 11 | 18% |
-| **all** | 126 | 592 | 315 | **53%** |
+| **all** | 126 | 597 | 320 | **54%** |
 <!-- /counts:regions -->
 
 **Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
@@ -101,8 +101,8 @@ longissimus and iliocostalis into separate records is the next step, with Cieri
 | Actinopterygii | 14 | 6 | 43% |
 | Monotremata | 7 | 3 | 43% |
 | Anura | 62 | 22 | 35% |
+| Aves | 60 | 17 | 28% |
 | Testudines | 50 | 13 | 26% |
-| Aves | 55 | 12 | 22% |
 | Chondrichthyes | 19 | 1 | 5% |
 | Myxini | 1 | 0 | 0% |
 | Petromyzontida | 5 | 0 | 0% |
@@ -180,9 +180,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 218, of which 185 (85%) carry at least one attachment |
-| Observed attachment rows | 862 |
-| Rows naming a **landmark** | 200 (23%) |
-| Rows naming a **side** | 476 (55%) |
+| Observed attachment rows | 876 |
+| Rows naming a **landmark** | 201 (23%) |
+| Rows naming a **side** | 488 (56%) |
 | Osteological correlates | 85 flagged, 71 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -249,7 +249,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 315 of 592 present occurrences (53%).**
+**Taxon-specific attachments: 320 of 597 present occurrences (54%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -269,7 +269,7 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 153 |
+| pectoral | 16 | 167 |
 | forearm | 18 | 142 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
@@ -435,6 +435,9 @@ Their method is also the template for roadmap phase 4: fit geometric primitives
 to joints, trace muscle paths from origin to insertion, compute moment arms. That
 is precisely what this dataset's attachment records are for, and it is what makes
 `side` and `landmark` resolution worth chasing rather than decorative.
+
+> The per-source worklist, with a density check that predicts whether a paper
+> will actually yield rows, is in [`MINING.md`](MINING.md).
 
 ## 6. Catalogued but not yet mined
 

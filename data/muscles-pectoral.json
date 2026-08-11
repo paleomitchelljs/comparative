@@ -482,6 +482,33 @@
             ]
           },
           "attachmentNote": "Galictis cuja. Serratus ventralis cervicis from the dorsal tubercles of the transverse processes of C3-C7 and the first two or three ribs; serratus ventralis thoracis from the ribs of T2-T3 to T6-T7. All fascicles converge onto the medial surface of the dorsal edge and caudal angle of the scapula, sharing fibres with the rhomboidei."
+        },
+        {
+          "species": "eudyptes-pachyrhynchus",
+          "speciesBasis": "note",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "dorsal"
+              },
+              {
+                "element": "cervical-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Serratus profundus, four flat fleshy fascicles from the last two cervical and first two thoracic ribs dorsal to the uncinate processes, inserting on about the caudal half of the costal scapula near the vertebral border. The small cranial fascicle is usually absent in Spheniscus and Megadyptes. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+          "sources": [
+            "schreiweis-1982"
+          ]
         }
       ],
       "homology": {
@@ -2202,6 +2229,32 @@
               "segments": "C5–C6"
             }
           ]
+        },
+        {
+          "species": "eudyptes-pachyrhynchus",
+          "speciesBasis": "source",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum",
+                "side": "ventral",
+                "landmark": "sternal-keel"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke.",
+          "sources": [
+            "abdala-diogo-2010",
+            "schreiweis-1982"
+          ]
         }
       ],
       "homology": {
@@ -2485,6 +2538,33 @@
             ]
           },
           "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
+        },
+        {
+          "species": "eudyptes-pachyrhynchus",
+          "speciesBasis": "note",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle",
+                "side": "distal"
+              },
+              {
+                "element": "scapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Deltoideus major, a very thin triangular muscle arising fleshy from the distal apex of the clavicle, the dorsal surface of the coracoscapular ligament and the acromial process of the scapula, converging on a short tendon that inserts on the caudodorsal humerus very close to the latissimus dorsi insertion. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade. Schreiweis names the **acromial process of the scapula** as the third origin; skeleton.json records the acromion as absent in Aves and the validator rejects it, so it is not asserted here. That is now the third source to describe an acromion in a taxon this dataset denies one — see the element's own note.",
+          "sources": [
+            "schreiweis-1982"
+          ]
         }
       ],
       "homology": {
@@ -3105,6 +3185,34 @@
             ]
           },
           "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis caudalis, substantially larger than the cranialis. Its fleshy origin runs along the lateral scapula from the caudal margin of the cranialis origin to the caudal end of the bone; its thick insertion tendon passes ventral to the cranialis and spreads widely across the ventral margin of the proximal bicipital crest of the humerus."
+        },
+        {
+          "species": "eudyptes-pachyrhynchus",
+          "speciesBasis": "note",
+          "name": "Scapulohumeralis posterior",
+          "present": "yes",
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "dorsal"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Extensive origin from about the posterior two-thirds of the dorsal and lateral scapular surfaces; the fibres pass obliquely forward to a strong tendon inserting on the posterior border of the humerus at about a third of its length. Schreiweis notes it is a very uniform muscle across the Spheniscidae. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+          "sources": [
+            "schreiweis-1982"
+          ]
         }
       ],
       "homology": {
@@ -3362,6 +3470,35 @@
               "joint": "shoulder",
               "motion": "stabilisation"
             }
+          ]
+        },
+        {
+          "species": "eudyptes-pachyrhynchus",
+          "speciesBasis": "note",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Both heads of this field. The subscapularis caput mediale arises from the proximal third of the costal scapula, a small area of the scapular process of the clavicle and the medial coracoid; the subcoracoideus from the dorsal spina externa of the sternum and the adjacent corpus sterni, further attaching to the dorsomedial coracoid. The two **fuse near the shoulder joint and insert by a common tendon**, which is why one record carries them. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+          "sources": [
+            "abdala-diogo-2010",
+            "schreiweis-1982"
           ]
         }
       ],

@@ -58,7 +58,7 @@ SOURCE_SPECIES = {
     "campbell-2007": "rattus-norvegicus",
     "ghetie-etal-1976": "gallus-domesticus",
     "matsuoka-hasegawa-2007": "cygnus-cygnus",
-    "schreiweis-1982": "pygoscelis-sp",
+    "schreiweis-1982": "eudyptes-pachyrhynchus",
     "widrig-etal-2023": "nothoprocta-pentlandii",
     "fisher-goodman-1955": "grus-americana",
     "mckitrick-1991": "gavia-sp",
