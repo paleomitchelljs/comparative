@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-126 muscle records · 601 present occurrences · 231 skeletal elements · 104 sources · 19 operational taxa
+126 muscle records · 613 present occurrences · 232 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 11 | 27 | 22 | 81% |
 | leg | 10 | 36 | 28 | 78% |
 | thigh | 10 | 48 | 37 | 77% |
-| pectoral | 16 | 120 | 80 | 67% |
-| arm | 5 | 45 | 28 | 62% |
+| pectoral | 16 | 123 | 83 | 67% |
+| arm | 5 | 48 | 31 | 65% |
 | fin | 9 | 39 | 23 | 59% |
 | pelvic | 8 | 39 | 23 | 59% |
-| forearm | 18 | 110 | 58 | 53% |
+| forearm | 18 | 116 | 64 | 55% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
 | cranial | 15 | 46 | 16 | 35% |
-| **all** | 126 | 601 | 358 | **60%** |
+| **all** | 126 | 613 | 370 | **60%** |
 <!-- /counts:regions -->
 
 **Cranial is now the hole.** The hindlimb regions moved above 50% on Ercoli et
@@ -109,9 +109,9 @@ back in for Aves.
 | Synapsida (stem) | 4 | 2 | 50% |
 | Actinopterygii | 13 | 6 | 46% |
 | Monotremata | 7 | 3 | 43% |
+| Aves | 69 | 29 | 42% |
 | Chondrichthyes | 19 | 7 | 37% |
 | Anura | 62 | 22 | 35% |
-| Aves | 57 | 17 | 30% |
 | Testudines | 50 | 13 | 26% |
 | Myxini | 3 | 0 | 0% |
 | Petromyzontida | 3 | 0 | 0% |
@@ -200,11 +200,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 231, of which 196 (85%) carry at least one attachment |
-| Observed attachment rows | 928 |
-| Rows naming a **landmark** | 224 (24%) |
-| Rows naming a **side** | 528 (57%) |
-| Osteological correlates | 95 flagged, 79 carry a muscle |
+| Elements | 232, of which 197 (85%) carry at least one attachment |
+| Observed attachment rows | 958 |
+| Rows naming a **landmark** | 228 (24%) |
+| Rows naming a **side** | 555 (58%) |
+| Osteological correlates | 96 flagged, 80 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -241,10 +241,10 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | cranial | 21 | 54 | 2.6 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 32 | 26 | 0.8 |
+| forelimb | 51 | 37 | 0.7 |
 | pectoral | 32 | 23 | 0.7 |
-| forelimb | 51 | 36 | 0.7 |
 | fin | 8 | 5 | 0.6 |
-| pelvic | 25 | 14 | 0.6 |
+| pelvic | 26 | 14 | 0.5 |
 <!-- /counts:parity -->
 
 The pelvis, fin and forelimb are where the skeleton is thinnest relative to the
@@ -270,7 +270,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 358 of 601 present occurrences (60%).**
+**Taxon-specific attachments: 370 of 613 present occurrences (60%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -290,14 +290,14 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 191 |
-| forearm | 18 | 149 |
+| pectoral | 16 | 201 |
+| forearm | 18 | 161 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
+| arm | 5 | 67 |
 | cranial | 15 | 63 |
 | foot | 11 | 63 |
-| arm | 5 | 59 |
 | fin | 9 | 57 |
 | pelvic | 8 | 54 |
 | axial | 15 | 36 |
@@ -562,6 +562,26 @@ species-keyed.
 
 Two pseudo-species remain in `species.json`: `teleostei-generalised` (6 rows) and
 `amphisbaenia-generalised` (3 rows). Both are clades wearing a species tag.
+
+### What the loon then exposed in the code
+
+Adding *Gavia immer* to records that already had an avian row made the clade keying
+fail out loud. `seed_occurrence_attachments.py` built `{clade: row}`, so a clade with
+two rows silently kept **whichever came last** — three blocks written for *Gallus*,
+the swan and the penguin were handed to the loon, overwrote its attachments, and let
+`attribute_species.py` re-derive its species from the wrong prose. The row vanished
+from a clean build with no error.
+
+The matcher now requires a clade to hold exactly one row, or the block to name its
+`species`, and reports rather than clobbers. Fixing it also showed that Schreiweis's
+**penguin** supracoracoideus and subcoracoscapularis rows had been quietly
+overwritten by Abdala & Diogo's generic avian block for years, for the same reason.
+
+One shape of the same problem is still open: a single row can carry several sources
+that examined **different animals**. The *Gallus* latissimus dorsi cites Abdala &
+Diogo, Ghetie et al., Matsuoka & Hasegawa and Schreiweis — a chicken, a domestic-bird
+atlas, a swan and a penguin — on one species tag, and its seeded note describes
+*Cygnus*. Splitting those is the next base-layer pass.
 
 ## What is still unmined outside `papers/`
 

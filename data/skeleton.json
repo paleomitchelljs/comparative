@@ -3816,6 +3816,30 @@
           "molnar-etal-2018"
         ]
       }
+    },
+    {
+      "id": "carpometacarpus",
+      "label": "Carpometacarpus",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "aves"
+        ],
+        "sources": [
+          "mckitrick-1991",
+          "chen-etal-2025"
+        ],
+        "note": "Fused distal carpals and metacarpals in birds. Its processus extensorius carries the insertion of the extensor metacarpi radialis and its caudodorsal proximal surface that of the extensor metacarpi ulnaris, so it is the element most avian wing extensor rows land on."
+      },
+      "fusedFrom": [
+        "distal-carpals",
+        "metacarpals"
+      ],
+      "transformation": "Distal carpals fused with metacarpals II-IV; the alular metacarpal (digit I) remains distinguishable within the compound, which is why sources name an 'alular metacarpal' and a 'major metacarpal' on one bone."
     }
   ]
 }

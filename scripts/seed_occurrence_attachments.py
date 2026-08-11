@@ -14,6 +14,7 @@ carries the source that supports it.
     python3 scripts/seed_occurrence_attachments.py --write   # apply
 """
 
+import collections
 import json
 import pathlib
 import sys
@@ -238,7 +239,8 @@ SEED = {
         "lepidosauria": {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "crocodylia": {"origin": ["coracoid"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010", "klinkhamer-etal-2017"],
                        "shiftNote": "Fleshy origin on the proximo-lateral coracoid, covering the entire humeral head; fleshy insertion on the ventro-lateral humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder (Klinkhamer et al. 2017)."},
-        "aves": {"origin": ["sternal-keel"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
+        "aves": {"species": "gallus-domesticus",  # Abdala & Diogo's Gallus
+                 "origin": ["sternal-keel"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                  "shiftNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."},
         "monotremata": {"origin": ["coracoid", "scapula"], "insertion": ["greater-tubercle"], "sources": ["gambaryan-etal-2015", "fahn-lai-etal-2020"],
                         "shiftNote": "The scapular spine is only incipient, so the supracoracoideus field is just beginning to divide into supraspinatus and infraspinatus. The readable intermediate."},
@@ -249,14 +251,16 @@ SEED = {
         "testudines":   {"origin": ["scapula", "coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["scapula", "coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "crocodylia":   {"origin": ["scapula", "coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
-        "aves":         {"origin": ["scapula", "coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
+        "aves": {"species": "gallus-domesticus",  # Abdala & Diogo's Gallus
+                        "origin": ["scapula", "coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "theria": {"origin": ["subscapular-fossa"], "insertion": ["lesser-tubercle"], "sources": ["ercoli-etal-2014"],
                    "shiftNote": "The coracoid head is gone with the coracoid itself; only the scapular head persists, which is why the mammalian muscle is 'subscapularis' rather than 'subcoraco-scapularis'."},
     },
     "pectoralis": {
         "caudata":    {"origin": ["sternum", "body-wall"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["sternum", "interclavicle", "ribs"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010", "freitas-etal-2017"]},
-        "aves": {"origin": ["sternal-keel", "furcula", "ribs"], "insertion": ["deltopectoral-crest"],
+        "aves": {"species": "gallus-domesticus",  # Abdala & Diogo's Gallus; the note describes Cygnus, which has no row on this record
+                 "origin": ["sternal-keel", "furcula", "ribs"], "insertion": ["deltopectoral-crest"],
                  "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
                  "shiftNote": "In Cygnus the origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is indirect, onto the surface of underlying muscle. Both pectoralis muscles together are about 11% of body mass."},
         "monotremata": {"origin": ["sternum", "interclavicle", "clavicle"], "insertion": ["deltopectoral-crest"], "sources": ["gambaryan-etal-2015"],
@@ -289,7 +293,8 @@ SEED = {
         "caudata":    {"origin": ["body-wall"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines": {"origin": ["ribs"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                        "shiftNote": "Origin transferred onto the internal surface of the carapace, which is built from the ribs."},
-        "aves": {"origin": ["thoracic-neural-spines"], "insertion": ["scapula", "clavicle"],
+        "aves": {"species": "gallus-domesticus",  # the row it has always applied to; the note describes Cygnus, from Matsuoka & Hasegawa, which has no row here
+                 "origin": ["thoracic-neural-spines"], "insertion": ["scapula", "clavicle"],
                  "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
                  "shiftNote": "Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone, and inserting on the medial margins of the dorsal clavicle and the scapula."},
         "theria": {"origin": ["thoracolumbar-fascia", "thoracic-neural-spines", "ribs"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"]},
@@ -420,12 +425,33 @@ def main(write: bool) -> int:
         if not m:
             problems.append(f"unknown muscle '{mid}'")
             continue
-        occs = {speciesmap.clade_of(o): o for o in m.get("occurrences", [])}
+        # Keyed on clade, resolved to a species. This table was written when each
+        # clade had one row, and `{clade: row}` silently kept whichever row came
+        # last — so adding a second species to a clade handed that clade's curated
+        # block to the newcomer and overwrote it. McKitrick's loon caught it: three
+        # avian blocks written for the swan, the penguin and Gallus landed on the
+        # loon, whose own attachments were then replaced and whose species was
+        # re-derived from the wrong prose. Where a clade has several rows the block
+        # must say which species it was written for.
+        by_clade = collections.defaultdict(list)
+        for o in m.get("occurrences", []):
+            by_clade[speciesmap.clade_of(o)].append(o)
         for tid, spec in per_taxon.items():
-            occ = occs.get(tid)
-            if not occ:
-                problems.append(f"{mid}: no occurrence row for taxon '{tid}'")
+            candidates = by_clade.get(tid, [])
+            want = spec.get("species")
+            if want:
+                candidates = [o for o in candidates if o.get("species") == want]
+            if not candidates:
+                problems.append(f"{mid}: no occurrence row for taxon '{tid}'"
+                                + (f" species '{want}'" if want else ""))
                 continue
+            if len(candidates) > 1:
+                problems.append(
+                    f"{mid}/{tid}: {len(candidates)} rows in that clade "
+                    f"({', '.join(o['species'] for o in candidates)}) — add "
+                    f"\"species\" to this block to say which one it describes")
+                continue
+            occ = candidates[0]
             for side in ("origin", "insertion"):
                 for ref in spec.get(side, []):
                     if ref not in elements:

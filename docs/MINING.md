@@ -102,7 +102,6 @@ no single source covers them broadly — it goes one animal at a time.
 
 | Source | per pg | Would close |
 |---|---:|---|
-| **McKitrick (1991)** | 6.3 | Aves forelimb, from a loon. A third neognath |
 | **Jones et al. (2019)** | 6.3 | Aves cranial, contrast CT of a pigeon head |
 | **Springer & Johnson (2015)** | 5.9 | Branchial arch muscles in eels — outgroup detail for the constrictor records |
 | **Sigurdsen et al. (2012)** | 4.3 | Anura pectoral and forelimb |
@@ -114,6 +113,14 @@ no single source covers them broadly — it goes one animal at a time.
 
 ### Done since this file was written
 
+**McKitrick (1991)** — Aves 30% → 42%, thirteen rows for *Gavia immer* CM 2320 plus
+one sourced absence in *Pelecanoides garnoti*, the supinator. Measured at 6.0 per
+page rather than the 6.3 recorded here, which is close enough that the check did its
+job. Two lessons beyond the rows: her pars metapatagialis inserts into the **humeral
+feather tract**, another muscle end no fossil can record; and adding a second avian
+species exposed that `seed_occurrence_attachments.py` was keyed on clade and
+silently overwrote whichever same-clade row came last. Still in it: *Gavia stellata*,
+*Pelecanoides garnoti* in full, and the girdle muscles.
 **Molnar et al. (2018)** — Tetrapodomorpha (stem) 0% → 79%, from 7 occurrences to
 42 across four species. Not from the supplementary tables this file had named:
 they are not in the PDF, and Tables 4–6 are images. The route was **§III**, the
