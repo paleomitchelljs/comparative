@@ -3571,6 +3571,59 @@
         "note": "Fused tibia and fibula of anurans. Recorded as a compound with `fusedFrom` rather than as `partOf` either component, so a comparison against a taxon with separate bones reads as a fusion of the skeleton and not as a muscle moving."
       },
       "transformation": "Tibia and fibula fused into a single element in anurans, one of the skeletal changes tied to the saltatory hindlimb."
+    },
+    {
+      "id": "midventral-raphe",
+      "label": "Midventral raphe",
+      "kind": "fascia",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "yes",
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Median connective sheet of the floor of the mouth. Both halves of the intermandibularis and the interhyoideus insert on it rather than on cartilage, so the whole ventral sheet of the mandibular and hyoid arches leaves nothing skeletal behind."
+      }
+    },
+    {
+      "id": "gill-slits",
+      "label": "Gill slits",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "myxini",
+          "petromyzontida",
+          "chondrichthyes",
+          "actinopterygii",
+          "dipnoi"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Insertion field for the superficial branchial constrictors, which compress the pharynx during the expulsion phase of the respiratory cycle."
+      }
+    },
+    {
+      "id": "spiracular-cartilage",
+      "label": "Spiracular cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "spiracle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Carries the spiracularis insertion with the distal hyomandibula, forming the anterior wall of the spiracular valve."
+      }
     }
   ]
 }

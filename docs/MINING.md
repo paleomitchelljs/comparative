@@ -86,7 +86,6 @@ no single source covers them broadly — it goes one animal at a time.
 
 | Source | per pg | Would close |
 |---|---:|---|
-| **Huber et al. (2011)** | 7.1 | Chondrichthyes cranial, the thinnest column in the set |
 | **Molnar et al. (2018)** | 7.1 | The stem-tetrapodomorph column, currently 0% — its Tables S1–S6 are the only route |
 | **McKitrick (1991)** | 6.3 | Aves forelimb, from a loon. A third neognath |
 | **Jones et al. (2019)** | 6.3 | Aves cranial, contrast CT of a pigeon head |
@@ -97,6 +96,13 @@ no single source covers them broadly — it goes one animal at a time.
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
 | **Bauer (1997)** | 3.6 | Urodele jaw openers on CN VII |
 | **Sánchez et al. (2019)** | 3.4 | Theria forearm and hand, in felids. Short but dense |
+
+### Done since this file was written
+
+**Huber et al. (2011)** — Chondrichthyes 5% → 37%, cranial from 10 unscored to 4.
+**Schreiweis (1982)** — five *Eudyptes* rows; Aves 13% → 28%.
+**Zaaf et al. (1999)**, second gecko — Lepidosauria to 62%, ten of the twenty-one
+pairs disagreeing.
 
 ## Worth opening (2 – 4)
 

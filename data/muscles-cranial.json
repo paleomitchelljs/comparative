@@ -69,7 +69,7 @@
         },
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Adductor mandibulae",
           "present": "yes",
           "origin": "Palatoquadrate.",
@@ -77,14 +77,28 @@
           "innervation": "CN V.",
           "note": "Relatively undivided, giving the plesiomorphic gnathostome condition.",
           "sources": [
-            "ziermann-etal-2014"
+            "ziermann-etal-2014",
+            "huber-etal-2011"
           ],
           "division": "single",
           "nerves": [
             {
               "nerve": "trigeminal"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palatoquadrate-quadrate"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. From the palatoquadrate onto Meckel's cartilage — the primary jaw adductor in all cartilaginous fishes, with multiple divisions. Both elements are homology groups here: the palatoquadrate is the same record as the amniote quadrate and the mammalian incus, so this row and the mammalian masseter's are visibly on descendants of one bone."
         },
         {
           "species": "arius-sp",
@@ -350,12 +364,26 @@
       "occurrences": [
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Intermandibularis",
           "present": "yes",
           "sources": [
-            "ziermann-etal-2014"
-          ]
+            "ziermann-etal-2014",
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "mandible"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midventral-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. A thin sheet between the two halves of the lower jaw, right and left portions inserting on the midventral raphe. It elevates the floor of the mouth during feeding and respiration, driving hydraulic transport through the oropharyngeal cavity. **Neither end is skeletal at the midline** — the insertion is raphe, which is why this muscle leaves no correlate."
         },
         {
           "species": "arius-sp",
@@ -503,12 +531,27 @@
       "occurrences": [
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Constrictor hyoideus dorsalis (levator hyomandibulae)",
           "present": "yes",
           "sources": [
-            "ziermann-etal-2014"
-          ]
+            "ziermann-etal-2014",
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium",
+                "landmark": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Recorded here as the levator hyomandibulae, which originates on the otic capsule of the chondrocranium and on the epibranchial musculature. The dorsal and ventral hyoid constrictors insert on the tendinous sheath overlying the hyomandibular cartilage, the dorsal arising from the otic capsule and the cucullaris and the ventral alongside the interhyoideus on the raphe of the first gill slit."
         },
         {
           "species": "ambystoma-mexicanum",
@@ -702,12 +745,27 @@
       "occurrences": [
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Constrictor hyoideus ventralis",
           "present": "yes",
           "sources": [
-            "ziermann-etal-2014"
-          ]
+            "ziermann-etal-2014",
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "hyoid",
+                "landmark": "ceratohyal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midventral-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. A thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. The hyoid-arch counterpart of the intermandibularis, and it shares its insertion."
         },
         {
           "species": "ambystoma-mexicanum",
@@ -974,12 +1032,13 @@
         },
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Constrictores + levatores arcuum branchialium",
           "present": "yes",
           "innervation": "CN IX (arch 3), CN X (arches 4–7).",
           "sources": [
-            "ziermann-etal-2014"
+            "ziermann-etal-2014",
+            "huber-etal-2011"
           ],
           "division": "divided",
           "parts": [
@@ -997,7 +1056,20 @@
             {
               "nerve": "vagus"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "branchial-arches"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "gill-slits"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. The superficial branchial constrictors take origin from the tendinous intersections between the dorsal and ventral series and insert on each of the gill slits, compressing the pharynx during the expulsion phase. Scored at the arch and the slit: the tendinous intersections are the real proximal attachment and have no element."
         },
         {
           "species": "arius-sp",
@@ -1632,12 +1704,13 @@
       "occurrences": [
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Levator palatoquadrati, spiracularis",
           "present": "yes",
           "note": "The spiracle is the reduced first (mandibular) gill slit; its musculature is arch 1 and trigeminal.",
           "sources": [
-            "ziermann-etal-2014"
+            "ziermann-etal-2014",
+            "huber-etal-2011"
           ],
           "division": "divided",
           "parts": [
@@ -1647,7 +1720,29 @@
             {
               "name": "Spiracularis"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium",
+                "landmark": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palatoquadrate-quadrate"
+              },
+              {
+                "element": "spiracle",
+                "landmark": "spiracular-cartilage"
+              },
+              {
+                "element": "hyomandibula-stapes",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Two muscles on this record. The levator palatoquadrati runs from the otic capsule of the chondrocranium onto the palatoquadrate, elevating the upper jaw into its resting position during the recovery phase of the gape cycle. The spiracularis inserts on the spiracular cartilage and the distal hyomandibula, forming the anterior wall of the spiracular valve."
         },
         {
           "species": "arius-sp",
