@@ -201,7 +201,7 @@ SEED = {
         "lepidosauria": {"origin": ["femoral-epicondyle-lateral"], "insertion": ["phalanges-pes"],
                          "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
                          "shiftNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance."},
-        "crocodylia": {"origin": ["femoral-epicondyle-lateral", "femur"], "insertion": ["ungual-phalanges"],
+        "crocodylia": {"origin": ["femoral-epicondyle-lateral", "femur"], "insertion": ["ungual-phalanges-pes"],
                        "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
                        "shiftNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III."},
     },
@@ -242,8 +242,11 @@ SEED = {
         "aves": {"species": "gallus-domesticus",  # Abdala & Diogo's Gallus
                  "origin": ["sternal-keel"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                  "shiftNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."},
-        "monotremata": {"origin": ["coracoid", "scapula"], "insertion": ["greater-tubercle"], "sources": ["gambaryan-etal-2015", "fahn-lai-etal-2020"],
-                        "shiftNote": "The scapular spine is only incipient, so the supracoracoideus field is just beginning to divide into supraspinatus and infraspinatus. The readable intermediate."},
+        # No monotremata block. Three genera are now scored per species in
+        # seed_gambaryan_monotremata.py, and the clade row this replaced put the
+        # origin on the coracoid and scapula when Gambaryan et al. put it on the
+        # procoracoid — a bone the clade block could not name because the version
+        # of skeleton.json it was written against did not give monotremes one.
         "theria": {"origin": ["supraspinous-fossa", "infraspinous-fossa"], "insertion": ["greater-tubercle"], "sources": ["ercoli-etal-2014", "fahn-lai-etal-2020"],
                    "shiftNote": "Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus."},
     },
@@ -263,8 +266,9 @@ SEED = {
                  "origin": ["sternal-keel", "furcula", "ribs"], "insertion": ["deltopectoral-crest"],
                  "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
                  "shiftNote": "In Cygnus the origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is indirect, onto the surface of underlying muscle. Both pectoralis muscles together are about 11% of body mass."},
-        "monotremata": {"origin": ["sternum", "interclavicle", "clavicle"], "insertion": ["deltopectoral-crest"], "sources": ["gambaryan-etal-2015"],
-                        "shiftNote": "More extensive origin than in therians because monotremes retain the interclavicle."},
+        # No monotremata block; scored per species from Gambaryan et al. The
+        # clave row included a clavicular origin the source gives to the
+        # clavodeltoideus, not to the pectoralis.
         "theria": {"origin": ["sternum", "clavicle", "ribs"], "insertion": ["greater-tubercle"], "sources": ["ercoli-etal-2014"]},
     },
     "deltoideus-clavicularis": {
@@ -305,7 +309,8 @@ SEED = {
         "aves": {"origin": ["sternum", "ribs"], "insertion": ["coracoid"],
                  "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
                  "shiftNote": "The only muscle on the internal surface of the thoracic cavity. From the dorsal surface of the craniolateral sternum (processus craniolateralis) and the first rib, to a large depression on the dorsal surface of the coracoid base. Matsuoka & Hasegawa suggest it keeps the coracoid-sternum connection flexible."},
-        "monotremata":  {"origin": ["sternum"], "insertion": ["coracoid"], "sources": ["gambaryan-etal-2015"]},
+        # No monotremata block; scored per species from Gambaryan et al., who
+        # insert this muscle on the PROCORACOID rather than the coracoid.
         "theria": {"origin": ["ribs"], "insertion": ["clavicle"], "sources": ["abdala-diogo-2010"],
                    "shiftNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology."},
     },

@@ -78,6 +78,35 @@ Standard descriptive dissection, each muscle described under origin / insertion 
 - Russian-language reviewer literature on monotreme anatomy is heavily cited; English-only readers will not be able to verify several historical claims about Westling, McKay, and the Howell controversy.
 - The paper rejects Howell 1937's nomenclatural innovations forcefully but does not reconcile its naming with Diogo & Abdala 2010 (the most recent comparative monotreme dissection in English), which had reached different conclusions on a number of muscles. Cross-comparison is left to the reader.
 
+## Where this has been mined
+
+**Girdle and arm, all three genera — done.** Seventeen records × three species, in
+`scripts/seed_gambaryan_monotremata.py`; Monotremata went 43% → 100% scored. The
+cross-comparison the Limitations above says is left to the reader is now carried
+in the data for the girdle: the equivalences are on each affected occurrence, and
+the three-way chain (their supracoracoideus = Diogo & Abdala's infraspinatus,
+their infraspinatus = their teres minor, their teres minor = their
+scapulohumeralis anterior) is on the `supracoracoideus` and
+`scapulohumeralis-anterior` homology blocks. Finding 9 above — the Howell teres
+minor dispute — is what forced `supracoracoideus` from `well-supported` to
+`contested`.
+
+**Forearm and hand, all three genera — done.** Nineteen records × three species
+plus one new record, in `scripts/seed_gambaryan_monotremata_distal.py`; hand went
+47% → 54% and forearm 58% → 69%, and Monotremata finished at 103 of 103. Findings
+2, 5 and 7 above are all scored. The sharpest of them is finding 5's first clause:
+the caput humerale profundum of the flexor digitorum profundus is scored on
+`contrahentium-caput-longum`, a record that read "an amphibian muscle lost in
+amniotes" and had no mammal on it, because the topological and ligamentous argument
+here is against Straus (1942) rather than a loose resemblance. `yes` in
+*Ornithorhynchus*, `uncertain` in both echidnas, where Kajava (1911) is the only
+authority for the diagnostic ligament.
+
+**This paper is mined out.** What remains in it is trunk and neck material
+(sternomastoideus, cleidomastoideus, the trapezius group, omohyoideus, cutaneus
+trunci, pectoralis abdominalis, tensor fasciae antebrachii) for which this dataset
+either holds no record or scores the region from other sources.
+
 ## Relevance to comparative anatomy teaching
 
 A heavyweight reference monograph that should sit on the shelf for the mammalian forelimb lecture. Use it for:

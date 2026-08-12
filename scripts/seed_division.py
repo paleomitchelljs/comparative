@@ -67,6 +67,22 @@ def p(name, membership=E, muscle=None, note=None):
 # A list of pairs rather than a dict literal: a duplicate key in a dict is
 # silently the last one written, which is how eight taxon blocks were lost from
 # seed_occurrence_attachments.py without the script ever reporting a problem.
+#
+# A block is keyed on a CLADE and the data is keyed on a SPECIES, so a clade
+# holding two dissected animals is ambiguous — and this script used to resolve
+# that ambiguity by taking whichever row came first, which is the bug that ate
+# the second loon in seed_occurrence_attachments.py. Ten blocks were landing that
+# way. `species` names the animal a block describes, and the guard in main()
+# refuses to apply an ambiguous block rather than guessing.
+#
+# What those ten had actually cost is less than it looks: eight of the second
+# species already carried their own `division`, written by whichever later pass
+# added them, so the stale block was landing on the first row and doing no damage.
+# Two did not — both Gavia immer, and both were carrying the split inside the
+# `name` string this file exists to empty. Both are now scored from McKitrick
+# (1991) as blocks of their own. A clade may therefore hold more than one block,
+# one per dissected animal, and the uniqueness check keys on
+# (muscle, taxon, species) to allow it.
 SEED: list[tuple[tuple[str, str], dict]] = [
     # ---------------- axial ----------------
     (("epaxial-musculature", "myxini"), {
@@ -116,6 +132,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
 
     # ---------------- cranial ----------------
     (("adductor-mandibulae", "chondrichthyes"), {
+        "species": "squalus-acanthias",
         "division": "single",
         "why": "Relatively undivided — the plesiomorphic gnathostome condition."}),
     (("adductor-mandibulae", "actinopterygii"), {
@@ -126,6 +143,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "parts": [p("A1", membership=V), p("A2", membership=V),
                   p("A3", membership=V), p("Aω", membership=V)]}),
     (("adductor-mandibulae", "anura"), {
+        "species": "ascaphus-truei",
         "division": "divided",
         "parts": [p("Levator mandibulae externus",
                     muscle="adductor-mandibulae-externus"),
@@ -155,6 +173,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "parts": [p("Pars superficialis"), p("Pars media"), p("Pars profunda")]}),
 
     (("adductor-mandibulae-internus", "anura"), {
+        "species": "ascaphus-truei",
         "division": "heads",
         "why": "Two parts merging into one another.",
         "parts": [p("Rostral part"), p("Caudal part")]}),
@@ -177,6 +196,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
 
 
     (("hypobranchial-muscles", "chondrichthyes"), {
+        "species": "squalus-acanthias",
         "division": "divided",
         "parts": [p("Coracomandibularis"), p("Coracohyoideus"),
                   p("Coracobranchialis")]}),
@@ -206,33 +226,36 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "parts": [p("Trapezius"), p("Sternocleidomastoideus")]}),
 
     (("rhomboideus", "aves"), {
+        "species": "gallus-domesticus",
         "division": "divided",
         "why": "Sullivan (1962, 1967) report both.",
+        "parts": [p("Rhomboideus superficialis"), p("Rhomboideus profundus")]}),
+    (("rhomboideus", "aves"), {
+        "species": "gavia-immer",
+        "division": "divided",
+        "why": "McKitrick (1991) describes M. rhomboideus superficialis and M. "
+                "rhomboideus profundus as separate muscles in Gavia immer, the "
+                "profundus lying almost entirely deep to the superficialis. Added "
+                "when pinning the Gallus block exposed that the loon row carried "
+                "the split in its NAME — \"'Rhomboideus' (superficialis + "
+                "profundus)\" — and nowhere countable.",
         "parts": [p("Rhomboideus superficialis"), p("Rhomboideus profundus")]}),
     (("rhomboideus", "theria"), {
         "division": "divided",
         "parts": [p("Rhomboideus capitis"), p("Rhomboideus cervicis"),
                   p("Rhomboideus thoracis")]}),
 
-    (("levator-scapulae", "monotremata"), {
-        "division": "divided",
-        "parts": [p("Levator scapulae"),
-                  p("Levator scapulae ventralis / omotransversarius",
-                    membership=D)]}),
+    # No monotremata blocks for levator-scapulae, pectoralis or supracoracoideus.
+    # All three are now authored per species in seed_gambaryan_monotremata.py,
+    # from the source rather than from the clade, and all three were WRONG here:
+    # the levator scapulae has three portions and not two, the pectoralis is
+    # explicitly undivided in monotremes rather than split into superficialis and
+    # profundus, and the supracoracoideus block asserted the very split Gambaryan
+    # et al. spend their remarks rejecting.
     (("levator-scapulae", "theria"), {
         "division": "divided",
         "parts": [p("Levator scapulae"), p("Omotransversarius", membership=D)]}),
 
-    (("pectoralis", "monotremata"), {
-        "division": "divided",
-        "parts": [p("Pectoralis superficialis"), p("Pectoralis profundus")]}),
-
-    (("supracoracoideus", "monotremata"), {
-        "division": "divided",
-        "why": "The critical intermediate: the scapular spine is incipient and "
-                "the field only partly divided.",
-        "parts": [p("Supraspinatus"), p("Infraspinatus"),
-                  p("Supracoracoideus remnant", membership=D)]}),
     (("supracoracoideus", "theria"), {
         "division": "divided",
         "parts": [p("Supraspinatus"), p("Infraspinatus")]}),
@@ -242,7 +265,15 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "parts": [p("Pars acromialis"), p("Pars clavicularis")]}),
 
     (("triceps-brachii", "aves"), {
+        "species": "gallus-domesticus",
         "division": "heads",
+        "parts": [p("Scapulotriceps"), p("Humerotriceps")]}),
+    (("triceps-brachii", "aves"), {
+        "species": "gavia-immer",
+        "division": "heads",
+        "why": "McKitrick (1991) gives both in Gavia immer, each with its own "
+                "tendon of insertion. Same case as the loon rhomboideus above: "
+                "the name said it and nothing counted it.",
         "parts": [p("Scapulotriceps"), p("Humerotriceps")]}),
     (("triceps-brachii", "theria"), {
         "division": "heads",
@@ -261,6 +292,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "parts": [p("Extensor carpi radialis longus"),
                   p("Extensor carpi radialis brevis")]}),
     (("flexor-digitorum-longus", "theria"), {
+        "species": "galictis-cuja",
         "division": "divided",
         "why": "Staggered phalangeal insertions in two layers — a derived "
                 "elaboration of a single ancestral flexor plate.",
@@ -343,6 +375,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "division": "divided",
         "parts": [p("Extensor iliotibialis A"), p("Extensor iliotibialis B")]}),
     (("extensor-iliotibialis", "lepidosauria"), {
+        "species": "eublepharis-macularius",
         "division": "divided",
         "parts": [p("Iliotibialis"),
                   p("Femorotibialis", membership=D, muscle="femorotibialis"),
@@ -391,6 +424,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "dataNote": "One head, against two in anurans (Prikryl et al. 2009)."}),
 
     (("ischioflexorius", "lepidosauria"), {
+        "species": "eublepharis-macularius",
         "division": "divided",
         "parts": [p("Flexor tibialis externus"), p("Flexor tibialis internus")]}),
     (("ischioflexorius", "crocodylia"), {
@@ -409,6 +443,7 @@ SEED: list[tuple[tuple[str, str], dict]] = [
                   p("Biceps femoris")]}),
 
     (("fibularis-group", "lepidosauria"), {
+        "species": "eublepharis-macularius",
         "division": "divided",
         "parts": [p("Fibularis longus"), p("Fibularis brevis")]}),
     (("fibularis-group", "crocodylia"), {
@@ -496,11 +531,19 @@ def main():
     write = "--write" in sys.argv
     files = sorted(ROOT.glob("data/muscles-*.json"))
 
-    seen = {}
-    for key, _ in SEED:
-        if key in seen:
-            sys.exit(f"seed error: duplicate entry for {key}")
-        seen[key] = True
+    # Uniqueness is per (muscle, taxon, species): one clade legitimately holds
+    # two blocks when it holds two dissected animals, and the `species` key is
+    # what tells them apart. Without the species in the check, adding the loon
+    # beside the chicken would read as a duplicate.
+    seen = set()
+    for key, block in SEED:
+        ident = (*key, block.get("species"))
+        if ident in seen:
+            sys.exit(f"seed error: duplicate entry for {ident}")
+        if block.get("species") is None and any(
+                k == key and b.get("species") for k, b in SEED):
+            sys.exit(f"seed error: {key} has both a pinned and an unpinned block")
+        seen.add(ident)
 
     docs = {path: json.loads(path.read_text()) for path in files}
     index = {}
@@ -516,13 +559,26 @@ def main():
             missing.append(f"{mid}/{tid}: no such muscle record")
             continue
         path, muscle = entry
-        occ = next((o for o in muscle.get("occurrences", []) if speciesmap.clade_of(o) == tid), None)
-        if occ is None:
-            missing.append(f"{mid}/{tid}: muscle has no occurrence for that taxon")
+        candidates = [o for o in muscle.get("occurrences", [])
+                      if speciesmap.clade_of(o) == tid]
+        want = block.get("species")
+        if want:
+            candidates = [o for o in candidates if o.get("species") == want]
+        if not candidates:
+            missing.append(f"{mid}/{tid}: muscle has no occurrence for that taxon"
+                           + (f", species '{want}'" if want else ""))
             continue
-        if occ.get("present") == "no":
+        alive = [o for o in candidates if o.get("present") != "no"]
+        if not alive:
             missing.append(f"{mid}/{tid}: occurrence is present='no'")
             continue
+        if len(alive) > 1:
+            missing.append(
+                f"{mid}/{tid}: {len(alive)} rows in that clade "
+                f"({', '.join(o['species'] for o in alive)}) — add \"species\" "
+                f"to this block to say which one it describes")
+            continue
+        occ = alive[0]
 
         current = {k: occ.get(k) for k in
                    ("division", "parts", "partsOpen", "divisionNote")}

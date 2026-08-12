@@ -139,6 +139,55 @@
       }
     },
     {
+      "id": "scapula-caudal-angle",
+      "label": "Caudal angle of the scapula",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata",
+          "theria"
+        ],
+        "sources": [
+          "gambaryan-etal-2015",
+          "ercoli-etal-2014"
+        ],
+        "note": "The angulus caudalis, the posterodorsal corner of the scapular blade. Four muscles converge on it in monotremes — the teres major and one slip of the latissimus spinalis arise there, and the serratus ventralis thoracis and the caudal portion of the rhomboideus insert there. **Scored absent outside the mammals as a fact about names, not about bone.** Every tetrapod scapular blade has corners; only the mammalian literature names them, so an attachment row here cannot be written for a lizard even where the same corner carries the same muscle."
+      },
+      "synonyms": [
+        "angulus caudalis",
+        "dorsocaudal angle of the scapula",
+        "inferior angle (human)"
+      ]
+    },
+    {
+      "id": "scapula-cranial-angle",
+      "label": "Cranial angle of the scapula",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapula",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata",
+          "theria"
+        ],
+        "sources": [
+          "gambaryan-etal-2015"
+        ],
+        "note": "The craniodorsal corner of the scapular blade, opposite the caudal angle. Carries the origin of the spinodeltoideus and the insertion of the cranial portion of the rhomboideus in all three monotreme genera. Same nomenclatural caveat as the caudal angle."
+      },
+      "synonyms": [
+        "craniodorsal angle of the scapula"
+      ]
+    },
+    {
       "id": "acromion",
       "label": "Acromion",
       "kind": "bone",
@@ -255,11 +304,13 @@
         "default": "no",
         "present": [
           "caudata",
-          "anura"
+          "anura",
+          "monotremata"
         ],
-        "note": "Carries the origin of the procoracohumeralis — the amphibian name for what amniotes call the deltoideus clavicularis. The muscle is renamed for the bone, not for any change in the muscle.",
+        "note": "Carries the origin of the procoracohumeralis — the amphibian name for what amniotes call the deltoideus clavicularis. The muscle is renamed for the bone, not for any change in the muscle. **Retained in monotremes, and it is not a vestige**: Gambaryan et al. (2015) put the origins of the supracoracoideus, the subcoracoideus and both heads of the biceps brachii on it, and the sternocoracoideus and costocoracoideus insert on it. Five muscles on a bone therians do not have, which is most of why the monotreme girdle cannot be read off a therian one.",
         "sources": [
-          "abdala-diogo-2010"
+          "abdala-diogo-2010",
+          "gambaryan-etal-2015"
         ]
       }
     },
@@ -458,6 +509,30 @@
       "presence": {
         "default": "yes"
       }
+    },
+    {
+      "id": "lesser-tubercle-crest",
+      "label": "Crest of the lesser tubercle",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "lesser-tubercle",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata",
+          "theria"
+        ],
+        "sources": [
+          "gambaryan-etal-2015",
+          "ercoli-etal-2014"
+        ],
+        "note": "The crista tuberculi minoris, running distally from the tubercle onto the shaft. Separated from the tubercle itself because the two carry different muscles and the distinction is the observation: in all three monotreme genera the subscapularis takes the proximal apex of the tubercle while the subcoracoideus and teres major descend along the crest below it (Gambaryan et al. 2015)."
+      },
+      "synonyms": [
+        "crista tuberculi minoris"
+      ]
     },
     {
       "id": "lateral-epicondyle",
@@ -2723,12 +2798,14 @@
         "default": "no",
         "present": [
           "anura",
-          "caudata"
+          "caudata",
+          "monotremata"
         ],
         "sources": [
-          "blotto-etal-2020"
+          "blotto-etal-2020",
+          "gambaryan-etal-2015"
         ],
-        "note": "A preaxial element medial to digit I. In anurans it carries its own musculature — adductor pollicis, a contrahens, flexores breves profundi slips — so it behaves as a digit even though it is not one. Relevant to the position-versus-identity argument: anurans lost digit 1 yet the preaxial muscles found something to attach to."
+        "note": "A preaxial element medial to digit I. In anurans it carries its own musculature — adductor pollicis, a contrahens, flexores breves profundi slips — so it behaves as a digit even though it is not one. Relevant to the position-versus-identity argument: anurans lost digit 1 yet the preaxial muscles found something to attach to. **Monotremes have one too, and it carries more muscle than the anuran one.** Gambaryan et al. (2015) put the whole insertion of the flexor carpi radialis on it in all three genera, and the origins of the interossei of digits I to III; in Zaglossus its pull is relayed on to the distal carpals and metacarpals I-III by ligaments. So the preaxial element carrying its own musculature is not an anuran peculiarity — it is present in a mammal, in an animal that did NOT lose digit I."
       }
     },
     {
@@ -3261,8 +3338,8 @@
       }
     },
     {
-      "id": "ungual-phalanges",
-      "label": "Ungual phalanges",
+      "id": "ungual-phalanges-pes",
+      "label": "Ungual phalanges (pes)",
       "kind": "bone",
       "region": "hindlimb",
       "segment": "autopod",
@@ -3272,7 +3349,24 @@
         "default": "variable",
         "sources": [
           "pereyra-etal-2024"
-        ]
+        ],
+        "note": "Split from a single `ungual-phalanges` element, which was parented to the pes alone while carrying the id a manual row would reach for — the same trap that put pedal phalanges on three forelimb records before Walthall & Ashley-Ross was mined. Paired with ungual-phalanges-manus on the intermedium-manus / intermedium-pes pattern."
+      }
+    },
+    {
+      "id": "ungual-phalanges-manus",
+      "label": "Ungual phalanges (manus)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "phalanges-manus",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "sources": [
+          "gambaryan-etal-2015"
+        ],
+        "note": "The terminal, claw-bearing phalanges of the hand. Reached first by the monotreme digital extensors and flexors, every one of which ends on them rather than on the phalanges generally — three muscles in three genera with three different digital formulae, which is only expressible against a distinct element."
       }
     },
     {
@@ -3309,12 +3403,14 @@
         "present": [
           "lepidosauria",
           "crocodylia",
-          "aves"
+          "aves",
+          "monotremata"
         ],
         "sources": [
-          "cieri-2018"
+          "cieri-2018",
+          "gambaryan-etal-2015"
         ],
-        "note": "Cieri (2018) reports three to four in most varanids examined."
+        "note": "Cieri (2018) reports three to four in most varanids examined. Monotremes keep free cervical ribs on all six post-atlantal cervicals, and Gambaryan et al. (2015) hang the whole serratus ventralis cervicis on them — one slip per rib, C2 to C7. The rib of the axis, which they call the epistropheal rib, also carries two of the three portions of the levator scapulae."
       }
     },
     {
@@ -4154,6 +4250,103 @@
         ],
         "note": "Carries most of the ceratomandibularis insertion in Necturus, which is why that muscle reaches the gonial indirectly. A muscle end that leaves no osteological trace, like the midventral raphe of the shark and the humeral feather tract of the loon."
       }
+    },
+    {
+      "id": "centrale-manus",
+      "label": "Centrale (carpal)",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "presence": {
+        "default": "variable",
+        "present": [
+          "caudata"
+        ],
+        "note": "The manual counterpart of centrale-pes. Carried here chiefly as a component of the monotreme preaxial carpal complex, which fuses it with the radiale and the intermedium.",
+        "sources": [
+          "walthall-ashley-ross-2006",
+          "gambaryan-etal-2015"
+        ]
+      }
+    },
+    {
+      "id": "carpal-preaxial-complex",
+      "label": "Preaxial carpal complex",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2015"
+        ],
+        "note": "One bone in the proximal carpal row of monotremes, identified by Holmgren (1952) as fused radiale + intermedium + centrale. It takes the insertion of the brachioradialis, on a dorsal projection between its joints with distal carpals II and III, and the prepollex articulates with it. A `fusedFrom` case rather than three separate rows, on the same reasoning as the avian carpometacarpus."
+      },
+      "fusedFrom": [
+        "radiale",
+        "intermedium-manus",
+        "centrale-manus"
+      ],
+      "synonyms": [
+        "scaphocentralolunatum (colugos, bats — Panyutina et al. 2015)",
+        "preaxial complex bone (Gambaryan et al. 2015)"
+      ]
+    },
+    {
+      "id": "palmar-sesamoid",
+      "label": "Palmar sesamoid",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "autopod",
+      "partOf": "carpals",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2015"
+        ],
+        "note": "The os sesamoideum flexorium commune, a sesamoid in the common tendon of the flexor digitorum profundus at the point where it divides into digital branches. Gambaryan et al. coin the Latin term and cite Ponssa et al. (2010) that the bone itself is common across tetrapods; it is scored `variable` rather than `no` for that reason, and listed present only where a source has actually reported it. It is a real attachment site and not an incidental ossicle: in Tachyglossus the common tendon inserts on its proximal apex and the digital branches leave its distal end, and in Ornithorhynchus there are two of them, a medial one giving the tendons of digits I-III and a lateral one those of digits IV and V."
+      },
+      "synonyms": [
+        "os sesamoideum flexorium commune (Gambaryan et al. 2015)"
+      ]
+    },
+    {
+      "id": "subcarpal-ligament-transverse",
+      "label": "Transverse subcarpal ligament",
+      "kind": "ligament",
+      "region": "forelimb",
+      "segment": "autopod",
+      "presence": {
+        "default": "no",
+        "present": [
+          "caudata",
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2015"
+        ],
+        "note": "The ligament the urodele ulnocarpalis inserts on. It matters here because it is the diagnostic structure in Gambaryan et al.'s (2015) argument that the same muscle survives in mammals: in Ornithorhynchus its postaxial segment persists as the ligamentum flexorium commune transversum, running from the ventral side of the ulnare to the medial palmar sesamoid, and its deeper sheet as the ligamentum palmaris profundum, crossing from pisiform and ulnare to the prepollex. Kajava (1911) reports the transverse ligament in Tachyglossus as well, apparently as individual variation, and Straus (1942) in some lipotyphlan insectivores. Scored present only in the two clades a source describes it in; a muscle end, not a bone, so its absence elsewhere is largely unrecorded."
+      },
+      "taxonNames": [
+        {
+          "taxa": [
+            "monotremata"
+          ],
+          "name": "Ligamentum flexorium commune transversum"
+        }
+      ],
+      "synonyms": [
+        "ligamentum flexorium commune transversum (Monotremata)"
+      ]
     }
   ]
 }

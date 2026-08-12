@@ -1,6 +1,6 @@
 # What is left to mine, and how
 
-239 present occurrences still have no attachment rows. This file lists the
+222 present occurrences still have no attachment rows. This file lists the
 sources that could close them, ranked by whether they will actually work.
 
 Regenerate the numbers with `python3 scripts/doc_counts.py --write`. The
@@ -83,18 +83,23 @@ Meers. Where no published equivalence exists, say so in the note — as
 | Clade | Unscored | Concentrated in |
 |---|---:|---|
 | Aves | 40 | forearm 10, hand 7, thigh 7 |
-| Anura | 40 | forearm 13, pectoral 8, cranial 7 |
 | Lepidosauria | 38 | forearm 8, axial 7, pectoral 7 |
-| Testudines | 37 | forearm 13, hand 9, pectoral 5 |
+| Anura | 36 | forearm 13, pectoral 8, cranial 7 |
+| Testudines | 34 | forearm 13, hand 9, pectoral 5 |
 | Caudata | 22 | fin 7, hand 3, pectoral 3 |
-| Chondrichthyes | 12 | fin 5, cranial 4, axial 2 |
-| Crocodylia | 12 | forearm 5, pelvic 2, thigh 2 |
+| Chondrichthyes | 12 | fin 5, cranial 5, axial 2 |
 | Theria | 9 | hand 3, axial 2, foot 2 |
 | Tetrapodomorpha (stem) | 9 | pectoral 4, arm 3, forearm 1 |
-| everything else | 20 | agnathans, monotremes, stem synapsids, the coelacanth |
+| Crocodylia | 8 | forearm 5, pectoral 2, hand 1 |
+| Actinopterygii | 7 | cranial 4, fin 2, pectoral 1 |
+| everything else | 7 | agnathans, stem synapsids, the coelacanth |
 
-**Forearm and hand are the largest regions across every tetrapod column**, and
-no single source covers them broadly — it goes one animal at a time.
+**Monotremata has left this table.** It is 103 of 103, the only fully scored
+extant column in the dataset and now the third largest — see the Gambaryan entries
+below. **Forearm and hand still head four of the five biggest columns**, and the
+next four rows of this table are the same shape as each other: Aves, Lepidosauria,
+Anura and Testudines all want a descriptive forelimb myology of one animal, and
+none of the four has one in `papers/`.
 
 **This table counts unscored rows, so a new species does not move it.** Anura still
 reads 40 after the Sigurdsen pass, because those nine rows were *added* — a second and
@@ -140,7 +145,160 @@ the source count suggests** — of 32 in-scope uncited sources, four are above t
 mixed band, and two of the best targets in the corpus were not in the backlog at
 all. Check the papers you have already used before acquiring more.
 
+### The ranked backlog missed the best paper in the corpus
+
+The re-ranking above was run over "31 unmined and under-mined sources" and put
+Ziermann et al. (2014) top at 4.7 per page. **Gambaryan et al. (2015) measures
+8.8 and was not in the list.** It scored seven citations and three scored rows —
+under-mined by any definition — and was passed over because the sweep was
+assembled by hand rather than computed from the citation counts. The check was
+never wrong; the set it was run over was incomplete.
+
+Run it the other way round. Compute *cited* and *scored* per source key straight
+out of `data/muscles-*.json`, divide, and rank the whole bibliography — not a
+list of what somebody remembered was unmined. On that ranking the corpus today
+is:
+
+| | per pg | cited | scored | |
+|---|---:|---:|---:|---|
+| Prikryl et al. (2009) | 11.1 | 9 | 8 | mined |
+| Meers (2003) | 10.4 | 11 | 10 | mined |
+| **Hattori & Tsuihiji (2021)** | **9.7** | **4** | **3** | **the top target now** |
+| Ercoli et al. (2012) | 9.0 | 20 | 19 | mined |
+| Gambaryan et al. (2015) | 8.8 | 51 | 51 | mined, below |
+| Molnar et al. (2018) | 6.4 | 42 | 33 | partly |
+
+Everything else descriptive is either fully scored or under 6 per page.
+**Hattori & Tsuihiji (2021) is now the highest-density under-mined source in
+`papers/`** — pedal muscles across all four sauropsid clades, with osteological
+correlates named for over 80% of them, and a proposed revision of the Romer
+homology framework for the anterior tibial muscles. `GAPS.md` §6 files it under
+correlates; at 9.7 per page over 35 pages it is a row source as well.
+
 ### Done since this file was written
+
+**Gambaryan et al. (2015)** — **Monotremata 43% → 100%**, from 7 present
+occurrences to 51, and the first extant column in the dataset with no unscored
+row in it. Measured **8.8** per page over 56 pages. Seventeen records across the
+girdle and the arm, three rows each, because the paper describes *Zaglossus
+bruijnii*, *Tachyglossus aculeatus* and *Ornithorhynchus anatinus* side by side
+with a separate Origin and Insertion paragraph per genus — and the dataset held
+one echidna. *Zaglossus* was a `taxa.json` exemplar with no `species.json` entry;
+*Ornithorhynchus* had an entry and zero rows. That is the loon, the second gecko,
+Johnston's two frogs and Sánchez's three cats for the fifth time, and it is worth
+saying plainly: **the recurring failure in this corpus is not a missing paper, it
+is a paper read for one of the animals in it.**
+**Three of the seven existing rows were wrong, and all three cited this paper.**
+The pectoralis carried `division: divided` with a superficialis and a profundus;
+the section opens "not divided in monotremes ... as is typical to therians", and
+the undivided sheet is one of the primitive features the paper is arguing for.
+The sternocoracoideus inserted on the coracoid; it inserts on the **procoracoid**.
+The serratus anterior arose from "ribs 1–8 and the cervical transverse processes";
+the cervical slips arise from the cervical **ribs**, one per vertebra from the
+axis to C7, and the thoracic slips come from three to five ribs. All three came
+from clade-keyed seed blocks, which is where to look first when a row is wrong.
+**The central finding is a homology dispute, and it is aimed at this record's own
+reasoning.** Romer (1922) derived the therian supraspinatus and infraspinatus
+from the supracoracoideus of lower tetrapods, and the monotreme condition is the
+morphological support usually cited for it — `supracoracoideus` said so in as
+many words. Gambaryan et al. object that in all three genera **all three muscles
+are present at once**, the supracoracoideus arising from the procoracoid and the
+other two from the scapula, and read supraspinatus and infraspinatus as mammalian
+additions rather than the two halves of a divided muscle. The record dropped from
+`well-supported` to `contested`; the two are `membership: disputed` parts. It is
+not split into three records on one source, and the `openQuestion` says what
+deciding it would cost.
+Behind that sits a **three-way naming chain against Diogo & Abdala (2010)**,
+whom the therian and monotreme columns are largely built from: Gambaryan's
+supracoracoideus is their infraspinatus, his infraspinatus is their teres minor,
+and his teres minor is their scapulohumeralis anterior. Each affected occurrence
+carries the equivalence. The third link earns its keep — `scapulohumeralis-anterior`
+already carried an open question about the mammalian teres minor, and the
+monotreme rows supply attachment evidence for it: the muscle passes postaxially
+beneath the triceps longus to the **lesser** tubercle beside the subscapularis,
+where the therian teres minor takes the short route to the greater tubercle, as
+the *Galictis* row on that same record shows.
+**Two attachments move the length of a bone.** The latissimus inserts on the
+medial epicondyle — the far distal humerus — against the lesser tubercle in
+therians and in extant reptiles, and Gambaryan et al. give the mechanism: the
+barrel-shaped monotreme rib cage puts the elbow in the same parasagittal plane as
+the widest point of the ribs, so the muscle runs straight down the flank. And in
+the platypus alone the biceps longus has left the ulna for the radius, fusing with
+the brevis — a head changing which zeugopod bone it ends on, inside one clade.
+**The subscapularis is on the outside of the scapula** in all three genera, with
+the supraspinatus and serratus ventralis cervicis on the inner face, which the
+authors read as the most primitive state in mammals and probably in all synapsids.
+Three landmarks and two presence corrections were needed to hold the paper:
+`scapula-caudal-angle` (four muscles converge on it), `scapula-cranial-angle`,
+`lesser-tubercle-crest` — because the subscapularis takes the apex of the lesser
+tubercle and the subcoracoideus and teres major the crest below it, and collapsing
+them loses the observation — plus `procoracoid` and `cervical-ribs` marked present
+in Monotremata. Both scapular angles are scored absent outside the mammals **as a
+fact about names, not about bone**; every tetrapod scapular blade has corners and
+only the mammalian literature names them.
+**Gambaryan et al. (2015), second pass — the forearm and hand.** Hand 47% → 54%,
+forearm 58% → 69%, Monotremata to 103 of 103. Fifty-seven further rows across
+nineteen records and the same three genera, taking the paper's distal half, where
+its thesis says the platypus rather than the echidnas is the primitive one.
+**Together the two passes are 108 rows from one source**, and they moved the whole
+dataset from 65% to 70%. Hand has left last place for the first time; axial is the
+floor now.
+**The find is a muscle this dataset records as lost, in a mammal.**
+`contrahentium-caput-longum` — the urodele ulnocarpalis — read "an amphibian muscle
+lost in amniotes, retaining only its distal derivatives", with no therian row on
+it. Gambaryan et al. identify it as the caput humerale profundum of the flexor
+digitorum profundus, against Straus (1942), who held it dissolved into that muscle
+beyond amphibians. **The argument is topological and ligamentous, not positional**,
+which is why it is worth scoring rather than noting: the head wedges between the
+caput olecrani and the caput ulnare exactly as the urodele ulnocarpalis wedges
+between the two heads of the palmaris communis profundus — Diogo & Abdala's flexor
+accessorius lateralis and medialis, both records here — and it ends on the
+ligamentum flexorium commune transversum, read as the surviving postaxial segment
+of the transverse subcarpal ligament the urodele muscle inserts on. Its origin has
+migrated from ulna to humerus, and that migration is the substance of the claim
+rather than a problem for it. `yes` in the platypus, `uncertain` in both echidnas
+where the belly is present and the diagnostic ligament is reported only by Kajava
+(1911) and only as variation — **three rows disagreeing about a muscle's identity
+rather than its presence**, which is a use of `uncertain` the dataset had not made
+before.
+**The prepollex stops being an anuran story.** `GAPS.md` §1 has carried it as the
+position-versus-identity case: anurans lost digit I, and the preaxial muscles
+attach to the prepollex instead. Monotremes have one, did not lose digit I, and
+load it harder — the whole flexor carpi radialis insertion in all three genera plus
+the origins of the interossei of digits I–III, with ligaments relaying the pull to
+the distal carpals and metacarpals I–III in *Zaglossus*. The pisiform does the same
+job postaxially for the flexor carpi ulnaris. Two preaxial/postaxial levers, not a
+compensation for a missing digit.
+**Three absences and a correction, all of them characters.** The palmaris longus is
+absent in all three genera, surviving in *Zaglossus* only as a bundle of the
+cutaneus trunci that joins the flexor tendon — a skin muscle standing where a limb
+muscle is not yet. The intermetacarpales are absent in both echidnas and present in
+the platypus, **explicitly against Kajava (1911) and Howell (1936)**, who had it the
+other way round. The extensor carpi ulnaris has lost its ulnar head in the platypus
+and keeps it in both echidnas, so the clade computes `variable`. And the lumbricales
+bifurcate in *Tachyglossus*, each sending a head to the preceding digit — reported
+elsewhere only in colugos.
+**One new record and five skeletal changes.** `extensor-digitorum-profundus` for the
+extensor pollicis et indicis — Haines' (1939) name, and Diogo & Abdala's extensor
+pollicis longus + extensor indicis + extensor digitus III proprius in one; the
+dataset had nowhere to put a deep digital extensor arising from the ulna, and its
+digital formula differs in all three genera (II–IV, I–IV, I–III) with a stated
+polarity. On the skeleton: `prepollex` marked present in Monotremata,
+`carpal-preaxial-complex` (fusedFrom radiale + intermedium + centrale, the
+brachioradialis insertion — which in monotremes is not on the radius),
+`centrale-manus`, `palmar-sesamoid` and `subcarpal-ligament-transverse`.
+**And a modelling error the validator caught.** `ungual-phalanges` was parented to
+`phalanges-pes` while holding the id any manual row would reach for — the same trap
+that had put pedal phalanges on three forelimb records before Walthall & Ashley-Ross
+was mined. Split into `ungual-phalanges-manus` and `ungual-phalanges-pes` on the
+`intermedium-manus`/`intermedium-pes` pattern; one existing crocodylian pedal row
+moved.
+**What is left in this paper: nothing substantial.** The trunk and neck muscles it
+describes in passing (sternomastoideus, cleidomastoideus, the trapezius group,
+omohyoideus, cutaneus trunci, pectoralis abdominalis, tensor fasciae antebrachii)
+have no records here or belong to regions this dataset scores from other sources.
+Its Tables and Figures 19–23 are attachment maps, already used. **Gambaryan et al.
+is mined out.**
 
 **Dearden et al. (2020)** — Chondrichthyes 41% → 48%, and **the density check
 underrates it**. It scores 2.1 per page over 81 pages, which put it in the mixed band,

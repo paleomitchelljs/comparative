@@ -33,29 +33,38 @@ python3 scripts/seed_walthall_taricha.py $FLAG
 step "5. taxon-specific attachments for documented shifts"
 python3 scripts/seed_occurrence_attachments.py $FLAG
 
-step "6. attachments -> element / side / landmark rows"
+step "6. Gambaryan et al. monotreme girdle and arm, three genera"
+# Before the row migration, like the seed above it, so its rows are normalised
+# by the same pass. Owns the whole monotreme column: the clade-keyed blocks for
+# these muscles were removed from steps 5 and 9 rather than left to fight it.
+python3 scripts/seed_gambaryan_monotremata.py $FLAG
+
+step "7. Gambaryan et al. monotreme forearm and hand, three genera"
+python3 scripts/seed_gambaryan_monotremata_distal.py $FLAG
+
+step "8. attachments -> element / side / landmark rows"
 python3 scripts/migrate_attachment_rows.py $FLAG
 
-step "7. fused elements: fusedFrom, not partOf"
+step "9. fused elements: fusedFrom, not partOf"
 python3 scripts/migrate_fusions.py $FLAG
 
-step "8. taxon-specific division into parts"
+step "10. taxon-specific division into parts"
 python3 scripts/seed_division.py $FLAG
 
-step "9. innervation prose -> nerves.json ids"
+step "11. innervation prose -> nerves.json ids"
 python3 scripts/seed_nerves.py $FLAG
 
-step "10. action prose -> joints.json {joint, motion}"
+step "12. action prose -> joints.json {joint, motion}"
 python3 scripts/seed_actions.py $FLAG
 
-step "11. close the related-muscle graph"
+step "13. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
-step "12. measured counts in README.md and docs/GAPS.md"
+step "14. measured counts in README.md and docs/GAPS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "13. validate"
+  step "15. validate"
   python3 scripts/attribute_species.py --write
 python3 scripts/validate.py
 fi

@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-127 muscle records · 644 present occurrences · 245 skeletal elements · 104 sources · 19 operational taxa
+128 muscle records · 740 present occurrences · 253 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | leg | 10 | 34 | 28 | 82% |
 | thigh | 10 | 45 | 37 | 82% |
 | foot | 11 | 27 | 22 | 81% |
-| pectoral | 16 | 128 | 89 | 70% |
+| pectoral | 16 | 160 | 125 | 78% |
+| arm | 5 | 63 | 46 | 73% |
+| forearm | 19 | 167 | 115 | 69% |
 | pelvic | 8 | 32 | 22 | 69% |
-| arm | 5 | 51 | 34 | 67% |
 | cranial | 16 | 72 | 47 | 65% |
 | fin | 9 | 39 | 23 | 59% |
-| forearm | 18 | 125 | 73 | 58% |
+| hand | 9 | 72 | 39 | 54% |
 | axial | 15 | 29 | 14 | 48% |
-| hand | 9 | 62 | 29 | 47% |
-| **all** | 127 | 644 | 418 | **65%** |
+| **all** | 128 | 740 | 518 | **70%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -65,8 +65,8 @@ parts. Ziermann & Diogo (2013) then took the axolotl, seven rows and the only la
 *and* adult attachments in the corpus. Ziermann et al. (2014) then took the head of
 the hagfish, the lamprey and the skate, and Johnston (2011) the jaw adductors of the
 two most basal frogs, and Dearden et al. (2020) the elephantfish. Cranial is now 65%,
-up from under 20%, and it is no longer the region to worry about — **hand and axial
-are.**
+up from under 20%, and it is no longer the region to worry about — **axial is**, and
+it is now the only region under half.
 
 It moved 66% to 63% and back to 65% inside one session, and the dip is worth keeping.
 Anderson (2008) opened the holocephalan column with three present rows carrying no
@@ -82,21 +82,35 @@ scored; Ercoli et al. (2014) the same, 25 rows; Ziermann et al. (2014) and Johns
 ranked first and second ahead of every unmined paper in `papers/`. A citation is
 not a mining. `MINING.md` now carries the ranked list.
 
-**Hand is the floor now, at 47%, and the forearm and hand still carry the two
-largest occurrence counts in the dataset**, so they remain the biggest absolute
-gap. Nothing in `papers/` fixes them across taxa at once; it goes one column at a
-time. Meers (2003) is the largest single remaining bite — crocodylian forelimb, and
-the one naming scheme from Abdala & Diogo's Tables 1-3 not yet held in full. Dearden
-et al. (2020) and Anderson (2008) are now both mined, though Dearden only in part:
-*Scyliorhinus canicula* is described in full and still has no rows at all. **The
-mammalian head remains the one column with no source at all.**
+**Hand has left last place for the first time, and axial has taken it.** Hand
+went 47% → 54% and forearm 58% → 69% on the second half of Gambaryan
+et al. (2015) — the same paper, the same three monotreme genera, 57 further rows.
+Together the two Gambaryan passes are 108 rows, far the largest single-source
+addition the dataset has taken, and they moved the whole corpus from 65% to 70%.
+The forearm and hand still carry the two largest occurrence counts, so they remain
+the biggest absolute gap even at 69% and 54%; nothing in `papers/` fixes them
+across taxa at once and it goes one column at a time. Meers (2003) is the largest
+single remaining bite — crocodylian forelimb, and the one naming scheme from Abdala
+& Diogo's Tables 1-3 not yet held in full. Dearden et al. (2020) and Anderson
+(2008) are now both mined, though Dearden only in part: *Scyliorhinus canicula* is
+described in full and still has no rows at all. **The mammalian head remains the
+one column with no source at all.**
 
-The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
-muscles that would serve it — adductor pollicis, a contrahens, flexores breves
-profundi slips — attach to the prepollex instead. That is the position-versus-
-identity argument with a bone attached to it rather than just a digit number.
+The **prepollex** is worth singling out, and it is no longer an anuran story.
+Anurans lost digit 1, and the preaxial muscles that would serve it — adductor
+pollicis, a contrahens, flexores breves profundi slips — attach to the prepollex
+instead. That is the position-versus-identity argument with a bone attached to it
+rather than just a digit number. **Monotremes have a prepollex too, did not lose
+digit I, and hang more on it**: Gambaryan et al. put the entire insertion of the
+flexor carpi radialis on it in all three genera, plus the origins of the interossei
+of digits I to III, and in *Zaglossus* ligaments relay its pull on to the distal
+carpals and metacarpals I-III. So the element is not a compensation for a missing
+digit — it is a preaxial lever that some tetrapods keep and load whether or not
+digit I is there. The pisiform does the same job on the postaxial side of the same
+wrist, taking the flexor carpi ulnaris and relaying to metacarpals II-IV.
 
-**Axial is no longer the empty region, and it is now 17 rows shorter.** The body
+**Axial is the floor at 48%, but it is not the empty region it was, and it is 17
+rows shorter than it was.** The body
 wall carries the rectus abdominis, the three oblique layers and the ypsiloideus
 scored for Caudata, and the tracts are scored for *Varanus exanthematicus* from
 Cieri (2018). What left were the Schilling (2011) rows for taxa he does not
@@ -120,6 +134,7 @@ back in for Aves.
 | Pseudosuchia (stem) | 1 | 1 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
+| Monotremata | 103 | 103 | 100% |
 | Theria | 73 | 64 | 88% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 56 | 48 | 86% |
@@ -131,7 +146,6 @@ back in for Aves.
 | Synapsida (stem) | 4 | 2 | 50% |
 | Aves | 79 | 39 | 49% |
 | Chondrichthyes | 23 | 11 | 48% |
-| Monotremata | 7 | 3 | 43% |
 | Myxini | 3 | 1 | 33% |
 | Petromyzontida | 3 | 1 | 33% |
 | Testudines | 46 | 12 | 26% |
@@ -192,6 +206,67 @@ cartilage at all. **A branchial constrictor that inserts on the heart is not a
 scoring gap.** The lamprey hypobranchial series is the same case and is left
 unscored with the reason in its note, because the alternative — copying the shark's
 coracoid-to-mandible rows onto it — is the failure §7 is about.
+
+**Monotremata went 43% to 100% and is the first extant column with no unscored
+row in it.** Seven occurrences became 103 across two passes, on Gambaryan et al.
+(2015) — a source already cited here for names, whose attachment data had never
+been taken, and which measures 8.8 origin/insertion mentions per page over 56
+pages. It was not on the ranked backlog in `MINING.md` at all; see that file for
+why, and for the citation-derived ranking that replaces the hand-assembled one.
+It is now the third-largest column in the dataset behind Lepidosauria and Caudata,
+on one paper.
+
+What made the column jump by a factor of seven is that the paper describes **all
+three living genera** with a separate Origin and Insertion paragraph each, and the
+dataset held one echidna. *Zaglossus bruijnii* was a `taxa.json` exemplar with no
+`species.json` entry; *Ornithorhynchus anatinus* had an entry and zero rows. **Three
+of the seven pre-existing rows were also wrong, and all three cited this paper** —
+a `divided` pectoralis where the source says undivided, a sternocoracoideus on the
+coracoid where the source says procoracoid, and a serratus anterior on the cervical
+transverse processes where the source says cervical ribs. All three came from
+clade-keyed seed blocks; see [§7](#7-the-base-layer-species-and-source).
+
+Two things in it bear on arguments this file already makes. **The monotreme
+supracoracoideus is not the intermediate it is usually cited as.** Romer's (1922)
+derivation of supraspinatus and infraspinatus from it rests largely on the
+monotreme condition, and Gambaryan et al. find all three muscles present at once —
+the supracoracoideus on the procoracoid, the other two on the scapula — and read
+the latter pair as mammalian additions. That record is now `contested` rather than
+`well-supported`, with the two as `membership: disputed` parts. It is the mirror
+of the coracoid case below: the same bone loss that moved the therian
+supracoracoideus onto the lateral scapula also removed the only animal in which
+the three-muscle alternative is visible. And **the monotreme latissimus inserts on
+the medial epicondyle**, the far distal humerus, against the lesser tubercle in
+therians and reptiles — an attachment that moved the length of a bone, with a
+stated mechanism: the barrel rib cage puts the elbow in the plane of the widest
+ribs, so the muscle runs straight down the flank.
+
+**The second pass, on the forearm and hand, produced the harder find: a muscle
+this dataset records as lost, in a mammal.** `contrahentium-caput-longum` — the
+urodele ulnocarpalis — read "an amphibian muscle lost in amniotes, retaining only
+its distal derivatives", with no therian row on it. Gambaryan et al. identify it
+as the caput humerale profundum of the flexor digitorum profundus, and the
+argument is topological rather than positional: the head wedges between the caput
+olecrani and the caput ulnare exactly as the urodele ulnocarpalis wedges between
+the two heads of the palmaris communis profundus — which are `flexor-accessorius-
+lateralis` and `flexor-accessorius-medialis`, both records here — and it ends on
+the ligamentum flexorium commune transversum, which they read as the surviving
+postaxial segment of the transverse subcarpal ligament the urodele muscle inserts
+on. Against Straus (1942), who held it dissolved into the profundus beyond
+amphibians. Scored `yes` in the platypus and `uncertain` in both echidnas, where
+the belly is there and the diagnostic ligament is reported only by Kajava (1911)
+and only as variation. **Three rows on one record disagreeing about a muscle's
+identity rather than its presence** is what `uncertain` is for, and it is the
+first time this dataset has used it that way.
+
+Three further things from that pass are characters rather than rows. The
+**palmaris longus is absent in all three genera**, surviving in *Zaglossus* only
+as a bundle of the cutaneus trunci that runs to the flexor tendon — a skin muscle
+standing in the position of a limb muscle that does not yet exist. The
+**intermetacarpales are absent in both echidnas and present in the platypus**,
+explicitly against Kajava (1911) and Howell (1936), who had it the other way
+round. And the **lumbricales bifurcate in *Tachyglossus***, each splitting off a
+head to the preceding digit, which is reported elsewhere only in colugos.
 
 **Theria was the largest gap and is now level with Caudata at 69%.** Ercoli et al.
 (2012) took it from 15% to 38% across the hindlimb, lumbar region and tail; Ercoli
@@ -264,11 +339,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 245, of which 213 (87%) carry at least one attachment |
-| Observed attachment rows | 1102 |
-| Rows naming a **landmark** | 242 (22%) |
-| Rows naming a **side** | 635 (58%) |
-| Osteological correlates | 105 flagged, 90 carry a muscle |
+| Elements | 253, of which 223 (88%) carry at least one attachment |
+| Observed attachment rows | 1420 |
+| Rows naming a **landmark** | 397 (28%) |
+| Rows naming a **side** | 913 (64%) |
+| Osteological correlates | 111 flagged, 96 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -321,9 +396,9 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 |---|---:|---:|---:|
 | cranial | 22 | 68 | 3.1 |
 | hindlimb | 42 | 38 | 0.9 |
-| axial | 33 | 26 | 0.8 |
-| pectoral | 32 | 25 | 0.8 |
-| forelimb | 51 | 37 | 0.7 |
+| pectoral | 32 | 28 | 0.9 |
+| axial | 33 | 28 | 0.8 |
+| forelimb | 52 | 42 | 0.8 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 26 | 14 | 0.5 |
 <!-- /counts:parity -->
@@ -351,7 +426,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 418 of 644 present occurrences (65%).**
+**Taxon-specific attachments: 518 of 740 present occurrences (70%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -371,13 +446,13 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 213 |
-| forearm | 18 | 184 |
+| pectoral | 16 | 354 |
+| forearm | 19 | 290 |
 | cranial | 16 | 169 |
+| arm | 5 | 116 |
 | thigh | 10 | 104 |
+| hand | 9 | 102 |
 | leg | 10 | 77 |
-| hand | 9 | 75 |
-| arm | 5 | 72 |
 | foot | 11 | 63 |
 | fin | 9 | 57 |
 | pelvic | 8 | 52 |
@@ -640,6 +715,28 @@ and §2 *rose* because unscored rows left. And the clade-keyed seed tables
 code — they key attachments and subdivisions on a taxon and land them on whichever
 row happens to belong to it. They work, but they are the next thing that should be
 species-keyed.
+
+**`seed_division.py` has since been caught doing it, and the prediction above is
+the reason it was looked at.** Adding two monotreme species forced the check, and
+it turned out **ten blocks were already landing on a clade holding more than one
+dissected animal** and silently taking the first — including three of Zaaf's
+gecko pairs, both of Johnston's frogs, and Ziermann's shark against the two
+chimaeras. It now carries the same `species` key and the same refuse-rather-than-
+guess guard as `seed_occurrence_attachments.py`, and all ten are pinned to the
+animal they were already landing on, so no data changed silently in either
+direction. **Checking what the ten had actually cost turned out to matter more
+than the guard.** The obvious inference — that the second species in each of those
+clades had been left with no `division` — is wrong: eight of the ten already carry
+their own, written by the later pass that added them, so the stale block had been
+landing on the first row and the second row had been scored properly anyway. Only
+**two** were genuinely unrecorded, both *Gavia immer*, and both were carrying the
+split in their `name` and nowhere countable — `"'Rhomboideus' (superficialis +
+profundus)"` and `"Scapulotriceps + humerotriceps"`, which is the exact string
+problem `seed_division.py` was written to end. McKitrick (1991) describes both
+divisions in the loon, so both are now scored, and the script's uniqueness check
+keys on (muscle, taxon, species) so a clade can legitimately hold one block per
+dissected animal. The lesson is the cheaper one: **a bug's blast radius is worth
+measuring before it is described.**
 
 Two pseudo-species remain in `species.json`: `teleostei-generalised` (6 rows) and
 `amphisbaenia-generalised` (3 rows). Both are clades wearing a species tag.
