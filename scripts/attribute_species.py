@@ -43,6 +43,13 @@ SOURCE_SPECIES = {
     "hutchinson-etal-2015": "struthio-camelus",
     "prikryl-etal-2009": "discoglossus-pictus",
     "johnston-2011": "ascaphus-truei",
+    # UNRESOLVED — see docs/GAPS.md §7. Dick & Clemente name no *V. exanthematicus*:
+    # their own dissections are nine other varanids, and the Table 1 the attachment
+    # rows come from is a compilation "of the varanid hindlimb" from Snyder (1954),
+    # Gans et al., Reilly (Sceloporus clarki) and Anzai et al. (Anolis) — two of the
+    # four not varanids at all. The species was borrowed from Cieri's monitor. Left
+    # in place only because removing it hands the rows to Diogo & Molnar's Timon,
+    # which is a different animal nobody observed these attachments in.
     "dick-clemente-2016": "varanus-exanthematicus",
     "cieri-2018": "varanus-exanthematicus",
     "diogo-ziermann-2015": "squalus-acanthias",
@@ -81,8 +88,11 @@ SOURCE_SPECIES = {
     # Not Felis catus, which appears twice as a comparison: the animals are a jaguar,
     # an ocelot and a Geoffroy's cat, and each row names its own in prose.
     "sanchez-etal-2019": "panthera-onca",
-    "gyambibi-lemelin-2013": "homo-sapiens",
-    "lemelin-diogo-2016": "homo-sapiens",
+    # Gyambibi & Lemelin dissected 17 prosimians across eleven genera — Propithecus,
+    # Varecia, Nycticebus, Otolemur, Microcebus and more — and Lemelin & Diogo is a
+    # review across the whole order. Neither examines a human; both were mapped to
+    # Homo sapiens, which would have attributed a lemur's forearm to a person the
+    # moment either was mined. Rows will name their own animal in prose instead.
 }
 
 # --- multi-taxon surveys: the exemplar each names for each clade ------------
@@ -95,36 +105,62 @@ SURVEY_EXEMPLARS = {
         # columns. Five hand and pectoral rows had been guessed onto a cheetah.
         "theria": "rattus-norvegicus",
     },
+    # NOT Abdala & Diogo's six-column set, which was copied here wholesale. This is
+    # the hindlimb companion and its Materials names FOUR key taxa: "the salamander
+    # Ambystoma mexicanum, the lizard Timon lepidus, the rodent Rattus norvegicus,
+    # and modern humans". Caiman and Rhinella appear zero times in the paper,
+    # Ornithorhynchus once and Gallus twice, all as literature. Its anuran, chelonian,
+    # crocodylian, avian and monotreme statements are review, so they get no exemplar.
     "diogo-molnar-2014": {
-        "caudata": "ambystoma-ordinarium", "anura": "rhinella-arenarum",
-        "testudines": "trachemys-scripta", "lepidosauria": "timon-lepidus",
-        "crocodylia": "caiman-latirostris", "aves": "gallus-domesticus",
-        "theria": "rattus-norvegicus", "monotremata": "ornithorhynchus-anatinus",
+        "caudata": "ambystoma-mexicanum", "lepidosauria": "timon-lepidus",
+        "theria": "rattus-norvegicus",
     },
+    # Their five clade representatives are stated outright: "chondrichthyans (shark
+    # Squalus) ... actinopterygians (bichir Polypterus) ... coelacanths (Latimeria)
+    # ... dipnoans (Neoceratodus); and tetrapods (Ambystoma)". The salamander is
+    # A. mexicanum — carried over from their own earlier axolotl work, not the
+    # A. ordinarium of the forelimb paper. Squalus is genus-only in the text.
     "diogo-etal-2016": {
         "chondrichthyes": "squalus-acanthias", "actinopterygii": "polypterus-senegalus",
         "actinistia": "latimeria-chalumnae", "dipnoi": "neoceratodus-forsteri",
-        "caudata": "ambystoma-ordinarium",
+        "caudata": "ambystoma-mexicanum",
     },
     "diogo-etal-2016-si": {
         "chondrichthyes": "squalus-acanthias", "actinopterygii": "polypterus-senegalus",
         "actinistia": "latimeria-chalumnae", "dipnoi": "neoceratodus-forsteri",
-        "caudata": "ambystoma-ordinarium",
+        "caudata": "ambystoma-mexicanum",
     },
+    # Their hagfish is Myxine glutinosa (2 juveniles, dissected). Eptatretus appears
+    # only as other people's developmental work. The selachian is stated: "our
+    # descriptions of selachians are based on Squalus acanthias, and not on Mustelus".
     "ziermann-etal-2014": {
-        "myxini": "eptatretus-burgeri", "petromyzontida": "petromyzon-marinus",
+        "myxini": "myxine-glutinosa", "petromyzontida": "petromyzon-marinus",
         "chondrichthyes": "squalus-acanthias",
     },
+    # Dissected, and listed with specimen counts: "squamates Iguana iguana [2] and
+    # Varanus indicus [1], turtle Chelydra serpentina [1], crocodilians Paleosuchus
+    # palpebrosus [1] and Crocodylus porosus [2], and avians Gallus gallus [1] and
+    # Grus japonensis [1]". Timon, Trachemys and Caiman appear nowhere in the paper —
+    # three more of Abdala & Diogo's exemplars borrowed for a study that used none.
     "hattori-tsuihiji-2021": {
-        "lepidosauria": "timon-lepidus", "testudines": "trachemys-scripta",
-        "crocodylia": "caiman-latirostris", "aves": "gallus-domesticus",
+        "lepidosauria": "iguana-iguana", "testudines": "chelydra-serpentina",
+        "crocodylia": "crocodylus-porosus", "aves": "gallus-domesticus",
     },
     "allen-etal-2021": {"aves": "gallus-domesticus", "crocodylia": "alligator-mississippiensis"},
     "fahn-lai-etal-2020": {"monotremata": "tachyglossus-aculeatus", "theria": "monodelphis-domestica"},
     "werneburg-2011": {"testudines": "trachemys-scripta"},
-    "werneburg-maier-2019": {"testudines": "trachemys-scripta"},
-    "johnston-2014": {"lepidosauria": "timon-lepidus"},
-    "navarro-etal-2023": {"lepidosauria": "timon-lepidus"},
+    # NOT Trachemys, which the paper never mentions. Werneburg & Maier's series are
+    # the cryptodire Chrysemys picta and the pleurodire Emydura subglobosa; Chrysemys
+    # is the emydid, so it stands where the turtle column already sits.
+    "werneburg-maier-2019": {"testudines": "chrysemys-picta"},
+    # NOT Timon, which appears nowhere in Johnston 2014. The lizard he figures is
+    # Ctenosaura pectinata — "chosen" for the missing ventral temporal arch — and his
+    # plesiomorphic reference is Sphenodon. Borrowed from Abdala & Diogo, like the
+    # Rhinella that was taken off Sigurdsen et al.
+    "johnston-2014": {"lepidosauria": "ctenosaura-pectinata"},
+    # Navarro et al. work on South American lizards; Timon lepidus is European and was
+    # borrowed from Abdala & Diogo. No local PDF to name the animal from, so the rows
+    # must carry their own species in prose — as the two that cite it already do.
     # NOT Rhinella: Sigurdsen et al. examine no bufonid but Anaxyrus americanus, and
     # their dissected and figured frogs are Leiopelma and Ascaphus. The old mapping was
     # Abdala & Diogo's anuran exemplar borrowed for a paper that does not use it.
@@ -146,7 +182,12 @@ SURVEY_EXEMPLARS = {
     # Canis (Fig. 3) — and its crocodylian, avian and actinopterygian statements are
     # cladogram synthesis with no animal behind them. Rows attributed to it name
     # their species in prose instead, which is rule 1 and carries the evidence.
-    "leavey-etal-2024": {"anura": "rhinella-arenarum"},
+    #
+    # Leavey et al. (2024) is out for the same reason and by the same test: Rhinella
+    # appears zero times in it. Their sample is thirty-odd frogs compared across
+    # locomotor modes — Breviceps poweri, Phlyctimantis maculatus, Neobatrachus
+    # pictus and the rest — and no one of them is the exemplar. A third borrowing of
+    # Abdala & Diogo's anuran column.
 }
 
 

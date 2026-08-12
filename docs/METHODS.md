@@ -154,6 +154,26 @@ not reliable predictors of muscle size across 30 frog species, and report
 many-to-one form-function mapping. Treat a correlate as evidence that a muscle
 attached there, not as a measurement of it.
 
+**And whether the attachment records itself at all varies by species.** Pereyra
+et al. (2019) sectioned the pectoral girdle and humerus of three turtles —
+*Phrynops hilarii*, *Hydromedusa tectifera* and *Chelonoidis chilensis* — and
+classified the Sharpey's fibres at every attachment site by orientation and
+density. The result the dataset has to carry is not the classification but the
+blanks in it. Nine attachments in their Table 2 leave fibres in one or two of the
+three species and **none at all** in the others, and it runs both ways: the
+testocoracoideus insertion on the scapular blade and the biceps origin on the
+coracoid are recorded in the two pleurodires and absent in the tortoise, while the
+deltoideus scapularis and subscapularis origins are recorded in the tortoise and
+absent in both pleurodires. The triceps origin is present on the humeral diaphysis
+of two species and absent in the third — the same muscle, the same bone.
+
+So a correlate's absence is not evidence that the muscle was absent, and this is
+now measured rather than assumed. It bears directly on the fossil columns: the
+thirteen forelimb muscles diffed against *Eusthenopteron*, *Tiktaalik*,
+*Acanthostega* or *Ossinodus* rest on scars, and Molnar et al.'s six `uncertain`
+rows are `uncertain` for exactly this reason. Read a missing scar as missing
+evidence, and score `no` only where a source says the muscle is absent.
+
 Actions are structured as well as written out: every muscle carries `actions`
 pointing at `data/joints.json`, where a joint records which bone surfaces
 articulate. Because joints are stored as ordered pairs they form a graph over

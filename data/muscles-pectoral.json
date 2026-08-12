@@ -55,7 +55,7 @@
       "occurrences": [
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Cucullaris",
           "present": "yes",
           "origin": "Epaxial fascia dorsal to the branchial arches.",
@@ -66,6 +66,23 @@
             "ziermann-etal-2014",
             "diogo-ziermann-2015"
           ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "scapulocoracoid",
+                "landmark": "scapular-process"
+              },
+              {
+                "element": "epibranchials",
+                "side": "posterior"
+              },
+              {
+                "element": "extrabranchial-cartilages",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias. The information was in this row's own `origin`/`insertion` prose and had never been structured; Ziermann et al. also resolve the insertion further than the prose did, naming the scapular process, the posterior epibranchial cartilages and the anterior extrabranchial cartilages as three separate ends. No origin row: the sheet arises from the fascia beside the epaxial musculature and touches no element there, which is why a muscle that spans the head-trunk boundary leaves nothing for a fossil to record at its front end. The same dissection failed to find the 'levatores arcuum branchialium' of Kesteven (1942) in either Squalus or Mustelus laevis, so the levator half of this record's Chondrichthyes name is on Kesteven's authority and not on theirs.",
           "nerves": [
             {
               "nerve": "vagus-branchial"

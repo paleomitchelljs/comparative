@@ -315,7 +315,11 @@ SEED = {
                          "shiftNote": "Longus arises from the proximal third of the tail and caudal vertebrae 4-14, inserting by broad tendon on the femoral trochanter plus a second tendon onto the lateral menisci of the knee; brevis arises from the transverse processes of the four most anterior postsacral vertebrae. Femur retraction and long-axis rotation, active in stance."},
         "crocodylia": {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014", "allen-etal-2014", "klinkhamer-etal-2017"],
                        "shiftNote": "Klinkhamer et al. distinguish caudofemoralis longus (caudal vertebrae) from brevis (ilium); both converge on the fourth trochanter."},
-        "testudines":   {"origin": ["caudal-vertebrae"], "insertion": ["femur"], "sources": ["diogo-molnar-2014"]},
+        # No testudines block. It read caudal-vertebrae -> femur on Diogo & Molnar
+        # alone, and their four key taxa include no turtle — the attachment was the
+        # record's consensus repeated onto a clade nobody dissected. This is the
+        # clade-keyed inversion GAPS §7 names: the block landed on whichever row
+        # belonged to the taxon, and the row it landed on was itself a guess.
         "synapsida-stem": {"origin": ["caudal-vertebrae"], "insertion": ["fourth-trochanter"], "sources": ["bishop-pierce-2024"],
                            "shiftNote": "Progressive reduction of the fourth trochanter along the synapsid stem tracks the loss of tail-driven femoral retraction."},
     },
@@ -346,7 +350,11 @@ SEED = {
         "testudines": {"origin": ["hyoid", "dentary"], "insertion": ["corpus-hyoidei", "hyoid"],
                        "sources": ["werneburg-2011"],
                        "shiftNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin."},
-        "chondrichthyes": {"origin": ["pectoral-girdle"], "insertion": ["mandible", "hyoid", "branchial-arches"], "sources": ["ziermann-etal-2014", "diogo-ziermann-2015"],
+        # Squalus, not the clade: Anderson (2008) added a Hydrolagus row, and the
+        # coracoid-bar origin is the dogfish's. Naming the species is what the
+        # matcher asks for when a clade holds more than one row.
+        "chondrichthyes": {"species": "squalus-acanthias",
+                           "origin": ["pectoral-girdle"], "insertion": ["mandible", "hyoid", "branchial-arches"], "sources": ["ziermann-etal-2014", "diogo-ziermann-2015"],
                            "shiftNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck."},
         # No therian entry. It cited Ziermann & Diogo (2019), which examines
         # Scyliorhinus, Polypterus and Danio and no mammal, and it landed on a row

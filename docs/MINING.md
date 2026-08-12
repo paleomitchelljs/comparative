@@ -118,7 +118,117 @@ scored or deleted.
 | **Pereyra et al. (2019)** | 4.2 | **Correlates, not rows.** See its reading note |
 | **Anderson (2008)** | 3.8 | Cranial nomenclature across gnathostomes — a cross-check, not new rows |
 
+### Run the density check over the whole backlog, not one paper at a time
+
+The check in **How** was written to be run on a paper you are about to open. Run
+over all 31 unmined and under-mined sources at once it also *ranks* them, and the
+ranking was not what the worklist assumed: **the top two targets were both papers
+already in the dataset**, cited for years and never mined out.
+
+| | per pg | state |
+|---|---:|---|
+| Ziermann et al. (2014) | **4.7** | cited by 15 occurrences, 7 scored — **mined, below** |
+| Johnston (2011) | **4.4** | cited by 9 occurrences, **1** scored — **mined, below** |
+| Pereyra et al. (2019) | 4.2 | correlates, as recorded |
+| Anderson (2008) | 3.8 | cross-check |
+| Diogo et al. (2016, marsupials) | 2.7 | worth opening |
+| Zhu (2011) · Cuff (2022) · Dearden (2020) · Didier (1987) | 2.0–2.2 | worth opening |
+
+Everything below 2.0 is 20 sources and confirms what this file already says about
+them: models, morphometrics, atlases and reviews. **The backlog is smaller than
+the source count suggests** — of 32 in-scope uncited sources, four are above the
+mixed band, and two of the best targets in the corpus were not in the backlog at
+all. Check the papers you have already used before acquiring more.
+
 ### Done since this file was written
+
+**Anderson (2008)** — **opens the holocephalan column**, which is more than the
+"cross-check, not new rows" this file predicted. *Hydrolagus colliei* was in
+`species.json` with zero occurrences; Anderson's Table 2 is a 13-group × 5-taxon
+homology matrix (*Amia*, *Latimeria*, *Squalus*, *Chlamydoselachus*, *Hydrolagus*)
+and five rows came straight off it. **The two best are absences with a mechanism.**
+The levator arcus palatini is gone because the holocephalan palatoquadrate is fused
+to the cranium — autostyly leaves nothing to levate, and Anderson reads it as
+secondary loss of a basal gnathostome muscle. The interhyoideus is absent against
+its presence in the other four. A muscle lost because its joint was lost is the
+cranial counterpart of the therian supracoracoideus moving when the coracoid went.
+Also from it: a coracomandibularis in **all five** taxa, which is Anderson's
+argument that basal gnathostome jaw depression ran through that muscle directly and
+was **not** coupled to the hyoid — the osteichthyan coracohyoideus-through-ligament
+system being derived — and a *Hydrolagus* muscle called geniohyoideus by some and
+interhyoideus by others, renamed `mandibulohyoideus` because it matches neither.
+It gives the chimaera two independent ways to open its jaw.
+Adding the second chondrichthyan row **tripped the clade-keyed seed guard**, which
+reported `hypobranchial-muscles/chondrichthyes: 2 rows in that clade` and stopped the
+build instead of overwriting one. That guard was added after the loon; this is the
+first time it has caught something since, and it worked.
+Cranial 66% → 63% and Chondrichthyes 47% → 41%, because three of the five rows have
+no attachments — Anderson maps names, not sites. Still in it: *Amia calva* and
+*Chlamydoselachus anguineus*, neither yet in `species.json`, and the placoderm
+reconstruction section.
+
+**Pereyra et al. (2019)** — no rows, as its reading note already said, but it was
+**uncited in `data/` until now** and its actual contribution had never been captured.
+Their Table 2 classifies Sharpey's fibres at every pectoral and humeral attachment
+in three turtles, and the finding is the blanks in it: **nine attachments leave
+fibres in one or two of the three species and none at all in the others**, in both
+directions. The triceps origin marks the humeral diaphysis in two species and not
+the third — same muscle, same bone. So a missing correlate is not a missing muscle,
+and that is now measured instead of assumed. Written into
+`METHODS.md` and `GAPS.md` §3; `humerus` is flagged `correlate` on this evidence.
+It is the strongest argument available for keeping Molnar et al.'s six
+stem-tetrapodomorph rows at `uncertain`.
+
+**Johnston (2011)** — Anura 45% → 50%, cranial 63% → 66%. Measured **4.4** per
+page. Eight of its nine occurrences were unscored, and the reason was the same one
+Zaaf's geckos exposed: **the paper describes two frogs and the dataset held one.**
+`attribute_species.py` maps this source to *Ascaphus truei*, so every row landed
+there, and *Leiopelma hochstetteri* — four specimens against two, and the fuller
+of the two descriptions — had no rows at all. Seven added, six of them scored.
+The proof that this was losing data is in the old *Ascaphus* internus row, whose
+`origin` prose read "in Leiopelma the origin extends further rostrally than in
+Ascaphus": a species difference demoted to a sentence because there was nowhere
+to put it. It is now two rows.
+**`levator-anguli-oris` is the clean demonstration of the rollup.** Johnston
+identifies it in *Ascaphus* — the first record of the muscle in any frog — and does
+not find it in *Leiopelma*. The Ascaphus row had been carrying `present: "variable"`,
+which is the clade's answer written onto one animal. It is now `yes` against a
+sourced `no`, and Anura computes `variable` from the disagreement, which is what
+that value is supposed to mean.
+Two elements added: `crista-parotica`, the caudal limit of the adductor origin, and
+nothing else — the anuran skull was already well enough resolved, which is exactly
+the contrast with the agnathan pass below. `palatoquadrate-quadrate` took all four
+quadrate attachments without a new element, which is the one-group rule working.
+Still in it: the depressor mandibulae and its medial bundle in the cranio-quadrate
+passage, the levator bulbi and depressor membranae nictitantis, the petrohyoidei,
+and the *Callorhinchus* comparative material beyond the two rows it already carries.
+
+**Ziermann et al. (2014)** — Myxini 0% → 33%, Petromyzontida 0% → 33%,
+Chondrichthyes 37% → 47%, cranial 58% → 63%. Measured **4.7** per page. Reached
+because it topped the re-ranked backlog while sitting inside the dataset already:
+eight of its fifteen occurrences had no attachments, and the two taxa it alone can
+serve were the only zeroes left in `GAPS.md` §2. **Four elements added** —
+`extrabranchial-cartilages`, `taenia-longitudinalis`, `lingual-cartilage` and the
+`scapular-process` landmark — because the agnathan head is almost absent from
+`skeleton.json` and that, not effort, is what had blocked the column.
+Two mis-citations found on the way in, both of the kind §7 of `GAPS.md` is about:
+the **depressor hyomandibulae was on the wrong shark**, described by Ziermann et al.
+only in *Leucoraja erinacea* and in a discussion explicitly about batoids, while
+their *Squalus* hyoid section lists no depressor at all; and **both extraocular rows
+cited this paper, which contains no extraocular content whatever** — zero hits for
+*extraocular*, *eye muscle* or *oculomotor* in 32 pages. Those moved to Fritzsch
+(2023), which is what they were describing, and which supplies a new sourced
+absence: *Myxine* has **no extraocular muscles and no ocular motor neurons**, the
+only vertebrate group of which that is true.
+**What the pass is really a record of is muscle that does not reach bone.** The
+hagfish constrictor branchiarum ends on the mesentery, the surface of the heart and
+the fascia of the branchial pouches, and only its anterior fibres reach cartilage.
+The lamprey hypobranchial series ends on a median raphe and on other muscles, and
+is left unscored **with the reason written into the note** rather than filled from
+the shark's rows. The shark cucullaris has no origin row — fascia at the front,
+girdle at the back. Half the work here was deciding what not to score.
+Still in it: *Hydrolagus colliei* and *Mustelus laevis* in full, the mandibular and
+hyoid series for both cyclostomes, and the branchial basket of *Leucoraja*.
 
 **Sánchez et al. (2019)** — forearm 55% → 58%, Theria 86% → 88%. Nine rows and three
 species: *Panthera onca*, *Leopardus pardalis*, *Leopardus geoffroyi*. Measured 3.3 per
@@ -252,6 +362,11 @@ Two columns are empty for want of a paper, not for want of a pass:
   as review-level clade claims. `GAPS.md` §7 has the accounting. **The `DEFAULT`
   chip should now never appear** — if one does, a new row was added without naming
   its species in prose and without a mapping in `attribute_species.py`.
+- **Dick & Clemente (2016) is mapped to an animal it never names.** Six hindlimb
+  rows carry its Table 1, which is a compilation "of the varanid hindlimb" from
+  four earlier papers, two of them on non-varanids. The mapping is flagged in
+  `attribute_species.py` and argued in `GAPS.md` §7; the disposition is a
+  decision, not a lookup fix.
 - **18 flagged correlates with no muscle on them** (`GAPS.md` §3). Pereyra et al.
   (2019) and Hattori & Tsuihiji (2021) are the way in.
 - **Architecture is entered for three species.** Zaaf et al. (1999) Tables 4–6

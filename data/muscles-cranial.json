@@ -312,6 +312,36 @@
             }
           ],
           "note": "In this specimen the externus lies lateral to both the maxillary (CN V2) and mandibular (CN V3) divisions, and the pseudotemporalis profundus bifurcates around CN V3 near its insertion — the nerve's course through the complex is what the CT dataset adds to the older dissections."
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "name": "Adductor mandibulae (continuous block)",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ],
+          "division": "single",
+          "note": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. The group is a continuous block of muscle with no distinct separation into individual muscles, apart from a plane between the adductor mandibulae posterior and the rest, and a separate lateralis. That is the folded-sheet model's central claim made visible: the components are not separate muscles but named limbs of one sheet, identified by where each inserts into the inverted U around the posterior's insertion.",
+          "speciesBasis": "note"
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "present": "yes",
+          "name": "Adductor mandibulae anterior + posterior",
+          "sources": [
+            "anderson-2008"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Adductor mandibulae anterior (AMA)"
+            },
+            {
+              "name": "Adductor mandibulae posterior (AMP)"
+            }
+          ],
+          "note": "Hydrolagus colliei. Anderson's muscle group #1, the one group present and unambiguously homologous in all five gnathostomes he compares.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -539,6 +569,16 @@
               "nerve": "trigeminal-mandibular"
             }
           ]
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "present": "yes",
+          "name": "Intermandibularis",
+          "sources": [
+            "anderson-2008"
+          ],
+          "note": "Hydrolagus colliei. Present in every taxon Anderson (2008) examines, stretching between the sides of the mandible on CN V. In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -1031,6 +1071,15 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "present": "no",
+          "sources": [
+            "anderson-2008"
+          ],
+          "note": "No homologous interhyoideus in Hydrolagus colliei, against its presence in the other four gnathostomes Anderson (2008) compares — Amia, Latimeria, Squalus and Chlamydoselachus — so he reads a secondary loss in chimaeroids. Recorded as `no` for this species only; the holocephalan sample here is one animal.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -1205,14 +1254,22 @@
       },
       "occurrences": [
         {
-          "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "note",
           "name": "Depressor hyomandibulae",
           "present": "yes",
-          "note": "Acts on the hyomandibula in its original role as a jaw suspensory element.",
+          "note": "Acts on the hyomandibula in its original role as a jaw suspensory element. The animal is Leucoraja erinacea, not the dogfish this row named for several passes: Ziermann et al. describe the muscle only in the little skate, and their discussion of its development from the hyoid condensation is explicitly about batoids. Their Squalus acanthias hyoid section lists an interhyoideus, a constrictor hyoideus dorsalis and an adductor arcus palatini, and no depressor. Whether a selachian has one is a question this source does not answer, so it is not scored as an absence either.",
           "sources": [
             "ziermann-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea. Insertion onto the hyomandibula and onto the horizontal tendon associated with it. No origin row — both heads arise from fascia, one at the contact with the contralateral muscle over the coracomandibularis and one on the fascia overlying the sternohyoideus, so the muscle that becomes the mammalian stapedius begins its recorded history attached to the element at one end and to nothing skeletal at the other."
         }
       ],
       "homology": {
@@ -1287,23 +1344,45 @@
       },
       "occurrences": [
         {
-          "species": "eptatretus-burgeri",
-          "speciesBasis": "survey",
-          "name": "Branchial constrictors",
+          "species": "myxine-glutinosa",
+          "speciesBasis": "note",
+          "name": "Constrictor branchiarum (+ constrictor pharyngis)",
           "present": "yes",
           "note": "Hagfish branchial musculature is difficult to homologise cell-for-cell with the gnathostome series; Oisi et al. (2013) provide the developmental basis.",
           "sources": [
             "ziermann-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "lingual-cartilage",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Myxine glutinosa, and the row is mostly a record of what is NOT bone. Ziermann et al. give the constrictor branchiarum an origin on the mesentery and insertions onto the connective tissue around the efferent branchial ducts, the surface of the heart, and the fascia of the branchial pouches — not one skeletal attachment among them. Only the anterior fibres, the constrictor pharyngis, reach cartilage: they arise from the lateral tissue of the chorda, which is tissue beside the notochord rather than the notochord itself and so is left unscored, and insert on the lateral borders of the posterior lingual cartilages. A branchial constrictor that ends on the heart and the tongue skeleton is the strongest single argument in this record against reading the hagfish series as the gnathostome one."
         },
         {
           "species": "petromyzon-marinus",
-          "speciesBasis": "survey",
-          "name": "Branchial constrictors",
+          "speciesBasis": "note",
+          "name": "Constrictores branchiales externi",
           "present": "yes",
           "sources": [
             "ziermann-etal-2014"
-          ]
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "taenia-longitudinalis",
+                "side": "ventral"
+              },
+              {
+                "element": "taenia-longitudinalis",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Petromyzon marinus. The muscle is a single external sheet wrapped around the outside of the branchial basket and divided into seven segments by the cartilages and the gill openings, so its attachments are to the longitudinal bars of the basket rather than to any one arch: the fibres run ventrally to the taenia longitudinalis ventralis, and the medial portion lies beneath the epitrematica and hypotrematica. Scored on `taenia-longitudinalis` by side, dorsal for the epitrematica. No origin row — the sheet arises from the basket's own segmental cartilages along its whole length, which is a field rather than a site. External to the gills is the point: the gnathostome constrictors lie inside them."
         },
         {
           "species": "squalus-acanthias",
@@ -1629,31 +1708,37 @@
       },
       "occurrences": [
         {
+          "species": "myxine-glutinosa",
+          "speciesBasis": "note",
+          "present": "no",
+          "note": "Myxine glutinosa has no extraocular muscles at all, and no ocular motor neurons to supply them — on Fritzsch's compilation the only vertebrate group of which that is true. The eyes themselves are reduced. This is an absence with a mechanism rather than a failure to find the muscle, which is what makes it scoreable as `no` rather than left unrecorded, and it is the floor of the record: lampreys already have six.",
+          "sources": [
+            "fritzsch-2023"
+          ]
+        },
+        {
           "species": "petromyzon-marinus",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Extraocular muscles",
           "present": "yes",
-          "note": "Lampreys have a full set of six extraocular muscles with the same three-nerve pattern, establishing that the system predates jaws. The innervation assignments differ in detail from the gnathostome arrangement.",
+          "note": "Petromyzon marinus has a full set of six extraocular muscles on three nerves, establishing that the system predates jaws. The assignments are not the gnathostome ones: three on CN III, one on CN IV, two on CN VI, with a caudal rectus that gnathostomes lose and no medial rectus, which is a tetrapod and coelacanth addition. Sourced to Fritzsch, not to Ziermann et al. — that paper contains no extraocular content and was cited here in error.",
           "sources": [
-            "ziermann-etal-2014",
             "fritzsch-2023"
           ]
         },
         {
           "species": "squalus-acanthias",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Extraocular muscles",
           "present": "yes",
-          "innervation": "CN III, IV, VI in the standard gnathostome pattern.",
+          "innervation": "CN III, IV and CN VI, but not the crown-osteichthyan pattern.",
+          "note": "Squalus acanthias, and the chondrichthyan set is neither the lamprey's nor the tetrapod's. Fritzsch gives elasmobranchs and lungfish a contralateral nasal rectus on a dorsal ramus of CN III that crown osteichthyans lack, and no medial rectus; the caudal rectus of lampreys is already gone. The earlier reading of this row as 'the standard gnathostome pattern' flattened two differences in both directions.",
           "sources": [
-            "ziermann-etal-2014"
+            "fritzsch-2023"
           ],
           "nerves": [
             {
               "nerve": "oculomotor"
-            },
-            {
-              "nerve": "trochlear"
             },
             {
               "nerve": "abducens"
@@ -1866,10 +1951,10 @@
       "occurrences": [
         {
           "species": "petromyzon-marinus",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Hypobranchial musculature",
           "present": "yes",
-          "note": "Present but with a different arrangement; the lamprey lingual apparatus is not homologous to the gnathostome tongue.",
+          "note": "Present in Petromyzon marinus but with a different arrangement; the lamprey lingual apparatus is not homologous to the gnathostome tongue. Left unscored deliberately rather than for want of a pass: Ziermann et al. describe the obliquus and decussatus as ending on a median raphe and on their contralateral partners, the rectus as continuous with the sphincter cloacae, and the hypobranchialis as a segmented muscle continuous with the parietalis behind and the subocularis in front. Not one skeletal attachment in the set. Where the shark's hypobranchial series runs from the coracoid bar to the mandible, hyoid and branchial arches, the lamprey's runs muscle-to-muscle, and copying the shark's rows here would assert an observation nobody made.",
           "sources": [
             "ziermann-etal-2014"
           ]
@@ -2101,6 +2186,28 @@
             }
           ],
           "note": "Somitic rather than branchiomeric, which is what CN XII records."
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "present": "yes",
+          "name": "Coracomandibularis + coracohyoideus + mandibulohyoideus",
+          "sources": [
+            "anderson-2008"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracomandibularis anterior + posterior (CMa, CMp)"
+            },
+            {
+              "name": "Coracohyoideus anterior + posterior (CHa, CHp)"
+            },
+            {
+              "name": "Mandibulohyoideus (MH)"
+            }
+          ],
+          "note": "Hydrolagus colliei, and the record's most interesting column. Anderson (2008) finds a coracomandibularis in all five gnathostomes and argues from it that basal jaw depression was NOT coupled to hyoid movement but worked directly through this muscle — the osteichthyan coracohyoideus-through-mandibulohyoid-ligament system being the derived arrangement. He also renames a Hydrolagus muscle called geniohyoideus by some authors and interhyoideus by others to `mandibulohyoideus`, because it matches neither and is apomorphic. Its consequence is that Hydrolagus has TWO ways to depress the jaw, the chondrichthyan coracomandibularis and a geniohyoideus-like mandibulohyoideus, which Anderson raises as possible independent acquisition of an osteichthyan-style depression in chimaeroids.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -2280,6 +2387,15 @@
               "nerve": "trigeminal"
             }
           ]
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "present": "no",
+          "sources": [
+            "anderson-2008"
+          ],
+          "note": "Absent in Hydrolagus colliei, and Anderson (2008) gives the reason rather than the fact: the holocephalan palatoquadrate is fused to the cranium (autostylic suspension), so there is no free element to levate. He reads it as a secondary loss — the muscle is basal for gnathostomes and went when the joint did. This is the cleanest case in the dataset of a muscle disappearing because its skeletal degree of freedom disappeared, and the counterpart of the coracoid loss that moves the therian supracoracoideus.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -2435,7 +2551,7 @@
           ]
         },
         {
-          "species": "timon-lepidus",
+          "species": "ctenosaura-pectinata",
           "speciesBasis": "survey",
           "name": "Adductor mandibulae internus / pseudotemporalis + pterygoideus",
           "present": "yes",
@@ -2533,6 +2649,39 @@
               "nerve": "trigeminal"
             }
           ]
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "name": "Adductor mandibulae internus (rostral + caudal parts)",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Rostral part"
+            },
+            {
+              "name": "Caudal part"
+            }
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "braincase-dorsal",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. The rostral origin on the dorsal braincase medial to the eye extends further forward than in Ascaphus truei or in most other frogs, which is the species difference this row exists to hold — it had been carried as prose on the Ascaphus row. The rostral part converges on a flat tendon inserting immediately medial to the quadrate–mandibular articulation; the caudal part has a more ventral fibre direction and a fleshy insertion on the medial mandible beside that tendon.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -2611,7 +2760,7 @@
           ]
         },
         {
-          "species": "timon-lepidus",
+          "species": "ctenosaura-pectinata",
           "speciesBasis": "survey",
           "name": "Adductor mandibulae externus profundus",
           "present": "yes",
@@ -2619,6 +2768,33 @@
           "sources": [
             "johnston-2014"
           ]
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "name": "Adductor mandibulae longus",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "parietal"
+              },
+              {
+                "element": "otic-capsule",
+                "landmark": "crista-parotica"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "landmark": "coronoid"
+              }
+            ]
+          },
+          "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. Origin from the parietal region of the braincase and over the convexity of the otic capsule as far back as the dorsal and caudal limits of the skull, including the crista parotica. The fibres pass ventrally and rostrally, medial to the processus zygomaticus of the squamosal, to insert around the apex of the U on the coronoid area of the mandible. Johnston reports the same origin dorsal to the otic capsule in Ascaphus truei.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -2692,7 +2868,7 @@
           ]
         },
         {
-          "species": "timon-lepidus",
+          "species": "ctenosaura-pectinata",
           "speciesBasis": "survey",
           "name": "Adductor mandibulae externus superficialis + medialis",
           "present": "yes",
@@ -2851,6 +3027,32 @@
             }
           ],
           "note": "Positionally diagnostic: in amniotes this muscle usually lies BETWEEN CN V2 and CN V3, and in Columba livia it lies lateral to both."
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "name": "Adductor mandibulae externus",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "squamosal"
+              },
+              {
+                "element": "palatoquadrate-quadrate"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. Contiguous laterally with the longus, and inserting as the lateral limb of the U. Origin on the squamosal and the quadrate.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -2926,6 +3128,30 @@
           "sources": [
             "johnston-2011"
           ]
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "name": "Adductor mandibulae lateralis",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palatoquadrate-quadrate",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. A small separate body at the most lateral and caudal extent of the group, arising from the quadrate just dorsal to its articulation with the mandible and passing ventral and rostral to lie lateral to V3. It is the one component Johnston finds genuinely separate from the block besides the posterior.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -3003,7 +3229,7 @@
           ]
         },
         {
-          "species": "timon-lepidus",
+          "species": "ctenosaura-pectinata",
           "speciesBasis": "survey",
           "name": "Adductor mandibulae posterior",
           "present": "yes",
@@ -3077,6 +3303,30 @@
               "nerve": "trigeminal"
             }
           ]
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "name": "Adductor mandibulae posterior",
+          "present": "yes",
+          "sources": [
+            "johnston-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palatoquadrate-quadrate",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. A cylindrical belly running from the anterior face of the quadrate to the dorsal mandible immediately rostral to the articulation. This is the axis the adductor sheet folds around, and Johnston's argument that it is of different homology from the rest of the group is what makes the remainder resolvable at all.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {
@@ -3146,14 +3396,30 @@
           "species": "ascaphus-truei",
           "speciesBasis": "note",
           "name": "Levator anguli oris",
-          "present": "variable",
-          "note": "Newly defined in Ascaphus truei by Johnston (2011); not found in Leiopelma hochstetteri.",
+          "present": "yes",
+          "note": "Newly defined in Ascaphus truei by Johnston (2011) — the first record of this muscle in a frog — and not found in Leiopelma hochstetteri, which now carries its own absent row. Presence was `variable` here for several passes, which was the clade's answer written onto one animal: Ascaphus either has the muscle or does not, and it has it.",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pterygoid"
+              },
+              {
+                "element": "maxilla"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "rictal-plate"
+              }
+            ]
+          },
+          "attachmentNote": "Ascaphus truei. Arises from the dorsal surface of the palatal membrane in the triangular area between pterygoid and maxilla — the membrane is the actual origin and has no element, so the two bones bounding it are scored instead — wraps around the rostral border of the longus, and passes medial to the maxilla and the maxillo-quadrate ligament to insert on the rictal plate at the corner of the mouth. Johnston names it for the lepidosaur muscle because that insertion is the lepidosaur one; the same rictal plate is what becomes the venom gland in colubroid snakes on his 2014 reading."
         },
         {
-          "species": "timon-lepidus",
+          "species": "ctenosaura-pectinata",
           "speciesBasis": "survey",
           "name": "Levator anguli oris",
           "present": "yes",
@@ -3173,6 +3439,15 @@
           "sources": [
             "johnston-2014"
           ]
+        },
+        {
+          "species": "leiopelma-hochstetteri",
+          "present": "no",
+          "sources": [
+            "johnston-2011"
+          ],
+          "note": "Absent in Leiopelma hochstetteri. Johnston (2011) identifies the muscle in Ascaphus truei — the first record of a levator anguli oris in any frog — and does not find it in Leiopelma, so the two basal anuran lineages differ and Anura computes as variable rather than being declared so.",
+          "speciesBasis": "note"
         }
       ],
       "homology": {

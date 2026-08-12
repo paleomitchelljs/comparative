@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-127 muscle records · 646 present occurrences · 239 skeletal elements · 104 sources · 19 operational taxa
+127 muscle records · 643 present occurrences · 244 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
+| leg | 10 | 34 | 28 | 82% |
+| thigh | 10 | 45 | 37 | 82% |
 | foot | 11 | 27 | 22 | 81% |
-| leg | 10 | 36 | 28 | 78% |
-| thigh | 10 | 48 | 37 | 77% |
-| pectoral | 16 | 128 | 88 | 69% |
+| pectoral | 16 | 128 | 89 | 70% |
+| pelvic | 8 | 32 | 22 | 69% |
 | arm | 5 | 51 | 34 | 67% |
+| cranial | 16 | 71 | 45 | 63% |
 | fin | 9 | 39 | 23 | 59% |
-| pelvic | 8 | 39 | 23 | 59% |
 | forearm | 18 | 125 | 73 | 58% |
-| cranial | 16 | 62 | 36 | 58% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| **all** | 127 | 646 | 407 | **63%** |
+| **all** | 127 | 643 | 416 | **65%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -62,7 +62,24 @@ the head barely scored in any taxon. Huber et al. (2011) took the shark's six
 muscles, and Jones et al. (2019) then took the whole avian jaw, throat and orbit
 from a contrast-CT digital dissection of one *Columba livia* — ten rows, 33 named
 parts. Ziermann & Diogo (2013) then took the axolotl, seven rows and the only larval
-*and* adult attachments in the corpus. Cranial is now 56%, up from under 20%.
+*and* adult attachments in the corpus. Ziermann et al. (2014) then took the head of
+the hagfish, the lamprey and the skate, and Johnston (2011) the jaw adductors of the
+two most basal frogs. Cranial is now 63%, up from under 20%, and it is no longer the
+region to worry about — **hand and axial are.**
+
+It reads 63% rather than the 66% it touched mid-pass because Anderson (2008) then
+opened the holocephalan column with three present rows that have no attachments, and
+Chondrichthyes fell 47% to 41% for the same reason. **A percentage falling because
+rows arrived is the opposite of the case recorded in §2**, where the therian cranial
+column improved because rows left. Both are reasons to read the scored count beside
+the percentage rather than either alone.
+
+Three of those five passes were on sources the dataset **already cited**. Ziermann
+& Diogo (2013) was found by an audit that showed five rows citing it and none
+scored; Ercoli et al. (2014) the same, 25 rows; Ziermann et al. (2014) and Johnston
+(2011) came out of a density check run over the whole backlog at once, where they
+ranked first and second ahead of every unmined paper in `papers/`. A citation is
+not a mining. `MINING.md` now carries the ranked list.
 
 **Hand is the floor now, at 47%, and the forearm and hand still carry the two
 largest occurrence counts in the dataset**, so they remain the biggest absolute
@@ -104,19 +121,19 @@ back in for Aves.
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Theria | 73 | 64 | 88% |
 | Actinistia | 7 | 6 | 86% |
-| Crocodylia | 60 | 48 | 80% |
+| Crocodylia | 56 | 48 | 86% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Lepidosauria | 105 | 67 | 64% |
 | Actinopterygii | 14 | 7 | 50% |
+| Anura | 72 | 36 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Aves | 79 | 39 | 49% |
-| Anura | 70 | 30 | 43% |
 | Monotremata | 7 | 3 | 43% |
-| Chondrichthyes | 19 | 7 | 37% |
-| Testudines | 50 | 13 | 26% |
-| Myxini | 3 | 0 | 0% |
-| Petromyzontida | 3 | 0 | 0% |
+| Chondrichthyes | 22 | 9 | 41% |
+| Myxini | 3 | 1 | 33% |
+| Petromyzontida | 3 | 1 | 33% |
+| Testudines | 46 | 12 | 26% |
 <!-- /counts:taxa -->
 
 **Caudata was the anomaly and is now the reference column.** It went from 11% to
@@ -142,9 +159,38 @@ dorsalis from one epibranchial onto the preceding one — and the single
 already held that element for turtles, salamanders and frogs. One element, per-taxon
 names, which is the rule that keeps the hyomandibula and the stapes together.
 
-**Chondrichthyes at 37% is now the sharpest gap at the fish end**, and the one a
-single source could most change: Dearden et al. (2020) covers both an elasmobranch
-and a holocephalan, and Didier (1987) is a holocephalan myology thesis.
+**The lamprey basket then tested that rule from the other side.** Its constrictores
+branchiales externi wrap the *outside* of the basket and end on the taeniae
+longitudinales — fore-and-aft bars running across the segmental cartilages, with no
+gnathostome counterpart, where every gnathostome branchial muscle this dataset holds
+runs within or between arches. `taenia-longitudinalis` is therefore a new element
+rather than a per-taxon name for something existing, and the test that distinguishes
+the two cases is whether a source can be found that calls them the same thing. None
+can. `extrabranchial-cartilages` is the harder call and went the other way: Ziermann
+et al. use the one name for the chondrichthyan rods and the lamprey arcus, so it is
+one element, with a note saying plainly that a shared id here is not a homology claim.
+
+**Chondrichthyes moved 37% to 47%** on the same pass, from the cucullaris — whose
+attachments had been sitting in that row's own `origin`/`insertion` prose,
+unstructured, exactly as Ercoli's therian rows had — and from the depressor
+hyomandibulae, once it was moved off the dogfish it was never described in. Dearden
+et al. (2020), covering an elasmobranch and a holocephalan, and Didier (1987) on
+holocephalan myology are still what would move it furthest.
+
+**Myxini and Petromyzontida are off zero, at 33% each, and the interesting part is
+what could not be scored.** Ziermann et al. (2014) is the only source in the corpus
+that dissects either animal, and it took four new elements to hold what it says:
+`lingual-cartilage`, `taenia-longitudinalis`, `extrabranchial-cartilages` and the
+`scapular-process` landmark. The agnathan head was missing from `skeleton.json`
+almost entirely, and that — not effort, and not the source — is what had kept both
+columns empty. Reading the two 33%s as thin coverage would miss the finding: the
+hagfish constrictor branchiarum arises from the mesentery and ends on the
+connective tissue around the efferent branchial ducts, the surface of the heart and
+the fascia of the branchial pouches, and only its most anterior fibres touch
+cartilage at all. **A branchial constrictor that inserts on the heart is not a
+scoring gap.** The lamprey hypobranchial series is the same case and is left
+unscored with the reason in its note, because the alternative — copying the shark's
+coracoid-to-mandible rows onto it — is the failure §7 is about.
 
 **Theria was the largest gap and is now level with Caudata at 69%.** Ercoli et al.
 (2012) took it from 15% to 38% across the hindlimb, lumbar region and tail; Ercoli
@@ -217,11 +263,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 239, of which 206 (86%) carry at least one attachment |
-| Observed attachment rows | 1078 |
-| Rows naming a **landmark** | 239 (22%) |
-| Rows naming a **side** | 621 (58%) |
-| Osteological correlates | 101 flagged, 85 carry a muscle |
+| Elements | 244, of which 212 (87%) carry at least one attachment |
+| Observed attachment rows | 1098 |
+| Rows naming a **landmark** | 242 (22%) |
+| Rows naming a **side** | 633 (58%) |
+| Osteological correlates | 104 flagged, 89 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -234,14 +280,31 @@ relative references ("distal *to* the deltopectoral crest" locates a muscle by a
 landmark it does not touch) and cross-taxon disjunctions.
 
 **What is still wrong.** Three muscles attach only to group-level elements with no
-landmark. Eighteen osteological correlates carry no muscle at all: scapular spine,
-coronoid process of ulna, lesser trochanter, trochanteric fossa, linea aspera,
-tibial tuberosity, pectoral articular process, maxilla, pygostyle, urostyle,
+landmark. Fifteen osteological correlates carry no muscle at all: coronoid process
+of ulna, linea aspera, tibial tuberosity, pectoral articular process, pygostyle,
 tibiotarsus, cranial and lateral cnemial crests, fossa metatarsi I, Meckelian
-fossa, epipterygoid, basipterygoid process, temporal bar. Those are landmarks a
-palaeontologist would look at first, and the dataset currently says nothing about
-what pulls on them. The count rose because recent passes added correlates faster
-than they added the muscles that use them.
+fossa, epipterygoid, basipterygoid process, temporal bar, ventral radial crest,
+posterior ulnar crest. Those are landmarks a palaeontologist would look at first,
+and the dataset currently says nothing about what pulls on them. The count rose
+because earlier passes added correlates faster than they added the muscles that use
+them, and has since fallen as those muscles arrived.
+
+**The flag itself now has histological evidence under it, and the evidence is a
+warning.** Pereyra et al. (2019) sectioned the pectoral girdle and humerus of
+*Phrynops hilarii*, *Hydromedusa tectifera* and *Chelonoidis chilensis* and
+classified the Sharpey's fibres at every attachment. The useful result is the
+blanks in their Table 2: **nine attachments leave fibres in one or two of the three
+turtles and none at all in the others**, and it runs in both directions — the
+testocoracoideus insertion and the biceps origin mark the two pleurodires and not
+the tortoise, the deltoideus scapularis and subscapularis origins mark the tortoise
+and neither pleurodire. The triceps origin marks the humeral diaphysis in two
+species and not the third. Same muscle, same bone, three animals.
+
+So the absence of a correlate is not evidence of the absence of a muscle, and that
+is now measured rather than assumed. It is the strongest available argument for
+keeping Molnar et al.'s six stem-tetrapodomorph rows at `uncertain`, and `humerus`
+is flagged `correlate` on this evidence. The full argument is in
+[`METHODS.md`](METHODS.md#what-correlates-can-and-cannot-do).
 
 **Side resolution runs well ahead of landmark resolution.** Walthall &
 Ashley-Ross state an aspect for nearly every attachment ("posterolateral face of the fibula", "internal
@@ -255,10 +318,10 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 22 | 62 | 2.8 |
+| cranial | 22 | 67 | 3.0 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 33 | 26 | 0.8 |
-| pectoral | 32 | 24 | 0.8 |
+| pectoral | 32 | 25 | 0.8 |
 | forelimb | 51 | 37 | 0.7 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 26 | 14 | 0.5 |
@@ -287,7 +350,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 407 of 646 present occurrences (63%).**
+**Taxon-specific attachments: 416 of 643 present occurrences (65%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -307,16 +370,16 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 210 |
+| pectoral | 16 | 213 |
 | forearm | 18 | 184 |
-| cranial | 16 | 146 |
+| cranial | 16 | 165 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
 | arm | 5 | 72 |
 | foot | 11 | 63 |
 | fin | 9 | 57 |
-| pelvic | 8 | 54 |
+| pelvic | 8 | 52 |
 | axial | 15 | 36 |
 <!-- /counts:holes -->
 
@@ -599,6 +662,88 @@ that examined **different animals**. The *Gallus* latissimus dorsi cites Abdala 
 Diogo, Ghetie et al., Matsuoka & Hasegawa and Schreiweis — a chicken, a domestic-bird
 atlas, a swan and a penguin — on one species tag, and its seeded note describes
 *Cygnus*. Splitting those is the next base-layer pass.
+
+### The mapping tables themselves, audited against the papers
+
+Three of these mappings were caught one at a time — Sigurdsen's *Rhinella*,
+McKitrick's `gavia-sp`, Sánchez's *Felis catus* — each while reading the paper it
+pointed at, and each after the mapping had already survived several passes. That
+is a bad detection rate for a table that decides the species on 465 occurrences,
+so all 95 mappings were checked at once.
+
+The screen is cheap: extract every PDF to text, then count how many times the
+mapped binomial appears in the paper it claims to describe. Zero is the flag. It
+ran in a few seconds over the 68 mappings with a local copy, and returned 19
+zero-hit flags — **15 real and 4 artefacts of how the papers spell things**.
+Johnston writes *Callorhinchus milli* for *milii*, so a correct mapping read as
+zero; Hattori & Tsuihiji write *Gallus gallus* where `species.json` carries
+*Gallus domesticus*; Diogo et al. name their shark as the genus *Squalus* and
+never the species. The false-positive rate is the reason to keep this as a first
+pass and not an oracle — every flag was then read against the paper's Materials
+section, which is where the real answers were.
+
+Two more came from the tier below, where the mapped species appears once or twice
+and the paper's actual animal appears seven times. One came from a source with no
+local PDF at all, caught by reading its title: Navarro et al. describe South
+American lizards and were mapped to a European one.
+
+**Nineteen of the 95 are wrong, across twelve sources, and they are almost all
+one mistake.** Eighteen are fixed here; the nineteenth is flagged in the code and
+argued at the end of this section. Abdala & Diogo (2010) genuinely dissected
+*Ambystoma ordinarium*, *Rhinella arenarum*, *Trachemys scripta*, *Timon
+lepidus*, *Caiman latirostris* and *Gallus* — six columns, verified, and the
+largest correct block in the table. Those six exemplars were then copied onto
+papers that used none of them:
+
+| Source | Claimed | Actually examined |
+|---|---|---|
+| Johnston (2014) | *Timon lepidus* | *Ctenosaura pectinata*, figured and "chosen"; *Sphenodon* as the plesiomorphic reference. *Timon* appears zero times |
+| Hattori & Tsuihiji (2021) | *Timon*, *Trachemys*, *Caiman* | Dissections listed with counts: *Iguana iguana* [2], *Varanus indicus* [1], *Chelydra serpentina* [1], *Paleosuchus palpebrosus* [1], *Crocodylus porosus* [2], *Gallus gallus* [1], *Grus japonensis* [1]. Only the bird was right |
+| Diogo & Molnar (2014) | six clade exemplars | Four key taxa, named in the Materials: *Ambystoma mexicanum*, *Timon lepidus*, *Rattus norvegicus*, *Homo sapiens*. *Caiman* and *Rhinella* appear zero times, *Ornithorhynchus* once, *Gallus* twice, all as literature |
+| Leavey et al. (2024) | *Rhinella arenarum* | Thirty-odd frogs compared across locomotor modes. No exemplar, and no *Rhinella* |
+| Navarro et al. (2023) | *Timon lepidus* | South American lizards. *Timon* is European |
+| Werneburg & Maier (2019) | *Trachemys scripta* | *Chrysemys picta* and *Emydura subglobosa*, one cryptodire and one pleurodire, which is the paper's whole comparison |
+| Ziermann et al. (2014) | *Eptatretus burgeri* | *Myxine glutinosa*, 2 juveniles, dissected. *Eptatretus* appears only as other people's developmental work |
+| Diogo et al. (2016) + SI | *Ambystoma ordinarium* | *A. mexicanum*, carried over from their own axolotl work. Their other four are stated outright and were all correct |
+| Gyambibi & Lemelin (2013) | *Homo sapiens* | 17 prosimians across eleven genera. Lemelin & Diogo (2016) is the same error in a review |
+
+**The pattern is worth naming because it will recur.** Every one of these is a
+mapping written from what the *dataset* wanted the paper to be — a lepidosaur
+column, a turtle column — rather than from the paper's Materials section. The
+tell is that the wrong species is nearly always one of Abdala & Diogo's six. A
+paper is not obliged to use the same animals as the paper next to it in the
+bibliography, and when it does not, borrowing the exemplar invents an observation.
+
+**Thirteen rows were lifted out**, all of them Diogo & Molnar rows in three of the
+five clades that paper never examined — anura, testudines and crocodylia; the
+avian and monotreme slots had never had a row on them, which is why the error sat
+undetected there. They were name-and-presence rows citing one review, and the
+substantive content was already at record level or moved there:
+the anuran caudofemoralis reduction into `homology.notes` on that record, the
+anuran gastrocnemius hypertrophy likewise. The anuran `gluteus-maximus` row said
+`present: "no"` about a frog nobody in the citation chain had looked at, and its
+false-friend argument was already carried in `homology.teaching`. Present
+occurrences fall 646 → 634, and §1 and §2 rise again for the same reason as
+before.
+
+One of the thirteen had a `seed_occurrence_attachments.py` block behind it —
+caudofemoralis on *Trachemys*, caudal vertebrae to femur, sourced to Diogo &
+Molnar alone. The seed reported `no occurrence row for taxon 'testudines'` and
+stopped the build, which is the clade-keyed inversion catching itself. Removing
+the row without removing the block would have left the build broken; removing
+both is right, because the attachment was the record's consensus written onto a
+clade nobody dissected.
+
+**One mapping is knowingly left wrong, and flagged in the code.** Dick & Clemente
+(2016) is mapped to *Varanus exanthematicus*, which the paper never names — their
+own dissections are nine other varanids, and the Table 1 the six attachment rows
+come from is a compilation "of the varanid hindlimb" drawn from Snyder (1954),
+Gans et al., Reilly (*Sceloporus clarki*) and Anzai et al. (*Anolis*). Two of the
+four are not varanids. The species was borrowed from Cieri's monitor. It stays
+only because removing it hands those rows to Diogo & Molnar's *Timon*, which is a
+different animal nobody observed them in, and the honest disposition — lifting six
+scored attachment rows to record level — should be a decision made deliberately
+rather than as a side effect of fixing a lookup table.
 
 ## What is still unmined outside `papers/`
 

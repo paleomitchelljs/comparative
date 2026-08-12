@@ -61,7 +61,8 @@
         "note": "Absent as a separate element wherever the undivided scapulocoracoid is the girdle — the fishes and the stem tetrapodomorphs — and absent altogether in the agnathans, which have no paired appendages. `derivedFrom` carries the homology, so a muscle scored on the scapulocoracoid is still reachable from here.",
         "sources": [
           "chen-etal-2025",
-          "diogo-etal-2016"
+          "diogo-etal-2016",
+          "pereyra-etal-2019"
         ]
       },
       "derivedFrom": "scapulocoracoid"
@@ -154,7 +155,8 @@
         "sources": [
           "gambaryan-etal-2015",
           "meers-2003",
-          "schreiweis-1982"
+          "schreiweis-1982",
+          "pereyra-etal-2019"
         ],
         "note": "**Contested, and the evidence is accumulating against the current scoring.** Three descriptive sources name an acromion or acromial process in taxa this record marks absent: Meers (2003) puts the crocodylian trapezius insertion 'dorsal to the acromion'; Schreiweis (1982) gives the penguin deltoideus major an origin on 'the acromial process of the scapula'; and Widrig et al. (2023) describe an 'acromial process of the furcula' in a tinamou, which is a DIFFERENT structure sharing the word and is not evidence either way. Three muscle rows have had this landmark stripped to pass validation. Either the presence data is wrong for Crocodylia and Aves, or these authors use 'acromion' loosely for the cranial scapular margin. It needs resolving rather than working around."
       }
@@ -236,7 +238,8 @@
           "chen-etal-2025",
           "diogo-etal-2016",
           "fahn-lai-etal-2020",
-          "gambaryan-etal-2015"
+          "gambaryan-etal-2015",
+          "pereyra-etal-2019"
         ]
       },
       "derivedFrom": "scapulocoracoid"
@@ -395,8 +398,13 @@
           "actinopterygii",
           "petromyzontida",
           "myxini"
-        ]
-      }
+        ],
+        "sources": [
+          "pereyra-etal-2019"
+        ],
+        "note": "Flagged as a correlate on histological rather than inspectional evidence: Pereyra et al. (2019) section the humerus of three turtles and find Sharpey's fibres at the insertions of the latissimus dorsi with teres major, the deltoideus, the subscapularis and the pectoralis, and at the origins of the triceps and brachialis, across the proximal metaphysis, diaphysis and distal metaphysis. Read their Table 2 for what the flag does NOT license — the triceps origin marks the diaphysis in two of the three species and not the third, so a smooth humerus is not an absent muscle. See METHODS.md."
+      },
+      "correlate": true
     },
     {
       "id": "deltopectoral-crest",
@@ -1149,6 +1157,26 @@
       }
     },
     {
+      "id": "crista-parotica",
+      "label": "Crista parotica",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "otic-capsule",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura",
+          "caudata"
+        ],
+        "sources": [
+          "johnston-2011"
+        ],
+        "note": "The lateral ridge of the otic capsule, and the caudal limit of the jaw-adductor origin in frogs. Johnston (2011) runs the adductor mandibulae longus back onto it, which is what makes the origin field of that muscle a resolvable site rather than 'the back of the skull'."
+      }
+    },
+    {
       "id": "pyramidal-eminence",
       "label": "Pyramidal eminence",
       "kind": "bone",
@@ -1707,6 +1735,29 @@
           "diogo-etal-2016"
         ]
       }
+    },
+    {
+      "id": "scapular-process",
+      "label": "Scapular process",
+      "kind": "cartilage",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "scapulocoracoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "note": "The dorsal process of the chondrichthyan scapulocoracoid, rising free above the fin articulation. It is where the cucullaris lands, so it carries the only attachment in this dataset that crosses the head-trunk boundary onto the girdle — the anatomical fact the whole protractor pectoralis record exists to hold.",
+        "sources": [
+          "ziermann-etal-2014"
+        ]
+      },
+      "synonyms": [
+        "dorsal scapular process",
+        "suprascapular cartilage"
+      ]
     },
     {
       "id": "anocleithrum",
@@ -3918,16 +3969,83 @@
       "presence": {
         "default": "no",
         "present": [
-          "actinopterygii"
+          "actinopterygii",
+          "chondrichthyes"
         ],
         "sources": [
-          "springer-johnson-2015"
+          "springer-johnson-2015",
+          "ziermann-etal-2014"
         ],
-        "note": "Dorsal elements of the branchial arches, numbered 1-4 in teleosts. Added because the dorsal gill-arch muscles run between them — a levator externus onto its own epibranchial, a rectus dorsalis from one onto the PRECEDING one — and `branchial-arches` as a single group cannot express that."
+        "note": "Dorsal elements of the branchial arches, numbered 1-4 in teleosts. Added because the dorsal gill-arch muscles run between them — a levator externus onto its own epibranchial, a rectus dorsalis from one onto the PRECEDING one — and `branchial-arches` as a single group cannot express that. Extended to Chondrichthyes for the cucullaris, which Ziermann et al. report inserting on the posterior epibranchials as well as on the girdle."
       },
       "synonyms": [
         "Eb1-4",
         "epibranchial"
+      ]
+    },
+    {
+      "id": "extrabranchial-cartilages",
+      "label": "Extrabranchial cartilages",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes",
+          "petromyzontida"
+        ],
+        "sources": [
+          "ziermann-etal-2014"
+        ],
+        "note": "Cartilage rods lying lateral to the branchial arches proper, outside the gill pouches. In Squalus the anterior ones take the cucullaris and the intermediate constrictores branchiales; in Petromyzon the arcus extrabranchialis takes the adductores and compressores. Held as one element because Ziermann et al. use one name for both, but the lamprey branchial basket is external and continuous where the gnathostome arches are internal and segmental, and whether the two are the same structure is unsettled. Do not read a shared element id here as a homology claim."
+      },
+      "synonyms": [
+        "arcus extrabranchialis",
+        "extrabranchial cartilage"
+      ]
+    },
+    {
+      "id": "taenia-longitudinalis",
+      "label": "Taenia longitudinalis",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "petromyzontida"
+        ],
+        "sources": [
+          "ziermann-etal-2014"
+        ],
+        "note": "The longitudinal bars that tie the lamprey branchial basket together, running fore-and-aft across the segmental cartilages rather than within one arch. Scored by side: `dorsal` is the taenia longitudinalis epitrematica above the gill openings, `ventral` covers both the hypotrematica below them and the mid-ventral taenia longitudinalis ventralis. No gnathostome counterpart — a lattice of this kind is what the branchial basket is, and it is the clearest skeletal reason not to read the lamprey basket as a set of branchial arches."
+      },
+      "synonyms": [
+        "taenia longitudinalis ventralis",
+        "taenia longitudinalis epitrematica",
+        "taenia longitudinalis hypotrematica"
+      ]
+    },
+    {
+      "id": "lingual-cartilage",
+      "label": "Lingual cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "myxini"
+        ],
+        "sources": [
+          "ziermann-etal-2014"
+        ],
+        "note": "The cartilage bar carrying the hagfish dental plates, and the anchor the protractors and retractors of the feeding apparatus pull on. Ziermann et al. distinguish anterior, middle and posterior lingual cartilages and the pharyngolingual arch; only the anterior/posterior distinction is scoreable here, by side. Not the gnathostome tongue skeleton, and not scored for lampreys — the lamprey piston cartilage is a separate question this source does not settle."
+      },
+      "synonyms": [
+        "cartilago lingualis",
+        "lingual apparatus"
       ]
     },
     {

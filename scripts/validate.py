@@ -719,13 +719,22 @@ def main():
             if other and mid not in other[0].get("homology", {}).get("related", []):
                 warn(f"{rel}:{mid}: related '{ref}' does not link back")
 
-    unused = source_keys - {
+    cited = {
         k
         for m, _ in muscles.values()
         for k in list(m.get("sources", []))
         + [s for o in m.get("occurrences", []) for s in o.get("sources", [])]
     }
-    for key in sorted(unused):
+    # skeleton.json cites too, and a source used only there is mined, not pending.
+    # Pereyra et al. (2019) is the case that surfaced this: it yields no muscle rows
+    # at all, only evidence for what `correlate` asserts, so scanning muscles alone
+    # left it on the worklist permanently.
+    cited |= {
+        k
+        for e in skeleton_doc["elements"]
+        for k in (e.get("presence") or {}).get("sources", []) or []
+    }
+    for key in sorted(source_keys - cited):
         warn(f"sources.json: '{key}' is never cited")
 
     print(f"checked {len(muscles)} muscles across {len(MUSCLE_FILES)} files, "
