@@ -297,8 +297,19 @@ SEED = {
         "lepidosauria": {"origin": ["clavicle"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "crocodylia": {"origin": ["scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                        "shiftNote": "Crocodylians have no clavicle, so despite the name the origin sits on the scapula — which is why Fürbringer (1876) called this muscle the scapularis inferior."},
-        "theria": {"origin": ["acromion", "clavicle"], "insertion": ["deltopectoral-crest"], "sources": ["ercoli-etal-2014"],
-                   "shiftNote": "The muscle is renamed at every step for the bone that happens to carry its origin, though the muscle itself is continuous across Tetrapoda."},
+        # NO CLAVICLE. This block read ["acromion", "clavicle"] citing Ercoli et
+        # al. (2014) — a 35-page description of Galictis cuja in which the word
+        # "clavicle" does not appear once. Their deltoideus has two bellies, pars
+        # scapularis and pars acromialis, and no clavicular part at all. The
+        # clavicle came from the record's own NAME: `deltoideus-clavicularis`, so
+        # a clavicular origin was written for it and the clade's descriptive paper
+        # was cited for the sentence. The record's homology note even says the
+        # muscle "is renamed with the girdle element that carries the origin" —
+        # here the name generated the bone instead.
+        "theria": {"species": "galictis-cuja",
+                   "origin": ["acromion", "scapular-spine"], "insertion": ["deltopectoral-crest"],
+                   "sources": ["ercoli-etal-2014"],
+                   "shiftNote": "Galictis cuja. Two bellies, neither clavicular. Pars acromialis arises by fleshy and tendinous fibres from the ACROMION and usually the distalmost base of the metacromion, inserting along the deltoid crest — the deltopectoral crest under another name. Pars scapularis arises from the fascia over the infraspinatus and the proximal region of the SCAPULAR SPINE, plus fleshy and tendinous fibres from the metacromion, and inserts by a broad flat tendinous fascia on the middle of the same crest, just lateral to the acromial belly. The metacromion is not in skeleton.json, so it is carried in prose; adding it would be worthwhile, since it is a carnivoran process that both bellies use. The muscle is renamed at every step for the bone that happens to carry its origin, though the muscle itself is continuous across Tetrapoda — which is exactly how a clavicle got written into this row."},
     },
     "extensor-antebrachii-carpi-radialis": {
         "caudata": {"origin": ["lateral-epicondyle"], "insertion": ["radius", "carpals"], "sources": ["abdala-diogo-2010"],

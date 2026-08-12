@@ -224,7 +224,7 @@
           "origin": "Nuchal line, nuchal ligament, and spinous processes of the cervical and thoracic vertebrae.",
           "insertion": "Spine of the scapula, acromion, and clavicle.",
           "action": "Elevates, retracts and rotates the scapula.",
-          "innervation": "Accessory nerve (CN XI), with proprioceptive contribution from C3–C4.",
+          "innervation": "Accessory nerve (CN XI), with a proprioceptive contribution from the cervical ventral rami.",
           "note": "The mammalian trapezius and sternocleidomastoid are subdivisions of a single cucullaris field. Their retention of CN XI innervation, despite lying entirely within the neck and trunk, is the classic evidence that innervation tracks developmental origin rather than topographic position.",
           "sources": [
             "sefton-etal-2016",
@@ -242,8 +242,10 @@
           ],
           "nerves": [
             {
-              "nerve": "accessory",
-              "segments": "C3–C4"
+              "nerve": "accessory"
+            },
+            {
+              "nerve": "ventral-rami"
             }
           ],
           "actions": [
@@ -539,14 +541,13 @@
           "origin": "Ribs 1–8/9.",
           "insertion": "Medial scapular border, concentrated at the inferior angle.",
           "action": "Protracts and upwardly rotates the scapula; holds the medial border against the thorax.",
-          "innervation": "Long thoracic nerve (C5–C7).",
+          "innervation": "Long thoracic nerve.",
           "sources": [
             "ercoli-etal-2014"
           ],
           "nerves": [
             {
-              "nerve": "long-thoracic",
-              "segments": "C5–C7"
+              "nerve": "long-thoracic"
             }
           ],
           "actions": [
@@ -889,7 +890,7 @@
           "present": "yes",
           "origin": "Nuchal line/ligament and thoracic neural spines.",
           "insertion": "Vertebral border of the scapula.",
-          "innervation": "Dorsal scapular nerve (C4–C5).",
+          "innervation": "Dorsal scapular nerve.",
           "sources": [
             "ercoli-etal-2014"
           ],
@@ -907,8 +908,7 @@
           ],
           "nerves": [
             {
-              "nerve": "dorsal-scapular",
-              "segments": "C4–C5"
+              "nerve": "dorsal-scapular"
             }
           ],
           "attachments": {
@@ -1302,7 +1302,7 @@
           "present": "yes",
           "origin": "Transverse processes of C1–C4.",
           "insertion": "Vertebral border of the scapula near the superior angle.",
-          "innervation": "C3–C4 ventral rami and the dorsal scapular nerve.",
+          "innervation": "Cervical ventral rami and the dorsal scapular nerve.",
           "sources": [
             "ercoli-etal-2014"
           ],
@@ -1751,7 +1751,7 @@
           "origin": "First rib and its costal cartilage.",
           "insertion": "Inferior surface of the clavicle.",
           "action": "Depresses and stabilises the clavicle.",
-          "innervation": "Nerve to subclavius (C5–C6).",
+          "innervation": "Nerve to subclavius.",
           "note": "Rattus norvegicus, the mammal in Abdala & Diogo's Table 2. Howell (1937b) argued the placental subclavius corresponds to the sternocoracoideus of other tetrapods, the coracoid having been lost and its attachment transferred to the clavicle.",
           "sources": [
             "abdala-diogo-2010"
@@ -1772,8 +1772,7 @@
           "attachmentNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology.",
           "nerves": [
             {
-              "nerve": "nerve-to-subclavius",
-              "segments": "C5–C6"
+              "nerve": "nerve-to-subclavius"
             }
           ],
           "actions": [
@@ -2545,7 +2544,7 @@
           "origin": "Sternum, clavicle, costal cartilages.",
           "insertion": "Crest of the greater tubercle / deltopectoral crest.",
           "action": "Adducts and medially rotates the humerus.",
-          "innervation": "Medial and lateral pectoral nerves (C5–T1).",
+          "innervation": "Medial and lateral pectoral nerves.",
           "sources": [
             "campbell-2007",
             "ercoli-etal-2014",
@@ -2636,8 +2635,7 @@
           },
           "nerves": [
             {
-              "nerve": "pectoral-nerves",
-              "segments": "C5–T1"
+              "nerve": "pectoral-nerves"
             }
           ],
           "actions": [
@@ -3056,7 +3054,7 @@
           "origin": "Supraspinous and infraspinous fossae of the scapula, either side of the scapular spine.",
           "insertion": "Greater tubercle of the humerus.",
           "action": "Supraspinatus abducts and stabilises; infraspinatus laterally rotates.",
-          "innervation": "Suprascapular nerve (C5–C6).",
+          "innervation": "Suprascapular nerve.",
           "note": "The migration of this muscle from the coracoid to the lateral scapula, and its division by the newly evolved scapular spine, is one of the defining events of the synapsid pectoral transformation.",
           "sources": [
             "ercoli-etal-2014",
@@ -3142,8 +3140,7 @@
           ],
           "nerves": [
             {
-              "nerve": "suprascapular",
-              "segments": "C5–C6"
+              "nerve": "suprascapular"
             }
           ]
         },
@@ -3596,15 +3593,14 @@
           "present": "yes",
           "origin": "Spine of the scapula.",
           "insertion": "Deltoid tuberosity of the humerus.",
-          "innervation": "Axillary nerve (C5–C6).",
+          "innervation": "Axillary nerve.",
           "sources": [
             "ercoli-etal-2014",
             "campbell-2007"
           ],
           "nerves": [
             {
-              "nerve": "axillary",
-              "segments": "C5–C6"
+              "nerve": "axillary"
             }
           ],
           "synonyms": [
@@ -4117,17 +4113,16 @@
           "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word."
         },
         {
-          "species": "rattus-norvegicus",
-          "speciesBasis": "source",
-          "name": "Deltoideus, pars acromialis and pars clavicularis",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
+          "name": "Deltoideus, pars acromialis and pars scapularis",
           "present": "yes",
-          "origin": "Acromion and lateral third of the clavicle.",
-          "insertion": "Deltoid tuberosity.",
+          "origin": "Acromion and the distalmost base of the metacromion (pars acromialis); the fascia over the infraspinatus, the proximal scapular spine and the metacromion (pars scapularis).",
+          "insertion": "Along the deltoid crest of the humerus — the deltopectoral crest under another name.",
           "action": "Abducts and flexes the humerus.",
-          "innervation": "Axillary nerve (C5–C6).",
-          "note": "Romer (1924) derived the mammalian teres minor and deltoideus clavicularis from the procoracohumeralis, against Mivart's (1869) suggestion that the subclavius came from this field.",
+          "innervation": "Axillary nerve.",
+          "note": "Galictis cuja. Ercoli et al. describe two bellies, pars acromialis and pars scapularis — NO pars clavicularis, and the word 'clavicle' does not occur anywhere in their 35 pages. This row previously read 'Acromion and lateral third of the clavicle' onto 'Deltoid tuberosity' with an axillary nerve of C5-C6, which is human textbook anatomy, and it was attributed to Rattus norvegicus because Campbell's rat dissection guide was cited alongside — a guide that states no attachment for any muscle. The clavicle came from this record's own NAME. Romer (1924) derived the mammalian teres minor and deltoideus clavicularis from the procoracohumeralis, against Mivart's (1869) suggestion that the subclavius came from this field; that is a homology argument and belongs to the record, not to an animal.",
           "sources": [
-            "campbell-2007",
             "ercoli-etal-2014"
           ],
           "attachments": {
@@ -4138,7 +4133,9 @@
                 "landmark": "acromion"
               },
               {
-                "element": "clavicle"
+                "element": "scapula",
+                "side": "lateral",
+                "landmark": "scapular-spine"
               }
             ],
             "insertion": [
@@ -4149,7 +4146,7 @@
               }
             ]
           },
-          "attachmentNote": "The muscle is renamed at every step for the bone that happens to carry its origin, though the muscle itself is continuous across Tetrapoda.",
+          "attachmentNote": "Galictis cuja. Two bellies, neither clavicular. Pars acromialis arises by fleshy and tendinous fibres from the ACROMION and usually the distalmost base of the metacromion, inserting along the deltoid crest — the deltopectoral crest under another name. Pars scapularis arises from the fascia over the infraspinatus and the proximal region of the SCAPULAR SPINE, plus fleshy and tendinous fibres from the metacromion, and inserts by a broad flat tendinous fascia on the middle of the same crest, just lateral to the acromial belly. The metacromion is not in skeleton.json, so it is carried in prose; adding it would be worthwhile, since it is a carnivoran process that both bellies use. The muscle is renamed at every step for the bone that happens to carry its origin, though the muscle itself is continuous across Tetrapoda — which is exactly how a clavicle got written into this row.",
           "division": "heads",
           "parts": [
             {
@@ -4161,8 +4158,7 @@
           ],
           "nerves": [
             {
-              "nerve": "axillary",
-              "segments": "C5–C6"
+              "nerve": "axillary"
             }
           ],
           "actions": [
@@ -4464,15 +4460,14 @@
           "origin": "Lateral border of the scapula.",
           "insertion": "Greater tubercle of the humerus.",
           "action": "Laterally rotates the humerus.",
-          "innervation": "Axillary nerve (C5–C6).",
+          "innervation": "Axillary nerve.",
           "note": "Romer (1924) derived teres minor from the procoracohumeralis field rather than from scapulohumeralis anterior; the two hypotheses have not been decisively separated.",
           "sources": [
             "ercoli-etal-2014"
           ],
           "nerves": [
             {
-              "nerve": "axillary",
-              "segments": "C5–C6"
+              "nerve": "axillary"
             }
           ],
           "actions": [
@@ -5064,7 +5059,7 @@
           "origin": "Subscapular fossa (medial surface of the scapula).",
           "insertion": "Lesser tubercle of the humerus.",
           "action": "Medially rotates the humerus; anterior stabiliser of the shoulder (rotator cuff).",
-          "innervation": "Upper and lower subscapular nerves (C5–C6).",
+          "innervation": "Upper and lower subscapular nerves.",
           "note": "The coracoid contribution is lost with the coracoid itself; only the scapular head persists in therians.",
           "sources": [
             "ercoli-etal-2014"
@@ -5088,8 +5083,7 @@
           "attachmentNote": "The coracoid head is gone with the coracoid itself; only the scapular head persists, which is why the mammalian muscle is 'subscapularis' rather than 'subcoraco-scapularis'.",
           "nerves": [
             {
-              "nerve": "subscapular",
-              "segments": "C5–C6"
+              "nerve": "subscapular"
             }
           ],
           "actions": [
@@ -5434,14 +5428,13 @@
           "origin": "Inferior angle and lower lateral border of the scapula.",
           "insertion": "Crest of the lesser tubercle of the humerus, with the latissimus dorsi.",
           "action": "Adducts, extends and medially rotates the humerus.",
-          "innervation": "Lower subscapular nerve (C5–C6).",
+          "innervation": "Lower subscapular nerve.",
           "sources": [
             "ercoli-etal-2014"
           ],
           "nerves": [
             {
-              "nerve": "subscapular",
-              "segments": "C5–C6"
+              "nerve": "subscapular"
             }
           ],
           "actions": [
@@ -6016,7 +6009,7 @@
           "origin": "Thoracolumbar fascia, spinous processes T7–L5, iliac crest, lower ribs.",
           "insertion": "Floor of the intertubercular groove of the humerus.",
           "action": "Extends, adducts and medially rotates the humerus.",
-          "innervation": "Thoracodorsal nerve (C6–C8).",
+          "innervation": "Thoracodorsal nerve.",
           "sources": [
             "ercoli-etal-2014",
             "hudson-etal-2011a"
@@ -6074,8 +6067,7 @@
           },
           "nerves": [
             {
-              "nerve": "thoracodorsal",
-              "segments": "C6–C8"
+              "nerve": "thoracodorsal"
             }
           ],
           "actions": [
@@ -6590,7 +6582,7 @@
           "origin": "Infraglenoid tubercle of the scapula (long head); posterior humerus above and below the radial groove (lateral, medial heads).",
           "insertion": "Olecranon of the ulna.",
           "action": "Extends the forearm; the long head also extends and adducts the arm.",
-          "innervation": "Radial nerve (C6–C8).",
+          "innervation": "Radial nerve.",
           "sources": [
             "ercoli-etal-2014",
             "hudson-etal-2011a"
@@ -6706,8 +6698,7 @@
           ],
           "nerves": [
             {
-              "nerve": "radial",
-              "segments": "C6–C8"
+              "nerve": "radial"
             }
           ],
           "actions": [
@@ -7145,14 +7136,13 @@
           "origin": "Anterior surface of the distal half of the humerus.",
           "insertion": "Coronoid process and tuberosity of the ulna.",
           "action": "Flexes the elbow.",
-          "innervation": "Musculocutaneous nerve (C5–C6), with a variable radial contribution.",
+          "innervation": "Musculocutaneous nerve, with a variable radial contribution.",
           "sources": [
             "ercoli-etal-2014"
           ],
           "nerves": [
             {
-              "nerve": "musculocutaneous",
-              "segments": "C5–C6"
+              "nerve": "musculocutaneous"
             }
           ],
           "actions": [
@@ -7587,7 +7577,7 @@
           "origin": "Supraglenoid tubercle (long head) and coracoid process (short head) of the scapula.",
           "insertion": "Radial tuberosity and bicipital aponeurosis.",
           "action": "Supinates the forearm and flexes the elbow.",
-          "innervation": "Musculocutaneous nerve (C5–C6).",
+          "innervation": "Musculocutaneous nerve.",
           "sources": [
             "ercoli-etal-2014"
           ],
@@ -7623,8 +7613,7 @@
           ],
           "nerves": [
             {
-              "nerve": "musculocutaneous",
-              "segments": "C5–C6"
+              "nerve": "musculocutaneous"
             }
           ],
           "actions": [
@@ -8115,7 +8104,7 @@
           "origin": "Coracoid process of the scapula.",
           "insertion": "Medial surface of the mid-humeral shaft.",
           "action": "Flexes and adducts the arm.",
-          "innervation": "Musculocutaneous nerve (C5–C7).",
+          "innervation": "Musculocutaneous nerve.",
           "sources": [
             "ercoli-etal-2014"
           ],
@@ -8137,8 +8126,7 @@
           "attachmentNote": "Origin transfers to the coracoid process as the coracoid bone is lost.",
           "nerves": [
             {
-              "nerve": "musculocutaneous",
-              "segments": "C5–C7"
+              "nerve": "musculocutaneous"
             }
           ],
           "actions": [

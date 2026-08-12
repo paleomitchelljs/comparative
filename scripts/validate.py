@@ -6,6 +6,7 @@ Exit status is non-zero if any error is found, so this works as a pre-commit hoo
 """
 
 import json
+import re
 import pathlib
 import sys
 from collections import Counter
@@ -38,6 +39,22 @@ MASSES = {"dorsal", "ventral", "somitic", "somitic-axial", "branchiomeric",
 # distinction `present` draws, and for the same reason.
 DIVISION = {"single", "heads", "divided", "variable"}
 DIVISION_WITH_PARTS = {"heads", "divided", "variable"}
+
+# Terms that only make sense of a human, or that presuppose a human vertebral
+# count. A spinal ROOT level is the clearest tell: no source in this
+# bibliography states one, and the roots differ between mammals anyway, so a
+# parenthetical "(C5-C6)" on a mustelid is a textbook value, not an observation.
+# "T12" as a named vertebra assumes twelve thoracics — Galictis cuja has fifteen
+# or sixteen, so the row named a vertebra the animal does not have.
+HUMAN_ONLY = re.compile(
+    r"\((?:\s*[CTLS]\d\s*[–—-]\s*[CTLS]?\d\s*)\)"      # (C5-C6), (L2-L4)
+    r"|\bT1[0-2]\b"                                     # T10-T12
+    r"|lateral third of the clavicle"
+    r"|deltoid tuberosity"
+    r"|iliac fossa"
+    r"|anterior (?:superior|inferior) iliac spine"
+    r"|\bscaphoid\b|\btrapezium\b|\blinea aspera\b|\bbicipital groove\b",
+    re.I)
 MEMBERSHIP = {"established", "disputed", "variable"}
 
 errors: list[str] = []
@@ -182,6 +199,31 @@ def check_division(occ, label, present, muscles, source_keys):
         warn(f"{label}: present='variable' but attachments are scored — "
              "variable is a clade rollup, not a species observation; if the "
              "source dissected this animal use yes/no/uncertain")
+
+    # Human anatomy standing in for an animal nobody dissected.
+    #
+    # The therian rows were seeded with textbook prose — "lateral third of the
+    # clavicle", "deltoid tuberosity", "Axillary nerve (C5-C6)", "flexor
+    # retinaculum, scaphoid and trapezium" — and given whichever paper was
+    # associated with the clade as a citation. That pairing is bibliographic, not
+    # evidential, and three mechanical passes then treated it as evidence: the
+    # attachment seed transcribed the prose into element ids and inherited the
+    # citation, and attribute_species.py read the citation to assign a SPECIES.
+    # So a human sentence acquired a mustelid's name and a `speciesBasis` of
+    # "source". Ercoli et al. (2014) never writes "clavicle"; Ercoli et al.
+    # (2012) never writes "nerve". `homo-sapiens` has no occurrences and the
+    # bibliography holds no human source, so nothing here can legitimately carry
+    # a human-only landmark or a spinal root level.
+    if occ.get("species") != "homo-sapiens":
+        for field in ("origin", "insertion", "innervation", "action"):
+            v = occ.get(field)
+            if not isinstance(v, str):
+                continue
+            hit = HUMAN_ONLY.search(v)
+            if hit:
+                warn(f"{label}: {field} uses human-specific anatomy "
+                     f"('{hit.group(0)}') on a non-human row — check it against "
+                     "the cited source rather than a textbook")
 
     if div and not occ.get("sources"):
         warn(f"{label}: division='{div}' with no source cited")

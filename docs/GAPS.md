@@ -356,8 +356,8 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 |---|---|
 | Elements | 254, of which 227 (89%) carry at least one attachment |
 | Observed attachment rows | 1566 |
-| Rows naming a **landmark** | 433 (28%) |
-| Rows naming a **side** | 1057 (67%) |
+| Rows naming a **landmark** | 434 (28%) |
+| Rows naming a **side** | 1058 (68%) |
 | Osteological correlates | 112 flagged, 100 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -921,6 +921,76 @@ architecture paper, an atlas and a dissection guide cannot be the source of an
 attachment.** Running the density check over a *candidate source* — not just over a
 paper you are about to mine — settles most of these in one line, and it is what
 established eight of the eleven reattributions above.
+
+### The worse failure the clavicle led to: a textbook wearing a citation
+
+Chasing the one unresolved row — *why* does a `deltoideus-clavicularis` origin sit
+on a clavicle citing a paper that never says the word? — found a failure mode the
+eleven misattributions had been hiding. Those were the *right observation on the
+wrong animal*. This is **no observation at all.**
+
+`git log -S` puts the origin in the **initial commit**, before any seed or
+migration existed. The occurrence read:
+
+```
+"taxon": "theria",
+"origin": "Acromion and lateral third of the clavicle.",
+"insertion": "Deltoid tuberosity.",
+"innervation": "Axillary nerve (C5–C6).",
+"sources": ["ercoli-etal-2014"]
+```
+
+Every one of those is **human** — "lateral third of the clavicle" is Gray's
+description of the deltoid's clavicular head, "deltoid tuberosity" is the human
+name, and C5–C6 is the human axillary root. Ercoli et al. (2014) describe *Galictis
+cuja*: two bellies, **pars acromialis and pars scapularis**, from the acromion,
+metacromion and scapular spine onto the deltoid crest, and the word "clavicle"
+occurs **zero times in 35 pages**. **The clavicle came from the record's own
+NAME.** Its homology note says the muscle "is renamed with the girdle element that
+carries the origin" — here the name generated the bone instead of the bone the name.
+
+**How the disconnection happened, in three mechanical steps that each preserved it:**
+
+1. At initial commit, occurrences were keyed on **clade** and carried free-string
+   `origin`/`insertion`/`innervation` written from general anatomical knowledge,
+   with `sources` set to **the paper associated with that clade** — a bibliographic
+   pairing, not evidence for the sentence.
+2. `seed_occurrence_attachments.py` was hand-written by **transcribing that prose
+   into skeleton ids** (`"Acromion and lateral third of the clavicle"` →
+   `["acromion", "clavicle"]`) and **inheriting the row's citation**. Nobody
+   checked whether Ercoli says clavicle.
+3. `attribute_species.py` then read that citation to assign a **species**, so
+   `taxon: theria` became *Galictis cuja* or *Rattus norvegicus* — and stamped
+   `speciesBasis: "source"`, which reads as provenance.
+
+None of the three passes introduced the error and none could detect it. Structuring
+prose does not make it evidence; it makes it look like evidence.
+
+**Scale.** 46 rows carried human spinal root levels (41 *Galictis cuja*, 4 *Rattus
+norvegicus*, 1 *Acinonyx jubatus*) citing papers that state none — Ercoli et al.
+(2012) contains **zero** occurrences of "nerve" or "innervation"; Ercoli et al.
+(2014) has two in 35 pages. Others named human-only landmarks: a `linea aspera` and
+an `adductor tubercle` on a mustelid femur, an `iliac fossa` and an `anterior
+inferior iliac spine` on its pelvis, a `scaphoid` and a `trapezium` in its
+wrist — carpals that are not in `skeleton.json` at all — and
+`puboischiofemoralis-internus` reading "transverse processes of **T12**–L5" in an
+animal Ercoli et al. record as having **fifteen or sixteen** thoracic vertebrae. It
+named a vertebra the animal does not have.
+
+**And the tell that makes it unmistakable: `homo-sapiens` exists in
+`species.json` with ZERO occurrences, and the bibliography contains no human
+anatomy source at all.** The human data is all filed under other animals, and there
+is nothing it could honestly be cited to.
+
+Fixed: the root levels stripped (the nerve *names* are valid for any mammal and
+stay), the human landmark prose replaced with what the cited papers say, the
+`deltoideus-clavicularis` theria block rebuilt on acromion and scapular spine with
+no clavicle, and its row moved to *Galictis cuja* — the animal Ercoli dissected.
+`validate.py` now warns on human-only anatomy on a non-human row. **268 occurrences
+still carry a legacy free-string description alongside their structured rows**; the
+detector covers the signature that is machine-findable, but the remainder is a
+reading job, and the therian column is where it was worst because its prose was
+human while its citation was a mustelid.
 
 ## What is still unmined outside `papers/`
 
