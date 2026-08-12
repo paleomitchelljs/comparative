@@ -58,8 +58,6 @@
           "speciesBasis": "note",
           "name": "Cucullaris",
           "present": "yes",
-          "origin": "Epaxial fascia dorsal to the branchial arches.",
-          "insertion": "Epibranchial/pharyngobranchial elements and the dorsal scapular process of the pectoral girdle.",
           "action": "Elevates the branchial arches and stabilises the girdle.",
           "innervation": "Vagus (X), caudal branchial branches.",
           "sources": [
@@ -120,8 +118,6 @@
           "speciesBasis": "source",
           "name": "Protractor pectoralis (cucullaris)",
           "present": "yes",
-          "origin": "Dorsal fascia and the posterior surface of the skull.",
-          "insertion": "Anterior head onto the lateral surfaces of the procoracoid and scapula; posterior head onto the anterolateral border of the scapula.",
           "action": "Draws the girdle anterodorsally.",
           "innervation": "Accessory nerve equivalent; developmentally distinct from the levator scapulae, which is somitic.",
           "note": "Sefton et al. (2016) show the cucullaris and the somitic levator scapulae are separable by developmental origin even where they are topographically adjacent — the strongest available test of this homology.",
@@ -157,15 +153,15 @@
             {
               "nerve": "accessory"
             }
-          ]
+          ],
+          "origin": "Dorsal fascia and the posterior surface of the skull.",
+          "insertion": "Anterior head onto the lateral surfaces of the procoracoid and scapula; posterior head onto the anterolateral border of the scapula."
         },
         {
           "species": "timon-lepidus",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Protractor pectoralis",
           "present": "yes",
-          "origin": "Occipital region and cervical fascia.",
-          "insertion": "Anterior margin of the scapula and suprascapula.",
           "innervation": "Accessory nerve (XI).",
           "sources": [
             "abdala-diogo-2010"
@@ -174,7 +170,8 @@
             {
               "nerve": "accessory"
             }
-          ]
+          ],
+          "attachmentNote": "Timon lepidus. Origin: Occipital region and cervical fascia. Insertion: Anterior margin of the scapula and suprascapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "alligator-mississippiensis",
@@ -208,21 +205,19 @@
         },
         {
           "species": "gallus-domesticus",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Cucullaris capitis / cucullaris cervicis",
           "present": "yes",
-          "insertion": "Clavicle and scapula.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachmentNote": "Gallus domesticus. Insertion: Clavicle and scapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "galictis-cuja",
           "speciesBasis": "note",
           "name": "Trapezius (+ sternocleidomastoideus)",
           "present": "yes",
-          "origin": "Nuchal line, nuchal ligament, and spinous processes of the cervical and thoracic vertebrae.",
-          "insertion": "Spine of the scapula, acromion, and clavicle.",
           "action": "Elevates, retracts and rotates the scapula.",
           "innervation": "Accessory nerve (CN XI), with a proprioceptive contribution from the cervical ventral rami.",
           "note": "The mammalian trapezius and sternocleidomastoid are subdivisions of a single cucullaris field. Their retention of CN XI innervation, despite lying entirely within the neck and trunk, is the classic evidence that innervation tracks developmental origin rather than topographic position.",
@@ -372,15 +367,14 @@
       "occurrences": [
         {
           "species": "ambystoma-ordinarium",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Serratus anterior",
           "present": "yes",
           "note": "Part of the 'serrati' sensu Howell (1937a).",
-          "origin": "Anterior ribs and transverse processes.",
-          "insertion": "Medial surface of the suprascapular cartilage and scapula.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachmentNote": "Ambystoma ordinarium. Origin: Anterior ribs and transverse processes. Insertion: Medial surface of the suprascapular cartilage and scapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "rhinella-arenarum",
@@ -538,8 +532,6 @@
           "speciesBasis": "note",
           "name": "Serratus anterior (serratus ventralis)",
           "present": "yes",
-          "origin": "Ribs 1–8/9.",
-          "insertion": "Medial scapular border, concentrated at the inferior angle.",
           "action": "Protracts and upwardly rotates the scapula; holds the medial border against the thorax.",
           "innervation": "Long thoracic nerve.",
           "sources": [
@@ -604,6 +596,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Serratus ventralis cervicis + thoracis",
           "present": "yes",
           "origin": "Cervicis as six slips from the cervical ribs of vertebrae II to VII, one per vertebra, the atlas excepted; thoracis as four slips from the lower halves of the first four ribs, short of the costal cartilages.",
@@ -646,11 +639,11 @@
           "divisionNote": "The slips from the last three cervical vertebrae bifurcate into a subvertical main portion and a subhorizontal accessory portion. Gambaryan et al. argue the accessorius is additional to the therian condition rather than a subdivision of it — therians have the proprius alone — and that the homonomic monotreme series is the most primitive among living tetrapods, more complete than the bifurcating caudal slips Miner (1925) found in urodeles and Sphenodon.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Serratus ventralis cervicis + thoracis",
           "present": "yes",
           "origin": "Cervicis as six slips from the cervical ribs of vertebrae II to VII; thoracis as three slips from the lower halves of the first three ribs, short of the costal cartilages.",
@@ -692,8 +685,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -888,8 +880,6 @@
           "speciesBasis": "note",
           "name": "Rhomboideus (capitis, cervicis, thoracis)",
           "present": "yes",
-          "origin": "Nuchal line/ligament and thoracic neural spines.",
-          "insertion": "Vertebral border of the scapula.",
           "innervation": "Dorsal scapular nerve.",
           "sources": [
             "ercoli-etal-2014"
@@ -932,6 +922,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Rhomboideus",
           "present": "yes",
           "origin": "Transverse crest of the occiput and the dorsal midline of the whole neck; aponeurotic as far back as the neural spine of the epistropheus, then fleshy to the midline, meeting its opposite number above the nuchal ligament.",
@@ -977,11 +968,11 @@
           "divisionNote": "Incipiently divided in Tachyglossidae: the two portions run at sharply different fibre angles — the cranial anteroposteriorly, the caudal mediolaterally — and correspond to the therian rhomboideus capitis and thoracis without being separate muscles.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Rhomboideus",
           "present": "yes",
           "origin": "Transverse crest of the occiput and the dorsal midline of the neck, aponeurotic to the neural spine of the epistropheus and fleshy behind it.",
@@ -1026,11 +1017,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Rhomboideus",
           "present": "yes",
           "origin": "Transverse crest of the occiput and the dorsal midline of the neck, the occipital part set further back from the origin of the clavoacromiotrapezius than in the echidnas.",
@@ -1063,8 +1054,7 @@
           "divisionNote": "Single here against `heads` in Tachyglossidae, which puts the differentiation of the rhomboideus inside Monotremata rather than on its stem.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -1152,11 +1142,9 @@
       "occurrences": [
         {
           "species": "ambystoma-ordinarium",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Levator scapulae",
           "present": "yes",
-          "origin": "Cranium, often the cartilaginous operculum.",
-          "insertion": "Suprascapula.",
           "action": "Elevates the girdle; the opercular portion is part of the aquatic sound-reception pathway.",
           "innervation": "First spinal nerve and hypoglossal nerve.",
           "note": "Voluminous in urodeles and includes the columellaris and opercularis of Duellman & Trueb (1986) and Carroll (2007). Piekarski & Olsson (2007) showed its development and innervation differ from those of the protractor pectoralis, refuting the older claim that the urodele levator scapulae derives from the cucullaris.",
@@ -1174,7 +1162,8 @@
               "joint": "girdle-axial",
               "motion": "elevation"
             }
-          ]
+          ],
+          "attachmentNote": "Ambystoma ordinarium. Origin: Cranium, often the cartilaginous operculum. Insertion: Suprascapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "rhinella-arenarum",
@@ -1197,14 +1186,13 @@
         },
         {
           "species": "timon-lepidus",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Levator scapulae",
           "present": "yes",
-          "origin": "Mainly the transverse process of the atlas.",
-          "insertion": "Scapula.",
           "sources": [
             "abdala-diogo-2010"
-          ]
+          ],
+          "attachmentNote": "Timon lepidus. Origin: Mainly the transverse process of the atlas. Insertion: Scapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "crocodylus-porosus",
@@ -1300,8 +1288,6 @@
           "speciesBasis": "note",
           "name": "Levator scapulae (+ omotransversarius)",
           "present": "yes",
-          "origin": "Transverse processes of C1–C4.",
-          "insertion": "Vertebral border of the scapula near the superior angle.",
           "innervation": "Cervical ventral rami and the dorsal scapular nerve.",
           "sources": [
             "ercoli-etal-2014"
@@ -1342,6 +1328,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Levator scapulae (dorsalis, intermedius, ventralis)",
           "present": "yes",
           "origin": "Dorsalis by a wide aponeurosis from the ventral side of the occiput behind the detrahens mandibulae; intermedius from the capsule of the atlanto-occipital joint back onto the ventral border of the epistropheal rib; ventralis from the ventral border of the epistropheal rib.",
@@ -1399,11 +1386,11 @@
           "divisionNote": "Three portions, not the two this row previously carried. The intermedius is the interesting one: it has no therian counterpart, so the monotreme condition is not an unsplit version of the mammalian muscle but a more subdivided one.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Levator scapulae (dorsalis, intermedius, ventralis)",
           "present": "yes",
           "origin": "All three portions mainly from the ventral tubercle of the atlas wing — dorsalis by a short flat tendon, intermedius by a longer one plus a thin accessory tendon from the atlanto-occipital joint capsule, ventralis by an aponeurosis separated from the other two by the scalenus, its posterior fibres running fleshy along the caudoventral border of the atlas wing to the epistropheal rib.",
@@ -1459,8 +1446,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -1748,8 +1734,6 @@
           "speciesBasis": "note",
           "name": "Subclavius",
           "present": "yes",
-          "origin": "First rib and its costal cartilage.",
-          "insertion": "Inferior surface of the clavicle.",
           "action": "Depresses and stabilises the clavicle.",
           "innervation": "Nerve to subclavius.",
           "note": "Rattus norvegicus, the mammal in Abdala & Diogo's Table 2. Howell (1937b) argued the placental subclavius corresponds to the sternocoracoideus of other tetrapods, the coracoid having been lost and its attachment transferred to the clavicle.",
@@ -1788,6 +1772,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Sternocoracoideus",
           "present": "yes",
           "origin": "By a short aponeurosis from the dorsal side of the sternal manubrium along the rim of the sternocoracoid joint and from the internal side of the sternal end of the first costal cartilage, adjoining the costocoracoideus from below.",
@@ -1815,11 +1800,11 @@
           "sources": [
             "abdala-diogo-2010",
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Sternocoracoideus",
           "present": "yes",
           "origin": "Fleshy from the dorsal side of the sternal manubrium along the rim of the sternocoracoid joint, from that joint's articular capsule, and from the internal side of the ventral segment of the first costal cartilage.",
@@ -1846,8 +1831,7 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -2030,6 +2014,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Costocoracoideus",
           "present": "yes",
           "origin": "By a wide aponeurosis from the internal side of the first costal cartilage and the cranial border of the first rib itself.",
@@ -2061,11 +2046,11 @@
           "sources": [
             "abdala-diogo-2010",
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Costocoracoideus",
           "present": "yes",
           "origin": "Fleshy from the cranial border of the upper part of the first costal cartilage and the lower part of the first rib, rising slightly above the origin of the anterior slip of the serratus ventralis thoracis, with the scalenus wedged between them.",
@@ -2092,8 +2077,7 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -2266,8 +2250,6 @@
           "speciesBasis": "source",
           "name": "Pectoralis",
           "present": "yes",
-          "origin": "Midline aponeurosis, sternum, and the tendinous inscriptions of the rectus abdominis.",
-          "insertion": "Crista ventralis of the humerus.",
           "sources": [
             "abdala-diogo-2010",
             "walthall-ashley-ross-2006"
@@ -2288,7 +2270,9 @@
               }
             ]
           },
-          "attachmentNote": "The insertion resolves to the crista ventralis — the salamander name for the deltopectoral crest — rather than to the proximal humerus generally. A refinement in resolution, not a shift."
+          "attachmentNote": "The insertion resolves to the crista ventralis — the salamander name for the deltopectoral crest — rather than to the proximal humerus generally. A refinement in resolution, not a shift.",
+          "origin": "Midline aponeurosis, sternum, and the tendinous inscriptions of the rectus abdominis.",
+          "insertion": "Crista ventralis of the humerus."
         },
         {
           "species": "rhinella-arenarum",
@@ -2353,8 +2337,6 @@
           "speciesBasis": "source",
           "name": "Pectoralis",
           "present": "yes",
-          "origin": "Sternum, interclavicle and the sternal ribs.",
-          "insertion": "Deltopectoral crest of the humerus.",
           "innervation": "Pectoral branches arising from the ventral divisions of the brachial plexus; in South American lizards the plexus is typically formed from spinal nerves 5–9 with considerable interspecific variation in root composition (Navarro et al. 2023).",
           "note": "Present in all major extant reptilian clades (Fürbringer 1876; Walker 1973; Holmes 1977; Dilkes 2000).",
           "sources": [
@@ -2436,8 +2418,6 @@
           "speciesBasis": "note",
           "name": "Pectoralis",
           "present": "yes",
-          "origin": "Sternal keel (carina), furcula and sternocoracoclavicular membrane.",
-          "insertion": "Deltopectoral crest of the humerus.",
           "action": "Wing downstroke. The largest muscle in the body of most flying birds.",
           "note": "Includes the pectoralis pars thoracica sensu Maxwell & Larsson (2007). The penguin pectoralis thoracica arises from the lateral sternal edge posterior to the coracobrachialis caudalis and from the trabecula lateralis, with a ribbon-like pars subcutanea abdominalis. Schreiweis (1982) records that the SUPRACORACOIDEUS is very well developed relative to the pectoralis in penguins — the reverse of the flying-bird proportion, and consistent with a wing that generates thrust on both strokes underwater rather than only on the downstroke.",
           "sources": [
@@ -2541,8 +2521,6 @@
           "speciesBasis": "source",
           "name": "Pectoralis major / pectoralis profundus",
           "present": "yes",
-          "origin": "Sternum, clavicle, costal cartilages.",
-          "insertion": "Crest of the greater tubercle / deltopectoral crest.",
           "action": "Adducts and medially rotates the humerus.",
           "innervation": "Medial and lateral pectoral nerves.",
           "sources": [
@@ -2654,6 +2632,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Pectoralis",
           "present": "yes",
           "origin": "Anterior fifth of the stem of the interclavicle, sparing its most cranial part.",
@@ -2678,11 +2657,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Pectoralis",
           "present": "yes",
           "origin": "Anterior fifth of the stem of the interclavicle, sparing its most cranial part, and the ventral (sternal) parts of the costal cartilages of the first five ribs.",
@@ -2711,8 +2690,7 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -2876,9 +2854,9 @@
               }
             ]
           },
+          "attachmentNote": "Fan-shaped and parallel-fibred, its posterior part lying deep to the pectoralis and inserting beside it on the same crest. In salamanders the supracoracoideus is still a ventral adductor; the dorsal, wing-elevating role it takes in birds requires the triosseal canal, which does not exist here.",
           "origin": "Ventral superficial surface of the coracoid cartilage.",
-          "insertion": "Crista ventralis of the humerus, adjacent to the pectoralis insertion.",
-          "attachmentNote": "Fan-shaped and parallel-fibred, its posterior part lying deep to the pectoralis and inserting beside it on the same crest. In salamanders the supracoracoideus is still a ventral adductor; the dorsal, wing-elevating role it takes in birds requires the triosseal canal, which does not exist here."
+          "insertion": "Crista ventralis of the humerus, adjacent to the pectoralis insertion."
         },
         {
           "species": "rhinella-arenarum",
@@ -2974,8 +2952,6 @@
           "speciesBasis": "note",
           "name": "Supracoracoideus",
           "present": "yes",
-          "origin": "Sternal keel, deep to the pectoralis.",
-          "insertion": "Dorsal surface of the humerus, via a tendon that passes through the foramen triosseum.",
           "action": "Wing upstroke. The tendon is redirected over the shoulder by the triosseal canal so that a ventrally placed muscle produces a dorsal pull — the pulley arrangement that permits both flight strokes to be powered from below the body's centre of mass.",
           "note": "= pectoralis secundus sensu Jollie (1962). In penguins the supracoracoideus is very well developed relative to the pectoralis, which Schreiweis (1982) notes every anatomist working on the group has remarked on. In a flying bird the pectoralis dwarfs it; in a wing-propelled diver, where the upstroke is also a power stroke, the two approach parity. Same two muscles, same triosseal pulley, different force balance.",
           "sources": [
@@ -3051,8 +3027,6 @@
           "speciesBasis": "note",
           "name": "Supraspinatus and infraspinatus",
           "present": "yes",
-          "origin": "Supraspinous and infraspinous fossae of the scapula, either side of the scapular spine.",
-          "insertion": "Greater tubercle of the humerus.",
           "action": "Supraspinatus abducts and stabilises; infraspinatus laterally rotates.",
           "innervation": "Suprascapular nerve.",
           "note": "The migration of this muscle from the coracoid to the lateral scapula, and its division by the newly evolved scapular spine, is one of the defining events of the synapsid pectoral transformation.",
@@ -3172,6 +3146,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Supracoracoideus",
           "present": "yes",
           "origin": "Cranial part of the ventral surface of the procoracoid, passing through a gap between its cranial border and the interclavicle onto the dorsal side of both bones.",
@@ -3221,11 +3196,11 @@
           "divisionNote": "Three separate muscles, not two — and that is the argument. Romer (1922) derived the therian supraspinatus and infraspinatus from the supracoracoideus of lower tetrapods on the strength of shared innervation, which is the hypothesis this record's synonym list encodes. Gambaryan et al. object that in monotremes all three are present simultaneously, and read the monotreme supracoracoideus as homologous with the reptilian, avian and amphibian muscle outright, with supraspinatus and infraspinatus as mammalian additions to the group. Their membership is marked disputed on that basis rather than the record being restructured on one source.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Supracoracoideus",
           "present": "yes",
           "origin": "Almost the entire ventral surface of the procoracoid, passing through a gap between its cranial border and the interclavicle slightly onto its dorsal side.",
@@ -3271,8 +3246,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -3462,8 +3436,6 @@
             "abdala-diogo-2010",
             "walthall-ashley-ross-2006"
           ],
-          "origin": "Dorsolateral surface of the suprascapular cartilage.",
-          "insertion": "Crista ventralis of the humerus.",
           "attachments": {
             "origin": [
               {
@@ -3478,7 +3450,9 @@
               }
             ]
           },
-          "attachmentNote": "The fibres pass around the anterior side of the humerus to reach a ventral crest — a dorsal girdle muscle with a ventral insertion, which is what lets it elevate the humerus."
+          "attachmentNote": "The fibres pass around the anterior side of the humerus to reach a ventral crest — a dorsal girdle muscle with a ventral insertion, which is what lets it elevate the humerus.",
+          "origin": "Dorsolateral surface of the suprascapular cartilage.",
+          "insertion": "Crista ventralis of the humerus."
         },
         {
           "species": "rhinella-arenarum",
@@ -3591,8 +3565,6 @@
           "speciesBasis": "note",
           "name": "Deltoideus, pars scapularis (spinous part)",
           "present": "yes",
-          "origin": "Spine of the scapula.",
-          "insertion": "Deltoid tuberosity of the humerus.",
           "innervation": "Axillary nerve.",
           "sources": [
             "ercoli-etal-2014",
@@ -3688,6 +3660,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Spinodeltoideus",
           "present": "yes",
           "origin": "Edge of the craniodorsal angle of the scapula.",
@@ -3710,11 +3683,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Spinodeltoideus",
           "present": "yes",
           "origin": "Edge of the craniodorsal angle of the scapula.",
@@ -3737,11 +3710,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Spinodeltoideus",
           "present": "yes",
           "origin": "Edge of the craniodorsal angle of the scapula, the origin split by the insertion of the spinotrapezius so that the cranial fibres arise over that muscle and the caudal fibres emerge from beneath it.",
@@ -3765,8 +3738,7 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -4117,8 +4089,6 @@
           "speciesBasis": "note",
           "name": "Deltoideus, pars acromialis and pars scapularis",
           "present": "yes",
-          "origin": "Acromion and the distalmost base of the metacromion (pars acromialis); the fascia over the infraspinatus, the proximal scapular spine and the metacromion (pars scapularis).",
-          "insertion": "Along the deltoid crest of the humerus — the deltopectoral crest under another name.",
           "action": "Abducts and flexes the humerus.",
           "innervation": "Axillary nerve.",
           "note": "Galictis cuja. Ercoli et al. describe two bellies, pars acromialis and pars scapularis — NO pars clavicularis, and the word 'clavicle' does not occur anywhere in their 35 pages. This row previously read 'Acromion and lateral third of the clavicle' onto 'Deltoid tuberosity' with an axillary nerve of C5-C6, which is human textbook anatomy, and it was attributed to Rattus norvegicus because Campbell's rat dissection guide was cited alongside — a guide that states no attachment for any muscle. The clavicle came from this record's own NAME. Romer (1924) derived the mammalian teres minor and deltoideus clavicularis from the procoracohumeralis, against Mivart's (1869) suggestion that the subclavius came from this field; that is a homology argument and belongs to the record, not to an animal.",
@@ -4180,6 +4150,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Clavodeltoideus",
           "present": "yes",
           "origin": "Caudal border of the clavicle and the lateral ramus of the interclavicle, from the level of the procoracoid to the acromion.",
@@ -4217,11 +4188,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Clavodeltoideus",
           "present": "yes",
           "origin": "Entire ventral surface of the clavicle except its acromial end, and the entire ventral surface of the lateral ramus of the interclavicle, with a superficial aponeurosis over the medial quarter of its length.",
@@ -4258,11 +4229,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Clavodeltoideus + acromiodeltoideus",
           "present": "yes",
           "origin": "Ventral surface of the acromion, the ventral surface of the lateral ramus of the interclavicle, and the clavicle as far medially as the sternomastoideus insertion.",
@@ -4304,8 +4275,7 @@
           "divisionNote": "`heads` rather than `divided` against both echidnas, which is a real difference and not a reading of the same thing: in Tachyglossidae the two are distinct muscles with separate origins and insertions, and in the platypus they are one continuous sheet whose parts are named by where they sit relative to the spinodeltoideus.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -4457,8 +4427,6 @@
           "speciesBasis": "note",
           "name": "Teres minor",
           "present": "yes",
-          "origin": "Lateral border of the scapula.",
-          "insertion": "Greater tubercle of the humerus.",
           "action": "Laterally rotates the humerus.",
           "innervation": "Axillary nerve.",
           "note": "Romer (1924) derived teres minor from the procoracohumeralis field rather than from scapulohumeralis anterior; the two hypotheses have not been decisively separated.",
@@ -4495,6 +4463,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Teres minor",
           "present": "yes",
           "origin": "A notch in the cranial border of the scapula between the acromion and the shoulder joint, and partly from the joint capsule.",
@@ -4520,11 +4489,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Teres minor",
           "present": "yes",
           "origin": "A notch in the cranial border of the scapula between the acromion and the shoulder joint, and partly from the joint capsule.",
@@ -4550,11 +4519,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Teres minor",
           "present": "yes",
           "origin": "External side of the scapula just anterior to the triceps longus profundus — a fossa for the fleshy fibres with a ridge along its anterior border for the aponeurosis — and partly from the articular capsule of the shoulder joint.",
@@ -4580,8 +4549,7 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -5056,8 +5024,6 @@
           "speciesBasis": "source",
           "name": "Subscapularis",
           "present": "yes",
-          "origin": "Subscapular fossa (medial surface of the scapula).",
-          "insertion": "Lesser tubercle of the humerus.",
           "action": "Medially rotates the humerus; anterior stabiliser of the shoulder (rotator cuff).",
           "innervation": "Upper and lower subscapular nerves.",
           "note": "The coracoid contribution is lost with the coracoid itself; only the scapular head persists in therians.",
@@ -5128,6 +5094,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Subscapularis + subcoracoideus",
           "present": "yes",
           "origin": "Subscapularis from the EXTERNAL surface of the scapula caudal to the crest for the triceps longus, from the caudal border, and from a narrow strip of the internal surface along it; subcoracoideus from the dorsal (internal) surfaces of the procoracoid and coracoid, bifurcating along two longitudinal crests on the procoracoid.",
@@ -5176,11 +5143,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Subscapularis + subcoracoideus",
           "present": "yes",
           "origin": "Subscapularis from the external surface of the scapula caudal to the triceps longus crest, the caudal border, and a narrow strip of the internal surface; subcoracoideus from the dorsal surfaces of the procoracoid and coracoid, reaching the caudal angle of the coracoid where it fuses with the coracobrachialis brevis origin.",
@@ -5229,11 +5196,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Subscapularis + subcoracoideus",
           "present": "yes",
           "origin": "Subscapularis in two incompletely fused heads — a laterocaudal head, twice the bulk, from the caudal border and caudal external surface of the scapula, and a medial head covering the internal surface between the two portions of the serratus ventralis cervicis; subcoracoideus from the entire dorsal surface of the procoracoid but for a narrow medial strip, its origin completely fused with that of the coracobrachialis brevis at the procoracoid-coracoid boundary.",
@@ -5282,8 +5249,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -5425,8 +5391,6 @@
           "speciesBasis": "note",
           "name": "Teres major",
           "present": "yes",
-          "origin": "Inferior angle and lower lateral border of the scapula.",
-          "insertion": "Crest of the lesser tubercle of the humerus, with the latissimus dorsi.",
           "action": "Adducts, extends and medially rotates the humerus.",
           "innervation": "Lower subscapular nerve.",
           "sources": [
@@ -5469,6 +5433,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Teres major",
           "present": "yes",
           "origin": "External side of the apex of the caudal angle of the scapula, extending slightly onto its internal side below the serratus ventralis insertions.",
@@ -5497,11 +5462,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Teres major",
           "present": "yes",
           "origin": "External side of the apex of the caudal angle of the scapula and also its internal side, wedging between the insertions of the serratus ventralis cervicis in front and the serratus ventralis thoracis behind.",
@@ -5530,11 +5495,11 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Teres major",
           "present": "yes",
           "origin": "Along the external side of the caudal half of the dorsal border of the scapula, up to the apex of the caudal angle where the serratus ventralis thoracis inserts.",
@@ -5562,8 +5527,7 @@
           },
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -5718,8 +5682,6 @@
           "speciesBasis": "source",
           "name": "Latissimus dorsi",
           "present": "yes",
-          "origin": "Dorsal fascia.",
-          "insertion": "Posterior surface of the crista ventralis of the humerus, by a strong tendon.",
           "sources": [
             "abdala-diogo-2010",
             "walthall-ashley-ross-2006"
@@ -5737,7 +5699,9 @@
               }
             ]
           },
-          "attachmentNote": "The largest dorsal shoulder muscle, but its origin is entirely fascial — no bony attachment, so no correlate. The insertion is on the posterior face of the same crest that receives the pectoralis and supracoracoideus."
+          "attachmentNote": "The largest dorsal shoulder muscle, but its origin is entirely fascial — no bony attachment, so no correlate. The insertion is on the posterior face of the same crest that receives the pectoralis and supracoracoideus.",
+          "origin": "Dorsal fascia.",
+          "insertion": "Posterior surface of the crista ventralis of the humerus, by a strong tendon."
         },
         {
           "species": "rhinella-arenarum",
@@ -5797,8 +5761,6 @@
           "speciesBasis": "note",
           "name": "Latissimus dorsi",
           "present": "yes",
-          "origin": "Dorsal fascia over the anterior trunk.",
-          "insertion": "Proximal humerus.",
           "innervation": "Thoracodorsal equivalent from the dorsal divisions of the brachial plexus.",
           "note": "In Varanus komodoensis the muscle is large and its humeral insertion is confluent with that of the teres complex (Kępa et al. 2023).",
           "sources": [
@@ -6006,8 +5968,6 @@
           "speciesBasis": "note",
           "name": "Latissimus dorsi",
           "present": "yes",
-          "origin": "Thoracolumbar fascia, spinous processes T7–L5, iliac crest, lower ribs.",
-          "insertion": "Floor of the intertubercular groove of the humerus.",
           "action": "Extends, adducts and medially rotates the humerus.",
           "innervation": "Thoracodorsal nerve.",
           "sources": [
@@ -6091,8 +6051,6 @@
           "speciesBasis": "note",
           "name": "Latissimus dorsi",
           "present": "yes",
-          "origin": "Dorsal fascia over the anterior trunk.",
-          "insertion": "Proximal humerus.",
           "innervation": "Thoracodorsal equivalent from the dorsal divisions of the brachial plexus.",
           "note": "In Varanus komodoensis the muscle is large and its humeral insertion is confluent with that of the teres complex (Kępa et al. 2023).",
           "sources": [
@@ -6126,6 +6084,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Latissimus spinalis + latissimus costalis",
           "present": "yes",
           "origin": "Spinalis from the neural spines of thoracic vertebrae 1 or 2 to 11 or 12 — fleshy to the fifth or sixth and aponeurotic behind that — plus slips from ribs 7 and 8 and a slip from the external surface of the ventral part of the caudal angle of the scapula; costalis as slips from five to seven ribs beginning at rib 8.",
@@ -6167,11 +6126,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Latissimus spinalis + latissimus costalis",
           "present": "yes",
           "origin": "Spinalis from the neural spines of thoracic vertebrae 3 to 11, fleshy to vertebra 7 and aponeurotic behind it, with no scapular or costal slip; costalis from ribs 8 to 15.",
@@ -6212,8 +6171,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -6368,9 +6326,9 @@
               }
             ]
           },
+          "attachmentNote": "Four separately named heads, two girdle and two humeral, converging on one olecranon insertion. The coracoid and scapular heads unite about midway along the humerus. This is the clearest case in the dataset of a muscle whose head count is a naming decision: Mivart (1869) and Davison (1895) called the whole complex 'triceps', Francis (1934) named all four.",
           "origin": "Four heads: coracoid (anconaeus coracoideus, by a long tendon); scapula posterior to the glenoid and the joint capsule (anconaeus scapularis medialis); proximal two-thirds of the lateral face of the humerus (anconaeus humeralis lateralis); the whole posterior face of the humerus (anconaeus humeralis medialis).",
-          "insertion": "Olecranon process of the ulna.",
-          "attachmentNote": "Four separately named heads, two girdle and two humeral, converging on one olecranon insertion. The coracoid and scapular heads unite about midway along the humerus. This is the clearest case in the dataset of a muscle whose head count is a naming decision: Mivart (1869) and Davison (1895) called the whole complex 'triceps', Francis (1934) named all four."
+          "insertion": "Olecranon process of the ulna."
         },
         {
           "species": "rhinella-arenarum",
@@ -6579,8 +6537,6 @@
           "speciesBasis": "note",
           "name": "Triceps brachii (long, lateral, medial heads)",
           "present": "yes",
-          "origin": "Infraglenoid tubercle of the scapula (long head); posterior humerus above and below the radial groove (lateral, medial heads).",
-          "insertion": "Olecranon of the ulna.",
           "action": "Extends the forearm; the long head also extends and adducts the arm.",
           "innervation": "Radial nerve.",
           "sources": [
@@ -6719,6 +6675,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Triceps brachii (five heads)",
           "present": "yes",
           "origin": "Both long heads by a superficial aponeurosis from a crest running down the middle of the lower part of the external surface of the scapula to the glenoid, the profundus curving further caudal to the glenoid and close to the coracoid; lateralis by a narrow tendon a little proximal to the centre of the proximal dorsal surface of the humerus; medialis and accessorius from the proximal and distal dorsal surfaces of the humerus.",
@@ -6766,11 +6723,11 @@
           "divisionNote": "A divided triceps longus is listed among the ADVANCED monotreme features, against the primitive ones. Gambaryan et al. note that mustelids carry a second two-jointed scapular head, the caput angulare (Ercoli et al. 2015), which resembles the monotreme triceps longus superficialis; if those are homologous the double-headed scapular triceps is primitive for mammals as a whole. The Galictis row on this record is from the companion paper.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Triceps brachii (five heads)",
           "present": "yes",
           "origin": "Both long heads by a superficial aponeurosis from a crest on the lower part of the external surface of the scapula running to the glenoid; lateralis fleshy from the proximal dorsal surface of the humerus just distal to the shoulder joint capsule; medialis and accessorius united at their origin on the dorsal surface of the humerus and separated further distally by a neurovascular bundle.",
@@ -6817,11 +6774,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Triceps brachii (five heads)",
           "present": "yes",
           "origin": "Both long heads from the scapular crest running to the glenoid; lateralis by a narrow tendon from a distinct tubercle on the proximal dorsal surface of the humerus, between the infraspinatus insertion and the brachialis origin; medialis and accessorius from the dorsal surface of the humerus, their origins completely separate from one another.",
@@ -6868,8 +6825,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -7000,8 +6956,6 @@
             "abdala-diogo-2010",
             "walthall-ashley-ross-2006"
           ],
-          "origin": "Anterior surface of the proximal humerus.",
-          "insertion": "Proximal end of the radius.",
           "attachments": {
             "origin": [
               {
@@ -7017,7 +6971,9 @@
             ]
           },
           "attachmentNote": "Thick and parallel-fibred, crossing only the elbow. It has no girdle head, which is the difference from the amniote biceps brachii and the reason the two are not interchangeable.",
-          "division": "single"
+          "division": "single",
+          "origin": "Anterior surface of the proximal humerus.",
+          "insertion": "Proximal end of the radius."
         },
         {
           "species": "rhinella-arenarum",
@@ -7133,8 +7089,6 @@
           "speciesBasis": "note",
           "name": "Brachialis",
           "present": "yes",
-          "origin": "Anterior surface of the distal half of the humerus.",
-          "insertion": "Coronoid process and tuberosity of the ulna.",
           "action": "Flexes the elbow.",
           "innervation": "Musculocutaneous nerve, with a variable radial contribution.",
           "sources": [
@@ -7202,6 +7156,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Brachialis ulnaris + brachialis radialis",
           "present": "yes",
           "origin": "Radialis wedging proximally onto the proximal dorsal surface of the humerus between the triceps lateralis in front and the triceps accessorius behind, then descending along the anterior dorsoventral line; ulnaris anterior and distal to it, reaching a little onto the distal ventral surface around the preaxial side of the bone.",
@@ -7241,11 +7196,11 @@
           "divisionNote": "Gambaryan et al. read the two-headed brachialis as a remnant of a stage with freer rotation of the radius against the ulna, since intra-antebrachial mobility in living monotremes is extremely reduced — a muscle keeping a division its joint no longer uses.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Brachialis ulnaris + brachialis radialis",
           "present": "yes",
           "origin": "Both heads side by side on the proximal dorsal surface of the humerus, the ulnaris anterior to the radialis, the radialis approaching the humeral head anterior to the triceps lateralis origin.",
@@ -7280,11 +7235,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Brachialis ulnaris + brachialis radialis",
           "present": "yes",
           "origin": "The two heads least separate of the three genera, arising together from the proximal dorsal surface of the humerus and widely separating the triceps lateralis origin in front from the triceps accessorius behind.",
@@ -7319,8 +7274,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -7574,8 +7528,6 @@
           "speciesBasis": "source",
           "name": "Biceps brachii (long and short heads)",
           "present": "yes",
-          "origin": "Supraglenoid tubercle (long head) and coracoid process (short head) of the scapula.",
-          "insertion": "Radial tuberosity and bicipital aponeurosis.",
           "action": "Supinates the forearm and flexes the elbow.",
           "innervation": "Musculocutaneous nerve.",
           "sources": [
@@ -7629,6 +7581,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Biceps longus + biceps brevis",
           "present": "yes",
           "origin": "Longus just caudal to the supracoracoideus from the ventral side of the procoracoid; brevis just caudal to the longus from the procoracoid and the adjacent lateral border of the stem of the interclavicle.",
@@ -7667,11 +7620,11 @@
           "divisionNote": "Two heads, homologous with the therian caput longum and caput breve, but with the size relation reversed: the brevis is the larger in monotremes.",
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Biceps longus + biceps brevis",
           "present": "yes",
           "origin": "Longus just caudal to the supracoracoideus from the ventral side of the procoracoid, penetrating under the lateral border of the stem of the interclavicle; brevis just caudal to it from the procoracoid and the coracoid.",
@@ -7709,11 +7662,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Biceps longus + biceps brevis",
           "present": "yes",
           "origin": "Longus just caudomedial to the supracoracoideus from the ventral side of the medial border of the procoracoid and a little from the dorsal side of the lateral border of the interclavicle stem; brevis further caudally from the ventral side of the caudal tip of the coracoid, just cranial to the coracobrachialis longus.",
@@ -7752,8 +7705,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {
@@ -7913,9 +7865,9 @@
               }
             ]
           },
+          "attachmentNote": "Its fibres run along the axis of the humerus to a distal insertion, so it retracts rather than adducts. Walthall & Ashley-Ross call it coracobrachialis longus; Abdala & Diogo record longus and superficialis as the same muscle.",
           "origin": "Posterolateral surface of the coracoid.",
-          "insertion": "Medial face of the distal end of the humerus.",
-          "attachmentNote": "Its fibres run along the axis of the humerus to a distal insertion, so it retracts rather than adducts. Walthall & Ashley-Ross call it coracobrachialis longus; Abdala & Diogo record longus and superficialis as the same muscle."
+          "insertion": "Medial face of the distal end of the humerus."
         },
         {
           "species": "rhinella-arenarum",
@@ -8101,8 +8053,6 @@
           "speciesBasis": "source",
           "name": "Coracobrachialis",
           "present": "yes",
-          "origin": "Coracoid process of the scapula.",
-          "insertion": "Medial surface of the mid-humeral shaft.",
           "action": "Flexes and adducts the arm.",
           "innervation": "Musculocutaneous nerve.",
           "sources": [
@@ -8142,6 +8092,7 @@
         },
         {
           "species": "zaglossus-bruijnii",
+          "speciesBasis": "note",
           "name": "Coracobrachialis brevis + longus",
           "present": "yes",
           "origin": "Brevis from the ventral (external) side of the caudolateral border of the coracoid except its tip; longus from the ventral side of that tip.",
@@ -8177,11 +8128,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "tachyglossus-aculeatus",
+          "speciesBasis": "note",
           "name": "Coracobrachialis brevis + longus",
           "present": "yes",
           "origin": "Brevis from the ventral side of the caudolateral border of the coracoid just cranial to the longus and the subcoracoideus; longus by a tendon from the ventral side of the caudal tip of the coracoid, the tendon splitting into superficial, middle and deep aponeuroses.",
@@ -8217,11 +8168,11 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         },
         {
           "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
           "name": "Coracobrachialis brevis + longus",
           "present": "yes",
           "origin": "Brevis from the ventral side of the caudolateral border of the coracoid except its tip AND from its dorsal (internal) surface up to the coracoid-procoracoid boundary, where it meets the subcoracoideus origin; longus by a narrow tendon from the ventral side of the caudal tip of the coracoid.",
@@ -8261,8 +8212,7 @@
           ],
           "sources": [
             "gambaryan-etal-2015"
-          ],
-          "speciesBasis": "note"
+          ]
         }
       ],
       "homology": {

@@ -72,8 +72,6 @@
           "speciesBasis": "note",
           "name": "Adductor mandibulae",
           "present": "yes",
-          "origin": "Palatoquadrate.",
-          "insertion": "Meckel's cartilage.",
           "innervation": "CN V.",
           "note": "Relatively undivided, giving the plesiomorphic gnathostome condition.",
           "sources": [
@@ -175,11 +173,9 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Adductor mandibulae externus (pars superficialis, media, profunda), pseudotemporalis, zygomaticomandibularis, adductor mandibulae posterior",
           "present": "yes",
-          "origin": "Temporal region — the emarginated or fully roofed temporal skull, with the trochlear redirection over the otic capsule (the turtle-specific pulley).",
-          "insertion": "Coronar aponeurosis and the medial and dorsal surfaces of the lower jaw.",
           "action": "Jaw adduction; the trochlear arrangement redirects the muscle line of action over the otic process.",
           "innervation": "CN V.",
           "note": "Werneburg (2011) resolves this complex into discrete muscular units, each with its own innervation pattern, and supplies an exhaustive synonym list keyed to the historical literature back to Bojanus (1819–21).",
@@ -220,7 +216,8 @@
               "joint": "jaw-joint",
               "motion": "adduction"
             }
-          ]
+          ],
+          "attachmentNote": "Trachemys scripta. Origin: Temporal region — the emarginated or fully roofed temporal skull, with the trochlear redirection over the otic capsule (the turtle-specific pulley). Insertion: Coronar aponeurosis and the medial and dorsal surfaces of the lower jaw. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "ascaphus-truei",
@@ -774,8 +771,6 @@
           "speciesBasis": "survey",
           "name": "Depressor mandibulae",
           "present": "yes",
-          "origin": "Posterolateral skull, dorsally from the quadrate.",
-          "insertion": "Retroarticular process.",
           "innervation": "CN VII.",
           "sources": [
             "werneburg-2011"
@@ -1750,8 +1745,6 @@
           "speciesBasis": "survey",
           "name": "Rectus superior, inferior, anterior, posterior; obliquus superior, inferior; retractor bulbi; ciliaris; sphincter and dilatator pupillae; transversalis oculi",
           "present": "yes",
-          "origin": "Around the optic foramen and the anterodorsal corner of the optic cavity.",
-          "insertion": "Eyeball; the ciliary and iridial muscles onto intraocular structures.",
           "innervation": "CN III for rectus anterior, inferior, superior, obliquus inferior, ciliaris, dilatator and sphincter pupillae, transversalis oculi; CN IV for obliquus superior.",
           "note": "Werneburg (2011) records ten distinct ocular muscular units in turtles, including intraocular muscles absent from most vertebrate accounts. Turtles (like birds) have striated intraocular muscles, so pupillary control is partly voluntary.",
           "sources": [
@@ -1964,8 +1957,6 @@
           "speciesBasis": "source",
           "name": "Coracomandibularis, coracohyoideus, coracobranchialis",
           "present": "yes",
-          "origin": "Coracoid bar of the pectoral girdle.",
-          "insertion": "Mandible, hyoid and branchial arches.",
           "action": "Depress the jaw and hyoid, expanding the orobranchial chamber for suction feeding.",
           "innervation": "Ventral rami of the occipital and anterior spinal nerves.",
           "note": "The coracoid origin makes the mechanical link between the pectoral girdle and the feeding apparatus explicit — the same link that must be broken for a neck to evolve.",
@@ -2552,8 +2543,6 @@
           "speciesBasis": "source",
           "name": "Adductor mandibulae internus (rostral + caudal parts)",
           "present": "yes",
-          "origin": "Dorsal braincase medial to the eye; in Leiopelma the origin extends further rostrally than in Ascaphus or most other frogs.",
-          "insertion": "Mandible immediately medial to the quadrate–mandibular articulation, by a flat tendon.",
           "note": "Two parts merging into one another. Johnston prefers 'adductor mandibulae' to 'levator mandibulae' for anurans, to align with usage across gnathostomes.",
           "attachments": {
             "origin": [
@@ -2782,14 +2771,13 @@
       "occurrences": [
         {
           "species": "ascaphus-truei",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Adductor mandibulae longus",
           "present": "yes",
-          "origin": "Dorsal to the otic capsule.",
-          "insertion": "Dorsal border of the mandible.",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "attachmentNote": "Ascaphus truei. Origin: Dorsal to the otic capsule. Insertion: Dorsal border of the mandible. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
         },
         {
           "species": "ctenosaura-pectinata",
@@ -2923,7 +2911,6 @@
           "speciesBasis": "survey",
           "name": "Adductor mandibulae externus (pars superficialis, media, profunda)",
           "present": "yes",
-          "insertion": "Coronar aponeurosis and the mandible.",
           "attachments": {
             "origin": [
               {
@@ -3289,7 +3276,6 @@
           "speciesBasis": "survey",
           "name": "Adductor mandibulae posterior",
           "present": "yes",
-          "origin": "Dorsally from the quadrate.",
           "attachments": {
             "origin": [
               {

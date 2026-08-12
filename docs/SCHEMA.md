@@ -144,9 +144,10 @@ source addresses it; that is different from a source reporting absence.
 |---|---|---|
 | `species` | ✔ | An `id` from `species.json`. The clade is derived from it and is never stored |
 | `speciesBasis` | ✔ | How the attribution was made — see above |
-| `present` | | `yes` (default) · `no` · `variable` · `uncertain` · `inferred`. Use `inferred` for fossil reconstructions and `variable` when a source reports it in some species of the clade and not others |
+| `present` | | `yes` (default) · `no` · `variable` · `uncertain` · `inferred`. Use `inferred` for fossil reconstructions. **`variable` is a clade rollup, not a species observation** — at species level use `yes`/`no`/`uncertain` and put within-species variation in the note. `validate.py` warns if a `variable` row also carries attachments, since somebody who wrote down where the muscle attached did not find its presence variable |
 | `name` | ✔ if present | What this muscle is called **in that taxon's literature** |
-| `origin`, `insertion`, `action`, `innervation` | | Taxon-specific values. Omit when they match the consensus — the UI falls back to it |
+| ~~`origin`, `insertion`~~ | | **Removed.** Attachment lives in `attachments` as element/side/landmark rows and its prose in `attachmentNote`. These fields held free strings that no code read, that duplicated the structured rows, and that in the therian column were **human textbook anatomy** — "lateral third of the clavicle", "linea aspera", "scaphoid and trapezium" — carrying a citation to papers that never said it. 551 of them were deleted; the eleven rows that had prose and no structured attachment kept theirs in `attachmentNote`. See `GAPS.md` §7 |
+| `action`, `innervation` | | Taxon-specific prose, and **live input**: `seed_actions.py` and `seed_nerves.py` derive the structured `actions` and `nerves` rows from them, so deleting them would orphan those rows. Keep them free of human-only detail — a spinal root level such as "(C5–C6)" is a textbook value, not an observation, and `validate.py` warns on it |
 | `division` | | How far this homology group is split in this taxon. See below |
 | `parts` | | The named subunits. Required by `division` states other than `single` |
 | `partsOpen` | | `true` where the source's enumeration is explicitly incomplete |

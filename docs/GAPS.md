@@ -986,11 +986,34 @@ Fixed: the root levels stripped (the nerve *names* are valid for any mammal and
 stay), the human landmark prose replaced with what the cited papers say, the
 `deltoideus-clavicularis` theria block rebuilt on acromion and scapular spine with
 no clavicle, and its row moved to *Galictis cuja* — the animal Ercoli dissected.
-`validate.py` now warns on human-only anatomy on a non-human row. **268 occurrences
-still carry a legacy free-string description alongside their structured rows**; the
-detector covers the signature that is machine-findable, but the remainder is a
-reading job, and the therian column is where it was worst because its prose was
-human while its citation was a mustelid.
+`validate.py` now warns on human-only anatomy on a non-human row.
+
+### The legacy strings are gone
+
+The occurrence-level `origin` and `insertion` free strings were the vector for all
+of the above, and **551 of them have been deleted.** They were a second, unchecked
+description of the same animal sitting beside the structured rows: nothing read
+them — `app.js` renders record-level `consensus` only, `attribute_species.py` reads
+`attachmentNote`/`note`/`divisionNote`/`name`, and no export or test touched them —
+and where they disagreed with the structured rows it was the strings that were
+wrong. Keeping a field that no code reads, that duplicates a structured field, and
+that had human anatomy in it is how the next pass transcribes it again.
+
+Two deliberate exceptions:
+
+- **The eleven rows that had prose and no structured attachment kept it**, moved
+  into `attachmentNote` where prose belongs, each marked "not yet resolved to
+  skeleton.json ids". Those were sourced descriptions — *Microtus* epaxials from
+  Schilling, the *Trachemys* adductor from Werneburg, the *Squalus* fin abductor —
+  and deleting them would have lost real content rather than a duplicate.
+- **`action` and `innervation` stay.** They look like the same kind of legacy prose
+  but they are **live input**: `seed_actions.py` and `seed_nerves.py` derive the
+  structured `actions` and `nerves` rows from them, skipping any holder whose prose
+  is absent. Deleting them would leave those rows in place but unregenerable,
+  breaking the property that `build.sh` can be re-run from scratch. They were
+  cleaned in place instead — root levels out, nerve names kept.
+
+`SCHEMA.md`'s occurrence table records both the removal and the exception.
 
 ## What is still unmined outside `papers/`
 
