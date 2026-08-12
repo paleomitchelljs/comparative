@@ -142,6 +142,24 @@ all. Check the papers you have already used before acquiring more.
 
 ### Done since this file was written
 
+**Dearden et al. (2020)** — Chondrichthyes 41% → 48%, and **the density check
+underrates it**. It scores 2.1 per page over 81 pages, which put it in the mixed band,
+but the pages are a preprint's: front matter, figure legends and 40 pages of references
+dilute a descriptive core that gives every muscle an explicit `Description:` with origin,
+insertion and innervation. Divide by the descriptive section rather than the file and it
+is a >4 paper. **Check the denominator before trusting the ratio.**
+Taken so far: *Callorhinchus milii*, whose adductor mandibulae posterior now has an
+origin on the `suborbital-shelf` — a new element, and a named jaw-muscle origin site in
+an animal with no bone to scar — and a coracomandibularis from the T-shaped anteroventral
+coracoid face onto Meckel's cartilage. That last is the same attachment Anderson argues
+from, now scored in a holocephalan and a selachian, which is what makes his
+basal-jaw-depression claim checkable here rather than merely cited.
+**Still in it, and it is most of the paper:** *Scyliorhinus canicula* has no rows at all,
+and the Callorhinchus hyoid and branchial series are untouched. The levator hyoideus was
+deliberately not scored — mapping it onto `depressor-mandibulae` against the dataset's
+existing "constrictor hyoideus dorsalis (levator hyomandibulae)" naming is a homology
+call this pass had no room to make properly.
+
 **Anderson (2008)** — **opens the holocephalan column**, which is more than the
 "cross-check, not new rows" this file predicted. *Hydrolagus colliei* was in
 `species.json` with zero occurrences; Anderson's Table 2 is a 13-group × 5-taxon

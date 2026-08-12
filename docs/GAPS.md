@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-127 muscle records · 643 present occurrences · 244 skeletal elements · 104 sources · 19 operational taxa
+127 muscle records · 644 present occurrences · 245 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -49,12 +49,12 @@ illustrated.
 | pectoral | 16 | 128 | 89 | 70% |
 | pelvic | 8 | 32 | 22 | 69% |
 | arm | 5 | 51 | 34 | 67% |
-| cranial | 16 | 71 | 45 | 63% |
+| cranial | 16 | 72 | 47 | 65% |
 | fin | 9 | 39 | 23 | 59% |
 | forearm | 18 | 125 | 73 | 58% |
 | axial | 15 | 29 | 14 | 48% |
 | hand | 9 | 62 | 29 | 47% |
-| **all** | 127 | 643 | 416 | **65%** |
+| **all** | 127 | 644 | 418 | **65%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -64,15 +64,16 @@ from a contrast-CT digital dissection of one *Columba livia* — ten rows, 33 na
 parts. Ziermann & Diogo (2013) then took the axolotl, seven rows and the only larval
 *and* adult attachments in the corpus. Ziermann et al. (2014) then took the head of
 the hagfish, the lamprey and the skate, and Johnston (2011) the jaw adductors of the
-two most basal frogs. Cranial is now 63%, up from under 20%, and it is no longer the
-region to worry about — **hand and axial are.**
+two most basal frogs, and Dearden et al. (2020) the elephantfish. Cranial is now 65%,
+up from under 20%, and it is no longer the region to worry about — **hand and axial
+are.**
 
-It reads 63% rather than the 66% it touched mid-pass because Anderson (2008) then
-opened the holocephalan column with three present rows that have no attachments, and
-Chondrichthyes fell 47% to 41% for the same reason. **A percentage falling because
-rows arrived is the opposite of the case recorded in §2**, where the therian cranial
-column improved because rows left. Both are reasons to read the scored count beside
-the percentage rather than either alone.
+It moved 66% to 63% and back to 65% inside one session, and the dip is worth keeping.
+Anderson (2008) opened the holocephalan column with three present rows carrying no
+attachments, which dropped Chondrichthyes 47% to 41%; Dearden then scored against
+those same animals and took it to 48%. **A percentage falling because rows arrived is
+the opposite of the case recorded in §2**, where the therian cranial column improved
+because rows left. Read the scored count beside the percentage, never either alone.
 
 Three of those five passes were on sources the dataset **already cited**. Ziermann
 & Diogo (2013) was found by an audit that showed five rows citing it and none
@@ -85,9 +86,9 @@ not a mining. `MINING.md` now carries the ranked list.
 largest occurrence counts in the dataset**, so they remain the biggest absolute
 gap. Nothing in `papers/` fixes them across taxa at once; it goes one column at a
 time. Meers (2003) is the largest single remaining bite — crocodylian forelimb, and
-the one naming scheme from Abdala & Diogo's Tables 1-3 not yet held in full. For
-the cranial region what is left is Dearden et al. (2020) for Chondrichthyes and
-Anderson (2008) as a cross-check across all of them. **The
+the one naming scheme from Abdala & Diogo's Tables 1-3 not yet held in full. Dearden
+et al. (2020) and Anderson (2008) are now both mined, though Dearden only in part:
+*Scyliorhinus canicula* is described in full and still has no rows at all. **The
 mammalian head remains the one column with no source at all.**
 
 The **prepollex** is worth singling out. Anurans lost digit 1, and the preaxial
@@ -129,8 +130,8 @@ back in for Aves.
 | Anura | 72 | 36 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Aves | 79 | 39 | 49% |
+| Chondrichthyes | 23 | 11 | 48% |
 | Monotremata | 7 | 3 | 43% |
-| Chondrichthyes | 22 | 9 | 41% |
 | Myxini | 3 | 1 | 33% |
 | Petromyzontida | 3 | 1 | 33% |
 | Testudines | 46 | 12 | 26% |
@@ -263,11 +264,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 244, of which 212 (87%) carry at least one attachment |
-| Observed attachment rows | 1098 |
+| Elements | 245, of which 213 (87%) carry at least one attachment |
+| Observed attachment rows | 1102 |
 | Rows naming a **landmark** | 242 (22%) |
-| Rows naming a **side** | 633 (58%) |
-| Osteological correlates | 104 flagged, 89 carry a muscle |
+| Rows naming a **side** | 635 (58%) |
+| Osteological correlates | 105 flagged, 90 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -318,7 +319,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 22 | 67 | 3.0 |
+| cranial | 22 | 68 | 3.1 |
 | hindlimb | 42 | 38 | 0.9 |
 | axial | 33 | 26 | 0.8 |
 | pectoral | 32 | 25 | 0.8 |
@@ -350,7 +351,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 416 of 643 present occurrences (65%).**
+**Taxon-specific attachments: 418 of 644 present occurrences (65%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -372,7 +373,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 213 |
 | forearm | 18 | 184 |
-| cranial | 16 | 165 |
+| cranial | 16 | 169 |
 | thigh | 10 | 104 |
 | leg | 10 | 77 |
 | hand | 9 | 75 |
