@@ -241,18 +241,21 @@ SEED = {
         "caudata":      {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["coracoid", "scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
-        "crocodylia": {"origin": ["coracoid"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010", "klinkhamer-etal-2017"],
-                       "shiftNote": "Fleshy origin on the proximo-lateral coracoid, covering the entire humeral head; fleshy insertion on the ventro-lateral humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder (Klinkhamer et al. 2017)."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "coracoid", "side": "lateral"}],
+                       "insertion": [{"element": "humerus", "side": "ventral", "landmark": "deltopectoral-crest"}],
+                       "sources": ["abdala-diogo-2010", "klinkhamer-etal-2017"],
+                       "shiftNote": "Crocodylus porosus. Fleshy origin on the PROXIMO-LATERAL coracoid, covering the entire humeral head; fleshy insertion on the VENTRO-LATERAL humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder. Both aspects are stated by Klinkhamer et al. and both had been overwritten by the global side table, which gave coracoid/ventral and deltopectoral-crest/anterior — the one thing this source is cited for is that it names the aspect."},
         "aves": {"species": "gallus-domesticus",  # Abdala & Diogo's Gallus
                  "origin": ["sternal-keel"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
-                 "shiftNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."},
+                 "shiftNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."},
         # No monotremata block. Three genera are now scored per species in
         # seed_gambaryan_monotremata.py, and the clade row this replaced put the
         # origin on the coracoid and scapula when Gambaryan et al. put it on the
         # procoracoid — a bone the clade block could not name because the version
         # of skeleton.json it was written against did not give monotremes one.
         "theria": {"origin": ["supraspinous-fossa", "infraspinous-fossa"], "insertion": ["greater-tubercle"], "sources": ["ercoli-etal-2014", "fahn-lai-etal-2020"],
-                   "shiftNote": "Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus."},
+                   "shiftNote": "Galictis cuja. Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus."},
     },
     "subcoracoscapularis": {
         "testudines":   {"origin": ["scapula", "coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
@@ -266,10 +269,20 @@ SEED = {
     "pectoralis": {
         "caudata":    {"origin": ["sternum", "body-wall"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["sternum", "interclavicle", "ribs"], "insertion": ["deltopectoral-crest"], "sources": ["abdala-diogo-2010", "freitas-etal-2017"]},
-        "aves": {"species": "gallus-domesticus",  # Abdala & Diogo's Gallus; the note describes Cygnus, which has no row on this record
+        # The Cygnus description now sits on a Cygnus cygnus row of its own. It used
+        # to be seeded here, onto Gallus, with a comment conceding "the note
+        # describes Cygnus, which has no row on this record" — which is a
+        # misattribution recorded as a caveat rather than fixed. Matsuoka &
+        # Hasegawa dissected Cygnus cygnus; Abdala & Diogo's avian exemplar is
+        # Gallus; the two are not one row.
+        "aves": {"species": "gallus-domesticus",
                  "origin": ["sternal-keel", "furcula", "ribs"], "insertion": ["deltopectoral-crest"],
-                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
-                 "shiftNote": "In Cygnus the origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is indirect, onto the surface of underlying muscle. Both pectoralis muscles together are about 11% of body mass."},
+                 "sources": ["abdala-diogo-2010"],
+                 "shiftNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. From the sternal keel, the furcula and the ribs onto the deltopectoral crest — the crista pectoralis in avian nomenclature."},
+        "aves-cygnus": {"species": "cygnus-cygnus", "taxon": "aves",
+                 "origin": ["sternal-keel", "furcula", "ribs"], "insertion": ["deltopectoral-crest"],
+                 "sources": ["matsuoka-hasegawa-2007"],
+                 "shiftNote": "Cygnus cygnus. The origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is INDIRECT, onto the surface of underlying muscle, which is why the rib row is the weakest of the three. Both pectoralis muscles together are about 11% of body mass."},
         # No monotremata block; scored per species from Gambaryan et al. The
         # clave row included a clavicular origin the source gives to the
         # clavodeltoideus, not to the pectoralis.
@@ -302,11 +315,19 @@ SEED = {
         "caudata":    {"origin": ["body-wall"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines": {"origin": ["ribs"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                        "shiftNote": "Origin transferred onto the internal surface of the carapace, which is built from the ribs."},
-        "aves": {"species": "gallus-domesticus",  # the row it has always applied to; the note describes Cygnus, from Matsuoka & Hasegawa, which has no row here
+        # Same split as the pectoralis above, and for the same reason.
+        "aves": {"species": "gallus-domesticus",
                  "origin": ["thoracic-neural-spines"], "insertion": ["scapula", "clavicle"],
-                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
-                 "shiftNote": "Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone, and inserting on the medial margins of the dorsal clavicle and the scapula."},
-        "theria": {"origin": ["thoracolumbar-fascia", "thoracic-neural-spines", "ribs"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"]},
+                 "sources": ["abdala-diogo-2010"],
+                 "shiftNote": "Gallus domesticus, Abdala & Diogo's avian exemplar."},
+        "aves-cygnus": {"species": "cygnus-cygnus", "taxon": "aves",
+                 "origin": ["thoracic-neural-spines"],
+                 "insertion": [{"element": "scapula", "side": "medial"},
+                               {"element": "clavicle", "side": "medial"}],
+                 "sources": ["matsuoka-hasegawa-2007"],
+                 "shiftNote": "Cygnus cygnus. Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone — Matsuoka & Hasegawa say the attachment 'seems not on the bones directly' — and inserting on the MEDIAL margins of the dorsal clavicle and the scapula, occupying more than two-thirds of the margo dorsalis. Pars caudalis arises from the neural spines of the posterior thoracic vertebrae and reaches the dorso-cranial ilium weakly."},
+        "theria": {"origin": ["thoracolumbar-fascia", "thoracic-neural-spines", "ribs"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"],
+                   "shiftNote": "Galictis cuja."},
     },
     "sternocoracoideus": {
         "lepidosauria": {"origin": ["sternum"], "insertion": ["coracoid"], "sources": ["abdala-diogo-2010"]},
@@ -322,8 +343,13 @@ SEED = {
         "lepidosauria": {"origin": ["caudal-vertebrae"], "insertion": ["femoral-trochanter"],
                          "sources": ["diogo-molnar-2014", "dick-clemente-2016"],
                          "shiftNote": "Longus arises from the proximal third of the tail and caudal vertebrae 4-14, inserting by broad tendon on the femoral trochanter plus a second tendon onto the lateral menisci of the knee; brevis arises from the transverse processes of the four most anterior postsacral vertebrae. Femur retraction and long-axis rotation, active in stance."},
-        "crocodylia": {"origin": ["caudal-vertebrae", "ilium"], "insertion": ["fourth-trochanter"], "sources": ["diogo-molnar-2014", "allen-etal-2014", "klinkhamer-etal-2017"],
-                       "shiftNote": "Klinkhamer et al. distinguish caudofemoralis longus (caudal vertebrae) from brevis (ilium); both converge on the fourth trochanter."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "caudal-vertebrae"},
+                                  {"element": "ilium", "side": "lateral"}],
+                       "insertion": [{"element": "femur", "side": "ventral", "landmark": "fourth-trochanter"},
+                                     {"element": "femoral-condyles", "side": "ventral"}],
+                       "sources": ["diogo-molnar-2014", "klinkhamer-etal-2017"],
+                       "shiftNote": "Crocodylus porosus. Longus is fleshy from the haemal arches of numerous caudal vertebrae BEGINNING AT CAUDAL VERTEBRA 12; brevis has TWO heads, one from the postero-lateral ilium and one from caudal vertebrae 4 and 5, anterior to the longus origin — so both muscles take caudal vertebrae and the caudal row is shared, where the block used to read longus-from-vertebrae and brevis-from-ilium as though each had one head. Both insert by tendon on the proximo-ventral femur at the fourth trochanter. The second insertion row is the longus' ACCESSORY TENDON onto the ventro-distal femur at the tibial condyle, together with gastrocnemius externus; scored on the condyles because that is as fine as skeleton.json resolves. The longus is the largest muscle in the animal's body. Allen et al. is no longer cited here: it measures architecture and gives no attachment sites, and it is the Alligator source that used to hold this row on the wrong animal."},
         # No testudines block. It read caudal-vertebrae -> femur on Diogo & Molnar
         # alone, and their four key taxa include no turtle — the attachment was the
         # record's consensus repeated onto a clade nobody dissected. This is the
@@ -339,7 +365,8 @@ SEED = {
     "triceps-brachii": {
         "caudata":    {"origin": ["scapula", "humerus"], "insertion": ["olecranon"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["scapula", "coracoid", "humerus"], "insertion": ["olecranon"], "sources": ["abdala-diogo-2010"]},
-        "theria": {"origin": ["scapula", "humerus"], "insertion": ["olecranon"], "sources": ["ercoli-etal-2014"]},
+        "theria": {"origin": ["scapula", "humerus"], "insertion": ["olecranon"], "sources": ["ercoli-etal-2014"],
+                   "shiftNote": "Galictis cuja. Six well-separated bellies near the origin in this animal — caput longum, laterale, angulare, accessorium, mediale accessorium and mediale, the last itself three-bellied."},
     },
     "biceps-brachii": {
         "lepidosauria": {"origin": ["coracoid"], "insertion": ["radius"], "sources": ["abdala-diogo-2010"]},
@@ -349,9 +376,16 @@ SEED = {
     "coracobrachialis": {
         "caudata":      {"origin": ["coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["coracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
-        "aves": {"origin": ["sternum", "coracoid"], "insertion": ["tuberculum-ventrale"],
-                 "sources": ["abdala-diogo-2010", "matsuoka-hasegawa-2007"],
-                 "shiftNote": "Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus."},
+        # Third of the three avian blocks that were seeding Matsuoka & Hasegawa's
+        # swan onto Gallus. This one had no comment conceding it.
+        "aves": {"species": "gallus-domesticus",
+                 "origin": ["sternum", "coracoid"], "insertion": ["tuberculum-ventrale"],
+                 "sources": ["abdala-diogo-2010"],
+                 "shiftNote": "Gallus domesticus, Abdala & Diogo's avian exemplar."},
+        "aves-cygnus": {"species": "cygnus-cygnus", "taxon": "aves",
+                 "origin": ["sternum", "coracoid"], "insertion": ["tuberculum-ventrale"],
+                 "sources": ["matsuoka-hasegawa-2007"],
+                 "shiftNote": "Cygnus cygnus. Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus."},
         "theria": {"origin": ["coracoid-process"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"],
                    "shiftNote": "Origin transfers to the coracoid process as the coracoid bone is lost."},
     },
@@ -376,48 +410,85 @@ SEED = {
     # Their descriptions name an explicit aspect for nearly every attachment,
     # which is the densest source of `side` values in the dataset.
     "levator-scapulae": {
-        "crocodylia": {"origin": ["ribs"], "insertion": ["scapula"], "sources": ["klinkhamer-etal-2017"],
-                       "shiftNote": "Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the anterior scapular border from its anterodistal tip to the glenohumeral joint."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "ribs", "side": "lateral"}],
+                       "insertion": [{"element": "scapula", "side": "anterior"}],
+                       "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Crocodylus porosus. Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the ANTERIOR scapular border from its anterodistal tip to the glenohumeral joint. Largely obscured by the trapezius — which these authors could not model, because skinning removed it."},
     },
     "costocoracoideus": {
-        "crocodylia": {"origin": ["ribs"], "insertion": ["coracoid"], "sources": ["klinkhamer-etal-2017"],
-                       "shiftNote": "Klinkhamer et al. separate a costocoracoideus profundus originating on the lateral margin of the first few ribs."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "ribs", "side": "lateral"}],
+                       "insertion": [{"element": "coracoid", "side": "ventral"},
+                                     {"element": "coracoid", "side": "posterior"}],
+                       "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Crocodylus porosus. Klinkhamer et al. separate a costocoracoideus PROFUNDUS, fleshy from the lateral margin of the first few ribs to the ventro-posterior margin of the coracoid — the two coracoid rows are its one attachment named on two aspects. The SUPERFICIALIS is not scored here and is the reason to keep this record open: it arises on the ventro-lateral first few ribs and inserts on the MEDIAL HUMERAL HEAD, so one of the two parts of this muscle bypasses the girdle and reaches the arm."},
     },
     "serratus-anterior": {
-        "crocodylia": {"origin": ["ribs"], "insertion": ["scapula"], "sources": ["klinkhamer-etal-2017"],
-                       "shiftNote": "Originates from the ventrolateral ribs and inserts by tendon along the entire medio-posterior scapular margin — a broad, thin girdle extensor."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "ribs", "side": "ventral"}],
+                       "insertion": [{"element": "scapula", "side": "medial"},
+                                     {"element": "scapula", "side": "posterior"}],
+                       "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Crocodylus porosus. Originates from the ventrolateral ribs and inserts by tendon along the entire MEDIO-POSTERIOR scapular margin — a broad, thin girdle extensor. Two insertion rows because the source names two aspects of one bone; a single `lateral` row had been standing here, which is the aspect the global side table supplies and not the one the paper gives."},
     },
     "scapulohumeralis-posterior": {
-        "crocodylia": {"origin": ["scapula"], "insertion": ["humerus"], "sources": ["klinkhamer-etal-2017", "abdala-diogo-2010"],
-                       "shiftNote": "Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "scapula", "side": "lateral"},
+                                  {"element": "scapula", "side": "posterior"}],
+                       "insertion": [{"element": "humerus", "side": "proximal"}],
+                       "sources": ["klinkhamer-etal-2017", "abdala-diogo-2010"],
+                       "shiftNote": "Crocodylus porosus. Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."},
     },
     "femorotibialis": {
         "lepidosauria": {"origin": ["femur"], "insertion": ["cnemial-crest"],
                          "sources": ["dick-clemente-2016", "diogo-molnar-2014"],
                          "shiftNote": "Fleshy origin along the entire femoral shaft; joins the iliotibialis tendon to insert on the cnemial crest. Knee extensor, active in both stance and swing."},
-        "crocodylia": {"origin": ["femur"], "insertion": ["cnemial-crest"], "sources": ["klinkhamer-etal-2017"],
-                       "shiftNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "femur", "side": "dorsal"}],
+                       "insertion": [{"element": "tibia", "side": "proximal", "landmark": "cnemial-crest"}],
+                       "sources": ["klinkhamer-etal-2017"],
+                       "shiftNote": "Crocodylus porosus. Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."},
     },
     "ambiens": {
         "lepidosauria": {"origin": ["acetabulum-ventral-edge", "pubis"], "insertion": ["intertrochanteric-notch"],
                          "sources": ["tomanska-etal-2025", "diogo-molnar-2014", "dick-clemente-2016"],
                          "shiftNote": "In Varanus komodoensis the muscle has dorsal and ventral heads; the dorsal attaches to the ventral edge of the acetabulum and the ventral lies anteriorly, both converging on the femur at the intertrochanteric fossa."},
-        "crocodylia": {"origin": ["pubis"], "insertion": ["tibia"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
-                       "shiftNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "pubis", "side": "lateral"}],
+                       "insertion": [{"element": "tibia", "side": "proximal", "landmark": "cnemial-crest"}],
+                       "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Crocodylus porosus. Tendinous origin on the proximo-lateral pubis, inserting by a long tendon on the proximo-anterior tibia AT THE CNEMIAL CREST — the crest is named in the source, so it is scored rather than left at the bone. Knee extensor and hip flexor, knee extension confirmed by EMG. Klinkhamer et al. found only a SINGLE HEAD, against two in Alligator mississippiensis, but they attribute that to the sub-adult age of their specimens and of the Caiman latirostris in the earlier study that found the same — NOT to a species difference. Recorded here as an observation and explicitly not as a Crocodylus porosus character."},
     },
     "ischioflexorius": {
-        "crocodylia": {"origin": ["ischium", "ilium"], "insertion": ["tibia"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
-                       "shiftNote": "Flexor tibialis internus is four-part in Crocodylus: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium; FTI3 from the proximo-lateral ischium."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "ischium", "side": "posterior"},
+                                  {"element": "ilium", "side": "ventral"}],
+                       "insertion": [{"element": "tibia", "side": "proximal"}],
+                       "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Crocodylus porosus. Flexor tibialis internus is FOUR-part here, against three in some Alligator and Caiman latirostris accounts: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium, the largest of the four; FTI3 from the proximo-lateral ischium; FTI4 a small thin muscle from the latero-ventral ilium near the ischium, joining the common tendon. The tibial insertion is the internus'. Flexor tibialis EXTERNUS is named in this record but its insertion is deliberately unscored: it arises by tendon from the postero-lateral ilium and ends, by a long tendon shared with gastrocnemius externus, IN THE PES at the proximal tarsus — not on the tibia."},
     },
+    # These two records take their crocodylian rows from the SAME PARAGRAPH PAIR in
+    # Klinkhamer et al., and for a while they took them from the same paragraph: both
+    # blocks read ilium -> femur with the iliofemoralis' prose, so a knee extensor was
+    # recorded as ending on the femur and one description was scored twice. The
+    # iliotibialis inserts on the TIBIA — that is what makes it a knee extensor — and
+    # only the iliofemoralis ends on the femur.
     "extensor-iliotibialis": {
-        "crocodylia": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
-                       "shiftNote": "Iliotibialis 3 arises deep to iliotibialis 2 on the central lateral ilium by tendon and inserts fleshy onto the distal third of the dorso-lateral femur."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "ilium", "side": "lateral"}],
+                       "insertion": [{"element": "tibia", "side": "proximal"}],
+                       "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Crocodylus porosus. Three parts, and all three insert by tendon on the PROXIMO-ANTERIOR TIBIA: IT1 fleshy from the antero-lateral ilium, IT2 by tendon from the central lateral ilium between IT1 and IT3, IT3 fleshy from the postero-lateral ilium. IT2 is the largest and forms almost the whole dorsolateral face of the thigh. All three are knee extensors, which is what a tibial insertion is for, and EMG confirms it for IT2."},
     },
     "iliofemoralis": {
         "lepidosauria": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["diogo-molnar-2014", "dick-clemente-2016"],
                          "shiftNote": "From the anterior iliac blade, sharing an intramuscular septum with the puboischiotibialis; the belly wraps the posterior femoral border to insert proximally. Femur abductor, active in swing."},
-        "crocodylia": {"origin": ["ilium"], "insertion": ["femur"], "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
-                       "shiftNote": "Origin on the lateral ilium; the femorotibialis internus tendon arises distal and anterior to it, which is the landmark Klinkhamer et al. use to separate the two."},
+        "crocodylia": {"species": "crocodylus-porosus",
+                       "origin": [{"element": "ilium", "side": "lateral"}],
+                       "insertion": [{"element": "femur", "side": "dorsal"}],
+                       "sources": ["klinkhamer-etal-2017", "diogo-molnar-2014"],
+                       "shiftNote": "Crocodylus porosus. Tendinous origin on the central lateral ilium, deep to iliotibialis 2; inserts fleshy onto the DISTAL THIRD of the dorso-lateral femur, between femorotibialis internus and externus, and attaches along most of the femoral length. The femorotibialis internus tendon arising distal and anterior to it is the landmark Klinkhamer et al. use to separate the two. Hip abductor, confirmed by EMG. This is the description `extensor-iliotibialis` was also carrying."},
         "synapsida-stem": {"origin": ["ilium", "iliac-crest"], "insertion": ["greater-trochanter"], "sources": ["bishop-pierce-2024"],
                            "shiftNote": "Expansion of the iliac blade along the synapsid stem tracks the enlargement of this field and the shift toward erect posture."},
         "theria": {"origin": ["ilium", "iliac-crest"], "insertion": ["greater-trochanter"], "sources": ["diogo-molnar-2014"],
@@ -438,6 +509,21 @@ def main(write: bool) -> int:
         for m in doc["muscles"]:
             index[m["id"]] = m
 
+    def ref_id(entry):
+        """An origin/insertion entry is either a bare skeleton id or a row.
+
+        A bare id lets `migrate_attachment_rows.py` fill `side` from its own
+        (element, landmark) -> side table, which is right for a clade-level
+        statement and WRONG for a single-species description that names an
+        aspect of its own. Klinkhamer et al. give an explicit aspect for nearly
+        every attachment in Crocodylus porosus; passing bare ids meant the
+        global table answered instead, and it disagreed with the paper on the
+        serratus, the levator scapulae and the supracoracoideus. Write a row
+        dict — {"element": ..., "side": ..., "landmark": ...} — wherever the
+        source states the aspect; the migration passes rows through untouched.
+        """
+        return entry["element"] if isinstance(entry, dict) else entry
+
     for mid, per_taxon in SEED.items():
         m = index.get(mid)
         if not m:
@@ -454,7 +540,12 @@ def main(write: bool) -> int:
         by_clade = collections.defaultdict(list)
         for o in m.get("occurrences", []):
             by_clade[speciesmap.clade_of(o)].append(o)
-        for tid, spec in per_taxon.items():
+        for key, spec in per_taxon.items():
+            # Two species of one clade both described, by different sources, both
+            # deserving a row: the dict is keyed on clade, so the second needs a
+            # distinct key and names its real clade in `taxon`. Aves has Gallus
+            # from Abdala & Diogo and Cygnus cygnus from Matsuoka & Hasegawa.
+            tid = spec.get("taxon", key)
             candidates = by_clade.get(tid, [])
             want = spec.get("species")
             if want:
@@ -471,7 +562,8 @@ def main(write: bool) -> int:
                 continue
             occ = candidates[0]
             for side in ("origin", "insertion"):
-                for ref in spec.get(side, []):
+                for entry in spec.get(side, []):
+                    ref = ref_id(entry)
                     if ref not in elements:
                         problems.append(f"{mid}/{tid}: '{ref}' not in skeleton.json")
                         continue

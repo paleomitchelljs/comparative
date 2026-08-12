@@ -424,9 +424,9 @@
         },
         {
           "species": "galictis-cuja",
-          "speciesBasis": "source",
-          "present": "variable",
-          "note": "Retained in taxa with a muscular tail, reduced in others.",
+          "speciesBasis": "note",
+          "present": "yes",
+          "note": "Galictis cuja: present and scored. Ercoli et al. describe the sacrocaudalis series in full in an animal with a long, well-muscled tail — the sacrocaudalis dorsalis lateralis alone is 6.81% of hind limb muscle mass. Retained in taxa with a muscular tail and reduced in others, but that is the clade-level pattern; it had been written onto this species row as `present: \"variable\"` while the row carried four scored attachment rows.",
           "sources": [
             "schilling-2011",
             "ercoli-etal-2012"
@@ -450,7 +450,8 @@
               }
             ]
           },
-          "attachmentNote": "The sacrocaudalis series, dorsal and ventral, medial and lateral. The dorsalis medialis is the caudal continuation of the transversospinalis: its most cranial bundle arises from the caudal and dorsal spinous process of the last lumbar vertebra, subsequent bundles from the sacral and caudal spinous processes, inserting on the cranial ends of the anterior articular processes of caudal vertebrae. Each bundle spans about three vertebrae."
+          "attachmentNote": "The sacrocaudalis series, dorsal and ventral, medial and lateral. The dorsalis medialis is the caudal continuation of the transversospinalis: its most cranial bundle arises from the caudal and dorsal spinous process of the last lumbar vertebra, subsequent bundles from the sacral and caudal spinous processes, inserting on the cranial ends of the anterior articular processes of caudal vertebrae. Each bundle spans about three vertebrae.",
+          "name": "Sacrocaudalis dorsalis and ventralis, medialis and lateralis"
         }
       ],
       "homology": {
@@ -620,6 +621,48 @@
           "sources": [
             "cieri-2018"
           ]
+        },
+        {
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
+          "name": "Iliocostalis lumborum",
+          "present": "yes",
+          "sources": [
+            "ercoli-etal-2012"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "medial"
+              },
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              },
+              {
+                "element": "thoracolumbar-fascia",
+                "side": "medial"
+              },
+              {
+                "element": "lumbar-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs",
+                "side": "posterior"
+              },
+              {
+                "element": "thoracic-vertebrae"
+              },
+              {
+                "element": "lumbar-vertebrae",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja, lumbar sector. The lateralmost lumbar epaxial muscle, robust and cylindrical, and the heaviest muscle in the paper's mass table at 10.06% of total hind limb muscle mass — 'heavy iliocostalis' is one of Ercoli et al.'s headline functional characters, tied to a mobile axial skeleton and bounding gait. NOTE THE DIRECTION: the pelvic end is the origin and the ribs are the insertion. It arises mostly fleshy from the medial surface of the ala ossis ilii and the iliac crest, tendinously from the medial aspect of the lumbodorsal fascia, and partly from the body of the last lumbar vertebra just caudal to its transverse processes. It inserts by a tendinous sheet on the caudal edge of the last two ribs at their angle and dorsal regions, on the lateral and caudal body of the last thoracic vertebra, on the dorsal surfaces of the transverse processes of the last lumbar vertebra, and elsewhere only at the base and posterolateral ends of the transverse processes and the ventral region of the accessory processes. Vertebral subsites are carried in prose rather than as landmarks, following the transversospinalis row, because skeleton.json resolves no transverse, mammillary or accessory process. This row was previously left unscored on the grounds that a table interrupted the description in the PDF text layer; both attachments read cleanly out of a `pdftotext -layout` extraction once the column offset is accounted for."
         }
       ],
       "homology": {

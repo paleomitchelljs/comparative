@@ -587,7 +587,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "note": "Confusingly called flexor ulnaris by Meers (2003) despite being a dorsal-mass, radial-innervated muscle.",
@@ -603,14 +603,9 @@
                 "landmark": "lateral-epicondyle"
               }
             ],
-            "insertion": [
-              {
-                "element": "metacarpals",
-                "side": "dorsal"
-              }
-            ]
+            "insertion": []
           },
-          "attachmentNote": "Reported as extensor carpi ulnaris, tendinous from the lateral condyle to the dorsal manus."
+          "attachmentNote": "Crocodylus porosus, reported as extensor carpi ulnaris: tendinous from the lateral condyle of the disto-ventral humerus to 'the dorsal manus'. NO INSERTION ROW, which reads correctly as not recorded. Klinkhamer et al. state that muscles inserting into the manus and pes were SEVERED DURING SKINNING and that for those muscles they 'left the description more general, simply describing insertion as into the manus/pes' — so the phrase is a record of a lost attachment, not a coarse one, and choosing a carpal or a metacarpal from it asserts what they were careful not to. This row previously read `metacarpals`."
         },
         {
           "species": "gallus-domesticus",
@@ -2347,7 +2342,7 @@
           "speciesBasis": "note",
           "name": "Supinator",
           "present": "no",
-          "note": "Pelecanoides garnoti UMMZ 225241. McKitrick reports the supinator ABSENT in the diving petrel, in the same dissection series that describes it as a bulky belly in the loon; what is left of its field she treats under the ectepicondylo-ulnaris. Her purpose was to test a proposed loon-tubenose sister relationship, which she does not support — so this row is one of the character differences behind that negative result, not a curiosity.",
+          "note": "Pelecanoides garnoti UMMZ 225241. McKitrick reports the supinator ABSENT in the diving petrel, in the same dissection series that describes it as a bulky belly in the loon; what is left of its field she treats under the ectepicondylo-ulnaris. Her purpose was to test a proposed loon-tubenose sister relationship, which she does not support — so this row is one of the character differences behind that negative result, not a curiosity. The absence is kept as `no` because her descriptive section states it without qualification, but two other passages soften it and belong here: her character 11 is headed 'reduction or ABSENCE' and reads 'absent OR REDUCED TO AN APONEUROSIS in Pelecanoides', and under the ectepicondylo-ulnaris she allows that 'it is possible that part of this tendinous mass represents all that is left of M. supinator, e.g. the tendinous origin from the dorsal epicondyle in common with M. extensor digitorum communis'. So the belly is gone and the tendon may not be.",
           "sources": [
             "mckitrick-1991"
           ]
@@ -2945,8 +2940,8 @@
           "species": "galictis-cuja",
           "speciesBasis": "note",
           "name": "Epitrochleoanconeus (anconeus epitrochlearis)",
-          "present": "variable",
-          "note": "Present in many mammals; in humans it is an inconstant muscle replaced by Osborne's ligament over the cubital tunnel. Not the muscle a rat or cat dissection guide calls the epitrochlearis. Campbell's rat guide describes that one as a thin medial sheet of the upper arm that EXTENDS the forearm — a latissimus-associated muscle reaching the olecranon — whereas the epitrochleoanconeus runs from the medial epicondyle to the olecranon over the ulnar nerve. The names differ by two letters and the muscles are not the same; no source held here establishes what the lab epitrochlearis is homologous to, so it has no record.",
+          "present": "yes",
+          "note": "Galictis cuja: present, and scored from Ercoli et al.'s description. Elsewhere in Mammalia it is inconstant — in humans replaced by Osborne's ligament over the cubital tunnel — but that is a mammal-wide statement and had been sitting in this row as `present: \"variable\"` alongside scored attachments. Not the muscle a rat or cat dissection guide calls the epitrochlearis: Campbell's rat guide describes that one as a thin medial sheet of the upper arm that EXTENDS the forearm — a latissimus-associated muscle reaching the olecranon — whereas the epitrochleoanconeus runs from the medial epicondyle to the olecranon over the ulnar nerve. The names differ by two letters and the muscles are not the same; no source held here establishes what the lab epitrochlearis is homologous to, so it has no record.",
           "sources": [
             "ercoli-etal-2014",
             "campbell-2007"
@@ -3216,7 +3211,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -3231,14 +3226,9 @@
                 "landmark": "medial-epicondyle"
               }
             ],
-            "insertion": [
-              {
-                "element": "carpals",
-                "side": "ventral"
-              }
-            ]
+            "insertion": []
           },
-          "attachmentNote": "Tendinous at the distomedial humerus, fleshy at the ventral carpus."
+          "attachmentNote": "Crocodylus porosus. Tendinous at the disto-medial humerus, fleshy at 'the ventral manus'. No insertion row: Klinkhamer et al. record that manus insertions were severed during skinning and left deliberately general, so an absent row reads correctly as not recorded, where this row's previous `carpals` asserted a site their wording does not license. Contrast the pronator teres of the same animal, where they do name the ventral CARPALS specifically — that row keeps its carpal insertion."
         },
         {
           "species": "gallus-domesticus",
@@ -3967,7 +3957,7 @@
               }
             ]
           },
-          "attachmentNote": "Gavia immer CM 2320. A stout tendon from the tuberculum supracondylare ventrale of the humerus, slightly proximal and partly superficial to the origin of the pronator profundus, inserting by tendinous fibres along the cranioventral surface of the proximal third of the radius. No landmark is asserted for the humeral origin: McKitrick flags 'homology problems with Baumel et al.' over whether the tuberculum supracondylare ventrale and the ventral epicondyle are the same thing, and naming the entepicondyle here would settle by fiat what she leaves open. The tendon of origin fans into an aponeurosis continuous with the humerocarpal band."
+          "attachmentNote": "Gavia immer CM 2320. A stout tendon from the tuberculum supracondylare ventrale of the humerus, slightly proximal and partly superficial to the origin of the pronator profundus, inserting by tendinous fibres along the cranioventral surface of the proximal third of the radius. No landmark is asserted for the humeral origin, but not for the reason this note used to give: the 'homology problems with Baumel et al.' remark is made about PELECANOIDES GARNOTI's pronator profundus, where the origin shifts off the tuberculum supracondylare ventrale onto the ventral epicondyle, and in Gavia immer McKitrick names the tuberculum for both pronators without hedging. The row stops at the bone because skeleton.json resolves no tuberculum supracondylare ventrale — and it should not be collapsed onto the entepicondyle, because in this animal McKitrick distinguishes the two: the FLEXOR DIGITORUM SUPERFICIALIS arises from the ventral epicondyle and both pronators from the tuberculum. The tendon of origin fans into an aponeurosis continuous with the humerocarpal band."
         },
         {
           "species": "galictis-cuja",
@@ -5105,8 +5095,8 @@
           "species": "galictis-cuja",
           "speciesBasis": "note",
           "name": "Palmaris longus",
-          "present": "variable",
-          "note": "Absent in roughly 15% of humans unilaterally or bilaterally, and absent in many other mammals.",
+          "present": "yes",
+          "note": "Galictis cuja: Ercoli et al. describe it present, with a full origin and insertion. The variation they report is in the TENDONS, not the presence — well-defined tendons for digits II/III to IV/V in most specimens, and in one a distal belly differentiating to give a tendon for digit I. Absent in roughly 15% of humans unilaterally or bilaterally, and in many other mammals, but that is a statement about Mammalia and not about this animal; it had been standing in this row as `present: \"variable\"` while the row also carried scored attachments, which cannot both be true.",
           "sources": [
             "ercoli-etal-2014"
           ],

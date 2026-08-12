@@ -353,6 +353,11 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "division": "divided",
         "parts": [p("Caudofemoralis longus"), p("Caudofemoralis brevis")]}),
     (("caudofemoralis", "crocodylia"), {
+        # Crocodylia has two rows since Klinkhamer et al.'s Crocodylus porosus
+        # description was moved off the Alligator row it had been written onto.
+        # Both animals have both parts; this block describes the one whose
+        # attachments are scored from a source that names them.
+        "species": "crocodylus-porosus",
         "division": "divided",
         "parts": [p("Caudofemoralis longus"), p("Caudofemoralis brevis")]}),
     (("caudofemoralis", "aves"), {

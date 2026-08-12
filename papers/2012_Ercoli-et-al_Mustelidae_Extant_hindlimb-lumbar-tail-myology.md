@@ -16,7 +16,22 @@ limbs rather than from two unrelated exemplars.
 **Theria went from 15% to 38%.** Region effects: leg 45→67%, thigh 43→57%,
 foot 73→77%, pelvic 44→51%, axial 24→28%.
 
-## Scored (19 occurrences)
+## Five of these rows were on a cheetah
+
+A blind re-mining audit found that **`extensor-iliotibialis`, `femorotibialis`,
+`adductor-femoris`, `ischioflexorius` and `gastrocnemius` carried this paper's
+*Galictis cuja* prose on *Acinonyx jubatus* occurrences** — while the table below
+listed all five as *Galictis*, so the note and the data disagreed. Ercoli et al.
+name *Acinonyx* three times: once as a cursorial contrast, once as a Fig. 1 label,
+twice in the references. The co-cited Hudson et al. (2011b) measures 1.5 O/I
+mentions per page and cannot be the source of an attachment either.
+
+The cause was `attribute_species.py` rule 2 taking the **first** single-species
+source in the `sources` array, with `hudson-etal-2011b` ahead of
+`ercoli-etal-2012` and both inside Theria. All five rows now name *Galictis cuja*
+in their own prose, which is rule 1 and survives every rebuild. See `GAPS.md` §7.
+
+## Scored (19 occurrences, all *Galictis cuja*)
 
 | Record | *Galictis* muscle(s) |
 |---|---|
@@ -45,10 +60,21 @@ foot 73→77%, pelvic 44→51%, axial 24→28%.
 **The caudofemoralis is absent in *Galictis*.** The record already carried
 `present: "variable"` for Theria with the piriformis floated as a remnant. Ercoli
 et al. looked in a carnivoran with a long, well-muscled tail — where a persistent
-gluteofemoralis would be least surprising — and did not find one. In three of six
-hind limbs the caudal part of the gluteus superficialis divided into extra
-bellies, which they suggest is the remnant instead. That is a **second candidate,
-disagreeing with the piriformis proposal**, and it is now on the record with both.
+gluteofemoralis would be least surprising — and did not find one: "m.
+gluteofemoralis (m. caudofemoralis) — this muscle is absent." In **three hind
+limbs** the caudal part of the gluteus superficialis divided into extra bellies,
+which they suggest "could be a remnant of this muscle". That is a **second
+candidate, disagreeing with the piriformis proposal**, and it is now on the record
+with both.
+
+Two corrections a later audit made here. The occurrence read **`present:
+"variable"`**, which is the *clade's* answer written onto one animal — the exact
+error the rollup exists to prevent, and the same one `levator-anguli-oris` had.
+It is `no` now, and Theria computes `variable` on its own if a therian disagrees.
+And this note said **"three of six hind limbs"**: the paper gives no denominator.
+Its methods name three specimens plus a fourth for additional observations, and
+its largest stated count anywhere is "in four legs". Six was arithmetic, not
+evidence.
 
 **The semitendinosus takes origin from the tail.** Its caudal belly arises from
 the transverse process of caudal vertebra 2, by aponeurosis from C1 and C3, with
@@ -59,9 +85,14 @@ alongside the ischium.
 
 ## Not scored, and why
 
-- **`iliocostalis` (lumbar).** Named and weighed, but a table interrupts the
+- ~~**`iliocostalis` (lumbar).** Named and weighed, but a table interrupts the
   description in the PDF text layer and I could not read a clean origin and
-  insertion. Left unscored rather than guessed.
+  insertion.~~ **Now scored.** The table interleaves under `pdftotext` but both
+  attachments read cleanly out of a `-layout` extraction once the column offset is
+  accounted for — the obstacle was the tool, not the source, and this was the
+  paper's **heaviest** muscle at 10.06% of hind limb muscle mass, with "heavy
+  iliocostalis" among its headline functional characters. Note the direction: the
+  **pelvic end is the origin** and the ribs are the insertion.
 - **`longissimus-dorsi`.** The paper describes the lumbar epaxial sector as
   iliocostalis plus transversospinalis; it does not give a separate longissimus.
 - **`contrahentes-digitorum-pes`, `flexores-breves-profundi-pes`.** The intrinsic

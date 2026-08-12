@@ -46,10 +46,16 @@ gathered for a question that fails.
   feather tract*, not onto bone. Like the anuran knee aponeurosis and the shark's
   midventral raphe, it is a muscle whose distal end a fossil cannot record.
 - **The biceps slip** ends in the propatagial aponeurosis.
-- **The humeral origin of both pronators.** She flags "homology problems with
-  Baumel et al." over whether the tuberculum supracondylare ventrale and the ventral
-  epicondyle are the same thing, so no landmark is asserted — naming the
-  entepicondyle would settle by fiat what she leaves open.
+- **The humeral origin of both pronators** — but not for the reason this note used
+  to give. The "homology problems with Baumel et al." remark is made about
+  ***Pelecanoides garnoti*'s pronator profundus**, where the origin shifts off the
+  tuberculum supracondylare ventrale onto the ventral epicondyle. In *Gavia immer*
+  she names the tuberculum for both pronators without hedging. The rows stop at the
+  bone because `skeleton.json` resolves no tuberculum supracondylare ventrale — and
+  they must not be collapsed onto the entepicondyle, because in this animal she
+  **distinguishes** the two: the flexor digitorum superficialis arises from the
+  ventral epicondyle, both pronators from the tuberculum. A caveat had been
+  transplanted from one species to another, and it was hiding a real distinction.
 - **The os radiale** in the extensor metacarpi radialis row: it is a pulley the
   tendon passes around, not an attachment.
 - The avian-only muscles with no record here: expansor secundariorum,
@@ -60,6 +66,40 @@ gathered for a question that fails.
 
 The scapulotriceps has **no "furcular" origin** in loons, against Sanders (1967).
 That is in the occurrence note rather than resolved.
+
+## What a blind re-mine of this paper corrected
+
+Nine of the thirteen rows came back exactly right, and the measured density
+reproduced at 6.0. Four things did not:
+
+- **`triceps-brachii` had both heads on one landmark-free insertion row.** She gives
+  them different sites: scapulotriceps on the **processus cotylaris dorsalis**,
+  humerotriceps on the **olecranon**. The note's reasoning — that the processus is
+  not the olecranon and equating them would manufacture a correlate — is right for
+  the scapulotriceps, and it had been over-applied to suppress a site she states
+  plainly for the other head. Two rows now; `olecranon` was in `skeleton.json` as a
+  correlate all along.
+- **`serratus-anterior` is named "superficialis + profundus" and scored only the
+  superficialis.** The profundus' cranial head arises from the **last cervical
+  vertebrae**, not a rib, and inserts on the **dorsomedial** scapula. Both were
+  missing; both elements existed.
+- **The latissimus' iliac origin was one `lateral` row** where she gives the
+  **medial, cranial and lateral** surfaces of the ala preacetabularis ilii. Three
+  rows now, per the one-row-per-aspect rule.
+- **A sourced absence had been filed as a to-do.** M. scapulohumeralis cranialis is
+  **absent in *Gavia immer* CM 2320** — the specimen every other *G. immer* row here
+  is scored from — and present in USNM 504983, in *G. stellata* and in
+  *Pelecanoides*. Sanders (1967) also found it in *G. immer*. That is a presence
+  disagreement *between two specimens of one species*, which the "still in it" list
+  below recorded merely as unmined. It is now an `uncertain` row on
+  `scapulohumeralis-anterior` with no attachments, because the animal it was seen in
+  is not the animal the other rows describe.
+
+Also: the *Pelecanoides* supinator absence is kept as `no` on the strength of her
+descriptive section, but her character 11 is headed "reduction or absence" and reads
+"absent **or reduced to an aponeurosis**", and under the ectepicondylo-ulnaris she
+allows that part of that tendinous mass "represents all that is left of M.
+supinator". The belly is gone; the tendon may not be. That hedge is now in the row.
 
 ## One element added
 

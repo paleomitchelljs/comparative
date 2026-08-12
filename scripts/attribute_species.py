@@ -213,6 +213,11 @@ def binomial_index(by_id):
     return idx
 
 
+# Occurrences whose species was decided by the order of their `sources` list
+# rather than by evidence. Filled by rule 2, reported at the end of main().
+COLLISIONS = []
+
+
 def attribute(occ, clade, idx, by_clade, by_id):
     # Every candidate must belong to the clade the row is about. A Chondrichthyes
     # row often cites an anuran paper for comparison; that is a citation, not an
@@ -232,6 +237,24 @@ def attribute(occ, clade, idx, by_clade, by_id):
     srcs = occ.get("sources", []) or []
 
     # 2. a single-species source
+    #
+    # When TWO of them name different animals of the same clade, the loop below
+    # would pick whichever the sources list happens to put first, and nothing
+    # would say so. That is not a tie-break, it is a coin toss on the question
+    # this whole file exists to answer, and it has been wrong: five Galictis
+    # cuja hindlimb rows sat on Acinonyx jubatus, and three Cygnus cygnus
+    # girdle rows on Gallus, because an architecture paper and an atlas
+    # preceded the descriptive source that actually supplied the prose.
+    #
+    # Report the collision instead. The fix is always the same and belongs in
+    # the data, not here: name the binomial in the row's own prose so rule 1
+    # fires. Note that rule 1 matches full binomials only, so "in Cygnus" is
+    # invisible to it — write "Cygnus cygnus".
+    rivals = {SOURCE_SPECIES[k] for k in srcs
+              if k in SOURCE_SPECIES and ok(SOURCE_SPECIES[k])}
+    if len(rivals) > 1:
+        COLLISIONS.append((occ, sorted(rivals)))
+
     for k in srcs:
         sid = SOURCE_SPECIES.get(k)
         if ok(sid):
@@ -264,6 +287,8 @@ def main():
                 clade = (by_id.get(occ.get("species"), {}).get("clade")
                          or occ.get("taxon"))
                 sid, how = attribute(occ, clade, idx, by_clade, by_id)
+                if COLLISIONS and COLLISIONS[-1][0] is occ:
+                    COLLISIONS[-1] = (occ, COLLISIONS[-1][1], m["id"], how)
                 if not sid:
                     unresolved.append(f"{m['id']}/{clade}")
                     continue
@@ -286,6 +311,16 @@ def main():
         print(f"\nUNRESOLVED ({len(unresolved)}):")
         for u in unresolved[:20]:
             print("   ", u)
+
+    decided_by_order = [c for c in COLLISIONS if len(c) == 4 and c[3] == "source"]
+    if decided_by_order:
+        print(f"\nDECIDED BY SOURCES-LIST ORDER ({len(decided_by_order)}) — "
+              "two single-species sources of one clade, and no binomial in the "
+              "row's prose to choose between them:")
+        for occ, rivals, mid, _ in decided_by_order:
+            print(f"    {mid}/{occ['species']}  <- {rivals}")
+        print("    Fix in the data: name the animal the prose describes, in full "
+              "(genus alone does not match).")
 
 
 if __name__ == "__main__":

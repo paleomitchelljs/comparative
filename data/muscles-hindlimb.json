@@ -633,7 +633,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Iliofemoralis",
           "present": "yes",
           "sources": [
@@ -649,11 +649,12 @@
             ],
             "insertion": [
               {
-                "element": "femur"
+                "element": "femur",
+                "side": "dorsal"
               }
             ]
           },
-          "attachmentNote": "Origin on the lateral ilium; the femorotibialis internus tendon arises distal and anterior to it, which is the landmark Klinkhamer et al. use to separate the two."
+          "attachmentNote": "Crocodylus porosus. Tendinous origin on the central lateral ilium, deep to iliotibialis 2; inserts fleshy onto the DISTAL THIRD of the dorso-lateral femur, between femorotibialis internus and externus, and attaches along most of the femoral length. The femorotibialis internus tendon arising distal and anterior to it is the landmark Klinkhamer et al. use to separate the two. Hip abductor, confirmed by EMG. This is the description `extensor-iliotibialis` was also carrying."
         },
         {
           "species": "struthio-camelus",
@@ -1010,12 +1011,30 @@
         },
         {
           "species": "alligator-mississippiensis",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Caudofemoralis longus + brevis",
           "present": "yes",
-          "note": "Large and well developed; inserts on a prominent fourth trochanter.",
+          "note": "Large and well developed; inserts on a prominent fourth trochanter. Attachments are deliberately not scored for Alligator mississippiensis: Allen et al. measure this muscle's architecture but give no attachment sites (0.1 origin/insertion mentions per page), and Diogo & Molnar's crocodylian exemplar is Caiman latirostris. The rows this occurrence used to carry were Klinkhamer et al.'s description of Crocodylus porosus and have moved to their own occurrence.",
           "sources": [
             "allen-etal-2014",
+            "diogo-molnar-2014"
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Caudofemoralis longus"
+            },
+            {
+              "name": "Caudofemoralis brevis"
+            }
+          ]
+        },
+        {
+          "species": "crocodylus-porosus",
+          "speciesBasis": "note",
+          "name": "Caudofemoralis longus + brevis",
+          "present": "yes",
+          "sources": [
             "diogo-molnar-2014",
             "klinkhamer-etal-2017"
           ],
@@ -1032,12 +1051,16 @@
             "insertion": [
               {
                 "element": "femur",
-                "side": "posterior",
+                "side": "ventral",
                 "landmark": "fourth-trochanter"
+              },
+              {
+                "element": "femoral-condyles",
+                "side": "ventral"
               }
             ]
           },
-          "attachmentNote": "Klinkhamer et al. distinguish caudofemoralis longus (caudal vertebrae) from brevis (ilium); both converge on the fourth trochanter.",
+          "attachmentNote": "Crocodylus porosus. Longus is fleshy from the haemal arches of numerous caudal vertebrae BEGINNING AT CAUDAL VERTEBRA 12; brevis has TWO heads, one from the postero-lateral ilium and one from caudal vertebrae 4 and 5, anterior to the longus origin — so both muscles take caudal vertebrae and the caudal row is shared, where the block used to read longus-from-vertebrae and brevis-from-ilium as though each had one head. Both insert by tendon on the proximo-ventral femur at the fourth trochanter. The second insertion row is the longus' ACCESSORY TENDON onto the ventro-distal femur at the tibial condyle, together with gastrocnemius externus; scored on the condyles because that is as fine as skeleton.json resolves. The longus is the largest muscle in the animal's body. Allen et al. is no longer cited here: it measures architecture and gives no attachment sites, and it is the Alligator source that used to hold this row on the wrong animal.",
           "division": "divided",
           "parts": [
             {
@@ -1124,8 +1147,8 @@
         {
           "species": "galictis-cuja",
           "speciesBasis": "note",
-          "present": "variable",
-          "note": "Largely lost; the fourth trochanter is absent. A caudofemoralis persists in some marsupials and in taxa with muscular tails. The piriformis has been proposed as a remnant. Ercoli et al. dissected six hind limbs of the mustelid Galictis cuja — a carnivoran with a long, well-muscled tail, where a persistent gluteofemoralis would be least surprising — and record it as absent. In three of the six the caudal portion of the gluteus superficialis divided into extra bellies, which they suggest may be its remnant. A second candidate remnant, and one that disagrees with the piriformis proposal.",
+          "present": "no",
+          "note": "Galictis cuja. Ercoli et al. state it flatly: 'M. gluteofemoralis (m. caudofemoralis) — this muscle is absent.' A carnivoran with a long, well-muscled tail, where a persistent gluteofemoralis would be least surprising, and it is not there; they read the absence as a derived condition acquired within some mustelid clades. In THREE HIND LIMBS the caudal portion of the gluteus superficialis divided into one or more extra bellies, which they suggest 'could be a remnant of this muscle' — a second candidate remnant, and one that disagrees with the proposal that the piriformis is the remnant. The paper gives no denominator for those three limbs, and this note previously said 'three of six', which the paper does not support: its methods name three specimens plus a fourth for additional observations, and its largest stated count anywhere is 'in four legs'. This row read `variable` until an audit caught it — that was the clade's answer written onto one animal, which is the error the rollup exists to prevent. Theria computes `variable` on its own if another therian disagrees.",
           "sources": [
             "diogo-molnar-2014",
             "ercoli-etal-2012"
@@ -1366,7 +1389,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Iliotibialis",
           "present": "yes",
           "sources": [
@@ -1382,11 +1405,12 @@
             ],
             "insertion": [
               {
-                "element": "femur"
+                "element": "tibia",
+                "side": "proximal"
               }
             ]
           },
-          "attachmentNote": "Iliotibialis 3 arises deep to iliotibialis 2 on the central lateral ilium by tendon and inserts fleshy onto the distal third of the dorso-lateral femur."
+          "attachmentNote": "Crocodylus porosus. Three parts, and all three insert by tendon on the PROXIMO-ANTERIOR TIBIA: IT1 fleshy from the antero-lateral ilium, IT2 by tendon from the central lateral ilium between IT1 and IT3, IT3 fleshy from the postero-lateral ilium. IT2 is the largest and forms almost the whole dorsolateral face of the thigh. All three are knee extensors, which is what a tibial insertion is for, and EMG confirms it for IT2."
         },
         {
           "species": "struthio-camelus",
@@ -1453,8 +1477,8 @@
           ]
         },
         {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "source",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Rectus femoris + tensor fasciae latae",
           "present": "yes",
           "origin": "Anterior inferior iliac spine (rectus femoris); iliac crest (tensor fasciae latae).",
@@ -1539,7 +1563,7 @@
               }
             ]
           },
-          "attachmentNote": "Rectus femoris from the quadriceps tuberosity of the ilium and the cranial hip capsule to the anterodorsal patellar margin; tensor fasciae latae from a small area of the iliac wing, inserting not on bone but through the fascia lata onto gluteus superficialis, biceps femoris, sartorius and the crural fascia."
+          "attachmentNote": "Galictis cuja. Rectus femoris from the quadriceps tuberosity of the ilium and the cranial hip capsule to the anterodorsal patellar margin; tensor fasciae latae from a small area of the iliac wing, inserting not on bone but through the fascia lata onto gluteus superficialis, biceps femoris, sartorius and the crural fascia."
         },
         {
           "species": "gekko-gecko",
@@ -1936,7 +1960,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Femorotibialis",
           "present": "yes",
           "sources": [
@@ -1946,7 +1970,8 @@
           "attachments": {
             "origin": [
               {
-                "element": "femur"
+                "element": "femur",
+                "side": "dorsal"
               }
             ],
             "insertion": [
@@ -1957,7 +1982,7 @@
               }
             ]
           },
-          "attachmentNote": "Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."
+          "attachmentNote": "Crocodylus porosus. Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion."
         },
         {
           "species": "struthio-camelus",
@@ -2040,8 +2065,8 @@
           ]
         },
         {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "source",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Vastus lateralis, medialis and intermedius",
           "present": "yes",
           "origin": "Greater trochanter, linea aspera, and anterior/lateral femoral shaft.",
@@ -2160,7 +2185,7 @@
               }
             ]
           },
-          "attachmentNote": "The three vasti, all femoral in origin and patellar in insertion — which is the character that separates them from the rectus femoris head of the same complex. Vastus lateralis from the cranioproximal femur medial to the greater trochanter base, to the lateral patellar margin and proximolateral tibia; vastus medialis from the craniomedial femoral neck and diaphysis to the medial and mediodistal patella."
+          "attachmentNote": "Galictis cuja. The three vasti, all femoral in origin and patellar in insertion — which is the character that separates them from the rectus femoris head of the same complex. Vastus lateralis from the cranioproximal femur medial to the greater trochanter base, to the lateral patellar margin and proximolateral tibia; vastus medialis from the craniomedial femoral neck and diaphysis to the medial and mediodistal patella."
         }
       ],
       "homology": {
@@ -2266,7 +2291,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "'Ambiens'",
           "present": "yes",
           "sources": [
@@ -2277,16 +2302,18 @@
             "origin": [
               {
                 "element": "pubis",
-                "side": "ventral"
+                "side": "lateral"
               }
             ],
             "insertion": [
               {
-                "element": "tibia"
+                "element": "tibia",
+                "side": "proximal",
+                "landmark": "cnemial-crest"
               }
             ]
           },
-          "attachmentNote": "Tendinous origin on the proximo-lateral pubis, becoming tendinous distally along the anterior surface."
+          "attachmentNote": "Crocodylus porosus. Tendinous origin on the proximo-lateral pubis, inserting by a long tendon on the proximo-anterior tibia AT THE CNEMIAL CREST — the crest is named in the source, so it is scored rather than left at the bone. Knee extensor and hip flexor, knee extension confirmed by EMG. Klinkhamer et al. found only a SINGLE HEAD, against two in Alligator mississippiensis, but they attribute that to the sub-adult age of their specimens and of the Caiman latirostris in the earlier study that found the same — NOT to a species difference. Recorded here as an observation and explicitly not as a Crocodylus porosus character."
         },
         {
           "species": "struthio-camelus",
@@ -2524,8 +2551,8 @@
           ]
         },
         {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "source",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Adductor magnus, longus and brevis",
           "present": "yes",
           "origin": "Inferior pubic ramus and ischial tuberosity.",
@@ -2635,7 +2662,7 @@
               }
             ]
           },
-          "attachmentNote": "Adductor magnus and adductor brevis share a small origin on the caudal ramus of the pubis and the ischial ramus. Magnus inserts on the distal caudal femur in two areas just proximal to the condyles, sharing fibres with semimembranosus; brevis on the proximal third of the lateral femur. Adductor longus lies between pectineus and magnus and its origin is not scored here."
+          "attachmentNote": "Galictis cuja. Adductor magnus and adductor brevis share a small origin on the caudal ramus of the pubis and the ischial ramus. Magnus inserts on the distal caudal femur in two areas just proximal to the condyles, sharing fibres with semimembranosus; brevis on the proximal third of the lateral femur. Adductor longus lies between pectineus and magnus and its origin is not scored here."
         }
       ],
       "homology": {
@@ -3312,7 +3339,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor tibialis externus + internus",
           "present": "yes",
           "sources": [
@@ -3327,16 +3354,17 @@
               },
               {
                 "element": "ilium",
-                "side": "lateral"
+                "side": "ventral"
               }
             ],
             "insertion": [
               {
-                "element": "tibia"
+                "element": "tibia",
+                "side": "proximal"
               }
             ]
           },
-          "attachmentNote": "Flexor tibialis internus is four-part in Crocodylus: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium; FTI3 from the proximo-lateral ischium.",
+          "attachmentNote": "Crocodylus porosus. Flexor tibialis internus is FOUR-part here, against three in some Alligator and Caiman latirostris accounts: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium, the largest of the four; FTI3 from the proximo-lateral ischium; FTI4 a small thin muscle from the latero-ventral ilium near the ischium, joining the common tendon. The tibial insertion is the internus'. Flexor tibialis EXTERNUS is named in this record but its insertion is deliberately unscored: it arises by tendon from the postero-lateral ilium and ends, by a long tendon shared with gastrocnemius externus, IN THE PES at the proximal tarsus — not on the tibia.",
           "division": "divided",
           "parts": [
             {
@@ -3368,8 +3396,8 @@
           ]
         },
         {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "source",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Semitendinosus, semimembranosus, biceps femoris",
           "present": "yes",
           "origin": "Ischial tuberosity; the short head of biceps femoris from the linea aspera.",
@@ -3502,7 +3530,7 @@
               }
             ]
           },
-          "attachmentNote": "The hamstring field, and the origins are what make it one field: biceps femoris from the dorsal ischial tuberosity, semitendinosus from the ischial tuberosity AND the transverse processes of the first three caudal vertebrae, semimembranosus from the caudal ramus of the ischium. The caudal-vertebral head is the one worth noting — a thigh muscle taking origin from the tail. Insertions run to the tibia in all three, with semimembranosus also on the medial femoral epicondyle and biceps femoris on the lateral."
+          "attachmentNote": "Galictis cuja. The hamstring field, and the origins are what make it one field: biceps femoris from the dorsal ischial tuberosity, semitendinosus from the ischial tuberosity AND the tail — its caudal belly fleshy from the transverse process of caudal vertebra 2 and aponeurotic from C1 and C3 — semimembranosus from the caudal ramus of the ischium. Ercoli et al. read that RESTRICTED caudal origin as a derived mustelid condition, so the row is scored as C1–C3 rather than as a broad caudal sheet. The caudal-vertebral head is the one worth noting — a thigh muscle taking origin from the tail. Insertions run to the tibia in all three, with semimembranosus also on the medial femoral epicondyle and biceps femoris on the lateral."
         },
         {
           "species": "gekko-gecko",
@@ -3873,8 +3901,8 @@
           }
         },
         {
-          "species": "acinonyx-jubatus",
-          "speciesBasis": "source",
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
           "name": "Gastrocnemius",
           "present": "yes",
           "origin": "Medial and lateral femoral condyles.",
@@ -3959,7 +3987,7 @@
               }
             ]
           },
-          "attachmentNote": "Lateral head by a strong tendon from the lateral femoral epicondyle and the lateral sesamoid of the knee, medial head from the medial epicondyle, both also from the caudal femoral diaphysis and the knee capsule. Inserts on the caudodorsal calcaneal tubercle, its tendon fusing with those of flexor digitorum superficialis and soleus to form the calcaneal tendon."
+          "attachmentNote": "Galictis cuja. Lateral head by a strong tendon from the lateral femoral epicondyle and the lateral sesamoid of the knee, medial head from the medial epicondyle, both also from the caudal femoral diaphysis and the knee capsule. Inserts on the caudodorsal calcaneal tubercle, its tendon fusing with those of flexor digitorum superficialis and soleus to form the calcaneal tendon."
         }
       ],
       "homology": {
@@ -5202,7 +5230,7 @@
         },
         {
           "species": "galictis-cuja",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Fibularis longus, brevis (+ tertius in humans, digiti quinti in rats)",
           "present": "yes",
           "action": "Evert the foot; the longus also supports the transverse arch.",
@@ -5251,16 +5279,25 @@
               {
                 "element": "fibula",
                 "side": "proximal"
+              },
+              {
+                "element": "tibia",
+                "side": "lateral"
               }
             ],
             "insertion": [
               {
                 "element": "metatarsals",
                 "side": "proximal"
+              },
+              {
+                "element": "tarsals",
+                "side": "lateral",
+                "landmark": "calcaneum"
               }
             ]
           },
-          "attachmentNote": "Fibularis brevis from the anterolateral and caudolateral surfaces of the middle of the fibula in two bellies; fibularis longus running along the cranial and lateral fibula. Both round the lateral malleolus. Scored at the fibula and metatarsals only: the paper distinguishes the two muscles' fibular fields more finely than a single row can carry."
+          "attachmentNote": "Galictis cuja. Fibularis brevis from the anterolateral and caudolateral surfaces of the middle of the fibula in two bellies, inserting on the dorsolateral tubercle of metatarsal V. Fibularis longus is the reason for the tibial and calcaneal rows: it arises tendinously from the CRANIAL HEAD OF THE FIBULA *and* from the lateral aspect of the LATERAL CONDYLE OF THE TIBIA with the adjacent tibial diaphysis, and it reaches a first insertion on the laterodistal CALCANEUS and the proximal margin of the metatarsal V tubercle before running internal to the long plantar ligament to a final attachment on the lateral surface of the plantar tubercle of metatarsal I. Both round the lateral malleolus. The tibial origin and the calcaneal insertion were missing while this note claimed the only omission was that the fibular fields were finer than one row could carry — a whole bone at each end, not a matter of granularity."
         },
         {
           "species": "gekko-gecko",

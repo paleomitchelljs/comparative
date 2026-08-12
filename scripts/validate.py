@@ -169,6 +169,20 @@ def check_division(occ, label, present, muscles, source_keys):
     if present == "no" and div:
         err(f"{label}: present='no' but division='{div}'")
 
+    # `present: "variable"` on a SPECIES row, with attachments scored, is a
+    # contradiction: somebody dissected this animal and wrote down where the
+    # muscle attached, so its presence in this animal is not variable. Every
+    # instance found so far was a clade-wide or mammal-wide generalisation
+    # written onto one animal — the same error as the Galictis caudofemoralis
+    # and the Ascaphus levator anguli oris. `variable` is a rollup RESULT,
+    # computed when species disagree; at species level use yes/no/uncertain and
+    # put genuine within-species variation in the note.
+    att = occ.get("attachments") or {}
+    if present == "variable" and any(att.get(k) for k in ("origin", "insertion")):
+        warn(f"{label}: present='variable' but attachments are scored — "
+             "variable is a clade rollup, not a species observation; if the "
+             "source dissected this animal use yes/no/uncertain")
+
     if div and not occ.get("sources"):
         warn(f"{label}: division='{div}' with no source cited")
 

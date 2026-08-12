@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 780 present occurrences · 254 skeletal elements · 104 sources · 19 operational taxa
+129 muscle records · 787 present occurrences · 254 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 12 | 46 | 41 | 89% |
 | leg | 10 | 55 | 49 | 89% |
 | thigh | 10 | 45 | 37 | 82% |
-| pectoral | 16 | 160 | 125 | 78% |
-| arm | 5 | 63 | 46 | 73% |
+| pectoral | 16 | 164 | 127 | 77% |
+| arm | 5 | 65 | 47 | 72% |
 | forearm | 19 | 167 | 115 | 69% |
 | pelvic | 8 | 32 | 22 | 69% |
 | cranial | 16 | 72 | 47 | 65% |
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 39 | 54% |
-| axial | 15 | 29 | 14 | 48% |
-| **all** | 129 | 780 | 558 | **72%** |
+| axial | 15 | 30 | 15 | 50% |
+| **all** | 129 | 787 | 562 | **71%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -140,13 +140,13 @@ back in for Aves.
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Monotremata | 103 | 103 | 100% |
-| Crocodylia | 68 | 60 | 88% |
-| Theria | 73 | 64 | 88% |
+| Theria | 73 | 65 | 89% |
 | Actinistia | 7 | 6 | 86% |
+| Crocodylia | 71 | 60 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Lepidosauria | 117 | 79 | 68% |
-| Aves | 89 | 49 | 55% |
+| Aves | 93 | 52 | 56% |
 | Actinopterygii | 14 | 7 | 50% |
 | Anura | 72 | 36 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
@@ -355,9 +355,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 254, of which 227 (89%) carry at least one attachment |
-| Observed attachment rows | 1541 |
-| Rows naming a **landmark** | 427 (28%) |
-| Rows naming a **side** | 1033 (67%) |
+| Observed attachment rows | 1566 |
+| Rows naming a **landmark** | 433 (28%) |
+| Rows naming a **side** | 1057 (67%) |
 | Osteological correlates | 112 flagged, 100 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -450,7 +450,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 558 of 780 present occurrences (72%).**
+**Taxon-specific attachments: 562 of 787 present occurrences (71%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -470,17 +470,17 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 354 |
-| forearm | 19 | 290 |
+| pectoral | 16 | 367 |
+| forearm | 19 | 288 |
 | cranial | 16 | 169 |
-| leg | 10 | 139 |
+| leg | 10 | 141 |
 | foot | 12 | 122 |
-| arm | 5 | 116 |
+| arm | 5 | 120 |
 | thigh | 10 | 104 |
 | hand | 9 | 102 |
 | fin | 9 | 57 |
-| pelvic | 8 | 52 |
-| axial | 15 | 36 |
+| pelvic | 8 | 53 |
+| axial | 15 | 43 |
 <!-- /counts:holes -->
 
 No region is at zero. The distribution is now flat enough that the limiting factor
@@ -866,6 +866,61 @@ only because removing it hands those rows to Diogo & Molnar's *Timon*, which is 
 different animal nobody observed them in, and the honest disposition — lifting six
 scored attachment rows to record level — should be a decision made deliberately
 rather than as a side effect of fixing a lookup table.
+
+### The blind-remine audit: attribution decided by list order
+
+The clade-keyed seed tables were flagged above as "the next thing that should be"
+fixed. A blind re-mining audit — three papers re-read from the PDF with the
+dataset closed, then diffed — found they had already gone wrong, and found the
+mechanism. **`attribute_species.py` rule 2 walks `sources` in list order and takes
+the first single-species source it recognises.** When two of them name different
+animals of the same clade, the order of a JSON array decided which animal was
+credited with an observation, and nothing reported it.
+
+Nineteen occurrences were resolved that way. Eleven were verifiably wrong:
+
+| Rows | Were on | Belong to | How it was established |
+|---|---|---|---|
+| 5 hindlimb: `extensor-iliotibialis`, `femorotibialis`, `adductor-femoris`, `ischioflexorius`, `gastrocnemius` | *Acinonyx jubatus* | ***Galictis cuja*** | The prose is Ercoli et al. (2012) verbatim. Their paper names *Acinonyx* three times: once as a cursorial example, once as a Fig. 1 label, twice in references. Hudson et al. (2011b) measures **1.5** O/I mentions per page — below this repo's own 2.0 "not a row source" line — with 2 hits for tuberosity/epicondyle/trochanter combined |
+| 3 crocodylian: `caudofemoralis`, `pectoralis`, `triceps-brachii` | *Alligator mississippiensis* | ***Crocodylus porosus*** | The prose is Klinkhamer et al. (2017). Allen et al. (2014) measures **0.1** per page — it is an architecture paper and states no attachment sites — and Abdala & Diogo's crocodylian exemplar is *Caiman latirostris*, so no cited source could supply an *Alligator* attachment |
+| 3 avian: `pectoralis`, `latissimus-dorsi`, `coracobrachialis` | *Gallus domesticus* | ***Cygnus cygnus*** | The prose is Matsuoka & Hasegawa (2007) verbatim, down to "about 11% of body mass". Ghetie et al. is a 295-page atlas at **0.0** per page |
+
+**Genus alone does not pin a row.** `binomial_index` holds full binomials only, so
+the `pectoralis` note that opened "In *Cygnus* the origin is in three overlapping
+layers" was invisible to rule 1 and lost to rule 2. Two seed blocks had even
+carried a comment conceding "the note describes *Cygnus*, which has no row on this
+record" — a misattribution written down as a caveat instead of fixed. *Cygnus
+cygnus* now has its own three rows.
+
+Three things changed so this reports itself rather than recurring:
+
+- **`attribute_species.py` prints `DECIDED BY SOURCES-LIST ORDER`** for every
+  occurrence where two same-clade single-species sources compete and the prose
+  names neither. It went 19 → 4.
+- **`seed_occurrence_attachments.py` accepts row dicts**, not just bare element
+  ids. A bare id lets `migrate_attachment_rows.py` fill `side` from its global
+  (element, landmark) table, which is right for a clade statement and wrong for a
+  single-species description that names its own aspect. Klinkhamer et al. state an
+  aspect for nearly every attachment — the one thing the source is cited for — and
+  the global table was overruling them on the serratus, the levator scapulae and
+  the supracoracoideus.
+- **All eleven Klinkhamer blocks are pinned to `crocodylus-porosus`.** They were
+  clade-keyed, which is what let a single-species description be handed to whichever
+  crocodylian row existed.
+
+### Four that stay unresolved, because guessing is what caused this
+
+| Row | Problem |
+|---|---|
+| `pectoralis`/*Rattus norvegicus* · `deltoideus-clavicularis`/*Rattus norvegicus* | Both assert a **clavicle** origin citing Ercoli et al. (2014), which contains **zero** instances of the word "clavicle" and says "greater tuberosity" where the rows say greater tubercle. So the content is not *Galictis* — a mustelid row could not carry a clavicle — and *Rattus* is probably the right animal, but no cited source supports the observation. Campbell (2007) has 0 O/I mentions and gives only gross descriptions; Abdala & Diogo mention *Rattus* three times in a nomenclature table. **Row content unsupported by any cited source** is a distinct defect from misattribution, and it needs a mammalian source, not a lookup fix |
+| `gastrocnemius`/*Alligator mississippiensis* | Its note describes a femoral epicondyle that "bears a scattered striated surface" — an osteological-correlate observation, which points at Pereyra et al. (2024) and *Caiman yacare*. That PDF is not on disk, so the claim cannot be checked |
+| `extensores-digitorum-breves`/*Caiman yacare* | Order-decided but harmless: it carries no attachments, its note says the rows moved to the pes record |
+
+The lesson worth keeping is the one that stopped two further "fixes": **an
+architecture paper, an atlas and a dissection guide cannot be the source of an
+attachment.** Running the density check over a *candidate source* — not just over a
+paper you are about to mine — settles most of these in one line, and it is what
+established eight of the eleven reattributions above.
 
 ## What is still unmined outside `papers/`
 

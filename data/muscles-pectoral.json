@@ -412,7 +412,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Serratus anterior",
           "present": "yes",
           "note": "= serratus ventralis sensu Meers (2003).",
@@ -424,17 +424,21 @@
             "origin": [
               {
                 "element": "ribs",
-                "side": "lateral"
+                "side": "ventral"
               }
             ],
             "insertion": [
               {
                 "element": "scapula",
-                "side": "lateral"
+                "side": "medial"
+              },
+              {
+                "element": "scapula",
+                "side": "posterior"
               }
             ]
           },
-          "attachmentNote": "Originates from the ventrolateral ribs and inserts by tendon along the entire medio-posterior scapular margin — a broad, thin girdle extensor."
+          "attachmentNote": "Crocodylus porosus. Originates from the ventrolateral ribs and inserts by tendon along the entire MEDIO-POSTERIOR scapular margin — a broad, thin girdle extensor. Two insertion rows because the source names two aspects of one bone; a single `lateral` row had been standing here, which is the aspect the global side table supplies and not the one the paper gives."
         },
         {
           "species": "gallus-domesticus",
@@ -458,16 +462,23 @@
               {
                 "element": "true-ribs",
                 "side": "lateral"
+              },
+              {
+                "element": "cervical-vertebrae"
               }
             ],
             "insertion": [
               {
                 "element": "scapula",
                 "side": "ventral"
+              },
+              {
+                "element": "scapula",
+                "side": "medial"
               }
             ]
           },
-          "attachmentNote": "Gavia immer CM 2320. Pars cranialis of the superficial muscle has only one head of origin in loons — fleshy on the lateral surface of the shaft of the first true rib — and inserts by tendon on the ventral margin of the proximal quarter of the scapula, between the heads of the subscapularis. Pars caudalis arises by aponeurosis from the lateral surface of the 4th sternal rib and the 1st and 2nd true ribs. Pars metapatagialis is left out of the rows deliberately: it inserts into the HUMERAL FEATHER TRACT, not onto bone, and is one of the avian muscles that cannot leave an osteological trace at its distal end."
+          "attachmentNote": "Gavia immer CM 2320, and the record covers BOTH muscles named in its title, which is why there is a cervical origin. SUPERFICIALIS: pars cranialis has only one head of origin in loons — fleshy on the lateral surface of the shaft of the first true rib — inserting by tendon on the ventral margin of the proximal quarter of the scapula between the heads of the subscapularis; pars caudalis arises by aponeurosis from the lateral surface of the 4th sternal rib and the 1st and 2nd true ribs. PROFUNDUS has three heads, and the cranial one is the reason for the vertebral row: it arises from the LAST CERVICAL VERTEBRAE, not from a rib, and inserts on the DORSOMEDIAL surface of the distal half of the scapula, while the middle and caudal heads arise by tendinous sheets from the lateral surface of the true ribs and insert on the central and distal thirds of the ventromedial scapular blade. Both of those had been missing while the rows carried only the superficialis' rib origin and a single ventral scapular row. Pars metapatagialis of the superficialis stays out deliberately: it inserts into the HUMERAL FEATHER TRACT, not onto bone, and is one of the avian muscles that cannot leave an osteological trace at its distal end."
         },
         {
           "species": "tachyglossus-aculeatus",
@@ -1197,7 +1208,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Levator scapulae",
           "present": "yes",
           "sources": [
@@ -1214,11 +1225,11 @@
             "insertion": [
               {
                 "element": "scapula",
-                "side": "lateral"
+                "side": "anterior"
               }
             ]
           },
-          "attachmentNote": "Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the anterior scapular border from its anterodistal tip to the glenohumeral joint."
+          "attachmentNote": "Crocodylus porosus. Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the ANTERIOR scapular border from its anterodistal tip to the glenohumeral joint. Largely obscured by the trapezius — which these authors could not model, because skinning removed it."
         },
         {
           "species": "gallus-domesticus",
@@ -1939,7 +1950,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Costocoracoideus",
           "present": "yes",
           "note": "Usually divided into pars superficialis and pars profunda (Meers 2003).",
@@ -1958,10 +1969,14 @@
               {
                 "element": "coracoid",
                 "side": "ventral"
+              },
+              {
+                "element": "coracoid",
+                "side": "posterior"
               }
             ]
           },
-          "attachmentNote": "Klinkhamer et al. separate a costocoracoideus profundus originating on the lateral margin of the first few ribs."
+          "attachmentNote": "Crocodylus porosus. Klinkhamer et al. separate a costocoracoideus PROFUNDUS, fleshy from the lateral margin of the first few ribs to the ventro-posterior margin of the coracoid — the two coracoid rows are its one attachment named on two aspects. The SUPERFICIALIS is not scored here and is the reason to keep this record open: it arises on the ventro-lateral first few ribs and inserts on the MEDIAL HUMERAL HEAD, so one of the two parts of this muscle bypasses the girdle and reaches the arm."
         },
         {
           "species": "gallus-domesticus",
@@ -2380,21 +2395,27 @@
         },
         {
           "species": "alligator-mississippiensis",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pectoralis",
           "present": "yes",
           "sources": [
             "abdala-diogo-2010",
-            "allen-etal-2014",
+            "allen-etal-2014"
+          ],
+          "note": "Attachments are deliberately not scored for Alligator mississippiensis. Allen et al. measure this muscle's architecture and give no attachment sites; Abdala & Diogo's crocodylian exemplar is Caiman latirostris, not Alligator. The attachment rows this occurrence used to carry were Klinkhamer et al.'s description of Crocodylus porosus and have moved to their own occurrence."
+        },
+        {
+          "species": "crocodylus-porosus",
+          "speciesBasis": "note",
+          "name": "Pectoralis",
+          "present": "yes",
+          "sources": [
             "klinkhamer-etal-2017"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "interclavicle"
-              },
-              {
-                "element": "sternum"
               },
               {
                 "element": "ribs",
@@ -2409,11 +2430,11 @@
               }
             ]
           },
-          "attachmentNote": "Fleshy along the ventral midline from interclavicle and sternal ribs; tendinous onto the deltopectoral crest."
+          "attachmentNote": "Crocodylus porosus. Fleshy along the ventral midline from the interclavicle and the STERNAL RIBS; tendinous onto the proximo-ventral humerus at the deltopectoral crest. A very large sheet covering the whole superficial ventral chest. No sternal origin is scored: Klinkhamer et al. name the interclavicle and the sternal ribs, and sternal ribs are ribs — the earlier sternum row was not theirs."
         },
         {
           "species": "gallus-domesticus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pectoralis",
           "present": "yes",
           "origin": "Sternal keel (carina), furcula and sternocoracoclavicular membrane.",
@@ -2423,7 +2444,6 @@
           "sources": [
             "abdala-diogo-2010",
             "ghetie-etal-1976",
-            "matsuoka-hasegawa-2007",
             "schreiweis-1982"
           ],
           "attachments": {
@@ -2449,7 +2469,40 @@
               }
             ]
           },
-          "attachmentNote": "In Cygnus the origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is indirect, onto the surface of underlying muscle. Both pectoralis muscles together are about 11% of body mass."
+          "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. From the sternal keel, the furcula and the ribs onto the deltopectoral crest — the crista pectoralis in avian nomenclature."
+        },
+        {
+          "species": "cygnus-cygnus",
+          "speciesBasis": "note",
+          "name": "Pectoralis",
+          "present": "yes",
+          "sources": [
+            "matsuoka-hasegawa-2007"
+          ],
+          "attachmentNote": "Cygnus cygnus. The origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is INDIRECT, onto the surface of underlying muscle, which is why the rib row is the weakest of the three. Both pectoralis muscles together are about 11% of body mass.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum",
+                "side": "ventral",
+                "landmark": "sternal-keel"
+              },
+              {
+                "element": "furcula"
+              },
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          }
         },
         {
           "species": "tachyglossus-aculeatus",
@@ -2894,7 +2947,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Supracoracoideus",
           "present": "yes",
           "sources": [
@@ -2905,22 +2958,22 @@
             "origin": [
               {
                 "element": "coracoid",
-                "side": "ventral"
+                "side": "lateral"
               }
             ],
             "insertion": [
               {
                 "element": "humerus",
-                "side": "anterior",
+                "side": "ventral",
                 "landmark": "deltopectoral-crest"
               }
             ]
           },
-          "attachmentNote": "Fleshy origin on the proximo-lateral coracoid, covering the entire humeral head; fleshy insertion on the ventro-lateral humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder (Klinkhamer et al. 2017)."
+          "attachmentNote": "Crocodylus porosus. Fleshy origin on the PROXIMO-LATERAL coracoid, covering the entire humeral head; fleshy insertion on the VENTRO-LATERAL humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder. Both aspects are stated by Klinkhamer et al. and both had been overwritten by the global side table, which gave coracoid/ventral and deltopectoral-crest/anterior — the one thing this source is cited for is that it names the aspect."
         },
         {
           "species": "gallus-domesticus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Supracoracoideus",
           "present": "yes",
           "origin": "Sternal keel, deep to the pectoralis.",
@@ -2947,7 +3000,7 @@
               }
             ]
           },
-          "attachmentNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."
+          "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke."
         },
         {
           "species": "tachyglossus-aculeatus",
@@ -2997,7 +3050,7 @@
         },
         {
           "species": "galictis-cuja",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Supraspinatus and infraspinatus",
           "present": "yes",
           "origin": "Supraspinous and infraspinous fossae of the scapula, either side of the scapular spine.",
@@ -3031,7 +3084,7 @@
               }
             ]
           },
-          "attachmentNote": "Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus.",
+          "attachmentNote": "Galictis cuja. Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus.",
           "architecture": {
             "species": "Acinonyx jubatus",
             "n": 8,
@@ -3502,7 +3555,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Deltoideus scapularis",
           "present": "yes",
           "sources": [
@@ -3519,12 +3572,11 @@
             "insertion": [
               {
                 "element": "humerus",
-                "side": "dorsal",
-                "landmark": "deltopectoral-crest"
+                "side": "dorsal"
               }
             ]
           },
-          "attachmentNote": "Fleshy on the distolateral scapula, tendinous on the dorsolateral humeral head."
+          "attachmentNote": "Crocodylus porosus. Fleshy on the disto-lateral scapula, tendinous on the DORSO-LATERAL HUMERAL HEAD. Klinkhamer et al. give no deltopectoral crest for this muscle — the row formerly asserted one, against its own note. The row stops at the bone because skeleton.json resolves no humeral-head site. An elongate muscle attached along the scapula from its origin until it becomes tendinous, lying anterior to teres major."
         },
         {
           "species": "gallus-domesticus",
@@ -4395,6 +4447,16 @@
           "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis cranialis, a thin cord between scapula and humerus with a fleshy origin and insertion. It arises on the lateral surface of the scapular neck, cranial to the origin of the lateral head of M. subscapularis, and inserts on the proximal humerus at the distal edge of the pneumatic foramen. The scapular neck and the pneumatic foramen have no elements of their own here, so both ends are scored at bone level with the detail in this note."
         },
         {
+          "species": "gavia-immer",
+          "speciesBasis": "note",
+          "name": "Scapulohumeralis cranialis",
+          "present": "uncertain",
+          "sources": [
+            "mckitrick-1991"
+          ],
+          "note": "Gavia immer, and the interesting thing about this row is that it disagrees with itself BETWEEN TWO SPECIMENS OF ONE SPECIES. McKitrick found the muscle ABSENT in CM 2320 — the specimen every other Gavia immer row in this dataset is scored from — and PRESENT in USNM 504983, where it is a tiny parallel-fibred muscle from a short tendon on the dorsolateral surface of the scapular head, inserting on the medial surface of the humeral head at the crus ventrale fossae between the two heads of origin of the humerotriceps. Sanders (1967) also found it in G. immer. It is present in G. stellata and relatively larger in Pelecanoides garnoti, where the origin extends onto the proximal scapular blade. Scored `uncertain` rather than `yes` or `no` because the disagreement is within the species and neither specimen can stand for it; the alternative — taking CM 2320 as the exemplar because the rest of the rows do — would turn one dissection into an avian absence. No attachments are scored: the animal they were seen in is not the animal the rest of these rows describe."
+        },
+        {
           "species": "galictis-cuja",
           "speciesBasis": "note",
           "name": "Teres minor",
@@ -4626,7 +4688,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Scapulohumeralis posterior",
           "present": "yes",
           "note": "= scapulohumeralis caudalis sensu Meers (2003).",
@@ -4639,6 +4701,10 @@
               {
                 "element": "scapula",
                 "side": "lateral"
+              },
+              {
+                "element": "scapula",
+                "side": "posterior"
               }
             ],
             "insertion": [
@@ -4648,7 +4714,7 @@
               }
             ]
           },
-          "attachmentNote": "Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."
+          "attachmentNote": "Crocodylus porosus. Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question."
         },
         {
           "species": "nothoprocta-pentlandii",
@@ -5329,7 +5395,7 @@
         },
         {
           "species": "crocodylus-porosus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Teres major",
           "present": "yes",
           "sources": [
@@ -5340,8 +5406,7 @@
             "origin": [
               {
                 "element": "scapula",
-                "side": "lateral",
-                "landmark": "subscapular-fossa"
+                "side": "lateral"
               }
             ],
             "insertion": [
@@ -5351,7 +5416,7 @@
               }
             ]
           },
-          "attachmentNote": "Origin fleshy on the distolateral scapula; a long well-defined tendon to a bony ridge on the proximolateral humerus — a scar worth looking for in fossil pseudosuchians."
+          "attachmentNote": "Crocodylus porosus. Origin fleshy on the DISTO-LATERAL scapula, forming its postero-lateral surface and lying deep to the latissimus dorsi; a long well-defined tendon to a bony ridge on the proximo-lateral humerus — a scar worth looking for in fossil pseudosuchians. The origin formerly carried the SUBSCAPULAR FOSSA, which is a medial site and is not mentioned by Klinkhamer et al. anywhere; their word is disto-lateral, as this note always said."
         },
         {
           "species": "gallus-domesticus",
@@ -5803,13 +5868,12 @@
         },
         {
           "species": "gallus-domesticus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Latissimus dorsi",
           "present": "yes",
           "sources": [
             "abdala-diogo-2010",
             "ghetie-etal-1976",
-            "matsuoka-hasegawa-2007",
             "schreiweis-1982"
           ],
           "attachments": {
@@ -5829,8 +5893,36 @@
               }
             ]
           },
-          "attachmentNote": "Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone, and inserting on the medial margins of the dorsal clavicle and the scapula.",
-          "note": "Schreiweis (1982) resolves the penguin muscle into cranialis, caudalis and metapatagialis parts."
+          "note": "Schreiweis (1982) resolves the penguin muscle into cranialis, caudalis and metapatagialis parts.",
+          "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar."
+        },
+        {
+          "species": "cygnus-cygnus",
+          "speciesBasis": "note",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "matsuoka-hasegawa-2007"
+          ],
+          "attachmentNote": "Cygnus cygnus. Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone — Matsuoka & Hasegawa say the attachment 'seems not on the bones directly' — and inserting on the MEDIAL margins of the dorsal clavicle and the scapula, occupying more than two-thirds of the margo dorsalis. Pars caudalis arises from the neural spines of the posterior thoracic vertebrae and reaches the dorso-cranial ilium weakly.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracic-vertebrae",
+                "landmark": "thoracic-neural-spines"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              },
+              {
+                "element": "clavicle",
+                "side": "medial"
+              }
+            ]
+          }
         },
         {
           "species": "gavia-immer",
@@ -5848,6 +5940,14 @@
               {
                 "element": "ilium",
                 "side": "lateral"
+              },
+              {
+                "element": "ilium",
+                "side": "medial"
+              },
+              {
+                "element": "ilium",
+                "side": "anterior"
               }
             ],
             "insertion": [
@@ -5861,7 +5961,7 @@
               }
             ]
           },
-          "attachmentNote": "Gavia immer CM 2320. Two separate bellies, 8 mm apart in this specimen. Pars cranialis arises by a short wide aponeurosis from the dorsal vertebrae and inserts by semitendinous fibres on the dorsolateral surface of the humeral shaft, deep to the scapulotriceps. Pars caudalis arises from the dorsal vertebrae cranially and, by aponeurosis, from the medial, cranial and lateral surfaces of the ala preacetabularis ilii — the ilium row is that second head — and inserts by a 3 mm tendon on the margo caudalis of the humerus, just cranial to the insertion of pars cranialis. A dense tendinous band, George & Berger's 'humeral anchor', ties the tendon to the scapulotriceps."
+          "attachmentNote": "Gavia immer CM 2320. Two separate bellies, 8 mm apart in this specimen. Pars cranialis arises by a short wide aponeurosis from the dorsal vertebrae and inserts by semitendinous fibres on the dorsolateral surface of the humeral shaft, deep to the scapulotriceps. Pars caudalis arises from the dorsal vertebrae cranially and, by aponeurosis, from the medial, cranial and lateral surfaces of the ala preacetabularis ilii — the three ilium rows are that second head, one per aspect McKitrick names, where a single `lateral` row had been standing for all three — and inserts by a 3 mm tendon on the margo caudalis of the humerus, just cranial to the insertion of pars cranialis. A dense tendinous band, George & Berger's 'humeral anchor', ties the tendon to the scapulotriceps."
         },
         {
           "species": "tachyglossus-aculeatus",
@@ -5910,7 +6010,7 @@
         },
         {
           "species": "galictis-cuja",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Latissimus dorsi",
           "present": "yes",
           "origin": "Thoracolumbar fascia, spinous processes T7–L5, iliac crest, lower ribs.",
@@ -5991,7 +6091,8 @@
               "joint": "shoulder",
               "motion": "rotation-medial"
             }
-          ]
+          ],
+          "attachmentNote": "Galictis cuja."
         },
         {
           "species": "gekko-gecko",
@@ -6383,12 +6484,21 @@
         },
         {
           "species": "alligator-mississippiensis",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Triceps brachii",
           "present": "yes",
           "sources": [
             "abdala-diogo-2010",
-            "allen-etal-2014",
+            "allen-etal-2014"
+          ],
+          "note": "Attachments are deliberately not scored for Alligator mississippiensis. Allen et al. measure architecture without attachment sites, and Abdala & Diogo's crocodylian is Caiman latirostris. The rows this occurrence used to carry were Klinkhamer et al.'s Crocodylus porosus description and have moved. Worth acquiring a source for: the triceps longus medialis of Alligator is reported with TWO tendons of origin, one scapular and one CORACOID, and that second head is the character Klinkhamer et al.'s Crocodylus finding is measured against — see the Crocodylus porosus occurrence."
+        },
+        {
+          "species": "crocodylus-porosus",
+          "speciesBasis": "note",
+          "name": "Triceps brachii",
+          "present": "yes",
+          "sources": [
             "klinkhamer-etal-2017"
           ],
           "attachments": {
@@ -6410,7 +6520,7 @@
               }
             ]
           },
-          "attachmentNote": "Three heads: longus lateralis and longus medialis from the proximolateral scapula, brevis fleshy on the proximolateral humerus. All converge on the olecranon."
+          "attachmentNote": "Crocodylus porosus, and this row carries the ONLY forelimb difference Klinkhamer et al. found between it and other crocodilians. Triceps longus medialis arises by a single tendon from the postero-lateral and proximal scapula; in Alligator mississippiensis and other crocodilian taxa the same muscle is reported with two tendons of origin, one scapular and one from the CORACOID, and only the scapular tendon was found here. So the absent coracoid head is the point of the row, and no coracoid origin is scored. Triceps longus lateralis also arises by tendon from the proximo-lateral scapula, superficial to teres major and scapulohumeralis caudalis but deep to deltoideus scapularis. Triceps brevis is three-part: TB1 fleshy on the proximo-lateral humerus over the teres major insertion, TB2 on the postero-dorsal and proximal humerus, TB3 on the posterior humeral head. All heads converge by tendon on the olecranon."
         },
         {
           "species": "gallus-domesticus",
@@ -6453,10 +6563,15 @@
               {
                 "element": "ulna",
                 "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal",
+                "landmark": "olecranon"
               }
             ]
           },
-          "attachmentNote": "Gavia immer CM 2320. Scapulotriceps arises semitendinously from the dorsal surface of the head of the scapula and from the ligament between the scapular head and the fossa pneumotricipitalis of the humerus; its tendon runs over the sulcus m. scapulotricipitis to insert on the processus cotylaris dorsalis of the ulna. Humerotriceps arises from the ventral and dorsal fossae pneumotricipitales, the tuberculum dorsale, and most of the length of the caudal surface of the humerus. The insertion is scored as ulna/proximal without a landmark: the processus cotylaris dorsalis is not the olecranon, and equating the two would manufacture a correlate. McKitrick records a disagreement worth keeping — there is NO 'furcular' origin of the scapulotriceps in loons, against Sanders (1967).",
+          "attachmentNote": "Gavia immer CM 2320. TWO INSERTION ROWS, because McKitrick gives the two heads two different sites. Scapulotriceps arises semitendinously from the dorsal surface of the head of the scapula and from the ligament between the scapular head and the fossa pneumotricipitalis of the humerus; its tendon runs over the sulcus m. scapulotricipitis to insert on the PROCESSUS COTYLARIS DORSALIS — which is not the olecranon, so that row stops at the bone rather than manufacturing a correlate. Humerotriceps arises from the ventral and dorsal fossae pneumotricipitales, the tuberculum dorsale, and most of the length of the caudal surface of the humerus, and inserts on the OLECRANON, which McKitrick names plainly and which skeleton.json carries as a correlate — so it is scored. Both heads had been collapsed onto one landmark-free row, and the reasoning that justified that for the scapulotriceps was suppressing a site the source states for the humerotriceps. McKitrick records a disagreement worth keeping — there is NO 'furcular' origin of the scapulotriceps in loons, against Sanders (1967). In Gavia stellata the two tendons of insertion are separate but connected by fascia, against Sanders (1967) again.",
           "division": "heads",
           "parts": [
             {
@@ -6469,7 +6584,7 @@
         },
         {
           "species": "galictis-cuja",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Triceps brachii (long, lateral, medial heads)",
           "present": "yes",
           "origin": "Infraglenoid tubercle of the scapula (long head); posterior humerus above and below the radial groove (lateral, medial heads).",
@@ -6608,7 +6723,8 @@
               "joint": "shoulder",
               "motion": "extension"
             }
-          ]
+          ],
+          "attachmentNote": "Galictis cuja. Six well-separated bellies near the origin in this animal — caput longum, laterale, angulare, accessorium, mediale accessorium and mediale, the last itself three-bellied."
         },
         {
           "species": "zaglossus-bruijnii",
@@ -7935,14 +8051,13 @@
         },
         {
           "species": "gallus-domesticus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Coracobrachialis",
           "present": "yes",
           "note": "= coracobrachialis longus + brevis, or cranialis + caudalis, or anterior + posterior, depending on author.",
           "sources": [
             "abdala-diogo-2010",
-            "ghetie-etal-1976",
-            "matsuoka-hasegawa-2007"
+            "ghetie-etal-1976"
           ],
           "attachments": {
             "origin": [
@@ -7962,7 +8077,35 @@
               }
             ]
           },
-          "attachmentNote": "Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus."
+          "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar."
+        },
+        {
+          "species": "cygnus-cygnus",
+          "speciesBasis": "note",
+          "name": "Coracobrachialis",
+          "present": "yes",
+          "sources": [
+            "matsuoka-hasegawa-2007"
+          ],
+          "attachmentNote": "Cygnus cygnus. Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal",
+                "landmark": "tuberculum-ventrale"
+              }
+            ]
+          }
         },
         {
           "species": "galictis-cuja",

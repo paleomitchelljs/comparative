@@ -180,6 +180,39 @@ need work (Aves, Lepidosauria, Anura and Testudines forelimbs) each want a
 descriptive single-animal myology that is not in `papers/` at all. See
 *Acquisitions the corpus needs*.
 
+### Check a source's density before you believe its rows, not just before you mine it
+
+The check in **How** was written for a paper you are about to open. Run it on a
+paper a row already **cites** and it becomes an audit instrument. A blind re-mine
+of three papers — read from the PDF with the dataset closed, then diffed — turned
+up eleven rows crediting the wrong animal, and eight of them were settled by this
+one line:
+
+| Source | per pg | So it cannot be the source of |
+|---|---:|---|
+| Hudson et al. (2011b), cheetah hindlimb | **1.5** | five *Galictis cuja* hindlimb rows sitting on *Acinonyx jubatus* |
+| Allen et al. (2014), crocodylian architecture | **0.1** | three *Crocodylus porosus* rows sitting on *Alligator* |
+| Ghetie et al. (1976), 295-page atlas | **0.0** | three *Cygnus cygnus* girdle rows sitting on *Gallus* |
+| Campbell (2007), rat dissection guide | **0.0** | any attachment at all — it gives gross descriptions and functions |
+
+**An architecture paper, an atlas and a dissection guide cannot supply an
+attachment.** When a row cites one of those alongside a descriptive source, the
+descriptive source wrote the row — and `attribute_species.py` was crediting
+whichever came first in the `sources` array. It now reports those collisions
+(`DECIDED BY SOURCES-LIST ORDER`, 19 → 4). Full accounting in `GAPS.md` §7.
+
+Two further lessons from the same pass. **Read the methods for what was
+destroyed:** Klinkhamer et al. lost the trapezius, latissimus dorsi, rhomboideus
+and serratus ventralis cervicis to skinning, and severed the manus and pes
+insertions — which is why those read "into the manus/pes", and why turning that
+phrase into a carpal or a metacarpal asserts what the authors withheld. Nothing in
+the dataset had recorded it, and the reading note claimed the paper used
+contrast-enhanced CT when it says in as many words that iodine staining was not
+possible. **And a table interrupting the text layer is not a source limitation:**
+Ercoli et al.'s iliocostalis was left unscored on that ground and reads out cleanly
+from `pdftotext -layout` once the column offset is accounted for — it was the
+paper's heaviest muscle.
+
 ### Done since this file was written
 
 **Hattori & Tsuihiji (2021), dorsal half** — **Testudines 26% → 35%**, Aves 49% →
