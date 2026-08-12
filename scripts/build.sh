@@ -42,29 +42,32 @@ python3 scripts/seed_gambaryan_monotremata.py $FLAG
 step "7. Gambaryan et al. monotreme forearm and hand, three genera"
 python3 scripts/seed_gambaryan_monotremata_distal.py $FLAG
 
-step "8. attachments -> element / side / landmark rows"
+step "8. Hattori & Tsuihiji dorsal pedal muscles, four sauropsid clades"
+python3 scripts/seed_hattori_pedal.py $FLAG
+
+step "9. attachments -> element / side / landmark rows"
 python3 scripts/migrate_attachment_rows.py $FLAG
 
-step "9. fused elements: fusedFrom, not partOf"
+step "10. fused elements: fusedFrom, not partOf"
 python3 scripts/migrate_fusions.py $FLAG
 
-step "10. taxon-specific division into parts"
+step "11. taxon-specific division into parts"
 python3 scripts/seed_division.py $FLAG
 
-step "11. innervation prose -> nerves.json ids"
+step "12. innervation prose -> nerves.json ids"
 python3 scripts/seed_nerves.py $FLAG
 
-step "12. action prose -> joints.json {joint, motion}"
+step "13. action prose -> joints.json {joint, motion}"
 python3 scripts/seed_actions.py $FLAG
 
-step "13. close the related-muscle graph"
+step "14. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
-step "14. measured counts in README.md and docs/GAPS.md"
+step "15. measured counts in README.md and docs/GAPS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "15. validate"
+  step "16. validate"
   python3 scripts/attribute_species.py --write
 python3 scripts/validate.py
 fi

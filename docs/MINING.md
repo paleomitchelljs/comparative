@@ -163,19 +163,68 @@ is:
 |---|---:|---:|---:|---|
 | Prikryl et al. (2009) | 11.1 | 9 | 8 | mined |
 | Meers (2003) | 10.4 | 11 | 10 | mined |
-| **Hattori & Tsuihiji (2021)** | **9.7** | **4** | **3** | **the top target now** |
+| Hattori & Tsuihiji (2021) | 9.7 | 46 | 43 | dorsal half mined, below |
 | Ercoli et al. (2012) | 9.0 | 20 | 19 | mined |
-| Gambaryan et al. (2015) | 8.8 | 51 | 51 | mined, below |
+| Gambaryan et al. (2015) | 8.8 | 108 | 103 | mined out |
 | Molnar et al. (2018) | 6.4 | 42 | 33 | partly |
 
-Everything else descriptive is either fully scored or under 6 per page.
-**Hattori & Tsuihiji (2021) is now the highest-density under-mined source in
-`papers/`** — pedal muscles across all four sauropsid clades, with osteological
-correlates named for over 80% of them, and a proposed revision of the Romer
-homology framework for the anterior tibial muscles. `GAPS.md` §6 files it under
-correlates; at 9.7 per page over 35 pages it is a row source as well.
+Everything else descriptive is either fully scored or under 6 per page. **There
+is no longer an under-mined paper above 6.4 per page in `papers/`**, which is a
+different situation from the one this file was written in and changes what the
+next pass should be. The two things left at the top of the list are both
+*partial* rather than untouched — Hattori & Tsuihiji's plantar half (16 muscles,
+same seven animals, same structure) and Molnar et al.'s three remaining stem
+tetrapods — and after those the ranking stops being the right instrument.
+**Below 6.4 the binding constraint is acquisition, not effort**: the columns that
+need work (Aves, Lepidosauria, Anura and Testudines forelimbs) each want a
+descriptive single-animal myology that is not in `papers/` at all. See
+*Acquisitions the corpus needs*.
 
 ### Done since this file was written
+
+**Hattori & Tsuihiji (2021), dorsal half** — **Testudines 26% → 35%**, Aves 49% →
+55%, Lepidosauria 64% → 68%, foot 81% → 89% and leg 82% → 89%. Forty-two rows over
+six records and **seven animals across all four extant sauropsid clades**: *Iguana
+iguana*, *Varanus indicus*, *Chelydra serpentina*, *Paleosuchus palpebrosus*,
+*Crocodylus porosus*, *Gallus gallus*, *Grus japonensis*. Measured 9.7 per page.
+It had four citations and three scored rows, which is what put it top of the
+citation-derived ranking above.
+**The paper's headline revision was already recorded here; its evidence was not.**
+`tibialis-anterior` and `extensor-digitorum-longus-hl` both carried the argument
+that the avian and non-avian assignments are swapped — avian m. tibialis cranialis
+with non-avian m. extensor digitorum longus, avian m. extensor digitorum longus
+with non-avian m. tibialis anterior — and both had a lone *Struthio* row at
+`uncertain` with nothing under it. The attachments the argument turns on are now
+scored in seven animals: the femoral origin conserved across all four clades, the
+avian tuberositas sitting where metatarsals II and III would have been, and the
+cnemial crests as the avian addition. The *Struthio* rows stay `uncertain`; this
+pass supplies the evidence, not the verdict.
+**A second revision needed a record.** The slips running from one metatarsal onto
+the digit lateral to it had been read as parts of the short digital extensors in
+lepidosaurs and turtles. Hattori & Tsuihiji separate them on their own stout
+tendons, a consistent origin one metatarsal medial to the digit served, and a
+distinct crocodilian innervation. `extensores-digitorum-breves-pes` would have
+reproduced the error they correct and `intermetatarsales` is a different muscle
+(metatarsal to metatarsal, web-forming, lateral plantar nerve), so
+**`interossei-dorsales-pes`** is new. Only its digit II member survives in birds,
+as m. abductor digiti II.
+**Three orphan correlates closed and the total went 15 → 12.** The avian tibialis
+cranialis takes the cranial and lateral cnemial crests; the avian abductor digiti
+II takes the fossa metatarsi I. All three were flagged `correlate` in
+`skeleton.json` with Hattori cited and no muscle attached — the correlate names
+had been mined from this paper and the muscles had not.
+**Two clean catches on the way through.** The clade-keyed guard in
+`seed_occurrence_attachments.py` fired on four crocodylian blocks the moment
+*Paleosuchus* and *Crocodylus* joined *Caiman*, and the new guard in
+`seed_division.py` fired on two more — both working exactly as intended, and both
+resolved by naming the species the block was written for. And `fossa-metatarsi-i`
+was parented to `metatarsals` while being scored in Aves alone, where the
+metatarsals are the tarsometatarsus, so no avian row could reach it; re-parented.
+**Still in it: the plantar half**, §3.2, sixteen muscles in the same structure for
+the same seven animals — gastrocnemius, both long digital flexors, pronator
+profundus, fibulocalcaneus, the short flexors, lumbricales, contrahentes, the
+plantar interossei. That is the single largest remaining bite in `papers/`.
+
 
 **Gambaryan et al. (2015)** — **Monotremata 43% → 100%**, from 7 present
 occurrences to 51, and the first extant column in the dataset with no unscored

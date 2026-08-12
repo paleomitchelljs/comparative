@@ -183,17 +183,20 @@ SEED = {
                        "shiftNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon."},
     },
     "tibialis-anterior": {
-        "crocodylia": {"origin": ["tibia"], "insertion": ["metatarsals"],
+        "crocodylia": {"species": "caiman-yacare",  # Pereyra et al.'s caiman; Hattori & Tsuihiji's Paleosuchus and Crocodylus rows are scored per species
+                       "origin": ["tibia"], "insertion": ["metatarsals"],
                        "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
                        "shiftNote": "From the proximomedial tibia to the dorsolateral proximal metatarsals I-II; the metatarsal bases carry coarse rugosities marking the insertion."},
     },
     "fibularis-group": {
-        "crocodylia": {"origin": ["fibula", "iliofibular-tubercle"], "insertion": ["metatarsals"],
+        "crocodylia": {"species": "caiman-yacare",
+                       "origin": ["fibula", "iliofibular-tubercle"], "insertion": ["metatarsals"],
                        "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
                        "shiftNote": "Fibularis longus arises on the fibular shaft distal to the iliofibular tubercle; brevis from the distal fibular shaft and the anterior tibial aponeurosis. Both insert on the anterior surface of metatarsal V."},
     },
     "extensor-digitorum-longus-hl": {
-        "crocodylia": {"origin": ["femoral-extensor-fossa", "femoral-epicondyle-lateral"], "insertion": ["metatarsals"],
+        "crocodylia": {"species": "caiman-yacare",
+                       "origin": ["femoral-extensor-fossa", "femoral-epicondyle-lateral"], "insertion": ["metatarsals"],
                        "sources": ["pereyra-etal-2024", "diogo-molnar-2014"],
                        "shiftNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which."},
     },
@@ -221,7 +224,8 @@ SEED = {
                        "shiftNote": "Flexor digitorum brevis profundus, digits I-IV, from metatarsals I-III and V and the distal calcaneum. The metatarsal origins are marked by fine striae — the pedal correlates Pereyra et al. identify for the first time."},
     },
     "extensores-digitorum-breves-pes": {
-        "crocodylia": {"origin": ["astragalus", "calcaneum"], "insertion": ["phalanges-pes"],
+        "crocodylia": {"species": "caiman-yacare",
+                       "origin": ["astragalus", "calcaneum"], "insertion": ["phalanges-pes"],
                        "sources": ["pereyra-etal-2024", "abdala-diogo-2010"],
                        "shiftNote": "Extensor digitorum brevis superficialis arises from the astragalar hollow and lateral calcaneum; the deep layer arises from the proximodorsal metatarsals, whose fine striations run parallel to the metatarsal long axis."},
     },

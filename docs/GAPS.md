@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-128 muscle records · 740 present occurrences · 253 skeletal elements · 104 sources · 19 operational taxa
+129 muscle records · 780 present occurrences · 254 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,9 +43,9 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| leg | 10 | 34 | 28 | 82% |
+| foot | 12 | 46 | 41 | 89% |
+| leg | 10 | 55 | 49 | 89% |
 | thigh | 10 | 45 | 37 | 82% |
-| foot | 11 | 27 | 22 | 81% |
 | pectoral | 16 | 160 | 125 | 78% |
 | arm | 5 | 63 | 46 | 73% |
 | forearm | 19 | 167 | 115 | 69% |
@@ -54,7 +54,7 @@ illustrated.
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 39 | 54% |
 | axial | 15 | 29 | 14 | 48% |
-| **all** | 128 | 740 | 518 | **70%** |
+| **all** | 129 | 780 | 558 | **72%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -82,8 +82,13 @@ scored; Ercoli et al. (2014) the same, 25 rows; Ziermann et al. (2014) and Johns
 ranked first and second ahead of every unmined paper in `papers/`. A citation is
 not a mining. `MINING.md` now carries the ranked list.
 
-**Hand has left last place for the first time, and axial has taken it.** Hand
-went 47% → 54% and forearm 58% → 69% on the second half of Gambaryan
+**Foot and leg are now the two best-covered regions at 89% each**, on Hattori &
+Tsuihiji (2021) across seven sauropsids — the first source in the corpus to give
+one region in all four extant sauropsid clades at once, and the reason Testudines
+finally moved off 26%. It also closed three of the orphan correlates in
+[§3](#3-is-the-skeletal-mapping-keeping-pace).
+
+**Hand has left last place, and axial has taken it.** Hand went 47% → 54% and forearm 58% → 69% on the second half of Gambaryan
 et al. (2015) — the same paper, the same three monotreme genera, 57 further rows.
 Together the two Gambaryan passes are 108 rows, far the largest single-source
 addition the dataset has taken, and they moved the whole corpus from 65% to 70%.
@@ -135,20 +140,20 @@ back in for Aves.
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Monotremata | 103 | 103 | 100% |
+| Crocodylia | 68 | 60 | 88% |
 | Theria | 73 | 64 | 88% |
 | Actinistia | 7 | 6 | 86% |
-| Crocodylia | 56 | 48 | 86% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
-| Lepidosauria | 105 | 67 | 64% |
+| Lepidosauria | 117 | 79 | 68% |
+| Aves | 89 | 49 | 55% |
 | Actinopterygii | 14 | 7 | 50% |
 | Anura | 72 | 36 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
-| Aves | 79 | 39 | 49% |
 | Chondrichthyes | 23 | 11 | 48% |
+| Testudines | 52 | 18 | 35% |
 | Myxini | 3 | 1 | 33% |
 | Petromyzontida | 3 | 1 | 33% |
-| Testudines | 46 | 12 | 26% |
 <!-- /counts:taxa -->
 
 **Caudata was the anomaly and is now the reference column.** It went from 11% to
@@ -206,6 +211,16 @@ cartilage at all. **A branchial constrictor that inserts on the heart is not a
 scoring gap.** The lamprey hypobranchial series is the same case and is left
 unscored with the reason in its note, because the alternative — copying the shark's
 coracoid-to-mandible rows onto it — is the failure §7 is about.
+
+**Testudines is off the floor at last, 26% → 35%, and it took a source that is
+not about turtles.** Hattori & Tsuihiji (2021) dissect *Chelydra serpentina*
+alongside two squamates, two crocodilians and two birds to establish pedal
+homologies across Sauropsida, and the turtle rows come free with the comparison.
+That is worth noting as a route: the column had been treated as needing a turtle
+monograph, and what moved it was a four-clade comparative paper in which the
+turtle is one of seven animals. Its remaining 34 unscored rows are still forelimb
+— forearm 13, hand 9, pectoral 5 — and those do want a descriptive source the
+corpus does not have.
 
 **Monotremata went 43% to 100% and is the first extant column with no unscored
 row in it.** Seven occurrences became 103 across two passes, on Gambaryan et al.
@@ -339,11 +354,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 253, of which 223 (88%) carry at least one attachment |
-| Observed attachment rows | 1420 |
-| Rows naming a **landmark** | 397 (28%) |
-| Rows naming a **side** | 913 (64%) |
-| Osteological correlates | 111 flagged, 96 carry a muscle |
+| Elements | 254, of which 227 (89%) carry at least one attachment |
+| Observed attachment rows | 1541 |
+| Rows naming a **landmark** | 427 (28%) |
+| Rows naming a **side** | 1033 (67%) |
+| Osteological correlates | 112 flagged, 100 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -356,14 +371,23 @@ relative references ("distal *to* the deltopectoral crest" locates a muscle by a
 landmark it does not touch) and cross-taxon disjunctions.
 
 **What is still wrong.** Three muscles attach only to group-level elements with no
-landmark. Fifteen osteological correlates carry no muscle at all: coronoid process
-of ulna, linea aspera, tibial tuberosity, pectoral articular process, pygostyle,
-tibiotarsus, cranial and lateral cnemial crests, fossa metatarsi I, Meckelian
-fossa, epipterygoid, basipterygoid process, temporal bar, ventral radial crest,
-posterior ulnar crest. Those are landmarks a palaeontologist would look at first,
-and the dataset currently says nothing about what pulls on them. The count rose
-because earlier passes added correlates faster than they added the muscles that use
-them, and has since fallen as those muscles arrived.
+landmark. **Twelve** osteological correlates carry no muscle at all: coronoid
+process of ulna, linea aspera, tibial tuberosity, pectoral articular process,
+pygostyle, tibiotarsus, Meckelian fossa, epipterygoid, basipterygoid process,
+temporal bar, ventral radial crest, posterior ulnar crest. Those are landmarks a
+palaeontologist would look at first, and the dataset currently says nothing about
+what pulls on them. The count rose because earlier passes added correlates faster
+than they added the muscles that use them, and has since fallen as those muscles
+arrived.
+
+**Three came off the list in one pass, and how they got on it is the lesson.**
+The cranial and lateral cnemial crests and the fossa metatarsi I were all added
+to `skeleton.json` from Hattori & Tsuihiji (2021), cited by name, with notes
+already saying which muscle each was the correlate *for* — and no muscle attached,
+because the paper had been mined for its landmark vocabulary and not for its rows.
+Scoring its dorsal pedal musculature attached all three. **An orphan correlate is
+often not a missing observation but an unfinished pass**, and the fastest way to
+find the muscle is usually to reopen the source the correlate came from.
 
 **The flag itself now has histological evidence under it, and the evidence is a
 warning.** Pereyra et al. (2019) sectioned the pectoral girdle and humerus of
@@ -395,7 +419,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 22 | 68 | 3.1 |
-| hindlimb | 42 | 38 | 0.9 |
+| hindlimb | 43 | 42 | 1.0 |
 | pectoral | 32 | 28 | 0.9 |
 | axial | 33 | 28 | 0.8 |
 | forelimb | 52 | 42 | 0.8 |
@@ -426,7 +450,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 518 of 740 present occurrences (70%).**
+**Taxon-specific attachments: 558 of 780 present occurrences (72%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -449,11 +473,11 @@ it is one end of most of them.
 | pectoral | 16 | 354 |
 | forearm | 19 | 290 |
 | cranial | 16 | 169 |
+| leg | 10 | 139 |
+| foot | 12 | 122 |
 | arm | 5 | 116 |
 | thigh | 10 | 104 |
 | hand | 9 | 102 |
-| leg | 10 | 77 |
-| foot | 11 | 63 |
 | fin | 9 | 57 |
 | pelvic | 8 | 52 |
 | axial | 15 | 36 |

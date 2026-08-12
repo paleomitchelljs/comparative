@@ -135,6 +135,14 @@ RULES: list[tuple[str, str]] = [
     ("deep fibular nerve", "deep-fibular"),
     ("superficial fibular nerve", "superficial-fibular"),
     ("common fibular division", "common-fibular"),
+    ("common fibular nerve", "common-fibular"),
+    # Unqualified "the fibular nerve" resolves to the TRUNK, not to a branch.
+    # Hattori & Tsuihiji use it that way throughout — deep and superficial are
+    # named where they mean them, and the sources they compile disagree about
+    # which branch supplies several of these muscles, which is part of their
+    # argument for not treating innervation as the decisive homology criterion.
+    # Ordered after the two specific rules, which are longer and match first.
+    ("fibular nerve", "common-fibular"),
     ("sciatic nerve, fibular division", "common-fibular"),
     ("sciatic nerve, tibial division", "tibial"),
     ("tibial division of the sciatic nerve", "tibial"),

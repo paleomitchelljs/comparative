@@ -3070,17 +3070,17 @@
       "kind": "bone",
       "region": "hindlimb",
       "segment": "autopod",
-      "partOf": "metatarsals",
+      "partOf": "tarsometatarsus",
       "correlate": true,
       "presence": {
-        "default": "variable",
+        "default": "no",
         "present": [
           "aves"
         ],
         "sources": [
           "hattori-tsuihiji-2021"
         ],
-        "note": "Origin correlate for the m. interosseus dorsalis digiti II."
+        "note": "Origin correlate for the m. interosseus dorsalis digiti II — the one member of that series birds retain, as m. abductor digiti II (Hattori & Tsuihiji 2021). Re-parented from `metatarsals` to `tarsometatarsus`: it is scored in Aves only, and the avian metatarsals are the tarsometatarsus, so a row naming this landmark on the loose metatarsals could not resolve."
       }
     },
     {
@@ -3279,6 +3279,29 @@
         ],
         "note": "Its hollow carries the origin of the extensor digitorum brevis superficialis in Caiman."
       }
+    },
+    {
+      "id": "astragalocalcaneum",
+      "label": "Astragalocalcaneum",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "lepidosauria",
+          "testudines"
+        ],
+        "sources": [
+          "hattori-tsuihiji-2021"
+        ],
+        "note": "The fused proximal tarsal of squamates and turtles. Added because Hattori & Tsuihiji (2021) put attachments on it that cannot be assigned to the astragalus or the calcaneum separately — the adductor hallucis dorsalis arises from a convex lip at the proximolateral margin of its tarsal facet in Iguana, and the extensor hallucis proprius from its dorsal aspect in Chelydra. `fusedFrom` rather than a second name for the astragalus, on the same reasoning as the avian carpometacarpus."
+      },
+      "fusedFrom": [
+        "astragalus",
+        "calcaneum"
+      ]
     },
     {
       "id": "iliofibular-tubercle",

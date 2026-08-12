@@ -447,9 +447,11 @@ SEED: list[tuple[tuple[str, str], dict]] = [
         "division": "divided",
         "parts": [p("Fibularis longus"), p("Fibularis brevis")]}),
     (("fibularis-group", "crocodylia"), {
+        "species": "caiman-yacare",
         "division": "divided",
         "parts": [p("Fibularis longus"), p("Fibularis brevis")]}),
     (("fibularis-group", "aves"), {
+        "species": "struthio-camelus",
         "division": "divided",
         "parts": [p("Fibularis longus"), p("Fibularis brevis")]}),
     (("fibularis-group", "theria"), {
