@@ -371,14 +371,25 @@ relative references ("distal *to* the deltopectoral crest" locates a muscle by a
 landmark it does not touch) and cross-taxon disjunctions.
 
 **What is still wrong.** Three muscles attach only to group-level elements with no
-landmark. **Twelve** osteological correlates carry no muscle at all: coronoid
-process of ulna, linea aspera, tibial tuberosity, pectoral articular process,
-pygostyle, tibiotarsus, Meckelian fossa, epipterygoid, basipterygoid process,
-temporal bar, ventral radial crest, posterior ulnar crest. Those are landmarks a
-palaeontologist would look at first, and the dataset currently says nothing about
-what pulls on them. The count rose because earlier passes added correlates faster
-than they added the muscles that use them, and has since fallen as those muscles
-arrived.
+landmark. **Fourteen** osteological correlates carry no muscle at all: coronoid
+process of ulna, supinator crest, linea aspera, tibial tuberosity, zygomatic arch,
+pectoral articular process, pygostyle, tibiotarsus, Meckelian fossa, epipterygoid,
+basipterygoid process, temporal bar, ventral radial crest, posterior ulnar crest.
+Those are landmarks a palaeontologist would look at first, and the dataset
+currently says nothing about what pulls on them. The count rose because earlier
+passes added correlates faster than they added the muscles that use them, and has
+since fallen as those muscles arrived.
+
+**Two of the fourteen are orphans on purpose, and should not be closed by
+inheriting the consensus.** The supinator crest and the zygomatic arch were each
+carrying a muscle through a *consensus* row that no occurrence supported — the
+supinator on a crest scored present in Theria alone and named by none of its eight
+scored occurrences, the adductor mandibulae on the mammalian masseter origin while
+every one of its six clades is non-mammalian. Removing those rows moved both
+elements onto this list, which is the honest place for them: the element is real,
+and nothing in the dataset yet observes a muscle on it. Closing them needs a
+therian forelimb source and a mammalian cranial source respectively — and the
+mammalian head remains the one column with no source at all.
 
 **Three came off the list in one pass, and how they got on it is the lesson.**
 The cranial and lateral cnemial crests and the fossa metatarsi I were all added
