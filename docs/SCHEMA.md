@@ -70,6 +70,7 @@ migration that created them could not be certain for all 630:
 | `source` | It cites a single-species study |
 | `survey` | It cites a multi-taxon survey, and that survey names an exemplar for this clade (Abdala & Diogo dissected *Timon lepidus*, *Caiman latirostris*, *Gallus*) |
 | `default` | Nothing better. The clade's first exemplar, and a guess — the interface labels these |
+| `generalised` | **Not a specimen.** The source describes a clade rather than an animal, so no one dissection stands behind the row. Only valid on a species record carrying `generalised: true`, and required on every row that uses one — the validator enforces both directions. Winterbottom's teleost synonymy is the case it exists for: 93 pages reconciling names across the group, dissecting nobody. Those rows previously claimed `source`, which this table defines as citing a *single-species* study, so the rows that were least like an observation were asserting the opposite |
 
 `scripts/attribute_species.py --write` recomputes all of it and is idempotent.
 

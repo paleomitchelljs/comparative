@@ -672,4 +672,8 @@ td .binomial + .common { display: block; }
   color: var(--unc); background: var(--unc-bg);
   padding: 0.03rem 0.28rem; border-radius: 3px;
 }
+/* A generalised row is not an observation of an animal, so it does not get to
+   look like the specimen rows beside it. */
+.basis-gen { color: var(--warn); background: var(--warn-bg); }
+
 .taxonpick optgroup { font-style: normal; font-weight: 600; }

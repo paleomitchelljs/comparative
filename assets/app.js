@@ -763,9 +763,12 @@ function renderOccTable(m) {
         ${sp ? `<span class="binomial">${esc(sp.binomial)}</span>` : ''}
         <span class="common">${esc((sp && sp.common) || t.label || '')}</span>
         ${o.speciesBasis && o.speciesBasis !== 'note' && o.speciesBasis !== 'source'
-          ? `<span class="basis" title="How this row was attributed to a species: ${
+          ? `<span class="basis${o.speciesBasis === 'generalised' ? ' basis-gen' : ''}"
+              title="How this row was attributed to a species: ${
               o.speciesBasis === 'survey'
                 ? 'the survey it cites names this species as its exemplar for the clade'
+                : o.speciesBasis === 'generalised'
+                ? 'NOT a specimen. The source describes the clade rather than an animal, so this row is a generalisation and no one dissection stands behind it'
                 : 'no better evidence — the clade default, and a guess'}">${esc(o.speciesBasis)}</span>` : ''}</td>
       <td><span class="pres pres-${esc(present)}">${esc(present)}</span></td>
       <td>${o.name ? `<span class="localname">${esc(o.name)}</span>`

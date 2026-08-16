@@ -20,6 +20,14 @@ MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
 PRESENCE = {"yes", "no", "variable", "uncertain", "inferred"}
 CONFIDENCE = {"well-supported", "moderate", "contested", "uncertain"}
 SERIAL_BASIS = {"topological", "developmental", "none"}
+
+# How an occurrence was attributed to its species. `generalised` is the honest
+# answer for a source that describes a clade rather than an animal — Winterbottom's
+# teleost synonymy reconciles names across the group and dissects nobody. Those
+# rows used to claim `source`, which the schema defines as citing a single-species
+# study, so the one basis that means "this is not an observation of any one animal"
+# was the one being asserted as the opposite.
+SPECIES_BASIS = {"note", "source", "survey", "default", "generalised"}
 LAYERS = {"superficialis", "profundus", "intermediate", "preaxial", "postaxial", "primaxial"}
 SEGMENTS = {"cranial", "axial", "girdle", "stylopod", "zeugopod", "autopod", "fin"}
 
@@ -280,11 +288,22 @@ def main():
     # Species are the unit of observation; a clade is a rollup over them.
     species_doc = load(ROOT / "data/species.json")
     species_ids, species_clade = set(), {}
+    generalised_species = set()
     for sp in species_doc["species"]:
         sid = sp.get("id")
         if sid in species_ids:
             err(f"species.json: duplicate id '{sid}'")
         species_ids.add(sid)
+        # A record standing for a clade rather than an animal has to say so, or
+        # it reads as a specimen in every view and every export.
+        if sp.get("generalised"):
+            generalised_species.add(sid)
+            if sp.get("fossil"):
+                err(f"species.json:{sid}: generalised and fossil together is not "
+                    f"a claim this schema can carry")
+        elif "(generalised)" in (sp.get("binomial") or ""):
+            err(f"species.json:{sid}: binomial says generalised but the record "
+                f"is not flagged `generalised: true`")
         if sp.get("clade") not in taxon_ids:
             err(f"species.json:{sid}: clade '{sp.get('clade')}' is not a taxon in taxa.json")
         species_clade[sid] = sp.get("clade")
@@ -610,6 +629,19 @@ def main():
                 continue
             tid = species_clade[sid]
             seen_species[sid] += 1
+
+            # A clade-level placeholder and a real animal must not be able to
+            # pass for one another in either direction.
+            basis = occ.get("speciesBasis")
+            if basis is not None and basis not in SPECIES_BASIS:
+                err(f"{where}/{sid}: speciesBasis='{basis}' not in {sorted(SPECIES_BASIS)}")
+            is_gen = sid in generalised_species
+            if is_gen and basis != "generalised":
+                err(f"{where}/{sid}: '{sid}' is a clade-level generalisation, so its "
+                    f"speciesBasis must be 'generalised', not '{basis}'")
+            if basis == "generalised" and not is_gen:
+                err(f"{where}/{sid}: speciesBasis='generalised' but '{sid}' is a real "
+                    f"species — say which basis actually attributed it")
 
             check_rows(occ.get("attachments", {}), f"{where}/{sid}", taxon=tid)
 
