@@ -783,7 +783,27 @@ keys on (muscle, taxon, species) so a clade can legitimately hold one block per
 dissected animal. The lesson is the cheaper one: **a bug's blast radius is worth
 measuring before it is described.**
 
-Two pseudo-species remain in `species.json`: `teleostei-generalised` (6 rows) and
+**A third joined them, and it was hiding in the thinnest column.** Ten Testudines
+cranial rows citing Werneburg (2011) stood on *Trachemys scripta*, nine of them
+with `speciesBasis: "survey"` — which this schema defines as a survey naming an
+exemplar **for this clade**. Werneburg's exemplar is *Emydura subglobosa*, a
+pleurodire, micro-CT'd as PIMUZ labNo. 2009.37; the seventeen mentions of
+*Trachemys* in his paper are citations to Poglayen-Neuwall (1953) and Edgeworth.
+His Appendix 1 is a catalogue of 94 muscular units compiled across the literature
+back to Bojanus (1819–21), and **30 of its 73 two-ended entries give the origin or
+insertion as a range across turtles** — "or", "1-2 heads", "the possible second
+head". That is a clade description wearing a species tag, and it had been reading
+as observations of a cryptodire nobody in this corpus examined.
+
+Moved to `testudines-generalised`. Testudines' percentage does not change — the
+observations are the same ones, and they stay inside the clade — but they now
+carry the `generalised` badge rather than passing for a dissected turtle.
+*Emydura subglobosa* is added with no rows: separating what Werneburg observed in
+his own animal from what he compiled needs the body of the paper read against the
+appendix, and that is the next pass on this source.
+
+Three pseudo-species now sit in `species.json`: `teleostei-generalised` (6 rows),
+`testudines-generalised` (10 rows) and
 `amphisbaenia-generalised` (0 rows — a placeholder for Westphal et al., not yet
 mined). Both are clades wearing a species tag.
 
