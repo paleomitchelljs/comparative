@@ -398,10 +398,31 @@ const jointLabel = (id, taxonId) => {
   const j = state.jointsById.get(id);
   if (!j) return id;
   if (!taxonId || !j.taxonNames) return j.label;
-  return j.taxonNames.find(tn => (tn.taxa || []).includes(taxonId))?.name || j.label;
+  const t = cladeOf(taxonId);
+  return j.taxonNames.find(tn => (tn.taxa || []).includes(t))?.name || j.label;
 };
 
 /* ---------- element presence ---------- */
+
+/* The taxon picker offers species as well as clades, but the skeleton is scored
+   at CLADE level: `presence`, `taxonNames` and the joint names all key on the
+   operational taxa in `taxa.json`, because that is the grain the sources score
+   a skeleton at. A species id therefore has to be resolved to its clade before
+   any of those lookups, and every one of them below goes through `cladeOf`.
+
+   Skipping that step does not fail loudly — it falls through to `presence.default`
+   and confidently answers the wrong question. `coracoid` is `default: yes` with
+   `absent: [theria]`, so asking about *Galictis cuja* rather than Theria returned
+   "yes": a mammal with a coracoid, which is the one girdle character every student
+   is taught mammals lack. The inverse cost the cheetah its scapular spine and both
+   fossae, which are `default: no` with `present: [theria]` — and with them the
+   supraspinatus and infraspinatus. It ran to 2026 wrong answers over 91 of the
+   92 species, and always in the direction of the anatomy the reader was NOT
+   looking at, since a species is only worth selecting where it differs.
+
+   Attachment resolution is deliberately NOT normalised: `attachmentsFor` matches
+   `o.species` first, so picking a species still gets that animal's own rows. Only
+   the skeleton's own clade-scored fields are widened. */
 
 /* What this element is called in a given taxon. Elements are homology groups —
    the hyomandibula of a shark and the stapes of a mammal are one element — so the
@@ -410,19 +431,21 @@ function elementLabel(elementId, taxonId) {
   const e = state.elementsById.get(elementId);
   if (!e) return elementId;
   if (!taxonId || !e.taxonNames) return e.label;
-  const hit = e.taxonNames.find(tn => (tn.taxa || []).includes(taxonId));
+  const t = cladeOf(taxonId);
+  const hit = e.taxonNames.find(tn => (tn.taxa || []).includes(t));
   return hit ? hit.name : e.label;
 }
 
 function elementPresentIn(elementId, taxonId) {
   const e = state.elementsById.get(elementId);
   if (!e) return 'unknown';
+  const t = cladeOf(taxonId);
   const p = e.presence || {};
-  if ((p.absent || []).includes(taxonId)) return 'no';
-  if ((p.present || []).includes(taxonId)) return 'yes';
-  if ((p.partial || []).includes(taxonId)) return 'partial';
-  if ((p.reduced || []).includes(taxonId)) return 'reduced';
-  if ((p.variable || []).includes(taxonId)) return 'variable';
+  if ((p.absent || []).includes(t)) return 'no';
+  if ((p.present || []).includes(t)) return 'yes';
+  if ((p.partial || []).includes(t)) return 'partial';
+  if ((p.reduced || []).includes(t)) return 'reduced';
+  if ((p.variable || []).includes(t)) return 'variable';
   return p.default || 'unknown';
 }
 
@@ -445,9 +468,13 @@ function musclesAtElement(elementId, taxonId, mode) {
     const taxa = taxonId ? [taxonId] : (m.occurrences || []).map(o => o.taxon);
     let oRec = false, oInh = false, iRec = false, iInh = false;
     for (const t of taxa) {
+      /* `presenceFor` rather than the first matching row: it resolves a species
+         to its own row and a clade to the rollup over its species, so a clade
+         whose first-listed species happens to lack the muscle no longer hides
+         it from every bone it attaches to in the others. */
       if (taxonId) {
-        const occ = (m.occurrences || []).find(o => o.taxon === t);
-        if (!occ || (occ.present || 'yes') === 'no') continue;
+        const p = presenceFor(m, t);
+        if (p === null || p === 'no') continue;
       }
       const a = attachmentsFor(m, t);
       const touches = rows => (rows || []).some(r => rowElements(r).includes(elementId));
@@ -512,7 +539,10 @@ function partitionAbsent(els, taxonId, q, mode) {
 
 function absentLine(absent, taxonId) {
   if (!absent.length) return '';
-  const clade = state.taxaById.get(taxonId)?.clade || taxonId;
+  /* Named for the clade even when a species is selected, because that is the
+     grain the absence was actually scored at — saying "absent in Galictis cuja"
+     would credit a single dissection with a statement about all of Theria. */
+  const clade = state.taxaById.get(cladeOf(taxonId))?.clade || taxonId;
   return `<p class="cellnote absentlist">Absent in ${esc(clade)}: ${absent.map(e =>
     `<a href="#element=${encodeURIComponent(e.id)}">${esc(e.label)}</a>`).join(', ')}</p>`;
 }
@@ -525,7 +555,7 @@ function renderSkeleton() {
   const controls = `
     <div class="taxonbar">
       <label for="skel-source">${taxonId
-        ? `Attachments in <strong>${esc(state.taxaById.get(taxonId).clade)}</strong>, showing`
+        ? `Attachments in <strong>${esc(selectionLabel(taxonId))}</strong>, showing`
         : 'Attachments across all taxa, showing'}</label>
       <select id="skel-source">
         <option value="recorded" ${mode === 'recorded' ? 'selected' : ''}>only what a source records</option>
@@ -620,8 +650,8 @@ function musclesBetween(aId, bId, taxonId, mode) {
     const hitTaxa = [];
     let anyRecorded = false, viaFission = false;
     for (const t of taxa) {
-      const occ = (m.occurrences || []).find(o => o.taxon === t);
-      if (!occ || (occ.present || 'yes') === 'no') continue;
+      const p = presenceFor(m, t);
+      if (p === null || p === 'no') continue;
       const att = attachmentsFor(m, t);
       if (att.inherited && mode === 'recorded') continue;
       const role = (sel, fission) => {

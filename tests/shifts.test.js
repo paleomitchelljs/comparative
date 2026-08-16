@@ -31,11 +31,32 @@ const ELEMENTS = [
     fusedFrom: ['distal-tarsals', 'metatarsals'] },
 ];
 
+/* Two species standing in for the picker's species-level entries. The skeleton
+   is scored per CLADE, so every clade-keyed lookup in skeleton.js resolves a
+   species through `cladeOf` first — see the species/clade tests at the end. */
+const SPECIES = [
+  { id: 'galictis-cuja', binomial: 'Galictis cuja', clade: 'theria' },
+  { id: 'timon-lepidus', binomial: 'Timon lepidus', clade: 'lepidosauria' },
+];
+
 global.esc = s => String(s);
 global.state = {
   elements: ELEMENTS,                      // fissionLine scans this for derivedFrom
   elementsById: new Map(ELEMENTS.map(e => [e.id, e])),
+  speciesById: new Map(SPECIES.map(s => [s.id, s])),
   taxonOrder: new Map([['caudata', 0], ['lepidosauria', 1], ['theria', 2]]),
+};
+/* Provided by app.js in the browser, where all three scripts share one global
+   scope. Stubbed here so skeleton.js can be exercised on its own. */
+global.cladeOf = id => global.state.speciesById.get(id)?.clade || id;
+global.selectionLabel = id => global.state.speciesById.get(id)?.binomial || id;
+global.presenceFor = (m, id) => {
+  const rows = (m.occurrences || []).filter(
+    o => o.species === id || o.taxon === id || o.taxon === cladeOf(id));
+  if (!rows.length) return null;
+  const states = new Set(rows.map(o => o.present || 'yes'));
+  if (states.size === 1) return [...states][0];
+  return states.has('yes') && states.has('no') ? 'variable' : [...states][0];
 };
 eval(fs.readFileSync(path.join(__dirname, '..', 'assets', 'skeleton.js'), 'utf8'));
 
@@ -306,6 +327,62 @@ check('between two products of the same fission — a real move',
   console.log(`  ${ok ? 'ok   ' : 'FAIL '} one scored taxon yields no shift`);
   if (!ok) failures++;
 })();
+
+/* ---------- species resolve to their clade for skeleton lookups ----------
+
+   The taxon picker offers ~70 species alongside the 19 clades, but `presence`,
+   `taxonNames` and joint names are all scored per clade. Passing a species id
+   straight into those lookups does not throw — it misses every allowlist and
+   falls through to `presence.default`, which is a confident wrong answer.
+
+   Both directions were live in the shipped site: `suprascapula` is
+   `default: yes, absent: [lepidosauria]`, so a lepidosaur SPECIES was credited
+   with a bone its clade is scored as lacking; the mirror case (`default: no`
+   with a `present` list) stripped therian species of the scapular spine and
+   both fossae, and with them the supraspinatus and infraspinatus. It ran to
+   2026 wrong answers across 91 of 92 species — and only ever in the direction
+   of the anatomy the reader had selected the species to look at. */
+(function speciesResolvesToCladeForPresence() {
+  const asSpecies = elementPresentIn('suprascapula', 'timon-lepidus');
+  const asClade = elementPresentIn('suprascapula', 'lepidosauria');
+  const ok = asSpecies === 'no' && asClade === 'no';
+  console.log(`  ${ok ? 'ok   ' : 'FAIL '} a species inherits its clade's element presence`);
+  if (!ok) failures++;
+})();
+
+(function everySpeciesAgreesWithItsClade() {
+  const bad = [];
+  for (const sp of SPECIES) {
+    for (const e of ELEMENTS) {
+      if (elementPresentIn(e.id, sp.id) !== elementPresentIn(e.id, sp.clade)) {
+        bad.push(`${sp.id}/${e.id}`);
+      }
+    }
+  }
+  const ok = bad.length === 0;
+  console.log(`  ${ok ? 'ok   ' : 'FAIL '} no species disagrees with its clade about any element`
+    + (ok ? '' : ` — ${bad.join(', ')}`));
+  if (!ok) failures++;
+})();
+
+/* A species must not fall back to the homology group's label. Reading
+   "Hyomandibula / stapes" with a mammal selected is the whole point of
+   `taxonNames` going unmet. */
+(function speciesGetsTheTaxonSpecificElementName() {
+  const el = { id: 'stapes-test', label: 'Hyomandibula / stapes',
+    taxonNames: [{ taxa: ['theria'], name: 'Stapes' }] };
+  state.elementsById.set(el.id, el);
+  const ok = elementLabel(el.id, 'galictis-cuja') === 'Stapes'
+    && elementLabel(el.id, 'theria') === 'Stapes'
+    && elementLabel(el.id, 'caudata') === 'Hyomandibula / stapes';
+  console.log(`  ${ok ? 'ok   ' : 'FAIL '} a species gets its clade's name for an element`);
+  if (!ok) failures++;
+  state.elementsById.delete(el.id);
+})();
+
+/* `jointLabel` is a `const` inside skeleton.js, so a direct eval keeps it out of
+   this harness's reach. It normalises through `cladeOf` on exactly the same
+   `taxonNames` path as `elementLabel` above, which is what the test covers. */
 
 console.log(failures ? `\n${failures} failing` : '\nall passing');
 process.exit(failures ? 1 : 0);

@@ -102,13 +102,13 @@ Each phase is independently shippable and leaves the site working.
 
 ### Phase 1 — hierarchy fields and the attachment model — **DONE**
 
-`segment` on all 92 records; `layer` on 41 of 77 appendicular ones, inherited
+`segment` on all records (129 of them now, 92 at the time); `layer` on the appendicular ones, inherited
 through `derivatives` from the ancestral fin muscle where Diogo et al. (2016)
 support it and left blank otherwise.
 
 Went further than planned, on the project owner's steer that attachment change is
 itself data and that bone-first is how students reason. `data/skeleton.json` now
-holds 121 attachment sites with a `partOf` hierarchy, per-taxon presence and
+holds 254 attachment sites (121 at the time) with a `partOf` hierarchy, per-taxon presence and
 osteological-correlate flags, and attachments are `{element, side, landmark}`
 rows rather than flat strings.
 
@@ -123,7 +123,7 @@ refinement rather than a transition.
 
 Shipped as the **Phylogeny** view. Branch states are optimised by **Fitch
 parsimony** over the topology in `taxa.json` (`assets/phylogeny.js`), not read off
-the tip states. Across all 126 muscles it infers gains and losses over the informative
+the tip states. Across all 129 muscles it infers gains and losses over the informative
 characters; the live totals are on the view itself.
 
 Three decisions that the honest reading forced, all surfaced in the interface:
@@ -146,7 +146,7 @@ was ambiguous — the one failure mode that looks like a clean result.
 
 <details><summary>Original plan</summary>
 
-The presence data is **already a character matrix**: 86 muscles × 16 taxa, with
+The presence data is **already a character matrix**: 129 muscles × 19 taxa (86 × 16 when this was written), with
 states `yes │ no │ variable │ uncertain │ inferred`. The topology is already in
 `taxa.json`. So:
 
@@ -229,12 +229,23 @@ same four-cell classification.
 
 Phases 1, 2 and 3 are done. Remaining: **5 → 4**.
 
-See [`GAPS.md`](GAPS.md) for the measured picture. The short version: the
-presence matrix is dense (92 × 16, complete) so **phase 3 needs no new data**,
-but per-taxon attachments cover only 13% of occurrences and are absent entirely
-for fish, fossil taxa, the hand and the foot — so **phase 4 should be scoped to
-the pectoral girdle and arm** until that improves, or it will draw the consensus
-and label it as sixteen different animals.
+See [`GAPS.md`](GAPS.md) for the measured picture, which is generated — the
+figures below are not, so check them against it before acting on them.
+
+**The scoping advice this section used to give has expired.** It read: per-taxon
+attachments cover 13% of occurrences and are absent entirely for fish, fossil
+taxa, the hand and the foot, so scope phase 4 to the pectoral girdle and arm.
+Every clause of that is now false. Attachment coverage is **71%** (562 of 787
+present occurrences). The fish columns are scored — Dipnoi 100%, Actinistia 86%,
+Actinopterygii 50%, Chondrichthyes 48% — as are the fossil ones, at 79% for the
+stem tetrapodomorphs and 100% for the stem crocodyliforms. The foot is the
+best-covered region in the dataset at 89%, ahead of the pectoral girdle at 77%.
+
+So **phase 4 is no longer gated on attachment coverage**, and restricting it to
+the girdle and arm would now skip the regions that are best supported. The two
+genuinely thin columns are **Testudines (35%)** and the cyclostomes (33%), and
+the thin regions are **axial (50%)** and **hand (54%)** — those are where a
+schematic would still be drawing the consensus rather than an animal.
 
 ## What would change my mind about the spine
 
