@@ -711,7 +711,7 @@ function renderNerves(holder, taxonId) {
       ${trail.length > 1
         ? `<span class="nerve-trail">${trail.slice(0, -1).map(n => esc(n.label)).join(' › ')}</span>`
         : ''}
-      ${r.note ? `<span class="cellnote">${esc(r.note)}</span>` : ''}
+      ${r.note ? `<span class="cellnote">${emph(r.note)}</span>` : ''}
     </li>`;
   }).join('');
   return `<dt>Nerve</dt><dd><ul class="nerves">${items}</ul></dd>`;
@@ -778,7 +778,7 @@ function renderOccTable(m) {
         ${renderDivision(o)}
         ${o.nerves ? `<dl class="oia occ-nerves">${renderNerves(o, o.taxon)}</dl>` : ''}
         ${micro ? `<div class="microdl">${micro}</div>` : ''}
-        ${o.note ? `<div class="cellnote">${esc(o.note)}</div>` : ''}
+        ${o.note ? `<div class="cellnote">${emph(o.note)}</div>` : ''}
         ${cites ? `<div class="cites">${cites}</div>` : ''}</td>
     </tr>`;
   }).join('');
@@ -824,21 +824,21 @@ function renderDivision(o) {
       : `<span class="pill flat">${esc(x.name)}</span>`;
     const tag = mem === 'established' ? ''
       : `<span class="memtag mem-${esc(mem)}" title="${esc(x.note || mem)}">${esc(mem)}</span>`;
-    return `<li>${body}${tag}${x.note ? `<span class="cellnote">${esc(x.note)}</span>` : ''}</li>`;
+    return `<li>${body}${tag}${x.note ? `<span class="cellnote">${emph(x.note)}</span>` : ''}</li>`;
   }).join('');
 
   return `<div class="division div-${esc(o.division)}">
     <span class="divstate">${esc(DIVISION_LABEL[o.division] || o.division)}</span> ${count}
     ${parts ? `<ul class="parts">${parts}</ul>` : ''}
     ${o.partsOpen ? `<span class="cellnote">The source's list is open — the count is a floor.</span>` : ''}
-    ${o.divisionNote ? `<div class="cellnote">${esc(o.divisionNote)}</div>` : ''}
+    ${o.divisionNote ? `<div class="cellnote">${emph(o.divisionNote)}</div>` : ''}
   </div>`;
 }
 
 function renderHomologyBlock(m, h) {
   if (!h.notes && !h.openQuestion && !h.teaching && !h.serial) return '';
   let out = `<section class="block"><h3>Homology</h3>`;
-  if (h.notes) out += `<div class="callout"><h4>Assessment</h4><p>${esc(h.notes)}</p></div>`;
+  if (h.notes) out += `<div class="callout"><h4>Assessment</h4><p>${emph(h.notes)}</p></div>`;
   if (h.openQuestion) out += `<div class="callout open"><h4>Open question</h4><p>${esc(h.openQuestion)}</p></div>`;
 
   if (h.serial) {
@@ -849,7 +849,7 @@ function renderHomologyBlock(m, h) {
       : `No counterpart in the other limb.`;
     if (s.basis) body += ` <span class="chip">basis: ${esc(s.basis)}</span>`;
     out += `<div class="callout ${s.caution ? 'caution' : ''}"><h4>Serial correspondence</h4><p>${body}</p>`;
-    if (s.note) out += `<p>${esc(s.note)}</p>`;
+    if (s.note) out += `<p>${emph(s.note)}</p>`;
     if (s.caution) out += `<p><strong>Caution.</strong> ${esc(s.caution)}</p>`;
     out += `</div>`;
   }
@@ -1133,6 +1133,24 @@ function wireUI() {
 function esc(s) {
   return String(s ?? '').replace(/[&<>"']/g, c =>
     ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+/* The prose fields are written in the notes as Markdown and were rendered with
+   `esc` alone, so 46 strings across the dataset showed their asterisks: the
+   acromion's "**Scored on topological correspondence**", the prepollex's
+   "**Monotremes have one too**". The emphasis is doing real work in these notes —
+   it marks the sentence the author wants read first — and printing it as
+   punctuation buried that sentence in the paragraph.
+
+   Escapes FIRST and only then introduces tags, so no note can inject markup:
+   any `<` in the source is already `&lt;` by the time the patterns run.
+   Deliberately just bold, italic and `code` — these are captions, not documents,
+   and a fuller Markdown pass would be a parser nobody needs here. */
+function emph(s) {
+  return esc(s)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+    .replace(/(^|[\s(—-])\*([^*\s][^*]*)\*(?=$|[\s.,;:)?!—-])/g, '$1<em>$2</em>')
+    .replace(/`([^`]+)`/g, '<code>$1</code>');
 }
 
 boot().catch(err => {

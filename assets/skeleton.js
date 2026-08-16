@@ -828,7 +828,7 @@ function renderElementNode(e, taxonId, q, depth) {
     <div class="elbody">
       ${absentHere ? `<p class="cellnote">Absent in ${esc(state.taxaById.get(taxonId).clade)}.</p>` : ''}
       ${alias ? `<p class="cellnote">Elsewhere: ${esc(alias)}</p>` : ''}
-      ${note ? `<p class="cellnote">${esc(note)}</p>` : ''}
+      ${note ? `<p class="cellnote">${emph(note)}</p>` : ''}
       ${fusionLines ? `<p class="cellnote fusion">${fusionLines}</p>` : ''}
       ${fissionLines ? `<p class="cellnote fission">${fissionLines}</p>` : ''}
       ${e.transformation ? `<p class="cellnote">${esc(e.transformation)}</p>` : ''}
@@ -948,7 +948,7 @@ function renderArchitecture(m) {
           <td class="numcell">${num(pt.pcsa_cm2)}</td>
           <td class="numcell">${num(pt.maxIsometricForce_N)}</td></tr>`).join('')}
       </tbody></table></div>`;
-    if (a.note) out += `<p class="viewnote">${esc(a.note)}</p>`;
+    if (a.note) out += `<p class="viewnote">${emph(a.note)}</p>`;
     if (a.comparison) {
       out += `<p class="viewnote">vs ${esc(a.comparison.species)}${a.comparison.n ? `, n = ${a.comparison.n}` : ''}</p>`;
     }
@@ -1053,7 +1053,7 @@ function renderAttachmentBlock(m) {
           ${sp ? `<span class="common"><i>${esc(sp.binomial)}</i></span>` : ''}
           ${s.substantive ? '' : '<span class="common">resolution only</span>'}</td>
         <td><div class="microdl">${line('origin', s.origin)}${line('insertion', s.insertion)}</div>
-          ${s.note ? `<div class="cellnote">${esc(s.note)}</div>` : ''}</td>
+          ${s.note ? `<div class="cellnote">${emph(s.note)}</div>` : ''}</td>
       </tr>`;
     }
     out += `</tbody></table></div>`;
