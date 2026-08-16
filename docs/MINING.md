@@ -12,6 +12,66 @@ new PDF before planning work around it.
 
 ---
 
+## The headline finding: this is an acquisition problem now
+
+A pass in August 2026 ranked every source by *cited-but-unscored rows × specific
+attachment density*, then worked down the list. Four sources in, the ranking had
+stopped being useful and the reason was worth more than the rows.
+
+**Of the 221 unscored rows, 19 already carry a written reason** — "they do not
+itemise which", "hence uncertain, and no attachment row", "will not be described
+here". Those are closed decisions, not open work. **Of the 202 that remain, about
+194 cite only sources that structurally cannot yield a species-level attachment:**
+
+| rows | source | why it cannot be scored |
+|---:|---|---|
+| 128 | Abdala & Diogo (2010) | Synonymy. 49 specific attachment statements against **157 hedged** ones — "usually inserts onto the humerus". Its generalisations belong in `consensus` |
+| 24 | Diogo & Molnar (2014) | Same shape: 23 specific against 64 hedged |
+| 15 | Diogo et al. (2016) | Homology hypotheses; the attachments live in the supplementary tables, already mined |
+| 14 | Allen et al. (2021) | Musculoskeletal model, not a description |
+| 9 | Hutchinson et al. (2015) | Ostrich model, likewise |
+| 4 | Johnston (2014) | Does not dissect *Ctenosaura* — the figure is after Oelrich (1956) |
+
+**The corpus has very nearly exhausted its descriptive sources.** What is left in
+hand is single figures: Diogo & Ziermann (2015) 4 rows, Jayaram et al. (1983) 3,
+Ziermann & Diogo (2019) 3, Anderson (2008) 3.
+
+### The pattern that produced most of it
+
+Four sources in a row turned out to be cited for an animal they never examined.
+It is worth naming, because it is invisible from the citation count — the row has
+a species, a source and a plausible note, and only the paper's own methods section
+disproves it.
+
+- **Werneburg (2011)** — ten rows on *Trachemys scripta*. His animal is *Emydura
+  subglobosa*; his appendix is a catalogue across turtles.
+- **Johnston (2014)** — four rows on *Ctenosaura pectinata*. His specimens are ten
+  snakes and a tuatara; the *Ctenosaura* figure is Oelrich's, and even his
+  *Sphenodon* account defers to Daza et al. (2011).
+- **Cieri (2018)** — one row on *Iguana iguana* for a muscle he names as one of two
+  that *Varanus* has and *Iguana* lacks.
+- **Winterbottom (1973)** — six rows on a generalised teleost, claiming
+  `speciesBasis: "source"`, which means a single-species study.
+
+**Check the methods section before scoring, every time.** A citation records where
+a claim was read, not where it was observed.
+
+### So the worklist is now an acquisition list
+
+Ranked by how many rows each would unblock:
+
+1. **Descriptive turtle forelimb myology** — 31 of Testudines' 34 open rows cite
+   only Abdala & Diogo. The thinnest extant column, and nothing in hand touches it.
+2. **Gasc (1981), Ritter (1995), Tsuihiji (2007)** — the lepidosaur epaxial
+   attachments, named by Cieri as where he is deliberately not going.
+3. **Oelrich (1956)**, *The anatomy of the head of* Ctenosaura pectinata — the
+   primary behind four cranial rows and behind Johnston's lizard figure.
+4. **Werneburg's body text read against his appendix**, to separate his *Emydura*
+   observations from his compilation. The only route that raises the turtle column
+   from a source already held.
+
+---
+
 ## How: check the paper before you open it
 
 The single most useful lesson of the last few passes. Four papers in a row failed
