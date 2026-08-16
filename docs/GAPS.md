@@ -52,9 +52,9 @@ illustrated.
 | pelvic | 8 | 32 | 22 | 69% |
 | cranial | 16 | 72 | 49 | 68% |
 | fin | 9 | 39 | 23 | 59% |
+| axial | 15 | 30 | 17 | 57% |
 | hand | 9 | 72 | 39 | 54% |
-| axial | 15 | 30 | 15 | 50% |
-| **all** | 129 | 789 | 566 | **72%** |
+| **all** | 129 | 789 | 568 | **72%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -145,7 +145,7 @@ back in for Aves.
 | Crocodylia | 73 | 62 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
-| Lepidosauria | 117 | 79 | 68% |
+| Lepidosauria | 117 | 81 | 69% |
 | Aves | 93 | 52 | 56% |
 | Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
@@ -355,9 +355,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 254, of which 224 (88%) carry at least one attachment |
-| Observed attachment rows | 1585 |
-| Rows naming a **landmark** | 440 (28%) |
-| Rows naming a **side** | 1064 (67%) |
+| Observed attachment rows | 1598 |
+| Rows naming a **landmark** | 441 (28%) |
+| Rows naming a **side** | 1071 (67%) |
 | Osteological correlates | 112 flagged, 98 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -435,7 +435,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | axial | 33 | 28 | 0.8 |
 | forelimb | 52 | 41 | 0.8 |
 | fin | 8 | 5 | 0.6 |
-| pelvic | 26 | 14 | 0.5 |
+| pelvic | 28 | 14 | 0.5 |
 <!-- /counts:parity -->
 
 The pelvis, fin and forelimb are where the skeleton is thinnest relative to the
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 566 of 789 present occurrences (72%).**
+**Taxon-specific attachments: 568 of 789 present occurrences (72%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -490,8 +490,8 @@ it is one end of most of them.
 | thigh | 10 | 104 |
 | hand | 9 | 102 |
 | fin | 9 | 57 |
+| axial | 15 | 56 |
 | pelvic | 8 | 53 |
-| axial | 15 | 43 |
 <!-- /counts:holes -->
 
 No region is at zero. The distribution is flat enough that the limiting factor is
