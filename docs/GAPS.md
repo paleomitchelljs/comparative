@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 787 present occurrences · 254 skeletal elements · 104 sources · 19 operational taxa
+129 muscle records · 789 present occurrences · 254 skeletal elements · 104 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,7 +46,7 @@ illustrated.
 | foot | 12 | 46 | 41 | 89% |
 | leg | 10 | 55 | 49 | 89% |
 | thigh | 10 | 45 | 37 | 82% |
-| pectoral | 16 | 164 | 127 | 77% |
+| pectoral | 16 | 166 | 129 | 78% |
 | arm | 5 | 65 | 47 | 72% |
 | forearm | 19 | 167 | 115 | 69% |
 | pelvic | 8 | 32 | 22 | 69% |
@@ -54,7 +54,7 @@ illustrated.
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 39 | 54% |
 | axial | 15 | 30 | 15 | 50% |
-| **all** | 129 | 787 | 562 | **71%** |
+| **all** | 129 | 789 | 564 | **71%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -142,7 +142,7 @@ back in for Aves.
 | Monotremata | 103 | 103 | 100% |
 | Theria | 73 | 65 | 89% |
 | Actinistia | 7 | 6 | 86% |
-| Crocodylia | 71 | 60 | 85% |
+| Crocodylia | 73 | 62 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Lepidosauria | 117 | 79 | 68% |
@@ -355,9 +355,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 254, of which 227 (89%) carry at least one attachment |
-| Observed attachment rows | 1566 |
-| Rows naming a **landmark** | 434 (28%) |
-| Rows naming a **side** | 1058 (68%) |
+| Observed attachment rows | 1573 |
+| Rows naming a **landmark** | 439 (28%) |
+| Rows naming a **side** | 1061 (67%) |
 | Osteological correlates | 112 flagged, 100 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -450,7 +450,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 562 of 787 present occurrences (71%).**
+**Taxon-specific attachments: 564 of 789 present occurrences (71%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -470,7 +470,7 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 367 |
+| pectoral | 16 | 374 |
 | forearm | 19 | 288 |
 | cranial | 16 | 169 |
 | leg | 10 | 141 |

@@ -201,7 +201,7 @@
               }
             ]
           },
-          "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. Meers's m. trapezius, this record's crocodylian occurrence. A thin sheet from the thoracodorsal fascia ventrolateral to the median row of dorsal scutes, inserting fleshily in Crocodylus acutus and by an aponeurotic sheet in other species along the cranial edge of the scapula dorsal to the acromion. Its origin can look continuous with that of latissimus dorsi but is always separable. Meers locates that insertion \"dorsal to the acromion\", but skeleton.json records the acromion as absent in crocodylians and the validator rejects the row — so the landmark is not asserted here. One of the two is wrong and the disagreement is worth resolving: either crocodylians have an acromion process this dataset denies them, or Meers is using the term loosely for the cranial scapular margin."
+          "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. Meers's m. trapezius, this record's crocodylian occurrence. A thin sheet from the thoracodorsal fascia ventrolateral to the median row of dorsal scutes, inserting fleshily in Crocodylus acutus and by an aponeurotic sheet in other species along the cranial edge of the scapula dorsal to the acromion. Its origin can look continuous with that of latissimus dorsi but is always separable. **No acromion row, and that is now a decision rather than a workaround.** The acromion is scored present in Crocodylia (see skeleton.json), but Meers places this insertion *dorsal to* it, on the cranial edge of the scapula — the acromion is his reference point, not the attachment site. Two other crocodylian muscles in this dataset do attach to it."
         },
         {
           "species": "gallus-domesticus",
@@ -2948,6 +2948,56 @@
           "attachmentNote": "Crocodylus porosus. Fleshy origin on the PROXIMO-LATERAL coracoid, covering the entire humeral head; fleshy insertion on the VENTRO-LATERAL humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder. Both aspects are stated by Klinkhamer et al. and both had been overwritten by the global side table, which gave coracoid/ventral and deltopectoral-crest/anterior — the one thing this source is cited for is that it names the aspect."
         },
         {
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
+          "name": "Supracoracoideus complex (longus, intermedius, brevis)",
+          "present": "yes",
+          "action": "The primary protractors of the humerus; the brevis also adducts.",
+          "innervation": "Nerve to supracoracoideus, a branch of SN VIII, shared by all divisions.",
+          "sources": [
+            "meers-2003"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Supracoracoideus longus",
+              "note": "Fan-shaped and dominant. Extensive fleshy origin from the cranial half of the MEDIAL surface of the scapula and the adjacent coracoid opposite the glenoid."
+            },
+            {
+              "name": "Supracoracoideus intermedius",
+              "note": "Short and thick. Its origin on the scapulocoracoid is hemmed in by those of the longus and brevis, and it inserts in common with the longus."
+            },
+            {
+              "name": "Supracoracoideus brevis",
+              "note": "Thin. Origin on the lower portion of the LATERAL surface of the acromion, and frequently the adjacent coracoid."
+            }
+          ],
+          "divisionNote": "Meers separates three heads sharing one nerve and one insertion region. He warns the longus is the hardest to separate cleanly in dissection because the heads intermingle.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral",
+                "landmark": "acromion"
+              },
+              {
+                "element": "coracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Alligator mississippiensis, from Meers (2003). The three heads have distinct origins and a shared insertion region on the deltopectoral crest: the brevis inserts just distal to the longus and immediately ventral to deltoideus clavicularis. The acromion row is the brevis origin. The Crocodylus porosus row beside this one is Klinkhamer et al.'s undivided segmentation of the same complex, which is a difference in method — CT segmentation against dissection — not a difference between the animals."
+        },
+        {
           "species": "gallus-domesticus",
           "speciesBasis": "note",
           "name": "Supracoracoideus",
@@ -3643,7 +3693,8 @@
                 "side": "distal"
               },
               {
-                "element": "scapula"
+                "element": "scapula",
+                "landmark": "acromion"
               }
             ],
             "insertion": [
@@ -3653,7 +3704,7 @@
               }
             ]
           },
-          "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Deltoideus major, a very thin triangular muscle arising fleshy from the distal apex of the clavicle, the dorsal surface of the coracoscapular ligament and the acromial process of the scapula, converging on a short tendon that inserts on the caudodorsal humerus very close to the latissimus dorsi insertion. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade. Schreiweis names the **acromial process of the scapula** as the third origin; skeleton.json records the acromion as absent in Aves and the validator rejects it, so it is not asserted here. That is now the third source to describe an acromion in a taxon this dataset denies one — see the element's own note.",
+          "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Deltoideus major, a very thin triangular muscle arising fleshy from the distal apex of the clavicle, the dorsal surface of the coracoscapular ligament and the acromial process of the scapula, converging on a short tendon that inserts on the caudodorsal humerus very close to the latissimus dorsi insertion. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade. Schreiweis names the **acromial process of the scapula** as the third origin; skeleton.json records the acromion as absent in Aves and the validator rejects it, so it is not asserted here. That is now the third source to describe an acromion in a taxon this dataset denies one — see the element's own note. The acromial process is now carried as a structured landmark: it was described in this note but stripped from the row while skeleton.json scored the acromion absent in Aves. The coracoscapular ligament has no element and stays in prose.",
           "sources": [
             "schreiweis-1982"
           ]
@@ -4055,6 +4106,35 @@
             ]
           },
           "attachmentNote": "Crocodylians have no clavicle, so despite the name the origin sits on the scapula — which is why Fürbringer (1876) called this muscle the scapularis inferior."
+        },
+        {
+          "species": "alligator-mississippiensis",
+          "speciesBasis": "source",
+          "name": "Deltoideus clavicularis",
+          "present": "yes",
+          "action": "Protracts and abducts the humerus.",
+          "sources": [
+            "meers-2003"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "landmark": "acromion"
+              },
+              {
+                "element": "scapula",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Alligator mississippiensis, from Meers (2003). Superficial and parallel-fibred, lying immediately ventral to the trapezius insertion and overlying the ventral part of deltoideus scapularis and teres major. Fleshy origin from the acromion process and along the cranial margin of the scapula. The Caiman row beside this one gives the origin as lateral scapula from Abdala & Diogo's survey; Meers resolves it to the acromion, which is the finer reading of the same attachment rather than a disagreement."
         },
         {
           "species": "nothoprocta-pentlandii",

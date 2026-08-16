@@ -53,12 +53,34 @@ intermedii of digits IV/V and V were found commonly but not always, even within
 *Alligator mississippiensis*; digit V appeared to lack a flexor digitorum brevis
 superficialis altogether.
 
-## A conflict left open
+## A conflict, now resolved
 
 Meers puts the trapezius insertion "dorsal to the acromion" in a crocodylian.
-`skeleton.json` records the acromion as **absent** in Crocodylia, and the
-validator rejected the row — the same check that once caught a crocodylian
-muscle attached to a clavicle. The landmark is not asserted and the disagreement
-is written into the occurrence note. One of the two is wrong: either crocodylians
-have an acromion process this dataset denies them, or Meers is using the term
-loosely for the cranial scapular margin. It needs a decision, not a silent fix.
+`skeleton.json` used to record the acromion as **absent** in Crocodylia, the
+validator rejected the row, and the landmark went unasserted while the
+disagreement sat in the occurrence note.
+
+**Resolved in favour of Meers.** He is not using the word loosely: he names the
+acromion four times as a crocodylian scapular landmark, gives it a lateral
+surface with an upper and lower portion, and hangs two muscle origins on it —
+the deltoideus clavicularis arises from it along the cranial margin of the
+scapula, and the supracoracoideus brevis from the lower part of its lateral
+surface. Schreiweis (1982) independently gives three penguin muscles an origin
+on the acromial process of the scapula, and Widrig et al. (2023) describe the
+tinamou acromion projecting cranially. The element is now scored present in
+Crocodylia and Aves.
+
+Two consequences worth noting:
+
+- **The trapezius still gets no acromion row.** Meers places that insertion
+  *dorsal to* the acromion, on the cranial edge of the scapula — the acromion is
+  his reference point, not the attachment site. Rescoring the bone does not
+  license the row that first exposed the problem.
+- **Two rows were mined that the old scoring had blocked**: the alligator
+  deltoideus clavicularis, and the three-headed supracoracoideus complex, whose
+  brevis carries the acromion origin. Both are new occurrences from this paper.
+
+The homology caveat is on the element: the archosaur acromion and the therian
+one occupy the same position and carry the same deltoid-series origins, but the
+therian one is the distal end of a scapular spine that archosaurs do not have.
+It is scored on topological correspondence, and the element note says so.
