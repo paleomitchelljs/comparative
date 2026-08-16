@@ -45,3 +45,38 @@ That second point is worth dwelling on for this project: for the jaw adductors, 
 This is the source for splitting the single `adductor-mandibulae` record into its components. The dataset now carries `adductor-mandibulae-internus`, `-longus`, `-externus`, `-lateralis`, `-posterior` and `levator-anguli-oris`, each with the folded-sheet rationale, with the parent record retained as the complex.
 
 It also supplies a genuinely useful counterweight to the project's general line that innervation beats topology: in the jaw adductors, insertion geometry is the better criterion. Both claims are about which evidence is *stable* in a given system, not about a universal ranking of criteria.
+
+## Attachment pass (August 2026)
+
+Scored on a computed worklist rather than the hand-assembled one: ranking every
+source by *cited-but-unscored rows × specific-attachment density* put Johnston
+fourth, and separated him cleanly from the surveys above him — 43 specific
+attachment statements against 8 hedged ones, where Abdala & Diogo (2010) is 49
+against 157.
+
+**What was scored.** The *Leiopelma* group row, as the union of the components
+Johnston traces through the continuous block: origins on the dorsal braincase,
+parietal, otic capsule, crista parotica, squamosal and quadrate; insertions on
+the medial mandible (internus, two parts), the coronoid area at the apex of the
+U (longus), the lateral limb of the U (externus) and the dorsal mandible rostral
+to the articulation (posterior).
+
+**What was deliberately not scored, and why it is the more useful half.**
+
+- *The lateralis insertion.* Johnston gives its origin on the quadrate and its
+  course lateral to V3, and never says where it ends.
+- *Every Ascaphus component.* He describes *Ascaphus* as similar in general
+  configuration and then names only the differences — internus origin less
+  rostral, adductor posterior separate, V3 in a different position. **"Similar to
+  Leiopelma" is a statement of resemblance, not a second set of observations.**
+  Copying the six *Leiopelma* rows across would have manufactured six attachments
+  out of one sentence and moved the coverage figure by more than the evidence
+  moved. The *Ascaphus* group row carries only the braincase origin and the
+  mandibular insertion; the four component rows carry a note saying why they are
+  empty.
+- *Callorhinchus milii.* Confirmed as genuine comparative material (NMNZ P29678),
+  so the citation is sound — but the detailed accounts in the comparative section
+  are for *Cephaloscyllium*, *Latimeria* and *Neoceratodus*, not for the
+  holocephalan. Nothing to score.
+
+Corpus moved 71% to 72%, cranial 65% to 68%, Anura 50% to 53%.

@@ -50,11 +50,11 @@ illustrated.
 | arm | 5 | 65 | 47 | 72% |
 | forearm | 19 | 167 | 115 | 69% |
 | pelvic | 8 | 32 | 22 | 69% |
-| cranial | 16 | 72 | 47 | 65% |
+| cranial | 16 | 72 | 49 | 68% |
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 39 | 54% |
 | axial | 15 | 30 | 15 | 50% |
-| **all** | 129 | 789 | 564 | **71%** |
+| **all** | 129 | 789 | 566 | **72%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -147,8 +147,8 @@ back in for Aves.
 | Caudata | 92 | 70 | 76% |
 | Lepidosauria | 117 | 79 | 68% |
 | Aves | 93 | 52 | 56% |
+| Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
-| Anura | 72 | 36 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
 | Chondrichthyes | 23 | 11 | 48% |
 | Testudines | 52 | 18 | 35% |
@@ -355,9 +355,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 254, of which 224 (88%) carry at least one attachment |
-| Observed attachment rows | 1573 |
-| Rows naming a **landmark** | 439 (28%) |
-| Rows naming a **side** | 1061 (67%) |
+| Observed attachment rows | 1585 |
+| Rows naming a **landmark** | 440 (28%) |
+| Rows naming a **side** | 1064 (67%) |
 | Osteological correlates | 112 flagged, 98 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 564 of 789 present occurrences (71%).**
+**Taxon-specific attachments: 566 of 789 present occurrences (72%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -483,7 +483,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 374 |
 | forearm | 19 | 288 |
-| cranial | 16 | 169 |
+| cranial | 16 | 181 |
 | leg | 10 | 141 |
 | foot | 12 | 122 |
 | arm | 5 | 120 |

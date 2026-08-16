@@ -239,7 +239,20 @@
             {
               "name": "Levator mandibulae articularis"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "braincase-dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible"
+              }
+            ]
+          },
+          "attachmentNote": "Ascaphus truei, two specimens, Johnston (2011). Deliberately sparser than the Leiopelma row beside it. Johnston describes the Ascaphus adductor group as similar in general configuration and then names only the differences: the adductor posterior (articularis) is separate while the rest stays a contiguous block, the origin of the internus does NOT extend as far rostrally on the braincase, and V3 emerges in a different position. Only the braincase origin and the mandibular insertion are therefore asserted here. **\"Similar to Leiopelma\" is a statement of resemblance, not a second set of observations**, and copying the Leiopelma rows across would manufacture six attachments from one sentence."
         },
         {
           "species": "columba-livia",
@@ -316,7 +329,48 @@
           ],
           "division": "single",
           "note": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. The group is a continuous block of muscle with no distinct separation into individual muscles, apart from a plane between the adductor mandibulae posterior and the rest, and a separate lateralis. That is the folded-sheet model's central claim made visible: the components are not separate muscles but named limbs of one sheet, identified by where each inserts into the inverted U around the posterior's insertion.",
-          "speciesBasis": "note"
+          "speciesBasis": "note",
+          "attachments": {
+            "origin": [
+              {
+                "element": "braincase-dorsal"
+              },
+              {
+                "element": "parietal"
+              },
+              {
+                "element": "otic-capsule"
+              },
+              {
+                "element": "crista-parotica"
+              },
+              {
+                "element": "squamosal"
+              },
+              {
+                "element": "palatoquadrate-quadrate"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "medial"
+              },
+              {
+                "element": "mandible",
+                "landmark": "coronoid"
+              },
+              {
+                "element": "mandible",
+                "side": "lateral"
+              },
+              {
+                "element": "mandible",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Leiopelma hochstetteri, four specimens, Johnston (2011). The group is one continuous block here, so these rows are the union of the components he traces through it, and the insertions are the folded U his homology model is built on. Most rostral origin on the dorsal braincase medial to the eye, reaching further forward than in Ascaphus or most other frogs. The longus arises from the parietal region, the convexity of the otic capsule and the crista parotica, passes ventrally and rostrally medial to the processus zygomaticus of the squamosal, and inserts around the APEX of the U on the coronoid area. The externus arises from squamosal and quadrate and inserts as the LATERAL limb of the U. The internus inserts medially in two parts — a rostral tendon just medial to the quadrate-mandibular articulation and a caudal fleshy slip beside it. The adductor posterior runs from the anterior face of the quadrate to the dorsal mandible just rostral to the articulation. No row for the lateralis insertion: Johnston gives its origin on the quadrate and its course lateral to V3 but does not state where it ends."
         },
         {
           "species": "hydrolagus-colliei",
@@ -2879,7 +2933,8 @@
           "present": "yes",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "attachmentNote": "Ascaphus truei. Left without structured attachments on purpose. Johnston (2011) describes this component in Leiopelma hochstetteri and says only that the Ascaphus configuration is similar, so there is no Ascaphus-specific origin or insertion to record. The scored Leiopelma row on this record is the one with the observations behind it; unrecorded here means unrecorded, not the same as Leiopelma."
         },
         {
           "species": "ctenosaura-pectinata",
@@ -3140,7 +3195,8 @@
           "note": "Johnston (2011) recognises a separate lateralis in Leiopelma and Ascaphus, distinct from the externus.",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "attachmentNote": "Ascaphus truei. Left without structured attachments on purpose. Johnston (2011) describes this component in Leiopelma hochstetteri and says only that the Ascaphus configuration is similar, so there is no Ascaphus-specific origin or insertion to record. The scored Leiopelma row on this record is the one with the observations behind it; unrecorded here means unrecorded, not the same as Leiopelma."
         },
         {
           "species": "leiopelma-hochstetteri",
@@ -3254,7 +3310,8 @@
           "present": "yes",
           "sources": [
             "johnston-2011"
-          ]
+          ],
+          "attachmentNote": "Ascaphus truei. Left without structured attachments on purpose. Johnston (2011) describes this component in Leiopelma hochstetteri and says only that the Ascaphus configuration is similar, so there is no Ascaphus-specific origin or insertion to record. The scored Leiopelma row on this record is the one with the observations behind it; unrecorded here means unrecorded, not the same as Leiopelma."
         },
         {
           "species": "ctenosaura-pectinata",
