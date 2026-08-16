@@ -83,13 +83,25 @@ record the consensus can be shown in its place, marked `unrecorded` — that mea
 nobody has recorded it, not that it is known to match. Inherited rows naming a
 bone the taxon lacks are dropped rather than asserted.
 
-**The Skeleton view defaults to recorded rows only**, because inheriting is the
-majority case and not a small one: 69 of Theria's 81 muscles, 48 of 55 in Aves,
-18 of 19 in Chondrichthyes. Showing those unmarked turned the consensus into
-roughly four hundred observations no source makes. The *showing* selector opens
-the fallback back up when you want the generalised attachment, and every
-inherited entry is then tagged and greyed. `attachments.csv` has carried the
-same distinction as its `inherited` column throughout.
+**The Skeleton view defaults to recorded rows only.** The original reason was
+that inheriting was the majority case and not a small one — 69 of Theria's 81
+muscles, 48 of 55 in Aves, 18 of 19 in Chondrichthyes — so showing those unmarked
+turned the consensus into roughly four hundred observations no source makes.
+
+**Those figures are now historical, and the balance has inverted.** Of the 593
+muscle-by-clade cells the dataset scores, 408 (69%) carry a recorded attachment
+and 185 fall back to the consensus. Theria is 56 of 64 rather than 12 of 81;
+Chondrichthyes 10 of 19; Monotremata, Dipnoi, the stem crocodyliforms and the
+stem tetrapodomorphs are fully scored. Testudines, at 18 of 52, is the thinnest
+extant column and the one where the old description still fits.
+
+The default does not change, but the argument for it does. It is no longer "the
+fallback dominates, so it must be marked"; it is "the fallback is now the
+exception, so presenting it as observation would misrepresent the minority of
+cells that still need it". The *showing* selector opens the fallback back up when
+you want the generalised attachment, and every inherited entry is tagged and
+greyed. `attachments.csv` has carried the same distinction as its `inherited`
+column throughout.
 
 **A fusion must never break the homology of what fused.** There are two ways to
 honour that, and which one applies depends on the source.
@@ -240,7 +252,7 @@ presence, and none should push a transition onto a branch by itself.
 ambiguous, both states cost the same number of steps, and a convention decides
 where the change is drawn. The convention used is **absent at the root**, since
 muscles are acquired rather than primitively universal. Flip that assumption and
-the gains become losses elsewhere at identical cost. Currently 19 of 37 inferred
+the gains become losses elsewhere at identical cost. Currently 19 of 38 inferred
 changes are equivocal in this sense.
 
 **One topology, no support.** The tree is a pragmatic consensus — including

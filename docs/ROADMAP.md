@@ -138,7 +138,7 @@ Three decisions that the honest reading forced, all surfaced in the interface:
   ambiguous — both states cost the same number of steps — the convention used is
   *absent at the root*, since muscles are acquired rather than primitively
   universal. Flip that and gains become losses elsewhere at identical cost. 19 of
-  the 37 inferred changes are equivocal in this sense and carry a `?`.
+  the 38 inferred changes are equivocal in this sense and carry a `?`.
 
 `tests/fitch.test.js` covers the optimisation, and runs in CI. It exists because
 the first implementation silently reported "no change" whenever the root state
@@ -235,7 +235,7 @@ figures below are not, so check them against it before acting on them.
 **The scoping advice this section used to give has expired.** It read: per-taxon
 attachments cover 13% of occurrences and are absent entirely for fish, fossil
 taxa, the hand and the foot, so scope phase 4 to the pectoral girdle and arm.
-Every clause of that is now false. Attachment coverage is **71%** (562 of 787
+Every clause of that is now false. Attachment coverage is **71%** (564 of 789
 present occurrences). The fish columns are scored — Dipnoi 100%, Actinistia 86%,
 Actinopterygii 50%, Chondrichthyes 48% — as are the fossil ones, at 79% for the
 stem tetrapodomorphs and 100% for the stem crocodyliforms. The foot is the

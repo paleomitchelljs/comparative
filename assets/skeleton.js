@@ -452,9 +452,12 @@ function elementPresentIn(elementId, taxonId) {
 /* Muscles attaching to an element, optionally narrowed to one taxon.
    Each hit carries whether it was RECORDED for that taxon or inherited from the
    consensus, because the two are different claims and the bone-first view used
-   to render them identically. Inheriting is the majority case — 69 of Theria's
-   81 muscles, 18 of Chondrichthyes' 19 — so collapsing the distinction turned
-   the consensus into four hundred observations nobody made.
+   to render them identically. Inheriting was the majority case when this was
+   written — 69 of Theria's 81 muscles, 18 of Chondrichthyes' 19 — and collapsing
+   the distinction turned the consensus into four hundred observations nobody
+   made. It is now the minority, 185 of 593 muscle-by-clade cells, and the
+   distinction matters for the opposite reason: a fallback that is the exception
+   reads as an observation unless it is marked.
 
    `mode` is `recorded` (drop inherited hits) or `all` (keep and mark them). */
 function musclesAtElement(elementId, taxonId, mode) {

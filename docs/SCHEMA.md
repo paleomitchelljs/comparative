@@ -57,6 +57,7 @@ inconsistently, or asserted without evidence.
 | `clade` | ✔ The operational taxon in `taxa.json` this rolls up into |
 | `common` | Vernacular name, where there is one |
 | `fossil` | `true` for extinct species |
+| `generalised` | `true` where the record stands for a **clade rather than an animal** — `teleostei-generalised`, `amphisbaenia-generalised`. Every occurrence on such a record must use `speciesBasis: "generalised"`, and no other record may. Enforced both ways, including a binomial reading "(generalised)" without the flag, so a placeholder cannot arrive looking like a specimen. Mutually exclusive with `fossil` |
 | `note` | Why this animal is in the corpus, and what it is *not* representative of |
 
 ### `speciesBasis`

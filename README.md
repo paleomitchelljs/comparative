@@ -122,14 +122,27 @@ muscles** — pick Theria and the scapula lists *Supraspinatus and infraspinatus
 and *Scapulohumeralis anterior*.
 
 The view defaults to **only attachments a source records for the selected
-taxon**. That is a much shorter list than the consensus fallback — 12 of Theria's
-81 muscles, 1 of Chondrichthyes' 19 — and the shortness is the honest answer.
-Switching the *showing* selector adds the consensus back, tagged `unrecorded`.
+taxon**, with the consensus fallback available behind the *showing* selector and
+tagged `unrecorded` when you switch to it.
+
+That default was chosen when the recorded list was much the shorter of the two
+and the shortness was the honest answer. **It is no longer the shorter list.**
+Across the 593 muscle-by-clade cells the dataset scores, 408 (69%) now carry an
+attachment somebody recorded for that clade, against 185 falling back to the
+consensus — Theria 56 of 64, Crocodylia 50 of 58, and Monotremata, Dipnoi and
+the stem tetrapodomorphs fully scored. Testudines at 18 of 52 is now the thinnest
+extant column. The default stands, for the better reason: the fallback is the
+exception rather than the rule, so showing it unmarked would misrepresent a
+minority of cells rather than most of them.
 
 **Find a muscle by the two bones it spans.** Pick two elements and get every
 muscle touching both, with which end is which. `scapula` + `humerus` under Theria
-returns eight muscles; typing the same two words into the search box returns two,
-neither of them right, because search matches one label at a time.
+returns eight muscles. Typing the same two words into the search box returns
+five — all eight are correct answers, so search finds a subset and misses the
+supracoracoideus, teres major and coracobrachialis, because it matches one label
+at a time and cannot ask "touches both of these". The gap used to be starker
+(search returned two, neither of them right) and narrowed as attachment coverage
+grew, but a subset is still the wrong answer to a question about a pair.
 
 **Mass & layer** — the homology spine: developmental origin (dorsal/ventral mass,
 or pharyngeal arch) → layer → proximodistal segment. This is the axis that

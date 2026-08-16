@@ -44,8 +44,9 @@ const state = {
   taxon: '',
   /* `recorded` shows only attachments a source states for the selected taxon;
      `all` falls back to the consensus where nobody has recorded one. Recorded
-     is the default because the fallback is an assumption, not an observation —
-     it covers 69 of Theria's 81 muscles and 18 of Chondrichthyes' 19. */
+     is the default because the fallback is an assumption, not an observation.
+     It once covered most of the dataset; it is now 185 of 593 muscle-by-clade
+     cells, which changes the size of the problem and not the principle. */
   skeletonSource: 'recorded',
   boneA: '',
   boneB: '',

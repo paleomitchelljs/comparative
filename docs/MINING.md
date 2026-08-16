@@ -1,7 +1,10 @@
 # What is left to mine, and how
 
-222 present occurrences still have no attachment rows. This file lists the
-sources that could close them, ranked by whether they will actually work.
+<!-- counts:unscored -->
+225 present occurrences still have no attachment rows.
+<!-- /counts:unscored -->
+This file lists the sources that could close them, ranked by whether they will
+actually work.
 
 Regenerate the numbers with `python3 scripts/doc_counts.py --write`. The
 density figures below come from the check described in **How** — rerun it on any

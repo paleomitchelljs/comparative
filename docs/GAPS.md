@@ -494,14 +494,24 @@ it is one end of most of them.
 | axial | 15 | 43 |
 <!-- /counts:holes -->
 
-No region is at zero. The distribution is now flat enough that the limiting factor
-is no longer which regions are covered but **how many taxa are covered per
-muscle** — a shift needs two scored columns, and most muscles have one.
+No region is at zero. The distribution is flat enough that the limiting factor is
+no longer which regions are covered but **how many taxa are covered per muscle** —
+a shift needs two scored columns.
 
-By taxon the picture inverted this pass: the sarcopterygian fish end is complete
-but small (Dipnoi 7/7, Actinistia 6/7), while Caudata is now both large and
-well-covered (61 of 88). The columns that would make salamander scores comparable
-— Anura at 23%, Testudines at 26%, Theria at 15% — are what to fill next.
+**That constraint has largely lifted.** When this section was written most muscles
+had one scored clade and a shift was computable for a minority. It is now
+computable for **88 of 129 muscles (68%)**: 41 still have one scored clade or
+none, and the distribution runs out to nine. The sarcopterygian fish end is
+complete but small (Dipnoi 7/7, Actinistia 6/7); Caudata is large and well covered
+at 69 of 91.
+
+The figures this paragraph used to give as the fill-next list — Anura 23%,
+Testudines 26%, Theria 15% — are a frozen snapshot from the Walthall pass below
+and are all long since overtaken; Theria is now 89%. **Read the generated table in
+[§2](#2-underreported-taxonomic-groups) instead of any percentage written into
+prose here.** On that table the answer to "what to fill next" is Testudines (35%)
+and the two cyclostome columns (33%), with axial (50%) and hand (54%) the thin
+regions.
 
 ---
 
@@ -774,7 +784,29 @@ dissected animal. The lesson is the cheaper one: **a bug's blast radius is worth
 measuring before it is described.**
 
 Two pseudo-species remain in `species.json`: `teleostei-generalised` (6 rows) and
-`amphisbaenia-generalised` (3 rows). Both are clades wearing a species tag.
+`amphisbaenia-generalised` (0 rows — a placeholder for Westphal et al., not yet
+mined). Both are clades wearing a species tag.
+
+**They are no longer wearing it silently.** Both now carry `generalised: true`,
+and their rows carry `speciesBasis: "generalised"` — a fifth basis meaning *not a
+specimen: the source describes a clade rather than an animal*. The teleost rows
+had claimed `speciesBasis: "source"`, which [`SCHEMA.md`](SCHEMA.md#speciesbasis)
+defines as citing a **single-species** study; Winterbottom (1973) is a 93-page
+synonymy across teleosts and dissects nobody, so the rows least like an
+observation were asserting the strongest attribution available. The interface
+showed no badge for `source`, so they read as specimens in every view.
+
+`validate.py` now enforces the correspondence in both directions: a generalised
+species may carry only the generalised basis, a real species may never carry it,
+and a record whose binomial says "(generalised)" without the flag is an error — so
+the next placeholder cannot arrive unmarked. The interface labels these rows in
+the contested colour rather than the neutral one the other bases use.
+
+Flagging them also surfaced a misattribution the placeholder had been hiding: two
+of the six teleost notes described *Polypterus*, which is not a teleost and has
+its own species rows. A bichir observation had been filed under a generalised
+teleost because the row was a container for a clade rather than a claim about an
+animal — which is the failure mode the whole species layer exists to prevent.
 
 ### What the loon then exposed in the code
 

@@ -40,10 +40,19 @@ element.
 ## A word-collision the validator caught
 
 The **"acromial process of the furcula" is not the scapular acromion.** Scoring it
-as `landmark: acromion` failed twice over — wrong parent, and the acromion is
-correctly recorded as absent in birds. Two different structures sharing a word,
-and the containment check is what separated them. The row is scored on the furcula
-with the detail in the note.
+as `landmark: acromion` failed on the parent: the furcular process is not part of
+the scapula. Two different structures sharing a word, and the containment check is
+what separated them. The row is scored on the furcula with the detail in the note.
+
+**The second half of that reasoning has since been overturned.** This note used to
+add that the row also failed because "the acromion is correctly recorded as absent
+in birds". It was not correct. Widrig et al. describe the tinamou **scapular**
+acromion projecting cranially in the same paper, Schreiweis (1982) gives three
+penguin muscles an origin on the acromial process of the scapula, and Meers (2003)
+names it repeatedly in crocodylians; the element is now scored present in Aves and
+Crocodylia. The furcular/scapular distinction stands on its own and never needed
+the presence argument — which is the lesson, since a correct conclusion was being
+propped up by a wrong premise and the pair travelled together for several passes.
 
 ## Not covered by this paper
 

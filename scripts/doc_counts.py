@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the measured numbers in README.md and docs/GAPS.md.
+"""Regenerate the measured numbers in README.md, docs/GAPS.md and docs/MINING.md.
 
 Every count in those files had drifted: the README said 108 muscles and 16 taxa,
 GAPS.md said 126 and 16, validate.py said 126 and 19, and the live footer said
@@ -108,6 +108,14 @@ def block_headline(d):
     return (f"{len(d['muscles'])} muscle records · {len(d['present'])} present occurrences · "
             f"{len(d['elements'])} skeletal elements · {len(d['sources'])} sources · "
             f"{len(d['taxa'])} operational taxa")
+
+
+def block_unscored(d):
+    """MINING.md's headline. It was hand-written and said 222 while the live
+    figure was 225 — the one number in the file whose whole job is to say how
+    much work is left, drifting quietly because this script did not own it."""
+    return (f"{len(d['present']) - len(d['scored'])} present occurrences still have "
+            f"no attachment rows.")
 
 
 def block_region_table(d):
@@ -243,9 +251,10 @@ BLOCKS = {
     "scored": block_scored,
     "holes": block_holes,
     "parity": block_parity,
+    "unscored": block_unscored,
 }
 
-TARGETS = ["README.md", "docs/GAPS.md"]
+TARGETS = ["README.md", "docs/GAPS.md", "docs/MINING.md"]
 
 
 def main(write):

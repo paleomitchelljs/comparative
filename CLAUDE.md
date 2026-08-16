@@ -8,7 +8,16 @@ no build step, no dependencies. Data in `data/*.json`, app in `assets/`.
 ```sh
 python3 scripts/validate.py              # must exit 0
 python3 scripts/symmetrise_links.py --write
+python3 scripts/doc_counts.py --write    # after ANY change under data/
+for t in tests/*.test.js; do node "$t"; done
 ```
+
+`doc_counts.py` rewrites only the `<!-- counts:… -->` blocks in `README.md` and
+`docs/GAPS.md`. **The prose around them is hand-written and it drifts** — an audit
+found the claim "inheriting is the majority case, 69 of Theria's 81 muscles"
+repeated across `METHODS.md`, `README.md` and two source comments long after it
+had inverted to 185 of 593 cells. If you change the shape of the data, grep the
+docs for the figure you just moved; the generated blocks will not catch it.
 
 ## Non-obvious constraints
 
@@ -53,6 +62,12 @@ one bone gets several rows.
 **Never invent a `side`.** Absent means unrecorded. The same goes for a taxon's
 attachments: leaving an occurrence without `attachments` correctly reads as "not
 recorded", whereas copying the consensus asserts an observation nobody made.
+
+**A source that describes a clade is not a specimen.** Where a paper generalises
+rather than dissecting — Winterbottom's teleost synonymy — the species record gets
+`generalised: true` and every row on it `speciesBasis: "generalised"`. Do not reach
+for `source`, which means a single-species study, or invent a plausible exemplar.
+The validator enforces it both ways.
 
 **Rebuild with `./scripts/build.sh --write`,** which runs the migrations and
 seeds in dependency order and then validates. The scripts are idempotent.
