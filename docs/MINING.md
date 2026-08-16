@@ -96,6 +96,41 @@ are in German and one is a century old**, which is a real cost — but Werneburg
 Johnston and Diogo are all reading them, and this dataset is currently reading
 those authors' readings of them.
 
+### Acquisition run, August 2026 — and where the sources actually are
+
+***Biology of the Reptilia* is free, complete, and holds five of the targets
+above.** All 22 volumes were released by the Gans Collections and Charitable Fund
+at [carlgans.org](https://carlgans.org/biology-reptilia-full-content/). The viewer
+serves **one PDF per page**, at a predictable URL:
+
+```
+https://carlgans.org/wp-content/bor/{VV}/BotR{VV}-page{N}.pdf     # VV zero-padded
+```
+
+`N` is the PDF page, not the printed page. In volume 4 the offset is **+9**
+(printed p. 1 is `page10`). Fetch a range and `pdfunite` it back into a chapter.
+
+| vol | ch | Work | Covers | State |
+|---:|---:|---|---|---|
+| 4 | 1 | **Walker (1973)**, Locomotor apparatus of Testudines | Turtle limb myology, 100 pp | **acquired**, PDF pages 10–109 |
+| 4 | 2 | **Schumacher (1973)**, Head muscles and hyolaryngeal skeleton of turtles and crocodilians | Turtle + crocodylian cranial | **acquired**, PDF pages 110–240 |
+| 4 | 5 | **Haas (1973)**, Muscles of the jaws in Rhynchocephalia and Squamata | The descriptive source behind the *Ctenosaura* and *Sphenodon* rows | partial, PDF pages ~285–475 |
+| 11 | 3 | **Gasc (1981)**, Axial musculature | **Named by Cieri** as where the lepidosaur epaxial attachments live | partial, PDF pages ~362–475 |
+| 21 | 1 | **Russell & Bauer (2008)**, Appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates | Lizard limbs, and the tuatara | partial, PDF pages 6–474 |
+
+**Go slowly.** The site is behind Cloudflare and starts returning a "Just a
+moment…" HTML interstitial *with HTTP 200* after sustained requests — so a naive
+loop silently writes HTML into files named `.pdf`. Check with `file` before
+merging, sleep ~1s between requests rather than 0.25s, and resume the partials
+above rather than restarting them. It is a free scholarly archive run by a
+charitable fund; do not hammer it.
+
+**Two hosts are unreachable from this environment.** `archive.org` times out
+entirely and `biodiversitylibrary.org` returns 403. That blocks the pre-1940
+tier — Edgeworth (1935), Gaupp (1896), Francis (1934), Ribbing, Lakjer, Ogushi —
+all of which are confirmed to exist there free and with no known copyright
+restriction. They need fetching from a network that can reach those hosts.
+
 ### So the worklist is now an acquisition list
 
 Ranked by how many rows each would unblock:
