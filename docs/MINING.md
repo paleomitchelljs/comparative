@@ -56,6 +56,46 @@ disproves it.
 **Check the methods section before scoring, every time.** A citation records where
 a claim was read, not where it was observed.
 
+### What our own papers point at
+
+The reference lists were the one part of the corpus never used. Counting **in-text
+citations across all 88 extracted texts** — not reference-list membership, since a
+work cited repeatedly in the body is load-bearing — and weighting each by how often
+it appears within 260 characters of attachment language (`origin`, `inserts`,
+`arises`, `attaches`, `tendon`) separates the descriptive sources from the
+theoretical ones. Regenerate with the script sketched in **How**.
+
+`attCtx` is that weighted count; `#ours` is how many of our papers cite it at all.
+
+| attCtx | #ours | Work | What it would close |
+|---:|---:|---|---|
+| **106** | 9 | **Walker WF (1973). The locomotor apparatus of Testudines. *Biol. Reptilia* 4:1–100** | **Acquisition target #1, and our own corpus was pointing at it the whole time.** 100 pages of turtle limb myology — the 31 Testudines forelimb rows that cite only Abdala & Diogo |
+| **128** | 18 | **Edgeworth FH (1935). The Cranial Muscles of Vertebrates** | The canonical cranial monograph across all vertebrates. Cranial sits at 68% and this is the spine under most of what the modern papers cite |
+| **81** | 6 | **Dunlap DG (1960). The comparative myology of the pelvic appendage in the Salientia** | Anuran pelvis and thigh. Anura 53%, pelvic 69% |
+| 51 | 2 | Ogushi K (1911–13). Anatomische Studien an der japanischen dreikralligen Lippenschildkröte | Turtle myology in German, and Werneburg's own backbone. Would let a real turtle species be scored rather than a catalogue |
+| 41 | 6 | Russell AP & Bauer AM (2008). The appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates. *Biol. Reptilia* 21 | Lepidosaur limbs, **and the tuatara** — `sphenodon-punctatus` is in `species.json` with no rows |
+| 39 | 2 | Hudson GE, Schreiweis DO, Wang SYC (1972) | Avian myology. Aves has 40 open rows, the largest single clade gap |
+| 29 | 2 | Lakjer T (1926). Studien über die Trigeminus-versorgte Kaumuskulatur der Sauropsiden | The sauropsid jaw adductor monograph — Lepidosauria, Testudines and Crocodylia cranial at once |
+| 30 | 7 | Gaupp E (1896). Anatomie des Frosches | The classic anuran reference |
+| 22 | 8 | Francis ETB (1934). The Anatomy of the Salamander | Caudata's classic; the column is already 76% but this is what it rests on |
+| 20 | 4 | Ribbing L (1907, 1938) on amphibian distal arm muscles and limb muscles/nerves | Historical backbone for the forearm, the largest region by occurrence count |
+
+**Two things follow.**
+
+*The four targets named from the mining passes are narrower than this list.* Oelrich
+(1956), Gasc (1981), Ritter (1995) and Tsuihiji (2007) are each cited by only one
+to three of our papers. They are precisely aimed at particular rows; Walker (1973)
+outweighs all four on breadth and hits the worst column.
+
+*Most of the top of this list is old.* Walker 1973 and Russell & Bauer 2008 are both
+*Biology of the Reptilia*, a series whose volumes were made freely available —
+worth checking before paying for anything. Edgeworth 1935, Lakjer 1926, Ogushi
+1911–13, Gaupp 1896, Francis 1934 and Ribbing 1907/1938 are old enough to be
+plausible on the Biodiversity Heritage Library or archive.org. **Four of the ten
+are in German and one is a century old**, which is a real cost — but Werneburg,
+Johnston and Diogo are all reading them, and this dataset is currently reading
+those authors' readings of them.
+
 ### So the worklist is now an acquisition list
 
 Ranked by how many rows each would unblock:
