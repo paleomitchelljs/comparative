@@ -354,11 +354,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 254, of which 227 (89%) carry at least one attachment |
+| Elements | 254, of which 224 (88%) carry at least one attachment |
 | Observed attachment rows | 1573 |
 | Rows naming a **landmark** | 439 (28%) |
 | Rows naming a **side** | 1061 (67%) |
-| Osteological correlates | 112 flagged, 100 carry a muscle |
+| Osteological correlates | 112 flagged, 98 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -418,11 +418,11 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 22 | 68 | 3.1 |
+| cranial | 22 | 66 | 3.0 |
 | hindlimb | 43 | 42 | 1.0 |
 | pectoral | 32 | 28 | 0.9 |
 | axial | 33 | 28 | 0.8 |
-| forelimb | 52 | 42 | 0.8 |
+| forelimb | 52 | 41 | 0.8 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 26 | 14 | 0.5 |
 <!-- /counts:parity -->
