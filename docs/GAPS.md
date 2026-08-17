@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 793 present occurrences · 266 skeletal elements · 106 sources · 19 operational taxa
+129 muscle records · 796 present occurrences · 267 skeletal elements · 106 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -45,7 +45,7 @@ illustrated.
 |---|---:|---:|---:|---:|
 | foot | 12 | 46 | 41 | 89% |
 | leg | 10 | 55 | 49 | 89% |
-| thigh | 10 | 45 | 37 | 82% |
+| thigh | 10 | 48 | 40 | 83% |
 | pectoral | 16 | 166 | 132 | 80% |
 | arm | 5 | 65 | 51 | 78% |
 | forearm | 19 | 167 | 122 | 73% |
@@ -54,7 +54,7 @@ illustrated.
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 42 | 58% |
 | axial | 15 | 30 | 17 | 57% |
-| **all** | 129 | 793 | 590 | **74%** |
+| **all** | 129 | 796 | 593 | **74%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -145,7 +145,7 @@ back in for Aves.
 | Crocodylia | 75 | 64 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
-| Testudines | 54 | 38 | 70% |
+| Testudines | 57 | 41 | 72% |
 | Lepidosauria | 117 | 81 | 69% |
 | Aves | 93 | 52 | 56% |
 | Anura | 72 | 38 | 53% |
@@ -354,10 +354,10 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 266, of which 237 (89%) carry at least one attachment |
-| Observed attachment rows | 1673 |
-| Rows naming a **landmark** | 473 (28%) |
-| Rows naming a **side** | 1100 (66%) |
+| Elements | 267, of which 238 (89%) carry at least one attachment |
+| Observed attachment rows | 1684 |
+| Rows naming a **landmark** | 475 (28%) |
+| Rows naming a **side** | 1105 (66%) |
 | Osteological correlates | 121 flagged, 107 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -430,7 +430,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 22 | 67 | 3.0 |
-| hindlimb | 43 | 44 | 1.0 |
+| hindlimb | 43 | 45 | 1.0 |
 | axial | 35 | 32 | 0.9 |
 | pectoral | 32 | 29 | 0.9 |
 | forelimb | 52 | 45 | 0.9 |
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 590 of 793 present occurrences (74%).**
+**Taxon-specific attachments: 593 of 796 present occurrences (74%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -487,8 +487,8 @@ it is one end of most of them.
 | leg | 10 | 141 |
 | arm | 5 | 134 |
 | foot | 12 | 122 |
+| thigh | 10 | 115 |
 | hand | 9 | 109 |
-| thigh | 10 | 104 |
 | pelvic | 8 | 63 |
 | fin | 9 | 57 |
 | axial | 15 | 56 |

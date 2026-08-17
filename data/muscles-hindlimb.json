@@ -1683,6 +1683,34 @@
             ]
           },
           "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing."
+        },
+        {
+          "species": "trachemys-scripta",
+          "speciesBasis": "note",
+          "name": "Iliotibialis",
+          "present": "yes",
+          "action": "Extends the shank; also abducts and possibly retracts the femur.",
+          "sources": [
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "posterior"
+              },
+              {
+                "element": "ilium",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "patellar-tendon"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Band-shaped, its main origin on the posterodorsal corner of the ilium dorsal to the iliofibularis origin, plus a **second tendinous head in *Pseudemys*** from the anterior border of the ilium. Sitting high on the ilium it can abduct and retract the femur as well as extend the shank."
         }
       ],
       "homology": {
@@ -2253,6 +2281,58 @@
             ]
           },
           "attachmentNote": "Galictis cuja. The three vasti, all femoral in origin and patellar in insertion — which is the character that separates them from the rectus femoris head of the same complex. Vastus lateralis from the cranioproximal femur medial to the greater trochanter base, to the lateral patellar margin and proximolateral tibia; vastus medialis from the craniomedial femoral neck and diaphysis to the medial and mediodistal patella."
+        },
+        {
+          "species": "trachemys-scripta",
+          "speciesBasis": "note",
+          "name": "Femorotibialis (vasti medialis, internus and externus)",
+          "present": "yes",
+          "action": "Extends the shank.",
+          "sources": [
+            "walker-1973"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Vastus medialis",
+              "note": "Arises from and covers the morphological dorsal surface of the femur."
+            },
+            {
+              "name": "Vastus internus",
+              "note": "From the distal border of the trochanter minor and the anteroventral femur."
+            },
+            {
+              "name": "Vastus externus",
+              "note": "From the distal border of the trochanter major and the posteroventral femur."
+            }
+          ],
+          "divisionNote": "Trifurcate at its origin in *Pseudemys*, each part called a vastus. **The two other thigh muscles run between them**: the iliofemoralis insertion passes between the origins of vasti externus and medialis, and the puboischiofemoralis internus insertion separates medialis from internus. The three-way split is carved by what crosses it.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "femur",
+                "side": "dorsal"
+              },
+              {
+                "element": "femur",
+                "side": "ventral"
+              },
+              {
+                "element": "femur",
+                "landmark": "trochanter-minor"
+              },
+              {
+                "element": "femur",
+                "landmark": "trochanter-major"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "patellar-tendon"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). The deepest and most massive part of the knee-extensor complex; all three vasti converge to form the greater part of the patellar tendon."
         }
       ],
       "homology": {
@@ -2445,6 +2525,33 @@
           "sources": [
             "diogo-molnar-2014"
           ]
+        },
+        {
+          "species": "trachemys-scripta",
+          "speciesBasis": "note",
+          "name": "'Ambiens'",
+          "present": "yes",
+          "action": "Adducts and protracts the thigh, and extends the shank.",
+          "sources": [
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis",
+                "side": "lateral"
+              },
+              {
+                "element": "puboischiadic-ligament"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "patellar-tendon"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). A weak muscle from the posterior part of the base of the lateral pubic process and the adjacent puboischiadic ligament, onto the patellar tendon. It crosses the hip as well as the knee. **With the thigh in its normal turtle position — morphological dorsal surface directed anteriorly — the ambiens lies along its anteroventral border**, which is not where a reader importing the lizard arrangement would look for it."
         }
       ],
       "homology": {
