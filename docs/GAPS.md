@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 940 present occurrences · 268 skeletal elements · 111 sources · 20 operational taxa
+129 muscle records · 940 present occurrences · 268 skeletal elements · 112 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a

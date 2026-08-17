@@ -116,7 +116,27 @@ https://carlgans.org/wp-content/bor/{VV}/BotR{VV}-page{N}.pdf     # VV zero-padd
 | 4 | 2 | **Schumacher (1973)**, Head muscles and hyolaryngeal skeleton of turtles and crocodilians | Turtle + crocodylian cranial | **acquired**, PDF pages 110–240 |
 | 4 | 5 | **Haas (1973)**, Muscles of the jaws in Rhynchocephalia and Squamata | The descriptive source behind the *Ctenosaura* and *Sphenodon* rows | partial, PDF pages ~285–475 |
 | 11 | 3 | **Gasc (1981)**, Axial musculature | **Named by Cieri** as where the lepidosaur epaxial attachments live | partial, PDF pages ~362–475 |
-| 21 | 1 | **Russell & Bauer (2008)**, Appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates | Lizard limbs, and the tuatara | partial, PDF pages 6–474 |
+| 21 | 1 | **Russell & Bauer (2008)**, Appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates | Lizard limbs, and the tuatara | **acquired**, PDF pages 197–399 + 409–427 (myology and Appendix B only; offset +5) |
+
+**Volume 21 is in, and it is not the source the backlog thought it was.** 222
+of the chapter's 469 pages were fetched — the three myology sections and the
+synonymy appendix — at 1 s intervals with every file checked by `file`; 222
+requested, 222 PDFs, no interstitials. Then the check that `GAPS.md` §7 exists to
+force came out the other way for once: **the monograph's descriptive baseline is
+*Iguana iguana***, in 74 paragraphs each keyed `Iguana:` and each giving both
+ends, with the comparative survey in a separate `General discussion:` paragraph
+underneath. `iguana-iguana` is already in `species.json` and carries 7 rows.
+
+So this does **not** close the 27 unscored *Timon lepidus* rows — those are
+Abdala & Diogo's exemplar and stay open — and it only partly fills
+`sphenodon-punctatus`, whose 114 mentions are in the discussion paragraphs
+reporting Perrin, Osawa, Miner and Haines rather than a tuatara the authors cut.
+What it opens is a nearly complete appendicular column for a named lizard.
+Appendix B is a second deliverable in its own right: 656 numbered synonym
+references keyed to about a hundred works, which is the largest name-to-name
+concordance for the lepidosaur locomotor system anywhere in this bibliography and
+belongs in `synonyms`, not in occurrence rows. Reading note:
+`papers/2008_Russell-Bauer_Lepidosauria_Extant_appendicular-locomotor-apparatus.md`.
 
 **Go slowly.** The site is behind Cloudflare and starts returning a "Just a
 moment…" HTML interstitial *with HTTP 200* after sustained requests — so a naive
