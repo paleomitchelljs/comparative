@@ -433,6 +433,53 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). Two of Burch's muscles land on this one homology group: his Extensor carpi radialis, and his Abductor radialis, which Walker (1973) and Russell & Bauer (2008) call extensor carpi radialis intermedius and profundus — already in this record's synonymy. Both arise from the ectepicondyle in close proximity.\n\n**The extensor carpi radialis origin is the mirror image of the supinator problem and is resolved the same way**: proximal in birds (extreme enough in some to build a Processus supracondylaris dorsalis for it), between supinator and extensor digitorum longus in turtles, lepidosaurs and crocodylians. The proximal avian shift lets slight elbow extension fully extend the manus (Vazquez 1994), so it evolved with the wrist and was not present here. **The insertion is scored on the radiale on osteology rather than phylogeny**: birds insert on the carpometacarpus near the base of metacarpal I, lepidosaurs and crocodylians on the radiale, and *Tawa*'s wrist is plesiomorphic and more lepidosaur-like than either extant archosaur's, so the plesiomorphic insertion is inferred. Abductor radialis is the radius row: its insertion is equivocal because it fuses distally to extensor carpi radialis in birds, and if unfused in basal theropods it would have taken the proximal half of the lateral radius, stabilising as it does in crocodylians. It is absent in birds and single-bellied in crocodylians against two parts in lepidosaurs and some turtles — a general archosaurian reduction, which is what makes the single belly unequivocal even where its insertion is not."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Extensor carpi radialis longus and brevis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Extensor carpi radialis longus"
+            },
+            {
+              "name": "Extensor carpi radialis brevis"
+            }
+          ],
+          "action": "Extends the wrist and abducts the hand.",
+          "innervation": "Radial nerve (longus); deep branch of the radial nerve (brevis).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "supracondylar-ridge"
+              },
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Longus from the lower third of the lateral supracondylar ridge to the base of the second metacarpal; brevis from the common extensor tendon on the lateral epicondyle to the base of the third. **This is the distal insertion shift the record is built around.** Turtles, lepidosaurs and crocodylians stop at the radius and proximal carpals; mammals and some grasping tree frogs have carried the insertion out onto the metacarpals independently, and Abdala & Diogo tie that shift to fine digital control. The human row is the mammalian end of a convergence, not evidence of a shared derived state.",
+          "nerves": [
+            {
+              "nerve": "radial"
+            },
+            {
+              "nerve": "radial-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -451,7 +498,8 @@
         "mckitrick-1991",
         "molnar-etal-2018",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -931,6 +979,41 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **Half the bracket is missing by Burch's own decision.** Crocodylians have a dorsal-division muscle from the middle of the ectepicondyle inserting on the base of metacarpal II, which Meers (2003) called extensor carpi ulnaris and earlier workers (Ribbing 1907; Haines 1939; Cong et al. 1998) homologised with extensor digitorum longus. Burch adopts the earlier reading and codes extensor carpi ulnaris **absent in crocodylians**, so this reconstruction is bracketed by birds and lepidosaurs only. His argument is the direction of the insertion shift: paleognaths insert on the lateralmost metacarpal (III), as lepidosaurs do, and many neognaths on metacarpal II, so the lateralmost metacarpal is plesiomorphic and the crocodylian metacarpal-II insertion looks derived — or belongs to another muscle.\n\nInsertion on the lateralmost metacarpal is therefore unequivocal (0.650 at the base of Aves, with a reversal to metacarpal III in Passeriformes at 0.934); insertion on any carpal is equivocal, and the pisiform row is inferred because *Tawa* still has a pisiform, as lepidosaurs do. Burch's prediction: when the pisiform was lost in the theropod wrist this muscle lost that insertion and kept the metacarpal one, which is the state some birds are in. A secondary tendon of origin from the proximal ulna, seen in some birds, is very unlikely here (0.040)."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Extensor carpi ulnaris",
+          "present": "yes",
+          "action": "Extends the wrist and adducts the hand.",
+          "innervation": "Deep branch of the radial nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Common extensor tendon and the middle half of the posterior border of the ulna, to the medial side of the base of the fifth metacarpal — insertion on the lateralmost metacarpal, which Burch (2014) argues is the plesiomorphic archosaur state too. **The name is a hazard on this record and the human row is the least confusing instance of it**: Meers calls the crocodylian muscle flexor ulnaris, Burch reassigns that name to the anconeus and codes extensor carpi ulnaris absent in crocodylians altogether. In a human it is an extensor by mass, by nerve and by action, with nothing arguing otherwise.",
+          "nerves": [
+            {
+              "nerve": "radial-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -950,7 +1033,8 @@
         "mckitrick-1991",
         "molnar-etal-2018",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1454,6 +1538,45 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). The origin is the least contested thing in the antebrachium: approximately the middle of the ectepicondyle, between extensor carpi ulnaris and extensor carpi radialis or supinator, at a proportional probability near 1.0 at every node.\n\n**The insertion is a count of digits, and one of them is scored on function rather than phylogeny.** Slips to digits I and II are phylogenetically unequivocal — birds keep both, though on the base of phalanx I rather than the metacarpal. Everything else is equivocal: the digit V slip is lost in all lepidosaurs and archosaurs (0.995), the digit IV slip survives in lepidosaurs, turtles and *Alligator*, and metacarpal III is reported for *Crocodylus acutus*. *Tawa* has three functional digits and a highly reduced digit IV, so Burch infers the digit III insertion from the hand's own proportions and drops digit IV as probably already lost. That is extrapolatory functional inference, which Burch flags as the method that risks circularity if the result is later used to argue about function — he excludes ambiguous muscles from his own functional discussion for that reason."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Extensor digitorum and extensor digiti minimi",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Extensor digitorum"
+            },
+            {
+              "name": "Extensor digiti minimi"
+            }
+          ],
+          "action": "Extends the metacarpophalangeal and interphalangeal joints of digits 2-5; extends the wrist.",
+          "innervation": "Deep branch of the radial nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "extensor-expansion"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Both from the common extensor tendon on the lateral epicondyle; extensor digiti minimi joins the extensor digitorum tendon to the fifth digit rather than reaching bone on its own. **The insertion is not on a phalanx at all** — it is the extensor expansion, the fibrous hood over the dorsum of each digit that the intrinsic muscles also insert into, so the long extensor and the lumbricals and interossei act on the interphalangeal joints through one shared structure. In the outgroups this muscle ends on the bases of the metacarpals or on the terminal phalanges directly. The expansion is what replaces those attachments.",
+          "nerves": [
+            {
+              "nerve": "radial-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1471,7 +1594,8 @@
         "mckitrick-1991",
         "sanchez-etal-2019",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1725,6 +1849,15 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is unequivocal and *Tawa* has the scar; the origins of the superficial layer are the guess.** Each digit gets a superficialis and a profundus belly which join into one tendon on the dorsal surface of the proximal end of the terminal phalanx — and *Tawa* carries an oval, lightly striated area on the dorsal surface of all three manual unguals. Profundus origins are conserved everywhere: each belly from its own metacarpal, extending onto the base of the metacarpal medial to it. Superficialis origins are not: crocodylians spread them across the proximal carpals rather than confining them to the ulnare, intermedium or distal ulna as turtles and lepidosaurs do, so the lateral divisions are conserved and the medial ones are not. Burch reads the avian manus back onto this and puts the digit I and II divisions on the radiale, the digit III and IV divisions on the ulnare.\n\nThe avian evidence he is reading is a chain of homologies: Extensor brevis alulae is profundus of digit I (the avian extensor process being embryologically metacarpal I — Kundrát 2009); Extensor longus digiti majorus is the two divisions of digit II, its proximal belly arising from the radius as in no other taxon but most closely aligned with the crocodylian radiale origin; and Ulnimetacarpalis dorsalis is a short extensor rather than the abductor digiti minimi that Diogo & Abdala (2010) make it, on the grounds that it derives from the dorsal division while abductor digiti minimi runs with the flexors. Bellies to the reduced digit IV are reconstructed rather than dropped, because crocodylians keep small ones on their reduced fifth digit — though the profundus belly of digit IV may have ended on the metacarpal rather than the ungual, as it does in crocodylians, which is why no metacarpal insertion row is asserted."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). **Absent, and the absence is worth a row.** Gest lists 54 muscles of the upper limb and no short dorsal digital extensor among them; the human hand has no extensor digitorum brevis manus as a normal structure, though it is a recognised variant. Every other amniote column on this record has one. The foot kept its equivalent — see `extensores-digitorum-breves-pes`, where the human extensor digitorum brevis and extensor hallucis brevis are scored — so this is a loss in the hand specifically, in the limb that became a manipulator."
         }
       ],
       "homology": {
@@ -1740,7 +1873,8 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -2124,6 +2258,57 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **The one origin in the antebrachium that is a synapomorphy rather than an inference.** Lepidosaurs and turtles take this muscle from the ulnar shaft alone; crocodylians and birds both add a head from the radius, making it bipennate, at a proportional probability of 0.955 at the archosaur node — so it originated from the facing (interosseous) surfaces of both bones in *Tawa*. No sides are scored on those two rows: Burch gives the origin as the facing surfaces, and which named face of each bone that is depends on the articulated position, which is not recorded. The radial head is reversed in Passeriformes and present in all other birds studied.\n\nInsertion on the medial side of the base of metacarpal I is plesiomorphic and retained even in birds, where the alular extensor process of the carpometacarpus is developmentally part of metacarpal I (Kundrát 2009). Crocodylians do not share it — their tendon goes to the radiale — but phylogenetic inference puts that at 0.980 against, i.e. derived within the clade. *Tawa*, *Herrerasaurus* and other basal theropods have a medial flange at the base of metacarpal I in the right position for it."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Abductor pollicis longus and extensor pollicis brevis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Abductor pollicis longus"
+            },
+            {
+              "name": "Extensor pollicis brevis"
+            }
+          ],
+          "action": "Abducts the thumb at the carpometacarpal joint; extensor pollicis brevis extends it at the metacarpophalangeal joint.",
+          "innervation": "Deep branch of the radial nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "radius",
+                "side": "posterior"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              },
+              {
+                "element": "interosseous-membrane"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Abductor pollicis longus from the middle third of the posterior radius, the interosseous membrane and the mid-posterolateral ulna, to the radial side of the base of the first metacarpal; extensor pollicis brevis from the membrane and the distal posterior radius to the base of the proximal phalanx of the thumb. **Both bones is the archosaur condition too** — Burch (2014) makes the two-headed origin from the facing surfaces of radius and ulna a synapomorphy of Archosauria at 0.955, against a purely ulnar origin in lepidosaurs and turtles, so humans and birds share a bipennate origin that is not shared by descent. Extensor pollicis brevis is scored as the second part of the group on this record's own synonymy, which names the muscle 'abductor et extensor digiti I'.",
+          "nerves": [
+            {
+              "nerve": "radial-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2141,7 +2326,8 @@
         "abdala-diogo-2010",
         "sanchez-etal-2019",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -2491,6 +2677,37 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **Scored on this record, not on `supinator`, and the name is the reason to read the note.** Burch's Table 1 equates his Supinator with Meers's (2003) crocodylian 'Supinator' and Walker's (1973) chelonian 'Tractor radii' — which are the two synonyms this record already carries. The dataset's separate `supinator` record holds the therian muscle and the avian usage of the word, neither of which is this. A fourth source landing on the same equation is worth having on the record that already calls itself the worst name in the comparative forearm literature.\n\nThe insertion is as firm as anything in the paper: the anterolateral radial shaft for more than half its length, at 0.999, present in turtles, lepidosaurs, crocodylians and all but a handful of derived birds, and supported in *Tawa* by a flat anterior radial surface bounded by low ridges running the length of the bone. **The origin is the tie.** In turtles, lepidosaurs and crocodylians this is the most proximal of the dorsal division origins, often running past the ectepicondyle onto the shaft; in birds it sits distally near extensor digitorum longus while extensor carpi radialis takes the proximal place — an exact inversion, leaving the two states at exactly opposite probabilities at the nodes flanking Dinosauria. Burch breaks it by function: the avian arrangement serves the automating mechanism of the wing (Vazquez 1994), so he takes the proximal, non-avian position."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Brachioradialis",
+          "present": "yes",
+          "action": "Flexes the elbow; assists pronation and supination toward mid-position.",
+          "innervation": "Radial nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "supracondylar-ridge"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Upper two-thirds of the lateral supracondylar ridge to the lateral side of the base of the radial styloid process — scored as `radius[distal]`, since the styloid process in this skeleton is the cranial one. **A muscle of the extensor compartment, on the extensor nerve, that flexes the elbow**, which is why this record's confidence is only moderate: it is present in turtles, crocodylians, *Sphenodon* and mammals and absent or uncertain in amphibians, most lepidosaurs and birds, and whether that is one ancestral muscle repeatedly lost or repeated differentiation out of the radial extensor mass is unresolved. Burch's (2014) theropod 'supinator' is scored on this record — read the *Tawa* row beside this one, because the two carry different names for what the synonymy says is the same muscle.",
+          "nerves": [
+            {
+              "nerve": "radial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2507,7 +2724,8 @@
         "ercoli-etal-2014",
         "molnar-etal-2018",
         "sanchez-etal-2019",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -2799,6 +3017,41 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Supinator",
+          "present": "yes",
+          "action": "Supinates the forearm, independently of elbow position.",
+          "innervation": "Deep branch of the radial nerve, which pierces the muscle and continues as the posterior interosseous nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "landmark": "supinator-crest"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lateral epicondyle, the supinator crest and fossa of the ulna, and the radial collateral and annular ligaments, to the lateral side of the proximal third of the radius. **This is the only column on this record that is not an argument about a name.** The word 'supinator' is applied by different authors to at least three non-homologous muscles — the crocodylian brachioradialis, part of the avian extensor antebrachii et carpi radialis, and the abductor pollicis longus as 'supinator manus'. The therian supinator, this muscle, has no confidently identified counterpart outside Mammalia, and the human row is what the other three are being mistaken for.",
+          "nerves": [
+            {
+              "nerve": "radial-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2817,7 +3070,8 @@
         "ercoli-etal-2014",
         "godoy-etal-2016",
         "mckitrick-1991",
-        "molnar-etal-2017"
+        "molnar-etal-2017",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -3077,6 +3331,42 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is near-certain and the origin is a coin toss — an exact one.** Insertion fleshily on the lateral ulna from just distal to the proximal articular surface for most of its length, at a proportional probability near 1.0 at both bracketing nodes, and *Tawa* has a prominent ridge running from midshaft to the distal end that bounds it and separates it from the abductor pollicis longus origin. Whether the origin shares a tendon with extensor carpi ulnaris sits at exactly 0.50 at the base of Archosauria, and the reason is that every taxon that could break the tie is disqualified: crocodylians lack extensor carpi ulnaris altogether on Burch's reading, anconeus is absent in squamates, in turtles the two are almost entirely fused, and both states are reported for *Sphenodon* (Miner 1925; Haines 1939). Fusion is ancestral for Aves at 0.820. Burch tentatively takes it from the ectepicondyle alongside extensor carpi ulnaris; either way both are the most distal muscles on that epicondyle.\n\n**Burch's crocodylian synonymy conflicts with this record's.** He reads Meers's (2003) 'Flexor ulnaris' as this muscle, and codes extensor carpi ulnaris absent in crocodylians; this dataset's extensor antebrachii et carpi ulnaris record takes the same name as its own. Both agree the crocodylian muscle is a dorsal-division extensor; they disagree about which extensor. The crocodylian rows here follow Abdala & Diogo (2010) and are left as they stand."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Anconeus",
+          "present": "yes",
+          "action": "Extends the forearm.",
+          "innervation": "Nerve to anconeus, from the radial nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "lateral",
+                "landmark": "olecranon"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lateral epicondyle to the lateral olecranon and the upper quarter of the ulna. Gest gives it its own named branch of the radial nerve, which is the observation that keeps it separate from the triceps in a human — this record's assessment is that the anconeus separates from and refuses to the triceps field readily, varying at species level inside every major clade. The insertion is much shorter than in the outgroups: Burch reconstructs it running most of the length of the ulna in *Tawa* at a probability near 1.0, and here it stops at the proximal quarter.",
+          "nerves": [
+            {
+              "nerve": "radial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -3091,7 +3381,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -3346,6 +3637,15 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **The flexor-compartment mirror of anconeus, and like anconeus it is missing from one bracketing clade.** Present only in turtles, lepidosaurs, galloanseriform birds, *Apteryx* and tinamous — not in crocodylians — yet presence reconstructs unequivocally (0.863 at Archosauria, 0.903 at the base of Aves). Part of the reason it looks patchy is that it keeps being absorbed by its neighbour: in *Apteryx* and most turtles it is fused to flexor carpi ulnaris and usually described as that muscle's deep or medial part (Shah & Patel 1964; Walker 1973; Abdala et al. 2008), which is how this dataset's own turtle synonymy has it.\n\n**The origin is a Level II' inference either way** — the derived avian state (origin from the pronator accessorius tendon) is favoured at the base of Aves by 0.527, which is to say not at all. Burch tentatively places it between the flexor carpi ulnaris and pronator accessorius origins on the entepicondyle, the lepidosaur morphology, which may be intermediate between the two states. The insertion is firmer: restricted to the proximal half of the ventral/medial ulna at 0.876 at the base of Aves and 0.698 at the Archosauria + Lepidosauria node, against the long insertion of turtles and *Apteryx* and the distal-half-only insertion of *Sphenodon* and *Tetradactylus*."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed among the 54 upper limb muscles, and scored absent on that basis. **The interest is what it leaves behind**: this muscle bridges the medial epicondyle to the olecranon, and in a human that span is occupied by the cubital tunnel retinaculum, over the ulnar nerve — the same nerve the muscle carries wherever it is present. The record's own consensus action already says the muscle 'forms part of the cubital tunnel roof over the ulnar nerve'. Present in turtles, lepidosaurs, galloanseriform birds, *Apteryx* and tinamous, reconstructed for *Tawa* at 0.863, and repeatedly absorbed into flexor carpi ulnaris where it survives."
         }
       ],
       "homology": {
@@ -3360,7 +3660,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -3799,6 +4100,53 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). Found in every taxon in the study with a consistent morphology; the origin is always the most distal tendon on the entepicondyle, on its posterodistal aspect, and is scored as a single tendon — the multiple lepidosaur parts and the small second avian belly with its novel attachment to the bases of the secondary flight feathers are not the same thing and neither is reconstructed.\n\n**The insertion is equivocal because a bone is not homologous, not because the muscle is unclear.** Crocodylians and most lepidosaurs insert on the pisiform, with a secondary tendon to the ulnare in most turtles and *Varanus*. Birds insert on what is called the ulnare — but the avian element is a de novo ossification and the true tetrapod ulnare disappears during development (Kundrát 2009), so the avian attachment is to a 'pseudoulnare' that is a functional analog and not a homolog. With both primary attachment areas gone the muscle relocated to keep its role. *Tawa* retains a full carpus including an ossified pisiform, so the plesiomorphic pisiform insertion is reconstructed with a possible second attachment to the true ulnare. When the swap happened is unknown: Kundrát reads the ulnare of *Archaeopteryx* as already the avian pseudoulnare."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "action": "Flexes the wrist and adducts the hand.",
+          "innervation": "Ulnar nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "landmark": "olecranon"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              },
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "metacarpals",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Common flexor tendon and an ulnar head from the medial olecranon and the upper two-thirds of the posterior ulna, inserting on the pisiform, the hook of the hamate and the base of the fifth metacarpal. **The pisiform insertion is the plesiomorphic one and humans still have it**, which is not true of either extant archosaur clade: birds lost the pisiform and relocated the muscle to a neomorphic 'pseudoulnare' that is not the tetrapod ulnare at all. The hamate and metacarpal attachments are scored as `distal-carpals` and `metacarpals` rather than as new elements, on the rule that an element here is a homology group and not one species' bone name.",
+          "nerves": [
+            {
+              "nerve": "ulnar"
+            }
+          ]
         }
       ],
       "homology": {
@@ -3815,7 +4163,8 @@
         "ercoli-etal-2014",
         "klinkhamer-etal-2017",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -4165,6 +4514,37 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Flexor carpi radialis",
+          "present": "yes",
+          "action": "Flexes the wrist and abducts the hand.",
+          "innervation": "Median nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Common flexor tendon to the bases of the second and third metacarpals — the flexor mirror of the extensor carpi radialis rows, reaching the same two bones from the other side of the hand. Note the naming trap this record carries: Sullivan, Dilkes and others call the avian muscle in this position 'pronator superficialis', while Burch's Table 1 gives that same avian name to the pronator teres. The human column is where the two are unambiguously separate muscles with separate nerves.",
+          "nerves": [
+            {
+              "nerve": "median"
+            }
+          ]
         }
       ],
       "homology": {
@@ -4180,7 +4560,8 @@
         "abdala-diogo-2010",
         "ercoli-etal-2014",
         "molnar-etal-2018",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -4497,6 +4878,41 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). Present in every taxon in the study, with the most proximal origin of all the ventral division muscles. Some neognaths — Charadriiformes, Anatidae — have moved it proximal to the entepicondyle altogether, and that state is slightly favoured at the base of Neognathae (0.528), but paleognaths take it from the entepicondyle itself, which drops the proximal state to 0.082 at the base of Aves and makes the entepicondylar origin unequivocal for theropods. *Tawa* carries the ridge and small anterior projection at the proximal extent of the entepicondyle that probably marks its anteroproximal border.\n\nThe insertion is an elongate narrow strip along the anteromedial radial shaft for more than half its length (0.815 at both the Aves and Archosauria nodes), and *Tawa*'s radius has a distinct anteromedial surface defined by ridges running its length. The short proximal insertion of many neognaths is reconstructed as ancestral within that clade (0.677) with, in Burch's words, no clear pattern to its evolution."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Pronator teres",
+          "present": "yes",
+          "action": "Pronates the forearm and assists elbow flexion.",
+          "innervation": "Median nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "landmark": "coronoid-process-ulna"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Common flexor tendon and a deep ulnar head from the medial coronoid process, to the midpoint of the lateral radial shaft. **The insertion has contracted to a point.** In turtles, most lepidosaurs, crocodylians, paleognaths and the reconstruction for *Tawa* it is an elongate strip running more than half the length of the radius, at 0.815 at both the Aves and Archosauria nodes; the human muscle inserts at mid-shaft only. The two-headed origin is shared with the outgroups; the restricted insertion is not.",
+          "nerves": [
+            {
+              "nerve": "median"
+            }
+          ]
         }
       ],
       "homology": {
@@ -4514,7 +4930,8 @@
         "ercoli-etal-2014",
         "klinkhamer-etal-2017",
         "mckitrick-1991",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -4779,6 +5196,45 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). Homologous with the avian Ulnimetacarpalis ventralis on Sullivan (1962), which is not obvious from the attachments because the avian muscle has moved its insertion to the base of the carpometacarpus. Origin along a line on the ventral/medial ulna in every taxon studied; the proximal extent is equivocal (elongate at 0.756 at the Archosauria node, reduced-distal at 0.834 in birds), and Burch takes the proximally extensive version covering most of the ulna because *Tawa* is unlikely to have had the derived avian insertion that the distal shift goes with.\n\n**Both insertion rows survive a loss in one bracketing clade.** The carpal insertion is reconstructed at 0.783 at the base of Archosauria and is therefore scored as secondarily lost in modern crocodylians, not absent ancestrally — it is present in some lepidosaurs, all turtles, and, transformed, in birds. The radial insertion is phylogenetically equivocal because birds have dropped it, but its absence there is derived with the wing; Burch's dissections of *Struthio* found a double insertion onto both the distal radius and the carpometacarpus, which does not change the reconstruction's numbers but is the observation that makes the double insertion plausible for *Tawa*."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Pronator quadratus",
+          "present": "yes",
+          "action": "Pronates the forearm.",
+          "innervation": "Anterior interosseous branch of the median nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "anterior"
+              },
+              {
+                "element": "ulna",
+                "side": "distal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "anterior"
+              },
+              {
+                "element": "radius",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Medial side of the anterior surface of the distal quarter of the ulna to the anterior surface of the distal quarter of the radius. **Distally restricted, like a bird's and unlike a lizard's.** Crocodylians, lepidosaurs and most turtles take the origin from more than half the length of the ulna; birds restrict it to the distal half or less, and so does a human. The carpal insertion present in turtles and some lepidosaurs, reconstructed for *Tawa* at 0.783 and surviving in birds as an attachment to the carpometacarpus, is gone here — the human muscle reaches the radius and stops.",
+          "nerves": [
+            {
+              "nerve": "median-anterior-interosseous"
+            }
+          ]
         }
       ],
       "homology": {
@@ -4797,7 +5253,8 @@
         "klinkhamer-etal-2017",
         "mckitrick-1991",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -4924,6 +5381,15 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **Absent in crocodylians, absent in *Sphenodon*, absent in paleognaths except tinamous — and unequivocally present here.** Squamates, turtles and every neognath studied have it, and that distribution reconstructs presence at the archosaur node despite one bracketing clade lacking it entirely. Origin distal to pronator teres at the distal end of the entepicondyle, near the flexor digitorum longus superficialis origin.\n\n**The insertion is where the two nodes disagree and the row is the compromise.** A long insertion over most of the radius is reconstructed at the base of Aves (0.950); a restricted distal insertion at the lepidosaur + archosaur node (0.878). Turtles and some squamates (*Varanus*, *Tetradactylus*) have it distally on less than half the radius, which Russell & Bauer (2008) take as primitive; *Iguana*, *Liolaemus* and a few neognaths put it proximally on less than half. There are no osteological signals on *Tawa*'s radius either way, so Burch splits the difference at the distal end for slightly over half the length. Two rows on one bone, one for the side and one for the level, because the level is the part in dispute."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed, and absent in mammals generally. Its distribution is one of the odder ones on this dataset: absent in crocodylians, *Sphenodon* and paleognaths except tinamous, present in squamates, turtles and every neognath studied, which is enough for Burch (2014) to reconstruct it as unequivocally present in theropods despite one bracketing clade lacking it entirely. Mammals are simply outside that distribution."
         }
       ],
       "homology": {
@@ -4935,7 +5401,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -5511,6 +5978,72 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). Two parts, one set of insertion tendons. The superficialis is absent in ratites but present in all other birds including tinamous and in crocodylians, so it reconstructs unambiguously; it arises from a single tendon on the entepicondyle sandwiched between flexor carpi ulnaris and pronator teres in nearly every taxon. The second entepicondylar head of some squamates and the ulnar head of a few birds are rare and are not reconstructed (absence at nearly 1.0 at both nodes). The profundus arises from the ventral/medial ulna along most of its length — the full crocodylian and lepidosaur extent, because *Tawa* keeps a four-fingered hand, whereas in birds the origin is curtailed by the proximal extent of pronator quadratus, probably a consequence of digital reduction.\n\n**The digit III slip is the one scored on the hand rather than on the tree.** Slips to the terminal phalanges are plesiomorphic; crocodylians have lost those to their reduced digits IV and V; birds usually retain only the major digit (II), with a digit I slip in tinamous, *Struthio*, *Opisthocomus*, *Balaeniceps*, *Coturnix* and *Bubo* that reconstructs as plesiomorphic at the base of Aves (0.882) — the hoatzin's clawed, tree-climbing chick is the functional reason offered. A digit III slip is present in every outgroup taxon and absent in birds except one *Struthio* specimen, leaving it at 0.043 at the base of Aves, i.e. phylogenetically equivocal; *Tawa*'s well-developed third digit is what puts it back. Digit IV is too reduced and gets none, as in crocodylians.\n\n**A cross-source note on this record's neighbour**: Burch's Table 1 equates the superficialis with Walker's (1973) chelonian 'Palmaris longus', which this dataset holds as a separate, deliberately quoted record whose homology Abdala & Diogo call under-supported. Burch's table is a fourth source identifying the turtle muscle as the humeral head of the long digital flexor rather than as a palmaris longus."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Flexor digitorum superficialis and profundus",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Flexor digitorum superficialis"
+            },
+            {
+              "name": "Flexor digitorum profundus"
+            },
+            {
+              "name": "Flexor pollicis longus"
+            }
+          ],
+          "action": "Superficialis flexes the metacarpophalangeal and proximal interphalangeal joints; profundus also flexes the distal interphalangeal joints.",
+          "innervation": "Median nerve; the ulnar half of flexor digitorum profundus is supplied by the ulnar nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "radius",
+                "side": "anterior"
+              },
+              {
+                "element": "ulna",
+                "side": "medial"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              },
+              {
+                "element": "interosseous-membrane"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus"
+              },
+              {
+                "element": "ungual-phalanges-manus"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **The two-layer arrangement this record exists to explain, in the animal it is named from.** Superficialis from the common flexor tendon and the middle third of the radius to the shafts of the middle phalanges of digits 2-5; profundus from the ulna and interosseous membrane to the bases of the distal phalanges; and the two insert at different levels on the same digits, the superficialis tendon splitting to let the profundus tendon through. That split-level insertion is the mammalian novelty. In amphibians and reptiles this is a single plate whose tendons end on the terminal phalanges, which is what Burch reconstructs for *Tawa*.\n\nFlexor pollicis longus is scored as a third part: it is the deep flexor to digit I, separated off. **The divided nerve supply is the detail worth keeping** — Gest gives the radial half of profundus to the median nerve and the ulnar half to the ulnar nerve, so one muscle belly spans the boundary between two nerves of the same ventral division.",
+          "nerves": [
+            {
+              "nerve": "median"
+            },
+            {
+              "nerve": "ulnar"
+            },
+            {
+              "nerve": "median-anterior-interosseous"
+            }
+          ]
         }
       ],
       "homology": {
@@ -5531,7 +6064,8 @@
         "klinkhamer-etal-2017",
         "sanchez-etal-2019",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -5817,6 +6351,36 @@
             "gambaryan-etal-2015"
           ],
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Palmaris longus",
+          "present": "yes",
+          "action": "Tenses the palmar aponeurosis; weak wrist flexion.",
+          "innervation": "Median nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Common flexor tendon to the palmar aponeurosis. **This record is quoted because its deep homology is not established, and the human muscle is the referent, not the evidence.** Abdala & Diogo name the 'palmaris longus' and the 'rhomboideus' as the two structures whose correspondence with the mammalian muscles of those names is explicitly under-supported, and ask for innervation and development across a broader amphibian and reptilian sample. Burch's (2014) Table 1 answers from a fourth direction, equating Walker's chelonian 'palmaris longus' with the humeral head of flexor digitorum longus instead. Gest also lists a palmaris brevis, a dermal muscle of the hypothenar skin with no counterpart anywhere else in this dataset; it is not scored.",
+          "nerves": [
+            {
+              "nerve": "median"
+            }
+          ]
         }
       ],
       "homology": {
@@ -5832,7 +6396,8 @@
       "sources": [
         "abdala-diogo-2010",
         "sanchez-etal-2019",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -6033,6 +6598,15 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed. The ulnocarpalis is present in urodeles and monotremes and gone in a human hand; Gambaryan et al. (2015) argue it survives in *Ornithorhynchus* against the transverse subcarpal ligament, and Straus (1942) reported that ligament in some lipotyphlan insectivores. Neither muscle nor ligament is in a human, which is why this record's therian rows are thin."
         }
       ],
       "homology": {
@@ -6044,7 +6618,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -6176,6 +6751,15 @@
           "sources": [
             "abdala-diogo-2010"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed for the hand. **The foot kept it**: the human quadratus plantae is the surviving flexor accessorius of the pes, and is scored on `flexor-accessorius-lateralis-pes`. A muscle present in one limb and absent in the serially corresponding position of the other, in the same animal — which is a caution about serial correspondence rather than evidence for it."
         }
       ],
       "homology": {
@@ -6188,7 +6772,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -6306,6 +6891,15 @@
           "sources": [
             "abdala-diogo-2010"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed; see [[flexor-accessorius-lateralis]] for the hand-versus-foot contrast."
         }
       ],
       "homology": {
@@ -6317,7 +6911,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -6660,6 +7255,15 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **Burch reconstructs this origin against his own plesiomorphy argument, and says so.** In lepidosaurs and turtles these bellies arise entirely from the annular ligament covering the carpals; that ligament is absent in extant birds and crocodylians, both of which have modified wrists. *Tawa*'s wrist is closer to a lepidosaur's than to either, so the ligament was probably retained and these muscles probably arose from it — which would make the shift to a distal-carpal origin a later consequence of theropod wrist modification. Burch nonetheless scores the distal-carpal origin, on the possibility that it is an archosaurian synapomorphy already present here. The carpal row is that choice; the flexor-tendon row is the crocodylian condition, where the muscle arises from the distal carpals and the flexor digitorum longus tendon together, and matches the avian Flexor alulae from the base of the carpometacarpus and the same tendon.\n\nThe distal tendons bifurcate to let the long flexor tendons pass and then insert on either side of the flexor processes — phalanx 1 of digits I and II, phalanx 2 of digit III. Digit I is the exception: no bifid tendon in lepidosaurs or birds, a simple insertion on the ventromedial base of phalanx 1, favoured at the base of Archosauria at 0.786."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "uncertain",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Scored uncertain rather than absent, and the uncertainty is about which record the human muscles belong to, not about what is there. The superficial short flexor layer has no muscle in the human hand that is unambiguously its own: the candidates — palmaris brevis, the superficial head of flexor pollicis brevis — are assigned to this layer by some authors and to the deep layer by others, and the deep layer's members are scored on `flexores-breves-profundi`. Compare the foot, where flexor digitorum brevis is the surviving superficial layer and is scored plainly. The hand lost the layer or absorbed it; the sources do not agree which."
         }
       ],
       "homology": {
@@ -6676,7 +7280,8 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -6873,6 +7478,49 @@
             "burch-2014"
           ],
           "note": "Tawa hallae. Scored uncertain, and the uncertainty is about presence rather than about attachments. Burch (2014) groups the muscles variously called Flexor digitorum brevis intermedius or Contrahentes digitorum as an assortment of smaller muscles related to the short flexors that vary between and sometimes within clades, typically arising on the medial carpus and inserting on the fourth and/or fifth digits, and declines to reconstruct them: highly speculative in extinct taxa. **He goes further and gives a reason to expect their absence** — lizards showing the same pattern of reduction of digits four and five have lost them (Berger-Dell'Mour 1983), and *Tawa*'s digit IV is highly reduced. A muscle group whose insertions are on the digits this animal was in the process of losing."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Adductor pollicis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Oblique head"
+            },
+            {
+              "name": "Transverse head"
+            }
+          ],
+          "action": "Adducts the thumb.",
+          "innervation": "Deep branch of the ulnar nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "metacarpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Oblique head from the capitate and the bases of the second and third metacarpals, transverse head from the shaft of the third, both to the base of the proximal phalanx of the thumb. **One contrahens survives in a human and this is it.** The contrahens layer runs a muscle to every digit in a lizard or a crocodylian; humans have lost all of them except the one to digit I, which is why the adductor pollicis has no partner and looks like a thenar muscle rather than a member of a series. Compare the *Tawa* row on this record, scored uncertain because Burch expects the same layer to have been lost there for the same kind of reason — reduction of the lateral digits.",
+          "nerves": [
+            {
+              "nerve": "ulnar-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -6887,7 +7535,8 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -7277,6 +7926,74 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). Insertion is the conserved end of this group — a single attachment to the ventral surface of the flexor process of the first phalanx of each digit in nearly every taxon studied, lying between the two distal tendons of the superficial layer. **The origin is a compromise between two states that may not be an ancestral condition at all**: lizards and turtles restrict these bellies to the distal carpal row, crocodylians involve both the distal carpals and each digit's metacarpal. Burch takes the crocodylian arrangement as the intermediate and most parsimonious reconstruction while flagging that the metacarpal origin may instead be convergent, acquired independently with the modified wrists of both modern archosaur clades — in which case the state reconstructed here for *Tawa* never existed.\n\nThe avian homologies underwriting the group are one muscle per digit: Adductor alulae for digit I, Abductor digiti majoris for digit II, Flexor digiti minoris — weak in most birds, a large fleshy belly in *Struthio* — for digit III."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Interossei and the deep thenar and hypothenar muscles",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Dorsal interossei"
+            },
+            {
+              "name": "Palmar interossei"
+            },
+            {
+              "name": "Flexor pollicis brevis"
+            },
+            {
+              "name": "Flexor digiti minimi brevis"
+            },
+            {
+              "name": "Opponens pollicis"
+            },
+            {
+              "name": "Opponens digiti minimi"
+            }
+          ],
+          "action": "Flex the metacarpophalangeal joints and extend the interphalangeal joints; the interossei abduct and adduct the digits about the axis of digit III; the opponens muscles rotate the first and fifth metacarpals.",
+          "innervation": "Deep branch of the ulnar nerve, except the thenar muscles, which take the recurrent branch of the median nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "metacarpals",
+                "side": "ventral"
+              },
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "flexor-retinaculum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              },
+              {
+                "element": "extensor-expansion"
+              },
+              {
+                "element": "metacarpals"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **A large and openly contested carve-up, scored here on this record's own synonymy**, which already equates the deep short flexor layer with the mammalian interossei. Four dorsal interossei each from two adjacent metacarpal shafts; four palmar interossei from the palmar shafts of metacarpals 1, 2, 4 and 5; and the thenar and hypothenar short flexors and opponens muscles from the flexor retinaculum and the distal carpals. All insert on the proximal phalanges and, for the interossei, into the extensor expansion as well.\n\n**The alternative assignments are real and are not settled here.** McMurrich, Howell and Lewis do not agree on how Interossei, Intermetacarpales, Dorsometacarpales and Contrahentes digitorum divide up, and Howell (1936) said as much. `intermetacarpales` and `dorsometacarpales` in this dataset both carry 'part of interossei dorsales' in their synonymy, so the human interossei have a claim on those two records as well; the rows there are scored uncertain and point back here rather than duplicating this one. The first palmar interosseus is often fused to the adductor pollicis, which is scored on `contrahentes-digitorum` — so the boundary between two of these records is, in a human, sometimes not a boundary.",
+          "nerves": [
+            {
+              "nerve": "ulnar-deep"
+            },
+            {
+              "nerve": "median-recurrent"
+            }
+          ]
         }
       ],
       "homology": {
@@ -7291,7 +8008,8 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -7548,6 +8266,38 @@
             "burch-2014"
           ],
           "note": "Tawa hallae. Scored present and given no attachment rows on purpose. Burch (2014) considers lumbricales almost certainly present — they are in every taxon with a 'normal' manual morphology, and slips to at least digits II through IV are in all of his outgroups — but calls reconstructing their morphology too speculative to attempt. The variation is in exactly the two things an attachment row records: the number of slips, and where they end. They arise from the flexor digitorum longus tendons and/or the palmar aponeurosis, but insert on all digits (Haines 1950; Walker 1973; Abdala & Moro 2006) or only digits II-IV (Meers 2003; Russell & Bauer 2008), and on either the metacarpophalangeal or the proximal interphalangeal joint. There is no avian homolog to close the bracket. Presence is a safe inference from ubiquity; every row that would follow from it is not."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Lumbricals",
+          "present": "yes",
+          "action": "Flex the metacarpophalangeal joints and extend the interphalangeal joints of digits 2-5.",
+          "innervation": "Median nerve to the radial two; deep branch of the ulnar nerve to the ulnar two.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "extensor-expansion"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). From the flexor digitorum profundus tendons of digits 2-5 to the extensor expansion on the radial side of each proximal phalanx. **A muscle with no bony attachment at either end**, running from one tendon to another — which is why the *Tawa* row on this record carries no attachments at all: Burch judges the reconstruction too speculative because number and insertion vary so much, and there are no osteological correlates for a muscle that never touches bone. The human split nerve supply, median to the radial two and ulnar to the ulnar two, is the same boundary that divides flexor digitorum profundus.",
+          "nerves": [
+            {
+              "nerve": "median"
+            },
+            {
+              "nerve": "ulnar-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -7561,7 +8311,8 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -7775,6 +8526,15 @@
             "burch-2014"
           ],
           "note": "Tawa hallae. Scored present and given no attachment rows on purpose. Burch (2014) treats the Interossei as almost certainly present in the manus of *Tawa*, on their presence in some form in every other tetrapod, but impossible to reconstruct with confidence: there is no consistency in their number or morphology across his study taxa, and — unusually for this reconstruction, which leans hard on osteology — **no osteological correlates in *Tawa*'s metacarpals** for any of the possible attachment sites. The avian evidence cannot help: both muscles birds call 'Interosseus' are of uncertain homology with the interossei of other tetrapods on both attachments and development (Sullivan 1962), and Howell (1936) had already found the relationship between Interossei, Intermetacarpales, Dorsometacarpales and Contrahentes digitorum unclear among tetrapods generally. Which of this dataset's records Burch's Interossei map onto is therefore left open, and the same note is filed on [[dorsometacarpales]].\n\nWhat he will say is what the crocodylian arrangement would have bought: an abductor (dorsal) and an adductor (ventral) for each digit, both from the proximal end of the adjacent metacarpal to the distal metacarpal, joint capsule and/or proximal phalanx of their own — independent adduction and abduction of each finger, not unlike the human hand."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "uncertain",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). The human dorsal and palmar interossei are scored on [[flexores-breves-profundi]], whose synonymy already claims them. This record's synonymy claims them too — 'part of interossei dorsales' — and Howell (1936) found the relationship between Interossei, Intermetacarpales, Dorsometacarpales and Contrahentes digitorum unclear across tetrapods generally. Scored uncertain rather than duplicating the attachment rows onto a second record, which would give one observation two homes."
         }
       ],
       "homology": {
@@ -7788,7 +8548,8 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -7927,6 +8688,15 @@
             "burch-2014"
           ],
           "note": "Tawa hallae. Scored present and given no attachment rows on purpose; see the matching row on [[intermetacarpales]] for the reasoning. Burch (2014) reconstructs the Interossei as present but unreconstructable — no consistency across taxa, no osteological correlates on *Tawa*'s metacarpals, and an avian pair whose homology with the tetrapod interossei is uncertain. The dorsal set of the crocodylian arrangement he describes — an abductor per digit from the proximal end of the adjacent metacarpal — is the part that would land on this record if the mapping were settled."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "uncertain",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). As for [[intermetacarpales]]: the human interossei are scored once, on [[flexores-breves-profundi]], and this record's claim on them is recorded rather than acted on. Burch's *Tawa* row here is uncertain for a different reason — the muscles are almost certainly present but leave no osteological correlate to reconstruct from."
         }
       ],
       "homology": {
@@ -7939,7 +8709,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -8138,6 +8909,43 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). The avian homolog is Abductor alulae. **The origin is the most variable attachment in the manus**: the ventral radiale in all crocodylians, most lepidosaurs and one turtle (*Lissemys*); the distal carpals in *Trachemys* and *Tetradactylus*; the distal radius in *Podocnemis* and *Trachemys*; the base of the carpometacarpus in some birds; the extensor carpi radialis tendon in most birds; and a variable accessory attachment to the distal radius in *Struthio*. Presence in most lepidosaurs and in crocodylians makes the radiale plesiomorphic at 0.881 at the base of Archosauria, and it is scored here as the state a basal theropod is unlikely to have exchanged for the derived avian one — but it remains phylogenetically equivocal.\n\nThe insertion is not: the medial surface of the first phalanx of digit I near its base, at 0.837 at Archosauria and 0.993 at Aves. The more proximal insertion on the lateral aspect of metacarpal I found in crocodylians (Meers 2003), *Sphenodon* (Miner 1925) and *Liolaemus* is the state Burch does not take, against the usual pull of the crocodylian half of the bracket."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Abductor pollicis brevis",
+          "present": "yes",
+          "action": "Abducts the thumb.",
+          "innervation": "Recurrent branch of the median nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-retinaculum"
+              },
+              {
+                "element": "carpals"
+              },
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Flexor retinaculum, scaphoid and trapezium, to the base of the proximal phalanx of the thumb. The distal insertion — on the phalanx rather than on metacarpal I — is the state found in turtles, most lepidosaurs and all birds, and reconstructed for *Tawa* at 0.837; crocodylians, *Sphenodon* and *Liolaemus* keep the more proximal metacarpal insertion. **The origin is the variable end** across every clade this record holds, and the human version adds a retinaculum the outgroups do not have. Scaphoid and trapezium are scored as `carpals` and `distal-carpals`; naming them as elements would create two bones for one species.",
+          "nerves": [
+            {
+              "nerve": "median-recurrent"
+            }
+          ]
         }
       ],
       "homology": {
@@ -8150,7 +8958,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -8394,6 +9203,37 @@
             ]
           },
           "attachmentNote": "Tawa hallae, Burch (2014). **This row exists because Burch dissected two ostriches.** No muscle answering to this description had ever been reported in the avian manus, which would leave the archosaur bracket one-sided; he found a well-developed one in both *Struthio* specimens, arising from the ventral surface of the pseudoulnare and the flexor carpi ulnaris insertion tendon and inserting on the ventrolateral surface of metacarpal III. Since muscles that attached to the pisiform have shifted to the pseudoulnare in birds, that origin is treated as homologous with the pisiform origin of crocodylians, lizards and turtles, and the bracket closes.\n\nBurch also rejects Diogo & Abdala's (2010) alternative homolog for this muscle, the avian Ulnimetacarpalis dorsalis, on development: that muscle belongs to the dorsal division with the short extensors, while abductor digiti minimi is a ventral muscle described by some authors as part of flexor carpi ulnaris or as arising from its insertion tendon. In *Tawa* it arises from the pisiform, which is still present, and inserts on the metacarpal of the reduced fourth digit — a lateralmost-metacarpal insertion like the crocodylian one, which may itself be a consequence of lateral digit reduction in both extant clades."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Abductor digiti minimi",
+          "present": "yes",
+          "action": "Abducts the fifth digit.",
+          "innervation": "Deep branch of the ulnar nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Pisiform to the ulnar side of the base of the proximal phalanx of the fifth digit — the same origin crocodylians, lizards and turtles use, and the same phalangeal insertion lepidosaurs and turtles use rather than the crocodylian metacarpal one. **The pisiform is what makes this row possible**, and it is the bone birds lost: Burch found the muscle in *Struthio* only because it had relocated to the neomorphic pseudoulnare, which was the first report of it in an avian manus. A human keeps the plesiomorphic arrangement intact.",
+          "nerves": [
+            {
+              "nerve": "ulnar-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -8409,7 +9249,8 @@
       "sources": [
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
-        "burch-2014"
+        "burch-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -8544,6 +9385,51 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Extensor pollicis longus and extensor indicis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Extensor pollicis longus"
+            },
+            {
+              "name": "Extensor indicis"
+            }
+          ],
+          "action": "Extends the thumb at the interphalangeal joint and the index finger at all three joints.",
+          "innervation": "Deep branch of the radial nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "interosseous-membrane"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ungual-phalanges-manus"
+              },
+              {
+                "element": "extensor-expansion"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Extensor pollicis longus from the interosseous membrane and the middle posterolateral ulna to the base of the distal phalanx of the thumb; extensor indicis from the membrane and the distal ulna, joining the extensor digitorum tendon to digit II. **These are the two muscles Diogo & Abdala use to define this record**, which exists to hold the deep dorsal antebrachial layer that turtles and lepidosaurs also have and that the superficial extensor digitorum obscures. The third member of their set, extensor digiti III proprius, is not present in a human.",
+          "nerves": [
+            {
+              "nerve": "radial-deep"
+            }
+          ]
         }
       ],
       "homology": {
@@ -8557,7 +9443,8 @@
         ]
       },
       "sources": [
-        "gambaryan-etal-2015"
+        "gambaryan-etal-2015",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {

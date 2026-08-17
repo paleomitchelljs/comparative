@@ -390,6 +390,66 @@
           ],
           "note": "Hydrolagus colliei. Anderson's muscle group #1, the one group present and unambiguously homologous in all five gnathostomes he compares.",
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Masseter, temporalis and the pterygoids",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Masseter"
+            },
+            {
+              "name": "Temporalis"
+            },
+            {
+              "name": "Medial pterygoid"
+            },
+            {
+              "name": "Lateral pterygoid"
+            }
+          ],
+          "action": "Elevate the mandible; the lateral pterygoid protracts it and opens the jaw; the pterygoids together produce lateral grinding.",
+          "innervation": "Mandibular division of the trigeminal nerve (V3).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "zygomatic-arch"
+              },
+              {
+                "element": "temporal-fossa"
+              },
+              {
+                "element": "skull-roof"
+              },
+              {
+                "element": "pterygoid"
+              },
+              {
+                "element": "maxilla"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible"
+              },
+              {
+                "element": "mandible",
+                "landmark": "coronoid-process-mandible"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Masseter from the zygomatic arch, temporalis from the temporal fossa, medial and lateral pterygoid from the pterygoid plates and the maxillary tuberosity, all to the mandible. **Four muscles, one nerve, and the nerve is the whole argument.** This record calls trigeminal innervation invariant and the muscle present wherever jaws are — the single most robust cranial homology in Gnathostomata. It also warns that subdivision patterns carry no homology weight on their own and the named parts are frequently non-homologous between clades, which is why the four human muscles are scored as parts of this record and **not** distributed among the `adductor-mandibulae-externus`, `-internus`, `-longus`, `-lateralis` and `-posterior` records. Those carve the sauropsid and anuran complex following Johnston's folded-sheet model, which is not a scheme a human jaw can be fitted into without inventing the fit.",
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
+          ]
         }
       ],
       "homology": {
@@ -417,7 +477,8 @@
         "werneburg-2011",
         "ziermann-diogo-2013",
         "ziermann-diogo-2019",
-        "ziermann-etal-2014"
+        "ziermann-etal-2014",
+        "gest-anatomy-tables"
       ],
       "complexOf": [
         "adductor-mandibulae-internus",
@@ -627,6 +688,66 @@
           ],
           "note": "Hydrolagus colliei. Present in every taxon Anderson (2008) examines, stretching between the sides of the mandible on CN V. In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.",
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Mylohyoid and its derivatives",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Mylohyoid"
+            },
+            {
+              "name": "Anterior belly of digastric"
+            },
+            {
+              "name": "Tensor tympani"
+            },
+            {
+              "name": "Tensor veli palatini"
+            }
+          ],
+          "action": "Elevates the floor of the mouth and the hyoid; tensor tympani damps the ossicular chain; tensor veli palatini tenses the soft palate and opens the auditory tube.",
+          "innervation": "Mandibular division of the trigeminal nerve (V3).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "mandible",
+                "side": "medial"
+              },
+              {
+                "element": "skull-roof"
+              },
+              {
+                "element": "pterygoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyoid"
+              },
+              {
+                "element": "midline-raphe"
+              },
+              {
+                "element": "hyomandibula-stapes"
+              },
+              {
+                "element": "palatine"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **This record's own assessment says the mammalian derivatives illustrate the point better than any limb example, and this is that row**: a muscle that ends up inside the ear still carries CN V. Mylohyoid keeps the ancestral sheet between the two mandibular rami, meeting its fellow at a midline raphe; the anterior belly of digastric is a strap cut out of the same sheet; tensor veli palatini has moved back into the palate; and tensor tympani has left the mouth altogether to insert on the malleus, scored here as `hyomandibula-stapes`, the middle-ear element group. Four muscles in four unrelated places, one trigeminal nerve, one ancestral sheet.",
+          "nerves": [
+            {
+              "nerve": "trigeminal-mandibular"
+            }
+          ]
         }
       ],
       "homology": {
@@ -645,7 +766,8 @@
         "werneburg-2011",
         "ziermann-diogo-2013",
         "ziermann-diogo-2019",
-        "ziermann-etal-2014"
+        "ziermann-etal-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -898,6 +1020,47 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Posterior belly of digastric and stylohyoid",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Posterior belly of digastric"
+            },
+            {
+              "name": "Stylohyoid"
+            }
+          ],
+          "action": "Elevates the hyoid; with the anterior belly, depresses the mandible.",
+          "innervation": "Facial nerve (VII).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              },
+              {
+                "element": "styloid-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyoid"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Posterior belly from the mastoid notch, stylohyoid from the styloid process, both onto the hyoid. **The digastric is two muscles from two arches sharing one tendon**: the anterior belly is trigeminal and is scored on `intermandibularis`, the posterior belly is facial and is scored here. A human jaw opener made by splicing a mandibular-arch muscle to a hyoid-arch one, which no non-mammal does. In other tetrapods this record's muscle runs straight from the skull to the retroarticular process and opens the jaw by itself.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -917,7 +1080,8 @@
         "ziermann-diogo-2013",
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
-        "werneburg-2011"
+        "werneburg-2011",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1123,6 +1287,95 @@
           ],
           "note": "No homologous interhyoideus in Hydrolagus colliei, against its presence in the other four gnathostomes Anderson (2008) compares — Amia, Latimeria, Squalus and Chlamydoselachus — so he reads a secondary loss in chimaeroids. Recorded as `no` for this species only; the holocephalan sample here is one animal.",
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Facial expression musculature and platysma",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Platysma"
+            },
+            {
+              "name": "Occipitofrontalis"
+            },
+            {
+              "name": "Orbicularis oculi"
+            },
+            {
+              "name": "Orbicularis oris"
+            },
+            {
+              "name": "Buccinator"
+            },
+            {
+              "name": "Zygomaticus major and minor"
+            },
+            {
+              "name": "Levator labii superioris"
+            },
+            {
+              "name": "Depressor anguli oris"
+            },
+            {
+              "name": "Mentalis"
+            },
+            {
+              "name": "Risorius"
+            },
+            {
+              "name": "Nasalis"
+            },
+            {
+              "name": "Procerus"
+            },
+            {
+              "name": "Corrugator supercilii"
+            },
+            {
+              "name": "Auricular muscles"
+            }
+          ],
+          "action": "Move the skin of the face, scalp, eyelids and lips; close the eye and the mouth; compress the cheek against the teeth.",
+          "innervation": "Facial nerve (VII).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "skull-roof"
+              },
+              {
+                "element": "maxilla"
+              },
+              {
+                "element": "mandible"
+              },
+              {
+                "element": "zygomatic-arch"
+              },
+              {
+                "element": "nuchal-ligament"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "skin"
+              },
+              {
+                "element": "eyelid"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **The single largest expansion of any muscle group in this dataset.** The ancestral interhyoideus is one ventral sheet of the hyoid arch, a constrictor; in a human it has spread over the whole head as some thirty named muscles, and Gest's head and neck table is mostly them. Almost none of them reaches bone at both ends: they arise from the skull and insert into skin, which is what a sphincter sheet does when it stops encircling something. Every one of them is on the facial nerve, which is the only reason they can be recognised as one group at all — the same criterion this dataset uses for the trapezius and the sternocleidomastoid, and for the four trigeminal muscles of the `intermandibularis` row. The listed parts are the principal members, not the full set.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1141,7 +1394,8 @@
         "ziermann-diogo-2013",
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
-        "werneburg-2011"
+        "werneburg-2011",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1225,6 +1479,15 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed. A urodele jaw opener that pulls against the hyobranchial apparatus rather than the skull; the human jaw is opened by the digastric, which pulls against the hyoid but is built from two arches and is scored on `depressor-mandibulae` and `intermandibularis`."
         }
       ],
       "homology": {
@@ -1239,7 +1502,8 @@
       },
       "sources": [
         "bauer-1997",
-        "ziermann-diogo-2013"
+        "ziermann-diogo-2013",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1313,6 +1577,35 @@
             ]
           },
           "attachmentNote": "Leucoraja erinacea. Insertion onto the hyomandibula and onto the horizontal tendon associated with it. No origin row — both heads arise from fascia, one at the contact with the contralateral muscle over the coracomandibularis and one on the fascia overlying the sternohyoideus, so the muscle that becomes the mammalian stapedius begins its recorded history attached to the element at one end and to nothing skeletal at the other."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Stapedius",
+          "present": "yes",
+          "action": "Damps movement of the stapes.",
+          "innervation": "Facial nerve (VII).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). From a pyramidal eminence in the middle-ear wall to the neck of the stapes — **the smallest skeletal muscle in the human body, and one of the most important rows in this dataset for arch identity.** It is the depressor hyomandibulae of a shark, on the same facial nerve, still attached to the same element: this project keeps the hyomandibula and the stapes as one skeletal record precisely so that the shark's muscle and this one do not appear to attach to different bones. Its partner in the ear, tensor tympani, is trigeminal and belongs to the mandibular arch, so the two ossicular muscles are from two different arches and their nerves say so.",
+          "nerves": [
+            {
+              "nerve": "facial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1330,7 +1623,8 @@
         "clack-etal-2016",
         "gai-etal-2022",
         "ziermann-diogo-2019",
-        "ziermann-etal-2014"
+        "ziermann-etal-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1680,6 +1974,101 @@
             }
           ],
           "attachmentNote": "Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Pharyngeal constrictors, the palatal and laryngeal muscles",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Superior, middle and inferior pharyngeal constrictors"
+            },
+            {
+              "name": "Cricopharyngeus"
+            },
+            {
+              "name": "Stylopharyngeus"
+            },
+            {
+              "name": "Salpingopharyngeus"
+            },
+            {
+              "name": "Palatopharyngeus"
+            },
+            {
+              "name": "Musculus uvulae"
+            },
+            {
+              "name": "Cricothyroid"
+            },
+            {
+              "name": "Posterior and lateral cricoarytenoid"
+            },
+            {
+              "name": "Transverse and oblique arytenoid"
+            },
+            {
+              "name": "Thyroarytenoid and vocalis"
+            },
+            {
+              "name": "Aryepiglottic and thyroepiglottic"
+            }
+          ],
+          "action": "Constrict the pharynx in swallowing; elevate the larynx and pharynx; tense, abduct and adduct the vocal folds.",
+          "innervation": "Vagus (X) through the pharyngeal plexus and the recurrent laryngeal nerve; stylopharyngeus by the glossopharyngeal nerve (IX).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pterygoid"
+              },
+              {
+                "element": "mandible"
+              },
+              {
+                "element": "hyoid"
+              },
+              {
+                "element": "styloid-process"
+              },
+              {
+                "element": "thyroid-cartilage"
+              },
+              {
+                "element": "cricoid-cartilage"
+              },
+              {
+                "element": "arytenoid-cartilage"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "pharyngeal-raphe"
+              },
+              {
+                "element": "thyroid-cartilage"
+              },
+              {
+                "element": "arytenoid-cartilage"
+              },
+              {
+                "element": "cricoid-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **The branchial arches after the gills are gone.** Three constrictors wrapping the pharynx onto a midline raphe are the arch constrictors of a fish doing the same job on a different tube; the intrinsic laryngeal muscles are the same series again, reduced to moving three small cartilages. The nerve split is the evidence and Gest records it: stylopharyngeus alone takes the glossopharyngeal nerve, arch three, while everything else takes the vagus, arches four and beyond — so one muscle in the middle of a topologically continuous sheet carries a different cranial nerve because it belongs to a different arch. Cricothyroid takes the external laryngeal branch and the rest take the recurrent laryngeal, which is the second such line drawn inside the same group.",
+          "nerves": [
+            {
+              "nerve": "vagus-branchial"
+            },
+            {
+              "nerve": "glossopharyngeal"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1697,7 +2086,8 @@
         "werneburg-2011",
         "ziermann-diogo-2013",
         "ziermann-diogo-2019",
-        "ziermann-etal-2014"
+        "ziermann-etal-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1907,6 +2297,62 @@
               "nerve": "abducens"
             }
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Extraocular muscles and levator palpebrae superioris",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Superior, inferior, medial and lateral rectus"
+            },
+            {
+              "name": "Superior oblique"
+            },
+            {
+              "name": "Inferior oblique"
+            },
+            {
+              "name": "Levator palpebrae superioris"
+            }
+          ],
+          "action": "Rotate the eyeball about three axes; levator palpebrae raises the upper eyelid.",
+          "innervation": "Oculomotor nerve (III), except superior oblique (trochlear, IV) and lateral rectus (abducens, VI).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "orbit"
+              },
+              {
+                "element": "optic-foramen"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "sclera"
+              },
+              {
+                "element": "eyelid"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Four recti and two obliques from the common tendinous ring and the orbital wall onto the sclera. **The three-nerve pattern is the most conserved arrangement in the vertebrate head** — one muscle to the trochlear nerve, one to the abducens, the rest to the oculomotor — and it is identical in a lamprey, a shark and a human, which is why this record's development field reads prechordal/somitomeric rather than branchiomeric. What a human lacks is the retractor bulbi, present in most tetrapods on the abducens; levator palpebrae superioris is scored as a fourth part and is the addition going the other way.",
+          "nerves": [
+            {
+              "nerve": "oculomotor"
+            },
+            {
+              "nerve": "trochlear"
+            },
+            {
+              "nerve": "abducens"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1920,7 +2366,8 @@
         "jones-etal-2019",
         "ziermann-etal-2014",
         "werneburg-2011",
-        "fritzsch-2023"
+        "fritzsch-2023",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -2280,6 +2727,99 @@
           },
           "attachmentNote": "Callorhinchus milii. A very large coracomandibularis with its main origin on the T-shaped anteroventral face of the coracoid region of the pectoral girdle, inserting along Meckel's cartilage — triangular in ventral view, broadening forwards. This is the muscle Anderson (2008) finds in all five gnathostomes he compares and argues from: basal jaw depression pulled on the mandible directly from the girdle, and was not coupled to the hyoid. Scoring it here puts the same attachment in a holocephalan and a selachian.",
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Infrahyoid, suprahyoid and tongue musculature",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Sternohyoid"
+            },
+            {
+              "name": "Sternothyroid"
+            },
+            {
+              "name": "Thyrohyoid"
+            },
+            {
+              "name": "Omohyoid"
+            },
+            {
+              "name": "Geniohyoid"
+            },
+            {
+              "name": "Genioglossus"
+            },
+            {
+              "name": "Hyoglossus"
+            },
+            {
+              "name": "Chondroglossus"
+            },
+            {
+              "name": "Styloglossus"
+            },
+            {
+              "name": "Palatoglossus",
+              "membership": "disputed"
+            },
+            {
+              "name": "Intrinsic tongue musculature"
+            }
+          ],
+          "action": "Depress and fix the hyoid and larynx; protrude, retract and change the shape of the tongue.",
+          "innervation": "Hypoglossal nerve (XII) to the tongue and geniohyoid; ansa cervicalis to the infrahyoid strap muscles; palatoglossus by the vagus (X).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "scapula"
+              },
+              {
+                "element": "hyoid"
+              },
+              {
+                "element": "mandible"
+              },
+              {
+                "element": "styloid-process"
+              },
+              {
+                "element": "thyroid-cartilage"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyoid"
+              },
+              {
+                "element": "thyroid-cartilage"
+              },
+              {
+                "element": "tongue"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **A muscle group that walked forward from the shoulder into the mouth, and its nerve is the receipt.** These are trunk muscles: hypobranchial myotome that migrated under the pharynx carrying the hypoglossal nerve and the ansa cervicalis with it, which is why the tongue of a human is supplied by a nerve that leaves the skull and comes back. Gest's list preserves the whole gradient — sternohyoid and omohyoid still reach the sternum and the scapula, geniohyoid stops at the mandible, and the intrinsic tongue muscles have no bony attachment at all. Palatoglossus is scored as a disputed part: it is in the tongue and named with the tongue muscles, but it takes the vagus and belongs with the palatal muscles on `branchial-constrictors`.",
+          "nerves": [
+            {
+              "nerve": "hypoglossal"
+            },
+            {
+              "nerve": "ansa-cervicalis"
+            },
+            {
+              "nerve": "vagus-branchial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2298,7 +2838,8 @@
         "ziermann-etal-2014",
         "ziermann-diogo-2019",
         "diogo-ziermann-2015",
-        "werneburg-2011"
+        "werneburg-2011",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -2468,6 +3009,15 @@
           ],
           "note": "Absent in Hydrolagus colliei, and Anderson (2008) gives the reason rather than the fact: the holocephalan palatoquadrate is fused to the cranium (autostylic suspension), so there is no free element to levate. He reads it as a secondary loss — the muscle is basal for gnathostomes and went when the joint did. This is the cleanest case in the dataset of a muscle disappearing because its skeletal degree of freedom disappeared, and the counterpart of the coracoid loss that moves the therian supracoracoideus.",
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed. The spiracular series has no muscle in a human — but the region does survive: the spiracular pouch is the ancestor of the tympanic cavity, so the space this muscle worked in became the middle ear. The two muscles a human does have in that cavity, tensor tympani and stapedius, come from the mandibular and hyoid arches respectively and are scored on `intermandibularis` and `stapedius`."
         }
       ],
       "homology": {
@@ -2484,7 +3034,8 @@
         "jayaram-etal-1983",
         "jones-etal-2019",
         "ziermann-diogo-2019",
-        "ziermann-etal-2014"
+        "ziermann-etal-2014",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -3655,6 +4206,15 @@
           ],
           "note": "Absent in Leiopelma hochstetteri. Johnston (2011) identifies the muscle in Ascaphus truei — the first record of a levator anguli oris in any frog — and does not find it in Leiopelma, so the two basal anuran lineages differ and Anura computes as variable rather than being declared so.",
           "speciesBasis": "note"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). **Absent, and the reason to say so is that a human has a muscle of this name which is not this muscle.** The record holds the lepidosaur levator anguli oris, a trigeminal jaw muscle whose identification is the crux of the lizard-snake problem — in colubroid snakes the rictal plate becomes the venom gland and parts of the muscle insert onto the gland or the mandible. Gest's levator anguli oris is a facial-expression muscle on the facial nerve, running from the maxilla to the corner of the mouth, and is scored as part of the `interhyoideus` field. Two muscles, one name, two different cranial nerves and two different arches."
         }
       ],
       "homology": {
@@ -3669,7 +4229,8 @@
       },
       "sources": [
         "johnston-2011",
-        "johnston-2014"
+        "johnston-2014",
+        "gest-anatomy-tables"
       ],
       "complex": "adductor-mandibulae",
       "nerves": [

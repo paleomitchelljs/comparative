@@ -474,6 +474,19 @@
       "role": "Monotreme attachment data — the intermediate condition between the reptilian and therian pectoral girdle."
     },
     {
+      "key": "gest-anatomy-tables",
+      "short": "Gest anatomy tables",
+      "authors": "Gest TR",
+      "year": 2001,
+      "title": "Medical Gross Anatomy — Anatomy Tables: muscles",
+      "journal": "Teaching resource (web), Texas Tech University Health Sciences Center",
+      "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_alpha.html",
+      "peerReviewed": false,
+      "pdf": null,
+      "role": "Origin, insertion, action, innervation and arterial supply for 279 HUMAN muscles across seven regions, in one table. **The human column runs on this**, and the column exists to be a baseline: it is the anatomy most readers already carry, and every other column in the dataset can be read against it. It is also the densest source here by rows per page.\n\n**It is a teaching table, not a dissection record.** It states the consensus human condition rather than an observation of one cadaver, and it is not peer-reviewed — the same standing as Campbell (2007) for the rat, at far greater scope. Its rows are paraphrased into `data/`, never copied; the extraction lives in the git-ignored `papers/extracted/`. Where it disagrees with a comparative source about a homology, the comparative source wins and the disagreement goes in the row's note.",
+      "notes": null
+    },
+    {
       "key": "ghetie-etal-1976",
       "short": "Ghetie et al. 1976",
       "authors": "Ghetie V, Chitescu St, Cotofan V, Hillebrand A",
@@ -1147,19 +1160,6 @@
       "pdf": "2025_Tomanska-et-al_Squamata-Varanidae_Extant_Komodo-hindlimb.pdf",
       "notes": null,
       "role": "Varanid hindlimb myology. Companion to Kępa et al. (2023) on the thoracic limb and Tomańska et al. (2024) on the tail. Descriptions are functionally framed rather than tabulated, so attachment extraction is partial."
-    },
-    {
-      "key": "ttuhsc-anatomy-tables",
-      "short": "TTUHSC anatomy tables",
-      "authors": "Texas Tech University Health Sciences Center, Department of Medical Education",
-      "year": null,
-      "title": "Anatomy tables — muscles, alphabetical",
-      "journal": "Teaching resource (web)",
-      "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_alpha.html",
-      "peerReviewed": false,
-      "pdf": null,
-      "role": "Origin, insertion, action, innervation and artery for several hundred HUMAN muscles across back, upper limb, head and neck, thorax and abdomen, in one table. **The densest unmined source in the bibliography by rows per page, and the one whose species has no occurrences at all**: `homo-sapiens` is in species.json and scores nothing. The schema already anticipates it — validate.py's HUMAN_ONLY check, which bans spinal root levels and human-only landmarks everywhere else, exempts exactly this species, because those rows were the tell that textbook prose had been written onto a mustelid.\n\n**Three cautions before it is mined.** It is a teaching table, not a dissection record, so it is vocabulary and consensus rather than an observation of one cadaver — the register Campbell (2007) supplies for the rat, at far greater density. Its prose is the kind most likely to be copied verbatim into `data/`, which the repo does not do; every row would need paraphrasing. And a human column would arrive better-scored than any other animal in Theria while being the only one not derived from a dissection its source performed, which would let it dominate a clade rollup it is the weakest evidence in. Scoring it means deciding what a `speciesBasis` of 'survey' is worth against 'source' in the same clade.",
-      "notes": null
     },
     {
       "key": "vandenberge-1982",

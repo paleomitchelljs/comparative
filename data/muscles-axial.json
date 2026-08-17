@@ -163,6 +163,80 @@
             }
           ],
           "attachmentNote": "Microtus arvalis. Origin: Neural spines, transverse processes and the sacrum. Insertion: Successive vertebrae, ribs and the occiput. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Erector spinae and the transversospinal system",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Iliocostalis",
+              "muscle": "iliocostalis"
+            },
+            {
+              "name": "Longissimus",
+              "muscle": "longissimus-dorsi"
+            },
+            {
+              "name": "Spinalis",
+              "muscle": "transversospinalis"
+            },
+            {
+              "name": "Transversospinal system",
+              "muscle": "transversospinalis"
+            },
+            {
+              "name": "Suboccipital group"
+            }
+          ],
+          "action": "Extends and laterally bends the trunk and neck; the suboccipital group extends and rotates the head on the atlas and axis.",
+          "innervation": "Dorsal primary rami of the spinal nerves, segmentally from C1 to S5.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              },
+              {
+                "element": "sacral-vertebrae"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "neural-spine"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "neural-spine"
+              },
+              {
+                "element": "occiput"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **One field, segmentally supplied from the top of the neck to the sacrum, and every human name in it is a regional label rather than a muscle.** Gest lists erector spinae, iliocostalis, longissimus, spinalis, semispinalis, multifidus, rotatores, interspinales, intertransversarii, splenius and the four suboccipital muscles, and gives all of them dorsal primary rami. That single fact is what makes the field one homology group: an epaxial muscle is defined by its nerve, not by its attachments, and this is the column where the definition is easiest to check. The three named tracts have their own records and are scored there.",
+          "nerves": [
+            {
+              "nerve": "dorsal-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -181,7 +255,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complexOf": [
         "longissimus-dorsi",
@@ -361,6 +436,87 @@
             ]
           },
           "attachmentNote": "Varanus exanthematicus, Cieri (2018). The union of the body-wall muscles he describes individually: obliquus externus superficialis (rectus margin to the lateral dorsal ribs) and profundus (pubes to the caudal dorsal ribs), the two intercostal layers running rib to rib, the transversus (fascia deep to the sternum onto the vertebral portion of each bipartite dorsal rib), the rectus abdominis (pubis to sternum) and the levator costae (diapophysis to the next rib). **Obliquus internus is absent in varanids** — Cieri states it plainly, which is why this group has one oblique layer where a mammal has two."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Abdominal wall, intercostal and subvertebral musculature",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "External abdominal oblique",
+              "muscle": "obliquus-externus"
+            },
+            {
+              "name": "Internal abdominal oblique",
+              "muscle": "obliquus-internus"
+            },
+            {
+              "name": "Transversus abdominis",
+              "muscle": "transversus-abdominis"
+            },
+            {
+              "name": "Rectus abdominis",
+              "muscle": "rectus-abdominis"
+            },
+            {
+              "name": "Intercostals",
+              "muscle": "intercostales-interni"
+            },
+            {
+              "name": "Quadratus lumborum"
+            },
+            {
+              "name": "Diaphragm",
+              "membership": "disputed"
+            }
+          ],
+          "action": "Compresses the abdomen, flexes and rotates the trunk, and moves the ribs in respiration.",
+          "innervation": "Ventral primary rami of the spinal nerves throughout; the diaphragm by the phrenic nerve (C3-C5).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "thoracolumbar-fascia"
+              },
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              },
+              {
+                "element": "lumbar-vertebrae"
+              },
+              {
+                "element": "pubis"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "linea-alba"
+              },
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "lumbar-vertebrae"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). The whole ventral field, whose members have their own records and are scored there; quadratus lumborum is the subvertebral member and has none. **The diaphragm is scored as a disputed part and is the most interesting thing in this row.** It is a mammalian novelty with no counterpart in any other column here, and its nerve is the evidence for where it came from: the phrenic nerve arises from C3-C5, so the muscle is built from cervical hypaxial myotome that migrated caudally with its nerve trailing behind it. A nerve that long for a muscle that low is the record of the journey. Gest gives its origin as the xiphoid, the costal margin, the arcuate ligaments over quadratus lumborum and psoas major, and the bodies of L1-L3, all converging on a central tendon — a hypaxial sheet that ends on itself rather than on bone.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -382,7 +538,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complexOf": [
         "obliquus-externus",
@@ -491,6 +648,15 @@
           },
           "attachmentNote": "The sacrocaudalis series, dorsal and ventral, medial and lateral. The dorsalis medialis is the caudal continuation of the transversospinalis: its most cranial bundle arises from the caudal and dorsal spinous process of the last lumbar vertebra, subsequent bundles from the sacral and caudal spinous processes, inserting on the cranial ends of the anterior articular processes of caudal vertebrae. Each bundle spans about three vertebrae.",
           "name": "Sacrocaudalis dorsalis and ventralis, medialis and lateralis"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). No caudal muscles are listed, and a human coccyx has essentially none of its own. **The musculature did not vanish, it changed job**: the iliococcygeus and coccygeus of the human pelvic floor are the iliocaudalis and ischiocaudalis of a tailed tetrapod, and they are scored on those records in `muscles-hindlimb.json`. A muscle group that moved a tail now holds the pelvic viscera in place."
         }
       ],
       "homology": {
@@ -507,7 +673,8 @@
       },
       "sources": [
         "schilling-2011",
-        "tomanska-etal-2024"
+        "tomanska-etal-2024",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -583,6 +750,40 @@
             "schilling-2011"
           ],
           "note": "Canis familiaris. Schilling's Fig. 3 records epaxial activity in the m. longissimus thoracis et lumborum at the 6th lumbar vertebra of a dog, against Ambystoma and Dipsosaurus — the comparison that shows the mammalian tract firing for sagittal stabilisation where the sprawling tetrapods' fires for lateral bending."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Longissimus",
+          "present": "yes",
+          "action": "Extends and laterally bends the vertebral column; the capitis part extends the head.",
+          "innervation": "Dorsal primary rami of spinal nerves C1-S1.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
+              },
+              {
+                "element": "occiput"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Transverse process to transverse process, several levels up, and by the capitis division onto the mastoid process — scored as `occiput`, the nearest element to a landmark this skeleton does not carry. The intermediate tract of the erector spinae, and the one that reaches furthest forward.",
+          "nerves": [
+            {
+              "nerve": "dorsal-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -597,7 +798,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complex": "epaxial-musculature",
       "nerves": [
@@ -704,6 +906,39 @@
             ]
           },
           "attachmentNote": "Galictis cuja, lumbar sector. The lateralmost lumbar epaxial muscle, robust and cylindrical, and the heaviest muscle in the paper's mass table at 10.06% of total hind limb muscle mass — 'heavy iliocostalis' is one of Ercoli et al.'s headline functional characters, tied to a mobile axial skeleton and bounding gait. NOTE THE DIRECTION: the pelvic end is the origin and the ribs are the insertion. It arises mostly fleshy from the medial surface of the ala ossis ilii and the iliac crest, tendinously from the medial aspect of the lumbodorsal fascia, and partly from the body of the last lumbar vertebra just caudal to its transverse processes. It inserts by a tendinous sheet on the caudal edge of the last two ribs at their angle and dorsal regions, on the lateral and caudal body of the last thoracic vertebra, on the dorsal surfaces of the transverse processes of the last lumbar vertebra, and elsewhere only at the base and posterolateral ends of the transverse processes and the ventral region of the accessory processes. Vertebral subsites are carried in prose rather than as landmarks, following the transversospinalis row, because skeleton.json resolves no transverse, mammillary or accessory process. This row was previously left unscored on the grounds that a table interrupted the description in the PDF text layer; both attachments read cleanly out of a `pdftotext -layout` extraction once the column offset is accounted for."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Iliocostalis",
+          "present": "yes",
+          "action": "Extends and laterally bends the trunk and neck.",
+          "innervation": "Dorsal primary rami of spinal nerves C4-S5.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              },
+              {
+                "element": "sacral-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Iliac crest and sacrum to the angles of the ribs — the lateral tract of the erector spinae, and the only one of the three that ends on ribs rather than on vertebrae. In a lizard the equivalent runs the length of the trunk without the lumbar interruption an upright posture imposes.",
+          "nerves": [
+            {
+              "nerve": "dorsal-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -717,7 +952,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complex": "epaxial-musculature",
       "nerves": [
@@ -824,6 +1060,61 @@
             ]
           },
           "attachmentNote": "Lumbar sector only. The medialmost epaxial series, metameres largely fused with each other and with the thoracic continuation, from the lateral spinous processes and dorsal articular processes of all lumbar vertebrae but the last, plus the lumbodorsal fascia, onto the mammillary processes of the lumbar vertebrae and, for the last bundle, the intermediate sacral crest of S1-2. It is continuous caudally with the sacrocaudalis dorsalis medialis, which is why the tail and the back are one series and not two."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Transversospinal system",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Semispinalis"
+            },
+            {
+              "name": "Multifidus"
+            },
+            {
+              "name": "Rotatores"
+            },
+            {
+              "name": "Interspinales"
+            },
+            {
+              "name": "Intertransversarii"
+            }
+          ],
+          "action": "Extends and rotates the vertebral column; semispinalis capitis extends the head.",
+          "innervation": "Dorsal primary rami of spinal nerves C1-L5.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
+              },
+              {
+                "element": "sacral-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "vertebral-column",
+                "landmark": "neural-spine"
+              },
+              {
+                "element": "occiput"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **The deep layer, and the one whose subdivisions are defined by how far they reach.** Gest separates them exactly that way: rotatores span one or two vertebrae, multifidus two to four, semispinalis four to six, all running from a transverse process up and medially to a spinous process. Interspinales and intertransversarii are the shortest members, joining adjacent processes of the same kind. A single fibre orientation repeated at five different lengths, given five names.",
+          "nerves": [
+            {
+              "nerve": "dorsal-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -837,7 +1128,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complex": "epaxial-musculature",
       "nerves": [
@@ -908,6 +1200,15 @@
           "sources": [
             "cieri-2018"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed among the 16 muscles of the back region. A short dorsal rib muscle described for lepidosaurs; the human muscle nearest its position is the levatores costarum, which is scored on its own record and shares this one's dorsal-ramus supply."
         }
       ],
       "homology": {
@@ -923,7 +1224,8 @@
         "teaching": "A concrete case where adding a muscle changes what the skeleton can do: rib-to-vertebra muscles allow independent rib motion that rib-to-rib muscles cannot."
       },
       "sources": [
-        "cieri-2018"
+        "cieri-2018",
+        "gest-anatomy-tables"
       ],
       "complex": "epaxial-musculature",
       "nerves": [
@@ -999,6 +1301,36 @@
             "cieri-2018"
           ],
           "attachmentNote": "Varanus exanthematicus, Cieri (2018). **This row previously stood on Iguana iguana, the one lepidosaur Cieri names as LACKING the muscle**, while its own note said 'Absent in Iguana iguana' — the row asserted presence and absence at once. Re-attributed to the animal Cieri dissected. No Iguana row replaces it: Cieri did not examine Iguana, he compares with Carrier's (1989, 1990) published account, so an absence row here would credit him with an observation he did not make."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Levatores costarum",
+          "present": "yes",
+          "action": "Elevates the ribs.",
+          "innervation": "Dorsal primary rami of spinal nerves C7-T11.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Transverse processes of C7-T11 to the rib below, medial to its angle. **Dorsal rami, and that is the point**: this is a rib muscle that belongs to the epaxial field by nerve, which is what separates it from the intercostals lying just lateral to it on ventral rami. Gest's own table draws the line in the innervation column.",
+          "nerves": [
+            {
+              "nerve": "dorsal-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1012,7 +1344,8 @@
         "teaching": "Two muscles with the same mechanical role on opposite sides of the epaxial/hypaxial boundary — a reminder that the division is developmental and neural, not functional."
       },
       "sources": [
-        "cieri-2018"
+        "cieri-2018",
+        "gest-anatomy-tables"
       ],
       "complex": "hypaxial-musculature",
       "nerves": [
@@ -1135,6 +1468,43 @@
           "note": "Fibre angle is measured, not estimated: roughly 50 degrees to the body axis against roughly 145 degrees for the internal oblique, so the two layers cross at close to a right angle.",
           "origin": "Epaxial muscular fascia.",
           "insertion": "A midline aponeurosis crossing deep to the rectus abdominis."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "External abdominal oblique",
+          "present": "yes",
+          "action": "Compresses the abdomen; flexes and rotates the trunk.",
+          "innervation": "Intercostal nerves 7-11, subcostal, iliohypogastric and ilioinguinal nerves.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "linea-alba"
+              },
+              {
+                "element": "pubis"
+              },
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lower eight ribs to the linea alba, pubic crest and tubercle, and the anterior half of the iliac crest, fibres running downward and forward. The outermost of the three sheets, and unchanged in principle from the arrangement in any tetrapod: three layers at three angles, all on ventral rami.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1152,7 +1522,8 @@
       "sources": [
         "cieri-2018",
         "schilling-2011",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "complex": "hypaxial-musculature",
       "nerves": [
@@ -1221,6 +1592,35 @@
           "sources": [
             "cieri-2018"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "External intercostal",
+          "present": "yes",
+          "action": "Elevates the ribs in inspiration.",
+          "innervation": "Intercostal nerves (T1-T11).",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lower border of a rib to the upper border of the rib below, fibres running downward and forward — the same direction as the external oblique, which is the continuation of this sheet into the abdomen. One layer, two names, divided by where the ribs stop.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1235,7 +1635,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complex": "hypaxial-musculature",
       "nerves": [
@@ -1306,6 +1707,57 @@
           "sources": [
             "cieri-2018"
           ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Internal, innermost and subcostal intercostals",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Internal intercostal"
+            },
+            {
+              "name": "Innermost intercostal"
+            },
+            {
+              "name": "Subcostalis"
+            },
+            {
+              "name": "Transversus thoracis"
+            }
+          ],
+          "action": "Depresses the ribs in forced expiration.",
+          "innervation": "Intercostal nerves.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "sternum",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "costal-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Fibres running upward and forward, opposite to the external layer. Four named muscles here are one deep sheet interrupted by the neurovascular plane: internal and innermost intercostal are the two laminae either side of it, subcostalis is the same sheet spanning two or three ribs at the back, and transversus thoracis is the same sheet again on the inner surface of the sternum. Gest lists them separately because a dissector meets them separately.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1320,7 +1772,8 @@
       },
       "sources": [
         "cieri-2018",
-        "schilling-2011"
+        "schilling-2011",
+        "gest-anatomy-tables"
       ],
       "complex": "hypaxial-musculature",
       "nerves": [
@@ -1421,6 +1874,45 @@
           "attachmentNote": "The deepest of the three oblique layers, with dorsoventral fibres. The only one of them reaching the vertebral column.",
           "origin": "Transverse processes of the trunk vertebrae.",
           "insertion": "Crosses the ventral midline to the corresponding attachment of the opposite side."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Transversus abdominis",
+          "present": "yes",
+          "action": "Compresses the abdomen.",
+          "innervation": "Intercostal nerves 7-11, subcostal, iliohypogastric and ilioinguinal nerves.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "thoracolumbar-fascia"
+              },
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "linea-alba"
+              },
+              {
+                "element": "pubis"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lower six ribs, thoracolumbar fascia, the anterior three-quarters of the iliac crest and the inguinal ligament, to the linea alba and the pecten of the pubis, fibres running transversely. The innermost sheet; its fibres are the only ones of the three that run straight across.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1437,7 +1929,8 @@
       "sources": [
         "cieri-2018",
         "schilling-2011",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "complex": "hypaxial-musculature",
       "nerves": [
@@ -1547,6 +2040,50 @@
           "attachmentNote": "Divided into superficial and deep portions, the halves separated at the midline by the linea alba and segmented by tendinous inscriptions. The lateral fibres of the superficial portion attach to the pectoralis rather than to bone, which is why the pectoralis takes part of its own origin from those inscriptions.",
           "origin": "Anterior border of the pubo-ischiac plate and the ypsiloid cartilage.",
           "insertion": "Sternum and pericardium superficially; the deep portion runs on as the rectus cervicis profundus to the hyoid."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Rectus abdominis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Rectus abdominis"
+            },
+            {
+              "name": "Pyramidalis"
+            }
+          ],
+          "action": "Flexes the trunk; compresses the abdomen.",
+          "innervation": "Intercostal nerves 7-11 and the subcostal nerve.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "costal-cartilage"
+              },
+              {
+                "element": "linea-alba"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Pubis and pubic symphysis to the xiphoid process and costal cartilages 5-7. **The segmentation is visible.** The tendinous intersections that make the human 'six-pack' are the remnants of the myosepta that divide this muscle into serial blocks in a fish, and the segmental nerve supply Gest lists — seven separate nerves to one muscle — is the same fact stated in the innervation column. Pyramidalis is scored as a second part: a small triangular slip in front of the rectus, often absent, ending on the linea alba.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1562,7 +2099,8 @@
       "sources": [
         "cieri-2018",
         "schilling-2011",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "complex": "hypaxial-musculature",
       "nerves": [
@@ -1616,6 +2154,45 @@
             ]
           },
           "attachmentNote": "Neither attachment is skeletal. The middle of the three oblique layers, thinner than the external oblique."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "name": "Internal abdominal oblique",
+          "present": "yes",
+          "action": "Compresses the abdomen; flexes and rotates the trunk.",
+          "innervation": "Intercostal nerves 7-11, subcostal, iliohypogastric and ilioinguinal nerves.",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracolumbar-fascia"
+              },
+              {
+                "element": "ilium",
+                "landmark": "iliac-crest"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ribs"
+              },
+              {
+                "element": "linea-alba"
+              },
+              {
+                "element": "pubis"
+              }
+            ]
+          },
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Thoracolumbar fascia, the anterior two-thirds of the iliac crest and the inguinal ligament, to the lower three or four ribs, the linea alba and the pubic crest — fibres running upward and forward, at right angles to the external oblique outside it. Gest also lists the cremaster, which is a slip of this sheet carried down onto the spermatic cord and has no counterpart in this dataset.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1628,7 +2205,8 @@
         "notes": "The middle layer of the tetrapod body wall. The dataset previously carried the external oblique and the transversus but not the layer between them."
       },
       "sources": [
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {
@@ -1688,6 +2266,15 @@
             ]
           },
           "attachmentNote": "Both attachments are on structures with no amniote counterpart — the ypsiloid cartilage is a salamander apomorphy, which is why this muscle has no homologue outside the group."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "Homo sapiens, Gest (Anatomy Tables). Not listed. The ypsiloideus attaches to the ypsiloid cartilage, which is an anuran and urodele structure with no amniote counterpart, so the absence follows from the skeleton rather than from anything about the muscle."
         }
       ],
       "homology": {
@@ -1698,7 +2285,8 @@
         "notes": "Tied to the ypsiloid cartilage and so restricted to salamanders. Whether it is a discrete muscle or a named part of the rectus abdominis is a matter of convention, as the paper concedes."
       },
       "sources": [
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "gest-anatomy-tables"
       ],
       "nerves": [
         {

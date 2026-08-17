@@ -1,7 +1,7 @@
 # What is left to mine, and how
 
 <!-- counts:unscored -->
-207 present occurrences still have no attachment rows.
+212 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 This file lists the sources that could close them, ranked by whether they will
 actually work.
@@ -765,18 +765,21 @@ Two columns are empty for want of a paper, not for want of a pass:
   decision, not a lookup fix.
 - **18 flagged correlates with no muscle on them** (`GAPS.md` §3). Pereyra et al.
   (2019) and Hattori & Tsuihiji (2021) are the way in.
-- **`Homo sapiens` is in species.json and scores nothing, and the source that
-  would fix it is now catalogued.** The TTUHSC anatomy tables give origin,
-  insertion, action, innervation and artery for several hundred human muscles in
-  one page — the highest row density in the bibliography. It is deliberately not
-  in the ranked backlog above, because the question it raises is not whether it
-  will mine. It is what a human column would do to Theria: it would arrive
-  better-scored than *Galictis* or *Panthera* while being the only row set in
-  that clade not taken from a dissection its own source performed. That is a
-  `speciesBasis` question — 'survey' against 'source' inside one rollup — and it
-  wants deciding before the first row lands, not after. The schema is already
-  waiting for it: the HUMAN_ONLY check in `validate.py` that bans spinal root
-  levels and human landmarks everywhere else exempts `homo-sapiens` alone.
+- ~~**`Homo sapiens` is in species.json and scores nothing.**~~ Mined. Gest's
+  anatomy tables (TTUHSC) supplied **105 rows across all five muscle files**, 83
+  of them with attachments — origin, insertion, action, innervation and artery
+  for 279 human muscles in one page, the highest row density in the
+  bibliography. The `speciesBasis` question this bullet used to pose was
+  answered `source`: the table is a single-species reference, the same standing
+  Campbell (2007) has for the rat, and `generalised` was never available because
+  it is valid only on a species record flagged `generalised: true`. The schema
+  had been waiting for it — the HUMAN_ONLY check in `validate.py` that bans
+  spinal root levels and human landmarks everywhere else exempts `homo-sapiens`
+  alone, and those rows now exist to be exempted. **The caution that remains is
+  the one the source record states**: it is a teaching table stating the
+  consensus human condition, not a dissection, so where it disagrees with a
+  comparative source the comparative source wins and the disagreement goes in
+  the row's note.
 - **Architecture is entered for three species.** Zaaf et al. (1999) Tables 4–6
   would add the first lepidosaur, but it is two species × two specimens and the
   `architecture` block holds one — a schema decision first.

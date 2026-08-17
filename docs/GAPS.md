@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 834 present occurrences · 269 skeletal elements · 111 sources · 20 operational taxa
+129 muscle records · 922 present occurrences · 269 skeletal elements · 111 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| foot | 12 | 46 | 41 | 89% |
-| leg | 10 | 55 | 49 | 89% |
-| thigh | 10 | 48 | 40 | 83% |
-| pectoral | 16 | 178 | 144 | 81% |
-| arm | 5 | 70 | 56 | 80% |
-| forearm | 19 | 179 | 134 | 75% |
-| pelvic | 8 | 34 | 24 | 71% |
-| cranial | 16 | 74 | 52 | 70% |
+| leg | 10 | 62 | 56 | 90% |
+| foot | 12 | 55 | 48 | 87% |
+| thigh | 10 | 54 | 46 | 85% |
+| pectoral | 16 | 191 | 157 | 82% |
+| arm | 5 | 74 | 60 | 81% |
+| forearm | 19 | 193 | 148 | 77% |
+| pelvic | 8 | 41 | 31 | 76% |
+| cranial | 16 | 82 | 60 | 73% |
+| axial | 15 | 42 | 29 | 69% |
 | fin | 9 | 39 | 23 | 59% |
-| hand | 9 | 81 | 47 | 58% |
-| axial | 15 | 30 | 17 | 57% |
-| **all** | 129 | 834 | 627 | **75%** |
+| hand | 9 | 89 | 52 | 58% |
+| **all** | 129 | 922 | 710 | **77%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -140,8 +140,8 @@ back in for Aves.
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Monotremata | 103 | 103 | 100% |
+| Theria | 161 | 148 | 92% |
 | Theropoda (stem) | 38 | 34 | 89% |
-| Theria | 73 | 65 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
@@ -307,14 +307,34 @@ and had no `attachments` block, which is worth stating as a general lesson: a
 source counting as "mined" because it is cited is not the same as a source mined
 for everything it holds.
 
-**Theria now reads 86%, and the jump is a deletion.** Its cranial column is
-*gone* — all ten therian cranial rows were guessed onto *Acinonyx jubatus*, an
+**Theria then read 86%, and that jump was a deletion.** Its cranial column went
+*away* — all ten therian cranial rows were guessed onto *Acinonyx jubatus*, an
 animal in this corpus because Hudson et al. measured a cheetah's limbs, and
-sourced to reviews that dissect no mammal. **No source in `papers/` describes a
-mammalian head.** That is the single clearest acquisition need in the dataset: a
-therian cranial myology would restore ten rows and the arch-identity teaching
-cases that go with them. The percentage rose because unscored rows left, which is
-worth remembering whenever a column improves without a paper being read.
+sourced to reviews that dissect no mammal. The percentage rose because unscored
+rows left, which is worth remembering whenever a column improves without a paper
+being read.
+
+**Theria is now 161 occurrences at 92%, and the reason is the human column.**
+Gest's anatomy tables gave 105 rows across all five muscle files, 83 of them with
+attachments — the largest single-source pass the dataset has had, and the first
+one to fill a species that had been sitting in `species.json` with nothing on it.
+It also closes the therian cranial hole from an unexpected direction: eleven of
+those rows are cranial, so the masseter/temporalis, digastric, facial-expression
+and middle-ear cases the deleted cheetah rows were supposed to teach are back,
+sourced this time to a table that is actually about a mammal. **A comparative
+myology of a non-human mammal's head is still wanted** — a teaching table is not a
+dissection, and one species is not a clade — but the arch-identity material no
+longer rests on nothing.
+
+**Read the human rows as a baseline, not as evidence.** Every one of them cites a
+teaching table stating the consensus human condition. Where they touch a
+contested homology the note says whose argument is being followed and what the
+alternatives are: the 'ambiens' row records that Diogo & Molnar reject the
+sartorius equation and gives the sartorius no home rather than a wrong one, the
+`levator-anguli-oris` row is scored absent because the human muscle of that name
+is a different muscle on a different nerve, and the interossei of the hand and
+foot are scored once each with the records that also claim them left uncertain
+and pointing at the row that holds them.
 
 **Aves at 13% is source-limited, not effort-limited, and the limit is real.**
 Thirty of its 48 unscored rows cite only Abdala & Diogo (2010), whose Tables 1-3
@@ -370,11 +390,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 269, of which 240 (89%) carry at least one attachment |
-| Observed attachment rows | 1786 |
-| Rows naming a **landmark** | 510 (29%) |
-| Rows naming a **side** | 1188 (67%) |
-| Osteological correlates | 123 flagged, 109 carry a muscle |
+| Elements | 269, of which 247 (92%) carry at least one attachment |
+| Observed attachment rows | 2115 |
+| Rows naming a **landmark** | 603 (29%) |
+| Rows naming a **side** | 1268 (60%) |
+| Osteological correlates | 123 flagged, 114 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -445,13 +465,13 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 22 | 67 | 3.0 |
-| hindlimb | 43 | 45 | 1.0 |
-| pectoral | 32 | 31 | 1.0 |
-| axial | 35 | 32 | 0.9 |
-| forelimb | 52 | 45 | 0.9 |
+| cranial | 25 | 69 | 2.8 |
+| hindlimb | 43 | 47 | 1.1 |
+| pectoral | 33 | 31 | 0.9 |
+| axial | 36 | 32 | 0.9 |
+| forelimb | 54 | 47 | 0.9 |
 | fin | 8 | 5 | 0.6 |
-| pelvic | 28 | 15 | 0.5 |
+| pelvic | 31 | 16 | 0.5 |
 <!-- /counts:parity -->
 
 The pelvis, fin and forelimb are where the skeleton is thinnest relative to the
@@ -477,7 +497,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 627 of 834 present occurrences (75%).**
+**Taxon-specific attachments: 710 of 922 present occurrences (77%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -497,17 +517,17 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 417 |
-| forearm | 19 | 344 |
-| cranial | 16 | 196 |
-| arm | 5 | 152 |
-| leg | 10 | 141 |
-| hand | 9 | 123 |
-| foot | 12 | 122 |
-| thigh | 10 | 115 |
-| pelvic | 8 | 63 |
+| pectoral | 16 | 466 |
+| forearm | 19 | 393 |
+| cranial | 16 | 246 |
+| leg | 10 | 167 |
+| arm | 5 | 164 |
+| hand | 9 | 140 |
+| thigh | 10 | 140 |
+| foot | 12 | 139 |
+| axial | 15 | 109 |
+| pelvic | 8 | 94 |
 | fin | 9 | 57 |
-| axial | 15 | 56 |
 <!-- /counts:holes -->
 
 No region is at zero. The distribution is flat enough that the limiting factor is
@@ -523,10 +543,10 @@ at 69 of 91.
 
 The figures this paragraph used to give as the fill-next list — Anura 23%,
 Testudines 26%, Theria 15% — are a frozen snapshot from the Walthall pass below
-and are all long since overtaken; Theria is now 89%. **Read the generated table in
+and are all long since overtaken; Theria is now 92%. **Read the generated table in
 [§2](#2-underreported-taxonomic-groups) instead of any percentage written into
-prose here.** On that table the answer to "what to fill next" is Testudines (35%)
-and the two cyclostome columns (33%), with axial (50%) and hand (54%) the thin
+prose here.** On that table the answer to "what to fill next" is Aves (56%), Anura (53%)
+and the two cyclostome columns (33%), with hand (58%) and fin (59%) the thin
 regions.
 
 ---
