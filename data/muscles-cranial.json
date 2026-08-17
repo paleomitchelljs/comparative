@@ -2645,18 +2645,55 @@
           "name": "Pseudotemporalis + pterygoideus",
           "present": "yes",
           "sources": [
-            "werneburg-2011"
+            "werneburg-2011",
+            "schumacher-1973"
           ],
           "division": "divided",
           "parts": [
             {
-              "name": "Pseudotemporalis"
+              "name": "Pseudotemporalis",
+              "note": "Separates a superficial from a deep head in turtles; the superficial head connects through a long intermediate tendon to the intramandibularis."
             },
             {
-              "name": "Pterygoideus"
+              "name": "Pterygoideus",
+              "note": "Origin from the walls of the bony groove or canal linking the lower temporal fossa to the orbit, bordered by pterygoid, palatine, parietal (descending process) and frontal. In pleurodires with a trochlear process a Pars ventro-lateralis arises from its free end, and in Podocnemis a third part arises from the quadrate within a widened canalis carotis internus."
+            },
+            {
+              "name": "Intramandibularis",
+              "note": "Lies in the Meckelian canal medial to the mandibular nerve, arising broadly from the lateral surface of Meckel's cartilage and running dorsally to the same intermediate tendon."
             }
           ],
-          "attachmentNote": "Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined."
+          "attachmentNote": "Testudines, generalised, from Schumacher (1973) with Werneburg (2011). **Not a species observation, and deliberately filed as one that is not.** Schumacher examined roughly forty chelonian species including *Pseudemys scripta*, but writes the synthesis — 'in all turtles X, and in (Emys, Hardella, Testudo, trionychids) Y' — so these rows describe the chelonian condition and its named variants, not an animal. That is the same shape as Werneburg's appendix, and the second turtle cranial source to land on this record. **The turtle CRANIAL column is generalised while the turtle FORELIMB column is now scored to *Trachemys* from Walker (1973)** — one clade, two halves of one skull-and-limb dataset, resting on different kinds of evidence, and the interface now says so on every row.",
+          "divisionNote": "Schumacher treats the internus of turtles and crocodilians as a complex rather than a muscle: a pseudotemporalis plus a pterygoideus, the latter further split into anterior and posterior parts in crocodilians. The intramandibularis is what makes the group unusual — a division of the adductor complex that lies inside the lower jaw.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "pterygoid"
+              },
+              {
+                "element": "palatine"
+              },
+              {
+                "element": "parietal"
+              },
+              {
+                "element": "frontal"
+              },
+              {
+                "element": "meckels-cartilage",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "landmark": "coronoid"
+              },
+              {
+                "element": "mandible"
+              }
+            ]
+          }
         },
         {
           "species": "columba-livia",

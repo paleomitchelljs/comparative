@@ -62,7 +62,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-129 muscle records · 789 present occurrences · 263 skeletal elements · 105 sources · 19 operational taxa
+129 muscle records · 789 present occurrences · 263 skeletal elements · 106 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
