@@ -6516,12 +6516,36 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Triceps brachii",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "dorsal"
+              },
+              {
+                "element": "humerus",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "landmark": "olecranon"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Two heads. The smaller scapular head arises by a narrow tendon onto the scapula just dorsal to the glenoid, and in *Pseudemys* that tendon **perforates the latissimus dorsi-teres major tendon** — the two rows on this animal are physically threaded through one another. The humeral head takes most of the dorsal humeral shaft. They converge on a common tendon over the elbow onto the olecranon and the adjacent posterior border of the ulna. Primarily an antebrachial flexor, but the scapular head also crosses the shoulder."
         },
         {
           "species": "timon-lepidus",
@@ -7127,12 +7151,31 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Brachialis",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "ventral"
+              },
+              {
+                "element": "radius"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Walker's M. brachialis inferior. Arises from and covers most of the flexor surface of the humeral shaft; fibres run diagonally between the forearm extensors and flexors to a short broad tendon on the ventral surface of the proximal third of the ulna and the adjacent radius. The origin's extent varies: proximally to the coracobrachialis brevis insertion in trionychids, restricted to the distal half of the humerus in testudinines and sea turtles."
         },
         {
           "species": "eublepharis-macularius",
@@ -7535,12 +7578,44 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Biceps brachii",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Biceps superficialis",
+              "note": "Two-bellied. The medial belly from the posterior border of the medial half of the coracoid to a tendon at the level of the intertubercular fossa; the lateral belly from that tendon to the flexor surface of the radius, midway between elbow and carpus."
+            },
+            {
+              "name": "Biceps profundus",
+              "note": "From the middle half of the posterior coracoid border, ventral to and partly overlapped by the superficialis and coracobrachialis brevis; a cord-like tendon along the ventral brachium to the bicipital tubercle of the ulna, partly uniting with the brachialis inferior."
+            }
+          ],
+          "divisionNote": "A double biceps characterises most turtles — Chelydra, other emydines, trionychids, Carettochelys and the pleurodires. **Testudo, Dermochelys and Lepidochelys have a single biceps**, and Walker (1947) showed from Chrysemys development that the complex begins as one mass and splits later, so the single condition is an unsplit one rather than a loss.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "ventral"
+              },
+              {
+                "element": "ulna",
+                "landmark": "ulnar-bicipital-tubercle"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Crossing both shoulder and elbow, so a humeral retractor and an antebrachial flexor, the latter more important. Walker notes the insertion sits a long way from the elbow, which raises its mechanical advantage in flexion."
         },
         {
           "species": "timon-lepidus",
@@ -8054,13 +8129,49 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Coracobrachialis",
           "present": "yes",
           "note": "= coracobrachialis magnus + coracobrachialis brevis sensu Walker (1973) and Wyneken (2001).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Coracobrachialis magnus",
+              "note": "Most of the dorsal coracoid onto the proximal border of the medial humeral process. Walker (1947) homologises it with the lizard coracobrachialis longus but renames it, since it does not reach as far distally."
+            },
+            {
+              "name": "Coracobrachialis brevis",
+              "note": "Posterior border of the proximal half of the coracoid, into the intertubercular fossa. Homologous with the lizard coracobrachialis brevis."
+            }
+          ],
+          "divisionNote": "Walker separates two heads in *Pseudemys*. The extent of the brevis origin along the posterior coracoid border varies across turtles — the lateral half in *Testudo*, only the lateral fifth in *Emys*.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "dorsal"
+              },
+              {
+                "element": "coracoid",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-medial-process"
+              },
+              {
+                "element": "humerus",
+                "landmark": "intertubercular-fossa"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Rows are the union of the two heads; the parts say which is which. In *Pseudemys* many of the magnus's deeper fibres attach onto the subscapularis rather than to bone as they cross it, which is recorded here only in prose because a muscle is not a skeletal element."
         },
         {
           "species": "timon-lepidus",

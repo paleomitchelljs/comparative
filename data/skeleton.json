@@ -2110,6 +2110,25 @@
       }
     },
     {
+      "id": "intertubercular-fossa",
+      "label": "Intertubercular fossa",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "stylopod",
+      "partOf": "humerus",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "testudines"
+        ],
+        "sources": [
+          "walker-1973"
+        ],
+        "note": "The groove between the proximal humeral processes. In *Pseudemys* the coracobrachialis brevis inserts into it and the biceps tendon forms at its level, so it is a site rather than only a passage for tendons."
+      }
+    },
+    {
       "id": "ischial-tuberosity",
       "label": "Ischial tuberosity",
       "kind": "bone",
@@ -4297,6 +4316,25 @@
           "chondrichthyes",
           "actinopterygii"
         ]
+      }
+    },
+    {
+      "id": "ulnar-bicipital-tubercle",
+      "label": "Bicipital tubercle of the ulna",
+      "kind": "bone",
+      "region": "forelimb",
+      "segment": "zeugopod",
+      "partOf": "ulna",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "testudines"
+        ],
+        "sources": [
+          "walker-1973"
+        ],
+        "note": "Insertion of the biceps profundus in *Pseudemys*. Distinct from `biceps-tubercle`, which is on the coracoid — the two share a name and nothing else."
       }
     },
     {

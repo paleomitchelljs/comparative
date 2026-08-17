@@ -58,8 +58,22 @@ unscored clades are unrecorded rather than absent.
 
 ## Scored so far
 
-`pectoralis`, `deltoideus-scapularis` and `teres-major` for *Trachemys scripta*.
-Testudines 35% → 40%, pectoral 78% → 80%.
+**Pectoral:** `pectoralis`, `deltoideus-scapularis`, `teres-major`.
+**Arm:** `triceps-brachii`, `coracobrachialis`, `biceps-brachii`, `brachialis`.
+
+Testudines 35% → 48%, pectoral 78% → 80%, arm 72% → 78%.
+
+Two divisions came with the arm pass. The **coracobrachialis** splits into magnus
+and brevis, the brevis inserting into the intertubercular fossa. The **biceps** is
+double in most turtles but single in *Testudo*, *Dermochelys* and *Lepidochelys* —
+and Walker (1947) showed from *Chrysemys* development that the complex starts as
+one mass and splits later, so the single condition is unsplit rather than lost.
+That is a division-state difference with an ontogenetic argument attached, which is
+exactly what the `division` field exists to hold.
+
+One nice piece of topology the rows cannot express: in *Pseudemys* the scapular
+head of the triceps arises by a tendon that **perforates the latissimus–teres major
+tendon**. Two rows on this animal are physically threaded through each other.
 
 **Deliberately partial.** The arm, forearm and hand series are still open — Walker
 describes them in the same detail, and they are the remaining ~28 Testudines rows.
