@@ -765,6 +765,18 @@ Two columns are empty for want of a paper, not for want of a pass:
   decision, not a lookup fix.
 - **18 flagged correlates with no muscle on them** (`GAPS.md` §3). Pereyra et al.
   (2019) and Hattori & Tsuihiji (2021) are the way in.
+- **`Homo sapiens` is in species.json and scores nothing, and the source that
+  would fix it is now catalogued.** The TTUHSC anatomy tables give origin,
+  insertion, action, innervation and artery for several hundred human muscles in
+  one page — the highest row density in the bibliography. It is deliberately not
+  in the ranked backlog above, because the question it raises is not whether it
+  will mine. It is what a human column would do to Theria: it would arrive
+  better-scored than *Galictis* or *Panthera* while being the only row set in
+  that clade not taken from a dissection its own source performed. That is a
+  `speciesBasis` question — 'survey' against 'source' inside one rollup — and it
+  wants deciding before the first row lands, not after. The schema is already
+  waiting for it: the HUMAN_ONLY check in `validate.py` that bans spinal root
+  levels and human landmarks everywhere else exempts `homo-sapiens` alone.
 - **Architecture is entered for three species.** Zaaf et al. (1999) Tables 4–6
   would add the first lepidosaur, but it is two species × two specimens and the
   `architecture` block holds one — a schema decision first.
