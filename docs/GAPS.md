@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 791 present occurrences · 266 skeletal elements · 106 sources · 19 operational taxa
+129 muscle records · 793 present occurrences · 266 skeletal elements · 106 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -50,11 +50,11 @@ illustrated.
 | arm | 5 | 65 | 51 | 78% |
 | forearm | 19 | 167 | 122 | 73% |
 | pelvic | 8 | 34 | 24 | 71% |
-| cranial | 16 | 72 | 50 | 69% |
+| cranial | 16 | 74 | 52 | 70% |
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 42 | 58% |
 | axial | 15 | 30 | 17 | 57% |
-| **all** | 129 | 791 | 588 | **74%** |
+| **all** | 129 | 793 | 590 | **74%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -142,7 +142,7 @@ back in for Aves.
 | Monotremata | 103 | 103 | 100% |
 | Theria | 73 | 65 | 89% |
 | Actinistia | 7 | 6 | 86% |
-| Crocodylia | 73 | 62 | 85% |
+| Crocodylia | 75 | 64 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 54 | 38 | 70% |
@@ -354,9 +354,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 266, of which 236 (89%) carry at least one attachment |
-| Observed attachment rows | 1665 |
-| Rows naming a **landmark** | 469 (28%) |
+| Elements | 266, of which 237 (89%) carry at least one attachment |
+| Observed attachment rows | 1673 |
+| Rows naming a **landmark** | 473 (28%) |
 | Rows naming a **side** | 1100 (66%) |
 | Osteological correlates | 121 flagged, 107 carry a muscle |
 <!-- /counts:skeleton -->
@@ -429,7 +429,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 22 | 66 | 3.0 |
+| cranial | 22 | 67 | 3.0 |
 | hindlimb | 43 | 44 | 1.0 |
 | axial | 35 | 32 | 0.9 |
 | pectoral | 32 | 29 | 0.9 |
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 588 of 791 present occurrences (74%).**
+**Taxon-specific attachments: 590 of 793 present occurrences (74%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -483,7 +483,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 383 |
 | forearm | 19 | 308 |
-| cranial | 16 | 188 |
+| cranial | 16 | 196 |
 | leg | 10 | 141 |
 | arm | 5 | 134 |
 | foot | 12 | 122 |
