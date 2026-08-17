@@ -100,8 +100,17 @@
                                     ]
                                   },
                                   {
-                                    "name": "Aves",
-                                    "taxon": "aves"
+                                    "name": "Ornithodira",
+                                    "children": [
+                                      {
+                                        "name": "Theropoda (stem)",
+                                        "taxon": "theropoda-stem"
+                                      },
+                                      {
+                                        "name": "Aves",
+                                        "taxon": "aves"
+                                      }
+                                    ]
                                   }
                                 ]
                               }
@@ -372,6 +381,20 @@
       "age": "Extant",
       "color": "#c08a3e",
       "notes": "Extant phylogenetic bracket partner (with Aves) for archosaur fossil muscle reconstruction."
+    },
+    {
+      "id": "theropoda-stem",
+      "label": "Stem theropods",
+      "clade": "Theropoda (stem)",
+      "exemplars": [
+        "Tawa hallae",
+        "Coelophysis bauri",
+        "Dilophosaurus wetherilli"
+      ],
+      "age": "Late Triassic – Early Jurassic",
+      "color": "#a8763a",
+      "fossil": true,
+      "notes": "The bird half of Archosauria had no stem taxon at all until this entry, so the topology ran straight from Crocodylia to Aves and every archosaur character change was forced onto one branch. Muscle entries are extant-phylogenetic-bracket reconstructions bracketed by Crocodylia and Aves, following Burch (2014), who scores each inference Level I, II or III with a prime where a correlate is equivocal — the same scheme Molnar & Diogo (2021) set out and the stem-tetrapodomorph column uses. Treat every entry as a hypothesis. The bracket here is unusually good: both extant bracketing clades are in this dataset with scored attachment rows."
     },
     {
       "id": "aves",

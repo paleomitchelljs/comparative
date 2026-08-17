@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 796 present occurrences · 267 skeletal elements · 110 sources · 19 operational taxa
+129 muscle records · 799 present occurrences · 267 skeletal elements · 110 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 12 | 46 | 41 | 89% |
 | leg | 10 | 55 | 49 | 89% |
 | thigh | 10 | 48 | 40 | 83% |
-| pectoral | 16 | 166 | 132 | 80% |
-| arm | 5 | 65 | 51 | 78% |
+| pectoral | 16 | 168 | 134 | 80% |
+| arm | 5 | 66 | 51 | 77% |
 | forearm | 19 | 167 | 122 | 73% |
 | pelvic | 8 | 34 | 24 | 71% |
 | cranial | 16 | 74 | 52 | 70% |
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 42 | 58% |
 | axial | 15 | 30 | 17 | 57% |
-| **all** | 129 | 796 | 593 | **74%** |
+| **all** | 129 | 799 | 595 | **74%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -147,6 +147,7 @@ back in for Aves.
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
 | Lepidosauria | 117 | 81 | 69% |
+| Theropoda (stem) | 3 | 2 | 67% |
 | Aves | 93 | 52 | 56% |
 | Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
@@ -355,9 +356,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 267, of which 238 (89%) carry at least one attachment |
-| Observed attachment rows | 1684 |
+| Observed attachment rows | 1688 |
 | Rows naming a **landmark** | 475 (28%) |
-| Rows naming a **side** | 1105 (66%) |
+| Rows naming a **side** | 1108 (66%) |
 | Osteological correlates | 121 flagged, 107 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -461,7 +462,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 593 of 796 present occurrences (74%).**
+**Taxon-specific attachments: 595 of 799 present occurrences (74%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -481,7 +482,7 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 383 |
+| pectoral | 16 | 387 |
 | forearm | 19 | 308 |
 | cranial | 16 | 196 |
 | leg | 10 | 141 |
