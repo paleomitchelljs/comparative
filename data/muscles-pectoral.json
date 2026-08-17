@@ -2324,13 +2324,29 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Pectoralis",
           "present": "yes",
           "note": "= pectoralis major sensu Wyneken (2001).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "plastron",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-lateral-process"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). A very large triangular muscle from much of the anterior plastron: the periphery of its attachment sweeps an arc from the midventral line just behind the plastral attachment of the acromion, back and laterally to the posterior boundary of the bridge of the shell. All fibres converge on a narrow tendon onto the flexor border of the lateral process of the humerus. Retractor and adductor, and Walker reads it as also rotating the girdle posteriorly during limb retraction."
         },
         {
           "species": "iguana-iguana",
@@ -3534,12 +3550,36 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Deltoideus scapularis",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "scapular-prong"
+              },
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "acromion"
+              },
+              {
+                "element": "plastron",
+                "landmark": "epiplastron"
+              },
+              {
+                "element": "plastron",
+                "landmark": "entoplastron"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta — Walker (1973) writes *Pseudemys scripta elegans*, the red-eared slider, which is his type species and the same animal. A triangular muscle arising from the anterior surface of the scapular prong ventral to the teres major origin, from the anterior surface of the acromion, and from the median epiplastron and adjacent entoplastron. **No insertion row**: Walker gives the origin in this passage and does not state where it ends. A turtle shoulder muscle taking a third of its origin from the shell is the kind of thing the consensus row could never have shown."
         },
         {
           "species": "eublepharis-macularius",
@@ -5417,12 +5457,33 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Teres major",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "scapular-prong"
+              },
+              {
+                "element": "suprascapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "dorsal",
+                "landmark": "humerus-medial-process"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Origin on the anterior surface of roughly the dorsal half of the scapular prong and the suprascapular cartilage. It and the latissimus dorsi develop from one muscle mass and converge on a **common tendon** onto the dorsal humerus just distal to the head, so the insertion is shared rather than separate. Walker notes the degree of separation between the two is highly variable between turtles — absent in *Dermochelys*, incipient in *Testudo*, large in trionychids and pleurodires — so this is a row about *Trachemys* and emphatically not about Testudines."
         },
         {
           "species": "timon-lepidus",

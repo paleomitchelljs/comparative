@@ -62,7 +62,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-129 muscle records · 789 present occurrences · 254 skeletal elements · 104 sources · 19 operational taxa
+129 muscle records · 789 present occurrences · 261 skeletal elements · 105 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -290,5 +290,5 @@ Origin/insertion becomes what you *draw*, not what you navigate.
 See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **72%** of 789 present occurrences. The thinnest columns of any size are Testudines at 35%, Chondrichthyes at 48%, Anura at 53%; the thinnest regions are hand, axial, fin. `side` is on 67% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **72%** of 789 present occurrences. The thinnest columns of any size are Testudines at 40%, Chondrichthyes at 48%, Anura at 53%; the thinnest regions are hand, axial, fin. `side` is on 67% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
