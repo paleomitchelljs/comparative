@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 799 present occurrences · 267 skeletal elements · 110 sources · 20 operational taxa
+129 muscle records · 834 present occurrences · 269 skeletal elements · 110 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -46,15 +46,15 @@ illustrated.
 | foot | 12 | 46 | 41 | 89% |
 | leg | 10 | 55 | 49 | 89% |
 | thigh | 10 | 48 | 40 | 83% |
-| pectoral | 16 | 168 | 134 | 80% |
-| arm | 5 | 66 | 51 | 77% |
-| forearm | 19 | 167 | 122 | 73% |
+| pectoral | 16 | 178 | 144 | 81% |
+| arm | 5 | 70 | 56 | 80% |
+| forearm | 19 | 179 | 134 | 75% |
 | pelvic | 8 | 34 | 24 | 71% |
 | cranial | 16 | 74 | 52 | 70% |
 | fin | 9 | 39 | 23 | 59% |
-| hand | 9 | 72 | 42 | 58% |
+| hand | 9 | 81 | 47 | 58% |
 | axial | 15 | 30 | 17 | 57% |
-| **all** | 129 | 799 | 595 | **74%** |
+| **all** | 129 | 834 | 627 | **75%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -140,6 +140,7 @@ back in for Aves.
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Monotremata | 103 | 103 | 100% |
+| Theropoda (stem) | 38 | 34 | 89% |
 | Theria | 73 | 65 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
@@ -147,7 +148,6 @@ back in for Aves.
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
 | Lepidosauria | 117 | 81 | 69% |
-| Theropoda (stem) | 3 | 2 | 67% |
 | Aves | 93 | 52 | 56% |
 | Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
@@ -165,11 +165,26 @@ tetrapod column inherits are now anchored to a scored column rather than to a
 composite. It is also the only taxon whose body wall is scored.
 
 **Aves is no longer the broad-but-shallow column.** It was 13% with architecture
-data and almost no attachment structure; it is now 49% on two passes and five
-species. McKitrick (1991) supplied the loon forelimb and Jones et al. (2019) the
+data and almost no attachment structure; it is now 56% across ten species.
+McKitrick (1991) supplied the loon forelimb and Jones et al. (2019) the
 pigeon head, and between them they answer the objection recorded below — that the
 avian sources were either synonymy tables or the wrong kind of animal. Both are
 single-specimen descriptive works, which is what the column needed.
+
+**Theropoda (stem) went 3 rows to 38 in one pass, and the pass was a single
+paper.** Burch (2014) reconstructs the complete forelimb myology of *Tawa hallae*
+— 35 muscles from the trapezius to the interossei — on an extant phylogenetic
+bracket whose two halves, Crocodylia and Aves, are both scored columns here. That
+is why the column arrives at 89% rather than at the 50-70% a new taxon usually
+starts on: nothing had to be inferred from a composite. The four unscored rows are
+unscored on purpose and each one names a different kind of failure — the
+lumbricales and the interossei (twice) because their attachments vary faster than
+the clades do, and the contrahentes digitorum because Burch gives a positive
+reason to expect *Tawa* had lost them. **Every row in this column is a hypothesis
+about an animal nobody dissected**, and the `attachmentNote` on each says which
+level of inference it rests on and which correlate, if any, is actually on the
+bone. Several rest on scars found in *Herrerasaurus* or *Sanjuansaurus* rather
+than in *Tawa* itself.
 
 **The branchial basket is now resolved in the skeleton.** `epibranchials`,
 `pharyngobranchials` and `hypobranchials` were added for Springer & Johnson's eel,
@@ -355,11 +370,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 267, of which 238 (89%) carry at least one attachment |
-| Observed attachment rows | 1688 |
-| Rows naming a **landmark** | 475 (28%) |
-| Rows naming a **side** | 1108 (66%) |
-| Osteological correlates | 121 flagged, 107 carry a muscle |
+| Elements | 269, of which 240 (89%) carry at least one attachment |
+| Observed attachment rows | 1786 |
+| Rows naming a **landmark** | 510 (29%) |
+| Rows naming a **side** | 1188 (67%) |
+| Osteological correlates | 123 flagged, 109 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -432,8 +447,8 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 |---|---:|---:|---:|
 | cranial | 22 | 67 | 3.0 |
 | hindlimb | 43 | 45 | 1.0 |
+| pectoral | 32 | 31 | 1.0 |
 | axial | 35 | 32 | 0.9 |
-| pectoral | 32 | 29 | 0.9 |
 | forelimb | 52 | 45 | 0.9 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 28 | 15 | 0.5 |
@@ -462,7 +477,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 595 of 799 present occurrences (74%).**
+**Taxon-specific attachments: 627 of 834 present occurrences (75%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -482,14 +497,14 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 387 |
-| forearm | 19 | 308 |
+| pectoral | 16 | 417 |
+| forearm | 19 | 344 |
 | cranial | 16 | 196 |
+| arm | 5 | 152 |
 | leg | 10 | 141 |
-| arm | 5 | 134 |
+| hand | 9 | 123 |
 | foot | 12 | 122 |
 | thigh | 10 | 115 |
-| hand | 9 | 109 |
 | pelvic | 8 | 63 |
 | fin | 9 | 57 |
 | axial | 15 | 56 |

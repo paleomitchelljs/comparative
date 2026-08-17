@@ -295,7 +295,8 @@ SEED = {
                    "origin": ["procoracoid"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "testudines":   {"origin": ["clavicle"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
         "lepidosauria": {"origin": ["clavicle"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"]},
-        "crocodylia": {"origin": ["scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
+        "crocodylia": {"species": "caiman-latirostris",  # this record gained an Alligator row from Meers (2003); Abdala & Diogo's crocodylian is the caiman, as in every other block here that cites them
+                       "origin": ["scapula"], "insertion": ["humerus"], "sources": ["abdala-diogo-2010"],
                        "shiftNote": "Crocodylians have no clavicle, so despite the name the origin sits on the scapula — which is why Fürbringer (1876) called this muscle the scapularis inferior."},
         # NO CLAVICLE. This block read ["acromion", "clavicle"] citing Ercoli et
         # al. (2014) — a 35-page description of Galictis cuja in which the word
