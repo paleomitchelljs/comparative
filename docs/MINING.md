@@ -1,7 +1,7 @@
 # What is left to mine, and how
 
 <!-- counts:unscored -->
-212 present occurrences still have no attachment rows.
+215 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 This file lists the sources that could close them, ranked by whether they will
 actually work.
@@ -116,7 +116,7 @@ https://carlgans.org/wp-content/bor/{VV}/BotR{VV}-page{N}.pdf     # VV zero-padd
 | 4 | 2 | **Schumacher (1973)**, Head muscles and hyolaryngeal skeleton of turtles and crocodilians | Turtle + crocodylian cranial | **acquired**, PDF pages 110–240 |
 | 4 | 5 | **Haas (1973)**, Muscles of the jaws in Rhynchocephalia and Squamata | The descriptive source behind the *Ctenosaura* and *Sphenodon* rows | partial, PDF pages ~285–475 |
 | 11 | 3 | **Gasc (1981)**, Axial musculature | **Named by Cieri** as where the lepidosaur epaxial attachments live | partial, PDF pages ~362–475 |
-| 21 | 1 | **Russell & Bauer (2008)**, Appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates | Lizard limbs, and the tuatara | **acquired**, PDF pages 197–399 + 409–427 (myology and Appendix B only; offset +5) |
+| 21 | 1 | **Russell & Bauer (2008)**, Appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates | Lizard limbs, and the tuatara | **acquired and mined**, PDF pages 197–399 + 409–427 (myology and Appendix B only; offset +5) |
 
 **Volume 21 is in, and it is not the source the backlog thought it was.** 222
 of the chapter's 469 pages were fetched — the three myology sections and the
@@ -137,6 +137,28 @@ references keyed to about a hundred works, which is the largest name-to-name
 concordance for the lepidosaur locomotor system anywhere in this bibliography and
 belongs in `synonyms`, not in occurrence rows. Reading note:
 `papers/2008_Russell-Bauer_Lepidosauria_Extant_appendicular-locomotor-apparatus.md`.
+
+**Mined, August 2026: 63 rows.** *Iguana iguana* went 7 to 70 occurrences, 62 of
+them with attachments, across every appendicular region; Lepidosauria went 53% to
+78%. `sphenodon-punctatus` opened with one row — the M. anconaeus quartus, which
+Russell & Bauer report for the tuatara and say has never been found in any lizard,
+and which is scored with an explicit note that they are reporting Günther, Osawa,
+Ribbing, Haines and Holmes rather than dissecting. **The 27 *Timon lepidus* rows
+are still open**, as predicted: nothing in a monograph on *Iguana* belongs to
+Abdala & Diogo's exemplar.
+
+Three rows are absences the source states rather than gaps: `humeroradialis` is
+absent in *Iguana* and all adult lizards but appears briefly in development;
+`anconeus` is absent in lizards and present in *Sphenodon*; and `palmaris-longus`
+is absent because Russell & Bauer conclude the lizard "palmar aponeurosis" is not
+an independent structure but the common tendon of the flexor digitorum longus —
+the third source in this corpus to point that name away from the mammalian muscle.
+`intermetacarpales` is scored absent too, because they gloss McMurrich's
+intermetacarpales as intermetacarpal *ligaments*.
+
+**Appendix B is still unmined.** 656 numbered synonym references keyed to about a
+hundred works, for the `synonyms` fields rather than for occurrence rows. It is
+the largest single piece of nomenclatural work left in the bibliography.
 
 **Go slowly.** The site is behind Cloudflare and starts returning a "Just a
 moment…" HTML interstitial *with HTTP 200* after sustained requests — so a naive

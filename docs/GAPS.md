@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 940 present occurrences · 268 skeletal elements · 112 sources · 20 operational taxa
+129 muscle records · 999 present occurrences · 268 skeletal elements · 112 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| leg | 10 | 62 | 56 | 90% |
-| foot | 12 | 55 | 48 | 87% |
-| thigh | 10 | 54 | 46 | 85% |
-| pectoral | 16 | 198 | 164 | 83% |
-| arm | 5 | 78 | 64 | 82% |
-| forearm | 19 | 200 | 155 | 78% |
-| pelvic | 8 | 41 | 31 | 76% |
+| leg | 10 | 66 | 60 | 91% |
+| foot | 12 | 61 | 54 | 89% |
+| thigh | 10 | 63 | 55 | 87% |
+| pectoral | 16 | 210 | 175 | 83% |
+| arm | 5 | 82 | 68 | 83% |
+| forearm | 19 | 213 | 168 | 79% |
+| pelvic | 8 | 45 | 35 | 78% |
 | cranial | 16 | 82 | 60 | 73% |
 | axial | 15 | 42 | 29 | 69% |
+| hand | 9 | 96 | 57 | 59% |
 | fin | 9 | 39 | 23 | 59% |
-| hand | 9 | 89 | 52 | 58% |
-| **all** | 129 | 940 | 728 | **77%** |
+| **all** | 129 | 999 | 784 | **78%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -145,9 +145,9 @@ back in for Aves.
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
+| Lepidosauria | 176 | 137 | 78% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
-| Lepidosauria | 117 | 81 | 69% |
 | Aves | 111 | 70 | 63% |
 | Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
@@ -394,6 +394,27 @@ Those rows are *Eublepharis macularius*, with the *Gekko gecko* differences in
 a different part of one, which is the sharpest available warning against reading
 any single lizard as the clade.
 
+**Then to 78% on Russell & Bauer (2008), and the column it filled was not the one
+the backlog expected.** The chapter's descriptive baseline is *Iguana iguana*, in
+74 paragraphs each keyed `Iguana:` — so the pass took that species from 7 rows to
+70, of which 62 carry attachments, across the pectoral girdle, arm, forearm, hand,
+pelvis, thigh, crus and pes. It also opened `sphenodon-punctatus`, which had sat
+in `species.json` with nothing on it, with a single row: the M. anconaeus quartus,
+which Russell & Bauer report for the tuatara and say has never been found in a
+lizard. **The 27 unscored *Timon lepidus* rows are untouched** and stay open —
+that is Abdala & Diogo's exemplar, and attributing a monograph on *Iguana* to it
+would have been the §7 error four more times.
+
+Three things the pass changed outside the muscle files. The `acromion` record
+gained Lepidosauria — its own note had said the clade was left unscored only
+because no source here named an acromion in one, and that a descriptive source
+should win; that is now the fourth clade it has gained. `patella` gained
+Lepidosauria, because *Iguana* has one, embedded in the common iliotibialis and
+femorotibialis tendon for the same mechanical reason a mammal's is. And the
+transverse subcarpal ligament gained Lepidosauria as the **ventral annular
+ligament of the wrist** — which is not a passive strap there but the origin of the
+entire short flexor complex.
+
 **Tetrapodomorpha (stem) moved 0% to 79%**, and it is the one column where the
 attachments are osteological correlates rather than dissection. Molnar et al.
 (2018) §III describes them taxon by taxon, which is what let the column go from
@@ -411,9 +432,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 268, of which 246 (92%) carry at least one attachment |
-| Observed attachment rows | 2155 |
-| Rows naming a **landmark** | 620 (29%) |
-| Rows naming a **side** | 1304 (61%) |
+| Observed attachment rows | 2331 |
+| Rows naming a **landmark** | 658 (28%) |
+| Rows naming a **side** | 1425 (61%) |
 | Osteological correlates | 122 flagged, 113 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -517,7 +538,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 728 of 940 present occurrences (77%).**
+**Taxon-specific attachments: 784 of 999 present occurrences (78%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -537,16 +558,16 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 483 |
-| forearm | 19 | 400 |
+| pectoral | 16 | 523 |
+| forearm | 19 | 437 |
 | cranial | 16 | 246 |
-| arm | 5 | 180 |
-| leg | 10 | 167 |
-| hand | 9 | 140 |
-| thigh | 10 | 140 |
-| foot | 12 | 139 |
+| arm | 5 | 195 |
+| leg | 10 | 181 |
+| thigh | 10 | 164 |
+| hand | 9 | 158 |
+| foot | 12 | 154 |
 | axial | 15 | 109 |
-| pelvic | 8 | 94 |
+| pelvic | 8 | 107 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
 

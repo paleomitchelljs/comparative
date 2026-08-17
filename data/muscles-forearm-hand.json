@@ -500,6 +500,43 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only — this is Part 1, which stops at the humerus. One of four muscles Matsuoka & Hasegawa figure arising from sharp depressions on the dorsal surface of the distal humerus, the avian epicondylus dorsalis, scored here as the lateral epicondyle. **The proximal position of this origin is a derived avian feature**: Burch (2014) argues the bird arrangement, in which extensor carpi radialis takes the most proximal place on the epicondyle and the supinator drops distally, evolved with the automating mechanism of the wing, and reconstructs the inverse for basal theropods."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. extensor carpi radialis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Proximal head"
+            },
+            {
+              "name": "Distal head"
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "anterior"
+              },
+              {
+                "element": "radius",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Two heads: the proximal with a tendinous ectepicondylar origin partly shared with the extensor digitorum longus, the second arising from the fascial sheath investing the first for three quarters of its length — a sheath that also gives origin to extensor digitorum longus fibres. Insertion along the anterior and mesial radius, the anterior part beginning just distal to the biceps and brachialis insertions and the mesial reaching as far proximally as the radial shaft goes, lateral to the supinator longus insertion. **This is the plesiomorphic radial insertion**, against the metacarpal insertion mammals and some tree frogs reached independently."
         }
       ],
       "homology": {
@@ -520,7 +557,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -1055,6 +1093,49 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only, and **it is on the ventral side** — Matsuoka & Hasegawa place it with the two pronators among the three muscles leaving sharp depressions on the ventral surface of the distal humerus, the entepicondyle. The mirror of the flexor carpi ulnaris row on this same specimen, which arises dorsally: in this swan the two carpal ulnar muscles have swapped the sides their names imply. Elsewhere this muscle is an ectepicondylar extensor — Burch (2014) puts it among the most distal muscles on the ectepicondyle in *Tawa*, and codes it absent in crocodylians altogether."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. extensor carpi ulnaris",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Humeral head"
+            },
+            {
+              "name": "Ulnar head"
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "anterior",
+                "landmark": "olecranon"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "lateral"
+              },
+              {
+                "element": "carpals",
+                "side": "dorsal",
+                "landmark": "pisiform"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Humeral head by a stout flat tendon along the line running proximally from the dorsal ectepicondyle; ulnar head from the anterior olecranon just distal to the triceps insertion. Insertion on the ventrolateral shaft of metacarpal V with a proximal side branch onto the proximolateral dorsal surface of the pisiform, and some contribution to the flexor carpi ulnaris insertion. **Lateralmost metacarpal plus pisiform is exactly the state Burch (2014) reconstructs for *Tawa*** on the lepidosaur pattern, having coded this muscle absent in crocodylians altogether — so the lizard row is the evidence that reconstruction rests on."
         }
       ],
       "homology": {
@@ -1076,7 +1157,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -1639,6 +1721,30 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only. The second of the four dorsal depressions on the distal humerus. In every taxon Burch surveyed this muscle arises from about the middle of the ectepicondyle between the carpal extensors, at a proportional probability near 1.0 at every node — one of the few attachments in the forelimb that does not move."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. extensor digitorum longus",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Origin immediately dorsal to the radial condyle of the humerus by a short tendon closely applied to the joint capsule, with accessory fibres from the intermuscular septum against the extensor carpi radialis. Three tendons: the lateralmost to the proximolateral dorsal surface of metacarpal IV, the middle to the head of metacarpal III, the medialmost to metacarpal II — each passing between the short digital extensors of the two digits it lies between. **Three metacarpals, not five**, which is the state Burch (2014) reconstructs for *Tawa* on functional grounds and finds unequivocal only for digits I and II across the archosaur bracket."
         }
       ],
       "homology": {
@@ -1658,7 +1764,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -1921,6 +2028,44 @@
             "gest-anatomy-tables"
           ],
           "note": "Homo sapiens, Gest (Anatomy Tables). **Absent, and the absence is worth a row.** Gest lists 54 muscles of the upper limb and no short dorsal digital extensor among them; the human hand has no extensor digitorum brevis manus as a normal structure, though it is a recognised variant. Every other amniote column on this record has one. The foot kept its equivalent — see `extensores-digitorum-breves-pes`, where the human extensor digitorum brevis and extensor hallucis brevis are scored — so this is a loss in the hand specifically, in the limb that became a manipulator."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "Mm. extensores digitores breves",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Mm. extensores digitores breves superficiales"
+            },
+            {
+              "name": "Mm. extensores digitores breves profundi"
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "dorsal",
+                "landmark": "ulnare"
+              },
+              {
+                "element": "metacarpals",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ungual-phalanges-manus",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **All five superficial slips arise from the ulnare alone** — a single carpal serving every digit — and fan out in a stratified fashion, the largest to digit V, then digit I. The profundi arise from the dorsal metacarpal of the digit each serves. The two layers' tendons combine and insert middorsally on the proximal end of each ungual phalanx, with a small sesamoid in the common tendon dorsal to the distalmost joint. Russell & Bauer note that the slips to digits I and II have often been given separate names by analogy with the mammalian hand — Romer's adductor pollicis longus and extensor indicis proprius — which is the same borrowing that put a human name on a lizard muscle elsewhere in this dataset. Compare Burch's *Tawa* reconstruction, which puts the digit I and II superficial slips on the radiale and III and IV on the ulnare from avian evidence; *Iguana* puts all of them on the ulnare."
         }
       ],
       "homology": {
@@ -1937,7 +2082,8 @@
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -2372,6 +2518,30 @@
               "nerve": "radial-deep"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. supinator manus",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). From the distal third of the dorsal ulna, crossing the distal antebrachium distomesially to insert by a single tendon on the dorsomesial aspect of the proximal end of metacarpal I. **The name on this record's synonym list, in the animal it was coined for** — 'supinator manus' is how Haines (1939), Walker (1973) and Holmes (1977) refer to the abductor pollicis longus, and Russell & Bauer add the developmental reading: although they discuss it among the dorsal antebrachial muscles, they judge it probably a muscle of the dorsal matrix of the manus that has migrated proximally. Ulna only — the radial head that makes the muscle bipennate is an archosaur synapomorphy Burch (2014) scores at 0.955, and this row is the lepidosaur state it is measured against."
         }
       ],
       "homology": {
@@ -2390,7 +2560,8 @@
         "sanchez-etal-2019",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -2791,6 +2962,34 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only: the fourth of the dorsal depressions on the distal humerus. **Scored on this record rather than on `supinator`, and the corpus now holds the same avian name on two records.** Matsuoka & Hasegawa follow Vanden Berge (1979) in the Nomina Anatomica Avium, and Burch's (2014) Table 1 equates that avian Supinator with Meers's crocodylian 'supinator' and Walker's chelonian 'tractor radii' — which are this record's two existing synonyms, and the basis on which the *Tawa* row was scored here. But McKitrick's (1991) loon 'Supinator' sits on the `supinator` record, whose own assessment says the avian usage of the word denotes part of the extensor antebrachii et carpi radialis. **That is a disagreement between sources, not a duplication, and it is flagged rather than resolved**: settling it needs a source that dissects both, which the corpus does not have."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. supinator longus",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              },
+              {
+                "element": "carpals",
+                "side": "medial",
+                "landmark": "radiale"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Scored on this record rather than on `supinator`, and Russell & Bauer are the source Burch's Table 1 was reading.** He equates the lepidosaur *Supinator longus* with his theropod Supinator, with Meers's crocodylian 'supinator' and with Walker's chelonian 'tractor radii' — the last two are this record's existing synonyms, and the *Tawa* and *Cygnus* rows here follow the same equation. An extensive parallel-fibred belly on the anteromesial forearm arising with the proximalmost part of the extensor carpi radialis from the ectepicondyle by a stout shared tendon; Russell & Bauer read it as a derivative of that muscle and say the two comprise one functional entity. It inserts unipinnately and fleshily along the radial shaft, its distalmost point tendinously on the medial radiale."
         }
       ],
       "homology": {
@@ -2809,7 +3008,8 @@
         "sanchez-etal-2019",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -3451,6 +3651,39 @@
               "nerve": "radial"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "note": "Iguana iguana, Russell & Bauer (2008). **Absent, and the absence is a loss rather than a gap.** Russell & Bauer state the M. anconaeus quartus occurs in *Sphenodon* but has not been reported from any lizard so far studied, and follow Ribbing (1907) and Haines (1939) in reading it as a proximal subdivision of the extensor carpi ulnaris that lizards have lost. Burch (2014) uses the same fact from the other side: with the anconeus absent in squamates, crocodylians lacking extensor carpi ulnaris on his reading, the two fused in turtles and both states reported for *Sphenodon*, the question of whether the two share a tendon of origin sits at exactly 0.50 at the base of Archosauria. This row is one of the four disqualifications that produce that tie."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. anconaeus quartus",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, reported by Russell & Bauer (2008). **The first row on a species that has been in `species.json` with none.** Origin in close association with the extensor carpi ulnaris; insertion fleshily along the lateral border of the proximal half of the ulnar shaft.\n\n**This is Russell & Bauer reporting, not dissecting.** They cite Günther (1868), Osawa (1898), Ribbing (1911, 1938), Haines (1939) and Holmes (1977) for the tuatara condition; their own descriptive animal is *Iguana*, which does not have this muscle. The row is scored because the statement is specific and both-ended, and it is flagged here because a reader should know the chain it came down. Holmes reads the muscle as a proximal subdivision of the extensor carpi ulnaris."
         }
       ],
       "homology": {
@@ -3466,7 +3699,8 @@
       "sources": [
         "abdala-diogo-2010",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -3730,6 +3964,31 @@
             "gest-anatomy-tables"
           ],
           "note": "Homo sapiens, Gest (Anatomy Tables). Not listed among the 54 upper limb muscles, and scored absent on that basis. **The interest is what it leaves behind**: this muscle bridges the medial epicondyle to the olecranon, and in a human that span is occupied by the cubital tunnel retinaculum, over the ulnar nerve — the same nerve the muscle carries wherever it is present. The record's own consensus action already says the muscle 'forms part of the cubital tunnel roof over the ulnar nerve'. Present in turtles, lepidosaurs, galloanseriform birds, *Apteryx* and tinamous, reconstructed for *Tawa* at 0.863, and repeatedly absorbed into flexor carpi ulnaris where it survives."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. epitrochleoanconeus",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Tendinous origin from the distal entepicondyle in close association with the extensor carpi ulnaris tendon, its fibres crossing those of the pronator accessorius at about a right angle. Fleshy insertion on the lateral border of the proximal ulna at roughly 45° to the bone's long axis, the belly wrapping around the posterior shaft and so placed to rotate it. **Restricted to the proximal ulna**, which is the state Burch reconstructs for *Tawa* at 0.698 at the archosaur + lepidosaur node against the long insertion of turtles and *Apteryx*."
         }
       ],
       "homology": {
@@ -3745,7 +4004,8 @@
       "sources": [
         "abdala-diogo-2010",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -4251,6 +4511,38 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only, and **it is on the dorsal side of the humerus** — Matsuoka & Hasegawa group it with the extensor metacarpi radialis, the extensor digitorum communis and the supinator among the four muscles arising from sharp depressions on the dorsal surface of the distal humerus. A muscle named for flexing the wrist, arising from the extensor epicondyle. Elsewhere on this record the origin is the entepicondyle: Burch (2014) makes it the most distal tendon on the entepicondyle in *Tawa*, and the human muscle takes the common flexor tendon from the medial epicondyle. Recorded as the source states it."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "posterior",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              },
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              },
+              {
+                "element": "subcarpal-ligament-transverse"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Tendinous origin from the posterodistal aspect of the dorsal surface of the entepicondyle together with the epitrochleoanconeus, the tendon fanning out on its deep face to give accessory origin for two thirds of the muscle's length. Insertion is chiefly with the **pisiform and the annular ligament**: a broad tendon tapers toward the base of metacarpal V, receives fibres from the extensor carpi ulnaris, and from the ventromesial pisiform and its tendons springs the lateral part of the ventral annular ligament, from which in turn the short flexor of digit V arises. The pisiform insertion is the plesiomorphic state Burch (2014) reconstructs for *Tawa* and that birds lost with the bone itself."
         }
       ],
       "homology": {
@@ -4269,7 +4561,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -4650,6 +4943,31 @@
               "nerve": "median"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. flexor carpi radialis",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Broadly tendinous origin from the lateral aspect of the humeral entepicondyle shared with the pronator teres, just distal to the coracobrachialis longus insertion, with fibres also arising from the broad tendinous sheet separating it from the flexor digitorum longus for half the length of the antebrachium. It inserts broadly on the ventrolateral aspect of the proximal end of metacarpal I and onto the ventral crest of that bone's head, **where its own insertion tendon then becomes part of the origin of the short flexor of digit I** — the muscle some authors call the adductor pollicis. An insertion that is also an origin."
         }
       ],
       "homology": {
@@ -4666,7 +4984,8 @@
         "ercoli-etal-2014",
         "molnar-etal-2018",
         "walthall-ashley-ross-2006",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -5047,6 +5366,35 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only. Two sharp depressions on the ventral surface of the distal humerus mark the Y-shaped head of this muscle, which is why it is scored `heads` rather than single. The avian name is Pronator superficialis; Burch's (2014) Table 1 equates it with the Pronator teres of crocodylians, lepidosaurs and turtles, which is this record. Note the trap: `flexor-carpi-radialis` in this dataset also carries 'pronator superficialis' as a synonym, from Sullivan and Dilkes, so the one avian name has been used for two muscles."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. pronator teres",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "anterior"
+              },
+              {
+                "element": "radius",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Tendinous origin from the lateral entepicondyle in conjunction with the flexor carpi radialis, of which Russell & Bauer treat it as functionally and developmentally a part, following Straus (1942) in deriving it from that muscle. Filiform belly, fibres angled to the radius, inserting fleshily and unipinnately on the anteromesial aspect of the distal half of the radius with some fibres joining the flexor carpi radialis tendon. **Distal half only** — against the elongate insertion over more than half the radius that Burch reconstructs as unequivocal for archosaurs at 0.815."
         }
       ],
       "homology": {
@@ -5066,7 +5414,8 @@
         "mckitrick-1991",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -5370,6 +5719,47 @@
               "nerve": "median-anterior-interosseous"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. pronator profundus",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Proximal belly"
+            },
+            {
+              "name": "Distal belly"
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "posterior"
+              },
+              {
+                "element": "ulna",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "posterior"
+              },
+              {
+                "element": "radius",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Two ulnar origins, no humeral one: the proximal belly by a broad aponeurotic band from the distal posterior fossa of the ulna to about mid-shaft, the distal belly fleshily from the lateral and posterior aspects of the distal third. Both cross the interosseous space obliquely to insert on the posterolateral radius, the distal belly's insertion partly overlain by the proximal belly's. **No carpal insertion**, which is the attachment Burch reconstructs for *Tawa* at 0.783 and reads as secondarily lost in modern crocodylians — Russell & Bauer's *Iguana* does not have it either, though they note it in other lepidosaurs. Macalister (1869) derived the pronator accessorius from this muscle; Straus (1942) put the two in different matrices, this one having invaded the antebrachium by proximal migration from the manus."
         }
       ],
       "homology": {
@@ -5389,7 +5779,8 @@
         "mckitrick-1991",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -5545,6 +5936,44 @@
             "insertion": []
           },
           "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only: one of the three ventral depressions on the distal humerus. Burch's (2014) Table 1 makes the avian Pronator profundus the Pronator accessorius of squamates and turtles, which is this record. **This row disagrees with the *Gallus* row on the same record, which is scored absent.** Burch reports the muscle present in squamates, turtles and every neognath he studied and absent in crocodylians, *Sphenodon* and paleognaths except tinamous, which makes a swan the expected case and a chicken the surprising one. Two species rows disagreeing is what makes the clade roll up as variable, and that is the correct result here rather than something to reconcile."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. pronator accessorius",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Humeral head"
+            },
+            {
+              "name": "Ulnar head"
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Humeral head from the distal extremity of the entepicondyle, partly fleshy and partly from a superficial aponeurotic band on the elbow joint capsule; a smaller ulnar head from the posterior fossa of the ulna just distal to the olecranon and from the septum against the flexor digitorum longus. Both insert together by a common tendinous band on the posterior aspect of the proximal radius. **Proximal radius**, where Burch's reconstruction for *Tawa* had to split the difference between a long avian insertion at 0.950 and a restricted distal one at 0.878 — the lizard is neither, which is part of why that node is hard."
         }
       ],
       "homology": {
@@ -5558,7 +5987,8 @@
         "abdala-diogo-2010",
         "burch-2014",
         "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007"
+        "matsuoka-hasegawa-2007",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -6200,6 +6630,46 @@
               "nerve": "median-anterior-interosseous"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. flexor digitorum longus",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Superficial humeral head"
+            },
+            {
+              "name": "Deep humeral head"
+            },
+            {
+              "name": "Ulnar head"
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              },
+              {
+                "element": "ulna",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ungual-phalanges-manus",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Three heads — two from the entepicondyle, from the proximal and distal of its two tuberosities, and one from the posterior ulnar shaft sharing a line of origin with the pronator profundus. All three converge on one large flat tendon at the annular ligament, and **the palmar sesamoid is incorporated into its dorsal surface**. Cylindrical tendons arise just proximal to the metacarpophalangeal joints and run midventrally along each digit to the ungual phalanx.\n\nThe aponeurosis of this tendon is what other authors call the palmar aponeurosis — see the `palmaris-longus` row for this animal, where Russell & Bauer's conclusion that it has no existence independent of this muscle is recorded."
         }
       ],
       "homology": {
@@ -6221,7 +6691,8 @@
         "sanchez-etal-2019",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -6537,6 +7008,15 @@
               "nerve": "median"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "note": "Iguana iguana, Russell & Bauer (2008). **Scored absent, and the reason bears directly on this record's open question.** Russell & Bauer address the tendinous mass in the lizard palm that authors have called the palmar aponeurosis and conclude it is not a sheet of fibrous material giving origin to muscle fibres but **the common tendon of the M. flexor digitorum longus**, with no existence independent of the ventral antebrachial muscles. Haines (1950) had derived it from the thin fascia superficial to the long flexor tendons. So there is no 'palmaris longus' muscle here to score, and the structure the name points at belongs to another record.\n\nThis is the third source in the corpus to say something of that shape. Abdala & Diogo name the 'palmaris longus' and the 'rhomboideus' as the two structures whose homology with the mammalian muscles of those names is explicitly under-supported, and ask for exactly the innervation and development work across amphibians and reptiles that Russell & Bauer also call for; Burch's (2014) Table 1 equates Walker's chelonian 'palmaris longus' with the humeral head of flexor digitorum longus. Three independent readings, all pointing away from the mammalian muscle."
         }
       ],
       "homology": {
@@ -6553,7 +7033,8 @@
         "abdala-diogo-2010",
         "sanchez-etal-2019",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -7420,6 +7901,32 @@
             "gest-anatomy-tables"
           ],
           "note": "Homo sapiens, Gest (Anatomy Tables). Scored uncertain rather than absent, and the uncertainty is about which record the human muscles belong to, not about what is there. The superficial short flexor layer has no muscle in the human hand that is unambiguously its own: the candidates — palmaris brevis, the superficial head of flexor pollicis brevis — are assigned to this layer by some authors and to the deep layer by others, and the deep layer's members are scored on `flexores-breves-profundi`. Compare the foot, where flexor digitorum brevis is the surviving superficial layer and is scored plainly. The hand lost the layer or absorbed it; the sources do not agree which."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "Mm. flexores digitores breves",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "subcarpal-ligament-transverse"
+              },
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **The whole complex arises from the annular ligament**, with contributions laterally from the fascia of the flexor carpi ulnaris — not from the distal carpals. That is the arrangement Burch (2014) argues *Tawa* probably had, since its wrist was more lepidosaur-like than either extant archosaur's, before deciding to score the distal-carpal origin anyway on the possibility that it is an archosaurian synapomorphy; this row is the alternative he was weighing. Insertions are on the ventral tongues of the phalanges, with the tendon to each of digits II, IV and V splitting around the long flexor tendon and rejoining dorsal to it; digit III has no perforated short flexor tendon, and the slip to digit I is undivided and inserts on the mesial margin of the first phalanx."
         }
       ],
       "homology": {
@@ -7437,7 +7944,8 @@
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -7677,6 +8185,15 @@
               "nerve": "ulnar-deep"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "present": "uncertain",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "note": "Iguana iguana, Russell & Bauer (2008). Scored uncertain rather than absent. Russell & Bauer do not recognise a contrahens layer in the lizard manus as such; where Haines (1950) listed Mm. contrahentes for *Varanus*, they map that stratum onto two things they do recognise — the abductor of the fifth metacarpal and the interosseus ventralis of digit I — and warn that their synonymies of Haines's terms are tenuous and may not correspond exactly, because exact correspondence cannot be arrived at on the available evidence. That is a stated inability to decide, which is what `uncertain` is for. Both muscles they map it onto are scored: see [[abductor-digiti-minimi]] and [[flexores-breves-profundi]]."
         }
       ],
       "homology": {
@@ -7692,7 +8209,8 @@
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -8150,6 +8668,38 @@
               "nerve": "median-recurrent"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "Mm. interossei ventrales",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "ventral"
+              },
+              {
+                "element": "metacarpals",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "distal"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A complex series of small muscles from the ligaments binding the carpals ventrally and from the metacarpal shafts, running proximolateral to distomesial — **opposed to the direction of the metacarpophalangeal ligaments they cross**. Digits I, II and III have a pair each, digit IV a single slip, and digit V none. Insertions are on the distal metacarpal and the proximal end of the first phalanx, with the lateral slips of digits II, III and IV giving rise to slender cylindrical tendons that run down the ventrolateral border of the digit to reach phalanges II and III. Scored on this record on McMurrich's equation, which Russell & Bauer reproduce: his M. flexor digitorum brevis profundus is their Mm. interossei ventrales."
         }
       ],
       "homology": {
@@ -8165,7 +8715,8 @@
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -8454,6 +9005,35 @@
               "nerve": "ulnar-deep"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "Mm. lumbricales",
+          "present": "yes",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "side": "ventral",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "metacarpals",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A stratified network rather than a set of slips: every digit is served, digits I, III and IV by two heads each, and the muscles are intimately bound into the extensive ventral carpal ligaments. Origins are chiefly from the ventral surface of the fourth and fifth distal carpals and from the ventral metacarpals, insertions on the proximal ventral borders of the first phalanges. **Bone at both ends, unlike the mammalian lumbricals**, which run tendon-to-tendon — compare the human row on this record, and the *Tawa* row, which carries no attachments at all because Burch judged the variation too great to reconstruct."
         }
       ],
       "homology": {
@@ -8468,7 +9048,8 @@
         "abdala-diogo-2010",
         "ercoli-etal-2014",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -8691,6 +9272,15 @@
             "gest-anatomy-tables"
           ],
           "note": "Homo sapiens, Gest (Anatomy Tables). The human dorsal and palmar interossei are scored on [[flexores-breves-profundi]], whose synonymy already claims them. This record's synonymy claims them too — 'part of interossei dorsales' — and Howell (1936) found the relationship between Interossei, Intermetacarpales, Dorsometacarpales and Contrahentes digitorum unclear across tetrapods generally. Scored uncertain rather than duplicating the attachment rows onto a second record, which would give one observation two homes."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "present": "no",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "note": "Iguana iguana, Russell & Bauer (2008). **Scored absent because Russell & Bauer make them ligaments.** Reproducing McMurrich's (1903b) four-stratum scheme for the lizard palm, they gloss his fourth stratum, the Mm. intermetacarpales, as *intermetacarpal ligaments* — not muscle. They also say plainly that McMurrich may have manufactured extra bundles and layers when interpreting sectioned material, and that their own scheme is deliberately less complex because they could not locate all the strata he described. So this record has no muscle in *Iguana*: the ventral interossei are scored on [[flexores-breves-profundi]] and the dorsal ones are uncertain on [[dorsometacarpales]]. A homology group dissolved into connective tissue by the source that looked hardest."
         }
       ],
       "homology": {
@@ -8705,7 +9295,8 @@
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -8853,6 +9444,15 @@
             "gest-anatomy-tables"
           ],
           "note": "Homo sapiens, Gest (Anatomy Tables). As for [[intermetacarpales]]: the human interossei are scored once, on [[flexores-breves-profundi]], and this record's claim on them is recorded rather than acted on. Burch's *Tawa* row here is uncertain for a different reason — the muscles are almost certainly present but leave no osteological correlate to reconstruct from."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "present": "uncertain",
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "note": "Iguana iguana, Russell & Bauer (2008). **Scored uncertain because the authors could not find them.** Mivart (1867) described an extensive series of Mm. interossei dorsales for *Iguana*; Russell & Bauer say they were unable to locate them with any certainty, and unequivocally identified only one — the slip running obliquely between metacarpals IV and V. Their explanation is that in taxa without unusual development of these muscles they are more or less united along their deep surface with the Mm. interossei ventrales and form a continuous lamina. Gasc (1963) likewise found only a single such unit in *Chamaeleo*. Where they *are* separable is pad-bearing geckos, in which they are hypertrophied for the digital hyperextension mechanism and each digit has a pair. A muscle group that is only visible where it is exaggerated."
         }
       ],
       "homology": {
@@ -8866,7 +9466,8 @@
       "sources": [
         "abdala-diogo-2010",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
@@ -9390,6 +9991,56 @@
               "nerve": "ulnar-deep"
             }
           ]
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "source",
+          "name": "M. abductor digiti quinti",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Superficial portion"
+            },
+            {
+              "name": "Dorsal portion"
+            },
+            {
+              "name": "Abductor of the fifth metacarpal",
+              "membership": "disputed",
+              "sources": [
+                "russell-bauer-2008"
+              ]
+            }
+          ],
+          "sources": [
+            "russell-bauer-2008"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "subcarpal-ligament-transverse"
+              },
+              {
+                "element": "flexor-tendons"
+              },
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "ventral"
+              },
+              {
+                "element": "metacarpals",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). The superficial portion arises from the flexor carpi ulnaris tendon and the annular ligament and inserts fleshily on the ventral tongue of the first phalanx of digit V; the dorsal portion arises by two heads from the pisiform, the superficial of which sends a tendon that partially perforates the superficial portion. **The pisiform origin is the one that matters comparatively** — it is the same origin Burch (2014) reconstructs for *Tawa* and the one birds relocated to a neomorphic pseudoulnare, which is why he could only close the archosaur bracket after finding the muscle in *Struthio* himself.\n\nThe third part is a separate small belly Russell & Bauer call the abductor of the fifth metacarpal: it shares the pisiform origin and inserts on the proximolateral ventral aspect of metacarpal V. They map it, with the interosseus ventralis of digit I, onto what Haines (1950) called the Mm. contrahentes — which is why it is a disputed part here and why the `contrahentes-digitorum` row for this animal is uncertain."
         }
       ],
       "homology": {
@@ -9406,7 +10057,8 @@
         "abdala-diogo-2010",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "russell-bauer-2008"
       ],
       "nerves": [
         {
