@@ -1755,8 +1755,23 @@
       "partOf": "humerus",
       "correlate": true,
       "presence": {
-        "default": "yes"
-      }
+        "default": "yes",
+        "note": "The avian **tuberculum dorsale** is this tubercle; it is deliberately NOT a separate element, for the reason set out on `lesser-tubercle`. Matsuoka & Hasegawa (2007) put the supracoracoideus insertion on its caudal surface, the deltoideus minor on its dorsal slope, and the posterior branch of deltoideus major in the depression between it and the humeral head.",
+        "sources": [
+          "matsuoka-hasegawa-2007"
+        ]
+      },
+      "synonyms": [
+        "tuberculum dorsale (Aves)"
+      ],
+      "taxonNames": [
+        {
+          "taxa": [
+            "aves"
+          ],
+          "name": "Tuberculum dorsale"
+        }
+      ]
     },
     {
       "id": "horizontal-septum",
@@ -2265,13 +2280,15 @@
       "correlate": true,
       "presence": {
         "default": "yes",
-        "note": "The theropod literature calls this the **internal tuberosity**, and Burch (2014) lands four attachments on it in *Tawa*: the shared subscapularis + subcoracoideus insertion tendon, the scapulohumeralis posterior insertion on its posterior surface, and the humeral head of biceps brachii arising from an oval striated depression on its anterior surface. Three muscles on three faces of one tuberosity is why the rows carry it as a landmark rather than `humerus[proximal]`.",
+        "note": "The theropod literature calls this the **internal tuberosity**, and Burch (2014) lands four attachments on it in *Tawa*: the shared subscapularis + subcoracoideus insertion tendon, the scapulohumeralis posterior insertion on its posterior surface, and the humeral head of biceps brachii arising from an oval striated depression on its anterior surface. Three muscles on three faces of one tuberosity is why the rows carry it as a landmark rather than `humerus[proximal]`.\n\n**Aves called this `tuberculum-ventrale` on its own element until that was merged in here.** The avian ventral tubercle of the proximal humerus is this tubercle under Baumel's (1979) nomenclature, and a second element for it did exactly what a second element for the stapes did: the swan's coracobrachialis caudalis and the human's subscapularis appeared to insert on different bones. Matsuoka & Hasegawa (2007) land three attachments on it in *Cygnus cygnus* — the coracobrachialis caudalis on the dorsal slope, the subscapularis on the proximal slope, and an accessory head of biceps brachii from a notch on the ventral slope.",
         "sources": [
-          "burch-2014"
+          "burch-2014",
+          "matsuoka-hasegawa-2007"
         ]
       },
       "synonyms": [
-        "internal tuberosity (Theropoda)"
+        "internal tuberosity (Theropoda)",
+        "tuberculum ventrale (Aves)"
       ],
       "taxonNames": [
         {
@@ -2279,6 +2296,12 @@
             "theropoda-stem"
           ],
           "name": "Internal tuberosity"
+        },
+        {
+          "taxa": [
+            "aves"
+          ],
+          "name": "Tuberculum ventrale"
         }
       ]
     },
@@ -4419,25 +4442,6 @@
           "prikryl-etal-2009"
         ],
         "note": "Dorsal prominence of the anuran iliac shaft at the junction with the acetabular portion. It carries the shared origin of the iliofibularis and iliofemoralis on its posterolateral surface and the origin of the glutaeus maximus on its dorsolateral surface — three muscles on one process, which is what makes it worth scoring separately from the ilium."
-      }
-    },
-    {
-      "id": "tuberculum-ventrale",
-      "label": "Tuberculum ventrale",
-      "kind": "bone",
-      "region": "forelimb",
-      "segment": "stylopod",
-      "partOf": "humerus",
-      "correlate": true,
-      "presence": {
-        "default": "no",
-        "present": [
-          "aves"
-        ],
-        "note": "Ventral tubercle of the avian proximal humerus; receives the coracobrachialis caudalis.",
-        "sources": [
-          "matsuoka-hasegawa-2007"
-        ]
       }
     },
     {

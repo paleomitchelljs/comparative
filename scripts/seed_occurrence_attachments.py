@@ -391,11 +391,11 @@ SEED = {
         # Third of the three avian blocks that were seeding Matsuoka & Hasegawa's
         # swan onto Gallus. This one had no comment conceding it.
         "aves": {"species": "gallus-domesticus",
-                 "origin": ["sternum", "coracoid"], "insertion": ["tuberculum-ventrale"],
+                 "origin": ["sternum", "coracoid"], "insertion": ["lesser-tubercle"],
                  "sources": ["abdala-diogo-2010"],
                  "shiftNote": "Gallus domesticus, Abdala & Diogo's avian exemplar."},
         "aves-cygnus": {"species": "cygnus-cygnus", "taxon": "aves",
-                 "origin": ["sternum", "coracoid"], "insertion": ["tuberculum-ventrale"],
+                 "origin": ["sternum", "coracoid"], "insertion": ["lesser-tubercle"],
                  "sources": ["matsuoka-hasegawa-2007"],
                  "shiftNote": "Cygnus cygnus. Coracobrachialis caudalis: one of two deep tongue-like muscles from the sternum, arising from the craniolateral corner of the sternal plane and the ventrolateral coracoid base, inserting on a shallow notch on the tuberculum ventrale of the proximal humerus."},
         "theria": {"origin": ["coracoid-process"], "insertion": ["humerus"], "sources": ["ercoli-etal-2014"],

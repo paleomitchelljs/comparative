@@ -7,7 +7,7 @@ from a hundred-year-old paper, or a bone — and get:
 2. **Insertion**
 3. **Action**
 4. **Innervation**
-5. **Occurrences** across 19 taxa from hagfish to placentals
+5. **Occurrences** across 20 taxa from hagfish to placentals
 6. **Homologies** — what the muscle is called in each group, how well the
    correspondence is supported, and who disagrees
 
@@ -75,7 +75,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-129 muscle records · 922 present occurrences · 269 skeletal elements · 111 sources · 20 operational taxa
+129 muscle records · 940 present occurrences · 268 skeletal elements · 111 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -140,13 +140,14 @@ tagged `unrecorded` when you switch to it.
 
 That default was chosen when the recorded list was much the shorter of the two
 and the shortness was the honest answer. **It is no longer the shorter list.**
-Across the 593 muscle-by-clade cells the dataset scores, 408 (69%) now carry an
-attachment somebody recorded for that clade, against 185 falling back to the
-consensus — Theria 56 of 64, Crocodylia 50 of 58, and Monotremata, Dipnoi and
-the stem tetrapodomorphs fully scored. Testudines at 18 of 52 is now the thinnest
-extant column. The default stands, for the better reason: the fallback is the
-exception rather than the rule, so showing it unmarked would misrepresent a
-minority of cells rather than most of them.
+Across the 667 muscle-by-clade cells the dataset scores, 503 (75%) now carry an
+attachment somebody recorded for that clade, against 164 falling back to the
+consensus — Theria 85 of 92, stem theropods 34 of 38, Crocodylia 52 of 60, and
+Monotremata, Dipnoi and the stem tetrapodomorphs fully scored. The thinnest
+extant columns are the two cyclostomes at 1 of 3 each, then Chondrichthyes at 10
+of 19 and Lepidosauria at 51 of 87. The default stands, for the better reason:
+the fallback is the exception rather than the rule, so showing it unmarked would
+misrepresent a minority of cells rather than most of them.
 
 **Find a muscle by the two bones it spans.** Pick two elements and get every
 muscle touching both, with which end is which. `scapula` + `humerus` under Theria
@@ -303,5 +304,5 @@ Origin/insertion becomes what you *draw*, not what you navigate.
 See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **77%** of 922 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 56%; the thinnest regions are hand, fin, axial. `side` is on 60% of observed rows and `landmark` on 29%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **77%** of 940 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 63%; the thinnest regions are hand, fin, axial. `side` is on 61% of observed rows and `landmark` on 29%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
