@@ -1484,12 +1484,27 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Extensores digitorum breves",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Five, on the dorsum of the hand deep to the extensor digitorum communis, arising more or less in common from the ulnare and adjacent carpal elements and ending in small tendons on the penultimate phalanges; those to the middle three digits pass between the insertion slips of the communis. **Absent in most testudinines**, reduced to the first digit in Pelomedusa, and present for the first three in Geochelone elephantopus — a series that tracks how much independent digital movement the animal has."
         },
         {
           "species": "eublepharis-macularius",
@@ -3198,12 +3213,36 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "lateral"
+              },
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              },
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). The most lateral forearm flexor: from the ulnar (medial) epicondyle onto the outer edge of the ulna, the pisiform and adjacent parts of the ulnare. Subdivided into medial and lateral parts in Chelydra, trionychids and Carettochelys, where the lateral part's tendon crosses the palm to fuse with the flexor tendon sheaths — Ogushi (1913) read that part as a separate flexor digitorum communis longus profundus."
         },
         {
           "species": "eublepharis-macularius",
@@ -4614,13 +4653,28 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Flexor digitorum longus",
           "present": "yes",
           "note": "= flexor primordialis communis + flexor accessorius communis sensu Ribbing (1907).",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Deep to the palmaris longus, arising from most of the ventral surface of the ulna and joining the same flexor plate, so the two share an insertion and Walker follows Haines (1950) in keeping them separate muscles on that basis. The origin spreads onto neighbouring elements in aquatic groups — a radial head in trionychids, an ulnare head in Dermochelys, ulnare and pisiform heads in cheloniids."
         },
         {
           "species": "eublepharis-macularius",
@@ -5112,12 +5166,31 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "'Palmaris longus'",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palmar-aponeurosis"
+              },
+              {
+                "element": "phalanges-manus",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Small origin on the ulnar (medial) epicondyle, then fanning over most of the ventral forearm in three partially distinct bundles that converge on the **flexor plate**, the tough palmar aponeurosis covering carpus and palm. At the level of the metacarpals that plate splits into five flexor tendons running in fibrous sheaths to the base of each terminal phalanx. With the flexor digitorum longus it is one of only two flexors acting on the terminal segment of a digit. The origin spreads onto the humeral shaft in aquatic turtles, reaching nearly the whole humerus in Dermochelys."
         },
         {
           "species": "timon-lepidus",
@@ -5904,12 +5977,28 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Flexores breves superficiales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palmar-aponeurosis",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Arises from the ventral surface of the flexor plate — **a muscle whose whole origin is another muscle's insertion**, which is why the plate is only visible at its proximal border in a superficial dissection. It breaks into eight slips with the flexor tendons emerging between them, onto the sides of the proximal phalanx of each digit and the flexor tendon sheaths: two slips to each of the middle three digits, one each to the first and fifth. Ribbing (1938) treats it as five distinct muscles; Walker keeps it single because in turtles the parts separate only at their insertions."
         },
         {
           "species": "eublepharis-macularius",
@@ -7233,12 +7322,30 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Dorsometacarpales",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              },
+              {
+                "element": "metacarpals"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-manus"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). His Mm. interossei dorsales: from the distal carpals and metacarpals, deep to the extensores digitorum breves, running distally along the top and side of each digit onto the individual phalanges. Unlike the breves they stay typical even where the breves are reduced — they are present and normal in Pelomedusa, which has lost all but one of the breves."
         },
         {
           "species": "timon-lepidus",

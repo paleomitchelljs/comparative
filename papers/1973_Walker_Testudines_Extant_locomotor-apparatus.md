@@ -61,9 +61,27 @@ unscored clades are unrecorded rather than absent.
 **Pectoral:** `pectoralis`, `deltoideus-scapularis`, `teres-major`.
 **Arm:** `triceps-brachii`, `coracobrachialis`, `biceps-brachii`, `brachialis`.
 **Forearm:** `extensor-digitorum`, `extensor-antebrachii-carpi-ulnaris`,
-`flexor-carpi-radialis`, `pronator-teres`.
+`flexor-carpi-radialis`, `pronator-teres`, `flexor-carpi-ulnaris`, `palmaris-longus`,
+`flexor-digitorum-longus`.
+**Hand:** `flexores-breves-superficiales`, `extensores-digitorum-breves`,
+`dorsometacarpales`.
 
-Testudines 35% → 56%, pectoral 78% → 80%, arm 72% → 78%, forearm 69% → 71%.
+Testudines 35% → 67%, pectoral 78% → 80%, arm 72% → 78%, forearm 69% → 73%,
+hand 54% → 58%.
+
+**The flexor plate is the hinge of the whole flexor side.** The palmaris longus and
+flexor digitorum longus both end on it; the flexor brevis superficialis then *arises*
+from its ventral surface — a muscle whose entire origin is another muscle's
+insertion, which is why the plate is visible only at its proximal border in a
+superficial dissection. Walker follows Haines (1950) in keeping palmaris longus and
+flexor digitorum longus as separate muscles sharing an insertion rather than one
+muscle in two parts.
+
+The intrinsic hand muscles also give a clean reduction series against locomotion:
+the extensores digitorum breves are absent in most testudinines, reduced to the
+first digit in *Pelomedusa*, present for the first three in *Geochelone
+elephantopus* — while the dorsal interossei stay typical throughout, including in
+*Pelomedusa*.
 
 **A third naming tradition for the epicondyles.** Walker uses *radial* and *ulnar*
 epicondyle throughout — naming each for the forearm bone its muscles run toward

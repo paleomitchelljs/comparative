@@ -290,5 +290,5 @@ Origin/insertion becomes what you *draw*, not what you navigate.
 See [`docs/GAPS.md`](docs/GAPS.md) for the measured version. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **73%** of 789 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Testudines at 56%; the thinnest regions are hand, axial, fin. `side` is on 67% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **74%** of 789 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 56%; the thinnest regions are axial, hand, fin. `side` is on 66% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->

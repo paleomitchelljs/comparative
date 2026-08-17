@@ -48,13 +48,13 @@ illustrated.
 | thigh | 10 | 45 | 37 | 82% |
 | pectoral | 16 | 166 | 132 | 80% |
 | arm | 5 | 65 | 51 | 78% |
-| forearm | 19 | 167 | 119 | 71% |
+| forearm | 19 | 167 | 122 | 73% |
 | pelvic | 8 | 32 | 22 | 69% |
 | cranial | 16 | 72 | 49 | 68% |
 | fin | 9 | 39 | 23 | 59% |
+| hand | 9 | 72 | 42 | 58% |
 | axial | 15 | 30 | 17 | 57% |
-| hand | 9 | 72 | 39 | 54% |
-| **all** | 129 | 789 | 579 | **73%** |
+| **all** | 129 | 789 | 585 | **74%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -146,8 +146,8 @@ back in for Aves.
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Lepidosauria | 117 | 81 | 69% |
+| Testudines | 52 | 35 | 67% |
 | Aves | 93 | 52 | 56% |
-| Testudines | 52 | 29 | 56% |
 | Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
@@ -355,9 +355,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 263, of which 232 (88%) carry at least one attachment |
-| Observed attachment rows | 1632 |
-| Rows naming a **landmark** | 460 (28%) |
-| Rows naming a **side** | 1089 (67%) |
+| Observed attachment rows | 1648 |
+| Rows naming a **landmark** | 466 (28%) |
+| Rows naming a **side** | 1094 (66%) |
 | Osteological correlates | 119 flagged, 104 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 579 of 789 present occurrences (73%).**
+**Taxon-specific attachments: 585 of 789 present occurrences (74%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -482,13 +482,13 @@ it is one end of most of them.
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
 | pectoral | 16 | 383 |
-| forearm | 19 | 299 |
+| forearm | 19 | 308 |
 | cranial | 16 | 181 |
 | leg | 10 | 141 |
 | arm | 5 | 134 |
 | foot | 12 | 122 |
+| hand | 9 | 109 |
 | thigh | 10 | 104 |
-| hand | 9 | 102 |
 | fin | 9 | 57 |
 | axial | 15 | 56 |
 | pelvic | 8 | 53 |
