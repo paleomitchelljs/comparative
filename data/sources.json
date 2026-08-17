@@ -110,6 +110,18 @@
       "role": "Describes Galahadosuchus jonesi (NHMUK PV R 10002), a saltoposuchid from Cromhall Quarry, and is the first source in this dataset for the stem-crocodylomorph column. Osteological rather than myological, but it identifies the muscle-bearing correlates on the coracoid and femur and compares them directly with Dromicosuchus (NCSM 13733) and Terrestrisuchus, which is what makes the sphenosuchian grade scoreable at all."
     },
     {
+      "key": "borczyk-skawinski-2023",
+      "short": "Borczyk & Skawiński",
+      "authors": "Borczyk B, Skawiński T",
+      "year": 2023,
+      "title": "Variation in the jaw musculature of ratsnakes and their allies (Serpentes: Colubridae)",
+      "journal": "Diversity 15:628",
+      "openAccess": true,
+      "pdf": "2023_Borczyk-Skawinski_Serpentes-Colubridae_Extant_jaw-musculature-variation.pdf",
+      "role": "Colubrid jaw musculature and its variation. Snakes are absent from this dataset as occurrences, and Johnston (2014) — whose folded-sheet model the adductor records rest on — dissected ten snakes and no lizard, so this is the group his primary evidence actually came from.",
+      "notes": null
+    },
+    {
       "key": "boumans-etal-2015",
       "short": "Boumans et al. 2015",
       "authors": "Boumans MLLM, Krings M, Wagner H",
@@ -120,6 +132,17 @@
       "openAccess": true,
       "pdf": null,
       "role": "Nine cervical muscles of a barn owl with origin and insertion tabulated per muscle (their Table 3) across fourteen cervical vertebrae. The avian neck at vertebra-by-vertebra resolution, against an axial column here that carries whole tracts.",
+      "notes": null
+    },
+    {
+      "key": "burch-2014",
+      "short": "Burch",
+      "authors": "Burch SH",
+      "year": 2014,
+      "title": "Complete forelimb myology of the basal theropod dinosaur Tawa hallae based on a novel robust muscle reconstruction method",
+      "journal": "Journal of Anatomy 225:271-297",
+      "pdf": "2014_Burch_Theropoda_Triassic_Tawa-forelimb-myology.pdf",
+      "role": "Complete forelimb myology of a Late Triassic basal theropod, reconstructed on the extant phylogenetic bracket with explicit Level I/II/III inference — the same confidence vocabulary Molnar & Diogo (2021) supply and Molnar et al. (2018) use on the tetrapod stem. 293 attachment statements in 27 pages. **BLOCKED ON A TAXONOMY DECISION**: there is no dinosaur operational taxon, so the avian stem currently runs straight from Crocodylia to Aves. Scoring this needs a `theropoda-stem` taxon added to taxa.json, which changes the topology the Fitch optimisation, the phylogeny view and the attachment-shift reference all read from. It is the single largest phylogenetic gap the corpus has.",
       "notes": null
     },
     {
@@ -1076,6 +1099,18 @@
       "notes": "papers/2015_Springer-Johnson_Anguilliformes_Extant_gill-arch-muscles.md"
     },
     {
+      "key": "starry-james-2026",
+      "short": "Starry & James",
+      "authors": "Starry A, James HF",
+      "year": 2026,
+      "title": "Anatomical atlas and three-dimensional musculoskeletal model of the flight apparatus in the southern screamer (Anseriformes: Chauna torquata)",
+      "journal": "Integrative Organismal Biology 8(1):obag038",
+      "openAccess": true,
+      "pdf": "2026_Starry-James_Aves-Anseriformes_Extant_screamer-flight-apparatus-atlas.pdf",
+      "role": "3D atlas and musculoskeletal model of an anseriform flight apparatus. Check before scoring: a musculoskeletal MODEL is a different kind of source from a dissection, and this corpus already carries two (Allen et al. 2021, Hutchinson et al. 2015) whose rows could not be scored for exactly that reason. The atlas half may be scoreable where the model half is not.",
+      "notes": null
+    },
+    {
       "key": "stephenson-etal-2017",
       "short": "Stephenson et al. 2017",
       "authors": "Stephenson A, Adams JW, Vaccarezza M",
@@ -1112,6 +1147,17 @@
       "pdf": "2025_Tomanska-et-al_Squamata-Varanidae_Extant_Komodo-hindlimb.pdf",
       "notes": null,
       "role": "Varanid hindlimb myology. Companion to Kępa et al. (2023) on the thoracic limb and Tomańska et al. (2024) on the tail. Descriptions are functionally framed rather than tabulated, so attachment extraction is partial."
+    },
+    {
+      "key": "vandenberge-1982",
+      "short": "Vanden Berge",
+      "authors": "Vanden Berge JC",
+      "year": 1982,
+      "title": "Notes on the myology of the pelvic limb in kiwi (Apteryx) and in other birds",
+      "journal": "The Auk 99:309-320",
+      "pdf": "1982_VandenBerge_Aves-Apterygiformes_Extant_pelvic-limb-myology.pdf",
+      "role": "Avian pelvic limb myology with a ratite at its centre. Aves is the largest open clade gap at ~40 unscored rows and its scored rows skew neognath, so a kiwi is both new data and a corrective to the sampling.",
+      "notes": null
     },
     {
       "key": "velez-garcia-etal-2023",
