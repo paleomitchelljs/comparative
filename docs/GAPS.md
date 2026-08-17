@@ -48,13 +48,13 @@ illustrated.
 | thigh | 10 | 45 | 37 | 82% |
 | pectoral | 16 | 166 | 132 | 80% |
 | arm | 5 | 65 | 51 | 78% |
-| forearm | 19 | 167 | 115 | 69% |
+| forearm | 19 | 167 | 119 | 71% |
 | pelvic | 8 | 32 | 22 | 69% |
 | cranial | 16 | 72 | 49 | 68% |
 | fin | 9 | 39 | 23 | 59% |
 | axial | 15 | 30 | 17 | 57% |
 | hand | 9 | 72 | 39 | 54% |
-| **all** | 129 | 789 | 575 | **73%** |
+| **all** | 129 | 789 | 579 | **73%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -147,10 +147,10 @@ back in for Aves.
 | Caudata | 92 | 70 | 76% |
 | Lepidosauria | 117 | 81 | 69% |
 | Aves | 93 | 52 | 56% |
+| Testudines | 52 | 29 | 56% |
 | Anura | 72 | 38 | 53% |
 | Actinopterygii | 14 | 7 | 50% |
 | Synapsida (stem) | 4 | 2 | 50% |
-| Testudines | 52 | 25 | 48% |
 | Chondrichthyes | 23 | 11 | 48% |
 | Myxini | 3 | 1 | 33% |
 | Petromyzontida | 3 | 1 | 33% |
@@ -355,9 +355,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 263, of which 232 (88%) carry at least one attachment |
-| Observed attachment rows | 1621 |
-| Rows naming a **landmark** | 452 (28%) |
-| Rows naming a **side** | 1085 (67%) |
+| Observed attachment rows | 1632 |
+| Rows naming a **landmark** | 460 (28%) |
+| Rows naming a **side** | 1089 (67%) |
 | Osteological correlates | 119 flagged, 104 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 575 of 789 present occurrences (73%).**
+**Taxon-specific attachments: 579 of 789 present occurrences (73%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -482,7 +482,7 @@ it is one end of most of them.
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
 | pectoral | 16 | 383 |
-| forearm | 19 | 288 |
+| forearm | 19 | 299 |
 | cranial | 16 | 181 |
 | leg | 10 | 141 |
 | arm | 5 | 134 |

@@ -60,8 +60,24 @@ unscored clades are unrecorded rather than absent.
 
 **Pectoral:** `pectoralis`, `deltoideus-scapularis`, `teres-major`.
 **Arm:** `triceps-brachii`, `coracobrachialis`, `biceps-brachii`, `brachialis`.
+**Forearm:** `extensor-digitorum`, `extensor-antebrachii-carpi-ulnaris`,
+`flexor-carpi-radialis`, `pronator-teres`.
 
-Testudines 35% → 48%, pectoral 78% → 80%, arm 72% → 78%.
+Testudines 35% → 56%, pectoral 78% → 80%, arm 72% → 78%, forearm 69% → 71%.
+
+**A third naming tradition for the epicondyles.** Walker uses *radial* and *ulnar*
+epicondyle throughout — naming each for the forearm bone its muscles run toward
+rather than for the side of the body it sits on. Added as synonyms. The dataset now
+carries three conventions on those two landmarks: lateral/medial (mammalian
+clinical), ecte-/entepicondyle (palaeontological), radial/ulnar (chelonian). That is
+the concrete reason `taxonNames` would be wrong there and a synonym list is right.
+
+Two things worth flagging from the forearm. The **extensor carpi ulnaris arises
+from the radial epicondyle** despite acting on the ulnar side, crossing the forearm
+to reach the ulna, ulnare and pisiform — it is the only extensor on the ulnar side
+in *Pseudemys*. And the **flexor carpi radialis is absent in *Trionyx spiniferus***,
+where Walker finds a pronator teres and no flexor carpi radialis, against Ogushi
+(1913) and George & Shah (1957) reporting both in other trionychids.
 
 Two divisions came with the arm pass. The **coracobrachialis** splits into magnus
 and brevis, the brevis inserting into the intertubercular fossa. The **biceps** is

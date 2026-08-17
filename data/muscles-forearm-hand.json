@@ -546,12 +546,36 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Extensor antebrachii et carpi ulnaris",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "dorsal"
+              },
+              {
+                "element": "carpals",
+                "landmark": "ulnare"
+              },
+              {
+                "element": "carpals",
+                "landmark": "pisiform"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Arises from the radial (lateral) epicondyle despite acting on the ulnar side, its fibres crossing to insert along most of the extensor surface of the ulna and onto the ulnare and pisiform. **The only extensor acting on the ulnar side of the forearm in *Pseudemys***, and the triceps insertion partly separates it from the flexor carpi ulnaris on the other face of the same bone."
         },
         {
           "species": "eublepharis-macularius",
@@ -957,12 +981,28 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Extensor digitorum",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "metacarpals",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Narrow origin on the radial (lateral) epicondyle, fanning over the forearm and dorsum of the hand, then dividing into four tongue-like processes that pass between the digits and subdivide into **eight slips** onto the sides of the distal end of each metacarpal — two per digit except digits I and V, which lack a slip on their outer surface. Almost vestigial in sea turtles, where the distal flipper has lost independent action."
         },
         {
           "species": "eublepharis-macularius",
@@ -3563,13 +3603,34 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "note": "In turtles the pronator teres and flexor carpi radialis are usually distinct muscles, though Holmes designated the pronator teres a 'head of the flexor carpi radialis'.",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpals",
+                "landmark": "radiale"
+              },
+              {
+                "element": "carpals",
+                "landmark": "distal-carpals"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). From the proximal part of the ulnar (medial) epicondyle, passing distally as a narrow band onto part of the radiale-centrale and the first distal carpal. Walker records the insertion of this group ranging from the middle of the radius to the first metacarpal across turtles, and the muscle is **absent in *Trionyx spiniferus***, where he finds a pronator teres and no flexor carpi radialis."
         },
         {
           "species": "eublepharis-macularius",
@@ -3867,12 +3928,28 @@
         },
         {
           "species": "trachemys-scripta",
-          "speciesBasis": "survey",
+          "speciesBasis": "note",
           "name": "Pronator teres",
           "present": "yes",
           "sources": [
-            "abdala-diogo-2010"
-          ]
+            "abdala-diogo-2010",
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Arises from the ulnar (medial) epicondyle deep to the origins of flexor carpi radialis and palmaris longus, and inserts on the distal end of the radius. Reduced to a single muscle with the flexor carpi radialis in some trionychids."
         },
         {
           "species": "timon-lepidus",
