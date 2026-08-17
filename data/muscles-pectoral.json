@@ -280,6 +280,34 @@
             ]
           },
           "attachmentNote": "Galictis cuja. Trapezius, both bellies. Pars cervicalis from the cervical raphe between C3-4 and T1, pars thoracica from the thoracic raphe between T2 and T8, inserting on the distal two-thirds of the cranial margin of the scapular spine and often reaching the metacromion. Every origin is raphe or fascia, not bone — which is why a muscle this large leaves so little for a fossil to record."
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Trapezius",
+          "present": "inferred",
+          "action": "Rotates the scapular blade, probably assisting protraction of the forelimb.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cervical-fascia"
+              },
+              {
+                "element": "thoracolumbar-fascia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "acromion"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Reconstructed with no osteological correlate of its own** — the trapezius follows the levator scapulae here, and only that. Neither muscle is present in birds, so both rest on a single argument: if they were lost with the reorientation of the scapular blade into the avian subhorizontal position, they can be restored in theropods that never had that orientation. The levator scapulae at least has a scar in ceratosaurs, tetanurans and tyrannosaurids to bracket back from; the trapezius has nothing, and is reconstructed because the levator scapulae was. Origin from the median cervical and thoracodorsal fascia as in crocodylians and lepidosaurs (Meers 2003; Russell & Bauer 2008). The insertion is scored on the acromion because in crocodylians it intermingles with the levator scapulae insertion; Burch restricts the trapezius to the proximal part of that shared site."
         }
       ],
       "homology": {
@@ -299,7 +327,8 @@
         "naumann-etal-2017",
         "sefton-etal-2016",
         "walthall-ashley-ross-2006",
-        "ziermann-etal-2014"
+        "ziermann-etal-2014",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -686,6 +715,48 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Serratus superficialis and profundus",
+          "present": "inferred",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Serratus superficialis"
+            },
+            {
+              "name": "Serratus profundus"
+            }
+          ],
+          "action": "Superficialis retracts and depresses the scapula; profundus protracts it.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cervical-ribs",
+                "side": "lateral"
+              },
+              {
+                "element": "true-ribs",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              },
+              {
+                "element": "scapula",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Presence is unequivocal for both divisions and the origins are equivocal for both** — no osteological scars mark them, so the rib rows are conservative reconstructions from the shared crocodylian and avian condition rather than observations. Superficialis: lateral surfaces of the posteriormost cervical and anteriormost two to three dorsal ribs; profundus: the anteriormost dorsal ribs close to their articulation with the vertebrae. The insertions separate the two — superficialis along the posteroventral edge of the distal two-thirds of the scapular blade, profundus on the medial surface of its distal half to third. Jasinoski et al. (2006) split the superficialis insertion into a cranial portion on a tubercle, following a scar found in coelurosaurs including *Ingenia*; that scar is absent in *Tawa*, *Coelophysis*, *Herrerasaurus* and *Sanjuansaurus*, and Burch reads its absence as the retention of one undifferentiated elongate insertion. A negative correlate doing real work."
         }
       ],
       "homology": {
@@ -703,7 +774,8 @@
         "abdala-diogo-2010",
         "gambaryan-etal-2015",
         "ercoli-etal-2014",
-        "mckitrick-1991"
+        "mckitrick-1991",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -1055,6 +1127,39 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "'Rhomboideus'",
+          "present": "inferred",
+          "division": "single",
+          "action": "Protracts the scapula.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cervical-fascia"
+              },
+              {
+                "element": "cervical-vertebrae",
+                "side": "dorsal"
+              },
+              {
+                "element": "thoracic-vertebrae",
+                "landmark": "thoracic-neural-spines"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Scored `division: single` on purpose**: the profundus division is found only in birds, and Jasinoski et al. (2006) reconstruct it in dromaeosaurids from the subhorizontal scapular blade of that clade. Ancestral theropods held the blade more sharply angled (Senter 2006), so with no other osteological evidence Burch does not reconstruct a profundus division in *Tawa*. Both attachments then follow from blade orientation rather than from bone: *Tawa*'s scapula sat somewhere between the avian subhorizontal and the crocodylian subvertical, so the origin is placed intermediately on both the dorsal cervico-thoracic fascia and the neural spines of the posteriormost cervicals and anteriormost dorsals, and the insertion on the anterior half of the distalmost medial blade rather than along the anterior edge as Jasinoski et al. have it in dromaeosaurids."
         }
       ],
       "homology": {
@@ -1070,7 +1175,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "mckitrick-1991"
+        "mckitrick-1991",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -1447,6 +1553,30 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Levator scapulae",
+          "present": "inferred",
+          "action": "Rotates the scapular blade; laterally flexes the neck.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cervical-ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **The bracket runs the wrong way and the scar is in the wrong taxa.** This muscle is absent in birds, so one half of the extant bracket votes against it; Jasinoski et al. (2006) did not reconstruct it in dromaeosaurids. What restores it is an elongate sulcus or rugosity along the anterodorsal edge of the scapular blade in ceratosaurs, tetanurans and tyrannosaurids such as *Tarbosaurus* — and that scar is not known from any early theropod, *Tawa* included. It brackets *Tawa* from above rather than evidencing it. The origin from the cranial cervical ribs is equivocal and follows crocodylians (Meers 2003); the insertion is the anterior edge of the blade posterior to the acromial expansion, shared with the trapezius."
         }
       ],
       "homology": {
@@ -1465,7 +1595,8 @@
       "sources": [
         "abdala-diogo-2010",
         "sefton-etal-2016",
-        "gambaryan-etal-2015"
+        "gambaryan-etal-2015",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -2707,6 +2838,32 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Pectoralis",
+          "present": "inferred",
+          "action": "Adducts and protracts the humerus.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is unequivocal and *Tawa* has the scar** — a small oblong depression on the medial surface of the deltopectoral crest near its tip, which dromaeosaurids lack (Jasinoski et al. 2006). The limited area matches crocodylians (Meers 2003); birds extend the insertion over much of the medial crest, and *Tawa* does not. **The origin row is scored on a bone that is not preserved.** No sternal plates are known for basal theropods and they are presumed to have been cartilaginous (Padian 2004), but the ventral sternum is the one area of origin archosaurs and lepidosaurs share, so it is where Burch puts it. Additional origins from the sternal ribs (crocodylian) or the coracoid (*Struthio*) are Level II' and are deliberately not asserted here — though note Burch, unlike Jasinoski et al., declines to *eliminate* a coracoid origin, because his reading of the coracobrachialis longus no longer puts a competing muscle in that spot."
         }
       ],
       "homology": {
@@ -2728,7 +2885,8 @@
         "molnar-etal-2018",
         "schreiweis-1982",
         "sigurdsen-etal-2012",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -2768,7 +2926,8 @@
         "coracohumeralis (Howell 1935, 1936a, 1937b)",
         "pectoralis secundus (Jollie 1962)",
         "supraspinatus + infraspinatus (mammals)",
-        "'infraspinatus' (Diogo & Abdala 2010, for the monotreme muscle Gambaryan et al. 2015 call supracoracoideus)"
+        "'infraspinatus' (Diogo & Abdala 2010, for the monotreme muscle Gambaryan et al. 2015 call supracoracoideus)",
+        "'supracoracoideus accessorius' (Burch 2014) = deltoideus minor (Aves) = supracoracoideus pars scapularis (Dilkes 2000) = coracobrachialis brevis dorsalis (Meers 2003)"
       ],
       "consensus": {
         "origin": "Lateral (external) surface of the coracoid and scapula, anterior/dorsal to the pectoralis origin.",
@@ -3313,6 +3472,55 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Supracoracoideus",
+          "present": "inferred",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Supracoracoideus",
+              "membership": "established"
+            },
+            {
+              "name": "Supracoracoideus accessorius",
+              "membership": "disputed",
+              "sources": [
+                "burch-2014"
+              ]
+            }
+          ],
+          "action": "Protracts and slightly abducts the humerus.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula",
+                "landmark": "subacromial-depression"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "deltopectoral-crest"
+              },
+              {
+                "element": "humerus",
+                "side": "proximal",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). Two things are packed into this row.\n\n**A functional argument breaks a phylogenetic tie.** The insertion is phylogenetically equivocal: crocodylians take it on the tip and adjacent lateral surface of the deltopectoral crest, birds on the posterior surface of the greater tubercle, and Jasinoski et al. (2006) chose the avian site for dromaeosaurids from a rugose depression in *Velociraptor*. Burch rejects it for early theropods on mechanics rather than on parsimony — the avian arrangement works through the triosseal canal, which nonavian theropods do not have, and without it a greater-tubercle insertion would be nearly non-functional. *Tawa* then supplies the positive evidence the argument wanted: a small oblong depression on the lateral surface of the deltopectoral crest immediately adjacent to its tip.\n\n**The second part is Burch's own homology hypothesis.** He derives the avian Deltoideus minor from the supracoracoideus mass rather than the deltoid group, following Sullivan (1962) on development and topology against the innervation, and names the result Supracoracoideus accessorius — the same muscle Dilkes (2000) called Supracoracoideus pars scapularis and Meers (2003) removed from the complex entirely as Coracobrachialis brevis dorsalis. It is scored here as a disputed part rather than its own record. Its origin is the subacromial depression, shared with the supracoracoideus; its insertion is the second deltopectoral-crest row, on the proximal edge between the greater tubercle and the tip. Both are unequivocal *given* the homology, which is exactly the part that is not."
         }
       ],
       "homology": {
@@ -3335,7 +3543,8 @@
         "molnar-diogo-2021",
         "molnar-etal-2018",
         "schreiweis-1982",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -3830,6 +4039,31 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Deltoideus scapularis",
+          "present": "inferred",
+          "action": "Abducts and retracts the humerus.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Reconstructed in the primitive state against the avian one, and the argument is about what the supracoracoideus was doing.** In birds the origin has shifted proximally onto the acromion and the insertion distally over the lateral deltopectoral crest, because the clavicularis homolog has moved to the carpus and the scapularis takes over its role — abduction then passing to a modified supracoracoideus. None of that had happened in basal theropods, where the clavicularis keeps its primitive attachments and the supracoracoideus is not modified for abduction, so a proximal avian-style origin is unlikely; the broad, distally flaring scapula also offers the area for the crocodylian-style one. Insertion in a small area on the posterior surface of the proximal humerus just distal to the greater tubercle, where *Tawa* has a small oval depression containing striations."
         }
       ],
       "homology": {
@@ -3849,7 +4083,8 @@
         "molnar-diogo-2021",
         "molnar-etal-2018",
         "sigurdsen-etal-2012",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -4396,6 +4631,36 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Deltoideus clavicularis",
+          "present": "inferred",
+          "action": "Abducts and slightly protracts the humerus.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "anterior",
+                "landmark": "acromion"
+              },
+              {
+                "element": "furcula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). The avian homolog is Propatagialis, on Sullivan (1962) and Howell (1937) for its development out of the deltoid group. Burch rejects two rival homologies in passing: Diogo & Abdala's (2010) equation of Deltoideus clavicularis with the avian Deltoideus minor (which he assigns to the supracoracoideus mass — see supracoracoideus), and Meers's (2003) equation of Propatagialis with the crocodylian Humeroradialis, for which he finds no evidence beyond a shared deltoid derivation and which fails on both attachments.\n\n**The furcula row is scored on a bone not preserved in this animal.** Birds take part of this origin from the furcula and lepidosaurs from the clavicle, which implies independent loss in modern crocodylians; furculae are known for many theropods including *Coelophysis*, so Burch extends the origin onto a hypothetical furcula in *Tawa*. The acromial row is firmer: the origin is nearly linear along the anterodorsal edge of the acromion process in every extant taxon Burch studied, with no extension onto the lateral scapula below it — which is where Jasinoski et al. (2006) put it, in the subacromial depression. Insertion broadly on the lateral surface of the deltopectoral crest, posterior to the supracoracoideus musculature, with a low ridge in *Tawa* marking its posterior limit — the same ridge that gives the lateral head of triceps its origin."
         }
       ],
       "homology": {
@@ -4414,7 +4679,8 @@
         "molnar-diogo-2021",
         "molnar-etal-2018",
         "sigurdsen-etal-2012",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -4670,6 +4936,31 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Scapulohumeralis anterior",
+          "present": "inferred",
+          "action": "Retracts the humerus.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Both bracketing taxa in this dataset have lost it.** The muscle is absent in extant crocodylians and in ratites, and is reconstructed from its presence in other birds including tinamous and in lepidosaurs — so the archosaur bracket that makes the rest of this column unusually good is the one thing that does not support this row. Of the two lepidosaur parts, only the short-fibred one is reconstructed; the long-fibred part is absent in chameleons in association with increased humeral mobility, which Burch takes to apply to theropods too. The origin is a weak fossa on the posteroventral scapular blade dorsal to the triceps scapularis insertion — present in *Herrerasaurus* (PVSJ 53) and *Sanjuansaurus* (PVSJ 605), not in *Tawa*, and not the small oval rugosity Jasinoski et al. (2006) used in dromaeosaurids, which no early theropod has. **The insertion has no osteological correlate at all** in nonavian theropods — birds mark it with a pneumatic fossa — and is positioned by topology alone, just distal and lateral to the scapulohumeralis posterior insertion and medial to the ridge running down the posterior side of the proximal humerus."
         }
       ],
       "homology": {
@@ -4683,7 +4974,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -4855,6 +5147,36 @@
           "sources": [
             "schreiweis-1982"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Scapulohumeralis posterior",
+          "present": "inferred",
+          "action": "Retracts the humerus.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "posterior",
+                "landmark": "lesser-tubercle"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). The lateral origin — the posteroventral part of the lateral surface of the scapular blade — is shared by crocodylians and birds, and *Struthio* restricts it to a narrow strip near the glenoid that closely matches the crocodylian condition. **The medial row is the equivocal one, and it is also the fossa another worker gave to another muscle.** In crocodylians the origin wraps around the posteroventral edge onto the area ventral to the medial scapular ridge; *Tawa* has a similarly small area there, so Burch extends the origin onto it. Jasinoski et al. (2006) read that same ventral fossa as the subscapularis origin — see the subcoracoscapularis row, which records the disagreement from the other side. Insertion on the posterior surface of the internal tuberosity, restricted as in birds rather than extensive as in some crocodylians, with an oval depression there in *Tawa* to mark it."
         }
       ],
       "homology": {
@@ -4866,7 +5188,8 @@
         ]
       },
       "sources": [
-        "abdala-diogo-2010"
+        "abdala-diogo-2010",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -5374,9 +5697,18 @@
         {
           "species": "tawa-hallae",
           "speciesBasis": "source",
-          "name": "Subscapularis",
+          "name": "Subscapularis and subcoracoideus",
           "present": "inferred",
-          "action": "Adducts and retracts the humerus.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Subscapularis"
+            },
+            {
+              "name": "Subcoracoideus"
+            }
+          ],
+          "action": "Subscapularis retracts and rotates the humerus; subcoracoideus adducts and laterally rotates it.",
           "sources": [
             "burch-2014"
           ],
@@ -5385,16 +5717,21 @@
               {
                 "element": "scapula",
                 "side": "medial"
+              },
+              {
+                "element": "coracoid",
+                "side": "medial"
               }
             ],
             "insertion": [
               {
                 "element": "humerus",
-                "side": "proximal"
+                "side": "medial",
+                "landmark": "lesser-tubercle"
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **The origin is the one Burch calls unequivocal** — the medial surface of the scapular blade. Tawa has a distinct ridge there running along the proximal half to two-thirds of the scapula, and the reading of that ridge is a live disagreement worth recording: Jasinoski et al. (2006) took a similar ridge in *Meleagris* as the dorsal edge of the subscapularis origin and inferred an origin ventral to it in dromaeosaurids, but Burch notes the same ridge is present in crocodylians, where the ventral fossa it creates belongs to something else. A correlate that two workers read as bounding different muscles."
+          "attachmentNote": "Tawa hallae, Burch (2014). **The origin is the one Burch calls unequivocal** — the medial surface of the scapular blade. *Tawa* has a distinct ridge there running along the proximal half to two-thirds of the scapula, and the reading of that ridge is a live disagreement worth recording: Jasinoski et al. (2006) took a similar ridge in *Meleagris* as the dorsal edge of the subscapularis origin and inferred an origin ventral to it in dromaeosaurids, but Burch notes the same ridge is present in crocodylians, where the ventral fossa it creates belongs to the scapulohumeralis posterior instead. A correlate that two workers read as bounding different muscles. In *Tawa* the ridge is ventrally shifted and meets the posteroventral edge less than half-way along the blade, leaving so little area below it that Burch puts this typically large muscle dorsally.\n\n**Subcoracoideus is scored as a second part of the same group.** It is not an independent muscle in crocodylians, where it is fused to subscapularis, but birds and lepidosaurs give it a separate insertion, so it can be reconstructed as distinct in theropods. Its origin is unknown in extent and is placed, following Jasinoski et al. (2006), as a small area covering the coracoid foramen. Both parts share one insertion tendon on the internal tuberosity — which is why the two make one row here and not two."
         }
       ],
       "homology": {
@@ -5412,7 +5749,8 @@
         "ercoli-etal-2014",
         "molnar-diogo-2021",
         "molnar-etal-2018",
-        "sigurdsen-etal-2012"
+        "sigurdsen-etal-2012",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -6382,7 +6720,8 @@
         "molnar-etal-2018",
         "schreiweis-1982",
         "sigurdsen-etal-2012",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -7040,6 +7379,60 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Triceps brachii",
+          "present": "inferred",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Caput scapulare"
+            },
+            {
+              "name": "Caput mediale"
+            },
+            {
+              "name": "Caput laterale",
+              "membership": "disputed",
+              "sources": [
+                "burch-2014"
+              ]
+            }
+          ],
+          "action": "Principal extensor of the antebrachium; contributes to humeral extension.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              },
+              {
+                "element": "humerus",
+                "side": "posterior"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "posterior",
+                "landmark": "olecranon"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **The muscle is unambiguous; the number of heads is not.** Birds and crocodylians share the scapular and medial heads, birds have reduced the coracoid head to a vestige and lost the lateral head entirely. Three heads are scored here and the coracoid head is not — it may already have been vestigial or absent in basal theropods, on the chameleon parallel where its loss goes with increased humeral mobility (Jasinoski et al. 2006).\n\nCaput scapulare: a small tendinous area just posterodorsal to the scapular lip of the glenoid, lightly striated in *Tawa* though without the distinct tubercle other theropods develop. Caput mediale: a wide fleshy origin over the posteromedial humeral shaft, bifid proximally around the scapulohumeralis insertion, with no scars anywhere in theropods. **Caput laterale is the contested head** — Jasinoski et al. (2006) declined to reconstruct it in dromaeosaurids for want of the crocodylian lateral triceps ridge, but Burch identifies a ridge in that position in many theropods including *Tawa*, the same one bounding the deltoideus clavicularis insertion posteriorly, and reads it as this head's linear origin. All three converge on one tendon; the *Tawa* olecranon is short but carries faint striations on its posterior surface."
         }
       ],
       "homology": {
@@ -7060,7 +7453,8 @@
         "molnar-diogo-2021",
         "molnar-etal-2018",
         "sigurdsen-etal-2012",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -7508,6 +7902,40 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Brachialis",
+          "present": "inferred",
+          "action": "Flexes the forearm.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "distal",
+                "landmark": "deltopectoral-crest"
+              },
+              {
+                "element": "humerus",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **An absent feature is the evidence here.** In all birds the origin is the Fossa musculus brachialis, an impression on the cranial surface of the distal humerus just proximal to the condyles; in crocodylians, lepidosaurs and turtles it is an elongate origin from the distal deltopectoral crest running along much of the anterolateral shaft. The anterior intercondylar depression of many theropods may record the avian distal migration, but it is absent or poorly developed in *Tawa* and *Herrerasaurus*, so the proximal origin is retained. Langer et al. (2007) read that depression the other way and reconstruct a distal origin; Burch notes the proximal placement also gives the longer moment arm. Insertion in common with biceps on the proximal radius and ulna as in crocodylians, rather than restricted to the ulna as in birds — there is no anterior ulnar depression (Impressio brachialis) in theropods to indicate otherwise."
         }
       ],
       "homology": {
@@ -7526,7 +7954,8 @@
         "klinkhamer-etal-2017",
         "mckitrick-1991",
         "molnar-etal-2018",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -7971,6 +8400,53 @@
           "sources": [
             "gambaryan-etal-2015"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Biceps brachii",
+          "present": "inferred",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Coracoid head"
+            },
+            {
+              "name": "Humeral head",
+              "membership": "disputed",
+              "sources": [
+                "burch-2014"
+              ]
+            }
+          ],
+          "action": "Flexes the antebrachium.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "lesser-tubercle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). The coracoid head is unequivocal, but **its site is fixed by negation**: the tendinous origin sits on a coracoid tubercle in crocodylians and birds, and early theropods such as *Coelophysis* and *Syntarsus* have no prominent or even distinct tubercle, so Burch places it anterior to the glenoid and just dorsal to the subglenoid fossa — where the tubercle would be. Supporting evidence comes from the coracohumeral/acrocoracohumeral ligament, which attaches very near this origin in both extant clades (Baier et al. 2007).\n\n**The humeral head is scored disputed.** Only neognathous birds have one; in reptiles with two heads both arise from the coracoid. What supports it in *Tawa* is not the bracket but an oval striated depression on the anterior surface of the internal tuberosity, in the position the avian humeral head occupies. The ulnar insertion is likewise not crocodylian — crocodylians are usually described with a radial insertion only (though Reese 1915 reports a secondary ulnar attachment) — and comes from the lepidosaur outgroup, with a slight bulge on the anterior edge of *Tawa*'s ulna just distal to the articular surface as the correlate."
         }
       ],
       "homology": {
@@ -7988,7 +8464,8 @@
         "godoy-etal-2016",
         "klinkhamer-etal-2017",
         "mckitrick-1991",
-        "sigurdsen-etal-2012"
+        "sigurdsen-etal-2012",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -8519,11 +8996,33 @@
           "species": "tawa-hallae",
           "speciesBasis": "source",
           "name": "Coracobrachialis",
-          "present": "uncertain",
+          "present": "inferred",
+          "division": "single",
+          "action": "Protracts the humerus.",
           "sources": [
             "burch-2014"
           ],
-          "note": "Tawa hallae. Scored uncertain and given no attachment rows on purpose. Burch makes Coracobrachialis longus in theropods a **Level II' inference** — the weakest category he uses — because the muscle he would bracket it against is not homologous across the bracket: the Coracobrachialis longus of lepidosaurs belongs to the ventral mass with biceps and supracoracoideus, while the Coracobrachialis posterior of neognathous birds is a novel muscle of the dorsal mass. The bracket fails on homology rather than on preservation, which no amount of better material would fix."
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral",
+                "landmark": "subglenoid-fossa"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "medial",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Both ends of the short coracobrachialis are unequivocal, and the long one is the weakest inference in the paper** — which is why this row is scored present and `single` rather than left uncertain. Origin from the posteroventral portion of the lateral coracoid, as in crocodylians and paleognaths and posterior to the biceps origin in neognaths; in many theropods the posteroventral coracoid process carries a distinct subglenoid fossa, which Jasinoski et al. (2006) identify as the site. Insertion on the anterior humerus distal to the proximal articular surface and onto the medial deltopectoral crest, where *Tawa* has a broad subtriangular depression with a distally pointing apex reaching just past the end of the crest.\n\n**Coracobrachialis longus is deliberately not reconstructed, and the reason is not preservation.** Burch makes it a Level II' inference — his weakest category — because the muscle he would bracket it against is not homologous across the bracket: the Coracobrachialis longus of lepidosaurs belongs to the ventral mass with biceps and supracoracoideus, while the Coracobrachialis posterior of neognathous birds is a derivative of Subcoracoideus and part of the dorsal mass (Sullivan 1962; Romer 1944). He also regards it as simply absent in crocodyliforms: Jasinoski et al. (2006) reconstructed it as unequivocally present on Nicholls & Russell's (1985) report of it in crocodylians, but found it in none of their own dissections, and no other account of crocodylian musculature describes it. No amount of better material would settle a bracket that fails on homology. Langer et al. (2007) do reconstruct it; most workers follow Romer (1944) that its absence is plesiomorphic for archosaurs."
         }
       ],
       "homology": {
@@ -8545,7 +9044,8 @@
         "molnar-diogo-2021",
         "molnar-etal-2018",
         "sigurdsen-etal-2012",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "burch-2014"
       ],
       "nerves": [
         {
@@ -8691,6 +9191,31 @@
           "sources": [
             "abdala-diogo-2010"
           ]
+        },
+        {
+          "species": "tawa-hallae",
+          "speciesBasis": "source",
+          "name": "Humeroradialis",
+          "present": "inferred",
+          "action": "Flexes the antebrachium.",
+          "sources": [
+            "burch-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Tawa hallae, Burch (2014). **Neither correlate is in *Tawa*.** The origin is a rugose tuberosity distal to the deltopectoral crest on the lateral humeral shaft, which Jasinoski et al. (2006) found in maniraptorans and which matches the crocodylian scar; in basal taxa such a scar is rare, and the closest thing is a small rugosity anterior to the latissimus dorsi furrow in one specimen of *Herrerasaurus* (PVSJ 407). The insertion is a small tubercle on the anterior surface of the proximal radius, again seen in *Herrerasaurus* (PVSJ 373) rather than here. The reconstruction also carries the crocodylian ligamentous sling on the proximal radius that redirects the insertion tendon at the elbow (Meers 2003).\n\nThe homology is contested in both directions: sometimes a neomorphic archosaurian muscle (Meers 2003; Diogo & Abdala 2010), sometimes the homolog of the *Sphenodon* muscle of the same name (Romer 1944), whose dual innervation suggests a compound origin. Burch declines Meers's equation with the avian Propatagialis — those two share neither origin nor insertion — and assigns Propatagialis to the deltoideus clavicularis instead. Sullivan (1962) identified a distal part of the developing deltoid lobe in an early chicken embryo as a possible transitory vestige of this muscle, not retained in the adult."
         }
       ],
       "homology": {
@@ -8705,7 +9230,8 @@
       "sources": [
         "abdala-diogo-2010",
         "godoy-etal-2016",
-        "klinkhamer-etal-2017"
+        "klinkhamer-etal-2017",
+        "burch-2014"
       ],
       "nerves": [
         {
