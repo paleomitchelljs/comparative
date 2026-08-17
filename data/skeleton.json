@@ -1281,6 +1281,24 @@
       }
     },
     {
+      "id": "epipubis",
+      "label": "Epipubic cartilage",
+      "kind": "cartilage",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "testudines"
+        ],
+        "sources": [
+          "walker-1973"
+        ],
+        "note": "Anterior cartilaginous extension of the turtle pubis; carries part of the puboischiofemoralis internus origin."
+      }
+    },
+    {
       "id": "extensor-expansion",
       "label": "Extensor expansion",
       "kind": "aponeurosis",
@@ -4233,6 +4251,44 @@
       "correlate": true,
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "trochanter-major",
+      "label": "Trochanter major",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "testudines"
+        ],
+        "sources": [
+          "walker-1973"
+        ],
+        "note": "Takes the iliofemoralis insertion in *Pseudemys*. Named on Walker's usage for turtles; not equated here with the mammalian greater trochanter, which is a separate question this dataset has not settled."
+      }
+    },
+    {
+      "id": "trochanter-minor",
+      "label": "Trochanter minor",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "testudines"
+        ],
+        "sources": [
+          "walker-1973"
+        ],
+        "note": "Takes part of the puboischiofemoralis internus insertion in *Pseudemys*."
       }
     },
     {

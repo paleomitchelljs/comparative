@@ -235,6 +235,57 @@
             ]
           },
           "attachmentNote": "Iliopsoas: the psoas major head from the ventrolateral bodies and transverse-process bases of the last two or three lumbar vertebrae, the iliacus head from the arcuate line and ventral margin of the ilium, the two fusing before a common insertion on the lesser trochanter and secondarily the femoral neck. The sartorius, which this record's Theria occurrence also carries, runs instead from the iliac wing to the patella and the medial cnemial crest, and its rows are not merged in here."
+        },
+        {
+          "species": "trachemys-scripta",
+          "speciesBasis": "note",
+          "name": "Puboischiofemoralis internus",
+          "present": "yes",
+          "action": "Protracts the femur; the posterodorsal part also abducts the leg.",
+          "sources": [
+            "walker-1973"
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Anteroventral part",
+              "note": "Gadow and Kriegler's equivalent of part I in lizards. From most of the dorsal pubis and the epipubic cartilage, interdigitating across the midline with its counterpart."
+            },
+            {
+              "name": "Posterodorsal part",
+              "note": "Homologous with part III of lizards. From most of the medial ilium, the underside of the first sacral rib and vertebra, and two presacral vertebrae."
+            }
+          ],
+          "divisionNote": "Two parts often treated as separate muscles. Both converge and unite anterior to the acetabulum before a common insertion, so the division is at the origin only.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "pubis",
+                "side": "dorsal"
+              },
+              {
+                "element": "epipubis"
+              },
+              {
+                "element": "ilium",
+                "side": "medial"
+              },
+              {
+                "element": "sacral-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "dorsal"
+              },
+              {
+                "element": "femur",
+                "landmark": "trochanter-minor"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta — Walker (1973) writes *Pseudemys scripta*. **The morphological dorsal surface of the turtle femur faces anteriorly**, which is why a muscle inserting dorsally acts as a protractor; the row records the surface and the note records what that means. In pleurodires, where the ventral girdle is reduced and fused to the shell, much of this origin has spread onto the plastron anterior to the pubis — the same shell-as-attachment pattern as the forelimb."
         }
       ],
       "homology": {
@@ -822,6 +873,38 @@
               "motion": "rotation-medial"
             }
           ]
+        },
+        {
+          "species": "trachemys-scripta",
+          "speciesBasis": "note",
+          "name": "Iliofemoralis",
+          "present": "yes",
+          "action": "Abducts and protracts the femur.",
+          "sources": [
+            "walker-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              },
+              {
+                "element": "sacral-vertebrae"
+              },
+              {
+                "element": "carapace"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "dorsal",
+                "landmark": "trochanter-major"
+              }
+            ]
+          },
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Covers most of the dorsolateral pelvis lateral and posterior to the posterodorsal head of the puboischiofemoralis internus. Extensive origin from the first sacral and one or two presacral vertebrae, **the adjacent carapace**, and most of the lateral surface and anterior border of the ilium, converging onto the dorsal surface of the trochanter major. Most turtles resemble *Pseudemys* in taking some fibres from the vertebrae as well as the ilium."
         }
       ],
       "homology": {

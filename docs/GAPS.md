@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 789 present occurrences · 263 skeletal elements · 106 sources · 19 operational taxa
+129 muscle records · 791 present occurrences · 266 skeletal elements · 106 sources · 19 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -49,12 +49,12 @@ illustrated.
 | pectoral | 16 | 166 | 132 | 80% |
 | arm | 5 | 65 | 51 | 78% |
 | forearm | 19 | 167 | 122 | 73% |
+| pelvic | 8 | 34 | 24 | 71% |
 | cranial | 16 | 72 | 50 | 69% |
-| pelvic | 8 | 32 | 22 | 69% |
 | fin | 9 | 39 | 23 | 59% |
 | hand | 9 | 72 | 42 | 58% |
 | axial | 15 | 30 | 17 | 57% |
-| **all** | 129 | 789 | 586 | **74%** |
+| **all** | 129 | 791 | 588 | **74%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -145,7 +145,7 @@ back in for Aves.
 | Crocodylia | 73 | 62 | 85% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
-| Testudines | 52 | 36 | 69% |
+| Testudines | 54 | 38 | 70% |
 | Lepidosauria | 117 | 81 | 69% |
 | Aves | 93 | 52 | 56% |
 | Anura | 72 | 38 | 53% |
@@ -354,11 +354,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 263, of which 232 (88%) carry at least one attachment |
-| Observed attachment rows | 1655 |
-| Rows naming a **landmark** | 467 (28%) |
-| Rows naming a **side** | 1095 (66%) |
-| Osteological correlates | 119 flagged, 104 carry a muscle |
+| Elements | 266, of which 236 (89%) carry at least one attachment |
+| Observed attachment rows | 1665 |
+| Rows naming a **landmark** | 469 (28%) |
+| Rows naming a **side** | 1100 (66%) |
+| Osteological correlates | 121 flagged, 107 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -430,12 +430,12 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 22 | 66 | 3.0 |
-| hindlimb | 43 | 42 | 1.0 |
-| axial | 34 | 31 | 0.9 |
+| hindlimb | 43 | 44 | 1.0 |
+| axial | 35 | 32 | 0.9 |
 | pectoral | 32 | 29 | 0.9 |
 | forelimb | 52 | 45 | 0.9 |
 | fin | 8 | 5 | 0.6 |
-| pelvic | 28 | 14 | 0.5 |
+| pelvic | 28 | 15 | 0.5 |
 <!-- /counts:parity -->
 
 The pelvis, fin and forelimb are where the skeleton is thinnest relative to the
@@ -461,7 +461,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 586 of 789 present occurrences (74%).**
+**Taxon-specific attachments: 588 of 791 present occurrences (74%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -489,9 +489,9 @@ it is one end of most of them.
 | foot | 12 | 122 |
 | hand | 9 | 109 |
 | thigh | 10 | 104 |
+| pelvic | 8 | 63 |
 | fin | 9 | 57 |
 | axial | 15 | 56 |
-| pelvic | 8 | 53 |
 <!-- /counts:holes -->
 
 No region is at zero. The distribution is flat enough that the limiting factor is
