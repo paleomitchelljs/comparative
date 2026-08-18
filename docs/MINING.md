@@ -114,7 +114,7 @@ https://carlgans.org/wp-content/bor/{VV}/BotR{VV}-page{N}.pdf     # VV zero-padd
 |---:|---:|---|---|---|
 | 4 | 1 | **Walker (1973)**, Locomotor apparatus of Testudines | Turtle limb myology, 100 pp | **acquired**, PDF pages 10–109 |
 | 4 | 2 | **Schumacher (1973)**, Head muscles and hyolaryngeal skeleton of turtles and crocodilians | Turtle + crocodylian cranial | **acquired**, PDF pages 110–240 |
-| 4 | 5 | **Haas (1973)**, Muscles of the jaws in Rhynchocephalia and Squamata | The descriptive source behind the *Ctenosaura* and *Sphenodon* rows | partial, PDF pages ~285–475 |
+| 4 | 5 | **Haas (1973)**, Muscles of the jaws in Rhynchocephalia and Squamata | The descriptive source behind the *Ctenosaura* and *Sphenodon* rows | **Rhynchocephalia acquired**, PDF pages 294–319 + 481–485; Lacertilia and Ophidia (chapter pp. 311–471) not fetched |
 | 11 | 3 | **Gasc (1981)**, Axial musculature | **Named by Cieri** as where the lepidosaur epaxial attachments live | partial, PDF pages ~362–475 |
 | 21 | 1 | **Russell & Bauer (2008)**, Appendicular locomotor apparatus of *Sphenodon* and normal-limbed squamates | Lizard limbs, and the tuatara | **acquired and mined**, PDF pages 197–399 + 409–427 (myology and Appendix B only; offset +5) |
 
@@ -167,11 +167,40 @@ merging, sleep ~1s between requests rather than 0.25s, and resume the partials
 above rather than restarting them. It is a free scholarly archive run by a
 charitable fund; do not hammer it.
 
-**Two hosts are unreachable from this environment.** `archive.org` times out
-entirely and `biodiversitylibrary.org` returns 403. That blocks the pre-1940
-tier — Edgeworth (1935), Gaupp (1896), Francis (1934), Ribbing, Lakjer, Ogushi —
-all of which are confirmed to exist there free and with no known copyright
-restriction. They need fetching from a network that can reach those hosts.
+**Host reachability, retested August 2026 — and it has changed.** `archive.org`
+now answers **200**; it timed out entirely when this file was first written. That
+unblocks the pre-1940 tier in principle. `biodiversitylibrary.org` still returns
+403, and `royalsocietypublishing.org` returns 403 as well.
+
+Searched for the *Sphenodon* primaries on the newly-reachable host:
+
+| work | archive.org | note |
+|---|---|---|
+| Günther (1867), Contribution to the Anatomy of *Hatteria* | **`philtrans07125835`**, PDF + OCR text | Phil. Trans.; one of the primaries Russell & Bauer cite throughout |
+| Osawa (1898), Beiträge zur Anatomie der *Hatteria punctata* | **`archivfrmikros51berl`** — Archiv f. mikr. Anat. **Bd. 51**, the volume it appears in (pp. 481–691) | ~210 pp, German |
+| Bayer (1885), Über die Extremitäten einer jungen *Hatteria* | **`biostor-220474`** | tuatara limbs specifically |
+| **Byerly (1925)**, The myology of *Sphenodon punctatum* | **not found** | Iowa Studies in Natural History vol. XI; the archive holds vols X, XIV, XV but not XI. **This is the one real gap** — it is the dedicated tuatara myology monograph and every limb statement Russell & Bauer make about *Sphenodon* traces back to it or to Miner (1925) |
+
+### The Sphenodon column, and how to fill it
+
+`sphenodon-punctatus` sat in `species.json` with **one row** — the M. anconaeus
+quartus, and that only because Russell & Bauer mention it while describing
+*Iguana*. Three routes were checked.
+
+1. **Haas (1973), acquired.** *Biology of the Reptilia* vol. 4 ch. 5, section II
+   is Rhynchocephalia: 21 pages of jaw muscle description from Haas's own
+   dissections of two specimens, adjudicating between Lakjer, Luther,
+   Poglayen-Neuwall and Frazzetta. It fills the **head**, and it lands squarely on
+   `levator-anguli-oris`, the record this dataset already calls the crux of the
+   lizard–snake problem.
+2. **Russell & Bauer, already on disk.** 114 *Sphenodon* mentions, **80 of them
+   with attachment language**, in the `General discussion:` paragraphs. These are
+   reports of Byerly, Miner, Günther, Osawa, Ribbing and Holmes rather than the
+   authors' own dissections, so rows taken from them must say so — as the
+   anconaeus quartus row does. The cheapest remaining tuatara material in the
+   corpus, and it covers the **limbs**.
+3. **archive.org**, now reachable. Günther (1867) and Osawa (1898) are both
+   there; Byerly (1925) is not.
 
 ### So the worklist is now an acquisition list
 
