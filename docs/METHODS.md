@@ -24,6 +24,23 @@ mammalian head. Where a source contradicts what the dataset already said, the
 source wins and the row is corrected or downgraded, with the disagreement written
 into the note. `docs/GAPS.md` §7 records the audit.
 
+**That rule is narrower than it sounds, and it is worth stating what it does not
+license.** It applies where a row had no observation behind it — a clade
+generalisation wearing a species' name, an attachment inferred from a record's own
+title, a citation standing in for a dissection. In those cases there is nothing to
+preserve and the row is corrected.
+
+It does **not** apply between two sources that each examined an animal. Those
+cannot conflict in the data at all, because they are different rows: one species,
+one source, one observation each. They can only conflict in *interpretation* — how
+to divide a mass, whether two bellies are one muscle, what to call something — and
+that belongs in the note or in `homology.notes`, attributed to whoever said it,
+with both readings left standing. **A row is an observation of one animal by one
+worker; it cannot delete another worker's observation of a different animal.** Haas
+(1973) arguing from *Lanthanotus* that Lakjer's snake muscle is not a distinct
+muscle is that second kind: the argument is recorded, Lakjer is named, and nothing
+is removed.
+
 ## Species, and what a clade is
 
 Every observation is of **one species**. `Caudata` is not something anybody

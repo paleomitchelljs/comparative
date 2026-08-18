@@ -113,8 +113,10 @@ Two of the squamate rows justify the whole section. **Lanthanotus** has no
 temporal arch and an elongate temporal region, so Haas could follow the adductor
 layers in a lizard shaped like a snake; the dorsal fibres Lakjer had called a
 distinct *M. adductor mandibulae externus medialis dorsalis* in snakes turn out to
-belong to the profundus, separated from the medialis by the temporal vein, and
-Lakjer's muscle disappears. **Maticora** shows the compressor glandulae to be a
+belong there to the profundus, separated from the medialis by the temporal vein,
+and Haas concludes Lakjer's muscle is not distinct. That conclusion is recorded on
+the row as Haas's, alongside Lakjer's — it is a disagreement about how to divide
+one mass, not a correction the data applies. **Maticora** shows the compressor glandulae to be a
 single uninterrupted superficialis looping the venom gland, and shows Radovanović
 — who missed the sac — to have misidentified the medialis as an abnormal
 superficialis.

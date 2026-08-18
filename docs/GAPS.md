@@ -200,12 +200,15 @@ five animals carry it: the tuatara, *Agama stellio*, *Varanus varius*,
 Lacertilia and Ophidia yielded ten rows because everything else in them is
 compilation — which is the correct yield, not a disappointing one.
 
-Two of those animals earn their rows outright. **Lanthanotus deletes a muscle from
-the snake literature**: it has no temporal arch and an elongate temporal region, so
-Haas could trace the layers in a lizard built like a snake, and found that the
-dorsal fibres Lakjer had called a distinct M. adductor mandibulae externus medialis
-dorsalis in snakes belong to the profundus, separated from the medialis by the
-temporal vein. **Maticora** shows the compressor glandulae to be one uninterrupted
+Two of those animals earn their rows outright. **Lanthanotus is where two authors
+partition the adductor differently**: it has no temporal arch and an elongate
+temporal region, so Haas could trace the layers in a lizard built like a snake, and
+found that the dorsal fibres Lakjer had called a distinct M. adductor mandibulae
+externus medialis dorsalis in snakes belong there to the profundus, separated from
+the medialis by the temporal vein. He concludes Lakjer's muscle is not distinct.
+**The row records that disagreement and does not act on it** — Haas's observation is
+of *Lanthanotus*, Lakjer's claim was about snakes, and one worker's specimen cannot
+delete another's. **Maticora** shows the compressor glandulae to be one uninterrupted
 adductor mandibulae externus superficialis looping the venom gland — and shows that
 Radovanović, missing the sac, had misidentified the medialis.
 
