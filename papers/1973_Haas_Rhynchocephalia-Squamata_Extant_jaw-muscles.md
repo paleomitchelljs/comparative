@@ -25,9 +25,8 @@ interstitials.
 | 472–476 | V. Synonymies of Muscles Discussed |
 | 477–490 | VI. List of forms studied, acknowledgments, references |
 
-**Page 1 of the local PDF is chapter page 285.** Only the Rhynchocephalia section
-has been mined; Lacertilia and Ophidia are ~160 unmined pages that bear directly
-on the four *Ctenosaura* cranial rows and on the snake records.
+**Page 1 of the local PDF is chapter page 285.** All four descriptive sections are
+now mined.
 
 ## Why this one
 
@@ -95,6 +94,30 @@ ceratomandibularis`** is given as a synonym of the M. geniohyoideus in six
 authors including Osawa, which is a different muscle from the urodele
 ceratomandibularis this dataset holds under that name; the collision is now
 recorded on both records.
+
+**Twenty rows. §VI is the reason there are not more.**
+
+Haas's *List of forms that have been studied* marks his own material `Haas, this
+chapter`, and **exactly five animals carry that mark**: *Sphenodon punctatus*,
+*Agama stellio*, *Varanus varius*, *Lanthanotus borneensis* and a *Maticora* sp.
+from the Field Museum, Chicago. Everything else across 206 pages is compilation,
+however detailed. Four of the five were new to `species.json`.
+
+That check also settles what this chapter cannot do. Against **Ctenosaura
+pectinata** Haas gives Oelrich (1956) and Avery & Tanner (1971), not himself — so
+the four unscored *Ctenosaura* cranial rows are not closed here, and Oelrich
+(1956) remains what they need. `docs/GAPS.md` §7 already records Johnston (2014)
+reading the same primary.
+
+Two of the squamate rows justify the whole section. **Lanthanotus** has no
+temporal arch and an elongate temporal region, so Haas could follow the adductor
+layers in a lizard shaped like a snake; the dorsal fibres Lakjer had called a
+distinct *M. adductor mandibulae externus medialis dorsalis* in snakes turn out to
+belong to the profundus, separated from the medialis by the temporal vein, and
+Lakjer's muscle disappears. **Maticora** shows the compressor glandulae to be a
+single uninterrupted superficialis looping the venom gland, and shows Radovanović
+— who missed the sac — to have misidentified the medialis as an abnormal
+superficialis.
 
 Ten rows, all of `sphenodon-punctatus`: the adductor mandibulae complex and its
 externus, internus and posterior divisions; the levator and retractor anguli

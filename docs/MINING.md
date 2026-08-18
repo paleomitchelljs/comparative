@@ -1,7 +1,7 @@
 # What is left to mine, and how
 
 <!-- counts:unscored -->
-215 present occurrences still have no attachment rows.
+216 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 This file lists the sources that could close them, ranked by whether they will
 actually work.
@@ -187,13 +187,24 @@ Searched for the *Sphenodon* primaries on the newly-reachable host:
 quartus, and that only because Russell & Bauer mention it while describing
 *Iguana*. Three routes were checked.
 
-1. **Haas (1973), acquired in full and mined.** *Biology of the Reptilia* vol. 4
-   ch. 5, all 206 pages, chapter pp. 285–490, verified continuous. Section II is
-   Rhynchocephalia: 21 pages of jaw muscle description from Haas's own dissections
-   of two specimens, adjudicating between Lakjer, Luther, Poglayen-Neuwall and
-   Frazzetta. **Ten rows mined; the tuatara went 1 to 11.** Lacertilia and Ophidia,
-   ~160 pages, are unmined and bear on the four *Ctenosaura* cranial rows and on
-   the snake records.
+1. **Haas (1973), acquired in full and mined throughout.** *Biology of the
+   Reptilia* vol. 4 ch. 5, all 206 pages, chapter pp. 285–490, verified continuous.
+   **Twenty rows: ten Rhynchocephalia, ten from Lacertilia and Ophidia.**
+
+   The scoring rule came from Haas's own §VI, *List of forms that have been
+   studied*, which marks his own material `Haas, this chapter`. **Exactly five
+   animals carry that mark**: *Sphenodon punctatus*, *Agama stellio*, *Varanus
+   varius*, *Lanthanotus borneensis* and a *Maticora* sp. from the Field Museum.
+   Four of those were new to `species.json` and were added. Everything else in 160
+   pages is compilation, however detailed, and is not scored.
+
+   **The check killed the reason this chapter was on the list.** Against
+   *Ctenosaura pectinata* Haas gives Oelrich (1956) and Avery & Tanner (1971) — not
+   himself. So the four unscored *Ctenosaura* cranial rows are **not** closed by
+   this acquisition; the second source in the corpus to describe that animal's jaw
+   muscles is reading the same primary §7 already records Johnston (2014) as
+   reading. **Oelrich (1956) is the acquisition those rows need**, and two
+   independent checks now say so. The finding is written onto the rows themselves.
 2. **Russell & Bauer, already on disk.** 114 *Sphenodon* mentions, **80 of them
    with attachment language**, in the `General discussion:` paragraphs. These are
    reports of Byerly, Miner, Günther, Osawa, Ribbing and Holmes rather than the

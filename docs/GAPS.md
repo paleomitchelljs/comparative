@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 1071 present occurrences · 268 skeletal elements · 115 sources · 20 operational taxa
+129 muscle records · 1080 present occurrences · 268 skeletal elements · 115 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -50,11 +50,11 @@ illustrated.
 | arm | 5 | 87 | 73 | 84% |
 | pelvic | 8 | 51 | 41 | 80% |
 | forearm | 19 | 223 | 178 | 80% |
-| cranial | 16 | 92 | 70 | 76% |
+| cranial | 16 | 101 | 78 | 77% |
 | axial | 15 | 42 | 29 | 69% |
 | hand | 9 | 103 | 64 | 62% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1071 | 856 | **80%** |
+| **all** | 129 | 1080 | 864 | **80%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -144,7 +144,7 @@ back in for Aves.
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
-| Lepidosauria | 248 | 209 | 84% |
+| Lepidosauria | 257 | 217 | 84% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
@@ -192,6 +192,27 @@ own sentence to show it does not fit. He reports that the tibialis posticus does
 fibulo-tibialis inferior entirely, and that the coraco-brachialis is fused to the
 supracoracoideus in some specimens and separate in others with only a nerve
 between them. Those disagreements are in the `attachmentNote`s, not resolved.
+
+**Haas's squamate half added ten rows and four species, and the species list is
+the finding.** His §VI marks his own material `Haas, this chapter`, and exactly
+five animals carry it: the tuatara, *Agama stellio*, *Varanus varius*,
+*Lanthanotus borneensis* and a *Maticora* from the Field Museum. 160 pages of
+Lacertilia and Ophidia yielded ten rows because everything else in them is
+compilation — which is the correct yield, not a disappointing one.
+
+Two of those animals earn their rows outright. **Lanthanotus deletes a muscle from
+the snake literature**: it has no temporal arch and an elongate temporal region, so
+Haas could trace the layers in a lizard built like a snake, and found that the
+dorsal fibres Lakjer had called a distinct M. adductor mandibulae externus medialis
+dorsalis in snakes belong to the profundus, separated from the medialis by the
+temporal vein. **Maticora** shows the compressor glandulae to be one uninterrupted
+adductor mandibulae externus superficialis looping the venom gland — and shows that
+Radovanović, missing the sac, had misidentified the medialis.
+
+**The `levator-anguli-oris` record now holds all three states.** Present and
+argued over in *Sphenodon*, present with a retractor in *Agama*, and flatly absent
+in *Maticora*, where Haas uses the absence as a phylogenetic character for the
+proteroglyph snakes.
 
 **Sphenodon went 1 row to 11, and cranial to 76%.** Haas (1973), *Biology of the
 Reptilia* vol. 4 ch. 5, is the only description of a tuatara in the corpus and the
@@ -489,9 +510,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 268, of which 247 (92%) carry at least one attachment |
-| Observed attachment rows | 2586 |
-| Rows naming a **landmark** | 703 (27%) |
-| Rows naming a **side** | 1555 (60%) |
+| Observed attachment rows | 2629 |
+| Rows naming a **landmark** | 708 (27%) |
+| Rows naming a **side** | 1562 (59%) |
 | Osteological correlates | 122 flagged, 114 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -595,7 +616,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 856 of 1071 present occurrences (80%).**
+**Taxon-specific attachments: 864 of 1080 present occurrences (80%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -617,7 +638,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 562 |
 | forearm | 19 | 464 |
-| cranial | 16 | 311 |
+| cranial | 16 | 354 |
 | arm | 5 | 211 |
 | leg | 10 | 210 |
 | thigh | 10 | 186 |
