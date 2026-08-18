@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 999 present occurrences · 268 skeletal elements · 113 sources · 20 operational taxa
+129 muscle records · 1009 present occurrences · 268 skeletal elements · 115 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -50,11 +50,11 @@ illustrated.
 | arm | 5 | 82 | 68 | 83% |
 | forearm | 19 | 213 | 168 | 79% |
 | pelvic | 8 | 45 | 35 | 78% |
-| cranial | 16 | 82 | 60 | 73% |
+| cranial | 16 | 92 | 70 | 76% |
 | axial | 15 | 42 | 29 | 69% |
 | hand | 9 | 96 | 57 | 59% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 999 | 784 | **78%** |
+| **all** | 129 | 1009 | 794 | **79%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -144,8 +144,8 @@ back in for Aves.
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
+| Lepidosauria | 186 | 147 | 79% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
-| Lepidosauria | 176 | 137 | 78% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
 | Aves | 111 | 70 | 63% |
@@ -163,6 +163,34 @@ every postcranial muscle it describes. Because Caudata is the taxon this dataset
 uses for the plesiomorphic tetrapod condition, the consensus rows that every other
 tetrapod column inherits are now anchored to a scored column rather than to a
 composite. It is also the only taxon whose body wall is scored.
+
+**Sphenodon went 1 row to 11, and cranial to 76%.** Haas (1973), *Biology of the
+Reptilia* vol. 4 ch. 5, is the only description of a tuatara in the corpus and the
+only one written from the author's own dissections — two specimens, Basel and
+London. It fills the head: the adductor mandibulae complex and its three
+divisions, the levator and retractor anguli oris, depressor mandibulae,
+intermandibularis, the sphincter colli group, the constrictor internus dorsalis
+group and the hypobranchial muscles.
+
+**It lands on the record this file's own §3 calls contested.** The
+`levator-anguli-oris` note says the muscle's identification is the crux of the
+lizard–snake problem; Haas's account is a four-way disagreement about whether it
+exists in the tuatara at all — Lakjer missed it, Luther contradicted him while
+editing his paper, Poglayen-Neuwall and Frazzetta found one muscle, Haas found
+two, and in one specimen arguably three. The row records all of that rather than
+picking a winner. The comparative payoff is that in *Sphenodon* the insertion is
+already the lizard one but the origin has not yet moved to the upper temporal
+arch, and the tuatara is the only living animal with two temporal arches whose
+lower arch gives origin to any adductor.
+
+Two rows carry a stated *instability* rather than a state. The protractor
+pterygoidei is present in one of Haas's specimens and absent in the other, as it
+was in Ostrom's; it is scored as a `variable` part, with Haas's suggestion that
+the variation may be ontogenetic — a kinetic juvenile skull keeping the muscle
+and an akinetic adult losing it. And the intermandibularis is split by *nerve*
+rather than by shape, with Poglayen-Neuwall and Byerly disagreeing about which
+part is trigeminal and which facial; both readings are in the note, neither
+chosen.
 
 **Aves is no longer the broad-but-shallow column.** It was 13% with architecture
 data and almost no attachment structure; it is now 63% across ten species.
@@ -431,11 +459,11 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 268, of which 246 (92%) carry at least one attachment |
-| Observed attachment rows | 2331 |
-| Rows naming a **landmark** | 658 (28%) |
-| Rows naming a **side** | 1425 (61%) |
-| Osteological correlates | 122 flagged, 113 carry a muscle |
+| Elements | 268, of which 247 (92%) carry at least one attachment |
+| Observed attachment rows | 2396 |
+| Rows naming a **landmark** | 670 (28%) |
+| Rows naming a **side** | 1441 (60%) |
+| Osteological correlates | 122 flagged, 114 carry a muscle |
 <!-- /counts:skeleton -->
 
 **What was wrong and is now fixed.** An audit found 28 rows whose own
@@ -506,10 +534,10 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 25 | 69 | 2.8 |
+| cranial | 25 | 70 | 2.8 |
 | hindlimb | 43 | 47 | 1.1 |
 | pectoral | 34 | 31 | 0.9 |
-| axial | 36 | 32 | 0.9 |
+| axial | 37 | 32 | 0.9 |
 | forelimb | 54 | 46 | 0.9 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 31 | 16 | 0.5 |
@@ -538,7 +566,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 784 of 999 present occurrences (78%).**
+**Taxon-specific attachments: 794 of 1009 present occurrences (79%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -560,7 +588,7 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 523 |
 | forearm | 19 | 437 |
-| cranial | 16 | 246 |
+| cranial | 16 | 311 |
 | arm | 5 | 195 |
 | leg | 10 | 181 |
 | thigh | 10 | 164 |

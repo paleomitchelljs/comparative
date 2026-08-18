@@ -187,20 +187,39 @@ Searched for the *Sphenodon* primaries on the newly-reachable host:
 quartus, and that only because Russell & Bauer mention it while describing
 *Iguana*. Three routes were checked.
 
-1. **Haas (1973), acquired.** *Biology of the Reptilia* vol. 4 ch. 5, section II
-   is Rhynchocephalia: 21 pages of jaw muscle description from Haas's own
-   dissections of two specimens, adjudicating between Lakjer, Luther,
-   Poglayen-Neuwall and Frazzetta. It fills the **head**, and it lands squarely on
-   `levator-anguli-oris`, the record this dataset already calls the crux of the
-   lizard–snake problem.
+1. **Haas (1973), acquired in full and mined.** *Biology of the Reptilia* vol. 4
+   ch. 5, all 206 pages, chapter pp. 285–490, verified continuous. Section II is
+   Rhynchocephalia: 21 pages of jaw muscle description from Haas's own dissections
+   of two specimens, adjudicating between Lakjer, Luther, Poglayen-Neuwall and
+   Frazzetta. **Ten rows mined; the tuatara went 1 to 11.** Lacertilia and Ophidia,
+   ~160 pages, are unmined and bear on the four *Ctenosaura* cranial rows and on
+   the snake records.
 2. **Russell & Bauer, already on disk.** 114 *Sphenodon* mentions, **80 of them
    with attachment language**, in the `General discussion:` paragraphs. These are
    reports of Byerly, Miner, Günther, Osawa, Ribbing and Holmes rather than the
    authors' own dissections, so rows taken from them must say so — as the
    anconaeus quartus row does. The cheapest remaining tuatara material in the
    corpus, and it covers the **limbs**.
-3. **archive.org**, now reachable. Günther (1867) and Osawa (1898) are both
-   there; Byerly (1925) is not.
+3. **archive.org, now reachable — both fetched.** Günther (1867) is Phil. Trans.
+   vol. 157 pp. 595–629, 42 pages with three plates: the first anatomical
+   description of the tuatara, a whole-animal memoir rather than a systematic
+   myology, and notable for warning in 1867 against borrowing a nomenclature built
+   for higher vertebrates. **Beware the obvious archive item**: `philtrans07125835`
+   is a three-page Proceedings abstract whose first page is a different author on
+   corals; the memoir is inside `philosophicaltra1571roya`.
+
+   **Osawa (1898) is the prize and is unmined.** 211 pages, Archiv f. mikr. Anat.
+   Bd. 51 pp. 481–691, in three parts — Knochenlehre, **Muskellehre**, Nervenlehre.
+   The myology is systematic and numbered by layer (`Schicht`), covering the
+   shoulder girdle, arm, hand, and hindlimb; 406 mentions of Muskel and 151
+   attachment statements. It covers the **limbs**, which Haas does not. It is in
+   German, its attachment vocabulary is Ursprung/Ansatz/entspringt, and its muscle
+   names are Osawa's own compounds rather than the Romerian scheme — so it needs a
+   translation and bridging pass before scoring, of the kind Blotto et al. (2020)
+   also needs. Its Nervenlehre describes the brachial plexus muscle by muscle and
+   is the only source here that could put structured `nerves` on a lepidosaur row.
+
+   **Byerly (1925) is still missing** and is not on archive.org.
 
 ### So the worklist is now an acquisition list
 
