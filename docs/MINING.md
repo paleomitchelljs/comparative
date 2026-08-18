@@ -219,7 +219,16 @@ quartus, and that only because Russell & Bauer mention it while describing
    also needs. Its Nervenlehre describes the brachial plexus muscle by muscle and
    is the only source here that could put structured `nerves` on a lepidosaur row.
 
-   **Byerly (1925) is still missing** and is not on archive.org.
+   **Osawa is mined: 62 rows, the tuatara 11 to 73, Lepidosauria to 84%.** The
+   translation was the easy half; the bridging was harder, because Osawa's names
+   are his own compounds — *capiti-dorso-clavicularis*, *subscapulo-coraco-
+   brachialis*, *pubo-ischio-trochantericus internus* — and he supplies his own
+   concordance against Fürbringer, Gadow, Günther and Perrin for nearly every
+   muscle. That concordance is what made the mapping possible and is quoted in the
+   rows.
+
+   **Byerly (1925) is still missing** and is not on archive.org. It matters less
+   now: Osawa covers the same ground first-hand.
 
 **Haas's Section V synonymy is mined: 88 names onto ten cranial records**, which
 is 28% of every synonym in the dataset added in one pass. That leaves **Russell &

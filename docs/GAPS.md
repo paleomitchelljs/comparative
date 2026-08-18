@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 1009 present occurrences · 268 skeletal elements · 115 sources · 20 operational taxa
+129 muscle records · 1071 present occurrences · 268 skeletal elements · 115 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| leg | 10 | 66 | 60 | 91% |
-| foot | 12 | 61 | 54 | 89% |
-| thigh | 10 | 63 | 55 | 87% |
-| pectoral | 16 | 210 | 175 | 83% |
-| arm | 5 | 82 | 68 | 83% |
-| forearm | 19 | 213 | 168 | 79% |
-| pelvic | 8 | 45 | 35 | 78% |
+| leg | 10 | 74 | 68 | 92% |
+| foot | 12 | 67 | 60 | 90% |
+| thigh | 10 | 70 | 62 | 89% |
+| pectoral | 16 | 223 | 188 | 84% |
+| arm | 5 | 87 | 73 | 84% |
+| pelvic | 8 | 51 | 41 | 80% |
+| forearm | 19 | 223 | 178 | 80% |
 | cranial | 16 | 92 | 70 | 76% |
 | axial | 15 | 42 | 29 | 69% |
-| hand | 9 | 96 | 57 | 59% |
+| hand | 9 | 103 | 64 | 62% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1009 | 794 | **79%** |
+| **all** | 129 | 1071 | 856 | **80%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -144,7 +144,7 @@ back in for Aves.
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
-| Lepidosauria | 186 | 147 | 79% |
+| Lepidosauria | 248 | 209 | 84% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
@@ -163,6 +163,35 @@ every postcranial muscle it describes. Because Caudata is the taxon this dataset
 uses for the plesiomorphic tetrapod condition, the consensus rows that every other
 tetrapod column inherits are now anchored to a scored column rather than to a
 composite. It is also the only taxon whose body wall is scored.
+
+**Then 11 to 73, and the tuatara is now a complete animal.** Osawa (1898) is 211
+pages of *Hatteria* anatomy in German, and its middle third — *Zur Muskellehre* —
+is a systematic myology numbered muscle by muscle, 46 for the forelimb and 37 for
+the hindlimb, each with Ursprung, Ansatz **and Innervation**. Every one of the 73
+*Sphenodon* rows now carries attachments, and most carry a nerve: it is the only
+lepidosaur column in the dataset with structured innervation, because Osawa
+dissected the plexus alongside the muscles.
+
+**Three skeletal records gained Lepidosauria from it, and one is a real
+comparative result.** Osawa names a *processus lateralis* and a *processus
+medialis humeri* in the tuatara and lands the pectoralis, cleido-humeralis,
+dorsalis scapulae and supracoracoideus on the first and the
+subscapulo-coraco-brachialis and teres major on the second. Those two elements had
+been scored for Testudines alone, on Walker, who puts the same two muscles —
+pectoralis and supracoracoideus — on the same lateral process. So the tuatara has
+the turtle's two proximal humeral processes rather than the greater and lesser
+tubercles of the other amniote columns, which is a fact about the bone and not
+about the vocabulary. The third element is the trochanter minor.
+
+**The value of the row set is that Osawa argues with everyone.** He corrects
+Fürbringer on which muscle is the costo-coracoideus, Gadow on the innervation of
+the caudifemoralis and on the insertion of the pubo-tibialis posticus, and Günther
+on which muscle his poorly-described *gracilis* actually was — quoting Günther's
+own sentence to show it does not fit. He reports that the tibialis posticus does
+**not** arise from the tibia despite its name, that Gadow missed the
+fibulo-tibialis inferior entirely, and that the coraco-brachialis is fused to the
+supracoracoideus in some specimens and separate in others with only a nerve
+between them. Those disagreements are in the `attachmentNote`s, not resolved.
 
 **Sphenodon went 1 row to 11, and cranial to 76%.** Haas (1973), *Biology of the
 Reptilia* vol. 4 ch. 5, is the only description of a tuatara in the corpus and the
@@ -460,9 +489,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 268, of which 247 (92%) carry at least one attachment |
-| Observed attachment rows | 2396 |
-| Rows naming a **landmark** | 670 (28%) |
-| Rows naming a **side** | 1441 (60%) |
+| Observed attachment rows | 2586 |
+| Rows naming a **landmark** | 703 (27%) |
+| Rows naming a **side** | 1555 (60%) |
 | Osteological correlates | 122 flagged, 114 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -538,7 +567,7 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | hindlimb | 43 | 47 | 1.1 |
 | pectoral | 34 | 31 | 0.9 |
 | axial | 37 | 32 | 0.9 |
-| forelimb | 54 | 46 | 0.9 |
+| forelimb | 57 | 46 | 0.8 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 31 | 16 | 0.5 |
 <!-- /counts:parity -->
@@ -566,7 +595,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 794 of 1009 present occurrences (79%).**
+**Taxon-specific attachments: 856 of 1071 present occurrences (80%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -586,16 +615,16 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 523 |
-| forearm | 19 | 437 |
+| pectoral | 16 | 562 |
+| forearm | 19 | 464 |
 | cranial | 16 | 311 |
-| arm | 5 | 195 |
-| leg | 10 | 181 |
-| thigh | 10 | 164 |
-| hand | 9 | 158 |
-| foot | 12 | 154 |
+| arm | 5 | 211 |
+| leg | 10 | 210 |
+| thigh | 10 | 186 |
+| hand | 9 | 176 |
+| foot | 12 | 175 |
+| pelvic | 8 | 125 |
 | axial | 15 | 109 |
-| pelvic | 8 | 107 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
 

@@ -430,6 +430,48 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Russell & Bauer reverse the usual reading of which end is which, and the reason is this record's own logic.** The episternocleidomastoideus is normally described as inserting on the skull; they argue that taken with its developmental associate the trapezius, the cranial attachment is a functional insertion but an anatomical origin, and the girdle attachment the true insertion — which is how the cucullaris is described for fishes. So the rows here run skull to girdle. Origin from the ascending process of the parietal and the posterolateral paroccipital process of the exoccipital, and from the neural spines of the third cervical to the fourth dorsal vertebra; insertion onto the lateral process of the interclavicle and the sternum, and onto the acromion and the anterodorsal clavicle. Fürbringer (1900) recognised the two as one unit in lizards, and they run from an undivided cucullaris-like sheet in *Gekko* and *Lacerta* to complete separation in *Phrynosoma*."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. capiti-dorso-clavicularis (cucullaris)",
+          "present": "yes",
+          "innervation": "N. accessorius, with cervical nerves IV, V and VI.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "parietal"
+              },
+              {
+                "element": "squamosal"
+              },
+              {
+                "element": "supraoccipital"
+              },
+              {
+                "element": "cervical-fascia"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "neural-spine"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "clavicle",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscle 1, and he names it *cucullaris* outright. A very broad sheet from the parietal, squamosal and supraoccipital, from the cervical fascia and from the spinous processes of the eleven anterior vertebrae, inserting along the upper border of the clavicle. **In one specimen he could split it**: a small cleft near the insertion separated a capiti-dorso-clavicularis from an episterno-cleido-mastoideus, which is this record's division in a taxon that usually shows it undivided. The innervation is the criterion the record rests on — accessorius plus cervical IV-VI, exactly as in the human trapezius and sternocleidomastoid scored here from Gest.",
+          "nerves": [
+            {
+              "nerve": "accessory"
+            }
+          ]
         }
       ],
       "homology": {
@@ -452,7 +494,8 @@
         "ziermann-etal-2014",
         "burch-2014",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -976,6 +1019,53 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Four parallel-fibred bellies from the dorsolateral aspects of the first three cervical ribs to the medial face of the suprascapula, the belly from the second rib the largest and the slip from the third absent in some individuals. The superficialis is a separate pair of bellies from the ventrolateral borders of the third and fourth cervical ribs — named for being visible once the latissimus is reflected, where the serratus anterior proper lies entirely medial to the suprascapular cartilage. **Every attachment is on cartilage**: the suprascapula is the insertion, not the scapula, which is why this row does not look like the mammalian one."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "Serratus group (three sheets)",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "M. serratus superficialis"
+            },
+            {
+              "name": "M. serratus profundus"
+            },
+            {
+              "name": "M. collo-scapularis"
+            }
+          ],
+          "innervation": "R. thoracicus of cervical nerves V, VI and VII.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "true-ribs"
+              },
+              {
+                "element": "cervical-ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "ventral"
+              },
+              {
+                "element": "suprascapula"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Three sheets rather than one. Superficialis by two digitations from the first two sternal ribs to the lower border of both the bony and the cartilaginous scapula; profundus by three digitations from the two lower cervical ribs and the first thoracic rib to the costal surface of the cartilaginous scapula near its bony border; and a third, from four lower cervical ribs to the medial border of the same costal surface, which Fürbringer treated as the deep layer of the profundus. **Osawa insists on naming it separately**, on the ground that it separates from the profundus very easily and cleanly — a dissector's criterion for muscle identity, stated as such.",
+          "nerves": [
+            {
+              "nerve": "long-thoracic"
+            }
+          ]
         }
       ],
       "homology": {
@@ -997,7 +1087,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -1962,6 +2053,48 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Tendinous origin from the transverse process of the atlas — one vertebra, which is as discrete an origin as this muscle has anywhere in the dataset. The larger dorsal bundle fans out over the whole anterolateral face of the suprascapular cartilage; the ventral bundle ends on its extreme anteroventral aspect in the region of the acromion process and on the anterior border of the clavicular bar. Russell & Bauer note the two bellies have been called superior/inferior by some authors and superficialis/profundus by others, which is the same muscle carrying four names for two parts."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. levator scapulae (collo-scapularis and collo-clavicularis)",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "M. collo-scapularis (dorsal belly)"
+            },
+            {
+              "name": "M. collo-clavicularis (ventral belly)"
+            }
+          ],
+          "innervation": "Cervical nerve VI to the dorsal belly, IV and V to the ventral.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cervical-vertebrae"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "suprascapula",
+                "side": "dorsal"
+              },
+              {
+                "element": "clavicle",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **One origin, two bellies, two different nerves.** Both arise from the lateral part of the second cervical vertebra; the dorsal belly inserts on the upper corner and medial border of the dorsal surface of the cartilaginous scapula, the ventral belly on the dorsal end of the clavicle. Osawa gives cervical VI to the first and IV-V to the second, so a muscle with a single origin is already segmentally divided at its insertion.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -1983,7 +2116,8 @@
         "gambaryan-etal-2015",
         "burch-2014",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -2418,6 +2552,45 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Internus occupies the entire dorsal aspect of the presternum, arising fleshily from the posterior end of its floor and from the rib bases, crossing the coracosternal articulation to insert tendinously on the secondary coracoid ray. Externus arises from the anterolateral rim of the presternum and the lip of the sternal groove, with some posterior fibres from the medial scapulosternal ligament, and inserts ventral and slightly posterior to the internus. Neither extends onto the region where the epicoracoids overlap."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. sterno-coracoideus internus superficialis and profundus",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "M. sterno-coracoideus internus superficialis"
+            },
+            {
+              "name": "M. sterno-coracoideus internus profundus"
+            }
+          ],
+          "innervation": "R. sterno-coracoideus from cervical nerves VI and VII.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Both lie on the dorsal side of the sternal apparatus. Superficialis from the inner surface of the sternum around the whole caudal circumference of the coracoid groove, rising almost straight to the dorsal coracoid near its medial border — and **Osawa notes that its insertion line corresponds to part of the supracoracoideus origin line on the ventral face of the same bone**, one muscle's insertion mapping onto another's origin through the coracoid. Profundus from the dorsal surface of the caudal sternum, medial to the transversus abdominis insertion, ending just above the superficialis.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2432,7 +2605,8 @@
         "abdala-diogo-2010",
         "gambaryan-etal-2015",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -2685,6 +2859,35 @@
             "insertion": []
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Origin only, because the insertion is not on bone.** A thin triangular sheet from the entire length of the anterior aspect of the costal cartilage of the first sternal rib, whose fibres converge on the midline and insert on the posterior aspect of the medial scapulosternal ligament. That ligament is not an element in this skeleton, and inventing one for a single attachment would be worse than recording the insertion in prose. A girdle muscle that never reaches the girdle."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. costo-coracoideus",
+          "present": "yes",
+          "innervation": "R. costo-coracoideus from cervical nerve VII.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "true-ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. From the first sternal rib, medial to the origin of the costo-sterno-scapularis, climbing over the coracoid groove of the sternum to the caudal part of the dorsal surface of the coracoid, together with the insertion of the sterno-coracoideus internus superficialis. **Osawa corrects Fürbringer here**: what Fürbringer called the costo-coracoideus matches Osawa's costo-sterno-scapularis instead, a separate muscle from the ventral surface of the first sternal rib to the internal sternoscapular ligament — and Osawa notes that the true costo-coracoideus of this animal seems not to have been seen by Fürbringer in any reptile. That second muscle is not scored, because its insertion is a ligament with no element here.",
+          "nerves": [
+            {
+              "nerve": "ventral-rami"
+            }
+          ]
         }
       ],
       "homology": {
@@ -2697,7 +2900,8 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -3405,6 +3609,60 @@
               "nerve": "pectoral-nerves"
             }
           ]
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. pectoralis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Portio clavicularis"
+            },
+            {
+              "name": "Portio episternalis"
+            },
+            {
+              "name": "Portio sternalis"
+            },
+            {
+              "name": "Portio abdominalis"
+            }
+          ],
+          "innervation": "Nn. pectorales.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle",
+                "side": "lateral"
+              },
+              {
+                "element": "interclavicle"
+              },
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-lateral-process"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. A very broad powerful muscle covering the whole ventral thoracic wall and two-thirds of the anterior abdominal wall, in four portions distinguished by fibre direction — clavicular and upper episternal running laterally downward, lower episternal and sternal almost horizontal, abdominal obliquely upward and laterally. All converge on the **processus lateralis humeri**, which is the element this row shares with Walker's turtle rather than with the tubercles of the other amniote columns.",
+          "nerves": [
+            {
+              "nerve": "pectoral-nerves"
+            }
+          ]
         }
       ],
       "homology": {
@@ -3428,7 +3686,8 @@
         "sigurdsen-etal-2012",
         "walthall-ashley-ross-2006",
         "burch-2014",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -4178,6 +4437,49 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A thick fan on the ventrolateral coracoid plate, from the anterior aspect of the epicoracoid and the ventral face of the coracoid, overlying the ventral half of the scapulocoracoid fenestra and both coracoid fenestrae, and running medially as far back as the coracosternal articulation. It tapers to a tendinous insertion on the proximal border of the deltopectoral crest. **The line separating it from the scapulohumeralis anterior marks the separation of scapula from coracoid** — a muscle boundary that is also a bone boundary, which is the sort of correspondence the whole record depends on and which therians lost with the coracoid."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. supracoracoideus",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Superficial portion"
+            },
+            {
+              "name": "Deep portion"
+            }
+          ],
+          "innervation": "N. supracoracoideus and N. coraco-brachialis.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-lateral-process"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther called it *M. coraco-brachialis anterior*. The superficial portion is a very weak small muscle from the coracoid near its mediocephalic angle to the processus lateralis humeri; the deep portion is a very powerful mass arising from almost the entire outer surface of the coracoid and inserting both on that process and along the medial-anterior surface of the proximal two-thirds of the humeral shaft. **A long insertion down the shaft, not a tendon onto a crest** — the state this record's other columns should be read against, since in birds the same muscle has become a wing elevator working through a canal.",
+          "nerves": [
+            {
+              "nerve": "suprascapular"
+            }
+          ]
         }
       ],
       "homology": {
@@ -4204,7 +4506,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -4839,6 +5142,37 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A flat triangular muscle fanning over scapula and suprascapula, arising from a band joining the anteroventral and posteroventral corners of the lateral suprascapular face — so its origin reaches as far forward as the acromion — and from the ossified scapula behind the scapular fenestra, with a partial origin from the dorsolateral clavicle that several other workers also report. Its motor tendon passes deep to that of the clavodeltoideus and inserts on the deltopectoral crest along a line slightly medial and posterior to it. **Two records, one crest, two parallel lines** — which is what makes the deltoid complex separable here and not in a human."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. dorsalis scapulae (Deltoides scapularis)",
+          "present": "yes",
+          "innervation": "N. dorsalis scapulae.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "suprascapula",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "lateral",
+                "landmark": "humerus-lateral-process"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *Deltoides scapularis*, Günther's *M. deltoideus*. From the dorsal surface of the cartilaginous scapula near its medial border — partly covered there by the lateral part of the levator scapulae — running almost horizontally ventrad to the lateral side of the base of the processus lateralis humeri, where the cleido-humeralis overlies it. **The insertion is on cartilage at one end and a process at the other**, which is why the row does not resemble the mammalian deltoid.",
+          "nerves": [
+            {
+              "nerve": "axillary"
+            }
+          ]
         }
       ],
       "homology": {
@@ -4862,7 +5196,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -5499,6 +5834,36 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). From the medial half of the clavicle by two fibre groups whose arrangement inverts on the way to the humerus: the ventral, superficial group winds around the anterior margin of the clavicle and emerges along its posterior border as the *dorsal* part of the muscle, while the deeper group from the dorsal clavicle passes straight back. Insertion anterodorsally on the deltopectoral crest with the scapulodeltoideus, and it is not linear — the fibres arising nearest the glenoid insert most proximally."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. cleido-humeralis (Deltoides clavicularis)",
+          "present": "yes",
+          "innervation": "Terminal branch of the N. dorsalis scapulae.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *Deltoides clavicularis*, Günther's *musculus clavicolo-brachialis*. It lies between the pectoralis and the dorsalis scapulae, arises from the outer surface of the large lateral part of the clavicle, and inserts on the proximal humerus **lateral to the processus lateralis humeri** — beside the pectoralis insertion rather than on it. Compare the *Iguana* row from Russell & Bauer, where the same muscle is the clavodeltoideus and ends on the deltopectoral crest.",
+          "nerves": [
+            {
+              "nerve": "axillary"
+            }
+          ]
         }
       ],
       "homology": {
@@ -5520,7 +5885,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -5880,6 +6246,39 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Two areas of origin on the scapula — a long-fibred superficial part from the ventrolateral scapula at the border of the scapulocoracoid fenestra, and a short-fibred part from the dorsal buttress of the glenoid — converging on a stout motor tendon that passes deep to the lateral scapulohumeral ligament and closely invests the joint capsule. Insertion on the posterodorsal proximal humerus, just distal to the articular capsule and proximal to the latissimus dorsi insertion. Whether this muscle corresponds to the mammalian teres minor is the unresolved question on this record; the lizard row is one of the two ends of it."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. scapulo-humeralis profundus",
+          "present": "yes",
+          "innervation": "N. scapulo-humeralis, from the N. dorsalis scapulae.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "anterior"
+              },
+              {
+                "element": "coracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's name. A fairly strong muscle overlain by the cleido-humeralis, bordering the supracoracoideus ventrally and the teres dorsally, from near the cephalic border of the bony scapula and the adjoining part of the coracoid, inserting on the radial-posterior part of the proximal humeral end. Whether this record corresponds to the mammalian teres minor is its standing open question; note that Osawa scores a separate *teres major* on the next record, so the tuatara has both.",
+          "nerves": [
+            {
+              "nerve": "axillary"
+            }
+          ]
         }
       ],
       "homology": {
@@ -5897,7 +6296,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -6797,6 +7197,49 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). The muscle occupies almost the entire internal surface of the scapulocoracoid, divided by the course of the medial scapulosternal ligament into a dorsolateral scapular portion and a much more extensive ventromedial coracoid portion. The coracoid head roofs all the scapulocoracoid fenestrae and takes partial origin from the fibrous sheets closing them — a muscle arising from the holes in a bone as much as from the bone. Both converge on one stout tendon onto the posterodorsal aspect of the humeral head.\n\n**The third head is where a whole record goes.** A smaller head lies deep to the confluence of the other two, entirely scapulohumeral, bridging the tendon of origin of the scapular triceps head and crossing the anterodorsal shoulder joint. Russell & Bauer identify it as the equivalent of the M. scapulohumeralis posterior and then decline to give it that status, treating it as a part of this muscle because of its level of development and the general uncertainty over recognising the fibre bundle as a distinct muscle at all. It is scored here as a disputed part, and the `scapulohumeralis-posterior` row for this animal records the same judgement from the other side."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. subscapulo-coraco-brachialis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Caput scapulare"
+            },
+            {
+              "name": "Caput coracoides"
+            }
+          ],
+          "innervation": "N. subscapulo-coraco-brachialis, the coracoid head also receiving a branch of the N. coraco-brachialis.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              },
+              {
+                "element": "coracoid",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-medial-process"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *M. subcoraco-scapularis*, and this record's own name is the same compound. Caput scapulare from the caudal border of the bony scapula slightly ventral to the serratus superficialis insertion; caput coracoides very powerful and **doubly pennate**, from the whole dorsal surface of the coracoid except its medial and caudal borders. The two unite near their insertion on the processus medialis humeri, proximal to the medial head of the anconaeus, and Osawa notes the muscle reinforces the dorsal capsular wall of the shoulder joint. Compare the human row, where the coracoid half of this group has nothing to arise from.",
+          "nerves": [
+            {
+              "nerve": "subscapular"
+            }
+          ]
         }
       ],
       "homology": {
@@ -6818,7 +7261,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -7132,6 +7576,37 @@
               "nerve": "subscapular"
             }
           ]
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. scapulo-humeralis posterior (teres major)",
+          "present": "yes",
+          "innervation": "N. scapulo-humeralis, from the N. dorsalis scapulae.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "posterior",
+                "landmark": "humerus-medial-process"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer equates his *M. scapulo-humeralis posterior* with the teres major, which is why it is scored here. It follows the scapulo-humeralis profundus, lies dorsal to it, is covered by the dorsalis scapulae, and takes its origin further dorsally on the same bony scapula, inserting on the extensor side of the proximal humerus near the processus medialis. **This record's assessment reads its scattered distribution as repeated differentiation out of the latissimus/subcoracoscapularis field rather than one ancestral muscle**; the tuatara is a lepidosaur that has it, sharing a nerve with the scapulohumeralis in front of it.",
+          "nerves": [
+            {
+              "nerve": "subscapular"
+            }
+          ]
         }
       ],
       "homology": {
@@ -7146,7 +7621,8 @@
       "sources": [
         "abdala-diogo-2010",
         "klinkhamer-etal-2017",
-        "gest-anatomy-tables"
+        "gest-anatomy-tables",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -7865,6 +8341,36 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A narrow aponeurotic band from the dorsal aspect of the neural spines of the posteriormost cervical and the first seven thoracic vertebrae, continuous across the midline with its fellow and filling the spaces between adjacent spines. It tapers markedly, passes **between the scapular and coracoid heads of the triceps**, and attaches to the dorsal aspect of the proximal humerus, the posterior fibres folding deep to the anterior ones to insert more proximally. Compare the avian rows on this record, where the insertion was for a time written onto the scapula and clavicle; the lizard shows the plesiomorphic arrangement plainly."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. latissimus dorsi (dorso-humeralis)",
+          "present": "yes",
+          "innervation": "N. latissimus dorsi, from the N. brachialis longus superior.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "landmark": "neural-spine"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. From the spinous processes of the fifth to seventeenth vertebrae to the posterior surface of the proximal humerus, below the insertion of the scapulo-humeralis profundus. Humerus, as in every other column on this record — see the *Gallus* and *Cygnus* rows, where a scapula-and-clavicle insertion had been asserted and was removed.",
+          "nerves": [
+            {
+              "nerve": "thoracodorsal"
+            }
+          ]
         }
       ],
       "homology": {
@@ -7888,7 +8394,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -8758,6 +9265,67 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Four heads, and only two of them reach the girdle.** The scapular head arises from the dorsal glenoid buttress with its fibres bound into the Y-shaped scapulohumeral ligament complex; the coracoid head arises not from the coracoid at all but from a long ligamentous band forming part of the sternoscapular ligament, and the two together form a loop around the latissimus dorsi insertion. The lateral humeral head arises from a concavity dorsal to the deltopectoral crest and from much of the anterodorsal shaft; the medial from a concavity on the dorsal proximal humerus, its ventral limit set by the coracobrachialis insertions. Distally the two humeral heads enclose the dorsal border of the shaft for its distal half. All four interweave into one motor tendon onto the olecranon, with the **patella ulnaris** embedded in the humeral heads' common tendon. Compare *Tawa*, where Burch reconstructs three heads with the coracoid head already lost, and birds, which have lost the lateral head too."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. anconaeus",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Caput scapulare"
+            },
+            {
+              "name": "Caput coracoideum"
+            },
+            {
+              "name": "Caput humerale laterale"
+            },
+            {
+              "name": "Caput humerale mediale"
+            }
+          ],
+          "innervation": "Rr. anconaei of the N. radialis superficialis.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "dorsal"
+              },
+              {
+                "element": "coracoid",
+                "side": "medial"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "landmark": "olecranon"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther called it *M. triceps*; Osawa counts **four heads**. Caput scapulare by a slender tendon from the scapulohumeral ligament and from the scapula dorsal to the glenoid, between the origins of the scapulo-humeralis profundus and posterior; caput coracoideum by a very thin tendon from a point at the caudal angle of the inner surface of the coracoid; caput humerale laterale from the lateral side of the whole humeral shaft; caput humerale mediale from the medial side below the processus medialis as far as the elbow capsule. All insert on the posterior elbow capsule, the olecranon and the proximal ulna, and Osawa separates the capsular part as a *M. subanconaeus*.\n\n**Four heads is the full count**, and it is what the archosaur columns are measured against: Burch reconstructs three for *Tawa* with the coracoid head already lost, birds have lost the lateral head as well, and the human long head is the scapular head with the coracoid one gone with the bone.",
+          "nerves": [
+            {
+              "nerve": "radial"
+            }
+          ]
         }
       ],
       "homology": {
@@ -8782,7 +9350,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -9347,6 +9916,40 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Fleshy origin from the distal aspect of the deltopectoral crest and the anterior margin of the humeral shaft for its entire length, with some fibres from the intermuscular septum against the lateral triceps head. Its origin is defined by what surrounds it — Russell & Bauer delimit it by the confluence of the deltoid, supracoracoideus and pectoralis insertions above and the biceps and triceps borders either side. **The insertion is in two parts and both muscles contribute to both**: an enlarged part of the common tendon crosses the elbow dorsal to the main brachialis tendon and inserts on the proximomedial radial shaft chiefly by brachialis fibres, while a shorter tendon contributed equally by biceps and brachialis passes behind the radius to the proximal anterior ulna. This is the elongate proximal origin Burch reconstructs for *Tawa* against the distal, avian one."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. humero-antibrachialis medialis",
+          "present": "yes",
+          "innervation": "N. humero-antibrachialis, from the N. musculo-cutaneus.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *humero-antibrachialis inferior*, Günther's *M. brachialis internus* — and this record already carries `humeroantebrachialis` as the amphibian synonym. From almost the entire flexor surface of the humerus as far as the elbow, inserting together with the biceps tendon on the proximal radius and ulna, with a number of fibres going to the elbow capsule. The shared insertion with the biceps is the plesiomorphic condition Burch reconstructs for *Tawa* and that birds and humans have each restricted independently.",
+          "nerves": [
+            {
+              "nerve": "musculocutaneous"
+            }
+          ]
         }
       ],
       "homology": {
@@ -9369,7 +9972,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -9965,6 +10569,40 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Digastric, not two-headed** — a short muscular portion arising from the girdle over the secondary coracoid fenestra, then a tendinous band across the glenohumeral joint, then the main fleshy belly. The girdle origin is from the posteromedial border of the secondary coracoid fenestra and the medial coracoid plate nearby. Distally it unites with the brachialis anticus in a common pinnate insertion onto the proximal radius and ulna, described on that record. One head, from the coracoid, in the animal Burch uses as the lepidosaur outgroup for reconstructing the theropod biceps."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. coraco-antibrachialis (biceps brachii)",
+          "present": "yes",
+          "innervation": "N. coraco-brachialis proximally and N. musculo-cutaneus distally.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther called it the biceps brachii outright. Fleshy at both ends and tendinous in the middle — Osawa notes it becomes tendinous exactly at the shoulder joint and strongly fleshy again on the arm. From the medial border of the coracoid beside the supracoracoideus origin, to the proximal ends of radius and ulna and the elbow capsule. **Its two halves have different nerves**, the proximal from the N. coraco-brachialis and the distal from the musculocutaneous, which is the kind of split this dataset otherwise only records for the human flexor digitorum profundus.",
+          "nerves": [
+            {
+              "nerve": "musculocutaneous"
+            }
+          ]
         }
       ],
       "homology": {
@@ -9986,7 +10624,8 @@
         "burch-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -10629,6 +11268,36 @@
             ]
           },
           "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Brevis is the anterior head, arising fleshily from the ventromedial coracoid behind the primary and secondary coracoid fenestrae, filling the area between the coracosternal articulation and the glenohumeral joint, and inserting on the posteroventral margin of the proximal humerus for about half its length. Longus lies deep to it, arises from the posterior coracoid process, and its belly twists and fans out to insert along the distal posteroventral humeral shaft between the brachialis anticus and the medial humeral head of triceps. **Both present and both coracoid** — which is the state Burch (2014) argues against for archosaurs, where he finds the longus absent in crocodyliforms and its homology with the neognath Coracobrachialis posterior broken."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. coraco-brachialis",
+          "present": "yes",
+          "innervation": "N. coraco-brachialis.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *coraco-brachialis longus*, Günther's *coraco-brachialis inferior*. From the caudal angle of the coracoid, running obliquely to the medial anterior surface of the **distal third** of the humerus — a long muscle reaching almost to the elbow. **Osawa found it fused to the supracoracoideus in some specimens and cleanly separate in others**, with the N. coraco-brachialis passing between the two as the only reliable boundary; what Fürbringer called the coraco-brachialis brevis formed one continuous mass with the supracoracoideus, broken only by that nerve. A muscle boundary that exists as a nerve and not as a plane.",
+          "nerves": [
+            {
+              "nerve": "musculocutaneous"
+            }
+          ]
         }
       ],
       "homology": {
@@ -10653,7 +11322,8 @@
         "walthall-ashley-ross-2006",
         "burch-2014",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
@@ -10866,6 +11536,35 @@
             "russell-bauer-2008"
           ],
           "note": "Iguana iguana, Russell & Bauer (2008). **Absent, and the way it is absent is the interesting part.** Russell & Bauer state that the M. humeroradialis is absent in *Iguana* and in all other adult lizards, but does make a brief appearance during development. So the lepidosaur column on this record is a developmental presence and an adult absence — which bears directly on the contested homology of the crocodylian muscle, read by some as a neomorphic archosaurian muscle and by Romer (1944) as the homolog of the *Sphenodon* muscle of the same name. Sullivan (1962) likewise found a transitory vestige in a chicken embryo that the adult does not keep. Two clades in which the muscle exists only before hatching."
+        },
+        {
+          "species": "sphenodon-punctatus",
+          "speciesBasis": "source",
+          "name": "M. humero-antibrachialis lateralis",
+          "present": "yes",
+          "innervation": "N. musculo-cutaneus.",
+          "sources": [
+            "osawa-1898"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-lateral-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius"
+              }
+            ]
+          },
+          "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **A weak muscle that barely reaches bone, and the reason it is scored here needs stating.** Osawa's muscle 21 — Günther's \"the outer Muscle\" — arises from the base of the processus lateralis humeri, from the end tendon of the scapulo-humeralis profundus and from the scapulohumeral ligament, and radiates into the radial antebrachial fascia, forming what Osawa calls a *lacertus fibrosus*. The insertion row on the radius stands for that fascial spread and is the weakest attachment in this column.\n\nIt is scored on this record because Romer (1944) homologised the crocodylian humeroradialis with the *Sphenodon* muscle of that name, which is one of the two live positions on this record — the other being that the crocodylian muscle is an archosaurian neomorph. Russell & Bauer report the muscle absent in *Iguana* and all adult lizards but present transiently in development, and that row is scored absent here. So the lepidosaur column now holds a tuatara that has something and lizards that do not, which is exactly the distribution the homology argument turns on.",
+          "nerves": [
+            {
+              "nerve": "musculocutaneous"
+            }
+          ]
         }
       ],
       "homology": {
@@ -10883,7 +11582,8 @@
         "klinkhamer-etal-2017",
         "burch-2014",
         "matsuoka-hasegawa-2007",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "osawa-1898"
       ],
       "nerves": [
         {
