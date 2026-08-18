@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 1080 present occurrences · 268 skeletal elements · 115 sources · 20 operational taxa
+129 muscle records · 1230 present occurrences · 268 skeletal elements · 116 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| leg | 10 | 74 | 68 | 92% |
-| foot | 12 | 67 | 60 | 90% |
-| thigh | 10 | 70 | 62 | 89% |
-| pectoral | 16 | 223 | 188 | 84% |
-| arm | 5 | 87 | 73 | 84% |
-| pelvic | 8 | 51 | 41 | 80% |
-| forearm | 19 | 223 | 178 | 80% |
+| leg | 10 | 88 | 82 | 93% |
+| thigh | 10 | 82 | 74 | 90% |
+| foot | 12 | 71 | 64 | 90% |
+| arm | 5 | 99 | 85 | 86% |
+| pectoral | 16 | 261 | 223 | 85% |
+| pelvic | 8 | 61 | 51 | 84% |
+| forearm | 19 | 268 | 221 | 82% |
 | cranial | 16 | 101 | 78 | 77% |
 | axial | 15 | 42 | 29 | 69% |
-| hand | 9 | 103 | 64 | 62% |
+| hand | 9 | 118 | 79 | 67% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1080 | 864 | **80%** |
+| **all** | 129 | 1230 | 1009 | **82%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -140,7 +140,7 @@ back in for Aves.
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Monotremata | 103 | 103 | 100% |
-| Theria | 161 | 148 | 92% |
+| Theria | 311 | 293 | 94% |
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
@@ -415,7 +415,7 @@ sourced to reviews that dissect no mammal. The percentage rose because unscored
 rows left, which is worth remembering whenever a column improves without a paper
 being read.
 
-**Theria is now 161 occurrences at 92%, and the reason is the human column.**
+**Theria then read 161 occurrences at 92%, and the reason was the human column.**
 Gest's anatomy tables gave 105 rows across all five muscle files, 83 of them with
 attachments — the largest single-source pass the dataset has had, and the first
 one to fill a species that had been sitting in `species.json` with nothing on it.
@@ -436,6 +436,51 @@ sartorius equation and gives the sartorius no home rather than a wrong one, the
 is a different muscle on a different nerve, and the interossei of the hand and
 foot are scored once each with the records that also claim them left uncertain
 and pointing at the row that holds them.
+
+**Theria is now 311 occurrences at 94%, and the reason is that it finally has
+marsupials.** Until Cunningham (1882) was mined the column was placentals and
+nothing else — human, rat, four cats, a grison, a vole — and
+`monodelphis-domestica` had sat in `species.json` carrying no rows at all.
+Cunningham dissected the thylacine, the spotted cuscus and the red-tailed
+phascogale muscle by muscle: **153 rows, the second-largest single-source pass
+here after Gest, and unlike Gest it is a dissection.** The fore limb is complete
+in all three animals; the hind limb is complete in two, because the phascogale's
+pelvis and hind limbs arrived from the *Challenger* so shattered with shot that
+Cunningham could not examine them — which is why that animal is absent from every
+hindlimb record rather than scored `no` on any of them.
+
+What the column gains is not only coverage but contrast, because his three
+animals disagree with each other constantly and he says so. The thylacine's
+clavicle is a vestige buried in the cephalo-humeral muscle and its subclavius has
+left the bone entirely for the supraspinatus fascia. The teres minor is present
+in two animals and **absent in the phascogale on nerve evidence** — no twig of
+the circumflex traceable into the part of the infraspinatus that might have
+represented it. The extensor carpi ulnaris is one muscle in the female thylacine
+and two in the male. And the extensor brevis digitorum is caught mid-migration:
+still wholly fibular in the thylacine, half-arrived on the dorsum of the foot in
+the cuscus, wholly pedal in the human row on the same record.
+
+**Two disagreements are recorded rather than resolved.** Cunningham puts the
+gemelli with the obturator internus, into whose tendon they insert; this
+dataset's `puboischiofemoralis-externus` synonymy puts them with the obturator
+externus and the quadratus femoris. And his *agitator caudae* has the attachments
+of a caudofemoralis — caudal transverse processes to posterior femur — but he
+groups it with the gluteus maximus on plane and nerve, while *also* describing a
+separate piriformis in the same two animals. Both cannot be the caudofemoralis,
+nothing in this source settles which is, so the note sits on both records.
+
+**Two of his muscles have no record to land on, and were left unscored rather
+than forced onto a neighbour.** The **pedal lumbricales** — four in the cuscus,
+and in the thylacine doubled, one arising from each side of every deep flexor
+tendon and inserting on the flexor sheaths rather than the extensor expansion,
+two to each toe — have no home: `lumbricales` is a manus record and the pes has
+no counterpart. And Cunningham's **ischio-femoral**, from the great sacrosciatic
+ligament to the posterior femur below the great trochanter, is a muscle he
+explicitly refuses to call the quadratus femoris because it lies on a different
+plane, superficial to the gemelli, the true quadratus and the adductor magnus;
+he calls its precise nature doubtful and this dataset has nothing that matches
+it. Both are worth a record; neither should get one on the strength of a single
+Victorian description.
 
 **Aves at 13% is source-limited, not effort-limited, and the limit is real.**
 Thirty of its 48 unscored rows cite only Abdala & Diogo (2010), whose Tables 1-3
@@ -513,9 +558,9 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 | | |
 |---|---|
 | Elements | 268, of which 247 (92%) carry at least one attachment |
-| Observed attachment rows | 2629 |
-| Rows naming a **landmark** | 708 (27%) |
-| Rows naming a **side** | 1562 (59%) |
+| Observed attachment rows | 3175 |
+| Rows naming a **landmark** | 919 (29%) |
+| Rows naming a **side** | 1751 (55%) |
 | Osteological correlates | 122 flagged, 114 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -604,6 +649,22 @@ detail is the correlate of the fin muscle detail already recorded. Cranial runs
 the other way at 2.4 elements per muscle, which is what a coarse adductor
 mandibulae complex sitting over a finely divided skull looks like.
 
+**One element grouping is a working decision and is flagged as one: `epipubis`.**
+It was scored for Testudines alone, as the turtle's cartilaginous epipubic
+process. Cunningham (1882) hangs four marsupial muscles on the *os marsupium* —
+pectineus, adductor longus and adductor brevis take origin from it, and the psoas
+parvus inserts on the pubis immediately beside it — so Theria and Monotremata are
+now present on the same record. **That groups the turtle epipubic cartilage and
+the mammalian epipubic bone as one element on position**: both are the anterior
+process of the pubis and both take hypaxial and adductor attachments. It is the
+usual reading, but neither source cited on the element demonstrates the homology,
+and the mammalian element is not even uniform inside Cunningham's three animals —
+a large paired bone in the cuscus, a cartilaginous nodule in the thylacine.
+**Reilly & White (2003) is in `papers/` unmined and is the source that bears on
+it**; its `role` line already says "a skeletal element this dataset does not yet
+carry", written when `epipubis` existed but held only a turtle. Until it is read,
+splitting this record stays a live option.
+
 ---
 
 Every PDF in `papers/` now has a `sources.json` entry. Five were byte-identical
@@ -619,7 +680,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 864 of 1080 present occurrences (80%).**
+**Taxon-specific attachments: 1009 of 1230 present occurrences (82%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -639,15 +700,15 @@ it is one end of most of them.
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 562 |
-| forearm | 19 | 464 |
+| pectoral | 16 | 697 |
+| forearm | 19 | 593 |
 | cranial | 16 | 354 |
-| arm | 5 | 211 |
-| leg | 10 | 210 |
-| thigh | 10 | 186 |
-| hand | 9 | 176 |
-| foot | 12 | 175 |
-| pelvic | 8 | 125 |
+| leg | 10 | 272 |
+| arm | 5 | 252 |
+| thigh | 10 | 237 |
+| hand | 9 | 233 |
+| foot | 12 | 188 |
+| pelvic | 8 | 183 |
 | axial | 15 | 109 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->

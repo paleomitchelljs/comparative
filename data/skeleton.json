@@ -1288,7 +1288,7 @@
     },
     {
       "id": "epipubis",
-      "label": "Epipubic cartilage",
+      "label": "Epipubis / epipubic bone",
       "kind": "cartilage",
       "region": "pelvic",
       "segment": "girdle",
@@ -1296,13 +1296,31 @@
       "presence": {
         "default": "no",
         "present": [
-          "testudines"
+          "testudines",
+          "theria",
+          "monotremata"
         ],
         "sources": [
-          "walker-1973"
+          "walker-1973",
+          "cunningham-1882",
+          "reilly-white-2003"
         ],
-        "note": "Anterior cartilaginous extension of the turtle pubis; carries part of the puboischiofemoralis internus origin."
-      }
+        "note": "Anterior extension of the pubis. In *Testudines* it is the cartilaginous epipubic process, which carries part of the puboischiofemoralis internus origin.\n\n**Theria and Monotremata added on Cunningham (1882)**, who calls it the marsupial bone or *os marsupium* and hangs four muscles on it in the cuscus and the thylacine: the pectineus, the adductor longus and the adductor brevis take origin from it, and the psoas parvus inserts on the pubis immediately beside it. It is not a uniform element even within his three animals — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine — and Cunningham notes that Macalister found the gracilis attached to it in every marsupial he examined whereas in neither of these two is it attached at all. Lost in placentals, which is why this element was scored for turtles alone until a marsupial arrived.\n\n**What this record does and does not assert.** It groups the turtle epipubic cartilage and the mammalian epipubic bone as one element on position — both are the anterior process of the pubis, both take hypaxial and adductor attachments — which is the usual reading, but neither source cited here demonstrates the homology. Reilly & White (2003) is in the bibliography unmined and is the source that bears on it; until it is read this grouping is a working decision and is recorded as one in `docs/GAPS.md`."
+      },
+      "taxonNames": [
+        {
+          "taxa": [
+            "theria"
+          ],
+          "name": "Epipubic bone (os marsupium, 'marsupial bone')"
+        },
+        {
+          "taxa": [
+            "monotremata"
+          ],
+          "name": "Epipubic bone"
+        }
+      ]
     },
     {
       "id": "extensor-expansion",
@@ -2943,9 +2961,10 @@
           "theria",
           "lepidosauria"
         ],
-        "note": "Independently acquired in birds and mammals; a sesamoid in the knee extensor tendon.\n\n**Lepidosauria added on Russell & Bauer (2008).** *Iguana* has a patella, embedded in the common insertion tendon of the iliotibialis and femorotibialis as it crosses the knee. Russell & Bauer give the mechanical reason, after Currey (1984): the sesamoid holds the tendon away from the centre of rotation so the moment arm stays large at every joint angle. A lizard knee solving the same problem the mammalian knee solves, with the same part.",
+        "note": "Independently acquired in birds and mammals; a sesamoid in the knee extensor tendon.\n\n**Lepidosauria added on Russell & Bauer (2008).** *Iguana* has a patella, embedded in the common insertion tendon of the iliotibialis and femorotibialis as it crosses the knee. Russell & Bauer give the mechanical reason, after Currey (1984): the sesamoid holds the tendon away from the centre of rotation so the moment arm stays large at every joint angle. A lizard knee solving the same problem the mammalian knee solves, with the same part.\n\n**Two marsupials inside Theria have no ossified patella at all.** Cunningham (1882) found none in either the thylacine or the spotted cuscus: the quadriceps parts and the sartorius unite instead into a tendinous expansion in front of the knee so dense and knife-resistant that he compared its consistence to fibrocartilage, and he reports that in the wombat it apparently becomes cartilage outright. The clade stays scored present, because that is what it is across Theria; the exception is a species observation and lives on the `extensor-iliotibialis` and `femorotibialis` rows for those two animals.",
         "sources": [
-          "russell-bauer-2008"
+          "russell-bauer-2008",
+          "cunningham-1882"
         ]
       }
     },

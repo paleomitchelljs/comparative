@@ -1,7 +1,7 @@
 # What is left to mine, and how
 
 <!-- counts:unscored -->
-216 present occurrences still have no attachment rows.
+221 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 This file lists the sources that could close them, ranked by whether they will
 actually work.
