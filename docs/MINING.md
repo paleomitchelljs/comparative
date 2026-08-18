@@ -221,6 +221,12 @@ quartus, and that only because Russell & Bauer mention it while describing
 
    **Byerly (1925) is still missing** and is not on archive.org.
 
+**Haas's Section V synonymy is mined: 88 names onto ten cranial records**, which
+is 28% of every synonym in the dataset added in one pass. That leaves **Russell &
+Bauer's Appendix B** as the largest piece of nomenclatural work still open — 656
+numbered synonym references keyed to about a hundred works, for the locomotor
+system rather than the head.
+
 ### So the worklist is now an acquisition list
 
 Ranked by how many rows each would unblock:

@@ -79,6 +79,23 @@ states both ends.
 
 ## Mined
 
+**Section V, the synonymy tables: 88 names across ten cranial records.** Haas
+lists the major synonyms for every muscle in the chapter, each with the authors
+who used it, built on Lakjer (1926), Edgeworth (1935), Kochva (1962) and Secoy's
+unpublished dissertation. Vernacular names before 1900 and spelling variants are
+omitted; French names are given as Latin equivalents. He follows Luther as
+adapted by Lakjer, and notes that this is now the terminology used even for
+ceratopsian dinosaurs and dicynodonts.
+
+Two entries in it are worth knowing about on their own. **`M.
+temporo-massetericus`** is Osawa's (1898) and Byerly's (1925) name for the
+adductor mandibulae complex — the two authors who described the tuatara — so a
+reader meeting it in either now lands on the right record. And **`M.
+ceratomandibularis`** is given as a synonym of the M. geniohyoideus in six
+authors including Osawa, which is a different muscle from the urodele
+ceratomandibularis this dataset holds under that name; the collision is now
+recorded on both records.
+
 Ten rows, all of `sphenodon-punctatus`: the adductor mandibulae complex and its
 externus, internus and posterior divisions; the levator and retractor anguli
 oris; depressor mandibulae; intermandibularis; the sphincter colli group; the
