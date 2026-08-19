@@ -400,7 +400,7 @@
         {
           "species": "homo-sapiens",
           "speciesBasis": "note",
-          "name": "Masseter, temporalis and the pterygoids",
+          "name": "Masseter, temporalis, the pterygoids and the tensors",
           "present": "yes",
           "division": "divided",
           "parts": [
@@ -415,11 +415,28 @@
             },
             {
               "name": "Lateral pterygoid"
+            },
+            {
+              "name": "Tensor tympani",
+              "membership": "disputed",
+              "claimedBy": "intermandibularis",
+              "sources": [
+                "diogo-etal-2008-head"
+              ]
+            },
+            {
+              "name": "Tensor veli palatini",
+              "membership": "disputed",
+              "claimedBy": "intermandibularis",
+              "sources": [
+                "diogo-etal-2008-head"
+              ]
             }
           ],
           "action": "Elevate the mandible; the lateral pterygoid protracts it and opens the jaw; the pterygoids together produce lateral grinding.",
           "innervation": "Mandibular division of the trigeminal nerve (V3).",
           "sources": [
+            "diogo-etal-2008-head",
             "gest-anatomy-tables"
           ],
           "attachments": {
@@ -469,7 +486,8 @@
               "joint": "jaw-joint",
               "motion": "protraction"
             }
-          ]
+          ],
+          "divisionNote": "The tensors are here on Diogo et al. (2008) Table 1, which derives the tensor tympani and tensor veli palatini from the adductor mandibulae A2-PVM bundle and places them on the adductor row for all five mammals it examines — matching the *Ornithorhynchus* and *Rattus* rows on this record. Gest's tables put both on the mylohyoid instead, which is why they stay `membership: \"disputed\"` with the other claimant named."
         },
         {
           "species": "sphenodon-punctatus",
@@ -695,7 +713,7 @@
               "diogo-etal-2008-head"
             ],
             "confidence": "contested",
-            "note": "Diogo et al. (2008) Table 1 derive the tensor tympani and tensor veli palatini from adductor mandibulae A2-PVM; this dataset scores both as parts of the human mylohyoid row on `intermandibularis`. Both fields are mandibular-arch and both take CN V, so arch identity is unaffected — what is contested is which record holds the muscle. Open decision in `docs/WORKLIST.md`."
+            "note": "Diogo et al. (2008) Table 1 derives this muscle from the adductor mandibulae A2-PVM bundle they identify in *Latimeria*, *Ambystoma* and *Timon*, and places it on their adductor row for all five mammals they examine. **This dataset now follows them for all three of its mammals.** Gest's tables place it on the mylohyoid instead; that is a single-taxon descriptive source settling no homology across taxa, so under `docs/METHODS.md` the newer comparative treatment governs. The edge is kept because the disagreement is real and Gest's reading should stay findable under his name, not because the assignment is still open."
           },
           {
             "relation": "corresponds-to-part-of",
@@ -708,7 +726,8 @@
             "sources": [
               "diogo-etal-2008-head"
             ],
-            "confidence": "contested"
+            "confidence": "contested",
+            "note": "Diogo et al. (2008) Table 1 derives this muscle from the adductor mandibulae A2-PVM bundle they identify in *Latimeria*, *Ambystoma* and *Timon*, and places it on their adductor row for all five mammals they examine. **This dataset now follows them for all three of its mammals.** Gest's tables place it on the mylohyoid instead; that is a single-taxon descriptive source settling no homology across taxa, so under `docs/METHODS.md` the newer comparative treatment governs. The edge is kept because the disagreement is real and Gest's reading should stay findable under his name, not because the assignment is still open."
           }
         ]
       },
@@ -944,7 +963,7 @@
         {
           "species": "homo-sapiens",
           "speciesBasis": "note",
-          "name": "Mylohyoid and its derivatives",
+          "name": "Mylohyoid and the anterior belly of digastric",
           "present": "yes",
           "division": "divided",
           "parts": [
@@ -953,16 +972,6 @@
             },
             {
               "name": "Anterior belly of digastric"
-            },
-            {
-              "name": "Tensor tympani",
-              "membership": "disputed",
-              "claimedBy": "adductor-mandibulae"
-            },
-            {
-              "name": "Tensor veli palatini",
-              "membership": "disputed",
-              "claimedBy": "adductor-mandibulae"
             }
           ],
           "action": "Elevates the floor of the mouth and the hyoid; tensor tympani damps the ossicular chain; tensor veli palatini tenses the soft palate and opens the auditory tube.",
@@ -1003,7 +1012,8 @@
             {
               "nerve": "trigeminal-mandibular"
             }
-          ]
+          ],
+          "divisionNote": "The tensor tympani and tensor veli palatini were parts of this row until Diogo et al. (2008) Table 1 was read against it. They derive both from the adductor mandibulae A2-PVM bundle they identify in *Latimeria*, *Ambystoma* and *Timon*, and place them on their adductor row for all five mammals they examine. **Gest's tables, which put them here, describe one animal and settle no homology across taxa**, so under the rule in `docs/METHODS.md` the newer comparative treatment governs and the two muscles now sit on `adductor-mandibulae`. Nothing about arch identity turns on it — both fields are mandibular-arch and both take CN V — but a student now finds the muscle in one place instead of two."
         },
         {
           "species": "sphenodon-punctatus",
@@ -1179,7 +1189,6 @@
             "to": "adductor-mandibulae",
             "toPart": "Tensor tympani",
             "taxa": [
-              "monotremata",
               "theria"
             ],
             "sources": [
@@ -1187,14 +1196,13 @@
               "diogo-etal-2008-head"
             ],
             "confidence": "contested",
-            "note": "Scored here as a part of the human mylohyoid row; Diogo et al. (2008) derive it from adductor mandibulae A2-PVM instead. See the reciprocal edge on `adductor-mandibulae`."
+            "note": "Held here until Diogo et al. (2008) Table 1 was read against the row. Gest's tables place this muscle on the human mylohyoid; Diogo et al. derive it from adductor mandibulae A2-PVM and this dataset now follows them. Retained as a correspondence so the older reading stays findable. See `adductor-mandibulae`."
           },
           {
             "relation": "corresponds-to-part-of",
             "to": "adductor-mandibulae",
             "toPart": "Tensor veli palatini",
             "taxa": [
-              "monotremata",
               "theria"
             ],
             "sources": [
@@ -1202,7 +1210,7 @@
               "diogo-etal-2008-head"
             ],
             "confidence": "contested",
-            "note": "Scored here as a part of the human mylohyoid row; Diogo et al. (2008) derive it from adductor mandibulae A2-PVM instead. See the reciprocal edge on `adductor-mandibulae`."
+            "note": "Held here until Diogo et al. (2008) Table 1 was read against the row. Gest's tables place this muscle on the human mylohyoid; Diogo et al. derive it from adductor mandibulae A2-PVM and this dataset now follows them. Retained as a correspondence so the older reading stays findable. See `adductor-mandibulae`."
           },
           {
             "relation": "serial",

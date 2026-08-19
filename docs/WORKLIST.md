@@ -235,28 +235,29 @@ That is the specific acquisition this list needs, and Nishi's *Muskeln des Rumpf
 These are judgement calls the data is currently carrying, each waiting on a
 specific source rather than on effort.
 
-**The tensor tympani is on two records' worth of evidence and one record.** It and
-the tensor veli palatini are scored as parts of the human mylohyoid row on
-`intermandibularis`, which is where Gest's tables put them. Diogo et al. (2008),
-Table 1, derive both from the **adductor mandibulae** instead — from the A2-PVM
-bundle they identify in *Latimeria*, *Ambystoma* and *Timon* — and place them on
-their adductor row for all five mammals they examined. Nothing about arch identity
-turns on it: both fields are mandibular-arch, both take CN V, and the teaching pair
-of tensor tympani against stapedius survives either reading. What turns on it is
-which record a student finds the muscle under, and this dataset currently answers
-that twice. Both records now carry `corresponds-to-part-of` edges naming the other, and both
-parts carry `membership: "disputed"` with `claimedBy`, so the dispute is
-queryable rather than prose. **What remains is the decision itself**: which record
-should hold the muscle, or whether holding it on both is the honest answer.
+**~~The tensor tympani is on two records' worth of evidence and one record.~~
+Settled: it is on `adductor-mandibulae`.** It and the tensor veli palatini were
+parts of the human mylohyoid row on `intermandibularis`, where Gest's tables put
+them, while the *Ornithorhynchus* and *Rattus* rows already had them on the
+adductor. So the dataset answered by taxon for a muscle that is homologous across
+mammals: a student looking up the human found it in one place and the rat in
+another.
 
-The date does not settle this one. `intermandibularis`'s computed authority is
-Ziermann & Diogo (2019), which is more recent than 2008 but is **a chapter on head
-muscle development in fishes** and takes no position on a mammalian muscle. That is
-exactly the condition `docs/METHODS.md` describes for opting a record out with
-`basis: "curated"`. Deciding it means reading Diogo et al. (2008)'s Table 1 against
-whatever the most recent mammalian treatment says, and it is a re-assignment of the
-dataset's flagship arch-identity example, so it is left as a decision rather than
-made in passing.
+The rule settles it, and the earlier framing here conflated two questions.
+`intermandibularis`'s computed **authority** is Ziermann & Diogo (2019), a chapter
+on head muscle development in fishes that takes no position on a mammalian muscle —
+which is why the date looked unhelpful. But authority is which source governs a
+record's overall scheme; the question here is which source settles one part
+assignment. On that, `gest-anatomy-tables` is single-taxon, descriptive and carries
+no `homologyScope`, and `diogo-etal-2008-head` is comparative, cross-taxon and
+newer. `docs/METHODS.md` is explicit that an old descriptive source does not set
+which record a muscle lands on when a newer comparative one covers it.
+
+Nothing about arch identity moved — both fields are mandibular-arch, both take CN
+V, and the teaching pair of tensor tympani against stapedius survives. Both parts
+stay `membership: "disputed"` with `claimedBy` naming the other record, and the
+`corresponds-to-part-of` edges are kept so Gest's reading stays findable under his
+name.
 
 **~~`epipubis` groups two things that may not be one.~~ Split.** It is now
 `epipubic-cartilage` (Testudines, Lepidosauria) and `epipubic-bone` (Theria,
