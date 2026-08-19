@@ -5528,6 +5528,34 @@
             ]
           },
           "attachmentNote": "Phascogale calura. **The supraspinatus is the bulkier of the two in all three animals** — here fully three times as large. Cunningham is checking Meckel's claim that the infraspinatus is the smaller throughout Marsupialia, and finds it holds; he cites Macalister for the wombat, phalanger, bandicoot, *Sarcophilus* and opossum, for the two being about equal in the giant kangaroo, and for the infraspinatus being the larger in Bennett's kangaroo. That is the one reported exception, and it is not in this dataset."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternal-keel",
+                "side": "proximal"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527. Fleshy origin from the proximal half of the sternal keel, extending cranially over much of the ventral surface of the coracoid, and lying deep to the pectoralis on the keel. Two origin rows because the sheet crosses two bones."
         }
       ],
       "homology": {
@@ -5554,19 +5582,20 @@
       },
       "sources": [
         "abdala-diogo-2010",
+        "burch-2014",
         "ercoli-etal-2014",
         "fahn-lai-etal-2020",
         "gambaryan-etal-2015",
+        "gest-anatomy-tables",
         "ghetie-etal-1976",
+        "matsuoka-hasegawa-2007",
         "molnar-diogo-2021",
         "molnar-etal-2018",
+        "osawa-1898",
+        "russell-bauer-2008",
         "schreiweis-1982",
         "walthall-ashley-ross-2006",
-        "burch-2014",
-        "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007",
-        "russell-bauer-2008",
-        "osawa-1898"
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -11225,6 +11254,49 @@
               "nerve": "radial"
             }
           ]
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Scapulotriceps + humerotriceps",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Scapulotriceps",
+              "sources": [
+                "widrig-etal-2026"
+              ]
+            },
+            {
+              "name": "Humerotriceps",
+              "sources": [
+                "widrig-etal-2026"
+              ]
+            }
+          ],
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026). Rows are the **scapulotriceps**: a tendinous origin on the proximal scapula immediately caudal to the glenoid, where a circular rugose tubercle marks it, inserting on the proximal caudal humeral shaft. **The insertion leaves two correlates** — a long lateral scar and a smaller circular scar proximal to it. On dissection of the scanned specimen the belly of pars caudalis lies ventral to pars cranialis and thins until it is indistinguishable from it near the insertion."
         }
       ],
       "homology": {
@@ -11263,19 +11335,20 @@
       },
       "sources": [
         "abdala-diogo-2010",
+        "burch-2014",
         "ercoli-etal-2014",
+        "gest-anatomy-tables",
         "godoy-etal-2016",
         "klinkhamer-etal-2017",
+        "matsuoka-hasegawa-2007",
         "mckitrick-1991",
         "molnar-diogo-2021",
         "molnar-etal-2018",
+        "osawa-1898",
+        "russell-bauer-2008",
         "sigurdsen-etal-2012",
         "walthall-ashley-ross-2006",
-        "burch-2014",
-        "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007",
-        "russell-bauer-2008",
-        "osawa-1898"
+        "widrig-etal-2026"
       ],
       "nerves": [
         {

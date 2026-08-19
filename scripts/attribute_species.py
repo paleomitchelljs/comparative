@@ -79,6 +79,7 @@ SOURCE_SPECIES = {
     "schreiweis-1982": "eudyptes-pachyrhynchus",
     "widrig-etal-2023": "nothoprocta-pentlandii",
     "fisher-goodman-1955": "grus-americana",
+    "widrig-etal-2026": "chauna-torquata",
     "mckitrick-1991": "gavia-immer",
     "boumans-etal-2015": "tyto-furcata",
     "jones-etal-2019": "columba-livia",
