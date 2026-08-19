@@ -704,6 +704,46 @@
             ]
           },
           "attachmentNote": "Spilocuscus maculatus. Separate along their whole length, and the brevior is large, powerful and **arises by three heads — an origin Cunningham says he has not seen in any other marsupial**: from the upper part of the lateral epicondyle; from the tendinous expansion on the surface of the supinator brevis; and from the posterior border of the radius below the supinator brevis. So two of its three heads are on the forearm rather than the humerus, one of them on another muscle's aponeurosis. It inserts on the radial border of the third metacarpal shaft a little beyond the base; the longior comes off the lower third of the supracondylar ridge to the radial border of the second metacarpal about its middle. Both have moved distally along the metacarpal from the base."
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Extensor metacarpi radialis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Pars anconalis",
+              "sources": [
+                "fisher-goodman-1955"
+              ]
+            },
+            {
+              "name": "Pars palmaris",
+              "sources": [
+                "fisher-goodman-1955"
+              ]
+            }
+          ],
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "note": "Two bellies forming the anterior edge of the forewing musculature. The pars palmaris is twice the size of the pars anconalis. M. tensor patagii brevis inserts widely on the originating tendon of the anconalis part, and Fisher & Goodman suggest one of the two anconalis tendons may have been usurped from that insertion — in one specimen the origin was by a single tendon.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpometacarpus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). Both parts arise from the ectepicondylar prominence, the palmaris proximal and palmar to the anconalis. Their calcified tendons fuse at the distal end of the radius into one uncalcified tendon, which crosses the anterior surface of the wrist and attaches to the proximal side of the tip of the **extensor process of metacarpal II** — the processus extensorius of the carpometacarpus, scored as the bone with `side: proximal` because the process is not yet a landmark record. Just before attaching it fuses with the inserting tendon of M. extensor longus digiti II."
         }
       ],
       "homology": {
@@ -740,15 +780,16 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014",
-        "mckitrick-1991",
-        "molnar-etal-2018",
-        "walthall-ashley-ross-2006",
         "burch-2014",
+        "ercoli-etal-2014",
+        "fisher-goodman-1955",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
+        "mckitrick-1991",
+        "molnar-etal-2018",
+        "osawa-1898",
         "russell-bauer-2008",
-        "osawa-1898"
+        "walthall-ashley-ross-2006"
       ],
       "nerves": [
         {
@@ -4302,6 +4343,35 @@
             "cunningham-1882"
           ],
           "attachmentNote": "Phascogale calura. Present and feebly developed — the whole of what Cunningham records for this animal. No attachments are scored because he describes none; he gives an insertion only for the cuscus, in which the muscle is best marked."
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Supinator brevis",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "note": "Arises just proximal to the anconeus and shares its origin with the extensor digitorum communis, sometimes by a common tendon.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "dorsal"
+              },
+              {
+                "element": "radius",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). Tendinous from the ectepicondylar prominence; fleshy fibres to the most proximal anconal (dorsal) surface of the radius and to the joint ligaments, fanning distally onto the anterior surface as well. Greatly attenuated distally, where it holds only the anterior surface. Two rows because the insertion covers two faces of one bone."
         }
       ],
       "homology": {
@@ -4329,10 +4399,11 @@
       "sources": [
         "abdala-diogo-2010",
         "ercoli-etal-2014",
+        "fisher-goodman-1955",
+        "gest-anatomy-tables",
         "godoy-etal-2016",
         "mckitrick-1991",
-        "molnar-etal-2017",
-        "gest-anatomy-tables"
+        "molnar-etal-2017"
       ],
       "nerves": [
         {
@@ -4751,6 +4822,34 @@
             ]
           },
           "attachmentNote": "Phascogale calura. Almost identical to the cuscus's but less marked, and it does not extend so far down the ulnar shaft."
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Anconeus",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "anterior"
+              },
+              {
+                "element": "ulna",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). A tendon from the ectepicondylar prominence of the external humeral condyle carries the fleshy fibres. The belly forms just distal to the humero-ulnar articulation and inserts fleshily on the anterior and anconal (dorsal) faces of the ulna, running out to an attenuated point about halfway along it."
         }
       ],
       "homology": {
@@ -4770,6 +4869,7 @@
       "sources": [
         "abdala-diogo-2010",
         "burch-2014",
+        "fisher-goodman-1955",
         "gest-anatomy-tables",
         "russell-bauer-2008"
       ],
@@ -5900,6 +6000,31 @@
               "nerve": "ulnar"
             }
           ]
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "note": "An anterior and a posterior part. The wide tendon of the anterior part is the most palmar and most central of all the tendons attaching to the medial surface of the internal humeral condyle.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulnare",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). The small deep tendon and the superficial tendon of the anterior part fuse at the proximal end of the os cuneiform, and the combined tendon inserts broadly on its postero-proximal edge. The cuneiform is the avian ulnare."
         }
       ],
       "homology": {
@@ -5924,14 +6049,15 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014",
-        "klinkhamer-etal-2017",
-        "walthall-ashley-ross-2006",
         "burch-2014",
+        "ercoli-etal-2014",
+        "fisher-goodman-1955",
         "gest-anatomy-tables",
+        "klinkhamer-etal-2017",
         "matsuoka-hasegawa-2007",
+        "osawa-1898",
         "russell-bauer-2008",
-        "osawa-1898"
+        "walthall-ashley-ross-2006"
       ],
       "nerves": [
         {

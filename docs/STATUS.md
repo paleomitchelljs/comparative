@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-129 muscle records · 1370 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
+129 muscle records · 1374 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **82%** of 1370 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 63%; the thinnest regions are fin, cranial, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **82%** of 1374 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 64%; the thinnest regions are fin, cranial, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -41,12 +41,12 @@ Taxon-specific attachments cover **82%** of 1370 present occurrences. The thinne
 | pelvic | 8 | 71 | 61 | 86% |
 | arm | 5 | 99 | 85 | 86% |
 | pectoral | 16 | 263 | 223 | 85% |
-| forearm | 19 | 268 | 221 | 82% |
+| forearm | 19 | 272 | 225 | 83% |
 | axial | 15 | 42 | 29 | 69% |
 | hand | 9 | 119 | 80 | 67% |
 | cranial | 16 | 124 | 80 | 65% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1370 | 1125 | **82%** |
+| **all** | 129 | 1374 | 1129 | **82%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -67,7 +67,7 @@ Taxon-specific attachments cover **82%** of 1370 present occurrences. The thinne
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
-| Aves | 111 | 70 | 63% |
+| Aves | 115 | 74 | 64% |
 | Anura | 72 | 38 | 53% |
 | Myxini | 4 | 2 | 50% |
 | Petromyzontida | 4 | 2 | 50% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1125 of 1370 present occurrences (82%).**
+**Taxon-specific attachments: 1129 of 1374 present occurrences (82%).**
 <!-- /counts:scored -->
 
 <!-- counts:unscored -->
@@ -97,7 +97,7 @@ more than the total.
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
 | pectoral | 16 | 697 |
-| forearm | 19 | 593 |
+| forearm | 19 | 603 |
 | foot | 12 | 463 |
 | cranial | 16 | 357 |
 | leg | 10 | 331 |
@@ -118,9 +118,9 @@ name a side or a landmark rather than the bare bone.
 | | |
 |---|---|
 | Elements | 274, of which 254 (93%) carry at least one attachment |
-| Observed attachment rows | 3622 |
-| Rows naming a **landmark** | 1017 (28%) |
-| Rows naming a **side** | 1965 (54%) |
+| Observed attachment rows | 3632 |
+| Rows naming a **landmark** | 1021 (28%) |
+| Rows naming a **side** | 1971 (54%) |
 | Osteological correlates | 126 flagged, 118 carry a muscle |
 <!-- /counts:skeleton -->
 
