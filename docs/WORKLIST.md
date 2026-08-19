@@ -165,21 +165,38 @@ against the threshold of 4.
 
 ### What the four opened up
 
-- **A facial-muscle expansion is now sourced but still blocked.** Diogo et al. (2009)
-  would supply the names, the presence table and the synonymy. It is blocked on the
-  same missing paper as before — nothing in `papers/` dissects a mammal's head — and
-  on a schema fact worth knowing first: facial muscles mostly end in skin, so the
-  muscles most characteristic of the group are the ones an attachment schema can say
-  least about.
-- **Two cranial records are now one row where their source is fifteen.**
-  `interhyoideus` carries the whole mammalian facial musculature in a single
-  occurrence per taxon, and `branchial-constrictors` carries the pharyngeal and
-  laryngeal muscles the same way. Diogo et al. (2008) Tables 2 and 3 resolve both
-  across nine taxa, and Diogo et al. (2009) resolves the facial half muscle by
-  muscle through the primates. **Splitting them is the same decision twice**, and
-  it is blocked on the same thing: nothing in `papers/` dissects a mammal's head,
-  so the new records would carry names and homologies with no attachments beneath
-  them. Worth deciding deliberately rather than drifting into.
+- **~~A facial-muscle expansion is sourced but blocked.~~ Done, in part.** Diogo et
+  al. (2009) Table 1 resolves the mammalian facial musculature across ten taxa from
+  *Ornithorhynchus* to *Homo* with a proposed unifying nomenclature. **Seventeen of
+  its rows are now records**, each carrying `descends-from` back to
+  `interhyoideus`, which had held the lot as `parts` of one occurrence per taxon —
+  fifteen on *Rattus*, fourteen on *Homo*.
+
+  The block was said to be the missing mammalian cranial myology. It was not: the
+  homology comes from Table 1 and needs no dissection here. **The real constraint
+  is the one named next to it** — facial muscles end in skin, so these records
+  carry names, presence and homology and no attachments, and that is a fact about
+  the muscles rather than a gap. `%att` falls because of it, correctly.
+
+  What is left of the table is the rows with arrows across them, where one muscle
+  in the platypus becomes several in a primate: the naso-labialis and its
+  derivatives, the maxillo-naso-labialis against the nasalis, and the
+  orbito-temporo-auricularis against the frontalis and auriculo-orbitalis. Those
+  need the 173 footnotes read, and they stay as `parts` on `interhyoideus` until
+  they are.
+
+- **`branchial-constrictors` is still one row where its sources are many.** It
+  carries the pharyngeal and laryngeal muscles the way `interhyoideus` carried the
+  facial ones, and it is the harder half: **45 distinct part names across its
+  eleven occurrences, almost all appearing once**, because a lamprey, an eel, an
+  axolotl, a turtle and a human each name these muscles differently. Splitting it
+  mechanically would produce forty-odd records asserting nothing and connecting to
+  nothing, which is the opposite of a homology group. It needs Diogo et al. (2008)
+  Tables 2 and 3 read the way Table 1 was read for the facial half, so that each
+  new record is a row of a source rather than a name from one animal. **Unlike the
+  facial case this one buys attachments** — its parts attach to cartilage and bone,
+  and the *Protanguilla* and *Ambystoma* rows already carry attachments alongside
+  14 and 10 parts, which is the collision.
 
 - **Figures in a PDF are readable; text extraction is not the only route.** The
   Diogo tables were called unreadable in this document for one pass because

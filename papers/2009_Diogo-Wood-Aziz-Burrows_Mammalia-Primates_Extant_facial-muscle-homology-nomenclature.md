@@ -42,29 +42,60 @@ reorganisation, and the paper is precise about each step:
   platysma cervicale (undifferentiated in orangutans, panins and humans) and an
   auricularis posterior (undifferentiated in orangutans).
 
-## What it gave this dataset, and what it would give
+## What it gave this dataset
 
-**Nothing scored yet, and the reason is structural: this dataset has no facial-muscle
-records.** The whole CN VII field is carried by `interhyoideus`, whose homology note
-records the transformation of a pharyngeal constrictor sheet into the mammalian
-facial musculature as a single event. That is the right level for the eight-row
-record it currently is, and much too coarse for what this paper describes.
+**Seventeen records, split out of `interhyoideus` on Table 1.** That record carried
+the whole mammalian facial musculature as `parts` of one occurrence per taxon —
+fifteen on *Rattus*, fourteen on *Homo*, seven on *Ornithorhynchus* — where this
+paper resolves it muscle by muscle across ten mammals.
 
-**What it would enable is a facial-muscle expansion**, and it is close to a complete
-kit for one: a proposed nomenclature for Mammalia entire, a presence table across
-strepsirrhines, monkeys and hominoids, and a 300-entry synonym list of exactly the
-kind the search index exists to absorb. Fifteen or twenty records could be split out
-of `interhyoideus` on this source alone.
+Table 1 is the deliverable. It reads cleanly as a page image at 210 dpi (PDF p. 3;
+`pdftotext` returns only the 173 footnotes, which run over four further pages). Each
+row is a homology hypothesis across *Ornithorhynchus anatinus*, *Rattus norvegicus*,
+*Tupaia*, *Lepilemur ruficaudatus*, *Macaca mulatta*, *Hylobates lar*, *Pongo
+pygmaeus*, *Gorilla gorilla*, *Pan troglodytes* and *Homo sapiens*, with counts in
+the column headers: **10 facial muscles in the platypus, 20 in the rat, 24 in a
+human.**
 
-**Two reasons not to do it yet.** The first is that the corpus has no descriptive
-myology for a mammalian head — `docs/WORKLIST.md` lists that as one of two columns
-empty for want of a paper — so the new records would carry names and homologies with
-no attachments under them. The second is that this paper's own attachments are
-sparse: fewer than two origin/insertion mentions per page, because facial muscles
-mostly end in skin, and a muscle that ends in skin has no osteological correlate to
-score. **The muscles most characteristic of the group are the ones this dataset's
-schema can say least about**, which is worth knowing before the expansion is planned
-rather than after.
+Taken, for the three mammals this dataset holds:
+
+`platysma-cervicale` · `platysma-myoides` · `occipitalis` · `auricularis-posterior`
+· `sphincter-colli-superficialis` · `sphincter-colli-profundus` ·
+`cervicalis-transversa` · `interscutularis` · `zygomaticus-major` ·
+`zygomaticus-minor` · `orbicularis-oculi` · `buccinatorius` · `orbicularis-oris` ·
+`mentalis` · `dilatator-nasi` · `levator-anguli-oris-facialis` ·
+`interhyoideus-profundus`
+
+Each carries `descends-from` to `interhyoideus`, so the hyoid-sheet origin of the
+facial musculature stays queryable rather than being dissolved by the split.
+
+Three of those are worth noticing on their own. **`interhyoideus-profundus` has one
+cell in the whole table** — the platypus — which makes it the clearest surviving
+trace of the undivided hyoid sheet. **`sphincter-colli-profundus` is absent in
+*Ornithorhynchus* but present in *Tachyglossus***, so it is a monotreme character
+the platypus lacks rather than a therian innovation. And the **cervicalis
+transversa of the platypus and the sternofacialis of the rat are one row**, so the
+rat's name is the therian name for the platypus's muscle.
+
+## What it did not give, and why
+
+**No attachments.** This paper averages fewer than two origin/insertion mentions per
+page, because facial muscles mostly end in skin and a muscle that ends in skin has
+no osteological correlate. The seventeen records carry names, presence and homology
+and nothing else. **The muscles most characteristic of the group are the ones this
+schema can say least about** — that is a fact about the muscles, and the `%att`
+figures fall accordingly rather than incorrectly.
+
+An earlier version of this note gave a second reason to hold off: that the corpus
+has no descriptive myology for a mammalian head. **That was not the blocker.** The
+homology comes from Table 1 and needs no dissection here; the missing myology would
+have supplied attachments, which this group largely does not have to give.
+
+**The rows with arrows across them are not taken.** Where one muscle in the platypus
+becomes several in a primate — the naso-labialis and its derivatives, the
+maxillo-naso-labialis against the nasalis, the orbito-temporo-auricularis against
+the frontalis and auriculo-orbitalis — the correspondence needs the footnotes read.
+Those stay as `parts` on `interhyoideus`.
 
 ## Relevance to comparative anatomy teaching
 

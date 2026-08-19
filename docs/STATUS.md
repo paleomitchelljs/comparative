@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-129 muscle records · 1377 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
+146 muscle records · 1412 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **82%** of 1377 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 65%; the thinnest regions are fin, cranial, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **80%** of 1412 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 65%; the thinnest regions are cranial, fin, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -44,9 +44,9 @@ Taxon-specific attachments cover **82%** of 1377 present occurrences. The thinne
 | forearm | 19 | 273 | 226 | 83% |
 | axial | 15 | 42 | 29 | 69% |
 | hand | 9 | 119 | 80 | 67% |
-| cranial | 16 | 124 | 80 | 65% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1377 | 1132 | **82%** |
+| cranial | 33 | 159 | 80 | 50% |
+| **all** | 146 | 1412 | 1132 | **80%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -58,9 +58,9 @@ Taxon-specific attachments cover **82%** of 1377 present occurrences. The thinne
 | Pseudosuchia (stem) | 1 | 1 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
-| Monotremata | 159 | 151 | 95% |
-| Theria | 386 | 359 | 93% |
+| Monotremata | 168 | 151 | 90% |
 | Theropoda (stem) | 38 | 34 | 89% |
+| Theria | 412 | 359 | 87% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
 | Lepidosauria | 264 | 217 | 82% |
@@ -84,11 +84,11 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1132 of 1377 present occurrences (82%).**
+**Taxon-specific attachments: 1132 of 1412 present occurrences (80%).**
 <!-- /counts:scored -->
 
 <!-- counts:unscored -->
-245 present occurrences still have no attachment rows.
+280 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 
 ### Observed attachment rows, by region
@@ -99,7 +99,7 @@ more than the total.
 | pectoral | 16 | 700 |
 | forearm | 19 | 604 |
 | foot | 12 | 463 |
-| cranial | 16 | 357 |
+| cranial | 33 | 357 |
 | leg | 10 | 331 |
 | thigh | 10 | 300 |
 | arm | 5 | 255 |
@@ -153,9 +153,9 @@ that was written to settle homology across more than one taxon. The rule is in
 | | |
 |---|---|
 | Sources that can adjudicate a homology | 31 of 120 |
-| Records following one | 121 of 129 (94%) |
-| Median year of the governing source | 2016 |
-| Records governed by pre-2010 work | 7 (6%) |
+| Records following one | 138 of 146 (95%) |
+| Median year of the governing source | 2014 |
+| Records governed by pre-2010 work | 24 (17%) |
 | Records with **no** homology-scope source | 8 — their homology rests on descriptive work alone |
 <!-- /counts:authority -->
 

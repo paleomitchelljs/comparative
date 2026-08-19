@@ -1924,31 +1924,10 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Platysma"
-            },
-            {
-              "name": "Occipitofrontalis"
-            },
-            {
-              "name": "Orbicularis oculi"
-            },
-            {
-              "name": "Orbicularis oris"
-            },
-            {
-              "name": "Buccinator"
-            },
-            {
-              "name": "Zygomaticus major and minor"
-            },
-            {
               "name": "Levator labii superioris"
             },
             {
               "name": "Depressor anguli oris"
-            },
-            {
-              "name": "Mentalis"
             },
             {
               "name": "Risorius"
@@ -1957,13 +1936,7 @@
               "name": "Nasalis"
             },
             {
-              "name": "Procerus"
-            },
-            {
               "name": "Corrugator supercilii"
-            },
-            {
-              "name": "Auricular muscles"
             }
           ],
           "action": "Move the skin of the face, scalp, eyelids and lips; close the eye and the mouth; compress the cheek against the teeth.",
@@ -2082,37 +2055,14 @@
         {
           "species": "ornithorhynchus-anatinus",
           "speciesBasis": "note",
-          "name": "Interhyoideus profundus, sphincter colli and the facial muscles",
+          "name": "Naso-labialis",
           "present": "yes",
-          "division": "divided",
-          "parts": [
-            {
-              "name": "Interhyoideus profundus"
-            },
-            {
-              "name": "Sphincter colli superficialis"
-            },
-            {
-              "name": "Cervicalis transversa"
-            },
-            {
-              "name": "Orbicularis oculi"
-            },
-            {
-              "name": "Naso-labialis"
-            },
-            {
-              "name": "Buccinatorius"
-            },
-            {
-              "name": "Orbicularis oris"
-            }
-          ],
           "divisionNote": "A sphincter colli profundus is recorded in the echidna but not the platypus, so the monotremes disagree with each other here. The platypus's twelve hyoid muscles in Diogo et al.'s count include the styloideus, stapedius, platysma cervicale and platysma myoides, which are dorso-medial and scored on `depressor-mandibulae` and `stapedius` rather than here.",
           "sources": [
             "diogo-etal-2008-head"
           ],
-          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. **The platypus already has the core of a mammalian face**: an orbicularis oculi, an orbicularis oris, a buccinatorius and a naso-labialis, plus a dilatator nasi, a maxillo-naso-labialis and a levator anguli oris facialis. What it does not have is the zygomatic group, the auricular group, the mentalis or the procerus. Its twelve hyoid muscles sit between a lizard's three and a rat's twenty-three, which is the sequence this record exists to show — **the mammalian face is built by subdividing one pharyngeal constrictor sheet, and the monotreme is the stage where that is half done.** The platysma cervicale and platysma myoides are derived by Diogo et al. from the reptilian cervicomandibularis rather than from the interhyoideus, so the neck sheet and the face come from two different arch-2 muscles and not one. **No attachments are scored: this source describes none.**"
+          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. **The platypus already has the core of a mammalian face**: an orbicularis oculi, an orbicularis oris, a buccinatorius and a naso-labialis, plus a dilatator nasi, a maxillo-naso-labialis and a levator anguli oris facialis. What it does not have is the zygomatic group, the auricular group, the mentalis or the procerus. Its twelve hyoid muscles sit between a lizard's three and a rat's twenty-three, which is the sequence this record exists to show — **the mammalian face is built by subdividing one pharyngeal constrictor sheet, and the monotreme is the stage where that is half done.** The platysma cervicale and platysma myoides are derived by Diogo et al. from the reptilian cervicomandibularis rather than from the interhyoideus, so the neck sheet and the face come from two different arch-2 muscles and not one. **No attachments are scored: this source describes none.**",
+          "note": "Reduced to the naso-labialis after the facial split: Table 1 of Diogo et al. (2009) gives *Ornithorhynchus* ten facial muscles, and every one it resolves against the other mammals is now a record of its own. The naso-labialis stays here because Table 1 shows it dividing into the levator labii superioris and its neighbours in the primates, so it is one muscle in the platypus and several in a human, and the correspondence needs the footnotes read before it can be a record."
         },
         {
           "species": "rattus-norvegicus",
@@ -2122,49 +2072,13 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Sphincter colli superficialis"
-            },
-            {
-              "name": "Sphincter colli profundus"
-            },
-            {
-              "name": "Sternofacialis"
-            },
-            {
-              "name": "Interscutularis"
-            },
-            {
-              "name": "Zygomaticus major"
-            },
-            {
-              "name": "Zygomaticus minor"
-            },
-            {
               "name": "Orbito-temporo-auricularis"
-            },
-            {
-              "name": "Orbicularis oculi"
             },
             {
               "name": "Naso-labialis"
             },
             {
-              "name": "Buccinatorius"
-            },
-            {
-              "name": "Dilatator nasi"
-            },
-            {
               "name": "Maxillo-naso-labialis"
-            },
-            {
-              "name": "Levator anguli oris facialis"
-            },
-            {
-              "name": "Orbicularis oris"
-            },
-            {
-              "name": "Procerus"
             }
           ],
           "divisionNote": "A partial list: Diogo et al. count twenty-three hyoid muscles in this animal excluding the extrinsic ear muscles, and several of those are dorso-medial and belong on `depressor-mandibulae` and `stapedius`.",
@@ -2194,12 +2108,29 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The transformation of a pharyngeal constrictor sheet into the mammalian facial musculature is tracked by constant CN VII innervation. This is arguably the most dramatic functional relocation of any vertebrate muscle field.\n\n**Diogo et al. (2008) route the mammalian facial muscles through this field.** They support Lightoller (1942) and Saban (1971): the reptilian sphincter colli — itself an interhyoideus derivative — corresponds to the mammalian sphincter colli superficialis and profundus and everything descended from them, while the reptilian cervicomandibularis, which runs more obliquely and lies deeper, is a separate matter. They note the older view that the mammalian facial muscles were *de novo* structures has been abandoned. Set against `depressor-mandibulae`, which they read as the source of the stylohyoideus rather than this field, the two records divide the arch-2 musculature of a mammal between them. Diogo et al. (2009) resolve what happens after that: the primate sequence is reshuffling rather than accumulation — strepsirrhines differentiate a depressor supercilii that tree-shrews do not and lack their zygomatico-orbicularis and sphincter colli superficialis; macaques lack the sphincter colli profundus and mandibulo-auricularis but gain six muscles around the mouth and nose; hominoids gain the risorius, auricularis anterior and temporoparietalis while losing the differentiated platysma cervicale that a macaque has. **This record is one row where that is fifteen or twenty**, and splitting it is a live option — see the reading note for why it waits on a descriptive myology of a mammalian head.",
+        "notes": "The transformation of a pharyngeal constrictor sheet into the mammalian facial musculature is tracked by constant CN VII innervation. This is arguably the most dramatic functional relocation of any vertebrate muscle field.\n\n**Diogo et al. (2008) route the mammalian facial muscles through this field.** They support Lightoller (1942) and Saban (1971): the reptilian sphincter colli — itself an interhyoideus derivative — corresponds to the mammalian sphincter colli superficialis and profundus and everything descended from them, while the reptilian cervicomandibularis, which runs more obliquely and lies deeper, is a separate matter. They note the older view that the mammalian facial muscles were *de novo* structures has been abandoned. Set against `depressor-mandibulae`, which they read as the source of the stylohyoideus rather than this field, the two records divide the arch-2 musculature of a mammal between them. Diogo et al. (2009) resolve what happens after that: the primate sequence is reshuffling rather than accumulation — strepsirrhines differentiate a depressor supercilii that tree-shrews do not and lack their zygomatico-orbicularis and sphincter colli superficialis; macaques lack the sphincter colli profundus and mandibulo-auricularis but gain six muscles around the mouth and nose; hominoids gain the risorius, auricularis anterior and temporoparietalis while losing the differentiated platysma cervicale that a macaque has. **This record is one row where that is fifteen or twenty**, and splitting it is a live option — see the reading note for why it waits on a descriptive myology of a mammalian head.\n\n**The mammalian facial musculature has been split out.** This record held it as `parts` of one occurrence per taxon — fifteen on *Rattus*, fourteen on *Homo* — where Diogo et al. (2009) Table 1 resolves it muscle by muscle across ten mammals with a proposed unifying nomenclature. Seventeen of those rows are now records of their own, each carrying `descends-from` back to here. What remains on this record is the interhyoideus proper and the parts Table 1 does not resolve into a single mammalian muscle.",
         "related": [
+          "auricularis-posterior",
+          "buccinatorius",
           "ceratomandibularis",
+          "cervicalis-transversa",
           "depressor-mandibulae",
+          "dilatator-nasi",
+          "interhyoideus-profundus",
           "intermandibularis",
-          "stapedius"
+          "interscutularis",
+          "levator-anguli-oris-facialis",
+          "mentalis",
+          "occipitalis",
+          "orbicularis-oculi",
+          "orbicularis-oris",
+          "platysma-cervicale",
+          "platysma-myoides",
+          "sphincter-colli-profundus",
+          "sphincter-colli-superficialis",
+          "stapedius",
+          "zygomaticus-major",
+          "zygomaticus-minor"
         ],
         "teaching": "Directly clinically relevant: explains why Bell's palsy affects the whole hemiface plus the stapedius (hyperacusis) but spares chewing (CN V, arch 1).",
         "authority": {
@@ -6195,6 +6126,1265 @@
       "nerves": [
         {
           "nerve": "trigeminal-mandibular"
+        }
+      ]
+    },
+    {
+      "id": "platysma-cervicale",
+      "name": "Platysma cervicale",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Platysma cervicale"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Platysma cervicale"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Present in every taxon of Table 1 from the platypus to the gorilla and lost in *Pan* and *Homo*. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "platysma-myoides",
+      "name": "Platysma myoides",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Platysma myoides"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Platysma myoides"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Platysma myoides"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The one facial muscle Table 1 gives to all ten taxa without a break. In humans it is the platysma of ordinary anatomical usage. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "occipitalis",
+      "name": "Occipitalis",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Occipitalis"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Occipitalis"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Absent in the platypus and present in every therian column of Table 1. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "auricularis-posterior",
+      "name": "Auricularis posterior",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Auricularis posterior"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Auricularis posterior"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Absent in the platypus; present through the therians, with *Pongo* the exception. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "sphincter-colli-superficialis",
+      "name": "Sphincter colli superficialis",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Sphincter colli superficialis"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Sphincter colli superficialis"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Platypus, rat and tree-shrew only. Lost in the primate columns, which is why the human neck has platysma where the rat has both. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "sphincter-colli-profundus",
+      "name": "Sphincter colli profundus",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Sphincter colli profundus"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Absent in *Ornithorhynchus* but present in *Tachyglossus* — Table 1's cell reads '(colli prof. in Echidna)', so the muscle is a monotreme character the platypus lacks rather than a therian innovation. Absent in *Macaca* and above. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "cervicalis-transversa",
+      "name": "Cervicalis transversa",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Cervicalis transversa"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Cervicalis transversa"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "The platypus cervicalis transversa and the rat sternofacialis are one row in Table 1, so the rat's name is the therian name for this muscle. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "interscutularis",
+      "name": "Interscutularis",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Interscutularis"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "A rodent muscle in Table 1: the only column with a cell is *Rattus*. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "zygomaticus-major",
+      "name": "Zygomaticus major",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Zygomaticus major"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Zygomaticus major"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Absent in the platypus and present in every therian column. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "zygomaticus-minor",
+      "name": "Zygomaticus minor",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Zygomaticus minor"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Zygomaticus minor"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Absent in the platypus and present in every therian column. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "orbicularis-oculi",
+      "name": "Orbicularis oculi",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Orbicularis oculi"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Orbicularis oculi"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Orbicularis oculi"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Given to all ten taxa of Table 1. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "buccinatorius",
+      "name": "Buccinatorius",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Buccinatorius"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Buccinatorius"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Buccinatorius"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Given to all ten taxa of Table 1. The human buccinator. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "orbicularis-oris",
+      "name": "Orbicularis oris",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Orbicularis oris"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Orbicularis oris"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Orbicularis oris"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Given to all ten taxa of Table 1. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "mentalis",
+      "name": "Mentalis",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Mentalis"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Mentalis"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Mentalis"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Given to all ten taxa of Table 1. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "dilatator-nasi",
+      "name": "Dilatator nasi",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Dilatator nasi"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "A rodent muscle in Table 1: the only column with a cell is *Rattus*. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "levator-anguli-oris-facialis",
+      "name": "Levator anguli oris facialis",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Levator anguli oris facialis"
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Levator anguli oris facialis"
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "Absent in the platypus and present in every therian column. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ]
+    },
+    {
+      "id": "interhyoideus-profundus",
+      "name": "Interhyoideus profundus",
+      "region": "cranial",
+      "subregion": "facial (arch 2)",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": "2",
+      "developmental": "Second pharyngeal arch mesoderm; facial (mimetic) musculature.",
+      "consensus": {
+        "origin": "Skull, fascia or a neighbouring facial muscle.",
+        "insertion": "Skin, or the fascia of an adjacent facial muscle.",
+        "action": "Moves the skin of the face, ear, lips or neck.",
+        "innervation": "Facial nerve (CN VII)."
+      },
+      "occurrences": [
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "default",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2009"
+          ],
+          "name": "Interhyoideus profundus"
+        },
+        {
+          "species": "acinonyx-jubatus",
+          "speciesBasis": "default",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "survey",
+          "present": "no",
+          "sources": [
+            "diogo-etal-2009"
+          ]
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "**The platypus column alone.** Table 1 gives it to *Ornithorhynchus* and to nothing else, which makes it the clearest surviving trace of the undivided hyoid sheet the rest of this group differentiated out of. Split out of `interhyoideus`, which held the whole mammalian facial musculature as `parts` of one occurrence per taxon. The homology across taxa is Table 1 of Diogo et al. (2009), which proposes a unifying nomenclature for the facial muscles of Mammalia as a whole and is the reason these are records rather than names.",
+        "related": [
+          "interhyoideus"
+        ],
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "interhyoideus",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "note": "The mammalian facial musculature derives from the hyoid-arch sheet — the interhyoideus and sphincter colli of non-mammals. Stored on the descendant, so `interhyoideus` finds these by scanning."
+          }
+        ],
+        "teaching": "Facial muscles mostly end in skin, so this record's `attachments` are structurally thin and that is a fact about the muscle rather than a gap in the data.",
+        "authority": {
+          "source": "diogo-etal-2009",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "diogo-etal-2009"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
         }
       ]
     }
