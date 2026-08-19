@@ -96,18 +96,23 @@ rather than dissecting — Winterbottom's teleost synonymy — the species recor
 for `source`, which means a single-species study, or invent a plausible exemplar.
 The validator enforces it both ways.
 
-**Rebuild with `./scripts/build.sh --write`,** which runs the migrations and
-seeds in dependency order and then validates. It is a fixed point — CI runs it
-and fails if the committed data changes.
+**Rebuild with `./scripts/build.sh --write`,** which normalises, derives and then
+validates. It is a fixed point — CI runs it and fails if the committed data
+changes.
 
-**The seeds fill, they do not sync.** A seed writes a field only where the
-occurrence has none, and `sources` is a union. They used to assign
-unconditionally, so every build replayed each script's embedded copy over later
-curation: `linea-alba` over a corrected `body-wall`, `median` over a curated
-`median-anterior-interosseous`, and citations dropped off rows that had since
-been scored against a second source. **So editing a seed script no longer
-changes data that already exists.** To revise a seeded row, edit the JSON — that
-is the copy under curation and the one the build now preserves.
+**Mining a paper means editing `data/*.json`. Do not write a script to do it.**
+Seven single-source seed scripts used to run inside the build, each holding a
+paper's rows as a Python literal. Once the rows were committed the literal was a
+stale second copy, and because each assigned its fields unconditionally, every
+build replayed it over later curation — `linea-alba` over a corrected
+`body-wall`, `median` over a curated `median-anterior-interosseous`, citations
+dropped off rows since scored against a second source. They are retired. What
+each one argued now lives in the reading note for its source.
+
+The steps that remain either normalise a field into its structured form or derive
+one that is computable, and they **fill rather than sync**: a field is written
+only where the row has none, and `sources` is a union. `docs/SCHEMA.md` is the
+guide to adding rows by hand.
 
 **Regenerate analysis exports with `scripts/export_matrix.py`.** `export/` is
 git-ignored — it is derived, never a source of truth.

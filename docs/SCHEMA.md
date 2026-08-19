@@ -209,6 +209,14 @@ number.
 dataset has one. It stays optional and is never inferred from the name — a part
 is a name in a taxon, not a record.
 
+**Every division was read off its row's own `name` and `note`; none is split by
+rule.** The content used to live inside the name as prose — `"Iliacus + psoas
+major (+ sartorius)"` — which is readable and uncountable. A regex would not have
+drawn the distinctions above, and where the prose will not settle one, the row
+carries a `divisionNote` saying so and no `division`: the Komodo dragon's "ilio-,
+ischio- and caudofemoralis series" expands two ways, and the turtle extraocular
+row names eleven units where its own note quotes Werneburg recording ten.
+
 **Do not use `parts` on fin records.** Their occurrence names list the tetrapod
 muscles each ancestral fin muscle gave rise to, which is `derivatives` — already
 curated, and already reversed by the app. Recording it twice gives one fact two

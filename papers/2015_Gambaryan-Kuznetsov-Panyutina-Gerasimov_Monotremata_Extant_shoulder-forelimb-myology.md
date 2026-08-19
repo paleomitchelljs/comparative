@@ -80,8 +80,8 @@ Standard descriptive dissection, each muscle described under origin / insertion 
 
 ## Where this has been mined
 
-**Girdle and arm, all three genera — done.** Seventeen records × three species, in
-`scripts/seed_gambaryan_monotremata.py`; Monotremata went 43% → 100% scored. The
+**Girdle and arm, all three genera — done.** Seventeen records × three species;
+Monotremata went 43% → 100% scored. The
 cross-comparison the Limitations above says is left to the reader is now carried
 in the data for the girdle: the equivalences are on each affected occurrence, and
 the three-way chain (their supracoracoideus = Diogo & Abdala's infraspinatus,
@@ -92,7 +92,7 @@ minor dispute — is what forced `supracoracoideus` from `well-supported` to
 `contested`.
 
 **Forearm and hand, all three genera — done.** Nineteen records × three species
-plus one new record, in `scripts/seed_gambaryan_monotremata_distal.py`; hand went
+plus one new record; hand went
 47% → 54% and forearm 58% → 69%, and Monotremata finished at 103 of 103. Findings
 2, 5 and 7 above are all scored. The sharpest of them is finding 5's first clause:
 the caput humerale profundum of the flexor digitorum profundus is scored on
@@ -101,6 +101,46 @@ amniotes" and had no mammal on it, because the topological and ligamentous argum
 here is against Straus (1942) rather than a loose resemblance. `yes` in
 *Ornithorhynchus*, `uncertain` in both echidnas, where Kajava (1911) is the only
 authority for the diagnostic ligament.
+
+**Four things carried into the data that the Findings above do not reach.**
+
+- **The homology dispute that Romer's derivation runs into.** Romer (1922) derives
+  the therian supraspinatus and infraspinatus from the supracoracoideus of lower
+  tetrapods, which is what this record's synonym list encodes, and the argument is
+  from shared innervation. Gambaryan et al.'s objection is that in monotremes all
+  three muscles are present at once. Their reading is that the monotreme
+  supracoracoideus is homologous with the reptilian, avian and amphibian
+  supracoracoideus outright, and that supraspinatus and infraspinatus are mammalian
+  additions to the group. Recorded as `membership: disputed` parts rather than by
+  restructuring the record on one source.
+- **An attachment at the wrong end of the bone, with a mechanical reason.** The
+  monotreme latissimus inserts on the medial epicondyle — the far distal humerus —
+  where the therian and reptilian muscle inserts near the lesser tubercle.
+  Gambaryan et al. tie it to the barrel-shaped rib cage: the elbow sits in the same
+  parasagittal plane as the widest point of the ribs, so the muscle runs straight
+  down the flank onto the epicondyle. A muscle moving the length of a bone, and a
+  reason it had to.
+- **The prepollex is not an anuran peculiarity.** `GAPS.md` §1 singles it out as
+  the position-versus-identity case, on the grounds that anurans lost digit I and
+  the preaxial muscles attach to the prepollex instead. Monotremes have one, did
+  not lose digit I, and hang more on it: the entire flexor carpi radialis insertion
+  in all three genera, plus the origins of the interossei of digits I to III, and
+  in *Zaglossus* ligaments relay its pull on to the distal carpals and metacarpals
+  I–III. So the element is a preaxial lever some tetrapods keep and load, not a
+  compensation for a missing digit.
+- **The one new record.** `extensor-digitorum-profundus`, for the extensor pollicis
+  et indicis — Haines' (1939) extensor digitorum profundus, and Diogo & Abdala's
+  extensor pollicis longus + extensor indicis + extensor digitus III proprius rolled
+  into one. The dataset had nowhere to put a deep digital extensor arising from the
+  ulna, and its digital formula differs in all three genera with a stated polarity.
+
+**Read but not acted on.** The monotreme extensor carpi radialis inserts
+symmetrically about the mid-axis of the metacarpus, centred on metacarpal III, and
+Gambaryan et al. say that makes it comparable with the *reptilian* extensor
+digitorum communis — Haines' (1939) humerodorsalis, already a synonym on
+`extensor-digitorum` — rather than with the reptilian extensor carpi radialis. It
+is in the rows' notes and in the record's homology block. Moving the muscle would
+re-score six other columns on one remark.
 
 **This paper is mined out.** What remains in it is trunk and neck material
 (sternomastoideus, cleidomastoideus, the trapezius group, omohyoideus, cutaneus

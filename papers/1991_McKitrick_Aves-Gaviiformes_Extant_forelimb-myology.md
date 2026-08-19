@@ -111,14 +111,19 @@ distinguishable within it, which is why sources name both on one bone.
 
 ## What this pass exposed in the code
 
-Adding a second avian species to records that already had one made
-`seed_occurrence_attachments.py` misbehave: its table is keyed on **clade**, and
+Adding a second avian species to records that already had one broke the
+attachment seed that was then in use. Its table was keyed on **clade**, and
 `{clade: row}` silently kept whichever row came last, so three blocks written for
-Gallus, the swan and the penguin were handed to the loon and overwrote it. The
-matcher now requires a clade to have exactly one row, or the block to name its
-species. It also turned up that the penguin's supracoracoideus and
-subcoracoscapularis rows had been quietly overwritten by Abdala & Diogo's generic
-avian block for the same reason.
+Gallus, the swan and the penguin were handed to the loon and overwrote it. It
+also turned up that the penguin's supracoracoideus and subcoracoscapularis rows
+had been quietly overwritten by Abdala & Diogo's generic avian block for the same
+reason.
+
+That seed has since been retired along with the rest of them, for the more
+general form of this fault: a script holding a paper's rows as a literal is a
+second copy of data that lives in `data/`, and every build replayed the older
+copy over the newer one. **A clade is not an animal, and a table keyed on one
+cannot hold two.**
 
 ## Still in it
 

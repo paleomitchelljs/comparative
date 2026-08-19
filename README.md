@@ -237,9 +237,10 @@ scripts/
   migrate_attachments.py         free strings -> skeleton ids
   migrate_attachment_rows.py     ids -> element/side/landmark rows
   assign_hierarchy.py            segment + layer
-  seed_occurrence_attachments.py taxon-specific attachments
+  seed_nerves.py                 innervation prose -> nerves.json ids
+  seed_actions.py                action prose -> {joint, motion}
+  attribute_species.py           which animal each row is about
   symmetrise_links.py            closes the related-muscle graph
-  extract_werneburg_appendix.py  parses Werneburg 2011 Appendix 1 from the PDF
 export/                 git-ignored: generated CSVs
 papers/                 reading notes (tracked); PDFs (NOT tracked)
 ```
