@@ -225,6 +225,32 @@ homes.
 | `serial` | Forelimb ↔ hindlimb correspondence. See below |
 | `teaching` | What this record is good for in a classroom |
 | `caveat` | Source-quality warning (e.g. a non-peer-reviewed preprint) |
+| `authority` | Whose homology scheme this record follows. **Derived** — see below |
+
+### `authority` — recency governs homology, not attachment
+
+```jsonc
+"authority": {
+  "source": "molnar-diogo-2021",   // must carry `homologyScope` in sources.json
+  "basis": "computed"              // computed | curated
+}
+```
+
+An attachment is an observation and does not age; a homology is an
+interpretation and does. So this is the **most recent** source cited anywhere on
+the record whose stated purpose includes homology, synonymy or nomenclature
+across more than one taxon. `scripts/seed_homology_authority.py --write` writes
+it and `validate.py` recomputes it, erroring on drift — adding a newer
+comparative source to a record cannot leave that record following the older
+scheme by inattention.
+
+`basis: "curated"` opts out and **requires a `note`** saying why the older scheme
+is kept, normally that the newer source does not examine the taxa the record
+turns on. A record citing no homology-scope source has no `authority` and draws a
+warning: its homology rests on descriptive work alone.
+
+The reasoning, and why the rule deliberately does not apply to attachments, is in
+[`docs/METHODS.md`](METHODS.md).
 
 ### `serial` — handle with care
 
@@ -337,6 +363,7 @@ records in this dataset — the two will differ and should not be reconciled.
 | `notes` | Path to the reading notes in `papers/` |
 | `pdf` | Local PDF filename (git-ignored) |
 | `role` | What this source is actually used for here |
+| `homologyScope: true` | This source can adjudicate **what a muscle is**, because establishing homology, synonymy or nomenclature across more than one taxon is part of its stated purpose. Any source may report where a muscle attaches; only these decide what it is. Describing one animal superbly does not qualify — Cunningham (1882) and Osawa (1898) are deliberately not flagged. Drives `homology.authority` |
 
 ---
 

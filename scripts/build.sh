@@ -60,14 +60,17 @@ python3 scripts/seed_nerves.py $FLAG
 step "13. action prose -> joints.json {joint, motion}"
 python3 scripts/seed_actions.py $FLAG
 
-step "14. close the related-muscle graph"
+step "14. whose homology scheme each record follows (most recent wins)"
+python3 scripts/seed_homology_authority.py $FLAG
+
+step "15. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
-step "15. measured counts in README.md and docs/GAPS.md"
+step "16. measured counts in README.md and docs/GAPS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "16. validate"
+  step "17. validate"
   python3 scripts/attribute_species.py --write
 python3 scripts/validate.py
 fi

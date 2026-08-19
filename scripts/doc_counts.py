@@ -156,6 +156,37 @@ def block_skeleton_table(d):
     ])
 
 
+def block_authority(d):
+    """Which homology scheme each record follows, and how old it is.
+
+    Recency governs homology and does not govern attachment (docs/METHODS.md), so
+    the interesting number is not how many records have an authority — the seed
+    gives one to every record that can have one — but how old the newest
+    comparative source bearing on each record is, and how many records have none
+    at all.
+    """
+    year = {s["key"]: s.get("year") or 0 for s in d["sources"]}
+    scope = {s["key"] for s in d["sources"] if s.get("homologyScope")}
+    have, none = [], []
+    for m in d["muscles"]:
+        a = (m.get("homology") or {}).get("authority") or {}
+        (have if a.get("source") else none).append(m)
+    years = sorted(year.get(((m.get("homology") or {})["authority"])["source"], 0)
+                   for m in have)
+    med = years[len(years) // 2] if years else 0
+    stale = sum(1 for y in years if y < 2010)
+    return "\n".join([
+        "| | |", "|---|---|",
+        f"| Sources that can adjudicate a homology | {len(scope)} of {len(d['sources'])} |",
+        f"| Records following one | {len(have)} of {len(d['muscles'])} "
+        f"({pct(len(have), len(d['muscles']))}) |",
+        f"| Median year of the governing source | {med} |",
+        f"| Records governed by pre-2010 work | {stale} ({pct(stale, len(have))}) |",
+        f"| Records with **no** homology-scope source | {len(none)} — "
+        f"their homology rests on descriptive work alone |",
+    ])
+
+
 def block_gaps_summary(d):
     total, hit, _ = coverage(d, lambda m, o: speciesmap.clade_of(o))
     ranked = sorted((k for k in total if total[k] >= 20), key=lambda k: hit[k] / total[k])
@@ -252,6 +283,7 @@ BLOCKS = {
     "holes": block_holes,
     "parity": block_parity,
     "unscored": block_unscored,
+    "authority": block_authority,
 }
 
 TARGETS = ["README.md", "docs/GAPS.md", "docs/MINING.md"]

@@ -47,6 +47,33 @@ shared anlagen; put known anlage mismatches in `caution`.
 **Quote disputed muscle names in `name`** — `"'Rhomboideus'"`, `"'Ambiens'"`.
 This follows the sources' own convention and the UI renders it verbatim.
 
+**Recency governs homology and does not govern attachment.** An attachment is an
+observation and does not age — Cunningham's 1882 thylacine origin and Osawa's
+1898 tuatara insertion are worth exactly what a modern one is, and two workers
+who each dissected an animal cannot conflict, because they are different rows.
+A homology is an interpretation and does age: **where two sources homologise or
+synonymise differently, the more recent comparative treatment wins**, and the
+older reading goes in the note under its author's name rather than being
+deleted. Never let an old descriptive source set which record a muscle lands on
+when a newer comparative one covers it.
+
+Enforced, not just stated. `sources.json` carries `homologyScope: true` on
+sources whose stated purpose includes homology, synonymy or nomenclature across
+**more than one taxon** — Diogo *et al.* throughout, Winterbottom, Hattori &
+Tsuihiji, Blotto, Johnston, and the *Biology of the Reptilia* synonymies.
+Describing one animal superbly does not qualify. `seed_homology_authority.py`
+writes `homology.authority` as the most recent such source cited on the record,
+and `validate.py` **errors** if it drifts. So after adding a comparative source
+to any record, re-run:
+
+```sh
+python3 scripts/seed_homology_authority.py --write
+```
+
+Opt a record out with `basis: "curated"` plus a `note` giving the reason — the
+only good one being that the newer source does not examine the taxa the record
+turns on. See `docs/METHODS.md`.
+
 **Skeletal elements are homology groups, like muscles.** One element, per-taxon
 names in `taxonNames`. Never create a second element because a taxon calls it
 something else — that is how hyomandibula and stapes ended up as separate rows,

@@ -686,6 +686,37 @@ detail is the correlate of the fin muscle detail already recorded. Cranial runs
 the other way at 2.4 elements per muscle, which is what a coarse adductor
 mandibulae complex sitting over a finely divided skull looks like.
 
+### Whose homology scheme is each record following?
+
+Recency governs homology and does not govern attachment — an origin observed in
+1882 is worth what one observed in 2021 is worth, while a homology proposed in
+1882 has had a century of comparative work done on top of it. `METHODS.md` sets
+out the rule and `homology.authority` records the answer per record, derived from
+the most recent source cited on it that was written to settle homology across
+more than one taxon.
+
+<!-- counts:authority -->
+| | |
+|---|---|
+| Sources that can adjudicate a homology | 29 of 116 |
+| Records following one | 115 of 129 (89%) |
+| Median year of the governing source | 2016 |
+| Records governed by pre-2010 work | 8 (7%) |
+| Records with **no** homology-scope source | 14 — their homology rests on descriptive work alone |
+<!-- /counts:authority -->
+
+**The 14 records with no homology-scope source at all are the real signal here**,
+and they cluster: most are the Walthall & Ashley-Ross salamander records
+(`extensor-tarsi-tibialis`, `extensor-cruris-et-tarsi-fibularis`,
+`femorofibularis`, `caudalipuboischiotibialis`, `iliocaudalis`, `ischiocaudalis`,
+`flexor-accessorius-lateralis-pes`, `flexor-accessorius-medialis-pes`), the rest
+axial (`supracostalis-dorsus-brevis`, `levator-costae`, `obliquus-internus`,
+`ypsiloideus`) plus `extensor-digitorum-profundus` and
+`adductor-mandibulae-lateralis`. Each of those is a muscle this dataset knows
+where to put on one animal and has no cross-taxon treatment for. That is a
+different kind of gap from an unscored attachment and was invisible until the
+field existed.
+
 **One element grouping is a working decision and is flagged as one: `epipubis`.**
 It was scored for Testudines alone, as the turtle's cartilaginous epipubic
 process. Cunningham (1882) hangs four marsupial muscles on the *os marsupium* —

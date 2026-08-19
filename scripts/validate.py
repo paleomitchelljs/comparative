@@ -13,6 +13,9 @@ from collections import Counter
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import jointgraph
+# One definition of "which sources does this record lean on", shared with the
+# seed that writes homology.authority, so the check and the seed cannot drift.
+from seed_homology_authority import cited_keys as cited_source_keys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 MUSCLE_FILES = sorted(ROOT.glob("data/muscles-*.json"))
@@ -317,6 +320,12 @@ def main():
         if tid not in set(species_clade.values()):
             warn(f"taxa.json:{tid}: no species in species.json rolls up into it")
     source_keys = {s["key"] for s in sources_doc["sources"]}
+    source_year = {s["key"]: s.get("year") for s in sources_doc["sources"]}
+    # Sources whose stated purpose includes establishing homology, synonymy or
+    # nomenclature across more than one taxon. Only these can adjudicate what a
+    # muscle IS; any source at all can report where it attaches.
+    homology_scope_keys = {s["key"] for s in sources_doc["sources"]
+                           if s.get("homologyScope")}
     # Collapsing the list into a set hides a repeated key, and a repeated key is
     # a live bug rather than clutter: the app builds its bibliography as a Map,
     # so the later entry silently wins. That is how the Klinkhamer 2017 record
@@ -702,6 +711,59 @@ def main():
         for ref in hom.get("related", []):
             if ref not in muscles:
                 err(f"{where}: homology.related points at unknown muscle '{ref}'")
+
+        # Whose homology scheme this record follows.
+        #
+        # An attachment is an observation and does not age: Cunningham's 1882
+        # thylacine origin is worth exactly what a 2021 one is, and two workers
+        # who dissected two animals cannot conflict. A homology is an
+        # interpretation and does age, because the later worker had the earlier
+        # one in front of them. So `authority` is the most recent source cited on
+        # the record whose stated purpose includes homology across more than one
+        # taxon, and it is DERIVED — if it drifts from what the sources support,
+        # the seed is stale and this errors rather than warns.
+        auth = hom.get("authority")
+        candidates = homology_scope_keys & cited_source_keys(m)
+        if auth is not None:
+            if not isinstance(auth, dict):
+                err(f"{where}: homology.authority is not a {{source, basis}} block")
+            else:
+                key, basis = auth.get("source"), auth.get("basis")
+                if key not in source_keys:
+                    err(f"{where}: homology.authority unknown source key '{key}'")
+                elif key not in homology_scope_keys:
+                    err(f"{where}: homology.authority names '{key}', which is not "
+                        f"flagged `homologyScope` in sources.json — a description "
+                        f"of one animal cannot adjudicate a homology")
+                if basis not in {"computed", "curated"}:
+                    err(f"{where}: homology.authority.basis='{basis}' "
+                        f"not in ['computed', 'curated']")
+                elif basis == "computed":
+                    if candidates:
+                        best = max(candidates,
+                                   key=lambda k: (source_year.get(k) or 0, k))
+                        if key != best:
+                            err(f"{where}: homology.authority is '{key}' but the "
+                                f"most recent homology-scope source cited here is "
+                                f"'{best}' — run "
+                                f"scripts/seed_homology_authority.py --write, or "
+                                f"set basis='curated' with a note saying why the "
+                                f"older scheme is followed")
+                    else:
+                        err(f"{where}: homology.authority='{key}' is not cited "
+                            f"anywhere on this record")
+                elif not (auth.get("note") or "").strip():
+                    err(f"{where}: homology.authority.basis='curated' needs a "
+                        f"`note` saying why this record follows an older scheme "
+                        f"than the most recent homology-scope source it cites")
+        elif candidates:
+            err(f"{where}: cites homology-scope sources but has no "
+                f"homology.authority — run scripts/seed_homology_authority.py")
+        else:
+            # Not a defect in itself, but worth surfacing: nothing cited here
+            # was written to settle what this muscle is.
+            warn(f"{where}: no homology-scope source cited — its homology rests "
+                 f"on descriptive sources alone")
 
         # `derivatives` links an ancestral fin muscle to the tetrapod muscles it
         # gave rise to. Directed, not symmetric — the app renders the reverse

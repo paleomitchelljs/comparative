@@ -607,9 +607,22 @@ function renderDetail(m) {
     ${defRow('Development', m.developmental)}
   </dl>`;
 
-  const syn = (m.synonyms || []).length
+  /* Which scheme the names below are reconciled under. Synonyms accumulate and
+     never expire, but when two workers homologise a muscle differently the more
+     recent comparative treatment governs — so the reader needs to know whose it
+     is. Rendered with the synonyms because that is the claim it qualifies. */
+  const auth = h.authority && h.authority.source
+    ? `<p class="cellnote">Homology follows ${sourceLink(h.authority.source)}${
+        h.authority.basis === 'curated'
+          ? ` — <em>${esc(h.authority.note || 'kept against a more recent source')}</em>`
+          : ''}</p>` : '';
+
+  const syn = ((m.synonyms || []).length || auth)
     ? `<section class="block"><h3>Also called</h3>
-       <p class="synonyms">${m.synonyms.map(s => `<code>${esc(s)}</code>`).join(' ')}</p></section>` : '';
+       ${(m.synonyms || []).length
+         ? `<p class="synonyms">${m.synonyms.map(s => `<code>${esc(s)}</code>`).join(' ')}</p>`
+         : ''}
+       ${auth}</section>` : '';
 
   return `
   <div class="crumb"><button data-back>← All muscles</button><span>/</span><span>${esc(m.name)}</span></div>

@@ -245,6 +245,62 @@ where the developmental anlagen are known to differ.
 Quoted muscle names (`'Rhomboideus'`, `'Palmaris longus'`, `'Ambiens'`) follow
 the sources' own convention for a name whose homology is not established.
 
+### Recency governs homology and does not govern attachment
+
+**An attachment is an observation. A homology is an interpretation. Only the
+second one ages.**
+
+Cunningham (1882) recording that the thylacine's subclavius leaves the clavicle
+and ends in the fascia over the supraspinatus is worth exactly what a 2021
+dissection of the same animal would be worth, and no later paper can make it
+less true — the animal is extinct, so in fact nothing ever will. Osawa (1898) on
+where the tuatara's pubo-tibialis posticus inserts stands on the same footing.
+Old descriptive anatomy is not provisional; it is data, and this dataset takes it
+at full weight. Two workers who each dissected an animal cannot conflict at all,
+because they are different rows.
+
+What does age is the answer to *what a muscle is*: whether two bellies are one
+muscle or two, which reptilian muscle a mammalian one descends from, which of six
+names in the literature denote the same thing. There the later worker had the
+earlier one in front of them, and usually more taxa, more developmental evidence
+and a phylogeny to hang it on. **So where two sources homologise differently, the
+more recent comparative treatment governs**, and the older reading is recorded in
+the note under its author's name rather than deleted. Diogo & Molnar (2014)
+rejecting the ambiens → sartorius equation beats the classical equation; Diogo's
+`Rattus` scheme beats an 1880s one for what to call a marsupial muscle, while
+Cunningham still supplies every attachment on those same rows.
+
+The two halves of the rule cut in opposite directions and both are load-bearing.
+Letting recency govern attachments would throw away most of the pre-war
+literature, which is where a great deal of the only dissection of some animals
+lives. Letting it *not* govern homology would leave the dataset following
+whichever scheme happened to be mined first.
+
+**This is enforced, not just stated.** `sources.json` carries `homologyScope:
+true` on sources whose stated purpose includes establishing homology, synonymy or
+nomenclature **across more than one taxon** — Diogo and colleagues throughout,
+Winterbottom's teleost synonymy, Hattori & Tsuihiji, Blotto et al., Johnston on
+the lizard–snake jaw, Haas and Russell & Bauer for their *Biology of the
+Reptilia* synonymies. Describing one animal superbly does not qualify: Cunningham
+and Osawa are not on that list and are not meant to be.
+
+`scripts/seed_homology_authority.py --write` then writes, on each muscle record,
+the most recent homology-scope source cited anywhere on it:
+
+```jsonc
+"homology": {
+  "authority": { "source": "molnar-diogo-2021", "basis": "computed" }
+}
+```
+
+`validate.py` recomputes it and **errors** if the record has drifted, so a pass
+that adds a newer comparative source to a record cannot quietly leave the record
+following the older scheme. A record may opt out with `basis: "curated"`, which
+requires a `note` giving the reason — normally that the newer source does not
+examine the taxa the record turns on. A record citing no homology-scope source at
+all gets no authority and a warning: its homology rests on descriptive work
+alone, which is a real gap and is worth counting.
+
 ---
 
 ## The phylogeny view
