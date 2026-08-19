@@ -546,11 +546,113 @@
               "nerve": "trigeminal-mandibular"
             }
           ]
+        },
+        {
+          "species": "timon-lepidus",
+          "speciesBasis": "note",
+          "name": "Adductor mandibulae",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Adductor mandibulae A2"
+            },
+            {
+              "name": "Adductor mandibulae A2-PVM"
+            },
+            {
+              "name": "Levator anguli oris mandibularis"
+            },
+            {
+              "name": "Pseudotemporalis"
+            },
+            {
+              "name": "Pterygomandibularis"
+            },
+            {
+              "name": "Adductor mandibulae A3'"
+            }
+          ],
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Timon lepidus, Diogo et al. (2008), Table 1. **This lizard has eleven mandibular muscles against a human's eight**, which is the count that makes their point: the mammalian head is not the elaborated end of the series. The A2-PVM bundle here is the one they derive the mammalian tensor tympani and tensor veli palatini from. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
+          "name": "Jaw adductors, with a detrahens mandibulae",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Masseter"
+            },
+            {
+              "name": "Detrahens mandibulae"
+            },
+            {
+              "name": "Temporalis"
+            },
+            {
+              "name": "Pterygoideus lateralis"
+            },
+            {
+              "name": "Pterygoideus medialis"
+            },
+            {
+              "name": "Tensor tympani",
+              "membership": "disputed"
+            },
+            {
+              "name": "Tensor veli palatini",
+              "membership": "disputed"
+            }
+          ],
+          "divisionNote": "Masseter, temporalis and the detrahens come from adductor mandibulae A2, the pterygoideus medialis from A3'; the two tensors are derived by Diogo et al. from A2-PVM, and are carried as disputed because this dataset also scores them as parts of `intermandibularis`.",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 1. **The detrahens mandibulae is present in this animal and in none of the other eight taxa in the table** — not in the lizard, not in the rat, tree-shrew, colugo or human, not in the salamander or either fish. It is a jaw *opener* built out of the adductor mandibulae, so a monotreme opens its mouth partly with an arch-1 muscle where every other mammal here uses the arch-2 digastric alone. Worth setting beside this animal's hind limb, where the same pattern recurs: a caudofemoralis retained, a piriformis never acquired. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "rattus-norvegicus",
+          "speciesBasis": "note",
+          "name": "Mammalian jaw adductors",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Masseter"
+            },
+            {
+              "name": "Temporalis"
+            },
+            {
+              "name": "Pterygoideus lateralis"
+            },
+            {
+              "name": "Pterygoideus medialis"
+            },
+            {
+              "name": "Tensor tympani",
+              "membership": "disputed"
+            },
+            {
+              "name": "Tensor veli palatini",
+              "membership": "disputed"
+            }
+          ],
+          "divisionNote": "The two tensors are carried as disputed: Diogo et al. derive them from adductor mandibulae A2-PVM, and this dataset also scores them as parts of `intermandibularis`.",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 1. The same six as a human, and the same six as a colugo and a tree-shrew — **the adductor field is where the mammals in this table agree**, and the intermandibularis is where they do not. The rat is the dataset's only therian on this record other than the human, and it is here to make the human row stop standing for Mammalia. **No attachments are scored: this source describes none.**"
         }
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "The single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match. Johnston (2011, 2014) resolves this complex into a folded sheet whose components are identified by where they insert into an inverted U wrapped around the adductor mandibulae posterior; those components are recorded separately here. Miyashita (2016) sets out the mandibular-confinement hypothesis for the origin of the jaw, which is the background for why cyclostome feeding musculature is not homologised with this complex despite both being trigeminal and mandibular-arch derived.",
+        "notes": "**Diogo et al. (2008) derive the mammalian tensor tympani and tensor veli palatini from this complex** — from adductor mandibulae A2-PVM, the bundle they identify in *Latimeria*, *Ambystoma* and *Timon* — where this dataset scores both as parts of `intermandibularis` on the human row. Both fields are mandibular-arch and both take CN V, so nothing about arch identity turns on it; what turns on it is which record holds the muscle. Carried as disputed parts on the rows above and unresolved on either record. See `docs/WORKLIST.md`.\n\nThe single most robust cranial homology in Gnathostomata. Trigeminal innervation is invariant, and the muscle is present wherever jaws are. Subdivision patterns vary enormously and carry no homology weight on their own; the individual named parts are frequently non-homologous between clades even when the names match. Johnston (2011, 2014) resolves this complex into a folded sheet whose components are identified by where they insert into an inverted U wrapped around the adductor mandibulae posterior; those components are recorded separately here. Miyashita (2016) sets out the mandibular-confinement hypothesis for the origin of the jaw, which is the background for why cyclostome feeding musculature is not homologised with this complex despite both being trigeminal and mandibular-arch derived.",
         "related": [
           "adductor-mandibulae-externus",
           "adductor-mandibulae-internus",
@@ -892,11 +994,73 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "timon-lepidus",
+          "speciesBasis": "note",
+          "name": "Intermandibularis posterior and intermandibularis anterior",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Intermandibularis posterior"
+            },
+            {
+              "name": "Intermandibularis anterior"
+            }
+          ],
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Timon lepidus, Diogo et al. (2008), Table 1. Both divisions present under their plain names — the arrangement the mammalian rows have to be read against. **No attachments are scored: this source is a scheme of correspondences and describes none.**"
+        },
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
+          "name": "Mylohyoideus and digastricus anterior",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Mylohyoideus"
+            },
+            {
+              "name": "Digastricus anterior"
+            }
+          ],
+          "divisionNote": "Both are intermandibularis **posterior** derivatives. This animal has no intermandibularis anterior.",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 1. **The mammalian mylohyoid and anterior digastric are both the posterior intermandibularis** — not the muscle and its anterior partner. Lightoller (1942) describes a mylohyoideus profundus, a mylohyoideus superficialis and, superficial to the latter, a digastricus anterior; Saban (1971) holds that all three come from one embryological structure corresponding to the intermandibularis posterior of other vertebrates, with Jarvik (1963, 1980) in support. Diogo et al. add two independent lines: innervation, since the intermandibularis and the digastricus anterior are both supplied by the ramus ventralis of CN V, and the development of the marsupial *Dasyurus*. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "rattus-norvegicus",
+          "speciesBasis": "note",
+          "name": "Mylohyoid group, with a transversus mandibularis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Mylohyoideus"
+            },
+            {
+              "name": "Digastricus anterior"
+            },
+            {
+              "name": "Transversus mandibularis"
+            }
+          ],
+          "divisionNote": "The first two are intermandibularis posterior derivatives; the transversus mandibularis is the intermandibularis **anterior**.",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 1. **The rat keeps an intermandibularis anterior and the platypus and the human do not** — it is the muscle Greene (1935) called the transversus mandibularis. Diogo et al. are explicit that the rat's mylohyoideus and digastricus anterior correspond to the *posterior* intermandibularis precisely because the transversus mandibularis already holds the anterior position, with Bryant (1945) in support. Across their nine taxa the anterior division survives in *Latimeria*, *Ambystoma*, *Timon*, *Rattus* and *Tupaia* and is gone in *Ornithorhynchus*, *Cynocephalus* and *Homo* — **so it is lost more than once inside Mammalia**, and a human is a poor guide to what a mammal has here. **No attachments are scored: this source describes none.**"
         }
       ],
       "homology": {
         "confidence": "well-supported",
-        "notes": "Present across Gnathostomata with invariant trigeminal innervation. The mammalian derivatives (tensor tympani, tensor veli palatini, anterior digastric) illustrate the point better than any limb example: a muscle that ends up inside the ear still carries CN V.",
+        "notes": "Present across Gnathostomata with invariant trigeminal innervation. The mammalian derivatives (tensor tympani, tensor veli palatini, anterior digastric) illustrate the point better than any limb example: a muscle that ends up inside the ear still carries CN V.\n\n**Two sources put the tensor tympani and the tensor veli palatini in different fields, and this record has not chosen.** They are scored here as parts of the human mylohyoid row, following the arrangement Gest's tables imply. **Diogo et al. (2008), Table 1, derive both from the adductor mandibulae instead** — specifically from Ad. man. A2-PVM, the same bundle in *Ambystoma*, *Timon* and *Latimeria* — and put them on their adductor row for every mammal they examined. Nothing about arch identity turns on it: both fields are mandibular-arch, both take CN V, and the teaching point about a muscle keeping its nerve into the middle ear survives either way. What turns on it is which record a student finds the tensor tympani under. The disagreement is recorded on `adductor-mandibulae` as well, and is an open decision in `docs/WORKLIST.md`. This record's computed authority, Ziermann & Diogo (2019), is a chapter on **fish** head-muscle development and takes no position on the mammalian question, so the more recent date does not settle it.",
         "related": [
           "adductor-mandibulae",
           "interhyoideus",
@@ -1310,6 +1474,45 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "timon-lepidus",
+          "speciesBasis": "note",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Timon lepidus, Diogo et al. (2008), Table 2. One undivided muscle. **This lizard has three hyoid muscles in total** — this one, the cervicomandibularis and the interhyoideus — against a platypus's twelve and a human's twenty-seven. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
+          "name": "Styloideus",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. **The monotreme styloideus is the reptilian depressor mandibulae**, and so is the therian stylohyoideus that replaces it. Against Edgeworth (1935), who derived both from the interhyoideus, Diogo et al. follow Huber (1930a) and Saban (1968, 1971) — the styloideus of Huber (1930a) is the interhyoideus of Edgeworth and the posterior digastric of Parsons (1898), which is how much of this depends on whose name you are reading. The stapedius comes from the same field and is scored on `stapedius`. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "rattus-norvegicus",
+          "speciesBasis": "note",
+          "name": "Stylohyoideus and digastricus posterior",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Stylohyoideus"
+            },
+            {
+              "name": "Digastricus posterior"
+            }
+          ],
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. Where the platypus has one muscle from this field the rat has two, and a colugo and a tree-shrew have three — the jugulohyoideus as well. **The digastric is two muscles from two arches with two nerves**, and this record holds the posterior belly while `intermandibularis` holds the anterior: Gasser's (1967) developmental study has the human digastricus posterior, stapedius and stylohyoideus arising from a single anlage, which is this field. **No attachments are scored: this source describes none.**"
         }
       ],
       "homology": {
@@ -1701,6 +1904,110 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "timon-lepidus",
+          "speciesBasis": "note",
+          "name": "Interhyoideus",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Timon lepidus, Diogo et al. (2008), Table 2. One muscle. **This is the row the whole facial musculature comes out of**: in their scheme a fan of arrows runs from this single lizard muscle to the platypus's interhyoideus profundus, sphincter colli superficialis, cervicalis transversa, orbicularis oculi, buccinatorius, naso-labialis and orbicularis oris, and on into the therian face. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
+          "name": "Interhyoideus profundus, sphincter colli and the facial muscles",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Interhyoideus profundus"
+            },
+            {
+              "name": "Sphincter colli superficialis"
+            },
+            {
+              "name": "Cervicalis transversa"
+            },
+            {
+              "name": "Orbicularis oculi"
+            },
+            {
+              "name": "Naso-labialis"
+            },
+            {
+              "name": "Buccinatorius"
+            },
+            {
+              "name": "Orbicularis oris"
+            }
+          ],
+          "divisionNote": "A sphincter colli profundus is recorded in the echidna but not the platypus, so the monotremes disagree with each other here. The platypus's twelve hyoid muscles in Diogo et al.'s count include the styloideus, stapedius, platysma cervicale and platysma myoides, which are dorso-medial and scored on `depressor-mandibulae` and `stapedius` rather than here.",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. **The platypus already has the core of a mammalian face**: an orbicularis oculi, an orbicularis oris, a buccinatorius and a naso-labialis, plus a dilatator nasi, a maxillo-naso-labialis and a levator anguli oris facialis. What it does not have is the zygomatic group, the auricular group, the mentalis or the procerus. Its twelve hyoid muscles sit between a lizard's three and a rat's twenty-three, which is the sequence this record exists to show — **the mammalian face is built by subdividing one pharyngeal constrictor sheet, and the monotreme is the stage where that is half done.** The platysma cervicale and platysma myoides are derived by Diogo et al. from the reptilian cervicomandibularis rather than from the interhyoideus, so the neck sheet and the face come from two different arch-2 muscles and not one. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "rattus-norvegicus",
+          "speciesBasis": "note",
+          "name": "Sphincter colli and the facial muscles",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Sphincter colli superficialis"
+            },
+            {
+              "name": "Sphincter colli profundus"
+            },
+            {
+              "name": "Sternofacialis"
+            },
+            {
+              "name": "Interscutularis"
+            },
+            {
+              "name": "Zygomaticus major"
+            },
+            {
+              "name": "Zygomaticus minor"
+            },
+            {
+              "name": "Orbito-temporo-auricularis"
+            },
+            {
+              "name": "Orbicularis oculi"
+            },
+            {
+              "name": "Naso-labialis"
+            },
+            {
+              "name": "Buccinatorius"
+            },
+            {
+              "name": "Dilatator nasi"
+            },
+            {
+              "name": "Maxillo-naso-labialis"
+            },
+            {
+              "name": "Levator anguli oris facialis"
+            },
+            {
+              "name": "Orbicularis oris"
+            },
+            {
+              "name": "Procerus"
+            }
+          ],
+          "divisionNote": "A partial list: Diogo et al. count twenty-three hyoid muscles in this animal excluding the extrinsic ear muscles, and several of those are dorso-medial and belong on `depressor-mandibulae` and `stapedius`.",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. **Twenty-three hyoid muscles against a lizard's three.** The rat is here because the human row cannot carry Mammalia on this record: a human has twenty-seven and a tree-shrew twenty-five, so the elaboration is therian rather than primate, and Diogo et al.'s own summary is that the facial count rises at the transition to therian mammals and not again at the transition to higher primates. Diogo et al. (2009) resolve the primate end of it muscle by muscle — see that source's reading note for why this record has not yet been split into the fifteen or twenty it would take to hold them. **No attachments are scored: this source describes none.**"
         }
       ],
       "homology": {
@@ -1943,6 +2250,26 @@
               "nerve": "facial"
             }
           ]
+        },
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
+          "name": "Stapedius",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. Present, and grouped by them in the dorso-medial hyoid block with the styloideus — **both are depressor mandibulae derivatives**, following Huber (1930a) and Saban (1968, 1971) against Edgeworth (1935). So the muscle in a monotreme's middle ear and the muscle that opens a lizard's jaw are the same field, which is the muscular half of the argument the `hyomandibula-stapes` element makes with bone. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "rattus-norvegicus",
+          "speciesBasis": "note",
+          "name": "Stapedius",
+          "present": "yes",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. Present, as in the platypus, the colugo, the tree-shrew and the human — **the one muscle of this field that every mammal in their table keeps**, while the styloideus, stylohyoideus, jugulohyoideus and digastricus posterior come and go around it. This record previously held a skate and a human and nothing between them."
         }
       ],
       "homology": {
@@ -3576,6 +3903,48 @@
               "nerve": "trigeminal"
             }
           ]
+        },
+        {
+          "species": "timon-lepidus",
+          "speciesBasis": "note",
+          "name": "Dorsal mandibular muscles",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Levator pterygoidei"
+            },
+            {
+              "name": "Protractor pterygoidei"
+            },
+            {
+              "name": "Levator bulbi"
+            }
+          ],
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Timon lepidus, Diogo et al. (2008), Table 1, dorsal mandibular block. Three muscles here, against none in any of the five mammals they examined. Their caption is careful about the levator bulbi: the overall analysis makes the urodele one a dorsal mandibular muscle, **but they cannot completely rule out that it derives from the adductor mandibulae**, and it is drawn with a grey arrow on that reading rather than a black one. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "ornithorhynchus-anatinus",
+          "speciesBasis": "note",
+          "present": "no",
+          "name": "Dorsal mandibular muscles",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Ornithorhynchus anatinus. **Absent.** Diogo et al. (2008), Table 1, score the whole dorsal mandibular block — levator arcus palatini and its derivatives, the levator and protractor pterygoidei and the levator bulbi — as empty in every mammal they examined: the platypus, the rat, the colugo, the tree-shrew and the human. Set against the lizard row above, which has three, this is a field lost at or before the origin of mammals rather than reduced within them."
+        },
+        {
+          "species": "rattus-norvegicus",
+          "speciesBasis": "note",
+          "present": "no",
+          "name": "Dorsal mandibular muscles",
+          "sources": [
+            "diogo-etal-2008-head"
+          ],
+          "attachmentNote": "Rattus norvegicus. **Absent**, on the same table row as the platypus, the colugo, the tree-shrew and the human. The dorsal mandibular muscles move the palatoquadrate and its derivatives against the braincase; in a mammal the quadrate has become an ear ossicle and the upper jaw is fused to the skull, so there is nothing left for the field to move."
         }
       ],
       "homology": {

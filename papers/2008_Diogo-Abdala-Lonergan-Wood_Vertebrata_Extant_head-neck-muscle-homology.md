@@ -62,20 +62,70 @@ Cited on `depressor-mandibulae`, `stapedius` and `interhyoideus`. It carries
 `homologyScope: true`, but changes no record's authority: Ziermann & Diogo (2019) is
 more recent and already holds most of the cranial records.
 
+## What Tables 1 and 2 gave, once they were read
+
+The schemes are arrow diagrams and do not extract as text; they were read as page
+images, and Table 2 had to be cropped before its column alignment could be trusted.
+Six of the nine taxa in them — *Latimeria chalumnae*, *Ambystoma ordinarium*,
+*Timon lepidus*, *Ornithorhynchus anatinus*, *Rattus norvegicus* and *Homo
+sapiens* — were already exemplars in this dataset, so the tables map onto it almost
+without translation.
+
+**Sixteen occurrence rows on six cranial records**, for *Timon lepidus*,
+*Ornithorhynchus anatinus* and *Rattus norvegicus*. They carry presence, division
+and parts and **no attachments**, because the tables give none: this is a scheme of
+correspondences, and the attachments for any taxon in it have to come from that
+taxon's descriptive source. Before this the cranial records had exactly one mammal —
+*Homo sapiens*, on Gest — so the human row was standing for Mammalia.
+
+**The counts are the argument.** Mandibular muscles: *Timon* 11, *Ornithorhynchus*
+9, *Rattus* 9, *Homo* 8. Hyoid muscles, excluding the extrinsic ear muscles:
+*Timon* **3**, *Ornithorhynchus* **12**, *Rattus* **23**, *Tupaia* 25, *Homo* **27**.
+A lizard has more jaw muscles than a human and a twelfth as many face muscles.
+
+**The intermandibularis anterior is lost more than once inside Mammalia.** It
+survives in *Latimeria*, *Ambystoma*, *Timon*, *Rattus* (as the transversus
+mandibularis of Greene 1935) and *Tupaia*, and is gone in *Ornithorhynchus*,
+*Cynocephalus* and *Homo*. The mammalian mylohyoid and anterior digastric are both
+intermandibularis **posterior** derivatives, which is why the rat's names mislead
+and why Diogo et al. spend a footnote on it.
+
+**The detrahens mandibulae is in the platypus and in none of the other eight taxa.**
+A jaw *opener* built from the adductor mandibulae, so a monotreme opens its mouth
+partly with an arch-1 muscle where the other mammals use the arch-2 digastric alone.
+
+**The whole dorsal mandibular block is absent in all five mammals** — levator arcus
+palatini and its derivatives, the levator and protractor pterygoidei, the levator
+bulbi — against three of them in *Timon*. A field lost at or before the origin of
+mammals rather than reduced within them.
+
+**The facial musculature fans out of one lizard muscle.** In Table 2 a spray of
+arrows runs from *Timon*'s single interhyoideus to the platypus's interhyoideus
+profundus, sphincter colli superficialis, cervicalis transversa, orbicularis oculi,
+buccinatorius, naso-labialis and orbicularis oris. The platysma cervicale and
+platysma myoides come from the reptilian **cervicomandibularis** instead, so the
+neck sheet and the face descend from two different arch-2 muscles, not one.
+
+## A disagreement this source creates
+
+**Table 1 derives the tensor tympani and the tensor veli palatini from the adductor
+mandibulae** (A2-PVM), where this dataset scores both as parts of the human
+mylohyoid row on `intermandibularis`. Both fields are mandibular-arch and both take
+CN V, so arch identity is unaffected — but the two records disagree about which
+holds the muscle. Carried as `membership: "disputed"` on the adductor rows, written
+on both records, and left as an open decision in `docs/WORKLIST.md`. The record's
+computed authority, Ziermann & Diogo (2019), is a chapter on **fish** development
+and takes no position, so the later date does not settle it.
+
 ## Limitations
 
-**The tables are diagrams, not tables.** All four homology schemes are arrow
-diagrams — black arrows for the best-supported hypothesis, grey for alternatives
-that some of the data support — and they do not extract as text. Only the numbered
-footnotes below each one do, which is where the three arguments above were read. **A
-proper pass on this source means reading the four figures**, and it would be the
-single most useful thing anyone could do for the cranial column, which this
-repository's audit found to be its coarsest.
+**Tables 3 and 4 are unread.** They cover the branchial, pharyngeal and laryngeal
+muscles and the hypobranchial muscles, on pages 12 and 16, and would bear on
+`branchial-constrictors` and `hypobranchial-muscles` — both of which still have
+*Homo sapiens* as their only mammal. Same method: read the page as an image, crop if
+the columns are dense.
 
-**No attachments.** Fewer than two origin/insertion mentions per page. This is a
-scheme of correspondences, not a description of where anything attaches — the
-attachments for any taxon in it have to come from the descriptive source for that
-taxon.
+**No attachments anywhere in it.** Fewer than two origin/insertion mentions per page.
 
 ## Relevance to comparative anatomy teaching
 

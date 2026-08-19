@@ -170,6 +170,27 @@ against the threshold of 4.
 These are judgement calls the data is currently carrying, each waiting on a
 specific source rather than on effort.
 
+**The tensor tympani is on two records' worth of evidence and one record.** It and
+the tensor veli palatini are scored as parts of the human mylohyoid row on
+`intermandibularis`, which is where Gest's tables put them. Diogo et al. (2008),
+Table 1, derive both from the **adductor mandibulae** instead — from the A2-PVM
+bundle they identify in *Latimeria*, *Ambystoma* and *Timon* — and place them on
+their adductor row for all five mammals they examined. Nothing about arch identity
+turns on it: both fields are mandibular-arch, both take CN V, and the teaching pair
+of tensor tympani against stapedius survives either reading. What turns on it is
+which record a student finds the muscle under, and this dataset currently answers
+that twice. The rows on `adductor-mandibulae` carry both tensors as `membership:
+"disputed"` and the disagreement is written on both records.
+
+The date does not settle this one. `intermandibularis`'s computed authority is
+Ziermann & Diogo (2019), which is more recent than 2008 but is **a chapter on head
+muscle development in fishes** and takes no position on a mammalian muscle. That is
+exactly the condition `docs/METHODS.md` describes for opting a record out with
+`basis: "curated"`. Deciding it means reading Diogo et al. (2008)'s Table 1 against
+whatever the most recent mammalian treatment says, and it is a re-assignment of the
+dataset's flagship arch-identity example, so it is left as a decision rather than
+made in passing.
+
 **`epipubis` groups two things that may not be one.** It holds the turtle's
 cartilaginous epipubic process and the mammalian epipubic bone, on position: both
 are the anterior process of the pubis and both take hypaxial and adductor
