@@ -438,6 +438,31 @@
       }
     },
     {
+      "id": "calcaneal-tuber",
+      "label": "Tuber calcanei",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "autopod",
+      "partOf": "calcaneum",
+      "correlate": true,
+      "synonyms": [
+        "tuber calcanei",
+        "calcaneal tuberosity",
+        "heel process"
+      ],
+      "presence": {
+        "default": "variable",
+        "present": [
+          "monotremata",
+          "theria"
+        ],
+        "sources": [
+          "gambaryan-etal-2002"
+        ],
+        "note": "The heel lever, and the whole subject of Gambaryan et al.'s functional argument. In the monotremes it carries the common gastrocnemius tendon at its apex, gives origin to the quadratus plantae, the abductor digiti quinti and the abductor metatarsi V, and is grooved for the peroneus longus tendon to cross to the sole.\n\n**Enlargement of this process is usually read as an increase in the role of ankle flexion.** Gambaryan et al. argue the reverse for its origin: it enlarged first to resist abduction at the ankle, holding the foot from slipping sideways under symmetrical-diagonal gaits in an animal with widely extended limbs, and only took on the flexion role as mammalian limbs became parasagittal. They connect it to the fifth metatarsal in monotremes and in advanced cynodonts. Scored `variable` because this dataset has not established which non-mammalian process, if any, it corresponds to.\n\n**Its surfaces are inverted relative to Theria.** The quadratus plantae arises from the dorsal surface here and from the plantar surface in therians, which is why Gambaryan et al. suggest the monotreme dorsal surface answers to the therian plantar one."
+      }
+    },
+    {
       "id": "calcaneum",
       "label": "Calcaneum (fibulare)",
       "kind": "bone",
@@ -2910,6 +2935,29 @@
       ]
     },
     {
+      "id": "parafibular-process",
+      "label": "Processus parafibularis",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "partOf": "fibula",
+      "correlate": true,
+      "synonyms": [
+        "processus parafibularis",
+        "apophysis labelliforme (Jouffroy et al. 1971)"
+      ],
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2002"
+        ],
+        "note": "A hooked proximal process of the monotreme fibula, and the single busiest attachment site in this limb: the origins of the gastrocnemius lateralis, popliteus, tibialis caudalis, both long digital flexors, the peroneus longus, the peroneus digiti quinti and the extensor digitorum profundus all sit on it, and in the platypus the superficial head of the tibialis cranialis and of the extensor hallucis longus as well.\n\n**Gambaryan et al. name it by comparison with the parafibula**, the sesamoid that in some marsupials and multituberculates attaches to the proximal fibula; they describe the monotreme structure as resembling it in topography and call it a process rather than asserting the identity. Scored as part of the fibula on their description. Whether it is a fused parafibula is exactly the question the name leaves open."
+      }
+    },
+    {
       "id": "paraglossum",
       "label": "Paraglossum (entoglossum)",
       "kind": "bone",
@@ -2959,12 +3007,14 @@
         "present": [
           "aves",
           "theria",
-          "lepidosauria"
+          "lepidosauria",
+          "monotremata"
         ],
-        "note": "Independently acquired in birds and mammals; a sesamoid in the knee extensor tendon.\n\n**Lepidosauria added on Russell & Bauer (2008).** *Iguana* has a patella, embedded in the common insertion tendon of the iliotibialis and femorotibialis as it crosses the knee. Russell & Bauer give the mechanical reason, after Currey (1984): the sesamoid holds the tendon away from the centre of rotation so the moment arm stays large at every joint angle. A lizard knee solving the same problem the mammalian knee solves, with the same part.\n\n**Two marsupials inside Theria have no ossified patella at all.** Cunningham (1882) found none in either the thylacine or the spotted cuscus: the quadriceps parts and the sartorius unite instead into a tendinous expansion in front of the knee so dense and knife-resistant that he compared its consistence to fibrocartilage, and he reports that in the wombat it apparently becomes cartilage outright. The clade stays scored present, because that is what it is across Theria; the exception is a species observation and lives on the `extensor-iliotibialis` and `femorotibialis` rows for those two animals.",
+        "note": "Independently acquired in birds and mammals; a sesamoid in the knee extensor tendon.\n\n**Monotremata added on Gambaryan et al. (2002)**, who describe an ossified patella in both the echidna and the platypus with a superior point, a medial and a lateral edge, an inner surface and a ligamentum patellae of its own. In the echidna the rectus femoris reaches its upper point and the vasti the proximal half; in the platypus all three knee extensors fuse and insert on the proximal half of its inner surface, the gracilis anterior and the biceps femoris take its medial and lateral edges, and a ligamentum parafibulopatellae runs from it to the parafibular process, carrying part of the origins of the tibialis cranialis and the popliteus. **This element was scored absent for monotremes purely for want of a source** — it inherited the record's `no` default because nothing in the corpus described a monotreme knee. The validator caught the contradiction the moment those muscle rows were entered, which is what that check is for.\n\n**Lepidosauria added on Russell & Bauer (2008).** *Iguana* has a patella, embedded in the common insertion tendon of the iliotibialis and femorotibialis as it crosses the knee. Russell & Bauer give the mechanical reason, after Currey (1984): the sesamoid holds the tendon away from the centre of rotation so the moment arm stays large at every joint angle. A lizard knee solving the same problem the mammalian knee solves, with the same part.\n\n**Two marsupials inside Theria have no ossified patella at all.** Cunningham (1882) found none in either the thylacine or the spotted cuscus: the quadriceps parts and the sartorius unite instead into a tendinous expansion in front of the knee so dense and knife-resistant that he compared its consistence to fibrocartilage, and he reports that in the wombat it apparently becomes cartilage outright. The clade stays scored present, because that is what it is across Theria; the exception is a species observation and lives on the `extensor-iliotibialis` and `femorotibialis` rows for those two animals.",
         "sources": [
           "russell-bauer-2008",
-          "cunningham-1882"
+          "cunningham-1882",
+          "gambaryan-etal-2002"
         ]
       }
     },
@@ -3329,6 +3379,29 @@
         "sources": [
           "molnar-etal-2018"
         ]
+      }
+    },
+    {
+      "id": "psoas-minor-tubercle",
+      "label": "Tuberculum musculi psoas minoris",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "ilium",
+      "correlate": true,
+      "synonyms": [
+        "tuberculum m. psoas minoris",
+        "iliopubic eminence (partim)"
+      ],
+      "presence": {
+        "default": "variable",
+        "present": [
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2002"
+        ],
+        "note": "Takes the psoas minor insertion, and in the monotremes also the origins of the gracilis anterior and the pectineus — three muscles on a tubercle that in the platypus runs to more than half the length of the ilium. Its size is what an extensive psoas minor buys, and it is the reason that muscle is worth scoring in an animal whose hind limb it does not move."
       }
     },
     {
@@ -4217,6 +4290,28 @@
       }
     },
     {
+      "id": "third-trochanter",
+      "label": "Trochanter tertius",
+      "kind": "bone",
+      "region": "hindlimb",
+      "segment": "stylopod",
+      "partOf": "femur",
+      "correlate": true,
+      "synonyms": [
+        "trochanter tertius"
+      ],
+      "presence": {
+        "default": "no",
+        "present": [
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2002"
+        ],
+        "note": "A third femoral trochanter carrying the insertions of the gluteus superficialis, the distal part of the gluteus medius and the caudofemoralis, and bearing two separate rugosities — proximal and distal — that take different muscles.\n\n**The two rugosities differ between the genera in step with the muscles on them**, which is what makes this landmark worth scoring separately from the femur: the platypus has the better-developed proximal rugosity and the echidna the distal one, matching where each animal's gluteus medius puts its distal part. Read as an osteological correlate this is a landmark that records which of two insertions dominated, not how big the muscle was.\n\nNot equated here with the third trochanter of rodents and perissodactyls, which this dataset has not examined. Compare `fourth-trochanter`, which is the archosaur caudofemoralis site — in the monotremes the caudofemoralis has arrived on this process instead."
+      }
+    },
+    {
       "id": "thoracic-neural-spines",
       "label": "Neural spines (thoracic)",
       "kind": "bone",
@@ -4437,7 +4532,14 @@
       "partOf": "femur",
       "correlate": true,
       "presence": {
-        "default": "yes"
+        "default": "yes",
+        "absent": [
+          "monotremata"
+        ],
+        "sources": [
+          "gambaryan-etal-2002"
+        ],
+        "note": "**Absent in both monotremes** (Gambaryan et al. 2002). In therians this fossa is where the gemelli and the obturators insert, and it is the landmark a palaeontologist would reach for to find them. In the echidna and the platypus those muscles reach the caudal surface of the trochanter major or the trochanter minor instead, so the correlate is not merely reduced here — it is not there to read."
       }
     },
     {

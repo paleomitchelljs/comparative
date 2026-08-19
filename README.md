@@ -75,7 +75,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-129 muscle records · 1308 present occurrences · 268 skeletal elements · 116 sources · 20 operational taxa
+129 muscle records · 1345 present occurrences · 272 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -299,8 +299,10 @@ Origin/insertion becomes what you *draw*, not what you navigate.
 - **The stem-tetrapodomorph column is pectoral-only**, limited to what Molnar et
   al. (2018) reconstruct — the pectoral girdle, arm and forearm of four species,
   with nothing axial, cranial or hindlimb.
-- **Monotreme and stem-synapsid rows are sparse** relative to the detail
-  available in Gambaryan et al. (2015).
+- **Stem-synapsid rows are sparse.** Monotremata is no longer among them: the
+  forelimb comes from Gambaryan et al. (2015) and Fahn-Lai et al. (2020) and the
+  hind limb from Gambaryan et al. (2002), both genera dissected and described
+  separately in each.
 - **The taxa most often on a dissection bench are the thinnest columns.**
   Chondrichthyes (*Squalus*) and Theria (cat, rat) are two of the three
   least-scored, while Caudata — *Necturus*' order — is the best. That ordering
@@ -310,5 +312,5 @@ See [`docs/STATUS.md`](docs/STATUS.md) for the measured version, and
 [`docs/WORKLIST.md`](docs/WORKLIST.md) for what is being done about it. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **83%** of 1308 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 63%; the thinnest regions are fin, hand, axial. `side` is on 55% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **83%** of 1345 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 63%; the thinnest regions are fin, hand, axial. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->

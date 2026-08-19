@@ -52,7 +52,7 @@ python3 scripts/symmetrise_links.py $FLAG
 step "9. species attribution from each row's own prose"
 python3 scripts/attribute_species.py $FLAG
 
-step "10. measured counts in README.md and docs/GAPS.md"
+step "10. measured counts in README.md and docs/STATUS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then

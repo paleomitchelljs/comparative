@@ -111,43 +111,59 @@ its note gets written when it is mined.
 > paragraphs each name several sources, which is why they were not distributed
 > mechanically.
 
-## Waiting in `papers/toadd/`
+## `papers/toadd/` is empty
 
-Ten PDFs under publisher filenames. **Six are already in the corpus** and can be
-deleted once checked against the tracked copy:
+Ten PDFs went through it. Six were byte-identical duplicates of tracked sources and
+were deleted — including `SCtZ-0341-Hi_res.pdf`, which was not a better Schreiweis
+scan but the same file. The other four are in `papers/`, in `sources.json`, and each
+has a reading note. What came of them:
 
-| file | already here as |
-|---|---|
-| `JOA-234-875.pdf` | `pereyra-etal-2019` |
-| `Journal of Anatomy - 2020 - Hattori …` | `hattori-tsuihiji-2021` |
-| `The Anatomical Record - 2014 - Johnston …` | `johnston-2014` |
-| `The Anatomical Record - 2018 - Lowie …` | `lowie-etal-2018` |
-| `SCtZ-0341-Hi_res.pdf` | `schreiweis-1982` (possibly a better scan — compare) |
-| `ther14_1_001_056_Gambaryan_for_Inet.pdf` | `gambaryan-etal-2015` |
+**Gambaryan et al. (2002), monotreme hind limb — mined.** Density 8.0, and the
+richest source added to this repository in some time: two species dissected and
+described separately, the hind limb column for Monotremata where there had been
+none, four new skeletal elements and two corrections to existing ones. See the
+reading note.
 
-**Four are new**, and one of them is the most valuable thing in the folder:
+**The other three are not row sources**, and the density check said so before any of
+them was opened for scoring — 1.7, 1.1 and 1.9 origin/insertion mentions per page
+against the threshold of 4.
 
-- **Gambaryan, Aristov, Dixon & Zubtsova (2002), *Russian Journal of Theriology*
-  1(1): 1–36 — "Peculiarities of the hind limb musculature in monotremes".** The
-  companion to the 2015 shoulder and forelimb monograph, by the same lead author,
-  on the half of the monotreme this dataset has nothing for. Monotremata is the
-  only fully scored extant column in the corpus and it is scored **forelimb only**.
-  This is the obvious next mining pass.
-- **Regnault & Pierce (2018), *R. Soc. open sci.* 5: 181400** — pectoral girdle and
-  forelimb musculoskeletal function in *Tachyglossus aculeatus*. A third
-  independent treatment of the echidna shoulder, beside Gambaryan (2015) and
-  Fahn-Lai et al. (2020).
-- **Diogo (2008), *J. Anat.* — "From fish to modern humans: comparative anatomy,
-  homologies and evolution of the head [muscles]".** Cranial homology across the
-  whole span, from a `homologyScope` author. Cranial records are the coarsest in
-  the dataset and this is a candidate authority for many of them.
-- **Diogo (2009), *J. Anat.* — origin, homologies and evolution of primate facial
-  muscles.** Bears on the therian cranial column, which currently has no source at
-  all.
+- **Regnault & Pierce (2018)** models the echidna shoulder. Its methods section is
+  the reason it yields nothing: the specimen was kept intact and **never dissected**,
+  and the muscle attachments were read off Gambaryan et al. (2015)'s figures by
+  placing markers at the centroid of each shaded area by eye. It is not an
+  independent treatment of that shoulder, and this document said it was until the
+  methods were read.
+- **Diogo et al. (2008)** on the head and neck across sarcopterygians is cited on
+  `depressor-mandibulae`, `stapedius` and `interhyoideus` for three homology
+  arguments — chiefly that the reptilian depressor mandibulae is the source of the
+  monotreme styloideus and stapedius and of the therian stylohyoideus, digastricus
+  posterior, jugulohyoideus and stapedius. **Its four homology schemes are arrow
+  diagrams and do not extract as text**; reading those four figures by hand is the
+  single most useful thing available for the cranial column.
+- **Diogo et al. (2009)** on primate facial muscles is cited on `interhyoideus`. It
+  is close to a complete kit for splitting that record into fifteen or twenty, with
+  a proposed mammalian nomenclature and 300 synonyms — but see below.
 
-Add all four to `sources.json` with `role`, `pdf` and `doi` before mining, rename
-them to the `YEAR_Author_Taxon_Age_topic.pdf` convention, and run the density check
-in [`MINING.md`](MINING.md) on each before planning rows around it.
+### What the four opened up
+
+- **A facial-muscle expansion is now sourced but still blocked.** Diogo et al. (2009)
+  would supply the names, the presence table and the synonymy. It is blocked on the
+  same missing paper as before — nothing in `papers/` dissects a mammal's head — and
+  on a schema fact worth knowing first: facial muscles mostly end in skin, so the
+  muscles most characteristic of the group are the ones an attachment schema can say
+  least about.
+- **Reading the Diogo et al. (2008) figures.** Four arrow diagrams covering the
+  mandibular, hyoid, branchial/pharyngeal/laryngeal and hypobranchial groups from
+  fish to humans, in a source that dissected monotremes and therians. This is the
+  route to the cranial column that does not require acquiring anything.
+- **Gambaryan et al. (2002) leaves two things unscored.** It describes no obturator
+  internus in either animal, so `ischiotrochantericus` is untouched — absence of
+  mention is not absence. And its Table 1 gives a "calculated force" in a unit that
+  cannot be right (it states 1 dyn = 10⁵ N, a mangled 10⁻⁵, which would put the
+  largest muscle in the table under a hundredth of a newton), so no force figure
+  from it is entered anywhere. The relative muscle weights in the same table are
+  unambiguous and are quoted in the rows.
 
 ## Open decisions
 
