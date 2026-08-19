@@ -65,7 +65,16 @@ SOURCE_SPECIES = {
     "hudson-etal-2011a": "acinonyx-jubatus",
     "hudson-etal-2011b": "acinonyx-jubatus",
     "campbell-2007": "rattus-norvegicus",
-    "ghetie-etal-1976": "gallus-domesticus",
+    # NOT ghetie-etal-1976, which is not a chicken source and is not a
+    # single-species source at all. It is a four-language plate atlas of the
+    # domestic fowl, turkey, duck and goose, and its myology section (pp. 88-141)
+    # is mostly the TURKEY: of the 52 captioned plates there, 35 name curcan /
+    # dindon (Meleagris gallopavo), 12 the goose, 7 the duck or drake, and 7 the
+    # hen or cock. Mapping the whole book to Gallus asserted the wrong animal for
+    # about six plates in seven, and it would have done so silently the moment
+    # anyone mined the wing, thigh, shank or deep-pelvis series. A plate names its
+    # own bird in four languages, so rows mined from it must carry the binomial in
+    # prose and let rule 1 fire.
     "matsuoka-hasegawa-2007": "cygnus-cygnus",
     "schreiweis-1982": "eudyptes-pachyrhynchus",
     "widrig-etal-2023": "nothoprocta-pentlandii",

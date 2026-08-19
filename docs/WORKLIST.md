@@ -87,7 +87,7 @@ Worth knowing before planning a pass around one:
 
 | Source | Actually for |
 |---|---|
-| **Ghetie et al. (1976)** | A plate atlas — labelled figures in four languages, no myological prose in 154 pages. **Nothing else in the corpus describes a chicken**, so the *Gallus* rows are source-limited in the strict sense |
+| **Ghetie et al. (1976)** | A plate atlas — labelled figures in four languages, no myological prose. Not an attachment source, but the plates *are* legible as images and state species, name, presence, layer and face for four birds. Mostly a **turkey** book: 35 of its 52 captioned myology plates. See its note |
 | **Fisher & Goodman (1955)** | The avian column entire, but the scan is uneven and plate-facing pages OCR to noise. **A cleaner scan would unblock Aves more than any other single acquisition** |
 | **Blotto et al. (2020)** | Anuran hand and foot, 157 pp with its own revised nomenclature and active disagreements with Abdala & Diogo — needs a dedicated bridging pass |
 | Wiseman (2021), Demuth (2022, 2023), Cuff (2022) | Musculoskeletal models — attachments are 3D coordinates |
