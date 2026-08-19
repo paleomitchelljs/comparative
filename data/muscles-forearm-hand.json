@@ -6476,6 +6476,16 @@
             "relation": "descends-from",
             "to": "pterygialis-cranialis",
             "girdle": "pectoral"
+          },
+          {
+            "relation": "serial",
+            "to": "tibialis-posterior",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "sources": [
+              "diogo-molnar-2014"
+            ],
+            "confidence": "well-supported"
           }
         ]
       },
@@ -7585,8 +7595,8 @@
             "relation": "serial",
             "to": "tibialis-posterior",
             "axis": "forelimb-hindlimb",
-            "basis": "developmental",
-            "caution": "Diogo & Molnar (2014) Table 14 pairs the pronator quadratus with the interosseus cruris, and the tibialis posterior ('pronator profundus') with the palmaris profundus 1 in Ambystoma and Timon and with the flexor carpi radialis in Rattus and Homo. This edge crosses those two pairings and conflicts with them."
+            "basis": "topological",
+            "caution": "Demoted from basis \"developmental\" to \"topological\": nothing cited establishes a shared anlage, and CLAUDE.md reserves that value for cases where a source does. Diogo & Molnar (2014) Table 14 pairs the pronator quadratus with the interosseus cruris, and the tibialis posterior ('pronator profundus') with the palmaris profundus 1 in Ambystoma and Timon and with the flexor carpi radialis in Rattus and Homo. This edge crosses those two pairings and conflicts with them."
           }
         ]
       },

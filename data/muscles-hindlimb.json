@@ -11420,11 +11420,22 @@
           },
           {
             "relation": "serial",
+            "to": "flexor-carpi-radialis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "sources": [
+              "diogo-molnar-2014"
+            ],
+            "confidence": "well-supported",
+            "note": "Stated by Diogo & Molnar (2014) Table 14 as a \"clear topological correspondence\": the tibialis posterior ('pronator profundus') pairs with the flexor carpi radialis in Rattus and Homo, and with the palmaris profundus 1 — a deep urodele and lizard forearm muscle this dataset does not hold as a record — in Ambystoma and Timon."
+          },
+          {
+            "relation": "serial",
             "to": "pronator-quadratus",
             "axis": "forelimb-hindlimb",
-            "basis": "developmental",
+            "basis": "topological",
             "note": "Diogo & Molnar identify hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus (pronator quadratus) as the REAL ontogenetic counterparts — as against the popliteus/pronator teres pairing, which is topological only.",
-            "caution": "Diogo & Molnar (2014) Table 14 pairs the pronator quadratus with the interosseus cruris, and the tibialis posterior ('pronator profundus') with the palmaris profundus 1 in Ambystoma and Timon and with the flexor carpi radialis in Rattus and Homo. This edge crosses those two pairings and conflicts with them."
+            "caution": "Demoted from basis \"developmental\" to \"topological\": nothing cited establishes a shared anlage, and CLAUDE.md reserves that value for cases where a source does. Diogo & Molnar (2014) Table 14 pairs the pronator quadratus with the interosseus cruris, and the tibialis posterior ('pronator profundus') with the palmaris profundus 1 in Ambystoma and Timon and with the flexor carpi radialis in Rattus and Homo. This edge crosses those two pairings and conflicts with them."
           }
         ]
       },
