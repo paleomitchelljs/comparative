@@ -96,21 +96,58 @@ Worth knowing before planning a pass around one:
 
 ## Reading notes
 
-Every mined source should have one. It is the durable record of what a paper says
-and of the judgement calls made in scoring it, and it is the layer this repository
-is thinnest in. `validate.py` does not yet check for it; the count is in
-[`STATUS.md`](STATUS.md).
+**Every cited source has one.** That was the thinnest layer in the repository and
+it is now closed, and `validate.py` keeps it closed: a cited source with no `notes`
+pointer warns, and a pointer to a file that does not exist is an error. So this is
+a regression check rather than a backlog.
 
-The largest gaps by citation count are Burch (2014), Matsuoka & Hasegawa (2007),
-Allen et al. (2021), Schilling (2011), Hutchinson et al. (2015) and Werneburg
-(2011). Five sources have a local PDF but no extracted text — rerun the
-`pdftotext` loop in `CLAUDE.md`. One, Pereyra et al. (2024), was fetched from PMC
-and has no local copy at all.
+A catalogued but uncited source is exempt — it is a promise, not yet a debt, and
+its note gets written when it is mined.
 
-> Where a mining pass produced a finding worth keeping, it belongs in that
+> Where a mining pass produces a finding worth keeping, it belongs in that
 > source's reading note. The pass-by-pass narrative that used to live in
 > `docs/GAPS.md` §2 is in git history at `85360ce:docs/GAPS.md`; fold each
-> paragraph into its source's note as that note is written.
+> paragraph into its source's note when you next touch that source. Those
+> paragraphs each name several sources, which is why they were not distributed
+> mechanically.
+
+## Waiting in `papers/toadd/`
+
+Ten PDFs under publisher filenames. **Six are already in the corpus** and can be
+deleted once checked against the tracked copy:
+
+| file | already here as |
+|---|---|
+| `JOA-234-875.pdf` | `pereyra-etal-2019` |
+| `Journal of Anatomy - 2020 - Hattori …` | `hattori-tsuihiji-2021` |
+| `The Anatomical Record - 2014 - Johnston …` | `johnston-2014` |
+| `The Anatomical Record - 2018 - Lowie …` | `lowie-etal-2018` |
+| `SCtZ-0341-Hi_res.pdf` | `schreiweis-1982` (possibly a better scan — compare) |
+| `ther14_1_001_056_Gambaryan_for_Inet.pdf` | `gambaryan-etal-2015` |
+
+**Four are new**, and one of them is the most valuable thing in the folder:
+
+- **Gambaryan, Aristov, Dixon & Zubtsova (2002), *Russian Journal of Theriology*
+  1(1): 1–36 — "Peculiarities of the hind limb musculature in monotremes".** The
+  companion to the 2015 shoulder and forelimb monograph, by the same lead author,
+  on the half of the monotreme this dataset has nothing for. Monotremata is the
+  only fully scored extant column in the corpus and it is scored **forelimb only**.
+  This is the obvious next mining pass.
+- **Regnault & Pierce (2018), *R. Soc. open sci.* 5: 181400** — pectoral girdle and
+  forelimb musculoskeletal function in *Tachyglossus aculeatus*. A third
+  independent treatment of the echidna shoulder, beside Gambaryan (2015) and
+  Fahn-Lai et al. (2020).
+- **Diogo (2008), *J. Anat.* — "From fish to modern humans: comparative anatomy,
+  homologies and evolution of the head [muscles]".** Cranial homology across the
+  whole span, from a `homologyScope` author. Cranial records are the coarsest in
+  the dataset and this is a candidate authority for many of them.
+- **Diogo (2009), *J. Anat.* — origin, homologies and evolution of primate facial
+  muscles.** Bears on the therian cranial column, which currently has no source at
+  all.
+
+Add all four to `sources.json` with `role`, `pdf` and `doi` before mining, rename
+them to the `YEAR_Author_Taxon_Age_topic.pdf` convention, and run the density check
+in [`MINING.md`](MINING.md) on each before planning rows around it.
 
 ## Open decisions
 

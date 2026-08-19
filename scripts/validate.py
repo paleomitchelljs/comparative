@@ -887,6 +887,19 @@ def main():
     for key in sorted(source_keys - cited):
         warn(f"sources.json: '{key}' is never cited")
 
+    # A mined source with no reading note is the gap that is invisible from
+    # inside the data: the rows look complete, and the record of what the paper
+    # actually says exists nowhere in the repository. Every cited source has one
+    # as of this check being written, so this warns on regression rather than on
+    # a backlog. An uncited source is exempt — it is a promise, not yet a debt.
+    for key in sorted(cited):
+        src = next((s for s in sources_doc["sources"] if s["key"] == key), {})
+        rel = src.get("notes")
+        if not rel:
+            warn(f"sources.json: '{key}' is cited but has no `notes` reading note")
+        elif not (ROOT / rel).exists():
+            err(f"sources.json: '{key}' notes -> '{rel}', which does not exist")
+
     print(f"checked {len(muscles)} muscles across {len(MUSCLE_FILES)} files, "
           f"{len(taxon_ids)} taxa, {len(source_keys)} sources")
     return report()
