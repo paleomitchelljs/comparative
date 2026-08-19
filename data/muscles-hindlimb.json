@@ -285,11 +285,21 @@
               }
             ]
           },
-          "attachmentNote": "Trachemys scripta — Walker (1973) writes *Pseudemys scripta*. **The morphological dorsal surface of the turtle femur faces anteriorly**, which is why a muscle inserting dorsally acts as a protractor; the row records the surface and the note records what that means. In pleurodires, where the ventral girdle is reduced and fused to the shell, much of this origin has spread onto the plastron anterior to the pubis — the same shell-as-attachment pattern as the forelimb."
+          "attachmentNote": "Trachemys scripta — Walker (1973) writes *Pseudemys scripta*. **The morphological dorsal surface of the turtle femur faces anteriorly**, which is why a muscle inserting dorsally acts as a protractor; the row records the surface and the note records what that means. In pleurodires, where the ventral girdle is reduced and fused to the shell, much of this origin has spread onto the plastron anterior to the pubis — the same shell-as-attachment pattern as the forelimb.",
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "protraction"
+            },
+            {
+              "joint": "knee",
+              "motion": "abduction"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Iliopsoas",
           "present": "yes",
           "division": "divided",
@@ -346,11 +356,21 @@
             {
               "nerve": "ventral-rami"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "flexion"
+            },
+            {
+              "joint": "intervertebral",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. puboischiofemoralis internus",
           "present": "yes",
           "division": "divided",
@@ -394,7 +414,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pubo-ischio-trochantericus internus",
           "present": "yes",
           "innervation": "Nervuli ileo-pectinei from the crural plexus.",
@@ -483,7 +503,13 @@
               }
             ]
           },
-          "attachmentNote": "Spilocuscus maculatus. The psoas parvus is the larger of the two psoas muscles, as in the great majority of marsupials: from the bodies of six vertebrae — the last thoracic and the anterior five lumbar — ending in a long round tendon on the anterior border of the pubis close to the marsupial bone and immediately in front of the acetabulum. **So the bigger psoas in these animals ends on the girdle, not on the femur.** The iliacus comes off the lower border and iliac fossa of the ilium, blends with the psoas magnus, and inserts on the lesser trochanter and the shaft just below it. The psoas magnus is simple here: from the bodies of the last two lumbar vertebrae and the upper sacrum, blending with the iliacus. The sartorius arises from the anterior superior iliac spine in both animals and **acts chiefly as an extensor of the leg upon the thigh** — Cunningham notes these two are no exception to that marsupial rule, which is a different function from the human muscle of the same name. In the cuscus, whose thigh is held flexed, the sartorius lies at first close against the lower abdominal wall, then expands into an exceedingly thin sheet inserted into the quadriceps expansion on the front of the knee and into the fascia on the inner side of the joint."
+          "attachmentNote": "Spilocuscus maculatus. The psoas parvus is the larger of the two psoas muscles, as in the great majority of marsupials: from the bodies of six vertebrae — the last thoracic and the anterior five lumbar — ending in a long round tendon on the anterior border of the pubis close to the marsupial bone and immediately in front of the acetabulum. **So the bigger psoas in these animals ends on the girdle, not on the femur.** The iliacus comes off the lower border and iliac fossa of the ilium, blends with the psoas magnus, and inserts on the lesser trochanter and the shaft just below it. The psoas magnus is simple here: from the bodies of the last two lumbar vertebrae and the upper sacrum, blending with the iliacus. The sartorius arises from the anterior superior iliac spine in both animals and **acts chiefly as an extensor of the leg upon the thigh** — Cunningham notes these two are no exception to that marsupial rule, which is a different function from the human muscle of the same name. In the cuscus, whose thigh is held flexed, the sartorius lies at first close against the lower abdominal wall, then expands into an exceedingly thin sheet inserted into the quadriceps expansion on the front of the knee and into the fascia on the inner side of the joint.",
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "thylacinus-cynocephalus",
@@ -544,7 +570,13 @@
               }
             ]
           },
-          "attachmentNote": "Thylacinus cynocephalus. The psoas parvus is the larger of the two psoas muscles, as in the great majority of marsupials: from the bodies of six vertebrae — the last thoracic and the anterior five lumbar — ending in a long round tendon on the anterior border of the pubis close to the marsupial bone and immediately in front of the acetabulum. **So the bigger psoas in these animals ends on the girdle, not on the femur.** The iliacus comes off the lower border and iliac fossa of the ilium, blends with the psoas magnus, and inserts on the lesser trochanter and the shaft just below it. **The psoas magnus is in two distinct portions here.** The anterior and larger is blended in front with the psoas parvus and springs behind from the bodies and transverse processes of the last two lumbar vertebrae, ending by joining the iliacus; the posterior portion comes off the last lumbar vertebra and the first two pieces of the sacrum and reaches the upper part of the lesser trochanter **independently of the iliacus** — so one psoas has an insertion of its own and the other has not. The sartorius arises from the anterior superior iliac spine in both animals and **acts chiefly as an extensor of the leg upon the thigh** — Cunningham notes these two are no exception to that marsupial rule, which is a different function from the human muscle of the same name. Here it is a thick prismatic muscle inserted entirely in front of the knee, into the quadriceps expansion."
+          "attachmentNote": "Thylacinus cynocephalus. The psoas parvus is the larger of the two psoas muscles, as in the great majority of marsupials: from the bodies of six vertebrae — the last thoracic and the anterior five lumbar — ending in a long round tendon on the anterior border of the pubis close to the marsupial bone and immediately in front of the acetabulum. **So the bigger psoas in these animals ends on the girdle, not on the femur.** The iliacus comes off the lower border and iliac fossa of the ilium, blends with the psoas magnus, and inserts on the lesser trochanter and the shaft just below it. **The psoas magnus is in two distinct portions here.** The anterior and larger is blended in front with the psoas parvus and springs behind from the bodies and transverse processes of the last two lumbar vertebrae, ending by joining the iliacus; the posterior portion comes off the last lumbar vertebra and the first two pieces of the sacrum and reaches the upper part of the lesser trochanter **independently of the iliacus** — so one psoas has an insertion of its own and the other has not. The sartorius arises from the anterior superior iliac spine in both animals and **acts chiefly as an extensor of the leg upon the thigh** — Cunningham notes these two are no exception to that marsupial rule, which is a different function from the human muscle of the same name. Here it is a thick prismatic muscle inserted entirely in front of the knee, into the quadriceps expansion.",
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "extension"
+            }
+          ]
         }
       ],
       "homology": {
@@ -805,7 +837,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Obturator externus, quadratus femoris and the gemelli",
           "present": "yes",
           "division": "divided",
@@ -863,11 +895,21 @@
             {
               "nerve": "nerve-to-obturator-internus"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "adduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "rotation-lateral"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. puboischiofemoralis externus",
           "present": "yes",
           "division": "divided",
@@ -912,7 +954,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pubo-ischio-femoralis and M. pubo-ischio-trochantericus externus",
           "present": "yes",
           "division": "divided",
@@ -1438,11 +1480,21 @@
               }
             ]
           },
-          "attachmentNote": "Trachemys scripta, from Walker (1973). Covers most of the dorsolateral pelvis lateral and posterior to the posterodorsal head of the puboischiofemoralis internus. Extensive origin from the first sacral and one or two presacral vertebrae, **the adjacent carapace**, and most of the lateral surface and anterior border of the ilium, converging onto the dorsal surface of the trochanter major. Most turtles resemble *Pseudemys* in taking some fibres from the vertebrae as well as the ilium."
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Covers most of the dorsolateral pelvis lateral and posterior to the posterodorsal head of the puboischiofemoralis internus. Extensive origin from the first sacral and one or two presacral vertebrae, **the adjacent carapace**, and most of the lateral surface and anterior border of the ilium, converging onto the dorsal surface of the trochanter major. Most turtles resemble *Pseudemys* in taking some fibres from the vertebrae as well as the ilium.",
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "abduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "protraction"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Gluteus medius and gluteus minimus",
           "present": "yes",
           "division": "divided",
@@ -1489,11 +1541,21 @@
             {
               "nerve": "superior-gluteal"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "abduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "stabilisation"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. iliofemoralis",
           "present": "yes",
           "sources": [
@@ -1517,7 +1579,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. ileo-femoralis",
           "present": "yes",
           "innervation": "R. muscularis brevis of the N. femoralis, and the R. ilio-femoralis of the N. peroneus.",
@@ -1981,7 +2043,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Piriformis",
           "present": "yes",
           "action": "Laterally rotates the extended thigh; abducts the flexed thigh.",
@@ -2008,11 +2070,25 @@
             {
               "nerve": "ventral-rami"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "abduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "flexion"
+            },
+            {
+              "joint": "hip",
+              "motion": "rotation-lateral"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. caudifemoralis longus and brevis",
           "present": "yes",
           "division": "divided",
@@ -2048,7 +2124,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. coccygeo-femoralis brevis and longus",
           "present": "yes",
           "division": "divided",
@@ -2626,11 +2702,25 @@
               }
             ]
           },
-          "attachmentNote": "Trachemys scripta, from Walker (1973). Band-shaped, its main origin on the posterodorsal corner of the ilium dorsal to the iliofibularis origin, plus a **second tendinous head in *Pseudemys*** from the anterior border of the ilium. Sitting high on the ilium it can abduct and retract the femur as well as extend the shank."
+          "attachmentNote": "Trachemys scripta, from Walker (1973). Band-shaped, its main origin on the posterodorsal corner of the ilium dorsal to the iliofibularis origin, plus a **second tendinous head in *Pseudemys*** from the anterior border of the ilium. Sitting high on the ilium it can abduct and retract the femur as well as extend the shank.",
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "abduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "retraction"
+            },
+            {
+              "joint": "knee",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Rectus femoris",
           "present": "yes",
           "action": "Extends the knee and flexes the hip.",
@@ -2666,11 +2756,21 @@
             {
               "nerve": "femoral"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "flexion"
+            },
+            {
+              "joint": "knee",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. iliotibialis",
           "present": "yes",
           "sources": [
@@ -2697,7 +2797,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. ileo-tibialis and M. pubo-tibialis, heads of the M. extensor triceps",
           "present": "yes",
           "division": "divided",
@@ -3068,7 +3168,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. iliofibularis",
           "present": "yes",
           "sources": [
@@ -3092,7 +3192,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. ileo-fibularis",
           "present": "yes",
           "innervation": "N. ileo-fibularis of the N. peroneus communis.",
@@ -3514,11 +3614,17 @@
               }
             ]
           },
-          "attachmentNote": "Trachemys scripta, from Walker (1973). The deepest and most massive part of the knee-extensor complex; all three vasti converge to form the greater part of the patellar tendon."
+          "attachmentNote": "Trachemys scripta, from Walker (1973). The deepest and most massive part of the knee-extensor complex; all three vasti converge to form the greater part of the patellar tendon.",
+          "actions": [
+            {
+              "joint": "knee",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Vastus lateralis, medialis and intermedius",
           "present": "yes",
           "division": "divided",
@@ -3570,11 +3676,21 @@
             {
               "nerve": "femoral"
             }
+          ],
+          "actions": [
+            {
+              "joint": "knee",
+              "motion": "extension"
+            },
+            {
+              "joint": "knee",
+              "motion": "retraction"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. femorotibialis",
           "present": "yes",
           "sources": [
@@ -3597,7 +3713,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. femoro-tibialis, deep head of the M. extensor triceps",
           "present": "yes",
           "innervation": "R. femoro-tibialis of the N. cruralis.",
@@ -3943,11 +4059,25 @@
               }
             ]
           },
-          "attachmentNote": "Trachemys scripta, from Walker (1973). A weak muscle from the posterior part of the base of the lateral pubic process and the adjacent puboischiadic ligament, onto the patellar tendon. It crosses the hip as well as the knee. **With the thigh in its normal turtle position — morphological dorsal surface directed anteriorly — the ambiens lies along its anteroventral border**, which is not where a reader importing the lizard arrangement would look for it."
+          "attachmentNote": "Trachemys scripta, from Walker (1973). A weak muscle from the posterior part of the base of the lateral pubic process and the adjacent puboischiadic ligament, onto the patellar tendon. It crosses the hip as well as the knee. **With the thigh in its normal turtle position — morphological dorsal surface directed anteriorly — the ambiens lies along its anteroventral border**, which is not where a reader importing the lizard arrangement would look for it.",
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "adduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "protraction"
+            },
+            {
+              "joint": "knee",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -3956,7 +4086,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "'Ambiens'",
           "present": "yes",
           "sources": [
@@ -4275,7 +4405,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Adductor magnus, longus, brevis and minimus",
           "present": "yes",
           "division": "divided",
@@ -4333,11 +4463,21 @@
             {
               "nerve": "femoral"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "adduction"
+            },
+            {
+              "joint": "hip",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. adductor femoris",
           "present": "yes",
           "sources": [
@@ -4683,7 +4823,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Obturator internus",
           "present": "yes",
           "action": "Laterally rotates the thigh.",
@@ -4716,11 +4856,17 @@
             {
               "nerve": "nerve-to-obturator-internus"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "rotation-lateral"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. ischiotrochantericus",
           "present": "yes",
           "sources": [
@@ -4748,7 +4894,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. ischio-trochantericus",
           "present": "yes",
           "innervation": "Nervuli ileo-pectinei longi et breves from the sacral plexus.",
@@ -5147,7 +5293,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Gracilis",
           "present": "yes",
           "action": "Adducts the thigh and flexes the knee.",
@@ -5173,11 +5319,21 @@
             {
               "nerve": "obturator"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "adduction"
+            },
+            {
+              "joint": "knee",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. puboischiotibialis",
           "present": "yes",
           "sources": [
@@ -5200,7 +5356,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pubo-ischio-tibialis",
           "present": "yes",
           "innervation": "R. pubo-ischio-tibialis of the N. obturatorius.",
@@ -5712,7 +5868,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Hamstrings",
           "present": "yes",
           "division": "divided",
@@ -5766,11 +5922,21 @@
             {
               "nerve": "common-fibular"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "extension"
+            },
+            {
+              "joint": "knee",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor tibialis internus and externus",
           "present": "yes",
           "division": "divided",
@@ -5812,7 +5978,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. ischio-tibialis posticus",
           "present": "yes",
           "innervation": "Nn. ischio-tibiales from the sacral plexus.",
@@ -6074,7 +6240,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Gluteus maximus",
           "present": "yes",
           "action": "Extends and laterally rotates the thigh.",
@@ -6112,6 +6278,16 @@
           "nerves": [
             {
               "nerve": "inferior-gluteal"
+            }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "extension"
+            },
+            {
+              "joint": "hip",
+              "motion": "rotation-lateral"
             }
           ]
         },
@@ -6522,7 +6698,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Triceps surae and plantaris",
           "present": "yes",
           "division": "divided",
@@ -6569,11 +6745,25 @@
             {
               "nerve": "tibial"
             }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "extension"
+            },
+            {
+              "joint": "ankle",
+              "motion": "flexion"
+            },
+            {
+              "joint": "knee",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. femorotibial gastrocnemius and M. femoral gastrocnemius",
           "present": "yes",
           "division": "divided",
@@ -6620,7 +6810,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. gastrocnemius",
           "present": "yes",
           "division": "heads",
@@ -7329,7 +7519,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Tibialis anterior",
           "present": "yes",
           "action": "Dorsiflexes and inverts the foot.",
@@ -7360,11 +7550,21 @@
             {
               "nerve": "deep-fibular"
             }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "flexion"
+            },
+            {
+              "joint": "ankle",
+              "motion": "inversion"
+            }
           ]
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. tibialis anticus",
           "present": "yes",
           "innervation": "R. muscularis of the N. peroneus profundus medialis.",
@@ -7956,7 +8156,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor digitorum longus and extensor hallucis longus",
           "present": "yes",
           "division": "divided",
@@ -8009,11 +8209,21 @@
             {
               "nerve": "deep-fibular"
             }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "flexion"
+            },
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor digitorum communis longus",
           "present": "yes",
           "innervation": "R. muscularis of the N. peroneus profundus medialis.",
@@ -8723,7 +8933,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Fibularis longus and brevis",
           "present": "yes",
           "division": "divided",
@@ -8762,11 +8972,25 @@
             {
               "nerve": "superficial-fibular"
             }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "eversion"
+            },
+            {
+              "joint": "ankle",
+              "motion": "extension"
+            },
+            {
+              "joint": "ankle",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. peroneus",
           "present": "yes",
           "innervation": "R. muscularis of the N. peroneus profundus.",
@@ -9057,7 +9281,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Popliteus",
           "present": "yes",
           "action": "Unlocks the extended knee by laterally rotating the femur on the tibia.",
@@ -9084,11 +9308,17 @@
             {
               "nerve": "tibial"
             }
+          ],
+          "actions": [
+            {
+              "joint": "hip",
+              "motion": "rotation-lateral"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. popliteus",
           "present": "yes",
           "sources": [
@@ -9112,7 +9342,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. fibulo-tibialis superior (popliteus)",
           "present": "yes",
           "innervation": "R. muscularis of the N. tibialis medialis.",
@@ -9356,7 +9586,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Tibialis posterior",
           "present": "yes",
           "action": "Inverts the foot and assists plantarflexion.",
@@ -9392,11 +9622,25 @@
             {
               "nerve": "tibial"
             }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "extension"
+            },
+            {
+              "joint": "ankle",
+              "motion": "flexion"
+            },
+            {
+              "joint": "ankle",
+              "motion": "inversion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "russell-bauer-2008"
@@ -9405,7 +9649,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. tibialis posticus",
           "present": "yes",
           "innervation": "Rr. musculares of the N. tibialis medialis.",
@@ -9749,7 +9993,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor digitorum longus and flexor hallucis longus",
           "present": "yes",
           "division": "divided",
@@ -9788,11 +10032,25 @@
             {
               "nerve": "tibial"
             }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "extension"
+            },
+            {
+              "joint": "ankle",
+              "motion": "flexion"
+            },
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor digitorum longus",
           "present": "yes",
           "division": "heads",
@@ -9846,7 +10104,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor digitorum communis profundus",
           "present": "yes",
           "division": "heads",
@@ -10234,7 +10492,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor digitorum brevis",
           "present": "yes",
           "action": "Flexes the proximal interphalangeal joints of digits 2-5.",
@@ -10263,11 +10521,17 @@
             {
               "nerve": "medial-plantar"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. flexores digitores breves",
           "present": "yes",
           "sources": [
@@ -10294,7 +10558,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor digitorum communis sublimis",
           "present": "yes",
           "innervation": "Rr. superficiales plantares of the N. tibialis lateralis and medialis.",
@@ -10630,7 +10894,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Adductor hallucis",
           "present": "yes",
           "division": "heads",
@@ -10665,11 +10929,17 @@
             {
               "nerve": "lateral-plantar-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "adduction"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. contrahentes",
           "present": "yes",
           "sources": [
@@ -10693,7 +10963,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. adductor digitorum communis and M. adductor digiti V",
           "present": "yes",
           "division": "divided",
@@ -11845,7 +12115,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Interossei and the short flexors of the hallux and fifth digit",
           "present": "yes",
           "division": "divided",
@@ -11893,11 +12163,25 @@
             {
               "nerve": "medial-plantar"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "abduction"
+            },
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "adduction"
+            },
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. interossei plantares",
           "present": "yes",
           "sources": [
@@ -11921,7 +12205,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. interossei plantares",
           "present": "yes",
           "innervation": "Rr. interossei of the N. tibialis medialis and lateralis.",
@@ -13185,7 +13469,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pubotibialis",
           "present": "yes",
           "division": "heads",
@@ -13217,7 +13501,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pubo-tibialis posticus",
           "present": "yes",
           "innervation": "R. pubo-tibialis posticus of the N. obturatorius and short branches of the N. femoralis.",
@@ -13491,7 +13775,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Iliococcygeus",
           "present": "yes",
           "action": "Supports the pelvic viscera; draws the coccyx forward.",
@@ -13523,7 +13807,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. coccygeo-iliacus",
           "present": "yes",
           "innervation": "Dorsal rami of the caudal spinal nerves.",
@@ -13628,7 +13912,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Coccygeus",
           "present": "yes",
           "action": "Supports the pelvic viscera; draws the coccyx forward.",
@@ -13660,7 +13944,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. coccygeo-ischiadicus",
           "present": "yes",
           "innervation": "N. coccygeo-ischiadicus from the second postsacral nerve.",
@@ -13934,7 +14218,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -13943,7 +14227,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. interosseus cruris",
           "present": "yes",
           "sources": [
@@ -13967,7 +14251,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. fibulo-tibialis inferior",
           "present": "yes",
           "innervation": "R. muscularis of the N. tibialis medialis.",
@@ -14101,7 +14385,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -14110,7 +14394,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator profundus",
           "present": "yes",
           "sources": [
@@ -14253,7 +14537,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -14351,7 +14635,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Quadratus plantae",
           "present": "yes",
           "action": "Redirects the pull of the long digital flexor along the axis of the foot.",
@@ -14376,6 +14660,12 @@
           "nerves": [
             {
               "nerve": "lateral-plantar"
+            }
+          ],
+          "actions": [
+            {
+              "joint": "ankle",
+              "motion": "flexion"
             }
           ]
         },
@@ -14525,7 +14815,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -14613,7 +14903,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "gest-anatomy-tables"
@@ -14622,7 +14912,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. intermetatarsales",
           "present": "yes",
           "sources": [
@@ -15132,7 +15422,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor digitorum brevis and extensor hallucis brevis",
           "present": "yes",
           "division": "divided",
@@ -15171,11 +15461,17 @@
             {
               "nerve": "deep-fibular"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor digitorum communis brevis, M. extensor hallucis brevis and M. extensor digiti minimi proprius",
           "present": "yes",
           "division": "divided",
@@ -15617,7 +15913,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor hallucis",
           "present": "yes",
           "action": "Abducts and flexes the great toe.",
@@ -15644,11 +15940,21 @@
             {
               "nerve": "medial-plantar"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "abduction"
+            },
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. abductor et extensor hallucis proprius longus lateralis",
           "present": "yes",
           "division": "divided",
@@ -16163,7 +16469,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "action": "Abducts the fifth digit.",
@@ -16190,11 +16496,17 @@
             {
               "nerve": "lateral-plantar"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metatarsophalangeal",
+              "motion": "abduction"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. abductor digiti quinti",
           "present": "yes",
           "sources": [
@@ -17263,7 +17575,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "gest-anatomy-tables"
@@ -17272,7 +17584,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. interossei dorsales",
           "present": "yes",
           "innervation": "Rr. interossei of both Nn. peronei profundi.",

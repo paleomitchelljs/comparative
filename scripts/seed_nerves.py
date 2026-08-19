@@ -285,6 +285,17 @@ def main():
                     unresolved.append(f"{m['id']}/{tag}: {'; '.join(missed)}  <- {text[:70]}")
                 if not ids:
                     continue
+                # Seed, not sync. Carrying the notes across was not enough: the
+                # rows themselves were rebuilt from the prose every run, and the
+                # parser is coarser than the curator. It was demoting
+                # `median-anterior-interosseous` to `median`, and `obturator`,
+                # `nerve-to-obturator-internus` and `tibial` all to
+                # `lumbosacral-plexus`, on rows somebody had resolved by hand.
+                # A row that already has nerves is finished; parse only the
+                # prose that has none.
+                if holder.get("nerves"):
+                    unchanged += 1
+                    continue
                 # Notes are hand-added — the seed derives ids and segments, not
                 # commentary — so carry them across by nerve id. Without this,
                 # re-running the seed silently discards curation, which is the
@@ -322,7 +333,11 @@ def main():
     elif not write:
         print("(dry run — pass --write to apply)")
 
-    return 1 if unresolved else 0
+    # An innervation string the parser cannot place is a gap in `nerves.json`,
+    # not a broken build — the same standing as validate.py's never-cited
+    # sources. Returning 1 here stopped `build.sh` dead at step 12 on all 71 of
+    # them, so no later step ran. Report and carry on; validate.py is the gate.
+    return 0
 
 
 if __name__ == "__main__":

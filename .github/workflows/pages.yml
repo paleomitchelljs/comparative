@@ -66,6 +66,21 @@ jobs:
           fi
           echo "No tracked PDFs."
 
+      # Nothing ran build.sh, so nobody noticed when it stopped working. It had
+      # been failing at step 5 since the species migration, and the steps that
+      # did run were replaying their embedded copies over later curation. Both
+      # are invisible unless something rebuilds and compares. Run it last,
+      # because it writes.
+      - name: The committed data is what the build produces
+        run: |
+          ./scripts/build.sh --write
+          if ! git diff --quiet; then
+            echo "::error::build.sh --write changed the committed data. Either it is not idempotent, or data/ holds edits the build reverts. Run it locally and inspect the diff before committing."
+            git diff --stat
+            exit 1
+          fi
+          echo "Build is a fixed point."
+
   deploy:
     needs: validate
     runs-on: ubuntu-latest

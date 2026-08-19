@@ -97,7 +97,17 @@ for `source`, which means a single-species study, or invent a plausible exemplar
 The validator enforces it both ways.
 
 **Rebuild with `./scripts/build.sh --write`,** which runs the migrations and
-seeds in dependency order and then validates. The scripts are idempotent.
+seeds in dependency order and then validates. It is a fixed point — CI runs it
+and fails if the committed data changes.
+
+**The seeds fill, they do not sync.** A seed writes a field only where the
+occurrence has none, and `sources` is a union. They used to assign
+unconditionally, so every build replayed each script's embedded copy over later
+curation: `linea-alba` over a corrected `body-wall`, `median` over a curated
+`median-anterior-interosseous`, and citations dropped off rows that had since
+been scored against a second source. **So editing a seed script no longer
+changes data that already exists.** To revise a seeded row, edit the JSON — that
+is the copy under curation and the one the build now preserves.
 
 **Regenerate analysis exports with `scripts/export_matrix.py`.** `export/` is
 git-ignored — it is derived, never a source of truth.

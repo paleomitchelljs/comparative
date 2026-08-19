@@ -227,6 +227,18 @@ def attribute(occ, clade, idx, by_clade, by_id):
 
     blob = " ".join(str(occ.get(k, "")) for k in
                     ("attachmentNote", "note", "divisionNote", "name"))
+    # The prose is Markdown and the notes italicise binomials, so `*Pteropus*
+    # sp.` never matched `Pteropus sp.` and the row fell through to rule 4 —
+    # which handed a fruit bat's foot to the clade's first exemplar, a cheetah.
+    # Strip emphasis before matching. Also collapse the subspecies out of a
+    # trinomial: the notes write `Canis lupus familiaris` where species.json
+    # says `Canis familiaris`, and the row is about the same dog either way.
+    blob = blob.replace("*", "").replace("_", "")
+    # A trinomial names the same animal as the binomial inside it: the notes
+    # write `Canis lupus familiaris` where species.json says `Canis familiaris`.
+    # Append the genus + third epithet so rule 1 can see it.
+    blob += " " + " ".join(f"{g} {sub}" for g, _, sub in
+                           re.findall(r"\b([A-Z][a-z]+) ([a-z]{3,}) ([a-z]{3,})\b", blob))
 
     # 1. the row's own prose names a species
     hits = sorted((blob.index(b), sid) for b, sid in idx.items() if b in blob)
@@ -277,10 +289,22 @@ def main():
     basis = collections.Counter()
     unresolved = []
 
+    RANK = {"note": 3, "source": 2, "survey": 1, "default": 0}
+    duplicated = []
+
     for path in sorted(glob.glob("data/muscles-*.json")):
         doc = json.load(open(path))
         for m in doc["muscles"]:
+            proposed = []
             for occ in m.get("occurrences", []):
+                # A row whose source describes a clade rather than an animal is
+                # marked `generalised` by hand, and none of the rules below can
+                # produce that value — so re-deriving it downgraded all 16 such
+                # rows to `source` on every build, which validate.py then
+                # rejected. The curation is the observation here; leave it.
+                if occ.get("speciesBasis") == "generalised":
+                    basis["generalised"] += 1
+                    continue
                 # Re-running must be a no-op, so the clade context comes from
                 # whatever the row already says: its species on a second pass,
                 # its legacy `taxon` on the first.
@@ -295,6 +319,27 @@ def main():
                 if by_id[sid]["clade"] != clade:
                     unresolved.append(f"{m['id']}/{clade}: {sid} is not in that clade")
                     continue
+                proposed.append((occ, sid, how))
+
+            # Two rows of one record cannot be the same animal. A source keyed
+            # to a primary species pulls every unnamed row of its clade onto it,
+            # which is how three pes records ended up with `acinonyx-jubatus`
+            # twice and the build failed validation it had itself broken. Where
+            # that happens the better-evidenced row keeps the species — prose
+            # naming the animal beats a source default — and the loser keeps
+            # whatever it already had, reported rather than silently moved.
+            claimed = {}
+            for occ, sid, how in proposed:
+                best = claimed.get(sid)
+                if best is None or RANK[how] > RANK[best[2]]:
+                    claimed[sid] = (occ, sid, how)
+            for occ, sid, how in proposed:
+                if claimed[sid][0] is not occ:
+                    duplicated.append(f"{m['id']}: {sid} also claimed by a "
+                                      f"{how} row, which keeps "
+                                      f"'{occ.get('species')}'")
+                    basis[occ.get("speciesBasis", "default")] += 1
+                    continue
                 occ["species"] = sid
                 occ["speciesBasis"] = how
                 basis[how] += 1
@@ -304,9 +349,14 @@ def main():
 
     total = sum(basis.values())
     print(f"attributed {total} occurrences" + ("" if WRITE else "  (dry run — pass --write)"))
-    for k in ("note", "source", "survey", "default"):
+    for k in ("note", "source", "survey", "generalised", "default"):
         if basis[k]:
-            print(f"  {k:8} {basis[k]:4}  ({basis[k]*100//total}%)")
+            print(f"  {k:11} {basis[k]:4}  ({basis[k]*100//total}%)")
+    if duplicated:
+        print(f"\nCONTESTED ({len(duplicated)}) — two rows of one record "
+              "attributed to the same animal; the weaker keeps what it had:")
+        for d in duplicated:
+            print("   ", d)
     if unresolved:
         print(f"\nUNRESOLVED ({len(unresolved)}):")
         for u in unresolved[:20]:

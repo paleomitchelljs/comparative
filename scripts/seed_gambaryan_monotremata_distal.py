@@ -984,8 +984,21 @@ def main():
                 muscle["occurrences"].append(target)
             added += 1
             continue
-        merged = {k: v for k, v in occ.items() if k not in MANAGED}
-        merged.update(target)
+        # Seed, not sync. `MANAGED` used to mean "this script owns the field
+        # and replaces it", which made every build reimpose the table's original
+        # copy over later curation — dropping `russell-bauer-2008` and
+        # `cunningham-1882` off rows that had since been scored against a second
+        # source, and truncating the attachmentNote back to the pre-merge
+        # version. It now means "this script may FILL the field": absent fields
+        # get the seeded value, present ones are left alone, and `sources` is a
+        # union so a citation can never be seeded away. Revising a seeded row
+        # means editing the JSON.
+        merged = dict(occ)
+        for field, value in target.items():
+            if field not in merged:
+                merged[field] = value
+        merged["sources"] = sorted(set(occ.get("sources", []))
+                                   | set(target.get("sources", [])))
         merged = {"species": sid, **{k: v for k, v in merged.items() if k != "species"}}
         if merged == occ:
             unchanged += 1

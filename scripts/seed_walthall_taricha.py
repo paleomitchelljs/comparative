@@ -813,7 +813,7 @@ def main(write: bool) -> int:
         for m in doc["muscles"]:
             index[m["id"]] = (m, rel)
 
-    log = []
+    log, kept, skips = [], [], []
 
     # 1. consensus limb fixes
     for mid, (side, wrong, right) in CONSENSUS_FIX.items():
@@ -843,7 +843,7 @@ def main(write: bool) -> int:
     for r in NEW:
         rel = FILE_OF[r.pop("_file")]
         if r["id"] in index:
-            log.append(f"skip  {r['id']} already exists")
+            skips.append(r["id"])
             continue
         r["occurrences"].extend(pending.pop(r["id"], []))
         r["sources"] = sorted({s for x in r["occurrences"] for s in x.get("sources", [])})
@@ -878,21 +878,39 @@ def main(write: bool) -> int:
             occ = {"species": "taricha-torosa", "present": patch.get("present") or "yes", "sources": []}
             m.setdefault("occurrences", []).append(occ)
             log.append(f"occ+  {mid}/caudata created")
+        # Seed, not sync. Everything below the `present` guard used to be
+        # written unconditionally, so every build replayed this file's August 11
+        # copy over whatever had been curated in `data/` since — reinstating
+        # `linea-alba` over a corrected `body-wall`, a `deltopectoral-crest`
+        # landmark over a recorded `proximal` side, and this file's older
+        # attachmentNote prose over the rewritten version. The JSON is the newer
+        # copy in every case. Fill what is absent, leave what is present.
+        filled, skipped = [], []
         for k, v in patch.items():
             if k == "present":
                 continue  # never rewritten by this script
-            occ[k] = v
+            if k in occ:
+                skipped.append(k)
+            else:
+                occ[k] = v
+                filled.append(k)
         occ.setdefault("sources", [])
         if SRC not in occ["sources"]:
             occ["sources"].append(SRC)
         if SRC not in m.get("sources", []):
             m.setdefault("sources", []).append(SRC)
             m["sources"] = sorted(set(m["sources"]))
-        log.append(f"occ   {mid}/caudata "
-                   f"{'+attachments' if patch.get('attachments') else '+note'}")
+        if filled:
+            log.append(f"occ   {mid}/caudata +{', +'.join(filled)}")
+        elif skipped:
+            kept.append(mid)
 
     for line in log:
         print(f"    {line}")
+    if skips:
+        print(f"    keep  {len(skips)} records already present in data/")
+    if kept:
+        print(f"    keep  {len(kept)} caudata rows already scored in data/, left alone")
     print(f"\n{len(log)} changes")
 
     if not write:

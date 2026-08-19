@@ -398,7 +398,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor carpi radialis and abductor radialis",
           "present": "inferred",
           "division": "divided",
@@ -432,11 +432,29 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). Two of Burch's muscles land on this one homology group: his Extensor carpi radialis, and his Abductor radialis, which Walker (1973) and Russell & Bauer (2008) call extensor carpi radialis intermedius and profundus — already in this record's synonymy. Both arise from the ectepicondyle in close proximity.\n\n**The extensor carpi radialis origin is the mirror image of the supinator problem and is resolved the same way**: proximal in birds (extreme enough in some to build a Processus supracondylaris dorsalis for it), between supinator and extensor digitorum longus in turtles, lepidosaurs and crocodylians. The proximal avian shift lets slight elbow extension fully extend the manus (Vazquez 1994), so it evolved with the wrist and was not present here. **The insertion is scored on the radiale on osteology rather than phylogeny**: birds insert on the carpometacarpus near the base of metacarpal I, lepidosaurs and crocodylians on the radiale, and *Tawa*'s wrist is plesiomorphic and more lepidosaur-like than either extant archosaur's, so the plesiomorphic insertion is inferred. Abductor radialis is the radius row: its insertion is equivocal because it fuses distally to extensor carpi radialis in birds, and if unfused in basal theropods it would have taken the proximal half of the lateral radius, stabilising as it does in crocodylians. It is absent in birds and single-bellied in crocodylians against two parts in lepidosaurs and some turtles — a general archosaurian reduction, which is what makes the single belly unequivocal even where its insertion is not."
+          "attachmentNote": "Tawa hallae, Burch (2014). Two of Burch's muscles land on this one homology group: his Extensor carpi radialis, and his Abductor radialis, which Walker (1973) and Russell & Bauer (2008) call extensor carpi radialis intermedius and profundus — already in this record's synonymy. Both arise from the ectepicondyle in close proximity.\n\n**The extensor carpi radialis origin is the mirror image of the supinator problem and is resolved the same way**: proximal in birds (extreme enough in some to build a Processus supracondylaris dorsalis for it), between supinator and extensor digitorum longus in turtles, lepidosaurs and crocodylians. The proximal avian shift lets slight elbow extension fully extend the manus (Vazquez 1994), so it evolved with the wrist and was not present here. **The insertion is scored on the radiale on osteology rather than phylogeny**: birds insert on the carpometacarpus near the base of metacarpal I, lepidosaurs and crocodylians on the radiale, and *Tawa*'s wrist is plesiomorphic and more lepidosaur-like than either extant archosaur's, so the plesiomorphic insertion is inferred. Abductor radialis is the radius row: its insertion is equivocal because it fuses distally to extensor carpi radialis in birds, and if unfused in basal theropods it would have taken the proximal half of the lateral radius, stabilising as it does in crocodylians. It is absent in birds and single-bellied in crocodylians against two parts in lepidosaurs and some turtles — a general archosaurian reduction, which is what makes the single belly unequivocal even where its insertion is not.",
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "abduction"
+            },
+            {
+              "joint": "elbow",
+              "motion": "flexion"
+            },
+            {
+              "joint": "wrist",
+              "motion": "adduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor carpi radialis longus and brevis",
           "present": "yes",
           "division": "divided",
@@ -479,11 +497,21 @@
             {
               "nerve": "radial-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "abduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor metacarpi radialis",
           "present": "yes",
           "sources": [
@@ -503,7 +531,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor carpi radialis",
           "present": "yes",
           "division": "heads",
@@ -540,7 +568,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor carpi radialis brevis and longus",
           "present": "yes",
           "division": "divided",
@@ -1155,7 +1183,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor carpi ulnaris",
           "present": "inferred",
           "action": "Extends and abducts the wrist; slightly extends the forearm.",
@@ -1181,11 +1209,25 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **Half the bracket is missing by Burch's own decision.** Crocodylians have a dorsal-division muscle from the middle of the ectepicondyle inserting on the base of metacarpal II, which Meers (2003) called extensor carpi ulnaris and earlier workers (Ribbing 1907; Haines 1939; Cong et al. 1998) homologised with extensor digitorum longus. Burch adopts the earlier reading and codes extensor carpi ulnaris **absent in crocodylians**, so this reconstruction is bracketed by birds and lepidosaurs only. His argument is the direction of the insertion shift: paleognaths insert on the lateralmost metacarpal (III), as lepidosaurs do, and many neognaths on metacarpal II, so the lateralmost metacarpal is plesiomorphic and the crocodylian metacarpal-II insertion looks derived — or belongs to another muscle.\n\nInsertion on the lateralmost metacarpal is therefore unequivocal (0.650 at the base of Aves, with a reversal to metacarpal III in Passeriformes at 0.934); insertion on any carpal is equivocal, and the pisiform row is inferred because *Tawa* still has a pisiform, as lepidosaurs do. Burch's prediction: when the pisiform was lost in the theropod wrist this muscle lost that insertion and kept the metacarpal one, which is the state some birds are in. A secondary tendon of origin from the proximal ulna, seen in some birds, is very unlikely here (0.040)."
+          "attachmentNote": "Tawa hallae, Burch (2014). **Half the bracket is missing by Burch's own decision.** Crocodylians have a dorsal-division muscle from the middle of the ectepicondyle inserting on the base of metacarpal II, which Meers (2003) called extensor carpi ulnaris and earlier workers (Ribbing 1907; Haines 1939; Cong et al. 1998) homologised with extensor digitorum longus. Burch adopts the earlier reading and codes extensor carpi ulnaris **absent in crocodylians**, so this reconstruction is bracketed by birds and lepidosaurs only. His argument is the direction of the insertion shift: paleognaths insert on the lateralmost metacarpal (III), as lepidosaurs do, and many neognaths on metacarpal II, so the lateralmost metacarpal is plesiomorphic and the crocodylian metacarpal-II insertion looks derived — or belongs to another muscle.\n\nInsertion on the lateralmost metacarpal is therefore unequivocal (0.650 at the base of Aves, with a reversal to metacarpal III in Passeriformes at 0.934); insertion on any carpal is equivocal, and the pisiform row is inferred because *Tawa* still has a pisiform, as lepidosaurs do. Burch's prediction: when the pisiform was lost in the theropod wrist this muscle lost that insertion and kept the metacarpal one, which is the state some birds are in. A secondary tendon of origin from the proximal ulna, seen in some birds, is very unlikely here (0.040).",
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "extension"
+            },
+            {
+              "joint": "wrist",
+              "motion": "abduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor carpi ulnaris",
           "present": "yes",
           "action": "Extends the wrist and adducts the hand.",
@@ -1216,11 +1258,21 @@
             {
               "nerve": "radial-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "adduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor metacarpi ulnaris",
           "present": "yes",
           "sources": [
@@ -1240,7 +1292,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor carpi ulnaris",
           "present": "yes",
           "division": "heads",
@@ -1283,7 +1335,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor carpi ulnaris",
           "present": "yes",
           "innervation": "N. radialis profundus.",
@@ -1919,7 +1971,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor digitorum longus",
           "present": "inferred",
           "action": "Extends the wrist and the digits.",
@@ -1940,11 +1992,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). The origin is the least contested thing in the antebrachium: approximately the middle of the ectepicondyle, between extensor carpi ulnaris and extensor carpi radialis or supinator, at a proportional probability near 1.0 at every node.\n\n**The insertion is a count of digits, and one of them is scored on function rather than phylogeny.** Slips to digits I and II are phylogenetically unequivocal — birds keep both, though on the base of phalanx I rather than the metacarpal. Everything else is equivocal: the digit V slip is lost in all lepidosaurs and archosaurs (0.995), the digit IV slip survives in lepidosaurs, turtles and *Alligator*, and metacarpal III is reported for *Crocodylus acutus*. *Tawa* has three functional digits and a highly reduced digit IV, so Burch infers the digit III insertion from the hand's own proportions and drops digit IV as probably already lost. That is extrapolatory functional inference, which Burch flags as the method that risks circularity if the result is later used to argue about function — he excludes ambiguous muscles from his own functional discussion for that reason."
+          "attachmentNote": "Tawa hallae, Burch (2014). The origin is the least contested thing in the antebrachium: approximately the middle of the ectepicondyle, between extensor carpi ulnaris and extensor carpi radialis or supinator, at a proportional probability near 1.0 at every node.\n\n**The insertion is a count of digits, and one of them is scored on function rather than phylogeny.** Slips to digits I and II are phylogenetically unequivocal — birds keep both, though on the base of phalanx I rather than the metacarpal. Everything else is equivocal: the digit V slip is lost in all lepidosaurs and archosaurs (0.995), the digit IV slip survives in lepidosaurs, turtles and *Alligator*, and metacarpal III is reported for *Crocodylus acutus*. *Tawa* has three functional digits and a highly reduced digit IV, so Burch infers the digit III insertion from the hand's own proportions and drops digit IV as probably already lost. That is extrapolatory functional inference, which Burch flags as the method that risks circularity if the result is later used to argue about function — he excludes ambiguous muscles from his own functional discussion for that reason.",
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor digitorum and extensor digiti minimi",
           "present": "yes",
           "division": "divided",
@@ -1979,11 +2037,21 @@
             {
               "nerve": "radial-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "extension"
+            },
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor digitorum communis",
           "present": "yes",
           "sources": [
@@ -2003,7 +2071,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor digitorum longus",
           "present": "yes",
           "sources": [
@@ -2027,7 +2095,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor digitorum communis longus",
           "present": "yes",
           "innervation": "N. radialis profundus.",
@@ -2388,7 +2456,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensores digitorum breves",
           "present": "inferred",
           "division": "divided",
@@ -2428,11 +2496,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is unequivocal and *Tawa* has the scar; the origins of the superficial layer are the guess.** Each digit gets a superficialis and a profundus belly which join into one tendon on the dorsal surface of the proximal end of the terminal phalanx — and *Tawa* carries an oval, lightly striated area on the dorsal surface of all three manual unguals. Profundus origins are conserved everywhere: each belly from its own metacarpal, extending onto the base of the metacarpal medial to it. Superficialis origins are not: crocodylians spread them across the proximal carpals rather than confining them to the ulnare, intermedium or distal ulna as turtles and lepidosaurs do, so the lateral divisions are conserved and the medial ones are not. Burch reads the avian manus back onto this and puts the digit I and II divisions on the radiale, the digit III and IV divisions on the ulnare.\n\nThe avian evidence he is reading is a chain of homologies: Extensor brevis alulae is profundus of digit I (the avian extensor process being embryologically metacarpal I — Kundrát 2009); Extensor longus digiti majorus is the two divisions of digit II, its proximal belly arising from the radius as in no other taxon but most closely aligned with the crocodylian radiale origin; and Ulnimetacarpalis dorsalis is a short extensor rather than the abductor digiti minimi that Diogo & Abdala (2010) make it, on the grounds that it derives from the dorsal division while abductor digiti minimi runs with the flexors. Bellies to the reduced digit IV are reconstructed rather than dropped, because crocodylians keep small ones on their reduced fifth digit — though the profundus belly of digit IV may have ended on the metacarpal rather than the ungual, as it does in crocodylians, which is why no metacarpal insertion row is asserted."
+          "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is unequivocal and *Tawa* has the scar; the origins of the superficial layer are the guess.** Each digit gets a superficialis and a profundus belly which join into one tendon on the dorsal surface of the proximal end of the terminal phalanx — and *Tawa* carries an oval, lightly striated area on the dorsal surface of all three manual unguals. Profundus origins are conserved everywhere: each belly from its own metacarpal, extending onto the base of the metacarpal medial to it. Superficialis origins are not: crocodylians spread them across the proximal carpals rather than confining them to the ulnare, intermedium or distal ulna as turtles and lepidosaurs do, so the lateral divisions are conserved and the medial ones are not. Burch reads the avian manus back onto this and puts the digit I and II divisions on the radiale, the digit III and IV divisions on the ulnare.\n\nThe avian evidence he is reading is a chain of homologies: Extensor brevis alulae is profundus of digit I (the avian extensor process being embryologically metacarpal I — Kundrát 2009); Extensor longus digiti majorus is the two divisions of digit II, its proximal belly arising from the radius as in no other taxon but most closely aligned with the crocodylian radiale origin; and Ulnimetacarpalis dorsalis is a short extensor rather than the abductor digiti minimi that Diogo & Abdala (2010) make it, on the grounds that it derives from the dorsal division while abductor digiti minimi runs with the flexors. Bellies to the reduced digit IV are reconstructed rather than dropped, because crocodylians keep small ones on their reduced fifth digit — though the profundus belly of digit IV may have ended on the metacarpal rather than the ungual, as it does in crocodylians, which is why no metacarpal insertion row is asserted.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -2441,7 +2515,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. extensores digitores breves",
           "present": "yes",
           "division": "divided",
@@ -2479,7 +2553,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. extensor digitorum communis brevis",
           "present": "yes",
           "innervation": "R. dorsalis of the N. radialis profundus.",
@@ -2891,7 +2965,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor pollicis longus",
           "present": "inferred",
           "action": "Extends and abducts the wrist; abducts the first digit.",
@@ -2914,11 +2988,25 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **The one origin in the antebrachium that is a synapomorphy rather than an inference.** Lepidosaurs and turtles take this muscle from the ulnar shaft alone; crocodylians and birds both add a head from the radius, making it bipennate, at a proportional probability of 0.955 at the archosaur node — so it originated from the facing (interosseous) surfaces of both bones in *Tawa*. No sides are scored on those two rows: Burch gives the origin as the facing surfaces, and which named face of each bone that is depends on the articulated position, which is not recorded. The radial head is reversed in Passeriformes and present in all other birds studied.\n\nInsertion on the medial side of the base of metacarpal I is plesiomorphic and retained even in birds, where the alular extensor process of the carpometacarpus is developmentally part of metacarpal I (Kundrát 2009). Crocodylians do not share it — their tendon goes to the radiale — but phylogenetic inference puts that at 0.980 against, i.e. derived within the clade. *Tawa*, *Herrerasaurus* and other basal theropods have a medial flange at the base of metacarpal I in the right position for it."
+          "attachmentNote": "Tawa hallae, Burch (2014). **The one origin in the antebrachium that is a synapomorphy rather than an inference.** Lepidosaurs and turtles take this muscle from the ulnar shaft alone; crocodylians and birds both add a head from the radius, making it bipennate, at a proportional probability of 0.955 at the archosaur node — so it originated from the facing (interosseous) surfaces of both bones in *Tawa*. No sides are scored on those two rows: Burch gives the origin as the facing surfaces, and which named face of each bone that is depends on the articulated position, which is not recorded. The radial head is reversed in Passeriformes and present in all other birds studied.\n\nInsertion on the medial side of the base of metacarpal I is plesiomorphic and retained even in birds, where the alular extensor process of the carpometacarpus is developmentally part of metacarpal I (Kundrát 2009). Crocodylians do not share it — their tendon goes to the radiale — but phylogenetic inference puts that at 0.980 against, i.e. derived within the clade. *Tawa*, *Herrerasaurus* and other basal theropods have a medial flange at the base of metacarpal I in the right position for it.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "abduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "abduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "extension"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor pollicis longus and extensor pollicis brevis",
           "present": "yes",
           "division": "divided",
@@ -2965,11 +3053,21 @@
             {
               "nerve": "radial-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "carpometacarpal",
+              "motion": "abduction"
+            },
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. supinator manus",
           "present": "yes",
           "sources": [
@@ -2993,7 +3091,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. abductor et extensor pollicis longus",
           "present": "yes",
           "innervation": "N. radialis profundus.",
@@ -3503,7 +3601,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Supinator",
           "present": "inferred",
           "action": "Flexes and supinates the forearm.",
@@ -3529,11 +3627,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **Scored on this record, not on `supinator`, and the name is the reason to read the note.** Burch's Table 1 equates his Supinator with Meers's (2003) crocodylian 'Supinator' and Walker's (1973) chelonian 'Tractor radii' — which are the two synonyms this record already carries. The dataset's separate `supinator` record holds the therian muscle and the avian usage of the word, neither of which is this. A fourth source landing on the same equation is worth having on the record that already calls itself the worst name in the comparative forearm literature.\n\nThe insertion is as firm as anything in the paper: the anterolateral radial shaft for more than half its length, at 0.999, present in turtles, lepidosaurs, crocodylians and all but a handful of derived birds, and supported in *Tawa* by a flat anterior radial surface bounded by low ridges running the length of the bone. **The origin is the tie.** In turtles, lepidosaurs and crocodylians this is the most proximal of the dorsal division origins, often running past the ectepicondyle onto the shaft; in birds it sits distally near extensor digitorum longus while extensor carpi radialis takes the proximal place — an exact inversion, leaving the two states at exactly opposite probabilities at the nodes flanking Dinosauria. Burch breaks it by function: the avian arrangement serves the automating mechanism of the wing (Vazquez 1994), so he takes the proximal, non-avian position."
+          "attachmentNote": "Tawa hallae, Burch (2014). **Scored on this record, not on `supinator`, and the name is the reason to read the note.** Burch's Table 1 equates his Supinator with Meers's (2003) crocodylian 'Supinator' and Walker's (1973) chelonian 'Tractor radii' — which are the two synonyms this record already carries. The dataset's separate `supinator` record holds the therian muscle and the avian usage of the word, neither of which is this. A fourth source landing on the same equation is worth having on the record that already calls itself the worst name in the comparative forearm literature.\n\nThe insertion is as firm as anything in the paper: the anterolateral radial shaft for more than half its length, at 0.999, present in turtles, lepidosaurs, crocodylians and all but a handful of derived birds, and supported in *Tawa* by a flat anterior radial surface bounded by low ridges running the length of the bone. **The origin is the tie.** In turtles, lepidosaurs and crocodylians this is the most proximal of the dorsal division origins, often running past the ectepicondyle onto the shaft; in birds it sits distally near extensor digitorum longus while extensor carpi radialis takes the proximal place — an exact inversion, leaving the two states at exactly opposite probabilities at the nodes flanking Dinosauria. Burch breaks it by function: the avian arrangement serves the automating mechanism of the wing (Vazquez 1994), so he takes the proximal, non-avian position.",
+          "actions": [
+            {
+              "joint": "radioulnar",
+              "motion": "supination"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Brachioradialis",
           "present": "yes",
           "action": "Flexes the elbow; assists pronation and supination toward mid-position.",
@@ -3560,11 +3664,25 @@
             {
               "nerve": "radial"
             }
+          ],
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "flexion"
+            },
+            {
+              "joint": "radioulnar",
+              "motion": "pronation"
+            },
+            {
+              "joint": "radioulnar",
+              "motion": "supination"
+            }
           ]
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. supinator",
           "present": "yes",
           "sources": [
@@ -3584,7 +3702,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. supinator longus",
           "present": "yes",
           "sources": [
@@ -3612,7 +3730,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. supinator (supinator longus)",
           "present": "yes",
           "innervation": "N. radialis profundus.",
@@ -4028,7 +4146,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Supinator",
           "present": "yes",
           "action": "Supinates the forearm, independently of elbow position.",
@@ -4058,6 +4176,12 @@
           "nerves": [
             {
               "nerve": "radial-deep"
+            }
+          ],
+          "actions": [
+            {
+              "joint": "radioulnar",
+              "motion": "supination"
             }
           ]
         },
@@ -4362,7 +4486,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Anconeus",
           "present": "inferred",
           "action": "Flexes the forearm.",
@@ -4384,11 +4508,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is near-certain and the origin is a coin toss — an exact one.** Insertion fleshily on the lateral ulna from just distal to the proximal articular surface for most of its length, at a proportional probability near 1.0 at both bracketing nodes, and *Tawa* has a prominent ridge running from midshaft to the distal end that bounds it and separates it from the abductor pollicis longus origin. Whether the origin shares a tendon with extensor carpi ulnaris sits at exactly 0.50 at the base of Archosauria, and the reason is that every taxon that could break the tie is disqualified: crocodylians lack extensor carpi ulnaris altogether on Burch's reading, anconeus is absent in squamates, in turtles the two are almost entirely fused, and both states are reported for *Sphenodon* (Miner 1925; Haines 1939). Fusion is ancestral for Aves at 0.820. Burch tentatively takes it from the ectepicondyle alongside extensor carpi ulnaris; either way both are the most distal muscles on that epicondyle.\n\n**Burch's crocodylian synonymy conflicts with this record's.** He reads Meers's (2003) 'Flexor ulnaris' as this muscle, and codes extensor carpi ulnaris absent in crocodylians; this dataset's extensor antebrachii et carpi ulnaris record takes the same name as its own. Both agree the crocodylian muscle is a dorsal-division extensor; they disagree about which extensor. The crocodylian rows here follow Abdala & Diogo (2010) and are left as they stand."
+          "attachmentNote": "Tawa hallae, Burch (2014). **The insertion is near-certain and the origin is a coin toss — an exact one.** Insertion fleshily on the lateral ulna from just distal to the proximal articular surface for most of its length, at a proportional probability near 1.0 at both bracketing nodes, and *Tawa* has a prominent ridge running from midshaft to the distal end that bounds it and separates it from the abductor pollicis longus origin. Whether the origin shares a tendon with extensor carpi ulnaris sits at exactly 0.50 at the base of Archosauria, and the reason is that every taxon that could break the tie is disqualified: crocodylians lack extensor carpi ulnaris altogether on Burch's reading, anconeus is absent in squamates, in turtles the two are almost entirely fused, and both states are reported for *Sphenodon* (Miner 1925; Haines 1939). Fusion is ancestral for Aves at 0.820. Burch tentatively takes it from the ectepicondyle alongside extensor carpi ulnaris; either way both are the most distal muscles on that epicondyle.\n\n**Burch's crocodylian synonymy conflicts with this record's.** He reads Meers's (2003) 'Flexor ulnaris' as this muscle, and codes extensor carpi ulnaris absent in crocodylians; this dataset's extensor antebrachii et carpi ulnaris record takes the same name as its own. Both agree the crocodylian muscle is a dorsal-division extensor; they disagree about which extensor. The crocodylian rows here follow Abdala & Diogo (2010) and are left as they stand.",
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "flexion"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Anconeus",
           "present": "yes",
           "action": "Extends the forearm.",
@@ -4420,11 +4550,17 @@
             {
               "nerve": "radial"
             }
+          ],
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "extension"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "russell-bauer-2008"
@@ -4433,7 +4569,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. anconaeus quartus",
           "present": "yes",
           "sources": [
@@ -4781,7 +4917,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Epitrochleoanconeus",
           "present": "inferred",
           "action": "Flexes the antebrachium.",
@@ -4806,11 +4942,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **The flexor-compartment mirror of anconeus, and like anconeus it is missing from one bracketing clade.** Present only in turtles, lepidosaurs, galloanseriform birds, *Apteryx* and tinamous — not in crocodylians — yet presence reconstructs unequivocally (0.863 at Archosauria, 0.903 at the base of Aves). Part of the reason it looks patchy is that it keeps being absorbed by its neighbour: in *Apteryx* and most turtles it is fused to flexor carpi ulnaris and usually described as that muscle's deep or medial part (Shah & Patel 1964; Walker 1973; Abdala et al. 2008), which is how this dataset's own turtle synonymy has it.\n\n**The origin is a Level II' inference either way** — the derived avian state (origin from the pronator accessorius tendon) is favoured at the base of Aves by 0.527, which is to say not at all. Burch tentatively places it between the flexor carpi ulnaris and pronator accessorius origins on the entepicondyle, the lepidosaur morphology, which may be intermediate between the two states. The insertion is firmer: restricted to the proximal half of the ventral/medial ulna at 0.876 at the base of Aves and 0.698 at the Archosauria + Lepidosauria node, against the long insertion of turtles and *Apteryx* and the distal-half-only insertion of *Sphenodon* and *Tetradactylus*."
+          "attachmentNote": "Tawa hallae, Burch (2014). **The flexor-compartment mirror of anconeus, and like anconeus it is missing from one bracketing clade.** Present only in turtles, lepidosaurs, galloanseriform birds, *Apteryx* and tinamous — not in crocodylians — yet presence reconstructs unequivocally (0.863 at Archosauria, 0.903 at the base of Aves). Part of the reason it looks patchy is that it keeps being absorbed by its neighbour: in *Apteryx* and most turtles it is fused to flexor carpi ulnaris and usually described as that muscle's deep or medial part (Shah & Patel 1964; Walker 1973; Abdala et al. 2008), which is how this dataset's own turtle synonymy has it.\n\n**The origin is a Level II' inference either way** — the derived avian state (origin from the pronator accessorius tendon) is favoured at the base of Aves by 0.527, which is to say not at all. Burch tentatively places it between the flexor carpi ulnaris and pronator accessorius origins on the entepicondyle, the lepidosaur morphology, which may be intermediate between the two states. The insertion is firmer: restricted to the proximal half of the ventral/medial ulna at 0.876 at the base of Aves and 0.698 at the Archosauria + Lepidosauria node, against the long insertion of turtles and *Apteryx* and the distal-half-only insertion of *Sphenodon* and *Tetradactylus*.",
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "flexion"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -4819,7 +4961,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. epitrochleoanconeus",
           "present": "yes",
           "sources": [
@@ -5369,7 +5511,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor carpi ulnaris",
           "present": "inferred",
           "action": "Flexes and adducts the wrist.",
@@ -5395,11 +5537,21 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). Found in every taxon in the study with a consistent morphology; the origin is always the most distal tendon on the entepicondyle, on its posterodistal aspect, and is scored as a single tendon — the multiple lepidosaur parts and the small second avian belly with its novel attachment to the bases of the secondary flight feathers are not the same thing and neither is reconstructed.\n\n**The insertion is equivocal because a bone is not homologous, not because the muscle is unclear.** Crocodylians and most lepidosaurs insert on the pisiform, with a secondary tendon to the ulnare in most turtles and *Varanus*. Birds insert on what is called the ulnare — but the avian element is a de novo ossification and the true tetrapod ulnare disappears during development (Kundrát 2009), so the avian attachment is to a 'pseudoulnare' that is a functional analog and not a homolog. With both primary attachment areas gone the muscle relocated to keep its role. *Tawa* retains a full carpus including an ossified pisiform, so the plesiomorphic pisiform insertion is reconstructed with a possible second attachment to the true ulnare. When the swap happened is unknown: Kundrát reads the ulnare of *Archaeopteryx* as already the avian pseudoulnare."
+          "attachmentNote": "Tawa hallae, Burch (2014). Found in every taxon in the study with a consistent morphology; the origin is always the most distal tendon on the entepicondyle, on its posterodistal aspect, and is scored as a single tendon — the multiple lepidosaur parts and the small second avian belly with its novel attachment to the bases of the secondary flight feathers are not the same thing and neither is reconstructed.\n\n**The insertion is equivocal because a bone is not homologous, not because the muscle is unclear.** Crocodylians and most lepidosaurs insert on the pisiform, with a secondary tendon to the ulnare in most turtles and *Varanus*. Birds insert on what is called the ulnare — but the avian element is a de novo ossification and the true tetrapod ulnare disappears during development (Kundrát 2009), so the avian attachment is to a 'pseudoulnare' that is a functional analog and not a homolog. With both primary attachment areas gone the muscle relocated to keep its role. *Tawa* retains a full carpus including an ossified pisiform, so the plesiomorphic pisiform insertion is reconstructed with a possible second attachment to the true ulnare. When the swap happened is unknown: Kundrát reads the ulnare of *Archaeopteryx* as already the avian pseudoulnare.",
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "adduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "flexion"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor carpi ulnaris",
           "present": "yes",
           "action": "Flexes the wrist and adducts the hand.",
@@ -5442,11 +5594,21 @@
             {
               "nerve": "ulnar"
             }
+          ],
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "adduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -5466,7 +5628,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor carpi ulnaris",
           "present": "yes",
           "sources": [
@@ -5498,7 +5660,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor carpi ulnaris",
           "present": "yes",
           "innervation": "N. ulnaris.",
@@ -6032,7 +6194,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor carpi radialis",
           "present": "yes",
           "action": "Flexes the wrist and abducts the hand.",
@@ -6059,11 +6221,21 @@
             {
               "nerve": "median"
             }
+          ],
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "abduction"
+            },
+            {
+              "joint": "wrist",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor carpi radialis",
           "present": "yes",
           "sources": [
@@ -6088,7 +6260,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor carpi radialis",
           "present": "yes",
           "innervation": "N. medianus superficialis and N. humeralis anterior.",
@@ -6507,7 +6679,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pronator teres",
           "present": "inferred",
           "action": "Flexes the forearm and pronates the antebrachium.",
@@ -6533,11 +6705,21 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). Present in every taxon in the study, with the most proximal origin of all the ventral division muscles. Some neognaths — Charadriiformes, Anatidae — have moved it proximal to the entepicondyle altogether, and that state is slightly favoured at the base of Neognathae (0.528), but paleognaths take it from the entepicondyle itself, which drops the proximal state to 0.082 at the base of Aves and makes the entepicondylar origin unequivocal for theropods. *Tawa* carries the ridge and small anterior projection at the proximal extent of the entepicondyle that probably marks its anteroproximal border.\n\nThe insertion is an elongate narrow strip along the anteromedial radial shaft for more than half its length (0.815 at both the Aves and Archosauria nodes), and *Tawa*'s radius has a distinct anteromedial surface defined by ridges running its length. The short proximal insertion of many neognaths is reconstructed as ancestral within that clade (0.677) with, in Burch's words, no clear pattern to its evolution."
+          "attachmentNote": "Tawa hallae, Burch (2014). Present in every taxon in the study, with the most proximal origin of all the ventral division muscles. Some neognaths — Charadriiformes, Anatidae — have moved it proximal to the entepicondyle altogether, and that state is slightly favoured at the base of Neognathae (0.528), but paleognaths take it from the entepicondyle itself, which drops the proximal state to 0.082 at the base of Aves and makes the entepicondylar origin unequivocal for theropods. *Tawa* carries the ridge and small anterior projection at the proximal extent of the entepicondyle that probably marks its anteroproximal border.\n\nThe insertion is an elongate narrow strip along the anteromedial radial shaft for more than half its length (0.815 at both the Aves and Archosauria nodes), and *Tawa*'s radius has a distinct anteromedial surface defined by ridges running its length. The short proximal insertion of many neognaths is reconstructed as ancestral within that clade (0.677) with, in Burch's words, no clear pattern to its evolution.",
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "flexion"
+            },
+            {
+              "joint": "radioulnar",
+              "motion": "pronation"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pronator teres",
           "present": "yes",
           "action": "Pronates the forearm and assists elbow flexion.",
@@ -6568,11 +6750,21 @@
             {
               "nerve": "median"
             }
+          ],
+          "actions": [
+            {
+              "joint": "elbow",
+              "motion": "flexion"
+            },
+            {
+              "joint": "radioulnar",
+              "motion": "pronation"
+            }
           ]
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator superficialis",
           "present": "yes",
           "division": "heads",
@@ -6601,7 +6793,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator teres",
           "present": "yes",
           "sources": [
@@ -6630,7 +6822,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator teres",
           "present": "yes",
           "innervation": "N. medianus profundus.",
@@ -6989,7 +7181,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pronator quadratus",
           "present": "inferred",
           "action": "Pronates the antebrachium and manus.",
@@ -7018,11 +7210,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). Homologous with the avian Ulnimetacarpalis ventralis on Sullivan (1962), which is not obvious from the attachments because the avian muscle has moved its insertion to the base of the carpometacarpus. Origin along a line on the ventral/medial ulna in every taxon studied; the proximal extent is equivocal (elongate at 0.756 at the Archosauria node, reduced-distal at 0.834 in birds), and Burch takes the proximally extensive version covering most of the ulna because *Tawa* is unlikely to have had the derived avian insertion that the distal shift goes with.\n\n**Both insertion rows survive a loss in one bracketing clade.** The carpal insertion is reconstructed at 0.783 at the base of Archosauria and is therefore scored as secondarily lost in modern crocodylians, not absent ancestrally — it is present in some lepidosaurs, all turtles, and, transformed, in birds. The radial insertion is phylogenetically equivocal because birds have dropped it, but its absence there is derived with the wing; Burch's dissections of *Struthio* found a double insertion onto both the distal radius and the carpometacarpus, which does not change the reconstruction's numbers but is the observation that makes the double insertion plausible for *Tawa*."
+          "attachmentNote": "Tawa hallae, Burch (2014). Homologous with the avian Ulnimetacarpalis ventralis on Sullivan (1962), which is not obvious from the attachments because the avian muscle has moved its insertion to the base of the carpometacarpus. Origin along a line on the ventral/medial ulna in every taxon studied; the proximal extent is equivocal (elongate at 0.756 at the Archosauria node, reduced-distal at 0.834 in birds), and Burch takes the proximally extensive version covering most of the ulna because *Tawa* is unlikely to have had the derived avian insertion that the distal shift goes with.\n\n**Both insertion rows survive a loss in one bracketing clade.** The carpal insertion is reconstructed at 0.783 at the base of Archosauria and is therefore scored as secondarily lost in modern crocodylians, not absent ancestrally — it is present in some lepidosaurs, all turtles, and, transformed, in birds. The radial insertion is phylogenetically equivocal because birds have dropped it, but its absence there is derived with the wing; Burch's dissections of *Struthio* found a double insertion onto both the distal radius and the carpometacarpus, which does not change the reconstruction's numbers but is the observation that makes the double insertion plausible for *Tawa*.",
+          "actions": [
+            {
+              "joint": "radioulnar",
+              "motion": "pronation"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pronator quadratus",
           "present": "yes",
           "action": "Pronates the forearm.",
@@ -7057,11 +7255,17 @@
             {
               "nerve": "median-anterior-interosseous"
             }
+          ],
+          "actions": [
+            {
+              "joint": "radioulnar",
+              "motion": "pronation"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator profundus",
           "present": "yes",
           "division": "heads",
@@ -7102,7 +7306,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator quadratus",
           "present": "yes",
           "innervation": "N. medianus profundus.",
@@ -7354,7 +7558,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Pronator accessorius",
           "present": "inferred",
           "action": "Flexes and pronates the antebrachium.",
@@ -7380,11 +7584,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **Absent in crocodylians, absent in *Sphenodon*, absent in paleognaths except tinamous — and unequivocally present here.** Squamates, turtles and every neognath studied have it, and that distribution reconstructs presence at the archosaur node despite one bracketing clade lacking it entirely. Origin distal to pronator teres at the distal end of the entepicondyle, near the flexor digitorum longus superficialis origin.\n\n**The insertion is where the two nodes disagree and the row is the compromise.** A long insertion over most of the radius is reconstructed at the base of Aves (0.950); a restricted distal insertion at the lepidosaur + archosaur node (0.878). Turtles and some squamates (*Varanus*, *Tetradactylus*) have it distally on less than half the radius, which Russell & Bauer (2008) take as primitive; *Iguana*, *Liolaemus* and a few neognaths put it proximally on less than half. There are no osteological signals on *Tawa*'s radius either way, so Burch splits the difference at the distal end for slightly over half the length. Two rows on one bone, one for the side and one for the level, because the level is the part in dispute."
+          "attachmentNote": "Tawa hallae, Burch (2014). **Absent in crocodylians, absent in *Sphenodon*, absent in paleognaths except tinamous — and unequivocally present here.** Squamates, turtles and every neognath studied have it, and that distribution reconstructs presence at the archosaur node despite one bracketing clade lacking it entirely. Origin distal to pronator teres at the distal end of the entepicondyle, near the flexor digitorum longus superficialis origin.\n\n**The insertion is where the two nodes disagree and the row is the compromise.** A long insertion over most of the radius is reconstructed at the base of Aves (0.950); a restricted distal insertion at the lepidosaur + archosaur node (0.878). Turtles and some squamates (*Varanus*, *Tetradactylus*) have it distally on less than half the radius, which Russell & Bauer (2008) take as primitive; *Iguana*, *Liolaemus* and a few neognaths put it proximally on less than half. There are no osteological signals on *Tawa*'s radius either way, so Burch splits the difference at the distal end for slightly over half the length. Two rows on one bone, one for the side and one for the level, because the level is the part in dispute.",
+          "actions": [
+            {
+              "joint": "radioulnar",
+              "motion": "pronation"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -7393,7 +7603,7 @@
         },
         {
           "species": "cygnus-cygnus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator profundus",
           "present": "yes",
           "sources": [
@@ -7413,7 +7623,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. pronator accessorius",
           "present": "yes",
           "division": "heads",
@@ -8003,7 +8213,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor digitorum longus",
           "present": "inferred",
           "division": "heads",
@@ -8041,11 +8251,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). Two parts, one set of insertion tendons. The superficialis is absent in ratites but present in all other birds including tinamous and in crocodylians, so it reconstructs unambiguously; it arises from a single tendon on the entepicondyle sandwiched between flexor carpi ulnaris and pronator teres in nearly every taxon. The second entepicondylar head of some squamates and the ulnar head of a few birds are rare and are not reconstructed (absence at nearly 1.0 at both nodes). The profundus arises from the ventral/medial ulna along most of its length — the full crocodylian and lepidosaur extent, because *Tawa* keeps a four-fingered hand, whereas in birds the origin is curtailed by the proximal extent of pronator quadratus, probably a consequence of digital reduction.\n\n**The digit III slip is the one scored on the hand rather than on the tree.** Slips to the terminal phalanges are plesiomorphic; crocodylians have lost those to their reduced digits IV and V; birds usually retain only the major digit (II), with a digit I slip in tinamous, *Struthio*, *Opisthocomus*, *Balaeniceps*, *Coturnix* and *Bubo* that reconstructs as plesiomorphic at the base of Aves (0.882) — the hoatzin's clawed, tree-climbing chick is the functional reason offered. A digit III slip is present in every outgroup taxon and absent in birds except one *Struthio* specimen, leaving it at 0.043 at the base of Aves, i.e. phylogenetically equivocal; *Tawa*'s well-developed third digit is what puts it back. Digit IV is too reduced and gets none, as in crocodylians.\n\n**A cross-source note on this record's neighbour**: Burch's Table 1 equates the superficialis with Walker's (1973) chelonian 'Palmaris longus', which this dataset holds as a separate, deliberately quoted record whose homology Abdala & Diogo call under-supported. Burch's table is a fourth source identifying the turtle muscle as the humeral head of the long digital flexor rather than as a palmaris longus."
+          "attachmentNote": "Tawa hallae, Burch (2014). Two parts, one set of insertion tendons. The superficialis is absent in ratites but present in all other birds including tinamous and in crocodylians, so it reconstructs unambiguously; it arises from a single tendon on the entepicondyle sandwiched between flexor carpi ulnaris and pronator teres in nearly every taxon. The second entepicondylar head of some squamates and the ulnar head of a few birds are rare and are not reconstructed (absence at nearly 1.0 at both nodes). The profundus arises from the ventral/medial ulna along most of its length — the full crocodylian and lepidosaur extent, because *Tawa* keeps a four-fingered hand, whereas in birds the origin is curtailed by the proximal extent of pronator quadratus, probably a consequence of digital reduction.\n\n**The digit III slip is the one scored on the hand rather than on the tree.** Slips to the terminal phalanges are plesiomorphic; crocodylians have lost those to their reduced digits IV and V; birds usually retain only the major digit (II), with a digit I slip in tinamous, *Struthio*, *Opisthocomus*, *Balaeniceps*, *Coturnix* and *Bubo* that reconstructs as plesiomorphic at the base of Aves (0.882) — the hoatzin's clawed, tree-climbing chick is the functional reason offered. A digit III slip is present in every outgroup taxon and absent in birds except one *Struthio* specimen, leaving it at 0.043 at the base of Aves, i.e. phylogenetically equivocal; *Tawa*'s well-developed third digit is what puts it back. Digit IV is too reduced and gets none, as in crocodylians.\n\n**A cross-source note on this record's neighbour**: Burch's Table 1 equates the superficialis with Walker's (1973) chelonian 'Palmaris longus', which this dataset holds as a separate, deliberately quoted record whose homology Abdala & Diogo call under-supported. Burch's table is a fourth source identifying the turtle muscle as the humeral head of the long digital flexor rather than as a palmaris longus.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "flexion"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexor digitorum superficialis and profundus",
           "present": "yes",
           "division": "divided",
@@ -8107,11 +8323,21 @@
             {
               "nerve": "median-anterior-interosseous"
             }
+          ],
+          "actions": [
+            {
+              "joint": "interphalangeal-manus",
+              "motion": "flexion"
+            },
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor digitorum longus",
           "present": "yes",
           "division": "heads",
@@ -8151,7 +8377,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor digitorum communis profundus",
           "present": "yes",
           "division": "heads",
@@ -8702,7 +8928,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Palmaris longus",
           "present": "yes",
           "action": "Tenses the palmar aponeurosis; weak wrist flexion.",
@@ -8728,11 +8954,17 @@
             {
               "nerve": "median"
             }
+          ],
+          "actions": [
+            {
+              "joint": "wrist",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "russell-bauer-2008"
@@ -9044,7 +9276,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -9201,7 +9433,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -9345,7 +9577,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "gest-anatomy-tables"
@@ -9684,7 +9916,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexores breves superficiales",
           "present": "inferred",
           "action": "Flexes the metacarpophalangeal joints.",
@@ -9709,11 +9941,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **Burch reconstructs this origin against his own plesiomorphy argument, and says so.** In lepidosaurs and turtles these bellies arise entirely from the annular ligament covering the carpals; that ligament is absent in extant birds and crocodylians, both of which have modified wrists. *Tawa*'s wrist is closer to a lepidosaur's than to either, so the ligament was probably retained and these muscles probably arose from it — which would make the shift to a distal-carpal origin a later consequence of theropod wrist modification. Burch nonetheless scores the distal-carpal origin, on the possibility that it is an archosaurian synapomorphy already present here. The carpal row is that choice; the flexor-tendon row is the crocodylian condition, where the muscle arises from the distal carpals and the flexor digitorum longus tendon together, and matches the avian Flexor alulae from the base of the carpometacarpus and the same tendon.\n\nThe distal tendons bifurcate to let the long flexor tendons pass and then insert on either side of the flexor processes — phalanx 1 of digits I and II, phalanx 2 of digit III. Digit I is the exception: no bifid tendon in lepidosaurs or birds, a simple insertion on the ventromedial base of phalanx 1, favoured at the base of Archosauria at 0.786."
+          "attachmentNote": "Tawa hallae, Burch (2014). **Burch reconstructs this origin against his own plesiomorphy argument, and says so.** In lepidosaurs and turtles these bellies arise entirely from the annular ligament covering the carpals; that ligament is absent in extant birds and crocodylians, both of which have modified wrists. *Tawa*'s wrist is closer to a lepidosaur's than to either, so the ligament was probably retained and these muscles probably arose from it — which would make the shift to a distal-carpal origin a later consequence of theropod wrist modification. Burch nonetheless scores the distal-carpal origin, on the possibility that it is an archosaurian synapomorphy already present here. The carpal row is that choice; the flexor-tendon row is the crocodylian condition, where the muscle arises from the distal carpals and the flexor digitorum longus tendon together, and matches the avian Flexor alulae from the base of the carpometacarpus and the same tendon.\n\nThe distal tendons bifurcate to let the long flexor tendons pass and then insert on either side of the flexor processes — phalanx 1 of digits I and II, phalanx 2 of digit III. Digit I is the exception: no bifid tendon in lepidosaurs or birds, a simple insertion on the ventromedial base of phalanx 1, favoured at the base of Archosauria at 0.786.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "flexion"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "gest-anatomy-tables"
@@ -9722,7 +9960,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. flexores digitores breves",
           "present": "yes",
           "sources": [
@@ -9748,7 +9986,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. flexor digitorum communis sublimis",
           "present": "yes",
           "innervation": "N. medianus superficialis.",
@@ -9990,7 +10228,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Contrahentes digitorum",
           "present": "uncertain",
           "sources": [
@@ -10000,7 +10238,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Adductor pollicis",
           "present": "yes",
           "division": "heads",
@@ -10039,11 +10277,17 @@
             {
               "nerve": "ulnar-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "carpometacarpal",
+              "motion": "adduction"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "russell-bauer-2008"
@@ -10590,13 +10834,13 @@
             }
           ],
           "sources": [
-            "gambaryan-etal-2015",
-            "cunningham-1882"
+            "cunningham-1882",
+            "gambaryan-etal-2015"
           ]
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Flexores breves profundi",
           "present": "inferred",
           "action": "Flexes the metacarpophalangeal joints.",
@@ -10622,11 +10866,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). Insertion is the conserved end of this group — a single attachment to the ventral surface of the flexor process of the first phalanx of each digit in nearly every taxon studied, lying between the two distal tendons of the superficial layer. **The origin is a compromise between two states that may not be an ancestral condition at all**: lizards and turtles restrict these bellies to the distal carpal row, crocodylians involve both the distal carpals and each digit's metacarpal. Burch takes the crocodylian arrangement as the intermediate and most parsimonious reconstruction while flagging that the metacarpal origin may instead be convergent, acquired independently with the modified wrists of both modern archosaur clades — in which case the state reconstructed here for *Tawa* never existed.\n\nThe avian homologies underwriting the group are one muscle per digit: Adductor alulae for digit I, Abductor digiti majoris for digit II, Flexor digiti minoris — weak in most birds, a large fleshy belly in *Struthio* — for digit III."
+          "attachmentNote": "Tawa hallae, Burch (2014). Insertion is the conserved end of this group — a single attachment to the ventral surface of the flexor process of the first phalanx of each digit in nearly every taxon studied, lying between the two distal tendons of the superficial layer. **The origin is a compromise between two states that may not be an ancestral condition at all**: lizards and turtles restrict these bellies to the distal carpal row, crocodylians involve both the distal carpals and each digit's metacarpal. Burch takes the crocodylian arrangement as the intermediate and most parsimonious reconstruction while flagging that the metacarpal origin may instead be convergent, acquired independently with the modified wrists of both modern archosaur clades — in which case the state reconstructed here for *Tawa* never existed.\n\nThe avian homologies underwriting the group are one muscle per digit: Adductor alulae for digit I, Abductor digiti majoris for digit II, Flexor digiti minoris — weak in most birds, a large fleshy belly in *Struthio* — for digit III.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "flexion"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Interossei and the deep thenar and hypothenar muscles",
           "present": "yes",
           "division": "divided",
@@ -10690,11 +10940,29 @@
             {
               "nerve": "median-recurrent"
             }
+          ],
+          "actions": [
+            {
+              "joint": "interphalangeal-manus",
+              "motion": "extension"
+            },
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "abduction"
+            },
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "adduction"
+            },
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. interossei ventrales",
           "present": "yes",
           "sources": [
@@ -10726,7 +10994,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. interossei volares",
           "present": "yes",
           "innervation": "N. ulnaris.",
@@ -11197,7 +11465,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Lumbricales",
           "present": "inferred",
           "sources": [
@@ -11207,7 +11475,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Lumbricals",
           "present": "yes",
           "action": "Flex the metacarpophalangeal joints and extend the interphalangeal joints of digits 2-5.",
@@ -11235,11 +11503,21 @@
             {
               "nerve": "ulnar-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "extension"
+            },
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "flexion"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. lumbricales",
           "present": "yes",
           "sources": [
@@ -11268,7 +11546,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. lumbricales",
           "present": "yes",
           "innervation": "N. medianus superficialis.",
@@ -11587,7 +11865,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Interossei",
           "present": "inferred",
           "sources": [
@@ -11597,7 +11875,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "gest-anatomy-tables"
@@ -11606,7 +11884,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "no",
           "sources": [
             "russell-bauer-2008"
@@ -11763,7 +12041,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Interossei",
           "present": "inferred",
           "sources": [
@@ -11773,7 +12051,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "gest-anatomy-tables"
@@ -11782,7 +12060,7 @@
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "present": "uncertain",
           "sources": [
             "russell-bauer-2008"
@@ -11791,7 +12069,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Mm. interossei dorsales",
           "present": "yes",
           "innervation": "R. dorsalis of the N. radialis profundus.",
@@ -12016,7 +12294,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor pollicis brevis",
           "present": "inferred",
           "action": "Abducts the first digit.",
@@ -12038,11 +12316,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). The avian homolog is Abductor alulae. **The origin is the most variable attachment in the manus**: the ventral radiale in all crocodylians, most lepidosaurs and one turtle (*Lissemys*); the distal carpals in *Trachemys* and *Tetradactylus*; the distal radius in *Podocnemis* and *Trachemys*; the base of the carpometacarpus in some birds; the extensor carpi radialis tendon in most birds; and a variable accessory attachment to the distal radius in *Struthio*. Presence in most lepidosaurs and in crocodylians makes the radiale plesiomorphic at 0.881 at the base of Archosauria, and it is scored here as the state a basal theropod is unlikely to have exchanged for the derived avian one — but it remains phylogenetically equivocal.\n\nThe insertion is not: the medial surface of the first phalanx of digit I near its base, at 0.837 at Archosauria and 0.993 at Aves. The more proximal insertion on the lateral aspect of metacarpal I found in crocodylians (Meers 2003), *Sphenodon* (Miner 1925) and *Liolaemus* is the state Burch does not take, against the usual pull of the crocodylian half of the bracket."
+          "attachmentNote": "Tawa hallae, Burch (2014). The avian homolog is Abductor alulae. **The origin is the most variable attachment in the manus**: the ventral radiale in all crocodylians, most lepidosaurs and one turtle (*Lissemys*); the distal carpals in *Trachemys* and *Tetradactylus*; the distal radius in *Podocnemis* and *Trachemys*; the base of the carpometacarpus in some birds; the extensor carpi radialis tendon in most birds; and a variable accessory attachment to the distal radius in *Struthio*. Presence in most lepidosaurs and in crocodylians makes the radiale plesiomorphic at 0.881 at the base of Archosauria, and it is scored here as the state a basal theropod is unlikely to have exchanged for the derived avian one — but it remains phylogenetically equivocal.\n\nThe insertion is not: the medial surface of the first phalanx of digit I near its base, at 0.837 at Archosauria and 0.993 at Aves. The more proximal insertion on the lateral aspect of metacarpal I found in crocodylians (Meers 2003), *Sphenodon* (Miner 1925) and *Liolaemus* is the state Burch does not take, against the usual pull of the crocodylian half of the bracket.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "abduction"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor pollicis brevis",
           "present": "yes",
           "action": "Abducts the thumb.",
@@ -12075,11 +12359,17 @@
             {
               "nerve": "median-recurrent"
             }
+          ],
+          "actions": [
+            {
+              "joint": "carpometacarpal",
+              "motion": "abduction"
+            }
           ]
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. abductor pollicis and M. abductor pollicis brevis",
           "present": "yes",
           "division": "divided",
@@ -12449,7 +12739,7 @@
         },
         {
           "species": "tawa-hallae",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor digiti minimi",
           "present": "inferred",
           "action": "Abducts the fourth digit and the manus.",
@@ -12471,11 +12761,17 @@
               }
             ]
           },
-          "attachmentNote": "Tawa hallae, Burch (2014). **This row exists because Burch dissected two ostriches.** No muscle answering to this description had ever been reported in the avian manus, which would leave the archosaur bracket one-sided; he found a well-developed one in both *Struthio* specimens, arising from the ventral surface of the pseudoulnare and the flexor carpi ulnaris insertion tendon and inserting on the ventrolateral surface of metacarpal III. Since muscles that attached to the pisiform have shifted to the pseudoulnare in birds, that origin is treated as homologous with the pisiform origin of crocodylians, lizards and turtles, and the bracket closes.\n\nBurch also rejects Diogo & Abdala's (2010) alternative homolog for this muscle, the avian Ulnimetacarpalis dorsalis, on development: that muscle belongs to the dorsal division with the short extensors, while abductor digiti minimi is a ventral muscle described by some authors as part of flexor carpi ulnaris or as arising from its insertion tendon. In *Tawa* it arises from the pisiform, which is still present, and inserts on the metacarpal of the reduced fourth digit — a lateralmost-metacarpal insertion like the crocodylian one, which may itself be a consequence of lateral digit reduction in both extant clades."
+          "attachmentNote": "Tawa hallae, Burch (2014). **This row exists because Burch dissected two ostriches.** No muscle answering to this description had ever been reported in the avian manus, which would leave the archosaur bracket one-sided; he found a well-developed one in both *Struthio* specimens, arising from the ventral surface of the pseudoulnare and the flexor carpi ulnaris insertion tendon and inserting on the ventrolateral surface of metacarpal III. Since muscles that attached to the pisiform have shifted to the pseudoulnare in birds, that origin is treated as homologous with the pisiform origin of crocodylians, lizards and turtles, and the bracket closes.\n\nBurch also rejects Diogo & Abdala's (2010) alternative homolog for this muscle, the avian Ulnimetacarpalis dorsalis, on development: that muscle belongs to the dorsal division with the short extensors, while abductor digiti minimi is a ventral muscle described by some authors as part of flexor carpi ulnaris or as arising from its insertion tendon. In *Tawa* it arises from the pisiform, which is still present, and inserts on the metacarpal of the reduced fourth digit — a lateralmost-metacarpal insertion like the crocodylian one, which may itself be a consequence of lateral digit reduction in both extant clades.",
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "abduction"
+            }
+          ]
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Abductor digiti minimi",
           "present": "yes",
           "action": "Abducts the fifth digit.",
@@ -12502,11 +12798,17 @@
             {
               "nerve": "ulnar-deep"
             }
+          ],
+          "actions": [
+            {
+              "joint": "metacarpophalangeal",
+              "motion": "abduction"
+            }
           ]
         },
         {
           "species": "iguana-iguana",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. abductor digiti quinti",
           "present": "yes",
           "division": "divided",
@@ -12556,7 +12858,7 @@
         },
         {
           "species": "sphenodon-punctatus",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "M. abductor digiti minimi",
           "present": "yes",
           "innervation": "N. ulnaris.",
@@ -12821,7 +13123,7 @@
         },
         {
           "species": "homo-sapiens",
-          "speciesBasis": "source",
+          "speciesBasis": "note",
           "name": "Extensor pollicis longus and extensor indicis",
           "present": "yes",
           "division": "divided",
@@ -12861,6 +13163,12 @@
           "nerves": [
             {
               "nerve": "radial-deep"
+            }
+          ],
+          "actions": [
+            {
+              "joint": "interphalangeal-manus",
+              "motion": "extension"
             }
           ]
         },
@@ -12980,6 +13288,7 @@
         ]
       },
       "sources": [
+        "cunningham-1882",
         "gambaryan-etal-2015",
         "gest-anatomy-tables"
       ],

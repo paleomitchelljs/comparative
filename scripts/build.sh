@@ -66,11 +66,16 @@ python3 scripts/seed_homology_authority.py $FLAG
 step "15. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
-step "16. measured counts in README.md and docs/GAPS.md"
+# Before the counts, not after them: it was running unlabelled inside the
+# validate step, so a build that changed an attribution reported figures from
+# the state before the change, and a report-only run never exercised it at all.
+step "16. species attribution from each row's own prose"
+python3 scripts/attribute_species.py $FLAG
+
+step "17. measured counts in README.md and docs/GAPS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "17. validate"
-  python3 scripts/attribute_species.py --write
-python3 scripts/validate.py
+  step "18. validate"
+  python3 scripts/validate.py
 fi

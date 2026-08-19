@@ -513,7 +513,7 @@ def main(write: bool) -> int:
     skel = json.loads((ROOT / "data/skeleton.json").read_text())
     elements = {e["id"]: e for e in skel["elements"]}
 
-    docs, added, problems = {}, 0, []
+    docs, added, kept, problems = {}, 0, 0, []
     index = {}
     for path in sorted(ROOT.glob("data/muscles-*.json")):
         doc = json.loads(path.read_text())
@@ -566,11 +566,26 @@ def main(write: bool) -> int:
                 problems.append(f"{mid}: no occurrence row for taxon '{tid}'"
                                 + (f" species '{want}'" if want else ""))
                 continue
+            if len(candidates) > 1 and not want:
+                # A clade that has grown a second species since the block was
+                # written. The block is not silent about which animal it
+                # describes: it cites the source it was read from, and exactly
+                # one row of that clade normally cites the same source. Narrow
+                # on that before giving up, because the alternative is 26
+                # `species` keys restating what `sources` already says — and
+                # they would go stale the next time a row is re-attributed.
+                # An explicit `species` still wins; genuine ambiguity still
+                # errors rather than picking one.
+                narrowed = [o for o in candidates
+                            if set(spec.get("sources", [])) & set(o.get("sources", []))]
+                if len(narrowed) == 1:
+                    candidates = narrowed
             if len(candidates) > 1:
                 problems.append(
                     f"{mid}/{tid}: {len(candidates)} rows in that clade "
-                    f"({', '.join(o['species'] for o in candidates)}) — add "
-                    f"\"species\" to this block to say which one it describes")
+                    f"({', '.join(o['species'] for o in candidates)}) and none "
+                    f"singled out by the block's sources — add \"species\" to "
+                    f"this block to say which one it describes")
                 continue
             occ = candidates[0]
             for side in ("origin", "insertion"):
@@ -585,11 +600,20 @@ def main(write: bool) -> int:
                         or tid in pres.get("present", []) + pres.get("partial", []) + pres.get("reduced", []))
                     if not ok:
                         problems.append(f"{mid}/{tid}: '{ref}' is recorded absent in that taxon")
-            occ["attachments"] = {"origin": spec["origin"], "insertion": spec["insertion"]}
-            if spec.get("shiftNote"):
-                occ["attachmentNote"] = spec["shiftNote"]
+            # Seed, not sync. `data/` is the copy under curation and it is the
+            # newer one — this table has been overwriting later hand edits on
+            # every build, which is how a curated `body-wall` origin lost to
+            # this file's older `linea-alba`. Fill what is missing and leave
+            # what is there. Correcting a seeded row now means editing the JSON,
+            # and the note below the table says so.
+            if occ.get("attachments"):
+                kept += 1
+            else:
+                occ["attachments"] = {"origin": spec["origin"], "insertion": spec["insertion"]}
+                if spec.get("shiftNote"):
+                    occ.setdefault("attachmentNote", spec["shiftNote"])
+                added += 1
             occ["sources"] = sorted(set(occ.get("sources", [])) | set(spec["sources"]))
-            added += 1
 
     if problems:
         print("PROBLEMS:")
@@ -598,7 +622,7 @@ def main(write: bool) -> int:
         return 1
 
     print(f"{added} occurrence rows seeded with structured attachments "
-          f"across {len(SEED)} muscles")
+          f"across {len(SEED)} muscles; {kept} already scored in data/ and left alone")
 
     if not write:
         print("\nDry run. Re-run with --write to apply.")

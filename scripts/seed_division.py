@@ -579,34 +579,57 @@ def main():
         if not alive:
             missing.append(f"{mid}/{tid}: occurrence is present='no'")
             continue
-        if len(alive) > 1:
-            missing.append(
-                f"{mid}/{tid}: {len(alive)} rows in that clade "
-                f"({', '.join(o['species'] for o in alive)}) — add \"species\" "
-                f"to this block to say which one it describes")
-            continue
-        occ = alive[0]
-
-        current = {k: occ.get(k) for k in
-                   ("division", "parts", "partsOpen", "divisionNote")}
         target = {"division": block["division"],
                   "parts": block.get("parts"),
                   "partsOpen": block.get("partsOpen"),
                   "divisionNote": block.get("dataNote")}
-        if current == target:
+
+        def state(o):
+            return {k: o.get(k) for k in
+                    ("division", "parts", "partsOpen", "divisionNote")}
+
+        if len(alive) > 1:
+            # A clade that has grown a second species since this block was
+            # written. Ask whether the block still has anything to say before
+            # asking which animal it meant: if a row already carries exactly
+            # this division, the block has been applied and there is nothing to
+            # write. That is 22 of the 24 cases this guard used to fail the
+            # build on. Only a block with real work to do and no way to place it
+            # is a problem, and that one still stops the build.
+            if any(state(o) == target for o in alive):
+                unchanged += 1
+                continue
+            missing.append(
+                f"{mid}/{tid}: {len(alive)} rows in that clade "
+                f"({', '.join(o['species'] for o in alive)}) and none already "
+                f"carrying this division — add \"species\" to this block to say "
+                f"which one it describes")
+            continue
+        occ = alive[0]
+
+        if state(occ) == target:
             unchanged += 1
             continue
 
-        if write:
-            occ["division"] = block["division"]
-            for field, value in (("parts", block.get("parts")),
-                                 ("partsOpen", block.get("partsOpen")),
-                                 ("divisionNote", block.get("dataNote"))):
-                if value:
+        # Seed, not sync. This used to assign every field and pop the ones the
+        # block left empty, so a build re-imposed the table's lean version over
+        # whatever had been curated: the turtle adductor mandibulae internus
+        # lost the per-part notes on its `parts` and its whole `divisionNote`
+        # to a block that carries neither. Write only what is absent, and never
+        # remove. Changing a seeded division now means editing the JSON.
+        wrote = False
+        for field, value in (("division", block["division"]),
+                             ("parts", block.get("parts")),
+                             ("partsOpen", block.get("partsOpen")),
+                             ("divisionNote", block.get("dataNote"))):
+            if value and field not in occ:
+                if write:
                     occ[field] = value
-                else:
-                    occ.pop(field, None)
-        applied += 1
+                wrote = True
+        if wrote:
+            applied += 1
+        else:
+            unchanged += 1
 
     for line in missing:
         print(f"  MISS  {line}")
