@@ -37,7 +37,10 @@ thylacine, the cuscus and the phascogale for full description.
 **The phascogale has no hindlimb rows because it has no hindlimb data.** Its
 pelvis and hind limbs were "so shattered with shot that it was impossible to
 conduct a proper examination". Leaving the rows out is the correct reading of
-that; scoring `present: "no"` would not be.
+that; scoring `present: "no"` would not be. **Its foot survived**, and is
+described in full in the pes survey, so it does carry rows on the four intrinsic
+pes records — a distinction worth keeping straight, because the same animal is
+absent from `gluteus-maximus` and present on `contrahentes-digitorum-pes`.
 
 He also states his dissection counts for the hand: four of the thylacine's, two
 of the cuscus's, one of the phascogale's. That is why the within-species
@@ -58,9 +61,10 @@ variation he reports is nearly all in the thylacine.
 
 Theria was a placental column — human, rat, four cats, a grison, a vole. This is
 its first marsupial data, and `monodelphis-domestica` had been sitting in
-`species.json` with nothing on it. **153 rows mined**, the second-largest
-single-source pass in the dataset after Gest's human tables, and the largest that
-is a dissection rather than a teaching table.
+`species.json` with nothing on it. **243 rows mined across 27 species**, the
+largest single-source pass in the dataset, and the largest that is a dissection
+rather than a teaching table. 153 of them are the limb myology of the three
+principal animals; the other 90 are the comparative pes survey.
 
 Its second value is that the three animals disagree with each other and
 Cunningham says which is which, so the rows carry contrast rather than
@@ -138,20 +142,51 @@ reading but is not demonstrated by either source on the element — flagged as a
 working decision in `docs/GAPS.md` §3, with Reilly & White (2003) named as the
 unmined source that bears on it.
 
-## Not mined
+## The pes survey, pp. 48–139
 
-**Pages 48–139, the comparative pes**, and pages 140–149, the hindlimb nerves.
-The pes section is a survey of the intrinsic foot muscles and plantar nerves
-across some two dozen mammals — echidna, platypus, dingo, cat, puma, badger,
-polecat, walrus, otter, *Myrmecophaga*, *Dasypus*, *Hyrax*, *Elephas*,
-*Bathyergus*, *Pteropus*, *Macacus*, *Pithecia*, *Lemur*, plus his own three
-marsupials and *Dasyurus* — six of the feet supplied to him by the Challenger
-Commission and the rest from Edinburgh's anatomical museum. It is the only
-dissection in this bibliography that puts monotreme and marsupial foot muscles on
-the same page, and it would land on records this dataset already has
-(`abductor-et-extensor-digiti-i-pes`, `abductor-digiti-minimi-pes`,
-`contrahentes-digitorum-pes`, `flexores-breves-profundi-pes`).
+The second half of the report is a comparative survey of the intrinsic muscles
+and plantar nerves of the mammalian pes, structured throughout by Cunningham's
+three-layer scheme: each digit typically takes an adductor from the plantar
+layer, an abductor from the dorsal layer and a flexor brevis from the
+intermediate layer, and what varies between mammals is which have fused, migrated
+or gone. It lands on four records — `contrahentes-digitorum-pes`,
+`flexores-breves-profundi-pes`, `abductor-et-extensor-digiti-i-pes`,
+`abductor-digiti-minimi-pes` — plus `flexores-breves-superficiales-pes` and
+`flexor-accessorius-lateralis-pes` for the monotremes.
 
-**Two of his muscles have no record to land on**: the pedal lumbricales, and his
-*ischio-femoral*, which he explicitly declines to call the quadratus femoris.
-Both are in `docs/GAPS.md` §2.
+**Scored, 90 rows across 24 species:** *Thylacinus*, *Dasyurus viverrinus*,
+*Phascogale*, *Spilocuscus*, *Trichosurus*; *Ornithorhynchus*, *Tachyglossus*;
+dog, cat, puma, leopard, lion, otter, badger, polecat, walrus; *Tamandua*,
+*Euphractus*, *Bradypus*; horse, ox, sheep; *Procavia*, *Elephas*; *Bathyergus*,
+*Castor*; *Pteropus*.
+
+Its throughline is how a muscle disappears, and Cunningham gives a different
+answer per animal because the evidence differs — fusion in the tetradactylous
+carnivores, with the dog's occasional fused adductor annularis as his proof;
+suppression in the echidna, no trace surviving in any neighbour; **an explicit
+refusal to choose in *Bathyergus***, where if it is fusion no trace is
+discoverable. And in three animals the muscle is still present without being
+muscle: the armadillo's flexores breves and interossei as fibrous bands in their
+own positions, which he says no author had noticed; the beaver's short-flexor
+heads half-converted; and the horse's suspensory ligament, which he sectioned and
+put under a microscope to find two crescents of striated fibre still inside it.
+The ox has four such rings with more muscle, the sheep four rings of fat cells
+with vessels and nerves and no muscle at all — one transformation in three
+stages. The elephant reaches the same suspensory function from the other layer,
+its dorsal interossei turned to ligament around a functionally single digit.
+
+**Not scored from the survey**: the primates (*Macacus cynomolgus*, *Pithecia
+hirsuta*, *Lemur*), the remaining rodents (Cape mouse, hare, paca, agouti, guinea
+pig), and the summary tables and general remarks on pp. 122–139. Also unread:
+pages 140–149 on the hindlimb nerves, which would support structured `nerves`
+well beyond what the myology already gave. Animals Cunningham discusses from
+other authors rather than dissecting — *Manis*, *Orycteropus*, tapir, *Otaria*,
+koala, wallaby, wombat, opossum — are in the notes as reported range and get no
+rows.
+
+## Two muscles with no record to land on
+
+The **pedal lumbricales** (`lumbricales` is a manus record; the pes has no
+counterpart) and Cunningham's **ischio-femoral**, which he explicitly declines to
+call the quadratus femoris because it lies on a different plane. Both are in
+`docs/GAPS.md` §2.

@@ -14,7 +14,7 @@ earlier passes.
 **State:**
 
 <!-- counts:headline -->
-129 muscle records · 1230 present occurrences · 268 skeletal elements · 116 sources · 20 operational taxa
+129 muscle records · 1308 present occurrences · 268 skeletal elements · 116 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 **Every PDF in `papers/` has a `sources.json` entry, and every entry resolves to a
@@ -43,18 +43,18 @@ illustrated.
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
+| foot | 12 | 148 | 138 | 93% |
 | leg | 10 | 88 | 82 | 93% |
 | thigh | 10 | 82 | 74 | 90% |
-| foot | 12 | 71 | 64 | 90% |
 | arm | 5 | 99 | 85 | 86% |
 | pectoral | 16 | 261 | 223 | 85% |
 | pelvic | 8 | 61 | 51 | 84% |
 | forearm | 19 | 268 | 221 | 82% |
 | cranial | 16 | 101 | 78 | 77% |
 | axial | 15 | 42 | 29 | 69% |
-| hand | 9 | 118 | 79 | 67% |
+| hand | 9 | 119 | 80 | 67% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1230 | 1009 | **82%** |
+| **all** | 129 | 1308 | 1084 | **83%** |
 <!-- /counts:regions -->
 
 **Cranial was the hole and is climbing.** It sat under 20% for several passes with
@@ -139,8 +139,8 @@ back in for Aves.
 | Pseudosuchia (stem) | 1 | 1 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
-| Monotremata | 103 | 103 | 100% |
-| Theria | 311 | 293 | 94% |
+| Monotremata | 114 | 112 | 98% |
+| Theria | 378 | 359 | 95% |
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
@@ -437,17 +437,34 @@ is a different muscle on a different nerve, and the interossei of the hand and
 foot are scored once each with the records that also claim them left uncertain
 and pointing at the row that holds them.
 
-**Theria is now 311 occurrences at 94%, and the reason is that it finally has
+**Theria is now 378 occurrences at 95%, and the reason is that it finally has
 marsupials.** Until Cunningham (1882) was mined the column was placentals and
 nothing else — human, rat, four cats, a grison, a vole — and
 `monodelphis-domestica` had sat in `species.json` carrying no rows at all.
 Cunningham dissected the thylacine, the spotted cuscus and the red-tailed
-phascogale muscle by muscle: **153 rows, the second-largest single-source pass
-here after Gest, and unlike Gest it is a dissection.** The fore limb is complete
-in all three animals; the hind limb is complete in two, because the phascogale's
-pelvis and hind limbs arrived from the *Challenger* so shattered with shot that
-Cunningham could not examine them — which is why that animal is absent from every
-hindlimb record rather than scored `no` on any of them.
+phascogale muscle by muscle: **243 rows across 27 species, the largest
+single-source pass this dataset has had, and unlike Gest's human tables it is a
+dissection.** The fore limb is complete in all three of his principal animals;
+the hind limb is complete in two, because the phascogale's pelvis and hind limbs
+arrived from the *Challenger* so shattered with shot that Cunningham could not
+examine them — which is why that animal is absent from every hindlimb record
+rather than scored `no` on any of them. Its foot survived and is described in
+full, so it does carry pes rows.
+
+**The other 90 rows come from the report's second half, which is not about
+marsupials at all**: a comparative survey of the intrinsic muscles and plantar
+nerves of the mammalian pes across two dozen feet — monotreme, marsupial,
+carnivore, edentate, ungulate, rodent, bat — six of them supplied by the
+Challenger Commission and the rest from Edinburgh's anatomical museum. It lands
+on four records this dataset already had and nearly empty: `contrahentes-`
+`digitorum-pes`, `flexores-breves-profundi-pes`,
+`abductor-et-extensor-digiti-i-pes` and `abductor-digiti-minimi-pes`. **It is
+also the only dissection in this bibliography that puts monotreme and marsupial
+foot muscles on the same page**, and it gives *Ornithorhynchus* and
+*Tachyglossus* their first pedal rows to sit beside Gambaryan's forelimb ones.
+Nineteen species entered `species.json` for it, and the survey is what makes the
+record set worth having: the same four muscle groups read across a swimming
+foot, a hanging foot, a hoof and a wing-hind-foot, by one worker in one season.
 
 What the column gains is not only coverage but contrast, because his three
 animals disagree with each other constantly and he says so. The thylacine's
@@ -468,6 +485,26 @@ of a caudofemoralis — caudal transverse processes to posterior femur — but h
 groups it with the gluteus maximus on plane and nerve, while *also* describing a
 separate piriformis in the same two animals. Both cannot be the caudofemoralis,
 nothing in this source settles which is, so the note sits on both records.
+
+**What the pes survey is actually for is the question of how a muscle
+disappears**, and Cunningham answers it differently for different animals
+because the evidence differs. In the tetradactylous carnivores he commits to
+fusion and gives his grounds: an adductor annularis turns up occasionally in the
+dog, fused to a short flexor's tibial head, and tendinous intersections betray
+the composite muscles elsewhere. In the echidna he commits to suppression,
+finding no trace of the missing muscles in any neighbour. In *Bathyergus* he
+refuses to choose, and says so — if it is fusion, no trace of it is
+discoverable. And in three animals the muscle is simply still there without
+being a muscle: the armadillo's flexores breves and interossei survive as
+fibrous bands in their own positions, the beaver's short-flexor heads are caught
+half-converted, and the horse's suspensory ligament is a short flexor with
+striated fibres still embedded in it, which Cunningham sectioned and put under a
+microscope. **The horse–ox–sheep sequence is that transformation in three
+stages** — two crescents of muscle in the horse, four rings with more muscle in
+the ox, four rings of fat cells with vessels and nerves and no muscle at all in
+the sheep — and the elephant arrives at the same suspensory function from the
+other layer, its dorsal interossei turned to ligament flanking a functionally
+single digit.
 
 **Two of his muscles have no record to land on, and were left unscored rather
 than forced onto a neighbour.** The **pedal lumbricales** — four in the cuscus,
@@ -557,10 +594,10 @@ Partly. The element *inventory* is healthy; the *resolution* is the weak link.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 268, of which 247 (92%) carry at least one attachment |
-| Observed attachment rows | 3175 |
-| Rows naming a **landmark** | 919 (29%) |
-| Rows naming a **side** | 1751 (55%) |
+| Elements | 268, of which 248 (93%) carry at least one attachment |
+| Observed attachment rows | 3440 |
+| Rows naming a **landmark** | 956 (28%) |
+| Rows naming a **side** | 1880 (55%) |
 | Osteological correlates | 122 flagged, 114 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -633,10 +670,10 @@ attachments are largely fleshy sheets, which is also why they leave few correlat
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 25 | 70 | 2.8 |
-| hindlimb | 43 | 47 | 1.1 |
+| hindlimb | 43 | 48 | 1.1 |
 | pectoral | 34 | 31 | 0.9 |
 | axial | 37 | 32 | 0.9 |
-| forelimb | 57 | 46 | 0.8 |
+| forelimb | 59 | 46 | 0.8 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 31 | 16 | 0.5 |
 <!-- /counts:parity -->
@@ -680,7 +717,7 @@ key.
 ## The one gap that blocks everything downstream
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1009 of 1230 present occurrences (82%).**
+**Taxon-specific attachments: 1084 of 1308 present occurrences (83%).**
 <!-- /counts:scored -->
 
 Everything else in the roadmap depends on this number. The phylogeny view (phase
@@ -702,12 +739,12 @@ it is one end of most of them.
 |---|---:|---:|
 | pectoral | 16 | 697 |
 | forearm | 19 | 593 |
+| foot | 12 | 451 |
 | cranial | 16 | 354 |
 | leg | 10 | 272 |
 | arm | 5 | 252 |
 | thigh | 10 | 237 |
-| hand | 9 | 233 |
-| foot | 12 | 188 |
+| hand | 9 | 235 |
 | pelvic | 8 | 183 |
 | axial | 15 | 109 |
 | fin | 9 | 57 |
