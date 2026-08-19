@@ -33,22 +33,36 @@ orders of magnitude and the architecture is what changes.
 
 ## Scored
 
-8 occurrence rows across *Varanus exanthematicus* and *V. komodoensis* —
-iliofemoralis, caudofemoralis, iliofibularis, femorotibialis, ambiens, adductor
-femoris and their neighbours, with attachments from the paper's Table 1.
+8 occurrence rows — iliofemoralis, caudofemoralis, iliofibularis, femorotibialis,
+ambiens, adductor femoris and their neighbours, with attachments from the paper's
+Table 1. Six sit on `varanidae-generalised` and two on *V. komodoensis*; see below
+for why.
 
-## The open problem with these rows
+## The species attribution, and how it was settled
 
-**This source is mapped to an animal it never names.** Six hindlimb rows carry its
-Table 1, which is a compilation *of the varanid hindlimb* assembled from four
-earlier papers — Snyder (1954), Gans et al., Reilly on *Sceloporus clarki*, and
-Anzai et al. on *Anolis* — two of which are not varanids at all. The species
-attribution was borrowed from Cieri's monitor.
+**This source was mapped to an animal it never names.** Six hindlimb rows carried
+its Table 1 on *Varanus exanthematicus* with `speciesBasis: "source"`, an
+attribution borrowed from Cieri's monitor. Table 1 is a compilation *of the varanid
+hindlimb* assembled from four earlier papers — Snyder (1954), Gans et al., Reilly
+on *Sceloporus clarki*, and Anzai et al. on Cuban *Anolis* — two of which are not
+varanids at all.
 
-It is left in place only because removing it hands the rows to Diogo & Molnar's
-*Timon*, which is a different animal nobody observed these attachments in. The
-mapping is flagged in `attribute_species.py` and listed as an open decision in
-`WORKLIST.md`. **The disposition is a decision, not a lookup fix.**
+**Resolved to `varanidae-generalised`.** The caption is explicit that the table is
+a compilation, and it carries no per-muscle provenance, so there is no underlying
+species to recover: the "find the animal" branch is closed, not merely unattempted.
+That leaves the disposition the schema already provides for a source describing a
+clade rather than a specimen — `generalised: true` on the species and
+`speciesBasis: "generalised"` on every row of it, which the validator enforces both
+ways. `dick-clemente-2016` is out of `SOURCE_SPECIES` entirely, so no future row
+citing it inherits a monitor nobody dissected.
+
+The two *V. komodoensis* rows are untouched. Their species comes from Tomańska
+et al. (2025) naming the animal in prose, and this paper is supporting argument on
+them rather than the attachment source.
+
+Nothing about the **architecture** is affected. That is this paper's own
+measurement across 27 individuals, and it remains attributable to the nine species
+it was taken from.
 
 ## Limitations
 

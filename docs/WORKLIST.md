@@ -212,10 +212,10 @@ Cunningham's three marsupials — a large paired bone in the cuscus, a cartilagi
 nodule in the thylacine. **Reilly & White (2003)** is in `papers/`, unmined, and is
 the source that bears on it. Until it is read, splitting the record stays live.
 
-**Dick & Clemente (2016) is mapped to an animal it never names.** Six hindlimb rows
-carry its Table 1, which is a compilation "of the varanid hindlimb" from four
-earlier papers, two of them on non-varanids. The mapping is flagged in
-`attribute_species.py`. The disposition is a decision, not a lookup fix.
+**~~Dick & Clemente (2016) is mapped to an animal it never names.~~ Settled.** Its
+six rows are on `varanidae-generalised`, and the source is out of `SOURCE_SPECIES`.
+Table 1 carries no per-muscle provenance, so there was no species to recover. See
+the reading note.
 
 **Osteological correlates with no muscle on them.** Each is a landmark a
 palaeontologist reads first, and the dataset says nothing about what pulls on it.

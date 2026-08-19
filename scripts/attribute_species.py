@@ -43,14 +43,16 @@ SOURCE_SPECIES = {
     "hutchinson-etal-2015": "struthio-camelus",
     "prikryl-etal-2009": "discoglossus-pictus",
     "johnston-2011": "ascaphus-truei",
-    # UNRESOLVED — see docs/WORKLIST.md. Dick & Clemente name no *V. exanthematicus*:
-    # their own dissections are nine other varanids, and the Table 1 the attachment
-    # rows come from is a compilation "of the varanid hindlimb" from Snyder (1954),
-    # Gans et al., Reilly (Sceloporus clarki) and Anzai et al. (Anolis) — two of the
-    # four not varanids at all. The species was borrowed from Cieri's monitor. Left
-    # in place only because removing it hands the rows to Diogo & Molnar's Timon,
-    # which is a different animal nobody observed these attachments in.
-    "dick-clemente-2016": "varanus-exanthematicus",
+    # NOT dick-clemente-2016, which is no longer here. It names no
+    # *V. exanthematicus* — its own dissections are nine other varanids, and the
+    # Table 1 the attachment rows come from is a compilation "of the varanid
+    # hindlimb" from Snyder (1954), Gans et al., Reilly (Sceloporus clarki) and
+    # Anzai et al. (Anolis), two of the four not varanids at all. The species had
+    # been borrowed from Cieri's monitor. Table 1 gives no per-muscle provenance,
+    # so there is no underlying species to recover, and its six rows now sit on
+    # `varanidae-generalised` with `speciesBasis: "generalised"` — which is what
+    # that basis is for. The architecture in the same paper is its own
+    # measurement and is not affected.
     "cieri-2018": "varanus-exanthematicus",
     "diogo-ziermann-2015": "squalus-acanthias",
     "godoy-etal-2016": "pissarrachampsa-sera",
