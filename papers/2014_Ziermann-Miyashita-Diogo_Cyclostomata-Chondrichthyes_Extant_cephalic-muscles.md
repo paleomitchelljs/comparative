@@ -57,6 +57,53 @@ Gross dissection with iodine contrast; muscle counts tabulated per taxon in Tabl
 - **Fig. 2 (*Myxine*), Fig. 3 (*Petromyzon*), Fig. 4 (*Hydrolagus*), Fig. 5 (*Squalus*), Fig. 6 (*Leucoraja*)** — each combines iodine-stained dissection photos with a colour-coded schematic (mandibular red/orange/pink, hyoid green, true branchial blue, epibranchial brown, hypobranchial green). These are the cleanest published lateral-view cephalic-muscle maps for these five exemplar species and will translate directly to lecture slides.
 - **Appendix S1** is the synonym matrix — maps Marinelli & Strenger, Edgeworth 1935, Miyashita 2012, Mallatt 1996/97/2008, and the present paper's names onto one another.
 
+## Scored from Tables 1 and 2
+
+The tables OCR to collapsed columns and read cleanly as page images at 200 dpi
+(PDF pp. 5–8), the same treatment the Diogo tables needed. Read that way they
+close the thinnest column in the dataset relative to what rests on it: the
+cyclostome outgroup is the polarity anchor for every cranial homology downstream,
+and it held three occurrences per lineage.
+
+**Seven occurrences on four arch-1 and arch-2 records.** Four of the seven are
+`present: "no"`, which is a claim here and not a blank — the absences are the
+whole point.
+
+- **`intermandibularis`** gains both. Table 1 puts an *undifferentiated
+  intermandibularis muscle sheet* at the last common ancestor of extant Vertebrata
+  and of extant Cyclostomata; *Myxine* has the **tubulatus** in that position and
+  *Petromyzon* the **constrictor cornualis superficialis** and **constrictor
+  glossae profundus internus**. The intermandibularis proper, divided into anterior
+  and posterior, appears at the gnathostome ancestor.
+- **Both rows are scored.** The tubulatus arises from the lingual arches and
+  surrounds the longitudinalis linguae as a tube, so it gets an origin and no
+  insertion. The constrictor cornualis superficialis arises from the **cartilago
+  styliformis** and inserts with its contralateral fellow on a **median raphe** —
+  which is the comparison worth having, because the shark intermandibularis does
+  exactly that on `midventral-raphe`. The ventral midline sheet leaves nothing
+  skeletal behind on either side of the origin of jaws.
+- **`interhyoideus` is absent in both, and Table 2 is why.** *Petromyzon* is
+  credited with **zero** adult hyoid muscles and *Myxine* with four, none of them
+  the interhyoideus, which first appears at the gnathostome ancestor. Those two
+  rows are what make it a gnathostome character rather than a vertebrate one.
+- **`adductor-mandibulae` absent in *Myxine*** — Table 1's row for mandibular
+  muscles other than the intermandibularis is empty for both cyclostomes.
+- **`levator-arcus-palatini` absent in both, against a named alternative.** The
+  velar muscles are the candidate, on the hypothesis that they and the levator
+  arcus palatini both derive from the constrictor dorsalis anlage. **These authors
+  decline it** — see the limitation below — so the rows are scored absent with the
+  hypothesis recorded rather than deleted.
+
+One new skeletal element, `cartilago-styliformis`, so the lamprey's
+intermandibularis homologue has a skeletal end to hang on.
+
+**Not yet taken:** the labial, nasal, lingual, dental and velar groups, which are
+most of *Myxine*'s 24 and *Petromyzon*'s 26 mandibular muscles. They are
+lineage-specific differentiations with no gnathostome counterpart on this paper's
+own reading, so they need either new records or a decision that the dataset does
+not hold them. Tables 3 and 4, on the branchial and hypobranchial muscles, are
+also unread at row level.
+
 ## Limitations
 
 Authors are explicit: (a) some muscle homologies across cyclostomes and gnathostomes remain "controversial" and await gene-expression + knockdown confirmation; (b) sampling within cyclostomes is minimal — one species per lineage; (c) juvenile-only specimens for *Hydrolagus*, *Squalus*, and *Leucoraja*; (d) they couldn't locate Kesteven's levatores arcuum branchialium, meaning either the muscles vary intraspecifically or Kesteven's identifications were suspect; (e) the engrailed-based homology of velar muscles and levator arcus palatini is "tentative"; (f) *Petromyzon* velothyroideus is larval and whether it persists into the adult as the depressor veli remains unresolved.

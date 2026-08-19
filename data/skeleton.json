@@ -563,6 +563,26 @@
       "transformation": "Distal carpals fused with metacarpals II-IV; the alular metacarpal (digit I) remains distinguishable within the compound, which is why sources name an 'alular metacarpal' and a 'major metacarpal' on one bone."
     },
     {
+      "id": "cartilago-styliformis",
+      "label": "Cartilago styliformis",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "petromyzontida"
+        ],
+        "sources": [
+          "ziermann-etal-2014"
+        ],
+        "note": "A cartilage of the lamprey cranial floor, described by Ziermann et al. as the origin of the constrictor cornualis superficialis — the muscle their Table 1 places on the undifferentiated intermandibularis sheet of the vertebrate ancestor. Entered so that the lamprey's intermandibularis homologue has a skeletal end to hang on, which is the same reason `taenia-longitudinalis` was entered for its branchial constrictors."
+      },
+      "synonyms": [
+        "styliform cartilage"
+      ]
+    },
+    {
       "id": "caudal-transverse-processes",
       "label": "Transverse processes (caudal)",
       "kind": "bone",
@@ -1312,6 +1332,40 @@
       }
     },
     {
+      "id": "epipubic-bone",
+      "label": "Epipubic bone",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "cunningham-1882",
+          "reilly-white-2003"
+        ],
+        "note": "An ossified anterior process of the pubis with its own joint, present in monotremes and marsupials and lost in placentals. **Cunningham (1882)** calls it the marsupial bone or *os marsupium* and hangs four muscles on it in the cuscus and the thylacine: the pectineus, the adductor longus and the adductor brevis take origin from it, and the psoas parvus inserts on the pubis immediately beside it. It is not uniform even within his three animals — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine — and he notes that Macalister found the gracilis attached to it in every marsupial he examined, whereas in neither of these two is it attached at all.\n\n**Reilly & White (2003)** show it is part of a kinetic linkage rather than a static support: in *Monodelphis domestica* the epipubic bone acts as a lever, with the pyramidalis and rectus abdominis on one side and the contralateral oblique abdominal muscles on the other, active during stance.\n\n**Split from the former single `epipubis` record** — see `epipubic-cartilage`."
+      },
+      "taxonNames": [
+        {
+          "taxa": [
+            "theria"
+          ],
+          "name": "Epipubic bone (os marsupium, 'marsupial bone')"
+        },
+        {
+          "taxa": [
+            "monotremata"
+          ],
+          "name": "Epipubic bone"
+        }
+      ]
+    },
+    {
       "id": "epipubic-cartilage",
       "label": "Epipubic cartilage",
       "kind": "cartilage",
@@ -1356,40 +1410,6 @@
             "reilly-white-2003"
           ],
           "note": "Both are an anterior process of the pubis, which is the whole of the case for calling them one element, and these two were one record until that was noticed. **No cited source demonstrates the homology.** Walker describes the turtle cartilage and compares no mammal; Cunningham describes three marsupials and compares no reptile; Reilly & White (2003) is a two-page functional study of *Monodelphis* locomotion that never mentions a turtle.\n\nThree things argue against merging them, none decisive. The reptilian structure is cartilage and the mammalian one an ossification with its own joint. The mammalian element is not uniform even within Cunningham's three marsupials — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine. And the muscles differ: in this dataset the turtle cartilage carries the puboischiofemoralis internus while the mammalian bone carries the adductor femoris and the puboischiotibialis, so the shared-attachment argument the old note made is not borne out by its own rows."
-        }
-      ]
-    },
-    {
-      "id": "epipubic-bone",
-      "label": "Epipubic bone",
-      "kind": "bone",
-      "region": "pelvic",
-      "segment": "girdle",
-      "partOf": "pelvic-girdle",
-      "presence": {
-        "default": "no",
-        "present": [
-          "theria",
-          "monotremata"
-        ],
-        "sources": [
-          "cunningham-1882",
-          "reilly-white-2003"
-        ],
-        "note": "An ossified anterior process of the pubis with its own joint, present in monotremes and marsupials and lost in placentals. **Cunningham (1882)** calls it the marsupial bone or *os marsupium* and hangs four muscles on it in the cuscus and the thylacine: the pectineus, the adductor longus and the adductor brevis take origin from it, and the psoas parvus inserts on the pubis immediately beside it. It is not uniform even within his three animals — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine — and he notes that Macalister found the gracilis attached to it in every marsupial he examined, whereas in neither of these two is it attached at all.\n\n**Reilly & White (2003)** show it is part of a kinetic linkage rather than a static support: in *Monodelphis domestica* the epipubic bone acts as a lever, with the pyramidalis and rectus abdominis on one side and the contralateral oblique abdominal muscles on the other, active during stance.\n\n**Split from the former single `epipubis` record** — see `epipubic-cartilage`."
-      },
-      "taxonNames": [
-        {
-          "taxa": [
-            "theria"
-          ],
-          "name": "Epipubic bone (os marsupium, 'marsupial bone')"
-        },
-        {
-          "taxa": [
-            "monotremata"
-          ],
-          "name": "Epipubic bone"
         }
       ]
     },

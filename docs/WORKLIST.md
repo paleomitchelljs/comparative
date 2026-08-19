@@ -32,8 +32,12 @@ different bad reason:
   Never cited, no reading note. Catalogued and forgotten.
 - **Ziermann et al. (2014)** Tables 1–4 — the adult mandibular, hyoid, branchial
   and hypobranchial muscles of *Myxine glutinosa* and *Petromyzon marinus*, both
-  dissected. The dataset holds three occurrences each. The tables OCR to collapsed
-  columns, which is the problem the Diogo tables already solved.
+  dissected. **Tables 1 and 2 are now read** and put seven occurrences on four
+  arch-1 and arch-2 records, including the first cyclostome rows on
+  `intermandibularis` and the absences that make the interhyoideus a gnathostome
+  character. Tables 3 and 4 are still unread at row level, as are the labial,
+  nasal, lingual, dental and velar groups — most of the two animals' fifty-odd
+  mandibular muscles. See the reading note.
 
 Also uncited and descriptive: Vanden Berge (1982) on the kiwi pelvic limb, Boumans
 et al. (2015) on owl cervical attachments, Collings & Richards (2019) on an anuran
