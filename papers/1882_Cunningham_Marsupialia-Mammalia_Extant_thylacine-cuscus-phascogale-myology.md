@@ -136,11 +136,13 @@ range looks like.
 
 ## Skeletal consequence
 
-`epipubis` gained Theria and Monotremata. That groups the turtle epipubic
-cartilage with the mammalian epipubic bone on position, which is the usual
-reading but is not demonstrated by either source on the element — flagged as a
-working decision in `docs/WORKLIST.md`, with Reilly & White (2003) named as the
-unmined source that bears on it.
+Cunningham's marsupials put Theria on what was then a single `epipubis` element,
+which also held the turtle epipubic cartilage. **That element has since been split**
+into `epipubic-cartilage` and `epipubic-bone`, and Cunningham's observations sit on
+the bone. His own report is part of why: the element is not uniform even across his
+three animals — a large paired bone in the cuscus, a cartilaginous nodule in the
+thylacine — which is hard to reconcile with treating it as one thing with a turtle's
+cartilage as well.
 
 ## The pes survey, pp. 48–139
 

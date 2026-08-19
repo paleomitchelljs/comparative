@@ -33,6 +33,13 @@ SERIAL_BASIS = {"topological", "developmental", "none"}
 CORRESPONDENCE = {"serial", "no-counterpart", "descends-from", "corresponds-to-part-of"}
 CORRESPONDENCE_AXES = {"forelimb-hindlimb", "pharyngeal-arch"}
 
+# Elements get one relation, and it is deliberately the weakest thing sayable.
+# `partOf`, `derivedFrom` and `fusedFrom` already carry every element claim the
+# dataset can support; what was missing was a way to say two elements may be one
+# and no source has shown it. More relations go in when a case needs them.
+ELEMENT_RELATIONS = {"possibly-corresponds-to"}
+ELEMENT_CORR_BASES = {"positional", "developmental"}
+
 SPECIES_BASIS = {"note", "source", "survey", "default", "generalised"}
 LAYERS = {"superficialis", "profundus", "intermediate", "preaxial", "postaxial", "primaxial"}
 SEGMENTS = {"cranial", "axial", "girdle", "stylopod", "zeugopod", "autopod", "fin"}
@@ -472,7 +479,52 @@ def main():
                     warn(f"skeleton.json:{eid}: fusedFrom but presence lists no "
                          f"taxa — a fusion happens somewhere in particular")
 
+        # `correspondences` is the only element relation that asserts nothing.
+        # `partOf`, `derivedFrom` and `fusedFrom` each state a fact about the
+        # skeleton; this one states that two elements MIGHT be one and that
+        # nobody has shown it. It exists because the alternative was worse in
+        # both directions: holding the turtle epipubic cartilage and the
+        # mammalian epipubic bone as one element asserted a homology no cited
+        # source demonstrates, and splitting them with no vocabulary to link
+        # them would have lost the observation that they may correspond.
+        for c in e.get("correspondences") or []:
+            rel, to = c.get("relation"), c.get("to")
+            if rel not in ELEMENT_RELATIONS:
+                err(f"skeleton.json:{eid}: correspondence relation '{rel}' is not "
+                    f"one of {sorted(ELEMENT_RELATIONS)}")
+            if to == eid:
+                err(f"skeleton.json:{eid}: correspondence points at itself")
+            elif to not in element_ids:
+                err(f"skeleton.json:{eid}: correspondence 'to' "
+                    f"'{to}' is not an element")
+            if c.get("basis") not in ELEMENT_CORR_BASES:
+                err(f"skeleton.json:{eid}: correspondence basis "
+                    f"{c.get('basis')!r} is not one of "
+                    f"{sorted(ELEMENT_CORR_BASES)}")
+            # An undemonstrated correspondence has to say who failed to
+            # demonstrate it, or it is just a shrug with a schema around it.
+            if not c.get("note"):
+                err(f"skeleton.json:{eid}: correspondence to '{to}' has no "
+                    f"`note` — it must say what the case for it is and what "
+                    f"is missing")
+            for k in c.get("sources") or []:
+                if k not in source_keys:
+                    err(f"skeleton.json:{eid}: correspondence cites unknown "
+                        f"source '{k}'")
+
     by_id = {e["id"]: e for e in skeleton_doc["elements"] if e.get("id")}
+
+    # Record the edge once. The reverse is derived by scanning, exactly as the
+    # app derives the other end of a fusion or a fission, so a stored back-edge
+    # would be a second copy that can go stale.
+    for e in skeleton_doc["elements"]:
+        for c in e.get("correspondences") or []:
+            other = by_id.get(c.get("to")) or {}
+            for back in other.get("correspondences") or []:
+                if back.get("to") == e.get("id"):
+                    err(f"skeleton.json:{e.get('id')}: correspondence to "
+                        f"'{c.get('to')}' is stored in both directions — record "
+                        f"it once; the app scans for the reverse")
 
     def lineage(eid):
         out, cur = [], eid

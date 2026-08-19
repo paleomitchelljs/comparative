@@ -1312,8 +1312,8 @@
       }
     },
     {
-      "id": "epipubis",
-      "label": "Epipubis / epipubic bone",
+      "id": "epipubic-cartilage",
+      "label": "Epipubic cartilage",
       "kind": "cartilage",
       "region": "pelvic",
       "segment": "girdle",
@@ -1322,15 +1322,61 @@
         "default": "no",
         "present": [
           "testudines",
+          "lepidosauria"
+        ],
+        "sources": [
+          "walker-1973",
+          "osawa-1898"
+        ],
+        "note": "A cartilaginous anterior continuation of the pubis. Walker (1973) describes it in *Pseudemys* as the pubis \"continued anteriorly by an epipubic cartilage\", and labels it *epipubic cartilage or epipubis* across the turtle pelves he figures. In this dataset it carries the origin of part of the puboischiofemoralis internus in *Trachemys*.\n\n**Osawa (1898) shows the lepidosaur structure is the ypsiloid cartilage under another name.** In *Sphenodon* a cartilaginous process runs forward from the ventromedial angle of the pubis, which Wiedersheim called the *processus epipubicus* and Perrin the *cartilage ypsiloide*. That synonymy is why this element is worth holding separately from the mammalian bone: what the reptiles have is the ypsiloid cartilage.\n\n**Split from the former single `epipubis` record.** See the correspondence edge below for what that record used to assert and why it no longer does."
+      },
+      "taxonNames": [
+        {
+          "taxa": [
+            "lepidosauria"
+          ],
+          "name": "Processus epipubicus (ypsiloid cartilage)"
+        },
+        {
+          "taxa": [
+            "testudines"
+          ],
+          "name": "Epipubic cartilage"
+        }
+      ],
+      "correspondences": [
+        {
+          "relation": "possibly-corresponds-to",
+          "to": "epipubic-bone",
+          "basis": "positional",
+          "confidence": "undemonstrated",
+          "sources": [
+            "walker-1973",
+            "cunningham-1882",
+            "reilly-white-2003"
+          ],
+          "note": "Both are an anterior process of the pubis, which is the whole of the case for calling them one element, and these two were one record until that was noticed. **No cited source demonstrates the homology.** Walker describes the turtle cartilage and compares no mammal; Cunningham describes three marsupials and compares no reptile; Reilly & White (2003) is a two-page functional study of *Monodelphis* locomotion that never mentions a turtle.\n\nThree things argue against merging them, none decisive. The reptilian structure is cartilage and the mammalian one an ossification with its own joint. The mammalian element is not uniform even within Cunningham's three marsupials — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine. And the muscles differ: in this dataset the turtle cartilage carries the puboischiofemoralis internus while the mammalian bone carries the adductor femoris and the puboischiotibialis, so the shared-attachment argument the old note made is not borne out by its own rows."
+        }
+      ]
+    },
+    {
+      "id": "epipubic-bone",
+      "label": "Epipubic bone",
+      "kind": "bone",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "presence": {
+        "default": "no",
+        "present": [
           "theria",
           "monotremata"
         ],
         "sources": [
-          "walker-1973",
           "cunningham-1882",
           "reilly-white-2003"
         ],
-        "note": "Anterior extension of the pubis. In *Testudines* it is the cartilaginous epipubic process, which carries part of the puboischiofemoralis internus origin.\n\n**Theria and Monotremata added on Cunningham (1882)**, who calls it the marsupial bone or *os marsupium* and hangs four muscles on it in the cuscus and the thylacine: the pectineus, the adductor longus and the adductor brevis take origin from it, and the psoas parvus inserts on the pubis immediately beside it. It is not a uniform element even within his three animals — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine — and Cunningham notes that Macalister found the gracilis attached to it in every marsupial he examined whereas in neither of these two is it attached at all. Lost in placentals, which is why this element was scored for turtles alone until a marsupial arrived.\n\n**What this record does and does not assert.** It groups the turtle epipubic cartilage and the mammalian epipubic bone as one element on position — both are the anterior process of the pubis, both take hypaxial and adductor attachments — which is the usual reading, but neither source cited here demonstrates the homology. Reilly & White (2003) is in the bibliography unmined and is the source that bears on it; until it is read this grouping is a working decision and is recorded as one in `docs/GAPS.md`."
+        "note": "An ossified anterior process of the pubis with its own joint, present in monotremes and marsupials and lost in placentals. **Cunningham (1882)** calls it the marsupial bone or *os marsupium* and hangs four muscles on it in the cuscus and the thylacine: the pectineus, the adductor longus and the adductor brevis take origin from it, and the psoas parvus inserts on the pubis immediately beside it. It is not uniform even within his three animals — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine — and he notes that Macalister found the gracilis attached to it in every marsupial he examined, whereas in neither of these two is it attached at all.\n\n**Reilly & White (2003)** show it is part of a kinetic linkage rather than a static support: in *Monodelphis domestica* the epipubic bone acts as a lever, with the pyramidalis and rectus abdominis on one side and the contralateral oblique abdominal muscles on the other, active during stance.\n\n**Split from the former single `epipubis` record** — see `epipubic-cartilage`."
       },
       "taxonNames": [
         {

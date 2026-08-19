@@ -421,6 +421,7 @@ records in this dataset — the two will differ and should not be reconciled.
 | `transformation` | What happens to the element across the tree; shown on the element |
 | `derivedFrom` | Another element this one splits off from (fission, not renaming) |
 | `fusedFrom` | The elements that merged to form this one. The inverse of `derivedFrom`. Never combine with `partOf` |
+| `correspondences` | Two elements that **may** be one, with nothing showing it. See below |
 | `synonyms` | |
 
 ### Elements are homology groups too
@@ -480,6 +481,42 @@ treats it as a change in the skeleton rather than a shift of the muscle.
 Only the compound carries the edge. The reverse — "this bone was incorporated
 into that one" — is derived by scanning, the same way a tetrapod muscle's fin
 ancestry is derived rather than stored twice.
+
+### `correspondences` — the relation that asserts nothing
+
+```jsonc
+"correspondences": [
+  { "relation": "possibly-corresponds-to",
+    "to": "epipubic-bone",
+    "basis": "positional",              // positional | developmental
+    "confidence": "undemonstrated",
+    "sources": ["walker-1973", "cunningham-1882", "reilly-white-2003"],
+    "note": "…the case for it, and what is missing" }   // required
+]
+```
+
+`partOf`, `derivedFrom` and `fusedFrom` each state a fact about the skeleton.
+This one states that two elements **might** be one element and that **no cited
+source has shown it**, which is a different kind of claim and needs its own
+vocabulary or it gets rounded to one of the other three.
+
+It exists because both alternatives were wrong. `epipubis` held the turtle
+epipubic cartilage and the mammalian epipubic bone as a single element on
+position alone — the same shape of error as `hyomandibula`/`stapes`, run
+backwards: there two names for one element were split, here two elements were
+merged on a homology nobody demonstrated. But splitting them with no vocabulary
+to link them would have thrown away the real observation that they may
+correspond.
+
+The `note` is **required**, and must say what the positional case is and what is
+missing from it. An undemonstrated correspondence with no note is a shrug with a
+schema around it.
+
+**Record the edge once.** The reverse is derived by scanning, exactly as with
+fusion and fission; `validate.py` errors if both directions are stored. The
+interface renders it in both directions under a *homology undemonstrated* chip,
+styled apart from fusion and fission so it does not read as a third kind of
+transformation.
 
 `presence` is what lets the interface say a muscle's attachment *had to move*
 rather than silently dropping a row. It is also enforced: attaching a muscle to

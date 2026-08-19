@@ -817,6 +817,25 @@ function renderElementNode(e, taxonId, q, depth) {
       in tetrapods.` : ''
   ].filter(Boolean).join(' ');
 
+  /* The undemonstrated edge, both ways. This is the only element relation that
+     asserts nothing, so it has to read as a question rather than a fact — the
+     whole reason it exists is that the epipubic cartilage and the epipubic bone
+     were one record on position alone, and neither splitting them silently nor
+     leaving them merged would have said so. Curated once, reversed by scanning,
+     like the other two. */
+  const corrOut = (e.correspondences || []).map(c => ({ ...c, other: c.to }));
+  const corrIn = state.elements.flatMap(x =>
+    (x.correspondences || [])
+      .filter(c => c.to === e.id)
+      .map(c => ({ ...c, other: x.id })));
+  const corrHtml = [...corrOut, ...corrIn].map(c => `
+    <p class="cellnote corr">
+      <span class="chip conf-contested">homology undemonstrated</span>
+      May correspond to ${elLink(c.other)}${c.basis === 'positional'
+        ? ', on position alone' : `, on ${esc(c.basis)} grounds`}.
+      ${c.note ? emph(c.note) : ''}
+    </p>`).join('');
+
   const note = (e.presence || {}).note;
   const alias = taxonId && elementLabel(e.id, taxonId) !== e.label ? e.label : null;
   const open = q ? ' open' : '';
@@ -834,6 +853,7 @@ function renderElementNode(e, taxonId, q, depth) {
       ${note ? `<p class="cellnote">${emph(note)}</p>` : ''}
       ${fusionLines ? `<p class="cellnote fusion">${fusionLines}</p>` : ''}
       ${fissionLines ? `<p class="cellnote fission">${fissionLines}</p>` : ''}
+      ${corrHtml}
       ${e.transformation ? `<p class="cellnote">${esc(e.transformation)}</p>` : ''}
       ${(here.origin.length || here.insertion.length) ? `
         <div class="grp"><b>Origin of (${here.origin.length})</b>${list(here.origin)}</div>

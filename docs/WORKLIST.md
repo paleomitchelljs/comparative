@@ -254,14 +254,21 @@ whatever the most recent mammalian treatment says, and it is a re-assignment of 
 dataset's flagship arch-identity example, so it is left as a decision rather than
 made in passing.
 
-**`epipubis` groups two things that may not be one.** It holds the turtle's
-cartilaginous epipubic process and the mammalian epipubic bone, on position: both
-are the anterior process of the pubis and both take hypaxial and adductor
-attachments. That is the usual reading, but neither source cited on the element
-demonstrates the homology, and the mammalian element is not uniform even within
-Cunningham's three marsupials — a large paired bone in the cuscus, a cartilaginous
-nodule in the thylacine. **Reilly & White (2003)** is in `papers/`, unmined, and is
-the source that bears on it. Until it is read, splitting the record stays live.
+**~~`epipubis` groups two things that may not be one.~~ Split.** It is now
+`epipubic-cartilage` (Testudines, Lepidosauria) and `epipubic-bone` (Theria,
+Monotremata), linked by a `possibly-corresponds-to` edge that says the positional
+case and says no source demonstrates it.
+
+Reilly & White (2003) was named here as the source that would settle it. **It does
+not** — it is a two-page *Science* report on *Monodelphis* locomotion that never
+mentions a turtle, and it is now read and cited for what it does show, that the
+epipubic bone is a lever in a kinetic linkage. What actually decided the split was
+Osawa (1898): in *Sphenodon* the processus epipubicus and the ypsiloid cartilage
+are the same structure under two authors' names, so the reptilian element is the
+ypsiloid cartilage and the mammalian one is an ossification with its own joint.
+The dataset's own rows also failed the shared-attachment argument the old note
+made — the turtle cartilage carries the puboischiofemoralis internus, the
+mammalian bone the adductor femoris and puboischiotibialis.
 
 **~~Dick & Clemente (2016) is mapped to an animal it never names.~~ Settled.** Its
 six rows are on `varanidae-generalised`, and the source is out of `SOURCE_SPECIES`.

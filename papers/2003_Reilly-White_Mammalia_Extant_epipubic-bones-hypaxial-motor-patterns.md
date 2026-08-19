@@ -13,24 +13,48 @@ locomotor cycle rather than a marsupial curiosity.
 
 ## What it is used for here
 
-Cited on one `skeleton.json` element: **`epipubis`**. No muscle rows.
+Cited on the `skeleton.json` element **`epipubic-bone`**, and on the
+`possibly-corresponds-to` edge between that and `epipubic-cartilage`. No muscle
+rows.
 
-## The open decision this source would settle
+## Read. It does not settle the epipubis question, and this note used to say it would
 
-`epipubis` currently groups two things on position: the **turtle's cartilaginous
-epipubic process** and the **mammalian epipubic bone**. Both are the anterior process
-of the pubis and both take hypaxial and adductor attachments, and Cunningham (1882)
-hangs four marsupial muscles on the *os marsupium* — pectineus, adductor longus and
-adductor brevis take origin from it, and the psoas parvus inserts on the pubis
-immediately beside it.
+For several passes this note, `WORKLIST.md` and the element itself all named this
+paper as the unmined source that would decide whether the turtle's cartilaginous
+epipubic process and the mammalian epipubic bone are one element. **It does not
+bear on that question at all.**
 
-**That grouping is the usual reading and neither cited source demonstrates the
-homology.** The mammalian element is not even uniform across Cunningham's three
-animals: a large paired bone in the cuscus, a cartilaginous nodule in the thylacine.
+It is a two-page *Science* report on hypaxial motor patterns in *Monodelphis
+domestica*, recorded by electromyography during treadmill locomotion. It **never
+mentions a turtle**. Its only cross-taxon statements are that epipubic bones
+articulate from the anterior pubic processes of "the primitive puboischiatic plate
+of amniotes", which is a general remark rather than a demonstration, and comparisons
+to lateral bending in salamanders and lizards, which are about motor pattern rather
+than about the element.
 
-**This paper is the one that bears on it, and it is unmined.** Its `role` line has
-said so since before the element carried anything but a turtle. Until it is read,
-splitting the record stays a live option — see `WORKLIST.md`.
+Naming it as the source that would settle the grouping was an inference from its
+title. Reading the paper was what corrected it.
+
+## What it does show, which is worth having
+
+The epipubic bone is a **lever in a kinetic linkage**, not a static support: the
+bone connects the abdominal wall to the femur, with the pyramidalis and rectus
+abdominis on one side and the contralateral oblique abdominal muscles on the other,
+active during the stance phase. That is now on `epipubic-bone`.
+
+## What did settle the split
+
+**Osawa (1898).** In *Sphenodon* a cartilaginous process runs forward from the
+ventromedial angle of the pubis, which Wiedersheim named the *processus epipubicus*
+and Perrin the *cartilage ypsiloide* — the same structure under two names. So the
+reptilian element is the ypsiloid cartilage, and the mammalian one is an
+ossification with its own joint. Walker (1973) describes the turtle structure as
+cartilage throughout.
+
+The dataset's own rows also failed the argument the old grouping rested on. It
+claimed both elements take hypaxial and adductor attachments; in the data the turtle
+cartilage carries the puboischiofemoralis internus, and the mammalian bone the
+adductor femoris and the puboischiotibialis.
 
 ## Relevance to comparative anatomy teaching
 

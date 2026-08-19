@@ -589,6 +589,12 @@ table.bonepair .bp-taxa { font-family: var(--font-ui); font-size: 0.76rem; color
 .inh-tag.fis-tag { color: var(--mod); background: var(--mod-bg); }
 .chip.fuse { color: var(--unc); border-color: var(--unc); }
 
+/* Neither of the above: two elements that may be one, with nothing showing it.
+   Set apart from fusion and fission deliberately — those are facts about the
+   skeleton and this is an open question, so it must not read like a third
+   kind of transformation. */
+.cellnote.corr { color: var(--warn); border-left: 2px solid var(--warn); padding-left: .6em; }
+
 /* ---------- attachment rows: bone > side > landmark ---------- */
 .attachgrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.25rem; }
 .attach-h {

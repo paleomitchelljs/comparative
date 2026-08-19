@@ -23,7 +23,7 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-129 muscle records · 1368 present occurrences · 272 skeletal elements · 120 sources · 20 operational taxa
+129 muscle records · 1368 present occurrences · 273 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
@@ -117,7 +117,7 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 272, of which 252 (93%) carry at least one attachment |
+| Elements | 273, of which 253 (93%) carry at least one attachment |
 | Observed attachment rows | 3619 |
 | Rows naming a **landmark** | 1017 (28%) |
 | Rows naming a **side** | 1965 (54%) |
@@ -139,7 +139,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 | axial | 37 | 32 | 0.9 |
 | forelimb | 59 | 46 | 0.8 |
 | fin | 8 | 5 | 0.6 |
-| pelvic | 31 | 17 | 0.5 |
+| pelvic | 31 | 18 | 0.6 |
 <!-- /counts:parity -->
 
 ## Whose homology scheme each record follows
