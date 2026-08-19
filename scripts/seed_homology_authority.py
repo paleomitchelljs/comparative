@@ -33,6 +33,10 @@ def cited_keys(muscle):
     """Every source key the record leans on, at any depth."""
     keys = set(muscle.get("sources") or [])
     keys.update((muscle.get("layerSource") or {}).get("sources") or [])
+    # A correspondence is a homology claim in its own right, so whoever supports
+    # it is a candidate for governing this record's homology.
+    for e in ((muscle.get("homology") or {}).get("correspondences") or []):
+        keys.update(e.get("sources") or [])
     for occ in muscle.get("occurrences") or []:
         keys.update(occ.get("sources") or [])
         for part in occ.get("parts") or []:

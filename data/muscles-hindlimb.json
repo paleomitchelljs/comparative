@@ -700,11 +700,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "A stable row across Tetrapoda. Its subdivision in mammals into iliacus, psoas major and sartorius is a derived elaboration.",
-        "serial": {
-          "forelimb": "subcoracoscapularis",
-          "basis": "topological",
-          "caution": "Topological correspondence only — the pelvic and pectoral internal girdle muscles were not acquired at the same time."
-        },
         "related": [
           "ambiens",
           "iliofemoralis",
@@ -714,7 +709,21 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "adductor-profundus",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "subcoracoscapularis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "Topological correspondence only — the pelvic and pectoral internal girdle muscles were not acquired at the same time."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -906,7 +915,8 @@
             },
             {
               "name": "Gemelli",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "ischiotrochantericus"
             }
           ],
           "divisionNote": "The gemelli are claimed by this field and by the ischiotrochantericus; the dataset records both claims.",
@@ -1239,7 +1249,8 @@
             },
             {
               "name": "Gemellus",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "ischiotrochantericus"
             }
           ],
           "divisionNote": "Gambaryan et al. group all three in a short postfemoral field together with the caudofemoralis. They describe a single gemellus, not a pair. Its membership is carried as disputed here because the same muscle is claimed by `ischiotrochantericus` on other rows of this dataset; this source does not adjudicate that, and describes no obturator internus at all.",
@@ -1293,7 +1304,8 @@
             },
             {
               "name": "Gemellus",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "ischiotrochantericus"
             }
           ],
           "sources": [
@@ -1335,10 +1347,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "The obturator nerve is the constant marker for this field across Tetrapoda.",
-        "serial": {
-          "forelimb": "coracobrachialis",
-          "basis": "topological"
-        },
         "related": [
           "adductor-femoris",
           "ischiotrochantericus",
@@ -1347,7 +1355,32 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "corresponds-to-part-of",
+            "to": "ischiotrochantericus",
+            "fromPart": "Gemelli",
+            "sources": [
+              "diogo-molnar-2014",
+              "gest-anatomy-tables",
+              "gambaryan-etal-2002"
+            ],
+            "confidence": "contested",
+            "note": "See the reciprocal edge on `ischiotrochantericus`."
+          },
+          {
+            "relation": "descends-from",
+            "to": "abductor-profundus",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "coracobrachialis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -2053,10 +2086,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "Universal in Tetrapoda. The functional transformation — from a modest abductor in a sprawling limb to the principal pelvic stabiliser in a parasagittal one — happens without any change in identity, origin, insertion or nerve.",
-        "serial": {
-          "forelimb": "deltoideus-scapularis",
-          "basis": "topological"
-        },
         "related": [
           "caudofemoralis",
           "gluteus-maximus",
@@ -2068,7 +2097,20 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "adductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "deltoideus-scapularis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -2609,11 +2651,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "Presence and size track the fourth trochanter directly, making this the most reliably reconstructed hindlimb muscle in fossils. Its independent reduction in birds and in mammals accompanies two separate shifts away from tail-driven femoral retraction. Anurans are a third such reduction and the most complete: with the tail lost and the caudal series replaced by the urostyle, the muscle's origin has no vertebrae to arise from.",
-        "serial": {
-          "forelimb": null,
-          "basis": "none",
-          "caution": "No forelimb counterpart. The caudofemoralis is a clean falsification of any expectation of one-to-one fore/hindlimb correspondence."
-        },
         "related": [
           "caudal-musculature",
           "caudalipuboischiotibialis",
@@ -2628,7 +2665,15 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "no-counterpart",
+            "axis": "forelimb-hindlimb",
+            "basis": "none",
+            "note": "No forelimb counterpart. The caudofemoralis is a clean falsification of any expectation of one-to-one fore/hindlimb correspondence."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -3368,11 +3413,6 @@
         "confidence": "contested",
         "notes": "The urodele/reptile correspondence is actively disputed. Kardong (2002) derives the reptilian femorotibialis, iliotibialis and 'ambiens' from three distinct salamander muscles; Gadow (1882), Walker (1954) and Diogo & Molnar derive all three from a single salamander extensor iliotibialis. The dissections in Diogo & Molnar (2014) support the latter.",
         "openQuestion": "One salamander muscle or three? The answer changes how many separate acquisitions are needed in the reptile lineage.",
-        "serial": {
-          "forelimb": "triceps-brachii",
-          "basis": "topological",
-          "caution": "Both are the principal extensor of the second limb joint, but the correspondence is functional and topological, not developmental."
-        },
         "related": [
           "femorotibialis",
           "ambiens"
@@ -3381,7 +3421,21 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "adductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "triceps-brachii",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "Both are the principal extensor of the second limb joint, but the correspondence is functional and topological, not developmental."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -3661,10 +3715,6 @@
         "confidence": "well-supported",
         "notes": "One of the muscles whose name survives unchanged from crocodylians to birds in Allen et al.'s (2021) table. Its correspondence with the mammalian biceps femoris is proposed but not settled — Diogo & Molnar (2014) treat the hamstring group as deriving from the ischioflexorius field rather than from a single iliofibularis.",
         "openQuestion": "Is the amniote iliofibularis the homologue of the mammalian biceps femoris, or does the hamstring group derive wholesale from the ischioflexorius field?",
-        "serial": {
-          "forelimb": null,
-          "basis": "none"
-        },
         "related": [
           "iliofemoralis",
           "ischioflexorius",
@@ -3674,7 +3724,14 @@
         "authority": {
           "source": "prikryl-etal-2009",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "no-counterpart",
+            "axis": "forelimb-hindlimb",
+            "basis": "none"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -4348,10 +4405,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "The femorotibialis → vasti correspondence is one of the least contested in the hindlimb. Together with the rectus femoris (from extensor iliotibialis) it forms the mammalian quadriceps — a composite of two different ancestral muscles, which is why the rectus femoris crosses the hip and the vasti do not.",
-        "serial": {
-          "forelimb": "brachialis",
-          "basis": "topological"
-        },
         "related": [
           "extensor-iliotibialis"
         ],
@@ -4359,7 +4412,15 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "brachialis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -4627,10 +4688,6 @@
       "homology": {
         "confidence": "contested",
         "notes": "The critical diagnostic is that the 'ambiens' is a DORSAL muscle sitting in a ventral position. The amphibian 'pubifemoralis', which looks superficially similar in dorsal view, is a deep VENTRAL muscle and corresponds instead to the reptilian adductor femoris. Diogo & Molnar make this call explicitly and reject the ambiens→sartorius derivation.",
-        "serial": {
-          "forelimb": null,
-          "basis": "none"
-        },
         "related": [
           "adductor-femoris",
           "extensor-iliotibialis",
@@ -4641,7 +4698,14 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "no-counterpart",
+            "axis": "forelimb-hindlimb",
+            "basis": "none"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -5254,10 +5318,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "Diogo & Molnar note that almost all amphibian–reptile ventral pelvic/thigh homologies are straightforward and consensual, with exactly two exceptions: the amphibian 'pubifemoralis' and 'ischiofemoralis'. They resolve both — pubifemoralis = adductor femoris, ischiofemoralis = ischiotrochantericus.",
-        "serial": {
-          "forelimb": "pectoralis",
-          "basis": "topological"
-        },
         "related": [
           "ambiens",
           "ischiotrochantericus",
@@ -5267,7 +5327,15 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "pectoralis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -5408,7 +5476,8 @@
             },
             {
               "name": "Gemelli",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "puboischiofemoralis-externus"
             }
           ],
           "divisionNote": "The gemelli are claimed by this field and by the puboischiofemoralis externus; the dataset records both claims.",
@@ -5686,10 +5755,6 @@
       "homology": {
         "confidence": "moderate",
         "notes": "One of the two contested amphibian ventral pelvic muscles resolved by Diogo & Molnar (the other being 'pubifemoralis').",
-        "serial": {
-          "forelimb": "subcoracoscapularis",
-          "basis": "topological"
-        },
         "related": [
           "adductor-femoris",
           "puboischiofemoralis-externus"
@@ -5697,7 +5762,27 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "corresponds-to-part-of",
+            "to": "puboischiofemoralis-externus",
+            "fromPart": "Gemelli",
+            "sources": [
+              "diogo-molnar-2014",
+              "ercoli-etal-2012",
+              "cunningham-1882"
+            ],
+            "confidence": "contested",
+            "note": "The gemelli are claimed by this record and by `puboischiofemoralis-externus`, and this dataset records both claims rather than settling them. Cunningham (1882) puts them here by dissection in the thylacine and the cuscus; Gambaryan et al. (2002) group a single gemellus with the obturator externus field in the monotremes. A question about which of two deep hip muscles the gemelli belong to, answered for individual animals by dissection and not for Mammalia by argument."
+          },
+          {
+            "relation": "serial",
+            "to": "subcoracoscapularis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -6227,10 +6312,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "Diogo & Molnar single out the gracilis as the one muscle for which the last common ancestor of tetrapods probably had a directly corresponding individual muscle in the modern human sense — the muscles printed in bold in their Table 1. Every other human hindlimb muscle is a subdivision or recombination.",
-        "serial": {
-          "forelimb": null,
-          "basis": "none"
-        },
         "related": [
           "adductor-femoris",
           "caudalipuboischiotibialis",
@@ -6241,7 +6322,14 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "no-counterpart",
+            "axis": "forelimb-hindlimb",
+            "basis": "none"
+          }
+        ]
       },
       "sources": [
         "diogo-molnar-2014",
@@ -7034,11 +7122,6 @@
       "homology": {
         "confidence": "moderate",
         "notes": "The hamstring group derives from this field, but the correspondences head-by-head are not settled. Diogo & Molnar reject the classical claim (Gregory & Camp 1918; Romer 1922; Haines 1935) that the mammalian tenuissimus is the caudal head of biceps femoris; following Jones (1979) they derive tenuissimus from a dorsal tail-region muscle homologous with the reptilian 'flexor cruris tarsi dorsalis'.",
-        "serial": {
-          "forelimb": "triceps-brachii",
-          "basis": "topological",
-          "caution": "Frequently asserted; the two are innervated by different divisions and derive from opposite masses (hamstrings ventral, triceps dorsal). This correspondence should be treated as functional analogy."
-        },
         "related": [
           "caudofemoralis",
           "femorofibularis",
@@ -7050,7 +7133,31 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "abductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "descends-from",
+            "to": "pterygialis-caudalis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "descends-from",
+            "to": "pterygialis-cranialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "triceps-brachii",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "Frequently asserted; the two are innervated by different divisions and derive from opposite masses (hamstrings ventral, triceps dorsal). This correspondence should be treated as functional analogy."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -7386,10 +7493,6 @@
       "homology": {
         "confidence": "moderate",
         "notes": "A mammalian differentiation from the dorsal iliac field. Its name is applied to non-homologous muscles in the anuran literature — one of the clearest cases in Diogo & Molnar's list of false-friend names ('tensor fasciae latae', 'gluteus maximus', 'gemellus', 'obturator externus', 'quadratus femoris', 'obturator internus', 'pectineus', 'adductor longus', 'iliacus', 'sartorius', 'semitendinosus', 'adductor magnus' — none homologous in anurans to the human muscles of the same name).",
-        "serial": {
-          "forelimb": "deltoideus-scapularis",
-          "basis": "topological"
-        },
         "related": [
           "iliofemoralis",
           "caudofemoralis"
@@ -7398,7 +7501,15 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "deltoideus-scapularis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "diogo-molnar-2014",
@@ -8038,18 +8149,22 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "Universal across Tetrapoda. Head count and the femoral versus tibial origin vary. In anurans it is the principal jump-propulsion muscle and is hypertrophied relative to every other muscle of the leg.",
-        "serial": {
-          "forelimb": "flexor-digitorum-longus",
-          "basis": "topological",
-          "caution": "The crural and antebrachial flexor masses correspond as fields, but muscle-for-muscle mapping within them is unreliable."
-        },
         "related": [
           "flexor-digitorum-longus-hl"
         ],
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "flexor-digitorum-longus",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "The crural and antebrachial flexor masses correspond as fields, but muscle-for-muscle mapping within them is unreliable."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -8808,10 +8923,6 @@
       ],
       "homology": {
         "confidence": "contested",
-        "serial": {
-          "forelimb": "extensor-antebrachii-carpi-radialis",
-          "basis": "topological"
-        },
         "related": [
           "extensor-cruris-et-tarsi-fibularis",
           "extensor-digitorum-longus-hl",
@@ -8823,7 +8934,20 @@
         "authority": {
           "source": "hattori-tsuihiji-2021",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "adductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "extensor-antebrachii-carpi-radialis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -9595,11 +9719,6 @@
       "homology": {
         "confidence": "contested",
         "notes": "The muscle itself is straightforward; the interest is in its derivatives. The human fibularis tertius / rat fibularis digiti quinti case is one of Diogo & Molnar's cleanest demonstrations that shared name plus shared nerve still does not establish homology. Hattori & Tsuihiji (2021) propose that the classical homologies of the two anterior tibial muscles are swapped: on their reading the avian m. tibialis cranialis is homologous with the NON-AVIAN m. extensor digitorum longus, and the avian m. extensor digitorum longus with the non-avian m. tibialis anterior. Their argument is that this requires no drastic change in attachment sites between avian and non-avian homologues, whereas the classical scheme does. The classical scheme descends from Romer (1923-27) and, they note, had been used uncritically by palaeontologists for a century. Their method weights morphological and functional congruence over innervation, on the grounds that nerve-muscle specificity is itself variable across taxa — which is the reverse of the priority used elsewhere in this dataset, and worth noting as a genuine methodological disagreement rather than a detail. Allen et al. (2021) independently adopt the revised scheme in their crocodylian-to-avian homology table, equating the crocodylian extensor digitorum longus with the avian m. tibialis cranialis. That is a second line of support for Hattori & Tsuihiji's reading against the classical one, from authors working on moment arms rather than on homology, so the agreement is not circular.",
-        "serial": {
-          "forelimb": "extensor-digitorum",
-          "basis": "topological",
-          "note": "In rats, the short extensors of digits 2 and 3 are fused in BOTH limbs — extensor indicis in the forelimb, extensor digitorum brevis in the hindlimb. Diogo & Molnar show these fusions are independently derived, producing apparent serial similarity by parallelism."
-        },
         "related": [
           "extensores-digitorum-breves-pes",
           "fibularis-group",
@@ -9609,7 +9728,21 @@
         "authority": {
           "source": "hattori-tsuihiji-2021",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "adductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "extensor-digitorum",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "In rats, the short extensors of digits 2 and 3 are fused in BOTH limbs — extensor indicis in the forelimb, extensor digitorum brevis in the hindlimb. Diogo & Molnar show these fusions are independently derived, producing apparent serial similarity by parallelism."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -10474,10 +10607,6 @@
         "confidence": "contested",
         "notes": "Diogo & Molnar dwell on this group because the innervation is diagnostic and cuts against the obvious grouping. The fibularis tertius and fibularis digiti quinti are innervated by the DEEP fibular nerve — which supplies short extensors such as extensor digitorum brevis — not by the superficial fibular nerve that supplies the true lateral muscles fibularis longus and brevis. Deriving them from the lateral mass would require the innervation to have changed; deriving them from the extensor anlage does not.",
         "openQuestion": "Diogo & Molnar state explicitly that a firm answer requires a much more extensive analysis including innervation and developmental data.",
-        "serial": {
-          "forelimb": null,
-          "basis": "none"
-        },
         "related": [
           "extensor-cruris-et-tarsi-fibularis",
           "extensor-digitorum-longus-hl",
@@ -10488,7 +10617,14 @@
         "authority": {
           "source": "hattori-tsuihiji-2021",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "no-counterpart",
+            "axis": "forelimb-hindlimb",
+            "basis": "none"
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -10876,11 +11012,6 @@
       "homology": {
         "confidence": "well-supported",
         "notes": "The popliteus derives from the interosseus cruris.",
-        "serial": {
-          "forelimb": "pronator-teres",
-          "basis": "topological",
-          "caution": "This is Diogo & Molnar's headline counter-example. The popliteus and pronator teres are frequently listed as forelimb–hindlimb topological equivalents, but they derive from DIFFERENT anlagen: popliteus from the interosseus cruris, pronator teres from the flexor antebrachii et carpi radialis. The true ontogenetic counterparts are hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus."
-        },
         "related": [
           "tibialis-posterior"
         ],
@@ -10888,7 +11019,21 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "adductor-profundus",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "pronator-teres",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "This is Diogo & Molnar's headline counter-example. The popliteus and pronator teres are frequently listed as forelimb–hindlimb topological equivalents, but they derive from DIFFERENT anlagen: popliteus from the interosseus cruris, pronator teres from the flexor antebrachii et carpi radialis. The true ontogenetic counterparts are hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus."
+          }
+        ]
       },
       "sources": [
         "diogo-molnar-2014",
@@ -11212,11 +11357,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "pronator-quadratus",
-          "basis": "developmental",
-          "note": "Diogo & Molnar identify hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus (pronator quadratus) as the REAL ontogenetic counterparts — as against the popliteus/pronator teres pairing, which is topological only."
-        },
         "related": [
           "popliteus"
         ],
@@ -11224,7 +11364,21 @@
         "authority": {
           "source": "diogo-molnar-2014",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "abductor-profundus",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "pronator-quadratus",
+            "axis": "forelimb-hindlimb",
+            "basis": "developmental",
+            "note": "Diogo & Molnar identify hindlimb tibialis posterior and forelimb palmaris profundus / pronator profundus (pronator quadratus) as the REAL ontogenetic counterparts — as against the popliteus/pronator teres pairing, which is topological only."
+          }
+        ]
       },
       "sources": [
         "diogo-molnar-2014",
@@ -11805,11 +11959,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "flexor-digitorum-longus",
-          "basis": "topological",
-          "note": "Among the strongest forelimb–hindlimb correspondences. Diogo & Molnar's Fig. 3 shows that the distal (zeugopodial and autopodial) muscles of the salamander fore and hind limbs are strikingly similar, while the proximal (girdle and stylopodial) muscles are clearly different."
-        },
         "related": [
           "femorofibularis",
           "flexores-breves-superficiales-pes",
@@ -11819,7 +11968,21 @@
         "authority": {
           "source": "diogo-etal-2016",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "abductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "flexor-digitorum-longus",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "Among the strongest forelimb–hindlimb correspondences. Diogo & Molnar's Fig. 3 shows that the distal (zeugopodial and autopodial) muscles of the salamander fore and hind limbs are strikingly similar, while the proximal (girdle and stylopodial) muscles are clearly different."
+          }
+        ]
       },
       "sources": [
         "allen-etal-2021",
@@ -12277,11 +12440,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "flexores-breves-superficiales",
-          "basis": "topological",
-          "note": "Part of the strongly corresponding distal muscle set."
-        },
         "related": [
           "contrahentes-digitorum-pes",
           "flexor-digitorum-longus-hl",
@@ -12290,7 +12448,21 @@
         "authority": {
           "source": "blotto-etal-2020",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "abductor-superficialis",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "flexores-breves-superficiales",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "Part of the strongly corresponding distal muscle set."
+          }
+        ]
       },
       "sources": [
         "blotto-etal-2020",
@@ -13517,10 +13689,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "contrahentes-digitorum",
-          "basis": "topological"
-        },
         "related": [
           "contrahentium-caput-longum-pes",
           "flexores-breves-profundi-pes",
@@ -13529,7 +13697,15 @@
         "authority": {
           "source": "blotto-etal-2020",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "contrahentes-digitorum",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "blotto-etal-2020",
@@ -14926,11 +15102,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "flexores-breves-profundi",
-          "basis": "topological",
-          "note": "One of the strongest distal correspondences: the same three-layer plantar/palmar system in both limbs."
-        },
         "related": [
           "abductor-digiti-minimi-pes",
           "contrahentes-digitorum-pes",
@@ -14941,7 +15112,21 @@
         "authority": {
           "source": "blotto-etal-2020",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "descends-from",
+            "to": "abductor-profundus",
+            "girdle": "pelvic"
+          },
+          {
+            "relation": "serial",
+            "to": "flexores-breves-profundi",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "note": "One of the strongest distal correspondences: the same three-layer plantar/palmar system in both limbs."
+          }
+        ]
       },
       "sources": [
         "blotto-etal-2020",
@@ -15879,10 +16064,6 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "pronator-quadratus",
-          "basis": "topological"
-        },
         "related": [
           "pronator-profundus-pes",
           "pronator-quadratus"
@@ -15891,7 +16072,15 @@
         "authority": {
           "source": "russell-bauer-2008",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "pronator-quadratus",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "walthall-ashley-ross-2006",
@@ -16024,10 +16213,6 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "pronator-quadratus",
-          "basis": "topological"
-        },
         "related": [
           "interosseus-cruris",
           "flexor-accessorius-medialis-pes"
@@ -16036,7 +16221,15 @@
         "authority": {
           "source": "russell-bauer-2008",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "pronator-quadratus",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "walthall-ashley-ross-2006",
@@ -16144,10 +16337,6 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "contrahentium-caput-longum",
-          "basis": "topological"
-        },
         "related": [
           "contrahentes-digitorum-pes"
         ],
@@ -16155,7 +16344,15 @@
         "authority": {
           "source": "blotto-etal-2020",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "contrahentium-caput-longum",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "abdala-diogo-2010",
@@ -16341,12 +16538,16 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "flexor-accessorius-lateralis",
-          "basis": "topological"
-        },
         "related": [
           "flexor-accessorius-medialis-pes"
+        ],
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "flexor-accessorius-lateralis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
         ]
       },
       "sources": [
@@ -16442,13 +16643,17 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "flexor-accessorius-medialis",
-          "basis": "topological"
-        },
         "related": [
           "flexor-accessorius-lateralis-pes",
           "pronator-profundus-pes"
+        ],
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "flexor-accessorius-medialis",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
         ]
       },
       "sources": [
@@ -16554,10 +16759,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "intermetacarpales",
-          "basis": "topological"
-        },
         "related": [
           "flexores-breves-profundi-pes",
           "interossei-dorsales-pes"
@@ -16565,7 +16766,15 @@
         "authority": {
           "source": "russell-bauer-2008",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "intermetacarpales",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "walthall-ashley-ross-2006",
@@ -17252,10 +17461,6 @@
       ],
       "homology": {
         "confidence": "well-supported",
-        "serial": {
-          "forelimb": "extensores-digitorum-breves",
-          "basis": "topological"
-        },
         "related": [
           "abductor-et-extensor-digiti-i-pes",
           "extensor-digitorum-longus-hl",
@@ -17264,7 +17469,15 @@
         "authority": {
           "source": "hattori-tsuihiji-2021",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "extensores-digitorum-breves",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "abdala-diogo-2010",
@@ -17973,10 +18186,6 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "abductor-pollicis-longus",
-          "basis": "topological"
-        },
         "related": [
           "abductor-digiti-minimi-pes",
           "extensores-digitorum-breves-pes"
@@ -17984,7 +18193,15 @@
         "authority": {
           "source": "hattori-tsuihiji-2021",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "abductor-pollicis-longus",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "walthall-ashley-ross-2006",
@@ -18839,10 +19056,6 @@
       ],
       "homology": {
         "confidence": "moderate",
-        "serial": {
-          "forelimb": "abductor-digiti-minimi",
-          "basis": "topological"
-        },
         "related": [
           "abductor-et-extensor-digiti-i-pes",
           "flexores-breves-profundi-pes"
@@ -18851,7 +19064,15 @@
         "authority": {
           "source": "blotto-etal-2020",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "abductor-digiti-minimi",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological"
+          }
+        ]
       },
       "sources": [
         "abdala-diogo-2010",

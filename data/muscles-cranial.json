@@ -602,11 +602,13 @@
             },
             {
               "name": "Tensor tympani",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "intermandibularis"
             },
             {
               "name": "Tensor veli palatini",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "intermandibularis"
             }
           ],
           "divisionNote": "Masseter, temporalis and the detrahens come from adductor mandibulae A2, the pterygoideus medialis from A3'; the two tensors are derived by Diogo et al. from A2-PVM, and are carried as disputed because this dataset also scores them as parts of `intermandibularis`.",
@@ -636,11 +638,13 @@
             },
             {
               "name": "Tensor tympani",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "intermandibularis"
             },
             {
               "name": "Tensor veli palatini",
-              "membership": "disputed"
+              "membership": "disputed",
+              "claimedBy": "intermandibularis"
             }
           ],
           "divisionNote": "The two tensors are carried as disputed: Diogo et al. derive them from adductor mandibulae A2-PVM, and this dataset also scores them as parts of `intermandibularis`.",
@@ -668,7 +672,36 @@
         "authority": {
           "source": "ziermann-diogo-2019",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "corresponds-to-part-of",
+            "to": "intermandibularis",
+            "fromPart": "Tensor tympani",
+            "taxa": [
+              "monotremata",
+              "theria"
+            ],
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "contested",
+            "note": "Diogo et al. (2008) Table 1 derive the tensor tympani and tensor veli palatini from adductor mandibulae A2-PVM; this dataset scores both as parts of the human mylohyoid row on `intermandibularis`. Both fields are mandibular-arch and both take CN V, so arch identity is unaffected — what is contested is which record holds the muscle. Open decision in `docs/WORKLIST.md`."
+          },
+          {
+            "relation": "corresponds-to-part-of",
+            "to": "intermandibularis",
+            "fromPart": "Tensor veli palatini",
+            "taxa": [
+              "monotremata",
+              "theria"
+            ],
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "contested"
+          }
+        ]
       },
       "sources": [
         "jayaram-etal-1983",
@@ -913,10 +946,14 @@
               "name": "Anterior belly of digastric"
             },
             {
-              "name": "Tensor tympani"
+              "name": "Tensor tympani",
+              "membership": "disputed",
+              "claimedBy": "adductor-mandibulae"
             },
             {
-              "name": "Tensor veli palatini"
+              "name": "Tensor veli palatini",
+              "membership": "disputed",
+              "claimedBy": "adductor-mandibulae"
             }
           ],
           "action": "Elevates the floor of the mouth and the hyoid; tensor tympani damps the ossicular chain; tensor veli palatini tenses the soft palate and opens the auditory tube.",
@@ -1070,7 +1107,61 @@
         "authority": {
           "source": "ziermann-diogo-2019",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "corresponds-to-part-of",
+            "to": "adductor-mandibulae",
+            "toPart": "Tensor tympani",
+            "taxa": [
+              "monotremata",
+              "theria"
+            ],
+            "sources": [
+              "gest-anatomy-tables",
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "contested",
+            "note": "Scored here as a part of the human mylohyoid row; Diogo et al. (2008) derive it from adductor mandibulae A2-PVM instead. See the reciprocal edge on `adductor-mandibulae`."
+          },
+          {
+            "relation": "corresponds-to-part-of",
+            "to": "adductor-mandibulae",
+            "toPart": "Tensor veli palatini",
+            "taxa": [
+              "monotremata",
+              "theria"
+            ],
+            "sources": [
+              "gest-anatomy-tables",
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "contested",
+            "note": "Scored here as a part of the human mylohyoid row; Diogo et al. (2008) derive it from adductor mandibulae A2-PVM instead. See the reciprocal edge on `adductor-mandibulae`."
+          },
+          {
+            "relation": "serial",
+            "to": "branchial-constrictors",
+            "axis": "pharyngeal-arch",
+            "basis": "developmental",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "well-supported",
+            "note": "Arch 1 and arches 3-7 of the same ventral constrictor series; see the arch-2 edge on `interhyoideus`."
+          },
+          {
+            "relation": "serial",
+            "to": "interhyoideus",
+            "axis": "pharyngeal-arch",
+            "basis": "developmental",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "well-supported",
+            "note": "The ventral constrictor series, arch by arch. Diogo et al. (2008) organise their mandibular table into ventral and dorsal blocks explicitly *sensu* Edgeworth (1935), and the ventral member of each arch is what this series holds: the intermandibularis in arch 1, the interhyoideus in arch 2, the constrictores branchiales in arches 3-7. **Serial, not genealogical** — arch 2 is not descended from arch 3."
+          }
+        ]
       },
       "sources": [
         "jayaram-etal-1983",
@@ -2023,7 +2114,30 @@
         "authority": {
           "source": "ziermann-diogo-2019",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "branchial-constrictors",
+            "axis": "pharyngeal-arch",
+            "basis": "developmental",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "well-supported",
+            "note": "The ventral constrictor series, arch by arch. Diogo et al. (2008) organise their mandibular table into ventral and dorsal blocks explicitly *sensu* Edgeworth (1935), and the ventral member of each arch is what this series holds: the intermandibularis in arch 1, the interhyoideus in arch 2, the constrictores branchiales in arches 3-7. **Serial, not genealogical** — arch 2 is not descended from arch 3."
+          },
+          {
+            "relation": "serial",
+            "to": "intermandibularis",
+            "axis": "pharyngeal-arch",
+            "basis": "developmental",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "well-supported"
+          }
+        ]
       },
       "sources": [
         "jones-etal-2019",
@@ -2812,7 +2926,29 @@
         "authority": {
           "source": "ziermann-diogo-2019",
           "basis": "computed"
-        }
+        },
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "interhyoideus",
+            "axis": "pharyngeal-arch",
+            "basis": "developmental",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "well-supported"
+          },
+          {
+            "relation": "serial",
+            "to": "intermandibularis",
+            "axis": "pharyngeal-arch",
+            "basis": "developmental",
+            "sources": [
+              "diogo-etal-2008-head"
+            ],
+            "confidence": "well-supported"
+          }
+        ]
       },
       "sources": [
         "higashiyama-etal-2016",

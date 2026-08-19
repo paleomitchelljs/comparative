@@ -189,8 +189,10 @@ their adductor row for all five mammals they examined. Nothing about arch identi
 turns on it: both fields are mandibular-arch, both take CN V, and the teaching pair
 of tensor tympani against stapedius survives either reading. What turns on it is
 which record a student finds the muscle under, and this dataset currently answers
-that twice. The rows on `adductor-mandibulae` carry both tensors as `membership:
-"disputed"` and the disagreement is written on both records.
+that twice. Both records now carry `corresponds-to-part-of` edges naming the other, and both
+parts carry `membership: "disputed"` with `claimedBy`, so the dispute is
+queryable rather than prose. **What remains is the decision itself**: which record
+should hold the muscle, or whether holding it on both is the honest answer.
 
 The date does not settle this one. `intermandibularis`'s computed authority is
 Ziermann & Diogo (2019), which is more recent than 2008 but is **a chapter on head

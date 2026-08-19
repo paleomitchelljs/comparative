@@ -127,7 +127,6 @@ So each record has:
 | `layer` | | `superficialis` · `profundus` · `preaxial` · `postaxial` · `primaxial`. With `mass`, gives the four-cell classification (abductor/adductor × superficialis/profundus) that Mansuit & Herrel (2021) use to compare architecture across the whole fin-to-limb transition. Currently populated on `region: "fin"` records; see `docs/ROADMAP.md` phase 1 |
 | `arch` | | Pharyngeal arch number, or a string like `"3–7"`. Cranial records only |
 | `ancestralNode` | | Where the muscle first appears, e.g. `"LCA of extant gnathostomes"`. Fin records |
-| `derivatives` | | `{pectoral: [], pelvic: []}` — muscle `id`s this ancestral fin muscle gave rise to. See below |
 | `developmental` | | Embryonic origin. This is often the decisive homology evidence — state it when known |
 | `synonyms` | | Every other name for this muscle, **with the author who used it**. These are indexed for search, so they are how a reader arrives from an old paper |
 | `consensus` | | `{origin, insertion, action, innervation}` — the generalised description |
@@ -218,9 +217,9 @@ ischio- and caudofemoralis series" expands two ways, and the turtle extraocular
 row names eleven units where its own note quotes Werneburg recording ten.
 
 **Do not use `parts` on fin records.** Their occurrence names list the tetrapod
-muscles each ancestral fin muscle gave rise to, which is `derivatives` — already
-curated, and already reversed by the app. Recording it twice gives one fact two
-homes.
+muscles each ancestral fin muscle gave rise to, which is a `descends-from`
+correspondence on each of those muscles — already curated, and already reversed
+by the app. Recording it twice gives one fact two homes.
 
 ### Homology block
 
@@ -230,7 +229,7 @@ homes.
 | `notes` | The assessment. Name the authors who disagree |
 | `openQuestion` | What is unresolved, and ideally what evidence would resolve it |
 | `related` | Muscle `id`s. Treated as an **undirected** graph — run `scripts/symmetrise_links.py --write` to close it rather than hand-curating both directions |
-| `serial` | Forelimb ↔ hindlimb correspondence. See below |
+| `correspondences` | Typed homology claims about other records — serial, ancestry, partial. See below |
 | `teaching` | What this record is good for in a classroom |
 | `caveat` | Source-quality warning (e.g. a non-peer-reviewed preprint) |
 | `authority` | Whose homology scheme this record follows. **Derived** — see below |
@@ -260,23 +259,66 @@ warning: its homology rests on descriptive work alone.
 The reasoning, and why the rule deliberately does not apply to attachments, is in
 [`docs/METHODS.md`](METHODS.md).
 
-### `serial` — handle with care
+### `correspondences` — typed claims about other records
 
 ```jsonc
-"serial": {
-  "forelimb": "pronator-teres",     // muscle id, or null for "no counterpart"
-  "basis": "topological",           // topological | developmental | none
-  "note": "...",
-  "caution": "..."                  // renders as a warning callout
-}
+"correspondences": [
+  { "relation": "serial", "to": "branchial-constrictors",
+    "axis": "pharyngeal-arch", "basis": "developmental",
+    "sources": ["diogo-etal-2008-head"], "confidence": "well-supported",
+    "note": "..." },
+
+  { "relation": "descends-from", "to": "abductor-superficialis", "girdle": "pelvic" },
+
+  { "relation": "corresponds-to-part-of", "to": "intermandibularis",
+    "fromPart": "Tensor tympani", "taxa": ["monotremata", "theria"],
+    "sources": ["diogo-etal-2008-head"], "confidence": "contested" }
+]
 ```
 
-Diogo & Molnar (2014) reject forelimb–hindlimb serial homology in the strict
-ancestral-duplication sense. A `serial` entry with `basis: "topological"` asserts
-only that the two muscles occupy corresponding positions. Where the developmental
-anlagen are known to differ — as for popliteus and pronator teres — say so in
-`caution`. Reserve `basis: "developmental"` for correspondences that survive that
-test.
+One muscle here corresponding to several muscles there is not an edge case — 450
+of the 1480 occurrence rows carry `parts` for exactly that reason. `parts` handles
+it **inside** a record. This array handles it **between** records.
+
+| relation | Means | Direction |
+|---|---|---|
+| `serial` | Same series, different segment. `axis` says which | Symmetric — `symmetrise_links.py --write` closes it |
+| `no-counterpart` | **Asserted absence** on that axis. Takes `axis`, no `to` | — |
+| `descends-from` | Ancestor → descendant through evolutionary time | Directed, stored on the **descendant** |
+| `corresponds-to-part-of` | This record, or a named part of it, is part of that one | Directed |
+
+`axis` is `forelimb-hindlimb` or `pharyngeal-arch`. `basis` is `topological`,
+`developmental` or `none` — Diogo & Molnar (2014) reject forelimb–hindlimb serial
+homology in the strict ancestral-duplication sense, so `topological` asserts only
+corresponding position, and `developmental` is reserved for correspondences that
+survive knowing the anlagen. `girdle` is `pectoral` or `pelvic` on ancestry edges,
+because the ancestral fin muscles are ancestral to both.
+
+**The group is emergent, not stored.** A muscle corresponding to a *group* of
+others is several edges sharing a `to`; the inverse is several sharing a source
+record. There is no group object, because a stored group would need its own
+identity and would go stale the moment a record splits.
+
+**`to` must not be this record.** A part that subdivides differently between two
+taxa of one record is a division fact and belongs in `parts` and `divisionNote`.
+
+**`no-counterpart` is a claim, not a blank.** The same distinction `present: "no"`
+draws: five records assert there is no forelimb counterpart, and the
+caudofemoralis note calls itself a clean falsification of any expectation of
+one-to-one fore/hindlimb correspondence. Omitting the relation means unrecorded.
+
+**`sources` and `confidence` are expected but not enforced.** 94 edges migrated out
+of the old `homology.serial` and `derivatives` fields carry neither, because those
+fields had no per-edge attribution; `validate.py` reports the count once rather
+than warning ninety-four times.
+
+### `related` is not a correspondence
+
+`related` survives alongside this array and means something different:
+topologically or developmentally adjacent, untyped, no claim attached, 386 edges
+across 128 of the 129 records. Adjacency and correspondence are different
+questions. If you can name the relation and cite it, it is a correspondence; if
+you are recording that two muscles sit next to each other, it is `related`.
 
 ### `attachments` — element / side / landmark rows
 
@@ -316,29 +358,6 @@ finer resolution.
 Attachments to elements a taxon lacks are a validation **error**. That check
 caught a real mistake during authoring — a crocodylian "deltoideus clavicularis"
 recorded as arising from a clavicle, which crocodylians do not have.
-
-### `derivatives` — fin-to-limb ancestry
-
-```jsonc
-"derivatives": {
-  "pectoral": ["pectoralis", "flexor-digitorum-longus"],
-  "pelvic":   ["ischioflexorius"]
-}
-```
-
-Records in `data/muscles-fin.json` are the ancestral paired-fin muscles from
-which the whole tetrapod appendicular musculature is derived by subdivision
-(Diogo et al. 2016). `derivatives` names what each gave rise to, split by
-appendage because these muscles are ancestral to both.
-
-Unlike `related`, this edge is **directed and curated in one direction only**.
-The app derives the reverse ("derived from the ancestral fin muscle") by
-scanning, so a tetrapod muscle needs no field of its own — and correctly shows
-multiple ancestors where they exist (the ischioflexorius has three).
-
-Do not confuse `derivatives` with `homology.serial`. `derivatives` is ancestor →
-descendant through time. `serial` is forelimb ↔ hindlimb within one animal, and
-is topological rather than genealogical.
 
 ---
 

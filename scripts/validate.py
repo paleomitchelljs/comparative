@@ -30,6 +30,9 @@ SERIAL_BASIS = {"topological", "developmental", "none"}
 # rows used to claim `source`, which the schema defines as citing a single-species
 # study, so the one basis that means "this is not an observation of any one animal"
 # was the one being asserted as the opposite.
+CORRESPONDENCE = {"serial", "no-counterpart", "descends-from", "corresponds-to-part-of"}
+CORRESPONDENCE_AXES = {"forelimb-hindlimb", "pharyngeal-arch"}
+
 SPECIES_BASIS = {"note", "source", "survey", "default", "generalised"}
 LAYERS = {"superficialis", "profundus", "intermediate", "preaxial", "postaxial", "primaxial"}
 SEGMENTS = {"cranial", "axial", "girdle", "stylopod", "zeugopod", "autopod", "fin"}
@@ -118,12 +121,13 @@ def check_nerves(holder, label, nerves_by_id, source_keys):
     return ids
 
 
-def check_occurrence_name(occ, label, muscle):
+def check_occurrence_name(occ, label, muscle, descendants=()):
     """An occurrence `name` names ONE thing in one taxon.
 
     Where it instead enumerates the taxon's several muscles, that list has a
     structured home already — `parts` for a homology group that has split,
-    `derivatives` for an ancestral fin muscle that became several tetrapod ones
+    `descends-from` correspondences for an ancestral fin muscle that became
+    several tetrapod ones
     — and writing it twice gives one fact two homes. It also leaks: names are
     indexed at name priority and rendered as the card heading, so a prose list
     of a dozen muscles came back as the top hit for any one of them, under a
@@ -153,11 +157,9 @@ def check_occurrence_name(occ, label, muscle):
              f"the parts are the home for that list")
         return
 
-    derived = [d for k in ("pectoral", "pelvic")
-               for d in (muscle.get("derivatives", {}) or {}).get(k, [])]
-    if derived and sum(1 for d in derived if d.replace("-", " ") in low) >= 2:
-        warn(f"{label}: name re-lists this fin muscle's `derivatives` — "
-             f"ancestry is curated there and rendered from there")
+    if descendants and sum(1 for d in descendants if d.replace("-", " ") in low) >= 2:
+        warn(f"{label}: name re-lists the muscles that descend from this one — "
+             f"ancestry is curated on them as `descends-from` and rendered from there")
         return
 
     # A list shape with no structured home at all: the list is the only record
@@ -273,6 +275,17 @@ def check_division(occ, label, present, muscles, source_keys):
         for key in part.get("sources", []):
             if key not in source_keys:
                 err(f"{at} unknown source key '{key}'")
+
+
+unsourced: list = []
+
+
+def part_names(muscle):
+    """Every part name this record uses anywhere. A correspondence may address a
+    part, and a part is a name in a taxon rather than a record, so the check is
+    that some occurrence somewhere names it."""
+    return {p.get("name") for o in muscle.get("occurrences", [])
+            for p in (o.get("parts") or []) if p.get("name")}
 
 
 def main():
@@ -578,6 +591,14 @@ def main():
                 err(f"{rel}: duplicate muscle id '{mid}'")
             muscles[mid] = (m, rel)
 
+    # Ancestry is stored on the descendant, so "what did this fin muscle become"
+    # is a reverse lookup. Build it once: ancestor id -> the muscles naming it.
+    descendants_of = {}
+    for mid, (m, _) in muscles.items():
+        for e in ((m.get("homology") or {}).get("correspondences") or []):
+            if e.get("relation") == "descends-from" and e.get("to"):
+                descendants_of.setdefault(e["to"], []).append(mid)
+
     for mid, (m, rel) in muscles.items():
         where = f"{rel}:{mid}"
 
@@ -677,7 +698,7 @@ def main():
                 err(f"{where}/{tid}: present='{pres}' not in {sorted(PRESENCE)}")
 
             check_division(occ, f"{where}/{sid}", pres, muscles, source_keys)
-            check_occurrence_name(occ, f"{where}/{sid}", m)
+            check_occurrence_name(occ, f"{where}/{sid}", m, descendants_of.get(mid, ()))
             check_nerves(occ, f"{where}/{sid}", nerves_by_id, source_keys)
 
             if pres != "no" and not occ.get("sources"):
@@ -690,10 +711,9 @@ def main():
             # A present muscle should be named in that taxon, else the row says
             # nothing — UNLESS it has no single name there to give. An ancestral
             # fin muscle present in a tetrapod is the field that became several
-            # muscles, and those several are in `derivatives`. Demanding a name
+            # muscles, and those several name it with `descends-from`. Demanding a name
             # is what put a prose list of them in this slot in the first place.
-            subdivided = any((m.get("derivatives") or {}).get(k)
-                             for k in ("pectoral", "pelvic"))
+            subdivided = bool(descendants_of.get(mid))
             if pres in {"yes", "inferred"} and not occ.get("name") and not subdivided:
                 warn(f"{where}/{tid}: present='{pres}' but no local name given")
 
@@ -765,19 +785,71 @@ def main():
             warn(f"{where}: no homology-scope source cited — its homology rests "
                  f"on descriptive sources alone")
 
-        # `derivatives` links an ancestral fin muscle to the tetrapod muscles it
-        # gave rise to. Directed, not symmetric — the app renders the reverse
-        # edge ("derived from") by scanning, so only one direction is curated.
-        derivs = m.get("derivatives", {})
-        if derivs:
-            if m.get("region") != "fin":
-                warn(f"{where}: has `derivatives` but region is not 'fin'")
-            for appendage, refs in derivs.items():
-                if appendage not in {"pectoral", "pelvic"}:
-                    err(f"{where}: derivatives key '{appendage}' not in ['pectoral', 'pelvic']")
-                for ref in refs:
-                    if ref not in muscles:
-                        err(f"{where}: derivatives.{appendage} points at unknown muscle '{ref}'")
+        # `homology.correspondences` — typed homology claims between records.
+        # This replaced `derivatives` and `homology.serial`, which could express
+        # one relation each and neither could carry a source, a clade scope or a
+        # part. `related` survives alongside it and means something different:
+        # topological adjacency, untyped, with no claim attached.
+        for i, e in enumerate(hom.get("correspondences", []) or []):
+            at = f"{where}: correspondences[{i}]"
+            rel_kind = e.get("relation")
+            if rel_kind not in CORRESPONDENCE:
+                err(f"{at}: relation='{rel_kind}' not in {sorted(CORRESPONDENCE)}")
+                continue
+
+            # `no-counterpart` asserts there is nothing to point at, so it is the
+            # one relation with no `to`. Everything else must resolve.
+            if rel_kind == "no-counterpart":
+                if e.get("to"):
+                    err(f"{at}: 'no-counterpart' asserts an absence and must not carry `to`")
+            else:
+                ref = e.get("to")
+                if not ref:
+                    err(f"{at}: '{rel_kind}' needs a `to`")
+                elif ref not in muscles:
+                    err(f"{at}: `to` points at unknown muscle '{ref}'")
+                elif ref == mid:
+                    err(f"{at}: `to` is this record itself — a part that subdivides "
+                        f"differently between taxa of one record is a division fact, "
+                        f"and belongs in `parts` and `divisionNote`")
+
+            if rel_kind in {"serial", "no-counterpart"}:
+                if e.get("axis") not in CORRESPONDENCE_AXES:
+                    err(f"{at}: axis='{e.get('axis')}' not in {sorted(CORRESPONDENCE_AXES)}")
+            elif e.get("axis"):
+                err(f"{at}: `axis` is only meaningful on 'serial' and 'no-counterpart'")
+
+            basis = e.get("basis")
+            if basis and basis not in SERIAL_BASIS:
+                err(f"{at}: basis='{basis}' not in {sorted(SERIAL_BASIS)}")
+            conf = e.get("confidence")
+            if conf and conf not in CONFIDENCE:
+                err(f"{at}: confidence='{conf}' not in {sorted(CONFIDENCE)}")
+            for k in e.get("sources", []):
+                if k not in source_keys:
+                    err(f"{at}: unknown source key '{k}'")
+            for tx in e.get("taxa", []):
+                if tx not in taxon_ids:
+                    err(f"{at}: taxa '{tx}' is not in taxa.json")
+
+            # A correspondence is a homology claim, so it ages and it ought to
+            # say whose it is. The edges migrated out of `homology.serial` and
+            # `derivatives` have none — they inherited their record's blanket
+            # `sources` and nobody ever attributed the individual claim. That is
+            # a real backlog and it is reported once, with a count, rather than
+            # as one warning per edge: they all have the same fix, and ninety of
+            # them would bury every other warning in the run.
+            if not e.get("sources"):
+                unsourced.append(f"{mid}:{rel_kind}->{e.get('to') or e.get('axis')}")
+
+            for side in ("fromPart", "toPart"):
+                name = e.get(side)
+                if not name:
+                    continue
+                owner = mid if side == "fromPart" else e.get("to")
+                if owner in muscles and not part_names(muscles[owner][0]) & {name}:
+                    err(f"{at}: {side} '{name}' is not a part named on any occurrence "
+                        f"of '{owner}'")
 
         layer = m.get("layer")
         if layer and layer not in LAYERS:
@@ -853,14 +925,60 @@ def main():
                 if k not in source_keys:
                     err(f"{where}: layerSource unknown source key '{k}'")
 
-        serial = hom.get("serial")
-        if serial:
-            basis = serial.get("basis")
-            if basis not in SERIAL_BASIS:
-                err(f"{where}: serial.basis='{basis}' not in {sorted(SERIAL_BASIS)}")
-            fl = serial.get("forelimb")
-            if fl and fl not in muscles:
-                err(f"{where}: serial.forelimb points at unknown muscle '{fl}'")
+    if unsourced:
+        warn(f"{len(unsourced)} homology correspondences carry no `sources` — "
+             f"migrated from `homology.serial` and `derivatives`, which had no "
+             f"per-edge attribution. e.g. {', '.join(sorted(unsourced)[:3])}")
+
+    # Reciprocity. `serial` is symmetric and gets an error, because
+    # symmetrise_links.py writes the reverse edge and a missing one means the
+    # build was not run. `descends-from` and `corresponds-to-part-of` are
+    # directed and must NOT be reciprocated — reversing them reverses the claim.
+    for mid, (m, rel) in muscles.items():
+        for e in (m.get("homology", {}).get("correspondences") or []):
+            if e.get("relation") != "serial":
+                continue
+            other = muscles.get(e.get("to"))
+            if not other:
+                continue
+            back = [b for b in (other[0].get("homology", {}).get("correspondences") or [])
+                    if b.get("relation") == "serial" and b.get("to") == mid
+                    and b.get("axis") == e.get("axis")]
+            if not back:
+                err(f"{rel}:{mid}: serial '{e.get('to')}' on axis '{e.get('axis')}' "
+                    f"does not link back — run symmetrise_links.py --write")
+
+    # A contested part names the record contesting it, and that record has to
+    # know. Without this, `membership: \"disputed\"` records that a dispute
+    # exists and never who with, which is how the gemelli and the tensor tympani
+    # both ended up carrying their other claimant in a sentence.
+    for mid, (m, rel) in muscles.items():
+        for occ in m.get("occurrences", []):
+            for p in (occ.get("parts") or []):
+                other_id = p.get("claimedBy")
+                if not other_id:
+                    continue
+                if p.get("membership") != "disputed":
+                    err(f"{rel}:{mid}/{occ.get('species')}: part '{p.get('name')}' has "
+                        f"`claimedBy` but membership is not 'disputed'")
+                if other_id not in muscles:
+                    err(f"{rel}:{mid}/{occ.get('species')}: part '{p.get('name')}' "
+                        f"claimedBy unknown muscle '{other_id}'")
+                    continue
+                if other_id == mid:
+                    err(f"{rel}:{mid}/{occ.get('species')}: part '{p.get('name')}' "
+                        f"claimedBy itself")
+                    continue
+                linked = any(
+                    e.get("relation") == "corresponds-to-part-of"
+                    and {e.get("to"), owner} == {mid, other_id}
+                    for owner, side in ((mid, m), (other_id, muscles[other_id][0]))
+                    for e in (side.get("homology", {}).get("correspondences") or []))
+                if not linked:
+                    err(f"{rel}:{mid}/{occ.get('species')}: part '{p.get('name')}' is "
+                        f"claimedBy '{other_id}', but neither record carries a "
+                        f"`corresponds-to-part-of` edge between them — the dispute is "
+                        f"asserted on one side only")
 
     # Reciprocity: if A lists B as related, B should list A. Cheap way to keep the graph sane.
     for mid, (m, rel) in muscles.items():

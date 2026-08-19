@@ -761,11 +761,12 @@ function renderOccTable(m) {
     const cites = (o.sources || []).map(k => sourceLink(k)).join(' ');
 
     /* An ancestral fin muscle has no name in a tetrapod because it is not one
-       muscle there — it is the field that became several. Those several are in
-       `derivatives`, rendered once under Fin-to-limb ancestry; naming them here
+       muscle there — it is the field that became several. Those several name it
+       with `descends-from`, rendered once under Fin-to-limb ancestry; naming them here
        too would give one fact two homes, which is what `parts` exists to stop. */
-    const subdivided = !o.name && !absent &&
-      ['pectoral', 'pelvic'].some(k => ((m.derivatives || {})[k] || []).length);
+    const subdivided = !o.name && !absent && state.muscles.some(f =>
+      ((f.homology || {}).correspondences || [])
+        .some(e => e.relation === 'descends-from' && e.to === m.id));
 
     /* The species is the observation; the clade is what it rolls up into. Showing
        the binomial here is the difference between "birds have this" and "somebody
@@ -849,39 +850,116 @@ function renderDivision(o) {
   </div>`;
 }
 
+/* One array, four relations, and the direction of each is the point. `serial` is
+   symmetric and the build closes it; `descends-from` and `corresponds-to-part-of`
+   are directed, so the reverse edge is found by scanning rather than stored —
+   storing it would let the two directions drift apart. A muscle corresponding to
+   a GROUP of others is simply several edges sharing a target; there is no group
+   object, because a stored group goes stale the moment a record splits. */
+const AXIS_LABEL = {
+  'forelimb-hindlimb': 'forelimb ↔ hindlimb',
+  'pharyngeal-arch': 'pharyngeal arch series',
+};
+
+function renderCorrespondences(m, h) {
+  const own = h.correspondences || [];
+  const pill = id => {
+    const t = state.byId.get(id);
+    return t ? `<a class="pill" data-goto="${t.id}">${esc(t.name)}</a>` : '';
+  };
+  const chips = e => {
+    let c = '';
+    if (e.basis) c += ` <span class="chip">basis: ${esc(e.basis)}</span>`;
+    if (e.confidence) c += ` <span class="chip">${esc(e.confidence)}</span>`;
+    if ((e.taxa || []).length) c += ` <span class="chip">${e.taxa.map(esc).join(', ')}</span>`;
+    if ((e.sources || []).length) c += ' ' + e.sources.map(k => sourceLink(k)).join(' ');
+    return c;
+  };
+  const para = e => {
+    let s = '';
+    if (e.note) s += `<p>${emph(e.note)}</p>`;
+    return s;
+  };
+
+  let out = '';
+
+  const serial = own.filter(e => e.relation === 'serial');
+  const none = own.filter(e => e.relation === 'no-counterpart');
+  if (serial.length || none.length) {
+    out += `<div class="callout"><h4>Serial correspondence</h4>`;
+    for (const axis of new Set([...serial, ...none].map(e => e.axis))) {
+      const hits = serial.filter(e => e.axis === axis);
+      const nil = none.find(e => e.axis === axis);
+      out += `<p class="synonyms" style="margin:.4rem 0 .3rem"><strong>${esc(AXIS_LABEL[axis] || axis)}</strong></p>`;
+      if (hits.length) {
+        out += `<div class="pills">${hits.map(e => pill(e.to)).join('')}</div>`;
+        out += hits.map(e => chips(e) ? `<p class="synonyms">${chips(e)}</p>` : '').join('');
+        out += hits.map(para).join('');
+      }
+      /* An asserted absence is a claim, not a blank. */
+      if (nil) out += `<p><strong>No counterpart.</strong>${chips(nil)}</p>` + para(nil);
+    }
+    out += `</div>`;
+  }
+
+  const partOf = own.filter(e => e.relation === 'corresponds-to-part-of');
+  const claimedHere = state.muscles.flatMap(o =>
+    ((o.homology || {}).correspondences || [])
+      .filter(e => e.relation === 'corresponds-to-part-of' && e.to === m.id)
+      .map(e => ({ e, from: o })));
+  if (partOf.length || claimedHere.length) {
+    out += `<div class="callout open"><h4>Partial correspondence</h4>`;
+    for (const e of partOf) {
+      const what = e.fromPart ? `<strong>${esc(e.fromPart)}</strong>` : 'This muscle';
+      const where = e.toPart ? ` — ${esc(e.toPart)}` : '';
+      out += `<p>${what} corresponds to part of ${pill(e.to)}${where}${chips(e)}</p>` + para(e);
+    }
+    for (const { e, from } of claimedHere) {
+      const what = e.fromPart ? `<strong>${esc(e.fromPart)}</strong>` : from.name;
+      out += `<p>${pill(from.id)}${e.fromPart ? ` — ${esc(e.fromPart)}` : ''} is claimed as part of this muscle${chips(e)}</p>`;
+    }
+    out += `</div>`;
+  }
+
+  return out;
+}
+
 function renderHomologyBlock(m, h) {
-  if (!h.notes && !h.openQuestion && !h.teaching && !h.serial) return '';
+  if (!h.notes && !h.openQuestion && !h.teaching &&
+      !(h.correspondences || []).length) return '';
   let out = `<section class="block"><h3>Homology</h3>`;
   if (h.notes) out += `<div class="callout"><h4>Assessment</h4><p>${emph(h.notes)}</p></div>`;
   if (h.openQuestion) out += `<div class="callout open"><h4>Open question</h4><p>${esc(h.openQuestion)}</p></div>`;
 
-  if (h.serial) {
-    const s = h.serial;
-    const target = s.forelimb ? state.byId.get(s.forelimb) : null;
-    let body = target
-      ? `Topological counterpart in the forelimb: <a class="pill" data-goto="${target.id}">${esc(target.name)}</a>`
-      : `No counterpart in the other limb.`;
-    if (s.basis) body += ` <span class="chip">basis: ${esc(s.basis)}</span>`;
-    out += `<div class="callout ${s.caution ? 'caution' : ''}"><h4>Serial correspondence</h4><p>${body}</p>`;
-    if (s.note) out += `<p>${emph(s.note)}</p>`;
-    if (s.caution) out += `<p><strong>Caution.</strong> ${esc(s.caution)}</p>`;
-    out += `</div>`;
-  }
+  out += renderCorrespondences(m, h);
   if (h.caveat) out += `<div class="callout caution"><h4>Source caveat</h4><p>${esc(h.caveat)}</p></div>`;
   if (h.teaching) out += `<div class="callout teach"><h4>Teaching use</h4><p>${esc(h.teaching)}</p></div>`;
   return out + `</section>`;
 }
 
-/* Ancestry runs both ways from one curated edge: a fin muscle lists what it gave
-   rise to, and every tetrapod muscle finds its ancestor by scanning for itself. */
+/* Ancestry is stored once, on the descendant, pointing back. The forward view —
+   what an ancestral fin muscle gave rise to — is found by scanning, which is the
+   reverse of how `derivatives` did it. Storing it on the descendant is what lets
+   one tetrapod muscle claim several ancestors: `ischioflexorius` has three. */
+function descendsFrom(m) {
+  return ((m.homology || {}).correspondences || [])
+    .filter(e => e.relation === 'descends-from');
+}
+
 function renderAncestry(m) {
-  const d = m.derivatives || {};
-  const hasForward = (d.pectoral || []).length || (d.pelvic || []).length;
+  const ancestors = descendsFrom(m);
 
-  const ancestors = state.muscles.filter(f =>
-    ['pectoral', 'pelvic'].some(k => ((f.derivatives || {})[k] || []).includes(m.id)));
+  /* Everything that names this record as its ancestor, grouped by girdle. */
+  const children = {};
+  for (const o of state.muscles) {
+    for (const e of descendsFrom(o)) {
+      if (e.to !== m.id) continue;
+      (children[e.girdle || 'appendicular'] ||= []).push(o.id);
+    }
+  }
+  const hasForward = Object.keys(children).length;
 
-  if (!hasForward && !ancestors.length) return '';
+  if (!ancestors.length && !hasForward && !m.ancestralNode) return '';
 
   const link = id => {
     const t = state.byId.get(id);
@@ -896,16 +974,15 @@ function renderAncestry(m) {
 
   if (hasForward) {
     out += `<p class="synonyms" style="margin-bottom:.4rem">Subdivided in tetrapods into:</p>`;
-    for (const [appendage, ids] of Object.entries(d)) {
-      if (!ids.length) continue;
-      out += `<p class="synonyms" style="margin:.5rem 0 .3rem"><strong>${esc(appendage)}</strong></p>
-        <div class="pills" style="margin-bottom:.5rem">${ids.map(link).join('')}</div>`;
+    for (const [girdle, ids] of Object.entries(children)) {
+      out += `<p class="synonyms" style="margin:.5rem 0 .3rem"><strong>${esc(girdle)}</strong></p>
+        <div class="pills" style="margin-bottom:.5rem">${ids.sort().map(link).join('')}</div>`;
     }
   }
 
   if (ancestors.length) {
     out += `<p class="synonyms" style="margin-bottom:.4rem">Derived from the ancestral fin muscle:</p>
-      <div class="pills">${ancestors.map(a => link(a.id)).join('')}</div>`;
+      <div class="pills">${ancestors.map(e => link(e.to)).join('')}</div>`;
   }
 
   return out + `</section>`;

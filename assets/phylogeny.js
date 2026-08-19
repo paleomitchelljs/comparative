@@ -139,7 +139,7 @@ function transitionsFor(muscle, root) {
   return { states, events, rootAmbiguous };
 }
 
-/* Subdivision events come from the curated `derivatives` edges, not from
+/* Subdivision events come from the curated `descends-from` edges, not from
    optimisation: an ancestral fin muscle giving rise to several tetrapod muscles
    is a claim in the sources, not something inferable from a presence column. */
 function subdivisionsAt(node) {

@@ -31,6 +31,7 @@ Nothing carries two of these jobs.
 | File | Job |
 |---|---|
 | `docs/SCHEMA.md` | The data model. The only definition of any field |
+| `docs/homology-system-guide.md` | What the four correspondence relations mean and how to read them |
 | `docs/METHODS.md` | How to read the data. The only statement of any interpretive rule. **No numbers** |
 | `docs/STATUS.md` | Where coverage stands. **Entirely generated** |
 | `docs/WORKLIST.md` | What to do next, and the open decisions |
@@ -142,16 +143,30 @@ git-ignored — it is derived, never a source of truth.
 **`related` is an undirected graph.** Record a link once, then run
 `symmetrise_links.py --write`. Do not hand-curate both directions.
 
-**`derivatives` is a DIRECTED graph and must not be symmetrised.** It runs from
-an ancestral fin muscle to its tetrapod descendants. The app computes the reverse
-edge by scanning, so tetrapod records carry no ancestry field. Keep it curated in
-`data/muscles-fin.json` only.
+**`homology.correspondences` holds every typed claim about another record**, and
+the direction of each relation is load-bearing. `serial` is symmetric and closed
+by `symmetrise_links.py --write`; `descends-from` and `corresponds-to-part-of`
+are directed and reversing them reverses the claim, so the app finds the reverse
+by scanning rather than storing it. Ancestry is stored **on the descendant** —
+that is what lets one muscle name several ancestors, as `ischioflexorius` does.
+See `docs/homology-system-guide.md`.
 
-**Three link types, three meanings — don't conflate them.**
-`related` = topologically or developmentally adjacent, undirected.
-`derivatives` = ancestor → descendant through evolutionary time, directed.
-`homology.serial` = forelimb ↔ hindlimb within one animal, topological not
+**Four relations, four meanings, plus adjacency — don't conflate them.**
+`related` = topologically or developmentally adjacent, undirected, **no claim**.
+`correspondences.serial` = same series, different segment, on a stated `axis`
+(forelimb ↔ hindlimb, or the pharyngeal-arch series). Topological not
 genealogical, and rejected as strict serial homology by Diogo & Molnar (2014).
+`correspondences.no-counterpart` = an asserted absence on that axis, which is a
+claim and not a blank.
+`correspondences.descends-from` = ancestor → descendant through evolutionary time.
+`correspondences.corresponds-to-part-of` = this record, or a named part of it, is
+part of that one.
+
+**A contested part names who contests it.** `membership: "disputed"` plus
+`claimedBy: "<record-id>"`, and `validate.py` errors unless one of the two records
+carries a `corresponds-to-part-of` edge between them. Without the second half the
+data records that a dispute exists and never who with, which is how the gemelli
+and the tensor tympani both ended up carrying their other claimant in prose.
 
 **`muscleCount` in `taxa.json` is the source's published count for its exemplar
 species**, not a count of records in this dataset. The two differ. Do not
