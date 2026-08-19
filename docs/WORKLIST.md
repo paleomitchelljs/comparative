@@ -6,11 +6,10 @@ How to actually do the work is in [`MINING.md`](MINING.md).
 
 ---
 
-## This is an acquisition problem, not a mining problem
+## This was called an acquisition problem. It is a mining problem.
 
-The corpus has very nearly exhausted its descriptive sources. Of the rows still
-unscored, most cite only sources that structurally cannot yield a species-level
-attachment:
+Some sources genuinely cannot yield a species-level attachment, and that part
+stands:
 
 | source | why it cannot be scored |
 |---|---|
@@ -20,8 +19,25 @@ attachment:
 | Allen et al. (2021), Hutchinson et al. (2015) | Musculoskeletal models, not descriptions |
 | Johnston (2014) | Does not dissect *Ctenosaura* — the figure is after Oelrich (1956) |
 
-What remains in hand is single figures per source. The way forward is to acquire
-descriptive myologies, not to re-read what is here.
+**What did not stand is the conclusion drawn from it.** This section used to end
+"the way forward is to acquire descriptive myologies, not to re-read what is here."
+Three sources already in `papers/` say otherwise, and each was written off for a
+different bad reason:
+
+- **Fisher & Goodman (1955)** — 116 muscles with legible origin paragraphs across
+  every region Aves is thin in. Called unmineable because the search pattern used
+  to look for them matched only about half the ways the OCR spells the heading.
+- **Widrig, Starry & James (2026)** on *Chauna torquata* — open access, dense with
+  origins and insertions, and explicit about the osteological correlates of each.
+  Never cited, no reading note. Catalogued and forgotten.
+- **Ziermann et al. (2014)** Tables 1–4 — the adult mandibular, hyoid, branchial
+  and hypobranchial muscles of *Myxine glutinosa* and *Petromyzon marinus*, both
+  dissected. The dataset holds three occurrences each. The tables OCR to collapsed
+  columns, which is the problem the Diogo tables already solved.
+
+Also uncited and descriptive: Vanden Berge (1982) on the kiwi pelvic limb, Boumans
+et al. (2015) on owl cervical attachments, Collings & Richards (2019) on an anuran
+hindlimb. **Read the corpus before buying more of it.**
 
 ## Acquisition targets
 
@@ -88,7 +104,7 @@ Worth knowing before planning a pass around one:
 | Source | Actually for |
 |---|---|
 | **Ghetie et al. (1976)** | A plate atlas — labelled figures in four languages, no myological prose. Not an attachment source, but the plates *are* legible as images and state species, name, presence, layer and face for four birds. Mostly a **turkey** book: 35 of its 52 captioned myology plates. See its note |
-| **Fisher & Goodman (1955)** | The avian column entire, but the scan is uneven and plate-facing pages OCR to noise. **A cleaner scan would unblock Aves more than any other single acquisition** |
+| ~~**Fisher & Goodman (1955)**~~ | **Withdrawn — this is a row source and always was.** The scan is fine: 135 of its 142 text pages are clean prose, and 116 muscles carry a legible origin paragraph across every region Aves is thin in. The "unmineable" verdict came from a search pattern that matched only some of the ways the OCR spells the heading. See its note |
 | **Blotto et al. (2020)** | Anuran hand and foot, 157 pp with its own revised nomenclature and active disagreements with Abdala & Diogo — needs a dedicated bridging pass |
 | Wiseman (2021), Demuth (2022, 2023), Cuff (2022) | Musculoskeletal models — attachments are 3D coordinates |
 | Mathou (2023), Gyambibi & Lemelin (2013) | Architecture data |

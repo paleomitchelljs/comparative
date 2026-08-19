@@ -11,20 +11,42 @@ a plate atlas, and two musculoskeletal models, none of which states an attachmen
 in prose. This is a complete myology of a **flying neognath**, with formal
 `Origin.—` and `Insertion.—` paragraphs. On paper it is the answer.
 
-## What actually happened: the OCR is the constraint
+## The OCR is not the constraint. A search pattern was.
 
-The scan is uneven. Of ~328 muscle headings, only **83** carry a recoverable
-`Origin.—` paragraph in the text layer, and the pages facing plates OCR to noise —
-several hundred characters of `hebpepe / net r. ct / af wohae` where a description
-should be. The insertion of M. extensor metacarpi radialis is lost that way, which
-is why that row is still unscored despite its origin being perfectly legible.
+**An earlier version of this note said this paper could not be bulk-extracted.
+That was wrong, and the way it was wrong is worth keeping.**
 
-**This paper cannot be bulk-extracted.** It has to be read page by page against
-the plates, and its yield per hour will be much lower than Ercoli or Meers. That
-is a fact about this artefact, not about the paper, and a cleaner scan or the
-original would remove it entirely.
+It reported 83 recoverable `Origin.—` paragraphs and concluded the scan had eaten
+the rest. But the OCR spells that heading four ways — `Origin.—`, `Origin —`,
+`Origin—`, and the same three for `Insertion` — and a pattern anchored on the first
+has **49% recall for origins and 38% for insertions**. Searching for any of the
+four returns **115 origin and 115 insertion paragraphs**. The missing half was
+never missing.
+
+The named casualty was checkable, and it survives intact. The note said the
+insertion of M. extensor metacarpi radialis was lost to noise. It is on the page:
+the fused tendon "continues across the anterior surface of the wrist and deep to
+the tendon of M. tens. pat. longus," then attaches "to the proximal side of the tip
+of the extensor process of metacarpal I[I]". The heading above it reads
+`Insertion —tThe`, which the strict pattern skips.
+
+**Actual state of the scan.** 135 of the 142 text-bearing pages are clean prose.
+Seven are garbled: pp. 11, 15, 16, 60, 61, 64, 98. Those read as page images, the
+same treatment the Diogo tables and the Gheție plates needed. What looked like
+noise on the good pages is the figure legends, which are printed sideways and
+collapse into the right margin of the text layer — the descriptive column beside
+them is unaffected.
+
+**What is actually here.** 193 indented `M.` headings, 116 of them carrying an
+explicit origin paragraph, spanning cranial, hyoid and tongue, pectoral, arm,
+forearm, hand, tail, pelvic, thigh, leg, foot and axial. Aves has 41 unscored
+present occurrences. This one source is larger than the gap.
 
 Scored so far (2): `extensor-digitorum`, `flexor-digitorum-longus`.
+
+The general lesson is the one Gheție taught in the other direction: **check the
+recall of the pattern before concluding the text is not there.** A negative result
+from a grep is a fact about the grep.
 
 ## Two findings from the pages that did survive
 
@@ -50,5 +72,6 @@ extracted layout, so it needs reading rather than grepping.
 
 ## Not attempted
 
-Everything else. The pectoral, arm, hand and hindlimb blocks are all present in
-the book and all need the page-by-page treatment described above.
+Everything else — but it is a reading pass, not an extraction problem. The
+pectoral, arm, forearm, hand, pelvic, thigh, leg, foot, tail and axial blocks are
+all in the text layer with their origin and insertion paragraphs legible.
