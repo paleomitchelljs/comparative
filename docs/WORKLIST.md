@@ -185,18 +185,27 @@ against the threshold of 4.
   need the 173 footnotes read, and they stay as `parts` on `interhyoideus` until
   they are.
 
-- **`branchial-constrictors` is still one row where its sources are many.** It
-  carries the pharyngeal and laryngeal muscles the way `interhyoideus` carried the
-  facial ones, and it is the harder half: **45 distinct part names across its
-  eleven occurrences, almost all appearing once**, because a lamprey, an eel, an
-  axolotl, a turtle and a human each name these muscles differently. Splitting it
-  mechanically would produce forty-odd records asserting nothing and connecting to
-  nothing, which is the opposite of a homology group. It needs Diogo et al. (2008)
-  Tables 2 and 3 read the way Table 1 was read for the facial half, so that each
-  new record is a row of a source rather than a name from one animal. **Unlike the
-  facial case this one buys attachments** — its parts attach to cartilage and bone,
-  and the *Protanguilla* and *Ambystoma* rows already carry attachments alongside
-  14 and 10 parts, which is the collision.
+- **~~`branchial-constrictors` is still one row where its sources are many.~~ Done,
+  for the amniotes.** Diogo et al. (2008) Table 3 resolves the branchial, pharyngeal
+  and laryngeal muscles across nine sarcopterygians from *Latimeria* to *Homo*, and
+  **eighteen of its rows are now records**, each carrying `descends-from` back to
+  `branchial-constrictors`. Unlike the facial split this one buys attachments,
+  because these muscles end on cartilage.
+
+  **What stayed is the point of the exercise.** The record had 45 distinct part
+  names across eleven occurrences, almost all appearing once, and a mechanical
+  split would have made forty-odd records asserting nothing. So the cyclostome,
+  chondrichthyan, actinopterygian and amphibian rows keep their parts — there the
+  muscles are segmental series, levatores arcuum branchialium I–IV and the rest,
+  which Table 3 treats as a group and not as individuals. **The turtle keeps all
+  four of its laryngeal parts because Table 3 has no turtle column**; moving them
+  would attribute to that source a taxon it never examines. And the human keeps the
+  cricopharyngeus and the aryepiglottic and thyroepiglottic, which the table does
+  not list.
+
+  One row went the other way. Humans have a cricoarytenoideus lateralis and Table
+  3's human column does not carry one, so that occurrence rests on Gest's tables and
+  says so.
 
 - **Figures in a PDF are readable; text extraction is not the only route.** The
   Diogo tables were called unreadable in this document for one pass because

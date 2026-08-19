@@ -153,16 +153,67 @@ such as dogs the tongue muscles are sometimes supplied by **both** the hypogloss
 and the facial nerve, which they read as evidence of dual origin in at least some
 cases.
 
-## A disagreement this source creates
+## Table 3 split the branchial record
+
+**Eighteen records came out of `branchial-constrictors` on Table 3**, which resolves
+the branchial, pharyngeal and laryngeal muscles across *Latimeria chalumnae*,
+*Lepidosiren paradoxa*, *Ambystoma ordinarium*, *Timon lepidus*, *Ornithorhynchus
+anatinus*, *Rattus norvegicus*, *Cynocephalus volans*, *Tupaia* sp. and *Homo
+sapiens*. The table reads as a page image (PDF p. 12); its body returns nothing
+through `pdftotext`.
+
+Branchial *sensu stricto*: `stylopharyngeus`, `ceratohyoideus`,
+`subarcualis-rectus`. Pharyngeal: the three `constrictor-pharyngis-*`,
+`cricothyroideus`, `pterygopharyngeus`, `palatopharyngeus`, `musculus-uvulae`,
+`levator-veli-palatini`, `salpingopharyngeus`. Laryngeal: `constrictor-laryngis`,
+`thyroarytenoideus`, `vocalis`, `cricoarytenoideus-lateralis`, `arytenoideus`,
+`cricoarytenoideus-posterior`.
+
+Three results worth carrying:
+
+- **Adult mammals have lost every branchial muscle *sensu stricto* except the
+  subarcualis rectus and its derivatives.** The only one the table gives adult
+  humans is the stylopharyngeus, and footnote 7 hedges even that — "seemingly".
+- **The dilator laryngis of the lizard and the cricoarytenoideus posterior of
+  mammals are one row.** The muscle that opens the glottis is the same muscle either
+  side of the origin of the mammalian larynx.
+- **The stylopharyngeus and ceratohyoideus are read as a subdivision of the
+  subarcualis rectus I**, which is what lets a mammalian pharyngeal muscle keep a
+  branchial identity at all.
+
+**What was deliberately not moved.** The cyclostome, chondrichthyan,
+actinopterygian and amphibian rows keep their parts: there the muscles are
+segmental series that this table treats as a group, not as individuals. **The turtle
+keeps all four of its laryngeal parts because Table 3 has no turtle column** —
+moving them would attribute to this source a taxon it never examines. The human
+keeps the cricopharyngeus and the aryepiglottic and thyroepiglottic, which the table
+does not list, and its `cricoarytenoideus-lateralis` row rests on Gest rather than
+here, because the table gives that muscle only to the rat.
+
+Table 3's column headers are also now this source's `SURVEY_EXEMPLARS` entry, which
+it had none of before. It is **not** *Ambystoma mexicanum* — that is Diogo & Molnar's
+salamander; this paper's is *A. ordinarium*.
+
+## A disagreement this source creates, and how it was settled
 
 **Table 1 derives the tensor tympani and the tensor veli palatini from the adductor
-mandibulae** (A2-PVM), where this dataset scores both as parts of the human
-mylohyoid row on `intermandibularis`. Both fields are mandibular-arch and both take
-CN V, so arch identity is unaffected — but the two records disagree about which
-holds the muscle. Carried as `membership: "disputed"` on the adductor rows, written
-on both records, and left as an open decision in `docs/WORKLIST.md`. The record's
-computed authority, Ziermann & Diogo (2019), is a chapter on **fish** development
-and takes no position, so the later date does not settle it.
+mandibulae** (A2-PVM), where this dataset had scored both as parts of the human
+mylohyoid row on `intermandibularis` while already following this paper for the
+platypus and rat. So the dataset answered by taxon for a muscle homologous across
+mammals.
+
+**Settled in this paper's favour.** Gest's tables are single-taxon and descriptive
+and carry no `homologyScope`; this one is comparative, cross-taxon and newer, which
+is the case `docs/METHODS.md` covers when it says an old descriptive source does not
+set which record a muscle lands on. The earlier note here reasoned from the record's
+computed **authority** — Ziermann & Diogo (2019), a chapter on fish development that
+takes no position — but that is which source governs a record's overall scheme, not
+which settles one part assignment.
+
+Both parts keep `membership: "disputed"` with `claimedBy`, and the
+`corresponds-to-part-of` edges are kept, so Gest's reading stays findable under his
+name. Arch identity never turned on it: both fields are mandibular-arch, both take
+CN V.
 
 ## Limitations
 

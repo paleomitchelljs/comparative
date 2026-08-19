@@ -75,7 +75,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-146 muscle records · 1412 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1462 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -87,7 +87,7 @@ restate them in prose — the script rejects a percentage typed into `docs/`.
 <!-- counts:region-records -->
 | Region | Records | Principal source |
 |---|---|---|
-| Cranial musculature | 33 | Werneburg 2011; Johnston 2011, 2014; Ziermann & Diogo 2019 |
+| Cranial musculature | 51 | Werneburg 2011; Johnston 2011, 2014; Ziermann & Diogo 2019 |
 | Axial musculature | 15 | Schilling 2011; Cieri 2018; Walthall & Ashley-Ross 2006 |
 | Ancestral paired-fin musculature | 9 | Diogo et al. 2016; Winterbottom 1973 |
 | Pectoral girdle and arm | 21 | Abdala & Diogo 2010; Molnar et al. 2018 |
@@ -312,5 +312,5 @@ See [`docs/STATUS.md`](docs/STATUS.md) for the measured version, and
 [`docs/WORKLIST.md`](docs/WORKLIST.md) for what is being done about it. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **80%** of 1412 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 65%; the thinnest regions are cranial, fin, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **77%** of 1462 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 65%; the thinnest regions are cranial, fin, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->

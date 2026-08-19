@@ -160,6 +160,16 @@ SURVEY_EXEMPLARS = {
     },
     "allen-etal-2021": {"aves": "gallus-domesticus", "crocodylia": "alligator-mississippiensis"},
     "fahn-lai-etal-2020": {"monotremata": "tachyglossus-aculeatus", "theria": "monodelphis-domestica"},
+    # Table 3's column headers name the exemplars outright: Latimeria chalumnae,
+    # Lepidosiren paradoxa, Ambystoma ordinarium, Timon lepidus, Ornithorhynchus
+    # anatinus, Rattus norvegicus, Cynocephalus volans, Tupaia sp. and Homo sapiens.
+    # Only the ones this dataset holds as species are listed. NOT Ambystoma
+    # mexicanum, which is Diogo & Molnar's salamander, not this paper's.
+    "diogo-etal-2008-head": {
+        "actinistia": "latimeria-chalumnae", "caudata": "ambystoma-ordinarium",
+        "lepidosauria": "timon-lepidus", "monotremata": "ornithorhynchus-anatinus",
+        "theria": "rattus-norvegicus",
+    },
     "werneburg-2011": {"testudines": "trachemys-scripta"},
     # NOT Trachemys, which the paper never mentions. Werneburg & Maier's series are
     # the cryptodire Chrysemys picta and the pleurodire Emydura subglobosa; Chrysemys
