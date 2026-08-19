@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-"""Regenerate the measured numbers in README.md, docs/GAPS.md and docs/MINING.md.
+"""Regenerate the measured numbers in README.md and docs/STATUS.md.
 
 Every count in those files had drifted: the README said 108 muscles and 16 taxa,
-GAPS.md said 126 and 16, validate.py said 126 and 19, and the live footer said
-something else again. Numbers written by hand go stale the moment a source is
-mined, and a coverage document whose coverage figures are wrong is worse than
-one with no figures, because it is quoted.
+the coverage doc said 126 and 16, validate.py said 126 and 19, and the live footer
+said something else again. Numbers written by hand go stale the moment a source is
+mined, and a coverage document whose coverage figures are wrong is worse than one
+with no figures, because it is quoted onward.
 
-So the measured blocks are generated. Curated prose around them is untouched:
-the script only rewrites what sits between a matched pair of
+Generating the blocks was not enough on its own. An audit found 77 hand-written
+percentages in `docs/` contradicting a generated table in the same file -- one
+sentence claiming cranial was the region to worry about while the table sixty
+lines above it said cranial was mid-pack. So this script also POLICES the prose:
+`docs/` may not state a percentage outside a generated block. See check_prose().
+
+The script only rewrites what sits between a matched pair of
 
     <!-- counts:NAME -->  ...  <!-- /counts:NAME -->
 
@@ -286,7 +291,43 @@ BLOCKS = {
     "authority": block_authority,
 }
 
-TARGETS = ["README.md", "docs/GAPS.md", "docs/MINING.md"]
+TARGETS = ["README.md", "docs/STATUS.md"]
+
+
+def check_prose():
+    """A percentage in `docs/` outside a generated block is an error.
+
+    The drift this file was written to stop came back in a form generating
+    blocks could not catch: prose *beside* the tables, restating a figure that
+    was true when it was typed. Every one of those is a hand-maintained copy of
+    a number the build already computes, so the fix is not to keep them current
+    but to disallow them.
+
+    Escape hatch for a figure that belongs to a source rather than to this
+    dataset -- Mansuit & Herrel's appendage mass fractions, say. Put
+    `<!-- pct-ok -->` anywhere in the paragraph; prose wraps, so the marker
+    exempts the whole block rather than one line. `papers/` is exempt entirely:
+    a reading note records what a paper said and what one pass moved, and that
+    is history, which does not go stale.
+    """
+    bad = []
+    for path in sorted((ROOT / "docs").glob("*.md")):
+        text = re.sub(r"<!-- counts:(\w[\w-]*) -->.*?<!-- /counts:\1 -->",
+                      lambda m: "\n" * m.group(0).count("\n"), path.read_text(), flags=re.S)
+        lines = text.splitlines()
+        start = 0
+        for n, line in enumerate(lines + [""], 1):
+            if line.strip():
+                continue
+            para, first = lines[start:n - 1], start + 1
+            start = n
+            if any("<!-- pct-ok -->" in x for x in para):
+                continue
+            for i, x in enumerate(para):
+                for m in re.finditer(r"\d+\s?%", x):
+                    bad.append(f"{path.relative_to(ROOT)}:{first + i}: "
+                               f"'{m.group(0)}' — {x.strip()[:70]}")
+    return bad
 
 
 def main(write):
@@ -320,6 +361,15 @@ def main(write):
         print(("rewrote " if write else "stale, run with --write: ") + ", ".join(changed))
     else:
         print("docs are current")
+
+    bad = check_prose()
+    if bad:
+        print(f"\n{len(bad)} hand-written percentage(s) in docs/ outside a generated block.")
+        print("A figure the build can compute must not also be typed into prose.")
+        for b in bad:
+            print(f"  {b}")
+        return 1
+
     return 0 if (write or not changed) else 1
 
 

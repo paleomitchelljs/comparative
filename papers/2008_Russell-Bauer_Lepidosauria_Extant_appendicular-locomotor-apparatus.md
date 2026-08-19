@@ -49,7 +49,7 @@ generalised lizard.** Every muscle account opens with a paragraph keyed
 such `Iguana:` paragraphs** and about 65 distinct muscle headings across the
 forelimb and hindlimb.
 
-This is exactly the check `GAPS.md` §7 exists to force, and here it comes out
+This is exactly the check the base-layer rule exists to force, and here it comes out
 the *opposite* way to the four cases catalogued there: the paper does name an
 animal, and it is one already in `species.json`. `iguana-iguana` currently
 carries **7 rows**. Nearly the whole appendicular musculature of that species is

@@ -6,18 +6,40 @@ no build step, no dependencies. Data in `data/*.json`, app in `assets/`.
 ## Before committing
 
 ```sh
-python3 scripts/validate.py              # must exit 0
-python3 scripts/symmetrise_links.py --write
-python3 scripts/doc_counts.py --write    # after ANY change under data/
+./scripts/build.sh --write               # normalises, derives, validates
 for t in tests/*.test.js; do node "$t"; done
 ```
 
-`doc_counts.py` rewrites only the `<!-- counts:… -->` blocks in `README.md` and
-`docs/GAPS.md`. **The prose around them is hand-written and it drifts** — an audit
-found the claim "inheriting is the majority case, 69 of Theria's 81 muscles"
-repeated across `METHODS.md`, `README.md` and two source comments long after it
-had inverted to 185 of 593 cells. If you change the shape of the data, grep the
-docs for the figure you just moved; the generated blocks will not catch it.
+That is the whole list — the build runs `symmetrise_links`, `doc_counts` and
+`validate` in order and exits non-zero on any of them. CI runs it too and fails if
+the committed data moves.
+
+**Never type a measured figure into `docs/`.** `doc_counts.py` generates them into
+`<!-- counts:… -->` blocks in `README.md` and `docs/STATUS.md`, and it now
+*rejects* a percentage written anywhere else under `docs/`. That check exists
+because generating the blocks was not enough on its own: an audit found 77
+hand-written percentages contradicting a generated table in the same file, one of
+them a sentence calling cranial the region to worry about sixty lines under a
+table showing it mid-pack. If a figure belongs to a source rather than to this
+dataset, mark the paragraph `<!-- pct-ok -->`. `papers/` is exempt: a reading note
+records what one pass moved, and history does not go stale.
+
+## Which document does what
+
+Nothing carries two of these jobs.
+
+| File | Job |
+|---|---|
+| `docs/SCHEMA.md` | The data model. The only definition of any field |
+| `docs/METHODS.md` | How to read the data. The only statement of any interpretive rule. **No numbers** |
+| `docs/STATUS.md` | Where coverage stands. **Entirely generated** |
+| `docs/WORKLIST.md` | What to do next, and the open decisions |
+| `docs/MINING.md` | How to mine a paper. Procedure, changes rarely |
+| `docs/ROADMAP.md` | Where the interface is going, and why the spine is mass-and-layer |
+| `papers/*.md` | What one source says, and what one pass found. Where history lives |
+
+If a rule is stated in two of them, one is wrong and you cannot tell which — so
+state it once and link.
 
 ## Non-obvious constraints
 

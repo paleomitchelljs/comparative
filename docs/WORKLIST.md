@@ -1,0 +1,151 @@
+# What to do next
+
+Curated, and kept short. The measured picture is in [`STATUS.md`](STATUS.md) —
+read the generated tables there rather than any figure written into prose here.
+How to actually do the work is in [`MINING.md`](MINING.md).
+
+---
+
+## This is an acquisition problem, not a mining problem
+
+The corpus has very nearly exhausted its descriptive sources. Of the rows still
+unscored, most cite only sources that structurally cannot yield a species-level
+attachment:
+
+| source | why it cannot be scored |
+|---|---|
+| Abdala & Diogo (2010) | Synonymy. Its specific attachment statements are outnumbered several times over by hedged ones — "usually inserts onto the humerus". Its generalisations belong in `consensus` |
+| Diogo & Molnar (2014) | Same shape |
+| Diogo et al. (2016) | Homology hypotheses; the attachments are in the supplementary tables, already mined |
+| Allen et al. (2021), Hutchinson et al. (2015) | Musculoskeletal models, not descriptions |
+| Johnston (2014) | Does not dissect *Ctenosaura* — the figure is after Oelrich (1956) |
+
+What remains in hand is single figures per source. The way forward is to acquire
+descriptive myologies, not to re-read what is here.
+
+## Acquisition targets
+
+Ranked by in-text citations across the extracted corpus, weighted by how often the
+citation sits near attachment language. `#ours` is how many of our papers cite it.
+
+| #ours | Work | What it would close |
+|---:|---|---|
+| 18 | **Edgeworth FH (1935). The Cranial Muscles of Vertebrates** | The canonical cranial monograph across all vertebrates, and the spine under most of what the modern papers cite |
+| 9 | **Walker WF (1973). The locomotor apparatus of Testudines.** *Biol. Reptilia* 4 | **Acquired.** Turtle limb myology, 100 pp — the Testudines forelimb rows that cite only Abdala & Diogo |
+| 6 | **Dunlap DG (1960). The comparative myology of the pelvic appendage in the Salientia** | Anuran pelvis and thigh, the thinnest tetrapod column |
+| 6 | Russell AP & Bauer AM (2008). *Biol. Reptilia* 21 | **Acquired.** Lepidosaur limbs, and the tuatara |
+| 8 | Francis ETB (1934). The Anatomy of the Salamander | Caudata's classic; what the reference column rests on |
+| 7 | Gaupp E (1896). Anatomie des Frosches | The classic anuran reference |
+| 4 | Ribbing L (1907, 1938) | Historical backbone for the forearm, the largest region by occurrence count |
+| 2 | Ogushi K (1911–13) | Turtle myology in German, and Werneburg's own backbone — would let a real turtle species be scored rather than a catalogue |
+| 2 | Hudson GE, Schreiweis DO, Wang SYC (1972) | Avian myology; Aves has the largest single clade gap |
+| 2 | Lakjer T (1926) | The sauropsid jaw adductor monograph — three cranial columns at once |
+
+**Most of the top of this list is old, and that is an opportunity.** *Biology of
+the Reptilia* is free and complete at
+[carlgans.org](https://carlgans.org/biology-reptilia-full-content/) — the viewer
+serves one PDF per page at `https://carlgans.org/wp-content/bor/{VV}/BotR{VV}-page{N}.pdf`,
+where `N` is the PDF page and the offset differs per volume (in vol. 4 it is +9).
+Fetch a range and `pdfunite` it. Edgeworth, Lakjer, Ogushi, Gaupp, Francis and
+Ribbing are all old enough to be plausible on the Biodiversity Heritage Library or
+archive.org. Four of the ten are in German — a real cost, but Werneburg, Johnston
+and Diogo are all reading them, and this dataset is currently reading those
+authors' readings of them.
+
+## Two columns are empty for want of a paper
+
+- **A mammalian cranial myology.** Nothing in `papers/` dissects a mammal's head.
+  This would restore the masseter/temporalis, digastric, facial-expression and
+  middle-ear cases, which are the best arch-identity teaching material available.
+- **Crocodylian trunk musculature.** Nothing here covers it. Boumans et al. (2015)
+  would restore the avian *neck*, but neither trunk.
+
+## Catalogued and not yet mined
+
+`validate.py`'s `never cited` warnings are the live list — a catalogued source is
+a promise, and the warning is what stops the promise being forgotten. The ones
+worth reaching for first, by what they would close:
+
+| Source | Would close |
+|---|---|
+| **Collings & Richards (2019)** | Anuran pelvis and hindlimb in a walking rather than jumping frog |
+| **Bauer (1997)** | Urodele jaw openers on CN VII |
+| **Cole et al. (2011)** | Developmental origin for the pelvic fin muscles, which the fin records mostly assert topologically |
+| **Diogo & Abdala (2007); Diogo (2008)** | The osteichthyan half of the pectoral and cranial homology arguments the tetrapod records rest on |
+| **Lowie et al. (2018)** | Lizard forelimb flexors — Lepidosauria's largest remaining region gap |
+| **Sánchez et al. (2019)** | Felid forearm and hand. The therian forelimb is scored from a mustelid, and the cat is the animal most labs use |
+| **Gyambibi & Lemelin (2013); Lemelin & Diogo (2016)** | Primate forearm and hand |
+| **Diogo et al. (2016, marsupials)** | Whether the therian rows are therian or merely eutherian |
+| **Mathou et al. (2023)** | Architecture for the axial column, which has none |
+| **O'Reilly et al. (2000); Reilly & White (2003)** | Axial function, and the epipubic bone — see the open decision below |
+| **Didier (1987); Zhu (2011)** | Holocephalan myology and turtle plastron reduction. Both unpublished theses — check, do not defer to |
+| **Schlough; Lőw et al.; OSU Extension; Jacob & Pescatore** | Dissection vocabulary for mustelid, frog, salmonid and chicken, as Campbell (2007) supplied for the rat |
+
+### Sources that are in the corpus and are not row sources
+
+Worth knowing before planning a pass around one:
+
+| Source | Actually for |
+|---|---|
+| **Ghetie et al. (1976)** | A plate atlas — labelled figures in four languages, no myological prose in 154 pages. **Nothing else in the corpus describes a chicken**, so the *Gallus* rows are source-limited in the strict sense |
+| **Fisher & Goodman (1955)** | The avian column entire, but the scan is uneven and plate-facing pages OCR to noise. **A cleaner scan would unblock Aves more than any other single acquisition** |
+| **Blotto et al. (2020)** | Anuran hand and foot, 157 pp with its own revised nomenclature and active disagreements with Abdala & Diogo — needs a dedicated bridging pass |
+| Wiseman (2021), Demuth (2022, 2023), Cuff (2022) | Musculoskeletal models — attachments are 3D coordinates |
+| Mathou (2023), Gyambibi & Lemelin (2013) | Architecture data |
+| Lemelin & Diogo (2016), Richardson (2022), Molnar & Diogo (2021) | Reviews and framing |
+
+## Reading notes
+
+Every mined source should have one. It is the durable record of what a paper says
+and of the judgement calls made in scoring it, and it is the layer this repository
+is thinnest in. `validate.py` does not yet check for it; the count is in
+[`STATUS.md`](STATUS.md).
+
+The largest gaps by citation count are Burch (2014), Matsuoka & Hasegawa (2007),
+Allen et al. (2021), Schilling (2011), Hutchinson et al. (2015) and Werneburg
+(2011). Five sources have a local PDF but no extracted text — rerun the
+`pdftotext` loop in `CLAUDE.md`. One, Pereyra et al. (2024), was fetched from PMC
+and has no local copy at all.
+
+> Where a mining pass produced a finding worth keeping, it belongs in that
+> source's reading note. The pass-by-pass narrative that used to live in
+> `docs/GAPS.md` §2 is in git history at `85360ce:docs/GAPS.md`; fold each
+> paragraph into its source's note as that note is written.
+
+## Open decisions
+
+These are judgement calls the data is currently carrying, each waiting on a
+specific source rather than on effort.
+
+**`epipubis` groups two things that may not be one.** It holds the turtle's
+cartilaginous epipubic process and the mammalian epipubic bone, on position: both
+are the anterior process of the pubis and both take hypaxial and adductor
+attachments. That is the usual reading, but neither source cited on the element
+demonstrates the homology, and the mammalian element is not uniform even within
+Cunningham's three marsupials — a large paired bone in the cuscus, a cartilaginous
+nodule in the thylacine. **Reilly & White (2003)** is in `papers/`, unmined, and is
+the source that bears on it. Until it is read, splitting the record stays live.
+
+**Dick & Clemente (2016) is mapped to an animal it never names.** Six hindlimb rows
+carry its Table 1, which is a compilation "of the varanid hindlimb" from four
+earlier papers, two of them on non-varanids. The mapping is flagged in
+`attribute_species.py`. The disposition is a decision, not a lookup fix.
+
+**Osteological correlates with no muscle on them.** Each is a landmark a
+palaeontologist reads first, and the dataset says nothing about what pulls on it.
+Two of them are orphans *on purpose* — the supinator crest and the zygomatic arch
+each used to carry a muscle through a consensus row no occurrence supported, and
+removing those rows was correct. Closing them needs a therian forelimb source and
+a mammalian cranial source. The rest are usually not missing observations but
+unfinished passes: three closed at once when Hattori & Tsuihiji was finally mined
+for rows rather than for its landmark vocabulary. **The fastest way to find the
+muscle is normally to reopen the source the correlate came from.**
+
+**Architecture is entered for three species and the schema holds one specimen.**
+Zaaf et al. (1999) Tables 4–6 would add the first lepidosaur, but it is two species
+× two specimens. A schema decision comes first. Roadmap phase 5.
+
+**Species-level rows the old model could not hold.** Schreiweis (1982) on a penguin
+and Martins et al. (2019) on threadsnakes were both once refused as too derived to
+represent their clade. Under species scoring that objection is gone — roughly 30
+rows.

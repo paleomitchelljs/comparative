@@ -120,7 +120,7 @@ authority for the diagnostic ligament.
   parasagittal plane as the widest point of the ribs, so the muscle runs straight
   down the flank onto the epicondyle. A muscle moving the length of a bone, and a
   reason it had to.
-- **The prepollex is not an anuran peculiarity.** `GAPS.md` §1 singles it out as
+- **The prepollex is not an anuran peculiarity.** The anuran hand notes single it out as
   the position-versus-identity case, on the grounds that anurans lost digit I and
   the preaxial muscles attach to the prepollex instead. Monotremes have one, did
   not lose digit I, and hang more on it: the entire flexor carpi radialis insertion

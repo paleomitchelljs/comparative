@@ -22,7 +22,7 @@ rather than repaired with a plausible species — the whole therian cranial colu
 was attributed to a cheetah nobody dissected, and no source here describes a
 mammalian head. Where a source contradicts what the dataset already said, the
 source wins and the row is corrected or downgraded, with the disagreement written
-into the note. `docs/GAPS.md` §7 records the audit.
+into the note.
 
 **That rule is narrower than it sounds, and it is worth stating what it does not
 license.** It applies where a row had no observation behind it — a clade
@@ -74,6 +74,33 @@ crane. None of them is "the mammal", "the bird".
 (2010) document several muscles present in one lizard and absent in another; that
 is what `variable` is for.
 
+## Reading the coverage figures
+
+The measured picture is in [`STATUS.md`](STATUS.md) and is generated. Three things
+about how to read it, which are stable and belong here rather than beside the
+numbers.
+
+**Read the scored count beside the percentage, never either alone.** A column's
+`%att` can fall because rows *arrived*: opening a new taxon with present rows that
+carry no attachments yet drops the percentage while strictly increasing what the
+dataset knows. It can also rise because rows *left* — the therian cranial column
+improved when rows attributed to an animal nobody dissected were removed. A
+shrinking gap is not always progress, and a falling percentage is not always
+regress.
+
+**A thin column is usually a source gap, not an unfinished pass.** Where the
+corpus holds no descriptive myology of an animal, no amount of re-reading will
+score it. The distinction matters because the two have different remedies, and
+[`WORKLIST.md`](WORKLIST.md) separates them.
+
+**Some rows cannot be scored and are not gaps.** The hagfish constrictor
+branchiarum arises from the mesentery and ends on connective tissue, the surface
+of the heart and the fascia of the branchial pouches; only its most anterior
+fibres touch cartilage at all. A branchial constrictor that inserts on the heart
+is not a scoring gap. Where a row is deliberately left unscored, its note says so,
+and the alternative — copying a related animal's rows onto it — is what the base
+layer rule exists to prevent.
+
 ## Skeletal elements
 
 Elements are homology groups, like muscles. One element, different names in
@@ -100,25 +127,18 @@ record the consensus can be shown in its place, marked `unrecorded` — that mea
 nobody has recorded it, not that it is known to match. Inherited rows naming a
 bone the taxon lacks are dropped rather than asserted.
 
-**The Skeleton view defaults to recorded rows only.** The original reason was
-that inheriting was the majority case and not a small one — 69 of Theria's 81
-muscles, 48 of 55 in Aves, 18 of 19 in Chondrichthyes — so showing those unmarked
-turned the consensus into roughly four hundred observations no source makes.
+**The Skeleton view defaults to recorded rows only.** The original argument was
+that inheriting was the majority case, so showing the fallback unmarked would turn
+the consensus into hundreds of observations no source makes.
 
-**Those figures are now historical, and the balance has inverted.** Of the 593
-muscle-by-clade cells the dataset scores, 408 (69%) carry a recorded attachment
-and 185 fall back to the consensus. Theria is 56 of 64 rather than 12 of 81;
-Chondrichthyes 10 of 19; Monotremata, Dipnoi, the stem crocodyliforms and the
-stem tetrapodomorphs are fully scored. Testudines, at 18 of 52, is the thinnest
-extant column and the one where the old description still fits.
-
-The default does not change, but the argument for it does. It is no longer "the
-fallback dominates, so it must be marked"; it is "the fallback is now the
-exception, so presenting it as observation would misrepresent the minority of
-cells that still need it". The *showing* selector opens the fallback back up when
-you want the generalised attachment, and every inherited entry is tagged and
-greyed. `attachments.csv` has carried the same distinction as its `inherited`
-column throughout.
+That balance has since inverted — the fallback is now the minority of cells; see
+[`STATUS.md`](STATUS.md). The default does not change, but the argument for it
+does. It is no longer "the fallback dominates, so it must be marked"; it is "the
+fallback is now the exception, so presenting it as observation would misrepresent
+the minority of cells that still need it". The *showing* selector opens the
+fallback back up when you want the generalised attachment, and every inherited
+entry is tagged and greyed. `attachments.csv` has carried the same distinction as
+its `inherited` column throughout.
 
 **A fusion must never break the homology of what fused.** There are two ways to
 honour that, and which one applies depends on the source.
@@ -160,8 +180,8 @@ no source claims.
 against the earliest taxon with data. The diff is hierarchy-aware: `humerus →
 greater tubercle` is a refinement in resolution, not a muscle moving.
 
-For thirteen forelimb muscles that earliest taxon is now a **fossil**. Scoring the
-stem-tetrapodomorph column from Molnar et al. (2018) put *Eusthenopteron*,
+For a number of forelimb muscles that earliest taxon is now a **fossil**. Scoring
+the stem-tetrapodomorph column from Molnar et al. (2018) put *Eusthenopteron*,
 *Tiktaalik*, *Acanthostega* or *Ossinodus* ahead of Caudata on the topology, so
 the pectoralis, the deltoid complex, the triceps and most of the forearm are
 diffed against a Devonian or Carboniferous scar rather than a salamander
@@ -188,7 +208,7 @@ et al. (2019) sectioned the pectoral girdle and humerus of three turtles —
 *Phrynops hilarii*, *Hydromedusa tectifera* and *Chelonoidis chilensis* — and
 classified the Sharpey's fibres at every attachment site by orientation and
 density. The result the dataset has to carry is not the classification but the
-blanks in it. Nine attachments in their Table 2 leave fibres in one or two of the
+blanks in it. Several attachments in their Table 2 leave fibres in one or two of the
 three species and **none at all** in the others, and it runs both ways: the
 testocoracoideus insertion on the scapular blade and the biceps origin on the
 coracoid are recorded in the two pleurodires and absent in the tortoise, while the
@@ -198,9 +218,9 @@ of two species and absent in the third — the same muscle, the same bone.
 
 So a correlate's absence is not evidence that the muscle was absent, and this is
 now measured rather than assumed. It bears directly on the fossil columns: the
-thirteen forelimb muscles diffed against *Eusthenopteron*, *Tiktaalik*,
-*Acanthostega* or *Ossinodus* rest on scars, and Molnar et al.'s six `uncertain`
-rows are `uncertain` for exactly this reason. Read a missing scar as missing
+forelimb muscles diffed against *Eusthenopteron*, *Tiktaalik*,
+*Acanthostega* or *Ossinodus* rest on scars, and Molnar et al.'s `uncertain` rows
+are `uncertain` for exactly this reason. Read a missing scar as missing
 evidence, and score `no` only where a source says the muscle is absent.
 
 Actions are structured as well as written out: every muscle carries `actions`
@@ -208,7 +228,7 @@ pointing at `data/joints.json`, where a joint records which bone surfaces
 articulate. Because joints are stored as ordered pairs they form a graph over
 the skeleton, so the joints a muscle crosses are **derived** from its
 attachments rather than asserted — and a stated action can then be checked
-against them. Four muscles act on joints they do not span, all of them through
+against them. A few muscles act on joints they do not span, all of them through
 another muscle's tendons; the check reports rather than corrects, because the
 graph cannot follow a tendon.
 
@@ -325,8 +345,8 @@ presence, and none should push a transition onto a branch by itself.
 ambiguous, both states cost the same number of steps, and a convention decides
 where the change is drawn. The convention used is **absent at the root**, since
 muscles are acquired rather than primitively universal. Flip that assumption and
-the gains become losses elsewhere at identical cost. Currently 19 of 38 inferred
-changes are equivocal in this sense.
+the gains become losses elsewhere at identical cost. The share of inferred changes that are
+equivocal in this sense is on the view itself.
 
 **One topology, no support.** The tree is a pragmatic consensus — including
 Abdala & Diogo's placement of turtles as archosauromorphs — and the counts would
@@ -340,9 +360,9 @@ The per-appendage counts plotted under the tree are Diogo et al. (2016) figures
 for their exemplar species, **not** counts of records in this dataset. The two
 differ and should not be reconciled.
 
-The comparison worth making: *Polypterus* → *Latimeria* is a jump of 23;
-*Latimeria* → *Ambystoma* excluding the autopod is a jump of 20. Most of the
-fin-to-limb change had already happened before the sarcopterygian last common
+The comparison worth making is *Polypterus* → *Latimeria* against *Latimeria* →
+*Ambystoma* excluding the autopod. They are close to equal, which means most of
+the fin-to-limb change had already happened before the sarcopterygian last common
 ancestor.
 
 ---
@@ -377,5 +397,5 @@ that survives deep transitions.
 
 ---
 
-See also [`SCHEMA.md`](SCHEMA.md) for the data model and [`GAPS.md`](GAPS.md) for
-measured coverage.
+See also [`SCHEMA.md`](SCHEMA.md) for the data model, [`STATUS.md`](STATUS.md)
+for measured coverage, and [`WORKLIST.md`](WORKLIST.md) for what is still open.

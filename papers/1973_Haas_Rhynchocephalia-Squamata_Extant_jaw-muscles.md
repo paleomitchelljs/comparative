@@ -106,7 +106,7 @@ however detailed. Four of the five were new to `species.json`.
 That check also settles what this chapter cannot do. Against **Ctenosaura
 pectinata** Haas gives Oelrich (1956) and Avery & Tanner (1971), not himself — so
 the four unscored *Ctenosaura* cranial rows are not closed here, and Oelrich
-(1956) remains what they need. `docs/GAPS.md` §7 already records Johnston (2014)
+(1956) remains what they need. The base-layer audit already recorded Johnston (2014)
 reading the same primary.
 
 Two of the squamate rows justify the whole section. **Lanthanotus** has no

@@ -70,7 +70,7 @@ web-forming, lateral plantar nerve. Hence `interossei-dorsales-pes`.
 finally moved off 26%, and foot and leg became the two best-covered regions in the
 dataset.
 
-More than rows, it closed **osteological correlates**. `GAPS.md` §3 lists
+More than rows, it closed **osteological correlates**. `WORKLIST.md` tracks
 correlates carrying no muscle; three of them close here. The avian tibialis
 cranialis takes the cranial and lateral cnemial crests, and the avian *m. abductor
 digiti II* takes the fossa metatarsi I. Those are landmarks a palaeontologist reads

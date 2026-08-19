@@ -43,7 +43,7 @@ SOURCE_SPECIES = {
     "hutchinson-etal-2015": "struthio-camelus",
     "prikryl-etal-2009": "discoglossus-pictus",
     "johnston-2011": "ascaphus-truei",
-    # UNRESOLVED — see docs/GAPS.md §7. Dick & Clemente name no *V. exanthematicus*:
+    # UNRESOLVED — see docs/WORKLIST.md. Dick & Clemente name no *V. exanthematicus*:
     # their own dissections are nine other varanids, and the Table 1 the attachment
     # rows come from is a compilation "of the varanid hindlimb" from Snyder (1954),
     # Gans et al., Reilly (Sceloporus clarki) and Anzai et al. (Anolis) — two of the

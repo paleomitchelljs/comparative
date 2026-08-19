@@ -139,7 +139,7 @@ range looks like.
 `epipubis` gained Theria and Monotremata. That groups the turtle epipubic
 cartilage with the mammalian epipubic bone on position, which is the usual
 reading but is not demonstrated by either source on the element — flagged as a
-working decision in `docs/GAPS.md` §3, with Reilly & White (2003) named as the
+working decision in `docs/WORKLIST.md`, with Reilly & White (2003) named as the
 unmined source that bears on it.
 
 ## The pes survey, pp. 48–139
@@ -189,4 +189,4 @@ rows.
 The **pedal lumbricales** (`lumbricales` is a manus record; the pes has no
 counterpart) and Cunningham's **ischio-femoral**, which he explicitly declines to
 call the quadratus femoris because it lies on a different plane. Both are in
-`docs/GAPS.md` §2.
+`docs/STATUS.md`.

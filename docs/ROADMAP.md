@@ -51,7 +51,7 @@ taxon from bichir to horse into exactly four cells — abductor superficialis,
 abductor profundus, adductor superficialis, adductor profundus — and extract a
 real evolutionary signal: fish appendages are deep-dominated, tetrapod limbs are
 superficial-dominated, and appendage muscle mass rises from <1% to >1.7% of body
-mass across the transition.
+mass across the transition. <!-- pct-ok -->
 
 That is empirical validation that these cells are a workable unit of comparison
 across the whole range this project covers. Three further points in its favour:
@@ -229,23 +229,17 @@ same four-cell classification.
 
 Phases 1, 2 and 3 are done. Remaining: **5 → 4**.
 
-See [`GAPS.md`](GAPS.md) for the measured picture, which is generated — the
-figures below are not, so check them against it before acting on them.
+**Phase 4 is no longer gated on attachment coverage.** It was, and the scoping
+advice this section used to give — score the pectoral girdle and arm only, because
+the fish columns, the fossil columns, the hand and the foot had nothing in them —
+has expired twice over. The fish and fossil columns are scored, and the foot is
+now among the best-covered regions rather than the worst. Restricting phase 4 to
+the girdle and arm would now skip the regions that are best supported.
 
-**The scoping advice this section used to give has expired.** It read: per-taxon
-attachments cover 13% of occurrences and are absent entirely for fish, fossil
-taxa, the hand and the foot, so scope phase 4 to the pectoral girdle and arm.
-Every clause of that is now false. Attachment coverage is **71%** (564 of 789
-present occurrences). The fish columns are scored — Dipnoi 100%, Actinistia 86%,
-Actinopterygii 50%, Chondrichthyes 48% — as are the fossil ones, at 79% for the
-stem tetrapodomorphs and 100% for the stem crocodyliforms. The foot is the
-best-covered region in the dataset at 89%, ahead of the pectoral girdle at 77%.
-
-So **phase 4 is no longer gated on attachment coverage**, and restricting it to
-the girdle and arm would now skip the regions that are best supported. The two
-genuinely thin columns are **Testudines (35%)** and the cyclostomes (33%), and
-the thin regions are **axial (50%)** and **hand (54%)** — those are where a
-schematic would still be drawing the consensus rather than an animal.
+What still decides where a schematic would be drawing a consensus rather than an
+animal is the per-taxon and per-region coverage in [`STATUS.md`](STATUS.md).
+Read it there. Do not copy the figures back into this file — they have gone stale
+here twice, and `doc_counts.py` now refuses the third time.
 
 ## What would change my mind about the spine
 

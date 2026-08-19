@@ -29,7 +29,7 @@ mentions per page and cannot be the source of an attachment either.
 The cause was `attribute_species.py` rule 2 taking the **first** single-species
 source in the `sources` array, with `hudson-etal-2011b` ahead of
 `ercoli-etal-2012` and both inside Theria. All five rows now name *Galictis cuja*
-in their own prose, which is rule 1 and survives every rebuild. See `GAPS.md` §7.
+in their own prose, which is rule 1 and survives every rebuild.
 
 ## Scored (19 occurrences, all *Galictis cuja*)
 

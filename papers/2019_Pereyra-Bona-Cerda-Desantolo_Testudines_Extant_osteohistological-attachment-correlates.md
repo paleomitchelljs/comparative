@@ -34,7 +34,7 @@ claim histologically rather than by inspection.
 
 ## Why that matters for the gaps
 
-`GAPS.md` §3 lists **18 flagged correlates that carry no muscle**: scapular
+`WORKLIST.md` lists the flagged correlates that carry no muscle: scapular
 spine, coronoid process, lesser trochanter, trochanteric fossa, linea aspera,
 tibial tuberosity, and others. Those are the sites a palaeontologist looks at
 first, and the dataset currently says nothing about what pulls on them. This
