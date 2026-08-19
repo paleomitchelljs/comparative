@@ -34,8 +34,30 @@ def cited_keys(muscle):
     keys = set(muscle.get("sources") or [])
     keys.update((muscle.get("layerSource") or {}).get("sources") or [])
     # A correspondence is a homology claim in its own right, so whoever supports
-    # it is a candidate for governing this record's homology.
+    # it is a candidate for governing this record's homology — but not every
+    # relation says something about what THIS muscle is.
+    #
+    # `descends-from` and `corresponds-to-part-of` do: they place the record in
+    # an ancestry or inside a whole, and are directed, so their source is
+    # speaking about this end of the edge.
+    #
+    # `serial` does not. It is symmetric, it is topological rather than
+    # genealogical by default, and Diogo & Molnar (2014) reject it as strict
+    # serial homology outright — so it says these two muscles are one series in
+    # different segments, not what either muscle IS. Feeding its source into
+    # authority also breaks in both directions at once: attributing the
+    # forelimb–hindlimb edges to the paper written about that axis would have
+    # handed five forelimb records (abductor pollicis longus, pronator teres,
+    # both flexores accessorii, intermetacarpales) from Abdala & Diogo's
+    # forelimb synonymy to a hindlimb paper, purely for carrying one edge to a
+    # muscle of the foot.
+    #
+    # `no-counterpart` is on the same axis vocabulary and would raise the same
+    # question, but every such edge in the data is hindlimb-side, so excluding
+    # it would change nothing today and it is left in deliberately.
     for e in ((muscle.get("homology") or {}).get("correspondences") or []):
+        if e.get("relation") == "serial":
+            continue
         keys.update(e.get("sources") or [])
     for occ in muscle.get("occurrences") or []:
         keys.update(occ.get("sources") or [])

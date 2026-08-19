@@ -77,6 +77,58 @@ Extant, but with explicit reference to Paleozoic stem gnathostomes (the antiarch
 - **Tables 5–6** — *Ambystoma* vs. *Xenopus* pelvic/thigh and dorsal leg-muscle correspondences. Where to go when teaching amphibian hindlimb.
 - **Tables 13–21** — FL–HL "topological equivalence" matrices per taxon. The practical use is a cross-check: when a colleague claims muscle X of the HL is the "serial homologue" of muscle Y of the FL, look it up here and see whether the developmental anlage supports it.
 
+## What Tables 13–21 settled, and what they contradicted
+
+Tables 13–21 are the forelimb–hindlimb correspondence tables, and their captions
+use the phrase this dataset's `basis: "topological"` was named for: "clear
+topological correspondences". They read cleanly as page images (pp. 1068–69 of the
+PDF) where the text layer collapses their columns. Reading them against the
+dataset's own forelimb–hindlimb `serial` edges split those edges three ways.
+
+**Fifteen pairs are stated outright and are now sourced to the table that states
+them** — the abductor digiti minimi, contrahentes, contrahentium caput longum, both
+flexores accessorii, flexores breves profundi and superficiales, intermetacarpales
+and intermetatarsales, extensores digitorum breves, extensor digitorum, flexor
+digitorum longus, tibialis anterior against the extensor antebrachii et carpi
+radialis, the interosseus cruris against the pronator quadratus, the popliteus
+against the pronator teres, and the abductor et extensor digiti 1 against the
+abductor pollicis longus.
+
+**Nine pairs are ones this paper explicitly denies.** Every pelvic-or-thigh against
+pectoral-or-arm edge in the dataset falls here. The paper's statement is flat:
+across every tetrapod clade in Tables 13–21, including anatomically plesiomorphic
+urodeles, *not even one pelvic-thigh muscle has a clear "topological equivalent" in
+the pectoral region and arm*, a lack they attribute to phylogenetic constraint on
+the girdles — the girdles were already markedly different in fish, and only the
+distal limb converged. Those nine edges are kept, because the pairings are ones the
+literature makes and a student will look for, but each now carries a `caution`
+naming this paper as denying it. **They are deliberately left unsourced**, because
+no source supports them and a citation here would read as if one did.
+
+**Three pairs conflict with a specific pairing in Table 14** and are flagged rather
+than sourced:
+
+- `flexor-digitorum-longus` ↔ `gastrocnemius` — Table 14 gives the gastrocnemius no
+  forelimb equivalent at all; the cell is blank for *Timon*, *Rattus* and *Homo*.
+- `pronator-quadratus` ↔ `tibialis-posterior` — Table 14 pairs the pronator
+  quadratus with the interosseus cruris, and the tibialis posterior with the
+  palmaris profundus 1 or the flexor carpi radialis. Our edge crosses both, and it
+  claims `basis: "developmental"`, which is a shared-anlage claim this paper does
+  not support.
+- `pronator-profundus-pes` ↔ `pronator-quadratus` — "pronator profundus" is this
+  paper's alternative name for the *leg* muscle tibialis posterior. Whether our foot
+  record is that muscle needs settling before the edge can be attributed.
+
+The `no-counterpart` edges are the other side of the same result and are sourced
+here: five records assert no forelimb counterpart, and this paper's general finding
+is exactly that.
+
+One thing in the tables the dataset does not yet carry: the captions state that
+where a forelimb "equivalent" **clearly has a different ontogeny, it is set in
+italics.** That is a per-pair anlage-mismatch flag, already published, and it maps
+onto `caution` under `basis: "developmental"`. Reading the italics off the plates
+is a discrete follow-up pass.
+
 ## Limitations
 
 Authors are explicit on several points:

@@ -232,6 +232,7 @@ by the app. Recording it twice gives one fact two homes.
 | `correspondences` | Typed homology claims about other records — serial, ancestry, partial. See below |
 | `teaching` | What this record is good for in a classroom |
 | `caveat` | Source-quality warning (e.g. a non-peer-reviewed preprint) |
+| `caution` | *(on a correspondence)* What is known to be wrong with an edge kept anyway. See below |
 | `authority` | Whose homology scheme this record follows. **Derived** — see below |
 
 ### `authority` — recency governs homology, not attachment
@@ -307,10 +308,23 @@ draws: five records assert there is no forelimb counterpart, and the
 caudofemoralis note calls itself a clean falsification of any expectation of
 one-to-one fore/hindlimb correspondence. Omitting the relation means unrecorded.
 
-**`sources` and `confidence` are expected but not enforced.** 94 edges migrated out
-of the old `homology.serial` and `derivatives` fields carry neither, because those
-fields had no per-edge attribution; `validate.py` reports the count once rather
-than warning ninety-four times.
+**`sources` and `confidence` are expected but not enforced.** The edges migrated
+out of the old `homology.serial` and `derivatives` fields carry neither, because
+those fields had no per-edge attribution; `validate.py` reports the running count
+once rather than warning on each.
+
+**`caution` records what is known to be wrong with an edge that is kept anyway.**
+A known anlage mismatch under `basis: "developmental"`, or a correspondence the
+record's own authority denies. It is not a hedge — `confidence` is the hedge. An
+edge whose caution says the governing source rejects it is a live disagreement the
+data is carrying deliberately, and it should say whose.
+
+**A `serial` edge's source does not set `homology.authority`.** The other two
+relations' do. `serial` is symmetric and topological rather than genealogical, so
+it says these two muscles are one series in different segments, not what either
+muscle *is* — and feeding it into authority hands forelimb records to hindlimb
+papers and vice versa, in both directions at once. See
+`scripts/seed_homology_authority.py`.
 
 ### `related` is not a correspondence
 
