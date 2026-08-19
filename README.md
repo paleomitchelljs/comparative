@@ -57,12 +57,12 @@ most readers already carry, against which every other column can be read. Pick i
 in the taxon selector and the shoulder reads *supraspinatus and infraspinatus*
 where a lizard reads *supracoracoideus*, the jaw reads *masseter, temporalis and
 the pterygoids* where a shark reads *adductor mandibulae*, and the pelvic floor
-turns out to be tail musculature. Two cautions travel with it. It is a teaching
-table rather than a dissection, so where it disagrees with a comparative source
-the comparative source wins. And it is the column where the same-name-different-
-muscle problem bites hardest: the human *levator anguli oris* is not the muscle
-this dataset calls by that name, and the human *sartorius* is deliberately given
-no home at all, because Diogo & Molnar reject the equation that would give it one.
+turns out to be tail musculature. One caution travels with it, and it is about
+names rather than reliability: this is the column where the
+same-name-different-muscle problem bites hardest. The human *levator anguli oris*
+is not the muscle this dataset calls by that name, and the human *sartorius* is
+deliberately given no home at all, because Diogo & Molnar reject the equation
+that would give it one.
 
 The underlying record is a **homology group**, not a muscle-in-an-animal. Names
 are attributes of occurrences, and **an occurrence is one species** — *Taricha

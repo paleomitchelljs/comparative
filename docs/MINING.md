@@ -891,11 +891,10 @@ Two columns are empty for want of a paper, not for want of a pass:
   it is valid only on a species record flagged `generalised: true`. The schema
   had been waiting for it — the HUMAN_ONLY check in `validate.py` that bans
   spinal root levels and human landmarks everywhere else exempts `homo-sapiens`
-  alone, and those rows now exist to be exempted. **The caution that remains is
-  the one the source record states**: it is a teaching table stating the
-  consensus human condition, not a dissection, so where it disagrees with a
-  comparative source the comparative source wins and the disagreement goes in
-  the row's note.
+  alone, and those rows now exist to be exempted. **The caution that remains is about
+  names, not reliability**: human clinical nomenclature collides with the
+  comparative scheme more than any other column's, so a name that matches is not
+  evidence that the muscle does, and the disagreement goes in the row's note.
 - **Architecture is entered for three species.** Zaaf et al. (1999) Tables 4–6
   would add the first lepidosaur, but it is two species × two specimens and the
   `architecture` block holds one — a schema decision first.

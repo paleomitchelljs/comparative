@@ -423,14 +423,13 @@ It also closes the therian cranial hole from an unexpected direction: eleven of
 those rows are cranial, so the masseter/temporalis, digastric, facial-expression
 and middle-ear cases the deleted cheetah rows were supposed to teach are back,
 sourced this time to a table that is actually about a mammal. **A comparative
-myology of a non-human mammal's head is still wanted** — a teaching table is not a
-dissection, and one species is not a clade — but the arch-identity material no
-longer rests on nothing.
+myology of a non-human mammal's head is still wanted** — one species is not a
+clade, and a human is a poor stand-in for Theria — but the arch-identity material
+no longer rests on nothing.
 
-**Read the human rows as a baseline, not as evidence.** Every one of them cites a
-teaching table stating the consensus human condition. Where they touch a
-contested homology the note says whose argument is being followed and what the
-alternatives are: the 'ambiens' row records that Diogo & Molnar reject the
+**The human rows are the baseline the other columns are read against.** Where
+they touch a contested homology the note says whose argument is being followed
+and what the alternatives are: the 'ambiens' row records that Diogo & Molnar reject the
 sartorius equation and gives the sartorius no home rather than a wrong one, the
 `levator-anguli-oris` row is scored absent because the human muscle of that name
 is a different muscle on a different nerve, and the interossei of the hand and
