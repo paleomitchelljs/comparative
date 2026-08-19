@@ -62,7 +62,7 @@ Cited on `depressor-mandibulae`, `stapedius` and `interhyoideus`. It carries
 `homologyScope: true`, but changes no record's authority: Ziermann & Diogo (2019) is
 more recent and already holds most of the cranial records.
 
-## What Tables 1 and 2 gave, once they were read
+## What the four tables gave, once they were read
 
 The schemes are arrow diagrams and do not extract as text; they were read as page
 images, and Table 2 had to be cropped before its column alignment could be trusted.
@@ -71,12 +71,13 @@ Six of the nine taxa in them — *Latimeria chalumnae*, *Ambystoma ordinarium*,
 sapiens* — were already exemplars in this dataset, so the tables map onto it almost
 without translation.
 
-**Sixteen occurrence rows on six cranial records**, for *Timon lepidus*,
-*Ornithorhynchus anatinus* and *Rattus norvegicus*. They carry presence, division
-and parts and **no attachments**, because the tables give none: this is a scheme of
-correspondences, and the attachments for any taxon in it have to come from that
-taxon's descriptive source. Before this the cranial records had exactly one mammal —
-*Homo sapiens*, on Gest — so the human row was standing for Mammalia.
+**Twenty-five occurrence rows on nine records** — eight cranial and
+`protractor-pectoralis` — for *Timon lepidus*, *Ornithorhynchus anatinus* and
+*Rattus norvegicus*. They carry presence, division and parts and **no
+attachments**, because the tables give none: this is a scheme of correspondences,
+and the attachments for any taxon in it have to come from that taxon's descriptive
+source. Before this the cranial records had exactly one mammal — *Homo sapiens*, on
+Gest — so the human row was standing for Mammalia.
 
 **The counts are the argument.** Mandibular muscles: *Timon* 11, *Ornithorhynchus*
 9, *Rattus* 9, *Homo* 8. Hyoid muscles, excluding the extrinsic ear muscles:
@@ -106,6 +107,52 @@ buccinatorius, naso-labialis and orbicularis oris. The platysma cervicale and
 platysma myoides come from the reptilian **cervicomandibularis** instead, so the
 neck sheet and the face descend from two different arch-2 muscles, not one.
 
+**A human keeps one true branchial muscle.** Table 3 scores the branchial muscles
+*sensu stricto* as absent **as a group** in every amniote in it. What survives is
+named taxon by taxon: in *Timon* the hyobranchialis and 'ceratohyoideus'; in the
+platypus the subarcualis rectus III, the ceratohyoideus and seemingly the
+stylopharyngeus; in the rat, the colugo and the tree-shrew the ceratohyoideus and
+seemingly the stylopharyngeus; **in a human, seemingly the stylopharyngeus alone.**
+The running text generalises it: adult extant mammals lack every branchial muscle
+*sensu stricto* except the subarcualis rectus I in most mammals, the subarcualis
+rectus II usually only in marsupials, and the subarcualis rectus III usually only
+in monotremes — so the three living mammal groups each keep a different member of a
+series that is otherwise gone.
+
+**They answer Edgeworth on whether the mammalian pharynx is new.** Edgeworth (1935)
+held that the pharyngeal muscles of mammals are not derived from branchial muscle
+plates at all but from a separate *de novo* condensation of myoblasts around the
+pharyngeal epithelium. Diogo et al., following Smith (1992) and Noden &
+Francis-West (2006), reject that for the stylopharyngeus, and the argument is from
+nerves: the mammalian stylopharyngeus and the reptilian subarcualis rectus I are
+among the very few muscles in either animal on the **glossopharyngeal** nerve, where
+most mammalian pharyngeal muscles take the vagus; in many mammals including
+*Macaca* the ceratohyoideus and stylopharyngeus share one ramus of CN IX; and
+developmental data from monotremes and marsupials show the stylopharyngeus early on
+resembling the non-mammalian subarcualis rectus I in position, function and
+connections. **They stop short of the full claim** — the subdivision of the
+subarcualis rectus I may have happened more than once in Amniota, and settling that
+needs more amniotes and the fossils.
+
+**The trapezius series is a branchial muscle sorted by function.** The mammalian
+acromiotrapezius, spinotrapezius, dorsocutaneous, cleido-occipitalis,
+sternocleidomastoideus, cleidomastoideus and sternomastoideus correspond to the
+reptilian trapezius and sternocleidomastoideus and thence to the protractor
+pectoralis of amphibians, dipnoans and other osteichthyans — this dataset's
+`protractor-pectoralis`. Diogo et al. file the whole series apart from the branchial
+muscles *sensu stricto* for a stated reason: **it moves the pectoral girdle and not
+the branchial arches.** Six parts in the platypus, four in the rat, two in a human.
+
+**The therian styloglossus and palatoglossus come out of the monotreme hyoglossus.**
+Their dissections support Edgeworth's suggestion, so a platypus has one muscle where
+a human has three and the difference is subdivision rather than acquisition. The
+hypobranchial series grows steadily rather than in a jump — *Latimeria* 2,
+*Ambystoma* 6, *Timon* 5, platypus 6, rat 8, human 9 — which is the opposite of the
+hyoid pattern. Piekarski & Olsson (2007) add a caution worth carrying: in mammals
+such as dogs the tongue muscles are sometimes supplied by **both** the hypoglossal
+and the facial nerve, which they read as evidence of dual origin in at least some
+cases.
+
 ## A disagreement this source creates
 
 **Table 1 derives the tensor tympani and the tensor veli palatini from the adductor
@@ -119,13 +166,29 @@ and takes no position, so the later date does not settle it.
 
 ## Limitations
 
-**Tables 3 and 4 are unread.** They cover the branchial, pharyngeal and laryngeal
-muscles and the hypobranchial muscles, on pages 12 and 16, and would bear on
-`branchial-constrictors` and `hypobranchial-muscles` — both of which still have
-*Homo sapiens* as their only mammal. Same method: read the page as an image, crop if
-the columns are dense.
+**No attachments anywhere in it.** Fewer than two origin/insertion mentions per
+page. Every row scored from this source carries presence, division and parts and
+nothing else, which is the honest reading of a table of correspondences.
 
-**No attachments anywhere in it.** Fewer than two origin/insertion mentions per page.
+**The pharyngeal and laryngeal rows of Table 3 are not fully mined.** Its lower two
+blocks resolve the constrictors, the cricothyroideus, the palatopharyngeus, the
+levator veli palatini, the salpingopharyngeus, the thyroarytenoideus, the
+arytenoidei and the cricoarytenoidei across the same nine taxa. They are not scored
+here because this dataset has no records at that resolution — `branchial-constrictors`
+holds the lot in one row per taxon — and splitting it is the same decision that
+`interhyoideus` faces with the facial muscles. Both are listed in
+`docs/WORKLIST.md`.
+
+**Two of the nine taxa have no species record here**, *Lepidosiren paradoxa* and
+*Cynocephalus volans*, and *Tupaia* sp. is identified only to genus. Their columns
+were read for the comparative statements in the notes but nothing is scored on them.
+
+**How to read the tables.** They are arrow diagrams and do not extract with
+`pdftotext`; read the page as an image. Tables 1, 3 and 4 are legible whole. **Table
+2 must be cropped** — at full-page scale the column boundaries cannot be trusted,
+and the first attempt here put facial muscles in the lizard column when *Timon* has
+three hyoid muscles in total. The muscle counts in each column header are the check:
+they should equal the number of filled cells in that column.
 
 ## Relevance to comparative anatomy teaching
 

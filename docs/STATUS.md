@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-129 muscle records · 1360 present occurrences · 272 skeletal elements · 120 sources · 20 operational taxa
+129 muscle records · 1368 present occurrences · 272 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **83%** of 1360 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 63%; the thinnest regions are fin, hand, cranial. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **82%** of 1368 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Aves at 63%; the thinnest regions are fin, cranial, hand. `side` is on 54% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -40,13 +40,13 @@ Taxon-specific attachments cover **83%** of 1360 present occurrences. The thinne
 | thigh | 10 | 92 | 84 | 91% |
 | pelvic | 8 | 71 | 61 | 86% |
 | arm | 5 | 99 | 85 | 86% |
-| pectoral | 16 | 261 | 223 | 85% |
+| pectoral | 16 | 263 | 223 | 85% |
 | forearm | 19 | 268 | 221 | 82% |
 | axial | 15 | 42 | 29 | 69% |
-| cranial | 16 | 116 | 78 | 67% |
 | hand | 9 | 119 | 80 | 67% |
+| cranial | 16 | 122 | 78 | 64% |
 | fin | 9 | 39 | 23 | 59% |
-| **all** | 129 | 1360 | 1123 | **83%** |
+| **all** | 129 | 1368 | 1123 | **82%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -58,12 +58,12 @@ Taxon-specific attachments cover **83%** of 1360 present occurrences. The thinne
 | Pseudosuchia (stem) | 1 | 1 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
-| Monotremata | 156 | 151 | 97% |
-| Theria | 383 | 359 | 94% |
+| Monotremata | 159 | 151 | 95% |
+| Theria | 386 | 359 | 93% |
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
-| Lepidosauria | 262 | 217 | 83% |
+| Lepidosauria | 264 | 217 | 82% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 92 | 70 | 76% |
 | Testudines | 57 | 41 | 72% |
@@ -84,11 +84,11 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1123 of 1360 present occurrences (83%).**
+**Taxon-specific attachments: 1123 of 1368 present occurrences (82%).**
 <!-- /counts:scored -->
 
 <!-- counts:unscored -->
-237 present occurrences still have no attachment rows.
+245 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 
 ### Observed attachment rows, by region

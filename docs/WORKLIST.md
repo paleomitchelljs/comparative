@@ -134,13 +134,11 @@ against the threshold of 4.
   placing markers at the centroid of each shaded area by eye. It is not an
   independent treatment of that shoulder, and this document said it was until the
   methods were read.
-- **Diogo et al. (2008)** on the head and neck across sarcopterygians is cited on
-  `depressor-mandibulae`, `stapedius` and `interhyoideus` for three homology
-  arguments — chiefly that the reptilian depressor mandibulae is the source of the
-  monotreme styloideus and stapedius and of the therian stylohyoideus, digastricus
-  posterior, jugulohyoideus and stapedius. **Its four homology schemes are arrow
-  diagrams and do not extract as text**; reading those four figures by hand is the
-  single most useful thing available for the cranial column.
+- **Diogo et al. (2008)** on the head and neck across sarcopterygians turned out to
+  be a row source after all, once its four homology schemes were read as page
+  images rather than as text. **Twenty-five rows on eight records** for *Timon
+  lepidus*, *Ornithorhynchus anatinus* and *Rattus norvegicus* — presence, division
+  and parts, no attachments, because the tables give none. See the reading note.
 - **Diogo et al. (2009)** on primate facial muscles is cited on `interhyoideus`. It
   is close to a complete kit for splitting that record into fifteen or twenty, with
   a proposed mammalian nomenclature and 300 synonyms — but see below.
@@ -153,10 +151,22 @@ against the threshold of 4.
   on a schema fact worth knowing first: facial muscles mostly end in skin, so the
   muscles most characteristic of the group are the ones an attachment schema can say
   least about.
-- **Reading the Diogo et al. (2008) figures.** Four arrow diagrams covering the
-  mandibular, hyoid, branchial/pharyngeal/laryngeal and hypobranchial groups from
-  fish to humans, in a source that dissected monotremes and therians. This is the
-  route to the cranial column that does not require acquiring anything.
+- **Two cranial records are now one row where their source is fifteen.**
+  `interhyoideus` carries the whole mammalian facial musculature in a single
+  occurrence per taxon, and `branchial-constrictors` carries the pharyngeal and
+  laryngeal muscles the same way. Diogo et al. (2008) Tables 2 and 3 resolve both
+  across nine taxa, and Diogo et al. (2009) resolves the facial half muscle by
+  muscle through the primates. **Splitting them is the same decision twice**, and
+  it is blocked on the same thing: nothing in `papers/` dissects a mammal's head,
+  so the new records would carry names and homologies with no attachments beneath
+  them. Worth deciding deliberately rather than drifting into.
+
+- **Figures in a PDF are readable; text extraction is not the only route.** The
+  Diogo tables were called unreadable in this document for one pass because
+  `pdftotext` returns only their footnotes. They read cleanly as page images, with
+  dense ones cropped. Anything else in the corpus written off as figure-only —
+  **Ghetie et al. (1976), the plate atlas that is the corpus's only chicken
+  source** — deserves the same second look before it is called unmineable.
 - **Gambaryan et al. (2002) leaves two things unscored.** It describes no obturator
   internus in either animal, so `ischiotrochantericus` is untouched — absence of
   mention is not absence. And its Table 1 gives a "calculated force" in a unit that
