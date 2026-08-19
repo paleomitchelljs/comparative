@@ -153,10 +153,10 @@ that was written to settle homology across more than one taxon. The rule is in
 | | |
 |---|---|
 | Sources that can adjudicate a homology | 31 of 120 |
-| Records following one | 115 of 129 (89%) |
+| Records following one | 121 of 129 (94%) |
 | Median year of the governing source | 2016 |
 | Records governed by pre-2010 work | 8 (7%) |
-| Records with **no** homology-scope source | 14 — their homology rests on descriptive work alone |
+| Records with **no** homology-scope source | 8 — their homology rests on descriptive work alone |
 <!-- /counts:authority -->
 
 The records with **no** homology-scope source are the signal in that table. Each

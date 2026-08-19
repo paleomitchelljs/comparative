@@ -191,6 +191,41 @@ against the threshold of 4.
   from it is entered anywhere. The relative muscle weights in the same table are
   unambiguous and are quoted in the rows.
 
+## Records whose homology no comparative source vouches for
+
+`validate.py` warns on each by name and `STATUS.md` counts them. There were
+fourteen. Six were a citation pass rather than a gap — Diogo & Molnar (2014)
+discusses the femorofibularis, the caudalipuboischiotibialis, both extensores
+cruris et tarsi and both flexores accessorii of the pes at length, and it was
+simply never cited on them.
+
+**The eight that remain are a real gap, and it is concentrated.** Every
+`homologyScope` source with a local extraction has been searched for each of them:
+
+| Record | Region | What the search found |
+|---|---|---|
+| `ypsiloideus` | axial | Nothing anywhere in the corpus. "Ypsiloid" appears only in Osawa (1898) on *Sphenodon* |
+| `supracostalis-dorsus-brevis` | axial | Nothing. Cieri (2018) on one varanid is the only source that names it |
+| `levator-costae` | axial | Schilling (2011) twice — once in a parenthesis about which system the muscle belongs to, once in the reference list |
+| `obliquus-internus` | axial | Passing mentions only |
+| `iliocaudalis` | pelvic | Passing mentions only |
+| `ischiocaudalis` | pelvic | Passing mentions only; Diogo & Molnar name it once, to contrast it with the caudalipuboischiotibialis |
+| `extensor-digitorum-profundus` | forearm | Single mentions in Russell & Bauer (2008) and two 2016 reviews |
+| `adductor-mandibulae-lateralis` | cranial | Nothing. No `homologyScope` source in the corpus names it |
+
+**Do not close these with the passing mentions.** A source that names a muscle
+once has not vouched for the record, and citing it would silence the warning
+without doing the thing the warning is for.
+
+Four of the eight are abdominal-wall or caudal muscles, and the reason is
+findable: **Schilling (2011) is the axial `homologyScope` source and it is a
+perivertebral paper.** It names the abdominal wall muscles only as a category —
+"the hypaxial musculature consists of the abdominal wall muscles and a
+subvertebral muscle mass" — and its figures exclude them outright, "the latter are
+not shown here". So the axial column has an epaxial authority and no hypaxial one.
+That is the specific acquisition this list needs, and Nishi's *Muskeln des Rumpfes*
+(Bolk's *Handbuch*, 1938) is the obvious candidate.
+
 ## Open decisions
 
 These are judgement calls the data is currently carrying, each waiting on a
