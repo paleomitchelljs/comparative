@@ -16,12 +16,11 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
-> **Molnar et al. (2017) on chameleon limbs was the top of the density ranking with
-> zero rows filed, and its forelimb is now done** — Table 2 in full, 41 of 41
+> **Molnar et al. (2017) on chameleon limbs is done** — it was the top of the
+> density ranking with zero rows filed, and both tables are now mined: 78 muscle
 > entries across *Chamaeleo calyptratus*, *Trioceros melleri* and *Aspidoscelis
-> uniparens*, 119 rows in three new extraction files. **Table 3, the hindlimb, is
-> the next thing to do and is the same size**; the source stays `not-started` until
-> it is finished, and its reading note says what is left.
+> uniparens*, 227 rows in three new extraction files. Run the ranking again before
+> picking the next one; it has changed.
 >
 > **The Gest pass left one gap open and closed the other.** `lumbricales-pes` now
 > exists and carries five species; it was created because Gest's four human pedal
@@ -86,18 +85,28 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 7 | 491 |
-| `not-started` | 68 | 1858 |
+| `remined` | 8 | 718 |
+| `not-started` | 67 | 1739 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2429** |
+| **total** | **79** | **2537** |
 
-**7 of 79 cited sources re-mined** (8%).
+**8 of 79 cited sources re-mined** (10%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Seven sources have cleared that bar:
+parked**, and the note states the arithmetic. Eight sources have cleared that bar:
+
+- **Molnar et al. (2017)** — chameleon limbs. **78 muscle entries, three animals,
+  227 rows, and the source had never been mined at all.** It topped the
+  attachment-density ranking with zero rows filed, which is the signal `MINING.md`
+  describes, and its own reading note had already scoped the pass. Two new records
+  fell out of it or ran beside it: `dorsometatarsales`, the second missing `-pes`
+  counterpart found in two days. The paper's headline reads as rows — flexores breves
+  profundi, dorsometacarpales and contrahentes keep their counts in an autopodium
+  rebuilt around a digital cleft, and the flexores breves superficiales change job
+  without changing origin, insertion or name.
 
 - **Gest, Anatomy Tables (2001)** — **239 distinct muscles: 221 filed, 18 parked.**
   The human column, which was the largest single gap in the dataset and is now the

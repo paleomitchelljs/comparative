@@ -75,7 +75,7 @@ for why that matters.
 ## What's in it
 
 <!-- counts:headline -->
-165 muscle records · 1732 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
+166 muscle records · 1828 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 Every PDF in `papers/` is accounted for in `data/sources.json`, including two
@@ -92,7 +92,7 @@ restate them in prose — the script rejects a percentage typed into `docs/`.
 | Ancestral paired-fin musculature | 9 | Diogo et al. 2016; Winterbottom 1973 |
 | Pectoral girdle and arm | 21 | Abdala & Diogo 2010; Molnar et al. 2018 |
 | Forearm and hand | 28 | Abdala & Diogo 2010; Ercoli et al. 2014 |
-| Pelvic girdle, thigh, leg and foot | 41 | Diogo & Molnar 2014; Walthall & Ashley-Ross 2006; Bishop & Pierce 2024 |
+| Pelvic girdle, thigh, leg and foot | 42 | Diogo & Molnar 2014; Walthall & Ashley-Ross 2006; Bishop & Pierce 2024 |
 <!-- /counts:region-records -->
 
 Coverage is uneven by design: it follows the papers in `papers/`. The tetrapod
@@ -309,5 +309,5 @@ See [`docs/STATUS.md`](docs/STATUS.md) for the measured version, and
 [`docs/WORKLIST.md`](docs/WORKLIST.md) for what is being done about it. In short:
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **82%** of 1732 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 53% of observed rows and `landmark` on 25%; `layer` resolves for 58 of 99 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **83%** of 1828 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 53% of observed rows and `landmark` on 24%; `layer` resolves for 58 of 100 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->

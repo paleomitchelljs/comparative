@@ -127,11 +127,64 @@ together: **scapulohumeralis posterior** (not observed in any of the three),
 **supinator** (not a distinct muscle in any of the three), and **costocoracoideus**,
 which the whiptail has and neither chameleon does.
 
-### Still to do — Table 3, the hindlimb
+### The hindlimb, mined the same day — 37 of 37, three animals
 
-Same structure, same three animals, roughly the same size. The status stays
-`not-started` until it is done. The pedal counterparts of everything above are in it,
-including the intermetatarsales, which carry the cleft story in the foot.
+**Table 3 in full**, which finishes the source. **78 muscle entries across the two
+tables, 227 rows, and the status is now `remined`.** Every entry is filed for every
+animal; five are folded into a neighbouring row rather than given one of their own,
+and the reason is always the same and is stated below.
+
+`dorsometatarsales` **is a new record, and the second missing `-pes` counterpart
+found in two days.** `dorsometacarpales` existed and its pedal partner did not, so
+the five chameleon and whiptail dorsometatarsales had nowhere to go — the same shape
+of gap as the lumbricales, and the same cause: the hand records were built first and
+the foot was doubled muscle by muscle instead of as a set. Diogo & Molnar (2014)
+Table 16 pairs the two directly in *Xenopus*, so the serial edge is sourced.
+
+**Two graded series, and they do not grade together.** Intermetacarpales run two,
+three, four across veiled chameleon, Meller's chameleon and whiptail; intermetatarsales
+run three, three, four. So the veiled chameleon has lost one more in the hand than in
+the foot, which is what a manus split 1-3 / 4-5 against a pes split 1-2 / 3-5 should
+produce. The pedal lumbricales give a third series — three, four, five — grading the
+same way.
+
+**The caudofemoralis longus is the most legible functional row in the paper.** Five
+caudal vertebrae of origin in the chameleons against sixteen in the whiptail. It is
+the sprint muscle of a sprawling tetrapod and a chameleon does not sprint. The brevis
+goes further: in both chameleons it does not reach the femur at all, ending on the
+ilio-ischiatic ligament, so the name records ancestry rather than this animal.
+
+**Molnar et al.'s three corrections to Mivart (1870) are all on rows now** —
+brachioradialis against gastrocnemius externus (rejected, because an extensor cannot
+correspond to a flexor), tibialis anterior against extensor carpi radialis rather than
+extensor digitorum, and tibialis posterior against palmaris profundus I rather than
+flexor carpi radialis.
+
+**The plantar ossicle is scored as `calcaneum`, and the two papers in this corpus do
+not agree about the tarsus.** Molnar et al. show it develops from the fibulare, cite
+mouse data tying the pisiform developmentally to the calcaneum, and conclude the
+squamate literature's equation of calcaneum with the fibulare-plus-intermedium complex
+is inaccurate. This dataset also carries `astragalocalcaneum` for squamates on Hattori
+& Tsuihiji (2021), who put attachments there because they cannot be assigned to
+astragalus or calcaneum separately. These rows follow the paper being mined and say so.
+
+### One mistake made three times, and the build caught it every time
+
+Five entries are folded into a neighbouring row instead of getting one of their own:
+levator claviculae and triceps coracoideus in the forelimb, fibularis brevis in the
+hindlimb, all fused with a neighbour in the chameleons; and abductor hallucis brevis,
+not observed in the whiptail.
+
+Each was first written as a row with `present: "no"` on a record the muscle plainly
+occupies, and **the join refused it three separate times** — it will not let one
+source put `present: "yes"` and `present: "no"` on one occurrence. The rule the
+mistake kept breaking: **a fusion is a division statement and a missing member of an
+occupied group is a note, neither is an absence.** `present: "no"` means the record is
+empty in this animal. Scoring a fused levator claviculae as absent would say a muscle
+is missing when the paper says it is merged.
+
+That check earns its keep. It exists to stop two studies silently overwriting each
+other, and it turns out to catch a single miner's category error just as well.
 
 ### Scoped for a real pass
 

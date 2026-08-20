@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-165 muscle records · 1732 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
+166 muscle records · 1828 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **82%** of 1732 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 53% of observed rows and `landmark` on 25%; `layer` resolves for 58 of 99 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **83%** of 1828 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 53% of observed rows and `landmark` on 24%; `layer` resolves for 58 of 100 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -35,10 +35,10 @@ Taxon-specific attachments cover **82%** of 1732 present occurrences. The thinne
 <!-- counts:regions -->
 | Region | Muscles | Present occurrences | Scored | %att |
 |---|---:|---:|---:|---:|
-| foot | 13 | 155 | 147 | 95% |
-| leg | 10 | 108 | 102 | 94% |
-| thigh | 10 | 150 | 139 | 93% |
-| pelvic | 8 | 105 | 95 | 90% |
+| foot | 14 | 182 | 174 | 96% |
+| leg | 10 | 132 | 126 | 95% |
+| thigh | 10 | 177 | 166 | 94% |
+| pelvic | 8 | 123 | 113 | 92% |
 | arm | 5 | 118 | 104 | 88% |
 | pectoral | 16 | 312 | 272 | 87% |
 | forearm | 19 | 316 | 269 | 85% |
@@ -46,7 +46,7 @@ Taxon-specific attachments cover **82%** of 1732 present occurrences. The thinne
 | hand | 9 | 147 | 108 | 73% |
 | fin | 9 | 39 | 23 | 59% |
 | cranial | 51 | 223 | 111 | 50% |
-| **all** | 165 | 1732 | 1415 | **82%** |
+| **all** | 166 | 1828 | 1511 | **83%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -59,7 +59,7 @@ Taxon-specific attachments cover **82%** of 1732 present occurrences. The thinne
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Theropoda (stem) | 38 | 34 | 89% |
-| Lepidosauria | 379 | 325 | 86% |
+| Lepidosauria | 475 | 421 | 89% |
 | Actinistia | 7 | 6 | 86% |
 | Theria | 444 | 380 | 86% |
 | Crocodylia | 75 | 64 | 85% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1415 of 1732 present occurrences (82%).**
+**Taxon-specific attachments: 1511 of 1828 present occurrences (83%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -109,11 +109,11 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 |---|---:|---:|
 | pectoral | 16 | 852 |
 | forearm | 19 | 724 |
-| foot | 13 | 477 |
+| foot | 14 | 556 |
+| thigh | 10 | 516 |
 | cranial | 51 | 462 |
-| thigh | 10 | 440 |
-| leg | 10 | 350 |
-| pelvic | 8 | 347 |
+| leg | 10 | 427 |
+| pelvic | 8 | 406 |
 | arm | 5 | 333 |
 | hand | 9 | 312 |
 | axial | 15 | 171 |
@@ -129,9 +129,9 @@ name a side or a landmark rather than the bare bone.
 | | |
 |---|---|
 | Elements | 296, of which 277 (94%) carry at least one attachment |
-| Observed attachment rows | 4525 |
-| Rows naming a **landmark** | 1133 (25%) |
-| Rows naming a **side** | 2413 (53%) |
+| Observed attachment rows | 4816 |
+| Rows naming a **landmark** | 1149 (24%) |
+| Rows naming a **side** | 2551 (53%) |
 | Osteological correlates | 129 flagged, 123 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -145,7 +145,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 46 | 83 | 1.8 |
-| hindlimb | 45 | 53 | 1.2 |
+| hindlimb | 46 | 53 | 1.2 |
 | axial | 37 | 35 | 0.9 |
 | pectoral | 35 | 32 | 0.9 |
 | forelimb | 60 | 46 | 0.8 |
@@ -164,7 +164,7 @@ that was written to settle homology across more than one taxon. The rule is in
 | | |
 |---|---|
 | Sources that can adjudicate a homology | 31 of 120 |
-| Records following one | 158 of 165 (96%) |
+| Records following one | 159 of 166 (96%) |
 | Median year of the governing source | 2014 |
 | Records governed by pre-2010 work | 43 (27%) |
 | Records with **no** homology-scope source | 7 — their homology rests on descriptive work alone |

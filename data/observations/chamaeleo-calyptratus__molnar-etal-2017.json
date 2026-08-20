@@ -1,7 +1,7 @@
 {
   "species": "chamaeleo-calyptratus",
   "source": "molnar-etal-2017",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
   "observations": [
     {
@@ -1133,6 +1133,1109 @@
       "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the pisiform to metacarpal 5. The postaxial counterpart of the abductor pollicis brevis, and enlarged for the same reason: it abducts a super-digit.",
       "region": "hand",
       "record": "abductor-digiti-minimi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ischiocaudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the ventral part of caudal vertebrae 4-12 to the ischial tuberosity. **A tail muscle attached to the pelvis, which is what a human coccygeus is** — the same record, the same two bones, and in a chameleon it still moves a tail.",
+      "region": "pelvic",
+      "record": "ischiocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliocaudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "sacral-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the sacro-iliac attachment and the sacrum to the caudal vertebrae. The human iliococcygeus, doing the job it was built for.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliotibialis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Head 1"
+        },
+        {
+          "name": "Head 2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Two heads from the anterior ilium to the cnemial crest of the tibia through the common extensor tendon.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        },
+        {
+          "name": "Part 3"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "acetabulum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "lateral"
+          },
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Three parts: one from the ilium between the two heads of the iliotibialis to the lateral femur, one from the posterolateral ilium to the proximal greater trochanter, one from the ilium just dorsal to the acetabulum to the distal greater trochanter. **Three parts where the whiptail has one**, and this record's whole subject is how an abductor of a sprawling limb becomes the pelvic stabiliser of a parasagittal one.",
+      "region": "pelvic",
+      "record": "iliofemoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tenuissimus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the external ilium to the middle of the lateral fibular shaft. Russell & Bauer's iliofibularis and Mivart's ilioperoneal. **Diogo & Molnar (2014) reject the classical derivation of the mammalian tenuissimus from the caudal head of the biceps femoris**, and this row is the lizard muscle that name was taken from.",
+      "region": "thigh",
+      "record": "iliofibularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiofemoralis internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        },
+        {
+          "name": "Part 3"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          },
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Three parts: part 1 from the anterior pubis, wrapping round the ventral aspect of the femoral head to the posterior proximal femur; part 2 from the anterior internal pubis to the proximal lateral femur; part 3 from the internal anterior pubis and ischium to the same place. **The origin is inside the pelvic canal**, which is the state a human iliopsoas has left behind by climbing onto the lumbar vertebrae.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Femorotibialis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Vastus externus"
+        },
+        {
+          "name": "Vastus internus"
+        },
+        {
+          "name": "Crureus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "medial"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patella"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Three heads from the medial and lateral femur to the patella with the other extensors. Femur to tibia, never crossing the hip — the least contested correspondence in the hindlimb, and the chameleon has the mammal-like symmetrical femoral condyles that make its knee hinge parasagittally.",
+      "region": "thigh",
+      "record": "femorotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sartorius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "acetabulum",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the ventral margin of the acetabulum to the common extensor tendon. **Molnar et al. call it sartorius and Russell & Bauer call it ambiens, and this record follows the second.** Diogo & Molnar (2014) reject the ambiens-to-sartorius equation — the 'ambiens' is a dorsal muscle sitting ventrally and the mammalian sartorius is not — which is why the human sartorius is parked with no record while this lizard muscle files cleanly here.",
+      "region": "thigh",
+      "record": "ambiens"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From caudal vertebrae 1-5 to the greater trochanter, and by a long tendon to the back of the knee. **Five vertebrae of origin against sixteen in the whiptail**, which Molnar et al. read with the chameleon's slow locomotion — the caudofemoralis is the sprint muscle of a sprawling tetrapod and a chameleon does not sprint.",
+      "region": "pelvic",
+      "record": "caudofemoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ilioischiadic-ligament"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the caudal vertebrae to the ilio-ischiatic ligament — **it does not reach the femur at all in either chameleon**, which makes the name a statement about ancestry rather than about this animal.",
+      "region": "pelvic",
+      "record": "caudofemoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ischiotrochantericus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pelvic-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the internal pelvis to the posterior proximal femur. Diogo & Molnar resolve this as the mammalian obturator internus, one of only two contested amphibian-to-reptile ventral pelvic homologies they settle.",
+      "region": "thigh",
+      "record": "ischiotrochantericus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiofemoralis externus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal"
+          },
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Two parts: one from the ischium to the femoral head, one from the ischiopubic symphysis deep to the adductor femoris to the greater trochanter. Molnar et al.'s synonymy for it is a warning in itself — quadratus femoris, obturator externus, iliacus, pectineus, obturator internus and adductor brevis have all been applied to parts of this muscle by one author or another.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pubotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "ischioflexorius"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the anterior pubis, between parts 2 and 3 of the puboischiofemoralis, onto the insertion tendon of part 1 of the flexor tibialis internus — **so it ends on another muscle**, and the row says which record that muscle is on.",
+      "region": "thigh",
+      "record": "pubotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor femoris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the ventral midline of the pubis and ischium and the associated ligament to the middle third of the posterior femur.",
+      "region": "thigh",
+      "record": "adductor-femoris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gracilis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          },
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the ventral midline of the pubis and ischium to the proximal medial tibia.",
+      "region": "thigh",
+      "record": "puboischiotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1 (semitendinosus sensu Mivart)"
+        },
+        {
+          "name": "Part 2 (semimembranosus sensu Mivart)"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilioischiadic-ligament"
+          },
+          {
+            "element": "ischium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Part 1, Mivart's semitendinosus, from the ilio-ischiatic ligament to the back of the interarticular cartilage of the knee and the proximal tibia with the pubotibialis; part 2, his semimembranosus, by a tendon from the internal ischium to the proximal tibia. **The mammalian hamstring names are already in use here for lizard muscles**, which is why this record is the one Diogo & Molnar warn about hardest.",
+      "region": "thigh",
+      "record": "ischioflexorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis externus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilioischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "calcaneum"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From a tendinous arch to the fibula with the tenuissimus and, by a long tendon, to the plantar ossicle. This record's synonyms already list 'flexor tibialis externus + internus' together, which is why both of Molnar et al.'s entries file here. The plantar ossicle is scored as `calcaneum` on the paper's own argument — see the gastrocnemius rows.",
+      "region": "thigh",
+      "record": "ischioflexorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Femoral head"
+        },
+        {
+          "name": "Tibial head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "tibia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Two heads, from the anterior distal femur by a tendon and from the tibia, to metatarsal 3 alone. **Metatarsal 3 only** — the whiptail's reaches metatarsals 2 and 3 — and Molnar et al. read the narrowing as an aid to rotating the pes as it leaves the substrate, which is one of their six derived arboreal features.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior"
+          },
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the anteromedial tibia, fused with the extensor digitorum longus, to metatarsal 1. Molnar et al. correct Mivart here: the tibialis anterior corresponds to the extensor carpi radialis of the forelimb, not to the extensor digitorum as he had it.",
+      "region": "leg",
+      "record": "tibialis-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Fibularis longus",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Fibular head"
+        },
+        {
+          "name": "Tibial head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "anterior"
+          },
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Two heads, from the middle third of the anterolateral fibula and the proximal half of the lateral tibia, to metatarsals 4 and 5. **The fibularis brevis is completely fused with it** and Molnar et al. cannot separate the two, so this record carries one muscle here where the whiptail has two. A fusion is a division statement and not an absence, which is why there is no separate brevis row for this animal.",
+      "region": "leg",
+      "record": "fibularis-group"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gastrocnemius internus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "calcaneum"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the proximal half of the posterior tibia to the plantar ossicle and the plantar aponeurosis. **The plantar ossicle is scored as `calcaneum` on this paper's own argument**: Molnar et al. show it develops from the fibulare, note that mouse data tie the pisiform developmentally to the calcaneum, and conclude the chameleon plantar ossicle should be redesignated calcaneum — which also makes the squamate literature's equation of calcaneum with the fibulare-plus-intermedium complex inaccurate. This dataset carries `astragalocalcaneum` for squamates on Hattori & Tsuihiji (2021), so the two papers are not using the tarsus the same way and these rows follow the one being mined.",
+      "region": "leg",
+      "record": "gastrocnemius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gastrocnemius externus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "calcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the lateral femoral condyle by a long tendon to the plantar ossicle, the base of metatarsal 5 and the plantar aponeurosis, with the flexor tibialis externus tendon. Molnar et al. correct Mivart on this muscle too: the brachioradialis is an extensor and cannot correspond to part of it, as he proposed.",
+      "region": "leg",
+      "record": "gastrocnemius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        },
+        {
+          "name": "Part 3"
+        },
+        {
+          "name": "Plantar head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "femur"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Four parts: part 1 from the fibular epicondyle and fibula to digits 3-5; part 2 from the anterior and medial fibula to digits 1-2 and 4; part 3 from the femur and the proximal tendon of the gastrocnemius externus to digits 3-4; and a plantar head from metatarsal 4 to the tendon going to digit 2. **A digital flexor divided four ways, and the divisions do not respect the cleft** — parts serve digits on both sides of it.",
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the lateral distal fibula to the proximal metatarsals 4 and 5. Molnar et al.'s third correction to Mivart: the tibialis posterior corresponds to the palmaris profundus I of the forelimb, not to the flexor carpi radialis.",
+      "region": "leg",
+      "record": "tibialis-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Popliteus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the proximal fibula to most of the medial tibia. Diogo & Molnar pair it with the pronator teres of the forelimb, which is what a muscle between the two zeugopod bones does at either end of the animal.",
+      "region": "leg",
+      "record": "popliteus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interosseus cruris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the distal third of the fibula to the distal quarter of the tibia — Mivart's peroneotibial, and the muscle Diogo & Molnar pair with the pronator quadratus. A human has neither, because a human leg does not rotate.",
+      "region": "leg",
+      "record": "interosseus-cruris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor hallucis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "anterior"
+          },
+          {
+            "element": "fibula",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the distal two-thirds of the anteromedial fibula to metatarsal 2. Russell & Bauer's adductor et extensor hallucis et indicis, which is the name this record is built on, and Diogo & Molnar pair the record with the abductor pollicis longus — a crural muscle against an antebrachial one, which is why the long abductor and not the short one files here.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor 1"
+        },
+        {
+          "name": "Extensor 2"
+        },
+        {
+          "name": "Extensor 3"
+        },
+        {
+          "name": "Extensor 4"
+        },
+        {
+          "name": "Extensor 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "fibulare"
+          },
+          {
+            "element": "intermedium-pes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Five muscles, and as in the hand their origins have moved off the tarsus onto the metatarsals: extensor 1 from metatarsal 3 to the proximal phalanx of digit 1; extensors 2 and 3 mainly from metatarsals 2-3 to digits 2 and 3; extensor 4 mainly from the fibulare-plus-intermedium and metatarsal 3 to digit 4; extensor 5 in several bundles from the fibula and fibulare-plus-intermedium to metatarsal 5 and the flexor retinaculum.",
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsometatarsales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Five muscles from the distal parts of metatarsals 1-5, each by two heads, to the distal phalanx of its own digit. **First occurrence on this record**, which did not exist before this pass: `dorsometacarpales` had no pedal counterpart, exactly as `lumbricales` had none.",
+      "region": "foot",
+      "record": "dorsometatarsales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor hallucis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the flexor digitorum longus tendons to metatarsal 1 and the proximal phalanx of digit 1 — Mivart's flexor brevis hallucis and Russell & Bauer's flexor hallucis. Filed on this record because that is where this dataset already puts the short hallucal flexor, on the human row; Molnar et al. keep it apart from the five flexores breves profundi, which are scored separately on the same record and whose parts list does not include it. **Well developed in chameleons, where it abducts the whole preaxial super-digit** rather than one toe.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the plantar ossicle to the proximal phalanx of digit 5. The postaxial partner of the abductor hallucis brevis, enlarged for the same reason: it abducts a super-digit.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Digit 1, medial"
+        },
+        {
+          "name": "Digit 2, medial"
+        },
+        {
+          "name": "Digit 3, medial"
+        },
+        {
+          "name": "Digit 4, medial"
+        },
+        {
+          "name": "Digit 5, medial"
+        },
+        {
+          "name": "Digit 1, lateral"
+        },
+        {
+          "name": "Digit 2, lateral"
+        },
+        {
+          "name": "Digit 3, lateral"
+        },
+        {
+          "name": "Digit 4, lateral"
+        },
+        {
+          "name": "Digit 5, lateral"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-retinaculum"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          },
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Ten muscles from the flexor retinaculum, the plantar aponeurosis, the ligament between metatarsals 2 and 3 and the surrounding connective tissue, to the medial and lateral aspects of the proximal, middle and distal phalanges of digits 1-5. **The pedal half of the paper's cleanest finding**: same count, same kind of attachment, reoriented along the V-shaped plantar aponeurosis so that they adduct the two super-digits. Mivart named two of them adductor digiti secundi and adductor digiti tertii for exactly that.",
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "To digit 4, tibial"
+        },
+        {
+          "name": "To digit 4, fibular"
+        },
+        {
+          "name": "To digit 3, tibial"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Three: two from the flexor digitorum longus tendon to digit 4, reaching the tibial and fibular sides of digit 4, and one from the tendon to digit 3, reaching its tibial side. **The third occurrence on a record created two commits ago** for want of anywhere to put the human pedal lumbricals.",
+      "region": "foot",
+      "record": "lumbricales-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Contrahentes pedis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "To digit 1"
+        },
+        {
+          "name": "To digit 2"
+        },
+        {
+          "name": "To digit 4"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Three muscles from the contrahens fascia and the metatarsals to the proximal phalanges of digits 1, 2 and 4.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. Five muscles from metatarsals 1-5 to the proximal phalanges of their own digits. Unchanged in count and attachment, in a foot rebuilt around a cleft — the same result the hand gives, and the paper's headline in one row.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermetatarsales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. **Three muscles, reduced in size**, mainly between adjacent metatarsals except the one between metatarsals 3 and 4, which reaches the proximal phalanx of digit 3. The pedal half of the paper's only number-of-muscles change: the missing one is the muscle that would have spanned the cleft.",
+      "region": "foot",
+      "record": "intermetatarsales"
     }
   ]
 }

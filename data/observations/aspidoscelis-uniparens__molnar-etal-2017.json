@@ -1,7 +1,7 @@
 {
   "species": "aspidoscelis-uniparens",
   "source": "molnar-etal-2017",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
   "observations": [
     {
@@ -1079,6 +1079,943 @@
       "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences in attachment.",
       "region": "hand",
       "record": "abductor-digiti-minimi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ischiocaudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "pelvic",
+      "record": "ischiocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliocaudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "sacral-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliotibialis",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **A single head**, against two in both chameleons.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **A single muscle from ilium to femur.** The chameleon's three parts run with its longer, near-vertical ilium and mediolaterally compressed pelvis, which is the skeletal half of the same arboreal argument.",
+      "region": "pelvic",
+      "record": "iliofemoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tenuissimus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "iliofibularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiofemoralis internus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          },
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Femorotibialis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Vastus externus"
+        },
+        {
+          "name": "Vastus internus"
+        },
+        {
+          "name": "Crureus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "medial"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patella"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "femorotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sartorius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "acetabulum",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "ambiens"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From caudal vertebrae 1-16**, three times the chameleons' span. The single most legible functional difference in this table.",
+      "region": "pelvic",
+      "record": "caudofemoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Inserts on the greater trochanter**, so the whiptail's brevis is a femoral retractor and the chameleons' has been pulled back onto a pelvic ligament.",
+      "region": "pelvic",
+      "record": "caudofemoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ischiotrochantericus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pelvic-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "ischiotrochantericus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiofemoralis externus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal"
+          },
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pubotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "ischioflexorius"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "pubotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor femoris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "puboischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From the pubo-ischiadic ligament** rather than from the bones themselves — the chameleons have moved the origin onto the ventral midline of the pelvis.",
+      "region": "thigh",
+      "record": "adductor-femoris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gracilis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "puboischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          },
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From the pubo-ischiadic ligament**, the same shift as the adductor femoris — two muscles moving off the ligament onto bone together in the chameleons.",
+      "region": "thigh",
+      "record": "puboischiotibialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1 (semitendinosus sensu Mivart)"
+        },
+        {
+          "name": "Part 2 (semimembranosus sensu Mivart)"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilioischiadic-ligament"
+          },
+          {
+            "element": "ischium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "ischioflexorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis externus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilioischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "calcaneum"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "thigh",
+      "record": "ischioflexorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Origin from the femur only**, and it inserts on metatarsals 2 and 3. Both differences run the same way: the chameleon muscle has gained a tibial head and lost a metatarsal.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior"
+          },
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Not fused with the extensor digitorum longus**, where it is in both chameleons.",
+      "region": "leg",
+      "record": "tibialis-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Fibularis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. A distinct muscle from the proximal fibula to metatarsal 5 — the head both chameleons have fused into the longus.",
+      "region": "leg",
+      "record": "fibularis-group"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Fibularis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From the distal femur** — the muscle crosses the knee in the whiptail and does not in the chameleons, which have pulled its origin down onto the fibula and tibia.",
+      "region": "leg",
+      "record": "fibularis-group"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gastrocnemius internus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur"
+          },
+          {
+            "element": "tibia",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Origin from both femur and tibia, and no sesamoid.** So the whiptail's internal gastrocnemius crosses the knee and the chameleons' does not, and the plantar ossicle the chameleons insert on is absent here.",
+      "region": "leg",
+      "record": "gastrocnemius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gastrocnemius externus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Originates from the proximal tibia, and no sesamoid.** The two heads swap which bone they take between chameleon and whiptail — internus femoral-plus-tibial here and tibial in the chameleons, externus tibial here and femoral in the chameleons.",
+      "region": "leg",
+      "record": "gastrocnemius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur"
+          },
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "fibulare"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **A single muscle** from femur, fibula and the fibulare-plus-intermedium to digits 1-5, with a large sesamoid proximal to the tendon split and plantar heads to digits 2-5. Single-and-sesamoid against four-parts-and-none is the same contrast the hand shows between whiptail and chameleon, in the serially corresponding muscle.",
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Inserts on metatarsal 1**, at the other edge of the foot from the chameleons' metatarsals 4 and 5, with a small sesamoid in the insertion tendon.",
+      "region": "leg",
+      "record": "tibialis-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Popliteus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "leg",
+      "record": "popliteus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interosseus cruris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "leg",
+      "record": "interosseus-cruris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor hallucis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **A single belly from the distal end of the fibula, inserting on metatarsal 1** rather than metatarsal 2. In the chameleons it has moved one digit postaxially, onto the preaxial super-digit's outer edge.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Mainly from the tarsal region, inserting on the distal phalanx of each digit with the dorsometatarsales.** The chameleons' have shifted proximal attachment onto the metatarsals and distal attachment back onto the proximal phalanges, which is the same rearrangement their hand shows.",
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsometatarsales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "foot",
+      "record": "dorsometatarsales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "gastrocnemius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From the aponeurosis of the deep head of the gastrocnemius externus** to digits 1-4 and possibly digit 5 — so in the whiptail this layer arises off another muscle, and in the chameleons off the plantar aponeurosis and an intermetatarsal ligament. The row is scored as ending on `gastrocnemius`, which is the record that aponeurosis belongs to.",
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Five**, Meller's four plus one to digit 2. Three, four, five across veiled chameleon, Meller's and whiptail — a second graded series to set beside the intermetacarpales, and it grades the same way. Read the third column against *Trioceros melleri*, not against *Chamaeleo calyptratus*: 'additional lumbrical to D2' gives five only if it is added to four.",
+      "region": "foot",
+      "record": "lumbricales-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Contrahentes pedis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "To digit 1"
+        },
+        {
+          "name": "To digit 2"
+        },
+        {
+          "name": "To digit 3"
+        },
+        {
+          "name": "To digit 4"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Four muscles, to digits 1-4** — the chameleons have lost the one to digit 3, which is the digit the cleft runs beside.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. No differences. **The abductor hallucis brevis was not observed in this animal**, and that is recorded here rather than as its own absent row: the record is plainly occupied by these five muscles, so what is missing is one named member of an occupied group. Its enlargement in the chameleons and its absence in the whiptail run together, and Molnar et al. count it among the four genuinely derived features of the chameleon autopodium.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermetatarsales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Four muscles between four metatarsals**, inserting mainly onto the proximal phalanges of digits 1-5. Four against three in both chameleons — where the hand grades two, three, four, the foot grades three, three, four, so the veiled chameleon has lost one more in the hand than in the foot.",
+      "region": "foot",
+      "record": "intermetatarsales"
     }
   ]
 }
