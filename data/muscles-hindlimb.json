@@ -14356,7 +14356,8 @@
         "related": [
           "femorofibularis",
           "flexores-breves-superficiales-pes",
-          "gastrocnemius"
+          "gastrocnemius",
+          "lumbricales-pes"
         ],
         "teaching": "The distal-greater-than-proximal similarity gradient is visible in a single salamander dissection.",
         "authority": {
@@ -14842,7 +14843,8 @@
         "related": [
           "contrahentes-digitorum-pes",
           "flexor-digitorum-longus-hl",
-          "flexores-breves-profundi-pes"
+          "flexores-breves-profundi-pes",
+          "lumbricales-pes"
         ],
         "authority": {
           "source": "blotto-etal-2020",
@@ -17526,7 +17528,8 @@
           "contrahentes-digitorum-pes",
           "flexores-breves-superficiales-pes",
           "intermetatarsales",
-          "interossei-dorsales-pes"
+          "interossei-dorsales-pes",
+          "lumbricales-pes"
         ],
         "authority": {
           "source": "blotto-etal-2020",
@@ -17576,6 +17579,229 @@
         {
           "joint": "metatarsophalangeal",
           "motion": "flexion"
+        }
+      ]
+    },
+    {
+      "id": "lumbricales-pes",
+      "name": "Lumbricales (pes)",
+      "region": "foot",
+      "subregion": "plantar intrinsic",
+      "segment": "autopod",
+      "mass": "ventral",
+      "developmental": "Somitic; differentiate from the long digital flexor tendons rather than from bone.",
+      "synonyms": [
+        "M. flexor digitorum communis sublimis (Walker 1973, Testudines)",
+        "M. lumbricalis (Aves)",
+        "lumbricales breves + lumbricales longi (Blotto et al. 2020, Anura)"
+      ],
+      "consensus": {
+        "origin": "Tendons of the long digital flexor, or the flexor plate they form.",
+        "insertion": "Plantar surfaces of the non-ungual phalanges; in mammals the extensor expansions.",
+        "action": "Flex the metatarsophalangeal joints while extending the interphalangeal joints.",
+        "innervation": "Tibial nerve or its plantar branches."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "species": "chelydra-serpentina",
+          "speciesBasis": "note",
+          "name": "M. flexor digitorum communis sublimis",
+          "present": "yes",
+          "sources": [
+            "hattori-tsuihiji-2021"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "plantar-aponeurosis"
+              }
+            ]
+          },
+          "attachmentNote": "Chelydra serpentina, Hattori & Tsuihiji (2021), from their own dissection. Walker's (1973) name, and their argument for putting it here rather than with the short flexors: it arises from the plantar surface of the flexor plate of the flexor digitorum longus and ends on the medial side of the flexor aponeurosis, which is the same relation to the flexor plate that the lepidosaurian, crocodilian and avian lumbricales have. Tibial innervation throughout, after Walker (1973)."
+        },
+        {
+          "species": "galictis-cuja",
+          "speciesBasis": "note",
+          "name": "Mm. lumbricales",
+          "present": "yes",
+          "sources": [
+            "ercoli-etal-2012"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Galictis cuja, Ercoli et al. (2012). Three thin fleshy bands running between the tendons of the flexor digitorum profundus for digits II-V, arising by fleshy fibres from the lateral and medial faces of those tendons and inserting by tendons on the plantaromedial proximal aspects of the proximal phalanges of digits III-V. **One hindlimb of the sample carried a fourth lumbrical between digits I and II**, which is variation within the species and is recorded here rather than in `present`. Three where a human has four, and the missing one is the hallux's."
+        },
+        {
+          "species": "homo-sapiens",
+          "speciesBasis": "note",
+          "name": "Lumbricals (foot)",
+          "present": "yes",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "extensor-expansion"
+              }
+            ]
+          },
+          "attachmentNote": "**Lumbricals of the foot** (Gest). Four muscles from the tendons of flexor digitorum longus to the medial side of the extensor expansion of digits 2-5, doing to the toes what the hand's lumbricals do to the fingers. The nerve supply splits medial-one against lateral-three where the hand's splits two against two, and in both hands and feet the split follows the nerve supply of the long flexor the muscles grow off. Parked on `no-record` when this source was mined because `lumbricales` is a hand record; promoted when `lumbricales-pes` was created for it."
+        },
+        {
+          "species": "iguana-iguana",
+          "speciesBasis": "note",
+          "name": "Mm. lumbricales",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Medial belly"
+            },
+            {
+              "name": "Lateral belly"
+            }
+          ],
+          "sources": [
+            "hattori-tsuihiji-2021"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Iguana iguana, Hattori & Tsuihiji (2021), from their own dissection of two specimens. Two bellies: the medial from the aponeurosis between the flexor digitorum longus tendons going to digits II and III, the lateral from the lateral margin of the tendon going to digit III. Each inserts on the proximoplantar heel of every non-ungual phalanx of its digit — the medial belly on digit III, the lateral on digit IV. Both ends are tendon or phalanx and neither is a muscle scar, which is why the pes lumbricales are absent from every fossil reconstruction in this dataset. Hattori & Tsuihiji follow Russell & Bauer (2008) for the lepidosaurian description."
+        },
+        {
+          "species": "varanus-indicus",
+          "speciesBasis": "note",
+          "name": "Mm. lumbricales",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Medial belly"
+            },
+            {
+              "name": "Lateral belly"
+            }
+          ],
+          "sources": [
+            "hattori-tsuihiji-2021"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "flexor-tendons"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "phalanges-pes",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Varanus indicus, Hattori & Tsuihiji (2021), one specimen dissected. Same two-bellied arrangement as *Iguana*: medial belly from the aponeurosis between the flexor digitorum longus tendons to digits II and III onto the non-ungual phalanges of digit III, lateral belly from the lateral margin of the digit III tendon onto those of digit IV. **The innervation is split and the split is the interesting part** — the plantar nerve supplies the medial belly and the tibial nerve the lateral one, so two bellies of one muscle in one animal take different branches. Hattori & Tsuihiji note that innervation is plastic enough in both crocodilians and lepidosaurs that they rest the homology on origin and insertion instead."
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "**Created 2026-08-20, and the reason is worth recording: the pedal lumbricals had nowhere to go.** `lumbricales` is a hand record, a row's region must equal its record's, and every other intrinsic group of the autopod in this dataset was already doubled with a `-pes` counterpart — flexores breves superficiales, flexores breves profundi, contrahentes, extensores digitorum breves, abductor digiti minimi. The gap was found when Gest's four human pedal lumbricals had to be parked on `no-record`.\n\nHattori & Tsuihiji (2021) unify four sauropsid muscles here — the lepidosaurian mm. lumbricales, the testudine m. flexor digitorum communis sublimis of Walker (1973), the crocodilian mm. lumbricales and the avian m. lumbricalis — on two shared characters: an origin on or immediately beside the flexor plate of the long digital flexors, and an insertion plantarly on non-ungual phalanges. Innervation is by the tibial nerve or its plantar branch throughout, which is the third leg of their argument.\n\nDiogo & Molnar (2014) decline to say whether the lumbricales were present in the last common ancestor of tetrapods: they are usually present in anurans and amniotes and absent in urodeles, and only if present ancestrally do the anuran and human lumbricales correspond directly. They also read the 'breves' and 'longus' layers found in both autopodia as independently acquired during anuran evolution, which is a homoplasy warning attached to the most finely divided lumbrical system of any tetrapod.",
+        "openQuestion": "Whether the lumbricales are ancestral to Tetrapoda or acquired separately in anurans and amniotes. Their absence in urodeles is the whole of the evidence against, and Diogo & Molnar leave it open.",
+        "related": [
+          "flexor-digitorum-longus-hl",
+          "flexores-breves-profundi-pes",
+          "flexores-breves-superficiales-pes"
+        ],
+        "teaching": "A muscle with no bony attachment at either end, in both autopodia: it starts on a tendon and finishes on a phalanx or an extensor hood. That is why it leaves no osteological correlate and why fossil reconstructions of it are guesses.",
+        "correspondences": [
+          {
+            "relation": "serial",
+            "to": "lumbricales",
+            "axis": "forelimb-hindlimb",
+            "basis": "topological",
+            "sources": [
+              "diogo-molnar-2014"
+            ],
+            "confidence": "well-supported",
+            "note": "Stated by Diogo & Molnar (2014) Table 15 as a \"clear topological correspondence\", the same table and the same wording as the other five hand/foot pairs on these records. The table gives foot lumbricales in *Timon lepidus* (2 muscles, to digits 3-4), *Rattus norvegicus* (4, to digits 2-4) and *Homo sapiens* (4, to digits 2-5), each against the hand lumbricales; *Ambystoma mexicanum* has none, which is the urodele absence the paper's text turns on when it declines to say whether the lumbricales are ancestral to Tetrapoda."
+          }
+        ],
+        "authority": {
+          "source": "hattori-tsuihiji-2021",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "hattori-tsuihiji-2021",
+        "ercoli-etal-2012",
+        "gest-anatomy-tables",
+        "diogo-molnar-2014"
+      ],
+      "nerves": [
+        {
+          "nerve": "tibial"
+        },
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "metatarsophalangeal",
+          "motion": "flexion"
+        },
+        {
+          "joint": "interphalangeal-pes",
+          "motion": "extension"
         }
       ]
     },

@@ -16,14 +16,16 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
-> **Two things the Gest pass left behind, both small and both worth doing next.**
-> `lumbricales-pes` does not exist — `lumbricales` is a hand record and a row's
-> region must equal its record's, so the four human pedal lumbricals are parked on
-> `no-record` with their attachments waiting. Every other intrinsic group in the
-> dataset is doubled with a `-pes` counterpart, so this is an omission. And **the
-> human perineum has no record at all**: six cloacal-sphincter derivatives are
-> parked because no group exists for the series and none of the 120 cited sources
-> addresses it. That one needs a source before it needs a record.
+> **The Gest pass left one gap open and closed the other.** `lumbricales-pes` now
+> exists and carries five species; it was created because Gest's four human pedal
+> lumbricals had to be parked on `no-record` while every other intrinsic group of
+> the autopod was already doubled with a `-pes` counterpart. **The human perineum
+> still has no record**: six cloacal-sphincter derivatives are parked, and the
+> reason is not that nothing is described but that nothing joins the descriptions
+> — Osawa (1898) has *Sphenodon*'s sphincter cloacae and transversus perinei,
+> Ercoli et al. (2012) has *Galictis*'s ischiocavernosus and bulbospongiosus, and
+> no cited source derives one from the other. It needs a comparative treatment
+> before it needs a record.
 >
 > Mining works end to end now. It did not before: `--join` read `_occ` and `_keys`
 > off every filed row, which only `--split` writes, so the first hand-written row
@@ -77,10 +79,10 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 7 | 490 |
-| `not-started` | 68 | 1735 |
+| `remined` | 7 | 491 |
+| `not-started` | 68 | 1739 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2305** |
+| **total** | **79** | **2310** |
 
 **7 of 79 cited sources re-mined** (8%).
 <!-- /counts:remine -->
@@ -248,8 +250,8 @@ reading that will not have to be done again.
 | `walker-1973` | *chelodina-longicollis* | 23 | partial 23 |
 | `russell-bauer-2008` | *ameiva-sp* | 19 | partial 19 |
 | `russell-bauer-2008` | *heloderma-sp* | 19 | partial 19 |
-| `gest-anatomy-tables` | *homo-sapiens* | 16 | no-record 14, homology 2 |
 | `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
+| `gest-anatomy-tables` | *homo-sapiens* | 15 | no-record 13, homology 2 |
 | `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
 | `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |

@@ -99,6 +99,15 @@ alongside the ischium.
   plantar muscles are described under names I could not confidently map to these
   homology groups without asserting one. The foot record that *was* scorable
   (flexor digitorum brevis) is done.
+- ~~**Mm. lumbricales.**~~ **Scored 2026-08-20**, onto `lumbricales-pes`, which did
+  not exist when this note was written. Three thin fleshy bands between the flexor
+  digitorum profundus tendons of digits II-V, from the lateral and medial faces of
+  those tendons to the plantaromedial proximal aspects of the proximal phalanges of
+  digits III-V — and **one hindlimb of the sample had a fourth, between digits I and
+  II**, which is within-species variation and belongs in prose. Three where a human
+  has four, and the one a *Galictis* is missing is the hallux's. This muscle was not
+  in the "not scored" list above at all; it was simply missed, which is a different
+  failure from declining to score something and the reason this note now says so.
 - **Adductor longus.** Its origin is described positionally rather than by
   attachment in the passage available; magnus and brevis carry the row.
 - **The percentage dry-mass table (Table 2).** Percentages of total hind limb
@@ -106,9 +115,17 @@ alongside the ischium.
   al. (2014): it does not fit `architecture` and forcing it there would let a
   proportion be read as force.
 - **Pelvic floor and tail-base muscles** — levator ani, pubocaudalis,
-  bulbospongiosus, coccygeus, intertransversarii, interspinales. Real muscles,
-  described here, with no records in this dataset and no cross-taxon assessment
-  behind them. Adding them is a scoping decision, not a scoring one.
+  bulbospongiosus, ischiocavernosus, coccygeus, intertransversarii, interspinales.
+  Real muscles, described here, with no records in this dataset and no cross-taxon
+  assessment behind them. Adding them is a scoping decision, not a scoring one.
+
+  **This entry became load-bearing on 2026-08-20.** The Gest human re-mine parked six
+  perineal muscles and its first note claimed no source in this corpus addressed the
+  perineum, on the strength of a grep over `sources.json` titles. This paper refutes
+  it: the ischiocavernosus and bulbospongiosus of *Galictis cuja* are described here,
+  and Osawa (1898) has *Sphenodon*'s sphincter cloacae and transversus perinei at the
+  other end of the comparison. What is still missing is a source that joins them.
+  Whoever builds a `sphincter-cloacae` record starts from these two papers.
 
 ## Caution on the exemplar
 

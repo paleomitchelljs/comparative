@@ -39,11 +39,11 @@ musculature.
 
 ## Scored
 
-**Re-mined to exhaustion 2026-08-20. 239 distinct muscles: 221 filed, 18 parked.**
+**Re-mined to exhaustion 2026-08-20. 239 distinct muscles: 222 filed, 17 parked.**
 The arithmetic is in the region table further down and the pass is described region
 by region under it.
 
-276 filed rows across 129 records and all six muscle files, plus 16 parked. The
+277 filed rows across 130 records and all six muscle files, plus 15 parked. The
 count of *rows* exceeds the count of *muscles filed* because the pre-existing
 summary rows are kept alongside the per-muscle rows that were added under them, and
 falls short of it where one record takes several of Gest's names.
@@ -201,9 +201,9 @@ one occurrence.
 | Abdomen | 13 | 11 | 10 | 1 | **done** |
 | Pelvis and perineum | 21 | 17 | 7 | 10 | **done** |
 | Upper limb | 54 | 52 | 51 | 1 | **done** |
-| Lower limb | 58 | 53 | 51 | 2 | **done** |
+| Lower limb | 58 | 53 | 52 | 1 | **done** |
 | Head and neck | 105 | 83 | 79 | 4 | **done** |
-| **total** | **274** | **239** | **221** | **18** | **done** |
+| **total** | **274** | **239** | **222** | **17** | **done** |
 
 Pelvis counts bulbospongiosus and sphincter urethrae twice, once per sex, which is
 how Gest lists them; they are 15 muscles and get one row each, so eight parked rows
@@ -305,11 +305,19 @@ musculature of one that has, and both records now carry the whole sheet.
 external anal sphincter, bulbospongiosus, ischiocavernosus, the two transverse
 perinei, sphincter urethrae — are cloacal sphincter derivatives: skeletal muscle on
 the pudendal nerve, encircling openings instead of moving bones. There is no record
-for that series, and **none of the 120 sources in `sources.json` addresses the
-perineum**, which is checkable and was checked. Settling it needs a
-`sphincter-cloacae` record and a comparative source that derives the mammalian
-perineal muscles from it. Forcing them onto `ischiocaudalis` would have put six
-muscles on a tail record because it is nearby.
+for that series. Forcing them onto `ischiocaudalis` would have put six muscles on a
+tail record because it is nearby.
+
+**The first version of that park said no cited source addressed the perineum, and
+that was wrong.** It was checked by grepping titles and `notes` in `sources.json`,
+which is a weaker test than the claim it was used for. Grepping the extracted paper
+texts the same day turned up two: **Osawa (1898) gives *Sphenodon* an *M. transversus
+perinei* and an *M. sphincter cloacae***, and **Ercoli et al. (2012) describe an
+ischiocavernosus and a bulbospongiosus in *Galictis cuja***. An outgroup and a
+mammal, described independently, with nothing joining them — so the parks stand,
+because a `sphincter-cloacae` record built on those two alone would assert a homology
+neither author makes. What is missing is a comparative treatment, not a description.
+The rows now say so, and name both papers.
 
 Two more park as smooth muscle, following the Dartos row: the internal anal
 sphincter and the detrusor. The internal sphincter is worth having for the contrast
@@ -409,13 +417,14 @@ position — while `puboischiofemoralis-internus` carries the competing derivati
 its synonyms and does not act on it either. Parking holds the attachments without
 choosing.
 
-**Lumbricals of the foot park on `no-record`, and that is an omission rather than a
-judgement.** `lumbricales` is a hand record and a row's region must equal its
-record's, so the four pedal lumbricals have nowhere to go. Every other intrinsic
-group in this dataset is doubled — `flexores-breves-superficiales-pes`,
+**Lumbricals of the foot parked on `no-record`, and that was an omission rather
+than a judgement.** `lumbricales` is a hand record and a row's region must equal its
+record's, so the four pedal lumbricals had nowhere to go, while every other intrinsic
+group in this dataset was already doubled — `flexores-breves-superficiales-pes`,
 `contrahentes-digitorum-pes`, `extensores-digitorum-breves-pes`,
-`abductor-digiti-minimi-pes` — which is what makes the gap look accidental.
-Creating `lumbricales-pes` settles it and the row is promoted.
+`abductor-digiti-minimi-pes`. **`lumbricales-pes` was created on 2026-08-20 and the
+row is promoted**, which is the whole point of parking: the reading was on the page
+and cost nothing to file once the record existed.
 
 One new element, `knee-capsule`, for the articularis genu: a few fascicles deep to
 vastus intermedius that stop at the capsule instead of running on to the patella,
@@ -485,7 +494,7 @@ carries as a strut of its jaw suspension.
 
 ## The accounting closes
 
-**239 distinct muscles in `muscles_alpha.html`: 221 filed, 18 parked, none dropped.**
+**239 distinct muscles in `muscles_alpha.html`: 222 filed, 17 parked, none dropped.**
 
 Five entries are filed without a row of their own, and they are worth naming so the
 arithmetic can be checked. `epicranius` and `occipitofrontalis` are frontalis plus

@@ -76,11 +76,46 @@ cranialis takes the cranial and lateral cnemial crests, and the avian *m. abduct
 digiti II* takes the fossa metatarsi I. Those are landmarks a palaeontologist reads
 first, and the dataset had said nothing about what pulled on them.
 
+## §3.2.8, taken 2026-08-20 for a record that did not exist
+
+The first muscle out of the plantar half, and it came off the back of the Gest human
+re-mine rather than off this paper's own queue. Gest's four human pedal lumbricals
+had nowhere to go — `lumbricales` is a hand record — so `lumbricales-pes` was
+created, and this paper is what makes it a homology group rather than a place to put
+a human muscle.
+
+Hattori & Tsuihiji unify four sauropsid muscles on it: the lepidosaurian **mm.
+lumbricales**, the testudine **m. flexor digitorum communis sublimis** of Walker
+(1973), the crocodilian **mm. lumbricales**, and the avian **m. lumbricalis**. The
+argument is the paper's usual one and is worth stating because it runs against the
+names: an origin on or immediately beside the flexor plate of the long digital
+flexors, an insertion plantarly on non-ungual phalanges, and tibial or plantar
+innervation throughout. Walker's turtle name says *flexor digitorum*, and the muscle
+is a lumbrical.
+
+Three rows scored from their own dissections — *Iguana iguana*, *Varanus indicus*,
+*Chelydra serpentina*. The two lepidosaurs carry the same two-bellied arrangement,
+medial belly from the aponeurosis between the flexor digitorum longus tendons of
+digits II and III onto digit III, lateral belly from the lateral margin of the digit
+III tendon onto digit IV.
+
+**The *Varanus* innervation is the row to read.** The plantar nerve supplies the
+medial belly and the tibial nerve the lateral one — two bellies of one muscle in one
+animal on different branches. Hattori & Tsuihiji say plainly that innervation is
+plastic enough in both crocodilians and lepidosaurs that they rest this homology on
+origin and insertion instead, which is the opposite weighting to Diogo & Molnar
+(2014) and the reason this paper is worth reading beside them.
+
+The avian and crocodilian descriptions in §3.2.8 are reported from Suzuki et al.
+(2011), Vanden Berge (1975), Cracraft (1971), McGowan (1979) and Gangl et al. (2004)
+rather than dissected here. They are not scored: under the `after:` rule they would
+be filed under the workers who made them, and none of those papers is in this corpus.
+
 ## Not done
 
-**The plantar half, §3.2 — 16 more muscles in the same structure.** This pass took
-the dorsal half, §3.1.1 to §3.1.13. The remainder is the largest piece of scorable
-description left in any paper already in `papers/`.
+**The rest of the plantar half, §3.2 — 15 more muscles in the same structure.** This
+pass took the dorsal half, §3.1.1 to §3.1.13, and §3.2.8. The remainder is still the
+largest piece of scorable description left in any paper already in `papers/`.
 
 ## Relevance to comparative anatomy teaching
 

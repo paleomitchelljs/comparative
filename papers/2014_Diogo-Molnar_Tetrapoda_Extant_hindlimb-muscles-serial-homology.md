@@ -94,6 +94,18 @@ radialis, the interosseus cruris against the pronator quadratus, the popliteus
 against the pronator teres, and the abductor et extensor digiti 1 against the
 abductor pollicis longus.
 
+**A sixteenth, added 2026-08-20: the lumbricales.** The pair could not be scored
+before because this dataset had no `lumbricales-pes`; it does now, and Table 15
+carries the row. Foot lumbricales in *Timon lepidus* (2 muscles, to digits 3-4),
+*Rattus norvegicus* (4, to digits 2-4) and *Homo sapiens* (4, to digits 2-5), each
+against the hand lumbricales in red; **`—` for *Ambystoma mexicanum***, which is the
+urodele absence the running text turns on when it declines to say whether the
+lumbricales were present in the last common ancestor of tetrapods. The edge was
+first scored `moderate` on the belief that Table 15's rows could not be read, which
+this note had already recorded as false — the tables read cleanly as page images
+where the text layer collapses them. Reading page 23 of the PDF settled it in a
+minute and the edge is `well-supported` like the other fifteen.
+
 **Nine pairs are ones this paper explicitly denies.** Every pelvic-or-thigh against
 pectoral-or-arm edge in the dataset falls here. The paper's statement is flat:
 across every tetrapod clade in Tables 13–21, including anatomically plesiomorphic

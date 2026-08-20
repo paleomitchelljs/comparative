@@ -6895,7 +6895,7 @@
       "region": "pelvic",
       "record": null,
       "blockedBy": "no-record",
-      "blockedNote": "The mammalian perineal muscles have no record here and no cited source. They are the derivatives of the cloacal sphincter — skeletal muscle on the pudendal nerve, encircling openings rather than moving bones — and this dataset holds no group for that series: none of the 120 sources in `sources.json` addresses the perineum. Settling it needs two things, a `sphincter-cloacae` record and a comparative source that derives the mammalian perineal muscles from it. Until then six muscles park here rather than being forced onto `ischiocaudalis`, which is a tail muscle that happens to be nearby.",
+      "blockedNote": "The mammalian perineal muscles have no record here. They are the derivatives of the cloacal sphincter — skeletal muscle on the pudendal nerve, encircling openings rather than moving bones — and this dataset holds no group for that series.\n\n**Two sources here describe both ends of the comparison and neither is comparative.** Osawa (1898) gives *Sphenodon* an *M. transversus perinei* and an *M. sphincter cloacae*, and Ercoli et al. (2012) describe an ischiocavernosus and a bulbospongiosus in *Galictis cuja* — an outgroup and a mammal, described independently, with nothing joining them. Building a `sphincter-cloacae` record on those two alone would assert a homology neither author states, which is the failure this dataset is built to avoid. So it needs a comparative treatment of the amniote cloacal musculature first, and the record after. Until then six muscles park here rather than being forced onto `ischiocaudalis`, which is a tail muscle that happens to be nearby.\n\nAn earlier version of this note said no cited source addressed the perineum. That was tested by grepping titles and notes in `sources.json`, which is a weaker test than the claim it was used for; grepping the extracted paper texts refuted it the same day.",
       "attachments": {
         "origin": [
           {
@@ -8505,11 +8505,9 @@
       "muscle": null
     },
     {
+      "speciesBasis": "note",
       "name": "Lumbricals (foot)",
-      "region": "foot",
-      "record": null,
-      "blockedBy": "no-record",
-      "blockedNote": "There is no pedal lumbricals record. `lumbricales` is a hand record — region `hand` — and a row's region has to equal its record's, so the four pedal lumbricals have nowhere to go. Every other intrinsic group in this dataset is doubled, with `-pes` counterparts for the flexores breves superficiales and profundi, the contrahentes, the extensores digitorum breves and the abductors, so this looks like an omission rather than a decision. Settled by creating `lumbricales-pes`, at which point this row is promoted. The attachments are recorded meanwhile: both ends are tendon, as in the hand, and the nerve supply splits medial-one against lateral-three the way the hand's splits two against two.",
+      "present": "yes",
       "attachments": {
         "origin": [
           {
@@ -8522,7 +8520,9 @@
           }
         ]
       },
-      "muscle": null
+      "attachmentNote": "**Lumbricals of the foot** (Gest). Four muscles from the tendons of flexor digitorum longus to the medial side of the extensor expansion of digits 2-5, doing to the toes what the hand's lumbricals do to the fingers. The nerve supply splits medial-one against lateral-three where the hand's splits two against two, and in both hands and feet the split follows the nerve supply of the long flexor the muscles grow off. Parked on `no-record` when this source was mined because `lumbricales` is a hand record; promoted when `lumbricales-pes` was created for it.",
+      "region": "foot",
+      "record": "lumbricales-pes"
     },
     {
       "speciesBasis": "note",
