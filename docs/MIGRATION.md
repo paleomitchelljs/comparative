@@ -61,9 +61,9 @@ substantive half of this dataset: `consensus` on 164 records, `developmental` 16
 
 **Everything must be re-mined.** The audit found drops in four of four sources
 examined, so the current rows are a partial extraction throughout. Generating
-extraction files from them would carry that incompleteness forward *and make it
-look complete*. The generated files are a **scaffold and a checklist**, never a
-result.
+extraction files from them carried that incompleteness forward, so every file
+generated that way is marked `"status": "scaffolded"` and means "nobody has checked
+this against the paper". A scaffolded file is **a checklist, never a result**.
 
 ## Tasks
 
@@ -110,23 +110,36 @@ every muscle it describes is either filed or parked** — the accounting must cl
 as it did for Fisher & Goodman (111 = 43 filed + 50 parked + 18 in multi-muscle
 rows) and Widrig et al. (38 = 20 + 16 + 2).
 
-8 sources have no local copy and are `blocked-no-source`. Three of them are large —
-Cunningham (243 rows), Gest (119), Walthall & Ashley-Ross (63) — so about 425 rows
-cannot be verified until those are acquired. Record that; do not quietly trust them.
+Sources with no local copy are `blocked-no-source` and cannot be checked at all.
+Four of the original eight were acquired on 2026-08-19; the live count and the list
+are generated into `MIGRATION-STATE.md`.
 
 ### 5. Flip the source of truth
 
-`data/observations/` and `data/mapping/` become authoritative; `muscles-*.json`
-becomes a build artefact and is git-ignored.
+**Done 2026-08-20.** `data/observations/` and `data/mapping/` are authoritative;
+`build.sh` regenerates `muscles-*.json` from them as step 0.
 
-**Done when** `build.sh` regenerates `muscles-*.json` from scratch, CI passes, and
-the app is unchanged.
+**`muscles-*.json` stays committed**, against the original plan. The app fetches it
+directly and there is no build step between the repo and the page, so git-ignoring
+it would break the site. It is a generated artefact that is committed, like
+`docs/STATUS.md`.
 
 ### 6. Retire what the flip makes defunct
 
-Chiefly `attribute_species.py`. Its whole job is inferring which animal a row is
-about; under per-species files the filename declares it. The *evidence* for the
-attribution survives as a header field, not as 300 lines of rules.
+**Done 2026-08-20.** Seven scripts deleted: `attribute_species.py`, whose whole job
+was inferring which animal a row is about when the filename now declares it; the
+four spent normalisers `migrate_attachments`, `migrate_attachment_rows`,
+`migrate_fusions` and `assign_hierarchy`; and two one-shots that had already run,
+`fix_skeleton_homology` and `seed_klinkhamer_crocodylus`.
+
+`speciesBasis` is kept in the data as a record of how each attribution was arrived
+at, and is no longer recomputed.
+
+**What the flip left half-done.** Every remaining normaliser reads and writes
+`muscles-*.json`, which is generated, so its output cannot reach the source of
+truth. `seed_nerves`, `seed_actions` and `promote_landmarks` are therefore out of
+`build.sh` until they are ported to `data/observations/`. **`promote_landmarks` has
+79 pending refinements** and is the one that matters.
 
 ### 7. Phylogeny
 

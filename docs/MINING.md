@@ -20,8 +20,8 @@ honest options were to guess, or to skip it. Guessing puts an observation on the
 wrong record, which is the worst failure this dataset has. Skipping loses the
 reading.
 
-So there is a third place to put it. [`data/observations.json`](../data/observations.json)
-holds **what a source says about a muscle in an animal, before anyone has decided
+So there is a third place to put it. A row in the study's own extraction file,
+[`data/observations/`](../data/observations/), with `record: null`. It holds **what a source says about a muscle in an animal, before anyone has decided
 which record it belongs to**: the source's own name for the muscle, the species,
 the attachments, and a `blockedBy` saying what is missing. Those rows are held to
 the same attachment rules as an occurrence — elements must resolve, landmarks must
@@ -34,7 +34,7 @@ and `STATUS.md` reports them separately as mining already done.
 **In practice:**
 
 1. Score what maps onto a record cleanly.
-2. Put everything else in `observations.json` with `blockedBy` and a `blockedNote`
+2. Put everything else in the same file with `record: null`, a `blockedBy` and a `blockedNote`
    naming what would settle it — usually a specific paper.
 3. When the synonymy is settled, set `muscle` on the row. The validator then warns
    until it is promoted into that record, so a resolved observation cannot sit
@@ -138,14 +138,20 @@ right every time so far — trust it, and write the disagreement into the note
 rather than working around it.
 
 **Edit the JSON. Do not write a script.** Seven single-source seed scripts used to
-hold rows as Python literals and were retired for it; see `CLAUDE.md`.
+hold rows as Python literals and were retired for it; see `CLAUDE.md`. The file to
+edit is `data/observations/<species>__<source>.json` — `muscles-*.json` is
+generated from it and any edit there is overwritten by the next build.
 
-**The species has to be named in the row's own prose.** `attribute_species.py`
-re-derives attribution on every build, and its first rule is the binomial in
-`note`, `attachmentNote`, `divisionNote` or `name`. A source keyed to one primary
-species will otherwise pull every unnamed row of its clade onto that species. So
-write the binomial into the row, and name **other** fossil taxa by genus alone, or
-the row migrates to whichever one it mentions first.
+**The extraction file declares the species.** It is half the filename —
+`grus-americana__fisher-goodman-1955.json` — so a row cannot land on the wrong
+animal by inference, which is what `attribute_species.py` existed to prevent and
+occasionally caused. Write the binomial into the prose anyway where the source
+names it: it is the evidence that the file is named correctly.
+
+**Where a source names a genus and not a species**, use a `Genus sp.` record —
+`lacerta-sp`, `heloderma-sp`. That is a real animal nobody identified further, and
+it is not the same as `generalised: true`, which means the source described a clade
+and dissected nobody.
 
 ## Bridging nomenclature
 

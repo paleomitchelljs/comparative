@@ -91,8 +91,8 @@ more than the total.
 
 A source's statement about a muscle in an animal can be extracted before anyone
 decides which homology group it belongs to. Those rows live in
-`data/observations.json` and are **not** counted above — they are not occurrences
-and move no coverage figure. See [`SCHEMA.md`](SCHEMA.md#observationsjson).
+the study's own extraction file with `record: null`, and are **not** counted above
+— they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
 709 extracted observations from 5 sources are waiting for a record (639 on partial, 28 on no-record, 26 on nomenclature, 11 on division, 4 on occupied, 1 on homology). They carry no coverage weight — they are mining already done.

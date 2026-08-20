@@ -155,7 +155,8 @@ mining pass reads a paper once; anything it leaves behind has to be found by
 reading the paper again, and the reading is the expensive part. Filing an
 observation used to require deciding its homology group, so a name that could not
 be matched to a record was either guessed at — the worst failure this dataset has —
-or skipped. `data/observations.json` is the third option: the source's own name,
+or skipped. A row with `record: null` in the study's own extraction file is the
+third option: the source's own name,
 the species, the attachments and a `blockedBy` saying what is missing. Same
 attachment rules as an occurrence, no coverage weight. Score what maps cleanly,
 park the rest, set `muscle` when the synonymy is settled and the validator will

@@ -10,21 +10,18 @@ current.
 
 ## Next action
 
-> **Task 4 — re-mine, and Task 6 — delete `attribute_species.py`.** The structure
-> is done: `data/observations/` is the source of truth, 248 files, one per study
-> per animal. `build.sh` rebuilds `muscles-*.json` from it as step 0 and the
-> result is byte-identical.
+> **Task 4 — re-mine**, and **port the three normalisers**.
 >
-> Your three decisions of 2026-08-20 are applied. Every lizard genus now has a
-> `Genus sp.` record and Russell & Bauer is fully parked (500 statements, 21
-> species). `partial` and `occupied` survive as labels but no longer mean
-> "cannot be extracted" — they mean the **integration layer** has not decided,
-> and integration decisions change without re-mining.
+> The structure is finished. `data/observations/` is the source of truth, 248
+> files, one per study per animal; `build.sh` rebuilds `muscles-*.json` from it as
+> step 0, byte-identical; seven defunct scripts are deleted.
 >
-> **Before deleting `attribute_species.py`**: it computed `speciesBasis`, which
-> records how strongly a row's species attribution is evidenced. The filename now
-> declares the species, but the *evidence* still matters and has no home in the new
-> files. Decide whether it becomes a file-level header field.
+> **The one thing the flip left half-done**: every remaining normaliser reads and
+> writes `muscles-*.json`, which is now generated, so its output cannot reach the
+> source of truth. `seed_nerves`, `seed_actions` and `promote_landmarks` are out of
+> `build.sh` until they are ported to read and write `data/observations/`.
+> **`promote_landmarks` has 79 pending refinements** — `ribs → true-ribs`,
+> `mandible → retroarticular-process` — and is the one worth doing first.
 
 ## Task board
 
@@ -35,7 +32,7 @@ current.
 | 3 | `after:` field for secondary attribution | **done** |
 | 4 | Re-mine every cited source | **in progress — 2 of 79 to exhaustion, 3 more partly** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | **done** |
-| 6 | Retire `attribute_species.py` and friends | **out of `build.sh`**; deletion pending |
+| 6 | Retire what the flip made defunct | **done — 7 scripts deleted** |
 | 7 | `phylogeny.json` | not started |
 
 ## The model is proven

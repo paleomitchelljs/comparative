@@ -238,12 +238,9 @@ scripts/
   validate.py           schema + referential integrity. Exits non-zero on error
   export_matrix.py      long-format CSVs for downstream analysis
   extract_werneburg_appendix.py  parses Werneburg 2011 Appendix 1 into 78 units
-  migrate_attachments.py         free strings -> skeleton ids
-  migrate_attachment_rows.py     ids -> element/side/landmark rows
-  assign_hierarchy.py            segment + layer
-  seed_nerves.py                 innervation prose -> nerves.json ids
-  seed_actions.py                action prose -> {joint, motion}
-  attribute_species.py           which animal each row is about
+  build_observations.py          observations/ + mapping/ -> muscles-*.json
+  seed_homology_authority.py     whose homology scheme each record follows
+  symmetrise_links.py            close the related and serial graphs
   symmetrise_links.py            closes the related-muscle graph
 export/                 git-ignored: generated CSVs
 papers/                 reading notes (tracked); PDFs (NOT tracked)

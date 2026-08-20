@@ -42,6 +42,12 @@ Update it in the same commit that changes a file's standing. State is in
 
 ## `scripts/`
 
+**Six normalisers left `build.sh` when `data/observations/` became the source of
+truth.** They edited `data/muscles-*.json`, which step 0 now *generates*, so
+nothing they did could reach the source of truth — the next build's join simply
+overwrote it. Four had nothing left to do and are deleted; three are kept out of
+the build until they are ported. See the table below.
+
 ### Live — run by `build.sh`, in order
 
 | Path | Class | Notes |
@@ -51,10 +57,6 @@ Update it in the same commit that changes a file's standing. State is in
 | `doc_counts.py` | authoritative | Owns every measured figure in `docs/`. Rejects a hand-written percentage anywhere else under `docs/` |
 | `symmetrise_links.py` | authoritative | Closes `related` and `serial`. Operates on the mapping layer after Task 5 |
 | `seed_homology_authority.py` | authoritative | Writes `homology.authority`. Moves to the mapping layer |
-| `assign_hierarchy.py` | authoritative | Normaliser |
-| `seed_actions.py` · `seed_nerves.py` | authoritative | Normalisers; fill rather than sync |
-| `migrate_attachments.py` · `migrate_attachment_rows.py` · `migrate_fusions.py` | authoritative | Badly named — these are **idempotent normalisers**, not one-shot migrations. They stay |
-| `attribute_species.py` | **defunct** | 300 lines inferring which animal a row is about. The filename declares it now, so it is out of `build.sh` as of Task 5. Kept unrun until the `speciesBasis` evidence it computed has a home in the new files. **Do not invest in it** |
 
 ### Live — utilities, not in `build.sh`
 
@@ -63,15 +65,15 @@ Update it in the same commit that changes a file's standing. State is in
 | `speciesmap.py` | authoritative | Species → clade. Imported by six scripts |
 | `jointgraph.py` | authoritative | Joints a muscle spans, from its attachments. Shared with `validate.py` |
 | `export_matrix.py` | authoritative | Tidy CSVs to `export/`, which is git-ignored and derived |
-| `promote_landmarks.py` | authoritative | Promotes landmarks named in prose into structured rows. Re-run after any mining pass |
+| `promote_landmarks.py` | **needs porting** | Promotes landmarks named in prose into structured rows. Reads and writes `muscles-*.json`, which is generated, so its output cannot reach the source of truth. **It has 79 pending refinements** — `ribs → true-ribs`, `mandible → retroarticular-process`. Port it to `data/observations/` and run it |
+| `seed_nerves.py` · `seed_actions.py` | **needs porting** | Same problem, less urgent: both report 0 rows to apply today, but they will have work as soon as new mining lands, and 86 nerve strings and 23 action clauses are still unclaimed |
 | `build_observations.py` | authoritative | The migration's engine. `--split` writes `data/observations/` and `data/mapping/`; `--join` rebuilds `muscles-*.json`; `--check` proves the round trip is lossless. **The round trip is byte-identical**, so the new shape holds everything the old one holds |
 
 ### One-shots that have already run
 
 | Path | Class | Notes |
 |---|---|---|
-| `fix_skeleton_homology.py` | **defunct** | Merged hyomandibula/stapes and restructured the axial series. Done; kept for the record of what it argued |
-| `seed_klinkhamer_crocodylus.py` | **defunct** | A single-source seed script of the kind `CLAUDE.md` says never to write again — its rows are committed, so the literal inside it is a stale second copy. **Delete at Task 6** |
+| — | — | All deleted on 2026-08-20. `fix_skeleton_homology.py` merged hyomandibula/stapes; `seed_klinkhamer_crocodylus.py` was a single-source seed of the kind `CLAUDE.md` forbids; `migrate_attachments`, `migrate_attachment_rows`, `migrate_fusions` and `assign_hierarchy` were normalisers with nothing left to normalise, and edited a file that is now generated. `attribute_species.py` went with them — the filename declares the species now. git holds all seven |
 | `extract_werneburg_appendix.py` | authoritative | Regenerates a git-ignored working file from a local PDF. Keep — it is an extractor, not a seeder |
 
 ## `docs/` and `papers/`

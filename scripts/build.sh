@@ -6,12 +6,20 @@
 # structured form. None of them overwrites curated content, and the whole run is
 # a fixed point — CI runs it and fails if the committed data moves.
 #
-# The seven single-source seed scripts that used to run between steps 2 and 3
-# are gone. They held a paper's rows as Python literals, and once the rows were
-# committed the literal was a stale second copy that the build replayed over
-# later curation. What each one argued is now in the reading note for its
-# source, which is where a statement about a paper belongs; `data/` holds the
-# rows; git holds the history. See docs/SCHEMA.md for how to add rows by hand.
+# Six normaliser steps were removed when data/observations/ became the source of
+# truth. They edited data/muscles-*.json, which step 0 now GENERATES, so nothing
+# they did could reach the source of truth -- the next build's join simply
+# overwrote it. Four of them (migrate_attachments, migrate_attachment_rows,
+# migrate_fusions, assign_hierarchy) had nothing left to do anyway and are
+# deleted. seed_nerves, seed_actions and promote_landmarks still have work in
+# them and are kept out of the build until they are ported to read and write
+# data/observations/ -- promote_landmarks alone has 79 pending landmark
+# refinements. See docs/MIGRATION-STATE.md.
+#
+# The seven single-source seed scripts that preceded them are also gone. They
+# held a paper's rows as Python literals, and once the rows were committed the
+# literal was a stale second copy the build replayed over later curation. What
+# each argued lives in the reading note for its source.
 #
 #   ./scripts/build.sh          # report only
 #   ./scripts/build.sh --write  # apply, then validate
@@ -30,28 +38,10 @@ step() { printf '\n\033[1m== %s\033[0m\n' "$1"; }
 step "0. observations/ + mapping/ -> muscles-*.json"
 python3 scripts/build_observations.py --join
 
-step "1. free-string attachments -> skeleton.json ids"
-python3 scripts/migrate_attachments.py $FLAG
-
-step "2. segment + layer (layer inherited via derivatives where sourced)"
-python3 scripts/assign_hierarchy.py $FLAG
-
-step "3. attachments -> element / side / landmark rows"
-python3 scripts/migrate_attachment_rows.py $FLAG
-
-step "4. fused elements: fusedFrom, not partOf"
-python3 scripts/migrate_fusions.py $FLAG
-
-step "5. innervation prose -> nerves.json ids"
-python3 scripts/seed_nerves.py $FLAG
-
-step "6. action prose -> joints.json {joint, motion}"
-python3 scripts/seed_actions.py $FLAG
-
-step "7. whose homology scheme each record follows (most recent wins)"
+step "1. whose homology scheme each record follows (most recent wins)"
 python3 scripts/seed_homology_authority.py $FLAG
 
-step "8. close the related-muscle graph"
+step "2. close the related-muscle graph"
 python3 scripts/symmetrise_links.py $FLAG
 
 # Before the counts, not after them: it was running unlabelled inside the
@@ -60,10 +50,10 @@ python3 scripts/symmetrise_links.py $FLAG
 # Step 9 was attribute_species.py -- 300 lines inferring which animal a row is
 # about. The filename declares it now. Retired at Task 6; see docs/FILE-LEDGER.md.
 
-step "9. measured counts in README.md and docs/STATUS.md"
+step "3. measured counts in README.md and docs/STATUS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "10. validate"
+  step "4. validate"
   python3 scripts/validate.py
 fi

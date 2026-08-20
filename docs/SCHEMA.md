@@ -7,7 +7,8 @@ Three kinds of file live in `data/`:
 | `taxa.json` | Operational taxa and the topology that orders them. **Derived data** — every clade-level statement is computed from the species below |
 | `species.json` | The unit of observation: one record per animal anybody dissected |
 | `sources.json` | Bibliography, keyed by `key` |
-| `observations.json` | What a source states about a muscle in an animal, before a record is chosen. No coverage weight |
+| `observations/` | **The source of truth.** One file per study per animal: what that study says about that animal. `record` names the homology group each row was assigned to, `null` means unassigned |
+| `mapping/` | Per source: `name\|region` → muscle record |
 | `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
 | `nerves.json` | Nerves as homology groups: `partOf` chain to the plexus, limb-bud division, per-taxon names |
 | `joints.json` | Joints as homology groups: which bone surfaces articulate, and what motions happen there |
@@ -74,7 +75,7 @@ migration that created them could not be certain for all 630:
 | `default` | Nothing better. The clade's first exemplar, and a guess — the interface labels these |
 | `generalised` | **Not a specimen.** The source describes a clade rather than an animal, so no one dissection stands behind the row. Only valid on a species record carrying `generalised: true`, and required on every row that uses one — the validator enforces both directions. Winterbottom's teleost synonymy is the case it exists for: 93 pages reconciling names across the group, dissecting nobody. Those rows previously claimed `source`, which this table defines as citing a *single-species* study, so the rows that were least like an observation were asserting the opposite |
 
-`scripts/attribute_species.py --write` recomputes all of it and is idempotent.
+**`speciesBasis` is now historical.** It recorded how strongly a row's species attribution was evidenced, back when the species had to be inferred from a row's prose and its sources. The extraction file's name declares the animal, so there is nothing left to infer; `attribute_species.py` is deleted and the values already in the data are kept as a record of how they were arrived at.
 
 **`taxon` is never stored on an occurrence.** It is derived from
 `species.clade` at load. Storing it would be a second home for a fact that
@@ -551,7 +552,7 @@ transformation.
 rather than silently dropping a row. It is also enforced: attaching a muscle to
 an element its taxon lacks fails validation.
 
-## `observations.json`
+## `observations/` — the extraction files
 
 What a source says about a muscle in an animal, **before anyone has decided which
 homology group it belongs to**.

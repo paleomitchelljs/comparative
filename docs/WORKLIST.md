@@ -26,7 +26,7 @@ different bad reason:
 
 - **Fisher & Goodman (1955)** — **mined in full.** All 111 muscles it describes
   with an origin paragraph are extracted: 43 filed as *Grus americana* rows and 50
-  parked in `observations.json`. Aves 118/77 → 155/114. It had been called
+  parked. Aves 118/77 → 155/114. It had been called
   unmineable because the search pattern used to look for its origin paragraphs
   matched only about half the ways the OCR spells the heading.
 - **Widrig, Starry & James (2026)** on *Chauna torquata* — **mined in full.** All 38
@@ -246,7 +246,7 @@ one of the thinner columns of any size.
 of Burch's per-taxon prose are other workers' observations, reported. Filing them
 under the reporting source would repeat the Dick & Clemente error. **The schema has
 no way to say "this source reports another worker's observation"** —
-`observations.json` records which record is unsettled, not whose observation it is.
+That gap is closed: `after` names the worker whose observation a reported row is.
 That gap is what blocks this material, and it is worth closing before the next
 review-shaped source is mined.
 
