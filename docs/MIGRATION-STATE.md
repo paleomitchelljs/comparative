@@ -69,9 +69,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 4 | 99 |
-| `not-started` | 71 | 1866 |
+| `not-started` | 71 | 1873 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2045** |
+| **total** | **79** | **2052** |
 
 **4 of 79 cited sources re-mined** (5%).
 <!-- /counts:remine -->
@@ -118,6 +118,16 @@ tooling verdict expires** — one cost 15 of 16 muscles. Where a reading note ex
 why a source yielded little, treat that explanation as the least-checked claim in
 the repository and check it first.
 
+**Přikryl et al. (2009) is the third instance and a different variety.** Nothing in
+its note was wrong; it was incomplete in a way the note could not show. It listed
+four records as "not scored" when thirteen of the paper's twenty-five muscles were
+missing, and it did not mention that the paper **dissects thirteen animals**, of
+which the dataset holds one. *Discoglossus* is now complete at 25 of 25. So the
+check to run on a reading note is not only "is this true?" but "**does the paper
+describe more animals than the file does?**" — `MINING.md` already says a paper
+describing N animals should produce N columns, and it is the rule most often
+broken.
+
 ### Sources that cannot be re-mined
 
 <!-- counts:remine-blocked -->
@@ -162,6 +172,7 @@ notes carry the detail; each is `not-started` until re-mined.
 
 | Source | Held | Also contains |
 |---|---|---|
+| Přikryl et al. (2009) | 22 rows, all *Discoglossus* — **that animal is now complete, 25 of 25** | **Eight more dissected frogs and three caudates.** Each written as differences from the *Discoglossus* baseline, so the expensive part is done. Best target |
 | Russell & Bauer (2008) | 71 rows, 70 on *Iguana* | 558 statements across 22 lepidosaur genera. Mostly **secondary** — needs Task 3 |
 | Walker (1973) | 22 rows, all *Trachemys* | 90 statements across 9 other turtle genera, **first-hand**. Best target |
 | Osawa (1898) | 63 rows, all limb | The whole cranial and axial myology |
@@ -198,6 +209,7 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *anolis-sp* | 9 | partial 9 |
 | `walker-1973` | *geochelone-elephantopus* | 9 | partial 9 |
 | `russell-bauer-2008` | *sceloporus-sp* | 8 | partial 8 |
+| `prikryl-etal-2009` | *discoglossus-pictus* | 6 | homology 3, no-record 3 |
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
 | `russell-bauer-2008` | *ophisaurus-sp* | 6 | partial 6 |
 | `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |

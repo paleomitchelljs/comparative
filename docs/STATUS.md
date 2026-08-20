@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1527 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1532 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **78%** of 1527 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Testudines at 72%; the thinnest regions are cranial, fin, hand. `side` is on 55% of observed rows and `landmark` on 27%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **78%** of 1532 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 56%, Testudines at 72%; the thinnest regions are cranial, fin, hand. `side` is on 55% of observed rows and `landmark` on 27%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -37,16 +37,16 @@ Taxon-specific attachments cover **78%** of 1527 present occurrences. The thinne
 |---|---:|---:|---:|---:|
 | foot | 12 | 150 | 142 | 95% |
 | leg | 10 | 108 | 102 | 94% |
-| thigh | 10 | 106 | 98 | 92% |
+| thigh | 10 | 108 | 100 | 93% |
+| pelvic | 8 | 78 | 68 | 87% |
 | arm | 5 | 106 | 92 | 87% |
-| pelvic | 8 | 75 | 65 | 87% |
 | pectoral | 16 | 279 | 239 | 86% |
 | forearm | 19 | 280 | 233 | 83% |
 | axial | 15 | 48 | 35 | 73% |
 | hand | 9 | 120 | 81 | 68% |
 | fin | 9 | 39 | 23 | 59% |
 | cranial | 51 | 216 | 87 | 40% |
-| **all** | 164 | 1527 | 1197 | **78%** |
+| **all** | 164 | 1532 | 1202 | **78%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -68,7 +68,7 @@ Taxon-specific attachments cover **78%** of 1527 present occurrences. The thinne
 | Aves | 172 | 131 | 76% |
 | Caudata | 93 | 70 | 75% |
 | Testudines | 57 | 41 | 72% |
-| Anura | 72 | 38 | 53% |
+| Anura | 77 | 43 | 56% |
 | Myxini | 4 | 2 | 50% |
 | Petromyzontida | 4 | 2 | 50% |
 | Actinopterygii | 14 | 7 | 50% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1197 of 1527 present occurrences (78%).**
+**Taxon-specific attachments: 1202 of 1532 present occurrences (78%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -95,7 +95,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-710 extracted observations from 6 sources are waiting for a record (639 on partial, 28 on no-record, 27 on nomenclature, 11 on division, 4 on occupied, 1 on homology). They carry no coverage weight — they are mining already done.
+716 extracted observations from 7 sources are waiting for a record (639 on partial, 31 on no-record, 27 on nomenclature, 11 on division, 4 on homology, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
@@ -111,12 +111,12 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 | forearm | 19 | 629 |
 | foot | 12 | 463 |
 | cranial | 51 | 373 |
+| thigh | 10 | 347 |
 | leg | 10 | 345 |
-| thigh | 10 | 340 |
 | arm | 5 | 282 |
-| pelvic | 8 | 243 |
+| pelvic | 8 | 248 |
 | hand | 9 | 237 |
-| axial | 15 | 123 |
+| axial | 15 | 124 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
 
@@ -129,9 +129,9 @@ name a side or a landmark rather than the bare bone.
 | | |
 |---|---|
 | Elements | 274, of which 256 (93%) carry at least one attachment |
-| Observed attachment rows | 3845 |
-| Rows naming a **landmark** | 1057 (27%) |
-| Rows naming a **side** | 2127 (55%) |
+| Observed attachment rows | 3858 |
+| Rows naming a **landmark** | 1058 (27%) |
+| Rows naming a **side** | 2137 (55%) |
 | Osteological correlates | 126 flagged, 120 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -164,10 +164,10 @@ that was written to settle homology across more than one taxon. The rule is in
 | | |
 |---|---|
 | Sources that can adjudicate a homology | 31 of 120 |
-| Records following one | 156 of 164 (95%) |
+| Records following one | 157 of 164 (96%) |
 | Median year of the governing source | 2014 |
-| Records governed by pre-2010 work | 42 (27%) |
-| Records with **no** homology-scope source | 8 — their homology rests on descriptive work alone |
+| Records governed by pre-2010 work | 43 (27%) |
+| Records with **no** homology-scope source | 7 — their homology rests on descriptive work alone |
 <!-- /counts:authority -->
 
 The records with **no** homology-scope source are the signal in that table. Each
