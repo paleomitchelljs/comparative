@@ -1,0 +1,227 @@
+{
+  "species": "teleostei-generalised",
+  "source": "winterbottom-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "generalised",
+      "name": "Abductor profundus",
+      "present": "yes",
+      "note": "The deep groups contribute most of the fin muscle mass in actinopterygians — the reverse of the tetrapod condition. Stated here for the generalised teleost; the Polypterus measurement behind it belongs to the Polypterus rows.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "The deep layer of the ventrolateral (abductor) mass. Winterbottom notes the dorsomedial adductor mass separates into two layers before the abductor mass does, judging from Elops.",
+      "region": "fin",
+      "record": "abductor-profundus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Abductor superficialis",
+      "present": "yes",
+      "note": "The poorly differentiated superficial/deep ventral mass that characterises plesiomorphic actinopterygian fins. The Polypterus observation this note used to carry belongs to the Polypterus rows — a bichir is not a teleost, and Winterbottom's generalisation does not reach it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "cleithrum-flange"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Teleost condition: origin chiefly or entirely on the lateral cleithrum and the posterolateral side of its anterolateral flange, occasionally from the coracoid or even the radials. Insertion diffuse in generalised fishes, consolidating into tendons on the outer anterior bases of the fin rays in more advanced forms — seldom a tendon to the marginal ray.",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor profundus",
+      "present": "yes",
+      "note": "With the abductor profundus, contributes most of the paired-fin muscle mass in actinopterygians.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Deep layer of the dorsomedial mass.",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor superficialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Dorsomedial mass; the first of the two masses to separate into superficial and deep layers.",
+      "region": "fin",
+      "record": "adductor-superficialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Arrector dorsalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays",
+            "landmark": "marginal-fin-ray"
+          }
+        ]
+      },
+      "region": "fin",
+      "record": "arrector-dorsalis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Arrector ventralis",
+      "present": "yes",
+      "note": "Winterbottom describes the generalised teleost pectoral fin as a pair of muscles either side of the girdle plus a powerful muscle to the marginal ray — arrector ventralis ventrolaterally, arrector dorsalis dorsomedially. All remaining rays are served by a single undifferentiated sheet.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays",
+            "landmark": "marginal-fin-ray"
+          }
+        ]
+      },
+      "region": "fin",
+      "record": "arrector-ventralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "winterbottom-1973"
+      ]
+    }
+  ]
+}

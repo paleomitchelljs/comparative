@@ -1,0 +1,43 @@
+{
+  "species": "timon-lepidus",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "landmark": "phalangeal-lip",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021"
+      ]
+    }
+  ]
+}

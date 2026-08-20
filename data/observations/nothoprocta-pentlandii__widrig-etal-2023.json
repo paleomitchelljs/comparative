@@ -1,0 +1,125 @@
+{
+  "species": "nothoprocta-pentlandii",
+  "source": "widrig-etal-2023",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus clavicularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "furcula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "widrig-etal-2023"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulohumeralis anterior",
+      "present": "yes",
+      "note": "= scapulohumeralis cranialis sensu Dilkes (2000) and Maxwell & Larsson (2007).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis cranialis, a thin cord between scapula and humerus with a fleshy origin and insertion. It arises on the lateral surface of the scapular neck, cranial to the origin of the lateral head of M. subscapularis, and inserts on the proximal humerus at the distal edge of the pneumatic foramen. The scapular neck and the pneumatic foramen have no elements of their own here, so both ends are scored at bone level with the detail in this note.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "widrig-etal-2023"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulohumeralis posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis caudalis, substantially larger than the cranialis. Its fleshy origin runs along the lateral scapula from the caudal margin of the cranialis origin to the caudal end of the bone; its thick insertion tendon passes ventral to the cranialis and spreads widely across the ventral margin of the proximal bicipital crest of the humerus.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "widrig-etal-2023"
+      ]
+    }
+  ]
+}

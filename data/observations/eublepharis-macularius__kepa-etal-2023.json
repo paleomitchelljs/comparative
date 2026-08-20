@@ -1,0 +1,58 @@
+{
+  "species": "eublepharis-macularius",
+  "source": "kepa-etal-2023",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "innervation": "Thoracodorsal equivalent from the dorsal divisions of the brachial plexus.",
+      "note": "In Varanus komodoensis the muscle is large and its humeral insertion is confluent with that of the teres complex (Kępa et al. 2023).",
+      "nerves": [
+        {
+          "nerve": "thoracodorsal"
+        },
+        {
+          "nerve": "brachial-dorsal-division"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From an aponeurosis beside the dorsal midline — no bony origin — tendinously onto the proximal dorsal humerus. In Gekko the insertion shifts to the lateral side of the humerus, which is an attachment difference between two geckos and a caution against reading one lizard as Lepidosauria.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "note",
+        "sources",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "kepa-etal-2023",
+        "navarro-etal-2023",
+        "zaaf-etal-1999"
+      ]
+    }
+  ]
+}

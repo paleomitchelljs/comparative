@@ -1,0 +1,129 @@
+{
+  "species": "acinonyx-jubatus",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Gluteus medius + gluteus minimus",
+      "present": "yes",
+      "action": "Abduct and medially rotate the thigh; prevent pelvic drop during the stance phase.",
+      "innervation": "Superior gluteal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "iliac-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Same muscle, same nerve, same attachments — but in a parasagittal limb it becomes the principal pelvic stabiliser during single-limb support.",
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011b"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011b"
+        },
+        "parts": [
+          {
+            "name": "Gluteus medius",
+            "abbr": "GM",
+            "mass_g": {
+              "mean": 136,
+              "sd": 18.0
+            },
+            "fascicleLength_mm": {
+              "mean": 6.4,
+              "sd": 1.18
+            },
+            "pcsa_cm2": {
+              "mean": 23.4,
+              "sd": 7.1
+            }
+          },
+          {
+            "name": "Gluteus profundus",
+            "abbr": "GP",
+            "mass_g": {
+              "mean": 17.6,
+              "sd": 4.5
+            },
+            "fascicleLength_mm": {
+              "mean": 2.9,
+              "sd": 0.61
+            },
+            "pcsa_cm2": {
+              "mean": 6.7,
+              "sd": 2.4
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gluteus medius"
+        },
+        {
+          "name": "Gluteus minimus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "superior-gluteal"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "abduction"
+        },
+        {
+          "joint": "hip",
+          "motion": "rotation-medial"
+        }
+      ],
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "architecture",
+        "division",
+        "parts",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "hudson-etal-2011b"
+      ]
+    }
+  ]
+}

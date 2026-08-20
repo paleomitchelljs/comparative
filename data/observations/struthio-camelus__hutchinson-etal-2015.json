@@ -1,0 +1,715 @@
+{
+  "species": "struthio-camelus",
+  "source": "hutchinson-etal-2015",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Extensor digitorum longus",
+      "present": "uncertain",
+      "note": "See the tibialis anterior record: which avian muscle is the homologue is disputed.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Extensor digitorum longus",
+            "abbr": "EDL",
+            "mass_g": {
+              "mean": 115.0
+            },
+            "fascicleLength_mm": {
+              "mean": 49
+            },
+            "pennation_deg": {
+              "mean": 30
+            },
+            "maxIsometricForce_N": {
+              "mean": 576
+            }
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. fibularis longus + brevis",
+      "present": "yes",
+      "note": "Names retained; longus plantarflexes, brevis dorsiflexes.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Fibularis longus",
+            "abbr": "FL",
+            "mass_g": {
+              "mean": 479.1
+            },
+            "fascicleLength_mm": {
+              "mean": 81
+            },
+            "pennation_deg": {
+              "mean": 20
+            },
+            "maxIsometricForce_N": {
+              "mean": 1570
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Fibularis longus"
+        },
+        {
+          "name": "Fibularis brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. flexor digitorum longus",
+      "present": "yes",
+      "note": "Together with the flexor hallucis longus, forms the tendon system that produces automatic toe flexion when the ankle flexes — the mechanism of perching. Ankle plantarflexor.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Flexor digitorum longus",
+            "abbr": "FDL",
+            "mass_g": {
+              "mean": 142.4
+            },
+            "fascicleLength_mm": {
+              "mean": 48
+            },
+            "pennation_deg": {
+              "mean": 20
+            },
+            "maxIsometricForce_N": {
+              "mean": 782
+            }
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. gastrocnemius",
+      "present": "yes",
+      "note": "Ankle plantarflexor.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Gastrocnemius lateralis",
+            "abbr": "GL",
+            "mass_g": {
+              "mean": 570.6
+            },
+            "fascicleLength_mm": {
+              "mean": 120
+            },
+            "pennation_deg": {
+              "mean": 20
+            },
+            "maxIsometricForce_N": {
+              "mean": 1269
+            }
+          },
+          {
+            "name": "Gastrocnemius intermedius",
+            "abbr": "GIM",
+            "mass_g": {
+              "mean": 252.6
+            },
+            "fascicleLength_mm": {
+              "mean": 125
+            },
+            "pennation_deg": {
+              "mean": 15
+            },
+            "maxIsometricForce_N": {
+              "mean": 552
+            }
+          },
+          {
+            "name": "Gastrocnemius medialis",
+            "abbr": "GM",
+            "mass_g": {
+              "mean": 762.0
+            },
+            "fascicleLength_mm": {
+              "mean": 94
+            },
+            "pennation_deg": {
+              "mean": 20
+            },
+            "maxIsometricForce_N": {
+              "mean": 2160
+            }
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Tibialis cranialis (classical) / extensor digitorum longus (Hattori & Tsuihiji 2021)",
+      "present": "uncertain",
+      "note": "Which avian muscle this record corresponds to is exactly what Hattori & Tsuihiji (2021) dispute. Scored uncertain rather than picking a side.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsometatarsus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Tibialis cranialis",
+            "abbr": "TC",
+            "mass_g": {
+              "mean": 165.0
+            },
+            "fascicleLength_mm": {
+              "mean": 45
+            },
+            "pennation_deg": {
+              "mean": 25
+            },
+            "maxIsometricForce_N": {
+              "mean": 474
+            }
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. caudofemoralis pars caudalis + pars pelvica",
+      "present": "yes",
+      "note": "Greatly reduced with the shortening of the tail to the pygostyle and the shift to a knee-driven, femur-held-horizontal gait. Its reduction is a defining event in the theropod–bird locomotor transition. Allen et al. (2021) split the avian muscle into pars caudalis (= crocodylian caudofemoralis longus) and pars pelvica (= brevis). Its leverage declines across several nodes along the bird line.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Caudofemoralis pars pelvica",
+            "abbr": "CFP",
+            "mass_g": {
+              "mean": 306.9
+            },
+            "fascicleLength_mm": {
+              "mean": 108
+            },
+            "pennation_deg": {
+              "mean": 15
+            },
+            "maxIsometricForce_N": {
+              "mean": 778
+            }
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Pars caudalis"
+        },
+        {
+          "name": "Pars pelvica"
+        }
+      ],
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "architecture",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. iliofemoralis externus",
+      "present": "yes",
+      "note": "Hip abductor.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Iliofemoralis externus",
+            "abbr": "IFE",
+            "mass_g": {
+              "mean": 32.6
+            },
+            "fascicleLength_mm": {
+              "mean": 25
+            },
+            "pennation_deg": {
+              "mean": 25
+            },
+            "maxIsometricForce_N": {
+              "mean": 331
+            }
+          }
+        ]
+      },
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. ambiens",
+      "present": "yes",
+      "note": "In birds the ambiens tendon famously passes to the digital flexors, an arrangement once invoked (incorrectly) as an automatic perching mechanism. Hip flexor and knee extensor; the name is retained across the transition.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Ambiens 1",
+            "abbr": "AMB1",
+            "mass_g": {
+              "mean": 93.0
+            },
+            "fascicleLength_mm": {
+              "mean": 39
+            },
+            "pennation_deg": {
+              "mean": 10
+            },
+            "maxIsometricForce_N": {
+              "mean": 672
+            }
+          },
+          {
+            "name": "Ambiens 2",
+            "abbr": "AMB2",
+            "mass_g": {
+              "mean": 199.4
+            },
+            "fascicleLength_mm": {
+              "mean": 44
+            },
+            "pennation_deg": {
+              "mean": 15
+            },
+            "maxIsometricForce_N": {
+              "mean": 1240
+            }
+          }
+        ]
+      },
+      "region": "thigh",
+      "record": "ambiens",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. femorotibialis lateralis + medialis",
+      "present": "yes",
+      "note": "= crocodylian femorotibialis externus and internus.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Femorotibialis lateralis",
+            "abbr": "FMTL",
+            "mass_g": {
+              "mean": 318.1
+            },
+            "fascicleLength_mm": {
+              "mean": 88
+            },
+            "pennation_deg": {
+              "mean": 15
+            },
+            "maxIsometricForce_N": {
+              "mean": 992
+            }
+          },
+          {
+            "name": "Femorotibialis intermedius",
+            "abbr": "FMTIM",
+            "mass_g": {
+              "mean": 387.0
+            },
+            "fascicleLength_mm": {
+              "mean": 84
+            },
+            "pennation_deg": {
+              "mean": 25
+            },
+            "maxIsometricForce_N": {
+              "mean": 1180
+            }
+          },
+          {
+            "name": "Femorotibialis medialis",
+            "abbr": "FMTM",
+            "mass_g": {
+              "mean": 272.0
+            },
+            "fascicleLength_mm": {
+              "mean": 89
+            },
+            "pennation_deg": {
+              "mean": 30
+            },
+            "maxIsometricForce_N": {
+              "mean": 753
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Femorotibialis lateralis"
+        },
+        {
+          "name": "Femorotibialis medialis"
+        }
+      ],
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. iliofibularis",
+      "present": "yes",
+      "note": "Name retained across the crocodylian–avian transition. Allen et al. (2021) find knee-flexor leverage declining relative to knee extensors along the bird line, which is the leverage change underlying the shift from hip-driven to knee-driven propulsion.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Iliofibularis",
+            "abbr": "ILFB",
+            "mass_g": {
+              "mean": 1062.3
+            },
+            "fascicleLength_mm": {
+              "mean": 176
+            },
+            "pennation_deg": {
+              "mean": 0
+            },
+            "maxIsometricForce_N": {
+              "mean": 867
+            }
+          }
+        ]
+      },
+      "region": "thigh",
+      "record": "iliofibularis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. iliotibialis cranialis + lateralis",
+      "present": "yes",
+      "note": "= crocodylian iliotibialis 1-3.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Iliotibialis cranialis",
+            "abbr": "IC",
+            "mass_g": {
+              "mean": 378.8
+            },
+            "fascicleLength_mm": {
+              "mean": 174
+            },
+            "pennation_deg": {
+              "mean": 0
+            },
+            "maxIsometricForce_N": {
+              "mean": 615
+            }
+          },
+          {
+            "name": "Iliotibialis lateralis",
+            "abbr": "IL",
+            "mass_g": {
+              "mean": 1074.0
+            },
+            "fascicleLength_mm": {
+              "mean": 174
+            },
+            "pennation_deg": {
+              "mean": 0
+            },
+            "maxIsometricForce_N": {
+              "mean": 875
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Iliotibialis cranialis"
+        },
+        {
+          "name": "Iliotibialis lateralis"
+        }
+      ],
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hutchinson-etal-2015"
+      ]
+    }
+  ]
+}

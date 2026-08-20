@@ -1,0 +1,147 @@
+{
+  "species": "lutra-lutra",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Lutra lutra. **Present, small, and quite separate from the inner head of the flexor brevis hallucis** — which is exactly what it is not in the badger, whose arrangement is otherwise the same. Two closely related pentadactyl carnivores on either side of one fusion.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Lutra lutra. **Only a very slight tendency to fusion between the flexores breves and the dorsal interossei** — the least of any carnivore here. Every digit but the hallux has a double-headed short flexor; the flexor brevis hallucis is represented by a single inner head. The dorsal muscles are as in the badger.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (three adductors) and opponens",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Opponens minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Lutra lutra. Five digits in a common web that nevertheless move freely, so the intrinsic muscles are well developed — and **with one or two minor exceptions this foot meets every requirement of Cunningham's three-layer type**, the closest any carnivore in his survey comes to it. The adducting layer matches the badger's in number and character, with the addition of an opponens minimi digiti of the kind found in the tetradactylous carnivores, inserted on the plantar face of the distal third of the fifth metatarsal.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

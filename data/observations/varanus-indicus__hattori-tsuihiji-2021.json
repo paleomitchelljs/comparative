@@ -1,0 +1,347 @@
+{
+  "species": "varanus-indicus",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Adductor et extensor hallucis et indicus",
+      "present": "yes",
+      "origin": "Dorsolateral aspect of the distal fibula and the proximolateral margin of the tarsal facet of the astragalocalcaneum.",
+      "insertion": "Metatarsal I only, the insertion marked by rugosity on the bone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "astragalocalcaneum",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "innervation": "Deep fibular nerve.",
+      "attachmentNote": "Varanus indicus. **The insertion is narrower than the iguana's** — MT I alone, where Iguana takes MT I and MT II, and Chamaeleo takes only MT II (Russell & Bauer 2008). Three squamates, three different digits for one muscle, which is the position-versus-identity question asked inside a clade.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "innervation",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "origin": "Dorsal depression on the astragalus, with two additional slips beyond the Iguana condition; the digit II and III slips from the dorsal and dorsolateral aspects of metatarsals II and III.",
+      "insertion": "Proximodorsal lips of the phalanges of digits III and IV, and — unlike Iguana — of digits I and II as well; in Varanus an additional tendinous insertion on the medial margin of the distal metatarsal III.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "side": "dorsal",
+            "landmark": "astragalus"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus indicus. **Two more slips than the iguana**, serving digits I and II, which is the second scored difference between Hattori & Tsuihiji's two squamates.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor digitorum brevis"
+        },
+        {
+          "name": "Extensor hallucis brevis"
+        },
+        {
+          "name": "Extensor digiti II"
+        },
+        {
+          "name": "Extensor digiti III"
+        },
+        {
+          "name": "Extensor digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Interossei dorsales digiti II-III",
+      "present": "yes",
+      "origin": "Ridge-like longitudinal rugose areas on metatarsals I and II.",
+      "insertion": "The medial portion of the dorsal aponeurosis of digits II and III, on the proximodorsal lip of each phalanx; in Varanus an additional tendinous insertion on the medial margin of distal metatarsal III.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus indicus. The digit IV member was found in Iguana and not here. Russell & Bauer described the digit III belly as arising from the lateral aspect of the DISTAL portion of metatarsal II; Hattori & Tsuihiji find it proximal and treat the difference as intraspecific variation.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interosseous dorsalis digiti II"
+        },
+        {
+          "name": "Interosseous dorsalis digiti III"
+        }
+      ],
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "origin": "Dorsomedial aspect of the lateral distal condyle of the femur.",
+      "insertion": "Metatarsals II and III by two tendons, onto the tubercle on the lateroplantar aspect of each proximal shaft.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "femoral-condyles"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus indicus. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Peroneus longus + peroneus brevis",
+      "present": "yes",
+      "origin": "Longus from the lateral femoral epicondyle; brevis from almost the whole fibula.",
+      "insertion": "Longus into a depression on the dorsolateral shaft of metatarsal V; brevis onto the proximolateral margin of metatarsal V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "lateral",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus indicus. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus (fibularis) longus"
+        },
+        {
+          "name": "Peroneus (fibularis) brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "origin": "Broad area on the shaft of the tibia, the dorsal surface origin continuing to the distal end of the bone.",
+      "insertion": "Medial margin of metatarsal I.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus indicus. Against Iguana, the dorsal origin runs the whole length of the tibia.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    }
+  ]
+}

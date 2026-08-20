@@ -1,0 +1,89 @@
+{
+  "species": "grus-americana",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Grus americana, from Fisher & Goodman's Origin/Insertion paragraphs. M. extensor digitorum communis: tendinous from the most distal part of the face of the ectepicondylar prominence, with **a wide vinculum passing posteriorly from the distal end of that tendon to insert along a line on the postero-anconal corner of the ulna, just anterior to the row of papillae for the secondary feathers** — a second, aponeurotic attachment tied directly to the flight-feather apparatus. The round tendon runs distad along the antero-anconal ulna, through the tendinal groove at its distal end, onto the fused area of metacarpals III and IV.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "fisher-goodman-1955"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Grus americana, from Fisher & Goodman's Origin/Insertion paragraphs. M. flexor digitorum profundus: fleshy from the postero-palmar surface of the ulna, from the distal extent of the distal superficial joint ligament out to about one-third of the ulna. Its tendon crosses the wrist beneath the superficial sheath and **hooks around the anterior aspect of the pisiform process of the metacarpus** — the avian carpometacarpus is fused, so the insertion is scored on the metacarpal series with the pisiform process named as the pulley.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "fisher-goodman-1955"
+      ]
+    }
+  ]
+}

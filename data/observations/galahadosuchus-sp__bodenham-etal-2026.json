@@ -1,0 +1,95 @@
+{
+  "species": "galahadosuchus-sp",
+  "source": "bodenham-etal-2026",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Biceps brachii",
+      "present": "inferred",
+      "note": "Inferred from the biceps tubercle — an anteroposterior ridge on the lateroventral coracoid, named by Walker (1972) and treated as homologous across early crocodylomorphs by Crush (1980). Level I inference: the coracoid origin is bracketed by both Crocodylia and Aves.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "landmark": "biceps-tubercle"
+          }
+        ]
+      },
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments"
+      ],
+      "_srcs": [
+        "bodenham-etal-2026"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracobrachialis",
+      "present": "inferred",
+      "note": "Inferred from a circular depression near the posterior margin of the lateroventral coracoid, shared with Dromicosuchus (NCSM 13733) and Terrestrisuchus. Crush (1980) read it as the attachment of the coracobrachialis anterior. Recorded here as an ORIGIN, which is this dataset's convention for the coracoid end; Crush and Bodenham et al. both word it as an insertion.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "landmark": "coracoid-depression"
+          }
+        ]
+      },
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments"
+      ],
+      "_srcs": [
+        "bodenham-etal-2026"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Caudofemoralis",
+      "present": "inferred",
+      "note": "Inferred from a low, proximodistally elongate fourth trochanter about a quarter of the way down the posteromedial femur, bearing a shallow medial pit. Level I inference. Its modest development relative to the crocodylian condition is the observation that bears on how much of locomotion was still tail-driven in the sphenosuchian grade.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "fourth-trochanter"
+          }
+        ]
+      },
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments"
+      ],
+      "_srcs": [
+        "bodenham-etal-2026"
+      ]
+    }
+  ]
+}

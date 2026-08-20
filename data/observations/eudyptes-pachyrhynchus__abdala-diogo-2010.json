@@ -1,0 +1,85 @@
+{
+  "species": "eudyptes-pachyrhynchus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Both heads of this field. The subscapularis caput mediale arises from the proximal third of the costal scapula, a small area of the scapular process of the clavicle and the medial coracoid; the subcoracoideus from the dorsal spina externa of the sternum and the adjacent corpus sterni, further attaching to the dorsomedial coracoid. The two **fuse near the shoulder joint and insert by a common tendon**, which is why one record carries them. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "ventral",
+            "landmark": "sternal-keel"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "schreiweis-1982"
+      ]
+    }
+  ]
+}

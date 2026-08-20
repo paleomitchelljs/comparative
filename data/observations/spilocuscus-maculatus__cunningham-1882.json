@@ -1,0 +1,3144 @@
+{
+  "species": "spilocuscus-maculatus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Biceps brachii",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Coraco-radial (superficial)"
+        },
+        {
+          "name": "Gleno-ulnar (deep)"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "glenoid"
+          },
+          {
+            "element": "scapula",
+            "landmark": "coracoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "radial-tuberosity"
+          },
+          {
+            "element": "ulna",
+            "landmark": "coronoid-process-ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The same two insertions as the thylacine's, but **the bellies are distinct along their whole length** and only the tendons of origin partly fuse. Tear them apart upwards and the division shows: the gleno-ulnar part comes from the upper glenoid margin alone, while the coraco-radial part has both a coracoid and a glenoid origin — which makes that part alone, in this animal, the equivalent of the entire human biceps.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Brachialis anticus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "coronoid-process-ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. As in the thylacine, and differing in taking fibres from the outer aspect of the humeral shaft as well as the posterior, and in a closer connection with the external intermuscular septum. The spiral course round the bone is the same.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Coraco-brachialis brevis and longus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coraco-brachialis brevis"
+        },
+        {
+          "name": "Coraco-brachialis longus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "coracoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          },
+          {
+            "element": "humerus",
+            "landmark": "supracondylar-ridge"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The short muscle plus a **coraco-brachialis longus, inserted into the bridge of bone that walls in the supracondyloid foramen of the humerus** — the longest reach of this muscle in Cunningham's three animals, and an insertion that exists only because the foramen does. Cuvier & Laurillard figure both short and long slips in *Phalangista cavifrons*; Young found all three parts in the koala, with medius and longus fused.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Triceps brachii",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Long (scapular) head"
+        },
+        {
+          "name": "External head"
+        },
+        {
+          "name": "Internal head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Three separable heads, differing from the thylacine's in three ways Cunningham lists: the long head comes off no more than a third of the scapular border and all from one tendon; the internal head is weak and does not reach above the teres major insertion, and **is not pierced by the musculo-spiral nerve**; and the three heads blend higher up the limb. Cunningham's summary is that this triceps closely resembles a human one.",
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "plantar-aponeurosis"
+          },
+          {
+            "element": "tarsals"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. A strong muscle rising **from the plantar cartilage and from a sesamoid bone gliding on the plantar surface of the scaphoid** — that cartilage being the plate which in this animal replaces the plantar fascia and takes the place of a heel, described on the `gastrocnemius` row. It inserts chiefly by fleshy fibres into the tibial sesamoid of the hallux, is prolonged by a slender tendon to the tibial side of the distal phalanx, and gains the extensor tendon by a third slip. **Its nerve is unlike the others': the abductor hallucis appears to be supplied by a special branch to the hallux**, where in Cunningham's other marsupials it takes the internal plantar with the flexor brevis hallucis.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductors of the little toe",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abductor ossis metatarsi minimi digiti"
+        },
+        {
+          "name": "Abductor minimi digiti"
+        },
+        {
+          "name": "Third abductor, to the extensor tendon"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Three, arising side by side from the outer and under surface of the calcaneal tuber, and inserted into the metatarsal, the outer sesamoid and the extensor tendon respectively — the muscle's three usual insertions, each with its own belly.** This is the full development of a separation the thylacine shows only occasionally and feebly, from the metatarsal base, and *Dasyurus* shows constantly but from further back. Cunningham's conclusion is that the abducting apparatus on the outer side of this foot is more differentiated than in any of the other animals he had examined.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor brevis digitorum",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Fibular belly to the minimus"
+        },
+        {
+          "name": "Fibular belly to the annularis"
+        },
+        {
+          "name": "Pedal portion, to the index and medius"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "medial"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "extensor-expansion"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **This is a muscle caught in the middle of a migration.** Ruge traced its history: it belongs originally to the peroneal group, in Monotremata it arises entirely from the fibula, and through the mammalian series its bellies descend to the dorsum of the foot one at a time until, as in the human row on this record, the whole muscle is pedal. Cunningham's two marsupials are two steps of that sequence in two animals he dissected himself. **Here the migration is half done**: the part belonging to the medius and index has reached the dorsum of the foot, while that belonging to the two outer digits still shows a fibular origin. The two fibular bellies are a good-sized one from the outer aspect of the fibular head under the superficial head of the peroneus longus, its tendon passing behind the lateral malleolus to the dorsal expansion of the minimus, and beneath it a second from the middle third of the inner aspect of the shaft, reaching the ring digit by the same route. The pedal portion is a very minute band arising by a narrow tendon from the outer aspect of the calcaneum and ending in two delicate tendons for index and medius. The koala's arrangement is the same; Ruge found two fibular bellies plus a pedal portion for hallux and index in *Didelphis*.",
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor brevis digitorum",
+      "innervation": "A recurrent branch from the internal plantar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus, and **the muscle has left the foot**: it is the superficial portion of the great flexor mass, given off from the flexor longus hallucis while still in the leg, so its origin is the posterior fibula. Three tendons, to the minimus, annularis and medius, each pierced by the corresponding deep tendon in the usual way. Cunningham had already set out the general principle in his definition of an intrinsic foot muscle — that the flexor brevis digitorum is the homologue of the flexor sublimis of the forearm and may in some animals be seen taking origin beyond the limits of the foot — and this animal is his case. **He identifies it by nerve**: a recurrent branch from the internal plantar nerve, where the deep portion beside it is supplied from the internal popliteal.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate layer, dorsal interossei and opponens minimi digiti",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei, abducting slips"
+        },
+        {
+          "name": "Dorsal interossei, approximating slips"
+        },
+        {
+          "name": "Opponens minimi digiti"
+        },
+        {
+          "name": "Second dorsal interosseous",
+          "membership": "disputed"
+        }
+      ],
+      "divisionNote": "The second dorsal interosseous is not separable: index and medius share one skin sheath and act as one digit, and the muscle is completely amalgamated with the inner head of the flexor brevis medii. Cunningham infers it rather than dissects it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "tarsals"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Five flexores breves, one per toe, each of two slips ending one on each sesamoid; the flexor brevis hallucis, set apart by the hallux's position, comes off the under surface of the scaphoid by a single tendon and divides. **The dorsal interossei are the interesting layer.** The first, the abductor indicis, is the most powerful, by two heads from the internal cuneiform and the first metatarsal. The second cannot be found as an independent muscle at all — index and medius share one integumental sheath and function as a single digit, and the second interosseous is completely amalgamated with the inner head of the flexor brevis medii, the first interosseous serving as abductor for both digits. **The third and fourth each consist of two slips with different jobs**: one with the ordinary abducting insertion, the other taking origin by two delicate heads on the dorsum and ending in a tendon that bifurcates into the adjacent sides of two digits, so that it approximates them. Cunningham reads this as a fourth layer of muscles forming by fission of the dorsal layer, with a new function — and notes the same splitting in the thylacine's hand. A strong quadrate opponens minimi digiti runs obliquely from the outer margin of the plantar cartilage to the whole fibular margin of the fifth metatarsal.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Musculus accessorius",
+      "attachmentNote": "Spilocuscus maculatus. **Absent.** Cunningham states it in a footnote and states it for both animals at once: there is no musculus accessorius in the foot of either the thylacine or the cuscus. The human row on this record is the quadratus plantae, so this is a muscle the placental column has and these two marsupials do not.",
+      "region": "foot",
+      "record": "flexor-accessorius-lateralis-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (three adductors and a raphe)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Adductor indicis",
+          "membership": "variable"
+        }
+      ],
+      "divisionNote": "The adductor indicis is absent as a muscle; Cunningham reads the distal end of the fibrous raphe, which attaches to the outer side of the base of the index's proximal phalanx, as that muscle converted into fibrous tissue.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus, and the most instructive foot in the marsupial series. The hallux is broad, clawless and set at right angles to the foot's axis, opposing the other toes; index and medius are bound in one sheath as far as the second joint and cannot move independently; the annularis is much the largest. **Adduction here is towards a line drawn through the index, not the medius** — an exception to the general rule, and the same exception the human foot makes. A median fibrous raphe accordingly lies over the index metatarsal, and the adductors arise from it. There is no adductor of the index at all: the raphe is attached to the outer side of the base of its proximal phalanx, and Cunningham reads its lower end as the missing muscle turned to fibrous tissue. The adductor hallucis is the most powerful and most complex — a double origin, from the base of the index metatarsal and the tibial side of the raphe and by a few fibres from the aponeurosis over the first dorsal interosseous, resolving into plantar, intermediate and dorsal slips that end respectively on the outer sesamoid, on the minute distal phalanx by a long tendon, and in the extensor tendon.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Anconeus externus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Largely developed but inseparably united with the triceps: from the back of the lateral epicondyle to the outer surface of the olecranon and the upper half of the ulnar shaft. That long ulnar reach matters on this animal, because the extensor secundi internodii pollicis arises by two heads and **the anconeus externus runs down the ulna between them**.",
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Anconeus internus (epitrochleo-anconeus)",
+      "innervation": "Ulnar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "medial",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Present, with the usual attachments — the back of the medial epicondyle to the inner side of the tip of the olecranon — and supplied by the ulnar nerve, which passes under cover of it to enter the forearm. Its lower border lies against a fibrous cord bridging the hollow between the epicondyle and the olecranon, and that cord gives origin to the flexor carpi ulnaris. **Three marsupials with this muscle present is worth setting against the human row on this record, which is scored absent** — in a human the cubital tunnel is roofed by Osborne's ligament instead. In this animal the muscle is firmly united to the upper border of that fibrous cord, so it and the flexor carpi ulnaris are separated by no more than a fibrous raphe.",
+      "nerves": [
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor carpi radialis longior and brevior",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor carpi radialis longior"
+        },
+        {
+          "name": "Extensor carpi radialis brevior"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "supracondylar-ridge"
+          },
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          },
+          {
+            "element": "radius",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Separate along their whole length, and the brevior is large, powerful and **arises by three heads — an origin Cunningham says he has not seen in any other marsupial**: from the upper part of the lateral epicondyle; from the tendinous expansion on the surface of the supinator brevis; and from the posterior border of the radius below the supinator brevis. So two of its three heads are on the forearm rather than the humerus, one of them on another muscle's aponeurosis. It inserts on the radial border of the third metacarpal shaft a little beyond the base; the longior comes off the lower third of the supracondylar ridge to the radial border of the second metacarpal about its middle. Both have moved distally along the metacarpal from the base.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor carpi ulnaris",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. A single ulnar extensor inserted into the metacarpal of the minimus. Cunningham's five-compartment extensor retinaculum in the thylacine and seven-compartment one in the cuscus are the tally of these tendons at the wrist.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor communis digitorum and extensor digitorum secundus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor communis digitorum"
+        },
+        {
+          "name": "Extensor digitorum secundus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The common extensor gives **four tendons**, communicating freely on the dorsum of the hand and going one to each of the four ulnar digits — the simpler arrangement, against the thylacine's three tendons splitting into six slips. Cunningham notes Young found a tendon to each of the five digits in the koala and calls that exceptional, the insertion being confined to the four inner digits in most marsupials. The extensor digitorum secundus is as in the thylacine, to the annular and little digits; Macalister has it reaching the medius as well in the Tasmanian devil and the two kangaroos.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor ossis metacarpi pollicis",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Slip to the trapezium (distal carpal)"
+        },
+        {
+          "name": "Slip to the first metacarpal"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius",
+            "side": "posterior"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. A very extensive origin — the extensor surfaces of both forearm bones in their upper two-thirds and the interosseous membrane between — dividing into two fleshy slips that emerge between the common extensor and the short radial extensor and end in tendons winding round the radial border of the forearm, one to the trapezium and one to the base of the first metacarpal. **Cunningham's identification is the one this record already carries**: he says plainly that the muscle in marsupials is a compound of the human extensor ossis metacarpi pollicis and extensor primi internodii pollicis, which is exactly the pair scored as parts on the human row here.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor secundi internodii pollicis and extensor medii",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor secundi internodii pollicis"
+        },
+        {
+          "name": "Extensor medii"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Two separate muscles here, one for the pollex and one for the medius**, where the thylacine and the phascogale have one muscle with three tendons. The pollex muscle arises by two heads — the radial surface of the olecranon with the upper third of the ulna's posterior border, and the radial border of the ulna in its middle third — and **the anconeus externus runs down the ulna between them**; below the anconeus the heads unite and the tendon goes to the second phalanx of the pollex. The extensor medii is a delicate slip from the middle third of the ulna's posterior border to the dorsal expansion of the medius. This record's human row is 'extensor pollicis longus and extensor indicis'; Cunningham's muscle reaches a third digit as well.",
+      "region": "forearm",
+      "record": "extensor-digitorum-profundus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor carpi radialis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Well marked in all three, arising from the medial epicondyle in common with the great flexor mass of the digits. **Its insertion is the variable part**, and Cunningham lists the marsupial range: the second metacarpal in the wombat, phalanger, opossum and bandicoot, the pollical metacarpal in Bennett's kangaroo, the middle metacarpal in the koala. Here the tendon divides in two, to the palmar aspects of the bases of the second and third metacarpals.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor carpi ulnaris",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Humeral head"
+        },
+        {
+          "name": "Olecranon head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The same in all three: a broad thin band arising by two pointed processes, one from the medial epicondyle and one from the olecranon, and taking fibres between them from **a strong fibrous arch bridging the gap between those two bony points** — the arch under which the ulnar nerve enters the forearm. Inserted into the pisiform in every case. Here the arch is inseparably united with the anconeus internus, so that muscle and this one are divided by nothing but a fibrous raphe.",
+      "nerves": [
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor sublimis, profundus and longus pollicis (amalgamated)",
+      "innervation": "Median and ulnar nerves to the condylar and ulnar portions; the radial portion from the median alone.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Condylar portion (flexor sublimis)"
+        },
+        {
+          "name": "Radial portion (flexor longus pollicis)"
+        },
+        {
+          "name": "Ulnar portion (flexor profundus)"
+        }
+      ],
+      "divisionNote": "Cunningham's identification of the three parts is explicitly probabilistic — the condylar portion is 'probably' the sublimis, the radial 'represents' the flexor longus pollicis, the ulnar 'apparently' the profundus — and he gives the reason for the hedge: the nerve supply shows the sublimis and profundus fibres to be thoroughly commingled. Both the ulnar and the median nerve send twigs to the condylar and ulnar portions; the radial portion is supplied by the median alone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "ulna",
+            "side": "medial",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Largely one muscle in all three animals**, arising in three parts: a radial portion from the anterior surface of the radius between the tubercle and the middle of the bone, under the pronator radii teres; an ulnar portion from the olecranon under the anconeus internus and from the posterior border and ulnar surface of the upper half of the shaft; and a condylar portion, intermediate and superficial, from the medial epicondyle. The three unite into a thick mass, and then something unusual happens: **four minute fleshy slips issue from its superficial surface**, each ending in a thread-like tendon, and these four together are the flexor sublimis. The mass gives place to a rope-like tendon grooved along its surface, and the four sublimis bellies and tendons lie in that groove. Below the flexor retinaculum the thick tendon divides into five, one per digit, and the sublimis tendons separate to the four ulnar digits.",
+      "nerves": [
+        {
+          "nerve": "median"
+        },
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Palmaris longus",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Epicondylar slip"
+        },
+        {
+          "name": "Slip common with the digital flexor"
+        },
+        {
+          "name": "Deep slip from the digital flexor"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Three small slips rather than one muscle**: a very delicate fasciculus straight off the medial epicondyle; a larger slip arising in common with the great digital flexor; and a deeper portion issuing from that flexor's superficial surface. All three join the palmar fascia. Two of the three heads therefore take origin from another muscle.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pronator quadratus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "anterior"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Covers fully a third of the two forearm bones — more than the thylacine's quarter, though Cunningham still counts all three poorly developed against other marsupials.",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pronator radii teres",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **The coronoid head is absent in all three animals** — a clean contrast with the human row on this record, which carries both the medial epicondyle and the coronoid process of the ulna. Very strongly developed, and its insertion runs almost the whole radial margin of the radial shaft — from the supinator brevis above to the root of the styloid process below.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Supinator brevis",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "radius",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Feebly developed in all three animals and best marked in this one, where it is inserted into rather less than the upper fifth of the anterior and inner surface of the radial shaft. **Cunningham gives no origin**, so none is scored. Its aponeurotic surface matters elsewhere in this animal: the extensor carpi radialis brevior takes one of its three heads from it.",
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Supinator longus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "supracondylar-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **A muscle of great size, relatively much larger than a human's** — from the upper two-thirds of the lateral supracondylar ridge, its tendon running in a groove on the dorsum of the lower radius under the extensor retinaculum to reach the radial carpal, into the outer aspect of which it inserts. It has therefore crossed the wrist, which the thylacine's has not. Macalister records it absent altogether in the Tasmanian devil; Cunningham reports it otherwise near-universal in Marsupialia and enormous in the koala.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor minimi digiti",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Present and more strongly developed than the abductor pollicis. Its short flexor carries a distinct opponens minimi digiti fused to its ulnar part, inserted into the lower half of the ulnar margin of the fifth metacarpal.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor pollicis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-retinaculum"
+          },
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Present but weaker than the abductor of the little finger, and more or less completely fused with the radial head of the flexor brevis pollicis. **There is no trace of an opponens pollicis in this animal**, though the opponens minimi digiti is very distinct.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate group, dorsal interossei and opponens minimi digiti",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Dorsal interossei"
+        },
+        {
+          "name": "Accessory palmar slips of the dorsal interossei"
+        },
+        {
+          "name": "Flexor brevis pollicis"
+        },
+        {
+          "name": "Flexor brevis minimi digiti"
+        },
+        {
+          "name": "Flexores breves of the index, medius and annularis"
+        },
+        {
+          "name": "Opponens minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "ventral"
+          },
+          {
+            "element": "metacarpals",
+            "side": "dorsal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "extensor-expansion"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Three of the four dorsal interossei have left the intermetacarpal spaces altogether and arise entirely from the dorsal surfaces of the metacarpals** — the second by two parts from the second and third, the third from the fourth, the fourth from the fourth and fifth. Only the first, the abductor indicis, is a single fleshy band, and it arises from the palmar surface of the base of the pollical metacarpal. They insert as in a human except the third, which like the thylacine's takes the two fingers it lies between. Cunningham then describes a mechanism: **the tendon of each of these muscles, the abductor indicis excepted, is tied by a little transverse fibrous band to the head of the neighbouring metacarpal**, holding it off the phalangeal base it acts on and so increasing its leverage. The same bands exist in the thylacine but are weak by comparison. The accessory palmar slips are present but less developed and differently placed than the thylacine's: an adductor of the index, an ulnar abductor of the middle finger, an abductor of the ring finger. The opponens minimi digiti is very distinct, fused with the ulnar part of the short flexor, and inserted into the lower half of the ulnar margin of the fifth metacarpal — continuous with that flexor's own insertion.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Lumbricales",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Four in number in each of Cunningham's three marsupials, springing from the four ulnar tendons of the flexor profundus and inserted one into each of the four ulnar digits. **Powerfully developed here, and expanding greatly at their insertions** — the opposite of the other two animals.",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Palmar group (four adductors and a raphe)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor pollicis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor of the annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Transverse fasciculus to the index and annularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus, and the most instructive of the three. In a human the adductor pollicis seeks the middle line of the hand for its origin, taking the third metacarpal so it can draw the thumb across the palm; in the thylacine and the phascogale Cunningham sees a tendency towards the same thing. **In the cuscus every adductor has got there, but by a different route: a median fibrous raphe runs down from the base of the third metacarpal, and the adductors arise from either side of it** — pollicis and minimi digiti opposite each other on its upper two-thirds, and also by a few fibres from the front of the carpus; the small adductors of index and ring finger opposite each other below them. A separate fleshy fasciculus lies in front of the raphe, connected to it in no way, passing round the base of the middle finger to attach at one end to the adductor tendon of the ring finger and at the other to that of the index — an adductor of both which, having no intermediate attachment, must act on both at once. Together with the raphe these muscles form a thin stratum hiding most of the intermediate group.",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor longus digitorum and extensor longus hallucis",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor longus digitorum"
+        },
+        {
+          "name": "Extensor longus hallucis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "anterior"
+          },
+          {
+            "element": "fibula",
+            "side": "medial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          },
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Three well-defined muscles on the front of the leg — tibialis anticus, extensor longus hallucis, extensor longus digitorum — in the same relative positions as in a human. **The extensor longus hallucis is well developed here and absent altogether in the thylacine**: from the anterior prominence of the head of the fibula, the inner border of the fibula in its upper half and the interosseous membrane, emerging between the tibialis anticus and the long digital extensor, its tendon reaching the ungual phalanx of the hallux. Macalister reports it inserting by two tendons, to hallux and index, in the wallaby, opossum and phalanger. The digital extensor has a very limited origin — the anterior prominence of the fibular head, the lateral tibial tuberosity, and a ligament bridging the two — and ends in three tendons: the intermediate to the ring digit, the outermost to the little toe, the innermost dividing for index and medius, with each lateral tendon sending a slip to strengthen that of the large ring digit.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor longus hallucis",
+      "innervation": "A twig from the internal popliteal nerve.",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **The flexor longus digitorum is apparently absent** and the hallucis is huge, from the whole length of the posterior fibula and also from the fascia covering the popliteus. About mid-leg it divides into a small superficial and a large deep portion, and Cunningham's own comparison is the right one: they stand to each other as the flexor sublimis and profundus do in the forearm of the same animal. **The superficial portion is the flexor brevis digitorum, taking origin above the foot altogether** — its rows are on `flexores-breves-superficiales-pes` — and he settles the identification by nerve: it is supplied by a recurrent branch of the internal plantar nerve while the deep portion is supplied from the internal popliteal. The deep portion ends in a rope-like tendon grooved to receive the three delicate short-flexor tendons, and divides in the sole into five, one per toe.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        }
+      ],
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Gastrocnemius, soleus and plantaris",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gastrocnemius, inner head"
+        },
+        {
+          "name": "Gastrocnemius, outer head (containing the soleus)",
+          "membership": "disputed"
+        },
+        {
+          "name": "Plantaris"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-medial"
+          },
+          {
+            "element": "fibula",
+            "side": "posterior"
+          },
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **The two heads are separate along their whole length** — the muscle is two distinct factors here. The inner head comes off the back of the medial condyle only, takes no fibres from the popliteal surface, and half-way down the leg gives place to a narrow tendon with an insertion of its own into the back of the calcaneum. The outer head is as in the thylacine but for two things: no tendinous slip to the outer aspect of the lateral condyle, and **an origin from the posterior aspect of the fibula in its upper two-thirds**, through the intermuscular septum between it and the peronei. It inserts by a strong tendon into the calcaneal tuber under the inner head's tendon. **There is no separate soleus in either animal, and Cunningham argues it is inside the outer head of the gastrocnemius.** His evidence is that head's fibular origin — a calf muscle taking the fibula is doing what a soleus does — and he answers the objection that the plantaris lies deep to it by pointing out that the plantaris is subjacent only to the *inner* part of the compound muscle, not to the outer part that represents the soleus. So the missing muscle is not to be looked for among the deep flexors of the calf. The plantaris is large and quite distinct from the compound soleo-gastrocnemius, arising from the sesamoid bone at the head of the fibula and passing over the calcaneal tuber to insert into **a plate of cartilage in the sole that replaces the plantar fascia and takes the place of the true heel** — attached internally to a sesamoid gliding on the internal cuneiform and giving origin to some short muscles of the hallux, externally to the under surface of the cuboid where it gives origin to some short muscles of the minimus, and prolonged forward as fascial slips to the roots of the digits. Cunningham reports the plantaris almost invariably present in marsupials and absent in the wombat.",
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Peroneus longus and peroneus brevis",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus longus"
+        },
+        {
+          "name": "Peroneus brevis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "proximal"
+          },
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The peroneus longus is very powerful, arising in both animals **by two heads separated by the anterior tibial nerve**. Here the superficial head is a broad flat band from the anterior and posterior prominences of the fibular head and the lateral collateral ligament of the knee; the deep head takes the outer aspect of the fibular shaft in its upper half. Its tendon runs behind the lateral malleolus to the outer margin of the foot, turns through a deep groove in the cuboid, crosses the sole and inserts into the base of the first metatarsal, confined on the way by two annular ligaments — behind the malleolus and on the outer aspect of the calcaneum — but with no complete sheath in the sole. The peroneus brevis comes off the anterior prominence of the fibular head by a narrow pointed tendon and takes fibres from the septum between it and the digital extensor, reaching the base of the fifth metatarsal. Ruge held that the inward insertion of the peroneus longus is not the original condition: the tendon began on the base of the fifth metatarsal and worked inwards as its fibres came into relation with the plantar ligaments, and he pointed to Monotremata — where the tendon is not free in a sheath in the sole and half its fibres still reach the fifth metatarsal — and to *Didelphis* and *Dasyurus hallucinatus*, which retain the fifth-metatarsal attachment. **Cunningham's two animals fall on either side of that sequence**: the thylacine's tendon is still slightly attached to the fifth metatarsal, the cuscus's lies quite free in its sheath with no attachment but the first metatarsal.",
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Popliteus and pronator tibiae",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Popliteus proper"
+        },
+        {
+          "name": "Pronator tibiae"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "posterior"
+          },
+          {
+            "element": "tibia",
+            "side": "anterior"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **This muscle fills the entire interosseous space** — a continuous layer of oblique fibres running from the fibula downwards and inwards to the tibia, thick and fleshy in its upper and lower thirds and thin and largely tendinous in the middle. That is the ancestral `interosseus cruris` this record carries as a synonym, and here it dwarfs the popliteus proper: **a few very oblique superficial fibres from the lateral collateral ligament of the knee are all that Cunningham can identify as the popliteus, the rest being Humphry's pronator tibiae.** The upper mass is fixed to the posterior tibia and the antero-internal border of the fibula, the lower thickening to the antero-external tibial surface. Cunningham verifies Young's account of what it does: the tibiofibular joints admit only antero-posterior gliding, not pronation and supination, and the muscle's attachments in different planes throw the fibula obliquely across the tibia and draw it close. In this animal the two bones are separated at the lower tibiofibular joint by a fibrocartilage jutting up from the ankle, as in the koala.",
+      "region": "leg",
+      "record": "popliteus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Tibialis anticus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          },
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Very powerful in both animals, from the lateral tuberosity and outer surface of the tibial shaft and from the interosseous membrane. Here it inserts into the plantar aspect of the internal cuneiform and the base of the first metatarsal — **the hallux**, where the thylacine's goes to the index.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Tibialis posticus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Internal part"
+        },
+        {
+          "name": "External part"
+        }
+      ],
+      "divisionNote": "Cunningham suggests, and then argues against, reading the larger internal part as the flexor longus digitorum — which is absent in this animal — on the ground that its insertion is tarsal.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          },
+          {
+            "element": "tibia",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Apparently double.** The larger, internal part occupies the place of the absent flexor longus digitorum and arises by two heads — a fibular one from the back of the head of the fibula, whose oblique fibres partly fuse with the upper popliteus, and a tibial one from the upper half of the posterior tibia — its tendon crossing a groove behind the medial malleolus to the inner aspect of the scaphoid. Cunningham raises the obvious possibility and declines it: this muscle *may* represent the flexor longus digitorum, but the tarsal insertion is hard to reconcile with that reading. The smaller external part is a minute belly deep under the huge flexor, from the head of the fibula and the fascia over the popliteus, its slender tendon crossing the same groove beneath the other to reach the plantar aspect of the scaphoid. Young found the tibialis posticus double in the koala too.",
+      "region": "leg",
+      "record": "tibialis-posterior",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Acromio-trachelien superior and inferior",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Acromio-trachelien superior"
+        },
+        {
+          "name": "Acromio-trachelien inferior"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas",
+            "landmark": "atlas-transverse-process"
+          },
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior",
+            "landmark": "acromion"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Two fleshy bands. The superior arises by two slips from the transverse processes of the atlas **and the axis**, the inferior from the atlas alone; both wind round the lower margin of the splenius, diverge, expand into thin bands, then coalesce again near the scapula to insert into the whole length of the scapular spine and the posterior margin of the acromion. The axis slip is the character separating this animal from the phascogale, whose two bands both come off the atlas.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Deltoid, clavicular portion",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. From the middle third of the clavicle, reinforced by those trapezius fibres that in a human are attached to the clavicle, to the summit of the humeral ridge — where it fuses to some extent with the pectoralis major insertion. Separated from the scapular portion above by a considerable interval.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Deltoid, scapular portion",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "infraspinous-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The larger of the two deltoid portions: acromion, the whole length of the scapular spine, and the fascia over the infraspinatus, to the outer surface of a salient ridge on the antero-external humeral shaft at the junction of its upper and middle thirds. As it descends it is joined superficially by exactly those trapezius fibres that in a human go to the acromion — so in this animal the acromial deltoid and part of the trapezius are one sheet, and that composite is what Cunningham means by the cephalo-humeral muscle.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Latissimus dorsi",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          },
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The origin is the same in all three: the spines of every thoracic vertebra except the first two, the lumbar aponeurosis, and a single digitation from the last rib. **It overlaps the posterior angle of the scapula and in no case takes any fibres from it** — worth setting against the human row on this record, where Gest scores an occasional slip from the inferior angle. Near its insertion the muscle divides: the upper, smaller slip passes behind the other and joins the posterior margin of the teres major to be inserted with it, while the main posterior portion gives off the dorsi-epitrochlear and then ends in a flat shining tendon that runs out under both heads of the biceps into the floor of the broad shallow bicipital groove, abutting the pectoralis major.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pectoralis major, minor and quartus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pectoralis major, superficial portion"
+        },
+        {
+          "name": "Pectoralis major, deep portion"
+        },
+        {
+          "name": "Pectoralis minor"
+        },
+        {
+          "name": "Pectoralis quartus"
+        }
+      ],
+      "divisionNote": "Owen read the pectoralis quartus as a dismemberment of the pectoralis major; Humphrey and Macalister as an intermediate piece of the great superficial sheet between the pectoralis major and the latissimus dorsi; Cunningham, from its fusion with the panniculus carnosus in this animal, suspected it belongs to the panniculus. He records all three readings and settles none.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "costal-cartilage"
+          },
+          {
+            "element": "linea-alba"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          },
+          {
+            "element": "humerus",
+            "landmark": "greater-tubercle"
+          },
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "scapula",
+            "landmark": "coracoid-process"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus, and the fullest of the three. **Four distinct factors.** The superficial fan of the pectoralis major runs from the whole length of the sternum and the ensiform cartilage to the outer lip of the bicipital groove, coalescing slightly with the clavicular deltoid. Its deep portion is a separate thick band from the anterior third of the sternum to the greater tubercle and a little of the external bicipital ridge. The pectoralis minor rises from the posterior two-thirds of the sternal body and one or two costal cartilages, sinks under the deep part of the major, and ends on the inner margin of the greater tubercle, the shoulder capsule, and — through a strong aponeurosis — **the tendon of the supraspinatus and the coracoid process**, which is the attachment on which Cunningham identifies it as the minor at all. The pectoralis quartus comes off the linea alba and the rectus sheath behind the ensiform cartilage to the upper part of the pectoral ridge, and the humeral part of the panniculus carnosus fuses with it there — so intimately that Cunningham thought the quartus might be no more than the thickened lower margin of the panniculus.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Rhomboideus",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **In none of the three is this muscle divisible into its three constituent parts** — Cunningham says so explicitly, and it is one continuous layer in each: occipital crest under cover of the trapezius and cleido-occipital, all the cervical spines, and the two anterior thoracic spines, to the whole extent of the scapula's vertebral border. The fibres from the thoracic and the two or three hindmost cervical spines run in much coarser fasciculi than the rest, and Cunningham reads those as the rhomboideus proper — a division visible in the grain of the muscle but not in its dissection. Its occipital origin is relatively wider than the thylacine's.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Serratus magnus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Cervical portion"
+        },
+        {
+          "name": "Costal portion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          },
+          {
+            "element": "true-ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The cervical part is five slips from the transverse processes of the five posterior cervical vertebrae in all three animals; **the costal origin is what varies, and it varies with the animal**: eight digitations here, against eight in the cuscus, seven in the phascogale and six in the thylacine. Inserted into the entire length of the scapula's vertebral border. **The only one of the three showing any indication of a division into a cervical and a costal portion**, and also the one with the most extensive costal origin.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Subclavius",
+      "attachments": {
+        "origin": [
+          {
+            "element": "costal-cartilage"
+          },
+          {
+            "element": "true-ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "clavicle",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The ordinary mammalian arrangement, strongly developed: a pointed tendinous origin from the cartilage of the first rib, expanding fan-wise to the outer two-thirds of the clavicle's upper margin. It does not pass beyond the outer end of the clavicle towards the acromion or the supraspinatus fascia.",
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Subscapularis",
+      "attachmentNote": "Spilocuscus maculatus. Cunningham gives this muscle one sentence — well marked in all three, with the usual attachments — and no origin or insertion of his own. **No attachments are scored, because he recorded none**; copying the consensus row here would assert an observation he did not make. What he does record is a relation: its posterior border is bound to the teres major by an intermuscular septum that gives fibres to both muscles.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Supraspinatus and infraspinatus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supraspinatus"
+        },
+        {
+          "name": "Infraspinatus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "supraspinous-fossa"
+          },
+          {
+            "element": "scapula",
+            "landmark": "infraspinous-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **The supraspinatus is the bulkier of the two in all three animals** — here larger, though the disparity is the least of the three. Cunningham is checking Meckel's claim that the infraspinatus is the smaller throughout Marsupialia, and finds it holds; he cites Macalister for the wombat, phalanger, bandicoot, *Sarcophilus* and opossum, for the two being about equal in the giant kangaroo, and for the infraspinatus being the larger in Bennett's kangaroo. That is the one reported exception, and it is not in this dataset.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Teres major",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal",
+            "landmark": "scapula-caudal-angle"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. A slight origin from the dorsum of the scapula at its posterior angle and a main origin from the upper two-thirds of the axillary border, where it is bound to the posterior border of the subscapularis by an intermuscular septum giving fibres to both. It receives a slip from the latissimus dorsi and then inserts into the inner lip of the bicipital groove — **separated by a wide interval from the latissimus tendon**, which lands in the floor of the same groove.",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Teres minor",
+      "innervation": "A small twig from the circumflex nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Distinct from the infraspinatus, arising from a small part of the scapula's axillary border close to the glenoid and inserting on the outer and posterior aspect of the humerus immediately below the greater tubercle. **Cunningham identifies it by its nerve**: a small twig from the circumflex (axillary), traced in both animals. That is the same criterion by which he scores it absent in the phascogale.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Trapezius group",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Trapezius"
+        },
+        {
+          "name": "Cleido-occipital"
+        },
+        {
+          "name": "Cleido-mastoid"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "occiput",
+            "side": "lateral"
+          },
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "clavicle"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Origin and scapular insertion as in the other two. Of the anterior fibres that pass over the humeral head, a very few — those making the muscle's free anterior margin — reach the clavicle; the rest fuse with **both** the acromial and the clavicular deltoid, which is what makes this animal's cephalo-humeral muscle a three-part composite where the thylacine's and the phascogale's are two-part. The cleido-occipital is a narrow slip lying so closely on the cleido-mastoid that it is not apparent at first: clavicle (sternal end) behind, occipital ridge in front, on the same plane as the trapezius and the sterno-mastoid. The cleido-mastoid runs from the same end of the clavicle to the mastoid region under cover of the sterno-mastoid.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Gluteus medius, minimus and quartus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gluteus medius (meso-gluteus)"
+        },
+        {
+          "name": "Gluteus minimus (endo-gluteus)"
+        },
+        {
+          "name": "Gluteus quartus",
+          "membership": "disputed"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "landmark": "iliac-crest"
+          },
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "acetabulum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          },
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The medius is a thick fleshy muscle from the short iliac crest, the dorsum of the ilium and its fascia, and the tendinous cord running back from the anterior superior iliac spine, inserted into the summit and outer aspect of the great trochanter. The minimus is a wide thin muscle from the dorsum of the ilium and from the ischium as far back as the gemelli, **almost completely roofing the hip joint**, narrowing to the anterior border of the great trochanter; its anterior border blends with the corresponding margin of the gluteus maximus. Cunningham reports Macalister finding medius and minimus hardly separable in the wombat and *Sarcophilus*, and says that as a rule in Marsupialia they are quite distinct — as they are here. The gluteus quartus is present but very feebly marked, a single delicate slip. The gluteus quartus is carried as a disputed part on Cunningham's own authority: he could not make out its nerve supply with precision in either animal, says in so many words that until that is done its homologies cannot be considered established, and adds that although it is usually grouped with the gluteals it seems more closely related to the extensor muscles. He records it in the wombat, *Sarcophilus*, both kangaroos, the phalanger and the opossum on Macalister, and notes that neither Macalister nor Young found it in the koala.",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Iliopsoas and sartorius",
+      "action": "The sartorius acts chiefly as an extensor of the leg upon the thigh.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Psoas parvus"
+        },
+        {
+          "name": "Psoas magnus"
+        },
+        {
+          "name": "Iliacus"
+        },
+        {
+          "name": "Sartorius"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae"
+          },
+          {
+            "element": "lumbar-vertebrae"
+          },
+          {
+            "element": "sacral-vertebrae"
+          },
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "femur",
+            "landmark": "lesser-trochanter"
+          },
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The psoas parvus is the larger of the two psoas muscles, as in the great majority of marsupials: from the bodies of six vertebrae — the last thoracic and the anterior five lumbar — ending in a long round tendon on the anterior border of the pubis close to the marsupial bone and immediately in front of the acetabulum. **So the bigger psoas in these animals ends on the girdle, not on the femur.** The iliacus comes off the lower border and iliac fossa of the ilium, blends with the psoas magnus, and inserts on the lesser trochanter and the shaft just below it. The psoas magnus is simple here: from the bodies of the last two lumbar vertebrae and the upper sacrum, blending with the iliacus. The sartorius arises from the anterior superior iliac spine in both animals and **acts chiefly as an extensor of the leg upon the thigh** — Cunningham notes these two are no exception to that marsupial rule, which is a different function from the human muscle of the same name. In the cuscus, whose thigh is held flexed, the sartorius lies at first close against the lower abdominal wall, then expands into an exceedingly thin sheet inserted into the quadriceps expansion on the front of the knee and into the fascia on the inner side of the joint.",
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "extension"
+        }
+      ],
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "action",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Obturator externus and quadratus femoris",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Obturator externus"
+        },
+        {
+          "name": "Quadratus femoris"
+        }
+      ],
+      "divisionNote": "**This record's synonymy assigns the gemelli here, with the obturator externus and the quadratus femoris; Cunningham assigns them to the obturator internus**, into whose tendon they insert and in whose groove it runs. His rows for them are therefore on `ischiotrochantericus`, and the disagreement is left standing on both records — it is a question about which of two deep hip muscles the gemelli belong to, and this source answers it for one animal by dissection, not for Mammalia by argument.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "obturator-membrane"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "trochanteric-fossa"
+          },
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": "greater-trochanter"
+          },
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The obturator externus is an exceedingly powerful fan-shaped muscle with the usual origin, inserted by a broad band-like tendon into the trochanteric fossa below the obturator internus tendon. The quadratus femoris is thick and fleshy, on the same plane as the adductor magnus and quite separate from it here, from the ischial tuberosity to the lower part of the posterior border of the great trochanter and the shaft below it. Cunningham notes it is relatively larger than a human's, with coarser and more oblique fibres. **This record's synonymy assigns the gemelli here, with the obturator externus and the quadratus femoris; Cunningham assigns them to the obturator internus**, into whose tendon they insert and in whose groove it runs. His rows for them are therefore on `ischiotrochantericus`, and the disagreement is left standing on both records — it is a question about which of two deep hip muscles the gemelli belong to, and this source answers it for one animal by dissection, not for Mammalia by argument.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pyriformis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sacral-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Identical in both of Cunningham's two animals**: a strongly marked triangular muscle lying on the posterior part of the gluteus minimus behind the gluteus medius, from the lower surface and outer margin of the sacrum, inserted by a rounded tendon into the posterior part of the summit of the great trochanter. It lands on this record because this dataset already carries the piriformis as the proposed mammalian caudofemoralis, and the human row here is scored the same way. **But Cunningham describes a second candidate in the same two animals** — the agitator caudae, which actually reaches the caudal vertebrae and the posterior femur, and which he groups with the gluteus maximus. Both cannot be the caudofemoralis, and nothing in this source settles which is; the disagreement is recorded on both records rather than resolved on either. Macalister found the piriformis indistinguishable from the gluteus medius in *Phalangista*.",
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Superficial gluteal sheet",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gluteus maximus"
+        },
+        {
+          "name": "Tensor fasciae femoris"
+        },
+        {
+          "name": "Agitator caudae"
+        }
+      ],
+      "divisionNote": "The tensor fasciae femoris is not separable from the gluteus maximus in this animal — the two are one thin layer — and is listed as a part only because Cunningham traced a superior gluteal twig into its fibres. This dataset otherwise carries the tensor fasciae latae as a disputed part of `iliofemoralis`, where the human row puts it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          },
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "sacral-vertebrae"
+          },
+          {
+            "element": "caudal-vertebrae"
+          },
+          {
+            "element": "caudal-vertebrae",
+            "landmark": "caudal-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          },
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. Three muscles in one plane, superficial to everything else in the gluteal region, arising in a continuous line from the anterior superior iliac spine in front to the fourth caudal vertebra behind. The two posterior ones, only partly separated from each other, are the agitator caudae: the smaller anterior portion from the fascia over the hinder sacrum and the first caudal vertebra, the wider posterior portion from the fascia over the second caudal vertebra and the transverse processes of the third, fourth and fifth — both inserted along a continuous line on the posterior femur from the root of the great trochanter almost to the external condyle. The anterior muscle is **the gluteus maximus and the tensor fasciae femoris combined, and Cunningham proves the second component by its nerve**: a twig of the superior gluteal nerve traced into the anterior fibres. It arises from the fascia over the last lumbar vertebra and the sacrum, from the fascia over the meso-gluteus, and from a tendinous cord an inch and a half long running back from the anterior superior iliac spine — a cord that gives origin by its upper border to all three gluteals and by its lower border to the sartorius and the obliquus internus, and which Cunningham says **cannot be the homologue of the inguinal ligament**, because the aponeurosis of the external oblique has no connection with it. Its insertion is the outer aspect of the root of the great trochanter and slightly the shaft below. In front it winds round the anterior border of the meso-gluteus and fuses with the gluteus minimus, so the superficial and deep gluteals enclose the middle one on every side but the back. **The agitator caudae is the row's problem and it is left as one.** It arises from the caudal vertebrae and their transverse processes and inserts on the posterior femur — which are the attachments of a caudofemoralis, not of a gluteus maximus. Cunningham groups it here on plane and nerve: it lies in the superficial gluteal sheet with the others, and all the factors representing the human gluteus maximus in this animal share one special nerve from the sacral plexus. His grouping is what is scored; the attachment-based reading, which would put it on `caudofemoralis` alongside the piriformis, is recorded here rather than acted on. Note that Cunningham *also* describes a piriformis in both animals, so the two candidates are not the same muscle.",
+      "nerves": [
+        {
+          "nerve": "superior-gluteal"
+        }
+      ],
+      "region": "pelvic",
+      "record": "gluteus-maximus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Biceps, semitendinosus and semimembranosus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Biceps proper (ischial part)"
+        },
+        {
+          "name": "Biceps, caudal part"
+        },
+        {
+          "name": "Semitendinosus"
+        },
+        {
+          "name": "Semimembranosus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          },
+          {
+            "element": "caudal-vertebrae",
+            "landmark": "caudal-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          },
+          {
+            "element": "tibia",
+            "landmark": "tibial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **The biceps has no femoral head at all**, so Cunningham remarks the name is inappropriate: the biceps proper rises by a narrow pointed origin from the ischial tuberosity in common with the semitendinosus and fans out into the fascia on the outer leg from the external femoral condyle in front to the external malleolus behind. Its second part is caudal, and Cunningham says **it had not been noticed in any marsupial before** — a long ribbon from the transverse processes of the first two caudal vertebrae, in the plane of the gluteus medius and under the agitator caudae, running down between the ischial tuberosity and the great trochanter superficial to the biceps proper. Opposite the back of the knee it gives a slip to the semitendinosus and splits: the fibular division fuses with the biceps proper into the outer crural fascia, the longer tibial division ends in an aponeurosis on the inner subcutaneous surface of the tibia about its middle, lower than the semitendinosus and slightly overlapped by the gracilis. The semitendinosus takes the ischial tuberosity and inserts on the inner tibia about its middle, completely under the gracilis; **Cunningham found no tendinous intersection in it, which he says is the usual marsupial condition.** The semimembranosus ends in a round tendon passing under the cord-like medial collateral ligament to the side of the tibia's anterior tuberosity, so it is a rotator of the leg as well as a flexor.",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Gracilis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          },
+          {
+            "element": "tibia",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Neither animal's gracilis is attached to the marsupial bone**, though its origin from the side of the pubic symphysis reaches as high as that bone's antero-inferior angle. Cunningham sets this against Macalister, who says he found the gracilis attached to the epipubic bone in every marsupial he examined; Young does not mention such an attachment in the koala. Two animals against a generalisation, recorded as two animals. A powerful broad band with an extensive insertion into the anterior sharp ridge of the tibia in its middle third — much the longer of the two insertions.",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Obturator internus and the gemelli",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Obturator internus"
+        },
+        {
+          "name": "Gemellus superior"
+        },
+        {
+          "name": "Gemellus inferior"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          },
+          {
+            "element": "obturator-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "trochanteric-fossa"
+          },
+          {
+            "element": "femur",
+            "side": "medial",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The obturator internus tendon plays in the lesser sciatic notch in both animals, but **the encrusting cartilage there is not raised into ridges**, so the tendon shows none of the longitudinal furrows that are so characteristic of the same muscle in a human. It inserts with the obturator externus into the bottom of a deep recess between the great trochanter and the femoral neck. Strongly developed here, where it is comparatively feeble in the thylacine. **The gemelli are enormously developed** and inseparable except at their origin — the superior from the ischium in front of the lesser sciatic notch, the inferior from the ischial tuberosity. The obturator internus tendon lies in a groove in their substance and they insert into that tendon, which is why Cunningham files them with this muscle rather than with the quadratus femoris. The nerve to the quadratus femoris passes down through their substance.",
+      "nerves": [
+        {
+          "nerve": "nerve-to-obturator-internus"
+        }
+      ],
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Rectus femoris",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Reflected head"
+        },
+        {
+          "name": "Straight head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          },
+          {
+            "element": "acetabulum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          },
+          {
+            "element": "patellar-tendon"
+          },
+          {
+            "element": "tibia",
+            "landmark": "tibial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **A double origin**, of which the reflected head is much the larger; the other head, though quite distinct, is a very slender tendon. **Neither animal has an osseous patella.** The parts of the quadriceps, with the sartorius, unite instead into an exceedingly dense tendinous expansion in front of the knee — so tough and knife-resistant that Cunningham likened its consistence to fibrocartilage, and in the wombat, he reports, it apparently becomes cartilage outright. `skeleton.json` scores the patella present in Theria, which is a clade statement; these are two animals inside that clade without one, and the fact is recorded here rather than used to flip the clade. Cunningham reports two heads in the koala (Young) and in *Perameles lagotis* (Owen), against Macalister's single head from the anterior inferior iliac spine in the brushtail possum, opossum, wombat, Tasmanian devil and both kangaroos — so a two-headed rectus is the minority condition among marsupials and both of Cunningham's animals have it.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Triceps adductor and pectineus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor brevis"
+        },
+        {
+          "name": "Adductor magnus"
+        },
+        {
+          "name": "Pectineus"
+        }
+      ],
+      "divisionNote": "The adductor longus is absent, on the evidence of the obturator nerve lying superficial to the adductor brevis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "epipubic-bone"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. **Only two adductors — the brevis and the magnus — and Cunningham identifies the missing one by a nerve**: the obturator nerve lies on the superficial aspect of the adductor brevis, which it could not do if the adductor longus were there in front of it. The brevis is much the larger, hiding the magnus completely from the front, with a curved origin from the base of the marsupial bone and the margin of the pubic symphysis under the gracilis, the same insertion as the thylacine's, and the same perforation by the femoral artery. The magnus is a thick fleshy strap from the pubic arch and the ischial tuberosity to the lower third of the posterior femur, and **it is not perforated by the artery**; the two separate easily. The pectineus is better marked than the thylacine's: a small pointed origin from the anterior margin of the pubis and slightly from the outer and lower angle of the large marsupial bone, expanding to a linear insertion on the middle third of the posterior femur in front of the adductor brevis. Cunningham reports the group varying widely across Marsupialia — three distinct portions in the wallaby and giant kangaroo, brevis and magnus partly or wholly blended in the opossum, *Sarcophilus*, wombat and *Phalangista*.",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Vasti, crureus and subcrureus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Vastus externus"
+        },
+        {
+          "name": "Vastus internus"
+        },
+        {
+          "name": "Crureus"
+        },
+        {
+          "name": "Subcrureus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          },
+          {
+            "element": "patellar-tendon"
+          }
+        ]
+      },
+      "attachmentNote": "Spilocuscus maculatus. The vastus externus is the most strongly developed and **the only part even partially separable from the others**; the vastus internus and the crureus are intimately blended with each other. There is a very distinct subcrureus here, where the thylacine has no trace of one. They end in the dense patellar expansion described on `extensor-iliotibialis`, there being no bony patella in this animal.",
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "species": "bos-taurus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves medii and annularis (suspensory ligament)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor brevis medii"
+        },
+        {
+          "name": "Flexor brevis annularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Bos taurus. Cunningham's horse–ox–sheep series is one argument in three animals: **the suspensory ligament of the fetlock is a short flexor turned to ligament, and each animal shows the transformation at a different stage.** He made thin transverse microscopic sections of all three and looked at them against a black ground. **The ox's ligament shows its muscular origin more strikingly than the horse's and is built from two short flexors rather than one.** Two digits remain, medius and annularis, their metatarsals fused into a single bone still marked by a furrow in front, a groove behind and a notch below. The ligament divides into five slips — two to each digit, ending one on each sesamoid with a marginal band forward to the extensor tendon, and a fifth central slip that passes forward through the notch and splits to join both extensor tendons. In section the muscle shows as **four small thick-outlined rings side by side**, and Cunningham reads each ring as the head of a flexor brevis: the ligament is both heads of the flexor brevis medii and both of the flexor brevis annularis, fused and degenerated, with the central slip made of the outer head of one and the inner head of the other. He finds no evidence that any other intrinsic muscle is in it. Two thick tendinous cords also leave its superficial surface to join the perforatus tendons; **he denies these any muscular origin** and derives them from the dense fascia over the intrinsic muscles — a claim the sheep then proves.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 27,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

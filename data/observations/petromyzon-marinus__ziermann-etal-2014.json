@@ -1,0 +1,167 @@
+{
+  "species": "petromyzon-marinus",
+  "source": "ziermann-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Lampreys have no jaws. Their feeding musculature (velar and lingual apparatus) is not homologous with the gnathostome adductor complex, though some of it is mandibular-arch derived and trigeminal-innervated.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "**Table 2 credits *Petromyzon* with no adult hyoid muscles at all** — the column is zero against the hagfish's four. The interhyoideus first appears at the gnathostome ancestor. This absence and the hagfish one together are what make the interhyoideus a gnathostome character rather than a vertebrate one.",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "As for *Myxine*. The lamprey velar muscles — protractor veli, depressor veli and the levator valvulae velaris — are the candidate, and the engrailed argument for homologising the larval velothyroideus with the gnathostome levator arcus palatini is the evidence Ziermann et al. decline to rest a homology on.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor cornualis superficialis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Constrictor cornualis superficialis",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        },
+        {
+          "name": "Constrictor glossae profundus internus",
+          "sources": [
+            "ziermann-etal-2014"
+          ]
+        }
+      ],
+      "note": "Table 1 places both of these on the undifferentiated intermandibularis sheet of the vertebrate ancestor. *Petromyzon* is credited with 26 mandibular muscles against the hagfish's 24, and none of them is an intermandibularis in the gnathostome sense — that muscle appears at the gnathostome ancestor.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cartilago-styliformis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "*Petromyzon marinus*, and the rows are the **superficialis only** — Ziermann et al. describe it arising from the cartilago styliformis at the base of the skull and inserting with its contralateral fellow on a median raphe. The profundus internus is named in the table and not described in those terms, so it carries no rows. **The insertion is the point of comparison**: the lamprey muscle meets its opposite number on a midventral raphe exactly as the shark intermandibularis does, so the ventral midline sheet leaves nothing skeletal behind on either side of the jaw origin.",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "note",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictores branchiales externi",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "taenia-longitudinalis",
+            "side": "ventral"
+          },
+          {
+            "element": "taenia-longitudinalis",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Petromyzon marinus. The muscle is a single external sheet wrapped around the outside of the branchial basket and divided into seven segments by the cartilages and the gill openings, so its attachments are to the longitudinal bars of the basket rather than to any one arch: the fibres run ventrally to the taenia longitudinalis ventralis, and the medial portion lies beneath the epitrematica and hypotrematica. Scored on `taenia-longitudinalis` by side, dorsal for the epitrematica. No origin row — the sheet arises from the basket's own segmental cartilages along its whole length, which is a field rather than a site. External to the gills is the point: the gnathostome constrictors lie inside them.",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hypobranchial musculature",
+      "present": "yes",
+      "note": "Present in Petromyzon marinus but with a different arrangement; the lamprey lingual apparatus is not homologous to the gnathostome tongue. Left unscored deliberately rather than for want of a pass: Ziermann et al. describe the obliquus and decussatus as ending on a median raphe and on their contralateral partners, the rectus as continuous with the sphincter cloacae, and the hypobranchialis as a segmented muscle continuous with the parietalis behind and the subocularis in front. Not one skeletal attachment in the set. Where the shark's hypobranchial series runs from the coracoid bar to the mandible, hyoid and branchial arches, the lamprey's runs muscle-to-muscle, and copying the shark's rows here would assert an observation nobody made.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    }
+  ]
+}

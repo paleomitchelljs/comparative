@@ -1,0 +1,64 @@
+{
+  "species": "mustela-putorius",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (three adductors) and opponens",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Opponens minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Mustela putorius, and **the only row this animal should ever carry from this source**. Cunningham says his observations do not extend beyond the adducting muscles: the specimen was so putrid that dissecting the deeper layers was impossible. What he did make out with certainty is that the adductors are identical in number and disposition with the otter's and the badger's, and that like the otter it has an opponens minimi digiti developed in the same way. The deeper layers of this foot are unrecorded, not absent.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

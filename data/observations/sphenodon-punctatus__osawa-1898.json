@@ -1,0 +1,3223 @@
+{
+  "species": "sphenodon-punctatus",
+  "source": "osawa-1898",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "M. capiti-mandibularis s. temporo-massetericus",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `adductor-mandibulae-externus`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "Ein sehr kräftiger, breiter Muskel, covered laterally by the fascia temporalis et masseterica and by both jugal arches, filling most of the fossa temporalis. **Origin** from the parietal, squamosal, quadrate, the inner surface of the upper jugal arch, and the covering fascia temporalis. It descends on the medial side of the lower jugal arch without attaching to it. **Insertion** on the tip of the coronoid, its inner surface, and the outer surface of the posterior third of the lower jaw. **Osawa states that no separate portion answering to a masseter is yet differentiated.** Innervated by the third branch of the trigeminal.",
+      "record": null,
+      "_id": "osawa-1898:capiti-mandibularis"
+    },
+    {
+      "name": "M. parieto-mandibularis",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `depressor-mandibulae`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "An equally powerful muscle. **Origin** from the posterior margin of the parietal and, in smaller part, from the squamosal and the ligamentum nuchae. After a weakly arched course it **inserts** on the posterior end of the lower jaw. **Innervated by the facialis, not the trigeminal** — Osawa notes that the designation 'Digastricus' proposed by earlier authors is justified in that respect, and that this muscle really ought to be discussed separately from the other three jaw muscles.",
+      "record": null,
+      "_id": "osawa-1898:parieto-mandibularis"
+    },
+    {
+      "name": "M. pterygoideus externus",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `adductor-mandibulae-internus`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "A strong but somewhat slenderer muscle. **Origin** from the parietal, postfrontal, prootic, the columella, the membrane stretched between prootic and columella, and the outer face of the pterygoid. **Insertion** on the inner surface of the coronoid. Trigeminal V3.",
+      "record": null,
+      "_id": "osawa-1898:pterygoideus-externus"
+    },
+    {
+      "name": "M. pterygoideus internus",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `adductor-mandibulae-internus`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "A shorter but very powerful muscle. **Origin** from the ventral margin and inner surface of the quadrate, the infraorbital floor, the pterygoid and the transversum. It raises a strong bulge into the pharyngeal cavity — the Prominentia muscularis of Holl. **Insertion** on the medial surface and ventral margin of the posterior fifth of the lower jaw. Its insertion is continuous with that of the pterygoideus externus; Osawa says the two cannot be sharply separated and that the boundary is really only indicated by the course of the third trigeminal branch. V3.",
+      "record": null,
+      "_id": "osawa-1898:pterygoideus-internus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. anconaeus",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput scapulare"
+        },
+        {
+          "name": "Caput coracoideum"
+        },
+        {
+          "name": "Caput humerale laterale"
+        },
+        {
+          "name": "Caput humerale mediale"
+        }
+      ],
+      "innervation": "Rr. anconaei of the N. radialis superficialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          },
+          {
+            "element": "coracoid",
+            "side": "medial"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther called it *M. triceps*; Osawa counts **four heads**. Caput scapulare by a slender tendon from the scapulohumeral ligament and from the scapula dorsal to the glenoid, between the origins of the scapulo-humeralis profundus and posterior; caput coracoideum by a very thin tendon from a point at the caudal angle of the inner surface of the coracoid; caput humerale laterale from the lateral side of the whole humeral shaft; caput humerale mediale from the medial side below the processus medialis as far as the elbow capsule. All insert on the posterior elbow capsule, the olecranon and the proximal ulna, and Osawa separates the capsular part as a *M. subanconaeus*.\n\n**Four heads is the full count**, and it is what the archosaur columns are measured against: Burch reconstructs three for *Tawa* with the coracoid head already lost, birds have lost the lateral head as well, and the human long head is the scapular head with the coracoid one gone with the bone.",
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. coraco-antibrachialis (biceps brachii)",
+      "present": "yes",
+      "innervation": "N. coraco-brachialis proximally and N. musculo-cutaneus distally.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther called it the biceps brachii outright. Fleshy at both ends and tendinous in the middle — Osawa notes it becomes tendinous exactly at the shoulder joint and strongly fleshy again on the arm. From the medial border of the coracoid beside the supracoracoideus origin, to the proximal ends of radius and ulna and the elbow capsule. **Its two halves have different nerves**, the proximal from the N. coraco-brachialis and the distal from the musculocutaneous, which is the kind of split this dataset otherwise only records for the human flexor digitorum profundus.",
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. coraco-brachialis",
+      "present": "yes",
+      "innervation": "N. coraco-brachialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *coraco-brachialis longus*, Günther's *coraco-brachialis inferior*. From the caudal angle of the coracoid, running obliquely to the medial anterior surface of the **distal third** of the humerus — a long muscle reaching almost to the elbow. **Osawa found it fused to the supracoracoideus in some specimens and cleanly separate in others**, with the N. coraco-brachialis passing between the two as the only reliable boundary; what Fürbringer called the coraco-brachialis brevis formed one continuous mass with the supracoracoideus, broken only by that nerve. A muscle boundary that exists as a nerve and not as a plane.",
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. humero-antibrachialis lateralis",
+      "present": "yes",
+      "innervation": "N. musculo-cutaneus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-lateral-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **A weak muscle that barely reaches bone, and the reason it is scored here needs stating.** Osawa's muscle 21 — Günther's \"the outer Muscle\" — arises from the base of the processus lateralis humeri, from the end tendon of the scapulo-humeralis profundus and from the scapulohumeral ligament, and radiates into the radial antebrachial fascia, forming what Osawa calls a *lacertus fibrosus*. The insertion row on the radius stands for that fascial spread and is the weakest attachment in this column.\n\nIt is scored on this record because Romer (1944) homologised the crocodylian humeroradialis with the *Sphenodon* muscle of that name, which is one of the two live positions on this record — the other being that the crocodylian muscle is an archosaurian neomorph. Russell & Bauer report the muscle absent in *Iguana* and all adult lizards but present transiently in development, and that row is scored absent here. So the lepidosaur column now holds a tuatara that has something and lizards that do not, which is exactly the distribution the homology argument turns on.",
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "region": "arm",
+      "record": "humeroradialis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. humero-antibrachialis medialis",
+      "present": "yes",
+      "innervation": "N. humero-antibrachialis, from the N. musculo-cutaneus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *humero-antibrachialis inferior*, Günther's *M. brachialis internus* — and this record already carries `humeroantebrachialis` as the amphibian synonym. From almost the entire flexor surface of the humerus as far as the elbow, inserting together with the biceps tendon on the proximal radius and ulna, with a number of fibres going to the elbow capsule. The shared insertion with the biceps is the plesiomorphic condition Burch reconstructs for *Tawa* and that birds and humans have each restricted independently.",
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. abductor et extensor hallucis proprius longus lateralis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Medial abductor portion"
+        },
+        {
+          "name": "Lateral extensor portion"
+        },
+        {
+          "name": "M. abductor hallucis proprius brevis"
+        }
+      ],
+      "innervation": "R. muscularis of the N. peroneus profundus tibialis and medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "distal"
+          },
+          {
+            "element": "interosseous-membrane"
+          },
+          {
+            "element": "astragalocalcaneum",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Gadow's *extensor hallucis proprius*, Perrin's *extenseur superficiel du premier doigt*. Osawa carves it out of Fürbringer's *fibulo-tarso-digitalis dorsalis*, taking the part destined exclusively for the first toe and treating the rest with the muscles of the dorsum of the foot. It lies deep among the extensors, arises from the anterior surface of the distal fibula, from the ligamentum interosseum obliquum and from the interosseous membrane, and divides into a medial abductor and a lateral extensor before reaching the dorsum and medial side of metatarsal I. The short abductor hallucis proprius, from the medial part of the proximal tarsal to the medial side of the hallux's proximal phalanx, is scored here as a third part.",
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor digitorum communis and M. adductor digiti V",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. adductor digitorum communis"
+        },
+        {
+          "name": "M. adductor digiti V"
+        },
+        {
+          "name": "M. flexor digiti V"
+        }
+      ],
+      "innervation": "Rr. plantares of the N. tibialis lateralis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *tarso-digitalis ventralis medius* for the first, and he groups the adductor and flexor of digit V as *tarso-digitalis ventralis fibularis*. The adductor digitorum communis arises from the plantar prominence of metatarsal V and divides into three slips — one running almost transversely to the fibular side of the hallux's proximal phalanx and two to both sides of the second toe's. **A contrahens layer that reaches across the whole sole from the fifth metatarsal to the first toe**, which is the arrangement the human adductor hallucis is the survivor of.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor digitorum communis brevis, M. extensor hallucis brevis and M. extensor digiti minimi proprius",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. extensor digitorum communis brevis"
+        },
+        {
+          "name": "M. extensor hallucis proprius brevis"
+        },
+        {
+          "name": "M. extensor digiti minimi proprius"
+        }
+      ],
+      "innervation": "Rr. musculares of the N. peroneus profundus medialis and lateralis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "astragalocalcaneum",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. The communis brevis from the proximal tarsal and partly the ankle capsule, dividing into three small bellies whose slender tendons pass into the dorsal aponeuroses of toes II to IV; the hallucis brevis from the base of metatarsal I to the dorsum of the hallux's proximal phalanx, which Osawa says **can be regarded as the interosseus of the first toe**; and the digiti minimi proprius from the ankle capsule and the lateral proximal tarsal, in two bellies, one to the base of metatarsal V and one to the proximal phalanx of toe V with a slip to metatarsal IV.",
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digitorum communis sublimis",
+      "present": "yes",
+      "innervation": "Rr. superficiales plantares of the N. tibialis lateralis and medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "plantar-aponeurosis"
+          },
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. A short muscle arising from the end of the femoral head of the gastrocnemius — from a tendinous arch, not from bone — and splitting into four slips that insert on both sides of the second phalanges of toes I to IV, **after forming a chiasma tendineum on the plantar side of the proximal phalanx for the deep flexor tendons to pass through**. The same perforated arrangement as in the hand, and as in *Iguana* and the human foot. Osawa notes that Perrin divided this one muscle into nine separately named flexors, which is the kind of subdivision this dataset's `parts` mechanism exists to hold rather than to reproduce.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. interossei dorsales",
+      "present": "yes",
+      "innervation": "Rr. interossei of both Nn. peronei profundi.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **Six of them, a pair for each of toes II, III and IV**, arising from both sides of the base of the metatarsal and from its dorsum and inserting on both sides of the dorsal surface of the proximal phalanx; the first also arises from the base of metatarsal I. That is a fuller series than Hattori & Tsuihiji (2021) reconstruct from correlates for the same digits and than Russell & Bauer found in *Iguana*, where only two slips exist. This record was separated from the short digital extensors by Hattori & Tsuihiji on archosaur and lepidosaur material; the tuatara shows the series at its most complete.",
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. interossei plantares",
+      "present": "yes",
+      "innervation": "Rr. interossei of the N. tibialis medialis and lateralis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **Four muscles, for toes I to IV, and none for the fifth** — Osawa says so explicitly. Each arises from the facing sides of the bases of two metatarsals and inserts on the plantar and slightly the fibular side of the proximal phalanx of its toe. Compare *Iguana*, where Russell & Bauer find three, from metatarsals IV, III and II, inserting metatarsal-to-metatarsal without reaching a phalanx.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. abductor et extensor pollicis longus",
+      "present": "yes",
+      "innervation": "N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "radius",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. The deep-layer partner of the extensor carpi radialis longus, and this record's name in the lepidosaur literature — Haines, Walker and Holmes call it *supinator manus*, which Russell & Bauer use for the *Iguana* row scored here. Its origin from both forearm bones rather than the ulna alone is worth reading against Burch (2014), who makes the two-headed origin an archosaur synapomorphy at 0.955 measured against a purely ulnar lepidosaur condition.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. anconaeus quartus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, reported by Russell & Bauer (2008). **The first row on a species that has been in `species.json` with none.** Origin in close association with the extensor carpi ulnaris; insertion fleshily along the lateral border of the proximal half of the ulnar shaft.\n\n**This is Russell & Bauer reporting, not dissecting.** They cite Günther (1868), Osawa (1898), Ribbing (1911, 1938), Haines (1939) and Holmes (1977) for the tuatara condition; their own descriptive animal is *Iguana*, which does not have this muscle. The row is scored because the statement is specific and both-ended, and it is flagged here because a reader should know the chain it came down. Holmes reads the muscle as a proximal subdivision of the extensor carpi ulnaris.\n\n**Osawa (1898) describes the same muscle independently and names it the fourth head of the anconaeus** — his muscle 32, *M. anconaeus quartus (richtiger quintus)*, placed in the superficial extensor layer of the forearm beside the extensor carpi ulnaris. That is the same position Haas's and Holmes's readings give it, and it is a second, older, first-hand source for a row that had been carried on Russell & Bauer's report alone.",
+      "after": "Osawa 1898; Günther 1868; Ribbing 1911, 1938; Haines 1939; Holmes 1977",
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "after"
+      ],
+      "_srcs": [
+        "russell-bauer-2008",
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor carpi radialis brevis and longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. extensor carpi radialis brevis"
+        },
+        {
+          "name": "M. extensor carpi radialis longus"
+        }
+      ],
+      "innervation": "N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Brevis arises with the supinator from the tip of the epicondylus radialis humeri and the elbow capsule, separates from it at mid-forearm and resolves into an aponeurosis onto the proximal end of metacarpal I; longus is the deep-layer member. **Metacarpal, not radius** — which is the distal insertion this record treats as the interesting variable, reached independently in mammals and some anurans, and here already present in a lepidosaur.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor carpi ulnaris",
+      "present": "yes",
+      "innervation": "N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. From the epicondylus radialis humeri to the lateralmost metacarpal — the insertion Burch (2014) argues is plesiomorphic for archosaurs too, against the metacarpal-II insertion of many neognaths. Note that Burch codes this muscle absent in crocodylians altogether on his reading of Meers, so the lepidosaur row is one of the two halves his reconstruction rests on.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor digitorum communis longus",
+      "present": "yes",
+      "innervation": "N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *epicondylo-metacarpalis medius*. Same origin as the extensor carpi radialis brevis, descending the middle of the extensor surface and splitting on the dorsum of the hand into four tendinous slips, each to the ulnar side of the base of metacarpals I to IV. **Four metacarpals** — against three functional digits in *Tawa*, where Burch reconstructs slips to I-III on the hand's own proportions.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor carpi radialis",
+      "present": "yes",
+      "innervation": "N. medianus superficialis and N. humeralis anterior.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *epitrochleo-carpalis radialis*. From the epicondylus ulnaris humeri — the entepicondyle — and the elbow capsule, crossing the forearm obliquely to the distal end of the radius and the wrist capsule as far as the radiale.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor carpi ulnaris",
+      "present": "yes",
+      "innervation": "N. ulnaris.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. From near the tip of the entepicondyle and the elbow capsule, running along the ulnar border of the forearm to the ulnar side of the ulna as far as its distal end, and to the pisiform. The pisiform insertion is the plesiomorphic one that birds lost with the bone.",
+      "nerves": [
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digitorum communis profundus",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Superficial humeral head"
+        },
+        {
+          "name": "Deep ulnar head (radio-digitalis of Fürbringer)"
+        },
+        {
+          "name": "Accessory carpal head"
+        }
+      ],
+      "innervation": "N. medianus superficialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "anterior"
+          },
+          {
+            "element": "carpals",
+            "side": "ventral",
+            "landmark": "ulnare"
+          },
+          {
+            "element": "metacarpals",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *epitrochleo-ulno-digitalis*. Three origins: the superficial and largest from the entepicondyle and elbow capsule; the deep part from the anterior surface of the **ulna and not the radius**, which Osawa states against expectation; and a small accessory head from the volar surface of the ulnare and the base of metacarpal V, joining the main mass from the dorsal side. The whole lies under the ligamentum carpi volare and fans into five slips, one to each digit, **passing through a chiasma tendineum formed for them by the superficial flexor** before reaching the terminal phalanges, where retinacula tendinea fix them to the bone.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pronator quadratus",
+      "present": "yes",
+      "innervation": "N. medianus profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *ulno-radialis*, forming the third layer of the forearm flexors. From almost the whole radial side of the ulna, running slightly obliquely distad to the distal half of the radius **and onto the radiale**. That carpal attachment is the one Burch reconstructs for *Tawa* at 0.783 and reads as secondarily lost in modern crocodylians; *Iguana* does not have it and the tuatara does.",
+      "nerves": [
+        {
+          "nerve": "median-anterior-interosseous"
+        }
+      ],
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pronator teres",
+      "present": "yes",
+      "innervation": "N. medianus profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *epitrochleo-radialis*. With the deep head of the flexor digitorum communis profundus it forms the second layer of the flexor compartment. From the tip of the entepicondyle and the elbow capsule to the ulnar side of the **upper half** of the radius — a proximal insertion, against the elongate one Burch reconstructs as unequivocal for archosaurs and the mid-shaft point of the human muscle.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. supinator (supinator longus)",
+      "present": "yes",
+      "innervation": "N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *epicondylo-radialis*, **Günther's *M. supinator longus*** — which is the lepidosaur name Burch's Table 1 equates with his theropod Supinator, with Meers's crocodylian one and with Walker's chelonian tractor radii, and therefore with this record. From the radial surface of the epicondylus radialis humeri and the elbow capsule to the radial side of the radius as far as its distal end. The *Tawa*, *Cygnus* and *Iguana* rows here rest on the same equation; this is the tuatara end of it.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. abductor digiti minimi",
+      "present": "yes",
+      "innervation": "N. ulnaris.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa lists it twice, at 36 in the first palmar layer and at 41 in the third, so the marginal muscle of the postaxial border is present at two depths. The pisiform origin is the plesiomorphic one, shared with crocodylians, lizards and turtles, and the one birds relocated to a neomorphic pseudoulnare.",
+      "nerves": [
+        {
+          "nerve": "ulnar-deep"
+        }
+      ],
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. abductor pollicis and M. abductor pollicis brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. abductor pollicis"
+        },
+        {
+          "name": "M. abductor pollicis brevis"
+        },
+        {
+          "name": "M. flexor pollicis"
+        }
+      ],
+      "innervation": "N. medianus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscles 38, 39 and 44 — a flexor, an abductor and a short abductor of the first digit, in the third palmar layer and on the dorsum. The preaxial marginal group, more subdivided in the tuatara than in the *Iguana* row on this record, which has one abductor pollicis brevis from the ventral radiale.",
+      "nerves": [
+        {
+          "nerve": "median-recurrent"
+        }
+      ],
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor digitorum communis brevis",
+      "present": "yes",
+      "innervation": "R. dorsalis of the N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "dorsal"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscle 43, on the dorsum of the hand. All the short extensors end on the basal phalanx of their digit and then pass into its dorsal aponeurosis, which is why Osawa says they are all to be regarded as extensors — the same extensor-expansion arrangement the human hand uses, in an animal that has kept five digits.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digitorum communis sublimis",
+      "present": "yes",
+      "innervation": "N. medianus superficialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "subcarpal-ligament-transverse"
+          },
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. The superficial layer of the palm, and **its whole function is to be perforated**: it overlies the deep flexor and forms a *chiasma tendineum* through which the deep tendons pass to reach the terminal phalanges. The same bifurcating arrangement Russell & Bauer describe for *Iguana* and Burch reconstructs for *Tawa*, and the same relationship the human flexor digitorum superficialis has with the profundus — one of the clearest topological constants in the dataset.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. interossei dorsales",
+      "present": "yes",
+      "innervation": "R. dorsalis of the N. radialis profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscle 46. **Worth having because Russell & Bauer could not find them**: in *Iguana* they were unable to locate this series with any certainty and identified only one slip, reporting that the muscles fuse with the ventral interossei into a continuous lamina in taxa that do not specialise them. Osawa resolves them in the tuatara. The *Iguana* row on this record is scored uncertain for that reason; this one is not.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "region": "hand",
+      "record": "dorsometacarpales",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. interossei volares",
+      "present": "yes",
+      "innervation": "N. ulnaris.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscle 42, the deepest layer of the palm. Scored on this record on the same equation used for *Iguana*: Russell & Bauer's Mm. interossei ventrales are McMurrich's flexores digitorum breves profundi, which is this record's own synonymy.",
+      "nerves": [
+        {
+          "nerve": "ulnar-deep"
+        }
+      ],
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. lumbricales",
+      "present": "yes",
+      "innervation": "N. medianus superficialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscle 37, the second layer of the palm, arising from the tendons of the deep flexor. Tendon to bone, as in a human and unlike *Iguana*, where Russell & Bauer find the lumbricals arising from the distal carpals and the metacarpals as well.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor digitorum communis longus",
+      "present": "yes",
+      "innervation": "R. muscularis of the N. peroneus profundus medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "anterior",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Gadow's *extensor longus digitorum*, Fürbringer's *epicondylo-metatarsalis dorsalis longus*. By a thin tendon from the anterior surface of the fibular femoral condyle, fused there with the knee joint capsule, running between the tibialis anticus and the peroneus and splitting near the dorsum of the foot into two slips to the fibular sides of the bases of metatarsals II and III. **In one of Osawa's specimens there was a third slip, to metatarsal IV** — a within-species difference recorded as such, and the same two-versus-three variation Russell & Bauer met in *Iguana*.",
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. fibulo-tibialis inferior",
+      "present": "yes",
+      "innervation": "R. muscularis of the N. tibialis medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's name, Perrin's *interosseux de la jambe*. A small, almost rectangular muscle from the tibial surface of the distal half of the fibula, running nearly horizontally to the fibular side and slightly the extensor side of the distal third of the tibia. **Gadow did not notice it at all**, Osawa says, and it is overlain dorsally by a strong tendinous band running obliquely from mid-tibia to the distal fibula, which Osawa names the *ligamentum interosseum obliquum*. This record occupies the position of the amniote interosseous membrane as a muscle, and the tuatara has muscle and ligament side by side in the same space.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        }
+      ],
+      "region": "leg",
+      "record": "interosseus-cruris",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. fibulo-tibialis superior (popliteus)",
+      "present": "yes",
+      "innervation": "R. muscularis of the N. tibialis medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "medial"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's name, and **Gadow called the same muscle the *M. interosseus cruris*** — which is this dataset's separate record, and the one this record is derived from. A small muscle from the tibial surface of the fibular head, from the tendinous sheet between it and the superior fibular head of the flexor digitorum profundus, and from the proximal interosseous membrane, running obliquely to the posterior surface of the proximal quarter of the tibia. Osawa scores a separate *fibulo-tibialis inferior* distally, so the tuatara has both members of the pair and Gadow's conflation is visible as such.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        }
+      ],
+      "region": "leg",
+      "record": "popliteus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digitorum communis profundus",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput femorale"
+        },
+        {
+          "name": "Caput tibiale"
+        },
+        {
+          "name": "Caput fibulare superius"
+        },
+        {
+          "name": "Caput fibulare inferius"
+        },
+        {
+          "name": "Caput accessorium tarsale"
+        },
+        {
+          "name": "Caput accessorium metatarsale"
+        }
+      ],
+      "innervation": "Rr. musculares of the N. tibialis medialis, with the third head from the N. tibialis lateralis and the accessory heads from its Rr. plantares.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "posterior"
+          },
+          {
+            "element": "astragalocalcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **Four heads in the leg and two more picked up inside the sole.** Femorale from the lateral posterior surface of the fibular femoral condyle in common with the same-named head of the gastrocnemius; tibiale from the end tendon of the ischio-tibialis posticus lateralis; fibulare superius from the back of the fibular head and a tendinous sheet dividing it from the popliteus; fibulare inferius from the posterior and lateral surfaces of the distal third of the fibula. The first three unite into a tendinous mass near the ankle, the fourth joins it fleshily, and the whole fans into five slips to the terminal phalanges of all five toes **after passing through the slits of the flexor digitorum sublimis**. The two accessory heads arise from the proximal tarsal and from the volar prominence of metatarsal V and attach to the fourth and third tendons — a long flexor that recruits new heads from the bones it crosses, exactly as in *Iguana*.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        },
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. gastrocnemius",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput tibiale"
+        },
+        {
+          "name": "Caput femorale"
+        }
+      ],
+      "innervation": "Rr. gastrocnemii of the N. tibialis lateralis and medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "plantar-aponeurosis"
+          },
+          {
+            "element": "astragalocalcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Two heads, each with its own synonymy: caput tibiale is Fürbringer's *epitrochleo-tibio-metatarsalis ventralis s. gemellus internus* and **Günther's *M. soleus***; caput femorale is Fürbringer's *epitrochleo-metatarsalis ventralis fibularis s. gemellus externus* and Günther's gastrocnemius. The tibial head is itself two-headed, its stronger head from the posterior and fibular surface of the tibial neck and its thin tendinous second head from the end tendon of the ischio-tibialis posticus lateralis.\n\n**There is no calcaneal tendon: both heads end in the plantar aponeurosis.** The tibial head's aponeurosis goes to the proximal tarsal and the fibular border of metatarsal V and the base of the fifth toe's proximal phalanx; the femoral head splits at the ankle into a superficial aponeurotic sheet forming a second layer of the plantar aponeurosis and a deep fleshy part that ends in a transverse tendinous arch **which gives origin to the flexor digitorum communis sublimis** — so one muscle's insertion is the next muscle's origin, in series.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        }
+      ],
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. peroneus",
+      "present": "yes",
+      "innervation": "R. muscularis of the N. peroneus profundus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "anterior"
+          },
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "astragalocalcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther's *peroneus longus*, Fürbringer's *fibulo-metatarsalis dorsalis*, Gadow's *peroneus anterior*, Perrin's *extenseur du cinquième tarsalien*. From the anterior and lateral surfaces of the lower three-quarters of the fibula, following on from the ilio-fibularis insertion, running almost straight down over the ankle to the proximal tarsal and the base of metatarsal V, with a thin tendinous strip also going to the base of metatarsal IV. **One muscle, where *Iguana* has a longus and a brevis** — and note that Osawa gives it the deep fibular nerve, which is the innervation Diogo & Molnar use to argue that the fibularis tertius and digiti quinti do not belong with the true peronei.",
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. tibialis anticus",
+      "present": "yes",
+      "innervation": "R. muscularis of the N. peroneus profundus medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *tibio-metatarsalis longus*, Perrin's *extenseur du premier metatarsien*. It covers almost the whole anterior and medial surface of the tibia except the medial face of the proximal third, its origin line crossing the long axis of the bone at an acute angle, and inserts along **the entire medial side of metatarsal I**. The preaxial dorsiflexor in the same position as in every other column here.",
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. tibialis posticus",
+      "present": "yes",
+      "innervation": "Rr. musculares of the N. tibialis medialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "posterior"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "astragalocalcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *tibio-metatarsalis ventralis*, Perrin's *rotateur direct du pied*. A voluminous muscle from the whole posterior surface of the fibula and the proximal part of the interosseous membrane — **and Osawa says pointedly that it does not arise from the tibia, as is generally stated**, despite its name. It inserts by a flat tendon on the proximal tarsal and the bases of metatarsals I, II and III. Compare the *Iguana* row on this record, scored absent: Russell & Bauer's ventral crural division has no separate tibialis posticus at all.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        }
+      ],
+      "region": "leg",
+      "record": "tibialis-posterior",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. capiti-dorso-clavicularis (cucullaris)",
+      "present": "yes",
+      "innervation": "N. accessorius, with cervical nerves IV, V and VI.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "supraoccipital"
+          },
+          {
+            "element": "cervical-fascia"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "clavicle",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's muscle 1, and he names it *cucullaris* outright. A very broad sheet from the parietal, squamosal and supraoccipital, from the cervical fascia and from the spinous processes of the eleven anterior vertebrae, inserting along the upper border of the clavicle. **In one specimen he could split it**: a small cleft near the insertion separated a capiti-dorso-clavicularis from an episterno-cleido-mastoideus, which is this record's division in a taxon that usually shows it undivided. The innervation is the criterion the record rests on — accessorius plus cervical IV-VI, exactly as in the human trapezius and sternocleidomastoid scored here from Gest.",
+      "nerves": [
+        {
+          "nerve": "accessory"
+        }
+      ],
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. cleido-humeralis (Deltoides clavicularis)",
+      "present": "yes",
+      "innervation": "Terminal branch of the N. dorsalis scapulae.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *Deltoides clavicularis*, Günther's *musculus clavicolo-brachialis*. It lies between the pectoralis and the dorsalis scapulae, arises from the outer surface of the large lateral part of the clavicle, and inserts on the proximal humerus **lateral to the processus lateralis humeri** — beside the pectoralis insertion rather than on it. Compare the *Iguana* row from Russell & Bauer, where the same muscle is the clavodeltoideus and ends on the deltopectoral crest.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. costo-coracoideus",
+      "present": "yes",
+      "innervation": "R. costo-coracoideus from cervical nerve VII.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "true-ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. From the first sternal rib, medial to the origin of the costo-sterno-scapularis, climbing over the coracoid groove of the sternum to the caudal part of the dorsal surface of the coracoid, together with the insertion of the sterno-coracoideus internus superficialis. **Osawa corrects Fürbringer here**: what Fürbringer called the costo-coracoideus matches Osawa's costo-sterno-scapularis instead, a separate muscle from the ventral surface of the first sternal rib to the internal sternoscapular ligament — and Osawa notes that the true costo-coracoideus of this animal seems not to have been seen by Fürbringer in any reptile. That second muscle is not scored, because its insertion is a ligament with no element here.",
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. dorsalis scapulae (Deltoides scapularis)",
+      "present": "yes",
+      "innervation": "N. dorsalis scapulae.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "humerus-lateral-process"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *Deltoides scapularis*, Günther's *M. deltoideus*. From the dorsal surface of the cartilaginous scapula near its medial border — partly covered there by the lateral part of the levator scapulae — running almost horizontally ventrad to the lateral side of the base of the processus lateralis humeri, where the cleido-humeralis overlies it. **The insertion is on cartilage at one end and a process at the other**, which is why the row does not resemble the mammalian deltoid.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. latissimus dorsi (dorso-humeralis)",
+      "present": "yes",
+      "innervation": "N. latissimus dorsi, from the N. brachialis longus superior.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. From the spinous processes of the fifth to seventeenth vertebrae to the posterior surface of the proximal humerus, below the insertion of the scapulo-humeralis profundus. Humerus, as in every other column on this record — see the *Gallus* and *Cygnus* rows, where a scapula-and-clavicle insertion had been asserted and was removed.",
+      "nerves": [
+        {
+          "nerve": "thoracodorsal"
+        }
+      ],
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. levator scapulae (collo-scapularis and collo-clavicularis)",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. collo-scapularis (dorsal belly)"
+        },
+        {
+          "name": "M. collo-clavicularis (ventral belly)"
+        }
+      ],
+      "innervation": "Cervical nerve VI to the dorsal belly, IV and V to the ventral.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          },
+          {
+            "element": "clavicle",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **One origin, two bellies, two different nerves.** Both arise from the lateral part of the second cervical vertebra; the dorsal belly inserts on the upper corner and medial border of the dorsal surface of the cartilaginous scapula, the ventral belly on the dorsal end of the clavicle. Osawa gives cervical VI to the first and IV-V to the second, so a muscle with a single origin is already segmentally divided at its insertion.",
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pectoralis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Portio clavicularis"
+        },
+        {
+          "name": "Portio episternalis"
+        },
+        {
+          "name": "Portio sternalis"
+        },
+        {
+          "name": "Portio abdominalis"
+        }
+      ],
+      "innervation": "Nn. pectorales.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle",
+            "side": "lateral"
+          },
+          {
+            "element": "interclavicle"
+          },
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-lateral-process"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. A very broad powerful muscle covering the whole ventral thoracic wall and two-thirds of the anterior abdominal wall, in four portions distinguished by fibre direction — clavicular and upper episternal running laterally downward, lower episternal and sternal almost horizontal, abdominal obliquely upward and laterally. All converge on the **processus lateralis humeri**, which is the element this row shares with Walker's turtle rather than with the tubercles of the other amniote columns.",
+      "nerves": [
+        {
+          "nerve": "pectoral-nerves"
+        }
+      ],
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. scapulo-humeralis posterior (teres major)",
+      "present": "yes",
+      "innervation": "N. scapulo-humeralis, from the N. dorsalis scapulae.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "humerus-medial-process"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer equates his *M. scapulo-humeralis posterior* with the teres major, which is why it is scored here. It follows the scapulo-humeralis profundus, lies dorsal to it, is covered by the dorsalis scapulae, and takes its origin further dorsally on the same bony scapula, inserting on the extensor side of the proximal humerus near the processus medialis. **This record's assessment reads its scattered distribution as repeated differentiation out of the latissimus/subcoracoscapularis field rather than one ancestral muscle**; the tuatara is a lepidosaur that has it, sharing a nerve with the scapulohumeralis in front of it.",
+      "nerves": [
+        {
+          "nerve": "subscapular"
+        }
+      ],
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. scapulo-humeralis profundus",
+      "present": "yes",
+      "innervation": "N. scapulo-humeralis, from the N. dorsalis scapulae.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's name. A fairly strong muscle overlain by the cleido-humeralis, bordering the supracoracoideus ventrally and the teres dorsally, from near the cephalic border of the bony scapula and the adjoining part of the coracoid, inserting on the radial-posterior part of the proximal humeral end. Whether this record corresponds to the mammalian teres minor is its standing open question; note that Osawa scores a separate *teres major* on the next record, so the tuatara has both.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. sterno-coracoideus internus superficialis and profundus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. sterno-coracoideus internus superficialis"
+        },
+        {
+          "name": "M. sterno-coracoideus internus profundus"
+        }
+      ],
+      "innervation": "R. sterno-coracoideus from cervical nerves VI and VII.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Both lie on the dorsal side of the sternal apparatus. Superficialis from the inner surface of the sternum around the whole caudal circumference of the coracoid groove, rising almost straight to the dorsal coracoid near its medial border — and **Osawa notes that its insertion line corresponds to part of the supracoracoideus origin line on the ventral face of the same bone**, one muscle's insertion mapping onto another's origin through the coracoid. Profundus from the dorsal surface of the caudal sternum, medial to the transversus abdominis insertion, ending just above the superficialis.",
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. subscapulo-coraco-brachialis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput scapulare"
+        },
+        {
+          "name": "Caput coracoides"
+        }
+      ],
+      "innervation": "N. subscapulo-coraco-brachialis, the coracoid head also receiving a branch of the N. coraco-brachialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          },
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-medial-process"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *M. subcoraco-scapularis*, and this record's own name is the same compound. Caput scapulare from the caudal border of the bony scapula slightly ventral to the serratus superficialis insertion; caput coracoides very powerful and **doubly pennate**, from the whole dorsal surface of the coracoid except its medial and caudal borders. The two unite near their insertion on the processus medialis humeri, proximal to the medial head of the anconaeus, and Osawa notes the muscle reinforces the dorsal capsular wall of the shoulder joint. Compare the human row, where the coracoid half of this group has nothing to arise from.",
+      "nerves": [
+        {
+          "nerve": "subscapular"
+        }
+      ],
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. supracoracoideus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Superficial portion"
+        },
+        {
+          "name": "Deep portion"
+        }
+      ],
+      "innervation": "N. supracoracoideus and N. coraco-brachialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-lateral-process"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther called it *M. coraco-brachialis anterior*. The superficial portion is a very weak small muscle from the coracoid near its mediocephalic angle to the processus lateralis humeri; the deep portion is a very powerful mass arising from almost the entire outer surface of the coracoid and inserting both on that process and along the medial-anterior surface of the proximal two-thirds of the humeral shaft. **A long insertion down the shaft, not a tendon onto a crest** — the state this record's other columns should be read against, since in birds the same muscle has become a wing elevator working through a canal.",
+      "nerves": [
+        {
+          "nerve": "suprascapular"
+        }
+      ],
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus group (three sheets)",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. serratus superficialis"
+        },
+        {
+          "name": "M. serratus profundus"
+        },
+        {
+          "name": "M. collo-scapularis"
+        }
+      ],
+      "innervation": "R. thoracicus of cervical nerves V, VI and VII.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "true-ribs"
+          },
+          {
+            "element": "cervical-ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "ventral"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Three sheets rather than one. Superficialis by two digitations from the first two sternal ribs to the lower border of both the bony and the cartilaginous scapula; profundus by three digitations from the two lower cervical ribs and the first thoracic rib to the costal surface of the cartilaginous scapula near its bony border; and a third, from four lower cervical ribs to the medial border of the same costal surface, which Fürbringer treated as the deep layer of the profundus. **Osawa insists on naming it separately**, on the ground that it separates from the profundus very easily and cleanly — a dissector's criterion for muscle identity, stated as such.",
+      "nerves": [
+        {
+          "nerve": "long-thoracic"
+        }
+      ],
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. coccygeo-femoralis brevis and longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. coccygeo-femoralis brevis"
+        },
+        {
+          "name": "M. coccygeo-femoralis longus"
+        }
+      ],
+      "innervation": "Rami musculares of the first postsacral nerve; the brevis chiefly from a branch of the N. pudendus externus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae",
+            "landmark": "caudal-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "femoral-trochanter"
+          },
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Brevis is Gadow's *caudi-ilio-femoralis* and Fürbringer's *coccygeo-femoralis brevis s. pyriformis* — the name behind this record's proposed homology with the mammalian piriformis. It arises from the ventral surface of the transverse processes of six anterior caudal vertebrae and joins the origin tendon of the ischio-tibialis posticus. Longus arises from the root of the transverse processes and the haemal arches of the eight anterior caudals and inserts by a thick tendon on the trochanter major.\n\n**The longus also sends a tendon to the knee**, a narrow strand running distad to the knee joint capsule and the lateral side of the fibular femoral epicondyle — the crural tendon Russell & Bauer describe in *Iguana* as reaching the meniscus. Osawa corrects Gadow twice here: the two muscles do not merge, and the innervation is postsacral rather than presacral or sacral.",
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. coccygeo-iliacus",
+      "present": "yes",
+      "innervation": "Dorsal rami of the caudal spinal nerves.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ilium",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Gadow's *pars ilio-caudalis* of the ilio-ischio-caudalis. The forward continuation of the dorsal muscle mass of the tail, inserting on the caudal border and inner surface of the dorsal end of the ilium. **Osawa reads it as homologous with the longissimus dorsi and ileo-lumbalis** — a tail-to-pelvis muscle he places in the epaxial series, and its dorsal-ramus supply is why.",
+      "nerves": [
+        {
+          "nerve": "dorsal-rami"
+        }
+      ],
+      "region": "pelvic",
+      "record": "iliocaudalis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. coccygeo-ischiadicus",
+      "present": "yes",
+      "innervation": "N. coccygeo-ischiadicus from the second postsacral nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Gadow's *pars ischio-caudalis*, Perrin's ischio-caudal. The forward continuation of the ventrolateral superficial tail mass, inserting by a very thin tendon on the tuber ischii. **A thin muscle overlies its insertion and becomes the posterior lip of the cloaca** — the M. sphincter cloacae posterior — which Osawa suggests is a splitting-off from this one. The tail musculature turning into a sphincter, in an animal that still has a tail; compare the human rows on this record and on `iliocaudalis`, where the same field became the pelvic floor.",
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "region": "pelvic",
+      "record": "ischiocaudalis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. ileo-femoralis",
+      "present": "yes",
+      "innervation": "R. muscularis brevis of the N. femoralis, and the R. ilio-femoralis of the N. peroneus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther's *M. iliacus internus*, Fürbringer's *ileo-femoralis (glutaeus medius)* — the name behind this record's gluteus medius and minimus equation. A short muscle covered by the ilio-tibialis and ilio-fibularis, from the lateral surface of the dorsal ilium below the ilio-tibialis origin, inserting on the lateral-posterior surface of the proximal femur between the coccygeo-femoralis longus insertion above and the femoro-tibialis origin below. **The record's claim is that this muscle becomes the mammalian gluteals without changing identity, origin, insertion or nerve**; the tuatara is the sprawling end of that.",
+      "nerves": [
+        {
+          "nerve": "femoral"
+        },
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pubo-ischio-femoralis and M. pubo-ischio-trochantericus externus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. pubo-ischio-femoralis"
+        },
+        {
+          "name": "M. pubo-ischio-trochantericus externus"
+        }
+      ],
+      "innervation": "R. ischio-femoralis of the N. obturatorius, and R. ileo-pectineus from the sacral plexus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "puboischiadic-ligament"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "landmark": "femoral-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Gadow's *pubo-ischio-femoralis* is Fürbringer's *adductor longus + pt. magnus*; the second part is Günther's \"the principal adductor\", Fürbringer's *ileo-pectineo-trochantericus externus* and Gadow's *pubi-ischio-femoralis externus*. The first arises with the puboischiotibialis from the puboischiadic ligament and wraps round the thigh to insert on its posterior surface at about mid-height, between the two origin lines of the femoro-tibialis. The second lies deepest, from the whole ventral surface of the pelvis and the pubic tubercle, to the trochanter major — and Osawa notes its fibre direction changes across the muscle, the ischiadic portion running almost horizontally while the pubic portion becomes progressively steeper.",
+      "nerves": [
+        {
+          "nerve": "obturator"
+        }
+      ],
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pubo-ischio-trochantericus internus",
+      "present": "yes",
+      "innervation": "Nervuli ileo-pectinei from the crural plexus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "obturator-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther's *M. pectineus*, Fürbringer's *ileo-pectineo-trochantericus internus*, Gadow's *pubi-ischio-femoralis internus*, Perrin's *extenseur du femur*. From the inner surface of the pelvis — pubis, ischium and obturator membrane — emerging over the anterior border of the pubis and ilium and running distomedially to the anterior medial surface of the proximal femur. **The femoro-tibialis origin is clamped between this muscle's insertion and the ileo-femoralis**, which is Osawa's way of fixing three attachments against each other rather than against a landmark. A small portion from the dorsal surface of the pubic symphysis crosses onto the extensor side of the thigh and ends in the fascia the pubo-tibialis arises from; Gadow read that slip as a pubic origin of his extensor ilio-tibialis instead.",
+      "nerves": [
+        {
+          "nerve": "femoral"
+        }
+      ],
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. femoro-tibialis, deep head of the M. extensor triceps",
+      "present": "yes",
+      "innervation": "R. femoro-tibialis of the N. cruralis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patellar-tendon"
+          },
+          {
+            "element": "tibia",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Gadow's name; Fürbringer's *femoro-tibialis externus + internus*, Perrin's *tête profonde*. From the entire extensor surface of the femur from the neck to the distal end, and from the lateral and posterior surfaces of its distal half. **Its origin is interlocked with three other muscles**: on the front the origin digitation is clasped between the pubo-ischio-trochantericus internus and the ileo-femoralis, while on the back the insertions of the ileo-femoralis and ischio-femoralis are wedged between its two origin lines. Femur to tibia without crossing the hip, which is what separates it from the iliotibialis heads in every column on this record.",
+      "nerves": [
+        {
+          "nerve": "femoral"
+        }
+      ],
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. ileo-fibularis",
+      "present": "yes",
+      "innervation": "N. ileo-fibularis of the N. peroneus communis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *ileo-fibularis s. glutaeus maximus* — another mammalian name on a lepidosaur muscle. A slender muscle on the lateral thigh between the ilio-tibialis and the ischio-tibialis posticus, **covering the N. peroneus communis from outside**, from the lateral surface of the ilium below the ileo-femoralis origin to the lateral surface of the proximal second quarter of the fibula.",
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "region": "thigh",
+      "record": "iliofibularis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. ileo-tibialis and M. pubo-tibialis, heads of the M. extensor triceps",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. ileo-tibialis (lateral head)"
+        },
+        {
+          "name": "M. pubo-tibialis (medial head)"
+        }
+      ],
+      "innervation": "Rr. ileo-tibialis and pubo-tibialis of the N. cruralis; the proximal ileo-tibialis also from the N. peroneus communis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "acetabulum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patellar-tendon"
+          },
+          {
+            "element": "tibia",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Osawa's *M. extensor triceps* is Günther's extensor cruris quadriceps and Fürbringer's *pubo-ileo-bifemoro-tibialis s. quadriceps femoris*, and he is explicit that it has **three** heads, not four. Two are scored here: the lateral *ileo-tibialis* by a broad tendon from the lateral ilium above the ileo-femoralis origin, and the medial *pubo-tibialis* from the base of the pubic tubercle with the pubo-tibialis posticus and from the hip joint capsule. Gadow called the medial head the *ambiens* — which is this dataset's separate record — so the tuatara's 'quadriceps' contains a muscle another author names elsewhere. All three heads unite distally and insert through a **partly cartilaginous ligamentum patellare** on the anterior head of the tibia. The third head is scored on `femorotibialis`.",
+      "nerves": [
+        {
+          "nerve": "femoral"
+        }
+      ],
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. ischio-tibialis posticus",
+      "present": "yes",
+      "innervation": "Nn. ischio-tibiales from the sacral plexus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          },
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. **Osawa lists eight names for this one mass**, and they are the hamstring names: Günther's great flexor cruris (semimembranosus, semitendinosus), the slender portion of it (biceps) and its adductor branch; Fürbringer's ileo-ischio-tibialis proprius, pubo-ischio-tibialis sublimis posterior and profundus; Gadow's flexor tibialis externus and internus. From the outer surface of the tuber ischii and its medial region, from the caudal fascia, and directly from the end tendon of the coccygeo-femoralis brevis, inserting across the whole posterior and part of the medial and lateral aspects of the proximal tibia and onto an oblique band between tibia and lateral femoral condyle.\n\nOsawa says the mass cannot well be divided further, but that in one specimen he could separate a lateral and a medial portion by which side of the tibial head they reached. That is exactly this record's assessment — the hamstring group derives from this field but the head-by-head correspondences are not settled — observed directly in one animal.",
+      "nerves": [
+        {
+          "nerve": "tibial"
+        }
+      ],
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. ischio-trochantericus",
+      "present": "yes",
+      "innervation": "Nervuli ileo-pectinei longi et breves from the sacral plexus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "lesser-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Günther's *M. quadratus femoris*, Fürbringer's *pubo-ischio-femoralis brevis* (his obturator externus + quadratus femoris in part), Gadow's *pubi-ischio-femoralis posterior*, Perrin's *rotateur inverse du femur* — **five names, four of them borrowed from mammalian muscles that are not this one**, which is what this dataset's false-friend list is about. A small muscle chiefly from the inner surface of the tuber ischii, also from its caudal border and a little of its outer surface, inserting beside the pubo-ischio-trochantericus externus on the trochanter minor and reinforcing the joint capsule. Diogo & Molnar resolve this record as the amphibian 'ischiofemoralis' and propose the mammalian obturator internus.",
+      "nerves": [
+        {
+          "nerve": "nerve-to-obturator-internus"
+        }
+      ],
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pubo-ischio-tibialis",
+      "present": "yes",
+      "innervation": "R. pubo-ischio-tibialis of the N. obturatorius.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "puboischiadic-ligament"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *ischio-pubo-tibialis s. M. gracilis*, Gadow's *pubi-ischio-tibialis*, Perrin's *adducteur de la jambe*. A broad muscle incompletely separated from the ischio-tibialis posticus, from the ventral pelvic surface at the puboischiadic ligament and the ischiopubic symphysis, running down the medial thigh to the medial side of the proximal tibia. **This is the record Diogo & Molnar single out** as the one muscle for which the tetrapod ancestor probably had a directly corresponding individual muscle in the modern human sense — and Osawa flags that Günther's *M. gracilis* probably corresponds to the pubo-tibialis posticus instead, quoting Günther's own description to show it does not fit this muscle at all.",
+      "nerves": [
+        {
+          "nerve": "obturator"
+        }
+      ],
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pubo-tibialis posticus",
+      "present": "yes",
+      "innervation": "R. pubo-tibialis posticus of the N. obturatorius and short branches of the N. femoralis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Osawa (1898), *Zur Muskellehre*. Fürbringer's *ileo-pectineo-tibialis profundus*, Gadow's *pubi-ischio-tibialis*, Perrin's *rotateur inverse de la cuisse*. A slender muscle from the pubic tubercle, running first along the medial thigh then entering its posterior side, to the lateral proximal corner of the tibia — **and Osawa corrects Gadow explicitly**, who had put the insertion on the back of the neck of the fibula facing the tibia. He also argues that Günther's poorly described *M. gracilis* corresponds to this muscle rather than to the puboischiotibialis, quoting Günther's text to show the origin on the uncinate process of the pubis does not fit.",
+      "nerves": [
+        {
+          "nerve": "obturator"
+        },
+        {
+          "nerve": "femoral"
+        }
+      ],
+      "region": "thigh",
+      "record": "pubotibialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "osawa-1898"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "species": "galictis-cuja",
+  "source": "fahn-lai-etal-2020",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Supraspinatus and infraspinatus",
+      "present": "yes",
+      "action": "Supraspinatus abducts and stabilises; infraspinatus laterally rotates.",
+      "innervation": "Suprascapular nerve.",
+      "note": "The migration of this muscle from the coracoid to the lateral scapula, and its division by the newly evolved scapular spine, is one of the defining events of the synapsid pectoral transformation.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "supraspinous-fossa"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "infraspinous-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus.",
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Supraspinatus",
+            "abbr": "SS",
+            "mass_g": {
+              "mean": 206.4,
+              "sd": 28.4
+            },
+            "fascicleLength_mm": {
+              "mean": 7.9,
+              "sd": 1.7
+            },
+            "pcsa_cm2": {
+              "mean": 28.4,
+              "sd": 5.3
+            }
+          },
+          {
+            "name": "Infraspinatus",
+            "abbr": "IS",
+            "mass_g": {
+              "mean": 148.3,
+              "sd": 18.5
+            },
+            "fascicleLength_mm": {
+              "mean": 5.1,
+              "sd": 1.4
+            },
+            "pcsa_cm2": {
+              "mean": 33.5,
+              "sd": 10.5
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supraspinatus"
+        },
+        {
+          "name": "Infraspinatus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "suprascapular"
+        }
+      ],
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "architecture",
+        "division",
+        "parts",
+        "nerves"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "fahn-lai-etal-2020",
+        "hudson-etal-2011a"
+      ]
+    }
+  ]
+}

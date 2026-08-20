@@ -1,0 +1,60 @@
+{
+  "species": "elephas-maximus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves, marginal bellies"
+        },
+        {
+          "name": "Dorsal interossei, ligamentous",
+          "membership": "variable"
+        }
+      ],
+      "divisionNote": "The two interosseous bands flanking the medius–annularis pair contain no muscle; they are scored as a part because Cunningham identifies them as those muscles by position and connection, and because they now do the suspensory ligament's job in an animal that arrived at it from the other layer.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Elephas maximus. The feet of a foetal Indian elephant long preserved in Edinburgh, checked against Miall & Greenwood, whose results Cunningham says his differ from only slightly. **The foot is peculiar for the absence of most of the plantar adducting and dorsal abducting muscles**, and he gives the reason directly: digits encased in tough integument and a thick plantar cushion have no room to be separated or approximated, so such muscles would have been almost functionless. In the largely developed annularis and medius, between which lateral movement is impossible, the muscles that would have done that work have changed function instead — **the dorsal interosseous on each side of the double digit is converted into a strong ligamentous band, and the two act together exactly as the suspensory ligament of the horse, ox or sheep does**, preventing over-extension at the metatarsophalangeal joints. Of the four short-flexor bellies typical for those two digits only the two marginal ones are kept, and they act together as one short flexor for what is functionally one digit.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 30,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

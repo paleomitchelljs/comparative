@@ -1,0 +1,138 @@
+{
+  "species": "rattus-norvegicus",
+  "source": "ercoli-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Pectoralis major / pectoralis profundus",
+      "present": "yes",
+      "action": "Adducts and medially rotates the humerus.",
+      "innervation": "Medial and lateral pectoral nerves.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "clavicle"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Pectoralis superficialis descending",
+            "abbr": "PSd",
+            "mass_g": {
+              "mean": 42.0,
+              "sd": 27.6
+            },
+            "fascicleLength_mm": {
+              "mean": 15.5,
+              "sd": 4.7
+            },
+            "pcsa_cm2": {
+              "mean": 3.6,
+              "sd": 3.5
+            }
+          },
+          {
+            "name": "Pectoralis superficialis transverse",
+            "abbr": "PSt",
+            "mass_g": {
+              "mean": 96.0,
+              "sd": 29.2
+            },
+            "fascicleLength_mm": {
+              "mean": 13.6,
+              "sd": 7.7
+            },
+            "pcsa_cm2": {
+              "mean": 9.1,
+              "sd": 4.4
+            }
+          },
+          {
+            "name": "Pectoralis profundus",
+            "abbr": "PP",
+            "mass_g": {
+              "mean": 221.3,
+              "sd": 62.7
+            },
+            "fascicleLength_mm": {
+              "mean": 25.2,
+              "sd": 12.0
+            },
+            "pcsa_cm2": {
+              "mean": 12.0,
+              "sd": 7.4
+            }
+          }
+        ]
+      },
+      "nerves": [
+        {
+          "nerve": "pectoral-nerves"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "rotation-medial"
+        }
+      ],
+      "synonyms": [
+        "pectoralis minor (rat/carnivore dissection usage; Campbell 2007)"
+      ],
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "architecture",
+        "nerves",
+        "actions",
+        "synonyms"
+      ],
+      "_srcs": [
+        "campbell-2007",
+        "ercoli-etal-2014",
+        "hudson-etal-2011a"
+      ]
+    }
+  ]
+}

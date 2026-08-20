@@ -1,0 +1,78 @@
+{
+  "species": "galictis-cuja",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Interossei (palmar and dorsal)",
+      "present": "yes",
+      "note": "The mammalian interossei are generally derived from the flexores breves profundi together with the intermetacarpales.",
+      "action": "Abduct and adduct the digits; flex the metacarpophalangeal joints.",
+      "innervation": "Ulnar nerve, deep branch.",
+      "nerves": [
+        {
+          "nerve": "ulnar-deep"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "abduction"
+        },
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "adduction"
+        },
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "flexion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-manus"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Ten fleshy bellies, a medial and a lateral for each digit, arising at the proximal area of the corresponding metacarpal. The pair for digit III and the lateral belly for digit II arise from the plantar process of carpal III; the digit I bellies from metacarpal I, carpal I and marginally the radial sesamoid.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    }
+  ]
+}

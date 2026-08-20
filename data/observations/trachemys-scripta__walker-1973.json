@@ -1,0 +1,1033 @@
+{
+  "species": "trachemys-scripta",
+  "source": "walker-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Biceps superficialis",
+          "note": "Two-bellied. The medial belly from the posterior border of the medial half of the coracoid to a tendon at the level of the intertubercular fossa; the lateral belly from that tendon to the flexor surface of the radius, midway between elbow and carpus."
+        },
+        {
+          "name": "Biceps profundus",
+          "note": "From the middle half of the posterior coracoid border, ventral to and partly overlapped by the superficialis and coracobrachialis brevis; a cord-like tendon along the ventral brachium to the bicipital tubercle of the ulna, partly uniting with the brachialis inferior."
+        }
+      ],
+      "divisionNote": "A double biceps characterises most turtles — Chelydra, other emydines, trionychids, Carettochelys and the pleurodires. **Testudo, Dermochelys and Lepidochelys have a single biceps**, and Walker (1947) showed from Chrysemys development that the complex begins as one mass and splits later, so the single condition is an unsplit one rather than a loss.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          },
+          {
+            "element": "ulna",
+            "landmark": "ulnar-bicipital-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Crossing both shoulder and elbow, so a humeral retractor and an antebrachial flexor, the latter more important. Walker notes the insertion sits a long way from the elbow, which raises its mechanical advantage in flexion.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "ventral"
+          },
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Walker's M. brachialis inferior. Arises from and covers most of the flexor surface of the humeral shaft; fibres run diagonally between the forearm extensors and flexors to a short broad tendon on the ventral surface of the proximal third of the ulna and the adjacent radius. The origin's extent varies: proximally to the coracobrachialis brevis insertion in trionychids, restricted to the distal half of the humerus in testudinines and sea turtles.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis",
+      "present": "yes",
+      "note": "= coracobrachialis magnus + coracobrachialis brevis sensu Walker (1973) and Wyneken (2001).",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Coracobrachialis magnus",
+          "note": "Most of the dorsal coracoid onto the proximal border of the medial humeral process. Walker (1947) homologises it with the lizard coracobrachialis longus but renames it, since it does not reach as far distally."
+        },
+        {
+          "name": "Coracobrachialis brevis",
+          "note": "Posterior border of the proximal half of the coracoid, into the intertubercular fossa. Homologous with the lizard coracobrachialis brevis."
+        }
+      ],
+      "divisionNote": "Walker separates two heads in *Pseudemys*. The extent of the brevis origin along the posterior coracoid border varies across turtles — the lateral half in *Testudo*, only the lateral fifth in *Emys*.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "coracoid",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-medial-process"
+          },
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Rows are the union of the two heads; the parts say which is which. In *Pseudemys* many of the magnus's deeper fibres attach onto the subscapularis rather than to bone as they cross it, which is recorded here only in prose because a muscle is not a skeletal element.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Two heads. The smaller scapular head arises by a narrow tendon onto the scapula just dorsal to the glenoid, and in *Pseudemys* that tendon **perforates the latissimus dorsi-teres major tendon** — the two rows on this animal are physically threaded through one another. The humeral head takes most of the dorsal humeral shaft. They converge on a common tendon over the elbow onto the olecranon and the adjacent posterior border of the ulna. Primarily an antebrachial flexor, but the scapular head also crosses the shoulder.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "'Palmaris longus'",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Small origin on the ulnar (medial) epicondyle, then fanning over most of the ventral forearm in three partially distinct bundles that converge on the **flexor plate**, the tough palmar aponeurosis covering carpus and palm. At the level of the metacarpals that plate splits into five flexor tendons running in fibrous sheaths to the base of each terminal phalanx. With the flexor digitorum longus it is one of only two flexors acting on the terminal segment of a digit. The origin spreads onto the humeral shaft in aquatic turtles, reaching nearly the whole humerus in Dermochelys.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "dorsal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Arises from the radial (lateral) epicondyle despite acting on the ulnar side, its fibres crossing to insert along most of the extensor surface of the ulna and onto the ulnare and pisiform. **The only extensor acting on the ulnar side of the forearm in *Pseudemys***, and the triceps insertion partly separates it from the flexor carpi ulnaris on the other face of the same bone.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Narrow origin on the radial (lateral) epicondyle, fanning over the forearm and dorsum of the hand, then dividing into four tongue-like processes that pass between the digits and subdivide into **eight slips** onto the sides of the distal end of each metacarpal — two per digit except digits I and V, which lack a slip on their outer surface. Almost vestigial in sea turtles, where the distal flipper has lost independent action.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "note": "In turtles the pronator teres and flexor carpi radialis are usually distinct muscles, though Holmes designated the pronator teres a 'head of the flexor carpi radialis'.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "radiale"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). From the proximal part of the ulnar (medial) epicondyle, passing distally as a narrow band onto part of the radiale-centrale and the first distal carpal. Walker records the insertion of this group ranging from the middle of the radius to the first metacarpal across turtles, and the muscle is **absent in *Trionyx spiniferus***, where he finds a pronator teres and no flexor carpi radialis.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          },
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). The most lateral forearm flexor: from the ulnar (medial) epicondyle onto the outer edge of the ulna, the pisiform and adjacent parts of the ulnare. Subdivided into medial and lateral parts in Chelydra, trionychids and Carettochelys, where the lateral part's tendon crosses the palm to fuse with the flexor tendon sheaths — Ogushi (1913) read that part as a separate flexor digitorum communis longus profundus.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "note": "= flexor primordialis communis + flexor accessorius communis sensu Ribbing (1907).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Deep to the palmaris longus, arising from most of the ventral surface of the ulna and joining the same flexor plate, so the two share an insertion and Walker follows Haines (1950) in keeping them separate muscles on that basis. The origin spreads onto neighbouring elements in aquatic groups — a radial head in trionychids, an ulnare head in Dermochelys, ulnare and pisiform heads in cheloniids.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Arises from the ulnar (medial) epicondyle deep to the origins of flexor carpi radialis and palmaris longus, and inserts on the distal end of the radius. Reduced to a single muscle with the flexor carpi radialis in some trionychids.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). His Mm. interossei dorsales: from the distal carpals and metacarpals, deep to the extensores digitorum breves, running distally along the top and side of each digit onto the individual phalanges. Unlike the breves they stay typical even where the breves are reduced — they are present and normal in Pelomedusa, which has lost all but one of the breves.",
+      "region": "hand",
+      "record": "dorsometacarpales",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Five, on the dorsum of the hand deep to the extensor digitorum communis, arising more or less in common from the ulnare and adjacent carpal elements and ending in small tendons on the penultimate phalanges; those to the middle three digits pass between the insertion slips of the communis. **Absent in most testudinines**, reduced to the first digit in Pelomedusa, and present for the first three in Geochelone elephantopus — a series that tracks how much independent digital movement the animal has.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palmar-aponeurosis",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Arises from the ventral surface of the flexor plate — **a muscle whose whole origin is another muscle's insertion**, which is why the plate is only visible at its proximal border in a superficial dissection. It breaks into eight slips with the flexor tendons emerging between them, onto the sides of the proximal phalanx of each digit and the flexor tendon sheaths: two slips to each of the middle three digits, one each to the first and fifth. Ribbing (1938) treats it as five distinct muscles; Walker keeps it single because in turtles the parts separate only at their insertions.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "anterior",
+            "landmark": "scapular-prong"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior",
+            "landmark": "acromion"
+          },
+          {
+            "element": "plastron",
+            "landmark": "epiplastron"
+          },
+          {
+            "element": "plastron",
+            "landmark": "entoplastron"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta — Walker (1973) writes *Pseudemys scripta elegans*, the red-eared slider, which is his type species and the same animal. A triangular muscle arising from the anterior surface of the scapular prong ventral to the teres major origin, from the anterior surface of the acromion, and from the median epiplastron and adjacent entoplastron. **No insertion row**: Walker gives the origin in this passage and does not state where it ends. A turtle shoulder muscle taking a third of its origin from the shell is the kind of thing the consensus row could never have shown.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "note": "= pectoralis major sensu Wyneken (2001).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "plastron",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-lateral-process"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). A very large triangular muscle from much of the anterior plastron: the periphery of its attachment sweeps an arc from the midventral line just behind the plastral attachment of the acromion, back and laterally to the posterior boundary of the bridge of the shell. All fibres converge on a narrow tendon onto the flexor border of the lateral process of the humerus. Retractor and adductor, and Walker reads it as also rotating the girdle posteriorly during limb retraction.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres major",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "anterior",
+            "landmark": "scapular-prong"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "humerus-medial-process"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Origin on the anterior surface of roughly the dorsal half of the scapular prong and the suprascapular cartilage. It and the latissimus dorsi develop from one muscle mass and converge on a **common tendon** onto the dorsal humerus just distal to the head, so the insertion is shared rather than separate. Walker notes the degree of separation between the two is highly variable between turtles — absent in *Dermochelys*, incipient in *Testudo*, large in trionychids and pleurodires — so this is a row about *Trachemys* and emphatically not about Testudines.",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "action": "Abducts and protracts the femur.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "sacral-vertebrae"
+          },
+          {
+            "element": "carapace"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "trochanter-major"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Covers most of the dorsolateral pelvis lateral and posterior to the posterodorsal head of the puboischiofemoralis internus. Extensive origin from the first sacral and one or two presacral vertebrae, **the adjacent carapace**, and most of the lateral surface and anterior border of the ilium, converging onto the dorsal surface of the trochanter major. Most turtles resemble *Pseudemys* in taking some fibres from the vertebrae as well as the ilium.",
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "abduction"
+        },
+        {
+          "joint": "hip",
+          "motion": "protraction"
+        }
+      ],
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiofemoralis internus",
+      "present": "yes",
+      "action": "Protracts the femur; the posterodorsal part also abducts the leg.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Anteroventral part",
+          "note": "Gadow and Kriegler's equivalent of part I in lizards. From most of the dorsal pubis and the epipubic cartilage, interdigitating across the midline with its counterpart."
+        },
+        {
+          "name": "Posterodorsal part",
+          "note": "Homologous with part III of lizards. From most of the medial ilium, the underside of the first sacral rib and vertebra, and two presacral vertebrae."
+        }
+      ],
+      "divisionNote": "Two parts often treated as separate muscles. Both converge and unite anterior to the acetabulum before a common insertion, so the division is at the origin only.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "dorsal"
+          },
+          {
+            "element": "epipubic-cartilage"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "sacral-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          },
+          {
+            "element": "femur",
+            "landmark": "trochanter-minor"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta — Walker (1973) writes *Pseudemys scripta*. **The morphological dorsal surface of the turtle femur faces anteriorly**, which is why a muscle inserting dorsally acts as a protractor; the row records the surface and the note records what that means. In pleurodires, where the ventral girdle is reduced and fused to the shell, much of this origin has spread onto the plastron anterior to the pubis — the same shell-as-attachment pattern as the forelimb.",
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "protraction"
+        },
+        {
+          "joint": "knee",
+          "motion": "abduction"
+        }
+      ],
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "'Ambiens'",
+      "present": "yes",
+      "action": "Adducts and protracts the thigh, and extends the shank.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "lateral"
+          },
+          {
+            "element": "puboischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patellar-tendon"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). A weak muscle from the posterior part of the base of the lateral pubic process and the adjacent puboischiadic ligament, onto the patellar tendon. It crosses the hip as well as the knee. **With the thigh in its normal turtle position — morphological dorsal surface directed anteriorly — the ambiens lies along its anteroventral border**, which is not where a reader importing the lizard arrangement would look for it.",
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "adduction"
+        },
+        {
+          "joint": "hip",
+          "motion": "protraction"
+        },
+        {
+          "joint": "knee",
+          "motion": "extension"
+        }
+      ],
+      "region": "thigh",
+      "record": "ambiens",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Femorotibialis (vasti medialis, internus and externus)",
+      "present": "yes",
+      "action": "Extends the shank.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Vastus medialis",
+          "note": "Arises from and covers the morphological dorsal surface of the femur."
+        },
+        {
+          "name": "Vastus internus",
+          "note": "From the distal border of the trochanter minor and the anteroventral femur."
+        },
+        {
+          "name": "Vastus externus",
+          "note": "From the distal border of the trochanter major and the posteroventral femur."
+        }
+      ],
+      "divisionNote": "Trifurcate at its origin in *Pseudemys*, each part called a vastus. **The two other thigh muscles run between them**: the iliofemoralis insertion passes between the origins of vasti externus and medialis, and the puboischiofemoralis internus insertion separates medialis from internus. The three-way split is carved by what crosses it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          },
+          {
+            "element": "femur",
+            "side": "ventral"
+          },
+          {
+            "element": "femur",
+            "landmark": "trochanter-minor"
+          },
+          {
+            "element": "femur",
+            "landmark": "trochanter-major"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patellar-tendon"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). The deepest and most massive part of the knee-extensor complex; all three vasti converge to form the greater part of the patellar tendon.",
+      "actions": [
+        {
+          "joint": "knee",
+          "motion": "extension"
+        }
+      ],
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "walker-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliotibialis",
+      "present": "yes",
+      "action": "Extends the shank; also abducts and possibly retracts the femur.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "posterior"
+          },
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patellar-tendon"
+          }
+        ]
+      },
+      "attachmentNote": "Trachemys scripta, from Walker (1973). Band-shaped, its main origin on the posterodorsal corner of the ilium dorsal to the iliofibularis origin, plus a **second tendinous head in *Pseudemys*** from the anterior border of the ilium. Sitting high on the ilium it can abduct and retract the femur as well as extend the shank.",
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "abduction"
+        },
+        {
+          "joint": "hip",
+          "motion": "retraction"
+        },
+        {
+          "joint": "knee",
+          "motion": "extension"
+        }
+      ],
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "walker-1973"
+      ]
+    }
+  ]
+}

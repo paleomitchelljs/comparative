@@ -1,0 +1,149 @@
+{
+  "species": "leopardus-geoffroyi",
+  "source": "sanchez-etal-2019",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti I longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "radius"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ]
+      },
+      "attachmentNote": "Leopardus geoffroyi. The same three surfaces as the jaguar and the ocelot but a LESS PROXIMAL origin on the radius — the one difference Sanchez et al. draw for this muscle, and the reason the radius row here carries no `proximal` side where the jaguar's does. Scoring both species is what makes the difference visible; a single Theria row would have had to pick one.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis + lateralis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Communis, medial belly"
+        },
+        {
+          "name": "Communis, lateral belly"
+        },
+        {
+          "name": "Lateralis, medial belly"
+        },
+        {
+          "name": "Lateralis, lateral belly"
+        }
+      ],
+      "divisionNote": "Leopardus geoffroyi. FOUR bellies against the jaguar's three, because the lateral digital extensor is clearly divided in two here and its medial belly splits again into two tendons. The ocelot agrees with Geoffroy's cat, not with the jaguar.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Leopardus geoffroyi. See the jaguar row; the attachments are the same and the difference is in how many bellies the lateral extensor holds.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Palmaris longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Tendon to digit II"
+        },
+        {
+          "name": "Tendon to digit III"
+        },
+        {
+          "name": "Tendon to digit IV"
+        },
+        {
+          "name": "Tendon to digit V"
+        }
+      ],
+      "divisionNote": "Leopardus geoffroyi. FOUR tendons, against five in both the jaguar and the ocelot. Sanchez et al. do not say which digit goes unserved; the parts here are named on the assumption it is the first, which is the usual pattern of loss in the carnivoran manus and is flagged rather than asserted.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "flexor-tendons"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Leopardus geoffroyi. The palmaris longus lies medial in the forearm and ends by attaching to the tendons of the flexor digitorum superficialis at the proximal end of the middle phalanx — so its insertion is on another muscle's tendons, not on bone, and the phalangeal row is where those tendons land.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    }
+  ]
+}

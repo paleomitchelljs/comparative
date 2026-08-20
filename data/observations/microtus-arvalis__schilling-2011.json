@@ -1,0 +1,56 @@
+{
+  "species": "microtus-arvalis",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Transversospinal system, longissimus, iliocostalis",
+      "present": "yes",
+      "action": "Stabilises the trunk against sagittal components of limb-muscle action; permits and controls the sagittal bending of the mammalian back.",
+      "note": "Microtus arvalis, the common vole sectioned between the 6th and 7th lumbar vertebrae in Schilling's Fig. 2 — his mammal for perivertebral fibre types, and so the animal behind the claim that the transversospinal muscle subdivides into the transversospinal system (multifidus, semispinalis and relatives). Schilling ties that subdivision to the evolution of a mobile lumbar region and a rib-free lumbar segment.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Transversospinal system",
+          "muscle": "transversospinalis"
+        },
+        {
+          "name": "Longissimus",
+          "muscle": "longissimus-dorsi"
+        },
+        {
+          "name": "Iliocostalis",
+          "muscle": "iliocostalis"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "intervertebral",
+          "motion": "stabilisation"
+        }
+      ],
+      "attachmentNote": "Microtus arvalis. Origin: Neural spines, transverse processes and the sacrum. Insertion: Successive vertebrae, ribs and the occiput. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "schilling-2011"
+      ]
+    }
+  ]
+}

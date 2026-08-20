@@ -1,0 +1,128 @@
+{
+  "species": "dimetrodon-sp",
+  "source": "bishop-pierce-2024",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Caudofemoralis",
+      "present": "inferred",
+      "note": "Progressive reduction along the synapsid stem, tracked through the reduction of the fourth trochanter.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": "fourth-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Progressive reduction of the fourth trochanter along the synapsid stem tracks the loss of tail-driven femoral retraction.",
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "present": "inferred",
+      "note": "The enlargement of this field along the synapsid stem is part of the erect-posture transition documented by Bishop & Pierce.",
+      "name": "Gluteal (dorsal iliac) mass",
+      "region": "pelvic",
+      "record": "gluteus-maximus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources",
+        "name"
+      ],
+      "_srcs": [
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Iliofemoralis",
+      "present": "inferred",
+      "note": "Its expansion, tracked through the enlargement of the iliac blade, is central to Bishop & Pierce's argument that erect hindlimb posture was acquired late in the therian stem lineage.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "iliac-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Expansion of the iliac blade along the synapsid stem tracks the enlargement of this field and the shift toward erect posture.",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "bishop-pierce-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Puboischiofemoralis externus",
+      "present": "inferred",
+      "note": "Reconstructed from the ventral pelvic plate and the trochanteric region; its relative size is one of the variables Bishop & Pierce use to infer posture.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "bishop-pierce-2024"
+      ]
+    }
+  ]
+}

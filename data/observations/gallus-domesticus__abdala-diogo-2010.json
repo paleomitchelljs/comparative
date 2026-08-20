@@ -1,0 +1,868 @@
+{
+  "species": "gallus-domesticus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Brachialis",
+      "present": "yes",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis",
+      "present": "yes",
+      "note": "= coracobrachialis longus + brevis, or cranialis + caudalis, or anterior + posterior, depending on author.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "lesser-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ghetie-etal-1976"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Humeroradialis / tensor propatagialis",
+      "present": "yes",
+      "action": "Tenses the propatagium, controlling the leading-edge camber of the wing.",
+      "note": "A striking case of exaptation: an archosaur elbow flexor recruited into the flight apparatus.",
+      "region": "arm",
+      "record": "humeroradialis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Triceps brachii (scapulotriceps + humerotriceps)",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Scapulotriceps"
+        },
+        {
+          "name": "Humerotriceps"
+        }
+      ],
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "uncertain",
+      "note": "Marked '– [but see text]'.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "contrahentium-caput-longum",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "flexor-accessorius-lateralis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "flexor-accessorius-medialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "pronator-accessorius",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Anconeus",
+      "present": "yes",
+      "note": "= anconeus quartus sensu Holmes (1977).",
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Epitrochleoanconeus",
+      "present": "yes",
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Extensor antebrachii et carpi radialis",
+      "present": "yes",
+      "note": "Very likely includes the 'extensor metacarpi radialis' and the 'supinator' sensu Meyers (1996).",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Extensor carpi ulnaris",
+      "present": "yes",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "note": "Seems to correspond to the pronator superficialis sensu Sullivan (1962), Shellswell & Wolpert (1977), Meyers (1996) and Dilkes (2000).",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pronator teres",
+      "present": "yes",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Absent in chickens even though a most-ulnar digit is present. Abdala & Diogo treat this as the counter-case: here the specific IDENTITY of the digit (3 by fossils and Hox, 4 by embryology) seems to matter, not merely its position. They flag it as an open problem.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Abductor alulae",
+      "present": "yes",
+      "note": "The 'abductor alulae' sensu Meyers (1996) corresponds to the 'abductor indicis' sensu Sullivan (1962) and goes to digit 1 (= digit 2 according to embryology) — so it seemingly corresponds to the abductor pollicis brevis.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Contrahentes digitorum",
+      "present": "yes",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "region": "hand",
+      "record": "dorsometacarpales",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Dilkes (2000): not present as an independent muscle in birds.",
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "'Rhomboideus' (superficialis + profundus)",
+      "present": "yes",
+      "note": "Sullivan (1962, 1967) report both a rhomboideus superficialis and a rhomboideus profundus.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Rhomboideus superficialis"
+        },
+        {
+          "name": "Rhomboideus profundus"
+        }
+      ],
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cucullaris capitis / cucullaris cervicis",
+      "present": "yes",
+      "attachmentNote": "Gallus domesticus. Insertion: Clavicle and scapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "note": "Part of the acromialis sensu Ribbing (1938); part of the deltoideus sensu Jollie (1962).",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ghetie-etal-1976"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": []
+      },
+      "note": "Schreiweis (1982) resolves the penguin muscle into cranialis, caudalis and metapatagialis parts.",
+      "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. **The insertion is deliberately unrecorded rather than asserted.** This row carried an insertion on the lateral scapula and the clavicle, which is the rhomboideus attachment, not the latissimus: no bird inserts this muscle anywhere but the humerus, and none of the three sources cited here says otherwise. Abdala & Diogo's Tables 1-3 are a synonymy and give no attachment for it; Ghetie et al. (1976) is a plate atlas with no descriptive origin or insertion statements anywhere in its 154 pages; and Schreiweis (1982) describes a penguin, whose latissimus dorsi cranialis inserts on the posterior border of the humeral shaft near the distal border of the pneumatic fossa. Nothing in the corpus states a *Gallus* insertion, so the row now says so instead of guessing. The origin, on the thoracic neural spines, is retained — that much is consistent across every avian source here.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "note",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ghetie-etal-1976",
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "action": "Wing downstroke. The largest muscle in the body of most flying birds.",
+      "note": "Includes the pectoralis pars thoracica sensu Maxwell & Larsson (2007). The penguin pectoralis thoracica arises from the lateral sternal edge posterior to the coracobrachialis caudalis and from the trabecula lateralis, with a ribbon-like pars subcutanea abdominalis. Schreiweis (1982) records that the SUPRACORACOIDEUS is very well developed relative to the pectoralis in penguins — the reverse of the flying-bird proportion, and consistent with a wing that generates thrust on both strokes underwater rather than only on the downstroke.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "ventral",
+            "landmark": "sternal-keel"
+          },
+          {
+            "element": "furcula"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. From the sternal keel, the furcula and the ribs onto the deltopectoral crest — the crista pectoralis in avian nomenclature.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ghetie-etal-1976",
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "action": "Wing upstroke. The tendon is redirected over the shoulder by the triosseal canal so that a ventrally placed muscle produces a dorsal pull — the pulley arrangement that permits both flight strokes to be powered from below the body's centre of mass.",
+      "note": "= pectoralis secundus sensu Jollie (1962). In penguins the supracoracoideus is very well developed relative to the pectoralis, which Schreiweis (1982) notes every anatomist working on the group has remarked on. In a flying bird the pectoralis dwarfs it; in a wing-propelled diver, where the upstroke is also a power stroke, the two approach parity. Same two muscles, same triosseal pulley, different force balance.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "ventral",
+            "landmark": "sternal-keel"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus domesticus, Abdala & Diogo's avian exemplar. Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ghetie-etal-1976",
+        "schreiweis-1982"
+      ]
+    }
+  ]
+}

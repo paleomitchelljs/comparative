@@ -1,0 +1,366 @@
+{
+  "species": "chelydra-serpentina",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum brevis + abductor hallucis",
+      "present": "yes",
+      "origin": "Depression on the dorsal aspect of distal tarsal IV; the hallucal member (m. abductor hallucis) from the dorsal aspect of metatarsal I with an additional origin on phalanx I-1.",
+      "insertion": "Merging distally with the interossei dorsales and inserting with them on the proximodorsal lips of the distal phalanges of digits III and IV; the hallucal member on the proximodorsal lips of I-1 and I-2.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "side": "dorsal",
+            "landmark": "distal-tarsals"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Chelydra serpentina. The tarsal origin is on distal tarsal IV rather than on the astragalus as in squamates and crocodilians — the one place Hattori & Tsuihiji concede the turtle origin is 'slightly different', while still following Gadow (1882) in calling it homologous. Trachemys adds an origin from DT III and an insertion on digit II (Walker 1973). The additional hallucal origin on I-1 is this animal's; Trachemys has it on DT I instead.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor digitorum brevis"
+        },
+        {
+          "name": "Extensor hallucis brevis"
+        },
+        {
+          "name": "Extensor digiti II"
+        },
+        {
+          "name": "Extensor digiti III"
+        },
+        {
+          "name": "Extensor digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor hallucis proprius",
+      "present": "yes",
+      "origin": "Distal end of the fibula, the origin marked as a clear depression on the distodorsal margin of the bone, and the dorsal aspect of the astragalocalcaneum.",
+      "insertion": "Lateral sides of the distal third of metatarsal I and the proximal half of phalanx I-1, and the medial side of the mid-shaft of I-1.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "distal"
+          },
+          {
+            "element": "astragalocalcaneum",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "medial"
+          }
+        ]
+      },
+      "innervation": "Deep fibular nerve.",
+      "attachmentNote": "Chelydra serpentina. The tarsal origin is absent in Trachemys (Walker 1973), so it varies within turtles.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "innervation",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Interossei dorsales digiti II-IV",
+      "present": "yes",
+      "origin": "Rugosities on the proximomedial margin of the dorsal aspect of metatarsals I, II and III, the digit II member also from the astragalocalcaneum, distal tarsal I and phalanx II-1, and the digit IV member also from distal tarsal IV and phalanx IV-1.",
+      "insertion": "The distal phalanges of digits II, III and IV by a dorsal aponeurosis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "astragalocalcaneum",
+            "side": "dorsal"
+          },
+          {
+            "element": "tarsals",
+            "side": "dorsal",
+            "landmark": "distal-tarsals"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Chelydra serpentina. Walker (1973) already used the name mm. interossei dorsales for the turtle series but did not distinguish it from the short extensors it merges with; the accessory origins on the first phalanges are this animal's, and Trachemys lacks several of them.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interosseous dorsalis digiti II"
+        },
+        {
+          "name": "Interosseous dorsalis digiti III"
+        },
+        {
+          "name": "Interosseous dorsalis digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis",
+      "present": "yes",
+      "origin": "Dorsal aspect of the lateral distal condyle of the femur.",
+      "insertion": "Lateral sides of metatarsals I-IV and the proximodorsal lip of phalanx I-2.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "femoral-condyles"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Chelydra serpentina. The widest insertion of any sauropsid on this record — all four metatarsals — and turtles vary in it: Gadow (1882) put the insertion on the proximal phalanges of digits I-IV instead, and Ribbing (1938) found the Emys condition scored here. This is the muscle Hattori & Tsuihiji standardise as m. tibialis cranialis, and its avian member is the point of the paper: on their reading the bird's m. tibialis cranialis belongs on THIS record and not on `tibialis-anterior`, where the classical scheme puts it.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Peroneus anterior + peroneus brevis",
+      "present": "yes",
+      "origin": "Peroneus anterior — the longus of this record — from the distal half of the dorsal aspect of the fibula, the origin marked by a slightly excavated surface; brevis from the distal end of the fibula.",
+      "insertion": "Peroneus anterior onto the dorsal aspect of the proximolateral margins of metatarsal V and phalanx IV-1; brevis onto the proximal margin of the dorsal aspect of metatarsal V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Chelydra serpentina. The femoral origin the squamates give the longus is gone here — both heads are on the fibula, which is the condition crocodilians share and which Hattori & Tsuihiji use to group the two clades against lepidosaurs and birds.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus (fibularis) longus"
+        },
+        {
+          "name": "Peroneus (fibularis) brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "origin": "Dorsomedial margin of the tibia, marked on the bone by a rugose longitudinal sulcus.",
+      "insertion": "Proximomedial end of metatarsal I, marked by a tubercle.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Chelydra serpentina. Both ends leave a correlate — a sulcus at the origin and a tubercle at the insertion — which is what makes this muscle reconstructable in a fossil turtle.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    }
+  ]
+}

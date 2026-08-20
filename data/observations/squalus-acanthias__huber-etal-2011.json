@@ -1,0 +1,270 @@
+{
+  "species": "squalus-acanthias",
+  "source": "huber-etal-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae",
+      "present": "yes",
+      "innervation": "CN V.",
+      "note": "Relatively undivided, giving the plesiomorphic gnathostome condition.",
+      "division": "single",
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. From the palatoquadrate onto Meckel's cartilage — the primary jaw adductor in all cartilaginous fishes, with multiple divisions. Both elements are homology groups here: the palatoquadrate is the same record as the amniote quadrate and the mammalian incus, so this row and the mammalian masseter's are visibly on descendants of one bone.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "note",
+        "sources",
+        "division",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "huber-etal-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor hyoideus dorsalis (levator hyomandibulae)",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "landmark": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Recorded here as the levator hyomandibulae, which originates on the otic capsule of the chondrocranium and on the epibranchial musculature. The dorsal and ventral hyoid constrictors insert on the tendinous sheath overlying the hyomandibular cartilage, the dorsal arising from the otic capsule and the cucullaris and the ventral alongside the interhyoideus on the raphe of the first gill slit.",
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "huber-etal-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor hyoideus ventralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid",
+            "landmark": "ceratohyal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. A thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. The hyoid-arch counterpart of the intermandibularis, and it shares its insertion.",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "huber-etal-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictores + levatores arcuum branchialium",
+      "present": "yes",
+      "innervation": "CN IX (arch 3), CN X (arches 4–7).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Constrictores arcuum branchialium"
+        },
+        {
+          "name": "Levatores arcuum branchialium"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "glossopharyngeal"
+        },
+        {
+          "nerve": "vagus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "branchial-arches"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gill-slits"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. The superficial branchial constrictors take origin from the tendinous intersections between the dorsal and ventral series and insert on each of the gill slits, compressing the pharynx during the expulsion phase. Scored at the arch and the slit: the tendinous intersections are the real proximal attachment and have no element.",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "huber-etal-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermandibularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. A thin sheet between the two halves of the lower jaw, right and left portions inserting on the midventral raphe. It elevates the floor of the mouth during feeding and respiration, driving hydraulic transport through the oropharyngeal cavity. **Neither end is skeletal at the midline** — the insertion is raphe, which is why this muscle leaves no correlate.",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "huber-etal-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator palatoquadrati, spiracularis",
+      "present": "yes",
+      "note": "The spiracle is the reduced first (mandibular) gill slit; its musculature is arch 1 and trigeminal.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator palatoquadrati"
+        },
+        {
+          "name": "Spiracularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "landmark": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "spiracle",
+            "landmark": "spiracular-cartilage"
+          },
+          {
+            "element": "hyomandibula-stapes",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Two muscles on this record. The levator palatoquadrati runs from the otic capsule of the chondrocranium onto the palatoquadrate, elevating the upper jaw into its resting position during the recovery phase of the gape cycle. The spiracularis inserts on the spiracular cartilage and the distal hyomandibula, forming the anterior wall of the spiracular valve.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "huber-etal-2011"
+      ]
+    }
+  ]
+}

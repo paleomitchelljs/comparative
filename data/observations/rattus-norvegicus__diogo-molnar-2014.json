@@ -1,0 +1,72 @@
+{
+  "species": "rattus-norvegicus",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Adductor hallucis",
+      "present": "variable",
+      "note": "As in the hand, the contrahens layer is largely lost in mammals, with the adductor hallucis surviving as its principal representative.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Interossei (plantar and dorsal)",
+      "present": "yes",
+      "innervation": "Deep branch of the lateral plantar nerve.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar-deep"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Diogo & Molnar reject the classical derivation of the mammalian sartorius from the 'ambiens'; they derive the sartorius from the anterior head of puboischiofemoralis internus (Walker & Homberger 1997).",
+      "region": "thigh",
+      "record": "ambiens",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    }
+  ]
+}

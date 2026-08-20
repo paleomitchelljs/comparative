@@ -1,0 +1,287 @@
+{
+  "species": "discoglossus-pictus",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral",
+            "landmark": "tuber-superius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Shares its origin on the posterolateral tuber superius with the iliofibularis — the two are slender and closely bound — and inserts on the dorsal surface of the crista femoralis, the crest running posteriorly from the proximal femur. Both ends are on named anuran processes, so this is one of the few thigh muscles here that leaves a correlate at each end.",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Puboischiofemoralis externus",
+      "present": "yes",
+      "note": "Přikryl et al. (2009) note that the anuran 'pectineus' was identified as puboischiofemoralis EXTERNUS by Hoffmann (1873-78) and Iordansky & Morozov (1994), but as puboischiofemoralis INTERNUS by Noble (1922). The primary literature disagrees about which of the two it is, not merely about what to call it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Scored from the muscle Prikryl et al. call the pectineus, which Hoffmann and Iordansky & Morozov call the puboischiofemoralis externus — one of the twelve or so anuran names that mean something different in the mammalian literature. Ischium to femur; the review table does not resolve either end further.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Puboischiofemoralis internus A–D",
+      "present": "yes",
+      "note": "Prikryl et al. (2009) letter codes are used deliberately in place of the mammalian-sounding names ('iliacus', 'sartorius', 'pectineus') that earlier authors applied to these muscles, because those names imply homologies that do not hold. The anuran iliacus externus and internus belong to this field. Note the unresolved 'pectineus' — Noble (1922) placed it here, others in the externus.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Puboischiofemoralis internus A"
+        },
+        {
+          "name": "Puboischiofemoralis internus B"
+        },
+        {
+          "name": "Puboischiofemoralis internus C"
+        },
+        {
+          "name": "Puboischiofemoralis internus D"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Iliacus internus and externus, which between them are this record's anuran occurrence. Internus arises on the inner surface of the ilium opposite the anterior acetabulum — variably instead on the anterior rounded margin of the acetabular portion — runs over the anterior acetabular margin and inserts along the proximal anteroventral femur beneath the iliacus externus. Externus arises on the iliac shaft.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "'Semitendinosus'",
+      "present": "yes",
+      "note": "A false-friend name. The anuran 'semitendinosus' is not homologous to the mammalian muscle of that name. Přikryl et al. (2009) record that the anuran 'semimembranosus' was called ischioflexorius by Hoffmann and caudalipuboischiotibialis by Francis, while the anuran 'semitendinosus' was called ischioflexorius by Mivart and puboischiotibialis by Hoffmann. Two muscles, four names, two of them shared — which is what Diogo & Molnar mean by false friends.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "ilium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          },
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Semitendinosus from the ischium to the knee aponeurosis, and semimembranosus — which Hoffmann calls the ischioflexorius, this record's own name — from the pars ascendens ilii and adjacent ischium onto the posterior knee capsule and the posterior proximal head of the tibiofibula. The semimembranosus is divided proximally by a tendinous inscription.",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor iliotibialis A/B",
+      "present": "yes",
+      "note": "Diogo & Molnar use letter codes rather than the mammalian names ('gluteus maximus', 'tensor fasciae latae') applied by earlier authors, because those homologies do not hold. Přikryl et al. (2009) list the anuran muscle as 'glutaeus maximus (iliotibialis)'. It is NOT homologous with the mammalian gluteus maximus — one of the twelve false-friend names Diogo & Molnar (2014) identify.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor iliotibialis A"
+        },
+        {
+          "name": "Extensor iliotibialis B"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "tuber-superius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Cruralis and glutaeus maximus, this record's anuran A/B pair. Cruralis runs from the ilium to the knee aponeurosis; glutaeus maximus from the dorsolateral tuber superius onto the fascia of the distal cruralis rather than onto bone. Prikryl et al. note the glutaeus maximus origin is the one marked on their pelvic figure — it is a scoreable correlate.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Gracilis major + gracilis minor",
+      "present": "yes",
+      "note": "Two heads in anurans versus one in mammals. Both derive from the puboischiotibialis, but via different heads — so the anuran and mammalian 'gracilis' are not straightforwardly equivalent. The anuran gracilis major is Mivart's and Iordansky & Morozov's puboischiotibialis (Přikryl et al. 2009).",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Gracilis major"
+        },
+        {
+          "name": "Gracilis minor"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Gracilis major and gracilis minor, both ischium to knee aponeurosis. Mivart and Iordansky & Morozov call the major one the puboischiotibialis, which is this record's name.",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "prikryl-etal-2009"
+      ]
+    }
+  ]
+}

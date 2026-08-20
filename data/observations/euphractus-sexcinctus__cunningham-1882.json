@@ -1,0 +1,222 @@
+{
+  "species": "euphractus-sexcinctus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "astragalus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Euphractus sexcinctus. Shares a common tendon far back in the sole with the tibial head of the flexor brevis hallucis, from the ligaments about the calcaneum and astragalus, then separates and runs by a long narrow tendon to the tibial side of the **ungual** phalanx of the hallux — past the joint the intrinsic muscles usually stop at.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductors of the little toe",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abductor ossis metatarsi minimi digiti"
+        },
+        {
+          "name": "Abductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Euphractus sexcinctus. Both from the calcaneum: the abductor minimi digiti by a long tendon to the **fibular side of the distal phalanx**, the abductor ossis metatarsi to the base of the metatarsal. Cunningham disagrees with Galton over exactly these two, Galton having called the calcaneum-to-metatarsal muscle the abductor minimi digiti and the calcaneum-to-ungual-phalanx muscle the flexor brevis; Cunningham names them by their insertions and assigns the true flexor brevis to the minute fasciculus Galton left unnamed.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei, mostly fibrous",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor brevis hallucis"
+        },
+        {
+          "name": "Flexor brevis minimi digiti"
+        },
+        {
+          "name": "Flexores breves of the middle digits",
+          "membership": "variable"
+        },
+        {
+          "name": "Dorsal interossei",
+          "membership": "variable"
+        }
+      ],
+      "divisionNote": "The middle digits' short flexors and the dorsal interossei are present as fibrous bands in the muscles' own positions, not as muscles. Macalister found two of them fleshy in another *Dasypus*, so the state varies.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "astragalus"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Euphractus sexcinctus, and **the most remarkable thing in this foot: the muscles that have gone are still there as fibrous bands with precisely their own positions and connections.** Only two members of the intermediate layer remain fleshy — the flexor brevis hallucis, well developed and properly bicipital though its tibial head shares a common tendon with the abductor far back in the sole, and the flexor brevis minimi digiti, so minute it can have almost no action. Everything else, flexores breves and dorsal interossei together, is ligament, and Cunningham can find it no function beyond preventing over-extension at the metatarsophalangeal joints; the digits are bound together and can hardly move independently, which he offers as the cause. **He says no author had noticed these bands before**, and notes that Macalister describes as muscles in *Dasypus* two that were fibrous in his own specimen — so the transformation is reversible, or at least not uniform. Galton describes similar bands in *Orycteropus*, which he called metacarpal ligaments in the hand.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 24,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (four adductors)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Transversus indicis",
+          "membership": "disputed"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Euphractus sexcinctus. **The best-preserved layer in a foot where most of the rest has turned to ligament.** Four adductors working towards the medius, the first three from a common origin on the fibrous textures at the bases of the second and third metatarsals. The adductor indicis has an extra head from the base of the third metatarsal shared with the adductor annularis, which Cunningham suggests may represent a transversus indicis — the same oblique-and-transverse split he traces in the tamandua and the walrus. He disputes Galton's naming of two muscles in this foot and rejects his identification of the adductor minimi digiti as an opponens outright: an opponens must insert on the metatarsal, and this muscle reaches the distal phalanx.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 25,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

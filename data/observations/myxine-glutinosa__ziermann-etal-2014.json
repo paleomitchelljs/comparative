@@ -1,0 +1,123 @@
+{
+  "species": "myxine-glutinosa",
+  "source": "ziermann-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Hagfishes have no jaws. Table 1's row for mandibular muscles other than the intermandibularis is empty for both cyclostomes and begins with the adductor mandibulae A2 at the gnathostome ancestor. *Myxine*'s 24 mandibular muscles are labial, nasal, lingual, dental and velar groups, none of them an adductor.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Table 2 credits *Myxine* with four adult hyoid muscles — craniolingualis and craniohyoideus on the constrictores hyoidei of the cyclostome ancestor, and the protractores cartilagines basalis anterior and posterior — and **none of them is the interhyoideus**, which the table first records at the last common ancestor of extant Gnathostomata.",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Table 1 first records the levator arcus palatini at the gnathostome ancestor. The cyclostome candidate is the **velar muscle** group — in *Myxine* the craniovelaris anterior dorsalis and ventralis, spinovelaris and craniovelaris posterior — on the hypothesis that the velar muscles and the levator arcus palatini both derive from the constrictor dorsalis anlage that also yields the elasmobranch spiracularis. **Ziermann et al. do not accept it.** The evidence offered is engrailed immunoactivity shared between the lamprey larval velothyroideus and the zebrafish levator arcus palatini (Holland et al. 1993), and they remain cautious about proposing a homologue on immunoactivity alone, noting that engrailed is expressed in gnathostome mandibular myoblasts outside the dorsal mandibular musculature. Scored absent on their reading, with the alternative recorded here rather than deleted.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor branchiarum (+ constrictor pharyngis)",
+      "present": "yes",
+      "note": "Hagfish branchial musculature is difficult to homologise cell-for-cell with the gnathostome series; Oisi et al. (2013) provide the developmental basis.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "lingual-cartilage",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Myxine glutinosa, and the row is mostly a record of what is NOT bone. Ziermann et al. give the constrictor branchiarum an origin on the mesentery and insertions onto the connective tissue around the efferent branchial ducts, the surface of the heart, and the fascia of the branchial pouches — not one skeletal attachment among them. Only the anterior fibres, the constrictor pharyngis, reach cartilage: they arise from the lateral tissue of the chorda, which is tissue beside the notochord rather than the notochord itself and so is left unscored, and insert on the lateral borders of the posterior lingual cartilages. A branchial constrictor that ends on the heart and the tongue skeleton is the strongest single argument in this record against reading the hagfish series as the gnathostome one.",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tubulatus",
+      "present": "yes",
+      "note": "Ziermann et al.'s Table 1 puts an **undifferentiated intermandibularis muscle sheet** at the last common ancestor of extant Vertebrata and of extant Cyclostomata, and the tubulatus is what *Myxine* has in that position. It is a long tube-like muscle acting as a constrictor, arising from the lingual arches and surrounding the longitudinalis linguae. The intermandibularis proper — divided into anterior and posterior — appears at the gnathostome ancestor, so this row is the outgroup state the arch-1 ventral sheet is read against, not an intermandibularis in the gnathostome sense.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "lingual-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "*Myxine glutinosa*. Scored on `lingual-cartilage`, which is this dataset's element for the hagfish lingual cartilage complex; Ziermann et al. name the origin as the lingual arches. No insertion row — the muscle surrounds the longitudinalis linguae as a tube rather than attaching at a site, and inventing an insertion would be the reader's inference.",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    }
+  ]
+}

@@ -679,10 +679,15 @@ def main():
     # They are held to the SAME attachment rules as an occurrence. A row whose
     # element does not resolve is not a parked observation, it is a mistake, and
     # parking it unchecked would just move the error later.
-    obs_doc = load(ROOT / "data/observations.json")
-    blocked_kinds = set(obs_doc.get("blockedBy") or {})
-    seen_obs, promotable = set(), []
-    # An observation must not restate a row a record already carries.
+    OBS_DIR = ROOT / "data/observations"
+    blocked_kinds = {
+        "nomenclature": "the source's name cannot yet be matched to a record",
+        "homology": "which record it belongs to is open in the literature",
+        "no-record": "this dataset has no record for the muscle yet",
+        "division": "the source splits or fuses differently from the record",
+        "partial": "a difference or an extent rather than a complete attachment",
+        "occupied": "another worker's row already holds this record for this species",
+    }
     occ_keys, muscle_ids = set(), set()
     for path in MUSCLE_FILES:
         for mm in load(path)["muscles"]:
@@ -691,49 +696,40 @@ def main():
                 for k in oo.get("sources") or []:
                     occ_keys.add((k, oo.get("species"), (oo.get("name") or "").lower()))
 
-    for ob in obs_doc.get("observations") or []:
-        oid = ob.get("id")
-        where = f"observations.json:{oid}"
-        if not oid:
-            err("observations.json: an observation has no id")
-            continue
-        if oid in seen_obs:
-            err(f"{where}: duplicate id")
-        seen_obs.add(oid)
+    for f in sorted(OBS_DIR.glob("*.json")):
+        doc = load(f)
+        fsp, fsrc = doc.get("species"), doc.get("source")
+        if f.name != f"{fsp}__{fsrc}.json":
+            err(f"observations/{f.name}: filename does not match its own "
+                f"species and source ({fsp}, {fsrc})")
+        if fsrc not in source_keys and fsrc != "(unsourced)":
+            err(f"observations/{f.name}: unknown source '{fsrc}'")
+        if fsp not in species_ids:
+            err(f"observations/{f.name}: unknown species '{fsp}'")
 
-        src, sp = ob.get("source"), ob.get("species")
-        if src not in source_keys:
-            err(f"{where}: unknown source '{src}'")
-        if sp not in species_ids:
-            err(f"{where}: unknown species '{sp}'")
-        if not ob.get("name"):
-            err(f"{where}: needs the source's own `name` for the muscle — that "
-                f"name is the whole reason the row cannot be filed yet")
-
-        bb = ob.get("blockedBy")
-        if ob.get("muscle"):
-            # Assigned. It should be promoted into that record, not left here.
-            if ob["muscle"] not in muscle_ids:
-                err(f"{where}: muscle '{ob['muscle']}' is not a record")
-            else:
-                promotable.append(f"{oid} -> {ob['muscle']}")
-        elif bb not in blocked_kinds:
-            err(f"{where}: blockedBy={bb!r} is not one of "
-                f"{sorted(blocked_kinds)} — say why it cannot be filed")
-        if bb and not ob.get("blockedNote"):
-            err(f"{where}: blockedBy without a `blockedNote`. What is missing, "
-                f"and what would settle it, is the point of parking the row")
-
-        if (src, sp, (ob.get("name") or "").lower()) in occ_keys:
-            warn(f"{where}: a record already carries an occurrence for this "
-                 f"source, species and name — promote or delete this row")
-
-        clade = species_clade.get(sp)
-        check_rows(ob.get("attachments") or {}, where, clade)
-
-    if promotable:
-        warn(f"observations.json: {len(promotable)} row(s) now name a record and "
-             f"should be promoted into it: {', '.join(promotable[:5])}")
+        for ob in doc.get("observations") or []:
+            where = f"observations/{f.name}:{ob.get('name') or ob.get('_id') or '?'}"
+            rec = ob.get("record")
+            if rec:
+                if rec not in muscle_ids:
+                    err(f"{where}: record '{rec}' is not a muscle record")
+                continue
+            # Unassigned. It must say what is missing.
+            bb = ob.get("blockedBy")
+            if bb not in blocked_kinds:
+                err(f"{where}: unassigned row with blockedBy={bb!r}, not one of "
+                    f"{sorted(blocked_kinds)}")
+            if not ob.get("blockedNote"):
+                err(f"{where}: blockedBy without a `blockedNote` — what is "
+                    f"missing, and what would settle it, is the point")
+            if not ob.get("name"):
+                err(f"{where}: needs the source's own `name` for the muscle")
+            aft = ob.get("after")
+            if aft and not (aft in source_keys or re.search(r"\b(1[6-9]|20)\d{2}\b", aft)):
+                err(f"{where}: `after` is '{aft}', neither a source key nor a "
+                    f"citation with a year")
+            clade = species_clade.get(fsp)
+            check_rows(ob.get("attachments") or {}, where, clade)
 
     # Joint internal consistency. A joint's two sides use exactly the
     # element/side/landmark row form that attachments use, so the same

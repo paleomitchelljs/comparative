@@ -1,0 +1,28 @@
+{
+  "species": "pelecanoides-garnoti",
+  "source": "mckitrick-1991",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "no",
+      "note": "Pelecanoides garnoti UMMZ 225241. McKitrick reports the supinator ABSENT in the diving petrel, in the same dissection series that describes it as a bulky belly in the loon; what is left of its field she treats under the ectepicondylo-ulnaris. Her purpose was to test a proposed loon-tubenose sister relationship, which she does not support — so this row is one of the character differences behind that negative result, not a curiosity. The absence is kept as `no` because her descriptive section states it without qualification, but two other passages soften it and belong here: her character 11 is headed 'reduction or ABSENCE' and reads 'absent OR REDUCED TO AN APONEUROSIS in Pelecanoides', and under the ectepicondylo-ulnaris she allows that 'it is possible that part of this tendinous mass represents all that is left of M. supinator, e.g. the tendinous origin from the dorsal epicondyle in common with M. extensor digitorum communis'. So the belly is gone and the tendon may not be.",
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    }
+  ]
+}

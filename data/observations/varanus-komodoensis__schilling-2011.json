@@ -1,0 +1,31 @@
+{
+  "species": "varanus-komodoensis",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Caudal musculature (ilio-, ischio- and caudofemoralis series)",
+      "present": "yes",
+      "note": "Tomańska et al. (2024) describe the Komodo dragon tail as a substantial locomotor and defensive organ, with caudal muscle mass contributing counterbalance during bipedal rearing.",
+      "divisionNote": "No division recorded, and the name will not settle it: 'ilio-, ischio- and caudofemoralis series' expands two ways — iliocaudalis/ischiocaudalis or iliofemoralis/ischiofemoralis — and both are live readings. Needs the source rather than a guess.",
+      "region": "axial",
+      "record": "caudal-musculature",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "divisionNote"
+      ],
+      "_srcs": [
+        "schilling-2011",
+        "tomanska-etal-2024"
+      ]
+    }
+  ]
+}

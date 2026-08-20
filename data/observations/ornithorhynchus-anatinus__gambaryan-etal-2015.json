@@ -1,0 +1,1827 @@
+{
+  "species": "ornithorhynchus-anatinus",
+  "source": "gambaryan-etal-2015",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Biceps longus + biceps brevis",
+      "present": "yes",
+      "origin": "Longus just caudomedial to the supracoracoideus from the ventral side of the medial border of the procoracoid and a little from the dorsal side of the lateral border of the interclavicle stem; brevis further caudally from the ventral side of the caudal tip of the coracoid, just cranial to the coracobrachialis longus.",
+      "insertion": "The longus fuses with the brevis distal to the level of the pectoral crest and the two insert together on the posterior surface of the radius at its midlength, distal to the brachialis radialis, the longus' share of the common area remaining proximal to the brevis'.",
+      "attachmentNote": "Ornithorhynchus anatinus. The biceps longus has left the ulna: in both echidnas it inserts on the radial edge of the ulna and here it has moved onto the radius, fused with the brevis. A head changing which zeugopod bone it ends on, inside one clade.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "procoracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "interclavicle",
+            "side": "dorsal"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "posterior"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Biceps longus (caput longum)"
+        },
+        {
+          "name": "Biceps brevis (caput breve)"
+        }
+      ],
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis ulnaris + brachialis radialis",
+      "present": "yes",
+      "origin": "The two heads least separate of the three genera, arising together from the proximal dorsal surface of the humerus and widely separating the triceps lateralis origin in front from the triceps accessorius behind.",
+      "insertion": "As in the echidnas, but the radialis insertion on the radius is shorter; the ulna carries a groove for the flat terminal tendon of the ulnaris.",
+      "attachmentNote": "Ornithorhynchus anatinus. The groove on the ulna is an osteological correlate for a tendon, which is rarer in this dataset than a scar for a fleshy attachment.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "radius",
+            "side": "posterior"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Brachialis ulnaris (caput ulnare)"
+        },
+        {
+          "name": "Brachialis radialis (caput radiale)"
+        }
+      ],
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis brevis + longus",
+      "present": "yes",
+      "origin": "Brevis from the ventral side of the caudolateral border of the coracoid except its tip AND from its dorsal (internal) surface up to the coracoid-procoracoid boundary, where it meets the subcoracoideus origin; longus by a narrow tendon from the ventral side of the caudal tip of the coracoid.",
+      "insertion": "Brevis over the whole proximal ventral surface of the humerus, but not adjoined distally by the longus; longus along a narrow line continuing the pectoral crest onto the ventral side of the base of the entepicondylus, at the level of the entepicondylar foramen.",
+      "attachmentNote": "Ornithorhynchus anatinus. The brevis has spread onto the internal face of the coracoid here, and its complete fusion with the subcoracoideus origin at the procoracoid boundary is what Gambaryan et al. take as evidence of the two muscles' close affinity — and what defeated Howell (1937), who lumped them as m. coracobrachialis profundus. The longus is crowded distally by the latissimus, which has shifted its insertion proximally onto the pectoral crest in this animal.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          },
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracobrachialis brevis"
+        },
+        {
+          "name": "Coracobrachialis longus"
+        }
+      ],
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps brachii (five heads)",
+      "present": "yes",
+      "origin": "Both long heads from the scapular crest running to the glenoid; lateralis by a narrow tendon from a distinct tubercle on the proximal dorsal surface of the humerus, between the infraspinatus insertion and the brachialis origin; medialis and accessorius from the dorsal surface of the humerus, their origins completely separate from one another.",
+      "insertion": "Longus superficialis on the posterior projection of the olecranon apex over about a quarter of its extent; longus profundus across almost the whole apex; lateralis fleshy on the anterior projection, nearly fusing behind with the accessorius; accessorius and medialis on the humerus-facing aspect.",
+      "attachmentNote": "Ornithorhynchus anatinus. The lateralis origin has a named bony tubercle here where the echidnas have only a surface, and the medialis and accessorius origins are fully separate where in Tachyglossidae they are united.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "glenoid"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Triceps longus superficialis"
+        },
+        {
+          "name": "Triceps longus profundus"
+        },
+        {
+          "name": "Triceps lateralis"
+        },
+        {
+          "name": "Triceps medialis"
+        },
+        {
+          "name": "Triceps accessorius"
+        }
+      ],
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "origin": "Anterior side of the proximal end of the radius and the adjacent part of the ulna.",
+      "insertion": "Terminal tendon under its own transverse retinaculum at the distal end of the radius to the preaxial side of the base of metacarpal I, giving off at the level of the wrist a postaxial branch which passes over the brachioradialis tendon, deeper than every other extensor tendon, to insert on the preaxial side of the ulnare.",
+      "attachmentNote": "Ornithorhynchus anatinus. The postaxial branch onto the ulnare is unique to this genus, and it is the structure that holds the brachioradialis tendon down in place of the sheath the echidnas use.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "ulna",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "anterior"
+          },
+          {
+            "element": "carpals",
+            "side": "anterior",
+            "landmark": "ulnare"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "origin": "Fleshy from the ventral surface of the ectepicondylus clear of its proximal border, deeper than both the extensor carpi radialis and the extensor digitorum communis, which has expanded proximally along the ectepicondylar border.",
+      "insertion": "As in the echidnas, onto the preaxial carpal complex; the only real difference is that the tendon is bound to the distal end of the radius by a transverse branch of the abductor pollicis longus tendon rather than by its own sheath.",
+      "attachmentNote": "Ornithorhynchus anatinus. Same bone, different retaining structure — the tendon is held down by a neighbour's tendon instead of by a ligament of its own.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpal-preaxial-complex",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus lateralis",
+      "present": "yes",
+      "origin": "Dorsal surface of the ectepicondylus, preaxial to the triceps medialis.",
+      "insertion": "Along the anterior border of the olecranon, descending onto the ulna a little distal to the elbow joint.",
+      "note": "Ornithorhynchus anatinus. = m. anconeus sensu Diogo & Abdala (2010). One of the two links in the naming chain that runs the other way: here Gambaryan et al. keep a name of their own for a muscle Diogo & Abdala call by the name this record uses.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "anterior",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus medialis",
+      "present": "yes",
+      "origin": "Dorsal surface of the tip of the entepicondylus.",
+      "insertion": "Posterior projection of the olecranon apex.",
+      "note": "Ornithorhynchus anatinus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "yes",
+      "origin": "Ventral surface of the ectepicondylus parallel to its proximal border, deeper than the extensor digitorum communis.",
+      "insertion": "Three terminal branches onto the dorsal bases of metacarpals II-IV. The tendon passes under the abductor pollicis longus but over that muscle's transverse branch, and there is no transverse retinaculum binding it to the radius as there is in both echidnas.",
+      "attachmentNote": "Ornithorhynchus anatinus. The full three-branch insertion is retained here where the short-beaked echidna has lost the fourth; the retinaculum that holds the tendon down in Tachyglossidae is absent.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi ulnaris",
+      "present": "yes",
+      "origin": "One head only, the humeral: a fleshy origin on the apex of the ectepicondylus slightly aided by the aponeurosis shared with the extensor digitorum lateralis and communis.",
+      "insertion": "Terminal tendon under the transverse retinaculum at the distal end of the ulna, together with the extensor digitorum lateralis tendon, splitting in the metacarpal region into four branches: three insert in cascade on the postaxial side of the three joints of digit V, and the most proximal thin one deviates postaxially to join the interosseus V lateralis on the outer side of metacarpal V.",
+      "attachmentNote": "Ornithorhynchus anatinus. **The ulnar head is gone** — both echidnas have two heads and the platypus one, so the division is polymorphic within Monotremata and the clade computes as `variable`. A muscle branch ending on another muscle rather than on bone is also worth noting: the fourth branch joins the interosseus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "posterior"
+          },
+          {
+            "element": "metacarpals",
+            "side": "posterior"
+          }
+        ]
+      },
+      "division": "single",
+      "divisionNote": "Single against `heads` in both echidnas, on the loss of the caput ulnare.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis",
+      "present": "yes",
+      "origin": "Ventral side of the ectepicondylus, ascending from the crest on its preaxial apex — where it arises under the extensor carpi ulnaris — along the whole proximal border, where it arises over the extensor carpi radialis. Two aponeuroses of origin, the outer shared with the extensor carpi ulnaris and the extensor digitorum lateralis.",
+      "insertion": "On the manus the terminal tendon divides into a superficial sheet splitting to the ungual phalanges of digits I-IV and a deep sheet splitting to those of digits II-IV; the long tendons also send short deep branches to the bases of the preungual phalanges and fuse dorsally with the interdigital tendons of the cutaneus trunci.",
+      "attachmentNote": "Ornithorhynchus anatinus. The dorsal digital tendons here are continuous with the skin muscle, which is a muscle end no correlate would record — the cutaneus trunci branches run out between the digits and insert on opposing sides of the claws.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "landmark": "ungual-phalanges-manus"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor digitorum communis"
+        },
+        {
+          "name": "Extensor digitorum lateralis",
+          "membership": "disputed",
+          "note": "Rudimentary in this genus: a very thin tendon whose branches to digits IV and V thin out and fuse with the corresponding extensor digitorum communis tendons before insertion."
+        }
+      ],
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor pollicis et indicis",
+      "present": "yes",
+      "origin": "Mainly the olecranon: the origin descends from its anterior projection along the anterior side of the ulnar crest to the level of the elbow joint and a little beyond.",
+      "insertion": "A flat tendon over the distal half of the belly, passing under the retinaculum extensorum deeper than the extensor digitorum communis tendon and splitting into three branches to the ungual phalanges of digits I-III, shared with the corresponding extensor digitorum communis branches.",
+      "attachmentNote": "Ornithorhynchus anatinus. The origin has withdrawn onto the olecranon, off the ulnar shaft the echidnas use, and the digital formula has shifted preaxially — I-III rather than II-IV. Scored here from Monotremata only; the muscle is not yet scored in other taxa in this dataset, so its absence elsewhere is unsampled rather than observed.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "anterior",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "landmark": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "division": "single",
+      "region": "forearm",
+      "record": "extensor-digitorum-profundus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "origin": "As in Tachyglossidae, but the belly is flattened in the parasagittal plane and more sharply bipennate: the anterior penna bears an aponeurosis facing the humeral condyle and the radius, the posterior penna two, shared with the pronator teres and the caput humerale superficiale.",
+      "insertion": "A round tendon on the proximal apex of the prepollex, with no ligamentous relay onward.",
+      "attachmentNote": "Ornithorhynchus anatinus. The prepollex insertion is shared with both echidnas; what is missing here is the onward ligamentous transfer to the carpals and metacarpals, so the muscle acts on the wrist alone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "side": "proximal",
+            "landmark": "prepollex"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "origin": "Caput humerale from the apex and postaxial part of the distal border of the entepicondylus, unipennate; caput ulnare tripennate, from the posterior-postaxial surface of the olecranon, descending a little distal to the elbow joint.",
+      "insertion": "A short thick common tendon on the proximal apex of the pisiform. Ligaments from the pisiform to the metacarpals are ABSENT.",
+      "attachmentNote": "Ornithorhynchus anatinus. The pisometacarpal ligaments both echidnas use to relay the pull onward are missing, which is the same difference the flexor carpi radialis shows on the preaxial side: in the platypus both wrist flexors act on the wrist alone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "side": "proximal",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput humerale"
+        },
+        {
+          "name": "Caput ulnare"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum profundus",
+      "present": "yes",
+      "origin": "Caput humerale superficiale from the distal border of the entepicondylus — the biggest and, with fibres only about 2 mm long, by far the strongest head; caput humerale profundum with long fibres from the ventral side of the spina entepicondyli; caput olecrani and the smaller caput ulnare from the posterior side of the ulna below the midlength of the bone, here fully separate from one another.",
+      "insertion": "Two palmar sesamoids on the thick common tendon at the level of the carpus. The medial one gives the terminal tendons of digits I-III and the lateral one those of digits IV and V; all five insert on the bases of the ungual phalanges. The thin tendon of the caput humerale profundum inserts on the two sesamoids separately, deeper than the common tendon. Four thick elastin bands run from the sesamoids between the digits into the swimming membrane beyond the claws.",
+      "attachmentNote": "Ornithorhynchus anatinus. Gambaryan et al. call this muscle a combination of extreme specialisation and profound primitiveness. The specialisation is the caput humerale superficiale: 2 mm fibres give enormous force for underwater rowing and cost the animal finger extension, which is why it knuckle-walks. The primitiveness is the caput humerale profundum, scored on `contrahentium-caput-longum`.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "palmar-sesamoid"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "ventral",
+            "landmark": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput humerale superficiale"
+        },
+        {
+          "name": "Caput humerale profundum",
+          "muscle": "contrahentium-caput-longum"
+        },
+        {
+          "name": "Caput olecrani"
+        },
+        {
+          "name": "Caput ulnare"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum profundus, caput humerale profundum",
+      "present": "yes",
+      "origin": "Ventral side of the spina entepicondyli — the distal styloid process of the entepicondylus of the humerus — by long fibres, the belly then squeezing down between the caput olecrani and the caput ulnare of the flexor digitorum profundus.",
+      "insertion": "A thin terminal tendon running to the manus in a groove on the deep side of the common flexor tendon, inserting separately on the two palmar sesamoids and, through the ligamentum flexorium commune transversum, on the ventral side of the ulnare.",
+      "note": "Ornithorhynchus anatinus. **This record says the muscle was lost in amniotes; Gambaryan et al. say it was not.** Straus (1942) held the urodele ulnocarpalis to have dissolved into the flexor digitorum profundus beyond amphibians. Their evidence that it kept its identity instead is topological and ligamentous, not merely positional: the head wedges between the caput olecrani and the caput ulnare exactly as the urodele ulnocarpalis wedges between the two heads of the palmaris communis profundus sensu Miner (1925) — which are the flexor accessorius lateralis and flexor accessorius medialis of Diogo & Abdala (2010), both records in this dataset — and it ends on the ligamentum flexorium commune transversum, which they identify as the surviving postaxial segment of the transverse subcarpal ligament that the urodele muscle specifically inserts on. On their reading the muscle is not lost but captured: its origin has migrated from the ulna onto the humerus and it has been imprisoned inside the former palmaris communis.",
+      "attachmentNote": "The origin is on the HUMERUS, against this record's consensus origin on the distal ulna, and that migration is the substance of the claim rather than an inconvenience for it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "palmar-sesamoid"
+          },
+          {
+            "element": "subcarpal-ligament-transverse"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "contrahentium-caput-longum",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "name": "Palmaris longus",
+      "present": "no",
+      "note": "Ornithorhynchus anatinus. Absent. Here the cutaneus trunci runs to the EXTENSOR side of the antebrachium instead, terminating at the wrist in a subcutaneous aponeurosis that splits into four interdigital branches, each bifurcating to insert on opposing sides of the claws of adjacent digits.",
+      "speciesBasis": "note",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "origin": "Ventral side of the apex of the entepicondylus.",
+      "insertion": "Terminal aponeuroses on the anterior and posterior sides of the belly fuse into a flat tendon inserting on the POSTERIOR side of the radius close to its midlength.",
+      "attachmentNote": "Ornithorhynchus anatinus. Both echidnas insert on the preaxial side of the radius and the platypus on its posterior side, which for a pronator is a change in the line of action and not just in position.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "posterior"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "yes",
+      "origin": "Ventral side of the ectepicondylus, mostly fleshy, aided by an aponeurosis on the anterolateral side.",
+      "insertion": "Fleshy on the anteropreaxial side of the proximal half of the radius, a little clear of the elbow joint.",
+      "attachmentNote": "Ornithorhynchus anatinus. This record's homology note calls the therian supinator a muscle with no confidently identified counterpart outside Mammalia; the monotreme rows are the outgroup evidence for that statement rather than against it, since monotremes are mammals.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "origin": "Four muscles for digits I-IV, from the ventral side of the common tendon of the flexor digitorum profundus at the proximal border of its sesamoids.",
+      "insertion": "The terminal tendons thin into sheets which disappear distally into the loose elastic tissue enveloping each digit. In digit I the tendon is distinct as far as the metacarpophalangeal subarticular ligament; in digits II-IV the tendons reach the midlength of the first phalanges, where they embrace the corresponding profundus tendons as very thin perforated tendons.",
+      "attachmentNote": "Ornithorhynchus anatinus. Gambaryan et al. correct Diogo & Abdala (2010) here: the tendons embrace the profundus tendons but are NOT fused with them, which matters because the embracing-not-fusing relation is what the flexor digitorum superficialis homology rests on.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "ventral",
+            "landmark": "palmar-sesamoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor brevis superficialis I"
+        },
+        {
+          "name": "II"
+        },
+        {
+          "name": "III"
+        },
+        {
+          "name": "IV"
+        }
+      ],
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "origin": "Four muscles: the first from the postaxial side of metacarpal II, the second from the preaxial side of metacarpal III, the third from the postaxial side of metacarpal III, the fourth from the preaxial side of metacarpal IV — two in the space between metacarpals II and III, two between III and IV.",
+      "insertion": "Each is unipennate, its fibres inserting on a tendon parallel to the metacarpal of origin which runs along the same digit to end at the tip of phalanx 1, on the same side as the origin. Digit II therefore carries a postaxial muscle, digit IV a preaxial one, and digit III both.",
+      "attachmentNote": "Ornithorhynchus anatinus. = mm. interossei dorsales. Present here and absent in both echidnas, which Gambaryan et al. count among the ways the platypus is the more primitive monotreme below the elbow.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interossei",
+      "present": "yes",
+      "origin": "A complete set of ten, all by long tendons of which there are five: interossei I from the distal end of the prepollex; interossei II deeper from the same point and from intercarpal ligaments; interossei III from intercarpal ligaments; interossei IV and interosseus V medialis from intercarpal ligaments and the ulnare; interosseus V lateralis from the distal end of the pisiform.",
+      "insertion": "Preaxially (mediales) or postaxially (laterales) on the metacarpophalangeal joints of every digit.",
+      "attachmentNote": "Ornithorhynchus anatinus. **The full set of ten**, which Gambaryan et al. list among the features in which the platypus is more primitive than the echidnas, and one of which may even be the contrahens V. The tendon of the interosseus V medialis is shared with the interossei IV rather than with its own twin, which is an oddity of grouping rather than of position.\n\n**Cunningham (1882) adds an independent observation of this layer in the same animal, and it is the layer that holds up when the others go.** He opened the platypus hand to check a sentence of Meckel's — that its interossei behave exactly like those of the foot, only thinner — and found the arrangement very different: the palmar adductors are reduced to one thread-like muscle and the dorsal interossei are absent, with only tough fibrous strands in the intermetacarpal spaces that may represent them, while **the flexores breves are well marked, each of two fleshy slips except that of the minimus, which has an ulnar head alone.** In the pes of the same animal these muscles are instead fused with the dorsal interossei to the point where the two layers must be separated from the dorsum before either can be read.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "prepollex"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          },
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interossei mediales I-V"
+        },
+        {
+          "name": "Interossei laterales I-V"
+        },
+        {
+          "name": "Contrahens V",
+          "membership": "disputed",
+          "note": "Gambaryan et al. suggest one of the ten may be the contrahens V, without deciding which."
+        }
+      ],
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "origin": "Three muscles, from the dorsal side of the common tendon of the flexor digitorum profundus at the distal border of its sesamoids: lumbricalis III from the medial sesamoid, IV from between the two, V from the lateral sesamoid.",
+      "insertion": "Thin sheet-like tendons running to the preaxial side of digits III-V, crossing the first interphalangeal joint without firm attachment onto the dorsum of the digit and fusing into the preaxial edge of the corresponding extensor digitorum communis tendon. Lumbricalis V fuses with the interosseus V medialis at the preaxial side of the metacarpophalangeal V joint on the way.",
+      "attachmentNote": "Ornithorhynchus anatinus. A flexor-side muscle ending on an extensor tendon — the row records the phalanges it runs to, but the actual termination is on another muscle's tendon, which no osteological correlate would recover.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "dorsal",
+            "landmark": "palmar-sesamoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Clavodeltoideus + acromiodeltoideus",
+      "present": "yes",
+      "origin": "Ventral surface of the acromion, the ventral surface of the lateral ramus of the interclavicle, and the clavicle as far medially as the sternomastoideus insertion.",
+      "insertion": "Descends along the pectoral crest of the humerus and far distal to it.",
+      "attachmentNote": "Ornithorhynchus anatinus. The two deltoids are inseparable here and together embrace the spinodeltoideus from below; the fibres caudal to it can be called acromiodeltoideus and those cranial to it clavodeltoideus, but there is no boundary. Diogo & Abdala (2010) do not list an acromiodeltoideus for this animal at all.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "ventral",
+            "landmark": "acromion"
+          },
+          {
+            "element": "interclavicle",
+            "side": "ventral"
+          },
+          {
+            "element": "clavicle",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Pars clavicularis (clavodeltoideus)"
+        },
+        {
+          "name": "Pars acromialis (acromiodeltoideus)"
+        }
+      ],
+      "divisionNote": "`heads` rather than `divided` against both echidnas, which is a real difference and not a reading of the same thing: in Tachyglossidae the two are distinct muscles with separate origins and insertions, and in the platypus they are one continuous sheet whose parts are named by where they sit relative to the spinodeltoideus.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "origin": "Fleshy from the cranial border of the upper part of the first costal cartilage and the lower part of the first rib, rising slightly above the origin of the anterior slip of the serratus ventralis thoracis, with the scalenus wedged between them.",
+      "insertion": "Restricted to the posterior half of the dorsal side of the medial border of the coracoid, not reaching forward to the procoracoid suture.",
+      "attachmentNote": "Ornithorhynchus anatinus. The most restricted of the three insertions — it stops short of the suture that the short-beaked echidna's reaches and the long-beaked echidna's crosses.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior",
+            "landmark": "costal-cartilage"
+          },
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus spinalis + latissimus costalis",
+      "present": "yes",
+      "origin": "Spinalis from the neural spines of thoracic vertebrae 3 to 11, fleshy to vertebra 7 and aponeurotic behind it, with no scapular or costal slip; costalis from ribs 8 to 15.",
+      "insertion": "Spinalis mainly fleshy along the postaxial aspect of the humerus, from the distal angle of the pectoral crest to the entepicondylar foramen, leaving a distinct facet; costalis by a flat tendon along the posterior side of the pectoral crest, PROXIMAL to the spinalis rather than distal to it.",
+      "attachmentNote": "Ornithorhynchus anatinus. The order of the two insertions is reversed against both echidnas — costalis proximal and spinalis distal here, the other way round in Tachyglossidae — and the spinalis insertion has climbed back up the humerus from the epicondyle towards the pectoral crest. That proximal shift is what crowds the coracobrachialis longus distally in this animal.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "side": "dorsal",
+            "landmark": "thoracic-neural-spines"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Latissimus spinalis"
+        },
+        {
+          "name": "Latissimus costalis"
+        }
+      ],
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae (dorsalis, intermedius, ventralis)",
+      "present": "yes",
+      "origin": "All three portions mainly from the ventral tubercle of the atlas wing — dorsalis by a short flat tendon, intermedius by a longer one plus a thin accessory tendon from the atlanto-occipital joint capsule, ventralis by an aponeurosis separated from the other two by the scalenus, its posterior fibres running fleshy along the caudoventral border of the atlas wing to the epistropheal rib.",
+      "insertion": "Dorsalis on the internal side of the cranial three-fifths of the dorsal border of the scapula and the dorsal half of its cranial border; intermedius on a short segment of the cranial border below it; ventralis on the remaining ventral part of the cranial border, the acromial process and the distal fifth of the clavicle. All three cover both faces of the cranial border.",
+      "attachmentNote": "Ornithorhynchus anatinus. The origin has withdrawn almost entirely onto the atlas, which is the therian arrangement — and Gambaryan et al. argue it was reached independently here rather than shared, because the echidnas keep the wide occipital origin.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas",
+            "side": "ventral",
+            "landmark": "atlas-transverse-process"
+          },
+          {
+            "element": "ribs",
+            "side": "ventral",
+            "landmark": "cervical-ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "clavicle",
+            "side": "distal"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator scapulae dorsalis"
+        },
+        {
+          "name": "Levator scapulae intermedius"
+        },
+        {
+          "name": "Levator scapulae ventralis"
+        }
+      ],
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "origin": "Anterior fifth of the stem of the interclavicle, sparing its most cranial part, and the ventral (sternal) parts of the costal cartilages of the first five ribs.",
+      "insertion": "The whole length of the pectoral crest of the humerus, on its ventral side.",
+      "division": "single",
+      "attachmentNote": "Ornithorhynchus anatinus. Costal rather than sternal behind the interclavicle, and the insertion runs the full length of the crest instead of occupying part of it — the widest pectoralis of the three, on the animal with the widest humerus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "interclavicle",
+            "side": "ventral"
+          },
+          {
+            "element": "ribs",
+            "side": "ventral",
+            "landmark": "costal-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "division",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rhomboideus",
+      "present": "yes",
+      "origin": "Transverse crest of the occiput and the dorsal midline of the neck, the occipital part set further back from the origin of the clavoacromiotrapezius than in the echidnas.",
+      "insertion": "Internal side of the caudal part of the dorsal border of the scapula, as far as its caudal angle.",
+      "attachmentNote": "Ornithorhynchus anatinus. Undivided, against the two portions of both echidnas, and the insertion is correspondingly confined to the caudal half of the dorsal border.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput",
+            "side": "dorsal"
+          },
+          {
+            "element": "cervical-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "medial",
+            "landmark": "scapula-caudal-angle"
+          }
+        ]
+      },
+      "division": "single",
+      "divisionNote": "Single here against `heads` in Tachyglossidae, which puts the differentiation of the rhomboideus inside Monotremata rather than on its stem.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus ventralis cervicis + thoracis",
+      "present": "yes",
+      "origin": "Cervicis as six slips from the cervical ribs of vertebrae II to VII; thoracis as three slips from the lower halves of the first three ribs, short of the costal cartilages.",
+      "insertion": "Cervicis gathered near the dorsal and cranial borders of the internal surface of the scapula, occupying much less of that surface than in the echidnas because the subscapularis has taken most of it; thoracis compactly on the external side of the caudal angle, fusing near its insertion with the main portion of the last cervical slip.",
+      "attachmentNote": "Ornithorhynchus anatinus. Five of the six cervical slips bifurcate here against three in Tachyglossidae, which Gambaryan et al. count as the derived state, while the retreat of the cervicis from the internal face of the scapula is the counterpart of the subscapularis moving onto it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "landmark": "cervical-ribs"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "scapula-caudal-angle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Serratus ventralis cervicis proprius"
+        },
+        {
+          "name": "Serratus ventralis cervicis accessorius"
+        },
+        {
+          "name": "Serratus ventralis thoracis"
+        }
+      ],
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Spinodeltoideus",
+      "present": "yes",
+      "origin": "Edge of the craniodorsal angle of the scapula, the origin split by the insertion of the spinotrapezius so that the cranial fibres arise over that muscle and the caudal fibres emerge from beneath it.",
+      "insertion": "Terminal tendon on the dorsal side of the pectoral crest of the humerus, between the clavodeltoideus and the acromiodeltoideus.",
+      "attachmentNote": "Ornithorhynchus anatinus. The only genus in which another muscle's insertion divides this one's origin, and the only one whose insertion reaches the pectoral crest rather than the proximal humeral surface.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal",
+            "landmark": "scapula-cranial-angle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "origin": "Fleshy from the dorsal side of the sternal manubrium along the rim of the sternocoracoid joint, from that joint's articular capsule, and from the internal side of the ventral segment of the first costal cartilage.",
+      "insertion": "Unipennate; the terminal aponeurosis inserts on the dorsal side of the medial border of the procoracoid in its posterior half, clear of the suture with the coracoid, while the most anterior fibres insert fleshy on the cartilaginous lining of the procoracoid border.",
+      "attachmentNote": "Ornithorhynchus anatinus. The only genus in which part of the insertion is onto cartilage rather than bone, and the only one whose origin takes in the joint capsule.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "dorsal"
+          },
+          {
+            "element": "ribs",
+            "side": "medial",
+            "landmark": "costal-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subscapularis + subcoracoideus",
+      "present": "yes",
+      "origin": "Subscapularis in two incompletely fused heads — a laterocaudal head, twice the bulk, from the caudal border and caudal external surface of the scapula, and a medial head covering the internal surface between the two portions of the serratus ventralis cervicis; subcoracoideus from the entire dorsal surface of the procoracoid but for a narrow medial strip, its origin completely fused with that of the coracobrachialis brevis at the procoracoid-coracoid boundary.",
+      "insertion": "Subscapularis by two aponeuroses onto the proximal apex of the lesser tubercle, the medial head onto a sesamoid bone there and the laterocaudal head onto the tubercle just distal to it; subcoracoideus by four flat overlying tendons onto the lesser tubercle and its crest.",
+      "attachmentNote": "Ornithorhynchus anatinus. The subscapularis has begun to invade the internal face of the scapula here, which Gambaryan et al. read as the derived state and as the cause of the reduction of the supraspinatus in this animal. A sesamoid sits in the medial head's tendon at the apex of the lesser tubercle, joined to it by a synovial joint; the most proximal of the four subcoracoideus tendons inserts on that sesamoid rather than on bone, so no attachment row is written for it. Howell (1937) could not separate subcoracoideus from coracobrachialis brevis in this animal and called the mass together the m. coracobrachialis profundus, having found only the ventral nerve supply.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior"
+          },
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle-crest"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Subscapularis"
+        },
+        {
+          "name": "Subcoracoideus"
+        }
+      ],
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "origin": "Almost the entire ventral surface of the procoracoid, passing through a gap between its cranial border and the interclavicle slightly onto its dorsal side.",
+      "insertion": "Mostly fleshy along the dorsal — not the ventral — side of the pectoral crest of the humerus, descending from its proximal apex at the greater tubercle to the insertion of the acromiodeltoideus.",
+      "attachmentNote": "Ornithorhynchus anatinus. The largest procoracoid origin of the three and the only insertion that runs down the pectoral crest rather than sitting on the proximal humeral surface. The supraspinatus is vestigial in this animal, restricted to the internal side of the base of the acromion, which Gambaryan et al. read as secondary reduction following the invasion of the subscapularis onto the inner face of the scapula.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "procoracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supracoracoideus"
+        },
+        {
+          "name": "Supraspinatus",
+          "membership": "disputed"
+        },
+        {
+          "name": "Infraspinatus",
+          "membership": "disputed"
+        }
+      ],
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres major",
+      "present": "yes",
+      "origin": "Along the external side of the caudal half of the dorsal border of the scapula, up to the apex of the caudal angle where the serratus ventralis thoracis inserts.",
+      "insertion": "Dorsal side of the distal part of the crest of the lesser tubercle of the humerus, between the subcoracoideus insertion and the triceps accessorius origin.",
+      "note": "Ornithorhynchus anatinus. The origin has spread forward along the dorsal border instead of concentrating on the angle, and it does not reach the internal face at all.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "scapula-caudal-angle"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres minor",
+      "present": "yes",
+      "origin": "External side of the scapula just anterior to the triceps longus profundus — a fossa for the fleshy fibres with a ridge along its anterior border for the aponeurosis — and partly from the articular capsule of the shoulder joint.",
+      "insertion": "Fleshy in a fossa on the dorsal side of the lesser tubercle of the humerus, immediately anterior to the subscapularis insertion.",
+      "attachmentNote": "Ornithorhynchus anatinus. The one genus of the three whose origin has moved off the cranial border onto the lateral face of the scapular blade, and it leaves an osteological correlate: a fossa with a bounding ridge.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    }
+  ]
+}

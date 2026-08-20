@@ -1,0 +1,704 @@
+{
+  "species": "sphenodon-punctatus",
+  "source": "haas-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae complex",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. adductor mandibulae externus",
+          "muscle": "adductor-mandibulae-externus"
+        },
+        {
+          "name": "M. adductor mandibulae internus",
+          "muscle": "adductor-mandibulae-internus"
+        },
+        {
+          "name": "M. adductor mandibulae posterior",
+          "muscle": "adductor-mandibulae-posterior"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "prootic"
+          },
+          {
+            "element": "epipterygoid"
+          },
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "palatine"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "landmark": "articular"
+          },
+          {
+            "element": "mandible",
+            "landmark": "surangular"
+          },
+          {
+            "element": "mandible",
+            "landmark": "angular"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). **The whole complex converges on a structure that is not bone.** Haas follows Lakjer's criterion throughout: the medialis and profundus are defined by inserting on the lateral and medial faces of the basal aponeurosis (Lakjer's Bodenaponeurose, Poglayen-Neuwall's Binnensehne), which is broadly attached along the dorsal surangular and the lateral articular. The aponeurosis has no element in this skeleton and is carried in prose; without it the three-part division of this record cannot be stated at all.\n\nThe components are scored separately on their own records. Haas's arrangement is Luther's and Lakjer's, chosen because it subdivides on the relation to the branches of the trigeminal rather than on topography: externus between the mandibular and maxillary rami, internus between the mandibular and ophthalmic, posterior posterolateral to the mandibular.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor internus dorsalis group",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. levator pterygoidei"
+        },
+        {
+          "name": "M. protractor pterygoidei",
+          "membership": "variable",
+          "sources": [
+            "haas-1973"
+          ]
+        },
+        {
+          "name": "M. levator bulbi dorsalis"
+        },
+        {
+          "name": "M. levator bulbi ventralis"
+        }
+      ],
+      "innervation": "Trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          },
+          {
+            "element": "prootic"
+          },
+          {
+            "element": "epipterygoid"
+          },
+          {
+            "element": "palatine"
+          },
+          {
+            "element": "pterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pterygoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "eyelid"
+          },
+          {
+            "element": "palatine"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). **The most variable muscles in the animal, and Haas says so plainly.** The whole group is reduced, as in akinetic or nearly akinetic lizards, and the published descriptions disagree so completely that he attributes the differences to a wide range of individual variation rather than to error. Lakjer is internally inconsistent — his text denies the M. levator pterygoidei exists in *Sphenodon* while his figure shows and labels one.\n\n**M. protractor pterygoidei is present in one specimen and absent in the other**, in Haas's dissections as in Ostrom's (1962); Adams and Poglayen-Neuwall emphatically denied it exists, Versluys, Edgeworth and Lakjer reported it. Haas offers an explanation worth recording: the variation may be ontogenetic rather than taxonomic — juveniles with a more kinetic skull retaining a functional protractor, adults with an akinetic skull losing it. It is scored as a `variable` part for that reason.\n\nThe levator bulbi is the exception, well developed and subdivided into dorsal and ventral portions. The ventralis arises from the anterior edge of the orbitosphenoid cartilage and ends on the palatal membrane; the very thin dorsalis arises tendinously from the anteromedial epipterygoid — definitely not from the membranous braincase wall as Poglayen-Neuwall described — carries an internal tendon where it meets the posteroventral eyeball, and **turns dorsally to insert in the lower eyelid**. A rostral portion arises from the palatine in the Basel specimen and the pterygoid in the London one. Scored on this record because the constrictor internus dorsalis group is the amniote descendant of the spiracular/levator arcus palatini series, not on `extraocular-muscles`, which is prechordal and carries the oculomotor, trochlear and abducens muscles.",
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hypobranchial and lingual musculature",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. geniohyoideus"
+        },
+        {
+          "name": "M. genioglossus"
+        },
+        {
+          "name": "M. hyoglossus"
+        },
+        {
+          "name": "M. basihyalis proprius"
+        }
+      ],
+      "innervation": "Hypoglossal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          },
+          {
+            "element": "hyoid",
+            "landmark": "cornu-branchiale"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). Three deep hypobranchial muscles, noted briefly because Haas defers the hyoid-associated musculature to another chapter in the series. Geniohyoideus from the medial mandible near the symphysis to the anterior margin of the medial half of the hyoid arch, leaving its anterior and posterior quarters bare; genioglossus from near the symphysis, dorsal to it, entering the ventrolateral tongue, its most ventral fibres reaching the processus entoglossus and its internal portion — the M. basihyalis proprius — forming circular fibres there that protrude the tongue; hyoglossus from the anterior border of the hyoid arch into the whole length of the tongue. **Haas records that Osawa (1898) called the geniohyoideus a M. ceratomandibularis**, which is a name this dataset holds as a separate record for a urodele jaw opener. The same word, two muscles, and the tuatara is where they cross.",
+      "nerves": [
+        {
+          "nerve": "hypoglossal"
+        }
+      ],
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae externus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Superficialis (part 1)"
+        },
+        {
+          "name": "Medialis (part 2)"
+        },
+        {
+          "name": "Profundus (part 3)"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "prootic"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "dorsal",
+            "landmark": "angular"
+          },
+          {
+            "element": "mandible",
+            "side": "lateral",
+            "landmark": "articular"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). Superficialis from the postorbital and squamosal along the anterior and dorsal margins of the lower temporal fenestra — the anterior half of the origin fleshy, the posterior half from a tendinous sheet that enlarges the area considerably — inserting on the angular and articular along the dorsolateral postcoronoid mandible and on the lateral face of the basal aponeurosis.\n\n**The medialis has five heads and Haas is the first to say so.** Earlier descriptions he calls oversimplified: Poglayen-Neuwall gave one origin, Lakjer two. Haas resolves 2a (anteromedial, near-vertical fibres) and 2b (posterior, near-horizontal) converging on the anterior sheet of the basal aponeurosis as a bipinnate pair separated from 2c by an intervening blood vessel; 2c arises more ventrolaterally from the squamosal and inserts deeper; 2d and 2e are two small heads from the upper temporal arch that Poglayen-Neuwall had wrongly assigned to the superficialis. All five meet Lakjer's criterion by inserting on the lateral face of the aponeurosis. The profundus is bipinnate with two quite separate origins — the posterior wall of the dorsal temporal fenestra and the posterodorsal process of the prootic — and inserts on the aponeurosis's medial face.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae internus (pseudotemporalis and pterygoideus)",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. pseudotemporalis superficialis"
+        },
+        {
+          "name": "M. pseudotemporalis profundus"
+        },
+        {
+          "name": "M. pterygoideus typicus"
+        },
+        {
+          "name": "M. pterygoideus atypicus"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve, the pterygoideus by the nervus musculi pterygoidei.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "epipterygoid"
+          },
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "palatine"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "interorbital-septum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial",
+            "landmark": "coronoid"
+          },
+          {
+            "element": "mandible",
+            "landmark": "articular"
+          },
+          {
+            "element": "mandible",
+            "landmark": "angular"
+          },
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). **Two characters here are read as primitive and one is unique to the tuatara.** The pseudotemporalis has separate superficial and deep parts, which Haas takes as the primitive condition — shared with birds, amphisbaenians and most lizard families, while gekkonids, pygopodids and snakes retain only one. Superficialis from the posterior postorbital and anterolateral parietal to the medial face of the anteroventral basal aponeurosis; profundus a two-layered fleshy muscle lateral and anterior to the epipterygoid, its outer layer with two heads that the dorsal end of the epipterygoid sits between, inserting on the medial coronoid and anterior articular.\n\n**M. pterygoideus atypicus has no counterpart in any squamate.** The typicus is the ordinary lizard muscle, forming the ventrally bulging masticatory cushion, from the ectopterygoid, both surfaces of the pterygoid, the ventrolateral epipterygoid and the pterygoid lamella of the quadrate, inserting by an internal tendon on the ventromedial ridge of the splenial with lateral fibres to the articular and medial ones to the angular. The atypicus arises far anterior to it, from the dorsal palatine and the ventral interorbital septum below the eye, and inserts on the coronoid region. **Only its innervation gives it away** — a branch of the nervus musculi pterygoidei is the sole evidence that this unique muscle derives from the typicus. Haas notes that birds and crocodylians have two superposed pterygoideus portions, turtles apparently only the dorsal one, and squamates only the ventral.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae posterior",
+      "present": "yes",
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "epipterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). From the pterygoid lamella of the quadrate to the medial border of the mandibular fossa, its fibres nearly vertical; the most anterior of them arise from the posterior half of the base of the epipterygoid, so the muscle extends slightly anterior to the mandibular nerve where it meets the deepest part of the externus profundus. **The separation from the externus is incomplete and specimen-dependent** — clearly present but not sharply separated from externus 3a laterally in the London animal, obliquely oriented and crossed anteriorly by the mandibular nerve in the Basel one, a partial confluence Lakjer had already noted. This record holds the muscle Johnston treats as being of different homology from the rest of the adductor group — the axis the folded sheet wraps around — and the tuatara shows that axis only half detached.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. depressor mandibulae",
+      "present": "yes",
+      "innervation": "Facial nerve (VII).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal",
+            "side": "posterior"
+          },
+          {
+            "element": "squamosal",
+            "side": "posterior"
+          },
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "nuchal-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "retroarticular-process"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). From the posterior borders of the parietal and squamosal, the post-temporal arcade and the ligamentum nuchae, bypassing the quadrate to insert on the short retroarticular process. **It is a single muscle, and Haas reads that as primitive**: it includes a nuchal component corresponding to the M. cervico-mandibularis, which is a separate muscle in Squamata. A connecting bundle — Lubosch's Verbindungsbündel, which Haas confirms in his own dissections — runs from the nuchal part of this muscle to the medial surface of the anterior end of the sphincter colli aboralis, and he calls the existence of that bundle almost certainly primitive too. Two facial-nerve muscles still physically joined.",
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. intermandibularis",
+      "present": "yes",
+      "innervation": "Mandibular ramus of the trigeminal nerve; the more posterior transverse fibres by the facial nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          },
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). A thin transverse sheet joining the mandibular rami, well separated from the sphincter colli behind it — Ruge (1897) figured the two as confluent, which Haas takes to be an error, since Versluys, Wettstein and Poglayen-Neuwall all show a clear gap. **The interesting part is that the sheet is split by nerve, not by shape.** Poglayen-Neuwall found only the oralis, which does not reach the symphysis, to be trigeminal, with the confluent posterior fibres facially innervated and interrupted ventromedially by a rhombic tendinous sheet as the sphincter colli is. Byerly (1925) instead reports a dorsal trigeminal intermandibularis superposed on a parallel ventral facial muscle. Haas records both readings without choosing, and says the muscle shows considerable individual variation. This record already holds the mammalian derivatives — mylohyoid, anterior digastric, tensor tympani, tensor veli palatini — and the tuatara shows the sheet at the point where the trigeminal and facial halves are still in contact.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        },
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. levator anguli oris and M. retractor anguli oris",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. levator anguli oris"
+        },
+        {
+          "name": "M. retractor anguli oris"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "jugal",
+            "side": "medial"
+          },
+          {
+            "element": "squamosal",
+            "side": "medial"
+          },
+          {
+            "element": "quadratojugal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "rictal-plate",
+            "side": "medial"
+          },
+          {
+            "element": "rictal-plate",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). **This record's homology note calls the muscle's identification the crux of the lizard–snake problem, and Haas's account is a four-way disagreement about whether it exists at all.** Lakjer (1926) overlooked it in *Sphenodon*. A. Luther, editing Lakjer's own paper, contradicted him in print, reporting both a levator and a retractor anguli oris and blaming a poorly preserved specimen. Poglayen-Neuwall (1953) figured one muscle, from the medial surface of the horizontal ramus of the jugal. Frazzetta likewise one. Haas's two dissections support Luther: two separate muscles, though the levator differed substantially between his Basel and London animals — and in the Basel specimen there are arguably **three**, counting a posterior steeply-fibred slip of the externus superficialis that also ends on the rictal area.\n\nThe levator arises from a limited area on the anteromedial postorbital near its postfrontal suture and inserts mostly on the medial surface of the medial rictal plate; the retractor mainly by tendon from the medial surface of the ventral squamosal and, in the London specimen, from adjacent quadratojugal and jugal — **not from the lower temporal arch proper in either animal**. Their insertions are completely separate.\n\n**The comparative point is what makes the row worth having.** In *Sphenodon* the insertion is the same as in lizards but the origin has not shifted to the upper temporal arch, which Haas reads as the more primitive arrangement. And because crocodylians and birds lack the muscle entirely and have no adductor arising from the lower temporal arch, the tuatara is the only living animal with two temporal arches whose lower arch gives origin to any part of the adductor mandibulae complex.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "levator-anguli-oris",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. sphincter colli and associated facial muscles",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. sphincter colli oralis"
+        },
+        {
+          "name": "M. sphincter colli aboralis"
+        },
+        {
+          "name": "M. intermandibularis caudalis"
+        },
+        {
+          "name": "M. stylohyoideus"
+        },
+        {
+          "name": "M. ceratohyoideus"
+        },
+        {
+          "name": "Connecting bundle to the depressor mandibulae"
+        }
+      ],
+      "innervation": "Facial nerve (VII).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          },
+          {
+            "element": "midventral-raphe"
+          },
+          {
+            "element": "hyoid",
+            "landmark": "cornu-branchiale"
+          },
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei"
+          }
+        ]
+      },
+      "attachmentNote": "Sphenodon punctatus, Haas (1973), from his own dissections of two specimens — one from the Basel Museum and one from the British Museum (Natural History). Haas lists six facial-nerve muscles for the tuatara: depressor mandibulae, sphincter colli, intermandibularis caudalis, stylohyoideus, ceratohyoideus, and the connecting bundle between the first two. The sphincter colli is divided into oral and aboral portions after Lubosch, the aboral lying posteroventral to the depressor mandibulae.\n\n**Two of these are argued over in ways worth keeping.** Haas holds that Poglayen-Neuwall's M. intermandibularis caudalis cannot be Lubosch's sphincter colli oralis, because the latter crosses the lateral surface of the mandible while the former is the paired posterior continuation of a strictly intermandibular muscle — and suggests either individual variation or that most workers simply missed Lubosch's thin anterior oralis. And the **M. stylohyoideus is found elsewhere among reptiles only in the Gekkota**: it arises at the dorsal end of the hyoid arch and inserts either into the sphincter colli (Ruge) or on the base of cornu branchiale I (Byerly). Byerly considers the ceratohyoideus the anterior belly of a digastric.",
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    }
+  ]
+}

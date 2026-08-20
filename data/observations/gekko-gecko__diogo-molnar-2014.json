@@ -1,0 +1,354 @@
+{
+  "species": "gekko-gecko",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          },
+          {
+            "element": "metatarsals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Digit by digit: the distal end of metatarsal I for digit I, of the second phalanx for III and IV, and of the first phalanx for II and V — where Eublepharis inserts on the terminal phalanx throughout.",
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Fibularis longus + brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Fibularis longus"
+        },
+        {
+          "name": "Fibularis brevis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interosseus cruris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "leg",
+      "record": "popliteus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "flexor-tendons"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. The insertion tendon additionally contributes to the lateral digital tendon, which Eublepharis's does not.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis externus + internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor tibialis externus"
+        },
+        {
+          "name": "Flexor tibialis internus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilioischiadic-ligament"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliotibialis (+ femorotibialis, + 'ambiens')",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Iliotibialis"
+        },
+        {
+          "name": "Femorotibialis",
+          "membership": "disputed",
+          "muscle": "femorotibialis"
+        },
+        {
+          "name": "'Ambiens'",
+          "membership": "disputed",
+          "muscle": "ambiens"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "femur"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ischiotrochantericus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "distal",
+            "landmark": "fourth-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Inserts on the **distal** edge of the trochanter, against the proximal edge in Eublepharis.",
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "puboischiadic-ligament"
+          },
+          {
+            "element": "ilioischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "species": "leiopelma-hochstetteri",
+  "source": "sigurdsen-etal-2012",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Anconeus",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput mediale"
+        },
+        {
+          "name": "Caput laterale"
+        },
+        {
+          "name": "Caput scapulare"
+        }
+      ],
+      "divisionNote": "Leiopelma hochstetteri. THREE heads, where salamanders have a fourth point of origin at the coracoid (Francis 1934). A head lost, and one of the few places in this dataset where a division count differs between two amphibian orders by a stated absence rather than by a difference in how authors carve the muscle up.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus"
+          },
+          {
+            "element": "scapula"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri. Origins on the humerus (caput mediale and laterale) and the scapula (caput scapulare). No insertion row: Sigurdsen et al. say the muscle extends the elbow and is well defined in both anurans and salamanders but do not state where it ends, and the anuran zeugopodium is a fused radio-ulna, so inheriting the consensus olecranon would assert a landmark on a bone this taxon does not have as such.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis longus + brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracobrachialis longus"
+        },
+        {
+          "name": "Coracobrachialis brevis"
+        }
+      ],
+      "divisionNote": "Leiopelma hochstetteri. Leiopelma clearly has BOTH coracobrachialis muscles, as described for Rana by Gaupp (1904), against Ritland's (1955b) account of Ascaphus. Sigurdsen et al. resolve the disagreement as nomenclatural rather than anatomical: Ritland's 'subcoracoscapularis' corresponds to the longus slip of the coracobrachialis. That is why this record's division and the subcoracoscapularis row have to be read together.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri. From the coracoid to the medial face of the humerus. The coracobrachialis muscles of salamanders resemble those of frogs, so this is one of the conservative parts of the anuran forelimb.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoid (procoracohumeralis)",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Pars episternalis"
+        },
+        {
+          "name": "Pars clavicularis"
+        },
+        {
+          "name": "Pars scapularis"
+        }
+      ],
+      "divisionNote": "Leiopelma hochstetteri. Gaupp (1904) divided the anuran deltoid into three parts with separate origins and insertions; in Leiopelma, as in Ascaphus, it is a more unified mass with two or three heads of origin and two regions of insertion. Scored `heads` rather than `divided` for that reason, with Gaupp's names kept because Sigurdsen et al. judge his description still largely accurate even where the fibres do not follow it. The salamander's equivalent is one simple muscle from the procoracoid cartilage — this is the same muscle become complex and often massive.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "epicoracoid",
+            "side": "anterior"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "clavicle",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "humerus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri. Pars episternalis from the anterior epicoracoid onto the DISTAL end of the deltopectoral crest, closely associated with the underlying coracoradialis. Pars scapularis, the most robust part, from the anterior edges of the scapula and clavicle, its dorsalmost fibres from the anterior process of the scapula — a short anteriorly pointed process between the dorsal and ventral expansions, most pronounced in ranids but present here. It inserts on the deltopectoral crest, with fibres continuing more distally onto the shaft, which is the second insertion row. In Rana and Lithobates part of the deltoid also arises from the INTERIOR surface of the scapula, on a vertical ridge behind the scapular cleft that Gaupp described; that ridge is lacking or indistinct in primitive taxa, so it is not scored here.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsalis scapulae",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri. The anuran novelty is a shared tendon: the dorsalis scapulae and the latissimus dorsi CONVERGE and insert together on the lateral face of the deltopectoral crest by a common tendon, which they do not do in salamanders. The dorsal musculature between trunk and forelimb is otherwise largely similar in the two groups. Sigurdsen et al. also fix the nomenclature this record depends on: the anuran and caudate 'dorsalis scapulae' is the amniote deltoideus scapularis, while the anuran 'deltoid' is the caudate procoracohumeralis and the amniote deltoideus clavicularis.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri. Inserts on the lateral face of the deltopectoral crest by a tendon shared with the dorsalis scapulae — see that row. Scoring both on the same landmark is the point rather than a duplication: in salamanders they insert separately.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri. The deltopectoral crest — crista ventralis — carries the insertion of both the deltoideus and the pectoralis, and in most anurans it runs further distally than in salamanders or any other tetrapod. Leiopelma's is relatively SHORT, tapering to disappear near the midpoint of the shaft, the plesiomorphic anuran condition also found in extinct subfossil species of the genus; strong jumpers such as Lithobates extend it much further. The paper's headline reading is that the deltoid grew in importance relative to the pectoralis, and that the crest's orientation follows from loading during LANDING rather than take-off.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subscapularis",
+      "present": "no",
+      "note": "Leiopelma hochstetteri. Sigurdsen et al. state that the subscapularis of salamanders, which inserts on the humeral dorsal process, HAS NO CLEAR HOMOLOGUE IN FROGS, and they account for the one report of it in an anuran — Ritland's (1955b) subcoracoscapularis in Ascaphus — as the longus slip of the coracobrachialis under another name. Scored `no` for this species against Abdala & Diogo's `yes` for Rhinella arenarum, which makes Anura compute as `variable`. That is the disagreement, not a resolution of it: two sources, two frogs, and a muscle whose anuran presence turns on whether a coracobrachialis slip is being counted twice.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    }
+  ]
+}

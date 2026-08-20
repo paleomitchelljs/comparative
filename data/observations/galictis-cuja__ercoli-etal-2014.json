@@ -1,0 +1,2153 @@
+{
+  "species": "galictis-cuja",
+  "source": "ercoli-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Biceps brachii (long and short heads)",
+      "present": "yes",
+      "action": "Supinates the forearm and flexes the elbow.",
+      "innervation": "Musculocutaneous nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior",
+            "landmark": "coracoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal",
+            "landmark": "radial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "The short head arises from the coracoid process — the fused remnant of the coracoid — rather than from a coracoid bone.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput longum"
+        },
+        {
+          "name": "Caput breve"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "elbow",
+          "motion": "flexion"
+        },
+        {
+          "joint": "radioulnar",
+          "motion": "supination"
+        }
+      ],
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "action": "Flexes the elbow.",
+      "innervation": "Musculocutaneous nerve, with a variable radial contribution.",
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "elbow",
+          "motion": "flexion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "medial"
+          },
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From a wide area of the lateral surface and craniodistal humeral diaphysis onto the medial ulna and the radius.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracobrachialis",
+      "present": "yes",
+      "action": "Flexes and adducts the arm.",
+      "innervation": "Musculocutaneous nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "anterior",
+            "landmark": "coracoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Origin transfers to the coracoid process as the coracoid bone is lost.",
+      "nerves": [
+        {
+          "nerve": "musculocutaneous"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "flexion"
+        }
+      ],
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps brachii (long, lateral, medial heads)",
+      "present": "yes",
+      "action": "Extends the forearm; the long head also extends and adducts the arm.",
+      "innervation": "Radial nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Triceps brachii — long head",
+            "abbr": "Tlong",
+            "mass_g": {
+              "mean": 255.4,
+              "sd": 23.6
+            },
+            "fascicleLength_mm": {
+              "mean": 6.0,
+              "sd": 1.2
+            },
+            "pcsa_cm2": {
+              "mean": 46.8,
+              "sd": 9.2
+            }
+          },
+          {
+            "name": "Triceps brachii — lateral head",
+            "abbr": "Tlat",
+            "mass_g": {
+              "mean": 98.9,
+              "sd": 9.9
+            },
+            "fascicleLength_mm": {
+              "mean": 10.4,
+              "sd": 1.9
+            },
+            "pcsa_cm2": {
+              "mean": 10.5,
+              "sd": 2.8
+            }
+          },
+          {
+            "name": "Triceps brachii — medial head",
+            "abbr": "Tmed",
+            "mass_g": {
+              "mean": 16.9,
+              "sd": 4.0
+            },
+            "fascicleLength_mm": {
+              "mean": 13.1,
+              "sd": 1.8
+            },
+            "pcsa_cm2": {
+              "mean": 1.4,
+              "sd": 0.4
+            }
+          },
+          {
+            "name": "Triceps brachii — accessory head",
+            "abbr": "Tacc",
+            "mass_g": {
+              "mean": 11.8,
+              "sd": 6.3
+            },
+            "fascicleLength_mm": {
+              "mean": 9.1,
+              "sd": 3.8
+            },
+            "pcsa_cm2": {
+              "mean": 1.5,
+              "sd": 0.9
+            }
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput longum"
+        },
+        {
+          "name": "Caput laterale"
+        },
+        {
+          "name": "Caput mediale"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "elbow",
+          "motion": "extension"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "extension"
+        }
+      ],
+      "attachmentNote": "Galictis cuja. Six well-separated bellies near the origin in this animal — caput longum, laterale, angulare, accessorium, mediale accessorium and mediale, the last itself three-bellied.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "architecture",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "hudson-etal-2011a"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "action": "Abducts and extends the thumb at the carpometacarpal joint.",
+      "innervation": "Posterior interosseous nerve.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "carpometacarpal",
+          "motion": "abduction"
+        },
+        {
+          "joint": "carpometacarpal",
+          "motion": "extension"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "radius",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Abductor digiti I longus: from the lateral surface of the ulnar AND radial diaphyses, its tendons held by a dedicated retinaculum in a groove at the craniomedial distal radius, inserting by two tendons at the first digit.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Anconeus",
+      "present": "yes",
+      "action": "Assists elbow extension; abducts the ulna in pronation.",
+      "innervation": "Radial nerve.",
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "elbow",
+          "motion": "extension"
+        },
+        {
+          "joint": "radioulnar",
+          "motion": "abduction"
+        },
+        {
+          "joint": "radioulnar",
+          "motion": "pronation"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the caudal area of the last third of the humerus onto the articular capsule and the lateral surface of the olecranon.",
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "action": "Flexes the elbow, strongest in mid-pronation.",
+      "innervation": "Radial nerve.",
+      "note": "Anomalous among the radial-innervated group in being an elbow flexor rather than an extensor.",
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "elbow",
+          "motion": "flexion"
+        },
+        {
+          "joint": "radioulnar",
+          "motion": "pronation"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Supinator longus. From the humeral diaphysis immediately caudodistal to the brachialis origin, running up to the cranial surface of the ectepicondylar crest; origin length varied between specimens, in some reaching the proximal diaphysis near the humeral neck. Inserts on the craniomedial distal radius.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus (anconeus epitrochlearis)",
+      "present": "yes",
+      "note": "Galictis cuja: present, and scored from Ercoli et al.'s description. Elsewhere in Mammalia it is inconstant — in humans replaced by Osborne's ligament over the cubital tunnel — but that is a mammal-wide statement and had been sitting in this row as `present: \"variable\"` alongside scored attachments. Not the muscle a rat or cat dissection guide calls the epitrochlearis: Campbell's rat guide describes that one as a thin medial sheet of the upper arm that EXTENDS the forearm — a latissimus-associated muscle reaching the olecranon — whereas the epitrochleoanconeus runs from the medial epicondyle to the olecranon over the ulnar nerve. The names differ by two letters and the muscles are not the same; no source held here establishes what the lab epitrochlearis is homologous to, so it has no record.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "medial",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the humerus distal to the caudal opening of the entepicondylar foramen, onto the medial and caudal surfaces of the olecranon, sharing fibres distally with the ulnar head of flexor carpi ulnaris. The entepicondylar foramen is a carnivoran feature and locates this origin precisely.",
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "campbell-2007"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor carpi radialis longus + brevis",
+      "present": "yes",
+      "action": "Extends and abducts the hand at the wrist.",
+      "innervation": "Radial nerve.",
+      "note": "The distal shift of insertion from carpus to metacarpus is a mammalian derived condition.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "supracondylar-ridge"
+          },
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Distal migration onto the metacarpals, correlated with finer digital control — and convergent with the anuran condition.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor carpi radialis longus"
+        },
+        {
+          "name": "Extensor carpi radialis brevis"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "wrist",
+          "motion": "abduction"
+        },
+        {
+          "joint": "wrist",
+          "motion": "extension"
+        }
+      ],
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi ulnaris",
+      "present": "yes",
+      "action": "Extends and adducts the hand at the wrist.",
+      "innervation": "Radial nerve, posterior interosseous branch.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "wrist",
+          "motion": "adduction"
+        },
+        {
+          "joint": "wrist",
+          "motion": "extension"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Extensor carpi ulnaris from the laterodistal humeral ectepicondyle and the articular capsule, onto the lateral base of metacarpal V and the craniolateral base of the accessory carpal.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis",
+      "present": "yes",
+      "action": "Extends the digits at the metacarpophalangeal and interphalangeal joints.",
+      "innervation": "Posterior interosseous nerve.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "extension"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Extensor digitorum communis, from the distal ectepicondylar crest and tendinously near the humeral ectepicondyle, dividing into four principal tendons to the lateral digits. In three of six cases the belly was partly divided in its middle region.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "action": "Flexes and abducts the hand.",
+      "innervation": "Median nerve.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "wrist",
+          "motion": "abduction"
+        },
+        {
+          "joint": "wrist",
+          "motion": "flexion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the middle region of the medial end of the humeral entepicondyle, held by its own retinaculum at the radial carpal, inserting by two loose tendons onto the proximal palmar regions of metacarpals II and III.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "action": "Flexes and adducts the hand.",
+      "innervation": "Ulnar nerve.",
+      "nerves": [
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "wrist",
+          "motion": "adduction"
+        },
+        {
+          "joint": "wrist",
+          "motion": "flexion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "posterior",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          },
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Two heads: caput ulnare from the caudal and medial olecranon, caput humerale from the distal humeral entepicondyle. The ulnar head inserts on the lateral surface of the accessory carpal (pisiform) and the wrist fascia, its ligament continuing to the base of metacarpal V.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum superficialis + flexor digitorum profundus",
+      "present": "yes",
+      "action": "Flexes the digits.",
+      "innervation": "Median nerve; the ulnar half of the profundus by the ulnar nerve.",
+      "note": "The mammalian split into superficial and deep layers with staggered phalangeal insertions is a derived elaboration of a single ancestral flexor plate.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor digitorum superficialis"
+        },
+        {
+          "name": "Flexor digitorum profundus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "median"
+        },
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "flexion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "radius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Flexor digitorum profundus, five heads: three humeral (caput humerale laterale, mediale and profundus), one ulnar and one with radial and ulnar origins. The superficialis is not independent — it arises from the surface of the profundus itself and sends three thin tendons to digits II-IV, which is why this record's Theria occurrence lists both.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Palmaris longus",
+      "present": "yes",
+      "note": "Galictis cuja: Ercoli et al. describe it present, with a full origin and insertion. The variation they report is in the TENDONS, not the presence — well-defined tendons for digits II/III to IV/V in most specimens, and in one a distal belly differentiating to give a tendon for digit I. Absent in roughly 15% of humans unilaterally or bilaterally, and in many other mammals, but that is a statement about Mammalia and not about this animal; it had been standing in this row as `present: \"variable\"` while the row also carried scored attachments, which cannot both be true.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the caudomedial margin of the distal humeral entepicondyle onto the palmar fascia, connected indirectly to the radial sesamoid and the accessory carpal. Its insertion is aponeurotic throughout, so it leaves no distal correlate.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "action": "Pronates the forearm; the prime mover for unresisted pronation.",
+      "innervation": "Anterior interosseous nerve.",
+      "nerves": [
+        {
+          "nerve": "median-anterior-interosseous"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "radioulnar",
+          "motion": "pronation"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. The deepest muscle of the distal medial forearm: from the medial surface of the distal ulna onto the craniomedial and medial radius, its insertion continuous distally with the palmar radiocarpal and ulnocarpal ligaments.",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "action": "Pronates the forearm.",
+      "innervation": "Median nerve.",
+      "note": "The median nerve passes between the two heads — a common entrapment site.",
+      "nerves": [
+        {
+          "nerve": "median"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "radioulnar",
+          "motion": "pronation"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the medioproximal and cranial region of the humeral entepicondyle in two bellies, onto the cranial surface of the mediodistal radius.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "yes",
+      "action": "Supinates the forearm.",
+      "innervation": "Deep branch of the radial nerve.",
+      "nerves": [
+        {
+          "nerve": "radial-deep"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "radioulnar",
+          "motion": "supination"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Supinator brevis, from the articular capsule and lateral ligaments of the elbow immediately lateral to the humeral condyle, onto the cranial surface of the proximal two-thirds of the radius. Its origin is capsule and ligament rather than bone.",
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "innervation": "Deep branch of the ulnar nerve.",
+      "nerves": [
+        {
+          "nerve": "ulnar-deep"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-manus"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Abductor digiti V, from the distal surface of the accessory carpal in two bellies: the medial onto the lateral sesamoid of digit V, the lateral onto the digit itself.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "innervation": "Recurrent branch of the median nerve.",
+      "nerves": [
+        {
+          "nerve": "median-recurrent"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "sesamoids-manus",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "medial"
+          },
+          {
+            "element": "metacarpals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Abductor digiti I brevis, from the distal margin of the radial sesamoid onto the medial surface of the proximal end of the proximal phalanx of digit I, sometimes with an extra fleshy insertion on the ventromedial metacarpal I. A muscle whose origin is a sesamoid rather than a bone of the carpus.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interossei (palmar and dorsal)",
+      "present": "yes",
+      "note": "The mammalian interossei are generally derived from the flexores breves profundi together with the intermetacarpales.",
+      "action": "Abduct and adduct the digits; flex the metacarpophalangeal joints.",
+      "innervation": "Ulnar nerve, deep branch.",
+      "nerves": [
+        {
+          "nerve": "ulnar-deep"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "abduction"
+        },
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "adduction"
+        },
+        {
+          "joint": "metacarpophalangeal",
+          "motion": "flexion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-manus"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Ten fleshy bellies, a medial and a lateral for each digit, arising at the proximal area of the corresponding metacarpal. The pair for digit III and the lateral belly for digit II arise from the plantar process of carpal III; the digit I bellies from metacarpal I, carpal I and marginally the radial sesamoid.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricals",
+      "present": "yes",
+      "innervation": "Median nerve (lumbricals 1–2), ulnar nerve (lumbricals 3–4).",
+      "nerves": [
+        {
+          "nerve": "median"
+        },
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Four bellies for digits II-V, arising from the tendons of flexor digitorum profundus at the level of the proximal metacarpals and inserting by thin tendons onto the medial base of the proximal, sometimes the middle, phalanges. Origin is tendon, not bone.",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus, pars acromialis and pars scapularis",
+      "present": "yes",
+      "action": "Abducts and flexes the humerus.",
+      "innervation": "Axillary nerve.",
+      "note": "Galictis cuja. Ercoli et al. describe two bellies, pars acromialis and pars scapularis — NO pars clavicularis, and the word 'clavicle' does not occur anywhere in their 35 pages. This row previously read 'Acromion and lateral third of the clavicle' onto 'Deltoid tuberosity' with an axillary nerve of C5-C6, which is human textbook anatomy, and it was attributed to Rattus norvegicus because Campbell's rat dissection guide was cited alongside — a guide that states no attachment for any muscle. The clavicle came from this record's own NAME. Romer (1924) derived the mammalian teres minor and deltoideus clavicularis from the procoracohumeralis, against Mivart's (1869) suggestion that the subclavius came from this field; that is a homology argument and belongs to the record, not to an animal.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "distal",
+            "landmark": "acromion"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "scapular-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Two bellies, neither clavicular. Pars acromialis arises by fleshy and tendinous fibres from the ACROMION and usually the distalmost base of the metacromion, inserting along the deltoid crest — the deltopectoral crest under another name. Pars scapularis arises from the fascia over the infraspinatus and the proximal region of the SCAPULAR SPINE, plus fleshy and tendinous fibres from the metacromion, and inserts by a broad flat tendinous fascia on the middle of the same crest, just lateral to the acromial belly. The metacromion is not in skeleton.json, so it is carried in prose; adding it would be worthwhile, since it is a carnivoran process that both bellies use. The muscle is renamed at every step for the bone that happens to carry its origin, though the muscle itself is continuous across Tetrapoda — which is exactly how a clavicle got written into this row.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Pars acromialis"
+        },
+        {
+          "name": "Pars clavicularis"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "abduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "flexion"
+        }
+      ],
+      "synonyms": [
+        "acromiodeltoid (rat/carnivore dissection usage; Campbell 2007)",
+        "cleidobrachialis (rat/carnivore dissection usage; Campbell 2007)",
+        "clavodeltoid",
+        "clavobrachialis"
+      ],
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "synonyms"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus, pars scapularis (spinous part)",
+      "present": "yes",
+      "innervation": "Axillary nerve.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "synonyms": [
+        "spinodeltoid (rat/carnivore dissection usage; Campbell 2007)"
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Deltoideus pars scapularis, from the fascia over infraspinatus, the proximal scapular spine and the metacromion, by a broad flat tendinous fascia onto the middle of the deltoid crest just lateral to the acromial belly.",
+      "divisionNote": "No division recorded. Galictis' name — 'Deltoideus, pars scapularis (spinous part)' — is one pars named with a gloss on where it sits, not a statement that the muscle is divided in this animal. Reading the parenthesis as a second part would manufacture a differentiation event out of a synonym.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "synonyms",
+        "attachments",
+        "attachmentNote",
+        "divisionNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "campbell-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "action": "Extends, adducts and medially rotates the humerus.",
+      "innervation": "Thoracodorsal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Latissimus dorsi",
+            "abbr": "LAT",
+            "mass_g": {
+              "mean": 272.8,
+              "sd": 68.9
+            },
+            "fascicleLength_mm": {
+              "mean": 32.5,
+              "sd": 9.6
+            },
+            "pcsa_cm2": {
+              "mean": 10.8,
+              "sd": 7.5
+            }
+          }
+        ]
+      },
+      "nerves": [
+        {
+          "nerve": "thoracodorsal"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "extension"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "rotation-medial"
+        }
+      ],
+      "attachmentNote": "Galictis cuja.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "architecture",
+        "nerves",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "hudson-etal-2011a"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae (+ omotransversarius)",
+      "present": "yes",
+      "innervation": "Cervical ventral rami and the dorsal scapular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator scapulae"
+        },
+        {
+          "name": "Omotransversarius",
+          "membership": "disputed"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        },
+        {
+          "nerve": "dorsal-scapular"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Omotransversarius, from the caudomedial aspect of the ventral surface of the atlas onto the caudal region of the metacromion and onto the deltoideus pars scapularis. Scored on the acromion: the metacromion is a carnivoran process of it and has no element of its own here.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rhomboideus (capitis, cervicis, thoracis)",
+      "present": "yes",
+      "innervation": "Dorsal scapular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Rhomboideus capitis"
+        },
+        {
+          "name": "Rhomboideus cervicis"
+        },
+        {
+          "name": "Rhomboideus thoracis"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "dorsal-scapular"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "nuchal-ligament"
+          },
+          {
+            "element": "cervical-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Four bellies — cervicis, thoracis, capitis and profundus. Cervicis, the largest, runs from the raphe between T1 and the atlas or axis onto the craniomedial dorsal edge of the scapula including the dorsal angle. Scored at the level the rows can carry; the four bellies are in `parts`.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus anterior (serratus ventralis)",
+      "present": "yes",
+      "action": "Protracts and upwardly rotates the scapula; holds the medial border against the thorax.",
+      "innervation": "Long thoracic nerve.",
+      "nerves": [
+        {
+          "nerve": "long-thoracic"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "girdle-axial",
+          "motion": "protraction"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Serratus ventralis cervicis from the dorsal tubercles of the transverse processes of C3-C7 and the first two or three ribs; serratus ventralis thoracis from the ribs of T2-T3 to T6-T7. All fascicles converge onto the medial surface of the dorsal edge and caudal angle of the scapula, sharing fibres with the rhomboidei.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Subscapularis",
+      "present": "yes",
+      "action": "Medially rotates the humerus; anterior stabiliser of the shoulder (rotator cuff).",
+      "innervation": "Upper and lower subscapular nerves.",
+      "note": "The coracoid contribution is lost with the coracoid itself; only the scapular head persists in therians.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "medial",
+            "landmark": "subscapular-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "lesser-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "The coracoid head is gone with the coracoid itself; only the scapular head persists, which is why the mammalian muscle is 'subscapularis' rather than 'subcoraco-scapularis'.",
+      "nerves": [
+        {
+          "nerve": "subscapular"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "rotation-medial"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "stabilisation"
+        }
+      ],
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supraspinatus and infraspinatus",
+      "present": "yes",
+      "action": "Supraspinatus abducts and stabilises; infraspinatus laterally rotates.",
+      "innervation": "Suprascapular nerve.",
+      "note": "The migration of this muscle from the coracoid to the lateral scapula, and its division by the newly evolved scapular spine, is one of the defining events of the synapsid pectoral transformation.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "supraspinous-fossa"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "infraspinous-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus.",
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Supraspinatus",
+            "abbr": "SS",
+            "mass_g": {
+              "mean": 206.4,
+              "sd": 28.4
+            },
+            "fascicleLength_mm": {
+              "mean": 7.9,
+              "sd": 1.7
+            },
+            "pcsa_cm2": {
+              "mean": 28.4,
+              "sd": 5.3
+            }
+          },
+          {
+            "name": "Infraspinatus",
+            "abbr": "IS",
+            "mass_g": {
+              "mean": 148.3,
+              "sd": 18.5
+            },
+            "fascicleLength_mm": {
+              "mean": 5.1,
+              "sd": 1.4
+            },
+            "pcsa_cm2": {
+              "mean": 33.5,
+              "sd": 10.5
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supraspinatus"
+        },
+        {
+          "name": "Infraspinatus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "suprascapular"
+        }
+      ],
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "architecture",
+        "division",
+        "parts",
+        "nerves"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "fahn-lai-etal-2020",
+        "hudson-etal-2011a"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres major",
+      "present": "yes",
+      "action": "Adducts, extends and medially rotates the humerus.",
+      "innervation": "Lower subscapular nerve.",
+      "nerves": [
+        {
+          "nerve": "subscapular"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "extension"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "rotation-medial"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the aponeurosis covering subscapularis and immediately ventral to the caudal angle of the scapula, by a wide thin tendinous fascia onto the proximal medial humeral diaphysis.",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres minor",
+      "present": "yes",
+      "action": "Laterally rotates the humerus.",
+      "innervation": "Axillary nerve.",
+      "note": "Romer (1924) derived teres minor from the procoracohumeralis field rather than from scapulohumeralis anterior; the two hypotheses have not been decisively separated.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "rotation-lateral"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Teres minor, from the caudal margin of the scapula and sometimes by fascia from infraspinatus, by a thin tendon onto the lateral aspect of the base of the greater tuberosity just distal to the infraspinatus insertion. Absent on both sides of one of the six specimens, which is the kind of intraspecific absence `variable` exists for.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "nerves",
+        "actions",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Trapezius (+ sternocleidomastoideus)",
+      "present": "yes",
+      "action": "Elevates, retracts and rotates the scapula.",
+      "innervation": "Accessory nerve (CN XI), with a proprioceptive contribution from the cervical ventral rami.",
+      "note": "The mammalian trapezius and sternocleidomastoid are subdivisions of a single cucullaris field. Their retention of CN XI innervation, despite lying entirely within the neck and trunk, is the classic evidence that innervation tracks developmental origin rather than topographic position.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Trapezius"
+        },
+        {
+          "name": "Sternocleidomastoideus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "accessory"
+        },
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "girdle-axial",
+          "motion": "elevation"
+        },
+        {
+          "joint": "girdle-axial",
+          "motion": "retraction"
+        }
+      ],
+      "synonyms": [
+        "clavotrapezius (rat/carnivore dissection usage; Campbell 2007)",
+        "acromiotrapezius (rat/carnivore dissection usage; Campbell 2007)",
+        "spinotrapezius (rat/carnivore dissection usage; Campbell 2007)"
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "nuchal-ligament"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Trapezius, both bellies. Pars cervicalis from the cervical raphe between C3-4 and T1, pars thoracica from the thoracic raphe between T2 and T8, inserting on the distal two-thirds of the cranial margin of the scapular spine and often reaching the metacromion. Every origin is raphe or fascia, not bone — which is why a muscle this large leaves so little for a fossil to record.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "synonyms",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sefton-etal-2016",
+        "campbell-2007",
+        "ercoli-etal-2014"
+      ]
+    }
+  ]
+}

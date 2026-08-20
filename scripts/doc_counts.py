@@ -62,7 +62,12 @@ def gather():
             m["_regionLabel"] = doc["region"]
             muscles.append(m)
 
-    parked = load("data/observations.json").get("observations") or []
+    parked = []
+    for f in sorted((ROOT / "data/observations").glob("*.json")):
+        d = json.loads(f.read_text())
+        for row in d.get("observations") or []:
+            if not row.get("record"):
+                parked.append({**row, "source": d["source"], "species": d["species"]})
     remine = load("data/remine-status.json")
     taxa = load("data/taxa.json")["taxa"]
     elements = load("data/skeleton.json")["elements"]

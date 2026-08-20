@@ -1,0 +1,1854 @@
+{
+  "species": "phascogale-calura",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Biceps brachii",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Coraco-radial (superficial)"
+        },
+        {
+          "name": "Gleno-ulnar (deep)"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "glenoid"
+          },
+          {
+            "element": "scapula",
+            "landmark": "coracoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "radial-tuberosity"
+          },
+          {
+            "element": "ulna",
+            "landmark": "coronoid-process-ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The same two insertions as the thylacine's, but **the bellies are distinct along their whole length** and only the tendons of origin partly fuse. Tear them apart upwards and the division shows: the gleno-ulnar part comes from the upper glenoid margin alone, while the coraco-radial part has both a coracoid and a glenoid origin — which makes that part alone, in this animal, the equivalent of the entire human biceps.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Brachialis anticus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "coronoid-process-ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. As in the thylacine, and differing in taking fibres from the outer aspect of the humeral shaft as well as the posterior, and in a closer connection with the external intermuscular septum. The spiral course round the bone is the same.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Coraco-brachialis brevis and medius",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coraco-brachialis brevis"
+        },
+        {
+          "name": "Coraco-brachialis medius"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "coracoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The short muscle as in the thylacine, plus a **coraco-brachialis medius** — a very slender fasciculus inserted into the middle of the inner aspect of the humeral shaft.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Triceps brachii",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Long (scapular) head"
+        },
+        {
+          "name": "External head"
+        },
+        {
+          "name": "Internal head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Three separable heads, differing from the thylacine's in three ways Cunningham lists: the long head comes off no more than a third of the scapular border and all from one tendon; the internal head is weak and does not reach above the teres major insertion, and **is not pierced by the musculo-spiral nerve**; and the three heads blend higher up the limb. Cunningham's summary is that this triceps closely resembles a human one.",
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 24,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura, and **the row that decides the *Dasyurus* question**. From the base of the first metatarsal to the outer side of the base of the proximal phalanx, lying in close contact with the flexor brevis hallucis but easily separable from it. Because the two are separable in this animal, whose hallux is slightly better developed, Cunningham reads the single hallucal slip in *Dasyurus viverrinus* as the two fused rather than as the abductor alone, which is what Ruge had called it.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductors of the little toe",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abductor ossis metatarsi minimi digiti"
+        },
+        {
+          "name": "Abductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Two, not three: the abductor ossis metatarsi minimi digiti with exactly the connections it has in the thylacine and *Dasyurus*, and **a single abductor minimi digiti** where those two animals have it split.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate layer and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves of the four outer toes"
+        },
+        {
+          "name": "Flexor brevis hallucis"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The four outer toes each have a double-headed flexor brevis arranged as in *Dasyurus*. **The hallux also has one, and here it is quite distinct from the abductor** — the observation on which Cunningham's reading of the fused hallucal slip in *Dasyurus* rests — though only its tibial head is present. Four dorsal interossei, arranged as in *Dasyurus*.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (four adductors)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **This animal has pes rows although it has no hindlimb rows** — the shot that destroyed its pelvis and thigh left the foot fit to dissect, and Cunningham describes it in full. Its foot closely resembles *Dasyurus viverrinus*'s outwardly, with a better-developed hallux that still has neither nail nor claw. The adductors of index, annularis and minimus share one tendinous origin from the base of the metatarsus in the midline, expanding into a thin fleshy sheet that lies on all the other intrinsic muscles and divides into three diverging slips near the roots of the toes; the adductor hallucis has an independent origin just inside their common tendon. **All four lie on one plane**, where in the thylacine and *Dasyurus* the adductors of index and minimus have pressed inwards and thrust the adductor annularis up above them.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Anconeus externus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Almost identical to the cuscus's but less marked, and it does not extend so far down the ulnar shaft.",
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Anconeus internus (epitrochleo-anconeus)",
+      "innervation": "Ulnar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "medial",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Present, with the usual attachments — the back of the medial epicondyle to the inner side of the tip of the olecranon — and supplied by the ulnar nerve, which passes under cover of it to enter the forearm. Its lower border lies against a fibrous cord bridging the hollow between the epicondyle and the olecranon, and that cord gives origin to the flexor carpi ulnaris. **Three marsupials with this muscle present is worth setting against the human row on this record, which is scored absent** — in a human the cubital tunnel is roofed by Osborne's ligament instead. Cunningham reports it generally present through Marsupialia — Galton figures it in the wombat, Gruber in *Dasyurus viverrinus*, Cuvier & Laurillard in the giant kangaroo, Macalister and Young in the koala, Macalister in the Tasmanian devil.",
+      "nerves": [
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor carpi ulnaris",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Slip to the unciform (distal carpal)"
+        },
+        {
+          "name": "Slip to the fifth metacarpal"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "metacarpals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Split into two factors as in the male thylacine, inserting into the unciform bone and the ulnar face of the base of the fifth metacarpal. This is the only muscle of the extensor forearm in which the phascogale is more divided than the cuscus.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor communis digitorum and extensor digitorum secundus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor communis digitorum"
+        },
+        {
+          "name": "Extensor digitorum secundus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The common extensor gives **four tendons**, communicating freely on the dorsum of the hand and going one to each of the four ulnar digits — the simpler arrangement, against the thylacine's three tendons splitting into six slips. Cunningham notes Young found a tendon to each of the five digits in the koala and calls that exceptional, the insertion being confined to the four inner digits in most marsupials. The extensor digitorum secundus is as in the thylacine, to the annular and little digits; Macalister has it reaching the medius as well in the Tasmanian devil and the two kangaroos.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor ossis metacarpi pollicis",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Slip to the trapezium (distal carpal)"
+        },
+        {
+          "name": "Slip to the first metacarpal"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius",
+            "side": "posterior"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Very like the cuscus's but with a less extensive origin. **Cunningham's identification is the one this record already carries**: he says plainly that the muscle in marsupials is a compound of the human extensor ossis metacarpi pollicis and extensor primi internodii pollicis, which is exactly the pair scored as parts on the human row here.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Extensor secundi internodii pollicis",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. One thin band-like muscle from the radial side of the olecranon and the upper third of the ulna's posterior border — the phascogale's ulnar attachment is the more extensive — running down under the ulnar extensors and the extensor digitorum secundus to a single tendon that **splits into three on the dorsum of the hand, for the pollex, index and medius**. This record's human row is 'extensor pollicis longus and extensor indicis'; Cunningham's muscle reaches a third digit as well.",
+      "region": "forearm",
+      "record": "extensor-digitorum-profundus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor carpi radialis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Well marked in all three, arising from the medial epicondyle in common with the great flexor mass of the digits. **Its insertion is the variable part**, and Cunningham lists the marsupial range: the second metacarpal in the wombat, phalanger, opossum and bandicoot, the pollical metacarpal in Bennett's kangaroo, the middle metacarpal in the koala. Here it stops on the trapezium alone, the most proximal of the three insertions.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor carpi ulnaris",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Humeral head"
+        },
+        {
+          "name": "Olecranon head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The same in all three: a broad thin band arising by two pointed processes, one from the medial epicondyle and one from the olecranon, and taking fibres between them from **a strong fibrous arch bridging the gap between those two bony points** — the arch under which the ulnar nerve enters the forearm. Inserted into the pisiform in every case. As in the thylacine, the anconeus internus lies against the fibrous arch without uniting with it.",
+      "nerves": [
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor sublimis, profundus and longus pollicis (amalgamated)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Condylar portion (flexor sublimis)"
+        },
+        {
+          "name": "Radial portion (flexor longus pollicis)"
+        },
+        {
+          "name": "Ulnar portion (flexor profundus)"
+        }
+      ],
+      "divisionNote": "Cunningham's identification of the three parts is explicitly probabilistic — the condylar portion is 'probably' the sublimis, the radial 'represents' the flexor longus pollicis, the ulnar 'apparently' the profundus — and he gives the reason for the hedge: the nerve supply shows the sublimis and profundus fibres to be thoroughly commingled. Both the ulnar and the median nerve send twigs to the condylar and ulnar portions; the radial portion is supplied by the median alone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "ulna",
+            "side": "medial",
+            "landmark": "olecranon"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The same three-part origin and the same grooved common tendon as in the cuscus and the thylacine; Cunningham describes the arrangement as very similar across all three and reserves his separate remarks for the thylacine.",
+      "nerves": [
+        {
+          "nerve": "median"
+        },
+        {
+          "nerve": "ulnar"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Palmaris longus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Arranged as in the thylacine — arising largely off the great digital flexor rather than the epicondyle — but in the palm it spreads out into a distinct palmar fascia instead of ending in four slips.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pronator quadratus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "anterior"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Covers fully a third of the two forearm bones — more than the thylacine's quarter, though Cunningham still counts all three poorly developed against other marsupials.",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pronator radii teres",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **The coronoid head is absent in all three animals** — a clean contrast with the human row on this record, which carries both the medial epicondyle and the coronoid process of the ulna. Strongly developed, as in the cuscus.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Radial extensor (single)",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "supracondylar-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **The two radial extensors are one muscle here**, the fleshy bellies completely amalgamated, with two separate tendons to the dorsal aspect of the bases of the second and third metacarpals. Origin from the lateral supracondylar ridge below the supinator longus.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Supinator brevis",
+      "attachmentNote": "Phascogale calura. Present and feebly developed — the whole of what Cunningham records for this animal. No attachments are scored because he describes none; he gives an insertion only for the cuscus, in which the muscle is best marked.",
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Supinator longus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "supracondylar-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **A muscle of great size, relatively much larger than a human's** — from the upper two-thirds of the lateral supracondylar ridge, its tendon running in a groove on the dorsum of the lower radius under the extensor retinaculum to reach the radial carpal, into the outer aspect of which it inserts. It has therefore crossed the wrist, which the thylacine's has not. Macalister records it absent altogether in the Tasmanian devil; Cunningham reports it otherwise near-universal in Marsupialia and enormous in the koala.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor minimi digiti",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. About the size of the abductor pollicis, from the unciform bone and the flexor retinaculum to the ulnar side of the first phalanx of the little finger, on the same plane as the dorsal interossei.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor pollicis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-retinaculum"
+          },
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura, and the clearest of the three: a distinct muscle stretching over the radial margin of the palm, from the flexor retinaculum and the two radial carpals to the radial aspect of the base of the first phalanx of the thumb — **on the same plane as the insertions of the dorsal interossei**, which is Cunningham's reason for grouping it with the dorsal layer despite its palmar origin. He makes the general point that the marginal muscles of the hand are palmar in origin and dorsal in insertion, crossing the margin obliquely to gain a more powerful action.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate group and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Dorsal interossei"
+        },
+        {
+          "name": "Flexor brevis pollicis"
+        },
+        {
+          "name": "Flexor brevis minimi digiti"
+        },
+        {
+          "name": "Flexores breves of the index, medius and annularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "ventral"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "extensor-expansion"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura, which Cunningham describes first because it is the simplest. **The intermediate group is five muscles, one over the palmar aspect of each metacarpal**, and every one of them consists of two slips. In the thumb and little finger the two slips stay separate throughout — the flexor brevis pollicis from the second row of carpals, the flexor brevis minimi digiti with an ulnar head off the unciform and the retinaculum and a radial head deeper on the carpus — and each pair inserts one slip into each side of the base of the first phalanx, into bone only. The three middle muscles arise by a common tendon, part from the base of their own metacarpal and part from the palmar carpal ligaments, and divide half-way down; their slips insert **partly into bone and partly into the extensor tendon**, which is what lets them extend as well as flex. Cunningham draws the functional consequence himself: acting together the two slips flex at the metacarpophalangeal joint, acting singly they abduct or adduct, and that second action is best performed by the thumb and little finger muscles because their slips are unhampered by a common origin. The four dorsal interossei occupy the intermetacarpal spaces and have the same connections as in a human; **they are in no way connected with the intermediate muscles.**",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Lumbricales",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Four in number in each of Cunningham's three marsupials, springing from the four ulnar tendons of the flexor profundus and inserted one into each of the four ulnar digits. Very minute and insignificant, as in the thylacine.",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Palmar group (four adductors)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor pollicis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor of the annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          },
+          {
+            "element": "carpals",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **Four adductors, arranged to antagonise the abductors one for one**: all arise close together from the palmar carpus and radiate to their insertions — the first to the ulnar side of the first phalanx of the thumb, and so the representative of the human adductor pollicis; the second to the ulnar side of the index; the third to the radial side of the ring finger; the fourth to the radial side of the little finger. Cunningham's point is the symmetry: the two marginal abductors and the first and fourth dorsal interossei each have a dedicated antagonist, while the second and third dorsal interossei act as adductor and abductor of the middle finger by turns, as in a human hand.",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Acromio-trachelien superior and inferior",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Acromio-trachelien superior"
+        },
+        {
+          "name": "Acromio-trachelien inferior"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas",
+            "landmark": "atlas-transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior",
+            "landmark": "acromion"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Double as in the cuscus, differing in three ways Cunningham calls essential: both bands arise from the atlas alone, they stay distinct along their whole length instead of coalescing near the scapula, and **the superior band fuses by its upper margin with the rhomboideus** — so this muscle and the rhomboideus share an edge, and the rhomboideus thereby reaches the root of the scapular spine.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Deltoid, acromial and spinal portions",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Acromial portion"
+        },
+        {
+          "name": "Spinal portion"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **The deltoid is triple here** — clavicular, acromial and spinal, quite separate except at their common insertion — because the acromial fibres descend as a narrow band apart from those off the scapular spine. This row carries the acromial and spinal parts. The humeral trapezius joins the clavicular deltoid alone and has no connection with the acromial part, which is the difference from the cuscus. The humeral ridge they insert on is less strongly marked than the cuscus's.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Deltoid, clavicular portion",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The clavicular head of a triple deltoid, and **the sole recipient of the humeral trapezius fibres** in this animal. Insertion as in the cuscus, on a less prominent ridge.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Latissimus dorsi",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          },
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The origin is the same in all three: the spines of every thoracic vertebra except the first two, the lumbar aponeurosis, and a single digitation from the last rib. **It overlaps the posterior angle of the scapula and in no case takes any fibres from it** — worth setting against the human row on this record, where Gest scores an occasional slip from the inferior angle. The insertion is identical to the cuscus's — a slip to the teres major, the dorsi-epitrochlear given off, and the main tendon into the floor of the bicipital groove. The dorsi-epitrochlear is relatively best developed in this animal of the three.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Pectoralis major, minor and quartus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pectoralis major"
+        },
+        {
+          "name": "Pectoralis minor"
+        },
+        {
+          "name": "Pectoralis quartus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "costal-cartilage"
+          },
+          {
+            "element": "linea-alba"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          },
+          {
+            "element": "humerus",
+            "landmark": "greater-tubercle"
+          },
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "scapula",
+            "landmark": "coracoid-process"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. Identical to the cuscus but for two things: **there is no deep portion of the pectoralis major**, so the group has three factors rather than four, and the pectoralis quartus is better developed and more of a fleshy band. Cunningham notes the same loss of the deep portion in the Tasmanian devil, and that in both the devil and the wombat the great pectoral takes fibres of origin from the clavicle, which it does not here.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Rhomboideus",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **In none of the three is this muscle divisible into its three constituent parts** — Cunningham says so explicitly, and it is one continuous layer in each: occipital crest under cover of the trapezius and cleido-occipital, all the cervical spines, and the two anterior thoracic spines, to the whole extent of the scapula's vertebral border. The fibres from the thoracic and the two or three hindmost cervical spines run in much coarser fasciculi than the rest, and Cunningham reads those as the rhomboideus proper — a division visible in the grain of the muscle but not in its dissection. Wider occipital origin than the thylacine's, and one addition: the lower margin fuses with the upper border of the acromio-trachelien as it approaches the scapula, so the rhomboideus gains a small insertion into the root of the scapular spine — an attachment it reaches through another muscle rather than directly.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Serratus magnus",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          },
+          {
+            "element": "true-ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. The cervical part is five slips from the transverse processes of the five posterior cervical vertebrae in all three animals; **the costal origin is what varies, and it varies with the animal**: seven digitations here, against eight in the cuscus, seven in the phascogale and six in the thylacine. Inserted into the entire length of the scapula's vertebral border. One unbroken muscular sheet, as in the thylacine.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Subclavius",
+      "attachments": {
+        "origin": [
+          {
+            "element": "costal-cartilage"
+          },
+          {
+            "element": "true-ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "clavicle",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. As in the cuscus: first costal cartilage to the outer two-thirds of the clavicle, strongly developed, stopping at the outer end of the bone.",
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Subscapularis",
+      "attachmentNote": "Phascogale calura. Cunningham gives this muscle one sentence — well marked in all three, with the usual attachments — and no origin or insertion of his own. **No attachments are scored, because he recorded none**; copying the consensus row here would assert an observation he did not make. What he does record is a relation: its posterior border is bound to the teres major by an intermuscular septum that gives fibres to both muscles.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Supraspinatus and infraspinatus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supraspinatus"
+        },
+        {
+          "name": "Infraspinatus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "supraspinous-fossa"
+          },
+          {
+            "element": "scapula",
+            "landmark": "infraspinous-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. **The supraspinatus is the bulkier of the two in all three animals** — here fully three times as large. Cunningham is checking Meckel's claim that the infraspinatus is the smaller throughout Marsupialia, and finds it holds; he cites Macalister for the wombat, phalanger, bandicoot, *Sarcophilus* and opossum, for the two being about equal in the giant kangaroo, and for the infraspinatus being the larger in Bennett's kangaroo. That is the one reported exception, and it is not in this dataset.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Teres major",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal",
+            "landmark": "scapula-caudal-angle"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "intertubercular-fossa"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. As in the cuscus: scapular angle and the upper two-thirds of the axillary border, a slip received from the latissimus dorsi, insertion into the inner lip of the bicipital groove.",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Teres minor",
+      "attachmentNote": "Phascogale calura. **Absent, and absent on nerve evidence rather than on failure to find it.** Cunningham looked for the part of the infraspinatus that might be supposed to represent it and could trace no twig of the circumflex nerve into any of it — so there is no muscle here answering to the teres minor by the criterion that identified it in the thylacine and the cuscus. This is a claim about one phascogale, not about Dasyuridae: Cunningham reports Macalister finding the muscle inseparable from the infraspinatus in the giant kangaroo, the brushtail possum, the bandicoot and the Virginian opossum, distinct in the wallaby, and reduced to a fascial band in the wombat and the Tasmanian devil.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Trapezius group",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Trapezius"
+        },
+        {
+          "name": "Cleido-occipital"
+        },
+        {
+          "name": "Cleido-mastoid"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput"
+          },
+          {
+            "element": "occiput",
+            "side": "lateral"
+          },
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "clavicle"
+          }
+        ]
+      },
+      "attachmentNote": "Phascogale calura. As in the cuscus, with one difference Cunningham singles out: **none of the anterior trapezius fibres join the acromial deltoid — all enter the clavicular portion.** The cleido-occipital is better marked here than in the cuscus, cleanly separable from the cleido-mastoid along its whole length, and it fuses with the anterior margin of the trapezius as it nears the occiput. Cunningham notes that Macalister records no cleido-occipital in either the wombat or the Tasmanian devil, and that Cuvier & Laurillard figure one in the opossum and in *Macropus minor* but not in *Phalangista cavifrons* — so its presence here is a real character, not a default.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

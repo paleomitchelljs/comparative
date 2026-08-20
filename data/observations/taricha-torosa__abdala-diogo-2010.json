@@ -1,0 +1,1160 @@
+{
+  "species": "taricha-torosa",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Coracobrachialis",
+      "present": "yes",
+      "note": "Corresponds to the coracobrachialis longus/superficialis of Walthall & Ashley-Ross (2006).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Its fibres run along the axis of the humerus to a distal insertion, so it retracts rather than adducts. Walthall & Ashley-Ross call it coracobrachialis longus; Abdala & Diogo record longus and superficialis as the same muscle.",
+      "origin": "Posterolateral surface of the coracoid.",
+      "insertion": "Medial face of the distal end of the humerus.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Humeroantebrachialis",
+      "present": "yes",
+      "note": "In urodeles the brachialis field is not separated from the biceps field; the single muscle is called humeroantebrachialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Thick and parallel-fibred, crossing only the elbow. It has no girdle head, which is the difference from the amniote biceps brachii and the reason the two are not interchangeable.",
+      "division": "single",
+      "origin": "Anterior surface of the proximal humerus.",
+      "insertion": "Proximal end of the radius.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Triceps brachii (anconaeus group)",
+      "present": "yes",
+      "note": "Multi-headed in urodeles, with scapular and several humeral heads.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Four separately named heads, two girdle and two humeral, converging on one olecranon insertion. The coracoid and scapular heads unite about midway along the humerus. This is the clearest case in the dataset of a muscle whose head count is a naming decision: Mivart (1869) and Davison (1895) called the whole complex 'triceps', Francis (1934) named all four.",
+      "origin": "Four heads: coracoid (anconaeus coracoideus, by a long tendon); scapula posterior to the glenoid and the joint capsule (anconaeus scapularis medialis); proximal two-thirds of the lateral face of the humerus (anconaeus humeralis lateralis); the whole posterior face of the humerus (anconaeus humeralis medialis).",
+      "insertion": "Olecranon process of the ulna.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor et extensor digiti I",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radiale"
+          },
+          {
+            "element": "intermedium-manus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Recorded as m. abductor et extensor digiti I. Wholly intrinsic to the hand — it takes no origin in the forearm, unlike the amniote abductor pollicis longus, which is why the name transfers badly.",
+      "origin": "Radiale and intermedium.",
+      "insertion": "Distal end of the first metacarpal.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Contrahentium caput longum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals"
+          }
+        ]
+      },
+      "attachmentNote": "Its insertion tendon is itself the origin of the contrahentes digitorum, so the two form a chain from the zeugopod to the phalanges.",
+      "origin": "Internal surface of the ulna and the fascia connecting radius and ulna.",
+      "insertion": "An extensive tendon connecting the carpal bones.",
+      "region": "forearm",
+      "record": "contrahentium-caput-longum",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor antebrachii et carpi radialis",
+      "present": "yes",
+      "note": "Includes the extensor radialis longus + brevis sensu Straus (1941a,b).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "carpals"
+          }
+        ]
+      },
+      "attachmentNote": "Plesiomorphic tetrapod condition: insertion stops at the radius and proximal carpals.",
+      "origin": "Proximal part of the lateral epicondyle of the humerus.",
+      "insertion": "Almost the whole anterolateral surface of the radius, and the lateral surface of the radiale.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "intermedium-manus"
+          }
+        ]
+      },
+      "attachmentNote": "The postaxial mirror of the extensor antebrachii et carpi radialis, taking the distal part of the same epicondyle where that muscle takes the proximal part.",
+      "origin": "Distal part of the lateral epicondyle of the humerus.",
+      "insertion": "Posterolateral face of the ulna, and the ulnare and intermedium.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "The most superficial forearm muscle in dorsal view. It serves digits II-IV only — the salamander manus has four digits, digit V having been lost.",
+      "origin": "Lateral epicondyle of the humerus.",
+      "insertion": "Dorsal surfaces of the proximal phalanges of digits II, III and IV, by paired tendons.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor accessorius lateralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "distal"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "intermedium-manus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Fibres run diagonally toward the radius and first digit. Inserting on the deep face of an aponeurosis is what lets it tension the palm rather than move a bone.",
+      "origin": "Distal end of the ulna, the ulnare and the intermedium.",
+      "insertion": "Dorsal surface of the palmar fascia.",
+      "region": "forearm",
+      "record": "flexor-accessorius-lateralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor accessorius medialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "distal"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "intermedium-manus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Distinguished from the lateral accessory only by a more extensive origin — the two are otherwise parallel-fibred straps with the same insertion.",
+      "origin": "Approximately the distal third of the ulna, the ulnare and the intermedium.",
+      "insertion": "Dorsal side of the palmar fascia.",
+      "region": "forearm",
+      "record": "flexor-accessorius-medialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor antebrachii et carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Obscured along most of its length by the flexor digitorum communis. Preaxial member of the pair that divides the medial epicondyle between them.",
+      "origin": "Proximal portion of the medial epicondyle of the humerus.",
+      "insertion": "Anterior face of the radius, with a slip crossing the wrist to the radiale.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "note": "Part of the flexor antebrachii et carpi ulnaris sensu Diogo & Abdala (2007).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "ulnare",
+            "side": "lateral"
+          },
+          {
+            "element": "intermedium-manus",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Described as the mirror image of the flexor antebrachii et carpi radialis. The four muscles taking the two epicondyles — two flexors medially, two extensors laterally, each pair split proximal and distal — are the clearest instance of the dorsal/ventral mirroring the paper reports for the antebrachium.",
+      "origin": "Distal portion of the medial epicondyle of the humerus.",
+      "insertion": "Much of the posterior edge of the ulna, with a slip to the lateral faces of the ulnare and intermedium.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor digitorum communis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palmar-aponeurosis"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Walthall & Ashley-Ross use flexor digitorum communis; Francis (1934) called the same muscle flexor primordialis communis, the name used for its hindlimb counterpart here. The aponeurosis, not the bone, is the functional insertion — the tendons are its continuation.",
+      "origin": "Medial epicondyle of the humerus.",
+      "insertion": "Palmar aponeurosis, continuing as four tendons to the proximal end of the distal phalanx of each digit.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "medial"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "intermedium-manus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radiale"
+          },
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Recorded as m. pronator profundus. It crosses from the postaxial to the preaxial side of the wrist, which is what makes it a pronator rather than a flexor.",
+      "origin": "Medial side of the ulna, the ulnare and the intermedium.",
+      "insertion": "Radiale and the base of the first metacarpal.",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "note": "In Taricha and Ambystoma the muscle attaches to digit 4 because digit 5 is absent — the ulnar counterpart of the anuran abductor pollicis longus case. The muscle finds the most ulnar digit available.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "intermedium-manus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Recorded as m. extensor lateralis digiti IV. It serves digit IV because digit V is absent from the salamander manus — the same postaxial position as the amniote abductor digiti minimi on digit V, one digit over. A case where matching by digit number and matching by position give different answers.",
+      "origin": "Ulnare and intermedium.",
+      "insertion": "Lateral edge of the fourth metacarpal.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Contrahentes digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Lies deep to the insertion tendons of the flexores breves superficiales. Part of its origin is tendinous rather than skeletal, on the contrahentium caput longum tendon.",
+      "origin": "The insertion tendon of the contrahentium caput longum, and the carpals.",
+      "insertion": "Proximal end of the proximal phalanx of each digit.",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Serves digits II-IV, matching the extensor digitorum communis and reflecting the four-digit salamander manus.",
+      "origin": "Carpals at the bases of digits II, III and IV.",
+      "insertion": "Dorsal surface of the proximal end of the terminal phalanx of each digit, by long tendons.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "The deepest of the short flexor layers.",
+      "origin": "Carpals at the bases of their respective digits.",
+      "insertion": "Chiefly the metacarpal, and also the proximal end of the proximal phalanx, of each digit.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palmar-aponeurosis",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Slips lie on both sides of the metacarpals of digits II and III, but only on the medial side for digits I and IV — an asymmetry across the hand that tracks the axis of the manus.",
+      "origin": "Dorsal surface of the palmar fascia.",
+      "insertion": "Lateral edges of the distal ends of the metacarpals.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Roughly triangular, spanning metacarpal to metacarpal without reaching a phalanx.",
+      "origin": "Radial side of each metacarpal.",
+      "insertion": "Ulnar side of the adjacent metacarpal.",
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "present": "no",
+      "note": "The structure called 'opercularis' in urodeles is topologically part of the levator scapulae, not an independent muscle (Hetherington & Tugaoen 1990). Walthall & Ashley-Ross (2006) disagree in practice, describing a discrete strap-like m. opercularis in Taricha running from the cartilaginous operculum of the otic capsule to the anterior edge of the suprascapula — and assigning it the opposite origin and insertion to the anuran record here. Presence is left at 'no' because a single dissection does not settle the homology argument, but the disagreement is the point: the same structure is a muscle or a part of one depending on which criterion is applied.",
+      "region": "pectoral",
+      "record": "opercularis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "note": "Corresponds to the dorsalis scapulae of Smith (1926), Howell (1937b), Romer (1944), Walthall & Ashley-Ross (2006).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "suprascapula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "The fibres pass around the anterior side of the humerus to reach a ventral crest — a dorsal girdle muscle with a ventral insertion, which is what lets it elevate the humerus.",
+      "origin": "Dorsolateral surface of the suprascapular cartilage.",
+      "insertion": "Crista ventralis of the humerus.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "The largest dorsal shoulder muscle, but its origin is entirely fascial — no bony attachment, so no correlate. The insertion is on the posterior face of the same crest that receives the pectoralis and supracoracoideus.",
+      "origin": "Dorsal fascia.",
+      "insertion": "Posterior surface of the crista ventralis of the humerus, by a strong tendon.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "The insertion resolves to the crista ventralis — the salamander name for the deltopectoral crest — rather than to the proximal humerus generally. A refinement in resolution, not a shift.",
+      "origin": "Midline aponeurosis, sternum, and the tendinous inscriptions of the rectus abdominis.",
+      "insertion": "Crista ventralis of the humerus.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Procoracohumeralis",
+      "present": "yes",
+      "note": "The amphibian name reflects the procoracoid origin; the muscle is the same field as the amniote deltoideus clavicularis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "procoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Called procoracohumeralis in amphibians purely because the origin sits on the procoracoid.",
+      "origin": "Procoracoid cartilage.",
+      "insertion": "Anterior surface of the proximal humerus.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Protractor pectoralis (cucullaris)",
+      "present": "yes",
+      "action": "Draws the girdle anterodorsally.",
+      "innervation": "Accessory nerve equivalent; developmentally distinct from the levator scapulae, which is somitic.",
+      "note": "Sefton et al. (2016) show the cucullaris and the somitic levator scapulae are separable by developmental origin even where they are topographically adjacent — the strongest available test of this homology.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "procoracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Two heads arising together and diverging posteriorly. The anterior head lands between the procoracohumeralis and the dorsalis scapulae, which is the topological fix on its identity.",
+      "nerves": [
+        {
+          "nerve": "accessory"
+        }
+      ],
+      "origin": "Dorsal fascia and the posterior surface of the skull.",
+      "insertion": "Anterior head onto the lateral surfaces of the procoracoid and scapula; posterior head onto the anterolateral border of the scapula.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "sefton-etal-2016",
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Fan-shaped and parallel-fibred, its posterior part lying deep to the pectoralis and inserting beside it on the same crest. In salamanders the supracoracoideus is still a ventral adductor; the dorsal, wing-elevating role it takes in birds requires the triosseal canal, which does not exist here.",
+      "origin": "Ventral superficial surface of the coracoid cartilage.",
+      "insertion": "Crista ventralis of the humerus, adjacent to the pectoralis insertion.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    }
+  ]
+}

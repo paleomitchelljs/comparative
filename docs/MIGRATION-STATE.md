@@ -10,22 +10,21 @@ current.
 
 ## Next action
 
-> **Task 4 — re-mine.** Tasks 1, 2 and 3 are done. Nothing structural blocks any
-> source. Four have had a first pass (Fisher & Goodman and Widrig et al. to
-> exhaustion; Walker, Osawa and Russell & Bauer partially), and 486 observations
-> are parked and waiting for a record.
+> **Task 4 — re-mine, and Task 6 — delete `attribute_species.py`.** The structure
+> is done: `data/observations/` is the source of truth, 248 files, one per study
+> per animal. `build.sh` rebuilds `muscles-*.json` from it as step 0 and the
+> result is byte-identical.
 >
-> **The three decisions waiting on you**, each blocking a large parked block:
+> Your three decisions of 2026-08-20 are applied. Every lizard genus now has a
+> `Genus sp.` record and Russell & Bauer is fully parked (500 statements, 21
+> species). `partial` and `occupied` survive as labels but no longer mean
+> "cannot be extracted" — they mean the **integration layer** has not decided,
+> and integration decisions change without re-mining.
 >
-> 1. **How many lizards?** Russell & Bauer's other seventeen genera need species
->    records before their statements can be parked — *Lacerta* 38 statements,
->    *Tupinambis* 27, *Phrynosoma* 21, *Ameiva* 18, *Heloderma* 17.
-> 2. **Does a variation statement stand as an occurrence?** 416 rows are parked on
->    `partial` because Walker and Russell & Bauer mostly state a *difference*
->    rather than a complete attachment. Answering it once unblocks all of them.
-> 3. **Two workers, one animal.** Osawa's *Sphenodon* jaw muscles are parked on
->    `occupied` because Haas already holds those rows. Merge, replace, or keep the
->    better source and leave the other in prose?
+> **Before deleting `attribute_species.py`**: it computed `speciesBasis`, which
+> records how strongly a row's species attribution is evidenced. The filename now
+> declares the species, but the *evidence* still matters and has no home in the new
+> files. Decide whether it becomes a file-level header field.
 
 ## Task board
 
@@ -34,9 +33,9 @@ current.
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | **done** |
 | 3 | `after:` field for secondary attribution | **done** |
-| 4 | Re-mine every cited source | **in progress — 2 of 79** |
-| 5 | Flip source of truth to `observations/` + `mapping/` | not started |
-| 6 | Retire `attribute_species.py` and friends | not started |
+| 4 | Re-mine every cited source | **in progress — 2 of 79 to exhaustion, 3 more partly** |
+| 5 | Flip source of truth to `observations/` + `mapping/` | **done** |
+| 6 | Retire `attribute_species.py` and friends | **out of `build.sh`**; deletion pending |
 | 7 | `phylogeny.json` | not started |
 
 ## The model is proven
@@ -146,18 +145,34 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *varanus-exanthematicus* | 78 | partial 78 |
 | `russell-bauer-2008` | *gekko-gecko* | 66 | partial 66 |
 | `fisher-goodman-1955` | *grus-americana* | 50 | no-record 20, nomenclature 19, division 11 |
+| `russell-bauer-2008` | *lacerta-sp* | 46 | partial 46 |
 | `russell-bauer-2008` | *chamaeleo-calyptratus* | 43 | partial 43 |
+| `russell-bauer-2008` | *phrynosoma-sp* | 34 | partial 34 |
 | `walker-1973` | *pelomedusa-subrufa* | 30 | partial 30 |
+| `russell-bauer-2008` | *tupinambis-sp* | 28 | partial 28 |
 | `walker-1973` | *testudo-graeca* | 25 | partial 25 |
 | `walker-1973` | *trionyx-spiniferus* | 24 | partial 24 |
+| `russell-bauer-2008` | *crotaphytus-sp* | 23 | partial 23 |
 | `walker-1973` | *chelodina-longicollis* | 23 | partial 23 |
+| `russell-bauer-2008` | *ameiva-sp* | 19 | partial 19 |
+| `russell-bauer-2008` | *heloderma-sp* | 19 | partial 19 |
 | `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
 | `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
+| `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |
+| `russell-bauer-2008` | *tarentola-sp* | 10 | partial 10 |
+| `russell-bauer-2008` | *anolis-sp* | 9 | partial 9 |
 | `walker-1973` | *geochelone-elephantopus* | 9 | partial 9 |
+| `russell-bauer-2008` | *sceloporus-sp* | 8 | partial 8 |
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
+| `russell-bauer-2008` | *ophisaurus-sp* | 6 | partial 6 |
+| `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |
 | `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
+| `russell-bauer-2008` | *cnemidophorus-sp* | 2 | partial 2 |
+| `russell-bauer-2008` | *uroplatus-sp* | 2 | partial 2 |
 | `walker-1973` | *lepidochelys-kempii* | 2 | partial 2 |
+| `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
+| `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |
 <!-- /counts:parked-detail -->
 
 ## Decisions taken, so they are not relitigated

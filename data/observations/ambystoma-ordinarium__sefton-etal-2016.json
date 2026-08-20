@@ -1,0 +1,48 @@
+{
+  "species": "ambystoma-ordinarium",
+  "source": "sefton-etal-2016",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae",
+      "present": "yes",
+      "action": "Elevates the girdle; the opercular portion is part of the aquatic sound-reception pathway.",
+      "innervation": "First spinal nerve and hypoglossal nerve.",
+      "note": "Voluminous in urodeles and includes the columellaris and opercularis of Duellman & Trueb (1986) and Carroll (2007). Piekarski & Olsson (2007) showed its development and innervation differ from those of the protractor pectoralis, refuting the older claim that the urodele levator scapulae derives from the cucullaris.",
+      "nerves": [
+        {
+          "nerve": "hypoglossal"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "girdle-axial",
+          "motion": "elevation"
+        }
+      ],
+      "attachmentNote": "Ambystoma ordinarium. Origin: Cranium, often the cartilaginous operculum. Insertion: Suprascapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "nerves",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "sefton-etal-2016"
+      ]
+    }
+  ]
+}

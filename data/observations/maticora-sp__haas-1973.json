@@ -1,0 +1,74 @@
+{
+  "species": "maticora-sp",
+  "source": "haas-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "note": "Maticora sp., Haas (1973), from his own dissection of a very large specimen in the Field Museum, Chicago. **No trace of any M. levator anguli oris**, and the absence carries an argument. Haas's reading is that the proteroglyphous snakes descend from colubrids that had already lost this muscle, and that only after the centre of the semicircular adductor mandibulae externus 1b became attached to the venom gland capsule did the dorsal half differentiate further, as in *Dendroaspis*. So on this record — whose identification this dataset calls the crux of the lizard–snake problem — the snake end is an absence used as a phylogenetic character. Compare the *Sphenodon* row, where the muscle exists but four workers disagreed about whether it does.",
+      "region": "cranial",
+      "record": "levator-anguli-oris",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. compressor glandulae (M. adductor mandibulae externus superficialis)",
+      "present": "yes",
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Maticora sp., Haas (1973), from his own dissection of a very large specimen in the Field Museum, Chicago. **The venom gland is enclosed in a single, uninterrupted muscular loop**, and seeing that is what settles the muscle's identity. Radovanović (1935) missed the sac and therefore read the large steeply-fibred adductor medial to the Harderian gland as an abnormal superficialis; Haas assigns it instead to the **medialis**, on three grounds — its deep position, its remoteness from the postorbital, and its insertion medial to the laterally extended insertion of the profundus — while the superficial muscle looping the gland has the innervation typical of a superficialis.\n\nThe fibres originate from the postorbital and parietal ridge as in other snakes and stop at the capsule of the gland dorsally, posteriorly or even posteroventrally, forming a loop around its posterior margin; in some forms the dorsal fibres arise suborbitally from the back of the maxilla instead. The ventral part fans anterolaterally from the capsule to an elongate insertion on the lateral mandible. Haas reads *Pelamis* and *Lapemis* as more primitive because the muscle is not completely interrupted there, and argues from this that the proteroglyphs derive from colubrids that had already lost the levator anguli oris.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    }
+  ]
+}

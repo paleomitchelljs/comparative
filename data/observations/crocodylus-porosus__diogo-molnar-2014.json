@@ -1,0 +1,296 @@
+{
+  "species": "crocodylus-porosus",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis longus + brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "ventral",
+            "landmark": "fourth-trochanter"
+          },
+          {
+            "element": "femoral-condyles",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Longus is fleshy from the haemal arches of numerous caudal vertebrae BEGINNING AT CAUDAL VERTEBRA 12; brevis has TWO heads, one from the postero-lateral ilium and one from caudal vertebrae 4 and 5, anterior to the longus origin — so both muscles take caudal vertebrae and the caudal row is shared, where the block used to read longus-from-vertebrae and brevis-from-ilium as though each had one head. Both insert by tendon on the proximo-ventral femur at the fourth trochanter. The second insertion row is the longus' ACCESSORY TENDON onto the ventro-distal femur at the tibial condyle, together with gastrocnemius externus; scored on the condyles because that is as fine as skeleton.json resolves. The longus is the largest muscle in the animal's body. Allen et al. is no longer cited here: it measures architecture and gives no attachment sites, and it is the Alligator source that used to hold this row on the wrong animal.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Caudofemoralis longus"
+        },
+        {
+          "name": "Caudofemoralis brevis"
+        }
+      ],
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Tendinous origin on the central lateral ilium, deep to iliotibialis 2; inserts fleshy onto the DISTAL THIRD of the dorso-lateral femur, between femorotibialis internus and externus, and attaches along most of the femoral length. The femorotibialis internus tendon arising distal and anterior to it is the landmark Klinkhamer et al. use to separate the two. Hip abductor, confirmed by EMG. This is the description `extensor-iliotibialis` was also carrying.",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "'Ambiens'",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Tendinous origin on the proximo-lateral pubis, inserting by a long tendon on the proximo-anterior tibia AT THE CNEMIAL CREST — the crest is named in the source, so it is scored rather than left at the bone. Knee extensor and hip flexor, knee extension confirmed by EMG. Klinkhamer et al. found only a SINGLE HEAD, against two in Alligator mississippiensis, but they attribute that to the sub-adult age of their specimens and of the Caiman latirostris in the earlier study that found the same — NOT to a species difference. Recorded here as an observation and explicitly not as a Crocodylus porosus character.",
+      "region": "thigh",
+      "record": "ambiens",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor femoris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Fleshy at the ventrolateral ischium, tendinous at the ventromedial femur.",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Femorotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Externus arises fleshy about a third of the way down the dorsal femur and inserts on the proximo-lateral cnemial crest; internus arises by tendon on the dorso-proximal femur, distal and anterior to iliofemoralis, and joins the same tendon at insertion.",
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis externus + internus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "posterior"
+          },
+          {
+            "element": "ilium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Flexor tibialis internus is FOUR-part here, against three in some Alligator and Caiman latirostris accounts: FTI1 from the postero-lateral ischium to the proximo-medial tibia by a long tendon shared with puboischiotibialis; FTI2 fleshy from the postero-ventral ilium, the largest of the four; FTI3 from the proximo-lateral ischium; FTI4 a small thin muscle from the latero-ventral ilium near the ischium, joining the common tendon. The tibial insertion is the internus'. Flexor tibialis EXTERNUS is named in this record but its insertion is deliberately unscored: it arises by tendon from the postero-lateral ilium and ends, by a long tendon shared with gastrocnemius externus, IN THE PES at the proximal tarsus — not on the tibia.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor tibialis externus"
+        },
+        {
+          "name": "Flexor tibialis internus"
+        }
+      ],
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Three parts, and all three insert by tendon on the PROXIMO-ANTERIOR TIBIA: IT1 fleshy from the antero-lateral ilium, IT2 by tendon from the central lateral ilium between IT1 and IT3, IT3 fleshy from the postero-lateral ilium. IT2 is the largest and forms almost the whole dorsolateral face of the thigh. All three are knee extensors, which is what a tibial insertion is for, and EMG confirms it for IT2.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "klinkhamer-etal-2017"
+      ]
+    }
+  ]
+}

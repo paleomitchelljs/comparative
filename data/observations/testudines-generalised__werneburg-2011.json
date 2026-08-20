@@ -1,0 +1,588 @@
+{
+  "species": "testudines-generalised",
+  "source": "werneburg-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor mandibulae externus (pars superficialis, media, profunda)",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "quadratojugal"
+          },
+          {
+            "element": "jugal"
+          },
+          {
+            "element": "otic-capsule",
+            "side": "anterior",
+            "landmark": "prootic"
+          },
+          {
+            "element": "otic-capsule",
+            "side": "posterior",
+            "landmark": "opisthotic"
+          },
+          {
+            "element": "occiput",
+            "side": "dorsal",
+            "landmark": "supraoccipital"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coronar-aponeurosis"
+          },
+          {
+            "element": "mandible",
+            "side": "lateral",
+            "landmark": "surangular"
+          },
+          {
+            "element": "mandible",
+            "side": "dorsal",
+            "landmark": "coronoid"
+          },
+          {
+            "element": "mandible",
+            "side": "anterior",
+            "landmark": "dentary"
+          },
+          {
+            "element": "mandible",
+            "side": "ventral",
+            "landmark": "angular"
+          }
+        ]
+      },
+      "attachmentNote": "Aggregated across the seven units Werneburg resolves (pars superficialis, media, profunda and their subdivisions). The wide origin over the skull roof and braincase, and the redirection of the line of action over the otic process, are what the turtle trochlear arrangement buys. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Pars superficialis"
+        },
+        {
+          "name": "Pars media"
+        },
+        {
+          "name": "Pars profunda"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "sources",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor mandibulae externus (pars superficialis, media, profunda), pseudotemporalis, zygomaticomandibularis, adductor mandibulae posterior",
+      "present": "yes",
+      "action": "Jaw adduction; the trochlear arrangement redirects the muscle line of action over the otic process.",
+      "innervation": "CN V.",
+      "note": "Werneburg (2011) resolves this complex into discrete muscular units, each with its own innervation pattern, and supplies an exhaustive synonym list keyed to the historical literature back to Bojanus (1819–21).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor mandibulae externus pars superficialis",
+          "muscle": "adductor-mandibulae-externus"
+        },
+        {
+          "name": "Adductor mandibulae externus pars media"
+        },
+        {
+          "name": "Adductor mandibulae externus pars profunda"
+        },
+        {
+          "name": "Pseudotemporalis",
+          "muscle": "adductor-mandibulae-internus"
+        },
+        {
+          "name": "Zygomaticomandibularis"
+        },
+        {
+          "name": "Adductor mandibulae posterior",
+          "muscle": "adductor-mandibulae-posterior"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "jaw-joint",
+          "motion": "adduction"
+        }
+      ],
+      "attachmentNote": "Trachemys scripta. Origin: Temporal region — the emarginated or fully roofed temporal skull, with the trochlear redirection over the otic capsule (the turtle-specific pulley). Insertion: Coronar aponeurosis and the medial and dorsal surfaces of the lower jaw. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "otic-capsule",
+            "side": "anterior",
+            "landmark": "prootic"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "landmark": "articular"
+          }
+        ]
+      },
+      "attachmentNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011). Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "note": "Werneburg & Maier (2019) show the palatoquadrate this muscle arises from is fused to the braincase in turtles, and that cryptodires and pleurodires build that fixation differently — cryptodires via an ossified ascending process (the epipterygoid) bridged ventrally by the pterygoid, pleurodires by appositional bone of the quadrate with the parietal's descending process forming the braincase wall. The muscle's origin surface is therefore not developmentally the same structure in the two clades.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "sources",
+        "attachmentNote",
+        "note"
+      ],
+      "_srcs": [
+        "werneburg-2011",
+        "werneburg-maier-2019"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Constrictor colli / interhyoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "occiput",
+            "side": "dorsal",
+            "landmark": "supraoccipital"
+          },
+          {
+            "element": "hyoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "The constrictor colli complex, six units in Werneburg's scheme. Its spread from the hyoid onto the posterior skull is the sheet that in mammals becomes the facial musculature. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Depressor mandibulae",
+      "present": "yes",
+      "innervation": "CN VII.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "quadratojugal"
+          },
+          {
+            "element": "otic-capsule",
+            "side": "posterior",
+            "landmark": "opisthotic"
+          },
+          {
+            "element": "jugal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "landmark": "articular"
+          },
+          {
+            "element": "mandible",
+            "side": "ventral",
+            "landmark": "angular"
+          }
+        ]
+      },
+      "attachmentNote": "One to two heads from the caudal, lateral and dorsal squamosal, occasionally the quadrate or quadratojugal; inserts partly by tendon on the posterior and ventral articular and the retroarticular process. Werneburg lists 13 synonyms for this muscle alone. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Geniohyoideus, coracohyoideus, genioglossus, hyoglossus",
+      "present": "yes",
+      "innervation": "CN XII.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "mandible",
+            "side": "anterior",
+            "landmark": "dentary"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei"
+          },
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "Aggregated across eight units (genioglossus, geniohyoideus, coracohyoideus, hyoglossus and their parts). Werneburg records CN XII for these, confirming their somitic rather than branchiomeric origin. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Geniohyoideus"
+        },
+        {
+          "name": "Coracohyoideus"
+        },
+        {
+          "name": "Genioglossus"
+        },
+        {
+          "name": "Hyoglossus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "hypoglossal"
+        }
+      ],
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "nerves"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Intermandibularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible",
+            "side": "anterior",
+            "landmark": "dentary"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Werneburg resolves a pars principalis and a further unit; both run from the medial dentary to the midline. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Levator + depressor laryngis, constrictor laryngis, dilatator laryngis",
+      "present": "yes",
+      "note": "Werneburg (2011) documents the laryngeal muscles as branchial-arch derivatives with distinct innervation.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator laryngis"
+        },
+        {
+          "name": "Depressor laryngis"
+        },
+        {
+          "name": "Constrictor laryngis"
+        },
+        {
+          "name": "Dilatator laryngis"
+        }
+      ],
+      "attachmentNote": "Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Pseudotemporalis + pterygoideus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pseudotemporalis",
+          "note": "Separates a superficial from a deep head in turtles; the superficial head connects through a long intermediate tendon to the intramandibularis."
+        },
+        {
+          "name": "Pterygoideus",
+          "note": "Origin from the walls of the bony groove or canal linking the lower temporal fossa to the orbit, bordered by pterygoid, palatine, parietal (descending process) and frontal. In pleurodires with a trochlear process a Pars ventro-lateralis arises from its free end, and in Podocnemis a third part arises from the quadrate within a widened canalis carotis internus."
+        },
+        {
+          "name": "Intramandibularis",
+          "note": "Lies in the Meckelian canal medial to the mandibular nerve, arising broadly from the lateral surface of Meckel's cartilage and running dorsally to the same intermediate tendon."
+        }
+      ],
+      "attachmentNote": "Testudines, generalised, from Schumacher (1973) with Werneburg (2011). **Not a species observation, and deliberately filed as one that is not.** Schumacher examined roughly forty chelonian species including *Pseudemys scripta*, but writes the synthesis — 'in all turtles X, and in (Emys, Hardella, Testudo, trionychids) Y' — so these rows describe the chelonian condition and its named variants, not an animal. That is the same shape as Werneburg's appendix, and the second turtle cranial source to land on this record. **The turtle CRANIAL column is generalised while the turtle FORELIMB column is now scored to *Trachemys* from Walker (1973)** — one clade, two halves of one skull-and-limb dataset, resting on different kinds of evidence, and the interface now says so on every row.",
+      "divisionNote": "Schumacher treats the internus of turtles and crocodilians as a complex rather than a muscle: a pseudotemporalis plus a pterygoideus, the latter further split into anterior and posterior parts in crocodilians. The intramandibularis is what makes the group unusual — a division of the adductor complex that lies inside the lower jaw.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "palatine"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "frontal"
+          },
+          {
+            "element": "meckels-cartilage",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "coronoid"
+          },
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachmentNote",
+        "divisionNote",
+        "attachments"
+      ],
+      "_srcs": [
+        "werneburg-2011",
+        "schumacher-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Rectus superior, inferior, anterior, posterior; obliquus superior, inferior; retractor bulbi; ciliaris; sphincter and dilatator pupillae; transversalis oculi",
+      "present": "yes",
+      "innervation": "CN III for rectus anterior, inferior, superior, obliquus inferior, ciliaris, dilatator and sphincter pupillae, transversalis oculi; CN IV for obliquus superior.",
+      "note": "Werneburg (2011) records ten distinct ocular muscular units in turtles, including intraocular muscles absent from most vertebrate accounts. Turtles (like birds) have striated intraocular muscles, so pupillary control is partly voluntary.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "optic-foramen"
+          },
+          {
+            "element": "interorbital-septum"
+          },
+          {
+            "element": "frontal"
+          },
+          {
+            "element": "basisphenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Eight units around the optic foramen and the anterodorsal optic cavity, all inserting on the eyeball. Werneburg additionally records intraocular muscles (ciliaris, sphincter and dilatator pupillae, transversalis oculi) that most vertebrate accounts omit; turtles, like birds, have striated intraocular muscle. Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "nerves": [
+        {
+          "nerve": "oculomotor"
+        },
+        {
+          "nerve": "trochlear"
+        }
+      ],
+      "divisionNote": "No division recorded, because the two statements on this row disagree: the name enumerates eleven units and the note quotes Werneburg (2011) recording ten. Reconcile against the source before asserting a count.",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "divisionNote"
+      ],
+      "_srcs": [
+        "werneburg-2011"
+      ]
+    }
+  ]
+}

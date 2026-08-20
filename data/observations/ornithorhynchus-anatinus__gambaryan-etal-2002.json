@@ -1,0 +1,1250 @@
+{
+  "species": "ornithorhynchus-anatinus",
+  "source": "gambaryan-etal-2002",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor ossis metatarsi minimi digiti and abductor digiti quinti",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus. **The only abductor of the little toe in this foot** — a short powerful muscle from the outer side of the calcaneal tuberosity to the fibular aspect of the base of the fifth metatarsal, supplied directly from the trunk of the external plantar rather than from either of its divisions (Cunningham 1882). Cunningham notes that the outermost belly of the flexor brevis digitorum, inserting on the outer side of the first phalanx, must add a considerable abducting action to its flexing one, **and that this helps spread the integumental web between the digits** — a swimming foot using a short flexor as an abductor.\n\n**Gambaryan et al. (2002) find two abductors here, not one**, and neither takes its origin from bone. Their abductor metatarsi V arises from a branch of the insertion tendon of the semitendinosus pars vertebralis and the adjacent edge of the tuber calcanei, ending on the lateral edge of the proximal fifth metatarsal; their abductor digiti quinti arises from the same tendon superficial to it and inserts on the lateral edges of the first and second phalanges of the fifth toe and the distal fifth metatarsal. **So the muscle that spreads this web hangs off the tendon of the muscle that rotates the metatarsals** — the semitendinosus pars vertebralis, the largest muscle in the platypus hind limb. Cunningham's single calcaneal origin and their tendinous one are not reconciled here.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Accessorius",
+      "innervation": "A twig from the trunk of the external plantar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus. Cunningham (1882) records it only through its nerve: the trunk of the external plantar gives twigs to the abductor ossis metatarsi minimi digiti, the outermost belly of the flexor brevis digitorum **and the accessorius** before dividing. The thylacine and the cuscus are scored `no` on this record, so the two monotremes have a muscle both marsupials have lost.\n\n**Gambaryan et al. (2002) supply the attachments Cunningham did not**, and with them an argument about the heel. Here the muscle arises on the **dorsal** surface of the tuber calcanei, at its distal edge, and inserts on the dorsal surface of the common tendon of the flexor digitorum fibularis — it ends on another muscle's tendon and never reaches bone distally, which is why only the origin is scored. In therians the quadratus plantae arises on the lateral aspect of the tuber calcanei as it does here, **but from that process's plantar surface**. Gambaryan et al. take the discrepancy as evidence that the dorsal surface of the monotreme tuber calcanei answers to the plantar surface of the therian one — an inversion of the whole heel, argued from where one small muscle sits.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexor-accessorius-lateralis-pes",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Extensor digitorum brevis",
+      "attachmentNote": "Ornithorhynchus anatinus. **Absent**, on the same statement covering both monotremes. What the platypus has instead is a long extensor system of extraordinary reach: the extensor digitorum superficialis and profundus each split into five tendons at the foot, so every toe receives extensor tendons from both sides. A short extensor would have nothing left to do.",
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. interossei dorsales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interosseus dorsalis II"
+        },
+        {
+          "name": "Interosseus dorsalis III"
+        },
+        {
+          "name": "Interosseus dorsalis IV"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Three bundles. Interosseus dorsalis II from the dorsal surface of the third metatarsal and the dorsolateral edge of the second, onto the dorsolateral edges of both ends of the first phalanx and the proximal second phalanx of the second toe; III on the same pattern from the fourth metatarsal onto the third toe; IV from the dorsolateral surface of the fourth metatarsal onto the dorsal proximal first phalanx of the fourth toe. A further tendon from the proximal fourth and fifth metatarsals repeats the insertion pattern of II and III on the fourth toe, and one from the medial edge of the proximal second metatarsal runs to the first phalanx of the hallux and merges with the tendon of the adductor hallucis brevis.\n\n**This is the animal Gambaryan et al. use to argue where the therian adductores came from.** They call the platypus interossei hard to compare with either the echidna's or a therian's, and read that very complexity as a model of how interossei turn into adductores — the muscles of the contrahens layer that in therians end on the *lateral* sides of digits I and II, which they derive from the interossei rather than from the contrahentes proper. The full argument is on `contrahentes-digitorum-pes`. The echidna has three interossei, ending on the medial side of the third toe's first phalanx and on both sides of the second's.",
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (four adductors)",
+      "innervation": "The muscular branch of the deep division of the external plantar nerve, which supplies all the intrinsic muscles except the abductor ossis metatarsi minimi digiti and the flexor brevis hallucis.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor medii"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, from **both feet of four specimens** — the largest sample in Cunningham's survey, and he says why he needed it: the plantar layer is always distinct but the intermediate and dorsal layers are usually more or less fused. Four adductors, all from the plantar surface of the external and middle cuneiforms, drawing the toes towards the index. The adductor minimi digiti is the largest and lies very obliquely, chiefly on the tibial side of the minimus's first phalanx but sending a slender fleshy process forward to the second. In one very large specimen a delicate extra fasciculus went to the outer side of the medius, and Cunningham could find it in no other. **He disagrees with Ruge twice here.** Ruge described an extra adductor for the index: Cunningham looked for it in vain and could not use the deep external plantar nerve to help, because in this animal that nerve cannot be traced inward past the muscles of the index — it breaks up into terminal twigs, quite unlike Ruge's figure. Ruge also described an extra plantar muscle for the minimus: Cunningham made three special dissections and pronounces it the outermost belly of the flexor brevis digitorum, on four grounds, the last being that it is inserted like the other bellies of that muscle. He concedes Ruge's point that it takes an external plantar twig, and says a nerve alone is not enough to separate a muscle from the one it plainly belongs to.\n\n**Gambaryan et al. (2002) count three, not four, and call them contrahentes.** They arise by a common aponeurosis on the plantar tubercle of the naviculare: the contrahens of digit V from the most superficial layer, onto the medial sides of the distal fifth metatarsal and the first and second phalanges of that toe; the contrahentes of digits III and IV from the second and third layers, onto the medial sides of the metatarsals, the first phalanges and the proximal second phalanges of their toes. **The contrahens of the second toe is absent in this animal** — where Cunningham's four include an adductor hallucis and Gambaryan et al. treat the hallucal muscle as a separate abductor–flexor–adductor set. The two counts are not reconciled here.\n\n**Their nomenclature argument belongs to this record.** They hold that 'contrahentes' should name the group inserting on the *medial* sides of all the toes, which in a sprawling animal keeps the foot from turning laterally during the support phase. As therian limbs become parasagittal that lateral force disappears and the requirement becomes preventing the toes from spreading; the contrahens of digit III drops out and muscles appear on the *lateral* sides of digits I and II. The muscles serving digits IV and V they call homologous with the reptilian and monotreme contrahentes without reservation; those on the lateral sides of I and II they derive from the interossei instead, using the platypus's own elaborate interossei as the model of that transformation. Hence their recommendation: **`adductores` for therians, `contrahentes` for reptiles and monotremes** — against Ribbing (1938), Jouffroy & Lessertisseur (1959) and Kyou-Jouffroy (1971), who homologised the therian adductors with the reptilian contrahentes entire. This record is the union of both readings and does not adopt either name.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum fibularis and flexor digitorum tibialis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor digitorum fibularis"
+        },
+        {
+          "name": "Flexor digitorum tibialis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "landmark": "parafibular-process"
+          },
+          {
+            "element": "fibula",
+            "side": "posterior"
+          },
+          {
+            "element": "fibula",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Flexor digitorum fibularis by an aponeurosis below the broadening of the processus parafibularis and along its lateral edge, spreading over the whole caudal surface of the proximal fibula and part of its cranial surface down to the distal third; its tendon runs medial to the plantar eminences of the tuber calcanei, is held in a deepening of that surface by a strong ligament, broadens, and splits into five tendons to the ungual phalanges of all the toes. **The short muscles of the sole attach to both faces of that broadening**, which is what makes the tuber calcanei the organising landmark of this foot. Flexor digitorum tibialis from the proximal processus parafibularis between the popliteus and the tibialis caudalis, down to the distal end of the processus articularis fibularis; its thin round tendon lies in a sheath on the tibialis caudalis tendon, passes below the base of the crural spur, and ends by a broadening on the plantar surface of the medial sesamoid — **which Gambaryan et al. suggest is the prehallux**. At 3.5 per cent of hind limb mass the fibularis head is half again the echidna's.",
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gastrocnemius lateralis and gastrocnemius medialis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gastrocnemius lateralis"
+        },
+        {
+          "name": "Gastrocnemius medialis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "landmark": "parafibular-process"
+          },
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-medial"
+          },
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Gastrocnemius lateralis by fibres on a thickening of the caudal surface of the proximal processus parafibularis and the ligamentum parafibulopatellae, its aponeurosis anchoring on a distal prominence of that process. Gastrocnemius medialis as in the echidna, with some fibres from the proximal tibia. **Here the lateral head's tendon lies superficial to the medial head's before joining it** — the therian arrangement, and the reason Gambaryan et al. decline to call the echidna's lateral head a soleus. The common tendon inserts on the middle of the top of the tuber calcanei, between the tubercles bordering the groove that carries the flexor digitorum fibularis. The lateral head is 3.9 per cent of hind limb mass here against 1.2 per cent in the echidna.",
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Long digital extensors of the pes",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor hallucis longus"
+        },
+        {
+          "name": "Extensor digitorum superficialis"
+        },
+        {
+          "name": "Extensor digitorum profundus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "landmark": "parafibular-process"
+          },
+          {
+            "element": "fibula",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). All three arise on the fibula here and none on the tibia. Extensor hallucis longus in two bundles from the processus parafibularis and the arched crest of the processus articularis fibularis, running along the medial edge of the first metatarsal to the medial side of the ungual phalanx of the first toe. Extensor digitorum superficialis in two independently arising bundles from the arched crest and the proximal seventh of the fibula, their tendons fusing at the ankle and then splitting into **five** tendons that pass through a ring-shaped ligament anchored on the naviculare, reaching the second metatarsal and the dorsal sesamoids of the second phalanges of toes II–V, each sending a branch on to the ungual phalanx; the fifth toe has no sesamoid so its tendon runs straight to the ungual phalanx. Extensor digitorum profundus from the processus parafibularis, its tendon running in the interosseous space, also splitting into five, the deep layer of each branch onto the dorsal proximal first phalanx and the superficial layer to the ungual phalanx by way of the dorsal sesamoid. **Every ungual phalanx in this animal has an extensor tendon reaching it from the medial and lateral side both**, which the echidna does not: there the profundus reaches only toes II and III laterally, and the superficialis only II and III medially. Two tendinous guys split off from the profundus tendon at the ankle, one into the lateral adipose pad and one to the plantar aponeurosis — the pad that broadens the swimming foot.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Peroneotibialis",
+      "present": "no",
+      "attachmentNote": "Ornithorhynchus anatinus. **Found only in Tachyglossus** — Gambaryan et al. dissected both genera and state the muscle could be found in the echidna alone. The two species disagree inside one order, so whether Monotremata has this muscle is a species-level fact and the clade rolls up as variable rather than present.",
+      "region": "leg",
+      "record": "interosseus-cruris",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Peroneus longus and peroneus digiti quinti",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus longus"
+        },
+        {
+          "name": "Peroneus digiti quinti"
+        }
+      ],
+      "action": "The peroneus longus is the principal muscle turning the foot about its long axis in swimming.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "landmark": "parafibular-process"
+          },
+          {
+            "element": "fibula",
+            "side": "anterior"
+          },
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "ventral"
+          },
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Peroneus longus in three bundles — a medial one along the edge of a hook on the proximal cranial fibula, a lateral and deeper one from the lateral edge of the processus parafibularis running down the proximal quarter of the fibula — fusing into one belly whose tendon runs through the groove of the tuber calcanei to the middle of the medioplantar aspect of the first metatarsal. **Its synovial sheath is what has misled people.** The sheath fuses with the periosteum of the naviculare and the cuboid and is tightest on the proximal end of the fifth metatarsal, and Gambaryan et al. hold that this, and not a real tendon, is why Lewis, Szalay and others reported the muscle sending a slip to the fifth metatarsal. Peroneus digiti quinti from the processus parafibularis between the peroneus longus and the extensor digitorum profundus, two strong guys splitting off at the tuber calcanei — one into the tendon at the base of the lateral adipose pad, one onto the dorsolateral proximal first phalanx of the fifth toe — and the main tendon onto that toe's ungual phalanx. At 2.1 per cent of hind limb mass against the echidna's 0.8, the peroneus longus is nearly three times the muscle here, which is what rotating a webbed foot costs.",
+      "actions": [
+        {
+          "joint": "ankle",
+          "motion": "eversion"
+        },
+        {
+          "joint": "ankle",
+          "motion": "pronation"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Popliteus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "landmark": "parafibular-process"
+          },
+          {
+            "element": "patella"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Along the medial edge of the processus parafibularis distal to the gastrocnemius lateralis, the origin running down the ligamentum parafibulopatellae to the patella and further onto the process articulating with the tibia, lateral to the joint bursa; inserting on the caudal aspect of the tibia medial to the semimembranosus and the semitendinosus pars ischiadica.",
+      "region": "leg",
+      "record": "popliteus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis caudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "posterior"
+          },
+          {
+            "element": "fibula",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "calcaneum",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). From the caudal aspect of the fibula between the flexor digitorum fibularis and the flexor digitorum tibialis, running along the fibula's medial edge for more than three-fifths of its length; the muscle's caudal surface is concave. Its broad tendon carries the synovial sheath of the flexor digitorum tibialis, as in the echidna, and both tendons run below the base of the spur — **the venomous crural spur is a landmark in this animal's ankle** — the tibialis caudalis ending on the distal end of the calcaneus rather than on the astragalus as it does in the echidna.",
+      "region": "leg",
+      "record": "tibialis-posterior",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis cranialis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Superficial head"
+        },
+        {
+          "name": "Deep head"
+        }
+      ],
+      "divisionNote": "Two heads in the platypus, one in the echidna. The superficial head arises from the patella and the parafibular process, the deep from the proximal tibia.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "patella"
+          },
+          {
+            "element": "fibula",
+            "landmark": "parafibular-process"
+          },
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "distal-tarsals",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). The superficial head from the lateral edge of the patella, then over the ligamentum patelloparafibularis onto the top of the hooked broadening of the processus parafibularis; the deep head from the proximal extremity of the tibia over about a third of it from the fibular articulation. Both become one flat tendon over the distal third of the shin, running beside the extensor hallucis longus tendon under the transverse ligament, to the dorsomedial aspect of the distal end of the entocuneiform. **This muscle is nearly twice the echidna's** — 1.5 against 0.8 per cent of hind limb mass — because in the platypus it is one of the three muscles that turn the foot about its long axis during swimming, along with the peroneus longus and the extensor hallucis longus.",
+      "action": "Flexes the ankle; rotates the foot about its long axis during swimming.",
+      "actions": [
+        {
+          "joint": "ankle",
+          "motion": "flexion"
+        }
+      ],
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "action",
+        "actions"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae",
+            "landmark": "caudal-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "third-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). By fibres on the fascia lying between the sacrocaudalis ventralis and dorsalis at the level of the transverse processes of the first caudal vertebra, inserting by muscle fibres over a rather large area on the caudal aspect of the proximal rugosity of the trochanter tertius. **Where the caudofemoralis lands is the comparative point.** In archosaurs it takes the fourth trochanter, which is the best single fossil-muscle landmark in the vertebrate skeleton and is lost in Theria; here it has arrived on a third trochanter instead. At 0.6 per cent of hind limb mass this is the smallest it gets in either monotreme.",
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deep hip rotators (obturator externus group)",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Obturator externus"
+        },
+        {
+          "name": "Quadratus femoris"
+        },
+        {
+          "name": "Gemellus",
+          "membership": "disputed",
+          "claimedBy": "ischiotrochantericus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "lateral"
+          },
+          {
+            "element": "ischium",
+            "side": "lateral"
+          },
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "lesser-trochanter"
+          },
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Obturator externus from the laterodorsal margin of the obturator foramen caudal to the lateral head of the adductor longus, onto the caudal aspect of the trochanter minor proximal to the caudofemoralis. Quadratus femoris from both the dorsal surface and the ventrolateral aspect of the acetabular branch of the ischium, between the gemellus and the semimembranosus anterior, onto the caudal surface of the trochanter major between its rugosities, bordering the adductor brevis medially and the caudofemoralis distally. Gemellus as in the echidna: from the acetabular branch of the ischium caudal to the acetabulum onto the caudal aspect of the upper trochanter major. **The obturator externus has moved to the lesser trochanter in this animal** and to the femoral shaft in the echidna — the same muscle on two different landmarks in two genera of one order, which is worth having in front of a student before they read a single insertion off a fossil.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gluteus medius",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gluteus medius, pars proximalis"
+        },
+        {
+          "name": "Gluteus medius, pars intermedia"
+        },
+        {
+          "name": "Gluteus medius, pars distalis"
+        }
+      ],
+      "divisionNote": "Three parts, more clearly differentiated than in the echidna. The gluteus profundus, which the echidna has, is absent.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ilium",
+            "landmark": "iliac-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          },
+          {
+            "element": "femur",
+            "landmark": "third-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). The proximal part from the dorsal half of the ala ossis ilii and the adjacent outer fascia of the sacrocaudalis dorsalis; the intermediate and distal parts from the tendon anchored on the tuber coxae and from the crest of the ala ossis ilii. The three insert in series along the femur: proximal on the upper point of the trochanter major, distal on the **proximal** rugosity of the trochanter tertius, intermediate between them. **The rugosities of the trochanter tertius follow the muscle.** The platypus has the better-developed proximal rugosity and the echidna the distal one, matching where each animal's distal part of the gluteus medius ends — one of the cleanest osteological correlates in this dataset, because the bone records which of two insertions dominated in an animal nobody dissected. The gluteus profundus is not present in this species.",
+      "actions": [
+        {
+          "joint": "hip",
+          "motion": "pronation"
+        }
+      ],
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gluteus superficialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sacral-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "third-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). From an aponeurosis running from the caudal third of the spinous process of sacral vertebra II to the cranial half of that of sacral vertebra IV, and additionally from the prezygapophysis of the last sacral vertebra; the insertion is the same as in the echidna. **Coues (1870) described this muscle as the piriformis**, which Gambaryan et al. call an error — the piriformis proper arises on the ventral surfaces of the sacral vertebrae and inserts on the top of the trochanter major deep to the gluteus medius, and **it is absent in both monotremes**. The muscle that occupies the piriformis position in a therian pelvis is on the `caudofemoralis` record, which the monotremes retain in full. At 1.8 per cent of hind limb muscle mass this is a smaller muscle than the echidna's.",
+      "region": "pelvic",
+      "record": "gluteus-maximus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliopsoas and psoas minor",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Iliopsoas"
+        },
+        {
+          "name": "Psoas minor"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "side": "ventral"
+          },
+          {
+            "element": "lumbar-vertebrae",
+            "side": "ventral"
+          },
+          {
+            "element": "sacral-vertebrae",
+            "side": "ventral"
+          },
+          {
+            "element": "ribs",
+            "side": "ventral"
+          },
+          {
+            "element": "ilium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "lesser-trochanter"
+          },
+          {
+            "element": "femur",
+            "side": "medial"
+          },
+          {
+            "element": "ilium",
+            "landmark": "psoas-minor-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). The iliopsoas from half the ventral surface of the penultimate lumbar vertebra back to the middle of the first sacral, plus the ventral aspect of the ala ossis ilii. It takes the whole cranial surface of the trochanter minor — **displacing the origin of the vastus medialis altogether** — and runs distally over more than half the labium mediale ossis femoris. Gambaryan et al. call this insertion unique among mammals, in which the muscle is normally confined to the trochanter minor. The psoas minor from the ventral bodies of the last three thoracic vertebrae and the first lumbar, and the ventral surfaces of the basal parts of the last two ribs, to the craniodorsal ridge of the tuberculum musculi psoas minoris — a tubercle running to more than half the length of the ilium in this animal.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Gracilis anterior and gracilis posterior",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Gracilis anterior"
+        },
+        {
+          "name": "Gracilis posterior, pars anterior"
+        },
+        {
+          "name": "Gracilis posterior, pars intermedia"
+        },
+        {
+          "name": "Gracilis posterior, pars posterior"
+        }
+      ],
+      "divisionNote": "The gracilis posterior is in three parts here and undivided in the echidna. Its posterior and intermediate parts share one insertion tendon with the cutaneus maximus and the semitendinosus pars vertebralis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "landmark": "psoas-minor-tubercle"
+          },
+          {
+            "element": "epipubic-bone"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          },
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          },
+          {
+            "element": "patella"
+          },
+          {
+            "element": "patellar-tendon"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Gracilis anterior from the tuberculum musculi psoas minoris dorsocaudal to the psoas minor and cranial to the pectineus, inserting along the medial broadening of the tibial crest, the medial side of the patellar ligament and the medial edge of the patella. Gracilis posterior in three parts: pars anterior from the craniomedial edge of the epipubis — two-thirds of that bone's length and over half its width — passing onto the cranial third of the symphysis; pars posterior from the caudal third of the symphysis and the caudal three-fifths of the ischium; pars intermedia from what is left of the symphysis and from the outer fasciae of the other two. The posterior and intermediate parts share a tendon with the cutaneus maximus and the semitendinosus pars vertebralis, ending on the tibia at two-thirds of its length; the anterior part inserts as a narrow strip beginning a quarter of the way down the tibia. **Unlike the echidna, the distal insertion of the pars anterior lies medial to the medial collateral ligament**, which Gambaryan et al. call the characteristically mammalian arrangement.",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectineus, adductor longus, magnus and brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pectineus"
+        },
+        {
+          "name": "Adductor longus"
+        },
+        {
+          "name": "Adductor magnus"
+        },
+        {
+          "name": "Adductor brevis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "landmark": "psoas-minor-tubercle"
+          },
+          {
+            "element": "epipubic-bone"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "medial"
+          },
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter"
+          },
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-medial"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Pectineus by fibres on the dorsomedial surface of the tuberculum musculi psoas minoris caudal to the gracilis anterior, reaching the base of the tubercle and extending to the pubis–epipubis joint, inserting tendinously on the caudal aspect of the labium mediale ossis femoris over its medial fifth. Adductor longus in two distinct heads, from the medial and lateral edges of a rugosity of the pubis close to the pubis–epipubis joint and taking no part of the symphysial branch; the medial head's aponeurosis reaches the distal third of the labium mediale and the dorsal surface of the medial epicondyle, and the lateral head inserts by fibres on the medial head's tendinous sheet. Adductor magnus by a thin aponeurosis fused with the aponeurotic origin of the semimembranosus anterior, inserting along the labium mediale to the ventral surface of the medial epicondyle. Adductor brevis from the symphysial branches of ischium and pubis between the medial edge of the obturator foramen and the other two adductors, along the medial edge of the caudal surface of the trochanter major. **Gambaryan et al. use this animal's adductor brevis as the model from which the therian patterns can be derived**: move its origin from the cranial edge of the obturator foramen onto the ischial tuberosity and you have the marsupial, insectivore and rodent arrangement; keep only the cranial part of the origin and put the proximal adductor magnus insertion lateral to that of the brevis and you have the human one, which they attribute to erect posture since other primates do it differently.",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rectus femoris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patella"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). From the same iliac tuberosity as in the echidna, but its distal part is fused with the vastus lateralis and vastus medialis, all three inserting together on the proximal half of the inner surface of the patella.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Semitendinosus, semimembranosus and biceps femoris",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Semitendinosus, pars vertebralis"
+        },
+        {
+          "name": "Semitendinosus, pars ischiadica"
+        },
+        {
+          "name": "Semimembranosus anterior"
+        },
+        {
+          "name": "Semimembranosus posterior"
+        },
+        {
+          "name": "Biceps femoris"
+        }
+      ],
+      "action": "Flex the knee; the semitendinosus pars vertebralis rotates the first and fifth metatarsals about their long axes so that the web spreads.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "lumbar-vertebrae",
+            "side": "dorsal"
+          },
+          {
+            "element": "ilium",
+            "landmark": "iliac-crest"
+          },
+          {
+            "element": "caudal-vertebrae",
+            "side": "dorsal"
+          },
+          {
+            "element": "caudal-vertebrae",
+            "landmark": "caudal-transverse-processes"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          },
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia"
+          },
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          },
+          {
+            "element": "patella"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). **The semitendinosus pars vertebralis is the largest muscle in this animal's hind limb** — 16.3 per cent of its whole hind limb mass, against 4.6 per cent in the echidna — and it is the muscle that opens the web. It arises from the neural spine of the last lumbar vertebra, over the fascia erectoris spinae onto the whole laterodorsal surface of the tuber coxae, caudally from the neural spine of caudal III over the fascia of the sacrocaudalis dorsalis to the prezygapophysis of caudal IV and the transverse processes of caudals III and IV, and further over the fascia of the sacrocaudalis ventralis to the haemal arch between caudals IV and V. All of that converges on one strong tendon running to the lateroplantar foot, which broadens over the lateral aspect of the foot and **inserts on the dorsolateral edge of the fifth metatarsal and the dorsomedial edge of the first**. Gambaryan et al.'s point is mechanical: contracting it turns both marginal metatarsals about their long axes, and the web then unfolds by itself under water pressure. A tendinous sheet splits off to the caudomedial surface of the gracilis posterior tendon and an aponeurosis onto the medial third of the tibia. The pars ischiadica from the ischial tuberosity mediocranial to the biceps femoris and from the cranial end of the semimembranosus posterior's tendinous sheet, onto the caudal tibia. Semimembranosus posterior from the ischial tuberosity cranial to the semitendinosus, onto the proximal third of the caudal tibia near its medial edge; semimembranosus anterior from the ischial tuberosity, passing onto the symphysial branch of the pubis lateral to the gracilis posterior, onto the very proximal end of the caudal tibia. Biceps femoris from the dorsocaudal edge of the ischial tuberosity, its aponeurosis onto the lateral edge of the patella and the outer fascia of the vastus lateralis, then curving over the tibialis cranialis onto the tibial crest — **the echidna's aponeurosis does not curve over that muscle**, and its connections to the fascia between the long extensors are strong where the platypus's are extremely weak.",
+      "actions": [
+        {
+          "joint": "knee",
+          "motion": "flexion"
+        }
+      ],
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Vastus lateralis and vastus medialis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Vastus lateralis"
+        },
+        {
+          "name": "Vastus medialis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "patella"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, Gambaryan et al. (2002). Vastus lateralis from the proximal half of the femur above the gluteus medius insertion. **The vastus medialis is totally replaced by the iliopsoas** over the cranial surface of the proximal half of the femur — the knee extensor has lost its origin to a hip flexor whose insertion Gambaryan et al. call unique among mammals. The two vasti and the rectus femoris fuse to insert on the proximal half of the inner surface of the patella. At 0.8 per cent of hind limb mass against the echidna's 3.9 per cent, the medialis is the muscle that pays for that.",
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2002"
+      ]
+    }
+  ]
+}

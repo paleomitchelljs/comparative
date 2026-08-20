@@ -1,0 +1,126 @@
+{
+  "species": "struthio-camelus",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Extensor digitorum longus",
+      "present": "uncertain",
+      "note": "See the tibialis anterior record: which avian muscle is the homologue is disputed.",
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Extensor digitorum longus",
+            "abbr": "EDL",
+            "mass_g": {
+              "mean": 115.0
+            },
+            "fascicleLength_mm": {
+              "mean": 49
+            },
+            "pennation_deg": {
+              "mean": 30
+            },
+            "maxIsometricForce_N": {
+              "mean": 576
+            }
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021",
+        "hutchinson-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Tibialis cranialis (classical) / extensor digitorum longus (Hattori & Tsuihiji 2021)",
+      "present": "uncertain",
+      "note": "Which avian muscle this record corresponds to is exactly what Hattori & Tsuihiji (2021) dispute. Scored uncertain rather than picking a side.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsometatarsus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Struthio camelus",
+        "n": 1,
+        "bodyMass_kg": 65.3,
+        "sources": [
+          "hutchinson-etal-2015"
+        ],
+        "note": "Values as modelled; maximum isometric force is derived, not measured.",
+        "parts": [
+          {
+            "name": "Tibialis cranialis",
+            "abbr": "TC",
+            "mass_g": {
+              "mean": 165.0
+            },
+            "fascicleLength_mm": {
+              "mean": 45
+            },
+            "pennation_deg": {
+              "mean": 25
+            },
+            "maxIsometricForce_N": {
+              "mean": 474
+            }
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments",
+        "architecture"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021",
+        "hutchinson-etal-2015"
+      ]
+    }
+  ]
+}

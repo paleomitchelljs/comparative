@@ -1,0 +1,26 @@
+{
+  "species": "myxine-glutinosa",
+  "source": "fritzsch-2023",
+  "status": "blocked-no-source",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "note": "Myxine glutinosa has no extraocular muscles at all, and no ocular motor neurons to supply them — on Fritzsch's compilation the only vertebrate group of which that is true. The eyes themselves are reduced. This is an absence with a mechanism rather than a failure to find the muscle, which is what makes it scoreable as `no` rather than left unrecorded, and it is the floor of the record: lampreys already have six.",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "fritzsch-2023"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,602 @@
+{
+  "species": "crocodylus-porosus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "A very long tendon of origin from the ventral coracoid — about half the length of the belly — to the proximomedial radius.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Fleshy on the anterior humeral head; inserts on the proximomedial radius with the biceps tendon.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracobrachialis",
+      "present": "yes",
+      "note": "= coracobrachialis brevis sensu Holmes (1977) and Dilkes (2000).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Klinkhamer et al. divide this into brevis ventralis and brevis dorsalis. The ventralis is scored here — fleshy over the entire lateral coracoid to the deltopectoral crest. They give the dorsalis an anterolateral SCAPULAR origin, which is not a coracoid attachment and is not folded in.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Humeroradialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Fleshy from the deltopectoral crest, inserting with biceps and brachialis.",
+      "region": "arm",
+      "record": "humeroradialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "note": "Confusingly called flexor ulnaris by Meers (2003) despite being a dorsal-mass, radial-innervated muscle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Crocodylus porosus, reported as extensor carpi ulnaris: tendinous from the lateral condyle of the disto-ventral humerus to 'the dorsal manus'. NO INSERTION ROW, which reads correctly as not recorded. Klinkhamer et al. state that muscles inserting into the manus and pes were SEVERED DURING SKINNING and that for those muscles they 'left the description more general, simply describing insertion as into the manus/pes' — so the phrase is a record of a lost attachment, not a coarse one, and choosing a carpal or a metacarpal from it asserts what they were careful not to. This row previously read `metacarpals`.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Crocodylus porosus. Tendinous at the disto-medial humerus, fleshy at 'the ventral manus'. No insertion row: Klinkhamer et al. record that manus insertions were severed during skinning and left deliberately general, so an absent row reads correctly as not recorded, where this row's previous `carpals` asserted a site their wording does not license. Contrast the pronator teres of the same animal, where they do name the ventral CARPALS specifically — that row keeps its carpal insertion.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Tendinous at both ends; reaches digit 2 of the manus.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Fleshy at the proximomedial ulna to the posterodistal radius.",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Pronator teres",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Tendinous at the ventrodistal humerus, fleshy on the ventral carpus. Note the carpal rather than radial insertion — Klinkhamer et al. report it that way for Crocodylus.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "note": "Usually divided into pars superficialis and pars profunda (Meers 2003).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "coracoid",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Klinkhamer et al. separate a costocoracoideus PROFUNDUS, fleshy from the lateral margin of the first few ribs to the ventro-posterior margin of the coracoid — the two coracoid rows are its one attachment named on two aspects. The SUPERFICIALIS is not scored here and is the reason to keep this record open: it arises on the ventro-lateral first few ribs and inserts on the MEDIAL HUMERAL HEAD, so one of the two parts of this muscle bypasses the girdle and reaches the arm.",
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Fleshy on the disto-lateral scapula, tendinous on the DORSO-LATERAL HUMERAL HEAD. Klinkhamer et al. give no deltopectoral crest for this muscle — the row formerly asserted one, against its own note. The row stops at the bone because skeleton.json resolves no humeral-head site. An elongate muscle attached along the scapula from its origin until it becomes tendinous, lying anterior to teres major.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Origin with the neck muscles on the lateral cervical ribs; fleshy insertion running the ANTERIOR scapular border from its anterodistal tip to the glenohumeral joint. Largely obscured by the trapezius — which these authors could not model, because skinning removed it.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulohumeralis posterior",
+      "present": "yes",
+      "note": "= scapulohumeralis caudalis sensu Meers (2003).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Origin on the proximo-lateral and posterior scapula, insertion on the proximo-lateral humeral head, both fleshy. Klinkhamer et al. equate it with teres minor, which bears on the unresolved scapulohumeralis/teres minor question.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "note": "= serratus ventralis sensu Meers (2003).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Originates from the ventrolateral ribs and inserts by tendon along the entire MEDIO-POSTERIOR scapular margin — a broad, thin girdle extensor. Two insertion rows because the source names two aspects of one bone; a single `lateral` row had been standing here, which is the aspect the global side table supplies and not the one the paper gives.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Fleshy origin on the PROXIMO-LATERAL coracoid, covering the entire humeral head; fleshy insertion on the VENTRO-LATERAL humerus at the deltopectoral crest. Broad and triangular, forming much of the shoulder. Both aspects are stated by Klinkhamer et al. and both had been overwritten by the global side table, which gave coracoid/ventral and deltopectoral-crest/anterior — the one thing this source is cited for is that it names the aspect.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres major",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Crocodylus porosus. Origin fleshy on the DISTO-LATERAL scapula, forming its postero-lateral surface and lying deep to the latissimus dorsi; a long well-defined tendon to a bony ridge on the proximo-lateral humerus — a scar worth looking for in fossil pseudosuchians. The origin formerly carried the SUBSCAPULAR FOSSA, which is a medial site and is not mentioned by Klinkhamer et al. anywhere; their word is disto-lateral, as this note always said.",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "klinkhamer-etal-2017"
+      ]
+    }
+  ]
+}

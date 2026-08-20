@@ -1,0 +1,380 @@
+{
+  "species": "galictis-cuja",
+  "source": "hudson-etal-2011a",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Triceps brachii (long, lateral, medial heads)",
+      "present": "yes",
+      "action": "Extends the forearm; the long head also extends and adducts the arm.",
+      "innervation": "Radial nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Triceps brachii — long head",
+            "abbr": "Tlong",
+            "mass_g": {
+              "mean": 255.4,
+              "sd": 23.6
+            },
+            "fascicleLength_mm": {
+              "mean": 6.0,
+              "sd": 1.2
+            },
+            "pcsa_cm2": {
+              "mean": 46.8,
+              "sd": 9.2
+            }
+          },
+          {
+            "name": "Triceps brachii — lateral head",
+            "abbr": "Tlat",
+            "mass_g": {
+              "mean": 98.9,
+              "sd": 9.9
+            },
+            "fascicleLength_mm": {
+              "mean": 10.4,
+              "sd": 1.9
+            },
+            "pcsa_cm2": {
+              "mean": 10.5,
+              "sd": 2.8
+            }
+          },
+          {
+            "name": "Triceps brachii — medial head",
+            "abbr": "Tmed",
+            "mass_g": {
+              "mean": 16.9,
+              "sd": 4.0
+            },
+            "fascicleLength_mm": {
+              "mean": 13.1,
+              "sd": 1.8
+            },
+            "pcsa_cm2": {
+              "mean": 1.4,
+              "sd": 0.4
+            }
+          },
+          {
+            "name": "Triceps brachii — accessory head",
+            "abbr": "Tacc",
+            "mass_g": {
+              "mean": 11.8,
+              "sd": 6.3
+            },
+            "fascicleLength_mm": {
+              "mean": 9.1,
+              "sd": 3.8
+            },
+            "pcsa_cm2": {
+              "mean": 1.5,
+              "sd": 0.9
+            }
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput longum"
+        },
+        {
+          "name": "Caput laterale"
+        },
+        {
+          "name": "Caput mediale"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "radial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "elbow",
+          "motion": "extension"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "extension"
+        }
+      ],
+      "attachmentNote": "Galictis cuja. Six well-separated bellies near the origin in this animal — caput longum, laterale, angulare, accessorium, mediale accessorium and mediale, the last itself three-bellied.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "architecture",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "hudson-etal-2011a"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "action": "Extends, adducts and medially rotates the humerus.",
+      "innervation": "Thoracodorsal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Latissimus dorsi",
+            "abbr": "LAT",
+            "mass_g": {
+              "mean": 272.8,
+              "sd": 68.9
+            },
+            "fascicleLength_mm": {
+              "mean": 32.5,
+              "sd": 9.6
+            },
+            "pcsa_cm2": {
+              "mean": 10.8,
+              "sd": 7.5
+            }
+          }
+        ]
+      },
+      "nerves": [
+        {
+          "nerve": "thoracodorsal"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "extension"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "rotation-medial"
+        }
+      ],
+      "attachmentNote": "Galictis cuja.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "architecture",
+        "nerves",
+        "actions",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "hudson-etal-2011a"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supraspinatus and infraspinatus",
+      "present": "yes",
+      "action": "Supraspinatus abducts and stabilises; infraspinatus laterally rotates.",
+      "innervation": "Suprascapular nerve.",
+      "note": "The migration of this muscle from the coracoid to the lateral scapula, and its division by the newly evolved scapular spine, is one of the defining events of the synapsid pectoral transformation.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "supraspinous-fossa"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "infraspinous-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Origin has migrated off the coracoid — which no longer exists as a separate bone — onto the lateral scapula, where the new scapular spine splits it into supraspinatus and infraspinatus.",
+      "architecture": {
+        "species": "Acinonyx jubatus",
+        "n": 8,
+        "sources": [
+          "hudson-etal-2011a"
+        ],
+        "comparison": {
+          "species": "Canis lupus familiaris (greyhound)",
+          "n": 9,
+          "source": "hudson-etal-2011a"
+        },
+        "parts": [
+          {
+            "name": "Supraspinatus",
+            "abbr": "SS",
+            "mass_g": {
+              "mean": 206.4,
+              "sd": 28.4
+            },
+            "fascicleLength_mm": {
+              "mean": 7.9,
+              "sd": 1.7
+            },
+            "pcsa_cm2": {
+              "mean": 28.4,
+              "sd": 5.3
+            }
+          },
+          {
+            "name": "Infraspinatus",
+            "abbr": "IS",
+            "mass_g": {
+              "mean": 148.3,
+              "sd": 18.5
+            },
+            "fascicleLength_mm": {
+              "mean": 5.1,
+              "sd": 1.4
+            },
+            "pcsa_cm2": {
+              "mean": 33.5,
+              "sd": 10.5
+            }
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supraspinatus"
+        },
+        {
+          "name": "Infraspinatus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "suprascapular"
+        }
+      ],
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "architecture",
+        "division",
+        "parts",
+        "nerves"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "fahn-lai-etal-2020",
+        "hudson-etal-2011a"
+      ]
+    }
+  ]
+}

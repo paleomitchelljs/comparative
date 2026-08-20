@@ -1,0 +1,174 @@
+{
+  "species": "caiman-yacare",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "note": "From the lateral femoral extensor fossa and condyle to the proximodorsal metatarsals III-IV.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "landmark": "femoral-extensor-fossa"
+          },
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Fibularis longus + brevis",
+      "present": "yes",
+      "note": "Both insert on the anterior surface of metatarsal V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "fibula",
+            "landmark": "iliofibular-tubercle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Fibularis longus arises on the fibular shaft distal to the iliofibular tubercle; brevis from the distal fibular shaft and the anterior tibial aponeurosis. Both insert on the anterior surface of metatarsal V.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Fibularis longus"
+        },
+        {
+          "name": "Fibularis brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "note": "Femoral origin; inserts on the proximoventral unguals I-III.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "femur"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III.",
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "From the proximomedial tibia to the dorsolateral proximal metatarsals I-II; the metatarsal bases carry coarse rugosities marking the insertion.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    }
+  ]
+}

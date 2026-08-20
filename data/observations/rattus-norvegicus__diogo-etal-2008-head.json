@@ -1,0 +1,598 @@
+{
+  "species": "rattus-norvegicus",
+  "source": "diogo-etal-2008-head",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Arytenoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "arytenoideus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Ceratohyoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "ceratohyoideus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ceratohyoideus and stylopharyngeus",
+      "present": "yes",
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 3. Two, as in a colugo and a tree-shrew; a human has only the stylopharyngeus. **In many mammals, including *Macaca*, the ceratohyoideus and stylopharyngeus are innervated by the same ramus of the glossopharyngeal nerve** — Sprague's buccal ramus — which is the evidence that they are one muscle divided rather than two. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis inferior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-inferior",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis medius",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-medius",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis superior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-superior",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricoarytenoideus lateralis",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricoarytenoideus-lateralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricoarytenoideus posterior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricoarytenoideus-posterior",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricothyroideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricothyroideus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Dorsal mandibular muscles",
+      "attachmentNote": "Rattus norvegicus. **Absent**, on the same table row as the platypus, the colugo, the tree-shrew and the human. The dorsal mandibular muscles move the palatoquadrate and its derivatives against the braincase; in a mammal the quadrate has become an ear ossicle and the upper jaw is fused to the skull, so there is nothing left for the field to move.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Geniohyoid and rectus cervicis groups",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Geniohyoideus"
+        },
+        {
+          "name": "Genioglossus"
+        },
+        {
+          "name": "Hyoglossus"
+        },
+        {
+          "name": "Styloglossus"
+        },
+        {
+          "name": "Sternohyoideus"
+        },
+        {
+          "name": "Omohyoideus"
+        },
+        {
+          "name": "Sternothyroideus"
+        },
+        {
+          "name": "Thyrohyoideus"
+        }
+      ],
+      "divisionNote": "Eight, excluding the intrinsic tongue muscles. **No palatoglossus** — seemingly not an independent muscle in the rats Diogo et al. dissected, which Barrow & Capecchi (1999) support; a human and a colugo have one and a tree-shrew does not.",
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 4. Greene (1935) did not describe a genioglossus in the rat; Diogo et al. found it as an independent structure in every rat they dissected, with Bryant (1945) reporting it effectively often present in rodents. **This is the group that grows steadily rather than in a jump**: *Latimeria* and *Lepidosiren* have two, *Ambystoma* six, *Timon* five, the platypus six, this animal eight, a human nine — unlike the hyoid muscles on `interhyoideus`, which go from three in a lizard to twenty-seven in a human. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Levator veli palatini",
+      "present": "yes",
+      "region": "cranial",
+      "record": "levator-veli-palatini",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mammalian jaw adductors",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Masseter"
+        },
+        {
+          "name": "Temporalis"
+        },
+        {
+          "name": "Pterygoideus lateralis"
+        },
+        {
+          "name": "Pterygoideus medialis"
+        },
+        {
+          "name": "Tensor tympani",
+          "membership": "disputed",
+          "claimedBy": "intermandibularis"
+        },
+        {
+          "name": "Tensor veli palatini",
+          "membership": "disputed",
+          "claimedBy": "intermandibularis"
+        }
+      ],
+      "divisionNote": "The two tensors are carried as disputed: Diogo et al. derive them from adductor mandibulae A2-PVM, and this dataset also scores them as parts of `intermandibularis`.",
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 1. The same six as a human, and the same six as a colugo and a tree-shrew — **the adductor field is where the mammals in this table agree**, and the intermandibularis is where they do not. The rat is the dataset's only therian on this record other than the human, and it is here to make the human row stop standing for Mammalia. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Musculus uvulae",
+      "present": "yes",
+      "region": "cranial",
+      "record": "musculus-uvulae",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mylohyoid group, with a transversus mandibularis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Mylohyoideus"
+        },
+        {
+          "name": "Digastricus anterior"
+        },
+        {
+          "name": "Transversus mandibularis"
+        }
+      ],
+      "divisionNote": "The first two are intermandibularis posterior derivatives; the transversus mandibularis is the intermandibularis **anterior**.",
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 1. **The rat keeps an intermandibularis anterior and the platypus and the human do not** — it is the muscle Greene (1935) called the transversus mandibularis. Diogo et al. are explicit that the rat's mylohyoideus and digastricus anterior correspond to the *posterior* intermandibularis precisely because the transversus mandibularis already holds the anterior position, with Bryant (1945) in support. Across their nine taxa the anterior division survives in *Latimeria*, *Ambystoma*, *Timon*, *Rattus* and *Tupaia* and is gone in *Ornithorhynchus*, *Cynocephalus* and *Homo* — **so it is lost more than once inside Mammalia**, and a human is a poor guide to what a mammal has here. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Palatopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "palatopharyngeus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "pterygopharyngeus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Salpingopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "salpingopharyngeus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sphincter colli and the facial muscles",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Orbito-temporo-auricularis"
+        },
+        {
+          "name": "Naso-labialis"
+        },
+        {
+          "name": "Maxillo-naso-labialis"
+        }
+      ],
+      "divisionNote": "A partial list: Diogo et al. count twenty-three hyoid muscles in this animal excluding the extrinsic ear muscles, and several of those are dorso-medial and belong on `depressor-mandibulae` and `stapedius`.",
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. **Twenty-three hyoid muscles against a lizard's three.** The rat is here because the human row cannot carry Mammalia on this record: a human has twenty-seven and a tree-shrew twenty-five, so the elaboration is therian rather than primate, and Diogo et al.'s own summary is that the facial count rises at the transition to therian mammals and not again at the transition to higher primates. Diogo et al. (2009) resolve the primate end of it muscle by muscle — see that source's reading note for why this record has not yet been split into the fifteen or twenty it would take to hold them. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Stapedius",
+      "present": "yes",
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. Present, as in the platypus, the colugo, the tree-shrew and the human — **the one muscle of this field that every mammal in their table keeps**, while the styloideus, stylohyoideus, jugulohyoideus and digastricus posterior come and go around it. This record previously held a skate and a human and nothing between them.",
+      "region": "cranial",
+      "record": "stapedius",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Stylohyoideus and digastricus posterior",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Stylohyoideus"
+        },
+        {
+          "name": "Digastricus posterior"
+        }
+      ],
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. Where the platypus has one muscle from this field the rat has two, and a colugo and a tree-shrew have three — the jugulohyoideus as well. **The digastric is two muscles from two arches with two nerves**, and this record holds the posterior belly while `intermandibularis` holds the anterior: Gasser's (1967) developmental study has the human digastricus posterior, stapedius and stylohyoideus arising from a single anlage, which is this field. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Stylopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "stylopharyngeus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Thyroarytenoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "thyroarytenoideus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Vocalis",
+      "present": "yes",
+      "region": "cranial",
+      "record": "vocalis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Trapezius and cleidomastoid series",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Acromiotrapezius"
+        },
+        {
+          "name": "Spinotrapezius"
+        },
+        {
+          "name": "Cleidomastoideus"
+        },
+        {
+          "name": "Sternomastoideus"
+        }
+      ],
+      "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 3. Four parts, against six in the platypus and two in a human — the trapezius and the sternocleidomastoid of human anatomy are each a fusion of what is separate in most other mammals, and this row exists so the human names are not read as the primitive count. **No attachments are scored: this source describes none.**",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    }
+  ]
+}

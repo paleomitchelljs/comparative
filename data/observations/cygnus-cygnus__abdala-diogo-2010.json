@@ -1,0 +1,49 @@
+{
+  "species": "cygnus-cygnus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "note": "Present according to Dilkes (2000).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). The only muscle inside the thoracic cavity, which Matsuoka & Hasegawa suggest keeps the coracosternal connection flexible. Arises from the dorsal surface of the craniolateral corner of the sternum — the Proc. craniolateralis — and the medial part of the cranial border of the rib cage at the first rib, inserting in a large depression on the dorsal surface of the basal part of the coracoid. **The insertion was previously scored as the ventral coracoid**, which is the wrong face of the bone for a muscle its own source places inside the thorax.",
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "matsuoka-hasegawa-2007"
+      ]
+    }
+  ]
+}

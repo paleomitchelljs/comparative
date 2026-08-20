@@ -1,0 +1,47 @@
+{
+  "species": "alligator-mississippiensis",
+  "source": "pereyra-etal-2024",
+  "status": "blocked-no-source",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Gastrocnemius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "tibia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "calcaneum"
+          }
+        ]
+      },
+      "attachmentNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon.",
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "allen-etal-2014",
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    }
+  ]
+}

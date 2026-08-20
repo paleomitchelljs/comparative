@@ -1,0 +1,155 @@
+{
+  "species": "rattus-norvegicus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "variable",
+      "note": "Rattus norvegicus, the mammal in Abdala & Diogo's Tables 2 and 3. Largely lost or reduced in the therian manus, though a dorsal intrinsic layer persists in some taxa; they note that the reduction of the intrinsic hand musculature is a mammalian trend, not a mammalian elaboration.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor pollicis (+ palmar interossei)",
+      "present": "variable",
+      "note": "Rattus norvegicus, from Abdala & Diogo's Tables 2-3. The mammalian adductor pollicis is generally regarded as a surviving contrahens; the rest of the layer is lost.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor pollicis"
+        },
+        {
+          "name": "Palmar interossei",
+          "membership": "disputed"
+        }
+      ],
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interossei (partim)",
+      "present": "yes",
+      "note": "Rattus norvegicus, from Abdala & Diogo's Tables 2-3. Contributes, with the flexores breves profundi, to the mammalian interossei.",
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costoscapularis",
+      "present": "variable",
+      "note": "Rattus norvegicus, from Abdala & Diogo's Table 2. Howell (1937b) reports a 'costoscapularis' in placentals, the coracoid attachment having shifted to the scapula.",
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subclavius",
+      "present": "yes",
+      "action": "Depresses and stabilises the clavicle.",
+      "innervation": "Nerve to subclavius.",
+      "note": "Rattus norvegicus, the mammal in Abdala & Diogo's Table 2. Howell (1937b) argued the placental subclavius corresponds to the sternocoracoideus of other tetrapods, the coracoid having been lost and its attachment transferred to the clavicle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "clavicle"
+          }
+        ]
+      },
+      "attachmentNote": "As the subclavius. With the coracoid gone the insertion transfers to the clavicle — Howell's (1937b) basis for the homology.",
+      "nerves": [
+        {
+          "nerve": "nerve-to-subclavius"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "girdle-axial",
+          "motion": "depression"
+        },
+        {
+          "joint": "girdle-axial",
+          "motion": "stabilisation"
+        }
+      ],
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    }
+  ]
+}

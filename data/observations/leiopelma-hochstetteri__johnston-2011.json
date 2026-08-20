@@ -1,0 +1,282 @@
+{
+  "species": "leiopelma-hochstetteri",
+  "source": "johnston-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "present": "no",
+      "note": "Absent in Leiopelma hochstetteri. Johnston (2011) identifies the muscle in Ascaphus truei — the first record of a levator anguli oris in any frog — and does not find it in Leiopelma, so the two basal anuran lineages differ and Anura computes as variable rather than being declared so.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "levator-anguli-oris",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "present",
+        "sources",
+        "note",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "name": "Adductor mandibulae (continuous block)",
+      "present": "yes",
+      "division": "single",
+      "note": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. The group is a continuous block of muscle with no distinct separation into individual muscles, apart from a plane between the adductor mandibulae posterior and the rest, and a separate lateralis. That is the folded-sheet model's central claim made visible: the components are not separate muscles but named limbs of one sheet, identified by where each inserts into the inverted U around the posterior's insertion.",
+      "speciesBasis": "note",
+      "attachments": {
+        "origin": [
+          {
+            "element": "braincase-dorsal"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "otic-capsule"
+          },
+          {
+            "element": "crista-parotica"
+          },
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          },
+          {
+            "element": "mandible",
+            "landmark": "coronoid"
+          },
+          {
+            "element": "mandible",
+            "side": "lateral"
+          },
+          {
+            "element": "mandible",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri, four specimens, Johnston (2011). The group is one continuous block here, so these rows are the union of the components he traces through it, and the insertions are the folded U his homology model is built on. Most rostral origin on the dorsal braincase medial to the eye, reaching further forward than in Ascaphus or most other frogs. The longus arises from the parietal region, the convexity of the otic capsule and the crista parotica, passes ventrally and rostrally medial to the processus zygomaticus of the squamosal, and inserts around the APEX of the U on the coronoid area. The externus arises from squamosal and quadrate and inserts as the LATERAL limb of the U. The internus inserts medially in two parts — a rostral tendon just medial to the quadrate-mandibular articulation and a caudal fleshy slip beside it. The adductor posterior runs from the anterior face of the quadrate to the dorsal mandible just rostral to the articulation. No row for the lateralis insertion: Johnston gives its origin on the quadrate and its course lateral to V3 but does not state where it ends.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "note",
+        "speciesBasis",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "name": "Adductor mandibulae externus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. Contiguous laterally with the longus, and inserting as the lateral limb of the U. Origin on the squamosal and the quadrate.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "name": "Adductor mandibulae internus (rostral + caudal parts)",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Rostral part"
+        },
+        {
+          "name": "Caudal part"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "braincase-dorsal",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. The rostral origin on the dorsal braincase medial to the eye extends further forward than in Ascaphus truei or in most other frogs, which is the species difference this row exists to hold — it had been carried as prose on the Ascaphus row. The rostral part converges on a flat tendon inserting immediately medial to the quadrate–mandibular articulation; the caudal part has a more ventral fibre direction and a fleshy insertion on the medial mandible beside that tendon.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "name": "Adductor mandibulae lateralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. A small separate body at the most lateral and caudal extent of the group, arising from the quadrate just dorsal to its articulation with the mandible and passing ventral and rostral to lie lateral to V3. It is the one component Johnston finds genuinely separate from the block besides the posterior.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "adductor-mandibulae-lateralis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "name": "Adductor mandibulae longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "otic-capsule",
+            "landmark": "crista-parotica"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "coronoid"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. Origin from the parietal region of the braincase and over the convexity of the otic capsule as far back as the dorsal and caudal limits of the skull, including the crista parotica. The fibres pass ventrally and rostrally, medial to the processus zygomaticus of the squamosal, to insert around the apex of the U on the coronoid area of the mandible. Johnston reports the same origin dorsal to the otic capsule in Ascaphus truei.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "adductor-mandibulae-longus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Leiopelma hochstetteri, Johnston's primary animal — four specimens against two of Ascaphus, and the fuller description of the two. A cylindrical belly running from the anterior face of the quadrate to the dorsal mandible immediately rostral to the articulation. This is the axis the adductor sheet folds around, and Johnston's argument that it is of different homology from the rest of the group is what makes the remainder resolvable at all.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    }
+  ]
+}

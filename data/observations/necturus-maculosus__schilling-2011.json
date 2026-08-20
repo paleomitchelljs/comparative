@@ -1,0 +1,40 @@
+{
+  "species": "necturus-maculosus",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Abdominal wall + subvertebral musculature",
+      "present": "yes",
+      "note": "How the hypaxial mass is apportioned tracks habitat across urodeles. Omura et al. weighed every trunk muscle in five species and found the lateral hypaxial layers taking roughly a quarter of trunk muscle mass each in the aquatic Amphiuma and Necturus against under a tenth in the terrestrial Hynobius and Ambystoma, with the rectus abdominis running the other way. The subvertebral portion rises with terrestriality alongside the epaxial mass. Proportions, not attachments — the sample is five species and three habitat classes, so it constrains what the hypaxial mass is FOR without saying where any part of it inserts.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abdominal wall musculature"
+        },
+        {
+          "name": "Subvertebral musculature"
+        }
+      ],
+      "region": "axial",
+      "record": "hypaxial-musculature",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "schilling-2011",
+        "omura-etal-2014"
+      ]
+    }
+  ]
+}

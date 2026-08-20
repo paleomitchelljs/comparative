@@ -1,0 +1,150 @@
+{
+  "species": "castor-fiber",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Castor fiber. Well developed, from the inner and under surface of the internal cuneiform to the inner sesamoid at the root of the hallux — **one of the few muscles in this foot that has not begun turning into a fibrous band.**",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Adductor hallucis, and an adductor annularis in fibre",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor annularis",
+          "membership": "variable"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Castor fiber. A putrid specimen, both feet carefully dissected. **The only muscular element of this layer is the adductor hallucis** — a very minute belly followed by a long slender fibrous tendon, from the deep surface of the middle cuneiform to the outer aspect of the base of the hallux's first phalanx. The adductor annularis is present as a distinct fibrous band beside it, running to the inner aspect of the base of the annularis: **it contains no muscular fibres, and its position and connections alone tell its history.** The same substitution of fibrous band for muscle runs through this foot, as it does through the armadillo's.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 29,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves of the middle digits"
+        },
+        {
+          "name": "Flexor brevis hallucis, inner head",
+          "membership": "variable"
+        },
+        {
+          "name": "Flexor brevis minimi digiti, outer head",
+          "membership": "variable"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Castor fiber. The three middle digits each have a well-marked two-headed flexor brevis with the usual connections. **The inner head of the flexor brevis hallucis is an aponeurotic band with a few fleshy fibres left near its origin, and the outer head of the flexor brevis minimi digiti is a slender fibrous cord** — two more of this foot's muscles caught partway to ligament. Two dorsal interossei survive of four.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 32,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

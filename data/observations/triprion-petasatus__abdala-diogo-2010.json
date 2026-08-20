@@ -1,0 +1,327 @@
+{
+  "species": "triprion-petasatus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibulare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "A large muscle with fleshy origin over almost the whole dorsolateral fibulare, inserting by short tendon on the dorsal and proximal metatarsal V.",
+      "note": "Moved here from the forelimb record of the same name, where it had been filed for want of a pes counterpart.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Contrahentium caput longum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ligamentum-calcanei"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibiale"
+          }
+        ]
+      },
+      "attachmentNote": "A single muscle from the medial ligamentum calcanei, inserting fleshily along the distal three-quarters of the ventral tibiale, independent of the tibialis posterior.",
+      "note": "Moved here from the forelimb record of the same name, where it had been filed for want of a pes counterpart.",
+      "region": "foot",
+      "record": "contrahentium-caput-longum-pes",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Contrahentium caput longum",
+      "present": "yes",
+      "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record.",
+      "region": "forearm",
+      "record": "contrahentium-caput-longum",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "note": "Ribbing (1907) held that Gaupp's (1896) 'abductor pollicis' is the pronator quadratus, not this muscle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "prepollex"
+          }
+        ]
+      },
+      "attachmentNote": "In anurans the preaxial muscles serve the PREPOLLEX, not digit 1 — the adductor pollicis arises tendinously from distal carpal 3-4-5 and inserts on the palmar and distal prepollex. Digit 1 is absent, and the muscles that would serve it attach to the preaxial element instead.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Contrahentes digitorum",
+      "present": "yes",
+      "note": "Probably includes the adductor pollicis sensu Manzano et al. (2008b).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "The contrahens indicis arises by tendon from the mediodistal distal carpal 3-4-5 and inserts on the lateropalmar surface of the basal phalanx of digit II; the contrahens digiti V arises lateral to it. A separate contrahens serves the prepollex.",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radiale"
+          },
+          {
+            "element": "carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "The extensor indicis brevis superficialis arises continuously from the radiale and the short ligament joining radiale and ulnare, lateral to the extensor carpi radialis tendon that attaches to element Y.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "prepollex"
+          }
+        ]
+      },
+      "attachmentNote": "The medial flexor indicis brevis profundus arises by tendon from the medial distal carpal 3-4-5 and inserts fleshily on the mediopalmar metacarpal II and on the ligament connecting the prepollex.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Lumbricales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "distal-carpals"
+          },
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Blotto et al. separate lumbricales breves (from distal carpal 3-4-5, inserting at the metacarpophalangeal joint) from lumbricales longi (from the tendines superficiales, in medial and lateral slips) — a distinction the amniote literature does not make.",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "blotto-etal-2020"
+      ]
+    }
+  ]
+}

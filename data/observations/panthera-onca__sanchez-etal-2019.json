@@ -1,0 +1,261 @@
+{
+  "species": "panthera-onca",
+  "source": "sanchez-etal-2019",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti I longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          },
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "interosseous-membrane"
+          }
+        ]
+      },
+      "attachmentNote": "Panthera onca. A MORE PROXIMAL origin than in Geoffroy's cat, running along the whole lateral edge of the ulna, over the proximal two-thirds of the radius, and onto the interosseous membrane of the forearm. The membrane row matters: a third of this muscle's origin is not on bone at all, so the osteological correlate understates it. No insertion row — Sanchez et al. do not state where it ends in these species.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal",
+            "landmark": "radial-tuberosity"
+          },
+          {
+            "element": "carpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Panthera onca. From the proximal third of the CAUDAL surface of the humerus, covering the cranial forearm muscles, to insert medially at the distal end of the radius and on the proximal row of the carpus by a thick flattened tendon. The carpal row is the part worth noting: this record's consensus stops at the distal radius, and in these felids the tendon carries past it. Very well developed in the jaguar and the ocelot, much less so in Geoffroy's cat — the clearest of the size-related differences the paper reports.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis + lateralis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Communis, medial belly"
+        },
+        {
+          "name": "Communis, lateral belly"
+        },
+        {
+          "name": "Lateralis (single belly)"
+        }
+      ],
+      "divisionNote": "Panthera onca. The communis has two bellies, medial and lateral, in all three species. The LATERAL digital extensor is where they part company: one belly here, two in the ocelot and Geoffroy's cat, whose medial belly divides again into two tendons.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Panthera onca. Sanchez et al. describe the bellies and tendons rather than restating the epicondylar origin, which is the standard carnivoran one; the origin row is the lateral epicondyle on that basis and carries no landmark finer than the bone. In the jaguar and the ocelot the extensor digiti I and extensor digiti II arise from the proximal third of the ulnar diaphysis and each divides into two bellies — the digit I belly continuing as two tendons that fuse into an expansion at the distal phalanx, the digit II belly as a single tendon that fuses with the lateral extensor's tendon to the same digit.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum superficialis + profundus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Superficialis, ulnar head"
+        },
+        {
+          "name": "Superficialis, radial head"
+        },
+        {
+          "name": "Profundus, superficial (ulnar) head"
+        },
+        {
+          "name": "Profundus, humeral head 2"
+        },
+        {
+          "name": "Profundus, humeral head 3"
+        },
+        {
+          "name": "Profundus, humeral head 4"
+        },
+        {
+          "name": "Profundus, radial (deep) head"
+        }
+      ],
+      "divisionNote": "Panthera onca. Seven heads across the two muscles: the superficialis unites an ulnar and a radial head into one belly, which in the jaguar is thick and flattened and divides into four tendons, one per finger; the profundus has five, of which three arise from the humerus completely separately and in one median plane. The SECOND head alone forms the tendon of digit I and the remaining four serve digits II to V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Panthera onca. The radial or deep head of the profundus arises from the distal middle third of the radius and ulna, which is the radius/distal row; the humeral heads take the medial epicondyle. Each tendon runs under the proximal annular ligament, and those of digits II to V continue under the distal annular ligament to insert on the PALMAR side of the distal phalanx. In the jaguar this belly carries TWO SESAMOID BONES — a species-level observation with a skeletal element behind it, and the only one in this paper that a dry specimen could confirm.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Palmaris longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Tendon to digit I"
+        },
+        {
+          "name": "Tendon to digit II"
+        },
+        {
+          "name": "Tendon to digit III"
+        },
+        {
+          "name": "Tendon to digit IV"
+        },
+        {
+          "name": "Tendon to digit V"
+        }
+      ],
+      "divisionNote": "Panthera onca. FIVE tendons, as in the ocelot and against four in Geoffroy's cat. A division count that differs between three species of one family, which is the kind of difference a clade-level row cannot hold at all.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "flexor-tendons"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Panthera onca. The palmaris longus lies medial in the forearm and ends by attaching to the tendons of the flexor digitorum superficialis at the proximal end of the middle phalanx — so its insertion is on another muscle's tendons, not on bone, and the phalangeal row is where those tendons land.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    }
+  ]
+}

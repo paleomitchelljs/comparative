@@ -1,0 +1,168 @@
+{
+  "species": "pteropus-sp",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductor hallucis",
+      "attachmentNote": "*Pteropus* sp. **Absent**, with the whole dorsal layer bar the abductor of the fifth metatarsal. Cunningham accounts for it by the size of the inner head of the flexor brevis hallucis, which is considerably larger than its fellows — the same argument he makes for the badger and, in the other direction, for the platypus.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 24,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor ossis metatarsi minimi digiti",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "*Pteropus* sp. **The only member of the dorsal layer present in this foot**, well developed and with the usual connections, supplied by one or two twigs from the external plantar nerve before it divides. The abductor minimi digiti proper is absent, and Cunningham suggests it is inside the unusually large outer head of the short flexor.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves",
+      "innervation": "The deep part of the external plantar nerve supplies both heads of the four outer short flexors and ends in the outer head of the flexor brevis hallucis; the internal plantar sends three twigs to that muscle's large inner head.",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "*Pteropus* sp. **Typically complete, and the most complete intermediate layer in Cunningham's survey**: a flexor brevis for every digit, each of two heads, all eight slips separate along their entire length and lying in one plane, from the fibrous textures at the base of the metatarsus to the sesamoids alone. **Not a trace of the dorsal interossei is to be found** — the outer head of the flexor brevis minimi digiti and the inner head of the flexor brevis hallucis are considerably larger than the rest, and Cunningham suggests the missing marginal abductors have coalesced with them. So a foot with a perfect flexor layer and no abductors at all.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        },
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 33,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (two adductors on a raphe)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "*Pteropus* sp. A pentadactyl foot with four outer toes of nearly equal length and a slightly smaller hallux, all clawed. **Only two adductors, and they form one thin triangular sheet** spread over the flexores breves and separated from them by the deep division of the external plantar nerve — arising by its apex from the plantar tarsus nearer the inner than the outer margin, and divided into its two muscles by a distinct fibrous raphe running apex to base. **The raphe's distal end is unattached**, ending close to the inner side of the root of the medius, which is the condition Cunningham uses in the brushtail possum to explain how such a raphe acquires an attachment at all. The adductor minimi digiti is much the larger and reaches the inner sesamoid of the minimus; the adductor hallucis reaches the outer sesamoid of the hallux.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 30,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

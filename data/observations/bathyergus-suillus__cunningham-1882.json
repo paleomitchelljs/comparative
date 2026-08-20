@@ -1,0 +1,88 @@
+{
+  "species": "bathyergus-suillus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductors of the little toe",
+      "attachmentNote": "Bathyergus suillus. **Absent**, with the whole dorsal layer. See the `contrahentes-digitorum-pes` row for why Cunningham does not choose between suppression and fusion here.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Bathyergus suillus. Cunningham's *Bathyergus capensis*, one of the six feet the Challenger Commission gave him. Pentadactyl, and **the flexores breves are the only intrinsic muscles it has** — five of them, each of two strong slips. There is a total absence of the plantar adducting and the dorsal abducting layers, and he says plainly that he cannot tell whether they were suppressed or fused: if fused, no trace of the fusion is discoverable. The same arrangement holds in the hand of the same animal. He groups the Cape mouse with it, and adds the crested agouti and the guinea pig on Mivart & Murie's authority as further cases in which flexores breves alone are developed.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 31,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Plantar layer",
+      "attachmentNote": "Bathyergus suillus. **Absent, and Cunningham declines to say why.** He records the total absence of both the plantar adducting and the dorsal abducting muscles and states that whether this is suppression or fusion with the flexores breves is impossible to make out — if fusion, there are certainly no traces of it to be found. Compare the echidna, where he does commit to suppression, and the tetradactylous carnivores, where he commits to fusion and gives his evidence.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 28,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

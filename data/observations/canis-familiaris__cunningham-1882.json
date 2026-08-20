@@ -1,0 +1,141 @@
+{
+  "species": "canis-familiaris",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductors of the little toe",
+      "attachmentNote": "Canis lupus familiaris. **Absent as a distinct muscle of any kind.** Cunningham states it flatly for the dog, and gives his one piece of positive evidence for where it went: in a single specimen the fibular head of the short flexor of the little toe showed a slight tendency to split at its insertion. He is tracking a graded series across the carnivores — three separate slips in the leopard, two in the puma, two coalescing and re-separating in the lion, none in the dog — and the dog is its end.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei, amalgamated",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves",
+          "membership": "established"
+        },
+        {
+          "name": "Dorsal interossei",
+          "membership": "established"
+        }
+      ],
+      "divisionNote": "Partially or completely amalgamated. Cunningham keeps them as two parts because tendinous intersections mark the boundary even where dissection cannot, not because he could separate them in every case.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Canis lupus familiaris. Cunningham examined ten carnivore feet — dog, dingo, cat, puma, leopard, lion, otter, badger, polecat and walrus — and his general finding for the four tetradactylous cats and the two dogs is that **the crowding of the metatarsals has cost the layers their definition**: no muscle is suppressed, but the flexores breves and dorsal interossei have partly or wholly amalgamated, so that muscles usually described as bicipital are really tricipital, and quadricipital for the medius. He rejects crowding as the cause, because *Phascogale* and especially *Dasyurus* have metatarsals as closely packed and every intrinsic muscle still separate. In the dog the bones are so close that a knife point can barely be introduced between them. **Not a trace of any abductor of the little toe is present as a distinct muscle**; in one specimen the fibular head of the short flexor showed a slight tendency to split at its insertion, which Cunningham takes as a sign that it has absorbed the abductor. An adductor annularis is occasionally found in the dog, feeble and more or less fused with the tibial head of that toe's short flexor — which he reads as evidence that in the other cats the muscle is lost by fusion rather than by suppression. Where no natural separation can be made, Cunningham says tendinous intersections running through the muscle usually still betray its composite character, and he warns that the mode of insertion will not distinguish the components: the dorsal interossei almost always reach the extensor tendon, but one slip of a flexor brevis frequently does too. In no case do the dorsal interossei arise from the metatarsal shafts.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (two or three adductors) and opponens",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Adductor annularis",
+          "membership": "variable"
+        },
+        {
+          "name": "Opponens minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Canis lupus familiaris. **The adductors survive as a distinct plantar layer in every carnivore Cunningham examined**, even where the layers behind them have fused — generally two of them, the adductor indicis and the adductor minimi digiti, working towards a line through the medius, with a common origin in the midline from the ligamentous textures at the base of the metatarsus. An adductor annularis turns up occasionally in the dog, feeble and fused with the tibial head of that toe's short flexor, which Cunningham uses to argue the muscle is lost here by fusion and not by suppression. **An opponens minimi digiti belongs with this layer**, arising with the adductor of the little toe and inserting on the plantar face of the distal third of the fifth metatarsal shaft; he found it in all four tetradactylous cats and both dogs.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

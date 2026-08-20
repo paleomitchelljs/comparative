@@ -1,0 +1,38 @@
+{
+  "species": "leucoraja-erinacea",
+  "source": "ziermann-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Depressor hyomandibulae",
+      "present": "yes",
+      "note": "Acts on the hyomandibula in its original role as a jaw suspensory element. The animal is Leucoraja erinacea, not the dogfish this row named for several passes: Ziermann et al. describe the muscle only in the little skate, and their discussion of its development from the hyoid condensation is explicitly about batoids. Their Squalus acanthias hyoid section lists an interhyoideus, a constrictor hyoideus dorsalis and an adductor arcus palatini, and no depressor. Whether a selachian has one is a question this source does not answer, so it is not scored as an absence either.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ]
+      },
+      "attachmentNote": "Leucoraja erinacea. Insertion onto the hyomandibula and onto the horizontal tendon associated with it. No origin row — both heads arise from fascia, one at the contact with the contralateral muscle over the coracomandibularis and one on the fascia overlying the sternohyoideus, so the muscle that becomes the mammalian stapedius begins its recorded history attached to the element at one end and to nothing skeletal at the other.",
+      "region": "cranial",
+      "record": "stapedius",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014"
+      ]
+    }
+  ]
+}

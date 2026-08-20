@@ -1,0 +1,57 @@
+{
+  "species": "amphiuma-tridactylum",
+  "source": "walthall-ashley-ross-2006",
+  "status": "blocked-no-source",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "note": "Separable as a discrete muscle only in the more terrestrial urodeles. Omura et al. could not distinguish it from the external and internal obliques in either aquatic species they dissected — Amphiuma tridactylum and Necturus maculosus — while it separated cleanly in the semi-aquatic Cynops and the terrestrial Hynobius and Ambystoma. It is also much the smallest share of trunk muscle mass in the aquatic species and the largest in the terrestrial ones, which is the load-bearing reading: a body held off the ground needs a ventral tie between the girdles, and a swimming one does not. The description below is Taricha torosa, where it is discrete.",
+      "name": "Rectus abdominis",
+      "action": "Prevents the trunk sagging between the girdles during walking, and draws the pelvic and pectoral girdles toward each other.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          },
+          {
+            "element": "ypsiloid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "Divided into superficial and deep portions, the halves separated at the midline by the linea alba and segmented by tendinous inscriptions. The lateral fibres of the superficial portion attach to the pectoralis rather than to bone, which is why the pectoralis takes part of its own origin from those inscriptions.",
+      "origin": "Anterior border of the pubo-ischiac plate and the ypsiloid cartilage.",
+      "insertion": "Sternum and pericardium superficially; the deep portion runs on as the rectus cervicis profundus to the hyoid.",
+      "region": "axial",
+      "record": "rectus-abdominis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources",
+        "note",
+        "name",
+        "action",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "walthall-ashley-ross-2006",
+        "omura-etal-2014"
+      ]
+    }
+  ]
+}

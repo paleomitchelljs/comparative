@@ -1,0 +1,69 @@
+{
+  "species": "equus-caballus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor brevis medii (suspensory ligament) and the second and third dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor brevis medii (suspensory ligament)"
+        },
+        {
+          "name": "Second dorsal interosseous"
+        },
+        {
+          "name": "Third dorsal interosseous"
+        }
+      ],
+      "divisionNote": "Authors disagreed about which muscles the ligament contains: Stubbs (1766) made it five, Meckel added the lumbricals — though two lumbricals are present as independent muscles in this foot — and Flower called it the homologue of the interossei. Cunningham reads it as the flexor brevis medii alone, from the arrangement of the surviving fibres.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Equus caballus. Cunningham's horse–ox–sheep series is one argument in three animals: **the suspensory ligament of the fetlock is a short flexor turned to ligament, and each animal shows the transformation at a different stage.** He made thin transverse microscopic sections of all three and looked at them against a black ground. In the horse only the middle digit is developed and it keeps exactly the three intrinsic muscles that belong to a medius: the flexor brevis medii and the second and third dorsal interossei. The flexor brevis is the suspensory ligament — nearly twice the thickness of a human tendo Achillis, from the plantar base of the large metatarsal and the lower tarsals, dividing below to embrace the fetlock and inserting partly into the sesamoids and partly into the extensor tendon. **It bears its history on its face**: two thin streaks of striated muscle almost invariably run down its superficial surface, and two distinct strands of pink fleshy tissue run its whole length on the deep surface, showing in section as two crescentic outlines of transversely divided muscle embedded in tendon, broken by fat cells with cut nerves and vessels among them. Cunningham is explicit that the muscle left is far too little to do anything. The second and third dorsal interossei survive as rudiments — a two-inch belly and a long delicate tendon each, one on either side of the ligament, from the rudimentary second and fourth metatarsals — and **their interest is as a link in the soft parts between the modern horse and its three-toed ancestor.** He corrects the veterinary anatomists, who take them for the interossei of the lateral digits: those went with the digits. He also records that in a horse dissected at Dick's Royal Veterinary College in 1880-81 these bellies were several inches long, each exceeding a human plantaris.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 26,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

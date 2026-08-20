@@ -1,0 +1,548 @@
+{
+  "species": "alligator-mississippiensis",
+  "source": "meers-2003",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "distal",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. M. abductor metacarpi V, by fleshy attachment to the distal surface of the pisiform just distal to the insertion of flexor carpi ulnaris, inserting tendinously along the lateral surface of metacarpal V.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "note": "= abductor metacarpi I sensu Meers (2003).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "ventral",
+            "landmark": "radiale"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = M. abductor metacarpi I. Fleshy from the ventrolateral surface of the radiale, by a stout tendon onto the proximolateral base of metacarpal I.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Contrahentes digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "distal",
+            "landmark": "ulnare"
+          },
+          {
+            "element": "carpals",
+            "side": "distal",
+            "landmark": "distal-carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "ventral"
+          },
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = Mm. flexores digitorum intermedii, the layer between the superficial and deep palmar musculature. The digit IV/V belly arises from the distal margin of the ulnare and lies in the plane of the lumbricals, usually inserting on the distal end of P1 of digit IV with a frequent accessory tendon to the distal metacarpal of digit V. The digit V belly arises from the distal carpal proximal to digit V and inserts on the ventral base of its P1. **Both are inconsistent** — Meers found the digit V belly commonly but not always, even within Alligator mississippiensis.",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = part of Mm. interossei dorsalae, the other half of the split described on the intermetacarpales. Abdala & Diogo assign this record and the intermetacarpales each to 'part of' Meers's interossei dorsalae without resolving the division, so these rows describe the complex rather than this record alone.",
+      "region": "hand",
+      "record": "dorsometacarpales",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "ventral",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = M. flexor digitorum profundus digiti I-V, and possibly also the flexor digitorum intermedius of digit V. From the ventral surface of the distal carpal row, extending slightly onto the metacarpal base, by a flat broad tendon onto the flexor process at the base of the first phalanx. In some Alligator the digit I tendon is irregularly divided in two.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "note": "Includes part of the flexores breves sublimes sensu Holmes (1977) and probably the flexor digiti quinti and/or transversus palmaris sensu Meers (2003).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "distal",
+            "landmark": "distal-carpals"
+          },
+          {
+            "element": "flexor-tendons"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = Mm. flexor digitorum brevis superficialis I-IV. A complex of small bipinnate bellies from the distal carpal row and tendinously from the overlying flexor digitorum longus, extending to the pisiform, each inserting by a discrete tendon onto the sides of one or more phalanges. Their tendons split at about mid-metacarpal to let the flexor digitorum longus tendons through. **Digit V appeared to lack such a muscle** in the specimens examined.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "note": "Part of the interossei dorsales sensu Meers (2003).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Meers's crocodylian names are bridged to this record through Abdala & Diogo's Table 1, which gives the Caiman column with explicit 'sensu Meers, 2003' equivalences. = part of Mm. interossei dorsalae. M. interosseus dorsalis digiti II runs from the dorsomedial surface of metacarpal I, just distal to the deep extensor origins of digits I and II, onto the lateral surface of the metacarpophalangeal joint of digit II and the lateral distal third of metacarpal II. **Abdala & Diogo split Meers's interossei dorsalae between this record and the dorsometacarpales without saying which slips go where**, so the same rows sit on both and neither should be read as the whole complex.",
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Lumbricales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. From the digital extensions of the common flexor digitorum longus tendon onto the extensor aspect of the metacarpophalangeal joints — so they flex the carpometacarpal joint and extend the metacarpophalangeal joint at the same time. Origin is tendon, not bone, as in every other taxon scored here.",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus clavicularis",
+      "present": "yes",
+      "action": "Protracts and abducts the humerus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator mississippiensis, from Meers (2003). Superficial and parallel-fibred, lying immediately ventral to the trapezius insertion and overlying the ventral part of deltoideus scapularis and teres major. Fleshy origin from the acromion process and along the cranial margin of the scapula. The Caiman row beside this one gives the origin as lateral scapula from Abdala & Diogo's survey; Meers resolves it to the acromion, which is the finer reading of the same attachment rather than a disagreement.",
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "abduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "protraction"
+        }
+      ],
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. From the thoracodorsal fascia, beginning near the spinous process of the first dorsal vertebra and running linearly back to about the sixth dorsal rib; a large flat tendon passes between triceps longus lateralis and scapulohumeralis brevis to insert on the craniodorsal humerus in common with teres major. **The insertion leaves a large scar about a quarter of the shaft length from the humeral head, as a tubercle or a pit, and it is present even in hatchlings** — an osteological correlate reliable enough to use on a fossil.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "allen-etal-2014",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Protractor pectoralis (episternocleidomastoideus, partim)",
+      "present": "yes",
+      "innervation": "Accessory nerve (XI).",
+      "nerves": [
+        {
+          "nerve": "accessory"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. Meers's m. trapezius, this record's crocodylian occurrence. A thin sheet from the thoracodorsal fascia ventrolateral to the median row of dorsal scutes, inserting fleshily in Crocodylus acutus and by an aponeurotic sheet in other species along the cranial edge of the scapula dorsal to the acromion. Its origin can look continuous with that of latissimus dorsi but is always separable. **No acromion row, and that is now a decision rather than a workaround.** The acromion is scored present in Crocodylia (see skeleton.json), but Meers places this insertion *dorsal to* it, on the cranial edge of the scapula — the acromion is his reference point, not the attachment site. Two other crocodylian muscles in this dataset do attach to it.",
+      "divisionNote": "No division recorded. '(episternocleidomastoideus, partim)' says the crocodylian muscle corresponds *in part* to the mammalian one, which is a hedge about homology and not a subdivision of this muscle in the alligator.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "attachments",
+        "attachmentNote",
+        "divisionNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus complex (longus, intermedius, brevis)",
+      "present": "yes",
+      "action": "The primary protractors of the humerus; the brevis also adducts.",
+      "innervation": "Nerve to supracoracoideus, a branch of SN VIII, shared by all divisions.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Supracoracoideus longus",
+          "note": "Fan-shaped and dominant. Extensive fleshy origin from the cranial half of the MEDIAL surface of the scapula and the adjacent coracoid opposite the glenoid."
+        },
+        {
+          "name": "Supracoracoideus intermedius",
+          "note": "Short and thick. Its origin on the scapulocoracoid is hemmed in by those of the longus and brevis, and it inserts in common with the longus."
+        },
+        {
+          "name": "Supracoracoideus brevis",
+          "note": "Thin. Origin on the lower portion of the LATERAL surface of the acromion, and frequently the adjacent coracoid."
+        }
+      ],
+      "divisionNote": "Meers separates three heads sharing one nerve and one insertion region. He warns the longus is the hardest to separate cleanly in dissection because the heads intermingle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "acromion"
+          },
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator mississippiensis, from Meers (2003). The three heads have distinct origins and a shared insertion region on the deltopectoral crest: the brevis inserts just distal to the longus and immediately ventral to deltoideus clavicularis. The acromion row is the brevis origin. The Crocodylus porosus row beside this one is Klinkhamer et al.'s undivided segmentation of the same complex, which is a difference in method — CT segmentation against dissection — not a difference between the animals.",
+      "actions": [
+        {
+          "joint": "shoulder",
+          "motion": "adduction"
+        },
+        {
+          "joint": "shoulder",
+          "motion": "protraction"
+        }
+      ],
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "meers-2003"
+      ]
+    }
+  ]
+}

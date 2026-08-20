@@ -1,0 +1,39 @@
+{
+  "species": "squalus-acanthias",
+  "source": "fritzsch-2023",
+  "status": "blocked-no-source",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Extraocular muscles",
+      "present": "yes",
+      "innervation": "CN III, IV and CN VI, but not the crown-osteichthyan pattern.",
+      "note": "Squalus acanthias, and the chondrichthyan set is neither the lamprey's nor the tetrapod's. Fritzsch gives elasmobranchs and lungfish a contralateral nasal rectus on a dorsal ramus of CN III that crown osteichthyans lack, and no medial rectus; the caudal rectus of lampreys is already gone. The earlier reading of this row as 'the standard gnathostome pattern' flattened two differences in both directions.",
+      "nerves": [
+        {
+          "nerve": "oculomotor"
+        },
+        {
+          "nerve": "abducens"
+        }
+      ],
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "note",
+        "sources",
+        "nerves"
+      ],
+      "_srcs": [
+        "fritzsch-2023"
+      ]
+    }
+  ]
+}

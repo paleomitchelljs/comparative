@@ -1,0 +1,49 @@
+{
+  "species": "taricha-torosa",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Thin, lying on the dorsal crus between the extensor tarsi tibialis and the extensor cruris et tarsi fibularis. Unlike its forelimb counterpart it stops at the metatarsals rather than reaching the phalanges.",
+      "origin": "Lateral epicondyle of the femur, anterior to the extensor cruris et tarsi fibularis; sometimes a few fibres from the tibial spine.",
+      "insertion": "Bases of the metatarsals, by many small tendons.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021",
+        "walthall-ashley-ross-2006"
+      ]
+    }
+  ]
+}

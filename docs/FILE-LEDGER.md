@@ -27,13 +27,12 @@ Update it in the same commit that changes a file's standing. State is in
 | `nerves.json` | authoritative | Homology groups, like elements. Unchanged |
 | `joints.json` | authoritative | Unchanged. `jointgraph.py` derives which joints a muscle spans |
 | `taxa.json` | derived | Clade rollups computed from species. Also carries topology, so it is the seed for `phylogeny.json` |
-| `muscles-*.json` | **partial** | **Known incomplete.** The audit found drops in 4 of 4 sources examined, so treat every source's rows as a partial extraction until `remine-status.json` says otherwise. Becomes `derived` at Task 5 and git-ignored |
+| `muscles-*.json` | **derived** | **Generated** from `observations/` + `mapping/` by `build_observations.py --join`, which `build.sh` runs first. **Stays committed** — the app fetches it directly and there is no build step between the repo and the page. Also still **known incomplete**: the audit found drops in 4 of 4 sources examined, so treat any source's rows as partial until `remine-status.json` says `remined` |
 | `remine-status.json` | authoritative | Per-source re-mine status. Drives the tables in `MIGRATION-STATE.md` |
-| `observations.json` | **partial** | The parked-extraction layer. 486 rows and growing — while `data/observations/` is still generated and git-ignored, this is where a re-mine puts what it cannot file. It merges into `data/observations/` at Task 5, not Task 2 |
 | `raw/` | ignored | Verbatim extractions. Git-ignored for copyright. Never commit or quote into `data/` |
 
-| `observations/` | **derived, for now** | 220 files, one per (species × study), written by `build_observations.py --split`. Every one carries `"status": "scaffolded"` — the previous pass's extraction in a new shape, **not checked against any paper**. Becomes `authoritative` at Task 5, file by file, as each is re-mined |
-| `mapping/` | **derived, for now** | 78 files, one per source: `name\|region` → muscle record. Per source deliberately, so two authors can disagree. Becomes `authoritative` at Task 5 |
+| `observations/` | **authoritative** | **The source of truth as of Task 5.** 248 files, one per (species × study). A row's `record` names the homology group it was assigned to; `null` means unassigned and `blockedBy` says why |
+| `mapping/` | **authoritative** | 78 files, one per source: `name\|region` → muscle record. Per source deliberately, so two authors can disagree |
 
 ### Not yet created
 
@@ -55,7 +54,7 @@ Update it in the same commit that changes a file's standing. State is in
 | `assign_hierarchy.py` | authoritative | Normaliser |
 | `seed_actions.py` · `seed_nerves.py` | authoritative | Normalisers; fill rather than sync |
 | `migrate_attachments.py` · `migrate_attachment_rows.py` · `migrate_fusions.py` | authoritative | Badly named — these are **idempotent normalisers**, not one-shot migrations. They stay |
-| `attribute_species.py` | **partial → defunct at Task 6** | 300 lines inferring which animal a row is about. Under per-species files the filename declares it. The *evidence* for the attribution survives as a header field; the rules do not. **Do not invest in it** |
+| `attribute_species.py` | **defunct** | 300 lines inferring which animal a row is about. The filename declares it now, so it is out of `build.sh` as of Task 5. Kept unrun until the `speciesBasis` evidence it computed has a home in the new files. **Do not invest in it** |
 
 ### Live — utilities, not in `build.sh`
 

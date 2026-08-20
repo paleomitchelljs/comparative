@@ -1,0 +1,48 @@
+{
+  "species": "polypterus-senegalus",
+  "source": "diogo-etal-2016",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygialis caudalis",
+      "present": "yes",
+      "note": "= 'zonopropterygialis' of the Polypterus pectoral fin sensu Wilhelm et al.; Diogo et al. find it in both appendages. Its shared presence in Polypterus and Latimeria is what places its origin at the osteichthyan LCA.",
+      "region": "fin",
+      "record": "pterygialis-caudalis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygialis cranialis",
+      "present": "yes",
+      "note": "= coracometapterygialis I and II of the Polypterus pectoral fin sensu Wilhelm et al.; present in both appendages per Diogo et al.'s own observations.",
+      "region": "fin",
+      "record": "pterygialis-cranialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016"
+      ]
+    }
+  ]
+}

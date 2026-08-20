@@ -1,0 +1,70 @@
+{
+  "species": "tachyglossus-aculeatus",
+  "source": "fahn-lai-etal-2020",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "origin": "Cranial part of the ventral surface of the procoracoid, passing through a gap between its cranial border and the interclavicle onto its dorsal side.",
+      "insertion": "Anteroproximal part of the proximal ventral surface of the humerus only, between the coracobrachialis brevis (posteriorly) and the infraspinatus (anteriorly), without reaching the anterior or dorsal sides of the greater tubercle.",
+      "attachmentNote": "Tachyglossus aculeatus. The attachments here are Gambaryan et al.'s m. supracoracoideus alone, which is the muscle Diogo & Abdala (2010) call the infraspinatus. The two muscles this record's synonym list treats as its mammalian halves are separate bellies in this animal and are not scored into these rows: the supraspinatus runs from the lower third of the INTERNAL surface of the scapula to the proximal apex of the greater tubercle, and the infraspinatus from the external surface of the scapula, cranial to the triceps longus crest, to the greater tubercle just distal to the supraspinatus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "procoracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supracoracoideus"
+        },
+        {
+          "name": "Supraspinatus",
+          "membership": "disputed"
+        },
+        {
+          "name": "Infraspinatus",
+          "membership": "disputed"
+        }
+      ],
+      "divisionNote": "See the Zaglossus row on this record for the argument. Howell (1937) failed to find supracoracoid innervation for the big infraspinous muscle and renamed it teres minor, which Gambaryan et al. say destroyed the homologisation of everything around it; Westling (1889), McKay (1894) and Shrivastava (1962) all did find that nerve supply, and this paper restores their identification.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "fahn-lai-etal-2020",
+        "gambaryan-etal-2015"
+      ]
+    }
+  ]
+}

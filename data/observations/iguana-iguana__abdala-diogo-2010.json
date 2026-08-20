@@ -1,0 +1,77 @@
+{
+  "species": "iguana-iguana",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "M. pectoralis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Superficial portion"
+        },
+        {
+          "name": "Deep portion"
+        }
+      ],
+      "innervation": "Pectoral branches arising from the ventral divisions of the brachial plexus; in South American lizards the plexus is typically formed from spinal nerves 5–9 with considerable interspecific variation in root composition (Navarro et al. 2023).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "interclavicle"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Superficial portion from the entire midventral aspect of the posterior process of the interclavicle and the posterior border of its lateral process; deep portion from the posteriormost mesosternal rib, the body of the mesosternum, the interclavicle and the presternal plate. **Russell & Bauer make a point of what it does not arise from**: the fibres associate with no rib other than that one, and although they are bound to the sternal rim near the coracosternal joint they do not originate as far laterally as it. The two portions unite near a common insertion on the deltopectoral crest, bounded anteriorly by the deltoid complex and supracoracoideus insertions. Russell & Bauer corroborate the attachments this row already carried from Abdala & Diogo, Freitas et al. and Navarro et al., and add the division into two portions.",
+      "note": "Present in all major extant reptilian clades (Fürbringer 1876; Walker 1973; Holmes 1977; Dilkes 2000).",
+      "nerves": [
+        {
+          "nerve": "pectoral-nerves"
+        },
+        {
+          "nerve": "brachial-plexus"
+        }
+      ],
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "note",
+        "nerves"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "freitas-etal-2017",
+        "navarro-etal-2023",
+        "russell-bauer-2008"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "species": "eublepharis-macularius",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Flexor digitorum brevis of the pes, from the proximal extremity of the fifth metatarsal onto the terminal phalanx. Gekko differs digit by digit, inserting at the distal end of metatarsal I on digit I, of the second phalanx on III and IV, and of the first phalanx on II and V.",
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Fibularis longus + brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Fibularis longus"
+        },
+        {
+          "name": "Fibularis brevis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. M. peroneus, partly tendinous proximally and partly muscular from almost the whole fibula, onto the fifth metatarsal. Gekko has two slips.",
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interosseus cruris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Scored from Zaaf et al.'s M. popliteus: from the proximal fibula, partly muscular and partly tendinous onto the anterolateral tibial shaft. This record's Lepidosauria occurrence is named 'interosseus cruris', the name Abdala & Diogo use for the same tibiofibular muscle.",
+      "region": "leg",
+      "record": "popliteus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the entire anterior surface of the tibia, tendinously onto digit I. In Gekko the tendon also contributes to the lateral digital tendon.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor tibialis externus + internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor tibialis externus"
+        },
+        {
+          "name": "Flexor tibialis internus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilioischiadic-ligament"
+          },
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. Flexor tibialis externus from the ilioischiadic ligament and flexor tibialis internus from that ligament and the ischial tuberosity, both onto the proximal tibia. Gekko adds a further part to each, the internus tendons meeting at the interarticular area of the knee.",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Iliotibialis (+ femorotibialis, + 'ambiens')",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Iliotibialis"
+        },
+        {
+          "name": "Femorotibialis",
+          "membership": "disputed",
+          "muscle": "femorotibialis"
+        },
+        {
+          "name": "'Ambiens'",
+          "membership": "disputed",
+          "muscle": "ambiens"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "femur"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. The whole knee-extensor field this record covers in lizards: iliotibialis from the lateral ilium by a broad aponeurosis, 'ambiens' aponeurotically from the pubis and proximoventral femur, femorotibialis from the femoral shaft by four bellies surrounding it. All three converge tendinously on the lateral surface of the tibial condyle.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ischiotrochantericus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal",
+            "landmark": "fourth-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the ischial tuberosity onto the proximal edge of the trochanter; in Gekko onto its distal edge.",
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puboischiotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "puboischiadic-ligament"
+          },
+          {
+            "element": "ilioischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Scored from Zaaf et al.'s tables for Eublepharis macularius, with the Gekko gecko differences noted where they bear on the attachment. From the pubic tubercle and both pelvic ligaments, tendinously onto the proximal tibial shaft. Two of its three origins are ligament rather than bone, which is why it leaves little for a fossil reconstruction to find.",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "zaaf-etal-1999"
+      ]
+    }
+  ]
+}

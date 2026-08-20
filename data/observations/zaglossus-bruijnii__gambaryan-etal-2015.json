@@ -1,0 +1,1838 @@
+{
+  "species": "zaglossus-bruijnii",
+  "source": "gambaryan-etal-2015",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Biceps longus + biceps brevis",
+      "present": "yes",
+      "origin": "Longus just caudal to the supracoracoideus from the ventral side of the procoracoid; brevis just caudal to the longus from the procoracoid and the adjacent lateral border of the stem of the interclavicle.",
+      "insertion": "Longus by a narrow aponeurosis on the radial edge of the ulna just distal to the brachialis ulnaris; brevis further distally by a wider aponeurosis on the radius, distal to and closer to the ulna than the brachialis radialis.",
+      "attachmentNote": "Zaglossus bruijnii. The origin is on the PROCORACOID and the interclavicle, bones no therian has — the therian biceps arises from the supraglenoid tubercle and the coracoid process of the scapula. Allen (1912) denied any ulnar insertion of the biceps in this genus; Gambaryan et al. find one.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "procoracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "interclavicle",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "radius",
+            "side": "posterior"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Biceps longus (caput longum)"
+        },
+        {
+          "name": "Biceps brevis (caput breve)"
+        }
+      ],
+      "divisionNote": "Two heads, homologous with the therian caput longum and caput breve, but with the size relation reversed: the brevis is the larger in monotremes.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis ulnaris + brachialis radialis",
+      "present": "yes",
+      "origin": "Radialis wedging proximally onto the proximal dorsal surface of the humerus between the triceps lateralis in front and the triceps accessorius behind, then descending along the anterior dorsoventral line; ulnaris anterior and distal to it, reaching a little onto the distal ventral surface around the preaxial side of the bone.",
+      "insertion": "Ulnaris on the radial edge of the posterior surface of the ulna just distal to the elbow joint; radialis just distal to that on the posterior surface of the radius, descending almost to its midlength.",
+      "attachmentNote": "Zaglossus bruijnii. Romer (1922) held the origin on the distal ventral surface of the humerus to be the primitive tetrapod condition and its spread onto the proximal dorsal surface to be a synapsid advance; this genus keeps a trace of the ventral origin that the other two have lost. Allen (1912) mistook the radial head for the brachioradialis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          },
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "radius",
+            "side": "posterior"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Brachialis ulnaris (caput ulnare)"
+        },
+        {
+          "name": "Brachialis radialis (caput radiale)"
+        }
+      ],
+      "divisionNote": "Gambaryan et al. read the two-headed brachialis as a remnant of a stage with freer rotation of the radius against the ulna, since intra-antebrachial mobility in living monotremes is extremely reduced — a muscle keeping a division its joint no longer uses.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis brevis + longus",
+      "present": "yes",
+      "origin": "Brevis from the ventral (external) side of the caudolateral border of the coracoid except its tip; longus from the ventral side of that tip.",
+      "insertion": "Brevis fleshy over the proximal ventral surface of the humerus from the crest of the lesser tubercle almost to the pectoral crest; longus in a sharply outlined triangular area on the ventral side of the postaxial border of the humerus, over its distal third up to the base of the entepicondylus.",
+      "attachmentNote": "Zaglossus bruijnii. The two are separated by a neurovascular bundle in Tachyglossidae, and the longus insertion leaves a defined facet on the bone in every genus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          },
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracobrachialis brevis"
+        },
+        {
+          "name": "Coracobrachialis longus"
+        }
+      ],
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps brachii (five heads)",
+      "present": "yes",
+      "origin": "Both long heads by a superficial aponeurosis from a crest running down the middle of the lower part of the external surface of the scapula to the glenoid, the profundus curving further caudal to the glenoid and close to the coracoid; lateralis by a narrow tendon a little proximal to the centre of the proximal dorsal surface of the humerus; medialis and accessorius from the proximal and distal dorsal surfaces of the humerus.",
+      "insertion": "Longus superficialis on the posterior projection of the olecranon apex, over more than half its extent; longus profundus across almost the whole apex from posterior to anterior projection; lateralis on the anterior projection; accessorius along the apical border of the humerus-facing aspect and medialis on the surface between that border and the elbow joint facet.",
+      "attachmentNote": "Zaglossus bruijnii. Five heads, and the two scapular ones are the point: the superficialis arises cranial to the profundus and inserts posterior to it, so the two pull the ulna criss-cross. Gambaryan et al. suggest that suits the ball-and-socket monotreme elbow, which among tetrapods is otherwise an anuran arrangement.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "glenoid"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Triceps longus superficialis"
+        },
+        {
+          "name": "Triceps longus profundus"
+        },
+        {
+          "name": "Triceps lateralis"
+        },
+        {
+          "name": "Triceps medialis"
+        },
+        {
+          "name": "Triceps accessorius"
+        }
+      ],
+      "divisionNote": "A divided triceps longus is listed among the ADVANCED monotreme features, against the primitive ones. Gambaryan et al. note that mustelids carry a second two-jointed scapular head, the caput angulare (Ercoli et al. 2015), which resembles the monotreme triceps longus superficialis; if those are homologous the double-headed scapular triceps is primitive for mammals as a whole. The Galictis row on this record is from the companion paper.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "origin": "Adjacent parts of the anterior sides of the radius and ulna, descending from the elbow joint over more than half the length of the radius.",
+      "insertion": "Terminal tendon formed in the distal quarter of the antebrachium, running under its own transverse retinaculum in a groove on the distal end of the radius to the preaxial side of metacarpal I.",
+      "attachmentNote": "Zaglossus bruijnii. The groove on the distal radius is an osteological correlate for the tendon rather than for the muscle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          },
+          {
+            "element": "ulna",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "anterior"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "origin": "Fleshy from the ventral surface of the ectepicondylus near its proximal border, deeper than the extensor carpi radialis.",
+      "insertion": "Terminal tendon passing under the abductor pollicis longus onto the dorsal projection of the preaxial carpal complex, between its joints with distal carpals II and III; the tendon is held at the distal end of the radius by a connective-tissue sheath.",
+      "attachmentNote": "Zaglossus bruijnii. **The insertion is not on the radius.** Everywhere else in this dataset the brachioradialis ends on the radius — that is what the name is about — and in all three monotreme genera it passes the radius entirely and ends on the fused radiale + intermedium + centrale, the preaxial carpal complex.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpal-preaxial-complex",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus lateralis",
+      "present": "yes",
+      "origin": "Dorsal surface of the ectepicondylus of the humerus, preaxial to the triceps medialis.",
+      "insertion": "Along the anterior border of the olecranon, descending onto the ulna a little distal to the elbow joint.",
+      "note": "Zaglossus bruijnii. Gambaryan et al. give this as the m. anconeus of Diogo & Abdala (2010) — which is this record — and read it as homologous with the extensor antebrachii ulnaris of lower tetrapods (Haines 1939).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "anterior",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus medialis",
+      "present": "yes",
+      "origin": "Dorsal surface of the entepicondylus of the humerus, close to its tip.",
+      "insertion": "Posterior projection of the olecranon apex.",
+      "note": "Zaglossus bruijnii. = m. epitrochleoanconeus sensu Diogo & Abdala (2010), and homologous with the flexor antebrachii ulnaris of lower tetrapods (Jouffroy et al. 1971). It is separated from the triceps medialis by the nerves converging on the entepicondylar foramen, which is how the two are told apart.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "yes",
+      "origin": "Ventral side of the crista supraectepicondylaris, a crest along the proximal border of the ectepicondylus of the humerus.",
+      "insertion": "Terminal tendon passing under the abductor pollicis longus and under a transverse retinaculum binding it to the distal radius, then splitting into three branches onto the dorsal bases of metacarpals II-IV; the branch to metacarpal III is thickest and that to IV is sometimes absent.",
+      "attachmentNote": "Zaglossus bruijnii. **The insertion is symmetrical about metacarpal III**, the mid-axis of the metacarpus, and Gambaryan et al. list that symmetry among the primitive monotreme features. They draw a homology conclusion from it: a muscle centred like this is comparable with the REPTILIAN extensor digitorum communis — the humerodorsalis of Haines (1939), already a synonym on `extensor-digitorum` — rather than with the reptilian extensor carpi radialis, which ends more proximally and preaxially. The rows stay on this record; see its homology block.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi ulnaris",
+      "present": "yes",
+      "origin": "Two heads. The humeral head from the apex of the ectepicondylus by an inner-side aponeurosis shared with the extensor digitorum communis and lateralis; the ulnar head from the anterior aspect of the ulna at the level of the proximal end of the radius.",
+      "insertion": "The two heads fuse at the midlength of the antebrachium into a common tendon which passes under a transverse retinaculum at the distal end of the ulna and inserts on digit V by two branches — a proximal one on the postaxial side of its metacarpophalangeal joint and a distal one on the preaxial side of its proximal interphalangeal joint. Distal to the ulnare the tendon is underlaid by a collagen-adipose pad.",
+      "attachmentNote": "Zaglossus bruijnii. Gambaryan et al. list the extremely distal insertion of this muscle, almost reaching the end of digit V, among the ADVANCED monotreme features — a wrist extensor that has become a digital one.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "metacarpals",
+            "side": "posterior"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput humerale"
+        },
+        {
+          "name": "Caput ulnare"
+        }
+      ],
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis",
+      "present": "yes",
+      "origin": "Ventral side of the preaxial border of the ectepicondylus, deeper than the extensor carpi ulnaris and sharing its aponeurosis of origin; that aponeurosis also gives rise to the extensor digitorum lateralis.",
+      "insertion": "A flat terminal tendon passing under the retinaculum extensorum, expanding strongly on the dorsum of the manus and splitting into three branches to the ungual phalanges of digits II-IV.",
+      "attachmentNote": "Zaglossus bruijnii. One of the three specimens carried the pre-mammalian condition as an individual variation: the extensor digitorum communis and the extensor digitorum profundus fused into a single tendon before branching, giving one extensor to all five digits with a humeral and an ulnar head. Gambaryan et al. treat that variant as a model of the ancestral integrity of the digital extensors, and the fibre slip that crosses between the two muscles in Tachyglossus as the other trace of it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "landmark": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor digitorum communis"
+        },
+        {
+          "name": "Extensor digitorum lateralis",
+          "membership": "disputed",
+          "note": "Gambaryan et al. give it as Diogo & Abdala's (2010) extensor digiti minimi. Marked disputed because in all three genera its fibres arise from the extensor digitorum communis' own aponeurosis of origin rather than from bone, which is an argument that it is a differentiation of that muscle rather than an independent one. In Zaglossus, two of three specimens also had a fleshy origin directly on the ectepicondylus."
+        }
+      ],
+      "divisionNote": "The lateralis inserts on digits IV and V — in this genus onto the ungual phalanx of IV and the PREUNGUAL phalanx of V, whose ungual is reduced.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor pollicis et indicis",
+      "present": "yes",
+      "origin": "Anterior surface of the ulna except its distal end and the olecranon, with a small tubercle at the proximal point of the area of origin.",
+      "insertion": "A flat tendon, formed as a superficial aponeurosis over the distal two-thirds of the belly, passing under the retinaculum extensorum deeper than the extensor digitorum communis tendon and separated from it by a bridge of that retinaculum, then splitting into three branches to the ungual phalanges of digits II-IV, each preaxial and proximal to the corresponding extensor digitorum branch.",
+      "attachmentNote": "Zaglossus bruijnii. Digits II-IV here, I-IV in Tachyglossus and I-III in the platypus; Gambaryan et al. read the four-digit condition as the most primitive of the three. Scored here from Monotremata only; the muscle is not yet scored in other taxa in this dataset, so its absence elsewhere is unsampled rather than observed.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "landmark": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "division": "single",
+      "divisionNote": "Undivided, and its integrity is listed among the primitive monotreme features. Placentals usually split it into the extensor pollicis longus and the extensor indicis, the latter often keeping a tendon to digit III and sometimes IV.",
+      "region": "forearm",
+      "record": "extensor-digitorum-profundus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "origin": "Along the ventral side of the entire distal border of the entepicondylus from its apex to the humeral condyle, interrupted by the origin of the caput humerale profundum of the flexor digitorum profundus; aponeuroses of origin on the inner side shared with the pronator teres and on the outer side with the caput humerale superficiale.",
+      "insertion": "A wide flat tendon to the proximal apex of the prepollex, which articulates with the preaxial carpal complex; from the prepollex the pull is relayed by ligaments to the distal carpals and metacarpals I-III.",
+      "attachmentNote": "Zaglossus bruijnii. **The insertion is on the prepollex**, in all three genera — the element `GAPS.md` §1 singles out as the anuran position-versus-identity case. Monotremes did not lose digit I and have one anyway, and hang more on it than anurans do. The distal ligaments here make it a lever for the carpometacarpal I-III joints as well as for the wrist.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "side": "proximal",
+            "landmark": "prepollex"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "origin": "Caput humerale from the apex and postaxial part of the distal border of the entepicondylus, with an inner-side aponeurosis shared with the caput humerale superficiale of the flexor digitorum profundus; caput ulnare from the posterior-postaxial side of the ulna along almost its whole length, excluding the distal end but including the olecranon.",
+      "insertion": "The two heads form a common aponeurosis and a flat tendon running to the proximal apex of the pisiform, from which three pisometacarpal ligaments descend to the bases of metacarpals II-IV.",
+      "attachmentNote": "Zaglossus bruijnii. The pisiform is used as a lever exactly as the prepollex is on the other side of the wrist: it lengthens the moment arm for flexion and lateral abduction, and the ligaments carry the pull on to the carpometacarpal II-IV joints.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "side": "proximal",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput humerale"
+        },
+        {
+          "name": "Caput ulnare"
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum profundus",
+      "present": "yes",
+      "origin": "Four heads. Caput humerale superficiale from the ventral side of the distal border of the entepicondylus throughout its length; caput humerale profundum compactly from the ventral side of the spina entepicondyli; caput olecrani and caput ulnare undifferentiated from one another and arising together from the proximal three-quarters of the posterior side of the ulna including the olecranon.",
+      "insertion": "The heads converge on a common tendon which splits, at a palmar sesamoid, into branches to the ventral bases of the ungual phalanges of digits I-V, II-V or II-IV depending on the specimen.",
+      "attachmentNote": "Zaglossus bruijnii. = m. flexor digitorum longus sensu Diogo & Abdala (2010), which is this record. The variable digital formula is the reduction of the marginal fingers this genus is going through, and it is why the authors recommend Z. bartoni — which keeps all five claws — as the better model. In one specimen a few deep fibres arose from the distal quarter of the posterior radius, which they read as a rudiment of the therian caput radiale.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "palmar-sesamoid"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "ventral",
+            "landmark": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput humerale superficiale"
+        },
+        {
+          "name": "Caput humerale profundum",
+          "muscle": "contrahentium-caput-longum",
+          "note": "Identified by Gambaryan et al. as the retained ulnocarpalis; see the contrahentium-caput-longum record."
+        },
+        {
+          "name": "Caput olecrani"
+        },
+        {
+          "name": "Caput ulnare"
+        },
+        {
+          "name": "Caput radiale",
+          "membership": "variable",
+          "note": "A few deep fibres from the posterior radius in one specimen only, read as a rudiment of the therian head."
+        }
+      ],
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum profundus, caput humerale profundum",
+      "present": "uncertain",
+      "origin": "Compact origin on the ventral side of the spina entepicondyli of the humerus.",
+      "insertion": "A thin terminal tendon running separately under the common tendon of the other heads, coated on its inner side by the distal-most fibres of the caput ulnare, and fusing into the deep side of that common tendon at the level of the wrist.",
+      "note": "Zaglossus bruijnii. `uncertain` on the same grounds as the short-beaked echidna: the head is described in full and is the most distinct of the four, but the transverse ligament that makes it identifiable as the ulnocarpalis is reported only in the platypus. Three rows on one record disagreeing about a muscle's identity rather than its presence is what this field is for.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "palmar-sesamoid"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "contrahentium-caput-longum",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "name": "Palmaris longus",
+      "present": "no",
+      "note": "Zaglossus bruijnii. Absent, and Gambaryan et al. list the absence among the primitive features of monotremes as a whole. What stands in its place is a bundle of the cutaneus trunci running down the flexor side of the antebrachium to the wrist and joining, through the fascia palmaris manus, the preaxial side of the common tendon of the flexor digitorum profundus near its branching point — which they call the apparent predecessor of the therian palmaris longus. A skin muscle occupying the position of a limb muscle that does not yet exist.",
+      "speciesBasis": "note",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "origin": "A round area on the ventral side of the entepicondylus, plus an aponeurosis on the posterior side of the muscle shared with the flexor carpi radialis.",
+      "insertion": "Preaxial side of the radius distal to its midlength.",
+      "note": "Zaglossus bruijnii. The most superficial muscle on the inner surface of the antebrachium in all three genera.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "yes",
+      "origin": "Fleshy from the entire ventral surface of the ectepicondylus of the humerus, beneath the other antebrachial extensors, with an aponeurosis of origin on its anterior side running almost to the midlength of the belly.",
+      "insertion": "Fleshy on the preaxial side of the proximal three-quarters of the radius, a little clear of the elbow joint.",
+      "attachmentNote": "Zaglossus bruijnii. The three genera differ in which stretch of the radius is taken: the proximal three-quarters here, the distal two-thirds in Tachyglossus, the proximal half in the platypus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "anterior"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "origin": "Four preaxial flexors for digits I-IV and sometimes up to three postaxial ones for digits II-IV. The first arises from the preaxial edge of the common tendon of the flexor digitorum profundus and the rest from its ventral side, the origin spreading proximally onto the fascia palmaris manus and even the fascia antebrachii.",
+      "insertion": "The preaxial flexors pass preaxial to the corresponding digital tendon of the flexor digitorum profundus and insert through the metacarpophalangeal subarticular ligament on the preaxial base of phalanx 1; where a postaxial flexor is also present the two embrace the profundus tendon like the perforated tendon of the therian flexor digitorum superficialis.",
+      "attachmentNote": "Zaglossus bruijnii. **These bellies are inside the hand**, not the forearm, and Gambaryan et al. count that among the primitive monotreme features while arguing the series is the therian flexor digitorum superficialis — on the strength of the embracing insertion, and of the same distal origin turning up in tupaias (Panyutina et al. 2015) and felids (Haines 1950). In other therians the muscle has migrated proximally onto the profundus aponeurosis or onto the entepicondylus itself.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "ventral",
+            "landmark": "palmar-sesamoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "partsOpen": true,
+      "division": "variable",
+      "parts": [
+        {
+          "name": "Preaxial flexores breves superficiales I-IV"
+        },
+        {
+          "name": "Postaxial flexores breves superficiales II-IV",
+          "membership": "variable",
+          "note": "Most often present in digit IV, more rarely in II and III."
+        }
+      ],
+      "divisionNote": "The set varies between specimens of this genus, which the authors tie to the reduction of the marginal fingers.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "partsOpen",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "name": "Intermetacarpales",
+      "present": "no",
+      "note": "Zaglossus bruijnii. Absent in Tachyglossidae. Gambaryan et al. report this against Kajava (1911) and Howell (1936), who had it the other way round — present in echidnas and absent in the platypus.",
+      "speciesBasis": "note",
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interossei",
+      "present": "yes",
+      "origin": "Interossei I-III from the prepollex; interossei IV and V from the pisiform and from the ligament connecting it to metacarpal IV.",
+      "insertion": "Preaxially (mediales) or postaxially (laterales) on the metacarpophalangeal joints, though reduction of the marginal digits displaces the insertions of interossei I and V.",
+      "attachmentNote": "Zaglossus bruijnii. = mm. flexores breves profundi sensu Diogo & Abdala (2010), which is this record. The set is variable: interossei I and II mediales and II and V laterales are the commonest, and all six others are possible. Special names apply at the margins — interosseus I medialis is the opponens pollicis, I lateralis the adductor pollicis, V lateralis the opponens digiti quinti.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "prepollex"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "division": "variable",
+      "partsOpen": true,
+      "parts": [
+        {
+          "name": "Interossei mediales I-V",
+          "membership": "variable"
+        },
+        {
+          "name": "Interossei laterales I-V",
+          "membership": "variable"
+        }
+      ],
+      "divisionNote": "Of the ten possible muscles the authors found no fixed set in this genus, which is the individual variation below the elbow the paper is careful to document rather than average away.",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "partsOpen",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "origin": "The dorsal (deep) side of the common tendon of the flexor digitorum profundus immediately proximal to its branching. Lumbricales IV and V are always present and III is rare.",
+      "insertion": "Fleshy or tendinous, always on the end of the preungual phalanx at its preaxial side.",
+      "attachmentNote": "Zaglossus bruijnii. Two muscles reliably, three at most, against four in the short-beaked echidna and three in the platypus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "side": "dorsal",
+            "landmark": "palmar-sesamoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Clavodeltoideus",
+      "present": "yes",
+      "origin": "Caudal border of the clavicle and the lateral ramus of the interclavicle, from the level of the procoracoid to the acromion.",
+      "insertion": "Widely on the anterior part of the proximal dorsal surface of the humerus, including the pectoral crest.",
+      "attachmentNote": "Zaglossus bruijnii. The acromiodeltoideus is a separate muscle here, from the apex of the acromion, inserting by an aponeurosis that embraces the spinodeltoideus from behind and fuses with the clavodeltoideus above and below it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle",
+            "side": "posterior"
+          },
+          {
+            "element": "interclavicle",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Clavodeltoideus"
+        },
+        {
+          "name": "Acromiodeltoideus",
+          "membership": "disputed",
+          "note": "Gambaryan et al. note that reptiles have only two deltoid muscles, matching the clavodeltoideus and spinodeltoideus, and that the submerged position and wide humeral insertion of the acromiodeltoideus in monotremes suggest it is instead a portion of the reptilian scapulohumeralis anterior — whose deeper portion is the therian teres minor."
+        }
+      ],
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "origin": "By a wide aponeurosis from the internal side of the first costal cartilage and the cranial border of the first rib itself.",
+      "insertion": "By a short aponeurosis on the dorsal (internal) side of the medial border of the coracoid, and also on the procoracoid just lateral to the posterior part of the sternocoracoideus.",
+      "attachmentNote": "Zaglossus bruijnii. The only genus whose costocoracoideus reaches the procoracoid as well as the coracoid.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "medial",
+            "landmark": "costal-cartilage"
+          },
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus spinalis + latissimus costalis",
+      "present": "yes",
+      "origin": "Spinalis from the neural spines of thoracic vertebrae 1 or 2 to 11 or 12 — fleshy to the fifth or sixth and aponeurotic behind that — plus slips from ribs 7 and 8 and a slip from the external surface of the ventral part of the caudal angle of the scapula; costalis as slips from five to seven ribs beginning at rib 8.",
+      "insertion": "Spinalis by aponeurosis onto a distinct tubercle on the dorsal side of the posterior border of the entepicondylus of the humerus; costalis by a first aponeurosis just distal to it, then continuing as the fascia antebrachii.",
+      "attachmentNote": "Zaglossus bruijnii. The insertion is the finding, and it is at the wrong end of the bone: in therians and in extant reptiles the latissimus ends near the lesser tubercle, and here it ends on the medial epicondyle. Gambaryan et al. read it as secondary and tie it to the barrel-shaped monotreme rib cage — the elbow falls in the same parasagittal plane as the widest point of the ribs, so the muscle runs straight down the flank onto the epicondyle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "side": "dorsal",
+            "landmark": "thoracic-neural-spines"
+          },
+          {
+            "element": "ribs"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "scapula-caudal-angle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "medial-epicondyle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Latissimus spinalis"
+        },
+        {
+          "name": "Latissimus costalis",
+          "note": "Gambaryan et al. state that a latissimus costalis of this kind — rib-borne, alongside a separate spinal head — is found nowhere outside monotremes."
+        }
+      ],
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae (dorsalis, intermedius, ventralis)",
+      "present": "yes",
+      "origin": "Dorsalis by a wide aponeurosis from the ventral side of the occiput behind the detrahens mandibulae; intermedius from the capsule of the atlanto-occipital joint back onto the ventral border of the epistropheal rib; ventralis from the ventral border of the epistropheal rib.",
+      "insertion": "Dorsalis on the internal side of the dorsal border of the scapula; intermedius on the remaining cranial part of that border and the dorsal half of the cranial border; ventralis on the rest of the cranial border, the acromial process and the distal sixth of the clavicle.",
+      "attachmentNote": "Zaglossus bruijnii. The occipital origin is the widest of the three genera, and Gambaryan et al. use that spread to argue that the tight association with the atlas seen in therians and in the platypus is an advanced condition reached independently in each.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput",
+            "side": "ventral"
+          },
+          {
+            "element": "atlas"
+          },
+          {
+            "element": "ribs",
+            "side": "ventral",
+            "landmark": "cervical-ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          },
+          {
+            "element": "clavicle",
+            "side": "distal"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator scapulae dorsalis",
+          "note": "= m. atlantoscapularis of therians."
+        },
+        {
+          "name": "Levator scapulae intermedius",
+          "note": "Gambaryan et al. find no therian counterpart and read it as lost in that lineage."
+        },
+        {
+          "name": "Levator scapulae ventralis",
+          "note": "= m. atlantoacromialis of therians, and the m. levator claviculae of Diogo & Abdala (2010)."
+        }
+      ],
+      "divisionNote": "Three portions, not the two this row previously carried. The intermedius is the interesting one: it has no therian counterpart, so the monotreme condition is not an unsplit version of the mammalian muscle but a more subdivided one.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "origin": "Anterior fifth of the stem of the interclavicle, sparing its most cranial part.",
+      "insertion": "Ventral side of the pectoral crest of the humerus, over about a tenth of the bone's length.",
+      "division": "single",
+      "divisionNote": "Undivided. Gambaryan et al. find no separation into pectoralis superficialis and profundus in any monotreme and count the single sheet among the primitive features monotremes retain against therians.",
+      "attachmentNote": "Zaglossus bruijnii. The most restricted pectoralis of the three genera: interclavicle only, with no sternal or costal component, and the shortest humeral insertion.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "interclavicle",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "division",
+        "divisionNote",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rhomboideus",
+      "present": "yes",
+      "origin": "Transverse crest of the occiput and the dorsal midline of the whole neck; aponeurotic as far back as the neural spine of the epistropheus, then fleshy to the midline, meeting its opposite number above the nuchal ligament.",
+      "insertion": "Cranial portion on the uppermost part of the cranial border of the scapula, its cranial angle, and both faces of its dorsal border; caudal portion on the internal side of the caudal angle.",
+      "attachmentNote": "Zaglossus bruijnii.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput",
+            "side": "dorsal"
+          },
+          {
+            "element": "cervical-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "scapula",
+            "side": "dorsal",
+            "landmark": "scapula-cranial-angle"
+          },
+          {
+            "element": "scapula",
+            "side": "medial",
+            "landmark": "scapula-caudal-angle"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Cranial portion (rhomboideus capitis)"
+        },
+        {
+          "name": "Caudal portion (rhomboideus thoracis)"
+        }
+      ],
+      "divisionNote": "Incipiently divided in Tachyglossidae: the two portions run at sharply different fibre angles — the cranial anteroposteriorly, the caudal mediolaterally — and correspond to the therian rhomboideus capitis and thoracis without being separate muscles.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus ventralis cervicis + thoracis",
+      "present": "yes",
+      "origin": "Cervicis as six slips from the cervical ribs of vertebrae II to VII, one per vertebra, the atlas excepted; thoracis as four slips from the lower halves of the first four ribs, short of the costal cartilages.",
+      "insertion": "Cervicis on the internal surface of the scapula, each slip spreading as a flat fan and each successive fan set lower and wider than the last; thoracis fused into one before reaching the scapula and inserting on the external side of the caudal angle, just cranial to the scapular slip of the latissimus spinalis.",
+      "attachmentNote": "Zaglossus bruijnii. The serratus ventralis thoracis is underdeveloped against the cervicis, the reverse of the therian balance, because the dorsal border of the monotreme scapula lies in the cervical region rather than over the thorax — so the body's weight is transmitted through the cervical part of the sling.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "landmark": "cervical-ribs"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "scapula-caudal-angle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Serratus ventralis cervicis proprius"
+        },
+        {
+          "name": "Serratus ventralis cervicis accessorius"
+        },
+        {
+          "name": "Serratus ventralis thoracis"
+        }
+      ],
+      "divisionNote": "The slips from the last three cervical vertebrae bifurcate into a subvertical main portion and a subhorizontal accessory portion. Gambaryan et al. argue the accessorius is additional to the therian condition rather than a subdivision of it — therians have the proprius alone — and that the homonomic monotreme series is the most primitive among living tetrapods, more complete than the bifurcating caudal slips Miner (1925) found in urodeles and Sphenodon.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Spinodeltoideus",
+      "present": "yes",
+      "origin": "Edge of the craniodorsal angle of the scapula.",
+      "insertion": "By a tendon from mid-height of the scapula onto the proximal dorsal surface of the humerus, between the clavodeltoideus in front and the acromiodeltoideus behind.",
+      "note": "Zaglossus bruijnii. Gambaryan et al. give the equivalence directly: their m. spinodeltoideus is the m. dorsalis scapulae of the older literature and the m. deltoideus scapularis of Diogo & Abdala (2010), which is this record.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal",
+            "landmark": "scapula-cranial-angle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "origin": "By a short aponeurosis from the dorsal side of the sternal manubrium along the rim of the sternocoracoid joint and from the internal side of the sternal end of the first costal cartilage, adjoining the costocoracoideus from below.",
+      "insertion": "Dorsal (internal) side of the medial border of the procoracoid.",
+      "attachmentNote": "Zaglossus bruijnii. The insertion is on the PROCORACOID, not the coracoid, in all three genera. Sternocoracoid mobility is much reduced in monotremes, but Gambaryan et al. argue the muscle's long fibres show it is still real, and point to the overlapping left and right procoracoids as a remnant of the pronounced craniocaudal sternocoracoid sliding seen in urodeles and lizards.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "dorsal"
+          },
+          {
+            "element": "ribs",
+            "side": "medial",
+            "landmark": "costal-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subscapularis + subcoracoideus",
+      "present": "yes",
+      "origin": "Subscapularis from the EXTERNAL surface of the scapula caudal to the crest for the triceps longus, from the caudal border, and from a narrow strip of the internal surface along it; subcoracoideus from the dorsal (internal) surfaces of the procoracoid and coracoid, bifurcating along two longitudinal crests on the procoracoid.",
+      "insertion": "Subscapularis, bipennate, on the proximal apex of the lesser tubercle of the humerus; subcoracoideus tendinous, descending from the lesser tubercle along its crest between the coracobrachialis brevis below and the teres major above.",
+      "attachmentNote": "Zaglossus bruijnii. Both heads are present, which is the plesiomorphic amniote condition this record's name describes and which therians lost with the coracoid. The subscapularis origin is the finding: it is on the OUTER face of the scapular blade, the inverse of the therian arrangement, and the inner face is taken instead by the supraspinatus and the serratus ventralis cervicis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "posterior"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle-crest"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Subscapularis"
+        },
+        {
+          "name": "Subcoracoideus"
+        }
+      ],
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "origin": "Cranial part of the ventral surface of the procoracoid, passing through a gap between its cranial border and the interclavicle onto the dorsal side of both bones.",
+      "insertion": "Anteroproximal part of the proximal ventral surface of the humerus, anterior to the coracobrachialis brevis, then along the anterior side of the greater tubercle onto its dorsal side between the infraspinatus (proximal) and the pectoralis (distal).",
+      "attachmentNote": "Zaglossus bruijnii. Of the three genera this one alone carries the insertion over the greater tubercle and onto its dorsal face; in the short-beaked echidna it stops short of it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "procoracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "interclavicle",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Supracoracoideus"
+        },
+        {
+          "name": "Supraspinatus",
+          "membership": "disputed"
+        },
+        {
+          "name": "Infraspinatus",
+          "membership": "disputed"
+        }
+      ],
+      "divisionNote": "Three separate muscles, not two — and that is the argument. Romer (1922) derived the therian supraspinatus and infraspinatus from the supracoracoideus of lower tetrapods on the strength of shared innervation, which is the hypothesis this record's synonym list encodes. Gambaryan et al. object that in monotremes all three are present simultaneously, and read the monotreme supracoracoideus as homologous with the reptilian, avian and amphibian muscle outright, with supraspinatus and infraspinatus as mammalian additions to the group. Their membership is marked disputed on that basis rather than the record being restructured on one source.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres major",
+      "present": "yes",
+      "origin": "External side of the apex of the caudal angle of the scapula, extending slightly onto its internal side below the serratus ventralis insertions.",
+      "insertion": "Dorsal side of the distal part of the crest of the lesser tubercle of the humerus, between the subcoracoideus insertion and the triceps accessorius origin.",
+      "note": "Zaglossus bruijnii.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral",
+            "landmark": "scapula-caudal-angle"
+          },
+          {
+            "element": "scapula",
+            "side": "medial",
+            "landmark": "scapula-caudal-angle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Teres minor",
+      "present": "yes",
+      "origin": "A notch in the cranial border of the scapula between the acromion and the shoulder joint, and partly from the joint capsule.",
+      "insertion": "Fleshy in a fossa on the dorsal side of the LESSER tubercle of the humerus, immediately anterior to the subscapularis insertion.",
+      "attachmentNote": "Zaglossus bruijnii. Gambaryan et al. identify this as the m. scapulohumeralis anterior of Diogo & Abdala (2010), which is this record. The insertion is the point: instead of taking the therian teres minor's short route from scapula to greater tubercle, it passes postaxially beneath the triceps longus to the lesser tubercle beside the subscapularis. Compare the Galictis row on this record, which inserts on the greater tubercle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lesser-tubercle"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "gambaryan-etal-2015"
+      ]
+    }
+  ]
+}

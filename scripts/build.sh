@@ -22,6 +22,14 @@ FLAG="${1:-}"
 
 step() { printf '\n\033[1m== %s\033[0m\n' "$1"; }
 
+# data/observations/ is the source of truth as of Task 5: one file per study per
+# animal, with `record` naming the homology group each row was assigned to. The
+# muscle files are rebuilt from it before anything else runs, and stay committed
+# because the app fetches them directly and there is no build step between the
+# repo and the page.
+step "0. observations/ + mapping/ -> muscles-*.json"
+python3 scripts/build_observations.py --join
+
 step "1. free-string attachments -> skeleton.json ids"
 python3 scripts/migrate_attachments.py $FLAG
 
@@ -49,13 +57,13 @@ python3 scripts/symmetrise_links.py $FLAG
 # Before the counts, not after them: it was running unlabelled inside the
 # validate step, so a build that changed an attribution reported figures from
 # the state before the change, and a report-only run never exercised it at all.
-step "9. species attribution from each row's own prose"
-python3 scripts/attribute_species.py $FLAG
+# Step 9 was attribute_species.py -- 300 lines inferring which animal a row is
+# about. The filename declares it now. Retired at Task 6; see docs/FILE-LEDGER.md.
 
-step "10. measured counts in README.md and docs/STATUS.md"
+step "9. measured counts in README.md and docs/STATUS.md"
 python3 scripts/doc_counts.py $FLAG
 
 if [ "$FLAG" = "--write" ]; then
-  step "11. validate"
+  step "10. validate"
   python3 scripts/validate.py
 fi

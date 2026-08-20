@@ -1,0 +1,38 @@
+{
+  "species": "prestosuchus-chiniquensis",
+  "source": "liparini-schultz-2013",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Puboischiofemoralis internus (PIFI 2)",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "greater-trochanter",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "liparini-schultz-2013"
+      ]
+    }
+  ]
+}

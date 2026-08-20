@@ -1,0 +1,201 @@
+{
+  "species": "eudyptes-pachyrhynchus",
+  "source": "schreiweis-1982",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle",
+            "side": "distal"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Deltoideus major, a very thin triangular muscle arising fleshy from the distal apex of the clavicle, the dorsal surface of the coracoscapular ligament and the acromial process of the scapula, converging on a short tendon that inserts on the caudodorsal humerus very close to the latissimus dorsi insertion. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade. Schreiweis names the **acromial process of the scapula** as the third origin; skeleton.json records the acromion as absent in Aves and the validator rejects it, so it is not asserted here. That is now the third source to describe an acromion in a taxon this dataset denies one — see the element's own note. The acromial process is now carried as a structured landmark: it was described in this note but stripped from the row while skeleton.json scored the acromion absent in Aves. The coracoscapular ligament has no element and stays in prose.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulohumeralis posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Extensive origin from about the posterior two-thirds of the dorsal and lateral scapular surfaces; the fibres pass obliquely forward to a strong tendon inserting on the posterior border of the humerus at about a third of its length. Schreiweis notes it is a very uniform muscle across the Spheniscidae. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "dorsal"
+          },
+          {
+            "element": "cervical-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Serratus profundus, four flat fleshy fascicles from the last two cervical and first two thoracic ribs dorsal to the uncinate processes, inserting on about the caudal half of the costal scapula near the vertebral border. The small cranial fascicle is usually absent in Spheniscus and Megadyptes. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Eudyptes pachyrhynchus, Schreiweis's type species. Both heads of this field. The subscapularis caput mediale arises from the proximal third of the costal scapula, a small area of the scapular process of the clavicle and the medial coracoid; the subcoracoideus from the dorsal spina externa of the sternum and the adjacent corpus sterni, further attaching to the dorsomedial coracoid. The two **fuse near the shoulder joint and insert by a common tendon**, which is why one record carries them. A wing-propelled diver: the flipper is the most derived forelimb in Aves, and these rows are an observation of a penguin, not of birds. That is exactly what species-level scoring is for — the old model refused this source rather than let it stand for the clade.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "schreiweis-1982"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "ventral",
+            "landmark": "sternal-keel"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Origin restricted to the sternal keel and the tendon rerouted dorsally through the foramen triosseum, so a ventrally placed muscle produces the upstroke.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "schreiweis-1982"
+      ]
+    }
+  ]
+}

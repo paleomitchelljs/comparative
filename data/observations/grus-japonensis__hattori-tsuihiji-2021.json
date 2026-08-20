@@ -1,0 +1,313 @@
+{
+  "species": "grus-japonensis",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Abductor digiti II",
+      "present": "yes",
+      "origin": "Lateral aspect of metatarsal I and the dorsomedial aspect of the tarsometatarsus at the fossa metatarsi I.",
+      "insertion": "Medioplantar tubercle at the proximal end of phalanx II-1.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "tarsometatarsus",
+            "side": "medial",
+            "landmark": "fossa-metatarsi-i"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Grus japonensis. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "innervation": "Deep fibular nerve.",
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "name": "Adductor hallucis dorsalis",
+      "present": "no",
+      "note": "Grus japonensis. Absent, as in Gallus.",
+      "speciesBasis": "note",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensores breves digitorum III et IV",
+      "present": "yes",
+      "origin": "Dorsal aspect of the distal half of the tarsometatarsus.",
+      "insertion": "Proximodorsal lip of III-1 and the medial aspect of IV-1.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsometatarsus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Grus japonensis. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor brevis digiti III"
+        },
+        {
+          "name": "Extensor brevis digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "origin": "Broad surface between the cranial and lateral cnemial crests and the dorsolateral tibial shaft.",
+      "insertion": "Processes on the proximodorsal lips of the phalanges of digits II-IV.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior",
+            "landmark": "cnemial-crest-cranial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral",
+            "landmark": "cnemial-crest-lateral"
+          },
+          {
+            "element": "tibia",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Grus japonensis. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Fibularis longus + fibularis brevis",
+      "present": "yes",
+      "origin": "Longus from the proximal cnemial crests and the patellar tendon; brevis from the interosseal space between tibia and fibula.",
+      "insertion": "Longus onto soft tissue, the sustentaculum tarsi and the flexor perforatus digiti III tendon; brevis near the lateral margin of the hypotarsus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior",
+            "landmark": "cnemial-crest-cranial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral",
+            "landmark": "cnemial-crest-lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsometatarsus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Grus japonensis. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus (fibularis) longus"
+        },
+        {
+          "name": "Peroneus (fibularis) brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Tibialis cranialis",
+      "present": "yes",
+      "origin": "Distal extremity of the lateral distal condyle of the femur and the cranial and lateral cnemial crests of the tibia.",
+      "insertion": "Tubercles on the dorsal aspect of the proximal tarsometatarsus.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "distal",
+            "landmark": "femoral-condyles"
+          },
+          {
+            "element": "tibia",
+            "side": "anterior",
+            "landmark": "cnemial-crest-cranial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral",
+            "landmark": "cnemial-crest-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsometatarsus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Grus japonensis. Hattori & Tsuihiji describe this animal together with its clade-mate and record no difference between the two for this muscle. A blank in a comparison is an observation of sameness, which is why both carry rows rather than one standing for the clade.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    }
+  ]
+}

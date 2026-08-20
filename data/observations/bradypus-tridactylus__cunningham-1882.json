@@ -1,0 +1,121 @@
+{
+  "species": "bradypus-tridactylus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductor hallucis",
+      "attachmentNote": "Bradypus tridactylus. **Absent**, with the hallux, which like the minimus is reduced to a metatarsal carrying no phalanges. See the `flexores-breves-profundi-pes` row for what survives in this foot and why.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 22,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductors of the little toe",
+      "attachmentNote": "Bradypus tridactylus. **Absent.** The minimus itself is a rudimentary metatarsal supporting no phalanges, and Cunningham reads the marginal abductors of this foot as suppressed along with the marginal digits they belonged to.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Dorsal interossei"
+        },
+        {
+          "name": "Flexores breves, migrated"
+        }
+      ],
+      "divisionNote": "Cunningham reads the flexores breves as having joined the dorsal interossei rather than been suppressed. In the pes he infers it; in the manus of the same animal he can still see the five short flexors turning back through the interosseous spaces to reach them.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Bradypus tridactylus. **The only intrinsic muscles left in this foot, and they survive for a secondary reason.** With the metatarsophalangeal joints abolished by ankylosis the interossei have no abducting action; but through their usual connection with the extensor tendons they act, as Duchenne had pointed out, as extensors at the joints between the phalanges — and the extensor apparatus here is very weak, the extensor brevis sending only two small tendons. So they are retained on the merits of that action and must be studied with the extensor brevis rather than with the sole. Four of them. The second and third are the strongest, arising from the adjacent metatarsals **and from the sides of the proximal phalanges**, each dividing distally so that slips from both build a fleshy-margined expansion over the second phalangeal joint of the medius around the extensor brevis tendon. **The annular digit depends on this group entirely for extension.** In the hand the arrangement is nearly identical, with the common extensor tendons replacing the extensor brevis, and there the flexores breves can still be seen doing the migrating: five small muscles under cover of the adductors, each turning backwards through an interosseous space to join its dorsal interosseous — converted from flexors into extensors by the route they take. The short flexor of the medius has already disappeared.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 25,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Plantar layer",
+      "attachmentNote": "Bradypus tridactylus. **Absent, along with every other intrinsic muscle in the sole of this foot.** The proximal phalanges of the three functional digits are square nodules a quarter of an inch long that coalesce early with the metatarsal heads, abolishing the metatarsophalangeal joints; since the primary office of an intrinsic pedal muscle is to act at those joints, Cunningham found not a vestige of one on dissecting the sole. He reads the adductors and the marginal abductors as suppressed, and the flexores breves as having wandered to the dorsum and joined the dorsal interossei — a conclusion he draws from the hand of the same animal, where the migration is caught in progress and a palmar layer of adductors still survives, though largely tendinous and, he thinks, going the same way.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 26,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

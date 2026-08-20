@@ -1,0 +1,257 @@
+{
+  "species": "latimeria-chalumnae",
+  "source": "diogo-etal-2016",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Abductor profundus (+ supinator series)",
+      "present": "yes",
+      "note": "In Latimeria the deep ventral mass has given rise to a proximo-distal series of supinators. Supinator 1, the most proximal, connects the girdle to both the first and second fin elements.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-axial-elements"
+          }
+        ]
+      },
+      "attachmentNote": "Pectoral fin: from the medial endoskeleton ventral to the articular process, onto the deep face of the abductor superficialis. Source of the supinator series in Latimeria.",
+      "region": "fin",
+      "record": "abductor-profundus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-etal-2016-si"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Abductor superficialis",
+      "present": "yes",
+      "note": "The intersection position differs from the tetrapod developmental pattern, where intersections form in the region of the joints.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "extracleithrum"
+          },
+          {
+            "element": "clavicle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          },
+          {
+            "element": "fin-radials",
+            "side": "anterior",
+            "landmark": "preaxial-radials"
+          }
+        ]
+      },
+      "attachmentNote": "Pectoral fin: from the medial faces of cleithrum, extracleithrum and clavicle ventral to the articular process, by broad aponeurosis onto the lepidotrichial bases.",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-etal-2016-si"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Adductor profundus (+ pronator series)",
+      "present": "yes",
+      "note": "Gave rise to a proximo-distal series of pronators. The Eusthenopteron humerus preserves osteological correlates of a muscle corresponding to Latimeria pronator 1 — a rare direct fossil check on a soft-tissue homology.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          },
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-axial-elements"
+          }
+        ]
+      },
+      "attachmentNote": "Pectoral fin: from the medial cleithrum and endoskeleton at the articular process, onto the deep face of the adductor superficialis. In Latimeria this deep layer has given rise to the pronator series along the axis.",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-etal-2016-si"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Adductor superficialis",
+      "present": "yes",
+      "note": "In Latimeria the dorsal muscles of each fin have clear one-to-one correspondences with the ventral muscles of the same fin — the fin is close to a mirror image about its own plane.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          },
+          {
+            "element": "fin-radials",
+            "side": "anterior",
+            "landmark": "preaxial-radials"
+          }
+        ]
+      },
+      "attachmentNote": "Pectoral fin: from the posteromedial cleithrum between anocleithrum and endoskeleton, by a broad tendon onto the bases of the lepidotrichia, with bundles joining pronators 2-3 onto the preaxial radials.",
+      "region": "fin",
+      "record": "adductor-superficialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-etal-2016-si"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygialis caudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fin-axial-elements"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Pectoral fin: from the postaxial borders of the first to third axial elements together with pronators and supinators 2-4, inserting on the postaxial border between the adductor and abductor superficialis aponeuroses — a postaxial muscle sitting between the dorsal and ventral sheets.",
+      "region": "fin",
+      "record": "pterygialis-caudalis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-etal-2016-si"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygialis cranialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pelvic-lateral-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Pelvic fin: from the ventral face of the lateral process of the pelvis, running along the preaxial border to the preaxial lepidotrichial bases. In the pectoral fin it arises instead from the abductor superficialis itself.",
+      "region": "fin",
+      "record": "pterygialis-cranialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-etal-2016-si"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Retractor lateralis ventralis pectoralis",
+      "present": "yes",
+      "region": "fin",
+      "record": "retractor-lateralis-ventralis-pectoralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016"
+      ]
+    }
+  ]
+}

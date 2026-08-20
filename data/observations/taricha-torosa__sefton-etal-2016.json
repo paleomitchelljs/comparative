@@ -1,0 +1,69 @@
+{
+  "species": "taricha-torosa",
+  "source": "sefton-etal-2016",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Protractor pectoralis (cucullaris)",
+      "present": "yes",
+      "action": "Draws the girdle anterodorsally.",
+      "innervation": "Accessory nerve equivalent; developmentally distinct from the levator scapulae, which is somitic.",
+      "note": "Sefton et al. (2016) show the cucullaris and the somitic levator scapulae are separable by developmental origin even where they are topographically adjacent — the strongest available test of this homology.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "procoracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Two heads arising together and diverging posteriorly. The anterior head lands between the procoracohumeralis and the dorsalis scapulae, which is the topological fix on its identity.",
+      "nerves": [
+        {
+          "nerve": "accessory"
+        }
+      ],
+      "origin": "Dorsal fascia and the posterior surface of the skull.",
+      "insertion": "Anterior head onto the lateral surfaces of the procoracoid and scapula; posterior head onto the anterolateral border of the scapula.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "origin",
+        "insertion"
+      ],
+      "_srcs": [
+        "sefton-etal-2016",
+        "abdala-diogo-2010",
+        "walthall-ashley-ross-2006"
+      ]
+    }
+  ]
+}

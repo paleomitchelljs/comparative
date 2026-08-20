@@ -1,0 +1,82 @@
+{
+  "species": "teleostei-generalised",
+  "source": "mansuit-herrel-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "generalised",
+      "name": "Abductor profundus",
+      "present": "yes",
+      "note": "The deep groups contribute most of the fin muscle mass in actinopterygians — the reverse of the tetrapod condition. Stated here for the generalised teleost; the Polypterus measurement behind it belongs to the Polypterus rows.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "The deep layer of the ventrolateral (abductor) mass. Winterbottom notes the dorsomedial adductor mass separates into two layers before the abductor mass does, judging from Elops.",
+      "region": "fin",
+      "record": "abductor-profundus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor profundus",
+      "present": "yes",
+      "note": "With the abductor profundus, contributes most of the paired-fin muscle mass in actinopterygians.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Deep layer of the dorsomedial mass.",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "mansuit-herrel-2021",
+        "winterbottom-1973"
+      ]
+    }
+  ]
+}

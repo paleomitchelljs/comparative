@@ -1,0 +1,56 @@
+{
+  "species": "testudines-generalised",
+  "source": "werneburg-maier-2019",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "otic-capsule",
+            "side": "anterior",
+            "landmark": "prootic"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "landmark": "articular"
+          }
+        ]
+      },
+      "attachmentNote": "One to two heads arising anteromedially on the quadrate, medial to the adductor mandibulae externus; inserts partly directly and partly by its own tendon. Insertion on the articular puts it at the centre of the inverted U formed by the other components (Johnston 2011). Re-attributed from *Trachemys scripta*. Werneburg (2011) does not dissect *Trachemys* — his own specimen is *Emydura subglobosa* (PIMUZ 2009.37) and the seventeen mentions of *Trachemys* in the paper are citations to Poglayen-Neuwall (1953) and Edgeworth. Nine of these rows carried `speciesBasis: \"survey\"`, which this schema defines as a survey naming an exemplar **for this clade**; the exemplar Werneburg names is a pleurodire, and these rows had been reading as observations of a cryptodire nobody in this corpus examined.",
+      "note": "Werneburg & Maier (2019) show the palatoquadrate this muscle arises from is fused to the braincase in turtles, and that cryptodires and pleurodires build that fixation differently — cryptodires via an ossified ascending process (the epipterygoid) bridged ventrally by the pterygoid, pleurodires by appositional bone of the quadrate with the parietal's descending process forming the braincase wall. The muscle's origin surface is therefore not developmentally the same structure in the two clades.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "attachments",
+        "sources",
+        "attachmentNote",
+        "note"
+      ],
+      "_srcs": [
+        "werneburg-2011",
+        "werneburg-maier-2019"
+      ]
+    }
+  ]
+}

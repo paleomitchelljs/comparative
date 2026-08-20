@@ -1,0 +1,387 @@
+{
+  "species": "acanthostega-gunnari",
+  "source": "molnar-etal-2018",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. The rough, concave posterior region of the divided proximal ventral surface of the humerus (Coates 1996); the smooth anterior region beside it carries the supracoracoideus. Scored as humerus/ventral without a landmark — see the supracoracoideus row for why the anterior-posterior division between the two is in the note rather than in a second row.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Humeroantebrachialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral",
+            "landmark": "ventral-median-ridge-radius"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. The ventral median ridge of the radius, which usually carries obvious muscle scars and is read as the humeroantebrachialis insertion (Bishop 2014). Two statements in Molnar et al. sit awkwardly together: they list this ridge among the four longitudinal ridges of the radius in this taxon and label it in their Fig. 10F, yet their character mapping puts the ridge's first appearance at the last common ancestor of crown tetrapods, where it marks the separation of this muscle from the flexor antebrachii et carpi radialis. The row follows the description of the bone. No origin is scored — the ventromedial deltopectoral crest scars that carry it in Baphetes, Crassigyrinus and Ossinodus are not reported here.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. An ossified olecranon process with a confluent posterior crest, present in every stem tetrapod here whose ulna is preserved — Ichthyostega, where it is bifurcated and extremely well developed, Tulerpeton and Pederpes as well. Crassigyrinus is the exception: its presumed ulna appears to have neither feature. No origin is scored; the triceps leaves no correlate on the girdle in Iguana, and none is traced here.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "supinator-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "dorsomesial-ridge-radius"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. Origin from the convex supinator process on the anterior edge of the humerus, two-thirds of the way along (Coates 1996); the identification of the muscle comes from Eryops, where the supinator process carries the 'supinator longus' (Miner 1925), and from captorhinids, not from this taxon. Insertion on the dorsomesial ridge of the radius, one of the four ridges Bishop (2014) read on the Ossinodus radius and which Molnar et al. report as present here and in Pederpes. Bishop found no break in the scarring between the dorsomesial and proximoventral ridges, so this insertion and the extensor carpi radialis's may not be separate.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. Scored on the posterior ulna with no landmark, deliberately. The posterior ulnar crest is present, and its appearance together with the olecranon is what Molnar et al. read as the separation of this muscle from the triceps at the last common ancestor of Tetrapoda — but in crown tetrapods the crest is identified as the BOUNDARY between the dorsal and ventral forearm musculature rather than as an attachment, so naming it as the insertion would assert more than the source does.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "proximoventral-ridge-radius"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. The proximoventral ridge of the radius, present here and in Pederpes and read by Bishop (2014) in Ossinodus as the extensor carpi radialis insertion. No origin is scored: the ectepicondyle carries the forearm extensors as a group, and Molnar et al. do not divide that group between individual muscles in this taxon — the forearm extensors as a mass are among their highest-confidence reconstructions, the individual muscles within it are not.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. Origin from a muscle scar on the lateral surface of the cleithrum just dorsal to the anteroventral process, where the cleithrum articulates with the clavicle (Coates 1996). Molnar et al. attribute cleithral and clavicular scars to 'the deltoideus and/or latissimus dorsi' without separating the two, so this row may carry a shared scar and the latissimus dorsi occurrence records no origin at all. Insertion on the deltopectoral crest, where the deltoid and pectoral processes are united.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "latissimus-dorsi-process"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. One or more ridges on the proximal dorsal humerus (Coates 1996), as in Tiktaalik and Panderichthys rather than the distinct spike of Baphetes and Pederpes; in Ichthyostega the process is probably confluent with the ectepicondyle. No origin is scored — the cleithral scar that would carry it cannot be separated from the deltoideus origin.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. The deltopectoral crest occupies the anterior portion of the ventral humerus (Coates 1996), the pectoral and deltoid processes united into one crest. Ichthyostega and the Catskill humerus differ: there the pectoralis process is separated from the deltoid process by the prepectoral space and is confluent with the ventral humeral ridge instead, which Callier et al. (2009) and Ahlberg (2011) read as the pectoralis still emerging from a larger ventral muscle mass. No origin is scored — few stem-tetrapod fossils preserve the ventral edge of the coracoid plate, so Molnar et al. could not trace the ventral girdle origins.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Procoracohumeralis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "scapulohumeral-depression"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. Origin from the lateral fossa on the scapulocoracoid dorsal to the glenoid, observed by Molnar et al. on MGUH 1258 and 1300; the posterior fossa beside it carries the subcoracoscapularis. Their general reading of the stem-tetrapod girdle is that the two fossae, separated by the anterior glenoid buttress, mark two deep dorsal muscles with different lines of action. Insertion in the scapulohumeral depression of the dorsal humerus, proximal and anterior to the latissimus dorsi attachment — Coates's 'scapulohumeralis-like muscle'.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. Origin from the posterior fossa on the scapulocoracoid dorsal to the glenoid (MGUH 1258, 1300); insertion on a process on the posterior edge of the humerus just proximal to the ectepicondyle, scarred on its ventral surface (Coates 1996), which Coates held homologous with 'process 2' of Ichthyostega. Where both a recess and a process are present, as in Crassigyrinus, Panchen (1985) read them as the insertions of separate subcoracoideus and subscapularis muscles — the division this record holds as one homology group.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Acanthostega gunnari. The proximal ventral surface of the humerus divides into a smooth anterior region and a rough, concave posterior one, read as the insertions of the supracoracoideus and the coracobrachialis respectively (Coates 1996); the same configuration is described in Baphetes, Crassigyrinus, Ichthyostega, Greererpeton and Tulerpeton. Both muscles are scored as humerus/ventral, because the anterior-posterior distinction between them lies within that surface rather than being a second side, and which region each muscle took is kept here where it reads as the argument it is.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    }
+  ]
+}

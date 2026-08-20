@@ -1,0 +1,515 @@
+{
+  "species": "gavia-immer",
+  "source": "mckitrick-1991",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal",
+            "landmark": "radial-tuberosity"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A 6 mm tendon from the head of the coracoid, anchored to the ventral surface of the crista pectoralis by a tendinous band, running deep to the insertion of the pectoralis thoracicus. The tendon of insertion passes between the extensor metacarpi radialis and the brachialis to reach the tuberculum bicipitale on the caudal surface of the proximal radius, with a second branch on the tuberculum bicipitale of the ulna. Scored on the radial tuberosity because tuberculum bicipitale radii is the same site under another name. The biceps slip — a distinct avian belly running to the propatagial aponeurosis — is not scored: it ends in fascia.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A rectangular muscle, fleshy at both ends: from the fossa m. brachialis of the humerus to the cranioventral surface of the proximal ulna, in the depressio m. brachialis. Both are named depressions, and both are as close to a clean osteological correlate as this forelimb gets. As in Gavia stellata and Pelecanoides garnoti.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulotriceps + humerotriceps",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. TWO INSERTION ROWS, because McKitrick gives the two heads two different sites. Scapulotriceps arises semitendinously from the dorsal surface of the head of the scapula and from the ligament between the scapular head and the fossa pneumotricipitalis of the humerus; its tendon runs over the sulcus m. scapulotricipitis to insert on the PROCESSUS COTYLARIS DORSALIS — which is not the olecranon, so that row stops at the bone rather than manufacturing a correlate. Humerotriceps arises from the ventral and dorsal fossae pneumotricipitales, the tuberculum dorsale, and most of the length of the caudal surface of the humerus, and inserts on the OLECRANON, which McKitrick names plainly and which skeleton.json carries as a correlate — so it is scored. Both heads had been collapsed onto one landmark-free row, and the reasoning that justified that for the scapulotriceps was suppressing a site the source states for the humerotriceps. McKitrick records a disagreement worth keeping — there is NO 'furcular' origin of the scapulotriceps in loons, against Sanders (1967). In Gavia stellata the two tendons of insertion are separate but connected by fascia, against Sanders (1967) again.",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Scapulotriceps"
+        },
+        {
+          "name": "Humerotriceps"
+        }
+      ],
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum communis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A stout tendon on the dorsal epicondyle of the humerus, in common with the supinator. The tendon runs through a tendinal sulcus at the distal ulna, is bound to the dorsal surface of the alular metacarpal by a retinaculum, then bifurcates: the shorter branch inserts on the caudal surface of the proximal alula, the longer runs in a sulcus of the major metacarpal deep to the extensor longus digiti majoris and inserts on the craniodorsal surface of the proximal end of the first phalanx of the major digit. One row for both branches, because they are two ends of one tendon on one element.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor metacarpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. Two heads, both on the processus supracondylaris dorsalis of the humerus — pars ventralis from its ventral surface, pars dorsalis from its dorsal surface, the latter itself two fused bellies separable along their whole length including the tendons. They fuse proximally into one bipennate belly. The common tendon passes through a groove at the distal radius and around the os radiale to insert on the processus extensorius of the carpometacarpus. The radiale is a pulley here, not an attachment, so it gets no row.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor metacarpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A stout tendon on the dorsal epicondyle of the humerus, just distal to the common origin of the supinator and the extensor digitorum communis. The belly runs the length of the ulna and its tendon passes around the dorsal condyle of the ulna into the manus, inserting at the proximal end of the major metacarpal on its caudodorsal surface.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator profundus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A unipennate muscle from a stout tendon on the tuberculum supracondylare ventrale, distal and partly deep to the pronator superficialis and proximal and partly deep to the flexor digitorum superficialis, running the whole length of the radius and inserting by fleshy and semitendinous fibres along its ventral surface. The two pronators share one humeral field and are separated by depth and by the level of their tendons, not by different bones — which is why both rows read the same and the difference is in this note.",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator superficialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A stout tendon from the tuberculum supracondylare ventrale of the humerus, slightly proximal and partly superficial to the origin of the pronator profundus, inserting by tendinous fibres along the cranioventral surface of the proximal third of the radius. No landmark is asserted for the humeral origin, but not for the reason this note used to give: the 'homology problems with Baumel et al.' remark is made about PELECANOIDES GARNOTI's pronator profundus, where the origin shifts off the tuberculum supracondylare ventrale onto the ventral epicondyle, and in Gavia immer McKitrick names the tuberculum for both pronators without hedging. The row stops at the bone because skeleton.json resolves no tuberculum supracondylare ventrale — and it should not be collapsed onto the entepicondyle, because in this animal McKitrick distinguishes the two: the FLEXOR DIGITORUM SUPERFICIALIS arises from the ventral epicondyle and both pronators from the tuberculum. The tendon of origin fans into an aponeurosis continuous with the humerocarpal band.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. A stout tendon on the dorsal epicondyle of the humerus, shared with the extensor digitorum communis, lying on the cranial surface of the radius deep to the extensor metacarpi radialis. The bulky belly runs nearly half the length of the radius and inserts by semitendinous fibres on its caudodorsal, dorsal and craniodorsal surfaces — the caudodorsal fibres absent in Gavia immer USNM 504983, a difference between two specimens of one species.",
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "'Rhomboideus' (superficialis + profundus)",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "clavicle",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. Superficialis arises by aponeurosis from the last cervical vertebrae and the dorsal vertebrae cranial to the ala preacetabularis ilii, inserting semitendinously on the head of the scapula, on the dorsomedial surface of the proximal three-quarters of the scapular blade, and cranially on the dorsomedial surface of the dorsal end of the clavicle. Profundus lies almost entirely deep to it, arises by a broad aponeurosis from the same vertebrae and inserts along the length of the blade. The clavicular insertion is the row worth noting: it is the one that disappears in taxa whose clavicles fuse into a furcula differently. In Gavia immer USNM 504983 the superficial muscle has two heads, the cranial one inserting partly onto the surface of the deltoideus major — a within-species difference between two specimens of the same species.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Rhomboideus superficialis"
+        },
+        {
+          "name": "Rhomboideus profundus"
+        }
+      ],
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi (pars cranialis + pars caudalis)",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320. Two separate bellies, 8 mm apart in this specimen. Pars cranialis arises by a short wide aponeurosis from the dorsal vertebrae and inserts by semitendinous fibres on the dorsolateral surface of the humeral shaft, deep to the scapulotriceps. Pars caudalis arises from the dorsal vertebrae cranially and, by aponeurosis, from the medial, cranial and lateral surfaces of the ala preacetabularis ilii — the three ilium rows are that second head, one per aspect McKitrick names, where a single `lateral` row had been standing for all three — and inserts by a 3 mm tendon on the margo caudalis of the humerus, just cranial to the insertion of pars cranialis. A dense tendinous band, George & Berger's 'humeral anchor', ties the tendon to the scapulotriceps.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulohumeralis cranialis",
+      "present": "uncertain",
+      "note": "Gavia immer, and the interesting thing about this row is that it disagrees with itself BETWEEN TWO SPECIMENS OF ONE SPECIES. McKitrick found the muscle ABSENT in CM 2320 — the specimen every other Gavia immer row in this dataset is scored from — and PRESENT in USNM 504983, where it is a tiny parallel-fibred muscle from a short tendon on the dorsolateral surface of the scapular head, inserting on the medial surface of the humeral head at the crus ventrale fossae between the two heads of origin of the humerotriceps. Sanders (1967) also found it in G. immer. It is present in G. stellata and relatively larger in Pelecanoides garnoti, where the origin extends onto the proximal scapular blade. Scored `uncertain` rather than `yes` or `no` because the disagreement is within the species and neither specimen can stand for it; the alternative — taking CM 2320 as the exemplar because the rest of the rows do — would turn one dissection into an avian absence. No attachments are scored: the animal they were seen in is not the animal the rest of these rows describe.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serratus superficialis + profundus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "true-ribs",
+            "side": "lateral"
+          },
+          {
+            "element": "cervical-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "ventral"
+          },
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Gavia immer CM 2320, and the record covers BOTH muscles named in its title, which is why there is a cervical origin. SUPERFICIALIS: pars cranialis has only one head of origin in loons — fleshy on the lateral surface of the shaft of the first true rib — inserting by tendon on the ventral margin of the proximal quarter of the scapula between the heads of the subscapularis; pars caudalis arises by aponeurosis from the lateral surface of the 4th sternal rib and the 1st and 2nd true ribs. PROFUNDUS has three heads, and the cranial one is the reason for the vertebral row: it arises from the LAST CERVICAL VERTEBRAE, not from a rib, and inserts on the DORSOMEDIAL surface of the distal half of the scapula, while the middle and caudal heads arise by tendinous sheets from the lateral surface of the true ribs and insert on the central and distal thirds of the ventromedial scapular blade. Both of those had been missing while the rows carried only the superficialis' rib origin and a single ventral scapular row. Pars metapatagialis of the superficialis stays out deliberately: it inserts into the HUMERAL FEATHER TRACT, not onto bone, and is one of the avian muscles that cannot leave an osteological trace at its distal end.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "mckitrick-1991"
+      ]
+    }
+  ]
+}

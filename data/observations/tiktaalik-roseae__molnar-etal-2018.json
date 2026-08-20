@@ -1,0 +1,166 @@
+{
+  "species": "tiktaalik-roseae",
+  "source": "molnar-etal-2018",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Abductor superficialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "ventral-humeral-ridge"
+          }
+        ]
+      },
+      "attachmentNote": "Tiktaalik roseae. The ventral humeral ridge is confluent with the entepicondyle and undivided — there is no pectoralis process — so the superficial ventral mass is what gets scored here, rather than a pectoralis. Several processes and rugosities on the ventral aspect of the ulna are interpreted as possible muscle attachments (Shubin et al. 2006) but are not assigned, and a crest runs along the preaxial edge of the radius. One node rootward, at Eotetrapodiformes, the ventral process of the radius appears, which Molnar et al. read as the separation of radial from ulnar and distal fin flexors.",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor profundus",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Tiktaalik roseae. Faint rugosities above the glenoid and a hollow above the coracoid foramen, observed by Molnar et al. on the MCZ cast of NUFV 112 and 'well placed for the origins of deep dorsal musculature' — the mass, not a named muscle. They homologise the shallow fossa on the lateral scapulocoracoid anterodorsal to the glenoid across the whole transition: it carries this muscle's origin in Neoceratodus and Latimeria and the procoracohumeralis origin in Hynerpeton, Ossinodus and captorhinids. That is the girdle end of the fin-mass-to-limb-muscle argument.",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Tiktaalik roseae. The ectepicondyle, deltoid process and latissimus dorsi process are clearly separate here, unlike in Eusthenopteron where the three are close together (Vorobyeva 1995; Shubin et al. 2006; Ahlberg 2011). The insertion is still scored on the dorsal humerus without a landmark: Molnar et al. put the deltoideus insertion on the dorsal ridge and its derivatives, and Boisvert (2009) reads the deltoid and supinator processes as a continuous flange in this taxon.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "latissimus-dorsi-process"
+          }
+        ]
+      },
+      "attachmentNote": "Tiktaalik roseae. The latissimus dorsi attachment is present as a process or a series of diagonal ridges (Vorobyeva 2000; Boisvert 2009; Ahlberg 2011), and its appearance at this node is what Molnar et al. read as the separation of the latissimus dorsi from the deltoideus. It sits at the proximal border of the ectepicondyle, which is why they take the muscle to be a derivative of the same superficial dorsal mass rather than a new arrival. In Strepsodus, Rhizodus and Aztecia the reported processes do not resemble these oblique ridges, and Molnar et al. score the latissimus insertion in those taxa as on the dorsal ridge itself.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "uncertain",
+      "note": "Tiktaalik roseae. Molnar et al. interpret it as lacking a pectoralis process: the ventral humeral ridge is confluent with the entepicondyle and undivided, and they place the separation of the pectoralis from the coracobrachialis one node crownward, at the last common ancestor of Tetrapoda, marked by a distinct pectoralis process and coracobrachialis fossa. So the pectoralis is not resolvable as a separate muscle here, and the row records that rather than a presence. The paired sulci on the internal and external margins of its coracoid foramen do mark a musculotendinous bundle running from the dorsomedial coracoid to the ventral humerus (Shubin et al. 2006), but no source names the muscle.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "uncertain",
+      "note": "Tiktaalik roseae. Molnar et al.'s character mapping puts the first individual osteological correlate of the subcoracoscapularis at this node — a triangular region on the scapulocoracoid dorsal and posterior to the glenoid — but what they report on the specimen itself, the MCZ cast of NUFV 112, is fainter: rugosities above the glenoid and a hollow above the coracoid foramen, 'well placed for the origins of deep dorsal musculature' and not assigned to a muscle. Under the Ahlberg et al. (2008) phylogeny the maximum-likelihood reconstruction delays the correlate to Acanthostega and crownward. Hence uncertain, and no attachment row.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    }
+  ]
+}

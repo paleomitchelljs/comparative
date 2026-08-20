@@ -1,0 +1,109 @@
+{
+  "species": "galictis-cuja",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "note": "Galictis cuja: present and scored. Ercoli et al. describe the sacrocaudalis series in full in an animal with a long, well-muscled tail — the sacrocaudalis dorsalis lateralis alone is 6.81% of hind limb muscle mass. Retained in taxa with a muscular tail and reduced in others, but that is the clade-level pattern; it had been written onto this species row as `present: \"variable\"` while the row carried four scored attachment rows.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "lumbar-vertebrae",
+            "side": "dorsal"
+          },
+          {
+            "element": "sacral-vertebrae"
+          },
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "attachmentNote": "The sacrocaudalis series, dorsal and ventral, medial and lateral. The dorsalis medialis is the caudal continuation of the transversospinalis: its most cranial bundle arises from the caudal and dorsal spinous process of the last lumbar vertebra, subsequent bundles from the sacral and caudal spinous processes, inserting on the cranial ends of the anterior articular processes of caudal vertebrae. Each bundle spans about three vertebrae.",
+      "name": "Sacrocaudalis dorsalis and ventralis, medialis and lateralis",
+      "region": "axial",
+      "record": "caudal-musculature",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "name"
+      ],
+      "_srcs": [
+        "schilling-2011",
+        "ercoli-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Transversospinal system (multifidus, semispinalis and relatives)",
+      "present": "yes",
+      "note": "Subdivided into several entities in mammals; Schilling (2011) ties that subdivision to the evolution of a mobile, rib-free lumbar region.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Multifidus"
+        },
+        {
+          "name": "Semispinalis"
+        }
+      ],
+      "partsOpen": true,
+      "attachments": {
+        "origin": [
+          {
+            "element": "lumbar-vertebrae",
+            "side": "dorsal"
+          },
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "lumbar-vertebrae",
+            "side": "dorsal"
+          },
+          {
+            "element": "sacral-vertebrae",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Lumbar sector only. The medialmost epaxial series, metameres largely fused with each other and with the thoracic continuation, from the lateral spinous processes and dorsal articular processes of all lumbar vertebrae but the last, plus the lumbodorsal fascia, onto the mammillary processes of the lumbar vertebrae and, for the last bundle, the intermediate sacral crest of S1-2. It is continuous caudally with the sacrocaudalis dorsalis medialis, which is why the tail and the back are one series and not two.",
+      "region": "axial",
+      "record": "transversospinalis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "partsOpen",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "schilling-2011",
+        "ercoli-etal-2012"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,901 @@
+{
+  "species": "cygnus-cygnus",
+  "source": "matsuoka-hasegawa-2007",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "M. biceps brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "lesser-tubercle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). **Origin only, and the omission is the source's own.** Matsuoka & Hasegawa state that the insertion is surrounded by the proximal ulno-radial muscles and the attachment was not observed in this study, so no insertion row is written; leaving it empty reads as unrecorded, which is what it is. The main origin is a strong tendinous sheet from the craniolateral surface of the head of the coracoid, covering the Intumescentia on the cranial surface of the proximal humerus; the 'shoulder' of that tendon hooks onto the caudal surface and takes an accessory origin from the notch on the ventral slope of the Tuberculum ventrale. That second head is a humeral head — the state Burch (2014) notes is confined to neognathous birds among the taxa he surveyed, and which he scores as disputed for *Tawa* on the strength of a striated depression in the same position.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only: a thick short muscle from the Fossa m. brachialis on the cranial surface of the distal humerus. The insertion lies beyond this paper, which is Part 1 and covers the muscles attaching to the sternum, coracoid, clavicle, scapula and humerus. **The fossa itself is the point of comparison**: Burch (2014) uses its absence in *Tawa* and *Herrerasaurus* as the evidence that basal theropods retained the proximal, crocodylian-style origin, because in birds this muscle has migrated distally into exactly this impression.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. coracobrachialis cranialis and caudalis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. coracobrachialis cranialis"
+        },
+        {
+          "name": "M. coracobrachialis caudalis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "lesser-tubercle"
+          },
+          {
+            "element": "humerus",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Both parts, where this row previously held only the caudal one. Caudalis is one of two deep tongue-like muscles arising from the sternum, lateral to the supracoracoideus, from the craniolateral corner of the sternal plane and the ventrolateral surface of the base of the coracoid, inserting in the shallow notch on the dorsal slope of the Tuberculum ventrale. Cranialis arises from the dorsal slope of the head of the coracoid, immediately above the Impressio lig. acrocoracohumeralis, and inserts widely on the cranial surface of the proximal humerus — the area called Impressio m. coracobrachialis cranialis where the attachment is strong enough to leave a deep impression, **which Matsuoka & Hasegawa say it is not in this specimen**. A named osteological correlate recorded as not developed, which is the useful kind of negative observation for anyone reconstructing this muscle from a fossil.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. tensor propatagialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "furcula",
+            "side": "dorsal"
+          },
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          },
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Arises from the dorsal surface at the base of the long apex of the furcula — the most anterior muscle attaching on the dorso-lateral surface of the clavicle-coracoid-scapula complex — with M. pectoralis pars propatagialis joining it from the proximal cranial surface of the Crista pectoralis. Its main tendon runs to the wrist like the bowstring of the arch the humerus and antebrachium form, with a weak tendon branching to the cranio-proximal ulna and radius, which is what the insertion rows record; the carpal ending is prose because it is a tendon into the propatagium rather than a bony attachment.\n\n**Which record this belongs on is contested.** It is scored here because this record already carries tensor propatagii/tensor patagii as synonyms, following Meers (2003). Burch (2014) rejects that: he makes Propatagialis the homolog of the deltoideus clavicularis on Sullivan's and Howell's developmental evidence, and points out that the crocodylian humeroradialis and the avian propatagialis share neither origin nor insertion. The Tawa row on `deltoideus-clavicularis` states his side of it.",
+      "region": "arm",
+      "record": "humeroradialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. triceps brachii (scapulotriceps + humerotriceps)",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. scapulotriceps"
+        },
+        {
+          "name": "M. humerotriceps"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "furcula",
+            "side": "dorsal"
+          },
+          {
+            "element": "glenoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). **Two muscles, not three heads, and the coracoid head is gone.** Scapulotriceps has a dorsal head from the posterior tip of the dorsal surface of the furcula and a deeper one from the posterior half of the dorsal lip of the coracoid-scapular glenoid, together with Lig. coracohumerale dorsale, plus a small flat branching tendon — the humeral anchor — from the proximal base of the Crista pectoralis on the caudal humerus. Its distal half is tendinous and inserts on the dorso-caudal lip of the proximal ulna, running in the Sulcus m. scapulotricipitis. Humerotriceps is Y-shaped: the dorsal belly attaches along the entire ventro-caudal surface of the humeral shaft, leaving an especially deep impression, and the ventral head arises from the roof and internal groove inside the Fossa pneumotricipitalis, its tendon running like a bowstring to the olecranon. Compare *Tawa*, where Burch reconstructs three heads with the coracoid head already lost; birds have since lost the lateral head as well.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor digitorum communis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only. The second of the four dorsal depressions on the distal humerus. In every taxon Burch surveyed this muscle arises from about the middle of the ectepicondyle between the carpal extensors, at a proportional probability near 1.0 at every node — one of the few attachments in the forelimb that does not move.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor metacarpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only — this is Part 1, which stops at the humerus. One of four muscles Matsuoka & Hasegawa figure arising from sharp depressions on the dorsal surface of the distal humerus, the avian epicondylus dorsalis, scored here as the lateral epicondyle. **The proximal position of this origin is a derived avian feature**: Burch (2014) argues the bird arrangement, in which extensor carpi radialis takes the most proximal place on the epicondyle and the supinator drops distally, evolved with the automating mechanism of the wing, and reconstructs the inverse for basal theropods.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor metacarpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only, and **it is on the ventral side** — Matsuoka & Hasegawa place it with the two pronators among the three muscles leaving sharp depressions on the ventral surface of the distal humerus, the entepicondyle. The mirror of the flexor carpi ulnaris row on this same specimen, which arises dorsally: in this swan the two carpal ulnar muscles have swapped the sides their names imply. Elsewhere this muscle is an ectepicondylar extensor — Burch (2014) puts it among the most distal muscles on the ectepicondyle in *Tawa*, and codes it absent in crocodylians altogether.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only, and **it is on the dorsal side of the humerus** — Matsuoka & Hasegawa group it with the extensor metacarpi radialis, the extensor digitorum communis and the supinator among the four muscles arising from sharp depressions on the dorsal surface of the distal humerus. A muscle named for flexing the wrist, arising from the extensor epicondyle. Elsewhere on this record the origin is the entepicondyle: Burch (2014) makes it the most distal tendon on the entepicondyle in *Tawa*, and the human muscle takes the common flexor tendon from the medial epicondyle. Recorded as the source states it.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pronator profundus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only: one of the three ventral depressions on the distal humerus. Burch's (2014) Table 1 makes the avian Pronator profundus the Pronator accessorius of squamates and turtles, which is this record. **This row disagrees with the *Gallus* row on the same record, which is scored absent.** Burch reports the muscle present in squamates, turtles and every neognath he studied and absent in crocodylians, *Sphenodon* and paleognaths except tinamous, which makes a swan the expected case and a chicken the surprising one. Two species rows disagreeing is what makes the clade roll up as variable, and that is the correct result here rather than something to reconcile.",
+      "region": "forearm",
+      "record": "pronator-accessorius",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pronator superficialis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Proximal head"
+        },
+        {
+          "name": "Distal head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only. Two sharp depressions on the ventral surface of the distal humerus mark the Y-shaped head of this muscle, which is why it is scored `heads` rather than single. The avian name is Pronator superficialis; Burch's (2014) Table 1 equates it with the Pronator teres of crocodylians, lepidosaurs and turtles, which is this record. Note the trap: `flexor-carpi-radialis` in this dataset also carries 'pronator superficialis' as a synonym, from Sullivan and Dilkes, so the one avian name has been used for two muscles.",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. supinator",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Origin only: the fourth of the dorsal depressions on the distal humerus. **Scored on this record rather than on `supinator`, and the corpus now holds the same avian name on two records.** Matsuoka & Hasegawa follow Vanden Berge (1979) in the Nomina Anatomica Avium, and Burch's (2014) Table 1 equates that avian Supinator with Meers's crocodylian 'supinator' and Walker's chelonian 'tractor radii' — which are this record's two existing synonyms, and the basis on which the *Tawa* row was scored here. But McKitrick's (1991) loon 'Supinator' sits on the `supinator` record, whose own assessment says the avian usage of the word denotes part of the extensor antebrachii et carpi radialis. **That is a disagreement between sources, not a duplication, and it is flagged rather than resolved**: settling it needs a source that dissects both, which the corpus does not have.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "'Rhomboideus' (superficialis + profundus)",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. rhomboideus superficialis"
+        },
+        {
+          "name": "M. rhomboideus profundus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "furcula",
+            "side": "medial"
+          },
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Superficialis is a wide sheet from the line of neural spines of the posterior cervical and thoracic vertebrae — about eight of them — to the medial margin of the dorsal furcula and the medial margin of the scapula, occupying more than two-thirds of the length of the Margo dorsalis. Profundus is a small muscle caudal and deep to it, inserting on the medial margin of the posterior extremity of the scapula; its vertebral origin could not be seen, being covered by and almost fused to the superficialis, so no separate origin row is asserted for it. **This is the insertion that had been written onto the latissimus dorsi row for this same specimen** — see that record, where the error is set out.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Pars cranialis is the most superficial back muscle, arising aponeurotically over the neural spines of three thoracic vertebrae rather than directly from bone — Matsuoka & Hasegawa say the attachment 'seems not on the bones directly' — and pars caudalis from the neural spines of the posterior thoracics, reaching the dorso-cranial ilium weakly. The two fuse at the armpit and enter the arm through the slit between scapulotriceps and humerotriceps.\n\n**This row previously gave the insertion as the medial scapula and the medial clavicle, which is not what its own source says.** Matsuoka & Hasegawa put the insertion on the linear tuberosity on the caudal surface of the Crista pectoralis of the humerus — the deltopectoral crest under its avian name — immediately beside the much longer attachment of deltoideus major. The medial scapula and clavicle are where they put M. rhomboideus superficialis, one muscle away. The corrected row agrees with this record's own consensus (proximal humerus near the crest of the lesser tubercle), with McKitrick's loon, and with Schreiweis's penguin, whose latissimus ends on the posterior border of the humeral shaft near the pneumatic fossa.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-neural-spines"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote",
+        "attachments"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. deltoideus major",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Posterior head"
+        },
+        {
+          "name": "Anterior head"
+        },
+        {
+          "name": "Scapular anchor"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "furcula",
+            "side": "dorsal"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). **Three origins, and the two named heads are the wrong way round.** The superficial major head is called the posterior head although it lies anterior to the so-called anterior head; Matsuoka & Hasegawa say so explicitly. It arises from the dorsal surface at the tip of the long apex of the furcula, just behind the tensor propatagialis origin; the deeper anterior head from the middle of the anterior end of the lateral scapula; and a small diverging tendon, the scapular anchor, from the dorsal scapula between the proscapulohumeralis attachment in front and the dorsalis scapulae behind. The insertion also divides: the major branch runs widely over the anconal surface of the Crista pectoralis with a fibrous extension along the dorsal margin of the shaft reaching half its length, the other into the depression between the humeral head and the Tuberculum dorsale.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 19,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. scapulohumeralis caudalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Called M. dorsalis scapulae by George & Berger, which is a name this dataset also carries as an old synonym of the latissimus dorsi and of the deltoideus scapularis — three muscles, one discarded name. Arises widely from the lateral surface of the scapular blade, its cranial part running deep to the scapulohumeralis cranialis origin as far as the caudal margin of the glenoid, and inserts on a small notch on the caudal surface of the Crus ventrale fossae, the ventral bar of the pneumotricipital fossa — scored as `humerus[posterior]`, since the crura of that fossa are not elements here.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. scapulohumeralis cranialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). M. proscapulohumeralis of George & Berger. A pink, thick, short muscle from the postglenoid area of the lateral scapula, just cranial to where the scapular anchor of deltoideus major attaches, inserting on the basal area of the Crus dorsale fossae. **The two scapulohumerales insert on the two bars of the same fossa**, dorsal and ventral, which is the clearest statement in this paper of why they are two muscles and not one. Whether this muscle corresponds to the mammalian teres minor is unresolved — see this record's assessment, which now has four positions on it.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mm. serrati",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). **A deliberately thin row.** Matsuoka & Hasegawa record multiple muscles running between the vertebral column and the medial surface of the scapula, say they must be parts of Mm. serrati, and then say plainly that they could not identify them in this study. The insertion area is figured; the origin is not resolved to particular vertebrae or ribs, and no rib row is asserted here even though the serratus arises from ribs in every other column on this record. What the row records is that the muscle is there and where it ends.",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachmentNote": "Cygnus cygnus. The origin is in three overlapping layers — shallow clavicle, deep clavicle plus carina, and sternal plane plus rib cage — all fusing distally onto the crista pectoralis, the avian name for the deltopectoral crest. The rib attachment is INDIRECT, onto the surface of underlying muscle, which is why the rib row is the weakest of the three. Both pectoralis muscles together are about 11% of body mass.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "ventral",
+            "landmark": "sternal-keel"
+          },
+          {
+            "element": "furcula"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote",
+        "attachments"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "note": "Present according to Dilkes (2000).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "ribs",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). The only muscle inside the thoracic cavity, which Matsuoka & Hasegawa suggest keeps the coracosternal connection flexible. Arises from the dorsal surface of the craniolateral corner of the sternum — the Proc. craniolateralis — and the medial part of the cranial border of the rib cage at the first rib, inserting in a large depression on the dorsal surface of the basal part of the coracoid. **The insertion was previously scored as the ventral coracoid**, which is the wrong face of the bone for a muscle its own source places inside the thorax.",
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subscapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal",
+            "landmark": "lesser-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Arises widely from the cranial three-fifths of the medial surface of the scapula and inserts by a strong tendon on the proximal slope of the Tuberculum ventrale. **Only one belly is scored because only one was found**: Matsuoka & Hasegawa take this to be M. subscapularis pars interna and state that they were unable to recognise a pars externa, which is a stated absence rather than an unexamined one. The Tuberculum ventrale is the lesser tubercle under Baumel's avian nomenclature — the same site the human subscapularis uses, which is only visible as the same site because the two were merged into one element.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. supracoracoideus"
+        },
+        {
+          "name": "M. deltoideus minor",
+          "membership": "disputed",
+          "sources": [
+            "matsuoka-hasegawa-2007"
+          ]
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "ventral"
+          },
+          {
+            "element": "sternum",
+            "landmark": "sternal-keel"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "greater-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Cygnus cygnus GMNH-VA-04-02, Matsuoka & Hasegawa (2007). Arises from the deep corner where the carina meets the sternal plane — the rostrum sterni — and from the Membrana sternocoracoclavicularis, the ligamentous sheet tying sternum, coracoid and furcula together, which has no element here and is carried in prose. **The insertion is the whole flight mechanism in one sentence**: the tendon passes through the canal formed by clavicle, coracoid and scapula and ends on the Tuberculum dorsale on the *caudal* surface of the proximal humerus, so a muscle lying under the bird lifts the wing. That tubercle is scored as the greater tubercle rather than as an avian element of its own; see the note on `greater-tubercle`.\n\n**M. deltoideus minor is recorded here as a disputed part**, following Sullivan (1962) and Burch (2014), who derive it from the supracoracoideus mass rather than the deltoid group and name the result supracoracoideus accessorius; Diogo & Abdala (2010) instead make it the deltoideus clavicularis. Matsuoka & Hasegawa describe it arising from the hard ligament between the posterior tip of the coracoid head and the scapular acromion, and inserting on the dorsal slope of the same Tuberculum dorsale the supracoracoideus wraps — which is the topological adjacency the homology argument rests on.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "matsuoka-hasegawa-2007"
+      ]
+    }
+  ]
+}

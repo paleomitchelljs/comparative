@@ -1,0 +1,226 @@
+{
+  "species": "ascaphus-truei",
+  "source": "johnston-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae (levator mandibulae externus, longus, articularis)",
+      "present": "yes",
+      "note": "Ascaphus truei, dissected by Johnston (2011) alongside Leiopelma. The innervation pattern — whether branches pass lateral or medial to the trigeminal ganglion — is the criterion the older literature used, and Johnston replaces it with insertion geometry: the components are identified by where they insert into the inverted U on the mandible.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator mandibulae externus",
+          "muscle": "adductor-mandibulae-externus"
+        },
+        {
+          "name": "Levator mandibulae longus",
+          "muscle": "adductor-mandibulae-longus"
+        },
+        {
+          "name": "Levator mandibulae articularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "braincase-dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, two specimens, Johnston (2011). Deliberately sparser than the Leiopelma row beside it. Johnston describes the Ascaphus adductor group as similar in general configuration and then names only the differences: the adductor posterior (articularis) is separate while the rest stays a contiguous block, the origin of the internus does NOT extend as far rostrally on the braincase, and V3 emerges in a different position. Only the braincase origin and the mandibular insertion are therefore asserted here. **\"Similar to Leiopelma\" is a statement of resemblance, not a second set of observations**, and copying the Leiopelma rows across would manufacture six attachments from one sentence.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "werneburg-2011",
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae externus",
+      "present": "yes",
+      "attachmentNote": "Ascaphus truei. Left without structured attachments on purpose. Johnston (2011) describes this component in Leiopelma hochstetteri and says only that the Ascaphus configuration is similar, so there is no Ascaphus-specific origin or insertion to record. The scored Leiopelma row on this record is the one with the observations behind it; unrecorded here means unrecorded, not the same as Leiopelma.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae internus (rostral + caudal parts)",
+      "present": "yes",
+      "note": "Two parts merging into one another. Johnston prefers 'adductor mandibulae' to 'levator mandibulae' for anurans, to align with usage across gnathostomes.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "braincase-dorsal",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Rostral part"
+        },
+        {
+          "name": "Caudal part"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "attachments",
+        "sources",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae lateralis",
+      "present": "yes",
+      "note": "Johnston (2011) recognises a separate lateralis in Leiopelma and Ascaphus, distinct from the externus.",
+      "attachmentNote": "Ascaphus truei. Left without structured attachments on purpose. Johnston (2011) describes this component in Leiopelma hochstetteri and says only that the Ascaphus configuration is similar, so there is no Ascaphus-specific origin or insertion to record. The scored Leiopelma row on this record is the one with the observations behind it; unrecorded here means unrecorded, not the same as Leiopelma.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-lateralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae longus",
+      "present": "yes",
+      "attachmentNote": "Ascaphus truei. Origin: Dorsal to the otic capsule. Insertion: Dorsal border of the mandible. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-longus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "attachmentNote": "Ascaphus truei. Left without structured attachments on purpose. Johnston (2011) describes this component in Leiopelma hochstetteri and says only that the Ascaphus configuration is similar, so there is no Ascaphus-specific origin or insertion to record. The scored Leiopelma row on this record is the one with the observations behind it; unrecorded here means unrecorded, not the same as Leiopelma.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator anguli oris",
+      "present": "yes",
+      "note": "Newly defined in Ascaphus truei by Johnston (2011) — the first record of this muscle in a frog — and not found in Leiopelma hochstetteri, which now carries its own absent row. Presence was `variable` here for several passes, which was the clade's answer written onto one animal: Ascaphus either has the muscle or does not, and it has it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "rictal-plate"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei. Arises from the dorsal surface of the palatal membrane in the triangular area between pterygoid and maxilla — the membrane is the actual origin and has no element, so the two bones bounding it are scored instead — wraps around the rostral border of the longus, and passes medial to the maxilla and the maxillo-quadrate ligament to insert on the rictal plate at the corner of the mouth. Johnston names it for the lepidosaur muscle because that insertion is the lepidosaur one; the same rictal plate is what becomes the venom gland in colubroid snakes on his 2014 reading.",
+      "region": "cranial",
+      "record": "levator-anguli-oris",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    }
+  ]
+}

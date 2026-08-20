@@ -1,0 +1,216 @@
+{
+  "species": "dasyurus-viverrinus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor and flexor brevis hallucis, fused",
+      "innervation": "Internal plantar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Dasyurus viverrinus, and **a muscle Cunningham cannot name, for a reason he sets out**. The rudimentary hallux carries a small fleshy slip from the scaphoid to the inner side of its metatarsal head. Is it the abductor or the flexor brevis? The nerve does not decide it — both usually take the internal plantar, and this does. Ruge, figuring the same slip in *Dasyurus hallucatus*, called it the abductor hallucis. Cunningham argues it is both fused into one, and his evidence is the next animal: in *Phascogale*, whose hallux is slightly better developed, the two lie in close proximity but are distinct. **A homology settled by looking at a relative rather than at a nerve.**",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductors of the little toe",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abductor ossis metatarsi minimi digiti"
+        },
+        {
+          "name": "Abductor minimi digiti"
+        },
+        {
+          "name": "Third abductor, to the sesamoid"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Dasyurus viverrinus. Three, as in the thylacine, but with the sesamoid slip arising further back — from the under surface of the projecting base of the fifth metatarsal — and **constant here where in the thylacine it was occasional**. Cunningham makes it out partly because the deep division of the external plantar nerve passes under cover of it as it turns inwards, which is the one exception in his whole marsupial series to that nerve running between the plantar layer and everything deeper. Ruge found the same slip in *Dasyurus hallucatus* but without an independent insertion, blended with the outer head of the short flexor.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate layer and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Dasyurus viverrinus. Each of the four outer toes has a flexor brevis, **quite distinct from the dorsal interossei and showing no tendency to fuse with them** despite the intermetatarsal spaces being nearly obliterated. Each arises from the base of its own metatarsal and divides into two slips embracing the root of the toe, one to each sesamoid — differing from the thylacine's only in that the two heads always share a common origin here. The four dorsal interossei are plantar in position, one-headed, from the bases of the four outer metatarsals, abducting from a line through the medius, which therefore has two of them.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (four adductors)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Dasyurus viverrinus. A long narrow foot whose metatarsals lie so close together that **not one intrinsic muscle can be seen from the dorsum** — all are crowded into the sole — and yet the three-layer plan survives crowding intact, which is the point Cunningham uses later against the carnivores, whose muscles fuse under the same conditions. The adductors of the index and minimus form one exceedingly thin triangular sheet, tendinous at its apex in the midline and arching over the bases of the annularis and medius, inserting by its angles into a sesamoid at each end; a faint fibrous raphe running from apex to base marks where the two muscles divide. The adductor annularis is a minute fusiform slip arising **from the deep surface of that raphe** and visible shining through the sheet. The adductor hallucis is a delicate muscle to the head of the rudimentary hallucal metatarsal. Ruge described a special adductor of the medius in *Dasyurus hallucatus*; Cunningham found none here and says it is rare for the digit that is the centre of adduction to have an adductor of its own.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

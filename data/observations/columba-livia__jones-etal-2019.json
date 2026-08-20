@@ -1,0 +1,668 @@
+{
+  "species": "columba-livia",
+  "source": "jones-etal-2019",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae complex (externus, posterior, pseudotemporalis, pterygoideus)",
+      "present": "yes",
+      "innervation": "Trigeminal nerve (CN V), mandibular division.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor mandibulae externus"
+        },
+        {
+          "name": "Adductor mandibulae posterior"
+        },
+        {
+          "name": "Pseudotemporalis"
+        },
+        {
+          "name": "Pterygoideus"
+        }
+      ],
+      "divisionNote": "Columba livia. Jones et al. resolve four separate adductors, three of them further divided, and they disagree with earlier work on the boundaries: the m. AMEP is separable from the m. adductor mandibulae posterior on both sides of their specimen (contra van Gennip 1986), and the posterior is clearly separate from the pseudotemporalis profundus, unlike the arrangement reported for Columba palumbus. They also record that the homology of the externus partes across amniotes has been questioned outright, which is the same caution Johnston (2011, 2014) raises for this complex.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal",
+            "side": "lateral"
+          },
+          {
+            "element": "orbit",
+            "side": "posterior"
+          },
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "anterior"
+          },
+          {
+            "element": "pterygoid",
+            "side": "lateral"
+          },
+          {
+            "element": "palatine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "side": "dorsal",
+            "landmark": "coronoid-process-mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia, 242 g adult, from contrast-enhanced CT. The union of the four adductors' attachments; each component's own row carries the detail. Note what is NOT here: the separate postorbital bone is absent in birds, so the postorbital and zygomatic PROCESSES that carry part of the externus origin are recorded on the squamosal rather than on a postorbital element.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "note": "In this specimen the externus lies lateral to both the maxillary (CN V2) and mandibular (CN V3) divisions, and the pseudotemporalis profundus bifurcates around CN V3 near its insertion — the nerve's course through the complex is what the CT dataset adds to the older dissections.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "note"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae externus (pars superficialis, medialis, profundus)",
+      "present": "yes",
+      "innervation": "Trigeminal nerve (CN V), mandibular division.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pars superficialis"
+        },
+        {
+          "name": "Pars medialis"
+        },
+        {
+          "name": "Pars profundus"
+        }
+      ],
+      "divisionNote": "Columba livia. Three distinct partes in this specimen, though in many birds the superficialis and medialis are hard to separate; the medialis is itself divided by an internal aponeurosis into anterior and posterior portions. Jones et al. note that whether these partes are homologous with those of other amniotes has been questioned.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal",
+            "side": "lateral"
+          },
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "dorsal",
+            "landmark": "coronoid-process-mandible"
+          },
+          {
+            "element": "mandible",
+            "side": "lateral"
+          },
+          {
+            "element": "mandible",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. Pars superficialis from the lateral surface of the squamosal within the fossa temporalis, inserting by aponeurosis on a small region of the coronoid process. Pars medialis by three short aponeuroses — one from the postorbital process, two from the zygomatic process — with a broad fleshy insertion on the lateral surface of the lower jaw; Jones et al. follow van Gennip's three-part origin against the single zygomatic origin others report. Pars profundus from the dorsolateral part of the anterolateral surface of the quadrate onto a small point on the dorsal jaw behind the coronoid process. The postorbital and zygomatic processes are scored on the squamosal: birds have no separate postorbital bone, and `skeleton.json` records it as absent in Aves, so a row on it would be a validation error rather than an observation.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "note": "Positionally diagnostic: in amniotes this muscle usually lies BETWEEN CN V2 and CN V3, and in Columba livia it lies lateral to both.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "note"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "innervation": "Trigeminal nerve (CN V).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. From the ventral part of the anterolateral surface of the quadrate, ventromedial to the origin of the externus pars profundus, onto a flat triangular surface on the dorsal mandible immediately anterior to the jaw joint. Jones et al. find it reasonably distinct from the externus pars profundus (contra van Gennip 1986) and clearly separate from the pseudotemporalis profundus. Its size and position suggest it stabilises the jaws during closure and may assist opening — a function no in vivo recording has tested.",
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Depressor mandibulae",
+      "present": "yes",
+      "innervation": "Facial nerve (CN VII).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "posterior"
+          },
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. From a broad area on the posterolateral surface of the squamosal, and also from the posterior and lateral surface of the postorbital ligament — a soft-tissue origin that leaves no bony trace. It inserts over a broad continuous area of the lower jaw: the dorsolateral corner, the flat posterior surface, and the posterior end of the medial surface. No landmark is asserted, because that area is wider than the retroarticular process this record's consensus names. Jones et al. add that because the quadrate is mobile, contracting it can protract the upper jaw as well as rotate the lower — one muscle acting on both jaws.",
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Four recti, two obliqui, three levatores palpebrae, pyramidalis and quadratus",
+      "present": "yes",
+      "innervation": "Oculomotor (CN III), trochlear (CN IV) and abducens (CN VI).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Rectus dorsalis"
+        },
+        {
+          "name": "Rectus ventralis"
+        },
+        {
+          "name": "Rectus medialis"
+        },
+        {
+          "name": "Rectus lateralis"
+        },
+        {
+          "name": "Obliquus dorsalis"
+        },
+        {
+          "name": "Obliquus ventralis"
+        },
+        {
+          "name": "Levator palpebrae dorsalis"
+        },
+        {
+          "name": "Levator palpebrae ventralis"
+        },
+        {
+          "name": "Levator palpebrae obliquus",
+          "membership": "variable",
+          "note": "Jones et al.'s survey of columbiform accounts has it present in some and absent or unreported in others."
+        },
+        {
+          "name": "Pyramidalis membranae nictitantis"
+        },
+        {
+          "name": "Quadratus membranae nictitantis"
+        }
+      ],
+      "divisionNote": "Columba livia. The recti and obliqui are the conserved six; what is added in birds is the nictitating-membrane apparatus (pyramidalis and quadratus) and up to three levatores palpebrae. The retractor bulbi, which this record notes for mammals, is not among them.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit",
+            "side": "anterior"
+          },
+          {
+            "element": "orbit",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. The recti arise from a thickened periorbital membrane around the orbital wall and insert on the sclera by quadrant — dorsalis posterodorsal, ventralis anteroventral, medialis anterodorsal, lateralis posteroventral. The obliqui arise from the anterior and anterodorsal orbital wall. The periorbital membrane is worth noting: several of these origins are on connective tissue rather than bone, so the orbit rows are the bony frame of the origin and not the origin itself.",
+      "nerves": [
+        {
+          "nerve": "oculomotor"
+        },
+        {
+          "nerve": "trochlear"
+        },
+        {
+          "nerve": "abducens"
+        }
+      ],
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Genioglossus, hypoglossus, cricohyoideus, sternohyoideus, branchiomandibularis",
+      "present": "yes",
+      "innervation": "Hypoglossal nerve (CN XII) and the cervical spinal nerves.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Genioglossus anterior"
+        },
+        {
+          "name": "Genioglossus posterior"
+        },
+        {
+          "name": "Hypoglossus rectus"
+        },
+        {
+          "name": "Hypoglossus obliquus"
+        },
+        {
+          "name": "Cricohyoideus"
+        },
+        {
+          "name": "Sternohyoideus"
+        },
+        {
+          "name": "Branchiomandibularis"
+        },
+        {
+          "name": "Ceratohyoideus"
+        }
+      ],
+      "divisionNote": "Columba livia. Eight bellies, which is the most divided this record is in any taxon. Jones et al. treat the ceratohyoideus with the throat series; it is included here as a part rather than given its own row because no source in this dataset separates it as a homology group.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          },
+          {
+            "element": "paraglossum",
+            "side": "ventral"
+          },
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "paraglossum",
+            "side": "posterior"
+          },
+          {
+            "element": "corpus-hyoidei"
+          },
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. The tongue and throat series, running between the mandible, the tongue skeleton and the sternum: genioglossus anterior from near the mandibular symphysis onto the floor of the mouth; hypoglossus rectus from the ventral paraglossum onto the anterior entoglossum, obliquus from the ventral edge of the paraglossum; cricohyoideus and sternohyoideus both onto the posterior paraglossum and the dorsal hyoid, the latter from the sternum. The sternal origin is the point of comparison with the shark, where the same field arises from the coracoid bar: what loosened that girdle-to-tongue link is what allowed a neck.",
+      "nerves": [
+        {
+          "nerve": "hypoglossal"
+        }
+      ],
+      "note": "Somitic rather than branchiomeric, which is what CN XII records.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "note"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mylohyoideus",
+      "present": "yes",
+      "innervation": "Trigeminal nerve (CN V), mandibular division.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. From the lingual edge of the dorsal ridge of the lower jaw into the median raphe. The same arrangement Huber et al. describe in Squalus: a sheet slung between the two rami whose midline end is a raphe and not a bone. Two of the three taxa now scored on this record insert on a raphe, which is the reason this muscle is invisible to osteological reconstruction at its medial end regardless of clade.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Protractor pterygoidei et quadrati",
+      "present": "yes",
+      "innervation": "Trigeminal nerve (CN V).",
+      "note": "Columba livia. Scored on this record as the amniote representative of the mandibular-arch dorsal division — the muscle that moves the palatoquadrate. The record's other rows are the shark's levator palatoquadrati and spiracularis and a catfish's; this is its first amniote row, and the identification rests on position and on CN V innervation rather than on any source here stating the homology outright, which is why it is worth saying so.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "medial"
+          },
+          {
+            "element": "pterygoid",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. From the posterior surface of the orbit, dividing into two heads: the dorsal inserts on the dorsal edge and posterior surface of the anteromedial process of the quadrate, the ventral onto the posterior surface of the pterygoid. Contraction protracts the pterygoid-quadrate-maxillopalatine complex and opens the UPPER jaw — the cranial kinesis that has no counterpart in the taxa this record's other rows come from.",
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pseudotemporalis + pterygoideus",
+      "present": "yes",
+      "innervation": "Trigeminal nerve (CN V).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pseudotemporalis superficialis"
+        },
+        {
+          "name": "Pseudotemporalis profundus"
+        },
+        {
+          "name": "Pterygoideus dorsalis"
+        },
+        {
+          "name": "Pterygoideus ventralis"
+        }
+      ],
+      "divisionNote": "Columba livia. Four bellies in two pairs. This record holds both the pseudotemporalis and the pterygoideus because both are internal adductors of one field — the same grouping Werneburg (2011) uses for turtles.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit",
+            "side": "posterior"
+          },
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "medial"
+          },
+          {
+            "element": "palatine"
+          },
+          {
+            "element": "pterygoid",
+            "side": "lateral"
+          },
+          {
+            "element": "pterygoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. Pseudotemporalis superficialis has a broad fleshy origin on the posterior wall of the orbit and inserts by aponeurosis at a narrow point on the lower jaw; profundus arises from a small region on the medialmost end of the medial process of the quadrate and inserts broadly on the lateral, dorsal and medial surfaces of the jaw anterior to the coronoid process, taking in most of the adductor fossa — and it bifurcates around CN V3 close to its insertion, which is how the nerve reaches the Meckelian groove. Pterygoideus dorsalis arises from the dorsolateral palatine (anterior part) and the lateral pterygoid (medial and posterior parts); Jones et al. see no part of the anterior head on the pterygoid, against Bhattacharyya. Pterygoideus ventralis arises from the posterolateral ventral palatine and the ventral pterygoid and inserts on the medial surface and posterolateral corner of the jaw. It matters most at large gapes — continuously active during drinking, and during the grasping phase of feeding.",
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Serpihyoideus + stylohyoideus",
+      "present": "yes",
+      "innervation": "Facial nerve (CN VII).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Serpihyoideus"
+        },
+        {
+          "name": "Stylohyoideus"
+        }
+      ],
+      "divisionNote": "Columba livia. Two CN VII bellies from the same hyoid-arch sheet, distinguished by where they end: the serpihyoideus at the midline, the stylohyoideus on the hyoid skeleton.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midline-raphe"
+          },
+          {
+            "element": "corpus-hyoidei",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Columba livia. Serpihyoideus from the posterodorsal surface of the lower jaw to the midline; stylohyoideus from the posterodorsal region of the lower jaw, underlapped medially by the serpihyoideus, onto the lateral surface of the basihyale. The split ends of one sheet are what makes this record's mammalian synonyms — platysma, stylohyoid — legible: the same sheet, ending on skin in one clade and on the hyoid in another.",
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "jones-etal-2019"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "species": "meles-meles",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductor hallucis",
+      "attachmentNote": "Meles meles. **Absent, and Cunningham says which muscle contains it**: the inner head of the flexor brevis hallucis, on the same reasoning he uses for the missing abductor of the little toe in the same foot — bulk, and an origin more proximal than its neighbours'. Compare the otter, in which a small abductor hallucis is present and quite separate from that head.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 17,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor ossis metatarsi minimi digiti",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Meles meles. **Only the abductor of the metatarsal survives**, with the usual attachments. The abductor minimi digiti proper is accounted for by the outer head of the little toe's short flexor: it is unusually bulky and takes origin further back than its neighbours, from the surface of the long plantar ligament, and Cunningham concludes the lost muscle has coalesced with it.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Meles meles. **Certain heads of the flexores breves have been lost to fusion with the dorsal layer.** Hallux, index and minimus each keep a double-headed short flexor; the flexores breves of the annularis and medius are reduced to tibial heads. Cunningham can trace the annularis's missing fibular head — partially united with the fourth dorsal interosseous, separate at its origin and completely fused just beyond it — but for the medius no indication survives, and he suspects the bulky third dorsal interosseous holds its fibres. Four dorsal interossei abduct from a line through the medius, which therefore has two.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (three adductors)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Meles meles. **A plantigrade pentadactyl foot that comes nearer Cunningham's three-layer type than the digitigrade carnivores do** — though he is careful to add that plantigrady itself has no effect on where the intrinsic muscles sit: they are as plantar in the badger as in the otter or the cats. Three adductors — hallucis, indicis, minimi digiti — arising side by side in one plane from the bases of the second and third metatarsals and radiating to adduct towards the medius. **No adductor annularis and no opponens minimi digiti could be found.** Ruge's figure of the adducting muscles in *Meles* agrees except that his arise on different planes.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

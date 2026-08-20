@@ -1,0 +1,28 @@
+{
+  "species": "petromyzon-marinus",
+  "source": "fritzsch-2023",
+  "status": "blocked-no-source",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Extraocular muscles",
+      "present": "yes",
+      "note": "Petromyzon marinus has a full set of six extraocular muscles on three nerves, establishing that the system predates jaws. The assignments are not the gnathostome ones: three on CN III, one on CN IV, two on CN VI, with a caudal rectus that gnathostomes lose and no medial rectus, which is a tetrapod and coelacanth addition. Sourced to Fritzsch, not to Ziermann et al. — that paper contains no extraocular content and was cited here in error.",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "fritzsch-2023"
+      ]
+    }
+  ]
+}

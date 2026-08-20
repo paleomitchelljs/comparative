@@ -1,0 +1,189 @@
+{
+  "species": "galictis-cuja",
+  "source": "campbell-2007",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus (anconeus epitrochlearis)",
+      "present": "yes",
+      "note": "Galictis cuja: present, and scored from Ercoli et al.'s description. Elsewhere in Mammalia it is inconstant — in humans replaced by Osborne's ligament over the cubital tunnel — but that is a mammal-wide statement and had been sitting in this row as `present: \"variable\"` alongside scored attachments. Not the muscle a rat or cat dissection guide calls the epitrochlearis: Campbell's rat guide describes that one as a thin medial sheet of the upper arm that EXTENDS the forearm — a latissimus-associated muscle reaching the olecranon — whereas the epitrochleoanconeus runs from the medial epicondyle to the olecranon over the ulnar nerve. The names differ by two letters and the muscles are not the same; no source held here establishes what the lab epitrochlearis is homologous to, so it has no record.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "medial",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. From the humerus distal to the caudal opening of the entepicondylar foramen, onto the medial and caudal surfaces of the olecranon, sharing fibres distally with the ulnar head of flexor carpi ulnaris. The entepicondylar foramen is a carnivoran feature and locates this origin precisely.",
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "campbell-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus, pars scapularis (spinous part)",
+      "present": "yes",
+      "innervation": "Axillary nerve.",
+      "nerves": [
+        {
+          "nerve": "axillary"
+        }
+      ],
+      "synonyms": [
+        "spinodeltoid (rat/carnivore dissection usage; Campbell 2007)"
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Deltoideus pars scapularis, from the fascia over infraspinatus, the proximal scapular spine and the metacromion, by a broad flat tendinous fascia onto the middle of the deltoid crest just lateral to the acromial belly.",
+      "divisionNote": "No division recorded. Galictis' name — 'Deltoideus, pars scapularis (spinous part)' — is one pars named with a gloss on where it sits, not a statement that the muscle is divided in this animal. Reading the parenthesis as a second part would manufacture a differentiation event out of a synonym.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "synonyms",
+        "attachments",
+        "attachmentNote",
+        "divisionNote"
+      ],
+      "_srcs": [
+        "ercoli-etal-2014",
+        "campbell-2007"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Trapezius (+ sternocleidomastoideus)",
+      "present": "yes",
+      "action": "Elevates, retracts and rotates the scapula.",
+      "innervation": "Accessory nerve (CN XI), with a proprioceptive contribution from the cervical ventral rami.",
+      "note": "The mammalian trapezius and sternocleidomastoid are subdivisions of a single cucullaris field. Their retention of CN XI innervation, despite lying entirely within the neck and trunk, is the classic evidence that innervation tracks developmental origin rather than topographic position.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Trapezius"
+        },
+        {
+          "name": "Sternocleidomastoideus"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "accessory"
+        },
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "girdle-axial",
+          "motion": "elevation"
+        },
+        {
+          "joint": "girdle-axial",
+          "motion": "retraction"
+        }
+      ],
+      "synonyms": [
+        "clavotrapezius (rat/carnivore dissection usage; Campbell 2007)",
+        "acromiotrapezius (rat/carnivore dissection usage; Campbell 2007)",
+        "spinotrapezius (rat/carnivore dissection usage; Campbell 2007)"
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "nuchal-ligament"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "landmark": "scapular-spine"
+          },
+          {
+            "element": "scapula",
+            "landmark": "acromion"
+          }
+        ]
+      },
+      "attachmentNote": "Galictis cuja. Trapezius, both bellies. Pars cervicalis from the cervical raphe between C3-4 and T1, pars thoracica from the thoracic raphe between T2 and T8, inserting on the distal two-thirds of the cranial margin of the scapular spine and often reaching the metacromion. Every origin is raphe or fascia, not bone — which is why a muscle this large leaves so little for a fossil to record.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "nerves",
+        "actions",
+        "synonyms",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sefton-etal-2016",
+        "campbell-2007",
+        "ercoli-etal-2014"
+      ]
+    }
+  ]
+}

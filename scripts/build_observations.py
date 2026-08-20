@@ -59,7 +59,7 @@ def split():
                     row = {k: v for k, v in occ.items() if k not in OCC_DROP}
                     row["region"] = m.get("region")
                     # Provenance the join needs, and a human needs to audit by eye.
-                    row["_record"] = m["id"]
+                    row["record"] = m["id"]
                     # The occurrence's position in its record. An occurrence with
                     # several sources becomes one row per source, and this is what
                     # merges them back into one and keeps the original order --
@@ -80,29 +80,49 @@ def split():
                     if nm:
                         mapping[src][f"{nm}|{m.get('region')}"] = m["id"]
 
-    if OBS.exists():
-        shutil.rmtree(OBS)
-    if MAP.exists():
-        shutil.rmtree(MAP)
-    OBS.mkdir(parents=True)
-    MAP.mkdir(parents=True)
+    # The parked layer joins the same store. A row with `record: null` is an
+    # observation nobody has assigned to a homology group yet; a row with a
+    # record is one that has been. Keeping them in two places was an artefact of
+    # occurrences having to live inside a record -- there is no reason for it once
+    # the file is keyed on the study and the animal.
+    parked_path = ROOT / "data/observations.json"
+    if parked_path.exists():
+        for row in json.load(open(parked_path)).get("observations") or []:
+            r = {k: v for k, v in row.items() if k not in ("source", "species", "id")}
+            r["record"] = None
+            r["_id"] = row["id"]
+            obs[(row["species"], row["source"])].append(r)
+
+    # Write in place and delete only what is stale. rmtree-then-recreate makes
+    # a file-syncing client (this repo lives in Dropbox) treat 248 rewritten
+    # files as 248 conflicts, and it produced a "conflicted copy" of every one.
+    OBS.mkdir(parents=True, exist_ok=True)
+    MAP.mkdir(parents=True, exist_ok=True)
+    keep_obs, keep_map = set(), set()
+
+    status_by = {k: v.get("status", "not-started") for k, v in
+                 (json.load(open(ROOT / "data/remine-status.json")).get("sources") or {}).items()}
 
     for (sp, src), rows in sorted(obs.items()):
         rows.sort(key=lambda r: (r.get("region") or "", (r.get("name") or "").lower(),
-                                 r["_record"], r["_occ"]))
+                                 r.get("record") or "~", r.get("_occ", -1)))
         doc = {
             "species": sp,
             "source": src,
-            "status": "scaffolded",
-            "$comment": ("GENERATED from data/muscles-*.json by build_observations.py. "
-                         "`scaffolded` means this is the previous pass's extraction in a "
-                         "new shape and NOBODY HAS CHECKED IT AGAINST THE PAPER. Re-mine "
-                         "it under docs/MINING.md, then set status to `remined` and record "
-                         "the arithmetic in the reading note."),
+            "status": status_by.get(src, "scaffolded"),
+            "$comment": ("What this study says about this animal. `record` names the "
+                         "homology group a row has been assigned to; null means nobody has "
+                         "assigned it yet, and `blockedBy` says what is missing. `status` "
+                         "mirrors data/remine-status.json: `scaffolded` means these rows "
+                         "came out of the old storage and NOBODY HAS CHECKED THEM AGAINST "
+                         "THE PAPER."),
             "observations": rows,
         }
-        (OBS / f"{sp}__{src}.json").write_text(
-            json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+        out = OBS / f"{sp}__{src}.json"
+        keep_obs.add(out.name)
+        text = json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
+        if not out.exists() or out.read_text() != text:
+            out.write_text(text)
 
     for src, table in sorted(mapping.items()):
         doc = {
@@ -114,9 +134,16 @@ def split():
                          "destroy it."),
             "mapping": dict(sorted(table.items())),
         }
-        (MAP / f"{src}.json").write_text(
-            json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+        out = MAP / f"{src}.json"
+        keep_map.add(out.name)
+        text = json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
+        if not out.exists() or out.read_text() != text:
+            out.write_text(text)
 
+    for d, keep in ((OBS, keep_obs), (MAP, keep_map)):
+        for f in d.glob("*.json"):
+            if f.name not in keep:
+                f.unlink()
     return len(obs), len(mapping), sum(len(v) for v in obs.values())
 
 
@@ -126,7 +153,9 @@ def join(into):
     for f in sorted(OBS.glob("*.json")):
         doc = json.load(open(f))
         for row in doc["observations"]:
-            by_record[row["_record"]].append((doc["species"], doc["source"], row))
+            if not row.get("record"):
+                continue          # not assigned to a homology group yet
+            by_record[row["record"]].append((doc["species"], doc["source"], row))
 
     for path in muscle_files():
         doc = json.load(open(path))
@@ -209,6 +238,10 @@ if __name__ == "__main__":
     if "--check" in sys.argv:
         sys.exit(check())
     if "--split" in sys.argv:
+        if (ROOT / "data/observations").exists() and "--force" not in sys.argv:
+            sys.exit("data/observations/ is the source of truth now — --split would "
+                     "overwrite it from the generated muscles-*.json. Pass --force if "
+                     "that is really what you mean.")
         a, b, c = split()
         print(f"wrote {a} observation files and {b} mapping files ({c} rows)")
     elif "--join" in sys.argv:

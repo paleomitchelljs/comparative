@@ -1,0 +1,408 @@
+{
+  "species": "ornithorhynchus-anatinus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Abductor hallucis",
+      "attachmentNote": "Ornithorhynchus anatinus. **Absent as a separate muscle, and Cunningham says where it has gone**: the flexor brevis hallucis is single-bellied and takes a more proximal origin than its neighbours — from the internal cuneiform — which he reads as that muscle holding the abductor's fibres in its midst. Ruge applied the name abductor hallucis to the whole muscle; Cunningham thinks it better to regard it as a combination of both, and the row is scored on his reading with Ruge's recorded. He could trace no nervous filament to it at all, and only supposes it takes the internal plantar.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor ossis metatarsi minimi digiti and abductor digiti quinti",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus. **The only abductor of the little toe in this foot** — a short powerful muscle from the outer side of the calcaneal tuberosity to the fibular aspect of the base of the fifth metatarsal, supplied directly from the trunk of the external plantar rather than from either of its divisions (Cunningham 1882). Cunningham notes that the outermost belly of the flexor brevis digitorum, inserting on the outer side of the first phalanx, must add a considerable abducting action to its flexing one, **and that this helps spread the integumental web between the digits** — a swimming foot using a short flexor as an abductor.\n\n**Gambaryan et al. (2002) find two abductors here, not one**, and neither takes its origin from bone. Their abductor metatarsi V arises from a branch of the insertion tendon of the semitendinosus pars vertebralis and the adjacent edge of the tuber calcanei, ending on the lateral edge of the proximal fifth metatarsal; their abductor digiti quinti arises from the same tendon superficial to it and inserts on the lateral edges of the first and second phalanges of the fifth toe and the distal fifth metatarsal. **So the muscle that spreads this web hangs off the tendon of the muscle that rotates the metatarsals** — the semitendinosus pars vertebralis, the largest muscle in the platypus hind limb. Cunningham's single calcaneal origin and their tendinous one are not reconciled here.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Accessorius",
+      "innervation": "A twig from the trunk of the external plantar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus. Cunningham (1882) records it only through its nerve: the trunk of the external plantar gives twigs to the abductor ossis metatarsi minimi digiti, the outermost belly of the flexor brevis digitorum **and the accessorius** before dividing. The thylacine and the cuscus are scored `no` on this record, so the two monotremes have a muscle both marsupials have lost.\n\n**Gambaryan et al. (2002) supply the attachments Cunningham did not**, and with them an argument about the heel. Here the muscle arises on the **dorsal** surface of the tuber calcanei, at its distal edge, and inserts on the dorsal surface of the common tendon of the flexor digitorum fibularis — it ends on another muscle's tendon and never reaches bone distally, which is why only the origin is scored. In therians the quadratus plantae arises on the lateral aspect of the tuber calcanei as it does here, **but from that process's plantar surface**. Gambaryan et al. take the discrepancy as evidence that the dorsal surface of the monotreme tuber calcanei answers to the plantar surface of the therian one — an inversion of the whole heel, argued from where one small muscle sits.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexor-accessorius-lateralis-pes",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor brevis digitorum",
+      "innervation": "Twigs from the internal plantar nerve in the sole; the outermost belly from the trunk of the external plantar.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "flexor-tendons"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus. **Four fleshy bellies with two different origins**: those for the index and medius arise from the plantar surface of the long flexor tendon as it enters the sole, those for the annularis and minimus by a common fleshy origin from the under surface of the outwardly directed calcaneal tuberosity. All insert into the bases of the first phalanges and partly into the flexor sheaths. The outermost belly is the one Ruge assigned to the plantar layer as an extra adductor of the minimus, and Cunningham's rebuttal — three special dissections — is on its origin being far from the plantar muscles, its continuity with the belly for the annularis, its lying superficial to the long flexor tendon of the minimus, and its insertion matching the other bellies. Meckel had taken all four bellies for lumbricals; Cuvier & Laurillard figure them together as the common short flexor.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate layer and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus. **A complicated foot, and Cunningham's point is that the two layers are in the act of merging.** Every digit but the minimus has a flexor brevis, generally two-headed but often looking single until cleaned, with insertions more plantar than usual; the flexor brevis hallucis is single-bellied from the internal cuneiform and, taking a more proximal origin than its neighbours, probably holds the fibres of the absent abductor hallucis in its midst — Ruge calls the whole muscle the abductor, Cunningham calls it both. The dorsal interossei must be dissected from above before the flexores breves are touched. The fourth is single-headed and inseparably united with the outer head of the flexor brevis annularis. **The second and third are two-headed and end in fibrous arches slung between the sesamoids of adjacent digits, so they approximate the toes rather than abduct them** — which Cunningham reads as the first stage of the process completed in the cuscus, where the interossei have split into separate approximators and abductors; here the two parts exist but have not gained separate insertions. The first is fused with the inner head of the flexor brevis indicis, and beside it lies a strong fibrous cord from the base of the second metatarsal splitting distally across to the sesamoids of index and hallux — which Cunningham identifies as that muscle's missing inner head, turned to fibre. In a young male there was little fusion between the two layers but the two heads of each flexor brevis were closely united, which he takes to mean the usual two slips derive from a single mass. Ruge figured all the interossei as single-headed with simple insertions; Cunningham saw that in none of his specimens.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (four adductors)",
+      "innervation": "The muscular branch of the deep division of the external plantar nerve, which supplies all the intrinsic muscles except the abductor ossis metatarsi minimi digiti and the flexor brevis hallucis.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor medii"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, from **both feet of four specimens** — the largest sample in Cunningham's survey, and he says why he needed it: the plantar layer is always distinct but the intermediate and dorsal layers are usually more or less fused. Four adductors, all from the plantar surface of the external and middle cuneiforms, drawing the toes towards the index. The adductor minimi digiti is the largest and lies very obliquely, chiefly on the tibial side of the minimus's first phalanx but sending a slender fleshy process forward to the second. In one very large specimen a delicate extra fasciculus went to the outer side of the medius, and Cunningham could find it in no other. **He disagrees with Ruge twice here.** Ruge described an extra adductor for the index: Cunningham looked for it in vain and could not use the deep external plantar nerve to help, because in this animal that nerve cannot be traced inward past the muscles of the index — it breaks up into terminal twigs, quite unlike Ruge's figure. Ruge also described an extra plantar muscle for the minimus: Cunningham made three special dissections and pronounces it the outermost belly of the flexor brevis digitorum, on four grounds, the last being that it is inserted like the other bellies of that muscle. He concedes Ruge's point that it takes an external plantar twig, and says a nerve alone is not enough to separate a muscle from the one it plainly belongs to.\n\n**Gambaryan et al. (2002) count three, not four, and call them contrahentes.** They arise by a common aponeurosis on the plantar tubercle of the naviculare: the contrahens of digit V from the most superficial layer, onto the medial sides of the distal fifth metatarsal and the first and second phalanges of that toe; the contrahentes of digits III and IV from the second and third layers, onto the medial sides of the metatarsals, the first phalanges and the proximal second phalanges of their toes. **The contrahens of the second toe is absent in this animal** — where Cunningham's four include an adductor hallucis and Gambaryan et al. treat the hallucal muscle as a separate abductor–flexor–adductor set. The two counts are not reconciled here.\n\n**Their nomenclature argument belongs to this record.** They hold that 'contrahentes' should name the group inserting on the *medial* sides of all the toes, which in a sprawling animal keeps the foot from turning laterally during the support phase. As therian limbs become parasagittal that lateral force disappears and the requirement becomes preventing the toes from spreading; the contrahens of digit III drops out and muscles appear on the *lateral* sides of digits I and II. The muscles serving digits IV and V they call homologous with the reptilian and monotreme contrahentes without reservation; those on the lateral sides of I and II they derive from the interossei instead, using the platypus's own elaborate interossei as the model of that transformation. Hence their recommendation: **`adductores` for therians, `contrahentes` for reptiles and monotremes** — against Ribbing (1938), Jouffroy & Lessertisseur (1959) and Kyou-Jouffroy (1971), who homologised the therian adductors with the reptilian contrahentes entire. This record is the union of both readings and does not adopt either name.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Adductor minimi digiti",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Ornithorhynchus anatinus, **manus**, and Cunningham dissected it to check a sentence of Meckel's — that in the platypus the interossei of the hand behave exactly like those of the foot, only thinner and more slender. He found the arrangement very different. In the hand the whole plantar layer is reduced to **a single minute thread-like muscle, the adductor minimi digiti**, where the foot has four well-marked adductors. The dorsal interossei are absent too, though strands of tough fibrous tissue in the intermetacarpal spaces may represent them. Only the intermediate layer holds up: a two-slipped flexor brevis for each digit except the minimus, which has an ulnar head alone.",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 13,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interossei",
+      "present": "yes",
+      "origin": "A complete set of ten, all by long tendons of which there are five: interossei I from the distal end of the prepollex; interossei II deeper from the same point and from intercarpal ligaments; interossei III from intercarpal ligaments; interossei IV and interosseus V medialis from intercarpal ligaments and the ulnare; interosseus V lateralis from the distal end of the pisiform.",
+      "insertion": "Preaxially (mediales) or postaxially (laterales) on the metacarpophalangeal joints of every digit.",
+      "attachmentNote": "Ornithorhynchus anatinus. **The full set of ten**, which Gambaryan et al. list among the features in which the platypus is more primitive than the echidnas, and one of which may even be the contrahens V. The tendon of the interosseus V medialis is shared with the interossei IV rather than with its own twin, which is an oddity of grouping rather than of position.\n\n**Cunningham (1882) adds an independent observation of this layer in the same animal, and it is the layer that holds up when the others go.** He opened the platypus hand to check a sentence of Meckel's — that its interossei behave exactly like those of the foot, only thinner — and found the arrangement very different: the palmar adductors are reduced to one thread-like muscle and the dorsal interossei are absent, with only tough fibrous strands in the intermetacarpal spaces that may represent them, while **the flexores breves are well marked, each of two fleshy slips except that of the minimus, which has an ulnar head alone.** In the pes of the same animal these muscles are instead fused with the dorsal interossei to the point where the two layers must be separated from the dorsum before either can be read.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "prepollex"
+          },
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          },
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "metacarpals",
+            "side": "distal"
+          }
+        ]
+      },
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interossei mediales I-V"
+        },
+        {
+          "name": "Interossei laterales I-V"
+        },
+        {
+          "name": "Contrahens V",
+          "membership": "disputed",
+          "note": "Gambaryan et al. suggest one of the ten may be the contrahens V, without deciding which."
+        }
+      ],
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2015"
+      ]
+    }
+  ]
+}

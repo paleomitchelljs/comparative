@@ -1,0 +1,50 @@
+{
+  "species": "myxine-glutinosa",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Hypaxial myomeres",
+      "present": "yes",
+      "note": "Myxine glutinosa, from Schilling's Fig. 2 — a hagfish, not a lamprey. The ventral myomere parts, not yet separated from the dorsal by a horizontal septum: that septum, and with it the epaxial/hypaxial distinction, is a gnathostome character.",
+      "region": "axial",
+      "record": "hypaxial-musculature",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "schilling-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Myomeric axial musculature",
+      "present": "yes",
+      "note": "Myxine glutinosa, the animal in Schilling's Fig. 2 — a hagfish, not a lamprey. This row previously claimed a lamprey, which Schilling does not examine. Segmental myomeres separated by myosepta, undivided into tracts, with dorsal and ventral myomere parts innervated by separate rami of the ventral root: axial-based locomotion in its plesiomorphic form.",
+      "division": "single",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division"
+      ],
+      "_srcs": [
+        "schilling-2011"
+      ]
+    }
+  ]
+}

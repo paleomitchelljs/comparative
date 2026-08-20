@@ -1,0 +1,541 @@
+{
+  "species": "ornithorhynchus-anatinus",
+  "source": "diogo-etal-2008-head",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Arytenoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "arytenoideus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Ceratohyoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "ceratohyoideus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis inferior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-inferior",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis medius",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-medius",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis superior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-superior",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricoarytenoideus posterior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricoarytenoideus-posterior",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricothyroideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricothyroideus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "no",
+      "name": "Dorsal mandibular muscles",
+      "attachmentNote": "Ornithorhynchus anatinus. **Absent.** Diogo et al. (2008), Table 1, score the whole dorsal mandibular block — levator arcus palatini and its derivatives, the levator and protractor pterygoidei and the levator bulbi — as empty in every mammal they examined: the platypus, the rat, the colugo, the tree-shrew and the human. Set against the lizard row above, which has three, this is a field lost at or before the origin of mammals rather than reduced within them.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Geniohyoid and rectus cervicis groups",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Geniohyoideus"
+        },
+        {
+          "name": "Genioglossus"
+        },
+        {
+          "name": "Hyoglossus"
+        },
+        {
+          "name": "Sternohyoideus"
+        },
+        {
+          "name": "Omohyoideus"
+        },
+        {
+          "name": "Sternothyroideus"
+        }
+      ],
+      "divisionNote": "Six, excluding the intrinsic tongue muscles. No styloglossus and no palatoglossus — see the note.",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 4. **The therian styloglossus and palatoglossus come out of the monotreme hyoglossus.** Their own dissections support Edgeworth's (1935) suggestion that those two therian muscles likely correspond to part of the hyoglossus of monotremes — so this animal has one muscle where a human has three, and the difference is a subdivision rather than an acquisition. That bears directly on this record's existing note about the palatoglossus being the only 'tongue' muscle on CN X: if it is a piece of the hyoglossus, its vagal supply is harder to explain than a clean arch-4 origin would make it, and Piekarski & Olsson (2007) report that in mammals such as dogs the tongue muscles are sometimes innervated by **both** the hypoglossal and the facial nerve, which they take to indicate a dual origin in at least some cases. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Jaw adductors, with a detrahens mandibulae",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Masseter"
+        },
+        {
+          "name": "Detrahens mandibulae"
+        },
+        {
+          "name": "Temporalis"
+        },
+        {
+          "name": "Pterygoideus lateralis"
+        },
+        {
+          "name": "Pterygoideus medialis"
+        },
+        {
+          "name": "Tensor tympani",
+          "membership": "disputed",
+          "claimedBy": "intermandibularis"
+        },
+        {
+          "name": "Tensor veli palatini",
+          "membership": "disputed",
+          "claimedBy": "intermandibularis"
+        }
+      ],
+      "divisionNote": "Masseter, temporalis and the detrahens come from adductor mandibulae A2, the pterygoideus medialis from A3'; the two tensors are derived by Diogo et al. from A2-PVM, and are carried as disputed because this dataset also scores them as parts of `intermandibularis`.",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 1. **The detrahens mandibulae is present in this animal and in none of the other eight taxa in the table** — not in the lizard, not in the rat, tree-shrew, colugo or human, not in the salamander or either fish. It is a jaw *opener* built out of the adductor mandibulae, so a monotreme opens its mouth partly with an arch-1 muscle where every other mammal here uses the arch-2 digastric alone. Worth setting beside this animal's hind limb, where the same pattern recurs: a caudofemoralis retained, a piriformis never acquired. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Levator veli palatini",
+      "present": "yes",
+      "region": "cranial",
+      "record": "levator-veli-palatini",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mylohyoideus and digastricus anterior",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Mylohyoideus"
+        },
+        {
+          "name": "Digastricus anterior"
+        }
+      ],
+      "divisionNote": "Both are intermandibularis **posterior** derivatives. This animal has no intermandibularis anterior.",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 1. **The mammalian mylohyoid and anterior digastric are both the posterior intermandibularis** — not the muscle and its anterior partner. Lightoller (1942) describes a mylohyoideus profundus, a mylohyoideus superficialis and, superficial to the latter, a digastricus anterior; Saban (1971) holds that all three come from one embryological structure corresponding to the intermandibularis posterior of other vertebrates, with Jarvik (1963, 1980) in support. Diogo et al. add two independent lines: innervation, since the intermandibularis and the digastricus anterior are both supplied by the ramus ventralis of CN V, and the development of the marsupial *Dasyurus*. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Naso-labialis",
+      "present": "yes",
+      "divisionNote": "A sphincter colli profundus is recorded in the echidna but not the platypus, so the monotremes disagree with each other here. The platypus's twelve hyoid muscles in Diogo et al.'s count include the styloideus, stapedius, platysma cervicale and platysma myoides, which are dorso-medial and scored on `depressor-mandibulae` and `stapedius` rather than here.",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. **The platypus already has the core of a mammalian face**: an orbicularis oculi, an orbicularis oris, a buccinatorius and a naso-labialis, plus a dilatator nasi, a maxillo-naso-labialis and a levator anguli oris facialis. What it does not have is the zygomatic group, the auricular group, the mentalis or the procerus. Its twelve hyoid muscles sit between a lizard's three and a rat's twenty-three, which is the sequence this record exists to show — **the mammalian face is built by subdividing one pharyngeal constrictor sheet, and the monotreme is the stage where that is half done.** The platysma cervicale and platysma myoides are derived by Diogo et al. from the reptilian cervicomandibularis rather than from the interhyoideus, so the neck sheet and the face come from two different arch-2 muscles and not one. **No attachments are scored: this source describes none.**",
+      "note": "Reduced to the naso-labialis after the facial split: Table 1 of Diogo et al. (2009) gives *Ornithorhynchus* ten facial muscles, and every one it resolves against the other mammals is now a record of its own. The naso-labialis stays here because Table 1 shows it dividing into the levator labii superioris and its neighbours in the primates, so it is one muscle in the platypus and several in a human, and the correspondence needs the footnotes read before it can be a record.",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "divisionNote",
+        "sources",
+        "attachmentNote",
+        "note"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Palatopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "palatopharyngeus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "pterygopharyngeus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Salpingopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "salpingopharyngeus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Stapedius",
+      "present": "yes",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. Present, and grouped by them in the dorso-medial hyoid block with the styloideus — **both are depressor mandibulae derivatives**, following Huber (1930a) and Saban (1968, 1971) against Edgeworth (1935). So the muscle in a monotreme's middle ear and the muscle that opens a lizard's jaw are the same field, which is the muscular half of the argument the `hyomandibula-stapes` element makes with bone. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "stapedius",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Styloideus",
+      "present": "yes",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 2. **The monotreme styloideus is the reptilian depressor mandibulae**, and so is the therian stylohyoideus that replaces it. Against Edgeworth (1935), who derived both from the interhyoideus, Diogo et al. follow Huber (1930a) and Saban (1968, 1971) — the styloideus of Huber (1930a) is the interhyoideus of Edgeworth and the posterior digastric of Parsons (1898), which is how much of this depends on whose name you are reading. The stapedius comes from the same field and is scored on `stapedius`. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Stylopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "stylopharyngeus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Subarcualis rectus III",
+      "present": "yes",
+      "region": "cranial",
+      "record": "subarcualis-rectus",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Thyrocricoarytenoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "thyroarytenoideus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "True branchial muscles, three surviving",
+      "present": "yes",
+      "divisionNote": "The ceratohyoideus and stylopharyngeus are read by Diogo et al. as a subdivision of the subarcualis rectus I; the subarcualis rectus III is a separate muscle usually present only in adult monotremes.",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 3. **The monotreme keeps three true branchial muscles where a human keeps one.** Their summary of the whole series is worth having in full: adult extant mammals lack every branchial muscle sensu stricto except the subarcualis rectus I, present in most adult mammals; the subarcualis rectus II, usually only in marsupials; and the **subarcualis rectus III, usually only in monotremes**. So the three living mammal groups each retain a different member of a series that is otherwise gone, and no one of them shows the mammalian condition. **No attachments are scored: this source describes none.**",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Trapezius and cleidomastoid series",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Acromiotrapezius"
+        },
+        {
+          "name": "Spinotrapezius"
+        },
+        {
+          "name": "Dorsocutaneous"
+        },
+        {
+          "name": "Cleido-occipitalis"
+        },
+        {
+          "name": "Cleidomastoideus"
+        },
+        {
+          "name": "Sternomastoideus"
+        }
+      ],
+      "divisionNote": "Six here against a human's two. The dorsocutaneous is the one Diogo et al. record in the platypus and in none of the other eight taxa in their table.",
+      "attachmentNote": "Ornithorhynchus anatinus, Diogo et al. (2008), Table 3. **This record's identity stated by a source that puts it in the branchial chapter, not the pectoral one.** They list the mammalian acromiotrapezius, spinotrapezius, dorsocutaneous, cleido-occipitalis, sternocleidomastoideus, cleidomastoideus and sternomastoideus as corresponding to the reptilian trapezius and sternocleidomastoideus, and those in turn to the protractor pectoralis of amphibians, dipnoans and other osteichthyans — which is exactly this record. They add the reason it is filed apart from the true branchial muscles: **the protractor pectoralis is not a branchial muscle *sensu stricto* because it moves the pectoral girdle and not the branchial arches.** A muscle sorted by what it does rather than where it came from, with its arch origin recorded anyway. **No attachments are scored: this source describes none.**",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head"
+      ]
+    }
+  ]
+}

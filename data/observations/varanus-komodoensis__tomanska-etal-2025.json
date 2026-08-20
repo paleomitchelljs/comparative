@@ -1,0 +1,87 @@
+{
+  "species": "varanus-komodoensis",
+  "source": "tomanska-etal-2025",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "'Ambiens'",
+      "present": "yes",
+      "note": "Reptiles may have both an 'ambiens' and a 'pubifemoralis'; the two names are sometimes used as synonyms (Russell & Bauer 2008), which is a persistent source of confusion.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "acetabulum",
+            "landmark": "acetabulum-ventral-edge"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "intertrochanteric-notch"
+          }
+        ]
+      },
+      "attachmentNote": "In Varanus komodoensis the muscle has dorsal and ventral heads; the dorsal attaches to the ventral edge of the acetabulum and the ventral lies anteriorly, both converging on the femur at the intertrochanteric fossa.",
+      "region": "thigh",
+      "record": "ambiens",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014",
+        "tomanska-etal-2025"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. iliofibularis",
+      "present": "yes",
+      "note": "Tomańska et al. (2025) report it stabilising the pelvic region and femur during movement in Varanus komodoensis, allowing hip abduction. Dick & Clemente (2016) include it among the major varanid locomotor muscles.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "thigh",
+      "record": "iliofibularis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "tomanska-etal-2025"
+      ]
+    }
+  ]
+}

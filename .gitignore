@@ -70,10 +70,8 @@ venv/
 # Generated analysis exports (rebuild with scripts/export_matrix.py)
 export/
 
-# The migration's generated halves (docs/MIGRATION.md, Task 2). These are written
-# by build_observations.py --split from data/muscles-*.json, which is still the
-# source of truth, so committing them would be committing a second copy. They
-# become authoritative and tracked at Task 5, when the flip happens.
-data/observations/
-data/mapping/
+# The round-trip scratch dir. data/observations/ and data/mapping/ are the source
+# of truth as of Task 5 and are tracked; data/muscles-*.json is generated from
+# them but stays committed, because the app fetches it directly and there is no
+# build step between the repo and the page.
 .roundtrip/

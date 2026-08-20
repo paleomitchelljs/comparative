@@ -1,0 +1,352 @@
+{
+  "species": "ossinodus-pueri",
+  "source": "molnar-etal-2018",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis",
+      "present": "inferred",
+      "note": "Ossinodus pueri. Among the muscles Molnar et al. reconstruct 'fairly confidently' here by combining their character mapping with Bishop's (2014) scars, but they do not itemise which scar carries it, so no attachment row is scored.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Humeroantebrachialis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "deltopectoral-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral",
+            "landmark": "ventral-median-ridge-radius"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. Origin from scars on the ventromedial aspect of the deltopectoral crest (Bishop 2014) — the same region Milner & Lindsay (1998) read as the humeroantebrachialis ('brachialis') origin in Baphetes and Smithson (1985) in Crassigyrinus; insertion on the ventral median ridge of the radius. In Necturus and Iguana the origin likewise includes part of the deltopectoral crest, which is the extant end of the same arrangement.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps",
+      "present": "inferred",
+      "note": "Ossinodus pueri. Among the muscles Molnar et al. reconstruct 'fairly confidently' here by combining their character mapping with Bishop's (2014) scars, but they do not itemise which scar carries it, so no attachment row is scored.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "dorsomesial-ridge-radius"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. The dorsomesial ridge of the radius, read by Bishop (2014) as the insertion of the brachioradialis ('supinator longus'), with the caution he attaches: there is no break in the muscle scarring between this ridge and the proximoventral ridge, so this insertion and the extensor carpi radialis's may not be separate. Godfrey (1989) made the same kind of reading for the two mesial ridges of the Greererpeton radius, as the boundary between the extensor and flexor masses. Molnar et al. place the separation of the two muscles at Elpistostegalia, marked by a scar or facet distal to the supinator ridge.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "inferred",
+      "note": "Ossinodus pueri. Among the muscles Molnar et al. reconstruct 'fairly confidently' here by combining their character mapping with Bishop's (2014) scars, but they do not itemise which scar carries it, so no attachment row is scored.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "proximoventral-ridge-radius"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. The proximoventral ridge of the radius (Bishop 2014), one of the muscles Molnar et al. reconstruct fairly confidently here. See the brachioradialis row for why the two radial insertions may be one continuous field of scarring.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor antebrachii et carpi radialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. An area of scarring on the face of the radius between the ventral radial crest and the ventral median ridge, read by Bishop (2014) as the insertion — the prominent crest itself carries no scarring. Scored as radius/ventral with no landmark, because the attachment is the surface between two named ridges rather than either of them. Molnar et al. place the separation of this muscle from the humeroantebrachialis at the last common ancestor of crown tetrapods, marked by the appearance of the ventral median ridge.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum",
+            "side": "posterior"
+          },
+          {
+            "element": "clavicle",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. Longitudinally oriented, anastomosing ridges and grooves along the posterior margins of both the cleithrum and the clavicle, including the ascending process of the clavicle, read by Bishop (2014) as the deltoideus origin — two rows, because they are two bones. Comparable striations on the inner surface and ascending process of the clavicle in Crassigyrinus (Panchen 1985) and on the tip of the clavicular ascending process in Greererpeton (Godfrey 1989) suggest the same origin was general in stem tetrapods. One of the six highest-confidence reconstructions here.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "inferred",
+      "note": "Ossinodus pueri. Among the muscles Molnar et al. reconstruct 'fairly confidently' here by combining their character mapping with Bishop's (2014) scars, but they do not itemise which scar carries it, so no attachment row is scored.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "interclavicle",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. A rugose, slightly recessed region on the posterior lateral wings of the interclavicle, read by Bishop (2014) as part of the pectoralis origin; one of the six muscles Molnar et al. reconstruct here with their highest confidence. They accept interclavicular scars for the superficial ventral muscles only tentatively, since the ventral coracoid plate that would carry the rest of the origin is rarely preserved. Striations distinct from the dermal ornamentation are reported on the interclavicle of Greererpeton too. No humeral insertion is itemised for this taxon.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Procoracohumeralis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. Scarring over a large, shallow concavity on the lateral face of the scapulocoracoid, read by Bishop (2014) as the procoracohumeralis origin ('scapulohumeralis'), and one of the six highest-confidence reconstructions here. The same lateral fossa is identified in Hynerpeton, in captorhinids and in Pederpes, and Molnar et al. homologise it with the facet that carries the adductor profundus origin just dorsal to the glenoid in Neoceratodus and Latimeria — the fin muscle mass this one comes out of.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Ossinodus pueri. Scarring over the entire posterior face of the scapulocoracoid above the glenoid and much of its internal aspect, read by Bishop (2014) as the origin of the subcoracoscapularis ('subscapularis'). The same posterior fossa or triangular region is identified in Tulerpeton, Archeria, captorhinids and Pederpes, and as the 'supraglenoid fossa' of Eryops. Molnar et al. rate the reconstruction fairly confident once the character mapping is combined with the scars.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "inferred",
+      "note": "Ossinodus pueri. One of the six muscles Molnar et al. reconstruct here with their highest confidence, on the strength of correlates Bishop (2014) identified; they do not itemise which scar carries it, so no attachment row is scored.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    }
+  ]
+}

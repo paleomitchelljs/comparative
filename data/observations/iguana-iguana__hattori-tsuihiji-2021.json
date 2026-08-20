@@ -1,0 +1,360 @@
+{
+  "species": "iguana-iguana",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Adductor et extensor hallucis et indicus",
+      "present": "yes",
+      "origin": "A broad, flat or slightly depressed surface on the dorsolateral aspect of the distal fibula, and the medial half of a slight convex lip at the proximolateral margin of the tarsal facet of the astragalocalcaneum.",
+      "insertion": "Medial margin and laterodistal shaft of metatarsal I, and metatarsal II.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "astragalocalcaneum",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "innervation": "Deep fibular nerve.",
+      "attachmentNote": "Iguana iguana. The record's name comes from Russell & Bauer's for this muscle, so this is the animal it was named from.\n\nIguana iguana, Russell & Bauer (2008). Russell & Bauer give this muscle as two parallel-fibred slips from the dorsal aspect of the distal fibula and the astragalocalcaneum, closely associated at origin with the short digital extensor of digit I. The slip to digit I passes dorsal to that extensor and bifurcates halfway along metatarsal I, one branch to its mesial margin and one to its lateral margin distally; the slip to digit II inserts fleshily on the proximodorsal shaft of metatarsal II. Corroborates and extends the row Hattori & Tsuihiji (2021) scored from correlates.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "innervation",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021",
+        "russell-bauer-2008"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "origin": "Two proximal heads from the dorsal depression on the astragalus; the hallucal slip from the dorsal aspect of metatarsal I; the digit II, III and IV slips from the dorsal or dorsolateral aspects of metatarsals II, III and the astragalocalcaneum lip respectively.",
+      "insertion": "Proximodorsal lip of each phalanx of digits III and IV from the tarsal heads; the proximodorsal lips of phalanges I-1 and I-2 from the hallucal slip; the proximodorsal lips of the phalanges of digits II and III from their own slips; the ungual of digit IV with accessory insertions on IV-2 to IV-4.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "side": "dorsal",
+            "landmark": "astragalus"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "astragalocalcaneum",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          },
+          {
+            "element": "phalanges-pes",
+            "landmark": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana. Hattori & Tsuihiji's separation of the interossei dorsales out of this complex is what makes the remainder countable; the slips left here are the ones arising from the tarsus or from the digit's OWN metatarsal, and those arising from the metatarsal medial to the digit are on `interossei-dorsales-pes`.\n\nIguana iguana, Russell & Bauer (2008). Russell & Bauer describe the system belly by belly, and it is not the same in each digit — which is the point. Digit I has one belly from the proximodorsal shaft of metatarsal I; digit II one, from metatarsal III, the oblique intermetatarsal ligament and the distal half of metatarsal II; digit III three, one from a small pit in the dorsal astragalocalcaneum and two from metatarsals II and IV; digit IV a long head from an adjacent pit plus two more; digit V three, from the astragalocalcaneum and the head of metatarsal V. Insertions run to the distalmost phalanx with accessory branches to the proximal ends of intervening phalanges. Read against the manus row, where all five superficial slips arise from the ulnare alone.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor digitorum brevis"
+        },
+        {
+          "name": "Extensor hallucis brevis"
+        },
+        {
+          "name": "Extensor digiti II"
+        },
+        {
+          "name": "Extensor digiti III"
+        },
+        {
+          "name": "Extensor digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021",
+        "russell-bauer-2008"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Interossei dorsales digiti II-IV (as slips of mm. extensores digitores breves)",
+      "present": "yes",
+      "origin": "Ridge-like longitudinal rugose areas: the digit II slip from metatarsal I, the digit III slip tendinously from the lateral margin of the proximal half of metatarsal II, the digit IV slip from the lateral margin of the proximal half of metatarsal III.",
+      "insertion": "Each forms the medial portion of the dorsal aponeurosis of its digit and inserts on the proximodorsal lip of each phalanx; the digit IV slip inserts medially on the proximal margin of each phalanx.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana. Russell & Bauer (2008) read these as portions of mm. extensores breves; Hattori & Tsuihiji separate them on the rugose longitudinal ridges each arises from, which are visible on the bone and are the correlate for the whole series.\n\nIguana iguana, Russell & Bauer (2008). Russell & Bauer's *Iguana* has **only two slips** of this series, between metatarsals II and III and between III and IV, each from the proximal two-thirds of the mesial face of the lateralmost metatarsal of its pair and inserting on the lateral aspect of the mesialmost. That is a sparser series than Hattori & Tsuihiji (2021) reconstruct from correlates for digits II-IV, and the difference is worth keeping: this record exists because they separated a dorsal interosseous series from the short digital extensors, and the lizard they are separating it in does not show all of it. In the manus Russell & Bauer could identify only one such slip at all — see [[dorsometacarpales]].",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interosseous dorsalis digiti II"
+        },
+        {
+          "name": "Interosseous dorsalis digiti III"
+        },
+        {
+          "name": "Interosseous dorsalis digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021",
+        "russell-bauer-2008"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "origin": "Dorsomedial aspect of the lateral distal condyle of the femur.",
+      "insertion": "Metatarsals II and III by two tendons, each passing the lateral aspect of the proximal shaft to the tubercle on its lateroplantar aspect.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "femoral-condyles"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana. This is the muscle Hattori & Tsuihiji standardise as m. tibialis cranialis, and its avian member is the point of the paper: on their reading the bird's m. tibialis cranialis belongs on THIS record and not on `tibialis-anterior`, where the classical scheme puts it.\n\nIguana iguana, Russell & Bauer (2008). Russell & Bauer add the proximal end of a row Hattori & Tsuihiji (2021) had scored from the osteological correlates. Origin from the dorsomesial aspect of the lateral femoral epicondyle by a long cylindrical tendon that passes deep to the knee joint capsule ligaments and the 'quadriceps' tendon, remaining discernible inside the belly for its proximal third and continuing to give fibre origin from within the muscle. Two tendons of insertion arise at about the distal extremity of the astragalocalcaneum, passing either side of the origin of the extensor digitorum brevis of digit III, to the dorsolateral proximal shafts of metatarsals II and III.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021",
+        "russell-bauer-2008"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Peroneus longus + peroneus brevis",
+      "present": "yes",
+      "origin": "Longus from the lateral femoral epicondyle just distal to the flexor digitorum longus origin; brevis from almost the entire anterior, lateral and medial surfaces of the fibula, over nearly its whole length.",
+      "insertion": "Longus into a depression on the dorsolateral aspect of the shaft of metatarsal V; brevis onto the outer process on the proximolateral margin of metatarsal V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "lateral",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana. The longus insertion is a depression, against the 'lateral plantar tubercle' of Russell & Bauer (2008) — Hattori & Tsuihiji contradict them on the correlate itself, not on the muscle.\n\nIguana iguana, Russell & Bauer (2008). Russell & Bauer describe both members for *Iguana* and give the innervation argument this record turns on: the peronei are supplied by the same nerves as the tibialis anterior and the extensor digitorum communis (Jullien, 1967), and are therefore dorsal-division muscles despite lying on the lateral border of the crus. Peroneus longus from the lateral femoral epicondyle by a stout tendon that becomes inseparable from the knee capsule as it crosses, inserting on the proximal end of the lateral plantar tubercle of metatarsal V and held down by the lacinate ligament system; peroneus brevis from most of the fibular shaft for its whole length, inserting on the outer process of the head of metatarsal V.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus (fibularis) longus"
+        },
+        {
+          "name": "Peroneus (fibularis) brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021",
+        "russell-bauer-2008"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "origin": "Broad area on the shaft of the tibia — the proximal two-thirds of the dorsal surface and the distal two-thirds of the ventral aspect.",
+      "insertion": "Medial margin of metatarsal I.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "dorsal"
+          },
+          {
+            "element": "tibia",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana. The two squamates differ here and the difference is scored rather than averaged: the iguana's dorsal origin stops short of the distal tibia and the monitor's does not.\n\nIguana iguana, Russell & Bauer (2008). Russell & Bauer refine the insertion Hattori & Tsuihiji (2021) scored from correlates. Origin at its most proximal from the anteromesial head of the tibia, then from the anterior and dorsal faces of the shaft, ceasing to take dorsal origin near the distal end but continuing anteriorly to the tibia's distalmost extremity. **The insertion is threefold and all of it is on metatarsal I**: a fleshy proximolateral attachment, a broad tendon onto the base, and a slender tendon running along the mesial border as far as the metatarsophalangeal joint capsule.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021",
+        "russell-bauer-2008"
+      ]
+    }
+  ]
+}

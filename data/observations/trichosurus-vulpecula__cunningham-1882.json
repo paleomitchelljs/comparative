@@ -1,0 +1,230 @@
+{
+  "species": "trichosurus-vulpecula",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Trichosurus vulpecula. Present but **very poorly developed compared with the cuscus's, and largely tendinous in composition** — a muscle on its way out in an animal whose foot otherwise closely resembles the cuscus's.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductors of the little toe",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abductor ossis metatarsi minimi digiti"
+        },
+        {
+          "name": "Abductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Trichosurus vulpecula. Two, not the cuscus's three: one to the base of the fifth metatarsal, the other partly to the outer sesamoid and partly to the extensor tendon at the base of the minimus — the two insertions that in the cuscus have each taken a belly of their own.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate layer, dorsal interossei and opponens minimi digiti",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei, abducting slips"
+        },
+        {
+          "name": "Dorsal interossei, approximating slips"
+        },
+        {
+          "name": "Opponens minimi digiti"
+        },
+        {
+          "name": "Second dorsal interosseous",
+          "membership": "disputed"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          },
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Trichosurus vulpecula. Five flexores breves, all two-slipped except that of the little toe, which has a fibular head only — Cunningham suspects its missing inner head is fused into the fourth dorsal interosseous, which projects further into the sole than its neighbours. The flexor brevis hallucis is more powerful than the cuscus's. The second dorsal interosseous is again absent as an independent muscle and again inside the inner head of the flexor brevis medii — and here Cunningham can show it, because that slip runs up between the metatarsals to the dorsum, so that **the same fleshy slip looks like the missing interosseous from above and like the flexor from below.** The fourth dorsal interosseous is the remarkable one: two slips, one inserted into the summit of a powerful tendinous arch slung between the adjacent bases of the annularis and minimus, the other into that arch's inner end. Cunningham lines the arch up with two other solutions to the same problem — the transverse band tying the tendon to the neighbouring metatarsal head in the cuscus's hand, and the bifurcating tendon in the cuscus's foot — and quotes Young's description of a third in the wallaby's hand.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (adductors on a raphe)",
+      "division": "variable",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Adductor indicis",
+          "membership": "variable"
+        },
+        {
+          "name": "Adductor annularis",
+          "membership": "variable"
+        }
+      ],
+      "divisionNote": "Two specimens, two arrangements: adduction towards the index in one and towards the annularis in the other, with the adductor present in one specimen absent in the other and vice versa. Scored `variable` for genuine within-species variation seen by one worker in two animals.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Trichosurus vulpecula, Cunningham's *Phalangista vulpina*, **and his two specimens disagreed with each other.** In one, a median raphe ran from the base of the second metatarsal to the outer side of the base of the index's proximal phalanx, and adduction was towards the index as in the cuscus. In the other the raphe ran from the base of the middle metatarsal to the inner side of the base of the annularis, and the annular digit was the centre of the movement — with an adductor indicis present, which the cuscus lacks, and no adductor annularis. Cunningham then explains how a raphe acquires its distal attachment, using *Dasyurus*, where the raphe has no distal attachment at all and the adductor annularis arises from its deep surface: **let that muscle turn to fibrous tissue and you get the second specimen; let the adductor indicis turn instead and you get the cuscus and the first specimen.** One mechanism, two outcomes, both in one species.",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

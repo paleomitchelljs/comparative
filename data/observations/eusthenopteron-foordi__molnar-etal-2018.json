@@ -1,0 +1,363 @@
+{
+  "species": "eusthenopteron-foordi",
+  "source": "molnar-etal-2018",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis",
+      "present": "uncertain",
+      "note": "Scored uncertain. Molnar et al. place the separation of the coracobrachialis from the pectoralis at the last common ancestor of Tetrapoda, marked by a distinct pectoralis process and coracobrachialis fossa on the humerus, and report no compelling evidence that it was a separate muscle in early tetrapodomorph fish.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. Two small pits on the ventral scapulocoracoid between the anterior and posterior buttresses read as the origin, and a large, shallow recess on the proximal ventral humerus as the insertion (Andrews & Westoll 1970a). The humeral recess is one of two correlates identified in this taxon and in no other tetrapodomorph fish, which Molnar et al. flag as reason for caution; Gogonasus has a comparable knob-like process on the ventral side between the buttresses.",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps",
+      "present": "uncertain",
+      "note": "Eusthenopteron foordi. Scored uncertain, and the earlier note here — 'inferred from the olecranon and from humeral shaft rugosities' — is wrong on this source's own evidence. Tetrapodomorph-fish ulnae lack an ossified olecranon; the olecranon and the posterior ulnar crest appear together at the last common ancestor of Tetrapoda, and their appearance is what Molnar et al. read as the separation of the triceps from the extensor antebrachii et carpi ulnaris. Here the superficial dorsal musculature probably inserted on the proximal ulna without leaving a mark (Andrews & Westoll 1970a). Molnar et al. call it tempting to homologise the dorsal process of the Latimeria ulna with the olecranon, and decline.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor superficialis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum",
+            "side": "ventral",
+            "landmark": "ventral-cleithral-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "ventral-humeral-ridge"
+          },
+          {
+            "element": "ulna",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. Origin on the ventral cleithral ridge, which Molnar et al. homologise with the longitudinal ridge carrying this muscle's origin on the cleithrum and clavicle of Neoceratodus and with the pectoralis origin of tetrapodomorph fish, the pectoralis being a derivative of this mass. Insertions on the ventral humeral ridge, confluent here with the entepicondyle, and on the strongly developed ventral postaxial process of the ulna, which Andrews & Westoll (1970a) read as a muscle insertion site and as the serial homologue of the ventral process of the humerus; in Latimeria the corresponding process anchors the tendinous intersection dividing the middle portion from the distal. That ventral process is a sarcopterygian synapomorphy, homologous with the tetrapod entepicondyle and ventral humeral ridge (Ahlberg 1989).",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor profundus",
+      "present": "inferred",
+      "note": "Eusthenopteron foordi. The deep adductor is the seventh muscle in Molnar et al.'s Level I reconstruction at the last common ancestor of Tetrapodomorpha, but no correlate for it is described in this taxon: the facet that carries it just dorsal to the glenoid in Neoceratodus and Latimeria is not reported here. The deep abductor is not among the seven.",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor superficialis",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. The dorsal process of the sarcopterygian humerus — here the ectepicondyle with the deltoid-supinator ridge — carries the superficial dorsal musculature, and one correlate serves two roles because a tendinous intersection lands on it: insertion of the proximal portion, origin of the middle portion. Molnar et al.'s Level I reconstruction at the last common ancestor of Tetrapodomorpha is of exactly this, three divisions each of the superficial adductor and abductor plus the deep adductor; the individually named tetrapod muscles in this column are the speculative part. In tetrapods the same ridge carries the deltoideus and latissimus dorsi insertions and the origins of the extensor antebrachii et carpi radialis, brachioradialis, extensor digitorum and triceps humeralis.",
+      "region": "fin",
+      "record": "adductor-superficialis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus",
+      "present": "inferred",
+      "note": "The deltoideus is one of the four muscles Molnar et al. reconstruct in tetrapodomorph fish with their highest confidence.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. Origin from the thickened posterior margin of the cleithrum just above the glenoid, which Andrews & Westoll (1970a) read as the deltoideus plus part of the latissimus dorsi — Molnar et al. label it 'del?' and note that a comparable posterior flange in Strepsodus and Megalichthys might as easily carry an undifferentiated superficial adductor. Insertion on the dorsal humerus with no landmark: the ectepicondyle, deltoid process and possible incipient latissimus dorsi process are close together and hard to distinguish here, and Molnar et al. hold that for muscle reconstruction it does not matter whether the deltoid and supinator processes are separate, since neither reading indicates separate muscles.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "uncertain",
+      "note": "Scored uncertain, which corrects an earlier note here that claimed a dorsal humeral scar as its insertion. Molnar et al. report no compelling evidence that the latissimus dorsi existed as a muscle separate from the deltoideus in early tetrapodomorph fish; what marks the separation is the appearance of the latissimus dorsi process one node crownward.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. The only correlate is a shared one: the thickened posterior margin of the cleithrum above the glenoid, which Andrews & Westoll (1970a) read as the deltoideus plus part of the latissimus dorsi. There is no humeral correlate — the latissimus dorsi process is absent in this taxon and in Gogonasus, and first appears at Elpistostegalia.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "inferred",
+      "note": "One of the four muscles Molnar et al. reconstruct in tetrapodomorph fish with their highest confidence — deltoideus, pectoralis, the forearm flexors and the forearm extensors — because a correlate is identified in the fossil and the muscle is bracketed by lungfish, coelacanths and tetrapods.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cleithrum",
+            "side": "ventral",
+            "landmark": "ventral-cleithral-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral",
+            "landmark": "ventral-humeral-ridge"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. Andrews & Westoll (1970a) read the ventral cleithral ridge as the anterior extent of the pectoralis origin and the proximal, preaxial extreme of the ventral humeral ridge as its insertion. Molnar et al. accept the ridge but not the process: Callier et al. (2009), comparing Ichthyostega humeri across growth stages, place the pectoralis process in the MIDDLE of the ventral ridge, which makes the preaxial 'pectoralis processes' reported in Rhizodus, Strepsodus, Sauripterus and Sterropterygion part of a continuous ridge. The insertion is therefore scored on the undivided ridge — not on a process, and not on the deltopectoral crest, which is where an earlier note here put it.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Procoracohumeralis",
+      "present": "inferred",
+      "note": "Reconstructable in tetrapodomorph fish on homology grounds — similar muscles are present in extant lungfish, coelacanths and tetrapods — rather than from the correlate alone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. A hollow just dorsal to the glenoid on the scapulocoracoid, read as the procoracohumeralis origin — Andrews & Westoll's (1970a) 'scapulohumeralis'. The nomenclature is the substance here. Molnar et al.'s procoracohumeralis has two homologues in Iguana, the scapulohumeralis anterior from the lateral scapula and the deltoideus clavicularis from the medial clavicle, so the fossil rows on this record are the undivided ancestral muscle, and the correlate's position above the glenoid corresponds to the scapular of those two rather than the clavicular. Molnar & Diogo (2021) reach the same place from the other end: reconstructions of the deltoid group across seven fossil taxa are nearly identical, and the scapulohumeralis-versus-procoracohumeralis dispute is nomenclatural rather than anatomical.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "uncertain",
+      "note": "Scored uncertain rather than inferred. Molnar et al. report that they 'did not find compelling evidence' that the subcoracoscapularis, the coracobrachialis, the latissimus dorsi, the triceps or the individual forearm muscles existed as SEPARATE muscles in early tetrapodomorph fish, though Andrews & Westoll (1970a) reconstructed all of them. The first individual correlate of this muscle appears one node crownward, at Elpistostegalia; under their alternative phylogeny, later still, at Acanthostega and crownward.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. A small mark on the posterior border of the scapulocoracoid, suggested by Andrews & Westoll (1970a) as a possible origin. Molnar et al. note that it is topologically consistent with the fossa or rugose area that carries the subcoracoscapularis in stem tetrapods, sitting beside the glenoid near the junction of the scapular and coracoid regions.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "inferred",
+      "note": "Reconstructed from the homology hypotheses of Diogo et al. (2016) as much as from the correlate: Molnar et al. list it with the procoracohumeralis as reconstructable because similar muscles are present in extant lungfish, coelacanths and tetrapods.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Eusthenopteron foordi. An ill-defined ridge between the proximal extent of the ventral humeral ridge and the deltoid-supinator ridge, read by Andrews & Westoll (1970a) as the supracoracoideus insertion. It is one of two correlates identified in this taxon and in no other tetrapodomorph fish, which Molnar et al. flag as reason for caution. No landmark is asserted: the ridge is not one of the named correlates they carry through the character mapping.",
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "molnar-etal-2018",
+        "molnar-diogo-2021"
+      ]
+    }
+  ]
+}

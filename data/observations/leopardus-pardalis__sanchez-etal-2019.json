@@ -1,0 +1,62 @@
+{
+  "species": "leopardus-pardalis",
+  "source": "sanchez-etal-2019",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Palmaris longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Tendon to digit I"
+        },
+        {
+          "name": "Tendon to digit II"
+        },
+        {
+          "name": "Tendon to digit III"
+        },
+        {
+          "name": "Tendon to digit IV"
+        },
+        {
+          "name": "Tendon to digit V"
+        }
+      ],
+      "divisionNote": "Leopardus pardalis. Five tendons, as in the jaguar.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "flexor-tendons"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Leopardus pardalis. The palmaris longus lies medial in the forearm and ends by attaching to the tendons of the flexor digitorum superficialis at the proximal end of the middle phalanx — so its insertion is on another muscle's tendons, not on bone, and the phalangeal row is where those tendons land.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sanchez-etal-2019"
+      ]
+    }
+  ]
+}

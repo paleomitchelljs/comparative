@@ -1,0 +1,129 @@
+{
+  "species": "hydrolagus-colliei",
+  "source": "anderson-2008",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "present": "no",
+      "note": "No homologous interhyoideus in Hydrolagus colliei, against its presence in the other four gnathostomes Anderson (2008) compares — Amia, Latimeria, Squalus and Chlamydoselachus — so he reads a secondary loss in chimaeroids. Recorded as `no` for this species only; the holocephalan sample here is one animal.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "present",
+        "sources",
+        "note",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "anderson-2008"
+      ]
+    },
+    {
+      "present": "no",
+      "note": "Absent in Hydrolagus colliei, and Anderson (2008) gives the reason rather than the fact: the holocephalan palatoquadrate is fused to the cranium (autostylic suspension), so there is no free element to levate. He reads it as a secondary loss — the muscle is basal for gnathostomes and went when the joint did. This is the cleanest case in the dataset of a muscle disappearing because its skeletal degree of freedom disappeared, and the counterpart of the coracoid loss that moves the therian supracoracoideus.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "present",
+        "sources",
+        "note",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "anderson-2008"
+      ]
+    },
+    {
+      "present": "yes",
+      "name": "Adductor mandibulae anterior + posterior",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor mandibulae anterior (AMA)"
+        },
+        {
+          "name": "Adductor mandibulae posterior (AMP)"
+        }
+      ],
+      "note": "Hydrolagus colliei. Anderson's muscle group #1, the one group present and unambiguously homologous in all five gnathostomes he compares.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "present",
+        "name",
+        "sources",
+        "division",
+        "parts",
+        "note",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "anderson-2008"
+      ]
+    },
+    {
+      "present": "yes",
+      "name": "Coracomandibularis + coracohyoideus + mandibulohyoideus",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracomandibularis anterior + posterior (CMa, CMp)"
+        },
+        {
+          "name": "Coracohyoideus anterior + posterior (CHa, CHp)"
+        },
+        {
+          "name": "Mandibulohyoideus (MH)"
+        }
+      ],
+      "note": "Hydrolagus colliei, and the record's most interesting column. Anderson (2008) finds a coracomandibularis in all five gnathostomes and argues from it that basal jaw depression was NOT coupled to hyoid movement but worked directly through this muscle — the osteichthyan coracohyoideus-through-mandibulohyoid-ligament system being the derived arrangement. He also renames a Hydrolagus muscle called geniohyoideus by some authors and interhyoideus by others to `mandibulohyoideus`, because it matches neither and is apomorphic. Its consequence is that Hydrolagus has TWO ways to depress the jaw, the chondrichthyan coracomandibularis and a geniohyoideus-like mandibulohyoideus, which Anderson raises as possible independent acquisition of an osteichthyan-style depression in chimaeroids.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "present",
+        "name",
+        "sources",
+        "division",
+        "parts",
+        "note",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "anderson-2008"
+      ]
+    },
+    {
+      "present": "yes",
+      "name": "Intermandibularis",
+      "note": "Hydrolagus colliei. Present in every taxon Anderson (2008) examines, stretching between the sides of the mandible on CN V. In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "present",
+        "name",
+        "sources",
+        "note",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "anderson-2008"
+      ]
+    }
+  ]
+}

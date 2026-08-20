@@ -1,0 +1,146 @@
+{
+  "species": "procavia-capensis",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "uncertain",
+      "name": "Abductor ossis metatarsi minimi digiti",
+      "attachmentNote": "Procavia capensis. **The minimus is absent from this foot, and what is at issue is whether its abductor has moved to the annularis.** Murie & Mivart found muscular fibres arising from a fascia on the outer surface of the calcaneum and inserted into the head of the ligamentous fourth metatarsal, and suggested this might be the abductor ossis metatarsi minimi digiti transferred to the annular digit. Cunningham found the thick ligamentous fascia in his specimen but could detect no muscular fibres in it. He takes the fascia, and the fibres where they exist, to be that muscle in retrograde change — so the row is scored uncertain, which is the state of the evidence rather than a hedge: two workers, two specimens, one with muscle in it and one without.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 21,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and the first two dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "First dorsal interosseous (abductor indicis)"
+        },
+        {
+          "name": "Second dorsal interosseous"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Procavia capensis. Every digit has a two-headed flexor brevis on the plantar aspect of its own metatarsal, with the usual connections — Murie & Mivart's double interossei. Of the dorsal layer only the first two survive: the abductor indicis, powerful, from the inner and dorsal surface of the second metatarsal, and a weaker second interosseous from the plantar base of the middle metatarsal under the adductor indicis. **The third and fourth are presumed inside the outer heads of the flexores breves of medius and annularis.** This foot is also one of the few exceptions Cunningham finds to the usual plantar nerve pattern: the internal plantar sends a deep branch to all the muscles of the index and on to the second interosseous, and he found the same peculiarity in the hand of the same animal, where the median nerve supplies the index's muscles and ends in the outer head of the flexor brevis medii.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 29,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (two adductors)",
+      "innervation": "The adductor indicis from a deep branch of the internal plantar nerve, the adductor annularis from the deep division of the external plantar.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor annularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Procavia capensis. A tridactyl foot — hallux and minimus absent — in which **only the index has all three of its typical muscles**, the medius and annularis each lacking an abductor. Two adductors: the indicis from the fibrous structures on the plantar surface of the scaphoid, the annularis from the ligamentous tissue under the cuboid. Murie & Mivart had described these as the second and fourth single interossei and figured them arising far apart on the same plane as the other muscles; Cunningham corrects that — proximally they are in contact and superficial, and diverge only towards their insertions.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        },
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 27,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+{
+  "species": "discoglossus-pictus",
+  "source": "leavey-etal-2024",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral",
+            "landmark": "tuber-superius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Shares its origin on the posterolateral tuber superius with the iliofibularis — the two are slender and closely bound — and inserts on the dorsal surface of the crista femoralis, the crest running posteriorly from the proximal femur. Both ends are on named anuran processes, so this is one of the few thigh muscles here that leaves a correlate at each end.",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "'Semitendinosus'",
+      "present": "yes",
+      "note": "A false-friend name. The anuran 'semitendinosus' is not homologous to the mammalian muscle of that name. Přikryl et al. (2009) record that the anuran 'semimembranosus' was called ischioflexorius by Hoffmann and caudalipuboischiotibialis by Francis, while the anuran 'semitendinosus' was called ischioflexorius by Mivart and puboischiotibialis by Hoffmann. Two muscles, four names, two of them shared — which is what Diogo & Molnar mean by false friends.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "ilium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          },
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Semitendinosus from the ischium to the knee aponeurosis, and semimembranosus — which Hoffmann calls the ischioflexorius, this record's own name — from the pars ascendens ilii and adjacent ischium onto the posterior knee capsule and the posterior proximal head of the tibiofibula. The semimembranosus is divided proximally by a tendinous inscription.",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor iliotibialis A/B",
+      "present": "yes",
+      "note": "Diogo & Molnar use letter codes rather than the mammalian names ('gluteus maximus', 'tensor fasciae latae') applied by earlier authors, because those homologies do not hold. Přikryl et al. (2009) list the anuran muscle as 'glutaeus maximus (iliotibialis)'. It is NOT homologous with the mammalian gluteus maximus — one of the twelve false-friend names Diogo & Molnar (2014) identify.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor iliotibialis A"
+        },
+        {
+          "name": "Extensor iliotibialis B"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "tuber-superius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Discoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Cruralis and glutaeus maximus, this record's anuran A/B pair. Cruralis runs from the ilium to the knee aponeurosis; glutaeus maximus from the dorsolateral tuber superius onto the fascia of the distal cruralis rather than onto bone. Prikryl et al. note the glutaeus maximus origin is the one marked on their pelvic figure — it is a scoreable correlate.",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "leavey-etal-2024",
+        "prikryl-etal-2009"
+      ]
+    }
+  ]
+}

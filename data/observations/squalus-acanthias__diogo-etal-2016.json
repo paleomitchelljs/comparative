@@ -1,0 +1,128 @@
+{
+  "species": "squalus-acanthias",
+  "source": "diogo-etal-2016",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Absent. This muscle is the sixth added at the osteichthyan node — the difference between the five-muscle gnathostome fin and the six-muscle bony fish fin.",
+      "region": "fin",
+      "record": "pterygialis-caudalis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor profundus",
+      "present": "yes",
+      "region": "fin",
+      "record": "abductor-profundus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor superficialis",
+      "present": "yes",
+      "action": "Depresses the fin.",
+      "note": "One of five muscles per paired fin in Squalus — the plesiomorphic gnathostome condition.",
+      "attachmentNote": "Squalus acanthias. Origin: Ventral pectoral or pelvic girdle bar. Insertion: Ventral surface of the basal and radial cartilages. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "note",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor profundus",
+      "present": "yes",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor superficialis",
+      "present": "yes",
+      "region": "fin",
+      "record": "adductor-superficialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pterygialis cranialis",
+      "present": "yes",
+      "note": "One of the five ancestral gnathostome fin muscles.",
+      "region": "fin",
+      "record": "pterygialis-cranialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "species": "varanidae-generalised",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "generalised",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "From the lateral femoral epicondyle; distally a stout tendon serving digits I-IV. Ankle plantarflexor, active in stance.",
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Gastrocnemius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "From the ventral proximal tibia and the distal ventral tibial crest, by a broad aponeurosis onto the proximolateral margins of the first three phalanges — not onto a calcaneum, unlike the mammalian condition.",
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Caudofemoralis longus + brevis",
+      "present": "yes",
+      "action": "Primary femoral retractor; drives the propulsive stroke in lizard locomotion.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "femoral-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Longus arises from the proximal third of the tail and caudal vertebrae 4-14, inserting by broad tendon on the femoral trochanter plus a second tendon onto the lateral menisci of the knee; brevis arises from the transverse processes of the four most anterior postsacral vertebrae. Femur retraction and long-axis rotation, active in stance.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Caudofemoralis longus"
+        },
+        {
+          "name": "Caudofemoralis brevis"
+        }
+      ],
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Iliofemoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur"
+          }
+        ]
+      },
+      "attachmentNote": "From the anterior iliac blade, sharing an intramuscular septum with the puboischiotibialis; the belly wraps the posterior femoral border to insert proximally. Femur abductor, active in swing.",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Adductor femoris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "puboischiadic-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur"
+          }
+        ]
+      },
+      "attachmentNote": "From the puboischiadic ligament to the ventral femoral shaft; adducts and protracts the femur, active in both stance and swing.",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "generalised",
+      "name": "Femorotibialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "proximal",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Fleshy origin along the entire femoral shaft; joins the iliotibialis tendon to insert on the cnemial crest. Knee extensor, active in both stance and swing.",
+      "region": "thigh",
+      "record": "femorotibialis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "dick-clemente-2016",
+        "diogo-molnar-2014"
+      ]
+    }
+  ]
+}

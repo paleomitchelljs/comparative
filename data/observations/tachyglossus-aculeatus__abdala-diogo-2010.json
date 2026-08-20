@@ -1,0 +1,98 @@
+{
+  "species": "tachyglossus-aculeatus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "origin": "Fleshy from the cranial border of both the cartilaginous and the bony segments of the first rib.",
+      "insertion": "By a short aponeurosis on the dorsal side of the medial border of the coracoid, adjoining the sternocoracoideus at the procoracoid-coracoid suture.",
+      "attachmentNote": "Tachyglossus aculeatus. Together with the sternocoracoideus, the subcoracoideus and the supracoracoideus this is one of the four coracoid-plate muscles monotremes retain and therians have lost with the bone.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior",
+            "landmark": "costal-cartilage"
+          },
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "origin": "Fleshy from the dorsal side of the sternal manubrium along the rim of the sternocoracoid joint and from the internal side of the ventral part of a calcified region of the first costal cartilage.",
+      "insertion": "Dorsal (internal) side of the medial border of the procoracoid.",
+      "attachmentNote": "Tachyglossus aculeatus. This corrects an insertion previously scored on the coracoid. Gambaryan et al. put it on the procoracoid in all three genera, and the distinction matters here because the costocoracoideus, which inserts alongside it, is the one that takes the coracoid.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "dorsal"
+          },
+          {
+            "element": "ribs",
+            "side": "medial",
+            "landmark": "costal-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    }
+  ]
+}

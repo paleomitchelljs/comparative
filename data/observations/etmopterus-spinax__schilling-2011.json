@@ -1,0 +1,48 @@
+{
+  "species": "etmopterus-spinax",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Epaxial myomeres",
+      "present": "yes",
+      "note": "Etmopterus spinax, the velvet belly lantern shark sectioned behind the anus in Schilling's Fig. 2 (Sudan black B, after Kryvi). Divided from the hypaxial by the horizontal septum but still strictly segmental. The row previously claimed a holocephalan, which Schilling does not examine.",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "schilling-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hypaxial myomeres",
+      "present": "yes",
+      "note": "Etmopterus spinax, from Schilling's Fig. 2. Ventral to the horizontal septum and still segmental; the polysegmental subvertebral and abdominal wall muscles that define the tetrapod hypaxial field are not yet present.",
+      "region": "axial",
+      "record": "hypaxial-musculature",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "schilling-2011"
+      ]
+    }
+  ]
+}

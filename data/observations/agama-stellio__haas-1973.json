@@ -1,0 +1,277 @@
+{
+  "species": "agama-stellio",
+  "source": "haas-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae externus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Superficialis anterior"
+        },
+        {
+          "name": "Superficialis posterior"
+        },
+        {
+          "name": "Medialis"
+        },
+        {
+          "name": "Profundus (3a+3b fused)"
+        },
+        {
+          "name": "Profundus 3c"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "jugal"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "prootic"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "landmark": "coronoid"
+          },
+          {
+            "element": "mandible",
+            "landmark": "coronoid-process-mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Agama stellio, Haas (1973), from his own dissection — his original figures 34, 35, 38 and 40. The superficialis is divided into anterior and posterior parts; the medialis resembles that of *Calotes* in **failing to occupy the entire temporal fenestra**, so that in front of it the profundus rather than the pseudotemporalis superficialis is what gets exposed — a dissector's landmark stated as a taxonomic character. The profundus is separated from the medialis by the **temporal artery and vein** and fills the whole temporal fossa medial to it; heads 3a and 3b are fused, while 3c, arising from the quadrate, is well separated from both. A blood vessel doing the work a fascial plane does elsewhere.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. pseudotemporalis superficialis"
+        },
+        {
+          "name": "M. pseudotemporalis profundus"
+        },
+        {
+          "name": "M. pterygoideus"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "prootic"
+          },
+          {
+            "element": "pterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          },
+          {
+            "element": "mandible",
+            "landmark": "coronoid"
+          }
+        ]
+      },
+      "attachmentNote": "Agama stellio, Haas (1973), from his own dissection — his original figures 34, 35, 38 and 40. **Exceptionally well developed in agamids**, in Haas's words. The pseudotemporalis superficialis arises from the base of the postorbital bar and bulges into the anteromedial corner of the temporal fenestra, inserting bipinnately on the anterior division of the basal aponeurosis; the profundus is particularly large and entirely fleshy, arising not only from the anterodorsal and anteroventral prootic but from the lateral rim of the parietal in front of it.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. depressor mandibulae",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Main belly"
+        },
+        {
+          "name": "Accessory head"
+        }
+      ],
+      "innervation": "Facial nerve (VII).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal",
+            "side": "posterior"
+          },
+          {
+            "element": "squamosal",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "retroarticular-process"
+          }
+        ]
+      },
+      "attachmentNote": "Agama stellio, Haas (1973), from his own dissection — his original figures 34, 35, 38 and 40. Figured with a distinct **accessory head**, which Haas labels separately in four of his original figures and which lies deep to the main belly alongside the intermandibularis posterior. Compare the *Sphenodon* row on this record, where the muscle is single and includes the nuchal component that squamates separate off as the cervico-mandibularis — Haas reads the undivided tuatara condition as primitive.",
+      "nerves": [
+        {
+          "nerve": "facial"
+        }
+      ],
+      "region": "cranial",
+      "record": "depressor-mandibulae",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. levator anguli oris and M. retractor anguli oris",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. levator anguli oris"
+        },
+        {
+          "name": "M. retractor anguli oris"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital"
+          },
+          {
+            "element": "jugal"
+          },
+          {
+            "element": "squamosal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "rictal-plate"
+          }
+        ]
+      },
+      "attachmentNote": "Agama stellio, Haas (1973), from his own dissection — his original figures 34, 35, 38 and 40. Both muscles are present and figured, with the retractor's tendon running superficial and parallel to the tendon on which the medialis inserts at the posterior margin of the coronoid. **This is the lizard end of the comparison Haas draws with *Sphenodon***: in the tuatara the insertion is already the lizard one but the origin has not yet shifted to the upper temporal arch, whereas in lizards it has. Note also the quadrato-maxillary ligament, which Haas figures repeatedly here and has to remove before the superficialis can be seen.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "levator-anguli-oris",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    }
+  ]
+}

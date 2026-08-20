@@ -1,0 +1,327 @@
+{
+  "species": "homo-sapiens",
+  "source": "diogo-etal-2008-head",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Arytenoideus transversus and obliquus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "arytenoideus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis inferior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-inferior",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis medius",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-medius",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Constrictor pharyngis superior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-superior",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricoarytenoideus posterior",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricoarytenoideus-posterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Cricothyroideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "cricothyroideus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Levator veli palatini",
+      "present": "yes",
+      "region": "cranial",
+      "record": "levator-veli-palatini",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Masseter, temporalis, the pterygoids and the tensors",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Masseter"
+        },
+        {
+          "name": "Temporalis"
+        },
+        {
+          "name": "Medial pterygoid"
+        },
+        {
+          "name": "Lateral pterygoid"
+        },
+        {
+          "name": "Tensor tympani",
+          "membership": "disputed",
+          "claimedBy": "intermandibularis",
+          "sources": [
+            "diogo-etal-2008-head"
+          ]
+        },
+        {
+          "name": "Tensor veli palatini",
+          "membership": "disputed",
+          "claimedBy": "intermandibularis",
+          "sources": [
+            "diogo-etal-2008-head"
+          ]
+        }
+      ],
+      "action": "Elevate the mandible; the lateral pterygoid protracts it and opens the jaw; the pterygoids together produce lateral grinding.",
+      "innervation": "Mandibular division of the trigeminal nerve (V3).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "zygomatic-arch"
+          },
+          {
+            "element": "temporal-fossa"
+          },
+          {
+            "element": "skull-roof"
+          },
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "landmark": "coronoid-process-mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Masseter from the zygomatic arch, temporalis from the temporal fossa, medial and lateral pterygoid from the pterygoid plates and the maxillary tuberosity, all to the mandible. **Four muscles, one nerve, and the nerve is the whole argument.** This record calls trigeminal innervation invariant and the muscle present wherever jaws are — the single most robust cranial homology in Gnathostomata. It also warns that subdivision patterns carry no homology weight on their own and the named parts are frequently non-homologous between clades, which is why the four human muscles are scored as parts of this record and **not** distributed among the `adductor-mandibulae-externus`, `-internus`, `-longus`, `-lateralis` and `-posterior` records. Those carve the sauropsid and anuran complex following Johnston's folded-sheet model, which is not a scheme a human jaw can be fitted into without inventing the fit.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "jaw-joint",
+          "motion": "elevation"
+        },
+        {
+          "joint": "jaw-joint",
+          "motion": "opening"
+        },
+        {
+          "joint": "jaw-joint",
+          "motion": "protraction"
+        }
+      ],
+      "divisionNote": "The tensors are here on Diogo et al. (2008) Table 1, which derives the tensor tympani and tensor veli palatini from the adductor mandibulae A2-PVM bundle and places them on the adductor row for all five mammals it examines — matching the *Ornithorhynchus* and *Rattus* rows on this record. Gest's tables put both on the mylohyoid instead, which is why they stay `membership: \"disputed\"` with the other claimant named.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "actions",
+        "divisionNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Palatopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "palatopharyngeus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Salpingopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "salpingopharyngeus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Stylopharyngeus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "stylopharyngeus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Thyroarytenoideus",
+      "present": "yes",
+      "region": "cranial",
+      "record": "thyroarytenoideus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2008-head",
+        "gest-anatomy-tables"
+      ]
+    }
+  ]
+}

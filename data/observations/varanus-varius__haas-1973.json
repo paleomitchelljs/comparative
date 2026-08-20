@@ -1,0 +1,78 @@
+{
+  "species": "varanus-varius",
+  "source": "haas-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor internus dorsalis group",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. levator pterygoidei"
+        },
+        {
+          "name": "M. protractor pterygoidei"
+        },
+        {
+          "name": "M. levator bulbi dorsalis"
+        },
+        {
+          "name": "M. levator bulbi ventralis"
+        }
+      ],
+      "innervation": "Trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "prootic"
+          },
+          {
+            "element": "basisphenoid"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "eyelid"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus varius, Haas (1973). **A synthesis, not one dissection** — Haas lists himself with Lightoller (1939) and Frazzetta (1962) and says the account rests on all of them together. The narrow levator pterygoidei lies medial to the epipterygoid, from the descending process of the parietal to the pterygoid, raising it anterior and medial to the prootic wing. **The protractor pterygoidei is much larger and here it actually protracts** the palatopterygoid series, arising from the anteroventral process of the prootic, the body and basipterygoid process of the basisphenoid and even the quadrate — the contrast this record needs, because in *Sphenodon* the same muscle is feebly developed or altogether missing and Haas scores it as a `variable` part there. A kinetic skull that uses the muscle, beside an akinetic one that has nearly lost it.\n\nThe levator bulbi is complex and subdivided, though Haas notes Bradley (1903) reported only one such muscle in *V. salvator* and Frazzetta (1962) figured only one: a dorsalis functioning as the depressor palpebrae inferioris and inserting along the lower eyelid, and a ventralis functioning as a tensor of the palatal membrane.",
+      "nerves": [
+        {
+          "nerve": "trigeminal"
+        }
+      ],
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    }
+  ]
+}

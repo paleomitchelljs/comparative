@@ -1,0 +1,66 @@
+{
+  "species": "xenopus-laevis",
+  "source": "sigurdsen-etal-2012",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Coracoradialis",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "attachmentNote": "Xenopus laevis. A long tendon runs from the coracoradialis to the radio-ulna, and in this species it is housed: a partially covered groove runs from the deltopectoral crest along part of the ventral surface of the humeral shaft to accommodate it, immediately lateral to a prominent boss for the pectoralis insertion. Ritland (1955a) reports a similar groove in Alytes. The insertion is scored on the radius, which is the element the dataset has for the fused radio-ulna; the groove is a correlate of the TENDON'S PATH rather than of an attachment, which is why no row is put on the humerus.",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Xenopus laevis. A prominent boss for the pectoralis insertion close to the POSTERIOR edge of the deltopectoral crest — a discrete correlate where most anurans have the muscle inserting along the crest generally. The pipid humerus is the most atypical in the order: the crest is short, almost straight in cross section and directed ventrally, with a biconcave proximal area. A second anuran species on this record, and it disagrees with the first.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "sigurdsen-etal-2012"
+      ]
+    }
+  ]
+}

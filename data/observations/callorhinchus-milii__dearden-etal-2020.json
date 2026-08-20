@@ -1,0 +1,90 @@
+{
+  "species": "callorhinchus-milii",
+  "source": "dearden-etal-2020",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "note": "Callorhinchus milii, from Johnston's comparative material. The adductor mandibulae posterior is the component the inverted U of the other insertions wraps around, which is what makes it the landmark for identifying the rest.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "suborbital-shelf",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Callorhinchus milii, from Dearden et al.'s synchrotron dissection. Origin along the anterior edge of the suborbital shelf, anteroventral to the orbit; insertion over a small angle on Meckel's cartilage, joining a sheet of connective tissue slung ventrally around it. The muscle's surface is divided in two by the passage of V3 — the same nerve-through-the-sheet geometry Johnston uses to argue this component is of different homology from the rest of the adductor group. Didier (1995) also reports a preorbital fascial origin that the scans do not show, so it is noted rather than scored.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011",
+        "dearden-etal-2020"
+      ]
+    },
+    {
+      "name": "Coracomandibularis + coracohyoideus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracomandibularis"
+        },
+        {
+          "name": "Coracohyoideus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Callorhinchus milii. A very large coracomandibularis with its main origin on the T-shaped anteroventral face of the coracoid region of the pectoral girdle, inserting along Meckel's cartilage — triangular in ventral view, broadening forwards. This is the muscle Anderson (2008) finds in all five gnathostomes he compares and argues from: basal jaw depression pulled on the mandible directly from the girdle, and was not coupled to the hyoid. Scoring it here puts the same attachment in a holocephalan and a selachian.",
+      "speciesBasis": "note",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "dearden-etal-2020"
+      ]
+    }
+  ]
+}

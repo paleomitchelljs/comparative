@@ -1,0 +1,137 @@
+{
+  "species": "varanus-exanthematicus",
+  "source": "schilling-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Subvertebralis, obliquus externus/internus, transversus abdominis, rectus abdominis, intercostales",
+      "present": "yes",
+      "note": "Cieri (2018) records the regional differentiation of these along the varanid trunk, which bears on how much of lateral undulation survives alongside limb-driven locomotion.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Subvertebralis"
+        },
+        {
+          "name": "Obliquus externus",
+          "muscle": "obliquus-externus"
+        },
+        {
+          "name": "Obliquus internus"
+        },
+        {
+          "name": "Transversus abdominis",
+          "muscle": "transversus-abdominis"
+        },
+        {
+          "name": "Rectus abdominis",
+          "muscle": "rectus-abdominis"
+        },
+        {
+          "name": "Intercostales",
+          "muscle": "intercostales-externi"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "linea-alba"
+          },
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "ribs"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "diapophysis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs",
+            "side": "lateral"
+          },
+          {
+            "element": "ribs",
+            "side": "ventral"
+          },
+          {
+            "element": "ribs",
+            "side": "dorsal"
+          },
+          {
+            "element": "sternum",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Varanus exanthematicus, Cieri (2018). The union of the body-wall muscles he describes individually: obliquus externus superficialis (rectus margin to the lateral dorsal ribs) and profundus (pubes to the caudal dorsal ribs), the two intercostal layers running rib to rib, the transversus (fascia deep to the sternum onto the vertebral portion of each bipartite dorsal rib), the rectus abdominis (pubis to sternum) and the levator costae (diapophysis to the next rib). **Obliquus internus is absent in varanids** — Cieri states it plainly, which is why this group has one oblique layer where a mammal has two.",
+      "region": "axial",
+      "record": "hypaxial-musculature",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "schilling-2011",
+        "cieri-2018"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Transversospinalis, longissimus, iliocostalis",
+      "present": "yes",
+      "note": "Reorganised into three longitudinal, polysegmental tracts — the amniote condition. Cieri (2018) documents the regionalisation along the varanid column.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Transversospinalis",
+          "muscle": "transversospinalis"
+        },
+        {
+          "name": "Longissimus",
+          "muscle": "longissimus-dorsi"
+        },
+        {
+          "name": "Iliocostalis",
+          "muscle": "iliocostalis"
+        }
+      ],
+      "attachmentNote": "Varanus exanthematicus. Left unscored on the source's own instruction: Cieri (2018) writes that the anatomy of the epaxial muscles — longissimus dorsi, transversospinalis and iliocostalis — 'including details of insertion and origin tendons, have been described in detail previously (Gasc, 1981; Ritter, 1995; Tsuihiji, 2007) and will not be described here.' **This is a pointer, not a gap**: those three papers are what would close the lepidosaur epaxial column, and none of them is in the corpus. Cieri's contribution to the epaxial series is the supracostalis dorsus brevis, which is scored.",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "schilling-2011",
+        "cieri-2018"
+      ]
+    }
+  ]
+}

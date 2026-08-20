@@ -1,0 +1,133 @@
+{
+  "species": "timon-lepidus",
+  "source": "diogo-molnar-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "Contrahentes digitorum",
+      "present": "yes",
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "landmark": "phalangeal-lip",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Tibialis posterior",
+      "present": "yes",
+      "region": "leg",
+      "record": "tibialis-posterior",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Puboischiofemoralis externus",
+      "present": "yes",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Puboischiofemoralis internus",
+      "present": "yes",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,535 @@
+{
+  "species": "gekko-gecko",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Origin **confined to the lateral humeral shaft**; in Eublepharis it takes the ventral surface as well.",
+      "region": "arm",
+      "record": "brachialis",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "uncertain",
+      "note": "Squamates have limited forearm rotation and no unambiguous supinator. Reports of a lepidosaur 'supinator' generally refer to a brachioradialis-like or abductor-pollicis-longus-like muscle.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. The brevis origin sits **more proximally on the humerus** than in Eublepharis.",
+      "region": "forearm",
+      "record": "supinator",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "molnar-etal-2017",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "ventral",
+            "landmark": "olecranon"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "note": "= extensor carpi ulnaris + anconeus quartus sensu Holmes (1977).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. **Insertion restricted to the pisiform**, where Eublepharis inserts mainly on the ulnare with a small expansion to metacarpal I. A different carpal bone in the two geckos — the sharpest single argument in this dataset against reading one lizard as Lepidosauria.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          },
+          {
+            "element": "metacarpals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Four distal tendinous branches inserting on **both sides** of metacarpals II-IV, where Eublepharis inserts only on the proximal ulnar side.",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "radiale"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "note": "Dilkes (2000): present in all major extant reptile groups.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "note": "Probably also includes the 'pronator radii teres' sensu McMurrich (1903a) and Holmes (1977), at least in Sphenodon and lizards.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Inserts on the **antepenultimate** phalanx of digits II-V and on the first phalanx of digit I, against the distalmost phalanx throughout in Eublepharis. Scored without a side: the dataset has no vocabulary for position along a digit.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Inserts distally on the **antepenultimate** phalanx rather than the terminal one.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "suprascapula",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "clavicle",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. Zaaf et al. examined this muscle in both geckos and record no difference, so the Eublepharis rows stand for Gekko too. A blank in a differences column is an observation of sameness, not a gap, and scoring it as a row is what lets the clade rollup say the two species AGREE rather than say nothing.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "zaaf-etal-1999"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "innervation": "Thoracodorsal equivalent from the dorsal divisions of the brachial plexus.",
+      "note": "In Varanus komodoensis the muscle is large and its humeral insertion is confluent with that of the teres complex (Kępa et al. 2023).",
+      "nerves": [
+        {
+          "nerve": "thoracodorsal"
+        },
+        {
+          "nerve": "brachial-dorsal-division"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Gekko gecko, from the differences column of Zaaf et al.'s tables. **Insertion shifted to the lateral surface of the humerus**, against the proximal dorsal surface in Eublepharis. Same bone, different face, and the shift diff reads it as a substantive move on the medial/lateral axis.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 15,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "note",
+        "sources",
+        "nerves",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "kepa-etal-2023",
+        "navarro-etal-2023",
+        "zaaf-etal-1999"
+      ]
+    }
+  ]
+}

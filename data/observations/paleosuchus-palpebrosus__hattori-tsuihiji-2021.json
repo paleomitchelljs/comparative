@@ -1,0 +1,341 @@
+{
+  "species": "paleosuchus-palpebrosus",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Adductor hallucis dorsalis",
+      "present": "yes",
+      "origin": "Dorsal aspect of the distal fibula.",
+      "insertion": "Dorsal aspect of the proximal third of the shaft of metatarsal I, just proximal to the tibialis anterior insertion; the distal border of the insertion is marked by a transverse ridge on metatarsal I.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "innervation": "Deep fibular nerve.",
+      "attachmentNote": "Paleosuchus palpebrosus. No tarsal origin here, unlike the squamates and the turtle.",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "innervation",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum I, II et III",
+      "present": "yes",
+      "origin": "Depression on the dorsal aspect of the astragalus; the hallucal slip from the dorsal aspect of metatarsal I; the digit II, III and IV slips from the dorsal surfaces of metatarsals II, III and IV.",
+      "insertion": "Dorsally on digits I-III through the dorsal aponeurosis; the hallucal slip on the proximodorsal lips of I-1 and I-2; each digital slip on the proximodorsal lip of every phalanx of its digit.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "side": "dorsal",
+            "landmark": "astragalus"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Paleosuchus palpebrosus. Suzuki et al. (2011) kept this muscle separate in crocodilians as m. extensor digitorum I, II et III; Hattori & Tsuihiji propose extensor digitorum brevis as the standard name for it and its homologues, because the digit I-II bellies are sometimes missing in lepidosaurs and the digit IV belly in crocodilians, so a name fixed to a digit list does not travel. In Caiman the origin is not on the astragalus but on soft tissue between it and the calcaneum.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor digitorum brevis"
+        },
+        {
+          "name": "Extensor hallucis brevis"
+        },
+        {
+          "name": "Extensor digiti II"
+        },
+        {
+          "name": "Extensor digiti III"
+        },
+        {
+          "name": "Extensor digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Interossei dorsales digiti II-IV",
+      "present": "yes",
+      "origin": "Digit II member from the depression on the lateroplantar aspect of metatarsal I with a stout tendinous structure; digit III member from the rugose surface on the dorsal and lateral aspects of the lateral margin of proximal metatarsal II; digit IV member from the depression on the lateroplantar aspect of the proximal-most shaft of metatarsal III.",
+      "insertion": "Each joins the dorsal aponeurosis of its digit, but most fibres end on the proximodorsal lip of the first phalanx.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Paleosuchus palpebrosus. The crocodilian members are the clearest of the series: named separately by Suzuki et al. (2011), carrying their own tendons, and — for the digit III member — innervated differently from the short extensors it lies beside. Hattori & Tsuihiji note the digit IV member is absent from Cong et al.'s (1998) account and so is possibly absent in Alligator sinensis.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interosseous dorsalis digiti II"
+        },
+        {
+          "name": "Interosseous dorsalis digiti III"
+        },
+        {
+          "name": "Interosseous dorsalis digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "origin": "Dorsal aspect of the femur just proximal to the lateral distal condyle.",
+      "insertion": "Tubercle on the medial margin of the proximal shaft of each of metatarsals II-IV, merging at the medial-most site with the tibialis anterior.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "femoral-condyles"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Paleosuchus palpebrosus. An MT I insertion is reported by Gadow (1882), Ribbing (1909, 1938) and Cong et al. (1998) and was not found here. This is the muscle Hattori & Tsuihiji standardise as m. tibialis cranialis, and its avian member is the point of the paper: on their reading the bird's m. tibialis cranialis belongs on THIS record and not on `tibialis-anterior`, where the classical scheme puts it.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Peroneus longus + peroneus brevis",
+      "present": "yes",
+      "origin": "Longus from almost the entire laterodorsal aspect of the fibula, the surface between the longitudinal ridges on its dorsal and lateral aspects; brevis from the flat laterodorsal surface of the distal two-thirds of the fibular shaft.",
+      "insertion": "Longus merges with the brevis and inserts on the flat surface at its insertion site; brevis on the proximolateral margin of metatarsal V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula",
+            "side": "lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Paleosuchus palpebrosus. Both origins are bounded by ridges or are flat surfaces, so the fibula records the whole group.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus (fibularis) longus"
+        },
+        {
+          "name": "Peroneus (fibularis) brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "note",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "origin": "Proximal-most portion of the dorsal aspect of the tibia, marked with surface rugosity that broadens proximodistally on the lateral side.",
+      "insertion": "Bulge on the dorsal aspect of each of metatarsals I and II.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Paleosuchus palpebrosus.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    }
+  ]
+}

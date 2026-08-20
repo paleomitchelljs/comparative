@@ -1,0 +1,397 @@
+{
+  "species": "caiman-yacare",
+  "source": "pereyra-etal-2024",
+  "status": "blocked-no-source",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "astragalus"
+          },
+          {
+            "element": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Extensor digitorum brevis superficialis arises from the astragalar hollow and lateral calcaneum; the deep layer arises from the proximodorsal metatarsals, whose fine striations run parallel to the metatarsal long axis.",
+      "note": "Moved here from the forelimb record of the same name, where it had been filed for want of a pes counterpart.",
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor digitorum brevis profundus",
+      "present": "yes",
+      "note": "Deep flexor layer; metatarsal origins marked by fine striae.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "metatarsal-striae"
+          },
+          {
+            "element": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Flexor digitorum brevis profundus, digits I-IV, from metatarsals I-III and V and the distal calcaneum. The metatarsal origins are marked by fine striae — the pedal correlates Pereyra et al. identify for the first time.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor digitorum brevis superficialis",
+      "present": "yes",
+      "note": "Layer 1 of the seven-layer pedal scheme.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Flexor digitorum brevis superficialis, digits I-IV, from the ventral calcaneum with digit-specific variation. Layer 1 of the seven-layer pedal scheme Pereyra et al. set out.",
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Interdigiti dorsales + ventrales",
+      "present": "yes",
+      "note": "Running between successive metatarsals.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals"
+          },
+          {
+            "element": "metatarsal-striae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "The interdigiti dorsales and ventrales of Pereyra et al., running between successive metatarsals; their origins are marked by longitudinally oriented fine striae on the proximolateral metatarsal surfaces.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interdigiti dorsales"
+        },
+        {
+          "name": "Interdigiti ventrales"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "pereyra-etal-2024",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "note": "From the lateral femoral extensor fossa and condyle to the proximodorsal metatarsals III-IV.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "landmark": "femoral-extensor-fossa"
+          },
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "From the lateral femoral extensor fossa and lateral condyle onto the proximodorsal metatarsals III-IV, which bear a smooth bump at the insertion. Note that this is a femoral origin, not a tibial one — relevant to the Hattori & Tsuihiji (2021) dispute over which anterior tibial muscle is which.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Fibularis longus + brevis",
+      "present": "yes",
+      "note": "Both insert on the anterior surface of metatarsal V.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "fibula"
+          },
+          {
+            "element": "fibula",
+            "landmark": "iliofibular-tubercle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "Fibularis longus arises on the fibular shaft distal to the iliofibular tubercle; brevis from the distal fibular shaft and the anterior tibial aponeurosis. Both insert on the anterior surface of metatarsal V.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Fibularis longus"
+        },
+        {
+          "name": "Fibularis brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "note": "Femoral origin; inserts on the proximoventral unguals I-III.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "femur"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "From the ventral distal femur and lateral condyle, which carries parallel striae aligned with the femoral long axis, onto the proximoventral unguals I-III.",
+      "region": "leg",
+      "record": "flexor-digitorum-longus-hl",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Tibialis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals"
+          }
+        ]
+      },
+      "attachmentNote": "From the proximomedial tibia to the dorsolateral proximal metatarsals I-II; the metatarsal bases carry coarse rugosities marking the insertion.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "M. iliofibularis",
+      "present": "yes",
+      "note": "Its insertion marks the iliofibular tubercle on the fibular shaft, which Pereyra et al. (2024) use as the landmark for the fibularis longus origin.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "landmark": "iliofibular-tubercle",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "thigh",
+      "record": "iliofibularis",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "pereyra-etal-2024"
+      ]
+    }
+  ]
+}

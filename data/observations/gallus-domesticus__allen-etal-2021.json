@@ -1,0 +1,157 @@
+{
+  "species": "gallus-domesticus",
+  "source": "allen-etal-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "name": "M. iliofemoralis internus + iliotrochantericus cranialis",
+      "present": "yes",
+      "note": "= crocodylian puboischiofemoralis internus 1-2. Hip flexors and medial rotators; Allen et al. find hip medial-rotator moment arms roughly doubling along the bird line.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Iliofemoralis internus"
+        },
+        {
+          "name": "Iliotrochantericus cranialis"
+        }
+      ],
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "M. obturatorius lateralis + medialis",
+      "present": "yes",
+      "note": "= crocodylian puboischiofemoralis externus 1-3.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Obturatorius lateralis"
+        },
+        {
+          "name": "Obturatorius medialis"
+        }
+      ],
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "M. flexor cruris medialis + flexor cruris lateralis pars pelvica",
+      "present": "yes",
+      "note": "= crocodylian flexor tibialis internus 3 and flexor tibialis externus. Crocodylian flexor tibialis internus 1 is LOST between Avialae and Aves — one of the few outright losses in their table.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor cruris medialis"
+        },
+        {
+          "name": "Flexor cruris lateralis pars pelvica"
+        }
+      ],
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "M. ischiofemoralis",
+      "present": "yes",
+      "note": "Hip extensor and lateral rotator.",
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "M. puboischiofemoralis medialis + lateralis",
+      "present": "yes",
+      "note": "= crocodylian adductor femoris 1 and 2 respectively.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Puboischiofemoralis medialis"
+        },
+        {
+          "name": "Puboischiofemoralis lateralis"
+        }
+      ],
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2021",
+        "diogo-molnar-2014"
+      ]
+    }
+  ]
+}

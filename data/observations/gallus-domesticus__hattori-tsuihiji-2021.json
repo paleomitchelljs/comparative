@@ -1,0 +1,335 @@
+{
+  "species": "gallus-domesticus",
+  "source": "hattori-tsuihiji-2021",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "survey",
+      "name": "Abductor digiti II",
+      "present": "yes",
+      "origin": "Lateral aspect of metatarsal I and the dorsomedial aspect of the tarsometatarsus, the tarsometatarsal origin marked by an oblique groove on the medial aspect of the shaft and by the fossa metatarsi I.",
+      "insertion": "Medioplantar tubercle at the proximal end of phalanx II-1.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "tarsometatarsus",
+            "side": "medial",
+            "landmark": "fossa-metatarsi-i"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus gallus. **One of three members survives in birds, and it closes an orphan correlate.** The digit II member persists as m. abductor digiti II, keeping the metatarsal I origin, the digit II insertion and the deep fibular nerve that identify the series; the digit III and IV members are absent, and Hattori & Tsuihiji explicitly refuse the avian extensores breves digiti III and IV as their homologues because those arise from the wrong metatarsal and extend rather than adduct. The fossa metatarsi I is one of the fifteen osteological correlates GAPS §3 listed as carrying no muscle.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Interosseous dorsalis digiti II (m. abductor digiti II)"
+        },
+        {
+          "name": "Interosseous dorsalis digiti III",
+          "membership": "disputed",
+          "note": "Absent in birds on Hattori & Tsuihiji's reading; the avian m. extensor brevis digiti III is not accepted as its homologue."
+        },
+        {
+          "name": "Interosseous dorsalis digiti IV",
+          "membership": "disputed",
+          "note": "Absent in birds; the avian m. extensor brevis digiti IV is scored on extensores-digitorum-breves-pes."
+        }
+      ],
+      "region": "foot",
+      "record": "interossei-dorsales-pes",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "name": "Adductor hallucis dorsalis",
+      "present": "no",
+      "note": "Gallus gallus. Absent. Hutchinson (2002) treated this muscle as the homologue of the avian m. extensor hallucis longus; Hattori & Tsuihiji reject that and place the avian muscle with the extensor hallucis brevis instead, on `extensores-digitorum-breves-pes`. So the absence here is a positive claim about where the avian muscle went, not silence.",
+      "speciesBasis": "survey",
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "speciesBasis"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "deep-fibular"
+        }
+      ],
+      "speciesBasis": "survey",
+      "name": "Extensores breves digitorum III et IV",
+      "present": "yes",
+      "origin": "Dorsal aspect of the distal half of the tarsometatarsus, the digit III origin marked by a slightly depressed rugose surface and the digit IV origin by a sulcus lateral to it.",
+      "insertion": "Proximodorsal lip of phalanx III-1, and the medial aspect of IV-1 — the latter tendon running through the canalis interosseus distalis and its insertion marked by a tuber.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsometatarsus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus gallus. **Two members left of five.** The extensor digitorum brevis and the extensor hallucis brevis are both absent in birds, and only the digit III and IV slips survive, both now arising from the tarsometatarsus. Hattori & Tsuihiji use the digit III member as a test case for their metatarsal-identity reasoning: its origin on the middle of the distal half of the tarsometatarsus corresponds to metatarsal III, not to metatarsal II, which is why they refuse it as the homologue of the non-avian interosseous dorsalis digiti III.",
+      "innervation": "Deep fibular nerve.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor brevis digiti III"
+        },
+        {
+          "name": "Extensor brevis digiti IV"
+        }
+      ],
+      "region": "foot",
+      "record": "extensores-digitorum-breves-pes",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "innervation",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "survey",
+      "name": "Extensor digitorum longus",
+      "present": "yes",
+      "origin": "Broad surface between the cranial and lateral cnemial crests and the dorsolateral aspect of the tibial shaft, tapering distally.",
+      "insertion": "Processes on the proximodorsal lips of the phalanges of digits II-IV.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior",
+            "landmark": "cnemial-crest-cranial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral",
+            "landmark": "cnemial-crest-lateral"
+          },
+          {
+            "element": "tibia",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus gallus. The other half of the revision: Hattori & Tsuihiji put the avian m. extensor digitorum longus HERE, with the non-avian tibialis anterior, on the strength of the shared tibial origin. Note what that does to the shared cnemial crests — under their scheme both anterior tibial muscles take them in birds, the tibialis cranialis on the crests' expansions and this one on the surface between them.",
+      "region": "leg",
+      "record": "tibialis-anterior",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Fibularis longus + fibularis brevis",
+      "present": "yes",
+      "origin": "Longus from the proximal margins of the cranial and lateral cnemial crests, the patellar tendon and associated fascia; brevis from most of the interosseal space between tibia and fibula — a narrow surface between two longitudinal ridges on the distal two-thirds of the tibial shaft, and the dorsal surface of the distal half of the fibula.",
+      "insertion": "Longus onto soft tissue, the sustentaculum tarsi and the insertion tendon of the flexor perforatus digiti III; brevis onto a proximal surface near the lateral margin of the hypotarsus, the tuberculum m. fibularis brevis.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tibia",
+            "side": "anterior",
+            "landmark": "cnemial-crest-cranial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral",
+            "landmark": "cnemial-crest-lateral"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral"
+          },
+          {
+            "element": "fibula",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsometatarsus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus gallus. **The insertion is different because the bone is gone.** In all three non-avian clades both heads end on metatarsal V; birds have lost it, and Hattori & Tsuihiji read the avian insertions — on the hypotarsus, on soft tissue and on another muscle's tendon — as the consequence. An attachment relocating because its element was lost, which is the same case as the therian supracoracoideus and the coracoid. The longus account is Fujioka's (1962) on Gallus rather than their own dissection.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Peroneus (fibularis) longus"
+        },
+        {
+          "name": "Peroneus (fibularis) brevis"
+        }
+      ],
+      "region": "leg",
+      "record": "fibularis-group",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    },
+    {
+      "nerves": [
+        {
+          "nerve": "common-fibular"
+        }
+      ],
+      "speciesBasis": "survey",
+      "name": "Tibialis cranialis",
+      "present": "yes",
+      "origin": "Distal extremity of the lateral distal condyle of the femur, at the fovea tendinis m. tibialis cranialis, plus the lateral expansion of the cranial cnemial crest and the dorsoventral expansion of the lateral cnemial crest of the tibia.",
+      "insertion": "Tubercles on the dorsal aspect of the proximal tarsometatarsus — the tuberositas m. tibialis cranialis.",
+      "innervation": "Fibular nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "distal",
+            "landmark": "femoral-condyles"
+          },
+          {
+            "element": "tibia",
+            "side": "anterior",
+            "landmark": "cnemial-crest-cranial"
+          },
+          {
+            "element": "tibia",
+            "side": "lateral",
+            "landmark": "cnemial-crest-lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tarsometatarsus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Gallus gallus. **The row the homology revision turns on.** Hattori & Tsuihiji place the avian m. tibialis cranialis here, with the non-avian extensor digitorum longus, because the femoral origin is conserved across all four clades and the avian tuberositas on the tarsometatarsus sits where metatarsals II and III would have been. The classical scheme instead pairs it with `tibialis-anterior`, which requires the extensor digitorum longus origin to cross the knee joint and the tibialis cranialis to lose its MT I insertion. The tibial origin, on the two cnemial crests, is the avian addition. Two of the fifteen orphan correlates in GAPS §3 close on this row.",
+      "region": "leg",
+      "record": "extensor-digitorum-longus-hl",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "nerves",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "innervation",
+        "attachments",
+        "attachmentNote",
+        "sources"
+      ],
+      "_srcs": [
+        "hattori-tsuihiji-2021"
+      ]
+    }
+  ]
+}

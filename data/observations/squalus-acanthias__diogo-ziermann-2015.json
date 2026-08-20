@@ -1,0 +1,242 @@
+{
+  "species": "squalus-acanthias",
+  "source": "diogo-ziermann-2015",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Coracomandibularis, coracohyoideus, coracobranchialis",
+      "present": "yes",
+      "action": "Depress the jaw and hyoid, expanding the orobranchial chamber for suction feeding.",
+      "innervation": "Ventral rami of the occipital and anterior spinal nerves.",
+      "note": "The coracoid origin makes the mechanical link between the pectoral girdle and the feeding apparatus explicit — the same link that must be broken for a neck to evolve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "branchial-arches"
+          }
+        ]
+      },
+      "attachmentNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracomandibularis"
+        },
+        {
+          "name": "Coracohyoideus"
+        },
+        {
+          "name": "Coracobranchialis"
+        }
+      ],
+      "nerves": [
+        {
+          "nerve": "ventral-rami"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "jaw-joint",
+          "motion": "depression"
+        }
+      ],
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "_occ": 1,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "note",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "division",
+        "parts",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "diogo-ziermann-2015",
+        "ziermann-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor profundus",
+      "present": "yes",
+      "region": "fin",
+      "record": "abductor-profundus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor superficialis",
+      "present": "yes",
+      "action": "Depresses the fin.",
+      "note": "One of five muscles per paired fin in Squalus — the plesiomorphic gnathostome condition.",
+      "attachmentNote": "Squalus acanthias. Origin: Ventral pectoral or pelvic girdle bar. Insertion: Ventral surface of the basal and radial cartilages. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "note",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor profundus",
+      "present": "yes",
+      "region": "fin",
+      "record": "adductor-profundus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor superficialis",
+      "present": "yes",
+      "region": "fin",
+      "record": "adductor-superficialis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-etal-2016",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cucullaris",
+      "present": "yes",
+      "action": "Elevates the branchial arches and stabilises the girdle.",
+      "innervation": "Vagus (X), caudal branchial branches.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "scapulocoracoid",
+            "landmark": "scapular-process"
+          },
+          {
+            "element": "epibranchials",
+            "side": "posterior"
+          },
+          {
+            "element": "extrabranchial-cartilages",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias. The information was in this row's own `origin`/`insertion` prose and had never been structured; Ziermann et al. also resolve the insertion further than the prose did, naming the scapular process, the posterior epibranchial cartilages and the anterior extrabranchial cartilages as three separate ends. No origin row: the sheet arises from the fascia beside the epaxial musculature and touches no element there, which is why a muscle that spans the head-trunk boundary leaves nothing for a fossil to record at its front end. The same dissection failed to find the 'levatores arcuum branchialium' of Kesteven (1942) in either Squalus or Mustelus laevis, so the levator half of this record's Chondrichthyes name is on Kesteven's authority and not on theirs.",
+      "nerves": [
+        {
+          "nerve": "vagus-branchial"
+        }
+      ],
+      "actions": [
+        {
+          "joint": "girdle-axial",
+          "motion": "elevation"
+        },
+        {
+          "joint": "girdle-axial",
+          "motion": "stabilisation"
+        }
+      ],
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves",
+        "actions"
+      ],
+      "_srcs": [
+        "ziermann-etal-2014",
+        "diogo-ziermann-2015"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Ventral fin muscle mass (undivided)",
+      "present": "no",
+      "note": "Chondrichthyans have an undivided ventral (adductor/depressor) fin mass; no discrete pectoralis is differentiated.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "diogo-ziermann-2015"
+      ]
+    }
+  ]
+}

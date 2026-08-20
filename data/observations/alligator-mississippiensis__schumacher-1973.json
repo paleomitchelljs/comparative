@@ -1,0 +1,139 @@
+{
+  "species": "alligator-mississippiensis",
+  "source": "schumacher-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae internus (pseudotemporalis + pterygoideus anterior et posterior)",
+      "present": "yes",
+      "action": "Adducts the lower jaw; the dominant adductor mass in crocodylians.",
+      "innervation": "Mandibular branch of the trigeminal (V3).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Pseudotemporalis",
+          "note": "Inserts on the broad dorsal surface of the mandibular adductor tendon; its own pseudotemporal tendon attaches to the Cartilago transiliens."
+        },
+        {
+          "name": "Pterygoideus anterior",
+          "note": "Fibres attach to the Lamina anterior of the mandibular adductor tendon, which lies horizontally in the roof of the mouth."
+        },
+        {
+          "name": "Pterygoideus posterior",
+          "note": "Works through six tendon aponeuroses whose origins and attachments alternate between the base of the skull and the lower jaw."
+        }
+      ],
+      "divisionNote": "**Greatly developed in crocodylians relative to turtles**, and the reason Schumacher treats the internus as a system rather than a muscle. The pterygoideus is split into anterior and posterior here, which it is not in turtles.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "skull-roof"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "angular"
+          },
+          {
+            "element": "mandible",
+            "landmark": "surangular"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator mississippiensis, Schumacher's own specimen (marked S in his species list). Schumacher's crocodylian tendon system is the point of this column. The **mandibular adductor tendon** (Lakjer's stem tendon) is the insertion for ALL adductors: its main part attaches to the dorsomedial face of the angular, its Lamina anterior lies horizontally in the roof of the mouth, its Lamina posterior spreads from the angular and articular, and its lateral edge reaches the dorsomedial surangular at the coronoid tuberosity — a roughness visible on macerated bone, so an osteological correlate. A **Cartilago transiliens** glides between that tendon and the surangular. The muscles attach to tendon laminae rather than directly to bone, and the rows below therefore name the bone each lamina is anchored on.",
+      "actions": [
+        {
+          "joint": "jaw-joint",
+          "motion": "adduction"
+        },
+        {
+          "joint": "jaw-joint",
+          "motion": "depression"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "division",
+        "parts",
+        "divisionNote",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "schumacher-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "action": "Adducts the lower jaw.",
+      "innervation": "Mandibular branch of the trigeminal (V3).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "skull-roof"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "angular"
+          },
+          {
+            "element": "mandible",
+            "landmark": "articular"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator mississippiensis, Schumacher (1973). Attaches mainly to the **Lamina posterior** of the mandibular adductor tendon, which spreads posteriorly from the angular and articular. It shares the cranial adductor tendon with the externus — Iordansky's A- and B-tendons — anchored on the roof of the skull, so the two muscles are yoked at their origin as well as at their insertion.",
+      "actions": [
+        {
+          "joint": "jaw-joint",
+          "motion": "adduction"
+        },
+        {
+          "joint": "jaw-joint",
+          "motion": "depression"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "action",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "actions"
+      ],
+      "_srcs": [
+        "schumacher-1973"
+      ]
+    }
+  ]
+}

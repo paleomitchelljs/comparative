@@ -1,0 +1,65 @@
+{
+  "species": "callorhinchus-milii",
+  "source": "johnston-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae internus (medial division)",
+      "present": "yes",
+      "note": "Callorhinchus milii, the holocephalan in Johnston's comparative material — his model of the adductor complex as a folded sheet was tested from chondrichthyans to mammals, and this is the cartilaginous fish he tested it on. The medial division is identified by where it inserts into the inverted U on the mandible.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "johnston-2011"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae posterior",
+      "present": "yes",
+      "note": "Callorhinchus milii, from Johnston's comparative material. The adductor mandibulae posterior is the component the inverted U of the other insertions wraps around, which is what makes it the landmark for identifying the rest.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "suborbital-shelf",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Callorhinchus milii, from Dearden et al.'s synchrotron dissection. Origin along the anterior edge of the suborbital shelf, anteroventral to the orbit; insertion over a small angle on Meckel's cartilage, joining a sheet of connective tissue slung ventrally around it. The muscle's surface is divided in two by the passage of V3 — the same nerve-through-the-sheet geometry Johnston uses to argue this component is of different homology from the rest of the adductor group. Didier (1995) also reports a preorbital fascial origin that the scans do not show, so it is noted rather than scored.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 0,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "johnston-2011",
+        "dearden-etal-2020"
+      ]
+    }
+  ]
+}

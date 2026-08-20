@@ -1,0 +1,214 @@
+{
+  "species": "tamandua-tetradactyla",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Tamandua tetradactyla. A wide origin **from a cartilaginous process attached to the inner margin of the sole** and from the plantar fascia, to the inner sesamoid at the root of the hallux. Supplied by the internal plantar nerve with the flexor brevis hallucis, in the usual way — this foot's nerve arrangement is ordinary however unusual its muscles are.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 20,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductors of the little toe",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Abductor ossis metatarsi minimi digiti"
+        },
+        {
+          "name": "Abductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "sesamoids-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Tamandua tetradactyla. Both present: the abductor ossis metatarsi with its usual attachments, and a narrow abductor minimi digiti from the outer side of the calcaneal tuber ending in a long slender tendon on the outer sesamoid at the base of the minimus.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 18,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves and dorsal interossei",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexores breves"
+        },
+        {
+          "name": "Dorsal interossei"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Tamandua tetradactyla. The flexores breves are poorly developed except at the margins, and are told from the dorsal interossei by lying on a more plantar plane and being invisible from the dorsum. Only the little toe has a two-headed one; the three middle digits have single delicate tibial slips and the hallux a strongly marked tibial head with a more proximal origin. Four powerful single-headed prismatic dorsal interossei, one per space, abducting from a line through the index — so **the index has two of them, one on each side, plus an adductor and a flexor brevis: four intrinsic muscles on one digit, which Cunningham says is unique so far as he is aware.** He also reads the tibial-only short flexors of medius and annularis as doing the work of the human first and second plantar interossei, antagonising the third and fourth dorsal interossei.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 23,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (three adductors)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        },
+        {
+          "name": "Transversus indicis",
+          "membership": "variable"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "metatarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Tamandua tetradactyla. **Adduction here is towards the annularis while abduction is away from the index** — the two halves of the apparatus referred to different digits, which Cunningham says he has seen nowhere else. Three adductors. The minimi digiti is a narrow slip from the base of the fourth metatarsal and the sheath of the peroneus longus tendon. The hallucis and indicis are fan-shaped and arise largely from a strong fibrous raphe running from the head to the base of the fifth metatarsal — the hallucis from its proximal half and the ligaments over the third and fourth metatarsal bases, the indicis from its distal half. In the left foot an extra adducting slip for the index ran transversely across the roots of annularis and medius from the base of the minimus's proximal phalanx: **Cunningham reads it as the beginning of the split into an oblique and a transverse part that is complete in the apes and in man**, and which the walrus's adductor hallucis has already made.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 24,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "species": "zaglossus-bruijnii",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "origin": "By a wide aponeurosis from the internal side of the first costal cartilage and the cranial border of the first rib itself.",
+      "insertion": "By a short aponeurosis on the dorsal (internal) side of the medial border of the coracoid, and also on the procoracoid just lateral to the posterior part of the sternocoracoideus.",
+      "attachmentNote": "Zaglossus bruijnii. The only genus whose costocoracoideus reaches the procoracoid as well as the coracoid.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "medial",
+            "landmark": "costal-cartilage"
+          },
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          },
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "origin": "By a short aponeurosis from the dorsal side of the sternal manubrium along the rim of the sternocoracoid joint and from the internal side of the sternal end of the first costal cartilage, adjoining the costocoracoideus from below.",
+      "insertion": "Dorsal (internal) side of the medial border of the procoracoid.",
+      "attachmentNote": "Zaglossus bruijnii. The insertion is on the PROCORACOID, not the coracoid, in all three genera. Sternocoracoid mobility is much reduced in monotremes, but Gambaryan et al. argue the muscle's long fibres show it is still real, and point to the overlapping left and right procoracoids as a remnant of the pronounced craniocaudal sternocoracoid sliding seen in urodeles and lizards.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "dorsal"
+          },
+          {
+            "element": "ribs",
+            "side": "medial",
+            "landmark": "costal-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "procoracoid",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "origin",
+        "insertion",
+        "attachmentNote",
+        "attachments",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "gambaryan-etal-2015"
+      ]
+    }
+  ]
+}

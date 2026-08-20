@@ -1,0 +1,303 @@
+{
+  "species": "tachyglossus-aculeatus",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "uncertain",
+      "name": "Abductor digiti quinti and abductor metatarsi V",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metatarsals",
+            "side": "lateral"
+          },
+          {
+            "element": "phalanges-pes",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Tachyglossus aculeatus. **Two dissections of this animal disagree about whether these muscles exist, and the row records both rather than choosing.**\n\n**Cunningham (1882): absent, both of them.** The dorsal layer of this foot is down to two muscles, the abductor hallucis and the second dorsal interosseous, and neither an abductor minimi digiti nor an abductor ossis metatarsi minimi digiti is among them. He reads the echidna's missing intrinsic muscles as suppressed, finding no trace of them fused into anything. Set that against the platypus, where the abductor ossis metatarsi is the only abductor of the little toe but is short and powerful, and against every marsupial in his survey, all of which have two or three.\n\n**Gambaryan et al. (2002): both present, and both on the tuber calcanei.** The abductor metatarsi V from the lateral aspect of the tuber calcanei and the inner surface of the tendinous plate underlying the heel callosity, to the lateral side of the distal part of the fifth metatarsal; the abductor digiti quinti from close beside it, on the upper point of the tuber calcanei and the same tendinous sheet, to the lateral edge of the first phalanx of the fifth toe. The attachments scored are theirs.\n\nAn attachment is an observation and does not age, so the later date does not decide this. What can be said is that the two accounts differ in where they looked: Cunningham enumerates the layers of the sole, and Gambaryan et al. describe a group defined by its connection to the tuber calcanei, which is the region Cunningham treats least.",
+      "region": "foot",
+      "record": "abductor-digiti-minimi-pes",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Abductor hallucis",
+      "innervation": "A minute twig from the innermost digital branch of the internal plantar nerve, which supplies the abductor and flexor brevis of the hallux.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Tachyglossus aculeatus. **Very rudimentary**: from the fascia at the root of the hallux to the tibial aspect of the ungual phalanx by a minute thread-like tendon. It is one of only two muscles left in this foot's dorsal layer, and one of the three that the stunted hallux — the least mobile digit in the foot — keeps in full when better digits have lost theirs.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "abductor-et-extensor-digiti-i-pes",
+      "_occ": 16,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Accessorius",
+      "innervation": "A twig from the trunk of the external plantar nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "calcaneum",
+            "landmark": "calcaneal-tuber",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Tachyglossus aculeatus. Cunningham (1882) records it only through its nerve: the trunk of the external plantar runs down over the accessorius, undivided, and supplies it. The thylacine and the cuscus are scored `no` on this record, so the two monotremes have a muscle both marsupials have lost.\n\n**Gambaryan et al. (2002) give it attachments.** From the lateral edge of the tuber calcanei, proximal to the abductor metatarsi V, the belly lying closer to the plantar surface of the foot than the tubercle does; its fibres insert on the plantolateral side of whichever tendon of the flexor digitorum fibularis runs to the fifth toe, then pass deeper to reach the tendon of the fourth. **It ends on tendon, not bone**, which is why only the origin is scored — the same thing Gest's human row records for the gemelli, and a reminder that a muscle with no distal osteological correlate is invisible to a fossil.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexor-accessorius-lateralis-pes",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexor brevis digitorum",
+      "innervation": "A twig from the branch the internal plantar nerve sends round the calcaneal tuber — which Cunningham reads as standing in for the superficial division of the external plantar, absent in this foot.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "plantar-aponeurosis"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Tachyglossus aculeatus. **One belly left of four**, and it survives for a reason: in Cunningham's specimen the flexor longus digitorum sent no tendon to the minimus, so the outermost short-flexor belly is retained for that digit. From the plantar fascia and the calcaneal tuber to the plantar surface of the base of the second phalanx of the little toe, partially fused with the flexor brevis minimi digiti beneath it — which, he warns, makes it very easy to mistake for an intrinsic muscle now that its three fellows are gone. **Mivart described a long flexor tendon to the minimus in *Echidna hystrix* and denied any part of the short flexor**; that disagreement is between two animals and is recorded, not resolved.",
+      "nerves": [
+        {
+          "nerve": "medial-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "flexores-breves-superficiales-pes",
+      "_occ": 12,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Intermediate layer and the second dorsal interosseous",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor brevis hallucis"
+        },
+        {
+          "name": "Flexor brevis indicis"
+        },
+        {
+          "name": "Flexor brevis minimi digiti"
+        },
+        {
+          "name": "Second dorsal interosseous"
+        }
+      ],
+      "divisionNote": "The flexores breves of the medius and annularis and three of the four dorsal interossei are absent. Cunningham could find no trace of them in any neighbouring muscle and reads them as suppressed rather than fused — the opposite of his reading for the tetradactylous carnivores.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Tachyglossus aculeatus. **Only three flexores breves and one dorsal interosseous survive.** The flexor brevis hallucis is minute but complete, two heads from a common origin on the plantar fibrous structures of the middle cuneiform, diverging to the sides of the second phalanx. The flexor brevis indicis has two heads of which only the tibial is fleshy — the fibular is a short fibrous cord. The flexor brevis minimi digiti is **the best-developed intrinsic muscle in this foot and the only one not visibly degenerating**, represented by its outer head alone, from the anterior aspect of the calcaneal tuber to the outer side of the second phalanx. The second dorsal interosseous is the sole survivor of its layer, detectable only from the plantar side, its tendon splitting into a hair-like slip for the medius and a stronger one for the index — so it is chiefly an abductor of the index but has an approximating action too. **Cunningham finds no clue as to where the absent muscles went and concludes they were lost by suppression** — and notes the oddity that the stunted hallux, the least mobile digit of all, is the only one keeping its full complement.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "divisionNote",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Plantar layer (five adductors)",
+      "innervation": "Muscular branches of the external plantar nerve, which supplies all the intrinsic muscles except the abductor and flexor brevis of the hallux.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Adductor hallucis"
+        },
+        {
+          "name": "Adductor indicis"
+        },
+        {
+          "name": "Adductor medii"
+        },
+        {
+          "name": "Adductor annularis"
+        },
+        {
+          "name": "Adductor minimi digiti"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "tarsals",
+            "landmark": "calcaneum"
+          },
+          {
+            "element": "tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-pes"
+          },
+          {
+            "element": "phalanges-pes"
+          }
+        ]
+      },
+      "attachmentNote": "Tachyglossus aculeatus, Cunningham's *Echidna setosa*. **The best-represented layer in a foot whose intrinsic muscles are mostly going or gone** — every digit has an adductor and the annularis has two, and they draw the toes towards the interval between index and hallux rather than towards a digit. The adductors of hallux and index share an origin from the under surface of the calcaneum near the outer margin and cross the sole obliquely, superficial to the rest; the other three arise together from the ligaments under the tarsus and diverge as thin bands ending in flat aponeurotic tendons on the tibial sides of the **ungual** phalanges of medius, annularis and minimus. The annularis also has a very delicate extra fasciculus, which Cunningham matches to the unaccountable extra adductor he found in one large platypus. **The adductors are so thin as to be semi-transparent**, and he says plainly that these muscles are undergoing retrograde change.\n\n**Gambaryan et al. (2002) find four here and call them contrahentes**, arising on the deep plantar aponeurosis at the level of tarsale III and inserting on the medial sides of the **second** phalanges of digits II–V. Cunningham has five, reaching the ungual phalanges of medius, annularis and minimus. The two dissections agree that the group is present and that it inserts medially, and disagree on the count and on how far down the toe it goes; neither is preferred here. Their reason for the name is the reptilian comparison: in reptiles the contrahentes lie superficial to the interossei — closer to the plantar surface — and insert on the medial sides of the first phalanges of all the toes, which is the arrangement this foot repeats.",
+      "nerves": [
+        {
+          "nerve": "lateral-plantar"
+        }
+      ],
+      "region": "foot",
+      "record": "contrahentes-digitorum-pes",
+      "_occ": 14,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "innervation",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "cunningham-1882",
+        "gambaryan-etal-2002"
+      ]
+    }
+  ]
+}

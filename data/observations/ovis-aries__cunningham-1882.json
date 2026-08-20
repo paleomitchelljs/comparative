@@ -1,0 +1,60 @@
+{
+  "species": "ovis-aries",
+  "source": "cunningham-1882",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "present": "yes",
+      "name": "Flexores breves (suspensory ligament)",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Flexor brevis medii"
+        },
+        {
+          "name": "Flexor brevis annularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metatarsals",
+            "side": "proximal"
+          },
+          {
+            "element": "tarsals",
+            "landmark": "distal-tarsals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sesamoids-pes"
+          },
+          {
+            "element": "extensor-expansion"
+          }
+        ]
+      },
+      "attachmentNote": "Ovis aries. Cunningham's horse–ox–sheep series is one argument in three animals: **the suspensory ligament of the fetlock is a short flexor turned to ligament, and each animal shows the transformation at a different stage.** He made thin transverse microscopic sections of all three and looked at them against a black ground. **The end of the series: not a vestige of muscular tissue is left.** The same four rings appear in section, nearer the deep surface, with delicate white outlines — and under the microscope they are fat cells with occasional vessels and nerves among them and no muscle at all. Cunningham draws the mechanism from this: the fibrous change proceeds by fatty degeneration of the muscle fibres with a concurrent increase in the muscle's connective tissue, is always further advanced on the superficial surface, and spares the vessels and nerves. **The sheep also settles the ox's tendinous cords**: here the ligament is covered by a dense aponeurosis attached to each margin of the metatarsus which has no anatomical union with it — the ligament glides freely beneath — and which joins the perforatus by a flat ribbon-like band. That aponeurosis is the deep layer of fascia spread over the intrinsic muscles in other animals, which is why the ox's cords are fascia and not muscle.",
+      "region": "foot",
+      "record": "flexores-breves-profundi-pes",
+      "_occ": 28,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "name",
+        "division",
+        "parts",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "cunningham-1882"
+      ]
+    }
+  ]
+}

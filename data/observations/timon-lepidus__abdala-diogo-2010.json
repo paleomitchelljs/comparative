@@ -1,0 +1,763 @@
+{
+  "species": "timon-lepidus",
+  "source": "abdala-diogo-2010",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "survey",
+      "present": "uncertain",
+      "note": "Marked '– [but see text]'.",
+      "region": "arm",
+      "record": "humeroradialis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "note": "= humeroantebrachialis sensu Diogo & Abdala (2007) and Diogo (2007); = short and long heads of biceps brachii sensu Jouffroy (1971).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "region": "arm",
+      "record": "biceps-brachii",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Coracobrachialis",
+      "present": "yes",
+      "note": "= coracobrachialis superficialis/longus + coracobrachialis profundus/brevis of earlier authors.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "arm",
+      "record": "coracobrachialis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Triceps brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "variable",
+      "note": "Absent in Timon but present in at least some lepidosaurs, including Sphenodon.",
+      "region": "forearm",
+      "record": "anconeus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "variable",
+      "note": "Absent in Timon but seemingly present in Sphenodon.",
+      "region": "forearm",
+      "record": "brachioradialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "variable",
+      "note": "Abdala & Diogo report that a few lizards may have a small muscle somewhat resembling the contrahentium caput longum of Ambystoma.",
+      "region": "forearm",
+      "record": "contrahentium-caput-longum",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "flexor-accessorius-lateralis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "region": "forearm",
+      "record": "flexor-accessorius-medialis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "variable",
+      "note": "Absent in Timon, but some lepidosaurs do have a comparable structure.",
+      "region": "forearm",
+      "record": "palmaris-longus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Epitrochleoanconeus",
+      "present": "yes",
+      "region": "forearm",
+      "record": "epitrochleoanconeus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Extensor antebrachii et carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "carpals"
+          }
+        ]
+      },
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pronator accessorius",
+      "present": "yes",
+      "region": "forearm",
+      "record": "pronator-accessorius",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Pronator teres",
+      "present": "yes",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Contrahentes digitorum",
+      "present": "yes",
+      "note": "Include the flexor digitorum V transversus I and II of Abdala & Moro (2006).",
+      "region": "hand",
+      "record": "contrahentes-digitorum",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "region": "hand",
+      "record": "dorsometacarpales",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "region": "hand",
+      "record": "flexores-breves-profundi",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "note": "Lizards often have four 'intermetacarpales I'.",
+      "region": "hand",
+      "record": "intermetacarpales",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Lumbricales",
+      "present": "yes",
+      "region": "hand",
+      "record": "lumbricales",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "no",
+      "note": "Never described in lepidosaurs and not found by dissection.",
+      "region": "pectoral",
+      "record": "rhomboideus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "present": "uncertain",
+      "note": "Abdala & Diogo mark this cell '– [but see text]' — absent in Timon lepidus but discussed as possibly present in other lepidosaurs.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "present": "uncertain",
+      "note": "Marked '– [but see text]' by Abdala & Diogo.",
+      "region": "pectoral",
+      "record": "teres-major",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "note": "Frequently divided into pars superficialis and pars profunda.",
+      "region": "pectoral",
+      "record": "costocoracoideus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Deltoideus clavicularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae",
+      "present": "yes",
+      "attachmentNote": "Timon lepidus. Origin: Mainly the transverse process of the atlas. Insertion: Scapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Protractor pectoralis",
+      "present": "yes",
+      "innervation": "Accessory nerve (XI).",
+      "nerves": [
+        {
+          "nerve": "accessory"
+        }
+      ],
+      "attachmentNote": "Timon lepidus. Origin: Occipital region and cervical fascia. Insertion: Anterior margin of the scapula and suprascapula. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "innervation",
+        "sources",
+        "nerves",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Scapulohumeralis anterior",
+      "present": "yes",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "note": "= serratus ventralis sensu Kardong & Zalisko (1998), Kardong (2002).",
+      "region": "pectoral",
+      "record": "serratus-anterior",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "note": "Often divided into superficial and deep heads in Iguana and Sphenodon (Holmes 1977; Dilkes 2000).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "sternocoracoideus",
+      "_occ": 3,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "note": "= subscapularis + subcoracoideus sensu Holmes (1977) and Dilkes (2000).",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "subcoracoscapularis",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    },
+    {
+      "speciesBasis": "survey",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "region": "pectoral",
+      "record": "supracoracoideus",
+      "_occ": 6,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010"
+      ]
+    }
+  ]
+}

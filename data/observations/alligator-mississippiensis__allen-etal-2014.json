@@ -1,0 +1,161 @@
+{
+  "species": "alligator-mississippiensis",
+  "source": "allen-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Triceps brachii",
+      "present": "yes",
+      "note": "Attachments are deliberately not scored for Alligator mississippiensis. Allen et al. measure architecture without attachment sites, and Abdala & Diogo's crocodylian is Caiman latirostris. The rows this occurrence used to carry were Klinkhamer et al.'s Crocodylus porosus description and have moved. Worth acquiring a source for: the triceps longus medialis of Alligator is reported with TWO tendons of origin, one scapular and one CORACOID, and that second head is the character Klinkhamer et al.'s Crocodylus finding is measured against — see the Crocodylus porosus occurrence.",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "allen-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Gastrocnemius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femoral-condyles",
+            "landmark": "femoral-epicondyle-lateral"
+          },
+          {
+            "element": "tibia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "calcaneum"
+          }
+        ]
+      },
+      "attachmentNote": "Externus arises by a tendon shared with the caudofemoralis longus and from the posterolateral femoral epicondyle, which bears a scattered striated surface; internus from the proximoposterior tibia. Both insert on the calcaneum by a broad tendon.",
+      "region": "leg",
+      "record": "gastrocnemius",
+      "_occ": 2,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "allen-etal-2014",
+        "diogo-molnar-2014",
+        "pereyra-etal-2024"
+      ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Alligator and Crocodylus, from Meers's descriptions. From the thoracodorsal fascia, beginning near the spinous process of the first dorsal vertebra and running linearly back to about the sixth dorsal rib; a large flat tendon passes between triceps longus lateralis and scapulohumeralis brevis to insert on the craniodorsal humerus in common with teres major. **The insertion leaves a large scar about a quarter of the shaft length from the humeral head, as a tubercle or a pit, and it is present even in hatchlings** — an osteological correlate reliable enough to use on a fossil.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "_occ": 9,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "allen-etal-2014",
+        "meers-2003"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "note": "Attachments are deliberately not scored for Alligator mississippiensis. Allen et al. measure this muscle's architecture and give no attachment sites; Abdala & Diogo's crocodylian exemplar is Caiman latirostris, not Alligator. The attachment rows this occurrence used to carry were Klinkhamer et al.'s description of Crocodylus porosus and have moved to their own occurrence.",
+      "region": "pectoral",
+      "record": "pectoralis",
+      "_occ": 11,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "allen-etal-2014"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Caudofemoralis longus + brevis",
+      "present": "yes",
+      "note": "Large and well developed; inserts on a prominent fourth trochanter. Attachments are deliberately not scored for Alligator mississippiensis: Allen et al. measure this muscle's architecture but give no attachment sites (0.1 origin/insertion mentions per page), and Diogo & Molnar's crocodylian exemplar is Caiman latirostris. The rows this occurrence used to carry were Klinkhamer et al.'s description of Crocodylus porosus and have moved to their own occurrence.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Caudofemoralis longus"
+        },
+        {
+          "name": "Caudofemoralis brevis"
+        }
+      ],
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts"
+      ],
+      "_srcs": [
+        "allen-etal-2014",
+        "diogo-molnar-2014"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "species": "lanthanotus-borneensis",
+  "source": "haas-1973",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae externus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Medialis"
+        },
+        {
+          "name": "Profundus 3a"
+        },
+        {
+          "name": "Profundus 3b"
+        },
+        {
+          "name": "Profundus 3c"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal"
+          },
+          {
+            "element": "palatoquadrate-quadrate"
+          },
+          {
+            "element": "prootic"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "landmark": "coronoid-process-mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Lanthanotus borneensis, Haas (1973), from his own dissection; he is the only reference for this animal in his own list of forms studied. **Why this animal is here: it is where two authors partition the same muscle mass differently.** *Lanthanotus* has a very elongate temporal region, no trace of a temporal arch and a widely open braincase, so the layers can be followed in a lizard built like a snake. Its medialis is very complicated and highly subdivided, arising from the temporal ridge, the entire anterior edge of the quadrate, and the temporal surfaces of the parietal and supratemporal wings — so the dorsal articulation of the quadrate does not mark the muscle's posterior end as it does in typical snakes. Most of the profundus lies well posteriorly and dorsally, even posttemporally.\n\nThe dorsal fibres reaching the basal aponeurosis from a posterodorsolateral position **belong to the profundus**, which the temporal vein separates from the medialis. Those fibres are the equivalent of what Lakjer (1926) called the M. adductor mandibulae externus medialis dorsalis in snakes — and on that basis **Haas argues Lakjer's muscle is not a distinct muscle at all**, but part of the profundus.\n\n**That is a disagreement between two authors about how to divide one mass, and it is recorded here, not acted on.** Haas's claim is about *Lanthanotus*, which he dissected; Lakjer's was about snakes, which Haas did not dissect for this point. Nothing of Lakjer's is removed by this row — the dataset holds no Lakjer-derived snake rows, and if it did they would stand as their own species-and-source rows beside this one, with the disagreement in the `homology` notes. A row is an observation of one animal by one worker; it cannot delete another worker's observation of a different animal. The supratemporal is not an element in this skeleton, so that part of the origin is carried in prose rather than as a row — the same call made for the scapulosternal ligament in the *Iguana* costocoracoideus.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-externus",
+      "_occ": 7,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae internus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "M. pseudotemporalis"
+        },
+        {
+          "name": "M. pterygoideus, normal portion"
+        },
+        {
+          "name": "M. pterygoideus, posterodorsal portion"
+        }
+      ],
+      "innervation": "Mandibular ramus of the trigeminal nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parietal",
+            "side": "ventral"
+          },
+          {
+            "element": "epipterygoid",
+            "side": "lateral"
+          },
+          {
+            "element": "prootic"
+          },
+          {
+            "element": "pterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "mandible",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Lanthanotus borneensis, Haas (1973), from his own dissection; he is the only reference for this animal in his own list of forms studied. **Two snake-like characters in a lizard.** The pseudotemporalis is well developed but its separation into superficial and deep portions is only weakly indicated — remove the superficial part gradually and no sharp plane appears — where most lizards and amphisbaenians have two clear heads and **all snakes have only one**. Its fibres run slightly posteroventrally rather than anteroventrally, and most of them insert directly on the lower jaw with only a few anterior ones reaching the basal aponeurosis. The pterygoideus has a normal portion forming a rather small masticatory cushion and a short-fibered posterodorsal portion **resembling the M. pterygoideus accessorius of several snake groups**.",
+      "nerves": [
+        {
+          "nerve": "trigeminal-mandibular"
+        }
+      ],
+      "region": "cranial",
+      "record": "adductor-mandibulae-internus",
+      "_occ": 10,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "division",
+        "parts",
+        "innervation",
+        "sources",
+        "attachments",
+        "attachmentNote",
+        "nerves"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor mandibulae posterior",
+      "present": "uncertain",
+      "note": "Lanthanotus borneensis, Haas (1973), from his own dissection; he is the only reference for this animal in his own list of forms studied. **Scored uncertain because Haas cannot draw the boundary.** He identifies fibres that would constitute a separate M. adductor mandibulae posterior and labels them as such on his figure 112, then says they are not sharply separable from the more superficial ones — probably because the mandibular ramus of the trigeminal leaves the skull unusually far anteriorly and bends sharply forward. Since this record is defined by lying posterolateral to that nerve, a nerve that has moved takes the definition with it. Haas makes the same point generally in his introduction: the posterior group is not always found or definable, especially where the mandibular nerve runs straight and enters the jaw anteriorly.",
+      "region": "cranial",
+      "record": "adductor-mandibulae-posterior",
+      "_occ": 8,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "haas-1973"
+      ]
+    }
+  ]
+}

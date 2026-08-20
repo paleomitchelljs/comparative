@@ -1,0 +1,60 @@
+{
+  "species": "ascaphus-truei",
+  "source": "werneburg-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae (levator mandibulae externus, longus, articularis)",
+      "present": "yes",
+      "note": "Ascaphus truei, dissected by Johnston (2011) alongside Leiopelma. The innervation pattern — whether branches pass lateral or medial to the trigeminal ganglion — is the criterion the older literature used, and Johnston replaces it with insertion geometry: the components are identified by where they insert into the inverted U on the mandible.",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Levator mandibulae externus",
+          "muscle": "adductor-mandibulae-externus"
+        },
+        {
+          "name": "Levator mandibulae longus",
+          "muscle": "adductor-mandibulae-longus"
+        },
+        {
+          "name": "Levator mandibulae articularis"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "braincase-dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, two specimens, Johnston (2011). Deliberately sparser than the Leiopelma row beside it. Johnston describes the Ascaphus adductor group as similar in general configuration and then names only the differences: the adductor posterior (articularis) is separate while the rest stays a contiguous block, the origin of the internus does NOT extend as far rostrally on the braincase, and V3 emerges in a different position. Only the braincase origin and the mandibular insertion are therefore asserted here. **\"Similar to Leiopelma\" is a statement of resemblance, not a second set of observations**, and copying the Leiopelma rows across would manufacture six attachments from one sentence.",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "_occ": 5,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "note",
+        "sources",
+        "division",
+        "parts",
+        "attachments",
+        "attachmentNote"
+      ],
+      "_srcs": [
+        "werneburg-2011",
+        "johnston-2011"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "species": "caiman-yacare",
+  "source": "meers-2003",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "note": "Attachment rows for this taxon describe the foot and have been moved to the pes record.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves",
+      "_occ": 4,
+      "_keys": [
+        "species",
+        "speciesBasis",
+        "name",
+        "present",
+        "sources",
+        "note"
+      ],
+      "_srcs": [
+        "abdala-diogo-2010",
+        "pereyra-etal-2024",
+        "meers-2003"
+      ]
+    }
+  ]
+}
