@@ -2661,6 +2661,25 @@
       }
     },
     {
+      "id": "mastoid-process",
+      "label": "Mastoid process",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "otic-capsule",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The ventral projection of the mastoid part of the petrosal, behind the external acoustic meatus. Added 2026-08-20 because the human column has four muscles ending on it — sternocleidomastoid, splenius capitis, longissimus capitis and the posterior belly of digastric — and scoring them on `occiput` puts a petrosal attachment on the occipital bone. The process itself is therian and grows postnatally with the pull of those muscles; the mastoid region of the otic capsule it sits on is general."
+      }
+    },
+    {
       "id": "maxilla",
       "label": "Maxilla",
       "kind": "bone",

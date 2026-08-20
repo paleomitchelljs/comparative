@@ -142,6 +142,82 @@ To reproduce the diff, parse `<tr>` rows out of `muscles_alpha.html`, take cells
 lowercase letters and spaces, and compare against the `name` fields in
 `data/observations/homo-sapiens__gest-anatomy-tables.json`.
 
+**The 272 was an undercount, and the parse that produced it is worth fixing before
+anyone repeats it.** Five `<tr>` elements in `muscles_alpha.html` are unclosed, so
+their cells run on into the next muscle's row and a naive `len(cells) == 8` filter
+drops everything after the first. Chunk any row whose cell count is a multiple of
+eight, and the table yields **274 named entries**: 273 muscles and one
+cross-reference (`peroneus mm.`, pointing at `fibularis mm.`). Of the 273, **33 are
+the same muscle listed twice under both orderings of its name** — `anterior scalene`
+and `scalene, anterior`, `rectus, inferior` and `inferior rectus` — which is a
+courtesy of the alphabetical listing, not two muscles. Detect them by grouping on
+identical origin and insertion text; one pair that survives that test,
+`linguae, transversus` and `linguae, verticalis`, is two real muscles sharing a
+table entry.
+
+**240 distinct muscles.**
+
+## The re-mine, region by region
+
+Started 2026-08-20. Gest's seven regions are worked one at a time and each is
+committed on its own, because a homology call is the expensive part and a region is
+the largest batch whose calls are about the same thing.
+
+The rows already in the file are **summary rows**: one per record, carrying a
+grouped name, a `parts` list and the union of the group's attachments. They came
+out of the old storage and they are why the human column looks fuller than it is —
+`Masseter, temporalis, the pterygoids and the tensors` is one row standing for four
+muscles, none of which has its own origin and insertion recorded. The re-mine keeps
+those rows, which carry curated comparative argument, and adds **a row per muscle**
+carrying only `name`, `attachments` and its own paragraph. The join merges them into
+the one occurrence the schema allows per (record, species): attachments union, the
+paragraphs concatenate, the established label and division stay put. So the pass
+buys three things at once — the mapping layer gains a key per human muscle name, the
+occurrence gains the attachment rows the summary lacked, and the reading is on the
+page under the name Gest used.
+
+A merging row therefore sets **only** `name`, `present`, `attachments` and
+`attachmentNote`. Setting `action`, `innervation`, `division` or `parts` on it would
+stop the build, and correctly: those fields have to agree across the rows that make
+one occurrence.
+
+| Region | Entries | Distinct | Filed | Parked | State |
+|---|---:|---:|---:|---:|---|
+| Back | 16 | 16 | 16 | 0 | **done** |
+| Thorax | 7 | 7 | | | |
+| Abdomen | 13 | 11 | | | |
+| Pelvis and perineum | 21 | 15 | | | |
+| Upper limb | 54 | 52 | | | |
+| Lower limb | 58 | 52 | | | |
+| Head and neck | 105 | 87 | | | |
+
+### Back, done
+
+Sixteen entries, sixteen filed, nothing parked. Three were already rows —
+iliocostalis, longissimus and the erector spinae umbrella; twelve are new; and the
+suboccipital four were named in an existing `parts` list without ever having an
+attachment recorded.
+
+The splits follow the assignment the human `epaxial-musculature` row already argued
+for and did not implement. Splenius and the four suboccipital muscles go to the
+umbrella record, because the dataset has no spinotransversal tract to put them on.
+Semispinalis, multifidus, rotatores, interspinales, intertransversarii and spinalis
+go to `transversospinalis`, which the record defines as the *medial* epaxial tract
+rather than by fibre direction — spinalis and interspinales run spine-to-spine and
+are scored there anyway, and their rows say so.
+
+Two things came out of it worth keeping:
+
+- **`mastoid-process` is a new skeletal element** (`partOf: otic-capsule`, therian).
+  Four human muscles end on it and all four were scored on `occiput`, which puts a
+  petrosal attachment on the occipital bone. The longissimus row's own note said it
+  was doing this and named the missing element; it has been corrected. The other
+  three are in the head and neck region and are not yet touched.
+- **The intertransversarii may not belong on an epaxial record at all.** Gest gives
+  the whole series dorsal rami, so the row follows him, but most accounts supply the
+  cervical and lumbar members at least partly from ventral rami. If that is right the
+  row lumps an epaxial and a hypaxial muscle under one name. The row says so.
+
 **Do not paste the table's prose into `data/`.** It is a copyrighted teaching
 resource; paraphrase the attachments into element rows as everywhere else, and let
 the citation carry the rest.

@@ -896,11 +896,11 @@
             "landmark": "transverse-process"
           },
           {
-            "element": "occiput"
+            "element": "mastoid-process"
           }
         ]
       },
-      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Transverse process to transverse process, several levels up, and by the capitis division onto the mastoid process — scored as `occiput`, the nearest element to a landmark this skeleton does not carry. The intermediate tract of the erector spinae, and the one that reaches furthest forward.",
+      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Transverse process to transverse process, several levels up, and by the capitis division onto the mastoid process. The intermediate tract of the erector spinae, and the one that reaches furthest forward. The mastoid end was scored as `occiput` until 2026-08-20 because the skeleton carried no mastoid element; it does now, and the row was corrected rather than left approximating a petrosal attachment onto the occipital bone.",
       "nerves": [
         {
           "nerve": "dorsal-rami"
@@ -6249,6 +6249,283 @@
       "_srcs": [
         "gest-anatomy-tables"
       ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Splenius capitis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "nuchal-ligament"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mastoid-process"
+          },
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Splenius capitis** (Gest). Nuchal ligament and the spines of the last cervical and upper thoracic vertebrae, forward and upward to the mastoid process and the lateral end of the superior nuchal line. Its fibre direction is why it is worth separating: it runs spine-to-skull, obliquely across the transversospinal sheet beneath it, which runs transverse-process-to-spine. Two layers of one segmental series crossing each other, both on dorsal rami. Gest lists an undivided splenius as well as the capitis and cervicis parts, so the three entries are two insertions of one muscle.",
+      "region": "axial",
+      "record": "epaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Splenius cervicis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "nuchal-ligament"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ]
+      },
+      "attachmentNote": "**Splenius cervicis** (Gest). Same origin as the capitis part, ending instead on the posterior tubercles of the transverse processes of the first three cervical vertebrae.",
+      "region": "axial",
+      "record": "epaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Obliquus capitis inferior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "atlas",
+            "landmark": "atlas-transverse-process"
+          }
+        ]
+      },
+      "attachmentNote": "**Obliquus capitis inferior** (Gest). Spine of the axis to the transverse process of the atlas — the one suboccipital muscle that never reaches the skull. It rotates the atlas, and the head rides on it.",
+      "region": "axial",
+      "record": "epaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Obliquus capitis superior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas",
+            "landmark": "atlas-transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Obliquus capitis superior** (Gest). Transverse process of the atlas to the occipital bone above the inferior nuchal line.",
+      "region": "axial",
+      "record": "epaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rectus capitis posterior major",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Rectus capitis posterior major** (Gest). Spine of the axis to the inferior nuchal line. With the two obliqui it bounds the suboccipital triangle, and all four suboccipital muscles take the dorsal ramus of C1. That is the whole reason the group is epaxial: nothing about where they attach separates them from the prevertebral muscles a centimetre away, and the nerve does.",
+      "region": "axial",
+      "record": "epaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rectus capitis posterior minor",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Rectus capitis posterior minor** (Gest). Posterior tubercle of the atlas to the medial part of the inferior nuchal line, deep and medial to the major. The atlas has no spine, which is why the two recti capitis posteriores start on different kinds of thing.",
+      "region": "axial",
+      "record": "epaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interspinales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ]
+      },
+      "attachmentNote": "**Interspinales** (Gest). Spine to the spine above, one segment at a time, the whole length of the column. Gest calls them small and mechanically unimportant, and they are; as a homology statement they are the least modified thing in the human back, a segmental muscle still spanning one segment.",
+      "region": "axial",
+      "record": "transversospinalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intertransversarii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ]
+      },
+      "attachmentNote": "**Intertransversarii** (Gest). Transverse process to the transverse process above. Gest gives the whole series dorsal rami, which is why it is scored on an epaxial record; the cervical and lumbar members take ventral rami at least in part on most other accounts, and if that is right then some of this muscle is hypaxial and the row lumps two fields. Nothing in this source separates them.",
+      "region": "axial",
+      "record": "transversospinalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Multifidus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sacral-vertebrae"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ]
+      },
+      "attachmentNote": "**Multifidus** (Gest). Sacrum and the transverse processes of C3 to L5, up two to four segments onto the spines.",
+      "region": "axial",
+      "record": "transversospinalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rotatores",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ]
+      },
+      "attachmentNote": "**Rotatores** (Gest). Transverse process to the spine one or two segments above; the shortest fascicles of the series, and the deepest.",
+      "region": "axial",
+      "record": "transversospinalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Semispinalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          },
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Semispinalis** (Gest). Transverse processes of C7-T12 to the spines four to six segments above, and, in the capitis part, onto the occipital bone between the nuchal lines. Semispinalis capitis is the only member of this series that ends on the skull, and it is most of the muscle mass behind the neck.",
+      "region": "axial",
+      "record": "transversospinalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Spinalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "neural-spine"
+          },
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Spinalis** (Gest). Spines below to spines above, and to the base of the skull. Gest counts it as the medial of the three erector spinae columns and this record is the medial epaxial tract, so it is scored here rather than beside the iliocostalis and longissimus rows — which is how the human row on `epaxial-musculature` already lists it. It runs spine-to-spine, not transverse-process-to-spine, so the record's name misdescribes this member of it.",
+      "region": "axial",
+      "record": "transversospinalis"
     }
   ]
 }

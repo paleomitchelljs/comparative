@@ -216,6 +216,16 @@
               {
                 "element": "vertebral-column",
                 "landmark": "neural-spine"
+              },
+              {
+                "element": "nuchal-ligament"
+              },
+              {
+                "element": "atlas",
+                "landmark": "atlas-transverse-process"
+              },
+              {
+                "element": "atlas"
               }
             ],
             "insertion": [
@@ -232,10 +242,17 @@
               },
               {
                 "element": "occiput"
+              },
+              {
+                "element": "mastoid-process"
+              },
+              {
+                "element": "atlas",
+                "landmark": "atlas-transverse-process"
               }
             ]
           },
-          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **One field, segmentally supplied from the top of the neck to the sacrum, and every human name in it is a regional label rather than a muscle.** Gest lists erector spinae, iliocostalis, longissimus, spinalis, semispinalis, multifidus, rotatores, interspinales, intertransversarii, splenius and the four suboccipital muscles, and gives all of them dorsal primary rami. That single fact is what makes the field one homology group: an epaxial muscle is defined by its nerve, not by its attachments, and this is the column where the definition is easiest to check. The three named tracts have their own records and are scored there.",
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **One field, segmentally supplied from the top of the neck to the sacrum, and every human name in it is a regional label rather than a muscle.** Gest lists erector spinae, iliocostalis, longissimus, spinalis, semispinalis, multifidus, rotatores, interspinales, intertransversarii, splenius and the four suboccipital muscles, and gives all of them dorsal primary rami. That single fact is what makes the field one homology group: an epaxial muscle is defined by its nerve, not by its attachments, and this is the column where the definition is easiest to check. The three named tracts have their own records and are scored there.\n\n**Splenius capitis** (Gest). Nuchal ligament and the spines of the last cervical and upper thoracic vertebrae, forward and upward to the mastoid process and the lateral end of the superior nuchal line. Its fibre direction is why it is worth separating: it runs spine-to-skull, obliquely across the transversospinal sheet beneath it, which runs transverse-process-to-spine. Two layers of one segmental series crossing each other, both on dorsal rami. Gest lists an undivided splenius as well as the capitis and cervicis parts, so the three entries are two insertions of one muscle.\n\n**Splenius cervicis** (Gest). Same origin as the capitis part, ending instead on the posterior tubercles of the transverse processes of the first three cervical vertebrae.\n\n**Obliquus capitis inferior** (Gest). Spine of the axis to the transverse process of the atlas — the one suboccipital muscle that never reaches the skull. It rotates the atlas, and the head rides on it.\n\n**Obliquus capitis superior** (Gest). Transverse process of the atlas to the occipital bone above the inferior nuchal line.\n\n**Rectus capitis posterior major** (Gest). Spine of the axis to the inferior nuchal line. With the two obliqui it bounds the suboccipital triangle, and all four suboccipital muscles take the dorsal ramus of C1. That is the whole reason the group is epaxial: nothing about where they attach separates them from the prevertebral muscles a centimetre away, and the nerve does.\n\n**Rectus capitis posterior minor** (Gest). Posterior tubercle of the atlas to the medial part of the inferior nuchal line, deep and medial to the major. The atlas has no spine, which is why the two recti capitis posteriores start on different kinds of thing.",
           "nerves": [
             {
               "nerve": "dorsal-rami"
@@ -1083,11 +1100,11 @@
                 "landmark": "transverse-process"
               },
               {
-                "element": "occiput"
+                "element": "mastoid-process"
               }
             ]
           },
-          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Transverse process to transverse process, several levels up, and by the capitis division onto the mastoid process — scored as `occiput`, the nearest element to a landmark this skeleton does not carry. The intermediate tract of the erector spinae, and the one that reaches furthest forward.",
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Transverse process to transverse process, several levels up, and by the capitis division onto the mastoid process. The intermediate tract of the erector spinae, and the one that reaches furthest forward. The mastoid end was scored as `occiput` until 2026-08-20 because the skeleton carried no mastoid element; it does now, and the row was corrected rather than left approximating a petrosal attachment onto the occipital bone.",
           "nerves": [
             {
               "nerve": "dorsal-rami"
@@ -1454,6 +1471,10 @@
               },
               {
                 "element": "sacral-vertebrae"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "neural-spine"
               }
             ],
             "insertion": [
@@ -1463,10 +1484,14 @@
               },
               {
                 "element": "occiput"
+              },
+              {
+                "element": "vertebral-column",
+                "landmark": "transverse-process"
               }
             ]
           },
-          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **The deep layer, and the one whose subdivisions are defined by how far they reach.** Gest separates them exactly that way: rotatores span one or two vertebrae, multifidus two to four, semispinalis four to six, all running from a transverse process up and medially to a spinous process. Interspinales and intertransversarii are the shortest members, joining adjacent processes of the same kind. A single fibre orientation repeated at five different lengths, given five names.",
+          "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). **The deep layer, and the one whose subdivisions are defined by how far they reach.** Gest separates them exactly that way: rotatores span one or two vertebrae, multifidus two to four, semispinalis four to six, all running from a transverse process up and medially to a spinous process. Interspinales and intertransversarii are the shortest members, joining adjacent processes of the same kind. A single fibre orientation repeated at five different lengths, given five names.\n\n**Interspinales** (Gest). Spine to the spine above, one segment at a time, the whole length of the column. Gest calls them small and mechanically unimportant, and they are; as a homology statement they are the least modified thing in the human back, a segmental muscle still spanning one segment.\n\n**Intertransversarii** (Gest). Transverse process to the transverse process above. Gest gives the whole series dorsal rami, which is why it is scored on an epaxial record; the cervical and lumbar members take ventral rami at least in part on most other accounts, and if that is right then some of this muscle is hypaxial and the row lumps two fields. Nothing in this source separates them.\n\n**Multifidus** (Gest). Sacrum and the transverse processes of C3 to L5, up two to four segments onto the spines.\n\n**Rotatores** (Gest). Transverse process to the spine one or two segments above; the shortest fascicles of the series, and the deepest.\n\n**Semispinalis** (Gest). Transverse processes of C7-T12 to the spines four to six segments above, and, in the capitis part, onto the occipital bone between the nuchal lines. Semispinalis capitis is the only member of this series that ends on the skull, and it is most of the muscle mass behind the neck.\n\n**Spinalis** (Gest). Spines below to spines above, and to the base of the skull. Gest counts it as the medial of the three erector spinae columns and this record is the medial epaxial tract, so it is scored here rather than beside the iliocostalis and longissimus rows — which is how the human row on `epaxial-musculature` already lists it. It runs spine-to-spine, not transverse-process-to-spine, so the record's name misdescribes this member of it.",
           "nerves": [
             {
               "nerve": "dorsal-rami"

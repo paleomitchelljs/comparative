@@ -23,7 +23,7 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1618 present occurrences · 278 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1618 present occurrences · 279 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
@@ -116,7 +116,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 | pelvic | 8 | 339 |
 | arm | 5 | 282 |
 | hand | 9 | 237 |
-| axial | 15 | 144 |
+| axial | 15 | 151 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
 
@@ -128,11 +128,11 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 278, of which 258 (93%) carry at least one attachment |
-| Observed attachment rows | 4093 |
-| Rows naming a **landmark** | 1074 (26%) |
+| Elements | 279, of which 259 (93%) carry at least one attachment |
+| Observed attachment rows | 4100 |
+| Rows naming a **landmark** | 1078 (26%) |
 | Rows naming a **side** | 2281 (56%) |
-| Osteological correlates | 126 flagged, 120 carry a muscle |
+| Osteological correlates | 127 flagged, 121 carry a muscle |
 <!-- /counts:skeleton -->
 
 ### Elements per muscle, by region
@@ -144,7 +144,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 27 | 72 | 2.7 |
+| cranial | 27 | 73 | 2.7 |
 | hindlimb | 44 | 52 | 1.2 |
 | axial | 37 | 33 | 0.9 |
 | pectoral | 35 | 31 | 0.9 |
