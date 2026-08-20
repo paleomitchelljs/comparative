@@ -23,6 +23,48 @@ available from this paper when the fish end of the record is worth widening.
 Its species note says what it is not: a specialised deep-reef eel, not a proxy for
 teleosts. Its interest is that it keeps characters other eels lost.
 
+### *Anguilla rostrata* added 2026-08-20
+
+**The second of the six animals, and the one a student will actually meet.** The
+American eel now carries an occurrence with **18 named parts**, the most divided
+on `branchial-constrictors` in any taxon — against *Protanguilla*'s 14 — so the
+record finally holds the comparison the paper was written to make: the eel
+hypothesised to be sister to all other eels, beside a familiar anguillid.
+
+Ventral muscles from USNM 190998 with additions from USNM 314441 where muscles
+were damaged; dorsal muscles from USNM 340815, Smith & Johnson's (2004)
+descriptions not repeated except where this paper corrects them. Three
+corrections are on the row: **GFM1 and GFM2 are reinterpreted as Ad1 and Ad2**,
+**the left LE4 runs lateral and not medial to LI1**, and **RecD3 gets an
+attachment Smith & Johnson did not note** — ventral to the anterior edge of
+epibranchial 3, onto a bony process on the posterodorsal margin of
+ceratobranchial 2.
+
+The character worth teaching from is R4Cm: it inserts anteriorly on
+hypobranchial 1 in *Anguilla* and on hypobranchial 2 in *Conger*, and Nelson
+(1967a) never specified it in *Anguilla* at all — he said only that its muscles
+were "rather similar" to those of *Conger*. Two absences are recorded as
+absences, RecCom and SPh. PCl's cleithral origin is deliberately unscored: the
+authors state they could not determine it.
+
+**It forced a fourth element into the branchial basket.** The earlier pass added
+`epibranchials`, `pharyngobranchials` and `hypobranchials` for the dorsal series;
+the ventral series is almost entirely a ceratobranchial-to-hypobranchial system —
+every rectus and obliquus ventralis runs between those two — and there was no
+`ceratobranchials`. Added, `partOf branchial-arches`, scoped to the ray-finned
+fishes.
+
+**Four animals still to go**: *Conger cinereus*, *Synaphobranchus kaupii*,
+*Simenchelys parasitica* and *Serrivomer beanii*, each with its own Material and
+description sections. **Use plain `pdftotext`** — the two-column layout
+interleaves under `-layout`, which is why the species headings appear in the
+extracted text with unrelated column text beneath them.
+
+One thing a later pass should settle rather than inherit: the *Protanguilla* row
+attaches to `cornu-branchiale`, which is `partOf hyoid`. If that is standing in
+for a ceratobranchial it now has a proper element to move to, and if it is not,
+the reason belongs on the row.
+
 ## Fifteen units, and the absences are characters too
 
 The most divided this record is in any taxon — against ten in the axolotl, eight in
