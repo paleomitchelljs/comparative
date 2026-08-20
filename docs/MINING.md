@@ -5,6 +5,47 @@ covered is in [`STATUS.md`](STATUS.md). This file should change rarely.
 
 ---
 
+## Extract everything the source states
+
+**The rule this file is built around.** A mining pass reads a paper once. Anything
+that pass leaves behind has to be found again by reading the paper again, and the
+reading is the expensive part — so the goal is that **no source ever needs a second
+intensive pass except to check the first one.**
+
+The thing that used to break this was homology. An occurrence lives inside a muscle
+record, so filing an observation meant deciding which homology group it belonged
+to. When the source's name could not be matched to a record — an older
+nomenclature, a taxon-specific name, a division the record does not make — the
+honest options were to guess, or to skip it. Guessing puts an observation on the
+wrong record, which is the worst failure this dataset has. Skipping loses the
+reading.
+
+So there is a third place to put it. [`data/observations.json`](../data/observations.json)
+holds **what a source says about a muscle in an animal, before anyone has decided
+which record it belongs to**: the source's own name for the muscle, the species,
+the attachments, and a `blockedBy` saying what is missing. Those rows are held to
+the same attachment rules as an occurrence — elements must resolve, landmarks must
+sit inside their element, the taxon must actually have the bone — because a parked
+row with a bad element is not parked, it is wrong.
+
+They carry **no coverage weight**. They are not occurrences, they move no `%att`,
+and `STATUS.md` reports them separately as mining already done.
+
+**In practice:**
+
+1. Score what maps onto a record cleanly.
+2. Put everything else in `observations.json` with `blockedBy` and a `blockedNote`
+   naming what would settle it — usually a specific paper.
+3. When the synonymy is settled, set `muscle` on the row. The validator then warns
+   until it is promoted into that record, so a resolved observation cannot sit
+   there unnoticed.
+
+**Do not park what you can file**, and do not file what you would be guessing at.
+The validator warns if a record already carries an occurrence for the same source,
+species and name.
+
+---
+
 ## Check the paper before you open it
 
 The single most useful lesson of the mining passes so far. Papers fail to deliver

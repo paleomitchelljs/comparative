@@ -123,6 +123,17 @@ The validator enforces it both ways.
 validates. It is a fixed point — CI runs it and fails if the committed data
 changes.
 
+**Extract everything a source states, even where the record is unsettled.** A
+mining pass reads a paper once; anything it leaves behind has to be found by
+reading the paper again, and the reading is the expensive part. Filing an
+observation used to require deciding its homology group, so a name that could not
+be matched to a record was either guessed at — the worst failure this dataset has —
+or skipped. `data/observations.json` is the third option: the source's own name,
+the species, the attachments and a `blockedBy` saying what is missing. Same
+attachment rules as an occurrence, no coverage weight. Score what maps cleanly,
+park the rest, set `muscle` when the synonymy is settled and the validator will
+warn until it is promoted. See `docs/MINING.md`.
+
 **Mining a paper means editing `data/*.json`. Do not write a script to do it.**
 Seven single-source seed scripts used to run inside the build, each holding a
 paper's rows as a Python literal. Once the rows were committed the literal was a

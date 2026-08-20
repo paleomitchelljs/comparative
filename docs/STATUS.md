@@ -87,6 +87,17 @@ more than the total.
 **Taxon-specific attachments: 1132 of 1462 present occurrences (77%).**
 <!-- /counts:scored -->
 
+### Extracted, not yet filed
+
+A source's statement about a muscle in an animal can be extracted before anyone
+decides which homology group it belongs to. Those rows live in
+`data/observations.json` and are **not** counted above — they are not occurrences
+and move no coverage figure. See [`SCHEMA.md`](SCHEMA.md#observationsjson).
+
+<!-- counts:parked -->
+2 extracted observations from 1 source are waiting for a record (2 on nomenclature). They carry no coverage weight — they are mining already done.
+<!-- /counts:parked -->
+
 <!-- counts:unscored -->
 330 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->

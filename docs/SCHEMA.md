@@ -7,6 +7,7 @@ Three kinds of file live in `data/`:
 | `taxa.json` | Operational taxa and the topology that orders them. **Derived data** — every clade-level statement is computed from the species below |
 | `species.json` | The unit of observation: one record per animal anybody dissected |
 | `sources.json` | Bibliography, keyed by `key` |
+| `observations.json` | What a source states about a muscle in an animal, before a record is chosen. No coverage weight |
 | `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
 | `nerves.json` | Nerves as homology groups: `partOf` chain to the plexus, limb-bud division, per-taxon names |
 | `joints.json` | Joints as homology groups: which bone surfaces articulate, and what motions happen there |
@@ -521,6 +522,58 @@ transformation.
 `presence` is what lets the interface say a muscle's attachment *had to move*
 rather than silently dropping a row. It is also enforced: attaching a muscle to
 an element its taxon lacks fails validation.
+
+## `observations.json`
+
+What a source says about a muscle in an animal, **before anyone has decided which
+homology group it belongs to**.
+
+```jsonc
+{
+  "id": "fisher-goodman-1955:pronator-brevis",   // source:slug, unique
+  "source": "fisher-goodman-1955",
+  "species": "grus-americana",
+  "name": "M. pronator brevis",                  // the SOURCE's name, not ours
+  "blockedBy": "nomenclature",                   // see the file's own vocabulary
+  "blockedNote": "…what is missing, and what would settle it",
+  "attachments": { "origin": [...], "insertion": [...] },
+  "attachmentNote": "…",
+  "muscle": null                                 // set when the record is decided
+}
+```
+
+An occurrence has to sit inside a muscle record, so an observation whose record was
+unsettled had nowhere to live and was not extracted at all. That gated mining on
+homology and meant a paper had to be read again once the synonymy was worked out.
+The reading is the expensive part, so this file exists to make extraction
+exhaustive: **score what maps cleanly, park the rest, and never read the paper
+twice.** The rule is stated in [`MINING.md`](MINING.md).
+
+| Field | Notes |
+|---|---|
+| `id` | `source:slug`. Unique |
+| `source`, `species` | Must resolve, as on an occurrence |
+| `name` | **Required.** The source's own name — that name is the reason the row cannot be filed |
+| `blockedBy` | One of the keys in the file's own `blockedBy` map: `nomenclature`, `homology`, `no-record`, `division` |
+| `blockedNote` | **Required with `blockedBy`.** What is missing and what would settle it, normally a specific paper |
+| `attachments` | Same `element`/`side`/`landmark` rows as an occurrence, and **held to the same rules** |
+| `muscle` | The record, once decided. The validator then warns until the row is promoted |
+
+**These rows carry no coverage weight.** They are not occurrences: they move no
+`%att`, no region or taxon table, no `present` count. `STATUS.md` reports them on
+their own, because the figure that matters about them is how much re-reading has
+been avoided.
+
+**Held to the same attachment rules as an occurrence** — elements resolve,
+landmarks sit inside their element, the taxon actually has the bone. A parked row
+with a bad element is not parked, it is wrong, and parking it unchecked would only
+move the error later.
+
+**Promotion is one-way and watched.** Set `muscle` and the validator warns until
+the row is moved into that record's `occurrences`, so a resolved observation cannot
+sit here unnoticed. The validator also warns if a record already carries an
+occurrence for the same source, species and name — the two stores must not both
+hold the same reading.
 
 ## `nerves.json`
 

@@ -1,0 +1,46 @@
+{
+  "$comment": "What a source says about a muscle in an animal, before anyone has decided which homology group it belongs to. An occurrence has to sit inside a muscle record, so until now an observation whose record was unsettled had nowhere to live and mining was gated on homology — which meant a paper had to be read again once the homology was worked out. This file removes that gate: extract everything a source states, put here whatever cannot yet be assigned, and promote rows into records as the synonymies are settled. Nothing here is counted in coverage; these are observations waiting for a home, not rows. See docs/SCHEMA.md.",
+  "blockedBy": {
+    "nomenclature": "The source's name for the muscle cannot yet be matched to a record — usually an older or a taxon-specific nomenclature with no stated synonymy.",
+    "homology": "The muscle is identified but which record it belongs to is an open question in the literature.",
+    "no-record": "The muscle has no record in this dataset yet, and creating one needs a cross-taxon treatment that has not been read.",
+    "division": "The source splits or fuses a muscle differently from the record, and which part maps where is unsettled."
+  },
+  "observations": [
+    {
+      "id": "fisher-goodman-1955:pronator-brevis",
+      "source": "fisher-goodman-1955",
+      "species": "grus-americana",
+      "name": "M. pronator brevis",
+      "blockedBy": "nomenclature",
+      "blockedNote": "Fisher & Goodman describe a pronator brevis and a pronator longus, both from the internal humeral condyle onto the radius. The dataset's avian rows are `pronator-teres` (named 'Pronator superficialis' in *Gavia* and *Cygnus*) and `pronator-quadratus` ('Pronator profundus'). Brevis/longus does not map onto superficialis/profundus by name, and this paper gives no bracketed cross-reference for either, unlike the digit muscles. Needs a source that states the synonymy — Hudson et al. (1972) or Vanden Berge & Zweers's Myologia would both do it.",
+      "attachments": {
+        "origin": [
+          { "element": "humerus", "landmark": "medial-epicondyle", "side": "proximal" }
+        ],
+        "insertion": [
+          { "element": "radius", "side": "anterior" }
+        ]
+      },
+      "attachmentNote": "A wide flat tendon from the most proximal part of the internal humeral condyle, palmar and proximal to the proximal end of the palmar articular ligament. Mixed fleshy and tendinous fibres attach along a line 5 cm long on the antero-palmar corner of the radius, beginning about 5 cm from its proximal end; the anterior border of that insertion is marked by the insertion of M. supinator brevis. The origins of the two pronators are separate.",
+      "note": "Anconal and palmar are dorsal and ventral in this paper's usage."
+    },
+    {
+      "id": "fisher-goodman-1955:pronator-longus",
+      "source": "fisher-goodman-1955",
+      "species": "grus-americana",
+      "name": "M. pronator longus",
+      "blockedBy": "nomenclature",
+      "blockedNote": "See `fisher-goodman-1955:pronator-brevis`. Deeper than the brevis at the origin and posterior to it at the insertion, which is the only ordering information the paper gives and is not enough to choose between superficialis and profundus.",
+      "attachments": {
+        "origin": [
+          { "element": "humerus", "landmark": "medial-epicondyle" }
+        ],
+        "insertion": [
+          { "element": "radius", "side": "posterior" }
+        ]
+      },
+      "attachmentNote": "A wide strong tendon from the middle of the medial surface of the internal humeral condyle, deep to the origin of the superficial anterior part of M. flexor carpi ulnaris. The insertion is 7 cm wide, fleshy and fascial, on the postero-palmar surface of the radius posterior to the insertion of M. pronator brevis."
+    }
+  ]
+}

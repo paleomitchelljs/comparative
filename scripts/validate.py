@@ -541,6 +541,105 @@ def main():
             return tid in (p.get("present", []) + p.get("partial", []) + p.get("reduced", []))
         return True
 
+    def check_rows(att, label, taxon=None):
+        """An attachment row is {element, side?, landmark?}. The landmark must
+        sit inside the element, or the bone-first drill-down would file it in
+        the wrong place. Shared by muscle occurrences and by observations.json,
+        deliberately: a parked observation is held to the same standard as a
+        filed one, or parking it would just move the error later."""
+        for side_key in ("origin", "insertion"):
+            for row in att.get(side_key, []):
+                if not isinstance(row, dict):
+                    err(f"{label}: attachments.{side_key} entry is not an "
+                        f"element/side/landmark row: {row!r}")
+                    continue
+                el = row.get("element")
+                if el not in element_ids:
+                    err(f"{label}: attachments.{side_key} element '{el}' "
+                        f"is not in skeleton.json")
+                    continue
+                if row.get("side") and row["side"] not in side_terms:
+                    err(f"{label}: side '{row['side']}' not in {sorted(side_terms)}")
+                lm = row.get("landmark")
+                if lm:
+                    if lm not in element_ids:
+                        err(f"{label}: landmark '{lm}' is not in skeleton.json")
+                    elif el not in lineage(lm):
+                        err(f"{label}: landmark '{lm}' is not part of '{el}'")
+                if taxon:
+                    for ref in filter(None, (el, lm)):
+                        if not present_in(ref, taxon):
+                            err(f"{label}: attaches to '{ref}', which "
+                                f"skeleton.json records as absent in {taxon}")
+
+    # ---- observations: what a source says, before a record is chosen --------
+    #
+    # An occurrence must sit inside a muscle record, so an observation whose
+    # homology group is unsettled had nowhere to live and was simply not
+    # extracted — which gated mining on homology and meant a paper had to be
+    # read a second time once the synonymy was worked out. These rows are held
+    # outside the records so that extraction can be exhaustive, and are
+    # promoted into occurrences as the assignments are settled.
+    #
+    # They are held to the SAME attachment rules as an occurrence. A row whose
+    # element does not resolve is not a parked observation, it is a mistake, and
+    # parking it unchecked would just move the error later.
+    obs_doc = load(ROOT / "data/observations.json")
+    blocked_kinds = set(obs_doc.get("blockedBy") or {})
+    seen_obs, promotable = set(), []
+    # An observation must not restate a row a record already carries.
+    occ_keys, muscle_ids = set(), set()
+    for path in MUSCLE_FILES:
+        for mm in load(path)["muscles"]:
+            muscle_ids.add(mm.get("id"))
+            for oo in mm.get("occurrences") or []:
+                for k in oo.get("sources") or []:
+                    occ_keys.add((k, oo.get("species"), (oo.get("name") or "").lower()))
+
+    for ob in obs_doc.get("observations") or []:
+        oid = ob.get("id")
+        where = f"observations.json:{oid}"
+        if not oid:
+            err("observations.json: an observation has no id")
+            continue
+        if oid in seen_obs:
+            err(f"{where}: duplicate id")
+        seen_obs.add(oid)
+
+        src, sp = ob.get("source"), ob.get("species")
+        if src not in source_keys:
+            err(f"{where}: unknown source '{src}'")
+        if sp not in species_ids:
+            err(f"{where}: unknown species '{sp}'")
+        if not ob.get("name"):
+            err(f"{where}: needs the source's own `name` for the muscle — that "
+                f"name is the whole reason the row cannot be filed yet")
+
+        bb = ob.get("blockedBy")
+        if ob.get("muscle"):
+            # Assigned. It should be promoted into that record, not left here.
+            if ob["muscle"] not in muscle_ids:
+                err(f"{where}: muscle '{ob['muscle']}' is not a record")
+            else:
+                promotable.append(f"{oid} -> {ob['muscle']}")
+        elif bb not in blocked_kinds:
+            err(f"{where}: blockedBy={bb!r} is not one of "
+                f"{sorted(blocked_kinds)} — say why it cannot be filed")
+        if bb and not ob.get("blockedNote"):
+            err(f"{where}: blockedBy without a `blockedNote`. What is missing, "
+                f"and what would settle it, is the point of parking the row")
+
+        if (src, sp, (ob.get("name") or "").lower()) in occ_keys:
+            warn(f"{where}: a record already carries an occurrence for this "
+                 f"source, species and name — promote or delete this row")
+
+        clade = species_clade.get(sp)
+        check_rows(ob.get("attachments") or {}, where, clade)
+
+    if promotable:
+        warn(f"observations.json: {len(promotable)} row(s) now name a record and "
+             f"should be promoted into it: {', '.join(promotable[:5])}")
+
     # Joint internal consistency. A joint's two sides use exactly the
     # element/side/landmark row form that attachments use, so the same
     # containment rule applies: a landmark must sit inside its element.
@@ -666,35 +765,6 @@ def main():
         for key in m.get("sources", []):
             if key not in source_keys:
                 err(f"{where}: unknown source key '{key}'")
-
-        def check_rows(att, label, taxon=None):
-            """An attachment row is {element, side?, landmark?}. The landmark must
-            sit inside the element, or the bone-first drill-down would file it in
-            the wrong place."""
-            for side_key in ("origin", "insertion"):
-                for row in att.get(side_key, []):
-                    if not isinstance(row, dict):
-                        err(f"{label}: attachments.{side_key} entry is not an "
-                            f"element/side/landmark row: {row!r}")
-                        continue
-                    el = row.get("element")
-                    if el not in element_ids:
-                        err(f"{label}: attachments.{side_key} element '{el}' "
-                            f"is not in skeleton.json")
-                        continue
-                    if row.get("side") and row["side"] not in side_terms:
-                        err(f"{label}: side '{row['side']}' not in {sorted(side_terms)}")
-                    lm = row.get("landmark")
-                    if lm:
-                        if lm not in element_ids:
-                            err(f"{label}: landmark '{lm}' is not in skeleton.json")
-                        elif el not in lineage(lm):
-                            err(f"{label}: landmark '{lm}' is not part of '{el}'")
-                    if taxon:
-                        for ref in filter(None, (el, lm)):
-                            if not present_in(ref, taxon):
-                                err(f"{label}: attaches to '{ref}', which "
-                                    f"skeleton.json records as absent in {taxon}")
 
         check_rows(m.get("attachments", {}), where)
 

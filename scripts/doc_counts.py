@@ -62,6 +62,7 @@ def gather():
             m["_regionLabel"] = doc["region"]
             muscles.append(m)
 
+    parked = load("data/observations.json").get("observations") or []
     taxa = load("data/taxa.json")["taxa"]
     elements = load("data/skeleton.json")["elements"]
     sources = load("data/sources.json")["sources"]
@@ -87,7 +88,7 @@ def gather():
     return dict(
         muscles=muscles, taxa=taxa, elements=elements, sources=sources,
         order=order, clade=clade, present=present, scored=scored, obs_rows=obs_rows,
-        carriers=carriers,
+        carriers=carriers, parked=parked,
         occ_rows=sum(len(m.get("occurrences", [])) for m in muscles),
     )
 
@@ -113,6 +114,23 @@ def block_headline(d):
     return (f"{len(d['muscles'])} muscle records · {len(d['present'])} present occurrences · "
             f"{len(d['elements'])} skeletal elements · {len(d['sources'])} sources · "
             f"{len(d['taxa'])} operational taxa")
+
+
+def block_parked(d):
+    """Observations extracted from a source but not yet filed on a record.
+
+    These are deliberately NOT counted anywhere else: they are not occurrences,
+    so they move no coverage figure. The number that matters is how many are
+    waiting and what is blocking them, because that is re-reading avoided."""
+    n = len(d["parked"])
+    if not n:
+        return "No observations are waiting for a record."
+    by = collections.Counter(r.get("blockedBy") or "assigned" for r in d["parked"])
+    srcs = len({r.get("source") for r in d["parked"]})
+    bits = ", ".join(f"{v} on {k}" for k, v in sorted(by.items(), key=lambda x: -x[1]))
+    return (f"{n} extracted observation{'s' if n != 1 else ''} from {srcs} "
+            f"source{'s' if srcs != 1 else ''} are waiting for a record ({bits}). "
+            f"They carry no coverage weight — they are mining already done.")
 
 
 def block_unscored(d):
@@ -289,6 +307,7 @@ BLOCKS = {
     "parity": block_parity,
     "unscored": block_unscored,
     "authority": block_authority,
+    "parked": block_parked,
 }
 
 TARGETS = ["README.md", "docs/STATUS.md"]
