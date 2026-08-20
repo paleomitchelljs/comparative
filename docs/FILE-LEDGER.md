@@ -32,12 +32,13 @@ Update it in the same commit that changes a file's standing. State is in
 | `observations.json` | **defunct** | A special-cased version of the extraction layer, built before the per-(species × study) model was chosen. Its 66 rows migrate into `data/observations/` at Task 2. **Do not add to it** — park new rows here only while `data/observations/` does not exist |
 | `raw/` | ignored | Verbatim extractions. Git-ignored for copyright. Never commit or quote into `data/` |
 
+| `observations/` | **derived, for now** | 220 files, one per (species × study), written by `build_observations.py --split`. Every one carries `"status": "scaffolded"` — the previous pass's extraction in a new shape, **not checked against any paper**. Becomes `authoritative` at Task 5, file by file, as each is re-mined |
+| `mapping/` | **derived, for now** | 78 files, one per source: `name\|region` → muscle record. Per source deliberately, so two authors can disagree. Becomes `authoritative` at Task 5 |
+
 ### Not yet created
 
 | Path | Class | Task |
 |---|---|---|
-| `observations/<species>__<source>.json` | authoritative *(will be)* | 2 |
-| `mapping/<source>.json` | authoritative *(will be)* | 2 |
 | `phylogeny.json` | authoritative *(will be)* | 7 |
 
 ## `scripts/`
@@ -64,6 +65,7 @@ Update it in the same commit that changes a file's standing. State is in
 | `jointgraph.py` | authoritative | Joints a muscle spans, from its attachments. Shared with `validate.py` |
 | `export_matrix.py` | authoritative | Tidy CSVs to `export/`, which is git-ignored and derived |
 | `promote_landmarks.py` | authoritative | Promotes landmarks named in prose into structured rows. Re-run after any mining pass |
+| `build_observations.py` | authoritative | The migration's engine. `--split` writes `data/observations/` and `data/mapping/`; `--join` rebuilds `muscles-*.json`; `--check` proves the round trip is lossless. **The round trip is byte-identical**, so the new shape holds everything the old one holds |
 
 ### One-shots that have already run
 

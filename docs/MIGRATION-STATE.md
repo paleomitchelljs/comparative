@@ -10,22 +10,45 @@ current.
 
 ## Next action
 
-> **Task 2 — build the scaffold generator and prove the round trip is lossless.**
-> Task 1 is done: the extraction key is (species, source, name, region) and
-> `validate.py` errors if it ever resolves to two records. The re-mine (Task 4)
-> can start on any source at any time and is the long pole.
+> **Task 3 — add the `after:` field for secondary attribution.** It is what
+> unblocks the largest drop the audit found (Russell & Bauer's 22 genera, most of
+> Burch's per-taxon prose). Tasks 1 and 2 are done and the round trip is proven
+> byte-identical, so the model is no longer a hypothesis. The re-mine (Task 4) can
+> start on any source at any time and is the long pole.
 
 ## Task board
 
 | # | Task | State |
 |---|---|---|
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
-| 2 | Scaffold generator + lossless round-trip proof | not started |
+| 2 | Scaffold generator + lossless round-trip proof | **done** |
 | 3 | `after:` field for secondary attribution | not started |
 | 4 | Re-mine every cited source | **in progress — 2 of 79** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | not started |
 | 6 | Retire `attribute_species.py` and friends | not started |
 | 7 | `phylogeny.json` | not started |
+
+## The model is proven
+
+`scripts/build_observations.py --check` splits the 164 records into **220
+observation files and 78 mapping files (2011 rows)**, rebuilds `muscles-*.json`
+from them, and diffs. The round trip is **byte-identical** — `git diff` is empty
+after a full split and join, and `build.sh` is still a fixed point.
+
+That settles the only question the design could not answer on paper: the new shape
+holds everything the old one holds. It settles nothing about completeness, which
+is Task 4.
+
+Three things had to be carried through the split for the round trip to close, and
+they are worth knowing before anyone edits the generator: the occurrence's
+**position** in its record (an occurrence with two sources becomes two rows and has
+to merge back in the right place), its original **key order**, and its original
+**source order** (the join reads files alphabetically, so a two-source occurrence
+otherwise comes back with its citations swapped).
+
+`data/observations/` and `data/mapping/` are git-ignored until Task 5. While
+`muscles-*.json` is the source of truth, committing them would be committing a
+second copy.
 
 ## Re-mine progress
 
