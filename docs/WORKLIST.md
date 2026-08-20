@@ -29,9 +29,10 @@ different bad reason:
   parked in `observations.json`. Aves 118/77 → 155/114. It had been called
   unmineable because the search pattern used to look for its origin paragraphs
   matched only about half the ways the OCR spells the heading.
-- **Widrig, Starry & James (2026)** on *Chauna torquata* — open access, dense with
-  origins and insertions, and explicit about the osteological correlates of each.
-  Never cited, no reading note. Catalogued and forgotten.
+- **Widrig, Starry & James (2026)** on *Chauna torquata* — **mined in full.** All 38
+  muscles it describes are extracted: 20 filed and 16 parked. It had been catalogued,
+  never cited, given no reading note, and filed as a musculoskeletal model to be
+  scored from with caution — it is a diceCT digital dissection.
 - **Ziermann et al. (2014)** Tables 1–4 — the adult mandibular, hyoid, branchial
   and hypobranchial muscles of *Myxine glutinosa* and *Petromyzon marinus*, both
   dissected. **Tables 1 and 2 are now read** and put seven occurrences on four

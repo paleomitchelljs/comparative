@@ -40,36 +40,71 @@ same gap nearly half a century ago. *Chauna* soars rather than using the rapid
 continuous wingbeat of most anseriforms, so its wing myology is a functional
 outlier within the clade.
 
-## Scored (3)
+## Mined in full
 
-| Record | Rows |
-|---|---|
-| `supracoracoideus` | Origin fleshy from the proximal half of the sternal keel and over much of the ventral coracoid, deep to the pectoralis; insertion proximal humerus |
-| `triceps-brachii` | The **scapulotriceps** head: origin on the proximal scapula immediately caudal to the glenoid, insertion on the proximal caudal humeral shaft |
-| `pronator-teres` | Origin on the proximal ventral epicondyle of the humerus, which is the avian entepicondyle and the flexor-mass origin |
+**Every muscle the paper describes is extracted** — 38 blocks — so it should not
+need reading again except to check this pass. 20 filed as *Chauna torquata*
+occurrences, 16 parked in `observations.json`, and two folded into rows that
+already existed.
 
-**This paper names the correlate for each attachment**, which almost nothing else
-in the corpus does, and it is the reason to keep reading it. The scapulotriceps
-origin is marked by a circular rugose tubercle; its insertion leaves two scars, a
-long lateral one and a smaller circular one proximal to it; the pronator
-superficialis tendon of origin sits in the proximalmost of several pits on the
-ventral epicondyle. That bears directly on the osteological-correlates gap in
-`WORKLIST.md` — a correlate with no muscle on it is usually an unfinished pass, and
-this source closes several from the other end.
+### Filed (20)
+
+Girdle and arm: `pectoralis`, `supracoracoideus`, `latissimus-dorsi`,
+`scapulohumeralis-anterior`, `scapulohumeralis-posterior`, `subcoracoscapularis`
+(subscapularis + subcoracoideus, which share a tendon and one rugose scar),
+`deltoideus-scapularis`, `coracobrachialis` (cranialis + caudalis),
+`biceps-brachii`, `brachialis`, `triceps-brachii` (scapulotriceps +
+humerotriceps).
+
+Antebrachium and hand: `pronator-teres`, `epitrochleoanconeus`,
+`flexor-carpi-ulnaris`, `flexor-digitorum-longus`, `supinator`,
+`extensor-antebrachii-carpi-radialis`, `extensor-antebrachii-carpi-ulnaris`,
+`extensor-digitorum`, `abductor-pollicis-brevis`.
+
+Its nomenclature is modern *Nomina Anatomica Avium*, so most rows bridged
+straight onto the *Gavia*, *Cygnus* and *Gallus* names already on those records.
+**The avian dorsal epicondyle is the ectepicondyle and the ventral epicondyle the
+entepicondyle**, and the rows are translated accordingly.
+
+### The extraction needed page images, and nearly went wrong
+
+The PDF is two-column and `pdftotext` reading order **displaces some blocks from
+their headings**. Three came out empty and, worse, the supinator and extensor
+carpi radialis descriptions had swapped places — a radial insertion that belongs
+to the supinator sat under the extensor carpi radialis heading, which would have
+put an observation on the wrong record. Six blocks were re-read from page images
+(pp. 7 and 12) and are marked as verified that way.
+
+This is the case `MINING.md` warns about under "column order". The check that
+caught it was reading the block against the muscle it claimed to describe.
+
+### Parked (16), and one that matters
+
+| Blocked on | n |
+|---|---:|
+| `no-record` | 12 — the propatagial complex, the ulnometacarpales, the ectepicondyloulnaris, the alular set |
+| `nomenclature` | 3 — the digit-named hand muscles and the deltoideus pars minor |
+| `homology` | 1 — see below |
+
+**`M. propatagialis` is the one worth acting on.** This dataset has no record for
+the propatagium, and Fisher & Goodman's tensor patagii longus and brevis are
+parked on the same gap — so **two sources now describe the same structure with
+nowhere to put it**, which is enough to justify creating the record. What it needs
+first is a decision about whether the propatagialis is one homology group or
+several, and whether `humeroradialis`, which carries "M. tensor propatagialis" as
+a *Chauna* name, is part of it or a different muscle.
+
+**`M. pronator profundus` is parked on a contradiction already in the data.**
+`pronator-quadratus` carries "Pronator profundus" for *Gavia* and
+`pronator-accessorius` carries "M. pronator profundus" for *Cygnus*. Filing the
+*Chauna* row means choosing between them, and that is a homology question this
+paper does not address. Worth settling before a third bird is added to it.
 
 ## Nomenclature
 
 Modern *Nomina Anatomica Avium* throughout, which maps straight onto the dataset's
 existing *Gavia* and *Cygnus* rows — `pronator-teres` already carried "Pronator
 superficialis" for both. No 1955-style translation needed, unlike Fisher & Goodman.
-
-## Not yet read
-
-Most of it. The propatagial complex, the deltoid group, the coracobrachiales, the
-extensor and flexor carpi groups, the ulnometacarpales and the intrinsic hand
-muscles are all described. The extraction is two-column and interleaves, so
-passages have to be read rather than grepped — the pronator superficialis
-insertion was left unscored for exactly that reason and is on the page.
 
 ## Relevance to comparative anatomy teaching
 

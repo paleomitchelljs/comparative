@@ -744,6 +744,35 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). Both parts arise from the ectepicondylar prominence, the palmaris proximal and palmar to the anconalis. Their calcified tendons fuse at the distal end of the radius into one uncalcified tendon, which crosses the anterior surface of the wrist and attaches to the proximal side of the tip of the **extensor process of metacarpal II** — the processus extensorius of the carpometacarpus, scored as the bone with `side: proximal` because the process is not yet a landmark record. Just before attaching it fuses with the inserting tendon of M. extensor longus digiti II."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Extensor carpi radialis",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpometacarpus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. extensor carpi radialis.** This large muscle contains two distinct bellies. The more proximal belly originates from the proximal dorsal epicondyle but has an additional origin from the dorsal humerus at approximately two thirds of the way down the humeral shaft. A pit on the proximal dorsal epicondyle is associated with the main origin, but no correlate exists for the origin on the humeral shaft. The more distal belly has a long tendon of origin from the proximal dorsal epicondyle immediately adjacent to the tendon for the first belly, which widens into a fleshy belly at approximately one fourth of the way down the radial shaft. At approximately halfway down the length of the radius, the bellies fuse, and the muscle thins into a very long tendon. The tendon passes over the distal end of the radius to insert on the proximodorsal base of the proximal bony spur of the carpometacarpus, equivalent to the position of the extensor process in taxa that lack such spurs. A long transverse scar is associated with this muscle's insertion and that of Mm. propatagialis and extensor longus alulae on either side."
         }
       ],
       "homology": {
@@ -789,7 +818,8 @@
         "molnar-etal-2018",
         "osawa-1898",
         "russell-bauer-2008",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -1521,6 +1551,30 @@
             ]
           },
           "attachmentNote": "Spilocuscus maculatus. A single ulnar extensor inserted into the metacarpal of the minimus. Cunningham's five-compartment extensor retinaculum in the thylacine and seven-compartment one in the cuscus are the tally of these tendons at the wrist."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Extensor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpometacarpus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. extensor carpi ulnaris.** The tendon of origin is not visible in our CT dataset, but we confirmed that its origin is from the apex of the dorsal epicondyle, just proximal to that of M. ectepicondyloulnaris. There is no associated osteological correlate. The fleshy belly of the muscle lies superficial to the other muscles of the dorsal forearm. It narrows to a tendon at approximately two thirds down the length of the forearm, and is closely associated with the tendons of Mm. extensor longus digiti majoris and extensor digitorum communis, but can no longer be observed distal to the wrist in our CT data. We confirmed that it has a typical insertion on a raised scar on the dorsal carpometacarpus just proximal to the interosseous space."
         }
       ],
       "homology": {
@@ -1546,16 +1600,17 @@
       },
       "sources": [
         "abdala-diogo-2010",
+        "burch-2014",
         "ercoli-etal-2014",
+        "gest-anatomy-tables",
         "klinkhamer-etal-2017",
+        "matsuoka-hasegawa-2007",
         "mckitrick-1991",
         "molnar-etal-2018",
-        "walthall-ashley-ross-2006",
-        "burch-2014",
-        "gest-anatomy-tables",
-        "matsuoka-hasegawa-2007",
+        "osawa-1898",
         "russell-bauer-2008",
-        "osawa-1898"
+        "walthall-ashley-ross-2006",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -2284,6 +2339,31 @@
             ]
           },
           "attachmentNote": "Phascogale calura. The common extensor gives **four tendons**, communicating freely on the dorsum of the hand and going one to each of the four ulnar digits — the simpler arrangement, against the thylacine's three tendons splitting into six slips. Cunningham notes Young found a tendon to each of the five digits in the koala and calls that exceptional, the insertion being confined to the four inner digits in most marsupials. The extensor digitorum secundus is as in the thylacine, to the annular and little digits; Macalister has it reaching the medius as well in the Tasmanian devil and the two kangaroos."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Extensor digitorum communis",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpometacarpus",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. extensor digitorum communis.** The origin is by a relatively thick tendon to the proximal cranial side of the dorsal epicondyle that is closely associated with but separate from the M. supinator tendon of origin. There is no corresponding osteological correlate for the insertion. The fleshy belly of the muscle extends approximately one third the length of the radius, and lies deep to M. extensor carpi ulnaris for much of its length. The tendon of insertion crosses the wrist in close association with those of Mm. extensor carpi ulnaris and extensor longus digiti majoris, but cannot be observed in the CT dataset distal to this point, likely due to thick overlying connective tissue that prevented the uptake of stain. We confirmed that the tendon of insertion splits, with one branch inserting on the caudal edge of the alular phalanx and the other passing through the tendinal groove on the dorsal carpometacarpus to insert on the proximalmost cranial edge of phalanx I of the major digit, where it leaves a tiny impression."
         }
       ],
       "homology": {
@@ -2319,15 +2399,16 @@
       },
       "sources": [
         "abdala-diogo-2010",
-        "ercoli-etal-2014",
-        "mckitrick-1991",
-        "sanchez-etal-2019",
-        "walthall-ashley-ross-2006",
         "burch-2014",
+        "ercoli-etal-2014",
         "gest-anatomy-tables",
         "matsuoka-hasegawa-2007",
+        "mckitrick-1991",
+        "osawa-1898",
         "russell-bauer-2008",
-        "osawa-1898"
+        "sanchez-etal-2019",
+        "walthall-ashley-ross-2006",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -4372,6 +4453,31 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). Tendinous from the ectepicondylar prominence; fleshy fibres to the most proximal anconal (dorsal) surface of the radius and to the joint ligaments, fanning distally onto the anterior surface as well. Greatly attenuated distally, where it holds only the anterior surface. Two rows because the insertion covers two faces of one bone."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Supinator",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "lateral-epicondyle",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. supinator.** This relatively small muscle has a tendinous origin on the proximal cranial face of the dorsal epicondyle of the humerus, just proximal to that of M. extensor digitorum communis. The insertion is fleshy on the proximal radial shaft, extending slightly less than one fifth the length of the bone. No osteological correlates are associated with its origin, but its insertion is on a very clear rugose area on the surface of the radius bounded by intermuscular lines."
         }
       ],
       "homology": {
@@ -4403,7 +4509,8 @@
         "gest-anatomy-tables",
         "godoy-etal-2016",
         "mckitrick-1991",
-        "molnar-etal-2017"
+        "molnar-etal-2017",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -5262,6 +5369,30 @@
               "nerve": "ulnar"
             }
           ]
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Entepicondyloulnaris",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. entepicondyloulnaris.** M. entepicondyloulnaris and M. pronator profundus are closely associated, and in many places are difficult to distinguish from one another in our CT dataset. The origin is by a common tendon with M. pronator profundus. The entirety of the fleshy belly of M. entepicondyloulnaris lies deep to that of M. pronator superficialis and exists as an extremely thin layer, almost completely fused to M. pronator profundus. The insertion is fleshy on the proximal ventral ulnar shaft, caudal to that of M. brachialis. No osteological correlates were found in the area of insertion. This muscle is notable for being found only in palaeognaths and galloanserans (Hudson and Lanzillotti 1964; Hudson et al. 1972; Vanden Berge and Zweers 1993; Livezey and Zusi 2006; Suzuki et al. 2014; Widrig et al. 2023), and as such is sometimes referred to as the “gallinaceous muscle” in older literature (George and Berger 1966)."
         }
       ],
       "homology": {
@@ -5282,7 +5413,8 @@
         "abdala-diogo-2010",
         "burch-2014",
         "gest-anatomy-tables",
-        "russell-bauer-2008"
+        "russell-bauer-2008",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -6025,6 +6157,29 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955). The small deep tendon and the superficial tendon of the anterior part fuse at the proximal end of the os cuneiform, and the combined tendon inserts broadly on its postero-proximal edge. The cuneiform is the avian ulnare."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Flexor carpi ulnaris",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulnare"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. flexor carpi ulnaris.** The proximal origin of this muscle abuts the distalmost area of insertion of M. entepicondyloulnaris on the proximal ventral ulnar shaft. The origin of M. flexor digitorum profundus is fleshy, and stretches across approximately the middle two-fourths of the ulna, leaving intermuscular lines on the cranioventral ulnar shaft. At three fourths the length of the ulna it becomes tendinous. The tendon of insertion passes superficially to the belly of M. ulnometacarpalis ventralis and across the wrist cranial to the ulnare. It turns about the pisiform process This is one of the largest antebrachial muscles. It takes a relatively wide origin wrapping around the distal face of the ventral epicondyle (the flexor process), which has a rugose surface. The belly of the muscle runs parallel to the caudal surface of the ulna and is fleshy for most of its length. We did not observe any connections between this muscle and the bases of the secondary remiges in the CT dataset, unlike in the tinamou digitally dissected by Widrig et al. (2023) in which they were clearly visible in the CT data. We observed their presence upon dissecting Fig. 9 Digitally segmented osteology and myology of the coracoid and cranial humerus of Chauna torquata. A: right humerus and coracoid. B: same as A, with Mm. biceps brachii and deltoideus minor added. C: same as B with M. coracobrachialis cranialis added. D: same as C with M. pectoralis thoracica added. Scale bar = 40 mm. K. Widrig et al. 12 the antebrachium and found that they were encased in thick fibrous tissue, which likely prevented the uptake of stain. M. flexor carpi ulnaris inserts via a thick tendon on the muscular process of the proximal ulnare. and that of Mm. propatagialis and extensor longus alulae on either side."
         }
       ],
       "homology": {
@@ -6057,7 +6212,8 @@
         "matsuoka-hasegawa-2007",
         "osawa-1898",
         "russell-bauer-2008",
-        "walthall-ashley-ross-2006"
+        "walthall-ashley-ross-2006",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -7172,7 +7328,7 @@
               }
             ]
           },
-          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026). Tendinous origin on the proximal ventral epicondyle of the humerus — the avian ventral epicondyle is the medial (entepicondyle), the flexor-mass origin. **The correlate is named**: the proximalmost of several pits on the ventral epicondyle carries this muscle's tendon of origin. The fleshy belly covers much of the pronator profundus. No insertion row — the passage describing it is broken across the paper's two-column layout and was not read."
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026). Tendinous origin on the proximal ventral epicondyle of the humerus — the avian ventral epicondyle is the medial (entepicondyle), the flexor-mass origin. **The correlate is named**: the proximalmost of several pits on the ventral epicondyle carries this muscle's tendon of origin. The fleshy belly covers much of the pronator profundus. No insertion row — the passage describing it is broken across the paper's two-column layout and was not read. **M. pronator superficialis.** The tendinous origin of this muscle lies on the proximal ventral epicondyle of the humerus. The proximalmost of several pits found on the ventral epicondyle is associated with this muscle’s tendon of origin. The fleshy belly of this muscle covers much of the surface of M. pronator profundus, and contacts the surface of the ventral ra- mediately expands into a large, fleshy belly as it extends down the length of the dorsocaudal humeral shaft. It is anchored to the proximal portion of the caudal humeral shaft via a stout tendon that also receives fibers from M. latissimus dorsi. This anchoring tendon leaves a prominent circular scar just proximal to the linear scar associated with M. latissimus dorsi. The belly of M. scapulotriceps is in contact with the dorsal portion of M. humerotriceps over much of its length. Distally, it narrows to a tendon and cannot be observed in our CT data distal to the dorsal condyle of the humerus due to the presence of a thick sheath of connective tissue. It inserts in common with M. humerotriceps on the olecranon of the ulna, leaving a faint scar. dial shaft in a small, teardrop-shaped area demarcated entirely by intermuscular lines, as a small tendon."
         }
       ],
       "homology": {
@@ -8910,6 +9066,30 @@
               "nerve": "ulnar"
             }
           ]
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Flexor digitorum profundus",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ulna",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpometacarpus",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. flexor digitorum profundus.** The origin of M. flexor digitorum profundus is fleshy, and stretches across approximately the middle two-fourths of the ulna, leaving intermuscular lines on the cranioventral ulnar shaft. At three fourths the length of the ulna it becomes tendinous. The tendon of insertion passes superficially to the belly of M. ulnometacarpalis ventralis and across the wrist cranial to the ulnare. It turns about the pisiform process, extends down the length of the cranioventral major metacarpal along with the tendon of M. flexor digitorum superficialis, crosses over the dorsocranial end of phalanx 1 of the major digit, and inserts on the proximal dorsal portion of the second phalanx. No osteological correlates are associated with the insertion. This contradicts Livezey and Zusi (2006), who coded it as inserting on the proximal phalanx of the major digit in Chauna and Anseranas."
         }
       ],
       "homology": {
@@ -8955,14 +9135,15 @@
       },
       "sources": [
         "abdala-diogo-2010",
+        "burch-2014",
         "ercoli-etal-2014",
+        "gest-anatomy-tables",
         "klinkhamer-etal-2017",
+        "osawa-1898",
+        "russell-bauer-2008",
         "sanchez-etal-2019",
         "walthall-ashley-ross-2006",
-        "burch-2014",
-        "gest-anatomy-tables",
-        "russell-bauer-2008",
-        "osawa-1898"
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
@@ -12919,6 +13100,30 @@
             ]
           },
           "attachmentNote": "Spilocuscus maculatus. Present but weaker than the abductor of the little finger, and more or less completely fused with the radial head of the flexor brevis pollicis. **There is no trace of an opponens pollicis in this animal**, though the opponens minimi digiti is very distinct."
+        },
+        {
+          "species": "chauna-torquata",
+          "speciesBasis": "note",
+          "name": "Abductor alulae",
+          "present": "yes",
+          "sources": [
+            "widrig-etal-2026"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "carpometacarpus",
+                "side": "proximal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "carpometacarpus",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. abductor alulae.** The fleshy origin of this muscle is located on the tendon of insertion of the M. extensor carpi radialis. It extends across to the alular phalanx, inserting on its proximal cranioventral edge. No osteological correlates could be found for this muscle. Fig. 13 Muscle origins and insertions on the ulna of Chauna torquata. A: Right ulna in ventral view, with osteological features labelled. B: Right ulna in dorsocaudal view, with osteological features labelled. C: Same as A, with muscle origins and insertions highlighted. D: Same as B, with muscle origins and insertions highlighted. Scale bar = 40 mm. K. Widrig et al. 16"
         }
       ],
       "homology": {
@@ -12937,7 +13142,8 @@
         "abdala-diogo-2010",
         "burch-2014",
         "gest-anatomy-tables",
-        "osawa-1898"
+        "osawa-1898",
+        "widrig-etal-2026"
       ],
       "nerves": [
         {
