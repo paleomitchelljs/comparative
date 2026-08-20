@@ -75,38 +75,64 @@ cross-references and are the safest bridge. Abdala & Diogo's Table 1 *Gallus*
 column is the other bridge, but its column offsets shift page to page in the
 extracted layout, so it needs reading rather than grepping.
 
-## Scored (6)
+## Mined in full
 
-`extensor-digitorum` and `flexor-digitorum-longus` from an earlier pass, plus four
-from the forearm block, all on *Grus americana* with origin and insertion rows:
+**Every muscle this paper describes with an origin paragraph is now extracted** —
+111 of them — and the paper should not need reading again except to check this
+pass. That was the point of the pass: the reading is the expensive part.
 
-| Record | Origin | Insertion |
-|---|---|---|
-| `extensor-antebrachii-carpi-radialis` | ectepicondylar prominence | processus extensorius of the carpometacarpus |
-| `supinator` | ectepicondylar prominence | radius, dorsal and anterior faces |
-| `anconeus` | ectepicondylar prominence | ulna, anterior and dorsal faces |
-| `flexor-carpi-ulnaris` | medial surface of the internal humeral condyle | postero-proximal edge of the os cuneiform (the avian ulnare) |
+| | |
+|---|---|
+| Muscles with an origin paragraph | 111 |
+| Filed as *Grus americana* occurrences | 43 rows, covering 61 of those muscles |
+| Parked in `observations.json` | 50 |
 
-The bridge for the first was already in the dataset: the *Gavia* and *Cygnus* rows
-on that record are named "Extensor metacarpi radialis", which is this paper's term
-exactly. `carpometacarpus`'s own element note already said its processus
-extensorius carries that insertion.
+Aves went from 118 present / 77 scored to **155 / 114**, and *Grus americana*
+from 6 occurrences to 43. The crane is now the best-scored bird in the dataset
+and the second scored avian column the roadmap needs.
+
+### Filed
+
+Wing and girdle: `pectoralis`, `supracoracoideus`, `sternocoracoideus`,
+`latissimus-dorsi`, `rhomboideus`, `serratus-anterior`, `subcoracoscapularis`,
+`deltoideus-scapularis`, `coracobrachialis`, `protractor-pectoralis`,
+`biceps-brachii`, `triceps-brachii`, and the six forearm records from the earlier
+pass.
+
+Hindlimb: `caudofemoralis`, `iliofibularis`, `ischiotrochantericus`,
+`adductor-femoris`, `femorotibialis`, `extensor-iliotibialis`, `ischioflexorius`,
+`fibularis-group`, `tibialis-anterior`, `gastrocnemius`,
+`extensor-digitorum-longus-hl`, `flexor-digitorum-longus-hl`.
+
+Axial and tail: `rectus-abdominis`, `transversus-abdominis`, `obliquus-internus`,
+`iliocostalis`, `levator-costae`, `caudal-musculature`.
+
+Cranial: `depressor-mandibulae`, `levator-arcus-palatini`, `interhyoideus`,
+`hypobranchial-muscles`, `thyroarytenoideus`, `adductor-mandibulae-externus`,
+`adductor-mandibulae-internus`.
 
 **Anconal and palmar are dorsal and ventral** in this paper's usage, and the rows
 are translated accordingly.
 
-## Deliberately not mapped yet
+**One convention the validator enforced.** The cnemial crest is `partOf: tibia`,
+and `fusedFrom` is deliberately not containment in this schema, so an avian crest
+attachment is not reachable through the `tibiotarsus`. Four rows were rewritten
+onto `tibia`, which is what the dataset's other avian rows already do.
 
-- **The pronators.** This paper has M. pronator brevis and M. pronator longus, both
-  from the internal humeral condyle onto the radius. The dataset's avian rows are
-  *pronator superficialis* and *pronator profundus* (Gavia, Cygnus). Brevis/longus
-  does not map onto superficialis/profundus by name, and this paper gives no
-  bracketed cross-reference for them, so guessing would put an observation on the
-  wrong record. Needs a source that states the synonymy.
-- **The hand.** M. interosseus dorsalis and ventralis, M. abductor alae digiti II,
-  M. flexor digiti IV, M. abductor major digiti II and M. extensor brevis digiti I
-  are all described with full attachments, but the digit numbering is the 1955
-  scheme and the receiving records (`intermetacarpales`, `dorsometacarpales`,
-  `flexores-breves-profundi`) need the numbering settled first.
-- **The pectoral, arm, pelvic, thigh, leg, foot, tail, cranial and axial blocks.**
-  All legible, none read at row level.
+### Parked, and why
+
+Nothing was skipped. What could not be filed is in
+[`data/observations.json`](../data/observations.json) with its full origin and
+insertion prose and a note saying what would settle it:
+
+| Blocked on | n | What it is |
+|---|---:|---|
+| `no-record` | 20 | The avian neck, the tracheal and lingual muscles, the propatagial complex — groups this dataset has no record for. Boumans et al. (2015), uncited in `papers/`, would build the cervical set |
+| `nomenclature` | 19 | 1955 names with no stated modern equivalent: the pronators, the hand under the old digit numbering, the pelvic set. Hudson et al. (1972) or Vanden Berge & Zweers's *Myologia* would state the synonymy |
+| `division` | 11 | Named subdivisions whose record already carries a *Grus* row for another part, and the avian perforated flexor system |
+
+One row is parked because **its heading did not survive the scan** — it prints as
+"M. spinalis cervicis" twice, but the block beneath is a subvertebral muscle
+arising from the transverse processes, not the spinalis cervicis, which is
+described separately. The text is kept intact rather than guessed at.
+

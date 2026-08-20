@@ -24,9 +24,11 @@ stands:
 Three sources already in `papers/` say otherwise, and each was written off for a
 different bad reason:
 
-- **Fisher & Goodman (1955)** — 116 muscles with legible origin paragraphs across
-  every region Aves is thin in. Called unmineable because the search pattern used
-  to look for them matched only about half the ways the OCR spells the heading.
+- **Fisher & Goodman (1955)** — **mined in full.** All 111 muscles it describes
+  with an origin paragraph are extracted: 43 filed as *Grus americana* rows and 50
+  parked in `observations.json`. Aves 118/77 → 155/114. It had been called
+  unmineable because the search pattern used to look for its origin paragraphs
+  matched only about half the ways the OCR spells the heading.
 - **Widrig, Starry & James (2026)** on *Chauna torquata* — open access, dense with
   origins and insertions, and explicit about the osteological correlates of each.
   Never cited, no reading note. Catalogued and forgotten.

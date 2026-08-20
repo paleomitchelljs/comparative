@@ -1677,6 +1677,30 @@
             "diogo-etal-2008-head"
           ],
           "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. Where the platypus has one muscle from this field the rat has two, and a colugo and a tree-shrew have three — the jugulohyoideus as well. **The digastric is two muscles from two arches with two nerves**, and this record holds the posterior belly while `intermandibularis` holds the anterior: Gasser's (1967) developmental study has the human digastricus posterior, stapedius and stylohyoideus arising from a single anlage, which is this field. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Depressor mandibulae",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "opisthotic",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. depressor mandibulae.** The extent of the origin from the postero-lateral area of the occipital region and the posterior face of the opisthotic process may be observed in figures 2 and 4. On the lateral surface of the process the origin is tendinous and fleshy, but it goes dorsad as a tendinous apo- neurosis to the level of the deep slip of M. add. mandib. ext. superf. From the most ventral and medial tip of the opisthotic process, a strong tendon forms a major part of the origin of the deeper, medial portion of the muscle; in fact, many of the tendinous fibers pass through the fleshy belly and thus go from origin to insertion and serve as a ligament. MUSCLES OF THE SKULL A *Insertion.* The superficial and most ventral part of the insertion is tendinous on the postero-ventral corner of the lateral surface of the mandible. The primary insertion is fleshy on the entire area of the pos- terior end of the mandible, bordered anteriorly by the posterior end of M. pteryg. vent. (fig. 1)."
         }
       ],
       "homology": {
@@ -1696,14 +1720,15 @@
       },
       "sources": [
         "bauer-1997",
-        "jones-etal-2019",
-        "ziermann-diogo-2013",
-        "ziermann-etal-2014",
-        "ziermann-diogo-2019",
-        "werneburg-2011",
+        "diogo-etal-2008-head",
+        "fisher-goodman-1955",
         "gest-anatomy-tables",
         "haas-1973",
-        "diogo-etal-2008-head"
+        "jones-etal-2019",
+        "werneburg-2011",
+        "ziermann-diogo-2013",
+        "ziermann-diogo-2019",
+        "ziermann-etal-2014"
       ],
       "nerves": [
         {
@@ -2104,6 +2129,33 @@
             "ziermann-etal-2014"
           ],
           "note": "**Table 2 credits *Petromyzon* with no adult hyoid muscles at all** — the column is zero against the hagfish's four. The interhyoideus first appears at the gnathostome ancestor. This absence and the hagfish one together are what make the interhyoideus a gnathostome character rather than a vertebrate one."
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Stylohyoideus",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "opisthotic"
+              },
+              {
+                "element": "mandible",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ceratohyal",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. stylohyoideus.** The disto-anterior part of the opisthotic process (fig. 1) gives tendinous origin primarily, while there is strong fleshy and tendinous origin from the middle of the postero-lateral corner of the mandible. Insertion—The fleshy and fascial attachment is to the most antero- lateral surface of the ceratohyal. The anterior end of the insertion is marked by the articulation between the ceratohyal and basihyal bones (fig. 10). *Insertion.* The fleshy and fascial attachment is to the most antero- lateral surface of the ceratohyal. The anterior end of the insertion is marked by the articulation between the ceratohyal and basihyal bones (fig. 10)."
         }
       ],
       "homology": {
@@ -2162,15 +2214,16 @@
         ]
       },
       "sources": [
-        "jones-etal-2019",
-        "ziermann-diogo-2013",
-        "ziermann-etal-2014",
-        "ziermann-diogo-2019",
-        "werneburg-2011",
+        "diogo-etal-2008-head",
+        "diogo-etal-2009",
+        "fisher-goodman-1955",
         "gest-anatomy-tables",
         "haas-1973",
-        "diogo-etal-2008-head",
-        "diogo-etal-2009"
+        "jones-etal-2019",
+        "werneburg-2011",
+        "ziermann-diogo-2013",
+        "ziermann-diogo-2019",
+        "ziermann-etal-2014"
       ],
       "nerves": [
         {
@@ -3839,6 +3892,56 @@
             "diogo-etal-2008-head"
           ],
           "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 4. Greene (1935) did not describe a genioglossus in the rat; Diogo et al. found it as an independent structure in every rat they dissected, with Bryant (1945) reporting it effectively often present in rodents. **This is the group that grows steadily rather than in a jump**: *Latimeria* and *Lepidosiren* have two, *Ambystoma* six, *Timon* five, the platypus six, this animal eight, a human nine — unlike the hyoid muscles on `interhyoideus`, which go from three in a lizard to twenty-seven in a human. **No attachments are scored: this source describes none.**"
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Geniohyoideus, genioglossus and the hypoglossi",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ceratohyal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. geniohyoideus.** There is fleshy origin from the entire circumference of the tongue geniohyoideus ceratohyal esophagus trachea Fic. 9. Dorsal view of the tongue and the floor of the pharynx. The stippled area represents a cut edge of the wall. MUSCLES OF THE TONGUE REGION 29 epibranchial cartilage and from the dorsal and lateral surfaces of the posterior half of the length of the ceratohyal. Because of the variab *Insertion.* From the anterior end of its origin the muscle goes ante- riorly and somewhat laterally to insert fleshily on the inner surface of the mandible. This attachment is opposite the basihyal, or about 7 centi- meters anterior to the posterior end of the mandible. The anterior end of the insertion is marked by the most anterior end of the insertion of M. add. mandib. medius on the lateral surface of the mandible. **M. genioglossus.** There is a fleshy origin from the inner side of the mandible, dorsal to the middle of the width of the mandible. The site of the origin is dorsal to the mandibular attachment of M. geniohy. Insertion—From this relatively short and narrow line of origin the muscle fans out as it goes ventro-mediad. Posterior to the entoglossum there is fleshy insertion on the tissues forming the floor of the mouth. The insertion continues anteriorly from the base of the entoglossum for one- half the length of this structure. Anterior to M. hypogl. obliq. the muscles of the two sides meet in the ventral midline of the entoglossum (fig. 10), 30 THE MYOLOGY OF THE WHOOPI *Insertion.* From this relatively short and narrow line of origin the muscle fans out as it goes ventro-mediad. Posterior to the entoglossum there is fleshy insertion on the tissues forming the floor of the mouth. The insertion continues anteriorly from the base of the entoglossum for one- half the length of this structure. Anterior to M. hypogl. obliq. the muscles of the two sides meet in the ventral midline of the entoglossum (fig. 10), 30 THE MYOLOGY OF THE WHOOPING CRANE hypoglossus rectus cut tendon ceratoglossus inf., lat. pt. **M. hypoglossus rectus.** Mudge (1903:247) noted that there was little variation in M. hypogl. rectus and gave its origin, for all forms (parrots) he dissected, as the postero-lateral process of the entoglossum. In the Whooping Crane the origin is consistently from both the postero-lateral process and the tendon of the lateral part of M. ceratogl. inf.; the latter part of the in- sertion is always the major part, only a few rlbers coming from the de- scribed position on the entoglossum. Insertion—From the lateral attachment the fibers go antero-mediad for a short distance and eventually fade into a strong, tendinous apo- neurosis which continues anteriorly on the ventral surface of the ento- glossum to the middle *Insertion.* From the lateral attachment the fibers go antero-mediad for a short distance and eventually fade into a strong, tendinous apo- neurosis which continues anteriorly on the ventral surface of the ento- glossum to the middle of the length of this structure. This aponeurosis is also the one on which the Mm. geniogl. meet in a superficial, midline raphe. **M. hypoglossus obliquus.** There is tendinous and fascial origin from the ventro-lateral corner of the posterior half of the length of the basihyal. Caudally this origin may be very attenuated. Insertion.—It is strongly fleshy on a longitudinal line on the posterior MUSCLES OF THE TONGUE REGION 33 end of the ridge forming the ventro-lateral corner of the entoglossum. This line is continuous with, but posterior to, the line of insertion of the tendon of the lateral part of M. ceratogl. inf. *Insertion.* It is strongly fleshy on a longitudinal line on the posterior MUSCLES OF THE TONGUE REGION 33 end of the ridge forming the ventro-lateral corner of the entoglossum. This line is continuous with, but posterior to, the line of insertion of the tendon of the lateral part of M. ceratogl. inf.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Geniohyoideus",
+              "sources": [
+                "fisher-goodman-1955"
+              ]
+            },
+            {
+              "name": "Genioglossus",
+              "sources": [
+                "fisher-goodman-1955"
+              ]
+            },
+            {
+              "name": "Hypoglossus rectus",
+              "sources": [
+                "fisher-goodman-1955"
+              ]
+            },
+            {
+              "name": "Hypoglossus obliquus",
+              "sources": [
+                "fisher-goodman-1955"
+              ]
+            }
+          ]
         }
       ],
       "homology": {
@@ -3856,14 +3959,15 @@
         }
       },
       "sources": [
-        "jones-etal-2019",
-        "ziermann-diogo-2013",
-        "ziermann-etal-2014",
-        "ziermann-diogo-2019",
         "diogo-ziermann-2015",
-        "werneburg-2011",
+        "fisher-goodman-1955",
         "gest-anatomy-tables",
-        "haas-1973"
+        "haas-1973",
+        "jones-etal-2019",
+        "werneburg-2011",
+        "ziermann-diogo-2013",
+        "ziermann-diogo-2019",
+        "ziermann-etal-2014"
       ],
       "nerves": [
         {
@@ -4243,6 +4347,30 @@
             "ziermann-etal-2014"
           ],
           "note": "As for *Myxine*. The lamprey velar muscles — protractor veli, depressor veli and the levator valvulae velaris — are the candidate, and the engrailed argument for homologising the larval velothyroideus with the gnathostome levator arcus palatini is the evidence Ziermann et al. decline to rest a homology on."
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Protractor pterygoideus",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "pterygoid",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. protractor pterygoideus.** tThe posterior end of the belly arises, primarily as fleshy fibers MUSCLES OF THE SKULL AND JAWS 25 with a few superficial tendinous fibers interposed, from the most lateral protuberance of the basitemporal plate, which point lies at the level of the posterior end of the quadrate. Insertion.—There is a fleshy insertion, with some superficial fascial connection, on the medial and dorsal surfaces of the anterior third of the length of the pterygoid bone. *Insertion.* There is a fleshy insertion, with some superficial fascial connection, on the medial and dorsal surfaces of the anterior third of the length of the pterygoid bone."
         }
       ],
       "homology": {
@@ -4259,13 +4387,14 @@
         }
       },
       "sources": [
+        "fisher-goodman-1955",
         "gai-etal-2022",
+        "gest-anatomy-tables",
+        "haas-1973",
         "jayaram-etal-1983",
         "jones-etal-2019",
         "ziermann-diogo-2019",
-        "ziermann-etal-2014",
-        "gest-anatomy-tables",
-        "haas-1973"
+        "ziermann-etal-2014"
       ],
       "nerves": [
         {
@@ -4830,6 +4959,32 @@
               "nerve": "trigeminal-mandibular"
             }
           ]
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Pseudotemporalis + pterygoideus",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              },
+              {
+                "element": "palatine",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. pseudotemporalis.** The origin is well depicted in figure 2; usually it is fleshy but in one instance aponeurotic origin was also found. Insertion——At the postero-ventral corner of the eye, the heavy belly gives way to a strong, flat, calcified tendon which goes ventrad super- ficial to the medial part of M. add. mandib. medius (fig. 5). The tendon inserts on the middle of the width of the mandible, about 3 centimeters from the posterior end of the bone. Thus the insertion is covered medially by the insertion of the medial layer of M. add. mandib. medius. *Insertion.* —At the postero-ventral corner of the eye, the heavy belly gives way to a strong, flat, calcified tendon which goes ventrad super- ficial to the medial part of M. add. mandib. medius (fig. 5). The tendon inserts on the middle of the width of the mandible, about 3 centimeters from the posterior end of the bone. Thus the insertion is covered medially by the insertion of the medial layer of M. add. mandib. medius. **M. pterygoideus ventralis.** The superficial layer is overlaid anteriorly by a strong, silvery aponeurosis which forms part of the origin from the ventral area of the palatine, and particularly from the medial edge. Deep to this aponeurotic origin there is strong fleshy origin from the entire ventral concavity of the palatine. The lateral part of the deep sheet arises tendinously from the posterior half of the lateral corner of the palatal wing; the medial part of this layer comes fleshily from the posterior end of the palatine (fig. 7) and passes posteriorly over M. protract. pteryg. Insertion.—The superficial muscle attaches fleshily on the outer face of the posterior part of the mandible, on all that part of this *Insertion.* The superficial muscle attaches fleshily on the outer face of the posterior part of the mandible, on all that part of this bone covered by the muscle in figure 1. Medial to this insertion is a thin line of ten- dinous insertion going dorsad on the inner aspect of the mandible and between the origin of the lateral, deep fasciculus and the medial part of the insertion of M. depress. mandib. The lateral, deep fasciculus of M. pteryg. vent. inserts fleshily on the medial face of the mandible in an area delimited posteriorly by the in- sertion of M. depress. mandib., ventrally by the ventral edge of the man- dible, and dorsally in its anterior extent by the ventral edge of the lateral slip of **M. pterygoideus dorsalis.** The lateral part has tendinous and fleshy origin from the en- tire dorso-lateral surface of the palatine as far anterior as the most ante- rior part of the origin of the superficial layer of M. pteryg. vent. shown in 94 THE MYOLOGY OF THE WHOOPING CRANE figure 7. At this point, which is 6 or 7 centimeters from the posterior end of the palatine, the origin continues dorso-mediad and ends about 12 millimeters above the most ventral border of the palatal alae. The medial slip of M. pteryg. dors. arises tendinously and fleshily from the ventral and antero-lateral edges or surfaces of the anterior end of the os pterygoid (fig. 8). The stron *Insertion.* The lateral belly sends a partly calcified tendon, 1 centi- meter wide, to the medial face of the mandible. This site is anterior to the insertion of the medial part of this same muscle, is immediately ventral to the medial insertion of M. add. mandib. medius, and is covered posteriorly by the insertion of the deep, lateral part of M. pteryg. vent. (fig. 7). The medial slip attaches fleshily to the medial aspect of the posterior end of the mandible, and deep to all other attachments; its anterior border is marked by the posterior end of the insertion of the medial part of M. add. mandib. medius (fig. 8)."
         }
       ],
       "homology": {
@@ -4847,13 +5002,14 @@
         }
       },
       "sources": [
+        "fisher-goodman-1955",
+        "haas-1973",
         "johnston-2011",
         "johnston-2014",
         "jones-etal-2019",
         "werneburg-2011",
         "ziermann-diogo-2013",
-        "ziermann-diogo-2019",
-        "haas-1973"
+        "ziermann-diogo-2019"
       ],
       "complex": "adductor-mandibulae",
       "nerves": [
@@ -5431,6 +5587,29 @@
               "nerve": "trigeminal-mandibular"
             }
           ]
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Adductor mandibulae externus (superficialis, profundus, medialis)",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "temporal-fossa"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. adductor mandibulae externus superficialis.** The superficial layer originates from the fascia overlying the middle of the length of the deep layer and from a tendon which passes beneath the postero-ventral part of the deep layer to attach to the pos- terior rim of the temporal fossa. The deep part comes fleshily from an extensive area of the dorso-posterior region of the temporal fossa (fig. 2). Insertion —The superficial fasciculus inserts tendinously and fleshily on the dorso-lateral edge of the mandible for a distance of 1 centimeter, starting just anterior to the anterior edge of the dorsal part of the inser- tion of the external part of M. add. mandib. medius. (figs. 2, 7). This at- tachment continues forward, on the dorsal rim *Insertion.* The superficial fasciculus inserts tendinously and fleshily on the dorso-lateral edge of the mandible for a distance of 1 centimeter, starting just anterior to the anterior edge of the dorsal part of the inser- tion of the external part of M. add. mandib. medius. (figs. 2, 7). This at- tachment continues forward, on the dorsal rim of the mandible, to the region of the junction of the maxillary and quadratojugal bones where it ends on the connective tissue in the corner of the mouth. Laterally the insertion is dorsal to the anterior part of the insertion of the external portion of M. add. mandib. medius. Immediately ventrad to the postorbital process of the skull, the bi- pinnate belly of **M. adductor mandibulae externus profundus.** Figure 2 shows the fleshy origin of the rostral slip from the postero-ventral area of the temporal fossa and from the dorso-lateral sur- face of the orbital process of the quadrate. Beneath the fleshy origin there are several strong bands of calcified tendon which extend from origin to insertion; some of these come from the antero-dorsal part of the supra- meatic process. The anterior edge of the orbital process of the quadrate provides fleshy origin for the caudal slip (fig. 2); the area is limited to the ventral half of this edge, for the posterior slip of M. add. mandib. medius arises from the dorsal half and is continuous and inseparable from the dorsal end of the caudal part of this *Insertion.* The rostral slip inserts tendinously on the dorso-lateral corner of the mandible, beneath the middle of the orbital fossa, deep and dorsal to the insertion of the main, external body of M. add. mandib. medius, and anterior to the insertion of the caudal fasciculus. The pos- terior end of the line of attachment is 2 centimeters from the posterior end of the mandible. See figure 2 for an illustration of both insertions. **M. adductor mandibulae externus medialis.** It arises tendinously from a narrow line in the temporal fossa, between the dorso-posterior part of the origin of M. pseudotemp. and the antero-dorsal section of the origin of the deep slip of M. add. mandib. ext. superf. (fig. 2). Insertion.—At the postero-ventral corner of the orbital fossa the thin band of muscle becomes tendinous and inserts as a weak aponeurosis or dense fascia on the connective tissue covering the dorso-medial border of M. add. mandib. medius (fig. 5). *Insertion.* At the postero-ventral corner of the orbital fossa the thin band of muscle becomes tendinous and inserts as a weak aponeurosis or dense fascia on the connective tissue covering the dorso-medial border of M. add. mandib. medius (fig. 5)."
         }
       ],
       "homology": {
@@ -5450,13 +5629,14 @@
         }
       },
       "sources": [
+        "fisher-goodman-1955",
+        "haas-1973",
         "johnston-2011",
         "johnston-2014",
         "jones-etal-2019",
         "werneburg-2011",
         "werneburg-preuschoft-2024",
-        "ziermann-diogo-2019",
-        "haas-1973"
+        "ziermann-diogo-2019"
       ],
       "complex": "adductor-mandibulae",
       "nerves": [
@@ -8358,6 +8538,30 @@
             "diogo-etal-2008-head",
             "gest-anatomy-tables"
           ]
+        },
+        {
+          "species": "grus-americana",
+          "speciesBasis": "note",
+          "name": "Thyroarytenoideus",
+          "present": "yes",
+          "sources": [
+            "fisher-goodman-1955"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "cricoid-cartilage",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "arytenoid-cartilage",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. thyroarytenoideus.** In general the fibers can be said to arise fleshily from the posterior edge of the cricoid and from the posterior half of the length of the dorso-lateral edge of the lateral cricoid. Insertion—The fibers pass antero-medially to insert fleshily on the lateral surface of the entire length of the arytenoid cartilage (fig. 12). *Insertion.* The fibers pass antero-medially to insert fleshily on the lateral surface of the entire length of the arytenoid cartilage (fig. 12)."
         }
       ],
       "homology": {
@@ -8383,7 +8587,8 @@
         }
       },
       "sources": [
-        "diogo-etal-2008-head"
+        "diogo-etal-2008-head",
+        "fisher-goodman-1955"
       ],
       "nerves": [
         {
