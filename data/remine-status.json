@@ -1,0 +1,339 @@
+{
+  "$comment": "Re-mine status per source, authored. The migration to per-(species x study) extraction files requires every cited source to be re-read from the paper, because the audit of 2026-08-19 found drops in four of four sources examined. Nothing here is generated: the status is a judgement about whether a source has been read to exhaustion. docs/MIGRATION-STATE.md renders it. validate.py errors if a cited source is missing from this file or carries an unknown status.",
+  "statuses": {
+    "not-started": "Rows exist from an earlier pass. NOT verified against the paper; assume incomplete.",
+    "scaffolded": "An extraction file was generated from existing rows. Still not checked against the paper.",
+    "remined": "Read from the source in full under the MINING.md rule. Everything filed or parked.",
+    "verified": "A second pass confirmed the re-mine missed nothing.",
+    "blocked-no-source": "No local copy. Cannot be re-mined until acquired.",
+    "not-a-row-source": "Assessed and yields no attachment rows. No re-mine needed."
+  },
+  "sources": {
+    "abdala-diogo-2010": {
+      "status": "not-started",
+      "rows": 306
+    },
+    "allen-etal-2014": {
+      "status": "not-started",
+      "rows": 5
+    },
+    "allen-etal-2021": {
+      "status": "not-started",
+      "rows": 17
+    },
+    "anderson-2008": {
+      "status": "not-started",
+      "rows": 5
+    },
+    "bauer-1997": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "bishop-pierce-2024": {
+      "status": "not-started",
+      "rows": 4
+    },
+    "blotto-etal-2020": {
+      "status": "not-started",
+      "rows": 13
+    },
+    "bodenham-etal-2026": {
+      "status": "not-started",
+      "rows": 3
+    },
+    "burch-2014": {
+      "status": "not-started",
+      "rows": 38
+    },
+    "campbell-2007": {
+      "status": "not-started",
+      "rows": 4
+    },
+    "cieri-2018": {
+      "status": "not-started",
+      "rows": 12
+    },
+    "cunningham-1882": {
+      "status": "blocked-no-source",
+      "rows": 243,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "dearden-etal-2020": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "dick-clemente-2016": {
+      "status": "not-started",
+      "rows": 8
+    },
+    "diogo-etal-2008-head": {
+      "status": "not-started",
+      "rows": 75
+    },
+    "diogo-etal-2009": {
+      "status": "not-started",
+      "rows": 51
+    },
+    "diogo-etal-2016": {
+      "status": "not-started",
+      "rows": 33
+    },
+    "diogo-etal-2016-si": {
+      "status": "blocked-no-source",
+      "rows": 13,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "diogo-molnar-2014": {
+      "status": "not-started",
+      "rows": 103
+    },
+    "diogo-ziermann-2015": {
+      "status": "not-started",
+      "rows": 7
+    },
+    "ercoli-etal-2012": {
+      "status": "not-started",
+      "rows": 21
+    },
+    "ercoli-etal-2014": {
+      "status": "not-started",
+      "rows": 34
+    },
+    "fahn-lai-etal-2020": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "fisher-goodman-1955": {
+      "status": "remined",
+      "rows": 43,
+      "note": "111 muscles: 43 filed, 50 parked. See its reading note."
+    },
+    "freitas-etal-2017": {
+      "status": "not-started",
+      "rows": 1
+    },
+    "fritzsch-2023": {
+      "status": "blocked-no-source",
+      "rows": 3,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "gambaryan-etal-2002": {
+      "status": "not-started",
+      "rows": 45
+    },
+    "gambaryan-etal-2015": {
+      "status": "not-started",
+      "rows": 108
+    },
+    "gest-anatomy-tables": {
+      "status": "blocked-no-source",
+      "rows": 119,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "ghetie-etal-1976": {
+      "status": "not-started",
+      "rows": 5
+    },
+    "godoy-etal-2016": {
+      "status": "not-started",
+      "rows": 7
+    },
+    "haas-1973": {
+      "status": "not-started",
+      "rows": 20
+    },
+    "hattori-tsuihiji-2021": {
+      "status": "not-started",
+      "rows": 46
+    },
+    "huber-etal-2011": {
+      "status": "not-started",
+      "rows": 6
+    },
+    "hudson-etal-2011a": {
+      "status": "not-started",
+      "rows": 4
+    },
+    "hudson-etal-2011b": {
+      "status": "not-started",
+      "rows": 6
+    },
+    "hutchinson-etal-2015": {
+      "status": "not-started",
+      "rows": 11
+    },
+    "jayaram-etal-1983": {
+      "status": "not-started",
+      "rows": 3
+    },
+    "johnston-2011": {
+      "status": "not-started",
+      "rows": 16
+    },
+    "johnston-2014": {
+      "status": "not-started",
+      "rows": 5
+    },
+    "jones-etal-2019": {
+      "status": "not-started",
+      "rows": 10
+    },
+    "kepa-etal-2023": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "klinkhamer-etal-2017": {
+      "status": "not-started",
+      "rows": 25
+    },
+    "leavey-etal-2024": {
+      "status": "not-started",
+      "rows": 3
+    },
+    "liparini-schultz-2013": {
+      "status": "not-started",
+      "rows": 1
+    },
+    "mansuit-herrel-2021": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "matsuoka-hasegawa-2007": {
+      "status": "not-started",
+      "rows": 22
+    },
+    "mckitrick-1991": {
+      "status": "not-started",
+      "rows": 14
+    },
+    "meers-2003": {
+      "status": "not-started",
+      "rows": 13
+    },
+    "molnar-diogo-2021": {
+      "status": "not-started",
+      "rows": 8
+    },
+    "molnar-etal-2017": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "molnar-etal-2018": {
+      "status": "not-started",
+      "rows": 42
+    },
+    "naumann-etal-2017": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "navarro-etal-2023": {
+      "status": "blocked-no-source",
+      "rows": 3,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "omura-etal-2014": {
+      "status": "not-started",
+      "rows": 3
+    },
+    "osawa-1898": {
+      "status": "not-started",
+      "rows": 63
+    },
+    "pereyra-etal-2024": {
+      "status": "blocked-no-source",
+      "rows": 11,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "prikryl-etal-2009": {
+      "status": "not-started",
+      "rows": 9
+    },
+    "russell-bauer-2008": {
+      "status": "not-started",
+      "rows": 71
+    },
+    "sanchez-etal-2019": {
+      "status": "not-started",
+      "rows": 9
+    },
+    "schilling-2011": {
+      "status": "not-started",
+      "rows": 14
+    },
+    "schreiweis-1982": {
+      "status": "not-started",
+      "rows": 8
+    },
+    "schumacher-1973": {
+      "status": "not-started",
+      "rows": 3
+    },
+    "sefton-etal-2016": {
+      "status": "blocked-no-source",
+      "rows": 3,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "sigurdsen-etal-2012": {
+      "status": "not-started",
+      "rows": 9
+    },
+    "springer-johnson-2015": {
+      "status": "not-started",
+      "rows": 1
+    },
+    "tomanska-etal-2024": {
+      "status": "not-started",
+      "rows": 1
+    },
+    "tomanska-etal-2025": {
+      "status": "not-started",
+      "rows": 2
+    },
+    "walker-1973": {
+      "status": "not-started",
+      "rows": 22
+    },
+    "walthall-ashley-ross-2006": {
+      "status": "blocked-no-source",
+      "rows": 63,
+      "note": "No local PDF; `pdf` is null in sources.json."
+    },
+    "werneburg-2011": {
+      "status": "not-started",
+      "rows": 11
+    },
+    "werneburg-maier-2019": {
+      "status": "not-started",
+      "rows": 1
+    },
+    "widrig-etal-2023": {
+      "status": "not-started",
+      "rows": 3
+    },
+    "widrig-etal-2026": {
+      "status": "remined",
+      "rows": 20,
+      "note": "38 blocks: 20 filed, 16 parked, 2 folded. See its reading note."
+    },
+    "winterbottom-1973": {
+      "status": "not-started",
+      "rows": 6
+    },
+    "zaaf-etal-1999": {
+      "status": "not-started",
+      "rows": 42
+    },
+    "ziermann-diogo-2013": {
+      "status": "not-started",
+      "rows": 8
+    },
+    "ziermann-diogo-2019": {
+      "status": "not-started",
+      "rows": 10
+    },
+    "ziermann-etal-2014": {
+      "status": "not-started",
+      "rows": 20
+    }
+  }
+}

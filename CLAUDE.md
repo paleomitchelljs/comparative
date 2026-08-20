@@ -37,6 +37,9 @@ Nothing carries two of these jobs.
 | `docs/WORKLIST.md` | What to do next, and the open decisions |
 | `docs/MINING.md` | How to mine a paper. Procedure, changes rarely |
 | `docs/ROADMAP.md` | Where the interface is going, and why the spine is mass-and-layer |
+| `docs/MIGRATION.md` | The plan for extraction-first storage. Changes rarely |
+| `docs/MIGRATION-STATE.md` | Where the migration has got to. **Read first**; update every commit |
+| `docs/FILE-LEDGER.md` | Which files are authoritative, derived, partial or defunct |
 | `papers/*.md` | What one source says, and what one pass found. Where history lives |
 
 If a rule is stated in two of them, one is wrong and you cannot tell which — so
@@ -122,6 +125,30 @@ The validator enforces it both ways.
 **Rebuild with `./scripts/build.sh --write`,** which normalises, derives and then
 validates. It is a fixed point — CI runs it and fails if the committed data
 changes.
+
+## The migration is in progress — read the state file first
+
+The dataset is moving to **extraction-first storage**: one file per species per
+study, with homology as a separate mapping layer applied on top. Three documents
+run it, and a fresh session should read them in this order:
+
+1. **`docs/MIGRATION-STATE.md`** — what is done, what is next, what is blocked.
+   **Start here.**
+2. `docs/FILE-LEDGER.md` — which files are authoritative, derived, partial or
+   defunct. Check before trusting or editing anything under `data/` or `scripts/`.
+3. `docs/MIGRATION.md` — the plan and the ordered tasks. Changes rarely.
+
+**Update the state files in the same commit as the work, not afterwards.** They
+exist so a session starting cold does not re-derive the position, and they are
+worthless the moment they lag. `validate.py` enforces what it can: every cited
+source must appear in `data/remine-status.json` with a known status, and every file
+under `data/` and `scripts/` must be classified in `FILE-LEDGER.md`.
+
+**`data/muscles-*.json` is known incomplete.** An audit on 2026-08-19 found dropped
+observations in four of four sources examined, so treat any source's rows as a
+partial extraction until `remine-status.json` says `remined`. **A source is
+`remined` only when every muscle it describes is either filed or parked and the
+reading note states that arithmetic.**
 
 **Extract everything a source states, even where the record is unsettled.** A
 mining pass reads a paper once; anything it leaves behind has to be found by

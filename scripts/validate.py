@@ -572,6 +572,45 @@ def main():
                             err(f"{label}: attaches to '{ref}', which "
                                 f"skeleton.json records as absent in {taxon}")
 
+    # ---- the migration's two self-checks -----------------------------------
+    #
+    # MIGRATION-STATE.md and FILE-LEDGER.md exist so a session starting cold does
+    # not re-derive the position, and they are worthless the moment they lag. Both
+    # are enforced against the things they describe.
+    remine = load(ROOT / "data/remine-status.json")
+    known_status = set(remine.get("statuses") or {})
+    listed = remine.get("sources") or {}
+    for key, ent in listed.items():
+        if key not in source_keys:
+            err(f"remine-status.json: '{key}' is not a source in sources.json")
+        if ent.get("status") not in known_status:
+            err(f"remine-status.json:{key}: status {ent.get('status')!r} is not one "
+                f"of {sorted(known_status)}")
+
+    # Every file under data/ and scripts/ must be named in the ledger, and every
+    # path the ledger names must exist. Either way round is a lie about what can
+    # be trusted, which is the one thing that file is for.
+    ledger_txt = (ROOT / "docs/FILE-LEDGER.md").read_text()
+    for sub, pats in (("data", ("*.json",)), ("scripts", ("*.py", "*.sh"))):
+        for pat in pats:
+            for f in sorted((ROOT / sub).glob(pat)):
+                name = f.name
+                # muscles-*.json is covered by one wildcard row
+                shown = "muscles-*.json" if name.startswith("muscles-") else name
+                if f"`{shown}`" not in ledger_txt:
+                    err(f"FILE-LEDGER.md does not list {sub}/{name} — classify it "
+                        f"before it is trusted")
+    for line in ledger_txt.splitlines():
+        m = re.match(r"^\| `([a-z_]+\.(?:py|sh|json))` \|([^|]*)\|", line)
+        if not m:
+            continue
+        rel, cls = m.group(1), m.group(2)
+        if "will be" in cls:          # planned, not yet created
+            continue
+        if not any((ROOT / sub / rel).exists() for sub in ("data", "scripts")):
+            err(f"FILE-LEDGER.md lists '{rel}', which does not exist — remove the "
+                f"row or mark the class '(will be)'")
+
     # ---- observations: what a source says, before a record is chosen --------
     #
     # An occurrence must sit inside a muscle record, so an observation whose

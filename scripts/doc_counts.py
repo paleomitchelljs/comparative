@@ -63,6 +63,7 @@ def gather():
             muscles.append(m)
 
     parked = load("data/observations.json").get("observations") or []
+    remine = load("data/remine-status.json")
     taxa = load("data/taxa.json")["taxa"]
     elements = load("data/skeleton.json")["elements"]
     sources = load("data/sources.json")["sources"]
@@ -88,7 +89,7 @@ def gather():
     return dict(
         muscles=muscles, taxa=taxa, elements=elements, sources=sources,
         order=order, clade=clade, present=present, scored=scored, obs_rows=obs_rows,
-        carriers=carriers, parked=parked,
+        carriers=carriers, parked=parked, remine=remine,
         occ_rows=sum(len(m.get("occurrences", [])) for m in muscles),
     )
 
@@ -114,6 +115,42 @@ def block_headline(d):
     return (f"{len(d['muscles'])} muscle records · {len(d['present'])} present occurrences · "
             f"{len(d['elements'])} skeletal elements · {len(d['sources'])} sources · "
             f"{len(d['taxa'])} operational taxa")
+
+
+def block_remine(d):
+    """Re-mine progress, by source. Authored status, generated arithmetic."""
+    src = d["remine"]["sources"]
+    by = collections.Counter(v["status"] for v in src.values())
+    rows_by = collections.Counter()
+    for v in src.values():
+        rows_by[v["status"]] += v.get("rows", 0)
+    order = ["verified", "remined", "scaffolded", "not-started",
+             "blocked-no-source", "not-a-row-source"]
+    out = ["| Status | Sources | Rows they carry |", "|---|---:|---:|"]
+    for k in order:
+        if by[k]:
+            out.append(f"| `{k}` | {by[k]} | {rows_by[k]} |")
+    done = by["remined"] + by["verified"]
+    out.append(f"| **total** | **{len(src)}** | **{sum(rows_by.values())}** |")
+    out.append("")
+    out.append(f"**{done} of {len(src)} cited sources re-mined** "
+               f"({done * 100 // len(src)}%).")
+    return "\n".join(out)
+
+
+def block_remine_blocked(d):
+    """The sources nobody can check, because there is no local copy."""
+    src = d["remine"]["sources"]
+    bad = {k: v for k, v in src.items() if v["status"] == "blocked-no-source"}
+    if not bad:
+        return "None — every cited source has a local copy."
+    out = ["| Source | Rows |", "|---|---:|"]
+    for k, v in sorted(bad.items(), key=lambda x: -x[1].get("rows", 0)):
+        out.append(f"| `{k}` | {v.get('rows', 0)} |")
+    out.append("")
+    out.append(f"**{len(bad)} sources, {sum(v.get('rows', 0) for v in bad.values())} "
+               f"rows** that cannot be verified against a paper.")
+    return "\n".join(out)
 
 
 def block_parked(d):
@@ -308,9 +345,11 @@ BLOCKS = {
     "unscored": block_unscored,
     "authority": block_authority,
     "parked": block_parked,
+    "remine": block_remine,
+    "remine-blocked": block_remine_blocked,
 }
 
-TARGETS = ["README.md", "docs/STATUS.md"]
+TARGETS = ["README.md", "docs/STATUS.md", "docs/MIGRATION-STATE.md"]
 
 
 def check_prose():
