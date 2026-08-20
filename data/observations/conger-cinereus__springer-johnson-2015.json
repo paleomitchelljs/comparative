@@ -1,0 +1,63 @@
+{
+  "species": "conger-cinereus",
+  "source": "springer-johnson-2015",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Dorsal and ventral gill-arch muscles",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "present": "yes",
+      "speciesBasis": "source",
+      "innervation": "Glossopharyngeal nerve (CN IX) and vagus nerve (CN X).",
+      "division": "divided",
+      "after": "Smith & Johnson 2004",
+      "parts": [
+        {
+          "name": "MUP4-Eb4",
+          "note": "From upper pharyngeal tooth plate 4 dorso-posterolaterally, becoming a broad thin connective-tissue sheet onto the ventrolateral margin of epibranchial 4 at the angle of its joint with ceratobranchial 4. **Springer & Johnson's one correction to the earlier description**: Smith & Johnson (2004) had it extending medially and becoming incorporated in the sphincter oesophagi, and re-analysis shows it does not."
+        },
+        {
+          "name": "TV5",
+          "note": "Extends between the distal ends of ceratobranchial 5 on either side. Nelson's 'posterior transversus'."
+        },
+        {
+          "name": "SO",
+          "note": "Encircles the oesophagus and interconnects the two ceratobranchials 5. Nelson's 'sphincter'."
+        },
+        {
+          "name": "VR",
+          "note": "**Springer & Johnson disagree with Nelson about whether this is a muscle at all.** Nelson (1967a) illustrated the ventral retractor as a distinct strap, well separated medially from other fibres, attaching to tooth plate 5. They find instead an almost complete sheet of longitudinal fibres, internal to the outer circular layer, attaching on ceratobranchial 5 along the medial edge of the tooth plate, with only a shallow mid-anterior divergence — and say it is a moot point whether to call the longitudinal layer a separate muscle. Not illustrated in their figure: it is entirely hidden by TV5."
+        },
+        {
+          "name": "R4Cm",
+          "note": "Inserts anteriorly on hypobranchial 2 in this animal, where it reaches hypobranchial 1 in *Anguilla* — the character that separates the two. Springer & Johnson read this out of Nelson's (1967a) own illustration; his text said only that fibres insert on hypobranchial 3 and hypobranchial 2, implying the anteriormost insertion."
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "pharyngobranchials"
+          },
+          {
+            "element": "ceratobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epibranchials"
+          },
+          {
+            "element": "ceratobranchials"
+          },
+          {
+            "element": "hypobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Conger cinereus, Springer & Johnson (2015). **A reporting row, and `after` says so.** The dorsal gill-arch muscle descriptions are Smith & Johnson's (2004), from USNM 115969, explicitly not repeated in this paper — Springer & Johnson reproduce the plate and modify exactly one attachment, MUP4-Eb4. What is first-hand here is the ventral musculature figured from USNM 311286, and the re-reading of Nelson's ventral retractor. The row is deliberately thin at the level of individual attachments because this paper does not restate them; the parts carry what it does say.",
+      "note": "Springer & Johnson use this animal mainly as the comparison against which *Anguilla* and *Synaphobranchus* are read, which is why several of its characters appear in those species' sections rather than its own."
+    }
+  ]
+}

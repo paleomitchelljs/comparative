@@ -23,7 +23,9 @@ available from this paper when the fish end of the record is worth widening.
 Its species note says what it is not: a specialised deep-reef eel, not a proxy for
 teleosts. Its interest is that it keeps characters other eels lost.
 
-### *Anguilla rostrata* added 2026-08-20
+### All six animals filed, 2026-08-20
+
+#### *Anguilla rostrata*
 
 **The second of the six animals, and the one a student will actually meet.** The
 American eel now carries an occurrence with **18 named parts**, the most divided
@@ -54,11 +56,50 @@ every rectus and obliquus ventralis runs between those two — and there was no
 `ceratobranchials`. Added, `partOf branchial-arches`, scoped to the ray-finned
 fishes.
 
-**Four animals still to go**: *Conger cinereus*, *Synaphobranchus kaupii*,
-*Simenchelys parasitica* and *Serrivomer beanii*, each with its own Material and
-description sections. **Use plain `pdftotext`** — the two-column layout
+### The other four added the same day — the source is complete
+
+All six animals are now filed, and `branchial-constrictors` carries six eels.
+
+| Species | Parts | What it contributes |
+|---|---:|---|
+| *Simenchelys parasitica* | 27 | Described in full, dorsal and ventral. **All three obliqui ventrales absent**, with a functional hypothesis and a sister taxon to test it against |
+| *Anguilla rostrata* | 18 | The familiar eel. Three corrections to Smith & Johnson (2004) |
+| *Serrivomer beanii* | 18 | **Never described before this paper.** Adductor series reduced to Ad4 alone |
+| *Protanguilla palau* | 14 | Sister to all other eels; the reason the paper exists |
+| *Synaphobranchus kaupii* | 14 | Its sphincter pharyngis dominates the ventral series |
+| *Conger cinereus* | 5 | A **reporting** row — see below |
+
+**Conger carries `after: "Smith & Johnson 2004"`,** and it is the clearest use of
+that field in the dataset so far. Springer & Johnson reproduce Smith & Johnson's
+plate, state explicitly that the descriptions are "not repeated here", and modify
+exactly one attachment (MUP4-Eb4, which does not become incorporated in the
+sphincter oesophagi after all). The row is thin at the level of individual
+attachments *because the paper does not restate them*, and `after` records that
+the observation is somebody else's. *Synaphobranchus* is the same for its dorsal
+series and first-hand for its ventral, so its attachments are the ventral ones
+only.
+
+Two things worth teaching from:
+
+- ***Simenchelys*** **loses all three obliqui ventrales**, and the authors attach a
+  reason — the loss is possibly associated with its extremely well-developed
+  ventral musculature — then check it against the closest available comparison:
+  *Synaphobranchus*, more moderately built, keeps ObV1 and ObV2. An absence with a
+  hypothesis and a control is rare here.
+- On *Simenchelys* they could strip R4Cm and R3 off the ventral surface of SPh
+  **and say the separation appears artificial**. A dissectable plane is not
+  evidence of a boundary, and that sentence is worth showing a student.
+
+Two published errors are corrected on the rows: Smith & Johnson indicated
+ceratobranchial 5 absent in *Synaphobranchus* when they meant Ad5 (the bone is
+there, the muscle is not), and Nelson's (1967a) ventral retractor in *Conger* is
+re-read as an almost complete longitudinal sheet rather than the distinct strap he
+illustrated — the authors calling it a moot point whether to name it a muscle at
+all.
+
+**Use plain `pdftotext`** if reopening this paper — the two-column layout
 interleaves under `-layout`, which is why the species headings appear in the
-extracted text with unrelated column text beneath them.
+`-layout` extraction with unrelated column text beneath them.
 
 One thing a later pass should settle rather than inherit: the *Protanguilla* row
 attaches to `cornu-branchiale`, which is `partOf hyoid`. If that is standing in

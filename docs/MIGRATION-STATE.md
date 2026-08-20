@@ -36,7 +36,7 @@ current.
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | **done** |
 | 3 | `after:` field for secondary attribution | **done** |
-| 4 | Re-mine every cited source | **in progress — 4 of 79 to exhaustion, 3 more partly** |
+| 4 | Re-mine every cited source | **in progress — 5 of 79 to exhaustion, 3 more partly** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | **done** |
 | 6 | Retire what the flip made defunct | **done — 7 scripts deleted** |
 | 7 | `phylogeny.json` | not started |
@@ -68,18 +68,18 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 4 | 99 |
-| `not-started` | 71 | 1872 |
+| `remined` | 5 | 105 |
+| `not-started` | 70 | 1870 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2051** |
+| **total** | **79** | **2055** |
 
-**4 of 79 cited sources re-mined** (5%).
+**5 of 79 cited sources re-mined** (6%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Three sources have cleared that bar:
+parked**, and the note states the arithmetic. Five sources have cleared that bar:
 
 - **Fisher & Goodman (1955)** — 111 muscles with an origin paragraph: 43 filed,
   50 parked, the rest inside multi-muscle rows. Moved the Aves column further than
@@ -94,6 +94,13 @@ parked**, and the note states the arithmetic. Three sources have cleared that ba
   paper carries a table of origin, insertion and inference level for every muscle.
   *Prestosuchus* went from 1 occurrence to 13, the first real body of pseudosuchian
   stem myology here.
+- **Springer & Johnson (2015)** — **6 animals of 6**, all filed. It had one, and
+  unlike the others its note said so plainly: "five more species available from
+  this paper when the fish end of the record is worth widening". An honest note,
+  and still one column from a six-animal paper. `branchial-constrictors` now
+  carries six eels, *Simenchelys* the most divided occurrence on the record at 27
+  parts. Two published errors corrected on the rows, and *Serrivomer*'s gill-arch
+  muscles had **never been described before this paper**.
 - **Freitas et al. (2017)** — 21 muscles: 20 filed, 1 parked. It had been carrying
   **one** row, on the reasoning that Russell & Bauer already covered the same
   animal at higher resolution and this source therefore "confirms rather than opens

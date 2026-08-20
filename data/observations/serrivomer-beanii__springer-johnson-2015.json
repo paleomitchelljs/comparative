@@ -1,0 +1,117 @@
+{
+  "species": "serrivomer-beanii",
+  "source": "springer-johnson-2015",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Dorsal and ventral gill-arch muscles",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "present": "yes",
+      "speciesBasis": "source",
+      "innervation": "Glossopharyngeal nerve (CN IX) and vagus nerve (CN X).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "LE1",
+          "note": "Broad, but inserts finely on the medialmost tip of epibranchial 1 together with the anterior end of RecD2."
+        },
+        {
+          "name": "LE2",
+          "note": "Slender; inserts on epibranchial 2 well medial to the tripartite joint formed by its distal end with the posterior end of pharyngobranchial 2 and the anterior end of pharyngobranchial 3."
+        },
+        {
+          "name": "LE3",
+          "note": "Inserts on the cartilaginous tip of the levator process of epibranchial 3, which joins a bony process on epibranchial 4."
+        },
+        {
+          "name": "LE4",
+          "note": "Inserts on epibranchial 4 dorsally, just lateral to mid-length."
+        },
+        {
+          "name": "LE4 prime",
+          "note": "Less developed than LE4; inserts on the anteroventral edge of epibranchial 4 close to the lateral edge of upper pharyngeal tooth plate 4. **Springer & Johnson flag it as needing verification** and the row keeps that caveat rather than presenting it as established."
+        },
+        {
+          "name": "LI1",
+          "note": "Inserts broadly along the rod-like portion of pharyngobranchial 2."
+        },
+        {
+          "name": "LI2",
+          "note": "Inserts on the dorsal surface of the tripartite joint formed by the medial cartilaginous tips of epibranchials 3 and 4 and the posterior cartilaginous tip of pharyngobranchial 3."
+        },
+        {
+          "name": "MPb2-Eb1",
+          "note": "From the anteromedial corner of the fan-like medial end of pharyngobranchial 2 to the medialmost tip of epibranchial 1."
+        },
+        {
+          "name": "Ad4",
+          "note": "Originates broadly on epibranchial 4 dorsally and inserts ventrally on ceratobranchial 4 posterolaterally. **The only adductor this animal has.**"
+        },
+        {
+          "name": "TD",
+          "note": "A thin sheet of whitish muscle continuous with the dorsal transverse or circular oesophageal layer, attaching on each side to the posterodistal cartilaginous surface of ceratobranchial 4 and running forward, tapering anteromedially **without attaching to any other gill-arch element**. Springer & Johnson mark it as requiring further study."
+        },
+        {
+          "name": "TPb3",
+          "note": "The longitudinal oesophageal layer, ventral to the circular one, running forward and somewhat laterally to attach on the medial surface of each pharyngobranchial 3."
+        },
+        {
+          "name": "TUP4",
+          "note": "Separate, more posterior strands of the same longitudinal layer, attaching to upper pharyngeal tooth plate 4."
+        },
+        {
+          "name": "OD",
+          "note": "**Apparently absent.**"
+        },
+        {
+          "name": "Ad1",
+          "note": "**Absent.**"
+        },
+        {
+          "name": "Ad2",
+          "note": "**Absent.**"
+        },
+        {
+          "name": "Ad3",
+          "note": "**Absent.**"
+        },
+        {
+          "name": "OP",
+          "note": "**Absent.**"
+        },
+        {
+          "name": "RecD1",
+          "note": "**Absent.**"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials"
+          },
+          {
+            "element": "pharyngobranchials"
+          },
+          {
+            "element": "ceratobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epibranchials"
+          },
+          {
+            "element": "pharyngobranchials"
+          },
+          {
+            "element": "ceratobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Serrivomer beanii, Springer & Johnson (2015). **The gill-arch muscles of this animal had never been described or illustrated before this paper.** Tighe (1989) covered much of its osteology and external features and not the muscles. From USNM 315418 (three specimens, about 260, 365 and 545 mm TL) and USNM 383143 (about 590 mm TL). The authors state plainly that the muscles are complex and fragile, that **all specimens were damaged during dissection**, and that the description is a composite of what could be made out across them — so this row is a first description built from several imperfect animals, and should be read as such.",
+      "note": "**Two novelties, both of them absences.** The adductor series is reduced to Ad4 alone, and the obliquus dorsalis, OP and RecD1 are gone. And the epibranchials **completely lack gill filaments**, a condition the authors say they have seen nowhere else. They tie it to a second oddity: the epibranchials are shut out of the branchial chamber by a continuous sheet of black non-muscular tissue that sheathes them — a dorsoanterior extension of the sphincter oesophagi running forward along the whole anterior face of the cleithrum, over the roof of the branchial chamber, then back down onto the posteromedial edge of the fourth arch, the dorsolateral surfaces of the third and second, and much of the dorsal surface of ceratobranchial 1, before continuing into the oral chamber. Not scored as an attachment because it is not muscle."
+    }
+  ]
+}

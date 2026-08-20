@@ -1,0 +1,96 @@
+{
+  "species": "synaphobranchus-kaupii",
+  "source": "springer-johnson-2015",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Dorsal and ventral gill-arch muscles",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "present": "yes",
+      "speciesBasis": "source",
+      "innervation": "Glossopharyngeal nerve (CN IX) and vagus nerve (CN X).",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "SPh",
+          "note": "**The dominant muscle of this animal's ventral series, and the reason the others cannot be read separately.** Viewed dorsally it originates broadly on ceratobranchial 4 and attaches anteriorly on the medial end of ceratobranchial 3, dorsal to the anterior attachment of R4; a second portion appears to originate on ceratobranchial 3 and its tooth plate and fuses with the anteromedial edge of the first. The two continue forward, are joined by fibres from hypobranchials 2 and 1, and end on the hypohyal and anterior ceratohyal. It obscures R4Cm, R4 and R3 in dorsal view, all three appearing to fuse dorsally with it and with each other. Springer & Johnson follow Nelson (1967a) in saying that ontogeny, not dissection, will settle what it is made of."
+        },
+        {
+          "name": "R3",
+          "note": "Present; extent only partially discernible from the ventral side because SPh overlies it."
+        },
+        {
+          "name": "R4",
+          "note": "Present; see SPh."
+        },
+        {
+          "name": "R4Cm",
+          "note": "Present; see SPh."
+        },
+        {
+          "name": "ObV1",
+          "note": "Tendinous origin on the ventromedialmost surface of ceratobranchial 1, muscular attachment on the ventrolateral surface of hypobranchial 1."
+        },
+        {
+          "name": "ObV2",
+          "note": "Tendinous origin on the ventromedialmost surface of ceratobranchial 2, muscular attachment on the ventrolateral surface of hypobranchial 2."
+        },
+        {
+          "name": "TV4",
+          "note": "Attaches broadly on the ventromedial surface of each ceratobranchial 4, ventral to the origin of PCl on the ceratobranchials 5."
+        },
+        {
+          "name": "TV5",
+          "note": "Attaches anteriorly on ceratobranchial 5 near the posteriormost of the four tooth plates on each side, and extends broadly backwards."
+        },
+        {
+          "name": "ER",
+          "note": "Present. Springer & Johnson note it is not visible in any of Smith & Johnson's (2004) illustrated views — a presence recorded against an earlier figure's silence."
+        },
+        {
+          "name": "R1",
+          "note": "**Apparently absent.**"
+        },
+        {
+          "name": "R2",
+          "note": "**Apparently absent.**"
+        },
+        {
+          "name": "RecCom",
+          "note": "**Absent.**"
+        },
+        {
+          "name": "ObV3",
+          "note": "**Absent**, while ObV1 and ObV2 are retained. That partial loss is the comparison the authors use on *Simenchelys*, which has lost all three: this animal's ventral musculature is the more moderately developed of the two."
+        },
+        {
+          "name": "Ad5",
+          "note": "**Absent — and this corrects a published erratum.** Smith & Johnson (2004:72) indicated that ceratobranchial 5 was absent in *Synaphobranchus*; Springer & Johnson state that Ad5 should have been so indicated instead. The bone is there; the muscle is not."
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ceratobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials"
+          },
+          {
+            "element": "hypobranchials"
+          },
+          {
+            "element": "ceratohyal",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Synaphobranchus kaupii, Springer & Johnson (2015). Ventral gill-arch muscles described and illustrated first-hand from USNM 396609, about 360 mm TL. The dorsal muscle descriptions are Smith & Johnson's (2004) and are not repeated in this paper, so this row's attachments are the ventral series only — the dorsal end of the animal is on the earlier source, not this one. **The hyoid attachment is unusual for this record**: the sphincter pharyngis reaches forward past the branchial basket onto the hypohyal and anterior ceratohyal, which is why `ceratohyal` appears among the insertions where the other eels stop at the hypobranchials.",
+      "note": "Springer & Johnson correct Smith & Johnson (2004) twice on this animal: ER is present though unillustrated, and the earlier statement that ceratobranchial 5 is absent should have read Ad5."
+    }
+  ]
+}
