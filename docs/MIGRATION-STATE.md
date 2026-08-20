@@ -194,8 +194,8 @@ decisions living apart from the extraction, changeable without touching it —
 It is worth having. Measured over the current data: **297 of 1273 (source, name,
 region) keys span more than one species**, so re-homologising all of them is **889
 row edits against 297 mapping edits**. Cunningham's "abductor hallucis" alone spans
-14 species. The other 77% are single-species, where a row edit and a mapping edit
-cost the same.
+14 species. The remaining three quarters are single-species, where a row edit and
+a mapping edit cost the same.
 
 Three ways to settle it, and this should be settled **before** a mining pass
 creates thousands more row-level assignments:
