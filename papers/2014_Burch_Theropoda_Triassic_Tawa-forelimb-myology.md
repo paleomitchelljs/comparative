@@ -118,3 +118,29 @@ probability, an inference level, and a statement of whether the bone itself show
 anything. Pair with **Molnar & Diogo (2021)** for the confidence vocabulary and
 **Molnar et al. (2018)** for the same logic applied at the other end of the
 tetrapod stem.
+
+## Audit, 2026-08-19: the bracket behind the reconstruction was not taken
+
+**Held: 38 rows, all on *Tawa hallae*.**
+
+A fossil reconstruction is only as good as the extant phylogenetic bracket under
+it, and Burch's bracket is a **table of 35 extant taxa** scored for the same
+muscles — birds from *Paradisea* and *Hemignathus* through *Coragyps*, *Anhinga*,
+*Balaeniceps* and *Opisthocomus*, plus *Alligator sinensis*, *Crocodylus*,
+*Ctenosaura similis*, *Tetradactylus*, *Varanus exanthematicus*, *Trachemys
+scripta*, *Testudo elegans* and *Podocnemis unifilis*. **None of it was taken.**
+
+Seven of those taxa are already species in this dataset — *Grus americana*, *Gavia
+immer*, *Columba livia*, *Struthio camelus*, *Varanus exanthematicus*, *Trachemys
+scripta*, *Ctenosaura similis* — so the table holds observations on animals whose
+records are already here and waiting.
+
+The table OCRs as a bare column of binomials with muscle codes beside them
+(`SCA`, `DC`, `LS + TR`, `DS`), which is why it was passed over: it reads as
+noise in the text layer. It needs the page-image treatment that recovered the
+Diogo and Gheție tables.
+
+The prose also carries per-taxon attachment statements outside the table —
+*Struthio* 9, *Sphenodon* 8, *Crocodylus* 2, *Alligator* 1, *Iguana* 1 — mostly
+citing Jasinoski et al. (2006), so those are secondary in the way Russell & Bauer's
+are.

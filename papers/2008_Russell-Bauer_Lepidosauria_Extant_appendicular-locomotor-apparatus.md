@@ -110,3 +110,38 @@ few authors have followed them, which is why the synonymy list is as long as it 
 lower than a short focused paper such as Matsuoka & Hasegawa (5.9) because most
 of the text is comparative discussion rather than description — but the
 description that is there is per-muscle, per-animal, and states both ends.
+
+## Audit, 2026-08-19: what this pass took, and what it left
+
+**Held: 71 rows — 70 on *Iguana iguana* and one on *Sphenodon*.** From a monograph
+whose title is *The appendicular locomotor apparatus of Sphenodon and normal-limbed
+squamates*.
+
+Counting statements that sit next to attachment language, this paper compares **22
+genera** and makes **558** such per-genus statements:
+
+| | |
+|---|---|
+| *Iguana* 167 · *Sphenodon* 66 · *Varanus* 58 · *Gekko* 44 · *Lacerta* 38 | *Chamaeleo* 35 · *Tupinambis* 27 · *Phrynosoma* 21 · *Ameiva* 18 · *Heloderma* 17 |
+| *Crotaphytus* 14 · *Plestiodon* 10 · *Anolis* 8 · *Sceloporus* 7 | *Ctenosaura* 6 · *Ophisaurus* 6 · *Tarentola* 6 · *Dipsosaurus* 5 and four more |
+
+**Fourteen of those genera have no species record in this dataset at all.**
+
+**But the drop is smaller than that arithmetic suggests, and the reason matters.**
+Every per-taxon statement here is attributed to another worker — *Sphenodon* to
+Miner (1925), Byerly (1925), Howell (1936a) and Osawa (1898); the skinks to Nash &
+Tanner (1970); the teiids to Fisher & Tanner (1970); *Ophisaurus* to Humphry
+(1872a). This is a **review**, and filing those rows under `russell-bauer-2008`
+would claim observations it reports rather than made — the error that put Dick &
+Clemente's compiled table on a monitor nobody dissected.
+
+Two consequences. The *Sphenodon* material is largely **secondary to Osawa (1898)**,
+which this dataset already holds directly with 63 scored rows, so recovering it
+here would mostly duplicate a primary source. The other twenty genera are a real
+gap, and the honest route to them is the papers Russell & Bauer cite, not Russell &
+Bauer.
+
+**What is missing from the schema to do this properly** is a way to say "this
+source reports another worker's observation". `observations.json` has `blockedBy`
+for *which record*, and nothing for *whose observation*. Until that exists, this
+material stays in the note rather than in the data.

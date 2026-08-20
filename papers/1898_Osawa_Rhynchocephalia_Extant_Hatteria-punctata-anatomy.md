@@ -86,3 +86,30 @@ than the greater and lesser tubercles of the other amniote columns.
 **Part I (osteology) and Part III (nerves).** The nerve section describes the
 plexuses in their own right and would support far more than the per-muscle
 innervation already taken from the myology.
+
+## Audit, 2026-08-19: two findings, one of them procedural
+
+**Held: 63 rows, all limb, plus the iliocaudalis and ischiocaudalis.**
+
+**Osawa describes the cranial and axial musculature and none of it was taken.**
+Mentions in the myology: pterygoideus 17, temporalis 14, masseter 12 for the jaw;
+obliquus 28, intercostales 26, transversus 10, longissimus 7 for the trunk. The
+dataset holds zero cranial and zero axial rows from this source. Lepidosauria's
+cranial column is thin and *Sphenodon* is the outgroup half of every squamate jaw
+comparison, so this is a real gap rather than a tidy one.
+
+### The procedural finding
+
+`MINING.md`'s density triage greps `origin|insert`. On this paper that returns
+**0.06 mentions per page** across 211 pages — below the 2.0 threshold, whose
+instruction is "do **not** plan rows around it".
+
+**The dataset already holds 63 scored rows from this paper.** The metric was
+refuted by data committed before the metric was written. What it actually measured
+was that the paper is in German: *entspringt* appears 142 times, *Ursprung* 71,
+*Ansatz* 55, *inserirt* 52 — **314 attachment statements**, or 1.5 per page in a
+language that says in one word what English says in four.
+
+Four of the ten works in `WORKLIST.md`'s acquisition table are German, so the check
+would have told a future reader to skip Gaupp, Ribbing, Lakjer and Ogushi on
+arrival. `MINING.md` is corrected.

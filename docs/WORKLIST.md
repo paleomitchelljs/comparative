@@ -224,6 +224,45 @@ against the threshold of 4.
   from it is entered anywhere. The relative muscle weights in the same table are
   unambiguous and are quoted in the rows.
 
+## Four mined sources, re-audited
+
+Sources already mined were re-read against what they actually contain, on the
+theory that the old model dropped whatever it had nowhere to put. It did, and the
+drops fall into three kinds. Details are in each reading note.
+
+| Source | Held | What it also contains |
+|---|---|---|
+| Russell & Bauer (2008) | 71 rows, 70 on *Iguana* | 558 attachment statements across **22 lepidosaur genera**; 14 have no species record |
+| Walker (1973) | 22 rows, all *Trachemys* | 90 statements across **nine other turtle genera** — a pleurodire, a tortoise, a softshell, a marine turtle |
+| Osawa (1898) | 63 rows, all limb | The **cranial and axial myology**, none of it taken |
+| Burch (2014) | 38 rows, all *Tawa* | A bracket table of **35 extant taxa**, seven of them already species here |
+
+**Kind 1 — comparative breadth, first-hand.** Walker's other nine turtles are his
+own observations and are directly fileable. **This is the best recovery target of
+the four**: the species are few, the observations first-hand, and Testudines is
+one of the thinner columns of any size.
+
+**Kind 2 — comparative breadth, secondary.** Russell & Bauer's 22 genera and most
+of Burch's per-taxon prose are other workers' observations, reported. Filing them
+under the reporting source would repeat the Dick & Clemente error. **The schema has
+no way to say "this source reports another worker's observation"** —
+`observations.json` records which record is unsettled, not whose observation it is.
+That gap is what blocks this material, and it is worth closing before the next
+review-shaped source is mined.
+
+**Kind 3 — a table that reads as noise.** Burch's bracket OCRs as a column of
+binomials with muscle codes beside them. Same fix as the Diogo and Gheție tables:
+read it as a page image.
+
+### The procedural finding, which is the most valuable one
+
+`MINING.md`'s density triage grepped `origin|insert`. On Osawa it returns **0.06
+mentions per page** — below the threshold whose instruction is "do not plan rows
+around it" — for a paper this dataset already holds **63 scored rows** from. The
+metric was measuring what language the paper is in. Four of the ten works in the
+acquisition table above are German. `MINING.md` now greps the German and French
+vocabulary too, and says to read a German figure as worth about double.
+
 ## Records whose homology no comparative source vouches for
 
 `validate.py` warns on each by name and `STATUS.md` counts them. There were

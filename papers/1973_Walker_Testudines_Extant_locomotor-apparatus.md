@@ -114,3 +114,26 @@ describes them in the same detail, and they are the remaining ~28 Testudines row
 The deltoideus row carries an origin and **no insertion**, because the passage that
 gives the origin does not state where it ends; that is the source's shape, not a
 gap in the reading.
+
+## Audit, 2026-08-19: the comparative half was left behind
+
+**Held: 22 rows, all on *Trachemys scripta*.** From a 100-page monograph.
+
+Walker's own dissection is *Pseudemys scripta elegans*, which is *Trachemys scripta
+elegans* under the current name, so those 22 rows are correctly attributed and the
+66 *Pseudemys* statements in the text are the ones behind them.
+
+**What was dropped is every other turtle.** Statements sitting next to attachment
+language, by genus: *Pelomedusa* 21, *Testudo* 19, *Trionyx* 16, *Dermochelys* 14,
+*Chelydra* 8, *Caretta* 5, *Emys* 3, *Terrapene* 3, *Gopherus* 1 — **90 statements
+across nine genera**, none of which has a species record here.
+
+This is a first-hand comparative monograph, not a review, so unlike Russell & Bauer
+these are Walker's own observations and are directly fileable. Testudines sits at
+72% and is one of the thinner columns of any size; a pleurodire (*Pelomedusa*), a
+tortoise (*Testudo*), a softshell (*Trionyx*) and a marine turtle (*Dermochelys*)
+would make the clade a real comparison instead of one emydid.
+
+**The highest-value recovery of the four sources audited**, because the
+observations are first-hand, the species are few enough to add, and the column
+they land in is thin.

@@ -54,8 +54,21 @@ what their titles promise, and one line predicts it:
 ```sh
 f="papers/SOME_PAPER.pdf"
 pdftotext -layout "$f" /tmp/t.txt
-echo "$(grep -ciE 'origin|insert' /tmp/t.txt) mentions / $(pdfinfo "$f" | awk '/Pages/{print $2}') pages"
+echo "$(grep -ciE 'origin|insert|ursprung|ansatz|entspringt|inserirt|naissance|insertion' /tmp/t.txt) \
+  mentions / $(pdfinfo "$f" | awk '/Pages/{print $2}') pages"
 ```
+
+**The language terms are not optional.** This check used to grep `origin|insert`
+only, and on a German source that is a test of what language the paper is in.
+Osawa (1898) on the tuatara scores **0.06 English mentions per page** across 211
+pages — "not a descriptive paper, do not plan rows around it" — while its German
+attachment vocabulary appears 314 times. The dataset already holds **63 scored
+rows** from it, so the metric was refuted by data already committed. Four of the
+ten works in `WORKLIST.md`'s acquisition table are in German.
+
+German is also more compact than English — one *entspringt* does the work of
+"takes its origin from" — so read a German figure as worth roughly twice its
+number against the thresholds below.
 
 Divide. The number is **origin/insertion mentions per page**:
 
