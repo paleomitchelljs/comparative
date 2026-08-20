@@ -156,9 +156,23 @@
                 "side": "medial",
                 "landmark": "fourth-trochanter"
               }
+            ],
+            "origin": [
+              {
+                "element": "ilium",
+                "alternative": true
+              },
+              {
+                "element": "thoracic-vertebrae",
+                "landmark": "thoracic-transverse-processes",
+                "alternative": true
+              },
+              {
+                "element": "ilium"
+              }
             ]
           },
-          "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is deliberately not scored.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Recording either would manufacture a decision the authors refuse to make.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin unscored for the same reason as the PIFI 2**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation."
+          "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is two candidates, and both are recorded as candidates.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Unlike the PIFI 1, whose two candidates are both iliac and collapse to `ilium`, these sit on different bones, so both are listed with `alternative: true` — the flag says the muscle arises from one of them and nobody has said which. Recording one alone would manufacture a decision the authors refuse to make; recording neither loses the fact that the choice is between exactly these two.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin scored as the ilium, no more precisely**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation. Both candidate origins are on the ilium, so the ilium is the least general element that contains either, and the row carries that rather than nothing — a coarse origin is recoverable detail, a missing one is a second reading of the paper."
         },
         {
           "species": "gallus-domesticus",
@@ -1485,6 +1499,9 @@
               {
                 "element": "pubis",
                 "side": "lateral"
+              },
+              {
+                "muscle": "rectus-abdominis"
               }
             ],
             "insertion": [
@@ -1495,7 +1512,7 @@
               }
             ]
           },
-          "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). The deep layer of the ventral muscles, from the lateral surface of the pubis, the praepubic plate, and **partly even from the most posterior segment of the rectus abdominis** — a muscle taking part of its origin from another muscle, which is not scored as a skeletal attachment. Insertion on the anterior surface of the crista femoralis. Its proximal part is exposed between the cruralis in front and the obturator externus behind. *Discoglossus* has this muscle from the ischium and pubic cartilage margin to the ventral crista femoralis."
+          "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). The deep layer of the ventral muscles, from the lateral surface of the pubis, the praepubic plate, and **partly even from the most posterior segment of the rectus abdominis** — a muscle taking part of its origin from another muscle, carried as `muscle: rectus-abdominis`. Insertion on the anterior surface of the crista femoralis. Its proximal part is exposed between the cruralis in front and the obturator externus behind. *Discoglossus* has this muscle from the ischium and pubic cartilage margin to the ventral crista femoralis."
         },
         {
           "species": "prestosuchus-chiniquensis",
@@ -5333,10 +5350,13 @@
               {
                 "element": "tibia",
                 "landmark": "cnemial-crest"
+              },
+              {
+                "muscle": "femorotibialis"
               }
             ]
           },
-          "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Both ends at level I** — the strongest reconstruction in the paper, and one of only two muscles scoring level I at the origin. Muscular scars on the dorsal tubercle, dorsal crest, lateral crest and cranial tubercle of the pubis, and on the iliac peduncle where it contacts the pubis; insertion on the cnemial crest by the knee extensor tendon shared with the femoro-tibialis and ilio-tibialis. In both extant archosaur groups a secondary tendon perforates that extensor tendon — in birds to reach the tendon of origin of the digital flexors and gastrocnemius lateralis, in crocodylians to reach the gastrocnemius lateralis itself — and the reconstruction carries that perforating portion over.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **It has no bony insertion and none is scored**: like its counterpart in extant lepidosaurs and crocodylians it inserts on the femoro-tibialis, muscle to muscle, and an empty insertion here is the accurate record of that. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**"
+          "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Both ends at level I** — the strongest reconstruction in the paper, and one of only two muscles scoring level I at the origin. Muscular scars on the dorsal tubercle, dorsal crest, lateral crest and cranial tubercle of the pubis, and on the iliac peduncle where it contacts the pubis; insertion on the cnemial crest by the knee extensor tendon shared with the femoro-tibialis and ilio-tibialis. In both extant archosaur groups a secondary tendon perforates that extensor tendon — in birds to reach the tendon of origin of the digital flexors and gastrocnemius lateralis, in crocodylians to reach the gastrocnemius lateralis itself — and the reconstruction carries that perforating portion over.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **Its insertion is another muscle, and is recorded as one**: like its counterpart in extant lepidosaurs and crocodylians it ends on the femoro-tibialis, which the row carries as `muscle: femorotibialis`. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**"
         }
       ],
       "homology": {
@@ -16833,9 +16853,14 @@
                 "element": "urostyle",
                 "side": "ventral"
               }
+            ],
+            "insertion": [
+              {
+                "muscle": "ischioflexorius"
+              }
             ]
           },
-          "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis, inserting on the tendinous inscription that divides the semimembranosus about a third of the way from its origin. **No bony insertion, and this is the animal that shows it plainly** — the figures mark the inscription as the attachment site. Same arrangement as *Discoglossus*."
+          "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis, inserting on the tendinous inscription that divides the semimembranosus about a third of the way from its origin. **Its insertion is another muscle**, carried as `muscle: ischioflexorius` — the semimembranosus, on which the figures mark the tendinous inscription as the attachment site. Same arrangement as *Discoglossus*."
         },
         {
           "species": "discoglossus-pictus",
@@ -16850,9 +16875,14 @@
                 "element": "urostyle",
                 "side": "ventral"
               }
+            ],
+            "insertion": [
+              {
+                "muscle": "ischioflexorius"
+              }
             ]
           },
-          "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis. **No bony insertion is scored because it has none**: Table 1 gives its insertion as the semimembranosus, and the figures of *Ascaphus* mark it attaching at that muscle's tendinous inscription. That matches the record's own consensus, which reads the insertion as the tendinous inscription dividing the puboischiotibialis — so the anuran and the salamander agree on a muscle that ends inside another muscle. Before this row the record carried one species, *Taricha torosa*."
+          "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis. **Its insertion is another muscle, carried as `muscle: ischioflexorius`**: Table 1 gives it as the semimembranosus, and the figures of *Ascaphus* mark it attaching at that muscle's tendinous inscription. That matches the record's own consensus, which reads the insertion as the tendinous inscription dividing the puboischiotibialis — so the anuran and the salamander agree on a muscle that ends inside another muscle. Before this row the record carried one species, *Taricha torosa*."
         }
       ],
       "homology": {

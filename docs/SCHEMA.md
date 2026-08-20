@@ -378,13 +378,64 @@ is most of `WORKLIST.md`'s acquisition table.
 }
 ```
 
-- `element` — required, an `id` from `skeleton.json`. Always the **bone**, never a
-  subsite; subsites go in `landmark`.
+- `element` — an `id` from `skeleton.json`. Always the **bone**, never a
+  subsite; subsites go in `landmark`. Required unless the row uses `muscle`.
 - `side` — optional, from `skeleton.json.sides`. Absent means *unrecorded*, not
   *no side*. Never guess it.
 - `landmark` — optional, an `id` whose `partOf` chain reaches `element`. The
   validator enforces containment, because a landmark filed under the wrong bone
   silently corrupts the bone-first drill-down.
+- `muscle` — a muscle record `id`, **instead of** `element`, where the muscle ends
+  on another muscle. Mutually exclusive with `element`; enforced.
+- `alternative: true` — optional, marks one of several **candidate** attachments
+  where the source states an either/or and declines to choose.
+
+#### A muscle may end on another muscle
+
+```jsonc
+{ "muscle": "femorotibialis" }        // Liparini's ambiens pars II ends here
+```
+
+Not a lesser kind of attachment. A muscle inserting on the aponeurosis of another
+is the same observation as two sharing a tendon, and the anuran thigh is largely
+built that way — five of Prikryl's muscles end in the knee aponeurosis, the
+glutaeus maximus reaches it only through the cruralis, and *Xenopus*'s latissimus
+dorsi ends on two thigh muscles. These used to be dropped to prose beside an empty
+`attachments`, which lost them as data.
+
+Where the target muscle is itself unfiled, point at the record it is the candidate
+part of and say so in the note. The row can be refined later; a missing row has to
+be found by reading the paper again.
+
+Such a row names no element, so it **cannot place the muscle across a joint** and
+`jointgraph` skips it. That is correct — the attachment is real, its skeletal span
+is not stated.
+
+#### `alternative` — candidates the source will not choose between
+
+```jsonc
+"origin": [
+  { "element": "ilium", "alternative": true },
+  { "element": "thoracic-vertebrae", "landmark": "thoracic-transverse-processes",
+    "alternative": true }
+]
+```
+
+Liparini & Schultz give two possible origins for each puboischiofemoralis internus
+in *Prestosuchus* and explicitly refuse to pick one. Listing both flagged says *one
+of these, and nobody has said which*. Listing them unflagged would assert a muscle
+attaching in two places; listing neither asserts nothing and loses the fact that
+the choice is between exactly these two.
+
+**Prefer a less specific element that contains both candidates.** The PIFI 1's two
+candidates are both iliac, so it carries plain `ilium` and no flag — a coarse
+attachment is recoverable detail. Use `alternative` only where the candidates sit
+on different bones, as the PIFI 2's do.
+
+The same reasoning applies to an attachment the source locates only to a bone:
+Springer & Johnson could not determine **where on the cleithrum** *Anguilla*'s PCl
+arises, so the row is `{ "element": "cleithrum" }`. Knowing the bone is worth
+having; the absent `side` and `landmark` already say the rest is unrecorded.
 
 A muscle touching several sides or landmarks of one bone gets **several rows**.
 That is the whole point of the row form: a flat list could not say that the

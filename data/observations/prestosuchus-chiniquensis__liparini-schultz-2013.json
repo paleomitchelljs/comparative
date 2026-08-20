@@ -15,9 +15,20 @@
             "landmark": "greater-trochanter",
             "side": "lateral"
           }
+        ],
+        "origin": [
+          {
+            "element": "ilium",
+            "alternative": true
+          },
+          {
+            "element": "thoracic-vertebrae",
+            "landmark": "thoracic-transverse-processes",
+            "alternative": true
+          }
         ]
       },
-      "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is deliberately not scored.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Recording either would manufacture a decision the authors refuse to make.",
+      "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is two candidates, and both are recorded as candidates.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Unlike the PIFI 1, whose two candidates are both iliac and collapse to `ilium`, these sit on different bones, so both are listed with `alternative: true` — the flag says the muscle arises from one of them and nobody has said which. Recording one alone would manufacture a decision the authors refuse to make; recording neither loses the fact that the choice is between exactly these two.",
       "region": "pelvic",
       "record": "puboischiofemoralis-internus",
       "_occ": 3,
@@ -46,9 +57,14 @@
             "side": "medial",
             "landmark": "fourth-trochanter"
           }
+        ],
+        "origin": [
+          {
+            "element": "ilium"
+          }
         ]
       },
-      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin unscored for the same reason as the PIFI 2**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation."
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin scored as the ilium, no more precisely**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation. Both candidate origins are on the ilium, so the ilium is the least general element that contains either, and the row carries that rather than nothing — a coarse origin is recoverable detail, a missing one is a second reading of the paper."
     },
     {
       "name": "Ilio-femoralis (IF)",
@@ -128,9 +144,14 @@
             "element": "pubis",
             "side": "medial"
           }
+        ],
+        "insertion": [
+          {
+            "muscle": "femorotibialis"
+          }
         ]
       },
-      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **It has no bony insertion and none is scored**: like its counterpart in extant lepidosaurs and crocodylians it inserts on the femoro-tibialis, muscle to muscle, and an empty insertion here is the accurate record of that. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**"
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **Its insertion is another muscle, and is recorded as one**: like its counterpart in extant lepidosaurs and crocodylians it ends on the femoro-tibialis, which the row carries as `muscle: femorotibialis`. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**"
     },
     {
       "name": "Femoro-tibialis (FMT)",

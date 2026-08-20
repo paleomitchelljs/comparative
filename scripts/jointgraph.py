@@ -84,8 +84,11 @@ class JointGraph:
         att = attachments or {}
 
         def ends(side):
-            return {r.get("landmark") or r.get("element")
-                    for r in att.get(side, []) if isinstance(r, dict)}
+            # A row may end on another muscle rather than a bone, in which case
+            # it names no element and cannot place the muscle across a joint.
+            # Those rows are skipped rather than contributing a None node.
+            return {end for r in att.get(side, []) if isinstance(r, dict)
+                    for end in [r.get("landmark") or r.get("element")] if end}
 
         out = set()
         for o in ends("origin"):

@@ -63,9 +63,14 @@
             "element": "urostyle",
             "side": "ventral"
           }
+        ],
+        "insertion": [
+          {
+            "muscle": "ischioflexorius"
+          }
         ]
       },
-      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis, inserting on the tendinous inscription that divides the semimembranosus about a third of the way from its origin. **No bony insertion, and this is the animal that shows it plainly** — the figures mark the inscription as the attachment site. Same arrangement as *Discoglossus*."
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis, inserting on the tendinous inscription that divides the semimembranosus about a third of the way from its origin. **Its insertion is another muscle**, carried as `muscle: ischioflexorius` — the semimembranosus, on which the figures mark the tendinous inscription as the attachment site. Same arrangement as *Discoglossus*."
     },
     {
       "name": "Pyriformis",
@@ -293,6 +298,9 @@
           {
             "element": "pubis",
             "side": "lateral"
+          },
+          {
+            "muscle": "rectus-abdominis"
           }
         ],
         "insertion": [
@@ -303,19 +311,27 @@
           }
         ]
       },
-      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). The deep layer of the ventral muscles, from the lateral surface of the pubis, the praepubic plate, and **partly even from the most posterior segment of the rectus abdominis** — a muscle taking part of its origin from another muscle, which is not scored as a skeletal attachment. Insertion on the anterior surface of the crista femoralis. Its proximal part is exposed between the cruralis in front and the obturator externus behind. *Discoglossus* has this muscle from the ischium and pubic cartilage margin to the ventral crista femoralis."
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). The deep layer of the ventral muscles, from the lateral surface of the pubis, the praepubic plate, and **partly even from the most posterior segment of the rectus abdominis** — a muscle taking part of its origin from another muscle, carried as `muscle: rectus-abdominis`. Insertion on the anterior surface of the crista femoralis. Its proximal part is exposed between the cruralis in front and the obturator externus behind. *Discoglossus* has this muscle from the ischium and pubic cartilage margin to the ventral crista femoralis."
     },
     {
       "name": "Sartorius–semitendinosus complex",
       "region": "thigh",
       "record": null,
       "blockedBy": "division",
-      "blockedNote": "**In *Ascaphus* these are one muscle mass, and this dataset files them on two different records.** The complex arises by two heads separated only by a shallow cleft — a sartorial head from the fascia of the obturator externus and a semitendinosal head from the fascia of the adductor magnus, neither from bone — and inserts by a single tendon on the tibial head of the tibiofibula. In *Discoglossus* the sartorius is filed on `pubotibialis` and the semitendinosus on `ischioflexorius`, and splitting this observation between them would assert a division the animal does not show; filing it whole on either would put half an observation on the wrong record. Both heads arise from fascia, so there is no skeletal origin to record either way. What would settle it is a treatment of whether the anuran sartorius and semitendinosus are separable homologues at all — Prikryl et al. give four author's names for the pair between them and do not resolve it.",
+      "blockedNote": "**In *Ascaphus* these are one muscle mass, and this dataset files them on two different records.** The complex arises by two heads separated only by a shallow cleft — a sartorial head from the fascia of the obturator externus and a semitendinosal head from the fascia of the adductor magnus, neither from bone — and inserts by a single tendon on the tibial head of the tibiofibula. In *Discoglossus* the sartorius is filed on `pubotibialis` and the semitendinosus on `ischioflexorius`, and splitting this observation between them would assert a division the animal does not show; filing it whole on either would put half an observation on the wrong record. Both heads arise from the fascia of other muscles — the sartorial from the obturator externus, the semitendinosal from the adductor magnus — and those are recorded as muscle attachments rather than left out: the obturator externus is itself parked, so its origin is carried on `puboischiofemoralis-externus`, the record this dataset's pectineus sits on and the one the obturator externus is the candidate part of. That is the least wrong available target and the note says so. What would settle it is a treatment of whether the anuran sartorius and semitendinosus are separable homologues at all — Prikryl et al. give four author's names for the pair between them and do not resolve it.",
       "attachments": {
         "insertion": [
           {
             "element": "tibiofibula",
             "side": "proximal"
+          }
+        ],
+        "origin": [
+          {
+            "muscle": "puboischiofemoralis-externus"
+          },
+          {
+            "muscle": "adductor-femoris"
           }
         ]
       },
@@ -409,12 +425,17 @@
       "region": "thigh",
       "record": null,
       "blockedBy": "no-record",
-      "blockedNote": "Origin below the iliacus externus on the ventral surface of the iliac shaft; inserts on the fascia of the cruralis close to the base of the thigh. Parked as in *Discoglossus*: it has no skeletal insertion and no record, ending in the fascia lata. Only the iliac origin is scored. A record would have to be created, or a case made that it belongs inside `extensor-iliotibialis` with the cruralis whose fascia it tensions.",
+      "blockedNote": "Origin below the iliacus externus on the ventral surface of the iliac shaft; inserts on the fascia of the cruralis close to the base of the thigh. Parked as in *Discoglossus*: it has no skeletal insertion and no record of its own, ending in the fascia of the cruralis — recorded as `muscle: extensor-iliotibialis`. The insertion on the fascia of the cruralis is carried as `muscle: extensor-iliotibialis`, the record the cruralis sits on. A record would have to be created, or a case made that it belongs inside `extensor-iliotibialis` with the cruralis whose fascia it tensions.",
       "attachments": {
         "origin": [
           {
             "element": "ilium",
             "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "extensor-iliotibialis"
           }
         ]
       },

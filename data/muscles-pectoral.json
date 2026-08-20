@@ -10643,7 +10643,7 @@
           "name": "Latissimus dorsi",
           "present": "yes",
           "speciesBasis": "source",
-          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **Neither end is bone.** The origin on the dorsal fascia is scored on `dorsal-fascia-anuran`; the insertion is onto the superficial layers of the glutaeus maximus and cruralis, muscle onto muscle, and there is no element for that. So the row carries one attachment and the note carries the other end — which is the accurate shape of this observation, not a gap in it.",
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **Neither end is bone.** The origin on the dorsal fascia is scored on `dorsal-fascia-anuran`; the insertion is onto the superficial layers of the glutaeus maximus and cruralis, which are both this dataset's `extensor-iliotibialis`, so the row carries it as `muscle: extensor-iliotibialis`. A shoulder muscle ending on two thigh muscles is the observation, and it is now recorded as an attachment rather than described in prose beside an empty field.",
           "sources": [
             "prikryl-etal-2009"
           ],
@@ -10651,6 +10651,11 @@
             "origin": [
               {
                 "element": "dorsal-fascia-anuran"
+              }
+            ],
+            "insertion": [
+              {
+                "muscle": "extensor-iliotibialis"
               }
             ]
           }

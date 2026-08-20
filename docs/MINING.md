@@ -65,18 +65,27 @@ Recovering a dropped attachment costs reading the paper again — and the paper 
 cited from `sources.json`, so anything you *did* record can always be checked, but
 only if it is there to check.
 
-Three things are genuinely not scorable, and the note is their home:
+There is almost nothing this rule does not reach. Three cases used to be handled
+in prose and are now rows — see [`SCHEMA.md`](SCHEMA.md#attachments--element--side--landmark-rows):
 
-- **An attachment onto another muscle.** Liparini's ambiens pars II ends on the
-  femoro-tibialis; *Xenopus*'s latissimus dorsi ends on two thigh muscles. There is
-  no element and inventing one would be worse.
-- **An either/or the source refuses to resolve.** Liparini & Schultz give two
-  candidate origins for each puboischiofemoralis internus and decline to choose;
-  attachment rows can only say "and", so scoring both would assert a claim the
-  authors explicitly withhold.
-- **What the source does not state.** An empty `attachments` reads as unrecorded,
-  which is true and useful. Springer & Johnson could not determine the cleithral
-  origin of PCl in *Anguilla* and say so; that is a fact about the specimen.
+- **An attachment onto another muscle** gets `{"muscle": "<record-id>"}` instead of
+  an element. Liparini's ambiens pars II ends on the femoro-tibialis; *Xenopus*'s
+  latissimus dorsi ends on two thigh muscles; every anuran tensor fasciae latae
+  ends on the cruralis. A muscle inserting on another's aponeurosis is the same
+  observation as two sharing a tendon.
+- **An either/or the source refuses to resolve.** Prefer the least specific element
+  that contains both candidates — the two possible PIFI 1 origins are both iliac,
+  so the row says `ilium`. Where the candidates sit on different bones, list both
+  with `alternative: true`.
+- **An attachment located only to a bone.** Score the bone. Springer & Johnson
+  could not determine where on the cleithrum *Anguilla*'s PCl arises; the row is
+  `{"element": "cleithrum"}`, and the absent `side` and `landmark` already say the
+  rest is unrecorded.
+
+What remains genuinely unscorable is only **what the source does not state at
+all** — and an empty `attachments` reads as unrecorded, which is true and useful.
+Do not confuse it with the case above: "could not determine the site" is a stated
+bone, not a missing attachment.
 
 ---
 

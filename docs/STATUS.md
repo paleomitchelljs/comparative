@@ -107,14 +107,14 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 754 |
+| pectoral | 16 | 755 |
 | forearm | 19 | 629 |
 | foot | 12 | 463 |
-| cranial | 51 | 400 |
-| thigh | 10 | 372 |
+| cranial | 51 | 401 |
+| thigh | 10 | 373 |
 | leg | 10 | 345 |
+| pelvic | 8 | 282 |
 | arm | 5 | 282 |
-| pelvic | 8 | 276 |
 | hand | 9 | 237 |
 | axial | 15 | 130 |
 | fin | 9 | 57 |
@@ -129,8 +129,8 @@ name a side or a landmark rather than the bare bone.
 | | |
 |---|---|
 | Elements | 277, of which 258 (93%) carry at least one attachment |
-| Observed attachment rows | 3945 |
-| Rows naming a **landmark** | 1068 (27%) |
+| Observed attachment rows | 3954 |
+| Rows naming a **landmark** | 1069 (27%) |
 | Rows naming a **side** | 2183 (55%) |
 | Osteological correlates | 126 flagged, 120 carry a muscle |
 <!-- /counts:skeleton -->
@@ -146,8 +146,8 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 |---|---:|---:|---:|
 | cranial | 27 | 72 | 2.7 |
 | hindlimb | 44 | 52 | 1.2 |
-| pectoral | 34 | 31 | 0.9 |
 | axial | 37 | 33 | 0.9 |
+| pectoral | 35 | 31 | 0.9 |
 | forelimb | 59 | 46 | 0.8 |
 | fin | 8 | 5 | 0.6 |
 | pelvic | 31 | 19 | 0.6 |

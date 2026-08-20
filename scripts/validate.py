@@ -359,6 +359,9 @@ def main():
                 err(f"sources.json: duplicate key '{s['key']}'")
             seen.add(s["key"])
     element_ids = {e["id"] for e in skeleton_doc["elements"]}
+    # An attachment row may end on a muscle rather than a bone; see check_rows.
+    muscle_record_ids = {mm.get("id") for path in MUSCLE_FILES
+                         for mm in load(path)["muscles"]}
     side_terms = set(skeleton_doc.get("sides", []))
     nerves_by_id = {n["id"]: n for n in nerves_doc["nerves"]}
     joints_by_id = {j["id"]: j for j in joints_doc["joints"]}
@@ -543,16 +546,48 @@ def main():
         return True
 
     def check_rows(att, label, taxon=None):
-        """An attachment row is {element, side?, landmark?}. The landmark must
-        sit inside the element, or the bone-first drill-down would file it in
-        the wrong place. Shared by muscle occurrences and by observations.json,
-        deliberately: a parked observation is held to the same standard as a
-        filed one, or parking it would just move the error later."""
+        """An attachment row is {element, side?, landmark?}, or {muscle, side?}.
+
+        The landmark must sit inside the element, or the bone-first drill-down
+        would file it in the wrong place. Shared by muscle occurrences and by
+        the observation files, deliberately: a parked observation is held to the
+        same standard as a filed one, or parking it would just move the error
+        later.
+
+        **A muscle may end on another muscle**, and `muscle` names the record it
+        ends on. That is not a lesser kind of attachment — a muscle inserting on
+        the aponeurosis of another is the same observation as two sharing a
+        tendon, and the anuran thigh is largely built that way. These rows used
+        to be dropped to prose, which lost them.
+
+        **`alternative: true` marks one of several candidate attachments** for a
+        source that states an either/or and refuses to choose. Liparini &
+        Schultz give two possible origins for each puboischiofemoralis internus
+        in *Prestosuchus* and decline to pick one. Listing both flagged is
+        honest; listing both unflagged would assert a muscle attaching in two
+        places, and dropping them asserts nothing at all and loses the reading.
+        Prefer a less specific element that contains both candidates where one
+        exists — `ilium` rather than two named parts of it — and use this only
+        where the candidates sit on different bones.
+        """
         for side_key in ("origin", "insertion"):
             for row in att.get(side_key, []):
                 if not isinstance(row, dict):
                     err(f"{label}: attachments.{side_key} entry is not an "
-                        f"element/side/landmark row: {row!r}")
+                        f"element/side/landmark or muscle row: {row!r}")
+                    continue
+                if row.get("alternative") not in (None, True):
+                    err(f"{label}: attachments.{side_key} `alternative` must be "
+                        f"true or absent, not {row['alternative']!r}")
+                if "muscle" in row:
+                    if "element" in row:
+                        err(f"{label}: attachments.{side_key} row has both "
+                            f"`element` and `muscle` — it ends on one or the other")
+                    elif row["muscle"] not in muscle_record_ids:
+                        err(f"{label}: attachments.{side_key} muscle "
+                            f"'{row['muscle']}' is not a muscle record")
+                    if row.get("side") and row["side"] not in side_terms:
+                        err(f"{label}: side '{row['side']}' not in {sorted(side_terms)}")
                     continue
                 el = row.get("element")
                 if el not in element_ids:

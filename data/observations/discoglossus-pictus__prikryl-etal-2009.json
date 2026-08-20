@@ -455,9 +455,14 @@
             "element": "urostyle",
             "side": "ventral"
           }
+        ],
+        "insertion": [
+          {
+            "muscle": "ischioflexorius"
+          }
         ]
       },
-      "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis. **No bony insertion is scored because it has none**: Table 1 gives its insertion as the semimembranosus, and the figures of *Ascaphus* mark it attaching at that muscle's tendinous inscription. That matches the record's own consensus, which reads the insertion as the tendinous inscription dividing the puboischiotibialis — so the anuran and the salamander agree on a muscle that ends inside another muscle. Before this row the record carried one species, *Taricha torosa*."
+      "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis. **Its insertion is another muscle, carried as `muscle: ischioflexorius`**: Table 1 gives it as the semimembranosus, and the figures of *Ascaphus* mark it attaching at that muscle's tendinous inscription. That matches the record's own consensus, which reads the insertion as the tendinous inscription dividing the puboischiotibialis — so the anuran and the salamander agree on a muscle that ends inside another muscle. Before this row the record carried one species, *Taricha torosa*."
     },
     {
       "name": "Adductor longus",
@@ -549,12 +554,17 @@
       "region": "thigh",
       "record": null,
       "blockedBy": "no-record",
-      "blockedNote": "A thin superficial muscle on the anterior surface of the thigh, from a small area on the inner surface of the iliac shaft or from its ventral surface — Prikryl et al. say the origin varies considerably — running across the ventral surface of the shaft and attaching onto the fascia of the cruralis. That fascia, the fascia lata, continues to the knee and becomes the broad aponeurosis. **It has no skeletal insertion and no record**: it ends in fascia, and the function given is putting tension on the fascia lata with no obvious movement of the appendicular skeleton. Only the iliac origin is scored. A record would have to be created for it, or a case made that it belongs inside `extensor-iliotibialis` with the cruralis whose fascia it tensions.",
+      "blockedNote": "A thin superficial muscle on the anterior surface of the thigh, from a small area on the inner surface of the iliac shaft or from its ventral surface — Prikryl et al. say the origin varies considerably — running across the ventral surface of the shaft and attaching onto the fascia of the cruralis. That fascia, the fascia lata, continues to the knee and becomes the broad aponeurosis. **It has no skeletal insertion and no record of its own**: it ends in the fascia of the cruralis, which is recorded as `muscle: extensor-iliotibialis` — the record the cruralis sits on — and the function given is putting tension on the fascia lata with no obvious movement of the appendicular skeleton. A record would have to be created for it, or a case made that it belongs inside `extensor-iliotibialis` with the cruralis whose fascia it tensions.",
       "attachments": {
         "origin": [
           {
             "element": "ilium",
             "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "extensor-iliotibialis"
           }
         ]
       },
