@@ -137,3 +137,41 @@ would make the clade a real comparison instead of one emydid.
 **The highest-value recovery of the four sources audited**, because the
 observations are first-hand, the species are few enough to add, and the column
 they land in is thin.
+
+## Re-mine, first pass: the six other turtles he dissected
+
+The audit said the comparative half was left behind. Walker's own Materials
+section says it more precisely than any genus count could:
+
+> Testudinidae: *Pseudemys scripta elegans*, *Testudo graeca*, *Geochelone
+> elephantopus*; Trionychidae: *Trionyx spiniferus*; Cheloniidae: *Caretta
+> caretta* (pelvic limb), *Lepidochelys kempii* (pectoral limb). … Pelomedusidae:
+> *Pelomedusa subrufa*; Chelidae: *Chelodina longicollis*.
+
+**He dissected seven species and this dataset held rows for one** — the type,
+*Pseudemys scripta elegans*, which is *Trachemys scripta elegans* under the
+current name and is correctly attributed. The other six were simply not taken.
+
+All six now have species records, and **139 of his comparative statements are
+parked** in `observations.json` against them: *Pelomedusa* 30, *Testudo* 25,
+*Trionyx* 24, *Chelodina* 23, *Chelydra* 14, *Caretta* 12, *Geochelone* 9,
+*Lepidochelys* 2.
+
+They are parked on `partial`, a `blockedBy` kind this pass added, because Walker
+mostly states a **difference** rather than a complete attachment — "the origin
+ranges from the lateral one half in *Testudo* to just the lateral one fifth in
+*Emys*", "not at all in the Trionychidae, slightly in *Chelydra* and the
+pleurodires, rather extensively in the remaining groups". The record is usually
+obvious; what needs judgement is whether such a statement stands as its own
+occurrence or refines the *Trachemys* one. That judgement is the next pass, and it
+no longer requires opening the book.
+
+**Two pleurodires is the prize.** *Pelomedusa* and *Chelodina* are the side-necked
+lineage and the outgroup to every cryptodire statement the dataset makes about
+turtles; between them they carry 53 of the 139 parked statements. The Cheloniidae
+pair is deliberate on Walker's part — *Caretta* pelvic, *Lepidochelys* pectoral —
+so the two flippers between them cover both limbs.
+
+**Still not taken:** the muscle-by-muscle assignment of the 139, and the
+osteological survey of "most of the chelonian families and subfamilies" in the MCZ
+collections, which is presence-and-shape rather than attachment.
