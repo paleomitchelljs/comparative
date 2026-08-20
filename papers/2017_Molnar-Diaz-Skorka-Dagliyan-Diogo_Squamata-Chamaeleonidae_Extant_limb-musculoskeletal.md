@@ -177,14 +177,33 @@ not observed in the whiptail.
 
 Each was first written as a row with `present: "no"` on a record the muscle plainly
 occupies, and **the join refused it three separate times** — it will not let one
-source put `present: "yes"` and `present: "no"` on one occurrence. The rule the
-mistake kept breaking: **a fusion is a division statement and a missing member of an
-occupied group is a note, neither is an absence.** `present: "no"` means the record is
-empty in this animal. Scoring a fused levator claviculae as absent would say a muscle
-is missing when the paper says it is merged.
+source put `present: "yes"` and `present: "no"` on one occurrence. `present: "no"`
+means the record is empty in this animal, and scoring a fused levator claviculae as
+absent would say a muscle is missing when the paper says it is merged.
 
 That check earns its keep. It exists to stop two studies silently overwriting each
 other, and it turns out to catch a single miner's category error just as well.
+
+**The category error was the schema's, not only the miner's, and it is fixed.**
+`present` had five states and none of them said *fused with its neighbour*, so the
+claim had nowhere to go but prose. An occurrence now carries `fusedWith`, and this
+paper is what it was built from — it supplies six of the dataset's first entries:
+
+| Animal | Record | Not separable from |
+|---|---|---|
+| both chameleons | `levator-scapulae` | Levator claviculae *(no record here)* |
+| both chameleons | `triceps-brachii` | Triceps coracoideus *(no record here)* |
+| both chameleons | `fibularis-group` | Fibularis brevis *(no record here)* |
+| both chameleons | `tibialis-anterior` | `extensor-digitorum-longus-hl` |
+| both chameleons | `brachioradialis` | `extensor-digitorum` |
+| *A. uniparens* | `brachioradialis` | `extensor-antebrachii-carpi-radialis` |
+| all three | `extensor-antebrachii-carpi-ulnaris` | `flexor-carpi-ulnaris` |
+
+Read the last three together and the paper's argument is visible in one column:
+**the brachioradialis fuses with a different muscle in the chameleons than in the
+whiptail** — the extensor digitorum in one, the extensor carpi radialis in the other
+— so a muscle that is "fused" in both animals is not in the same condition in both.
+That distinction did not exist in this dataset before `fusedWith` did.
 
 ### Scoped for a real pass
 

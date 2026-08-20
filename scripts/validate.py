@@ -1030,6 +1030,39 @@ def main():
                 err(f"{where}/{sid}: speciesBasis='generalised' but '{sid}' is a real "
                     f"species — say which basis actually attributed it")
 
+            # Fusion: present, but not separable from a named neighbour. It is
+            # not an absence — `present: "no"` says the record is empty in this
+            # animal, and a muscle fused with its neighbour is not — and it is
+            # not a division either, because the two may be different records.
+            # The join closes the pair, so a record-id entry that cannot be
+            # reciprocated is a half-claim and an error.
+            fw = occ.get("fusedWith")
+            if fw is not None:
+                if not isinstance(fw, list) or not fw or not all(
+                        isinstance(x, str) and x.strip() for x in fw):
+                    err(f"{where}/{sid}: `fusedWith` must be a non-empty list of "
+                        f"muscle records or of names this dataset has no record for")
+                for other in fw if isinstance(fw, list) else []:
+                    if other == mid:
+                        err(f"{where}/{sid}: `fusedWith` names its own record")
+                    elif other in muscles:
+                        rec_doc = muscles[other][0] if isinstance(muscles[other], tuple) else muscles[other]
+                        back = next((o for o in rec_doc.get("occurrences") or []
+                                     if o.get("species") == sid
+                                     and o.get("stage") == occ.get("stage")), None)
+                        if back is None:
+                            err(f"{where}/{sid}: fused with '{other}', which has no "
+                                f"occurrence for this animal — fusion is a claim "
+                                f"about a pair and both halves have to exist")
+                        elif mid not in (back.get("fusedWith") or []):
+                            err(f"{where}/{sid}: fused with '{other}' but that row "
+                                f"does not say so. The join closes the pair; run "
+                                f"./scripts/build.sh --write")
+                if not (occ.get("note") or occ.get("attachmentNote")):
+                    warn(f"{where}/{sid}: `fusedWith` with no prose. Say what the "
+                         f"source actually reports — 'fused', 'not separable' and "
+                         f"'not present as a distinct muscle' are different claims")
+
             st = occ.get("stage")
             if st is not None and st not in STAGE:
                 err(f"{where}/{sid}: stage='{st}' not in {sorted(STAGE)}")

@@ -39,10 +39,11 @@ MAP = ROOT / "data/mapping"
 
 # Everything on an occurrence belongs to the observation EXCEPT these three, which
 # the join reconstructs: `species` from the filename, `sources` from which file
-# the row is in, and `spans` from the attachments. Taking the complement rather
+# the row is in, `spans` from the attachments, and `fusedWith` from both sides of
+# the pair. Taking the complement rather
 # than a whitelist is deliberate — a whitelist silently drops any field added
 # later, and this script's whole purpose is to prove nothing is dropped.
-OCC_DROP = {"species", "sources", "spans"}
+OCC_DROP = {"species", "sources", "spans", "fusedWith"}
 
 # Fields that belong to the extraction file and do not travel back into an
 # occurrence. `record` and `region` place the row; `blockedBy`, `blockedNote` and
@@ -413,6 +414,25 @@ def join(into):
 
     write_mapping()
 
+    # Fusion is symmetric and is written once. A row saying it cannot be
+    # separated from another muscle is a claim about a pair, so the join closes
+    # it: whichever side the curator wrote it on, both occurrences carry it.
+    #
+    # An entry naming a muscle record is a fusion between two records and gets
+    # the reciprocal. An entry that is not a record id is a muscle the SOURCE
+    # names and this dataset has no group for — the chameleon's levator
+    # claviculae, fused into the levator scapulae — and there is nothing to
+    # reciprocate, so it stays on the one row.
+    record_ids = {m["id"] for path in muscle_files()
+                  for m in json.load(open(path))["muscles"]}
+    fused = collections.defaultdict(set)      # (species, stage, record) -> {other}
+    for rec, entries in by_record.items():
+        for sp, src, row in entries:
+            for other in row.get("fusedWith") or []:
+                fused[(sp, row.get("stage"), rec)].add(other)
+                if other in record_ids:
+                    fused[(sp, row.get("stage"), other)].add(rec)
+
     conflicts, pending = [], []
     for path in muscle_files():
         doc = json.load(open(path))
@@ -537,6 +557,10 @@ def join(into):
                 sp_spans = spans_of(occ.get("attachments"))
                 if sp_spans:
                     occ["spans"] = sp_spans
+                occ.pop("fusedWith", None)
+                pair = fused.get((sp, stage, m["id"]))
+                if pair:
+                    occ["fusedWith"] = sorted(pair)
                 out.append(occ)
             if out or m.get("occurrences") is not None:
                 m["occurrences"] = out

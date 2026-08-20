@@ -54,7 +54,7 @@ current.
 > refinements** — `ribs → true-ribs`, `mandible → retroarticular-process` — and is
 > the one worth doing first.
 
-## Three schema limits closed, 2026-08-20
+## Four schema limits closed, 2026-08-20
 
 Both were costing yield on every mining round, and both are now derived rather
 than authored — see [`SCHEMA.md`](SCHEMA.md).
@@ -86,10 +86,18 @@ muscle in the adult and two separate muscles in the larva, and the two collided 
 Absent is its own value and **does not mean adult** — nearly every row in the
 dataset says nothing, because nearly every source does not distinguish.
 
-**Still open**, in the order they cost most: **fusion is not expressible**, so
-*fused with its neighbour* has to be demoted to a `division` note — it came up four
-times in one paper; and the extraction key must name exactly one record, so a
-source's umbrella term spanning two records cannot be a key.
+**`fusedWith`.** `present` had five states and none said *fused with its
+neighbour*. That is not an absence — `present: "no"` says the record is empty and a
+fused muscle is not — and not a division either, because the two may be different
+records. It came up four times in Molnar et al. (2017) alone and each time the claim
+went to prose. An entry naming a record is symmetric and the join closes it; an
+entry naming a muscle this dataset has no group for stays on the one row. `present`
+stays `yes`, because fusing and losing are different events on a branch.
+
+**Still open:** the extraction key must name exactly one record, so a source's
+umbrella term spanning two records cannot be a key — `deltoid`, `quadriceps
+femoris`, `epicranius`, `digastric`. The observations are not lost; the name a
+reader would search on is.
 
 ## Task board
 

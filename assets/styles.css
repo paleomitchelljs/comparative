@@ -706,3 +706,12 @@ td .binomial + .common { display: block; }
   color: var(--unc); background: var(--unc-bg);
 }
 .stage-adult { color: var(--ink-3); background: var(--bg-sunken); }
+
+/* Fusion. Sits above the local name because it qualifies the whole row: what
+   follows describes a muscle the source could not separate from another. */
+.fused { margin: 0 0 0.3rem; display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.3rem; }
+.fusedlab {
+  font-family: var(--font-ui); font-size: 0.66rem; text-transform: uppercase;
+  letter-spacing: 0.05em; color: var(--warn);
+  background: var(--warn-bg); padding: 0.05rem 0.32rem; border-radius: 3px;
+}

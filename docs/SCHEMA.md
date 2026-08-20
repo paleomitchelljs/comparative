@@ -148,6 +148,7 @@ source addresses it; that is different from a source reporting absence.
 |---|---|---|
 | `species` | ✔ | An `id` from `species.json`. The clade is derived from it and is never stored |
 | `stage` | | `embryonic` · `larval` · `metamorphic` · `juvenile` · `adult`. **Part of the occurrence's identity** — see below |
+| `fusedWith` | | Muscles this one is present but not separable from. Symmetric and closed by the join — see below |
 | `speciesBasis` | ✔ | How the attribution was made — see above |
 | `present` | | `yes` (default) · `no` · `variable` · `uncertain` · `inferred`. Use `inferred` for fossil reconstructions. **`variable` is a clade rollup, not a species observation** — at species level use `yes`/`no`/`uncertain` and put within-species variation in the note. `validate.py` warns if a `variable` row also carries attachments, since somebody who wrote down where the muscle attached did not find its presence variable |
 | `name` | ✔ if present | What this muscle is called **in that taxon's literature** |
@@ -163,6 +164,40 @@ source addresses it; that is different from a source reporting absence.
 `present: "no"` means *this source examined this taxon and did not find the
 muscle*. It does not mean the muscle is absent from the clade. Abdala & Diogo
 (2010) repeatedly document muscles present in one lizard and absent in another.
+
+### `fusedWith` — present, but not a muscle of its own
+
+```jsonc
+{ "species": "chamaeleo-calyptratus", "present": "yes",
+  "fusedWith": ["Levator claviculae"], … }
+{ "species": "aspidoscelis-uniparens", "present": "yes",
+  "fusedWith": ["brachioradialis"], … }
+```
+
+`present` had five states and none of them was this one. A source reporting that a
+muscle is *fused with its neighbour*, or *not present as a distinct muscle*, is not
+reporting an absence — `present: "no"` says the record is empty in this animal, and
+a fused muscle is not — and it is not reporting a division either, because the two
+muscles may be different records. It came up four times in Molnar et al. (2017)
+alone and each time the claim had to be demoted to prose, where nothing can count
+it. **Fusion, loss and not-observed are three different observations.**
+
+Two kinds of entry, and the difference is whether this dataset has a group for the
+other muscle:
+
+- **A muscle record id.** A fusion between two records — the whiptail's
+  brachioradialis and its extensor carpi radialis. Fusion is symmetric, so
+  **write it on one side and the join closes it**; `validate.py` errors if the
+  other record has no occurrence for that animal, because half a pair is not a
+  claim.
+- **A name this dataset has no record for.** The chameleon's levator claviculae,
+  fused into the levator scapulae. Nothing to reciprocate, so it stays on the one
+  row and reads as plain text.
+
+`present` stays `yes`: the tissue is there, and a presence/absence reconstruction
+should see a fused muscle as present, because fusing and losing are different
+events on a branch. What changes is that the row now says the muscle has no
+independent identity in this animal, and says which muscle took it.
 
 ### `stage` — an animal's larva and its adult are two rows
 

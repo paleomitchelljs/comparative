@@ -799,7 +799,7 @@ function renderOccTable(m) {
                 ? 'NOT a specimen. The source describes the clade rather than an animal, so this row is a generalisation and no one dissection stands behind it'
                 : 'no better evidence — the clade default, and a guess'}">${esc(o.speciesBasis)}</span>` : ''}</td>
       <td><span class="pres pres-${esc(present)}">${esc(present)}</span></td>
-      <td>${o.name ? `<span class="localname">${esc(o.name)}</span>`
+      <td>${fusedChip(o)}${o.name ? `<span class="localname">${esc(o.name)}</span>`
           : subdivided ? `<span class="localname subdiv">No single homologue — subdivided;
               see <em>Fin-to-limb ancestry</em> below</span>`
           : '<span class="pres-no">—</span>'}
@@ -875,6 +875,22 @@ function spanChip(holder) {
   return `<span class="chip span${s.crosses ? ' crosses' : ''}" title="${
     s.crosses ? 'crosses a region boundary' : 'stays within one region'}">${
     esc(j(s.origin))} &rarr; ${esc(j(s.insertion))}</span>`;
+}
+
+/* Present, but not separable from a named neighbour. Not an absence — `present:
+   "no"` says the record is empty in this animal and a fused muscle is not — and
+   not a division either, because the two may be different records. An entry that
+   resolves to a record links to it; one that does not is a muscle the source
+   names and this dataset has no group for, and reads as plain text. */
+function fusedChip(o) {
+  if (!o.fusedWith || !o.fusedWith.length) return '';
+  const one = x => {
+    const rec = state.byId.get(x);
+    return rec ? `<a class="pill" data-goto="${esc(rec.id)}">${esc(rec.name)}</a>`
+               : `<span class="pill flat">${esc(x)}</span>`;
+  };
+  return `<div class="fused"><span class="fusedlab">not separable from</span>
+    ${o.fusedWith.map(one).join(' ')}</div>`;
 }
 
 function renderDivision(o) {
