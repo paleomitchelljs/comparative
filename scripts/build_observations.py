@@ -43,6 +43,42 @@ MAP = ROOT / "data/mapping"
 # is to prove nothing is dropped.
 OCC_DROP = {"species", "sources"}
 
+# Fields that belong to the extraction file and do not travel back into an
+# occurrence. `record` and `region` place the row; `blockedBy`, `blockedNote` and
+# `muscle` only exist while it is unassigned; the underscore fields are the
+# round-trip machinery `split()` wrote and a hand-written row will not have.
+EXTRACTION_ONLY = {"record", "region", "blockedBy", "blockedNote", "muscle",
+                   "_occ", "_keys", "_srcs", "_id"}
+
+# Sorts a row with no `_occ` after every row that has one, without inventing an
+# index for it. See `occurrence_order`.
+UNPLACED = float("inf")
+
+
+def occurrence_keys(row):
+    """The occurrence's field order, for a row `split()` did not write.
+
+    `_keys` records the order an occurrence already had, so the round trip stays
+    byte-identical and `build.sh` stays a fixed point. A row written by hand
+    during a mining pass has no such history: its own key order is the miner's,
+    and the join places around it the two fields it reconstructs — `species`
+    first, because every occurrence starts with it, and `sources` immediately
+    before `attachments`, which is where the large majority of the committed
+    occurrences carry it.
+    """
+    if row.get("_keys"):
+        return row["_keys"]
+    out = ["species"]
+    for k in row:
+        if k in EXTRACTION_ONLY or k in ("species", "sources"):
+            continue
+        if k == "attachments":
+            out.append("sources")
+        out.append(k)
+    if "sources" not in out:
+        out.append("sources")
+    return out
+
 
 def muscle_files():
     return sorted(glob.glob(str(ROOT / "data/muscles-*.json")))
@@ -187,7 +223,21 @@ def write_mapping():
 
 
 def join(into):
-    """observations/ + mapping/ -> muscle occurrences, written into `into`."""
+    """observations/ + mapping/ -> muscle occurrences, written into `into`.
+
+    Two studies of the same muscle in the same animal are two rows in two files
+    and one occurrence. The join takes the **union** of what they say and
+    refuses to choose when they disagree: a field set by two sources to two
+    different values stops the build and names the record, the animal, the field
+    and both sources. It cannot resolve that itself — two workers disagreeing
+    about where a muscle attaches is the thing this dataset exists to hold, and
+    it belongs in an `attachmentNote` under both their names.
+
+    The alternative, which this replaced, was for the first row read to win.
+    That was harmless only while `--split` wrote every source's row from one
+    merged occurrence, so the copies could not differ. The first hand-mined row
+    added beside an older one would have been dropped on filename order.
+    """
     by_record = collections.defaultdict(list)   # record -> [(species, source, row)]
     for f in sorted(OBS.glob("*.json")):
         doc = json.load(open(f))
@@ -198,40 +248,70 @@ def join(into):
 
     write_mapping()
 
+    conflicts, pending = [], []
     for path in muscle_files():
         doc = json.load(open(path))
         for m in doc["muscles"]:
-            rebuilt = {}                          # original index -> occurrence
-            for sp, src, row in by_record.get(m["id"], []):
-                key = row["_occ"]
-                occ = rebuilt.get(key)
-                if occ is None:
-                    occ = {}
-                    for k in row["_keys"]:
-                        if k == "species":
-                            occ["species"] = sp
-                        elif k == "sources":
-                            occ["sources"] = []
-                        elif k in row:
-                            occ[k] = row[k]
-                    occ.setdefault("sources", [])
-                    rebuilt[key] = occ
-                if src != "(unsourced)" and src not in occ["sources"]:
-                    occ["sources"].append(src)
+            # An occurrence is identified by (record, species): that pair is
+            # unique across all 1649 committed occurrences, which is why the
+            # merge can key on the species the filename already declares rather
+            # than on `_occ`. `_occ` survives as what it always was underneath —
+            # the occurrence's ORDER within its record — so a row written by
+            # hand needs no index and lands after the rows that have one.
+            fields = {}                           # species -> {field: value}
+            keys = {}                             # species -> field order
+            order = {}                            # species -> [_occ, first seen]
+            said_by = {}                          # (species, field) -> source
+            srcs_of = collections.defaultdict(list)
+            for seen, (sp, src, row) in enumerate(by_record.get(m["id"], [])):
+                slot = order.setdefault(sp, [UNPLACED, seen])
+                if row.get("_occ") is not None:
+                    slot[0] = min(slot[0], row["_occ"])
+                got = fields.setdefault(sp, {})
+                shape = keys.setdefault(sp, [])
+                for k in occurrence_keys(row):
+                    if k not in shape:
+                        shape.append(k)
+                    if k in ("species", "sources") or k not in row:
+                        continue
+                    if k not in got:
+                        got[k] = row[k]
+                        said_by[(sp, k)] = src
+                    elif got[k] != row[k]:
+                        conflicts.append(
+                            f"  {m['id']} / {sp}: '{k}' — {said_by[(sp, k)]} and "
+                            f"{src} say different things")
+                if src != "(unsourced)" and src not in srcs_of[sp]:
+                    srcs_of[sp].append(src)
                     # Restore the order the record had, not the order the files
                     # happen to be read in.
-                    order = row.get("_srcs") or []
-                    occ["sources"].sort(
-                        key=lambda x: order.index(x) if x in order else len(order))
+                    was = row.get("_srcs") or []
+                    srcs_of[sp].sort(
+                        key=lambda x: was.index(x) if x in was else len(was))
             out = []
-            for _, occ in sorted(rebuilt.items()):
-                if not occ["sources"]:
-                    del occ["sources"]
+            for sp in sorted(order, key=lambda s: tuple(order[s])):
+                occ = {}
+                for k in keys[sp]:
+                    if k == "species":
+                        occ["species"] = sp
+                    elif k == "sources":
+                        if srcs_of[sp]:
+                            occ["sources"] = srcs_of[sp]
+                    elif k in fields[sp]:
+                        occ[k] = fields[sp][k]
                 out.append(occ)
             if out or m.get("occurrences") is not None:
                 m["occurrences"] = out
-        (pathlib.Path(into) / pathlib.Path(path).name).write_text(
-            json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+        pending.append((pathlib.Path(into) / pathlib.Path(path).name,
+                        json.dumps(doc, indent=2, ensure_ascii=False) + "\n"))
+
+    if conflicts:
+        sys.exit("two sources disagree inside one occurrence, and the join will "
+                 "not choose between them:\n" + "\n".join(sorted(set(conflicts))) +
+                 "\n\nReconcile them in data/observations/. Where the disagreement "
+                 "is real, it belongs in `attachmentNote` under both names.")
+    for out, text in pending:
+        out.write_text(text)
 
 
 def check():

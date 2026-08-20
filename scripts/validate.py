@@ -705,10 +705,11 @@ def main():
         "partial": "a difference or an extent rather than a complete attachment",
         "occupied": "another worker's row already holds this record for this species",
     }
-    occ_keys, muscle_ids = set(), set()
+    occ_keys, muscle_ids, region_of = set(), set(), {}
     for path in MUSCLE_FILES:
         for mm in load(path)["muscles"]:
             muscle_ids.add(mm.get("id"))
+            region_of[mm.get("id")] = mm.get("region")
             for oo in mm.get("occurrences") or []:
                 for k in oo.get("sources") or []:
                     occ_keys.add((k, oo.get("species"), (oo.get("name") or "").lower()))
@@ -738,6 +739,14 @@ def main():
             if rec:
                 if rec not in muscle_ids:
                     err(f"{where}: record '{rec}' is not a muscle record")
+                elif ob.get("region") != region_of[rec]:
+                    # The mapping view is keyed on `name|region`, and the join
+                    # drops `region` on the way back into the occurrence. A row
+                    # filed under the wrong region therefore validates, renders
+                    # and is invisible — it just files the source's name under a
+                    # key no one will look it up by.
+                    err(f"{where}: region '{ob.get('region')}' but record '{rec}' "
+                        f"is in '{region_of[rec]}'")
                 continue
             # Unassigned. It must say what is missing.
             bb = ob.get("blockedBy")

@@ -554,38 +554,75 @@ an element its taxon lacks fails validation.
 
 ## `observations/` — the extraction files
 
-What a source says about a muscle in an animal, **before anyone has decided which
-homology group it belongs to**.
+**The source of truth.** One file per study per animal, named
+`<species>__<source>.json`, holding what that study says about that animal.
+`muscles-*.json` is generated from these by `build_observations.py --join`, which
+is step 0 of the build. The filename carries the species and the source, so no row
+restates either.
 
 ```jsonc
 {
-  "id": "fisher-goodman-1955:pronator-brevis",   // source:slug, unique
-  "source": "fisher-goodman-1955",
   "species": "grus-americana",
-  "name": "M. pronator brevis",                  // the SOURCE's name, not ours
-  "blockedBy": "nomenclature",                   // see the file's own vocabulary
-  "blockedNote": "…what is missing, and what would settle it",
-  "attachments": { "origin": [...], "insertion": [...] },
-  "attachmentNote": "…",
-  "muscle": null                                 // set when the record is decided
+  "source": "fisher-goodman-1955",
+  "status": "remined",              // must equal remine-status.json. Enforced
+  "observations": [
+    { "name": "M. flexor carpi ulnaris",         // the SOURCE's name, not ours
+      "region": "forearm",                       // with `name`, the mapping key
+      "record": "flexor-carpi-ulnaris",          // the homology group…
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": { "origin": [...], "insertion": [...] },
+      "attachmentNote": "…" },
+
+    { "name": "M. pronator brevis",
+      "region": "forearm",
+      "record": null,                            // …or null: nobody has decided
+      "blockedBy": "nomenclature",               // required with record: null
+      "blockedNote": "…what is missing, and what would settle it",
+      "attachments": { "origin": [...] },
+      "muscle": null }                           // set when the record is decided
+  ]
 }
 ```
+
+A row with a `record` becomes an occurrence inside it; everything on the row
+except `record`, `region` and the `blocked*` fields travels through unchanged, and
+`species` and `sources` are reconstructed from the filename. `region` must equal
+the record's own region — the mapping view is keyed on `name|region` and the join
+drops the field, so a wrong one files the source's name under a key nobody will
+look it up by. Enforced.
+
+**One occurrence per (record, species), whatever the number of sources.** Two
+studies of the same muscle in the same animal are two rows in two files, and the
+join takes the **union** of what they say. It will not choose between them: a
+field both rows set to different values stops the build and names the record, the
+animal, the field and both sources. That is deliberate — two workers disagreeing
+about a muscle is what this dataset exists to hold, and it belongs in an
+`attachmentNote` under both names rather than being decided by which filename
+sorts first.
+
+Three underscore fields — `_occ`, `_keys`, `_srcs` — are round-trip machinery
+written by `--split`: the occurrence's order within its record, its original field
+order and its original source order, which together make the join byte-identical.
+**A row written by hand needs none of them.** It sorts after the rows that have
+one, and its own field order is used.
+
+### Rows with `record: null` — parked
 
 An occurrence has to sit inside a muscle record, so an observation whose record was
 unsettled had nowhere to live and was not extracted at all. That gated mining on
 homology and meant a paper had to be read again once the synonymy was worked out.
-The reading is the expensive part, so this file exists to make extraction
+The reading is the expensive part, so these rows exist to make extraction
 exhaustive: **score what maps cleanly, park the rest, and never read the paper
 twice.** The rule is stated in [`MINING.md`](MINING.md).
 
 | Field | Notes |
 |---|---|
-| `id` | `source:slug`. Unique |
-| `source`, `species` | Must resolve, as on an occurrence |
 | `name` | **Required.** The source's own name — that name is the reason the row cannot be filed |
-| `blockedBy` | One of the keys in the file's own `blockedBy` map: `nomenclature`, `homology`, `no-record`, `division` |
+| `blockedBy` | **Required.** `nomenclature`, `homology`, `no-record`, `division`, `partial` or `occupied` |
 | `blockedNote` | **Required with `blockedBy`.** What is missing and what would settle it, normally a specific paper |
 | `attachments` | Same `element`/`side`/`landmark` rows as an occurrence, and **held to the same rules** |
+| `after` | Whose observation it is, where the study is reporting another worker's. A source key or a citation with a year |
 | `muscle` | The record, once decided. The validator then warns until the row is promoted |
 
 **These rows carry no coverage weight.** They are not occurrences: they move no
