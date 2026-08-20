@@ -696,9 +696,17 @@ def main():
                 for k in oo.get("sources") or []:
                     occ_keys.add((k, oo.get("species"), (oo.get("name") or "").lower()))
 
+    remine_status = {k: v.get("status") for k, v in
+                     (load(ROOT / "data/remine-status.json").get("sources") or {}).items()}
     for f in sorted(OBS_DIR.glob("*.json")):
         doc = load(f)
         fsp, fsrc = doc.get("species"), doc.get("source")
+        # The file's own status must agree with the ledger, or "is this source
+        # done?" has two answers and the ledger is the one nobody reads.
+        want = remine_status.get(fsrc)
+        if want and doc.get("status") != want:
+            err(f"observations/{f.name}: status '{doc.get('status')}' but "
+                f"remine-status.json says '{want}' for {fsrc}")
         if f.name != f"{fsp}__{fsrc}.json":
             err(f"observations/{f.name}: filename does not match its own "
                 f"species and source ({fsp}, {fsrc})")

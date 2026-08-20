@@ -123,15 +123,43 @@ Two rules fall out of this:
   "generalised"`. Do not reach for `source`, which means a single-species study,
   and do not invent a plausible exemplar. The validator enforces it both ways.
 
-## Scoring a row
+## A mining pass, end to end
 
-1. Find the muscle's record and the occurrence for that species — or add one.
-2. `attachments` is `{origin: [row], insertion: [row]}`, a row being
+**One file per study per animal.** A paper describing three animals gets three
+files; you write one per animal and the accounting closes per file.
+
+1. **Open or create `data/observations/<species>__<source>.json`.** The species is
+   half the filename, so nothing has to be inferred. Add the species to
+   `data/species.json` first if it is not there — `Genus sp.` if the source names
+   no species.
+2. **Add a row per muscle the study describes for that animal**:
+
+   ```jsonc
+   { "name": "M. extensor metacarpi radialis",   // the SOURCE's name, verbatim
+     "region": "forearm",                        // with `name`, the key
+     "record": "extensor-antebrachii-carpi-radialis",  // or null, see 3
+     "present": "yes",
+     "attachments": { "origin": [ … ], "insertion": [ … ] },
+     "attachmentNote": "…",
+     "after": "Miner 1925" }                     // if the study is reporting
+   ```
+3. **`record: null` where you cannot assign it**, plus `blockedBy` and a
+   `blockedNote` saying what would settle it. That is not failure — it is the row
+   being kept instead of dropped, which is the whole point.
+4. `attachments` is `{origin: [row], insertion: [row]}`, a row being
    `{element, side?, landmark?}`. Element ids come from `data/skeleton.json`.
-3. **Never invent a side.** Absent means unrecorded.
-4. Put the reasoning, the caveats and the species-level differences in
+5. **Never invent a side.** Absent means unrecorded.
+6. Put the reasoning, the caveats and the species-level differences in
    `attachmentNote`. That is where the argument lives.
-5. `./scripts/build.sh --write`, which validates at the end.
+7. **Close the accounting**: state how many muscles the paper describes and show
+   it equals filed plus parked, in the reading note.
+8. Set the source's `status` in `data/remine-status.json` — `remined` only once 7
+   is true. The file's own `status` must match, and `validate.py` errors if it
+   does not.
+9. `./scripts/build.sh --write`, which regenerates `muscles-*.json` and validates.
+
+**Never edit `data/muscles-*.json`.** It is generated from the observations by
+step 0 of the build, and any edit there is overwritten on the next run.
 
 The validator will reject an attachment to a bone the species lacks. It has been
 right every time so far — trust it, and write the disagreement into the note
