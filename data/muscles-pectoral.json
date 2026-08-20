@@ -324,10 +324,66 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Trapezius"
+              "name": "Trapezius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "occiput"
+                  },
+                  {
+                    "element": "nuchal-ligament"
+                  },
+                  {
+                    "element": "cervical-vertebrae"
+                  },
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "clavicle",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "scapula",
+                    "landmark": "acromion"
+                  },
+                  {
+                    "element": "scapula",
+                    "landmark": "scapular-spine"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Sternocleidomastoid"
+              "name": "Sternocleidomastoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum"
+                  },
+                  {
+                    "element": "clavicle",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mastoid-process"
+                  },
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Trapezius elevates, depresses, retracts and superiorly rotates the scapula; sternocleidomastoid flexes and rotates the head.",
@@ -2007,10 +2063,50 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Rhomboideus major"
+              "name": "Rhomboideus major",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "scapula",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Rhomboideus minor"
+              "name": "Rhomboideus minor",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "nuchal-ligament"
+                  },
+                  {
+                    "element": "cervical-vertebrae"
+                  },
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "scapula",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Retracts, elevates and inferiorly rotates the scapula.",
@@ -2910,6 +3006,7 @@
           "speciesBasis": "note",
           "name": "Levator scapulae",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -2935,7 +3032,55 @@
               }
             ]
           },
-          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No origin from the basioccipital** — the whiptail's muscle starts on the atlas alone, so the chameleon's has extended forward onto the skull.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. A separate muscle in the whiptail: atlas to the suprascapula and scapula, and possibly to the clavicle. **The chameleons have fused it into the levator scapulae**, which is a division difference rather than a loss."
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No origin from the basioccipital** — the whiptail's muscle starts on the atlas alone, so the chameleon's has extended forward onto the skull.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. A separate muscle in the whiptail: atlas to the suprascapula and scapula, and possibly to the clavicle. **The chameleons have fused it into the levator scapulae**, which is a division difference rather than a loss.",
+          "parts": [
+            {
+              "name": "Levator scapulae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "atlas"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "scapula",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "suprascapula"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Levator claviculae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "atlas"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "suprascapula"
+                  },
+                  {
+                    "element": "scapula"
+                  },
+                  {
+                    "element": "clavicle"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "chamaeleo-calyptratus",
@@ -4756,10 +4901,49 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Pectoralis major"
+              "name": "Pectoralis major",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "clavicle",
+                    "side": "medial"
+                  },
+                  {
+                    "element": "sternum"
+                  },
+                  {
+                    "element": "costal-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "landmark": "greater-tubercle"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Pectoralis minor"
+              "name": "Pectoralis minor",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "true-ribs"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "scapula",
+                    "landmark": "coracoid-process"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Major flexes, adducts and medially rotates the arm; minor draws the scapula forward and downward.",
@@ -5145,6 +5329,25 @@
             },
             {
               "name": "Pars sternobrachialis"
+            },
+            {
+              "name": "M. pectoralis pars propatagialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "deltopectoral-crest"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "propatagium"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
             }
           ],
           "sources": [
@@ -5910,10 +6113,44 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Supraspinatus"
+              "name": "Supraspinatus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapula",
+                    "landmark": "supraspinous-fossa"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "landmark": "greater-tubercle"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Infraspinatus"
+              "name": "Infraspinatus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapula",
+                    "landmark": "infraspinous-fossa"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "landmark": "greater-tubercle"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Supraspinatus initiates abduction of the arm; infraspinatus laterally rotates it.",
@@ -7797,7 +8034,56 @@
               }
             ]
           },
-          "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word.\n\nNothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word. Renamed 2026-08-20 from 'Deltoideus clavicularis' to the source's own name: `name` is what the study calls the muscle, and the mapping layer is keyed on it, so a reader looking up Widrig et al.'s term has to find it there.\n\nNothoprocta pentlandii, Widrig et al. (2023). A broad thin ribbon superficial to the pars major and minor, from the dorsomedial acromial process of the furcula, passing over the craniodorsal proximal humerus **where it becomes the propatagial ligament**. The muscle does not insert; it turns into the ligament. Scored on the clavicular deltoid record with the pars minor, which shares the furcular origin."
+          "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word.\n\nNothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word. Renamed 2026-08-20 from 'Deltoideus clavicularis' to the source's own name: `name` is what the study calls the muscle, and the mapping layer is keyed on it, so a reader looking up Widrig et al.'s term has to find it there.\n\nNothoprocta pentlandii, Widrig et al. (2023). A broad thin ribbon superficial to the pars major and minor, from the dorsomedial acromial process of the furcula, passing over the craniodorsal proximal humerus **where it becomes the propatagial ligament**. The muscle does not insert; it turns into the ligament. Scored on the clavicular deltoid record with the pars minor, which shares the furcular origin.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "M. deltoideus pars minor",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "coracoid",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "furcula"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. deltoideus pars propatagialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "furcula",
+                    "side": "dorsal"
+                  },
+                  {
+                    "element": "furcula",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "propatagium"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            }
+          ]
         },
         {
           "species": "galictis-cuja",
@@ -10176,6 +10462,26 @@
             },
             {
               "name": "Caput mediale"
+            },
+            {
+              "name": "M. subcoracoideus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "landmark": "lesser-tubercle"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
             }
           ],
           "sources": [
@@ -11733,6 +12039,7 @@
           "speciesBasis": "note",
           "name": "M. latissimus dorsi pars cranialis",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "widrig-etal-2023"
           ],
@@ -11765,7 +12072,76 @@
               }
             ]
           },
-          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). A broad flattened ribbon from the spinous processes of thoracic vertebrae II-VI to the caudal margin of the proximal humeral shaft. The vertebral extent is `after` Suzuki et al. (2014); Widrig et al. segmented the muscle from contrast-enhanced CT. `after` is not set on this row: the three latissimus parts report different workers — Suzuki et al. (2014) for the vertebral extent of the pars cranialis, Hudson et al. (1972) for the other two — and they merge into one occurrence, which can carry only one value. The attributions are in each part's prose instead.\n\nNothoprocta pentlandii, Widrig et al. (2023). A large triangular sheet, the superficial layer of the back musculature, from the spines of the caudal thoracic vertebrae, thoracic ribs II-V and the cranial margin of the ilium. **It ends on skin and on other muscles, not on bone** — Hudson et al. (1972) report a tendinous sheet attaching to skin, to the pars cranialis and to the scapulotriceps, and Widrig et al. could confirm only the two muscular attachments in their scan. The scapulotriceps end is scored as a muscle attachment; the pars cranialis end is on this same record and is left to the prose. `after` is not set on this row: the three latissimus parts report different workers — Suzuki et al. (2014) for the vertebral extent of the pars cranialis, Hudson et al. (1972) for the other two — and they merge into one occurrence, which can carry only one value. The attributions are in each part's prose instead.\n\nNothoprocta pentlandii, Widrig et al. (2023). A long narrow muscle superficial to the pars caudalis, from the spines of the caudal thoracic vertebrae onto M. serratus superficialis metapatagialis — a latissimus slip that ends on a serratus slip, both of them running out into the patagium. Widrig et al. illustrate only its cranial portion and take the attachments from Hudson et al. (1972). `after` is not set on this row: the three latissimus parts report different workers — Suzuki et al. (2014) for the vertebral extent of the pars cranialis, Hudson et al. (1972) for the other two — and they merge into one occurrence, which can carry only one value. The attributions are in each part's prose instead."
+          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). A broad flattened ribbon from the spinous processes of thoracic vertebrae II-VI to the caudal margin of the proximal humeral shaft. The vertebral extent is `after` Suzuki et al. (2014); Widrig et al. segmented the muscle from contrast-enhanced CT. `after` is not set on this row: the three latissimus parts report different workers — Suzuki et al. (2014) for the vertebral extent of the pars cranialis, Hudson et al. (1972) for the other two — and they merge into one occurrence, which can carry only one value. The attributions are in each part's prose instead.\n\nNothoprocta pentlandii, Widrig et al. (2023). A large triangular sheet, the superficial layer of the back musculature, from the spines of the caudal thoracic vertebrae, thoracic ribs II-V and the cranial margin of the ilium. **It ends on skin and on other muscles, not on bone** — Hudson et al. (1972) report a tendinous sheet attaching to skin, to the pars cranialis and to the scapulotriceps, and Widrig et al. could confirm only the two muscular attachments in their scan. The scapulotriceps end is scored as a muscle attachment; the pars cranialis end is on this same record and is left to the prose. `after` is not set on this row: the three latissimus parts report different workers — Suzuki et al. (2014) for the vertebral extent of the pars cranialis, Hudson et al. (1972) for the other two — and they merge into one occurrence, which can carry only one value. The attributions are in each part's prose instead.\n\nNothoprocta pentlandii, Widrig et al. (2023). A long narrow muscle superficial to the pars caudalis, from the spines of the caudal thoracic vertebrae onto M. serratus superficialis metapatagialis — a latissimus slip that ends on a serratus slip, both of them running out into the patagium. Widrig et al. illustrate only its cranial portion and take the attachments from Hudson et al. (1972). `after` is not set on this row: the three latissimus parts report different workers — Suzuki et al. (2014) for the vertebral extent of the pars cranialis, Hudson et al. (1972) for the other two — and they merge into one occurrence, which can carry only one value. The attributions are in each part's prose instead.",
+          "parts": [
+            {
+              "name": "M. latissimus dorsi pars cranialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. latissimus dorsi pars caudalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  },
+                  {
+                    "element": "ribs"
+                  },
+                  {
+                    "element": "ilium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  },
+                  {
+                    "muscle": "triceps-brachii"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. latissimus dorsi pars metapatagialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "serratus-anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            }
+          ]
         },
         {
           "species": "pipa-pipa",
@@ -12736,6 +13112,95 @@
             },
             {
               "name": "Medial humeral head"
+            },
+            {
+              "name": "M. triceps longus lateralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "side": "dorsal",
+                    "landmark": "deltopectoral-crest"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "freitas-etal-2017"
+              ]
+            },
+            {
+              "name": "M. triceps longus caudalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapula",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "dorsal",
+                    "landmark": "deltopectoral-crest"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "freitas-etal-2017"
+              ]
+            },
+            {
+              "name": "M. triceps brevis intermedius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "side": "medial"
+                  },
+                  {
+                    "element": "sternum"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "freitas-etal-2017"
+              ]
+            },
+            {
+              "name": "M. triceps brevis caudalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "freitas-etal-2017"
+              ]
             }
           ],
           "sources": [
@@ -13071,6 +13536,7 @@
           "speciesBasis": "note",
           "name": "Triceps coracoideus",
           "present": "yes",
+          "division": "heads",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -13110,7 +13576,79 @@
               }
             ]
           },
-          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Coracoid to the proximal ulna — the head both chameleons have lost or fused away, and the one that crosses the shoulder.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. **No internus head.** So the whiptail has the coracoid head the chameleons lack and lacks a humeral head they have — the triceps is reorganised in both directions rather than simply reduced."
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Coracoid to the proximal ulna — the head both chameleons have lost or fused away, and the one that crosses the shoulder.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. **No internus head.** So the whiptail has the coracoid head the chameleons lack and lacks a humeral head they have — the triceps is reorganised in both directions rather than simply reduced.",
+          "parts": [
+            {
+              "name": "Triceps coracoideus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "coracoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Triceps scapularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapula",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "glenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Triceps humeralis lateralis and medialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "chamaeleo-calyptratus",
@@ -13164,6 +13702,38 @@
             },
             {
               "name": "Lateral head"
+            },
+            {
+              "name": "Triceps humeralis lateralis and medialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
             }
           ]
         },
@@ -13201,6 +13771,25 @@
             },
             {
               "name": "Dorsal belly"
+            },
+            {
+              "name": "M. humerotriceps",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
             }
           ]
         },
@@ -13209,6 +13798,7 @@
           "speciesBasis": "note",
           "name": "Triceps scapularis",
           "present": "yes",
+          "division": "heads",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -13245,7 +13835,64 @@
               }
             ]
           },
-          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.\n\nTrioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row. **The coracoid head is not present as a distinct head** in either chameleon — lost or fused with the others, on Molnar et al.'s reading — so the whole triceps here is scapular plus humeral. That is a head-count difference and not an absence, which is why it is written into this row rather than scored `present: \"no\"` on a record the muscle plainly occupies. The paper reads the missing coracoid head with the proximally shifted pectoralis and deltoideus insertions as one arboreal package: a shoulder that trades leverage for mobility."
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.\n\nTrioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row. **The coracoid head is not present as a distinct head** in either chameleon — lost or fused with the others, on Molnar et al.'s reading — so the whole triceps here is scapular plus humeral. That is a head-count difference and not an absence, which is why it is written into this row rather than scored `present: \"no\"` on a record the muscle plainly occupies. The paper reads the missing coracoid head with the proximally shifted pectoralis and deltoideus insertions as one arboreal package: a shoulder that trades leverage for mobility.",
+          "parts": [
+            {
+              "name": "Triceps scapularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapula",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "glenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Triceps humeralis lateralis and medialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulna",
+                    "landmark": "olecranon"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         }
       ],
       "homology": {
@@ -15803,10 +16450,52 @@
           "division": "divided",
           "parts": [
             {
-              "name": "M. coracobrachialis brevis"
+              "name": "M. coracobrachialis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "coracoid",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "coracoid",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "side": "anterior",
+                    "landmark": "deltopectoral-crest"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "freitas-etal-2017"
+              ]
             },
             {
-              "name": "M. coracobrachialis longus"
+              "name": "M. coracobrachialis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "coracoid",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus"
+                  }
+                ]
+              },
+              "sources": [
+                "freitas-etal-2017"
+              ]
             }
           ],
           "sources": [
@@ -16117,6 +16806,7 @@
           "speciesBasis": "note",
           "name": "M. coracobrachialis cranialis",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "widrig-etal-2023"
           ],
@@ -16149,7 +16839,56 @@
               }
             ]
           },
-          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Tendinous origin on the acrocoracoid process of the coracoid; large fleshy insertion over the dorsocranial humerus distal to the pectoralis insertion and ventral to the deltopectoral crest. Hudson et al. (1972) and Suzuki et al. (2014) place its origin near that of the biceps; Widrig et al. could not confirm it because they could not find the biceps tendon of origin, and the row records the doubt rather than the claim.\n\nNothoprocta pentlandii, Widrig et al. (2023). Relatively large, from the ventral surface of the craniolateral process of the sternum, the ventrolateral lateral process of the coracoid and the fascia of M. supracoracoideus, to the dorsal aspect of the ventral tubercle just proximal to the pneumatic foramen. **Two coracobrachiales in a bird and one in a human**, and the caudal one has taken an origin on the sternum that no other tetrapod's has."
+          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Tendinous origin on the acrocoracoid process of the coracoid; large fleshy insertion over the dorsocranial humerus distal to the pectoralis insertion and ventral to the deltopectoral crest. Hudson et al. (1972) and Suzuki et al. (2014) place its origin near that of the biceps; Widrig et al. could not confirm it because they could not find the biceps tendon of origin, and the row records the doubt rather than the claim.\n\nNothoprocta pentlandii, Widrig et al. (2023). Relatively large, from the ventral surface of the craniolateral process of the sternum, the ventrolateral lateral process of the coracoid and the fascia of M. supracoracoideus, to the dorsal aspect of the ventral tubercle just proximal to the pneumatic foramen. **Two coracobrachiales in a bird and one in a human**, and the caudal one has taken an origin on the sternum that no other tetrapod's has.",
+          "parts": [
+            {
+              "name": "M. coracobrachialis cranialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "coracoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "side": "dorsal"
+                  },
+                  {
+                    "element": "humerus",
+                    "side": "anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. coracobrachialis caudalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum",
+                    "side": "ventral"
+                  },
+                  {
+                    "element": "coracoid",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "humerus",
+                    "landmark": "lesser-tubercle"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",

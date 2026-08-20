@@ -172,7 +172,56 @@
               }
             ]
           },
-          "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is two candidates, and both are recorded as candidates.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Unlike the PIFI 1, whose two candidates are both iliac and collapse to `ilium`, these sit on different bones, so both are listed with `alternative: true` — the flag says the muscle arises from one of them and nobody has said which. Recording one alone would manufacture a decision the authors refuse to make; recording neither loses the fact that the choice is between exactly these two.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin scored as the ilium, no more precisely**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation. Both candidate origins are on the ilium, so the ilium is the least general element that contains either, and the row carries that rather than nothing — a coarse origin is recoverable detail, a missing one is a second reading of the paper."
+          "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is two candidates, and both are recorded as candidates.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Unlike the PIFI 1, whose two candidates are both iliac and collapse to `ilium`, these sit on different bones, so both are listed with `alternative: true` — the flag says the muscle arises from one of them and nobody has said which. Recording one alone would manufacture a decision the authors refuse to make; recording neither loses the fact that the choice is between exactly these two.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin scored as the ilium, no more precisely**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation. Both candidate origins are on the ilium, so the ilium is the least general element that contains either, and the row carries that rather than nothing — a coarse origin is recoverable detail, a missing one is a second reading of the paper.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Puboischiofemoralis internus (PIFI 2)",
+              "attachments": {
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter",
+                    "side": "lateral"
+                  }
+                ],
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "alternative": true
+                  },
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-transverse-processes",
+                    "alternative": true
+                  }
+                ]
+              },
+              "sources": [
+                "liparini-schultz-2013"
+              ]
+            },
+            {
+              "name": "Puboischiofemoralis internus pars I (PIFI 1)",
+              "attachments": {
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "medial",
+                    "landmark": "fourth-trochanter"
+                  }
+                ],
+                "origin": [
+                  {
+                    "element": "ilium"
+                  }
+                ]
+              },
+              "sources": [
+                "liparini-schultz-2013"
+              ]
+            }
+          ]
         },
         {
           "species": "gallus-domesticus",
@@ -324,10 +373,53 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Iliacus"
+              "name": "Iliacus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium"
+                  },
+                  {
+                    "element": "ilium",
+                    "landmark": "iliac-crest"
+                  },
+                  {
+                    "element": "sacral-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "lesser-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Psoas major"
+              "name": "Psoas major",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "lumbar-vertebrae"
+                  },
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "lesser-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Psoas minor"
@@ -841,6 +933,7 @@
           "species": "bombina-orientalis",
           "name": "Iliacus externus",
           "present": "yes",
+          "division": "divided",
           "speciesBasis": "source",
           "sources": [
             "prikryl-etal-2009"
@@ -871,12 +964,63 @@
               }
             ]
           },
-          "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). **Not divided**, against two more or less independent parts in *Discoglossus* and three layers in *Xenopus*. It arises along the dorsal surface of the iliac shaft, extending moderately onto both the medial and lateral surfaces — the lateral origin the longer of the two — and inserts on the anterior surface of the proximal third of the femur.\n\nBombina orientalis, Prikryl et al. (2009). From the anterior part of the acetabular portion of the ilium to the anterior surface of the middle section of the femur. **In some individuals the origin is divided into medial and lateral portions**, separated by the anterior edge of the bone, so that two close but discernible origins can be made out — within-species variation in how many origins a muscle has."
+          "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). **Not divided**, against two more or less independent parts in *Discoglossus* and three layers in *Xenopus*. It arises along the dorsal surface of the iliac shaft, extending moderately onto both the medial and lateral surfaces — the lateral origin the longer of the two — and inserts on the anterior surface of the proximal third of the femur.\n\nBombina orientalis, Prikryl et al. (2009). From the anterior part of the acetabular portion of the ilium to the anterior surface of the middle section of the femur. **In some individuals the origin is divided into medial and lateral portions**, separated by the anterior edge of the bone, so that two close but discernible origins can be made out — within-species variation in how many origins a muscle has.",
+          "parts": [
+            {
+              "name": "Iliacus externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "dorsal"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Iliacus internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "anterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "bufo-guttatus",
           "name": "Iliacus externus",
           "present": "yes",
+          "division": "divided",
           "speciesBasis": "source",
           "sources": [
             "prikryl-etal-2009"
@@ -903,7 +1047,55 @@
               }
             ]
           },
-          "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Mostly on the lateral surface of the iliac shaft, only a minor posterior part reaching onto the medial surface.\n\nBufo guttatus, Prikryl et al. (2009). Origin on **both** the medial and lateral surfaces of the preacetabular ilium; insertion on the anterodorsal surface of the proximal half of the femur."
+          "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Mostly on the lateral surface of the iliac shaft, only a minor posterior part reaching onto the medial surface.\n\nBufo guttatus, Prikryl et al. (2009). Origin on **both** the medial and lateral surfaces of the preacetabular ilium; insertion on the anterodorsal surface of the proximal half of the femur.",
+          "parts": [
+            {
+              "name": "Iliacus externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Iliacus internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "femur",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "caudata-generalised",
@@ -1007,6 +1199,7 @@
           "species": "pelobates-fuscus",
           "name": "Iliacus externus",
           "present": "yes",
+          "division": "divided",
           "speciesBasis": "source",
           "sources": [
             "prikryl-etal-2009"
@@ -1029,7 +1222,47 @@
               }
             ]
           },
-          "attachmentNote": "Pelobates fuscus, Prikryl et al. (2009). Two parts, on the lateral and medial surfaces of the iliac shaft. The inner part arises **in an oblique groove slanting anteroventrally from the dorsal surface of the bone** — an osteological trace, and one of the few this paper gives. The outer origin is more extensive, reaching the ventral margin of the shaft. Insertion on the dorsal surface of the proximal femur.\n\nPelobates fuscus, Prikryl et al. (2009). Origin **only** on the medial surface of the ilium, with a tendency to extend anteriorly onto the shaft."
+          "attachmentNote": "Pelobates fuscus, Prikryl et al. (2009). Two parts, on the lateral and medial surfaces of the iliac shaft. The inner part arises **in an oblique groove slanting anteroventrally from the dorsal surface of the bone** — an osteological trace, and one of the few this paper gives. The outer origin is more extensive, reaching the ventral margin of the shaft. Insertion on the dorsal surface of the proximal femur.\n\nPelobates fuscus, Prikryl et al. (2009). Origin **only** on the medial surface of the ilium, with a tendency to extend anteriorly onto the shaft.",
+          "parts": [
+            {
+              "name": "Iliacus externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Iliacus internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "pipa-pipa",
@@ -1043,6 +1276,31 @@
             },
             {
               "name": "Pars externa"
+            },
+            {
+              "name": "Iliacus internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "anterior",
+                    "landmark": "crista-femoralis"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
             }
           ],
           "sources": [
@@ -1093,6 +1351,7 @@
           "species": "rana-esculenta",
           "name": "Iliacus externus",
           "present": "yes",
+          "division": "divided",
           "speciesBasis": "source",
           "sources": [
             "prikryl-etal-2009"
@@ -1115,7 +1374,49 @@
               }
             ]
           },
-          "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Origin **only** on the lateral surface of the dorsal crista of the iliac shaft, which Prikryl et al. take as making it the homologue of the pars externa alone in *Discoglossus* — where the muscle has an externa and an interna running more or less independently. It inserts on the anterior surface of the femur and **the insertion never extends over the crista femoralis**, an explicit negative worth keeping: in *Ascaphus* the corresponding muscle does reach the crista.\n\nRana esculenta, Prikryl et al. (2009). **Always** originates on the medial surface of the ilium and inserts on the anterior surface of the femur about midway along its length. The emphasis is the paper's: in *Discoglossus* this origin is variable and may instead lie on the anterior rounded margin of the acetabular portion of the ilium, so the model frog is the more constant of the two."
+          "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Origin **only** on the lateral surface of the dorsal crista of the iliac shaft, which Prikryl et al. take as making it the homologue of the pars externa alone in *Discoglossus* — where the muscle has an externa and an interna running more or less independently. It inserts on the anterior surface of the femur and **the insertion never extends over the crista femoralis**, an explicit negative worth keeping: in *Ascaphus* the corresponding muscle does reach the crista.\n\nRana esculenta, Prikryl et al. (2009). **Always** originates on the medial surface of the ilium and inserts on the anterior surface of the femur about midway along its length. The emphasis is the paper's: in *Discoglossus* this origin is variable and may instead lie on the anterior rounded margin of the acetabular portion of the ilium, so the model frog is the more constant of the two.",
+          "parts": [
+            {
+              "name": "Iliacus externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Iliacus internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",
@@ -1483,16 +1784,83 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Obturator externus"
+              "name": "Obturator externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "obturator-membrane"
+                  },
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "trochanteric-fossa"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Quadratus femoris"
+              "name": "Quadratus femoris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "landmark": "ischial-tuberosity"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Gemellus superior"
+              "name": "Gemellus superior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "ischiotrochantericus"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Gemellus inferior"
+              "name": "Gemellus inferior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "landmark": "ischial-tuberosity"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "ischiotrochantericus"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Laterally rotate the thigh; obturator externus also adducts it.",
@@ -2547,14 +2915,64 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Gluteus medius"
+              "name": "Gluteus medius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Gluteus minimus"
+              "name": "Gluteus minimus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Tensor fasciae latae",
-              "membership": "disputed"
+              "membership": "disputed",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "landmark": "iliac-crest"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "iliotibial-tract"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Abduct the thigh and stabilise the pelvis over the stance limb.",
@@ -3710,6 +4128,7 @@
           "speciesBasis": "note",
           "name": "Caudofemoralis longus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -3726,7 +4145,47 @@
               }
             ]
           },
-          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From caudal vertebrae 1-16**, three times the chameleons' span. The single most legible functional difference in this table.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 3. **Inserts on the greater trochanter**, so the whiptail's brevis is a femoral retractor and the chameleons' has been pulled back onto a pelvic ligament."
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **From caudal vertebrae 1-16**, three times the chameleons' span. The single most legible functional difference in this table.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 3. **Inserts on the greater trochanter**, so the whiptail's brevis is a femoral retractor and the chameleons' has been pulled back onto a pelvic ligament.",
+          "parts": [
+            {
+              "name": "Caudofemoralis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Caudofemoralis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "barbourula-busuangensis",
@@ -3757,6 +4216,7 @@
           "speciesBasis": "note",
           "name": "Caudofemoralis longus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -3776,7 +4236,46 @@
               }
             ]
           },
-          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From caudal vertebrae 1-5 to the greater trochanter, and by a long tendon to the back of the knee. **Five vertebrae of origin against sixteen in the whiptail**, which Molnar et al. read with the chameleon's slow locomotion — the caudofemoralis is the sprint muscle of a sprawling tetrapod and a chameleon does not sprint.\n\nChamaeleo calyptratus, Molnar et al. (2017) Table 3. From the caudal vertebrae to the ilio-ischiatic ligament — **it does not reach the femur at all in either chameleon**, which makes the name a statement about ancestry rather than about this animal."
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From caudal vertebrae 1-5 to the greater trochanter, and by a long tendon to the back of the knee. **Five vertebrae of origin against sixteen in the whiptail**, which Molnar et al. read with the chameleon's slow locomotion — the caudofemoralis is the sprint muscle of a sprawling tetrapod and a chameleon does not sprint.\n\nChamaeleo calyptratus, Molnar et al. (2017) Table 3. From the caudal vertebrae to the ilio-ischiatic ligament — **it does not reach the femur at all in either chameleon**, which makes the name a statement about ancestry rather than about this animal.",
+          "parts": [
+            {
+              "name": "Caudofemoralis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Caudofemoralis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ilioischiadic-ligament"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "discoglossus-pictus",
@@ -3846,6 +4345,7 @@
           "speciesBasis": "note",
           "name": "Caudofemoralis longus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -3865,7 +4365,46 @@
               }
             ]
           },
-          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 3. Molnar et al. (2017) Table 3 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 3. Molnar et al. (2017) Table 3 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+          "parts": [
+            {
+              "name": "Caudofemoralis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "greater-trochanter"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Caudofemoralis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ilioischiadic-ligament"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         }
       ],
       "homology": {
@@ -4715,6 +5254,7 @@
           "species": "barbourula-busuangensis",
           "name": "Cruralis",
           "present": "yes",
+          "division": "divided",
           "speciesBasis": "source",
           "sources": [
             "prikryl-etal-2009"
@@ -4743,12 +5283,57 @@
               }
             ]
           },
-          "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Forms the anterior part of the thigh, from the anteroventral margin of the acetabulum — that is, from the articular capsule — into the knee aponeurosis. The glutaeus maximus is treated as a separate row here because its attachments differ from the *Discoglossus* pattern.\n\nBarbourula busuangensis, Prikryl et al. (2009). Main part from the lateral side of an extensive but not prominent tuber superius, inserting as a thin sheet onto the dorsal fascia of the distal cruralis — recorded as `muscle: extensor-iliotibialis`, since the cruralis sits on this same record. **It also has a small accessory tendon attached to the lateral margin of the longissimus dorsi–coccygeosacralis complex**, carried as `muscle: epaxial-musculature`: a thigh muscle with a tendon onto the epaxial series, which is not reported for any other frog here."
+          "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Forms the anterior part of the thigh, from the anteroventral margin of the acetabulum — that is, from the articular capsule — into the knee aponeurosis. The glutaeus maximus is treated as a separate row here because its attachments differ from the *Discoglossus* pattern.\n\nBarbourula busuangensis, Prikryl et al. (2009). Main part from the lateral side of an extensive but not prominent tuber superius, inserting as a thin sheet onto the dorsal fascia of the distal cruralis — recorded as `muscle: extensor-iliotibialis`, since the cruralis sits on this same record. **It also has a small accessory tendon attached to the lateral margin of the longissimus dorsi–coccygeosacralis complex**, carried as `muscle: epaxial-musculature`: a thigh muscle with a tendon onto the epaxial series, which is not reported for any other frog here.",
+          "parts": [
+            {
+              "name": "Cruralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "anterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "knee-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Glutaeus maximus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral",
+                    "landmark": "tuber-superius"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "extensor-iliotibialis"
+                  },
+                  {
+                    "muscle": "epaxial-musculature"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "bombina-orientalis",
           "name": "Cruralis",
           "present": "yes",
+          "division": "divided",
           "speciesBasis": "source",
           "sources": [
             "prikryl-etal-2009"
@@ -4774,7 +5359,46 @@
               }
             ]
           },
-          "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). Same origin and insertion as *Discoglossus* — ilium to knee aponeurosis — but **seems to consist of two separate layers**: a deeper one attached to the anterior surface of the distal third of the femur, and a superficial one that fuses to the deeper only distally. The femoral attachment of the deep layer is scored; it is not reported in the other frogs.\n\nBombina orientalis, Prikryl et al. (2009). The glutaeus maximus and the common tendon of the iliofibularis and iliofemoralis attach proximally to **an indistinct elevation on the supra-acetabular portion of the ilium, which therefore represents the tuber superius** — the same identification-by-shared-origin argument Prikryl et al. use for the dorsal crista in *Rana*, applied to a different and fainter structure. A well-marked ligament fans out from the common tendon of the iliofemoralis and iliofibularis and fuses to the fascia covering the dorsal surface of the pelvic girdle; **no such ligament was seen in *Discoglossus***."
+          "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). Same origin and insertion as *Discoglossus* — ilium to knee aponeurosis — but **seems to consist of two separate layers**: a deeper one attached to the anterior surface of the distal third of the femur, and a superficial one that fuses to the deeper only distally. The femoral attachment of the deep layer is scored; it is not reported in the other frogs.\n\nBombina orientalis, Prikryl et al. (2009). The glutaeus maximus and the common tendon of the iliofibularis and iliofemoralis attach proximally to **an indistinct elevation on the supra-acetabular portion of the ilium, which therefore represents the tuber superius** — the same identification-by-shared-origin argument Prikryl et al. use for the dorsal crista in *Rana*, applied to a different and fainter structure. A well-marked ligament fans out from the common tendon of the iliofemoralis and iliofibularis and fuses to the fascia covering the dorsal surface of the pelvic girdle; **no such ligament was seen in *Discoglossus***.",
+          "parts": [
+            {
+              "name": "Cruralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "knee-aponeurosis"
+                  },
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Glutaeus maximus, iliofibularis and iliofemoralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "dorsal",
+                    "landmark": "tuber-superius"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "bufo-guttatus",
@@ -4874,6 +5498,24 @@
             },
             {
               "name": "Distal part"
+            },
+            {
+              "name": "Glutaeus maximus, iliofibularis and iliofemoralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "ilium",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
             }
           ],
           "sources": [
@@ -5898,16 +6540,92 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Vastus lateralis"
+              "name": "Vastus lateralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "patella"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Vastus medialis"
+              "name": "Vastus medialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "side": "medial"
+                  },
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "patella"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Vastus intermedius"
+              "name": "Vastus intermedius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "femur",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "patella"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Articularis genu"
+              "name": "Articularis genu",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "side": "anterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "knee-capsule"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extend the knee; articularis genu retracts the suprapatellar bursa.",
@@ -6693,6 +7411,7 @@
           "species": "prestosuchus-chiniquensis",
           "name": "Ambiens (AMB)",
           "present": "inferred",
+          "division": "heads",
           "sources": [
             "liparini-schultz-2013"
           ],
@@ -6721,7 +7440,52 @@
               }
             ]
           },
-          "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Both ends at level I** — the strongest reconstruction in the paper, and one of only two muscles scoring level I at the origin. Muscular scars on the dorsal tubercle, dorsal crest, lateral crest and cranial tubercle of the pubis, and on the iliac peduncle where it contacts the pubis; insertion on the cnemial crest by the knee extensor tendon shared with the femoro-tibialis and ilio-tibialis. In both extant archosaur groups a secondary tendon perforates that extensor tendon — in birds to reach the tendon of origin of the digital flexors and gastrocnemius lateralis, in crocodylians to reach the gastrocnemius lateralis itself — and the reconstruction carries that perforating portion over.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **Its insertion is another muscle, and is recorded as one**: like its counterpart in extant lepidosaurs and crocodylians it ends on the femoro-tibialis, which the row carries as `muscle: femorotibialis`. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**"
+          "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Both ends at level I** — the strongest reconstruction in the paper, and one of only two muscles scoring level I at the origin. Muscular scars on the dorsal tubercle, dorsal crest, lateral crest and cranial tubercle of the pubis, and on the iliac peduncle where it contacts the pubis; insertion on the cnemial crest by the knee extensor tendon shared with the femoro-tibialis and ilio-tibialis. In both extant archosaur groups a secondary tendon perforates that extensor tendon — in birds to reach the tendon of origin of the digital flexors and gastrocnemius lateralis, in crocodylians to reach the gastrocnemius lateralis itself — and the reconstruction carries that perforating portion over.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **Its insertion is another muscle, and is recorded as one**: like its counterpart in extant lepidosaurs and crocodylians it ends on the femoro-tibialis, which the row carries as `muscle: femorotibialis`. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**",
+          "parts": [
+            {
+              "name": "Ambiens (AMB)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "dorsal"
+                  },
+                  {
+                    "element": "pubis",
+                    "side": "anterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tibia",
+                    "landmark": "cnemial-crest"
+                  }
+                ]
+              },
+              "sources": [
+                "liparini-schultz-2013"
+              ]
+            },
+            {
+              "name": "Ambiens pars II (AMB 2)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "femorotibialis"
+                  }
+                ]
+              },
+              "sources": [
+                "liparini-schultz-2013"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",
@@ -7054,16 +7818,84 @@
               "name": "Adductor magnus"
             },
             {
-              "name": "Adductor longus"
+              "name": "Adductor longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Adductor brevis"
+              "name": "Adductor brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Adductor minimus"
+              "name": "Adductor minimus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Pectineus"
+              "name": "Pectineus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Adduct the thigh; the ischiocondylar part of adductor magnus extends it.",
@@ -7487,6 +8319,19 @@
             },
             {
               "name": "Caput dorsale"
+            },
+            {
+              "name": "Adductor longus",
+              "attachments": {
+                "insertion": [
+                  {
+                    "muscle": "adductor-femoris"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
             }
           ],
           "sources": [
@@ -7612,6 +8457,7 @@
           "species": "discoglossus-pictus",
           "name": "Adductor longus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "prikryl-etal-2009"
           ],
@@ -7639,7 +8485,51 @@
               }
             ]
           },
-          "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009). A long muscle from the pars descendens ilii and the pubic cartilage, running close alongside the pectineus, inserting on the ventral surface of the distal quarter of the femur. Function: adduction and protraction of the femur. Filed with the adductor magnus on this record, which lists `adductor magnus + adductor longus + adductor brevis (mammals)` among its synonyms and whose consensus runs the ventral pelvic girdle to the ventral femur. **The pubis here is cartilage**, which the element cannot express; the note is the record of it.\n\nDiscoglossus pictus, Prikryl et al. (2009). Lying below the sartorius, from along the posteroventral margin of the ischium to the posterodorsal surface of the distal section of the femur. Prikryl et al. give it an unusual function for an adductor: protraction with slight adduction, becoming adduction alone once the hip angle passes 90°. It also supplies the origin of the ventral head of the semitendinosus, muscle from muscle."
+          "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009). A long muscle from the pars descendens ilii and the pubic cartilage, running close alongside the pectineus, inserting on the ventral surface of the distal quarter of the femur. Function: adduction and protraction of the femur. Filed with the adductor magnus on this record, which lists `adductor magnus + adductor longus + adductor brevis (mammals)` among its synonyms and whose consensus runs the ventral pelvic girdle to the ventral femur. **The pubis here is cartilage**, which the element cannot express; the note is the record of it.\n\nDiscoglossus pictus, Prikryl et al. (2009). Lying below the sartorius, from along the posteroventral margin of the ischium to the posterodorsal surface of the distal section of the femur. Prikryl et al. give it an unusual function for an adductor: protraction with slight adduction, becoming adduction alone once the hip angle passes 90°. It also supplies the origin of the ventral head of the semitendinosus, muscle from muscle.",
+          "parts": [
+            {
+              "name": "Adductor longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium"
+                  },
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "ventral"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Adductor magnus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "femur",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "prestosuchus-chiniquensis",
@@ -9610,13 +10500,72 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Biceps femoris"
+              "name": "Biceps femoris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "landmark": "ischial-tuberosity"
+                  },
+                  {
+                    "element": "femur",
+                    "landmark": "linea-aspera"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "fibula",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "tibia",
+                    "side": "lateral"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Semitendinosus"
+              "name": "Semitendinosus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "landmark": "ischial-tuberosity"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tibia",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Semimembranosus"
+              "name": "Semimembranosus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "landmark": "ischial-tuberosity"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tibia",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extend the thigh and flex the knee.",
@@ -10053,6 +11002,27 @@
             },
             {
               "name": "Part 2 (semimembranosus sensu Mivart)"
+            },
+            {
+              "name": "Flexor tibialis externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilioischiadic-ligament"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "fibula"
+                  },
+                  {
+                    "element": "calcaneum"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
             }
           ],
           "sources": [
@@ -10125,6 +11095,28 @@
             {
               "name": "Semitendinosus caput ventrale",
               "note": "Below the posterior margin of the sartorius, from the fascia separating the ventral and dorsal heads of the adductor magnus."
+            },
+            {
+              "name": "Semitendinosus and sartorius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ischium",
+                    "side": "lateral"
+                  },
+                  {
+                    "muscle": "adductor-femoris"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "knee-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
             }
           ]
         },
@@ -10225,6 +11217,27 @@
             },
             {
               "name": "Part 2 (semimembranosus sensu Mivart)"
+            },
+            {
+              "name": "Flexor tibialis externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilioischiadic-ligament"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "fibula"
+                  },
+                  {
+                    "element": "calcaneum"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
             }
           ],
           "sources": [
@@ -10321,6 +11334,7 @@
           "species": "prestosuchus-chiniquensis",
           "name": "Flexor cruris (FTE, FTI 3 + FTI 4)",
           "present": "inferred",
+          "division": "divided",
           "sources": [
             "liparini-schultz-2013"
           ],
@@ -10350,7 +11364,57 @@
               }
             ]
           },
-          "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Two portions reconstructed: a lateral one, the flexor tibialis externus, arising caudally from the lateral surface of the postacetabular ilium, and a medial one, the third and fourth flexores tibiales interni, from the dorsal tubercle of the ischium. Both insert at level I on the proximocaudal tuberosity of the tibia, **combined in a single tendon** — which is why one insertion row carries both. The same osteological features supporting the medial portion here were the ones Carrano & Hutchinson used in *Tyrannosaurus*.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). The second head at level II′ on the lateral surface of the postacetabular ilium; the first at level II, running mediolaterally from the distal tubercle of the ischium along muscle scars on the distal caudomedial ischial surface to the distal caudodorsal groove. The pair insert on the craniomedial fossa of the tibia by a tendon **shared with the pubo-ischio-tibialis**, which is scored on its own record with the same insertion. Carrano & Hutchinson did not reconstruct the second head in *Tyrannosaurus* for want of muscle scars on the caudal postacetabular ilium; the scars are present here."
+          "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Two portions reconstructed: a lateral one, the flexor tibialis externus, arising caudally from the lateral surface of the postacetabular ilium, and a medial one, the third and fourth flexores tibiales interni, from the dorsal tubercle of the ischium. Both insert at level I on the proximocaudal tuberosity of the tibia, **combined in a single tendon** — which is why one insertion row carries both. The same osteological features supporting the medial portion here were the ones Carrano & Hutchinson used in *Tyrannosaurus*.\n\nPrestosuchus chiniquensis, Liparini & Schultz (2013). The second head at level II′ on the lateral surface of the postacetabular ilium; the first at level II, running mediolaterally from the distal tubercle of the ischium along muscle scars on the distal caudomedial ischial surface to the distal caudodorsal groove. The pair insert on the craniomedial fossa of the tibia by a tendon **shared with the pubo-ischio-tibialis**, which is scored on its own record with the same insertion. Carrano & Hutchinson did not reconstruct the second head in *Tyrannosaurus* for want of muscle scars on the caudal postacetabular ilium; the scars are present here.",
+          "parts": [
+            {
+              "name": "Flexor cruris (FTE, FTI 3 + FTI 4)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "ischium",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tibia",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "liparini-schultz-2013"
+              ]
+            },
+            {
+              "name": "Flexor tibialis internus pars I and II (FTI 1 + FTI 2)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "ischium",
+                    "side": "distal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tibia",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "liparini-schultz-2013"
+              ]
+            }
+          ]
         },
         {
           "species": "rana-esculenta",
@@ -10395,6 +11459,27 @@
             },
             {
               "name": "Part 2 (semimembranosus sensu Mivart)"
+            },
+            {
+              "name": "Flexor tibialis externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilioischiadic-ligament"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "fibula"
+                  },
+                  {
+                    "element": "calcaneum"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
             }
           ],
           "sources": [
@@ -11118,13 +12203,68 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Gastrocnemius"
+              "name": "Gastrocnemius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "landmark": "femoral-condyles"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tarsals",
+                    "landmark": "calcaneum"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Soleus"
+              "name": "Soleus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "tibia",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tarsals",
+                    "landmark": "calcaneum"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Plantaris"
+              "name": "Plantaris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "landmark": "femoral-epicondyle-lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tarsals",
+                    "landmark": "calcaneum"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Plantarflexes the foot; gastrocnemius also flexes the knee.",
@@ -11502,6 +12642,7 @@
           "speciesBasis": "note",
           "name": "Gastrocnemius internus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -11529,13 +12670,61 @@
               }
             ]
           },
-          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Origin from both femur and tibia, and no sesamoid.** So the whiptail's internal gastrocnemius crosses the knee and the chameleons' does not, and the plantar ossicle the chameleons insert on is absent here.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 3. **Originates from the proximal tibia, and no sesamoid.** The two heads swap which bone they take between chameleon and whiptail — internus femoral-plus-tibial here and tibial in the chameleons, externus tibial here and femoral in the chameleons."
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. **Origin from both femur and tibia, and no sesamoid.** So the whiptail's internal gastrocnemius crosses the knee and the chameleons' does not, and the plantar ossicle the chameleons insert on is absent here.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 3. **Originates from the proximal tibia, and no sesamoid.** The two heads swap which bone they take between chameleon and whiptail — internus femoral-plus-tibial here and tibial in the chameleons, externus tibial here and femoral in the chameleons.",
+          "parts": [
+            {
+              "name": "Gastrocnemius internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur"
+                  },
+                  {
+                    "element": "tibia",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "plantar-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Gastrocnemius externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tibia",
+                    "side": "proximal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metatarsals",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "plantar-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "chamaeleo-calyptratus",
           "speciesBasis": "note",
           "name": "Gastrocnemius internus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -11563,13 +12752,64 @@
               }
             ]
           },
-          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the proximal half of the posterior tibia to the plantar ossicle and the plantar aponeurosis. **The plantar ossicle is scored as `calcaneum` on this paper's own argument**: Molnar et al. show it develops from the fibulare, note that mouse data tie the pisiform developmentally to the calcaneum, and conclude the chameleon plantar ossicle should be redesignated calcaneum — which also makes the squamate literature's equation of calcaneum with the fibulare-plus-intermedium complex inaccurate. This dataset carries `astragalocalcaneum` for squamates on Hattori & Tsuihiji (2021), so the two papers are not using the tarsus the same way and these rows follow the one being mined.\n\nChamaeleo calyptratus, Molnar et al. (2017) Table 3. From the lateral femoral condyle by a long tendon to the plantar ossicle, the base of metatarsal 5 and the plantar aponeurosis, with the flexor tibialis externus tendon. Molnar et al. correct Mivart on this muscle too: the brachioradialis is an extensor and cannot correspond to part of it, as he proposed."
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 3. From the proximal half of the posterior tibia to the plantar ossicle and the plantar aponeurosis. **The plantar ossicle is scored as `calcaneum` on this paper's own argument**: Molnar et al. show it develops from the fibulare, note that mouse data tie the pisiform developmentally to the calcaneum, and conclude the chameleon plantar ossicle should be redesignated calcaneum — which also makes the squamate literature's equation of calcaneum with the fibulare-plus-intermedium complex inaccurate. This dataset carries `astragalocalcaneum` for squamates on Hattori & Tsuihiji (2021), so the two papers are not using the tarsus the same way and these rows follow the one being mined.\n\nChamaeleo calyptratus, Molnar et al. (2017) Table 3. From the lateral femoral condyle by a long tendon to the plantar ossicle, the base of metatarsal 5 and the plantar aponeurosis, with the flexor tibialis externus tendon. Molnar et al. correct Mivart on this muscle too: the brachioradialis is an extensor and cannot correspond to part of it, as he proposed.",
+          "parts": [
+            {
+              "name": "Gastrocnemius internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tibia",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "calcaneum"
+                  },
+                  {
+                    "element": "plantar-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Gastrocnemius externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "landmark": "femoral-epicondyle-lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "calcaneum"
+                  },
+                  {
+                    "element": "metatarsals",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "plantar-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",
           "speciesBasis": "note",
           "name": "Gastrocnemius internus",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -11597,7 +12837,57 @@
               }
             ]
           },
-          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 3. Molnar et al. (2017) Table 3 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 3. Molnar et al. (2017) Table 3 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+          "parts": [
+            {
+              "name": "Gastrocnemius internus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tibia",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "calcaneum"
+                  },
+                  {
+                    "element": "plantar-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Gastrocnemius externus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "landmark": "femoral-epicondyle-lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "calcaneum"
+                  },
+                  {
+                    "element": "metatarsals",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "plantar-aponeurosis"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         }
       ],
       "homology": {
@@ -13010,14 +14300,78 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Extensor digitorum longus"
+              "name": "Extensor digitorum longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tibia",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "fibula",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "interosseous-membrane"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "extensor-expansion"
+                  },
+                  {
+                    "element": "phalanges-pes"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Extensor hallucis longus"
+              "name": "Extensor hallucis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "interosseous-membrane"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ungual-phalanges-pes"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Fibularis tertius",
               "membership": "disputed"
+            },
+            {
+              "name": "Fibularis (peroneus) tertius",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "anterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metatarsals"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extend the toes and dorsiflex the foot.",
@@ -14022,6 +15376,50 @@
             },
             {
               "name": "Fibularis brevis"
+            },
+            {
+              "name": "Fibularis (peroneus) longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tarsals",
+                    "landmark": "distal-tarsals"
+                  },
+                  {
+                    "element": "metatarsals",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Fibularis (peroneus) brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metatarsals",
+                    "side": "lateral"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Evert the foot and assist plantarflexion.",
@@ -14336,6 +15734,7 @@
           "speciesBasis": "note",
           "name": "Fibularis brevis",
           "present": "yes",
+          "division": "divided",
           "sources": [
             "molnar-etal-2017"
           ],
@@ -14356,7 +15755,47 @@
               }
             ]
           },
-          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. A distinct muscle from the proximal fibula to metatarsal 5 — the head both chameleons have fused into the longus.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 3. **From the distal femur** — the muscle crosses the knee in the whiptail and does not in the chameleons, which have pulled its origin down onto the fibula and tibia."
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 3. A distinct muscle from the proximal fibula to metatarsal 5 — the head both chameleons have fused into the longus.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 3. **From the distal femur** — the muscle crosses the knee in the whiptail and does not in the chameleons, which have pulled its origin down onto the fibula and tibia.",
+          "parts": [
+            {
+              "name": "Fibularis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "proximal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metatarsals"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            },
+            {
+              "name": "Fibularis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "femur",
+                    "side": "distal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metatarsals"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
+            }
+          ]
         },
         {
           "species": "chamaeleo-calyptratus",
@@ -15624,10 +17063,42 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Flexor digitorum longus"
+              "name": "Flexor digitorum longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tibia",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ungual-phalanges-pes"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Flexor hallucis longus"
+              "name": "Flexor hallucis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "fibula",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ungual-phalanges-pes"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Flex the toes and assist plantarflexion of the foot.",
@@ -18230,10 +19701,93 @@
               "name": "Plantar interossei"
             },
             {
-              "name": "Flexor hallucis brevis"
+              "name": "Flexor hallucis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tarsals",
+                    "landmark": "distal-tarsals"
+                  },
+                  {
+                    "element": "metatarsals",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Flexor digiti minimi brevis"
+            },
+            {
+              "name": "Dorsal interosseous (foot)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metatarsals"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Plantar interosseous",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metatarsals",
+                    "side": "medial"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Flexor digiti minimi brevis (foot)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metatarsals",
+                    "side": "proximal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Flex the metatarsophalangeal joints; the interossei abduct and adduct the digits about the axis of digit II.",
@@ -19559,6 +21113,25 @@
             },
             {
               "name": "Muscle 5"
+            },
+            {
+              "name": "Flexores breves profundi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metatarsals"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
             }
           ]
         },
@@ -19606,6 +21179,25 @@
             },
             {
               "name": "Muscle 5"
+            },
+            {
+              "name": "Flexores breves profundi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metatarsals"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "molnar-etal-2017"
+              ]
             }
           ]
         }
@@ -20719,6 +22311,129 @@
           "nerves": [
             {
               "nerve": "ventral-rami"
+            }
+          ],
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Iliococcygeus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium"
+                  },
+                  {
+                    "element": "pelvic-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Levator ani",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "pelvic-girdle"
+                  },
+                  {
+                    "element": "ischium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "anococcygeal-raphe"
+                  },
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Pubococcygeus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "caudal-vertebrae"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Puborectalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "iliocaudalis"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Pubovaginalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "perineal-body"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Levator prostatae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ]
         },
@@ -23181,10 +24896,41 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Extensor digitorum brevis"
+              "name": "Extensor digitorum brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "calcaneum"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Extensor hallucis brevis"
+              "name": "Extensor hallucis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "calcaneum"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-pes",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extend the metatarsophalangeal joints of digits 1-4.",

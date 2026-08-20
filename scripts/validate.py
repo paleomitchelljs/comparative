@@ -803,6 +803,41 @@ def main():
             clade = species_clade.get(fsp)
             check_rows(ob.get("attachments") or {}, where, clade)
 
+    # Attachments that cannot be broken out onto parts yet, and the one authored
+    # field that would release them.
+    #
+    # The join gives each named part its own attachments from the rows that
+    # describe it, but only where the occurrence already declares how far the
+    # group has split. How far it has split is a judgement — one muscle with
+    # three heads and three separate muscles are different claims, and nothing
+    # in an extraction file distinguishes them, so the build will not guess. The
+    # cost of not declaring it is visible here: these rows' attachments are in
+    # the occurrence union and nowhere else, and the fix is one field.
+    unheld = collections.defaultdict(list)
+    occ_by = {(mm["id"], oo.get("species")): oo
+              for path in MUSCLE_FILES for mm in load(path)["muscles"]
+              for oo in (mm.get("occurrences") or [])}
+    for f in sorted(OBS_DIR.glob("*.json")):
+        doc = load(f)
+        per = collections.defaultdict(list)
+        for ob in doc.get("observations") or []:
+            if ob.get("record") and ob.get("name") and ob.get("attachments"):
+                per[ob["record"]].append(ob["name"])
+        for rec, names in per.items():
+            if len(names) < 2:
+                continue
+            occ = occ_by.get((rec, doc["species"]))
+            if occ is None or occ.get("division") in ("heads", "divided", "variable"):
+                continue
+            extra = [n for n in names if n != occ.get("name")]
+            if extra:
+                unheld[(rec, doc["species"])].extend(extra)
+    for (rec, sp), names in sorted(unheld.items()):
+        warn(f"{rec}/{sp}: {len(names)} named muscles share this occurrence and "
+             f"their attachments are held only in the union "
+             f"({', '.join(sorted(names))}). Declare `division` on the row that "
+             f"carries the occurrence and the join breaks them out onto parts")
+
     # Two studies calling one animal's muscle two things is a synonymy, and it is
     # held per source in data/mapping/. The occurrence can only carry one label,
     # so this is not an error — but which label a reader sees is then a fact
@@ -980,6 +1015,25 @@ def main():
                     f"species — say which basis actually attributed it")
 
             check_rows(occ.get("attachments", {}), f"{where}/{sid}", taxon=tid)
+
+            # A part's own attachments, derived by the join from the rows that
+            # describe it. Held to exactly the same rules as the occurrence's:
+            # elements resolve, landmarks sit inside their element, the taxon
+            # has the bone. They are also checked against the occurrence union,
+            # because a part attaching somewhere the whole muscle does not is
+            # either a bad row or a union that was never updated.
+            for i, part in enumerate(occ.get("parts") or []):
+                if not isinstance(part, dict) or not part.get("attachments"):
+                    continue
+                pl = f"{where}/{sid} part '{part.get('name')}'"
+                check_rows(part["attachments"], pl, taxon=tid)
+                union = occ.get("attachments") or {}
+                for end in ("origin", "insertion"):
+                    for row in part["attachments"].get(end, []):
+                        if row not in (union.get(end) or []):
+                            err(f"{pl}: {end} {row} is not in the occurrence's "
+                                f"own {end} rows — the union is what the record "
+                                f"attaches to and every part is inside it")
 
             arch = occ.get("architecture")
             if arch:

@@ -196,7 +196,45 @@ same reason: absence of a statement is not a statement of absence, and scoring a
 unexamined taxon as `single` would manufacture a differentiation event on the
 branch leading to whichever taxon someone happened to study.
 
-Part fields: `name` (required), `membership`, `muscle`, `note`, `sources`.
+Part fields: `name` (required), `membership`, `muscle`, `note`, `sources`,
+`attachments`.
+
+### `parts[].attachments` — **derived**, and the reason it exists
+
+An occurrence holds **one** union of attachment rows. A record that is one muscle
+in a salamander and six in a human could therefore say that six sites are used and
+never which muscle uses which — the human `adductor-mandibulae` row named masseter,
+temporalis and both pterygoids and offered five origins between them, unassigned.
+Across the dataset that was 1,692 named parts carrying a name and nothing else.
+
+The detail was not missing. It was in `data/observations/` all along, as one row
+per muscle, and `--join` was flattening it on the way in. So the join now carries
+each row's attachments onto the part of that name, and the rows are held to the
+same rules as an occurrence's: elements resolve, landmarks sit inside their
+element, the taxon has the bone. **Every part row must also appear in the
+occurrence's own union** — the union is what the record attaches to and each part
+is inside it. Enforced.
+
+**Do not hand-write them.** Write one row per muscle in the extraction file, which
+is what `MINING.md` already asks for; the parts follow.
+
+Two rules keep the synthesis from inventing claims:
+
+- **Only within one source.** Several rows from one study are several muscles that
+  study distinguishes. Several rows from different studies are one muscle described
+  twice, and merging those would turn a synonymy into a division.
+- **Never invent `division`.** How far a group has split is a judgement — one muscle
+  with three heads and three separate muscles are different claims, and nothing in
+  an extraction file tells them apart. Where the occurrence declares `heads`,
+  `divided` or `variable`, the parts follow. Where it declares nothing,
+  `validate.py` **warns and names the rows**, because the fix is one authored field
+  and then this runs by itself.
+
+Whether the row the occurrence takes its *name* from is itself a part turns on
+whether anyone authored a `parts` list. If they did, that row is the umbrella —
+`Masseter, temporalis, the pterygoids and the tensors` — and listing it beside the
+six muscles it names would be nonsense. If they did not, the rows are siblings and
+the occurrence carries one of their names because something had to.
 
 `membership` is `established` (default), `disputed` or `variable`. It exists
 because parenthetical parts in the literature are usually contested rather than

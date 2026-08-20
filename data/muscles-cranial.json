@@ -405,31 +405,147 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Masseter"
+              "name": "Masseter",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "zygomatic-arch"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Temporalis"
+              "name": "Temporalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "temporal-fossa"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "coronoid-process-mandible"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Medial pterygoid"
+              "name": "Medial pterygoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterygoid"
+                  },
+                  {
+                    "element": "palatine"
+                  },
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Lateral pterygoid"
+              "name": "Lateral pterygoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "alisphenoid"
+                  },
+                  {
+                    "element": "pterygoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Tensor tympani",
               "membership": "disputed",
               "claimedBy": "intermandibularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "auditory-tube-cartilage"
+                  },
+                  {
+                    "element": "alisphenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "articular"
+                  }
+                ]
+              },
               "sources": [
-                "diogo-etal-2008-head"
+                "diogo-etal-2008-head",
+                "gest-anatomy-tables"
               ]
             },
             {
               "name": "Tensor veli palatini",
               "membership": "disputed",
               "claimedBy": "intermandibularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "auditory-tube-cartilage"
+                  },
+                  {
+                    "element": "pterygoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "palatine-aponeurosis"
+                  }
+                ]
+              },
               "sources": [
-                "diogo-etal-2008-head"
+                "diogo-etal-2008-head",
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Sphenomeniscus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "alisphenoid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
               ]
             }
           ],
@@ -987,7 +1103,25 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Mylohyoid"
+              "name": "Mylohyoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "mandible"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  },
+                  {
+                    "element": "midline-raphe"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Anterior belly of digastric"
@@ -1542,7 +1676,22 @@
               "name": "Posterior belly of digastric"
             },
             {
-              "name": "Stylohyoid"
+              "name": "Stylohyoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "styloid-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Elevates the hyoid; with the anterior belly, depresses the mandible.",
@@ -1758,7 +1907,26 @@
               "name": "Depressor mandibulae anterior"
             },
             {
-              "name": "Depressor mandibulae posterior"
+              "name": "Depressor mandibulae posterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "muscle": "epaxial-musculature"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "articular"
+                  },
+                  {
+                    "element": "mandible",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "bauer-1997"
+              ]
             }
           ],
           "sources": [
@@ -2263,19 +2431,221 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Levator labii superioris"
+              "name": "Levator labii superioris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Depressor anguli oris"
+              "name": "Depressor anguli oris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "mandible"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Risorius"
+              "name": "Risorius",
+              "attachments": {
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Nasalis"
+              "name": "Nasalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  },
+                  {
+                    "element": "midline-raphe"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Corrugator supercilii"
+            },
+            {
+              "name": "Corrugator",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "skull-roof"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Depressor labii inferioris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "mandible"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Depressor septi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Frontalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "galea-aponeurotica"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Levator labii superioris alaque nasi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Nasalis pars alaris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Nasalis pars transversa",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "maxilla"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "midline-raphe"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Procerus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "nasal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "skin"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Move the skin of the face, scalp, eyelids and lips; close the eye and the mouth; compress the cheek against the teeth.",
@@ -4057,13 +4427,142 @@
               "name": "Superior, inferior, medial and lateral rectus"
             },
             {
-              "name": "Superior oblique"
+              "name": "Superior oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "sclera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Inferior oblique"
+              "name": "Inferior oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "sclera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Levator palpebrae superioris"
+              "name": "Levator palpebrae superioris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eyelid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Superior rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  },
+                  {
+                    "element": "optic-foramen"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "sclera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Inferior rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  },
+                  {
+                    "element": "optic-foramen"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "sclera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Medial rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  },
+                  {
+                    "element": "optic-foramen"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "sclera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Lateral rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  },
+                  {
+                    "element": "optic-foramen"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "sclera"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Rotate the eyeball about three axes; levator palpebrae raises the upper eyelid.",
@@ -4498,38 +4997,245 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Sternohyoid"
+              "name": "Sternohyoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum"
+                  },
+                  {
+                    "element": "clavicle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Sternothyroid"
+              "name": "Sternothyroid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "thyroid-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Thyrohyoid"
+              "name": "Thyrohyoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thyroid-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Omohyoid"
+              "name": "Omohyoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapula"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Geniohyoid"
+              "name": "Geniohyoid",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "mandible"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Genioglossus"
+              "name": "Genioglossus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "mandible"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Hyoglossus"
+              "name": "Hyoglossus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "hyoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Chondroglossus"
+              "name": "Chondroglossus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "hyoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Styloglossus"
+              "name": "Styloglossus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "styloid-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Palatoglossus",
-              "membership": "disputed"
+              "membership": "disputed",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "palatine-aponeurosis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Intrinsic tongue musculature"
+            },
+            {
+              "name": "Linguae, longitudinalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tongue"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Linguae, transversus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tongue"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Linguae, verticalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "tongue"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "tongue"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Depress and fix the hyoid and larynx; protrude, retract and change the shape of the tongue.",
@@ -9010,6 +9716,7 @@
             "diogo-etal-2008-head",
             "gest-anatomy-tables"
           ],
+          "division": "heads",
           "attachments": {
             "origin": [
               {
@@ -9025,7 +9732,48 @@
               }
             ]
           },
-          "attachmentNote": "**Inferior pharyngeal constrictor** (Gest). Oblique line of the thyroid cartilage and the lateral cricoid to the midline raphe; the outermost of the three. Three constrictors ending on one midline seam is a fish's arch constrictors wrapped round a different tube.\n\n**Cricopharyngeus** (Gest). Lateral cricoid cartilage to the midline raphe. Gest calls it the lowest fibres of the inferior constrictor and gives it the recurrent laryngeal nerve where the rest of that muscle takes the pharyngeal plexus, so it is filed here rather than on the `branchial-constrictors` umbrella that names it as a part. It is continuous with the oesophagus and marks where the pharynx stops."
+          "attachmentNote": "**Inferior pharyngeal constrictor** (Gest). Oblique line of the thyroid cartilage and the lateral cricoid to the midline raphe; the outermost of the three. Three constrictors ending on one midline seam is a fish's arch constrictors wrapped round a different tube.\n\n**Cricopharyngeus** (Gest). Lateral cricoid cartilage to the midline raphe. Gest calls it the lowest fibres of the inferior constrictor and gives it the recurrent laryngeal nerve where the rest of that muscle takes the pharyngeal plexus, so it is filed here rather than on the `branchial-constrictors` umbrella that names it as a part. It is continuous with the oesophagus and marks where the pharynx stops.",
+          "parts": [
+            {
+              "name": "Constrictor, inferior pharyngeal",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thyroid-cartilage"
+                  },
+                  {
+                    "element": "cricoid-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "pharyngeal-raphe"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Cricopharyngeus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "cricoid-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "pharyngeal-raphe"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            }
+          ]
         }
       ],
       "homology": {
@@ -9905,6 +10653,7 @@
             "diogo-etal-2008-head",
             "gest-anatomy-tables"
           ],
+          "division": "divided",
           "attachments": {
             "origin": [
               {
@@ -9920,7 +10669,63 @@
               }
             ]
           },
-          "attachmentNote": "**Transverse arytenoid** (Gest). Posterior surface of one arytenoid to the posterior surface of the other. The only unpaired muscle in the larynx, and one whose two ends are the same element on opposite sides.\n\n**Oblique arytenoid** (Gest). Muscular process of one arytenoid to the apex of the other, crossing behind the transverse fibres. Gest notes the two are often read as one muscle with oblique and transverse parts, which is how this record already carries them.\n\n**Aryepiglottic** (Gest). Apex of the arytenoid to the epiglottis, raising the mucosa into the aryepiglottic fold. Filed with the arytenoids because it is the continuation of the oblique fibres past the opposite arytenoid; the `branchial-constrictors` umbrella names it as a part without scoring it."
+          "attachmentNote": "**Transverse arytenoid** (Gest). Posterior surface of one arytenoid to the posterior surface of the other. The only unpaired muscle in the larynx, and one whose two ends are the same element on opposite sides.\n\n**Oblique arytenoid** (Gest). Muscular process of one arytenoid to the apex of the other, crossing behind the transverse fibres. Gest notes the two are often read as one muscle with oblique and transverse parts, which is how this record already carries them.\n\n**Aryepiglottic** (Gest). Apex of the arytenoid to the epiglottis, raising the mucosa into the aryepiglottic fold. Filed with the arytenoids because it is the continuation of the oblique fibres past the opposite arytenoid; the `branchial-constrictors` umbrella names it as a part without scoring it.",
+          "parts": [
+            {
+              "name": "Arytenoid, transverse",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "arytenoid-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "arytenoid-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Arytenoid, oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "arytenoid-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "arytenoid-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Aryepiglottic",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "arytenoid-cartilage"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "epiglottic-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            }
+          ]
         }
       ],
       "homology": {

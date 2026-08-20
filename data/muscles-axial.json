@@ -106,7 +106,51 @@
               }
             ]
           },
-          "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009), from the review table and the baseline description. Longissimus dorsi, from the sacral and presacral vertebrae onto the urostyle, rotating it dorsally. In anurans the epaxial series has been rebuilt around a rigid trunk and a rod: it moves one bone rather than bending a column.\n\nDiscoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Longissimus dorsi, from the sacral and presacral vertebrae onto the urostyle, rotating it dorsally. In anurans the epaxial series has been rebuilt around a rigid trunk and a rod: it moves one bone rather than bending a column.\n\nDiscoglossus pictus, Prikryl et al. (2009). From the dorsal side of the sacral diapophysis to the dorsolateral surface of the posterior two-thirds of the urostyle, partly covered by the longissimus dorsi. Filed with the longissimus dorsi on this record: Prikryl et al.'s own table groups the two as the axial-to-axial muscles, and both run the presacral or sacral series onto the rod. Function is given as lateral bending at the iliosacral joint when one side acts and trunk stiffening with moderate dorsal rotation of the urostyle when both do — which is the anuran epaxial series doing a job no other tetrapod's does. `sacral-vertebrae` carries the diapophysis, since the skeleton has no separate element for it."
+          "attachmentNote": "Discoglossus pictus, Prikryl et al. (2009), from the review table and the baseline description. Longissimus dorsi, from the sacral and presacral vertebrae onto the urostyle, rotating it dorsally. In anurans the epaxial series has been rebuilt around a rigid trunk and a rod: it moves one bone rather than bending a column.\n\nDiscoglossus and Ascaphus, from Prikryl et al.'s review table and descriptions. Longissimus dorsi, from the sacral and presacral vertebrae onto the urostyle, rotating it dorsally. In anurans the epaxial series has been rebuilt around a rigid trunk and a rod: it moves one bone rather than bending a column.\n\nDiscoglossus pictus, Prikryl et al. (2009). From the dorsal side of the sacral diapophysis to the dorsolateral surface of the posterior two-thirds of the urostyle, partly covered by the longissimus dorsi. Filed with the longissimus dorsi on this record: Prikryl et al.'s own table groups the two as the axial-to-axial muscles, and both run the presacral or sacral series onto the rod. Function is given as lateral bending at the iliosacral joint when one side acts and trunk stiffening with moderate dorsal rotation of the urostyle when both do — which is the anuran epaxial series doing a job no other tetrapod's does. `sacral-vertebrae` carries the diapophysis, since the skeleton has no separate element for it.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Dorsalis trunci",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sacral-vertebrae"
+                  },
+                  {
+                    "element": "vertebral-column",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "urostyle"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            },
+            {
+              "name": "Coccygeosacralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sacral-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "urostyle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "prikryl-etal-2009"
+              ]
+            }
+          ]
         },
         {
           "species": "varanus-exanthematicus",
@@ -193,6 +237,130 @@
             },
             {
               "name": "Suboccipital group"
+            },
+            {
+              "name": "Splenius capitis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "nuchal-ligament"
+                  },
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mastoid-process"
+                  },
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Splenius cervicis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "nuchal-ligament"
+                  },
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Obliquus capitis inferior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "atlas",
+                    "landmark": "atlas-transverse-process"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Obliquus capitis superior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "atlas",
+                    "landmark": "atlas-transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Rectus capitis posterior major",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Rectus capitis posterior minor",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "atlas"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extends and laterally bends the trunk and neck; the suboccipital group extends and rotates the head on the atlas and axis.",
@@ -670,11 +838,264 @@
               "muscle": "intercostales-interni"
             },
             {
-              "name": "Quadratus lumborum"
+              "name": "Quadratus lumborum",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ilium",
+                    "landmark": "iliac-crest"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  },
+                  {
+                    "element": "ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Diaphragm",
-              "membership": "disputed"
+              "membership": "disputed",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum",
+                    "landmark": "xiphoid-process"
+                  },
+                  {
+                    "element": "costal-cartilage"
+                  },
+                  {
+                    "element": "arcuate-ligaments"
+                  },
+                  {
+                    "element": "lumbar-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "central-tendon-diaphragm"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Psoas minor",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracic-vertebrae"
+                  },
+                  {
+                    "element": "lumbar-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "pelvic-girdle"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Serratus posterior superior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "nuchal-ligament"
+                  },
+                  {
+                    "element": "cervical-vertebrae"
+                  },
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Serratus posterior inferior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracolumbar-fascia"
+                  },
+                  {
+                    "element": "thoracic-vertebrae",
+                    "landmark": "thoracic-neural-spines"
+                  },
+                  {
+                    "element": "lumbar-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Longus capitis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "cervical-vertebrae",
+                    "landmark": "cervical-transverse-processes"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Longus colli",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "cervical-vertebrae"
+                  },
+                  {
+                    "element": "thoracic-vertebrae"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "atlas"
+                  },
+                  {
+                    "element": "cervical-vertebrae"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Rectus capitis anterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "atlas"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Rectus capitis lateralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "atlas",
+                    "landmark": "atlas-transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Anterior scalene",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "cervical-vertebrae",
+                    "landmark": "cervical-transverse-processes"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "true-ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Middle scalene",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "cervical-vertebrae",
+                    "landmark": "cervical-transverse-processes"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "true-ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Posterior scalene",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "cervical-vertebrae",
+                    "landmark": "cervical-transverse-processes"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "true-ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Compresses the abdomen, flexes and rotates the trunk, and moves the ribs in respiration.",
@@ -1499,19 +1920,133 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Semispinalis"
+              "name": "Semispinalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  },
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Multifidus"
+              "name": "Multifidus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sacral-vertebrae"
+                  },
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Rotatores"
+              "name": "Rotatores",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Interspinales"
+              "name": "Interspinales",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Intertransversarii"
+              "name": "Intertransversarii",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "transverse-process"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Spinalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "vertebral-column",
+                    "landmark": "neural-spine"
+                  },
+                  {
+                    "element": "occiput"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extends and rotates the vertebral column; semispinalis capitis extends the head.",
@@ -2218,16 +2753,77 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Internal intercostal"
+              "name": "Internal intercostal",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ribs"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Innermost intercostal"
+              "name": "Innermost intercostal",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ribs"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Subcostalis"
+              "name": "Subcostalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ribs"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ribs"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Transversus thoracis"
+              "name": "Transversus thoracis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "sternum",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "costal-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Depresses the ribs in forced expiration.",
@@ -2598,7 +3194,22 @@
               "name": "Rectus abdominis"
             },
             {
-              "name": "Pyramidalis"
+              "name": "Pyramidalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pubis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "linea-alba"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Flexes the trunk; compresses the abdomen.",
@@ -2829,6 +3440,58 @@
             {
               "joint": "intervertebral",
               "motion": "flexion"
+            }
+          ],
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Internal abdominal oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "thoracolumbar-fascia"
+                  },
+                  {
+                    "element": "ilium",
+                    "landmark": "iliac-crest"
+                  },
+                  {
+                    "element": "inguinal-ligament"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ribs"
+                  },
+                  {
+                    "element": "linea-alba"
+                  },
+                  {
+                    "element": "pubis"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Cremaster",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "inguinal-ligament"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "spermatic-cord"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ]
         },

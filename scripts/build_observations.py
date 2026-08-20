@@ -86,7 +86,18 @@ def occurrence_keys(row):
     occurrences carry it.
     """
     if row.get("_keys"):
-        return row["_keys"]
+        # `_keys` is the order the occurrence HAD, so a field added to the row
+        # afterwards is not in it. Returning it bare dropped that field on the
+        # floor — silently, because the join only emits keys it finds in the
+        # shape. Adding `division` to eight scaffolded rows produced eight rows
+        # the build ignored and no message anywhere. Anything the row carries
+        # and the history does not is appended, which keeps the recorded order
+        # for everything that has one.
+        known = row["_keys"]
+        extra = [k for k in row
+                 if k not in known and k not in EXTRACTION_ONLY
+                 and k not in ("species", "sources")]
+        return known + extra if extra else known
     out = ["species"]
     for k in row:
         if k in EXTRACTION_ONLY or k in ("species", "sources"):
@@ -241,6 +252,69 @@ def write_mapping():
     return len(keep)
 
 
+def attach_parts(got, src, group, record, species, unheld):
+    """Give each named part its own attachments, from the rows that describe it.
+
+    An occurrence holds one union of attachment rows, so a record that is one
+    muscle in a salamander and six in a human could say *that* six sites are
+    used and never which muscle uses which. The detail was not missing from the
+    dataset — it was in the extraction file all along, as one row per muscle,
+    and the join was flattening it on the way in. 1692 named parts carried a
+    name and nothing else.
+
+    So: where ONE source contributes several named rows to one occurrence, each
+    row's attachments are carried onto the part of that name. The union stays,
+    because it is what the record as a whole attaches to and the app reads it;
+    the parts now say how it divides.
+
+    Two rules keep this from inventing claims.
+
+    **Only within one source.** Several rows from one study are several muscles
+    that study distinguishes; several rows from different studies are one muscle
+    described twice, and merging those into parts would turn a synonymy into a
+    division. That is why the caller keys on (species, source).
+
+    **Never invent `division`.** How far a group has split is a judgement — one
+    muscle with three heads and three separate muscles are different claims, and
+    nothing in an extraction file distinguishes them. Where the occurrence
+    already declares `heads`, `divided` or `variable`, the parts follow. Where it
+    declares nothing, the rows are recorded in `unheld` and `validate.py` says
+    so, because the fix is one authored field and then this runs by itself.
+    """
+    # Whether the row the occurrence takes its name from is itself a part turns
+    # on whether anyone authored a `parts` list. If they did, that row is the
+    # umbrella — `Masseter, temporalis, the pterygoids and the tensors` — and
+    # listing it beside the six muscles it names would be nonsense. If they did
+    # not, the rows are siblings and the occurrence is carrying one of their
+    # names because something had to; `Triceps scapularis` is a head of the
+    # triceps and belongs in the list with `Triceps humeralis`.
+    umbrella = bool(got.get("parts"))
+    rows = [r for r in group
+            if not umbrella or r.get("name") != got.get("name")]
+    if len(group) < 2 or not rows:
+        return
+    if got.get("division") not in ("heads", "divided", "variable"):
+        unheld.append((record, species, src, [r["name"] for r in rows]))
+        return
+    parts = got.setdefault("parts", [])
+    by_name = {p.get("name"): p for p in parts if isinstance(p, dict)}
+    for row in rows:
+        part = by_name.get(row["name"])
+        if part is None:
+            part = {"name": row["name"]}
+            parts.append(part)
+            by_name[row["name"]] = part
+        part["attachments"] = copy.deepcopy(row["attachments"])
+        if src != "(unsourced)" and src not in (part.get("sources") or []):
+            part.setdefault("sources", []).append(src)
+        # Field order, so the round trip does not depend on insertion order.
+        order = ["name", "membership", "claimedBy", "muscle", "attachments",
+                 "sources", "note"]
+        for k in sorted(part, key=lambda x: (order.index(x) if x in order
+                                             else len(order), x)):
+            part[k] = part.pop(k)
+
+
 def join(into):
     """observations/ + mapping/ -> muscle occurrences, written into `into`.
 
@@ -273,6 +347,7 @@ def join(into):
     this moves the committed data. The first hand-mined row added beside an
     older one would have been dropped on filename order.
     """
+    unheld: list = []          # occurrences whose parts cannot be broken out yet
     by_record = collections.defaultdict(list)   # record -> [(species, source, row)]
     for f in sorted(OBS.glob("*.json")):
         doc = json.load(open(f))
@@ -306,9 +381,17 @@ def join(into):
             # them, and a new source's paragraph reads after the older one.
             # Every committed row has an `_occ`, so this does not reorder
             # anything that exists today.
+            # (species, source) -> [row], for the part synthesis below. A group
+            # of several named rows from ONE source is several muscles the
+            # source distinguishes inside one homology group; several rows from
+            # DIFFERENT sources are one muscle described twice. Only the first
+            # is a division, which is why this is keyed on the source too.
+            per_source = collections.defaultdict(list)
             settled = sorted(enumerate(by_record.get(m["id"], [])),
                              key=lambda t: (t[1][2].get("_occ") is None, t[0]))
             for seen, (sp, src, row) in ((i, t) for i, t in settled):
+                if row.get("name") and row.get("attachments"):
+                    per_source[(sp, src)].append(row)
                 slot = order.setdefault(sp, [UNPLACED, seen])
                 if row.get("_occ") is not None:
                     slot[0] = min(slot[0], row["_occ"])
@@ -352,6 +435,10 @@ def join(into):
                     was = row.get("_srcs") or []
                     srcs_of[sp].sort(
                         key=lambda x: was.index(x) if x in was else len(was))
+            for (sp, src), group in per_source.items():
+                if sp in fields:
+                    attach_parts(fields[sp], src, group, m["id"], sp, unheld)
+
             out = []
             for sp in sorted(order, key=lambda s: tuple(order[s])):
                 occ = {}
@@ -363,6 +450,10 @@ def join(into):
                             occ["sources"] = srcs_of[sp]
                     elif k in fields[sp]:
                         occ[k] = fields[sp][k]
+                # `parts` can be gained by the synthesis above on an occurrence
+                # whose recorded key order never had it.
+                if "parts" in fields[sp] and "parts" not in occ:
+                    occ["parts"] = fields[sp]["parts"]
                 out.append(occ)
             if out or m.get("occurrences") is not None:
                 m["occurrences"] = out
@@ -376,6 +467,12 @@ def join(into):
                  "is real, it belongs in `attachmentNote` under both names.")
     for out, text in pending:
         out.write_text(text)
+
+    if unheld:
+        n = sum(len(v[3]) for v in unheld)
+        print(f"  {n} part attachments in {len(unheld)} occurrences are held in "
+              f"the union only, because the occurrence declares no `division`. "
+              f"validate.py lists them.")
 
 
 def check():

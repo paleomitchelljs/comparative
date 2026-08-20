@@ -820,6 +820,33 @@ const DIVISION_LABEL = {
   variable: 'division varies within the clade',
 };
 
+/* A part's own origin and insertion, where the join could work out which rows
+   belong to it. Before this existed an occurrence held one union of attachment
+   rows, so a record that is one muscle in a salamander and six in a human could
+   say that six sites are used and never which muscle used which. Rendered as
+   one line per part rather than a table: the table for the whole occurrence is
+   already below, and this is the breakdown of it. */
+function partAttachments(part, taxon) {
+  const a = part.attachments;
+  if (!a || (!(a.origin || []).length && !(a.insertion || []).length)) return '';
+  const site = r => {
+    const label = esc(taxon ? elementLabel(r.element, taxon)
+                            : state.elementsById.get(r.element)?.label || r.element);
+    const link = `<a href="#element=${encodeURIComponent(r.element)}">${label}</a>`;
+    const lm = r.landmark
+      ? `<span class="sep"> · </span><a href="#element=${encodeURIComponent(r.landmark)}">${esc(taxon ? elementLabel(r.landmark, taxon)
+          : state.elementsById.get(r.landmark)?.label || r.landmark)}</a>` : '';
+    return link + (r.side ? ` <span class="sep">${esc(r.side)}</span>` : '') + lm;
+  };
+  const end = rows => rows.length
+    ? rows.map(r => r.muscle
+        ? `<a class="pill flat" data-goto="${esc(r.muscle)}">${esc(state.byId.get(r.muscle)?.name || r.muscle)}</a>`
+        : site(r)).join('<span class="sep">, </span>')
+    : '<span class="sep">—</span>';
+  return `<span class="partatt">${end(a.origin || [])}
+      <span class="sep">&rarr;</span> ${end(a.insertion || [])}</span>`;
+}
+
 function renderDivision(o) {
   if (!o.division) return '';
   const firm = (o.parts || []).filter(x => (x.membership || 'established') === 'established');
@@ -839,7 +866,7 @@ function renderDivision(o) {
       : `<span class="pill flat">${esc(x.name)}</span>`;
     const tag = mem === 'established' ? ''
       : `<span class="memtag mem-${esc(mem)}" title="${esc(x.note || mem)}">${esc(mem)}</span>`;
-    return `<li>${body}${tag}${x.note ? `<span class="cellnote">${emph(x.note)}</span>` : ''}</li>`;
+    return `<li>${body}${tag}${partAttachments(x, o.taxon)}${x.note ? `<span class="cellnote">${emph(x.note)}</span>` : ''}</li>`;
   }).join('');
 
   return `<div class="division div-${esc(o.division)}">

@@ -460,10 +460,44 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Extensor carpi radialis longus"
+              "name": "Extensor carpi radialis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "supracondylar-ridge"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metacarpals",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Extensor carpi radialis brevis"
+              "name": "Extensor carpi radialis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "lateral-epicondyle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metacarpals",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extends the wrist and abducts the hand.",
@@ -2332,10 +2366,42 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Extensor digitorum"
+              "name": "Extensor digitorum",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "lateral-epicondyle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Extensor digiti minimi"
+              "name": "Extensor digiti minimi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "lateral-epicondyle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extends the metacarpophalangeal and interphalangeal joints of digits 2-5; extends the wrist.",
@@ -3668,10 +3734,54 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Abductor pollicis longus"
+              "name": "Abductor pollicis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "radius",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "ulna",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "interosseous-membrane"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metacarpals",
+                    "side": "lateral"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Extensor pollicis brevis"
+              "name": "Extensor pollicis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "radius",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "interosseous-membrane"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Abducts the thumb at the carpometacarpal joint; extensor pollicis brevis extends it at the metacarpophalangeal joint.",
@@ -10035,13 +10145,75 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Flexor digitorum superficialis"
+              "name": "Flexor digitorum superficialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "medial-epicondyle"
+                  },
+                  {
+                    "element": "radius",
+                    "side": "anterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Flexor digitorum profundus"
+              "name": "Flexor digitorum profundus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ulna",
+                    "side": "medial"
+                  },
+                  {
+                    "element": "ulna",
+                    "side": "posterior"
+                  },
+                  {
+                    "element": "interosseous-membrane"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ungual-phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Flexor pollicis longus"
+              "name": "Flexor pollicis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "radius",
+                    "side": "anterior"
+                  },
+                  {
+                    "element": "interosseous-membrane"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ungual-phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Superficialis flexes the metacarpophalangeal and proximal interphalangeal joints; profundus also flexes the distal interphalangeal joints.",
@@ -10483,6 +10655,7 @@
           "speciesBasis": "note",
           "name": "M. flexor digitorum superficialis",
           "present": "yes",
+          "division": "divided",
           "after": "Suzuki et al. 2014",
           "sources": [
             "widrig-etal-2023"
@@ -10507,7 +10680,50 @@
               }
             ]
           },
-          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Said to arise from a thick superficial fascia of the ventral forearm, which the scan could not see; Suzuki et al. (2014) read that fascia as a thin tendinous origin distal to the pronator profundus on the ventral epicondyle. The belly is visible between the proximal ulna and the ulnare, deep to the flexor carpi ulnaris and superficial to the profundus. It becomes tendinous at the wrist, passes a groove on the ventral ulnare and reaches the ventral surface of the distal phalanx of the major digit.\n\nNothoprocta pentlandii, Widrig et al. (2023). Origin along the ventral margin of the ulnar shaft, running its whole length. **Its tendon divides at the wrist, one branch to the alular phalanx and the other fusing with the flexor digitorum superficialis tendon to the distal phalanx of the major digit** — the two-layer deep-and-superficial flexor arrangement that this record exists to trace, in a wing."
+          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Said to arise from a thick superficial fascia of the ventral forearm, which the scan could not see; Suzuki et al. (2014) read that fascia as a thin tendinous origin distal to the pronator profundus on the ventral epicondyle. The belly is visible between the proximal ulna and the ulnare, deep to the flexor carpi ulnaris and superficial to the profundus. It becomes tendinous at the wrist, passes a groove on the ventral ulnare and reaches the ventral surface of the distal phalanx of the major digit.\n\nNothoprocta pentlandii, Widrig et al. (2023). Origin along the ventral margin of the ulnar shaft, running its whole length. **Its tendon divides at the wrist, one branch to the alular phalanx and the other fusing with the flexor digitorum superficialis tendon to the distal phalanx of the major digit** — the two-layer deep-and-superficial flexor arrangement that this record exists to trace, in a wing.",
+          "parts": [
+            {
+              "name": "M. flexor digitorum superficialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "humerus",
+                    "landmark": "medial-epicondyle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ulnare"
+                  },
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. flexor digitorum profundus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "ulna",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",
@@ -12131,6 +12347,7 @@
           "speciesBasis": "note",
           "name": "M. flexor alulae",
           "present": "yes",
+          "division": "divided",
           "after": "Hudson et al. 1972",
           "sources": [
             "widrig-etal-2023"
@@ -12152,7 +12369,47 @@
               }
             ]
           },
-          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Poorly visualised, probably for its size. Hudson et al. (1972) place the origin on the ventral carpometacarpus between the ankylosed first metacarpal and the pisiform process, Suzuki et al. (2014) simply on the proximal ventral carpometacarpus; both put the insertion on the caudoventral edge of the alular phalanx. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo state that the 'flexor indicis' goes to digit 1 and corresponds to the 'flexor alulae' *sensu* Meyers (1996), and place it in the flexores breves superficiales.\n\nNothoprocta pentlandii, Widrig et al. (2023). A tiny muscle from the caudal margin of the minor metacarpus to the caudal edge of the phalanx of the minor digit. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo place the 'flexor digiti quarti', which goes to digit 3 and corresponds to Meyers's 'flexor digiti minoris', in the flexores breves superficiales — **and add in the same sentence that they cannot completely discard the possibility that some of these muscles correspond to something else.** The row carries that caveat."
+          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Poorly visualised, probably for its size. Hudson et al. (1972) place the origin on the ventral carpometacarpus between the ankylosed first metacarpal and the pisiform process, Suzuki et al. (2014) simply on the proximal ventral carpometacarpus; both put the insertion on the caudoventral edge of the alular phalanx. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo state that the 'flexor indicis' goes to digit 1 and corresponds to the 'flexor alulae' *sensu* Meyers (1996), and place it in the flexores breves superficiales.\n\nNothoprocta pentlandii, Widrig et al. (2023). A tiny muscle from the caudal margin of the minor metacarpus to the caudal edge of the phalanx of the minor digit. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo place the 'flexor digiti quarti', which goes to digit 3 and corresponds to Meyers's 'flexor digiti minoris', in the flexores breves superficiales — **and add in the same sentence that they cannot completely discard the possibility that some of these muscles correspond to something else.** The row carries that caveat.",
+          "parts": [
+            {
+              "name": "M. flexor alulae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "carpometacarpus",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. flexor digiti minoris",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "carpometacarpus",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",
@@ -13190,16 +13447,142 @@
               "name": "Palmar interossei"
             },
             {
-              "name": "Flexor pollicis brevis"
+              "name": "Flexor pollicis brevis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "flexor-retinaculum"
+                  },
+                  {
+                    "element": "carpals",
+                    "landmark": "distal-carpals"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
               "name": "Flexor digiti minimi brevis"
             },
             {
-              "name": "Opponens pollicis"
+              "name": "Opponens pollicis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "flexor-retinaculum"
+                  },
+                  {
+                    "element": "carpals",
+                    "landmark": "distal-carpals"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metacarpals"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Opponens digiti minimi"
+              "name": "Opponens digiti minimi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "carpals",
+                    "landmark": "distal-carpals"
+                  },
+                  {
+                    "element": "flexor-retinaculum"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "metacarpals"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Dorsal interosseous (hand)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metacarpals"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Palmar interosseous",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "metacarpals",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus",
+                    "side": "proximal"
+                  },
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
+            },
+            {
+              "name": "Flexor digiti minimi brevis (hand)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "carpals",
+                    "landmark": "distal-carpals"
+                  },
+                  {
+                    "element": "flexor-retinaculum"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus",
+                    "side": "proximal"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Flex the metacarpophalangeal joints and extend the interphalangeal joints; the interossei abduct and adduct the digits about the axis of digit III; the opponens muscles rotate the first and fifth metacarpals.",
@@ -14535,6 +14918,7 @@
           "speciesBasis": "note",
           "name": "M. interosseus dorsalis",
           "present": "yes",
+          "division": "divided",
           "after": "Hudson et al. 1972",
           "sources": [
             "widrig-etal-2023"
@@ -14556,7 +14940,47 @@
               }
             ]
           },
-          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). From the caudodorsal margin of the major metacarpus across to the craniodorsal margin of the minor metacarpus, **filling the intermetacarpal space**, narrowing to a thin tendon that appears to reach the dorsal phalanx of the minor digit. Hudson et al. (1972) instead describe the tendon splitting to the second and third phalanges of the major digit. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. **Hedged in the source and hedged here**: Abdala & Diogo say the intermetacarpales *probably correspond to part of* the avian 'interossei dorsales' and/or 'interossei ventrales'. The muscle's own description is what makes the row defensible — it fills the space between two metacarpals, which is what an intermetacarpal muscle is.\n\nNothoprocta pentlandii, Widrig et al. (2023). The ventral counterpart, from the caudoventral major metacarpus and the cranioventral minor metacarpus, filling the ventral part of the intermetacarpal space and craniocaudally wider than the dorsal muscle. Insertion tendons not found in the scan; Hudson et al. (1972) put it near the distal end of the distal phalanx of the major digit and Suzuki et al. (2014) on the proximal cranial surfaces of both major-digit phalanges. Same hedge as the dorsal muscle."
+          "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). From the caudodorsal margin of the major metacarpus across to the craniodorsal margin of the minor metacarpus, **filling the intermetacarpal space**, narrowing to a thin tendon that appears to reach the dorsal phalanx of the minor digit. Hudson et al. (1972) instead describe the tendon splitting to the second and third phalanges of the major digit. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. **Hedged in the source and hedged here**: Abdala & Diogo say the intermetacarpales *probably correspond to part of* the avian 'interossei dorsales' and/or 'interossei ventrales'. The muscle's own description is what makes the row defensible — it fills the space between two metacarpals, which is what an intermetacarpal muscle is.\n\nNothoprocta pentlandii, Widrig et al. (2023). The ventral counterpart, from the caudoventral major metacarpus and the cranioventral minor metacarpus, filling the ventral part of the intermetacarpal space and craniocaudally wider than the dorsal muscle. Insertion tendons not found in the scan; Hudson et al. (1972) put it near the distal end of the distal phalanx of the major digit and Suzuki et al. (2014) on the proximal cranial surfaces of both major-digit phalanges. Same hedge as the dorsal muscle.",
+          "parts": [
+            {
+              "name": "M. interosseus dorsalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "carpometacarpus",
+                    "side": "dorsal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            },
+            {
+              "name": "M. interosseus ventralis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "carpometacarpus",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "widrig-etal-2023"
+              ]
+            }
+          ]
         },
         {
           "species": "trioceros-melleri",
@@ -16187,10 +16611,48 @@
           "division": "divided",
           "parts": [
             {
-              "name": "Extensor pollicis longus"
+              "name": "Extensor pollicis longus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "interosseous-membrane"
+                  },
+                  {
+                    "element": "ulna",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ungual-phalanges-manus"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             },
             {
-              "name": "Extensor indicis"
+              "name": "Extensor indicis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "interosseous-membrane"
+                  },
+                  {
+                    "element": "ulna",
+                    "side": "posterior"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "extensor-expansion"
+                  }
+                ]
+              },
+              "sources": [
+                "gest-anatomy-tables"
+              ]
             }
           ],
           "action": "Extends the thumb at the interphalangeal joint and the index finger at all three joints.",
