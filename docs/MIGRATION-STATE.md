@@ -69,9 +69,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 6 | 214 |
-| `not-started` | 69 | 1874 |
+| `not-started` | 69 | 1879 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2168** |
+| **total** | **79** | **2173** |
 
 **6 of 79 cited sources re-mined** (7%).
 <!-- /counts:remine -->
@@ -230,6 +230,7 @@ reading that will not have to be done again.
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
 | `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |
 | `russell-bauer-2008` | *tarentola-sp* | 10 | partial 10 |
+| `gest-anatomy-tables` | *homo-sapiens* | 9 | no-record 9 |
 | `russell-bauer-2008` | *anolis-sp* | 9 | partial 9 |
 | `walker-1973` | *geochelone-elephantopus* | 9 | partial 9 |
 | `russell-bauer-2008` | *sceloporus-sp* | 8 | partial 8 |
@@ -249,7 +250,6 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *uroplatus-sp* | 2 | partial 2 |
 | `walker-1973` | *lepidochelys-kempii* | 2 | partial 2 |
 | `freitas-etal-2017` | *iguana-iguana* | 1 | nomenclature 1 |
-| `gest-anatomy-tables` | *homo-sapiens* | 1 | no-record 1 |
 | `prikryl-etal-2009` | *pelobates-fuscus* | 1 | homology 1 |
 | `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
 | `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |

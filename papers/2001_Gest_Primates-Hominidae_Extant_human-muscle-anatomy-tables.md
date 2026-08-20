@@ -186,7 +186,7 @@ one occurrence.
 | Back | 16 | 16 | 16 | 0 | **done** |
 | Thorax | 7 | 7 | 7 | 0 | **done** |
 | Abdomen | 13 | 11 | 10 | 1 | **done** |
-| Pelvis and perineum | 21 | 15 | | | |
+| Pelvis and perineum | 21 | 15 | 7 | 8 | **done** |
 | Upper limb | 54 | 52 | | | |
 | Lower limb | 58 | 52 | | | |
 | Head and neck | 105 | 87 | | | |
@@ -268,6 +268,46 @@ knowingly not followed. Its two ends are the parent muscle itself and the anteri
 lamina of the femoral sheath; adding a `femoral-sheath` element for one inconstant
 human slip would put a piece of inguinal fascia in a controlled vocabulary that no
 other column can use. Both ends are in the row's prose.
+
+### Pelvis and perineum, done — and half of it parks
+
+Twenty-one entries, fifteen muscles: four are the alphabetical listing's own
+duplicates, and bulbospongiosus and sphincter urethrae each appear twice, once per
+sex. Seven filed, **eight parked** — the highest parked fraction of any region so
+far, and the reason was predictable from the first pass's warning that this dataset
+is coarser than the human table in the perineum.
+
+**Filed.** Levator ani and its four named slips — pubococcygeus, puborectalis,
+pubovaginalis, levator prostatae — go to `iliocaudalis`, which is where the
+iliococcygeus row already said they belonged and named them. Coccygeus was already
+on `ischiocaudalis`. The pelvic floor of an animal with no tail is the tail
+musculature of one that has, and both records now carry the whole sheet.
+
+**Parked, and why it is a real gap rather than a hard call.** Six perineal muscles —
+external anal sphincter, bulbospongiosus, ischiocavernosus, the two transverse
+perinei, sphincter urethrae — are cloacal sphincter derivatives: skeletal muscle on
+the pudendal nerve, encircling openings instead of moving bones. There is no record
+for that series, and **none of the 120 sources in `sources.json` addresses the
+perineum**, which is checkable and was checked. Settling it needs a
+`sphincter-cloacae` record and a comparative source that derives the mammalian
+perineal muscles from it. Forcing them onto `ischiocaudalis` would have put six
+muscles on a tail record because it is nearby.
+
+Two more park as smooth muscle, following the Dartos row: the internal anal
+sphincter and the detrusor. The internal sphincter is worth having for the contrast
+Gest sets up by listing it beside the external one — the same opening closed by two
+muscles of different tissue types on different nervous systems, one voluntary and
+one not.
+
+Three new elements, all soft: `perineal-body`, `anococcygeal-raphe`,
+`perineal-membrane`. The perineal body takes six muscles from four directions and is
+the busiest soft-tissue site in the human column.
+
+Puborectalis is the odd row. Its origin is the pubis and its insertion is the
+puborectalis of the other side, so it is scored `{"muscle": "iliocaudalis"}` —
+ending on the record it is part of. That is what the muscle does: the sling behind
+the rectum is two muscles meeting, and the anorectal angle it holds is why
+continence is a skeletal-muscle problem.
 
 ### The name-disagreement warning was firing on one source
 

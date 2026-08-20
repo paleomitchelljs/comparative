@@ -23,7 +23,7 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1618 present occurrences · 284 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1618 present occurrences · 287 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
@@ -95,7 +95,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-740 extracted observations from 8 sources are waiting for a record (639 on partial, 45 on no-record, 27 on nomenclature, 13 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
+748 extracted observations from 8 sources are waiting for a record (639 on partial, 53 on no-record, 27 on nomenclature, 13 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
@@ -112,8 +112,8 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 | foot | 12 | 463 |
 | thigh | 10 | 438 |
 | cranial | 51 | 401 |
+| pelvic | 8 | 345 |
 | leg | 10 | 345 |
-| pelvic | 8 | 340 |
 | arm | 5 | 282 |
 | hand | 9 | 237 |
 | axial | 15 | 161 |
@@ -128,10 +128,10 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 284, of which 264 (93%) carry at least one attachment |
-| Observed attachment rows | 4111 |
+| Elements | 287, of which 266 (93%) carry at least one attachment |
+| Observed attachment rows | 4116 |
 | Rows naming a **landmark** | 1082 (26%) |
-| Rows naming a **side** | 2281 (55%) |
+| Rows naming a **side** | 2282 (55%) |
 | Osteological correlates | 128 flagged, 122 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -149,7 +149,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 | axial | 37 | 35 | 0.9 |
 | pectoral | 35 | 32 | 0.9 |
 | forelimb | 59 | 46 | 0.8 |
-| pelvic | 31 | 21 | 0.7 |
+| pelvic | 31 | 23 | 0.7 |
 | fin | 8 | 5 | 0.6 |
 <!-- /counts:parity -->
 

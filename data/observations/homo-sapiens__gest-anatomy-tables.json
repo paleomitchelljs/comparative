@@ -6780,6 +6780,235 @@
         ]
       },
       "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator ani",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "posterior"
+          },
+          {
+            "element": "pelvic-girdle"
+          },
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "anococcygeal-raphe"
+          },
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "attachmentNote": "**Levator ani** (Gest). The whole sheet: posterior body of the pubis, the tendinous arch over the obturator internus fascia, and the ischial spine, back to the anococcygeal raphe and the coccyx. The tendinous arch is scored on `pelvic-girdle` because it is a thickening of fascia over another muscle and crosses the ilium and ischium both. With coccygeus it makes the pelvic diaphragm, and both are the tail musculature of an animal that stopped having a tail.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pubococcygeus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "attachmentNote": "**Pubococcygeus** (Gest). Posterior aspect of the superior pubic ramus to the coccyx — the pubic-origin member of the levator ani sheet, and the one whose name still says what it does.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Puborectalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "iliocaudalis"
+          }
+        ]
+      },
+      "attachmentNote": "**Puborectalis** (Gest). Posterior body of the pubis, back around the rectum, meeting its opposite number behind it — so its insertion is the muscle of the other side, and it is scored as ending on this record. A muscle whose only firm attachment is at one end and whose other end is its own mirror image. The sling it makes is what holds the anorectal angle, which is why continence is a skeletal-muscle function and not a smooth-muscle one.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pubovaginalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "perineal-body"
+          }
+        ]
+      },
+      "attachmentNote": "**Pubovaginalis** (Gest). Posterior body of the pubis to the fascia of the vagina and the perineal body; the vaginal end is not scored, because a fascial sleeve on a viscus is not an attachment site this vocabulary carries. Gest calls it part of levator ani.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator prostatae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "**Levator prostatae** (Gest). Posterior aspect of the pubis onto the fascia of the prostate, which is not scored for the same reason as the vaginal end of pubovaginalis. Gest makes it part of puborectalis. It and pubovaginalis are the same slip of levator ani in the two sexes, named for whichever organ it ends up holding.",
+      "region": "pelvic",
+      "record": "iliocaudalis"
+    },
+    {
+      "name": "External anal sphincter",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The mammalian perineal muscles have no record here and no cited source. They are the derivatives of the cloacal sphincter — skeletal muscle on the pudendal nerve, encircling openings rather than moving bones — and this dataset holds no group for that series: none of the 120 sources in `sources.json` addresses the perineum. Settling it needs two things, a `sphincter-cloacae` record and a comparative source that derives the mammalian perineal muscles from it. Until then six muscles park here rather than being forced onto `ischiocaudalis`, which is a tail muscle that happens to be nearby.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "perineal-body"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "caudal-vertebrae"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Bulbospongiosus",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Cloacal sphincter derivative; see the External anal sphincter row for why the whole perineal group parks. Gest gives it twice, once per sex: in the male from the central tendinous point and the midline raphe of the bulb of the penis, in the female from the perineal body and the fascia of the vestibular bulb. Same muscle, same nerve, different erectile body.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "perineal-body"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "perineal-membrane"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Ischiocavernosus",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Cloacal sphincter derivative; see the External anal sphincter row. Its insertion on the crus of the penis or clitoris is erectile tissue and is not scored — the ischial origin is the only end with an element.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "landmark": "ischial-tuberosity"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Superficial transverse perineus",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Cloacal sphincter derivative; see the External anal sphincter row.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "perineal-body"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Deep transverse perineus",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Cloacal sphincter derivative; see the External anal sphincter row. Gest gives it the same two ends as the superficial muscle and separates the pair by the perineal membrane — one sheet divided by a fascial plane, the way the internal and innermost intercostals are one sheet divided by a nerve.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "perineal-body"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Sphincter urethrae",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Cloacal sphincter derivative; see the External anal sphincter row. Gest gives it twice, once per sex, and in neither does it attach to anything: it encircles the urethra and runs up to the bladder, taking in the vagina in the female and the prostate in the male. No attachment rows, because a sphincter around a tube has no ends.",
+      "muscle": null
+    },
+    {
+      "name": "Internal anal sphincter",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle, parasympathetic from S4, encircling the anal canal — the involuntary half of a pair whose other half is skeletal. Gest lists the two side by side and the contrast is the reason to keep this row: the same opening is closed by two muscles of different tissue types on different nervous systems. No record here can hold smooth muscle; see the Dartos row.",
+      "muscle": null
+    },
+    {
+      "name": "Detrusor of bladder",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle in the wall of the bladder, in three layers, on the pelvic splanchnic nerves. No record here can hold smooth muscle; see the Dartos row.",
+      "muscle": null
     }
   ]
 }
