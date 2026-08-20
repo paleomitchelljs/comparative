@@ -54,6 +54,57 @@ Extant. Family is Late Cretaceous/Early Tertiary in origin per Okajima & Kumazaw
 - **Tables 2, 3.** **The crucial reference tables** — muscle-by-muscle synonymy and presence/absence across *C. calyptratus*, *T. melleri*, *A. uniparens*. Use these as the comparative dictionary for any chameleon vs. lizard myology comparison.
 - **Movies 1, 2.** Animated 3D PTA-CT muscle reconstructions — accessible through the JMOR supplement; useful for student visualization.
 
+## Mining status — corrected 2026-08-20
+
+**This source had been cited on three rows and mined for none of them, and all
+three citations were wrong.**
+
+Two were occurrence rows on the `supinator` record, one for *Eublepharis
+macularius* and one for *Gekko gecko*. **Molnar et al. dissected no geckos.**
+Their animals are *Chamaeleo calyptratus*, *Trioceros melleri* and *Aspidoscelis
+uniparens*, as the Taxa section above says. Both rows' own notes recorded where
+the data actually came from — "Scored from Zaaf et al.'s tables for *Eublepharis
+macularius*" and "*Gekko gecko*, from the differences column of Zaaf et al.'s
+tables" — and both rows already cited `zaaf-etal-1999` and `abdala-diogo-2010`
+alongside. So the observations were sound and correctly attributed; this source
+was simply carried along beside them.
+
+The third was a record-level citation on `supinator`, which the join passes
+through rather than regenerating, and which had the effect of hiding the problem:
+while it was there, `validate.py` counted the source as cited, so the "never
+cited" warning that flags a catalogued-but-unread paper never fired.
+
+All three are removed. The source now warns as never cited, which is the truth.
+
+**This is the failure mode `MINING.md` opens with** — *a citation records where a
+claim was read, not where it was observed* — and it is the fourth instance found,
+after Werneburg on *Trachemys*, Johnston on *Ctenosaura* and Cieri on *Iguana*.
+The tell is the same every time: the row has a species, a source and a plausible
+note, and only the paper's own methods section disproves it.
+
+### Scoped for a real pass
+
+Nothing has been mined from this paper. It is worth a full pass and the reading
+is already located:
+
+- **Table 2 (forelimb) and Table 3 (hindlimb)** are the comparative dictionary,
+  muscle by muscle with synonymy, across all three animals. Both extract cleanly
+  from the text layer.
+- The columns are **arranged as differences**: *C. calyptratus* is described in
+  full, and the other two columns say "No differences" or state the difference.
+  Per `MINING.md`, "no differences" over two animals is an observation of sameness
+  in two animals and gets rows for both.
+- Roughly 30 muscles per table, so **three animals × two limbs** is the scope.
+  Do not start it without the room to finish a limb.
+- *Trioceros melleri* and *Aspidoscelis uniparens* were added to `species.json`
+  on 2026-08-20 so the extraction files have somewhere to go.
+
+The autopodial muscles are where the paper's contribution is, and several are
+records this dataset already holds thinly: `intermetacarpales` (two in the veiled
+chameleon, three in Meller's, four in the whiptail — the paper's only
+number-of-muscles change), `flexores-breves-superficiales`, `contrahentes`,
+`lumbricales`, `abductor-digiti-minimi`, `dorsometacarpales`.
+
 ## Limitations
 
 - **Two chameleon species** sampled (*C. calyptratus*, *T. melleri*) — both within Chamaeleoninae. The other two subfamilies (Brookesiinae) are not represented; >200 chameleon species exist with substantial body-size and limb-proportion variation.

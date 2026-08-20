@@ -69,9 +69,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 4 | 99 |
-| `not-started` | 71 | 1873 |
+| `not-started` | 71 | 1871 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2052** |
+| **total** | **79** | **2050** |
 
 **4 of 79 cited sources re-mined** (5%).
 <!-- /counts:remine -->
