@@ -10,14 +10,17 @@ and the study, and the homology group is a mapping applied on top.
 This script does both directions:
 
     python3 scripts/build_observations.py --split    muscles-*.json -> observations/ + mapping/
+                                                    ONE-TIME MIGRATION. Needs --force now,
+                                                    because it overwrites the source of truth
+                                                    from a file generated out of it.
     python3 scripts/build_observations.py --join     observations/ + mapping/ -> muscles-*.json
     python3 scripts/build_observations.py --check    split, join, and diff against the original
 
-`--check` is the point. If the round trip is byte-identical then the new shape
-holds everything the old one holds, and the migration can proceed on evidence
-rather than on hope. It proves nothing whatever about *completeness*: every file
-it writes is marked `"status": "scaffolded"`, meaning "this is the previous pass's
-extraction in a new shape, and nobody has checked it against the paper."
+`--check` is read-only and safe to run any time: it joins the committed
+observations into a scratch directory and diffs. It proves the two halves still
+reconstruct the muscle files exactly. It proves nothing whatever about
+*completeness* — a file marked `"status": "scaffolded"` is the previous pass's
+extraction in a new shape, which nobody has checked against the paper.
 
 The extraction key is (species, source, name, region). `validate.py` errors if
 that ever resolves to two records; see Task 1 in `docs/MIGRATION.md`.
@@ -194,9 +197,18 @@ def join(into):
 
 
 def check():
-    """Split, join into a scratch dir, and diff field by field."""
-    n_files, n_maps, n_rows = split()
-    print(f"split: {n_files} observation files, {n_maps} mapping files, {n_rows} rows")
+    """Join the committed observations into a scratch dir and diff.
+
+    This used to call split() first, which was right while muscles-*.json was
+    the source of truth and catastrophic afterwards: split() regenerates the
+    observation files FROM the generated muscle files and deletes any that do
+    not appear there, so running --check silently destroyed every file holding
+    only unassigned rows. It is a read-only check now.
+    """
+    n_files = len(list(OBS.glob("*.json")))
+    n_rows = sum(len(json.load(open(f)).get("observations") or [])
+                 for f in OBS.glob("*.json"))
+    print(f"source of truth: {n_files} observation files, {n_rows} rows")
 
     tmp = ROOT / ".roundtrip"
     if tmp.exists():
