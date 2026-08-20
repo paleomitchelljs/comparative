@@ -5,6 +5,7 @@ Run from the repo root:  python3 scripts/validate.py
 Exit status is non-zero if any error is found, so this works as a pre-commit hook.
 """
 
+import collections
 import json
 import re
 import pathlib
@@ -571,6 +572,30 @@ def main():
                         if not present_in(ref, taxon):
                             err(f"{label}: attaches to '{ref}', which "
                                 f"skeleton.json records as absent in {taxon}")
+
+    # ---- the extraction key must identify exactly one record ----------------
+    #
+    # Under extraction-first storage a row is looked up by what the source calls
+    # it. Name alone is not enough: the same author uses one name for a forelimb
+    # and a hindlimb muscle in the same animal 25 times over -- Osawa's "M.
+    # extensor digitorum communis longus", Fisher & Goodman's "flexor digitorum
+    # longus". Adding the region resolves all but the case where one author's
+    # single term is split across two records in the SAME region, which has to be
+    # fixed in the data by naming the two halves apart.
+    keyed = collections.defaultdict(set)
+    for path in MUSCLE_FILES:
+        for mm in load(path)["muscles"]:
+            for oo in mm.get("occurrences") or []:
+                nm = (oo.get("name") or "").strip().lower()
+                if not nm:
+                    continue
+                for k in oo.get("sources") or []:
+                    keyed[(oo.get("species"), k, nm, mm.get("region"))].add(mm["id"])
+    for (sp, src, nm, reg), ids in sorted(keyed.items()):
+        if len(ids) > 1:
+            err(f"extraction key is ambiguous: {sp} / {src} / '{nm}' / {reg} "
+                f"resolves to {sorted(ids)} — name the two apart, or the mapping "
+                f"layer cannot tell them apart")
 
     # ---- the migration's two self-checks -----------------------------------
     #

@@ -10,15 +10,16 @@ current.
 
 ## Next action
 
-> **Task 1 — add `region` to occurrence names and resolve the 25 collisions.**
-> Nothing else is blocked on anything. Task 2 needs Task 1; the re-mine (Task 4)
+> **Task 2 — build the scaffold generator and prove the round trip is lossless.**
+> Task 1 is done: the extraction key is (species, source, name, region) and
+> `validate.py` errors if it ever resolves to two records. The re-mine (Task 4)
 > can start on any source at any time and is the long pole.
 
 ## Task board
 
 | # | Task | State |
 |---|---|---|
-| 1 | `region` on occurrence names; kill the 25 ambiguous keys | **not started** |
+| 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | not started |
 | 3 | `after:` field for secondary attribution | not started |
 | 4 | Re-mine every cited source | **in progress — 2 of 79** |
