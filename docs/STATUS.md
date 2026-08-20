@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1618 present occurrences · 288 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1621 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **79%** of 1618 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 55% of observed rows and `landmark` on 26%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **80%** of 1621 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 54% of observed rows and `landmark` on 26%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -45,8 +45,8 @@ Taxon-specific attachments cover **79%** of 1618 present occurrences. The thinne
 | axial | 15 | 59 | 45 | 76% |
 | hand | 9 | 120 | 81 | 68% |
 | fin | 9 | 39 | 23 | 59% |
-| cranial | 51 | 220 | 92 | 42% |
-| **all** | 164 | 1618 | 1285 | **79%** |
+| cranial | 51 | 223 | 111 | 50% |
+| **all** | 164 | 1621 | 1304 | **80%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -60,9 +60,9 @@ Taxon-specific attachments cover **79%** of 1618 present occurrences. The thinne
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Theropoda (stem) | 38 | 34 | 89% |
 | Actinistia | 7 | 6 | 86% |
+| Theria | 442 | 378 | 86% |
 | Crocodylia | 75 | 64 | 85% |
 | Monotremata | 182 | 151 | 83% |
-| Theria | 439 | 359 | 82% |
 | Lepidosauria | 271 | 217 | 80% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 106 | 82 | 77% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1285 of 1618 present occurrences (79%).**
+**Taxon-specific attachments: 1304 of 1621 present occurrences (80%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -95,11 +95,11 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-751 extracted observations from 8 sources are waiting for a record (639 on partial, 54 on no-record, 27 on nomenclature, 15 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
+755 extracted observations from 8 sources are waiting for a record (639 on partial, 58 on no-record, 27 on nomenclature, 15 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
-333 present occurrences still have no attachment rows.
+317 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 
 ### Observed attachment rows, by region
@@ -107,16 +107,16 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 758 |
+| pectoral | 16 | 761 |
 | forearm | 19 | 629 |
 | foot | 12 | 467 |
+| cranial | 51 | 462 |
 | thigh | 10 | 440 |
-| cranial | 51 | 401 |
 | leg | 10 | 350 |
 | pelvic | 8 | 347 |
 | arm | 5 | 282 |
 | hand | 9 | 238 |
-| axial | 15 | 164 |
+| axial | 15 | 171 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
 
@@ -128,11 +128,11 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 288, of which 267 (93%) carry at least one attachment |
-| Observed attachment rows | 4133 |
-| Rows naming a **landmark** | 1084 (26%) |
-| Rows naming a **side** | 2288 (55%) |
-| Osteological correlates | 128 flagged, 122 carry a muscle |
+| Elements | 296, of which 276 (93%) carry at least one attachment |
+| Observed attachment rows | 4204 |
+| Rows naming a **landmark** | 1086 (26%) |
+| Rows naming a **side** | 2289 (54%) |
+| Osteological correlates | 129 flagged, 123 carry a muscle |
 <!-- /counts:skeleton -->
 
 ### Elements per muscle, by region
@@ -144,7 +144,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 27 | 73 | 2.7 |
+| cranial | 46 | 82 | 1.8 |
 | hindlimb | 44 | 53 | 1.2 |
 | axial | 37 | 35 | 0.9 |
 | pectoral | 35 | 32 | 0.9 |

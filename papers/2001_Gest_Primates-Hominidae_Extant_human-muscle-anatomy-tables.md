@@ -39,19 +39,30 @@ musculature.
 
 ## Scored
 
-105 occurrence rows across 105 records and all five muscle files — the whole
-human column, and Gest is the sole source on every one of them.
+**Re-mined to exhaustion 2026-08-20. 239 distinct muscles: 221 filed, 18 parked.**
+The arithmetic is in the region table further down and the pass is described region
+by region under it.
+
+276 filed rows across 129 records and all six muscle files, plus 16 parked. The
+count of *rows* exceeds the count of *muscles filed* because the pre-existing
+summary rows are kept alongside the per-muscle rows that were added under them, and
+falls short of it where one record takes several of Gest's names.
 
 | Region | Rows | | Region | Rows |
 |---|---:|---|---|---:|
-| forearm | 19 | | pectoral | 13 |
-| axial | 15 | | foot | 12 |
-| cranial | 11 | | hand | 9 |
-| leg | 8 | | pelvic | 7 |
-| thigh | 7 | | arm | 4 |
+| cranial | 85 | | leg | 18 |
+| axial | 46 | | thigh | 18 |
+| forearm | 30 | | hand | 15 |
+| pectoral | 21 | | arm | 4 |
+| pelvic | 21 | | | |
+| foot | 18 | | | |
 
-83 rows are scored `yes` with full attachments, innervation and action; it also
-supplied `division` for 38 rows — 34 `divided`, 4 `heads`.
+253 rows are `yes`, 17 `no`, 5 `uncertain`.
+
+Before the re-mine this was 105 rows on 105 records, all of them group rows
+carrying a lumped name and the union of a group's attachments. Those rows are still
+here and still carry the comparative argument; what changed is that the muscles they
+named now have attachments of their own.
 
 **17 rows are scored `present: "no"`, and they are the most useful thing the
 source gave.** An absence stated against a table of 279 muscles is an observation,
@@ -191,8 +202,8 @@ one occurrence.
 | Pelvis and perineum | 21 | 17 | 7 | 10 | **done** |
 | Upper limb | 54 | 52 | 51 | 1 | **done** |
 | Lower limb | 58 | 53 | 51 | 2 | **done** |
-| Head and neck | 105 | 83 | | | |
-| **total** | **274** | **239** | | | |
+| Head and neck | 105 | 83 | 79 | 4 | **done** |
+| **total** | **274** | **239** | **221** | **18** | **done** |
 
 Pelvis counts bulbospongiosus and sphincter urethrae twice, once per sex, which is
 how Gest lists them; they are 15 muscles and get one row each, so eight parked rows
@@ -410,6 +421,85 @@ One new element, `knee-capsule`, for the articularis genu: a few fascicles deep 
 vastus intermedius that stop at the capsule instead of running on to the patella,
 and pull it clear as the knee extends. The smallest thing in this dataset that still
 counts as a muscle, and the only one ending on a joint capsule.
+
+### Head and neck, done — 79 of 83 filed
+
+A hundred and five entries and 83 muscles; 22 of the entries are the alphabetical
+listing giving one muscle both orderings of its name. Seventy-five rows added, four
+parked. The largest region, and the one where the dataset's records are at their
+finest and its coverage was at its thinnest: `cranial` attachment coverage went from
+42% of present occurrences to 50%, and the number of cranial records carrying any
+attachment at all from 27 of 51 to 46 of 51.
+
+**Eleven facial-muscle records had no attachments for any species.** Diogo et al.
+(2009) gave `zygomaticus-major`, `orbicularis-oculi`, `buccinatorius`, `mentalis`,
+`occipitalis`, `platysma-myoides`, `auricularis-posterior`,
+`levator-anguli-oris-facialis` and the rest a human occurrence apiece and no origin
+or insertion anywhere on the record. Gest's are the first. That is the shape of gap
+a comparative survey leaves and a dissecting-room table fills, and it is the
+argument for holding both.
+
+The facial muscles with no record of their own — risorius, the two depressors, the
+levators of the upper lip, corrugator, procerus, the nasalis group, frontalis — go
+to `interhyoideus`, the ancestral hyoid-arch sheet, which is where that record's
+human row already lumped them and named five as parts. Thirteen more join them with
+their attachments.
+
+Four things worth keeping:
+
+- **The tensor tympani row is the mammalian middle ear written as jaw anatomy.**
+  `articular` and `malleus` are one element here, so the row records a muscle on the
+  mandibular trigeminal pulling on the bone that was the reptilian jaw joint. It
+  stays on `adductor-mandibulae` following Diogo et al. (2008) against Gest, who
+  puts it on the mylohyoid — which is why the part carries `membership: "disputed"`
+  and names the other claimant.
+- **Three records got their first human row**: `vocalis`, `musculus-uvulae` and
+  `cricoarytenoideus-lateralis`. The last is the one whose only occurrence was the
+  cheetah deleted in August 2026, on a note written about a human. That reading is
+  now filed under the animal it was made in, which is what the deletion promised.
+- **The eyelid is opened by an eye muscle and closed by a face muscle.** Levator
+  palpebrae superioris is on `extraocular-muscles` because it takes the oculomotor
+  nerve; orbicularis oculi is on its own facial-nerve record. Two fields, two
+  nerves, one eyelid.
+- **The prevertebral muscles are the mirror of the suboccipital ones.** Rectus
+  capitis anterior runs atlas-to-occiput on the *ventral* ramus of C1 and rectus
+  capitis posterior minor runs atlas-to-occiput on the *dorsal* ramus of the same
+  nerve. Same two bones, a few millimetres apart, and they land on
+  `hypaxial-musculature` and `epaxial-musculature` respectively. Nothing but the
+  nerve separates them.
+
+Four parked, all smooth muscle, all following the Dartos row: trachealis, the
+ciliary muscle, and the sphincter and dilator pupillae. The iris pair is worth
+having parked rather than dropped — antagonists driven by the two divisions of the
+autonomic system, and the ciliary muscle is why a third-nerve palsy takes
+accommodation and the pupil along with the eye movements.
+
+Nine new elements for the head: `mastoid-process` (from the back region),
+`galea-aponeurotica`, `auricle`, `alisphenoid`, `auditory-tube-cartilage`,
+`palatine-aponeurosis`, `pterygomandibular-raphe`, `epiglottic-cartilage`,
+`vocal-ligament`. `alisphenoid` carries a `possibly-corresponds-to` edge to
+`epipterygoid`: the mammalian greater wing of the sphenoid is widely held to
+incorporate the ossified epipterygoid, nothing cited here demonstrates it, and if it
+holds then the lateral pterygoid and tensor tympani arise from a bone a lizard
+carries as a strut of its jaw suspension.
+
+## The accounting closes
+
+**239 distinct muscles in `muscles_alpha.html`: 221 filed, 18 parked, none dropped.**
+
+Five entries are filed without a row of their own, and they are worth naming so the
+arithmetic can be checked. `epicranius` and `occipitofrontalis` are frontalis plus
+occipitalis; `quadriceps femoris` is rectus femoris plus the three vasti; `deltoid`
+is the clavicular plus the scapular deltoid; `digastric` is the anterior belly on
+`intermandibularis` plus the posterior belly on `depressor-mandibulae`. Each spans
+two records, the extraction key `(species, source, name, region)` has to name
+exactly one, and the halves carry the observation between them.
+
+**The seven regional files were parsed and checked against the alphabetical one.**
+They carry 283 names between them and not one that the alphabetical table lacks, so
+the first pass's claim that they are subsets — made without testing — holds. The
+check costs a minute, and this repository's own experience is that an untested claim
+in a reading note is the least reliable thing in it.
 
 ### The name-disagreement warning was firing on one source
 

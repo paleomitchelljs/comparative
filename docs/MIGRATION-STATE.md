@@ -16,6 +16,15 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
+> **Two things the Gest pass left behind, both small and both worth doing next.**
+> `lumbricales-pes` does not exist — `lumbricales` is a hand record and a row's
+> region must equal its record's, so the four human pedal lumbricals are parked on
+> `no-record` with their attachments waiting. Every other intrinsic group in the
+> dataset is doubled with a `-pes` counterpart, so this is an omission. And **the
+> human perineum has no record at all**: six cloacal-sphincter derivatives are
+> parked because no group exists for the series and none of the 120 cited sources
+> addresses it. That one needs a source before it needs a record.
+>
 > Mining works end to end now. It did not before: `--join` read `_occ` and `_keys`
 > off every filed row, which only `--split` writes, so the first hand-written row
 > crashed step 0 of the build. Rows written the way `MINING.md` documents now
@@ -36,7 +45,7 @@ current.
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | **done** |
 | 3 | `after:` field for secondary attribution | **done** |
-| 4 | Re-mine every cited source | **in progress — 6 of 79 to exhaustion, 2 more partly** |
+| 4 | Re-mine every cited source | **in progress — 7 of 79 to exhaustion, 2 more partly** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | **done** |
 | 6 | Retire what the flip made defunct | **done — 7 scripts deleted** |
 | 7 | `phylogeny.json` | not started |
@@ -68,19 +77,33 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 6 | 214 |
-| `not-started` | 69 | 1940 |
+| `remined` | 7 | 490 |
+| `not-started` | 68 | 1735 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2234** |
+| **total** | **79** | **2305** |
 
-**6 of 79 cited sources re-mined** (7%).
+**7 of 79 cited sources re-mined** (8%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Six sources have cleared that bar:
+parked**, and the note states the arithmetic. Seven sources have cleared that bar:
 
+- **Gest, Anatomy Tables (2001)** — **239 distinct muscles: 221 filed, 18 parked.**
+  The human column, which was the largest single gap in the dataset and is now the
+  best-attached one. It held 105 rows, every one of them a *group* row carrying a
+  lumped name — `Masseter, temporalis, the pterygoids and the tensors` — and the
+  union of a group's attachments, so no individual muscle had an origin and an
+  insertion of its own. 187 per-muscle rows were added under those group rows and
+  the join merges them: the mapping layer gains a key per human muscle name, the
+  occurrence gains the attachment rows, and each muscle's reading sits under the name
+  Gest used. It moved the cranial region further than any pass so far, on both
+  attachment coverage and the number of records carrying any attachment at all; the
+  figures are in `STATUS.md`. Sixteen new skeletal elements. **Eleven facial-muscle
+  records had no attachments for any species** before this pass. See the reading note for the region-by-region
+  breakdown; the parks are the human perineum, which has no record here at all, and
+  the smooth muscles, which no record here can hold.
 - **Fisher & Goodman (1955)** — 111 muscles with an origin paragraph: 43 filed,
   50 parked, the rest inside multi-muscle rows. Moved the Aves column further than
   any single pass so far; the figures are in `STATUS.md`.
@@ -225,9 +248,9 @@ reading that will not have to be done again.
 | `walker-1973` | *chelodina-longicollis* | 23 | partial 23 |
 | `russell-bauer-2008` | *ameiva-sp* | 19 | partial 19 |
 | `russell-bauer-2008` | *heloderma-sp* | 19 | partial 19 |
+| `gest-anatomy-tables` | *homo-sapiens* | 16 | no-record 14, homology 2 |
 | `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
 | `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
-| `gest-anatomy-tables` | *homo-sapiens* | 12 | no-record 10, homology 2 |
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
 | `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |
 | `russell-bauer-2008` | *tarentola-sp* | 10 | partial 10 |

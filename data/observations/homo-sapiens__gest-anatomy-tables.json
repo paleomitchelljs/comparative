@@ -1,7 +1,7 @@
 {
   "species": "homo-sapiens",
   "source": "gest-anatomy-tables",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
   "observations": [
     {
@@ -8522,6 +8522,1529 @@
           }
         ]
       },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Auricular",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "galea-aponeurotica"
+          },
+          {
+            "element": "mastoid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "auricle"
+          }
+        ]
+      },
+      "attachmentNote": "**Auricular muscles** (Gest). One entry covering three: anterior and superior from the galea aponeurotica in front of and above the ear, posterior from the mastoid process, all onto the auricle. Only the posterior has a record here, so the anterior and superior are recorded on it and named in this note rather than lost. Gest states their derivation from second-arch mesenchyme, the same as the rest of the facial musculature, which is the reason this dataset treats a muscle that moves an ear and one that closes a mouth as members of one field.",
+      "region": "cranial",
+      "record": "auricularis-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Buccinator",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterygomandibular-raphe"
+          },
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Buccinator** (Gest). Pterygomandibular raphe and the alveolar borders of the maxilla and mandible beside the molars, forward to the angle of the mouth and the lips. Gest flags what the name invites you to get wrong: it works in mastication and takes the **buccal branch of the facial nerve**, not the buccal nerve of V3, which is sensory. A chewing muscle on the facial nerve is a second-arch muscle doing a first-arch job.",
+      "region": "cranial",
+      "record": "buccinatorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Corrugator",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "skull-roof"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Corrugator supercilii** (Gest). Medial supercilary arch of the frontal bone into the skin of the medial eyebrow. Already named as a part of this row; the two ends are new.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Depressor anguli oris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Depressor anguli oris** (Gest). Oblique line of the mandible to the angle of the mouth.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Depressor labii inferioris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Depressor labii inferioris** (Gest). Anterior mandible to the skin of the lower lip.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Depressor septi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Depressor septi** (Gest). Maxilla above the incisors into the nasal septum, scored as skin: the mobile parts of a nose are skin and cartilage that this vocabulary does not carve, and the same applies to the alar insertions of the nasalis group. Gest counts it a part of nasalis.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Frontalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "galea-aponeurotica"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Frontalis** (Gest). Galea aponeurotica to the skin of the eyebrow — the anterior belly of the epicranius, whose posterior belly is the occipitalis and has its own record. Gest's `epicranius` and `occipitofrontalis` entries are that pair under one name and get no row of their own, because one name spanning two records cannot be an extraction key.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Occipitalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "occiput"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "galea-aponeurotica"
+          }
+        ]
+      },
+      "attachmentNote": "**Occipitalis** (Gest). Superior nuchal line to the galea aponeurotica. The record had a human row from Diogo et al. (2009) and no attachments on any species; these are the first.",
+      "region": "cranial",
+      "record": "occipitalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator anguli oris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Levator anguli oris** (Gest). Canine fossa of the maxilla to the angle of the mouth. **This record exists to keep it apart from `levator-anguli-oris`**, the reptilian muscle of the same name, which a human does not have — the collision is the sharpest nomenclature trap in the human column and both records carry the warning.",
+      "region": "cranial",
+      "record": "levator-anguli-oris-facialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator labii superioris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Levator labii superioris** (Gest). Inferior orbital margin to the skin of the upper lip.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator labii superioris alaque nasi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Levator labii superioris alaeque nasi** (Gest). Frontal process of the maxilla to the ala of the nose and the upper lip.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mentalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Mentalis** (Gest). Anterior mandible near the symphysis to the skin of the chin. First attachments on this record for any species.",
+      "region": "cranial",
+      "record": "mentalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Nasalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          },
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "**Nasalis** (Gest). Maxilla above the incisor and canine teeth to the ala of the nose and a midline aponeurosis across the bridge. Gest gives its two parts, alaris and transversa, separate entries; they are the two halves of this one.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Nasalis pars alaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Nasalis pars alaris** (Gest). Maxilla above the canine to the ala of the nose.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Nasalis pars transversa",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "**Nasalis pars transversa** (Gest). Maxilla above the incisors to the midline aponeurosis. It and its opposite number are continuous across the bridge of the nose, which is what makes a raphe out of the two.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Orbicularis oculi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          },
+          {
+            "element": "eyelid"
+          }
+        ]
+      },
+      "attachmentNote": "**Orbicularis oculi** (Gest). Orbital part from the medial orbital margin and the medial palpebral ligament, sweeping round to the skin of the lateral cheek; palpebral part from the same ligament to the lateral palpebral raphe. The palpebral part blinks and the orbital part screws the eye shut, which is one sheet doing two jobs at two radii. First attachments on this record.",
+      "region": "cranial",
+      "record": "orbicularis-oculi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Orbicularis oris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "skin"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Orbicularis oris** (Gest). Skin and fascia of the lips and the area round them, back into the skin and fascia of the lips: a sphincter with no bony attachment at either end. That is what the ancestral interhyoideus was — a constrictor sheet anchored on itself — and the mouth is where the human face still holds the plesiomorphic arrangement.",
+      "region": "cranial",
+      "record": "orbicularis-oris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Platysma",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "skin"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          },
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Platysma** (Gest). From the fascia over the pectoral and deltoid region up across the clavicle to the mandible and the skin of the lower face. The one facial muscle that reaches below the neck, and the reason the sheet is recognisable as a sheet: it is still continuous where the rest of the field has broken into thirty muscles. First attachments on this record.",
+      "region": "cranial",
+      "record": "platysma-myoides"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Procerus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "nasal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Procerus** (Gest). Nasal bone to the skin between the eyebrows.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Risorius",
+      "present": "yes",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Risorius** (Gest). Into the skin at the angle of the mouth from the fascia of the lateral cheek, which is not an element here and is not scored: a fascial origin on the side of a face is not a site any other column can be compared at. Already named as a part of this row.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Zygomaticus major",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "zygomatic-arch"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Zygomaticus major** (Gest). Upper lateral surface of the zygomatic bone to the angle of the mouth. First attachments on this record.",
+      "region": "cranial",
+      "record": "zygomaticus-major"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Zygomaticus minor",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "zygomatic-arch"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "**Zygomaticus minor** (Gest). Lower surface of the zygomatic bone to the lateral part of the upper lip.",
+      "region": "cranial",
+      "record": "zygomaticus-minor"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Masseter",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "zygomatic-arch"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "attachmentNote": "**Masseter** (Gest). Zygomatic arch to the lateral ramus and angle of the mandible.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Temporalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "temporal-fossa"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "landmark": "coronoid-process-mandible"
+          }
+        ]
+      },
+      "attachmentNote": "**Temporalis** (Gest). Temporal fossa to the coronoid process. The one human jaw muscle whose origin is a named fossa in every amniote skull, which is why the coronoid process is the most reliable jaw-muscle correlate a fossil offers.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Medial pterygoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "palatine"
+          },
+          {
+            "element": "maxilla"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "**Medial pterygoid** (Gest). Medial surface of the lateral pterygoid plate, the pyramidal process of the palatine and the maxillary tuberosity, to the medial ramus and angle of the mandible. Gest's own comparison is the useful one: it mirrors the masseter with the ramus between them, so the two are one adductor sheet wrapped around a bone.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lateral pterygoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "alisphenoid"
+          },
+          {
+            "element": "pterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mandible"
+          }
+        ]
+      },
+      "attachmentNote": "**Lateral pterygoid** (Gest). Superior head from the greater wing of the sphenoid, inferior head from the lateral surface of the lateral pterygoid plate, to the neck of the mandible and the capsule and disc of the jaw joint. The joint capsule and disc are not elements here and are not scored. **The only muscle of mastication that opens the mouth**, which makes it the one member of the adductor complex whose action contradicts the complex's name.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sphenomeniscus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "alisphenoid"
+          }
+        ]
+      },
+      "attachmentNote": "**Sphenomeniscus** (Gest). Another name for the superior head of the lateral pterygoid, given its own entry because its insertion is on the articular disc rather than on the mandible. The disc is not an element here, so only the origin is scored and the name is recorded for the mapping layer.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tensor tympani",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "auditory-tube-cartilage"
+          },
+          {
+            "element": "alisphenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "articular"
+          }
+        ]
+      },
+      "attachmentNote": "**Tensor tympani** (Gest). Cartilage of the auditory tube and the adjacent greater wing of the sphenoid, to the manubrium of the malleus. **This is the row where the mammalian middle ear becomes visible as jaw anatomy**: `articular` and `malleus` are one element in this dataset, so a muscle on the mandibular division of the trigeminal is recorded pulling on the bone that was the reptilian jaw joint. Scored on this record following Diogo et al. (2008), who derive it from the adductor mandibulae A2-PVM bundle; Gest puts it on the mylohyoid instead, which is why the part carries `membership: \"disputed\"` and names `intermandibularis` as the other claimant.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Tensor veli palatini",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "auditory-tube-cartilage"
+          },
+          {
+            "element": "pterygoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatine-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "**Tensor veli palatini** (Gest). Scaphoid fossa at the root of the medial pterygoid plate and the lateral wall of the auditory tube cartilage, to the palatine aponeurosis. Gest's mnemonic is a homology statement: V3 supplies both tensors and nothing else in the palate, because both are first-arch muscles stranded among fourth-arch ones. Disputed on this record for the same reason as the tensor tympani.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Mylohyoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          },
+          {
+            "element": "midline-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "**Mylohyoid** (Gest). Mylohyoid line of the mandible to the body of the hyoid and a midline raphe with its opposite number. A transverse sheet slung between the two halves of the jaw on the trigeminal nerve — the intermandibularis of every tetrapod, doing in a human what it does in a frog.",
+      "region": "cranial",
+      "record": "intermandibularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Stylohyoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "styloid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "**Stylohyoid** (Gest). Styloid process to the body of the hyoid. With the posterior belly of digastric it is the facial-nerve half of a pair whose other half is trigeminal, and Gest's single `digastric` entry spans both records — which is why that entry gets no row and these two carry it between them.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Geniohyoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "**Geniohyoid** (Gest). Mental spines of the mandible to the body of the hyoid. Its nerve is the tell: fibres of the ventral ramus of C1 travelling with the hypoglossal nerve, so a muscle in the floor of the mouth is supplied by a spinal nerve hitching a ride on a cranial one.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternohyoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "clavicle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "**Sternohyoid** (Gest). Posterior manubrium and sternal end of the clavicle to the lower border of the hyoid — the longest surviving stretch of the migration, from the shoulder girdle to the tongue skeleton.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternothyroid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "thyroid-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Sternothyroid** (Gest). Posterior manubrium, below the sternohyoid origin, to the oblique line of the thyroid cartilage.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Thyrohyoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thyroid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "**Thyrohyoid** (Gest). Oblique line of the thyroid cartilage to the lower border of the hyoid. With sternothyroid it is the sternohyoid interrupted by a cartilage: three muscles in series covering the same span the first one covers alone.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Omohyoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid"
+          }
+        ]
+      },
+      "attachmentNote": "**Omohyoid** (Gest). Inferior belly from the upper border of the scapula medial to the notch, superior belly from the intermediate tendon to the hyoid, the tendon tethered to the clavicle by a fascial sling. A muscle running from the shoulder blade to the tongue bone is the clearest single statement of what a hypobranchial muscle is.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Genioglossus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Genioglossus** (Gest). Mental spine of the mandible, fanning into the tongue from tip to base. Gest notes it is the muscle tested for hypoglossal function, which is the clinical face of the same fact this record turns on: the tongue is trunk muscle and takes a trunk nerve.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hyoglossus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Hyoglossus** (Gest). Greater horn and body of the hyoid, spreading into the intrinsic tongue musculature.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Chondroglossus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Chondroglossus** (Gest). Medial side of the lesser horn and body of the hyoid, ascending into the tongue; Gest calls it often part of the hyoglossus.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Styloglossus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "styloid-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Styloglossus** (Gest). Anterior styloid process to the posterolateral tongue.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Palatoglossus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatine-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Palatoglossus** (Gest). Palatine aponeurosis into the side of the tongue from above. Filed here because that is where this record's `parts` list already carries it, as a disputed member; the dispute is that it takes the vagus and not the hypoglossal, so by the criterion this record is built on it belongs with the palatal muscles on `branchial-constrictors`. Gest states the exception explicitly — every tongue muscle takes XII except this one.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Linguae, longitudinalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tongue"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Longitudinalis linguae** (Gest). Within the tongue, superior and inferior parts running its length. No attachment outside the organ at either end, which is what an intrinsic muscle is; the extrinsic ones on this record still reach the mandible, hyoid, styloid process, sternum and scapula, and reading the two groups together gives the whole gradient of the migration in one animal.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Linguae, transversus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tongue"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Transversus linguae** (Gest). Within the tongue, fibres running transversely.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Linguae, verticalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "tongue"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tongue"
+          }
+        ]
+      },
+      "attachmentNote": "**Verticalis linguae** (Gest). Within the tongue, fibres running vertically. Gest gives it and the transversus one table entry between them; they are two muscles and get two rows.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor, superior pharyngeal",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterygoid"
+          },
+          {
+            "element": "pterygomandibular-raphe"
+          },
+          {
+            "element": "mandible"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngeal-raphe"
+          },
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Superior pharyngeal constrictor** (Gest). Medial pterygoid plate, pterygoid hamulus, pterygomandibular raphe and the mylohyoid line of the mandible, back to the pharyngeal tubercle of the occiput and the midline raphe. The innermost of the three, and the one that shares its anterior seam with the buccinator.",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-superior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor, middle pharyngeal",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngeal-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "**Middle pharyngeal constrictor** (Gest). Lesser and greater horns of the hyoid and the lower stylohyoid ligament to the midline raphe.",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-medius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor, inferior pharyngeal",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thyroid-cartilage"
+          },
+          {
+            "element": "cricoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngeal-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "**Inferior pharyngeal constrictor** (Gest). Oblique line of the thyroid cartilage and the lateral cricoid to the midline raphe; the outermost of the three. Three constrictors ending on one midline seam is a fish's arch constrictors wrapped round a different tube.",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-inferior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cricopharyngeus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cricoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngeal-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "**Cricopharyngeus** (Gest). Lateral cricoid cartilage to the midline raphe. Gest calls it the lowest fibres of the inferior constrictor and gives it the recurrent laryngeal nerve where the rest of that muscle takes the pharyngeal plexus, so it is filed here rather than on the `branchial-constrictors` umbrella that names it as a part. It is continuous with the oesophagus and marks where the pharynx stops.",
+      "region": "cranial",
+      "record": "constrictor-pharyngis-inferior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Musculus uvulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatine"
+          }
+        ]
+      },
+      "attachmentNote": "**Musculus uvulae** (Gest). Posterior nasal spine of the palatine into the mucosa of the uvula, which is not an element and is not scored. First human row on this record, which until now held a rat and nothing else.",
+      "region": "cranial",
+      "record": "musculus-uvulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cricoarytenoid, lateral",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cricoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Lateral cricoarytenoid** (Gest). Arch of the cricoid to the muscular process of the arytenoid, the antagonist of the posterior cricoarytenoid. **First human row on this record.** It had one occurrence, a cheetah, which was removed in August 2026 because the only source on it was this table and the note attached to it was written about a human; this is that reading, filed under the animal it was made in.",
+      "region": "cranial",
+      "record": "cricoarytenoideus-lateralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cricoarytenoid, posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cricoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Posterior cricoarytenoid** (Gest). Posterior lamina of the cricoid to the muscular process of the arytenoid — the only abductor of the vocal folds, and therefore the only muscle in the larynx whose failure closes the airway.",
+      "region": "cranial",
+      "record": "cricoarytenoideus-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Arytenoid, transverse",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Transverse arytenoid** (Gest). Posterior surface of one arytenoid to the posterior surface of the other. The only unpaired muscle in the larynx, and one whose two ends are the same element on opposite sides.",
+      "region": "cranial",
+      "record": "arytenoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Arytenoid, oblique",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Oblique arytenoid** (Gest). Muscular process of one arytenoid to the apex of the other, crossing behind the transverse fibres. Gest notes the two are often read as one muscle with oblique and transverse parts, which is how this record already carries them.",
+      "region": "cranial",
+      "record": "arytenoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Aryepiglottic",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epiglottic-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Aryepiglottic** (Gest). Apex of the arytenoid to the epiglottis, raising the mucosa into the aryepiglottic fold. Filed with the arytenoids because it is the continuation of the oblique fibres past the opposite arytenoid; the `branchial-constrictors` umbrella names it as a part without scoring it.",
+      "region": "cranial",
+      "record": "arytenoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Thyroepiglottic",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thyroid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epiglottic-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Thyroepiglottic** (Gest). Inner surface of the thyroid cartilage near the laryngeal prominence to the lateral epiglottic cartilage. Gest calls it the superior fibres of thyroarytenoid, which is why it is filed here.",
+      "region": "cranial",
+      "record": "thyroarytenoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Vocalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thyroid-cartilage"
+          },
+          {
+            "element": "arytenoid-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vocal-ligament"
+          }
+        ]
+      },
+      "attachmentNote": "**Vocalis** (Gest). Inner thyroid cartilage and the vocal process of the arytenoid, inserting along the vocal ligament — the innermost fibres of the thyroarytenoid. Gest draws the functional line cleanly: cricothyroid tenses the whole ligament and the vocalis tunes it, which it can do because it inserts along the ligament rather than at its end. First human row on this record.",
+      "region": "cranial",
+      "record": "vocalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Superior rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          },
+          {
+            "element": "optic-foramen"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "**Superior rectus** (Gest). Common tendinous ring at the apex of the orbit to the superior sclera. Gest's own observation is the interesting one and applies to all four recti: they approach the eyeball from a medial direction, so a muscle that elevates also rotates.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Inferior rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          },
+          {
+            "element": "optic-foramen"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "**Inferior rectus** (Gest). Common tendinous ring to the inferior sclera.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Medial rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          },
+          {
+            "element": "optic-foramen"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "**Medial rectus** (Gest). Common tendinous ring to the medial sclera; the direct antagonist of the lateral rectus.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lateral rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          },
+          {
+            "element": "optic-foramen"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "**Lateral rectus** (Gest). Common tendinous ring to the lateral sclera, on the abducens nerve. Six muscles, three nerves, and the split is the same in every jawed vertebrate — the most conserved motor arrangement in the head.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Superior oblique",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "**Superior oblique** (Gest). Apex of the orbit above the optic canal, through the trochlear pulley, to the posterosuperior sclera. Its tendon turning through a fibrocartilaginous ring is why one muscle's line of action bears no relation to where it starts, and why the trochlear nerve is named for the pulley rather than for the muscle.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Inferior oblique",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "sclera"
+          }
+        ]
+      },
+      "attachmentNote": "**Inferior oblique** (Gest). Floor of the orbit lateral to the lacrimal groove to the inferior sclera — the only extraocular muscle that does not start at the orbital apex.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator palpebrae superioris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eyelid"
+          }
+        ]
+      },
+      "attachmentNote": "**Levator palpebrae superioris** (Gest). Orbital apex to the upper eyelid. It is on this record and not with the facial muscles because it takes the oculomotor nerve: the eyelid is opened by an eye muscle and closed by a face muscle, on two different nerves from two different fields.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Longus capitis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Longus capitis** (Gest). Anterior tubercles of C3-C6 to the basilar occiput. The prevertebral muscles are the subvertebral hypaxial series in the neck — ventral rami, ventral to the centra — and they are the mirror of the suboccipital group scored on `epaxial-musculature` a centimetre behind them.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Longus colli",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae"
+          },
+          {
+            "element": "thoracic-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "atlas"
+          },
+          {
+            "element": "cervical-vertebrae"
+          }
+        ]
+      },
+      "attachmentNote": "**Longus colli** (Gest). Anterior tubercles and bodies of C3-T3 to the anterior arch of the atlas and the anterior tubercles and bodies of C2-C6 — a segmental sheet on the front of the column, which is what the hypaxial musculature looks like where there is no body cavity to wall.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rectus capitis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Rectus capitis anterior** (Gest). Lateral mass of the atlas to the basilar occiput, on the ventral ramus of C1. Its dorsal counterpart, rectus capitis posterior minor, runs from the same bone to the same bone on the *dorsal* ramus of the same nerve — the epaxial/hypaxial boundary drawn between two muscles a few millimetres apart.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Rectus capitis lateralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas",
+            "landmark": "atlas-transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Rectus capitis lateralis** (Gest). Transverse process of the atlas to the occiput beside the foramen magnum, ventral ramus of C1.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Anterior scalene",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "true-ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Anterior scalene** (Gest). Anterior tubercles of C3-C6 to the scalene tubercle of the first rib. The scalenes are cervical members of the intercostal series — ventral rami, vertebra to rib, muscles of inspiration — filed on the hypaxial record because this dataset has no cervical intercostal group. Gest's landmark note is the reason every clinician knows this muscle: the subclavian vein passes in front of it, the artery and the roots of the brachial plexus behind.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Middle scalene",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "true-ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Middle scalene** (Gest). Posterior tubercles of C2-C7 to the upper first rib behind the subclavian artery, pierced by the dorsal scapular and long thoracic nerves.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Posterior scalene",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-vertebrae",
+            "landmark": "cervical-transverse-processes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "true-ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Posterior scalene** (Gest). Posterior tubercles of C5-C7 to the lateral second rib; the longest of the three.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocleidomastoid",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "clavicle",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "mastoid-process"
+          },
+          {
+            "element": "occiput"
+          }
+        ]
+      },
+      "attachmentNote": "**Sternocleidomastoid** (Gest). Manubrium and medial clavicle to the mastoid process and the lateral superior nuchal line. It shares this record with the trapezius on the nerve and nothing else: both take the spinal accessory, both are branchiomeric, and no other feature groups a strap on the front of the neck with a sheet across the whole upper back. The mastoid end was scored on `occiput` before the element existed.",
+      "region": "pectoral",
+      "record": "protractor-pectoralis"
+    },
+    {
+      "name": "Trachealis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle joining the free ends of each tracheal cartilage behind, on preganglionic parasympathetic fibres of the vagus. No record here can hold smooth muscle; see the Dartos row.",
+      "muscle": null
+    },
+    {
+      "name": "Ciliary",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle of the ciliary body, meridional and circular fibres, on parasympathetic fibres of the oculomotor nerve through the ciliary ganglion. Relaxing the suspensory ligament lets the lens thicken, which is accommodation. No record here can hold smooth muscle; see the Dartos row. It is worth parking beside the extraocular rows rather than dropping: the same cranial nerve drives six striated muscles and this smooth one, which is why a third-nerve palsy takes the pupil and the accommodation with the eye movements.",
+      "muscle": null
+    },
+    {
+      "name": "Sphincter pupillae",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle encircling the iris, parasympathetic through the ciliary ganglion. No record here can hold smooth muscle; see the Dartos row.",
+      "muscle": null
+    },
+    {
+      "name": "Dilator pupillae",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle radiating across the iris, sympathetic through the superior cervical ganglion. It and the sphincter pupillae are the clearest antagonist pair in the body driven by the two divisions of the autonomic system. No record here can hold smooth muscle; see the Dartos row.",
       "muscle": null
     }
   ]

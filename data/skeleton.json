@@ -90,6 +90,41 @@
       }
     },
     {
+      "id": "alisphenoid",
+      "label": "Alisphenoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "synonyms": [
+        "greater wing of the sphenoid"
+      ],
+      "correspondences": [
+        {
+          "relation": "possibly-corresponds-to",
+          "to": "epipterygoid",
+          "basis": "positional",
+          "confidence": "undemonstrated",
+          "sources": [
+            "gest-anatomy-tables"
+          ],
+          "note": "The mammalian alisphenoid is widely held to incorporate the ossified epipterygoid, which would make the lateral wall of a human orbit partly the ascending process of the palatoquadrate. Nothing cited in this dataset demonstrates it, and Gest states no homology at all, so it is recorded as undemonstrated rather than as `derivedFrom`. If it holds, the superior head of the lateral pterygoid and the tensor tympani arise from an element a lizard carries as a strut of its jaw suspension."
+        }
+      ],
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The greater wing of the sphenoid. Added 2026-08-20 for the origins Gest gives the superior head of the lateral pterygoid and the tensor tympani, which were otherwise going to be scored on `neurocranium` and lose the bone."
+      }
+    },
+    {
       "id": "angular",
       "label": "Angular / ectotympanic",
       "kind": "bone",
@@ -359,6 +394,41 @@
       "partOf": "atlas",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "auditory-tube-cartilage",
+      "label": "Cartilage of the auditory tube",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The cartilaginous part of the tube between the pharynx and the middle ear — the persistent first pharyngeal pouch. Three muscles hold on to it: tensor tympani and tensor veli palatini arise from it, and salpingopharyngeus descends from it, which is why one embryonic pouch supplies attachments to muscles of two different arches and two different nerves."
+      }
+    },
+    {
+      "id": "auricle",
+      "label": "Auricle",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The external ear. A mammalian novelty, and an attachment site: the anterior, superior and posterior auricular muscles pull on it, all of them facial-nerve muscles of the second arch like the rest of the facial musculature."
       }
     },
     {
@@ -1386,6 +1456,24 @@
       ]
     },
     {
+      "id": "epiglottic-cartilage",
+      "label": "Epiglottic cartilage",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The epiglottis. Two of the intrinsic laryngeal muscles end on it — aryepiglottic from the arytenoid apex and thyroepiglottic from the inside of the thyroid cartilage — so the flap that closes the airway in swallowing is moved by muscles of the same branchial series that works the vocal folds."
+      }
+    },
+    {
       "id": "epiplastron",
       "label": "Epiplastron",
       "kind": "bone",
@@ -1912,6 +2000,23 @@
           "burch-2014"
         ],
         "note": "Chen et al. (2025) score this region across crown birds in an osteological character matrix; their scoring conventions are the reference for how these elements are delimited here.\n\n**Theropoda (stem) scored present although no furcula is preserved in *Tawa*.** Furculae are known for many theropods including *Coelophysis* (Rinehart et al. 2007; Nesbitt et al. 2009), so Burch (2014) reconstructs the deltoideus clavicularis origin as extending onto a hypothetical furcula in *Tawa*, on the grounds that birds and lepidosaurs share the attachment and modern crocodylians have lost the bone independently. The row that depends on this is flagged in its own attachmentNote; the element is scored for the operational taxon, not for the exemplar specimen."
+      }
+    },
+    {
+      "id": "galea-aponeurotica",
+      "label": "Galea aponeurotica",
+      "kind": "aponeurosis",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The tendinous sheet over the vault of the skull. It is what the frontalis and occipitalis are two bellies of one muscle across, and the anterior and superior auricular muscles arise from it as well. A facial muscle that ends on an aponeurosis instead of skin, which is what the epicranial group is."
       }
     },
     {
@@ -2477,6 +2582,20 @@
       }
     },
     {
+      "id": "knee-capsule",
+      "label": "Knee joint capsule",
+      "kind": "membrane",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The fibrous capsule of the knee. It is here because one muscle ends on it and on nothing else: the articularis genu, a few fascicles deep to vastus intermedius that stop at the capsule instead of running on to the patella, and pull it clear of the joint during extension. Distinct from `knee-aponeurosis`, which is the anuran sheet several thigh muscles insert into."
+      }
+    },
+    {
       "id": "lateral-epicondyle",
       "label": "Lateral epicondyle (ectepicondyle)",
       "kind": "bone",
@@ -2591,20 +2710,6 @@
       "synonyms": [
         "crista tuberculi minoris"
       ]
-    },
-    {
-      "id": "knee-capsule",
-      "label": "Knee joint capsule",
-      "kind": "membrane",
-      "region": "hindlimb",
-      "segment": "zeugopod",
-      "presence": {
-        "default": "yes",
-        "sources": [
-          "gest-anatomy-tables"
-        ],
-        "note": "The fibrous capsule of the knee. It is here because one muscle ends on it and on nothing else: the articularis genu, a few fascicles deep to vastus intermedius that stop at the capsule instead of running on to the patella, and pull it clear of the joint during extension. Distinct from `knee-aponeurosis`, which is the anuran sheet several thigh muscles insert into."
-      }
     },
     {
       "id": "ligamentum-calcanei",
@@ -3106,6 +3211,24 @@
       "partOf": "neurocranium",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "palatine-aponeurosis",
+      "label": "Palatine aponeurosis",
+      "kind": "aponeurosis",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The fibrous sheet of the soft palate. Tensor veli palatini ends on it and palatoglossus starts from it, so the trigeminal and the vagal palatal muscles meet on one aponeurosis."
       }
     },
     {
@@ -3708,6 +3831,23 @@
       "partOf": "neurocranium",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "pterygomandibular-raphe",
+      "label": "Pterygomandibular raphe",
+      "kind": "aponeurosis",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The tendinous band from the pterygoid hamulus to the mandible where the buccinator and the superior pharyngeal constrictor meet end to end. Two muscles on two different nerves — facial and vagus, arch two and arch four — sharing one seam, which is what a raphe between muscle fields looks like."
       }
     },
     {
@@ -5085,6 +5225,24 @@
       "partOf": "axial-skeleton",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "vocal-ligament",
+      "label": "Vocal ligament",
+      "kind": "ligament",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The free upper edge of the cricothyroid membrane, running from the thyroid cartilage to the vocal process of the arytenoid. The vocalis inserts along it, which is what lets one muscle tune the tension of a ligament segment by segment instead of pulling on it end to end."
       }
     },
     {
