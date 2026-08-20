@@ -236,8 +236,75 @@ sartorius and semitendinosus in *Xenopus* and *Silurana*, and *Ascaphus* has the
 two completely fused. **The same complex in a pipid and in the basal-most frog** is
 worth checking before either is treated as diagnostic of anything.
 
-The source stays `not-started`: **four animals of thirteen**. Still to do are
-*Barbourula busuangensis*, *Bombina orientalis*, *Pelobates fuscus*, *Bufo
-guttatus* and *Pipa pipa*, each a differences section of 60–160
-lines, plus the three caudates. Use plain `pdftotext`; the section headings are
+## Complete, 2026-08-20 — every animal filed
+
+**`remined`. 138 rows across ten extraction files: 109 filed, 29 parked.**
+
+| File | Filed | Parked |
+|---|---:|---:|
+| *Discoglossus pictus* (baseline) | 16 | 6 |
+| *Barbourula busuangensis* | 15 | 4 |
+| *Caudata* (generalised) | 13 | 0 |
+| *Ascaphus truei* | 12 | 6 |
+| *Bufo guttatus* | 10 | 2 |
+| *Rana esculenta* | 10 | 3 |
+| *Pelobates fuscus* | 9 | 1 |
+| *Pipa pipa* | 9 | 2 |
+| *Xenopus laevis* | 8 | 3 |
+| *Bombina orientalis* | 7 | 2 |
+
+**The three caudates are one file, not three.** Prikryl et al. dissected *Necturus*
+(3), *Ambystoma* (3) and one adult *Salamandra salamandra*, and then wrote the
+result as a caudate pattern — the text opens "In all caudates" and each muscle
+carries figure references to all three at once. That is a clade description, not
+three specimens, so it goes on `caudata-generalised` with every row
+`speciesBasis: "generalised"`, which is what `MINING.md` prescribes and what the
+validator enforces. Where they *do* separate the animals the rows say so: the
+tendinous inscription in the puboischiotibialis is present in *Necturus*,
+*Ambystoma*, *Salamandrella* and *Taricha* and **absent in *Salamandra***.
+
+***Pyxicephalus adspersus* yields no rows and should not.** It appears once, as one
+subadult male under deep anaesthesia in a stimulation experiment used to confirm
+the functions inferred from attachments. No myology is described for it. It is not
+in `species.json` and does not need to be.
+
+### What the whole set is for
+
+The caudate file is the outgroup the other nine are read against, and it makes the
+anuran departures legible: a trunk of fish-like myomeres against a rigid trunk and
+a rod; separate tibia and fibula against a tibiofibula; an ischioflexorius reaching
+the **plantar aponeurosis** against one stopping at the knee. Prikryl et al. chose
+the neotenic caudates deliberately, as the best available proxy for the aquatic
+temnospondyl ancestors of frogs.
+
+Across the nine frogs the same handful of muscles keep moving, and the rows now
+carry it:
+
+- **The obturator externus and quadratus femoris are one field.** Seven frogs say
+  so — continuous, confluent, fused, or inseparable — and in *Pelobates* the
+  **gemellus joins them**, all three sharing one origin. Still parked, because no
+  `quadratus-femoris` or `gemellus` record exists, but this is as strong as
+  comparative evidence gets short of a homology treatment.
+- **The sartorius and semitendinosus fuse repeatedly and independently**: one mass
+  in *Ascaphus*, partly fused in *Xenopus* and *Silurana* (de Sá & Hillis 1990),
+  incompletely separated in *Barbourula*. Three lineages, so the complex is not
+  diagnostic of any of them.
+- **The pyriformis is absent in every *Pelobates* specimen** and present in
+  *Discoglossus*, *Ascaphus* and *Barbourula* — an asserted absence, filed as one.
+- **The tuber superius is not required for its own muscles.** *Pelobates* lacks it
+  and the glutaeus maximus, iliofibularis and iliofemoralis arise in the typical
+  place anyway; *Rana* and *Bombina* have Prikryl et al. identifying it in two
+  different structures purely by which three muscles arise there.
+
+### Two elements and one species record this set needed
+
+`lung` — because *Pipa*'s **pulmonum proprius runs from the dorsolateral surface of
+the lungs to the dorsal femur**, a viscus-to-limb muscle Dunlap (1960) also figured.
+Parked for want of a record, but scored at both ends. Carried on the same footing
+as `dorsal-fascia-anuran` and `knee-aponeurosis`: not skeletal, but a muscle
+demonstrably attaches to it.
+
+`caudata-generalised` — see above.
+
+**Use plain `pdftotext`** if reopening this paper; the section headings are
 `Genus species (Figs N–1 and N–2)`.

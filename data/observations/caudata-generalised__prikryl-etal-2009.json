@@ -1,0 +1,352 @@
+{
+  "species": "caudata-generalised",
+  "source": "prikryl-etal-2009",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Dorsalis trunci",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The trunk musculature of every caudate, neotenic or metamorphosed, consists of myomeres separated by myosepta, as in fish; the dorsal portions of those myomeres form the longitudinal bundle of the dorsalis trunci. Its deeper layers attach to the neural arches of the vertebrae, its fibres running between successive myosepta in an approximately anteroposterior direction. **This is the arrangement the anuran epaxial series is a departure from** — Prikryl et al. use it as the outgroup condition against which the frogs' shortened, urostyle-driven system is read."
+    },
+    {
+      "name": "Hypaxial muscles",
+      "region": "axial",
+      "record": "hypaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Obliquus externus"
+        },
+        {
+          "name": "Obliquus internus"
+        },
+        {
+          "name": "Transversus"
+        },
+        {
+          "name": "Rectus abdominis (incipient)",
+          "note": "Longitudinal midventral fibres, not yet separable from the hypaxial myomeres."
+        }
+      ],
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). In the presacral trunk the body wall is three layers — obliquus externus, obliquus internus and the innermost transversus. The longitudinally oriented fibres along the midventral line form an **incipient rectus abdominis, not yet well differentiated from the rest of the hypaxial myomeres**. Compare *Barbourula*, where the transversus has climbed onto the dorsum, and the two pipids, where the rectus abdominis has become distinct enough to reach the femur."
+    },
+    {
+      "name": "Iliotibialis (pars anterior and pars posterior)",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Pars anterior"
+        },
+        {
+          "name": "Pars posterior (ilioextensorius of Noble 1931)"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The anteriormost of the dorsal thigh extensors, which arise from the ilium just dorsal to the acetabulum, cross the knee by a tendon and reach the tibia. It may arise by two small tendons — a pars anterior from the anterior surface of the ilium and a pars posterior from the lateral surface — though the separation is often obscure and the two appear as one muscle. Noble (1931) calls the posterior part the **ilioextensorius**. Insertion into the knee aponeurosis; function probably knee extension."
+    },
+    {
+      "name": "Iliofibularis",
+      "region": "thigh",
+      "record": "iliofibularis",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "muscle": "extensor-iliotibialis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The most posterior of the superficial extensors, from the outer surface of the ilium close to the origin of the posterior iliotibialis — and partly from the proximal surface of that muscle itself, carried as `muscle: extensor-iliotibialis` — inserting on the proximal or middle third of the fibula. Thought to elevate the femur and bend the knee."
+    },
+    {
+      "name": "Iliofemoralis",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The deep layer of the dorsal thigh, from the posterolateral surface of the ilium and partly the inner (dorsal) surface of the ischium, onto the dorsal surface of the femur, covered by the iliofibularis. Function: retracting the femur from an anterior position."
+    },
+    {
+      "name": "Femorofibularis",
+      "region": "thigh",
+      "record": "femorofibularis",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). Also deep to the iliofibularis, running from the distal section of the femur to the posterolateral surface of the proximal fibula. Function: flexing the knee. **A femur-to-fibula muscle with no pelvic attachment at all**, which is why it is one of the few records here whose caudate row is its only one — this dataset otherwise holds it for *Taricha* alone."
+    },
+    {
+      "name": "Pubotibialis",
+      "region": "thigh",
+      "record": "pubotibialis",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The anterior part of the ventral thigh, from the anteroventral edge of the pubic cartilage to the medial surface of the proximal third of the tibia. Thought to protract the femur and flex the knee. **It converges with the puboischiotibialis distally and the two touch along their distal sections**; in the neotenic *Andrias davidianus* the pair are not yet differentiated from one another at all (Noble 1931), which is the clearest statement in the paper of how recently these two separated."
+    },
+    {
+      "name": "Puboischiotibialis",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). From the puboischiadic plate along its ventrolateral edge to the anterior surface of the tibia; proposed to support the body during walking and flex the knee. **Divided about a quarter from its origin by a tendinous inscription that is well seen superficially** — present in *Necturus*, *Ambystoma*, *Salamandrella* and *Taricha*, and **absent in *Salamandra***. In neotenic *Ambystoma* the septum appears to continue, though not as a fibrous partition, into the puboischiofemoralis externus. That inscription is the caudate counterpart of the one the anuran caudalipuboischiotibialis attaches to."
+    },
+    {
+      "name": "Puboischiofemoralis externus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "femoral-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). Occupies the triangular space under the two superficial flexors, arising like the puboischiotibialis on the ventrolateral edge of the puboischiadic plate but in a deeper layer, tapering sharply to insert on the trochanter of the femur. Function: supporting the body in walking, and femoral retraction."
+    },
+    {
+      "name": "Pubofemoralis",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). Immediately anterior to the puboischiofemoralis externus in the deep layer, from the anteroventral surface of the pubis to the ventral surface of the femur, covered dorsally by the puboischiofemoralis internus. Filed on `adductor-femoris`, which carries **'pubifemoralis' / 'pubofemoralis' (amphibians)** among its synonyms. Function as for the externus: support in walking, and femoral retraction."
+    },
+    {
+      "name": "Ischiofemoralis",
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": null
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The most posterior deep muscle of the proximal thigh, from the lateral border of the ischium to the posterior surface of the proximal head of the femur. Proposed to protract the femur from its posteriormost position. Filed on `ischiotrochantericus`, which carries **'ischiofemoralis' (amphibians)** among its synonyms — and note that this is the record the anuran obturator internus is the unsettled candidate for, so the caudate row is the outgroup condition for that open question."
+    },
+    {
+      "name": "Puboischiofemoralis internus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "division": "divided",
+      "after": "Iordansky & Morozov 1994",
+      "parts": [
+        {
+          "name": "Anterior portion",
+          "note": "Inserts on the proximal third of the femur (Salamandrella)."
+        },
+        {
+          "name": "Medial portion",
+          "note": "Inserts onto the knee aponeurosis (Salamandrella)."
+        },
+        {
+          "name": "Posterior portion",
+          "note": "Inserts onto the distal third of the femur (Salamandrella)."
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "dorsal"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "ischium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal"
+          },
+          {
+            "element": "knee-aponeurosis"
+          },
+          {
+            "element": "femur",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). Occupies the anterior surface of the thigh, arising on the dorsal surface of the pubis and on the medial surface of the bases of the ilium and ischium. Function: protracting and elevating the femur. **In the hynobiid *Salamandrella keyserlingii* it has three portions** — anterior onto the proximal third of the femur, medial onto the knee aponeurosis, posterior onto the distal third — which Prikryl et al. give from Iordansky & Morozov (1994) rather than from their own dissections, so those three insertions are recorded in the parts and the row carries the attachments they state generally."
+    },
+    {
+      "name": "Ischioflexorius",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "generalised",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "plantar-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). Forms the posterior part of the thigh, partly covered by the puboischiotibialis, from the posterolateral surface of the ischium, its distal end fusing into the **plantar aponeurosis** — so a thigh muscle reaching the sole. Interrupted by a tendinous inscription at the level of the knee, which Francis (1934) read as making it two muscles."
+    }
+  ]
+}

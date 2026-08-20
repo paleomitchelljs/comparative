@@ -277,6 +277,127 @@
           "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Inserts along the whole dorsolateral surface of the urostyle **except the tip, which remains uncovered** — the difference from *Discoglossus*, where it runs the full length. Anterior to the sacral vertebra it cannot be told apart from the iliolumbaris except that the iliolumbaris ends on the anterior margin of the sacral diapophysis while this muscle continues onto the urostyle."
         },
         {
+          "species": "barbourula-busuangensis",
+          "name": "Longissimus dorsi–coccygeosacralis complex",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "urostyle"
+              },
+              {
+                "element": "sacral-vertebrae",
+                "side": "dorsal"
+              },
+              {
+                "element": "sacral-vertebrae",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Inserts along the whole length of the urostyle. **The coccygeosacralis is not differentiated from the longissimus dorsi here** — behind the sacral diapophysis the two run as one muscle mass laterally, leaving only the cartilaginous rim of the diapophysis uncovered. That lateral portion is itself in two layers, one attached to the sacral diapophysis dorsally and a noticeably thinner one ventrally, which is why the row carries the diapophysis on both sides. In front of the diapophysis the lateral part of the complex is confluent with the iliolumbaris — but the iliolumbaris proper is separate from the longissimus dorsi, unlike in *Ascaphus* where the two cannot be told apart."
+        },
+        {
+          "species": "bufo-guttatus",
+          "name": "Coccygeosacralis",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sacral-vertebrae",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "urostyle"
+              }
+            ]
+          },
+          "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Origin on the **posterior edge** of the sacral diapophysis — a narrower attachment than *Discoglossus*, which takes its dorsal side, and than *Pelobates*, which runs the whole urostyle beneath the longissimus."
+        },
+        {
+          "species": "caudata-generalised",
+          "name": "Dorsalis trunci",
+          "present": "yes",
+          "speciesBasis": "generalised",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). The trunk musculature of every caudate, neotenic or metamorphosed, consists of myomeres separated by myosepta, as in fish; the dorsal portions of those myomeres form the longitudinal bundle of the dorsalis trunci. Its deeper layers attach to the neural arches of the vertebrae, its fibres running between successive myosepta in an approximately anteroposterior direction. **This is the arrangement the anuran epaxial series is a departure from** — Prikryl et al. use it as the outgroup condition against which the frogs' shortened, urostyle-driven system is read."
+        },
+        {
+          "species": "pelobates-fuscus",
+          "name": "Coccygeosacralis",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "urostyle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "sacral-vertebrae",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Pelobates fuscus, Prikryl et al. (2009). Runs along the **whole length** of the urostyle, below the attachment of the longissimus dorsi, and attaches to the dorsal surface of the sacral diapophysis. *Discoglossus* has it from the diapophysis to the posterior two-thirds of the urostyle; in *Ascaphus* it cannot be separated from the coccygeoiliacus, in *Barbourula* not from the longissimus, and in *Xenopus* and *Pipa* it is absent."
+        },
+        {
+          "species": "pipa-pipa",
+          "name": "Longissimus dorsi",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "urostyle"
+              },
+              {
+                "muscle": "iliocaudalis"
+              }
+            ]
+          },
+          "attachmentNote": "Pipa pipa, Prikryl et al. (2009). A broad muscle covering the dorsum and part of the flanks, attached posteriorly to the urostyle and to the fascia of the coccygeoiliacus — the fascial end carried as `muscle: iliocaudalis`. **The coccygeosacralis is absent**, as in *Xenopus*."
+        },
+        {
           "species": "xenopus-laevis",
           "name": "Longissimus dorsi",
           "present": "yes",
@@ -589,6 +710,50 @@
               "joint": "intervertebral",
               "motion": "flexion"
             }
+          ]
+        },
+        {
+          "species": "barbourula-busuangensis",
+          "name": "Transversus and obliquus externus",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "muscle": "epaxial-musculature"
+              }
+            ]
+          },
+          "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). **A remarkable feature of this frog's trunk**: the transversus, the innermost hypaxial sheet with transversely oriented fibres, extends onto the dorsum, covers the iliolumbaris and attaches onto the dorsal fascia over the longissimus dorsi — a hypaxial muscle ending on the epaxial series, carried as `muscle: epaxial-musculature`. Its posterior margin is sharp and vertical. The obliquus externus is restricted to the anteroventral flanks, leaving the posterodorsal transversus exposed.",
+          "note": "Prikryl et al. print the specific epithet as *busagensis*; the species record uses *busuangensis*."
+        },
+        {
+          "species": "caudata-generalised",
+          "name": "Hypaxial muscles",
+          "present": "yes",
+          "speciesBasis": "generalised",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Obliquus externus"
+            },
+            {
+              "name": "Obliquus internus"
+            },
+            {
+              "name": "Transversus"
+            },
+            {
+              "name": "Rectus abdominis (incipient)",
+              "note": "Longitudinal midventral fibres, not yet separable from the hypaxial myomeres."
+            }
+          ],
+          "attachmentNote": "Caudata (generalised), Prikryl et al. (2009). In the presacral trunk the body wall is three layers — obliquus externus, obliquus internus and the innermost transversus. The longitudinally oriented fibres along the midventral line form an **incipient rectus abdominis, not yet well differentiated from the rest of the hypaxial myomeres**. Compare *Barbourula*, where the transversus has climbed onto the dorsum, and the two pipids, where the rectus abdominis has become distinct enough to reach the femur.",
+          "sources": [
+            "prikryl-etal-2009"
           ]
         }
       ],
@@ -2414,6 +2579,25 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. rectus abdominis.** The posterior two-fifths of the muscle are completely apo- neurotic and come from the distal 2.5 centimeters of the pubis and from the interpubic ligament. Insertion —Superficially the insertion on the posterior end of the sternal plate is aponeurotic, but fleshy fibers make up the bulk of this attach- ment. There is also some fleshy insertion on the posterior edge of the sternal part of the last rib. *Insertion.* Superficially the insertion on the posterior end of the sternal plate is aponeurotic, but fleshy fibers make up the bulk of this attach- ment. There is also some fleshy insertion on the posterior edge of the sternal part of the last rib."
+        },
+        {
+          "species": "pipa-pipa",
+          "name": "Rectus abdominis",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "ventral",
+                "landmark": "crista-femoralis"
+              }
+            ]
+          },
+          "attachmentNote": "Pipa pipa, Prikryl et al. (2009). A thin flat muscle from the ventral surface of the trunk onto the ventral surface of the thigh, diving between the cruralis and sartorius to insert on the **ventral crista of the femur**. The second pipid to run its body wall onto the femur — *Xenopus* does the same to the praepubis and the proximal third of the femur — which makes it a pipid character rather than a one-off."
         },
         {
           "species": "xenopus-laevis",

@@ -1,0 +1,449 @@
+{
+  "species": "barbourula-busuangensis",
+  "source": "prikryl-etal-2009",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Transversus and obliquus externus",
+      "region": "axial",
+      "record": "hypaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). **A remarkable feature of this frog's trunk**: the transversus, the innermost hypaxial sheet with transversely oriented fibres, extends onto the dorsum, covers the iliolumbaris and attaches onto the dorsal fascia over the longissimus dorsi — a hypaxial muscle ending on the epaxial series, carried as `muscle: epaxial-musculature`. Its posterior margin is sharp and vertical. The obliquus externus is restricted to the anteroventral flanks, leaving the posterodorsal transversus exposed.",
+      "note": "Prikryl et al. print the specific epithet as *busagensis*; the species record uses *busuangensis*."
+    },
+    {
+      "name": "Longissimus dorsi–coccygeosacralis complex",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "urostyle"
+          },
+          {
+            "element": "sacral-vertebrae",
+            "side": "dorsal"
+          },
+          {
+            "element": "sacral-vertebrae",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Inserts along the whole length of the urostyle. **The coccygeosacralis is not differentiated from the longissimus dorsi here** — behind the sacral diapophysis the two run as one muscle mass laterally, leaving only the cartilaginous rim of the diapophysis uncovered. That lateral portion is itself in two layers, one attached to the sacral diapophysis dorsally and a noticeably thinner one ventrally, which is why the row carries the diapophysis on both sides. In front of the diapophysis the lateral part of the complex is confluent with the iliolumbaris — but the iliolumbaris proper is separate from the longissimus dorsi, unlike in *Ascaphus* where the two cannot be told apart."
+    },
+    {
+      "name": "Coccygeoiliacus",
+      "region": "pelvic",
+      "record": "iliocaudalis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "urostyle",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Origin on the lateral surface of the posterior half of the urostyle, ventral to the origin of the longissimus dorsi–coccygeosacralis complex, which covers it dorsally; insertion on the anterior third of the inner surface of the iliac shaft."
+    },
+    {
+      "name": "Pyriformis",
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "urostyle",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Ventrolateral surface of the tip of the urostyle to the posterior surface of the proximal femur — reaching the shaft rather than the crista femoralis, where *Discoglossus* and *Ascaphus* both put it on the crista."
+    },
+    {
+      "name": "Iliacus externus and iliacus internus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Iliacus externus pars interna",
+          "note": "Origin on both the inner and outer surface of the posterior iliac shaft, covering it dorsally; **inserts on the dorsal surface of the acetabular capsule**, not on the femur at all."
+        },
+        {
+          "name": "Iliacus externus pars externa",
+          "note": "Origin on the lateral surface of the anterior half of the iliac shaft, confluent with the thin layer of the iliolumbaris that the transversus covers. The combined sheet inserts posteriorly on the dorsal surface of the femur."
+        },
+        {
+          "name": "Iliacus internus",
+          "note": "Origin on the anterior surface of the preacetabular ilium, extending slightly onto both inner and outer surfaces; inserts on the proximal half of the femur, ventral to the pars externa insertion."
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          },
+          {
+            "element": "femur",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). **The pars interna ends on the acetabular capsule rather than on bone**, which no other frog in this paper does, so its attachment is recorded in the part note and not as a skeletal insertion — there is no element for a joint capsule. The pars externa is confluent with the iliolumbaris, so the sheet that reaches the femur is two muscles fused."
+    },
+    {
+      "name": "Cruralis",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Forms the anterior part of the thigh, from the anteroventral margin of the acetabulum — that is, from the articular capsule — into the knee aponeurosis. The glutaeus maximus is treated as a separate row here because its attachments differ from the *Discoglossus* pattern."
+    },
+    {
+      "name": "Glutaeus maximus",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral",
+            "landmark": "tuber-superius"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "extensor-iliotibialis"
+          },
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Main part from the lateral side of an extensive but not prominent tuber superius, inserting as a thin sheet onto the dorsal fascia of the distal cruralis — recorded as `muscle: extensor-iliotibialis`, since the cruralis sits on this same record. **It also has a small accessory tendon attached to the lateral margin of the longissimus dorsi–coccygeosacralis complex**, carried as `muscle: epaxial-musculature`: a thigh muscle with a tendon onto the epaxial series, which is not reported for any other frog here."
+    },
+    {
+      "name": "Tensor fasciae latae",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "A slender muscle from the ventral surface of the iliac shaft onto the fascia lata at the most proximal free part of the cruralis, recorded as `muscle: extensor-iliotibialis`. Prikryl et al. add that the tensor fasciae latae and the fascia lata are both themselves covered by the fascia of the cruralis. Parked as in the other frogs: no record holds a muscle that ends on fascia.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "extensor-iliotibialis"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Iliofibularis and iliofemoralis",
+      "region": "thigh",
+      "record": "iliofibularis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Both arise behind the glutaeus maximus on the lateral ilium. Prikryl et al. add a topographical detail worth keeping for dissection: **the n. ischiadicus runs below the iliofibularis**. No insertions are stated for this animal, so none are scored; the iliofemoralis is recorded on its own record."
+    },
+    {
+      "name": "Iliofemoralis",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Arises behind the glutaeus maximus together with the iliofibularis. No insertion stated for this animal."
+    },
+    {
+      "name": "Semimembranosus",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Divided by an indistinct tendinous inscription in its **distal** portion — where *Ascaphus* has it about a third of the way from the origin, and that inscription is where the caudalipuboischiotibialis attaches. From the lateral surface of the dorsal ischium to the tibial head of the tibiofibula, covered there by the common insertion of the sartorius–semitendinosus complex."
+    },
+    {
+      "name": "Semitendinosus and sartorius",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Sartorius",
+          "note": "Originates obliquely by a thin fascial sheet at the ventral head of the adductor magnus."
+        },
+        {
+          "name": "Semitendinosus caput dorsale",
+          "note": "On the lateral surface of the ischium between the gracilis major and the dorsal head of the adductor magnus."
+        },
+        {
+          "name": "Semitendinosus caput ventrale",
+          "note": "Below the posterior margin of the sartorius, from the fascia separating the ventral and dorsal heads of the adductor magnus."
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          },
+          {
+            "muscle": "adductor-femoris"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). **The sartorius and semitendinosus are not completely separated here either** — as in *Ascaphus*, where they are one mass, and *Xenopus*, where they partly fuse. Both heads of the semitendinosus fuse with each other and with the distal sartorius, and the complex inserts on the knee aponeurosis. Two of the three heads arise from the fascia of the adductor magnus, carried as `muscle: adductor-femoris`. Filed here on `ischioflexorius` rather than split across two records, because the paper describes one complex; *Ascaphus*'s equivalent is parked on `division` for the same reason and this row is the counter-case — here the ischial origin of the dorsal head gives the complex a skeletal anchor the *Ascaphus* one lacks."
+    },
+    {
+      "name": "Gracilis major and gracilis minor",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Gracilis major from the most posterior part of the ischium to the knee aponeurosis. The gracilis minor arises **from the skin of the posterior thigh** — not from the cloacal wall as in *Discoglossus*, nor from the postpubic rod as in *Ascaphus* — and fuses distally with the major, the two inserting together."
+    },
+    {
+      "name": "Adductor magnus",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput ventrale"
+        },
+        {
+          "name": "Caput dorsale"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Two heads from the ventral and posterior ischium, fusing distally and **surrounding the distal femur ventrally, posteriorly and dorsally** — a wrap more complete than the *Rana* condition, where the muscle turns round the femur to end dorsally. The dorsal attachment is partly covered by the cruralis."
+    },
+    {
+      "name": "Adductor longus",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "muscle": "adductor-femoris"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Separate from the pectineus along the free part of the thigh, but their proximal sections — lying inside the abdominal cavity, covered only by peritoneum — are undivided. **Distally it inserts onto the adductor magnus**, muscle onto muscle, carried as `muscle: adductor-femoris`, which is the same record this row sits on: the adductor longus of this frog ends on its own homology group's other part."
+    },
+    {
+      "name": "Pectineus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Barbourula busuangensis, Prikryl et al. (2009). Attached to the ventral surface of the femur. Its proximal section is undivided from the adductor longus inside the abdominal cavity, which is why the two are described together; the origin is not separately stated for this animal."
+    },
+    {
+      "name": "Obturator externus and quadratus femoris",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "**Separated proximally but undivided distally** — the clearest statement of the relationship in the paper, and the fifth frog to report it: continuous in *Ascaphus* and *Rana*, inseparable in *Discoglossus*, confluent in *Xenopus*. The obturator externus arises along the ventral margin of the ischium and the quadratus femoris next to it on the posteroventral ischium; their **common** distal attachment is on the posteroventral surface of the proximal femur. Parked for the reason given on the other four: no `quadratus-femoris` record exists, and the obturator externus is a plausible but undemonstrated part of `puboischiofemoralis-externus`. Diogo & Molnar (2014) would settle it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "ventral"
+          },
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Gemellus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Part of the deep posterodorsal layer, from the dorsal part of the ischium to the proximal section of the femur. The fourth frog to have it fully formed, against *Discoglossus* where it is not recognisable as independent. Still parked because no `gemellus` record exists and the mammalian gemelli are a contested part of `puboischiofemoralis-externus`.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Obturator internus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "**Strengthens the articular capsule posteriorly** — so in this frog, as in *Discoglossus*, the muscle does not reach the femur at all, where in *Ascaphus* it inserts on the posterior surface of the femoral head. That split is why the muscle is parked rather than filed on `ischiotrochantericus`, whose consensus insertion is the proximal femur: two of the frogs match it and two do not. No skeletal attachment is stated here, so none is scored.",
+      "muscle": null
+    }
+  ]
+}

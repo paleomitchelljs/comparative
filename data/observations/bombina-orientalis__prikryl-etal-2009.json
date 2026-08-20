@@ -1,0 +1,196 @@
+{
+  "species": "bombina-orientalis",
+  "source": "prikryl-etal-2009",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Iliacus externus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). **Not divided**, against two more or less independent parts in *Discoglossus* and three layers in *Xenopus*. It arises along the dorsal surface of the iliac shaft, extending moderately onto both the medial and lateral surfaces — the lateral origin the longer of the two — and inserts on the anterior surface of the proximal third of the femur."
+    },
+    {
+      "name": "Iliacus internus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). From the anterior part of the acetabular portion of the ilium to the anterior surface of the middle section of the femur. **In some individuals the origin is divided into medial and lateral portions**, separated by the anterior edge of the bone, so that two close but discernible origins can be made out — within-species variation in how many origins a muscle has."
+    },
+    {
+      "name": "Cruralis",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          },
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). Same origin and insertion as *Discoglossus* — ilium to knee aponeurosis — but **seems to consist of two separate layers**: a deeper one attached to the anterior surface of the distal third of the femur, and a superficial one that fuses to the deeper only distally. The femoral attachment of the deep layer is scored; it is not reported in the other frogs."
+    },
+    {
+      "name": "Glutaeus maximus, iliofibularis and iliofemoralis",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "tuber-superius"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). The glutaeus maximus and the common tendon of the iliofibularis and iliofemoralis attach proximally to **an indistinct elevation on the supra-acetabular portion of the ilium, which therefore represents the tuber superius** — the same identification-by-shared-origin argument Prikryl et al. use for the dorsal crista in *Rana*, applied to a different and fainter structure. A well-marked ligament fans out from the common tendon of the iliofemoralis and iliofibularis and fuses to the fascia covering the dorsal surface of the pelvic girdle; **no such ligament was seen in *Discoglossus***."
+    },
+    {
+      "name": "Gracilis major and gracilis minor",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "femur"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). The gracilis minor is very slender and **originates on the skin** rather than on the wall of the cloaca as in *Discoglossus*. Both insert together on the femur — a bony insertion, where in *Discoglossus* the pair end in the knee aponeurosis."
+    },
+    {
+      "name": "Semitendinosus",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput dorsale"
+        },
+        {
+          "name": "Caput ventrale"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). Two separate parts on the ischium, caput dorsale and caput ventrale, which **run independently to the femur and fuse only at about its midlength** — where in *Discoglossus* the ventral head arises from the adductor magnus rather than from bone. Their common attachment is as in *Discoglossus*."
+    },
+    {
+      "name": "Pectineus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur"
+          }
+        ]
+      },
+      "attachmentNote": "Bombina orientalis, Prikryl et al. (2009). Relatively robust, with both its iliac origin and its femoral insertion larger than in *Discoglossus*. **The adductor longus is not present as an independent muscle here** — it is not differentiated from this one, which is why there is no separate adductor row for this frog and why the pectineus is correspondingly bulky."
+    },
+    {
+      "name": "Gemellus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "blockedNote": "Well distinguishable among the deep dorsal muscles of this frog, from the supra-acetabular portion of the ischium to the dorsal surface of the crista femoralis — the only frog here in which it reaches that named process. Fifth animal to have it as an independent muscle against *Discoglossus*, where it is not recognisable. Parked because there is no `gemellus` record and the mammalian gemelli are a contested part of `puboischiofemoralis-externus`.",
+      "muscle": null
+    },
+    {
+      "name": "Quadratus femoris and obturator externus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "**Fused**, as the adductor longus is fused to the pectineus in this animal — Prikryl et al. draw the parallel themselves. Sixth frog reporting the two as one field. No attachments are separately stated, so none are scored. Parked as elsewhere: no `quadratus-femoris` record, and the obturator externus an undemonstrated part of `puboischiofemoralis-externus`.",
+      "muscle": null
+    }
+  ]
+}

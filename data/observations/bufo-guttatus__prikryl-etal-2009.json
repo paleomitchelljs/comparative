@@ -1,0 +1,274 @@
+{
+  "species": "bufo-guttatus",
+  "source": "prikryl-etal-2009",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Coccygeosacralis",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sacral-vertebrae",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "urostyle"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Origin on the **posterior edge** of the sacral diapophysis — a narrower attachment than *Discoglossus*, which takes its dorsal side, and than *Pelobates*, which runs the whole urostyle beneath the longissimus."
+    },
+    {
+      "name": "Coccygeoiliacus",
+      "region": "pelvic",
+      "record": "iliocaudalis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "urostyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). From the urostyle onto the medial surface of the iliac shaft — the plain condition, against *Pelobates* where it wraps onto both surfaces and with the iliacus externus encircles the shaft."
+    },
+    {
+      "name": "Iliacus externus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Mostly on the lateral surface of the iliac shaft, only a minor posterior part reaching onto the medial surface."
+    },
+    {
+      "name": "Iliacus internus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Origin on **both** the medial and lateral surfaces of the preacetabular ilium; insertion on the anterodorsal surface of the proximal half of the femur."
+    },
+    {
+      "name": "Glutaeus maximus",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "muscle": "extensor-iliotibialis"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Attached to the cruralis along **the distal two-thirds** of that muscle — a far longer contact than the narrow tendon onto the distal cruralis reported for *Discoglossus* and *Ascaphus*. Carried as `muscle: extensor-iliotibialis`, the record the cruralis sits on."
+    },
+    {
+      "name": "Gracilis major",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Its proximal origin is markedly more extensive and more ventral than in *Discoglossus*, and in one specimen it partly covered the proximal origin of the ventral head of the adductor magnus — within-species variation in extent."
+    },
+    {
+      "name": "Sartorius",
+      "region": "thigh",
+      "record": "pubotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Origin located **more anteriorly** than in *Discoglossus* — the opposite direction from *Pelobates*, which moves it posteroventrally, so the two toads bracket the baseline."
+    },
+    {
+      "name": "Semitendinosus",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Dorsal head"
+        },
+        {
+          "name": "Ventral head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Two proximal heads, both described by their neighbours rather than by landmarks: the larger dorsal head between the semimembranosus, gracilis major and dorsal head of the adductor magnus; the ventral head between the gracilis major, the quadratus femoris, and the two heads of the adductor magnus. They fuse at about a third of the way down the femur. **That the ventral head can be placed against the quadratus femoris at all means this frog has one as a distinguishable muscle**, unlike *Discoglossus*."
+    },
+    {
+      "name": "Adductor magnus",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Dorsal head"
+        },
+        {
+          "name": "Ventral head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "posterior"
+          },
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). Two heads from the posterior and ventral ischium, fusing about a third of the way down the femur, **the distal portion turning onto the dorsal surface of the femur** as in *Rana*. The ventral head is partly covered by the sartorius."
+    },
+    {
+      "name": "Pectineus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          },
+          {
+            "element": "ischium"
+          }
+        ]
+      },
+      "attachmentNote": "Bufo guttatus, Prikryl et al. (2009). A larger origin than in *Discoglossus*, **reaching onto the ilium** — where the *Discoglossus* muscle is confined to the pubic and ischial margin. The same enlargement is reported in *Bombina*, where it goes with the loss of a separate adductor longus."
+    },
+    {
+      "name": "Obturator externus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "ventral"
+          }
+        ]
+      },
+      "blockedNote": "A **more confined** origin than in *Discoglossus*, covering only the ventral margin of the acetabulum, and lying next to the quadratus femoris behind it and the gemellus, the last covered by the proximal origin of the semimembranosus. So all three are separable in this frog, against *Pelobates* where none of them is. Parked as elsewhere: no `quadratus-femoris` record, and this muscle an undemonstrated part of `puboischiofemoralis-externus`.",
+      "muscle": null
+    },
+    {
+      "name": "Tensor fasciae latae",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "ventral"
+          },
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "extensor-iliotibialis"
+          }
+        ]
+      },
+      "blockedNote": "Tiny in this animal, from the ventral — and partly lateral and medial — surface of the iliac shaft, running along the anteroventral surface of the thigh onto the fascia of the cruralis, carried as `muscle: extensor-iliotibialis`. Parked as in the other frogs: no record holds a muscle that ends on fascia.",
+      "muscle": null
+    }
+  ]
+}

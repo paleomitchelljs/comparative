@@ -2609,6 +2609,25 @@
       }
     },
     {
+      "id": "lung",
+      "label": "Lung",
+      "kind": "soft",
+      "region": "axial",
+      "segment": "axial",
+      "partOf": null,
+      "correlate": false,
+      "presence": {
+        "default": "variable",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "Not a skeletal element, carried for the same reason as `dorsal-fascia-anuran` and `knee-aponeurosis`: a muscle demonstrably attaches to it and would otherwise have no row. Prikryl et al. (2009) describe the **pulmonum proprius** of *Pipa pipa* arising on the dorsolateral surface of the lungs and inserting on the dorsal surface of the femur — a muscle running from a viscus to the hindlimb, which is why the entry exists. `presence` is left `variable` by default rather than asserted across the tree: lungs are absent or reduced in enough vertebrates that a blanket default would be wrong, and only the taxon this attachment needs is listed."
+      }
+    },
+    {
       "id": "mandible",
       "label": "Mandible",
       "kind": "bone",
