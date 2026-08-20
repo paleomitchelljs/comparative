@@ -1,0 +1,32 @@
+{
+  "species": "triturus-helveticus",
+  "source": "bauer-1997",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Depressor mandibulae",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gonial"
+          }
+        ]
+      },
+      "attachmentNote": "Triturus helveticus, adult, Bauer (1997). **Never studied before.** Nearly identical in shape to the muscle of *T. vulgaris*, but **its origins are not confined to the squamosal**: posterior and deep fibres attach to the occipito-otic as well. Its dorsal squamosal crest is the most elaborate of the four *Triturus* Bauer examined. Insertion by a common tendon of all the fibres onto the caudal end of the gonioarticular.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    }
+  ]
+}

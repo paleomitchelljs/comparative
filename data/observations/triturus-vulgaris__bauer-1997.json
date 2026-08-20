@@ -1,0 +1,79 @@
+{
+  "species": "triturus-vulgaris",
+  "source": "bauer-1997",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Depressor mandibulae",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gonial"
+          }
+        ]
+      },
+      "attachmentNote": "Triturus vulgaris, adult, Bauer (1997). **Arises exclusively from the squamosal**, narrow but deep, inserting on the gonioarticular, with no relation to the M. cucullaris major. The squamosal-only origin is the state the other three *Triturus* here depart from, all of them by adding occipito-otic fibres, so this row is the comparison the genus is read against.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    },
+    {
+      "name": "Depressor mandibulae anterior (larva)",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "occupied",
+      "blockedNote": "**This dataset holds one occurrence per (record, species) and has no ontogenetic stage.** A larval row here would either collide with this animal's adult row on `division` — the adult depressor mandibulae is undivided or two-slipped, the larval one is two separate muscles — or, where there is no adult row, stand in for the species as though the larval condition were its condition. Neither is true, so both larval muscles are parked with their attachments. Settled by a stage field on the occurrence, which the axolotl pass wanted for the same reason. Bauer states that the salamandrid larvae he examined — *Salamandra salamandra*, *Triturus cristatus* and *T. vulgaris* — show **no noteworthy differences among their depressor muscles**, so the three parked columns are one description of three animals rather than three descriptions.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gonial"
+          },
+          {
+            "element": "meckels-cartilage",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": "depressor-mandibulae"
+    },
+    {
+      "name": "Depressor mandibulae posterior (larva)",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "occupied",
+      "blockedNote": "**This dataset holds one occurrence per (record, species) and has no ontogenetic stage.** A larval row here would either collide with this animal's adult row on `division` — the adult depressor mandibulae is undivided or two-slipped, the larval one is two separate muscles — or, where there is no adult row, stand in for the species as though the larval condition were its condition. Neither is true, so both larval muscles are parked with their attachments. Settled by a stage field on the occurrence, which the axolotl pass wanted for the same reason. Bauer states that the salamandrid larvae he examined — *Salamandra salamandra*, *Triturus cristatus* and *T. vulgaris* — show **no noteworthy differences among their depressor muscles**, so the three parked columns are one description of three animals rather than three descriptions. The posterior muscle is the more interesting of the two to have parked: it is a flat sheet lying lateral to the anterior muscle, taking its anterior fibres from the squamosal and its posterior fibres **from the fascia of the anterior muscle itself**, and converging with it onto a common tendon — the ligamentum hyomandibulare. A jaw opener that arises partly off its own partner.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "muscle": "depressor-mandibulae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibular-ligament"
+          }
+        ]
+      },
+      "muscle": "depressor-mandibulae"
+    }
+  ]
+}

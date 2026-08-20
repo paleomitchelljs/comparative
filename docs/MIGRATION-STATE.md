@@ -16,6 +16,9 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
+> **Bauer (1997) is done: 12 animals of 12, where the file had one.** The next
+> ranking run should be done fresh — three sources came off it today.
+>
 > **Widrig et al. (2023) is done too**, and the way it opened is the thing to carry
 > forward: a reading note's tooling verdict was retested and failed. Before planning
 > around any note that says a paper cannot be extracted, retest it — three of those
@@ -90,18 +93,27 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 9 | 756 |
-| `not-started` | 66 | 1736 |
+| `remined` | 10 | 769 |
+| `not-started` | 65 | 1734 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2572** |
+| **total** | **79** | **2583** |
 
-**9 of 79 cited sources re-mined** (11%).
+**10 of 79 cited sources re-mined** (12%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Nine sources have cleared that bar:
+parked**, and the note states the arithmetic. Ten sources have cleared that bar:
+
+- **Bauer (1997)** — urodele jaw openers. **12 animals of 12**: 10 adults filed in 12
+  rows, 3 larval columns parked, nine species added. The file held **one**. Its
+  reading note had named what was left and the answer was most of the paper, which is
+  the *does the paper describe more animals than the file does?* failure again — the
+  second in two days. **Four of the muscles had never been described by anyone**, and
+  three of the four *Triturus* take occipito-otic fibres that Özeti & Wake (1969), the
+  standard reference, do not mention. The larvae are parked on `occupied` because an
+  occurrence carries no ontogenetic stage; a stage field settles it.
 
 - **Widrig et al. (2023)** — tinamou pectoral atlas. **All 44 muscle sections: 38
   filed, 6 parked.** It held 3 rows, and the reading note said the rest could not be
@@ -300,6 +312,9 @@ reading that will not have to be done again.
 | `prikryl-etal-2009` | *barbourula-busuangensis* | 4 | no-record 2, homology 2 |
 | `prikryl-etal-2009` | *rana-esculenta* | 3 | no-record 3 |
 | `prikryl-etal-2009` | *xenopus-laevis* | 3 | no-record 2, homology 1 |
+| `bauer-1997` | *salamandra-salamandra* | 2 | occupied 2 |
+| `bauer-1997` | *triturus-cristatus* | 2 | occupied 2 |
+| `bauer-1997` | *triturus-vulgaris* | 2 | occupied 2 |
 | `prikryl-etal-2009` | *bombina-orientalis* | 2 | no-record 1, homology 1 |
 | `prikryl-etal-2009` | *bufo-guttatus* | 2 | homology 1, no-record 1 |
 | `prikryl-etal-2009` | *pipa-pipa* | 2 | no-record 2 |

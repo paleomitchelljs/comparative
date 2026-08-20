@@ -16,7 +16,7 @@ described adult; *Triturus vulgaris*, *Taricha torosa* and *granulosa*,
 *Notophthalmus viridescens*, *Hydromantes italicus*, *Euproctus asper* and three
 *Triturus* species are treated comparatively.
 
-**Cranial 57% → 58%, Caudata 76%, and a 127th muscle record.**
+**Cranial 57% → 58%, Caudata 76%, and a 127th muscle record.** (Both figures moved again on 2026-08-20; see below.)
 
 ## The new record
 
@@ -78,12 +78,84 @@ muscle in a metamorphosed *Andrias*.
 All three are in the `attachmentNote` rather than as rows, which is the point of
 having a note: the corrections are as much a part of the record as the attachments.
 
-## Still in it
+## ~~Still in it~~ — finished 2026-08-20, and the file had 1 animal of 12
 
-The larval condition throughout — Bauer's Results open with larvae, where the
-ceratomandibularis is simple against the highly complex adult *Necturus* muscle, and
-that contrast would need the same ontogenetic-stage schema the axolotl pass wanted.
-*Triturus*, *Taricha*, *Notophthalmus*, *Hydromantes* and *Euproctus*, which would
-turn the ceratomandibularis' variability from a note into scored disagreement across
-six salamanders. And *Proteus*, whose simple ceratomandibularis is the neotene
-comparison the paper turns on.
+The note above named what was left and the answer was most of the paper. **Bauer's
+Materials and Methods lists 12 species across four families** — *Hydromantes
+italicus*; *Necturus maculosus*; *Euproctus asper*, *Notophthalmus viridescens*,
+*Salamandra salamandra*, *Taricha granulosa*, *T. torosa*, *Triturus cristatus*, *T.
+helveticus*, *T. karelini*, *T. marmoratus*, *T. vulgaris* — and this file held
+*Necturus*. **A paper that describes N animals should produce N columns**, which is
+the rule `MINING.md` says is broken most often, and this is the second source in two
+days to break it.
+
+**Now: 10 adults filed in 12 rows, 3 larval columns parked, `remined`.** Nine species
+added to `species.json`. Caudata attachment coverage 76% → 79%, cranial 51% → 52%.
+
+### Four of these muscles had never been described
+
+*Taricha granulosa*, *Triturus helveticus*, *T. karelini* and *T. marmoratus* —
+Bauer says so of the first three outright, and *T. karelini*'s case is nomenclatural:
+it was a subspecies of *T. cristatus* until the 1980s, so the older literature has
+nothing under that name. First descriptions are the rows most worth having and the
+easiest to leave in a paper, because a comparative section reads like commentary.
+
+### What the ten columns are actually for
+
+The genus *Triturus* is the reason to score them separately rather than write "the
+salamandrid condition":
+
+| Species | Squamosal | Occipito-otic | Cucullaris relation | Insertion |
+|---|---|---|---|---|
+| *T. vulgaris* | only | — | none | gonioarticular |
+| *T. helveticus* | yes | posterior + deep fibres | — | common tendon of all fibres |
+| *T. karelini* | yes | caudal fibres | **deep to ventral cucullaris fibres** | gonioarticular |
+| *T. marmoratus* | yes | posterior + deep fibres | none | **single short tendon, all fibres** |
+
+Three of the four take occipito-otic fibres that **Özeti & Wake (1969) did not
+mention**, which is a correction to the standard reference on salamandrid jaw muscles
+and is invisible unless the four animals are separate rows.
+
+### Negatives, which is what this paper is unusually good at
+
+- ***Notophthalmus***: Kesteven's split of the muscle into anteromedial and
+  posterolateral parts **could not be detected** — the very division Bauer does find
+  in *Salamandra* and *Hydromantes*.
+- ***Taricha torosa***: Smith's (1927) posterior slip from the dorsal fascia was not
+  confirmed by Özeti & Wake, by Kesteven, or by Bauer. Three failures to find a
+  described slip.
+- ***Hydromantes***: **no origin from the quadrate**, against L. Adams (1942), who
+  gave the whole anterior muscle to that bone; and **no attachment to the gonial**,
+  which every salamandrid here has.
+
+### Two muscles that arise off other muscles
+
+*Salamandra*'s superficial slip comes off the fascia cephalodorsalis over the epaxial
+musculature, and *Hydromantes*'s entire depressor mandibulae posterior does — **no
+skull attachment at all**. Both are scored as attachments onto `epaxial-musculature`,
+because a fascia over a muscle is that muscle's surface. So a plethodontid has two
+jaw openers pulling from two anchors, one cranial and one axial, which is the same
+functional split the ceratomandibularis makes in *Necturus* against the hyobranchial
+apparatus.
+
+### The larvae are parked, and the blocker is the schema
+
+Bauer's Results open with larvae and state that *Salamandra salamandra*, *Triturus
+cristatus* and *T. vulgaris* show **no noteworthy differences among their depressor
+muscles**. The larval muscle is two separate muscles where the salamandrid adult's is
+one; an occurrence carries no ontogenetic stage, so a larval row would either collide
+with the adult row on `division` or stand in for the species. Both are parked on
+`occupied` in all three species' files, with attachments, and `muscle` set to
+`depressor-mandibulae` so the validator keeps asking. **A stage field on the
+occurrence settles it** — the same thing the axolotl pass wanted.
+
+The larval posterior muscle is the one to read: anterior fibres from the squamosal,
+posterior fibres **from the fascia of the anterior muscle itself**, converging with it
+onto the ligamentum hyomandibulare. A jaw opener that arises partly off its own
+partner.
+
+### Still not in it
+
+*Proteus*, whose simple ceratomandibularis is the neotene comparison the Discussion
+turns on — Bauer discusses it from Drüner and Eaton rather than dissecting it, so it
+would be an `after:` row on somebody else's observation and is left.

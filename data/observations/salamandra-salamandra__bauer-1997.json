@@ -1,0 +1,94 @@
+{
+  "species": "salamandra-salamandra",
+  "source": "bauer-1997",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Depressor mandibulae",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Anteromedial (deep) slip"
+        },
+        {
+          "name": "Posterolateral (superficial) slip"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal",
+            "side": "posterior"
+          },
+          {
+            "element": "otic-capsule"
+          },
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gonial"
+          }
+        ]
+      },
+      "attachmentNote": "Salamandra salamandra, adult, Bauer (1997). Two slips that Özeti & Wake (1969) name and Drüner (1901) found not separable along their whole length, so Bauer declines to give them names. Anteromedial fibres, their deep slip, from the dorsal half of the caudal edge of the squamosal and from the occipito-otic; **posterolateral fibres, their superficial slip, from the fascia cephalodorsalis**, which runs back from the caudal squamosal for a considerable distance attached to the laterodorsal surface of the epaxial musculature — scored as an attachment onto `epaxial-musculature`, because a fascia over a muscle is that muscle's surface. Both converge onto the gonial, **which in *Salamandra* does not fuse with the articular** (Francis 1934), so this is the one animal here whose insertion can be put on the gonial without qualification.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    },
+    {
+      "name": "Depressor mandibulae anterior (larva)",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "occupied",
+      "blockedNote": "**This dataset holds one occurrence per (record, species) and has no ontogenetic stage.** A larval row here would either collide with this animal's adult row on `division` — the adult depressor mandibulae is undivided or two-slipped, the larval one is two separate muscles — or, where there is no adult row, stand in for the species as though the larval condition were its condition. Neither is true, so both larval muscles are parked with their attachments. Settled by a stage field on the occurrence, which the axolotl pass wanted for the same reason. Bauer states that the salamandrid larvae he examined — *Salamandra salamandra*, *Triturus cristatus* and *T. vulgaris* — show **no noteworthy differences among their depressor muscles**, so the three parked columns are one description of three animals rather than three descriptions.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gonial"
+          },
+          {
+            "element": "meckels-cartilage",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": "depressor-mandibulae"
+    },
+    {
+      "name": "Depressor mandibulae posterior (larva)",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "occupied",
+      "blockedNote": "**This dataset holds one occurrence per (record, species) and has no ontogenetic stage.** A larval row here would either collide with this animal's adult row on `division` — the adult depressor mandibulae is undivided or two-slipped, the larval one is two separate muscles — or, where there is no adult row, stand in for the species as though the larval condition were its condition. Neither is true, so both larval muscles are parked with their attachments. Settled by a stage field on the occurrence, which the axolotl pass wanted for the same reason. Bauer states that the salamandrid larvae he examined — *Salamandra salamandra*, *Triturus cristatus* and *T. vulgaris* — show **no noteworthy differences among their depressor muscles**, so the three parked columns are one description of three animals rather than three descriptions. The posterior muscle is the more interesting of the two to have parked: it is a flat sheet lying lateral to the anterior muscle, taking its anterior fibres from the squamosal and its posterior fibres **from the fascia of the anterior muscle itself**, and converging with it onto a common tendon — the ligamentum hyomandibulare. A jaw opener that arises partly off its own partner.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "muscle": "depressor-mandibulae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibular-ligament"
+          }
+        ]
+      },
+      "muscle": "depressor-mandibulae"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "species": "hydromantes-italicus",
+  "source": "bauer-1997",
+  "status": "remined",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Depressor mandibulae anterior",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Depressor mandibulae anterior"
+        },
+        {
+          "name": "Depressor mandibulae posterior"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "squamosal"
+          },
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "dentary",
+            "side": "posterior"
+          },
+          {
+            "element": "articular"
+          },
+          {
+            "element": "mandible",
+            "landmark": "retroarticular-process"
+          }
+        ]
+      },
+      "attachmentNote": "Hydromantes italicus, adult, Bauer (1997). **The depressor mandibulae is two muscles here, separated along their whole length**, as in all members of the plethodontid tribe Bolitoglossini. The anterior arises on the squamosal by deep fibres and on the occipito-otic by both superficial and deep fibres, on the laterocaudal face of a muscular crest it shares with parts of the external mandibular adductor and the epaxial muscles, and behind that crest. **No origins from the quadrate were found**, against L. Adams (1942), who gave the whole muscle to that bone in his *Hydromantes*. It inserts dorsal to the posterior muscle, on the posteroexternal face of the dentary, on the articular and on the cartilaginous caudal cap of the retroarticular process — and **no attachment to the gonial could be detected**, which is the opposite of every salamandrid in this pass.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Depressor mandibulae posterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "articular"
+          },
+          {
+            "element": "mandible",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydromantes italicus, adult, Bauer (1997). The posterior muscle arises entirely on the fascia cephalodorsalis along the laterodorsal side of the epaxial muscles — **no skull attachment at all** — and its fibres converge ventrorostrally onto the posterior end of the mandible, on the cartilaginous and bony regions of the articular, ventral and caudal to the anterior muscle. Two jaw openers pulling from two different anchors, one on the skull and one on the trunk, which is the same functional split the ceratomandibularis makes in *Necturus* by pulling against the hyobranchial apparatus instead.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    }
+  ]
+}
