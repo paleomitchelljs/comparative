@@ -95,7 +95,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-748 extracted observations from 8 sources are waiting for a record (639 on partial, 53 on no-record, 27 on nomenclature, 13 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
+749 extracted observations from 8 sources are waiting for a record (639 on partial, 53 on no-record, 27 on nomenclature, 14 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
@@ -115,8 +115,8 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 | pelvic | 8 | 345 |
 | leg | 10 | 345 |
 | arm | 5 | 282 |
-| hand | 9 | 237 |
-| axial | 15 | 161 |
+| hand | 9 | 238 |
+| axial | 15 | 164 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
 
@@ -129,8 +129,8 @@ name a side or a landmark rather than the bare bone.
 | | |
 |---|---|
 | Elements | 287, of which 266 (93%) carry at least one attachment |
-| Observed attachment rows | 4116 |
-| Rows naming a **landmark** | 1082 (26%) |
+| Observed attachment rows | 4120 |
+| Rows naming a **landmark** | 1083 (26%) |
 | Rows naming a **side** | 2282 (55%) |
 | Osteological correlates | 128 flagged, 122 carry a muscle |
 <!-- /counts:skeleton -->

@@ -187,7 +187,7 @@ one occurrence.
 | Thorax | 7 | 7 | 7 | 0 | **done** |
 | Abdomen | 13 | 11 | 10 | 1 | **done** |
 | Pelvis and perineum | 21 | 15 | 7 | 8 | **done** |
-| Upper limb | 54 | 52 | | | |
+| Upper limb | 54 | 52 | 51 | 1 | **done** |
 | Lower limb | 58 | 52 | | | |
 | Head and neck | 105 | 87 | | | |
 
@@ -308,6 +308,48 @@ puborectalis of the other side, so it is scored `{"muscle": "iliocaudalis"}` —
 ending on the record it is part of. That is what the muscle does: the sling behind
 the rectum is two muscles meeting, and the anorectal angle it holds is why
 continence is a skeletal-muscle problem.
+
+### Upper limb, done — 51 of 52 filed
+
+Fifty-four entries, fifty-two muscles after the interossei's double listing.
+Twenty-seven rows added; one parked. This is the region the dataset was already
+strongest in, and the pass was mostly a matter of splitting group rows into their
+members, which is where the attachments were being lost: `supracoracoideus` carried
+both fossae and both facets in one union, so nothing said which muscle used which.
+
+**Serratus posterior superior and inferior are the find.** Gest lists them in the
+upper limb region — they are met in the back dissection — and gives both **ventral
+rami**, calling them respiratory muscles embryologically related to the intercostals
+rather than to the deep back. They are filed on `hypaxial-musculature`, not on any
+epaxial record. A muscle's address is not its address.
+
+**Deltoid gets no row of its own, and cannot.** Gest has one entry; this dataset
+splits it into `deltoideus-clavicularis` and `deltoideus-scapularis`, and the
+extraction key is `(species, source, name, region)`, which the validator requires to
+name exactly one record. That is the case its comment describes and the fix is
+already in place — the two halves carry names that tell them apart. The three
+origins Gest gives are on the two rows between them.
+
+Three per-muscle rows record something the group rows could not:
+
+- **Flexor digitorum profundus takes two nerves**, median to the radial half and
+  ulnar to the ulnar half, **and the lumbricals arising from its tendons split the
+  same way**. A nerve boundary running through one muscle, inherited by another that
+  grows off its tendons.
+- **The first palmar interosseous is often fused with adductor pollicis**, which
+  this dataset scores on `contrahentes-digitorum`. One human muscle straddling two
+  records, on the source's own statement.
+- **Extensor pollicis brevis and abductor pollicis longus share a record because
+  they share an origin field on the radius**, not because they make the borders of
+  the snuffbox together. The clinical grouping and the homological one agree here by
+  accident, and the row says which is doing the work.
+
+**Palmaris brevis is the one parked row**, on `homology` rather than `no-record`:
+two records could take it and nothing in this table chooses. `flexores-breves-super-
+ficiales` already names it as a candidate for that layer and is scored *uncertain* in
+a human because of it, so filing it there would settle by fiat the question that
+record's own note says is open. The other candidate is the dermal musculature — a
+muscle that ends in skin is doing what a panniculus carnosus does.
 
 ### The name-disagreement warning was firing on one source
 
