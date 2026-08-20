@@ -1,0 +1,269 @@
+{
+  "species": "rana-esculenta",
+  "source": "prikryl-etal-2009",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Coccygeoiliacus",
+      "region": "pelvic",
+      "record": "iliocaudalis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "urostyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Inserts in the longitudinal depression on the medial surface of the iliac shaft and **does not extend onto the lateral surface**, being separated from the iliacus externus insertion by a prominent dorsal crista. That crista protrudes under the skin along its whole length and can be found by palpation — an external landmark for an internal muscle boundary, and the clearest instance in this paper of the iliac shaft being partitioned between two muscles. In *Discoglossus* the two origins are separated only by a thin crista and the iliacus externus reaches dorsally so that the two muscles meet over the shaft. This row is written iliac-end-as-insertion, following the paper's wording here; the *Discoglossus* row notes that Table 1 and the descriptions disagree about the direction."
+    },
+    {
+      "name": "Iliacus externus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Origin **only** on the lateral surface of the dorsal crista of the iliac shaft, which Prikryl et al. take as making it the homologue of the pars externa alone in *Discoglossus* — where the muscle has an externa and an interna running more or less independently. It inserts on the anterior surface of the femur and **the insertion never extends over the crista femoralis**, an explicit negative worth keeping: in *Ascaphus* the corresponding muscle does reach the crista."
+    },
+    {
+      "name": "Iliacus internus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). **Always** originates on the medial surface of the ilium and inserts on the anterior surface of the femur about midway along its length. The emphasis is the paper's: in *Discoglossus* this origin is variable and may instead lie on the anterior rounded margin of the acetabular portion of the ilium, so the model frog is the more constant of the two."
+    },
+    {
+      "name": "Iliofibularis",
+      "region": "thigh",
+      "record": "iliofibularis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "tuber-superius"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Arises at the posterior end of the dorsal crista of the iliac shaft, together with the iliofemoralis and the glutaeus maximus. **Prikryl et al. use that shared origin to homologise the structure**: the posterior end of the dorsal crista in *Rana* is the tuber superius of *Discoglossus*, because the same three muscles arise from it. The row carries the landmark on that reasoning and the paper's own words. No insertion is stated for this animal, so none is scored."
+    },
+    {
+      "name": "Iliofemoralis",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "tuber-superius"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). One of the three muscles arising at the posterior end of the dorsal crista of the iliac shaft, which is what identifies that crista as the tuber superius. No insertion stated for this animal; the *Discoglossus* row carries the crista femoralis attachment."
+    },
+    {
+      "name": "Glutaeus maximus",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal",
+            "landmark": "tuber-superius"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). The third of the muscles arising at the posterior end of the dorsal crista, with the iliofibularis and iliofemoralis — the shared origin that identifies the crista as the tuber superius. In *Discoglossus* the glutaeus maximus takes the dorsolateral face of the tuber superius while the other two share its posterolateral surface."
+    },
+    {
+      "name": "Gracilis major and gracilis minor",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). **The gracilis major can be so robust that in some individuals it extends beyond the semimembranosus in dorsal view** — within-species variation in bulk rather than in attachment. The gracilis minor arises by a ligament from the wall of the cloaca, its distal insertion the same as in *Discoglossus*, that is, into the knee aponeurosis. Neither origin is skeletal, so only the aponeurotic insertion is scored."
+    },
+    {
+      "name": "Sartorius",
+      "region": "thigh",
+      "record": "pubotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Robust, and arising on the **lateral surface of the anterior part of the acetabular portion of the ilium** — where in *Discoglossus* it arises by a flat tendon from the ventral surface of the ischium. Different bone, and one of the sharper contrasts in the paper. Filed on `pubotibialis` on the source's own synonymy, as for *Discoglossus*: Mivart and Iordansky & Morozov call this muscle the pubotibialis."
+    },
+    {
+      "name": "Semitendinosus",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Dorsal head"
+        },
+        {
+          "name": "Ventral head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Two thin proximal heads: the dorsal attached to the ischium between the semimembranosus and the gemellus, the ventral between the ventral head of the adductor magnus and the obturator internus. Both fuse and insert into the knee aponeurosis as in *Discoglossus*. **The heads are described by what lies either side of them rather than by a landmark**, which is only possible because this animal has a gemellus and a distinct obturator internus — *Discoglossus* has neither as separable muscles, and its semitendinosus is described with a dorsal ischial head and a ventral head arising from the adductor magnus itself."
+    },
+    {
+      "name": "Adductor magnus",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput dorsale"
+        },
+        {
+          "name": "Caput ventrale"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Two heads, both from the lateral surface of the ischium — the dorsal from its posterior part, the ventral from its ventral part — fusing about midway down the thigh. **Distally the muscle turns around the femur and inserts on the dorsal side**, which is the difference from *Discoglossus*, where it ends on the posterodorsal surface of the distal femur without wrapping. Two heads here against one there, and two here again in *Ascaphus*."
+    },
+    {
+      "name": "Gemellus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "**Present and fully formed in the model frog**, arising at the dorsal margin of the ischium and inserting on the dorsal surface of the femur close to its proximal head. Prikryl et al. could not recognise it as an independent muscle in *Discoglossus*; it is present here and in *Ascaphus*, so the *Discoglossus* condition is the odd one. Still parked because no `gemellus` record exists — in this dataset the mammalian gemelli are a contested part of `puboischiofemoralis-externus`, and the anuran muscle has to be argued into that field rather than assumed into it. Three frogs now bear on the argument.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Quadratus femoris",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "**Present, and continuous with the obturator externus** — the two separated only by the origin of the ventral head of the semitendinosus — covering the posterior part of the ischium. The same continuity is reported in *Ascaphus*, where the two share a continuous origin along the posterior ischial margin, and neither is separable in *Discoglossus*. That is three frogs saying the quadratus femoris and obturator externus are one field, which is the argument for filing them somewhere; there is no `quadratus-femoris` record to file them on, and `puboischiofemoralis-externus` already carries the pectineus. Diogo & Molnar (2014) on the tetrapod ventral thigh would settle it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Tensor fasciae latae",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Comparatively robust in this animal, arising at the ventral portion of the medial surface of the iliac shaft — where in *Discoglossus* the origin varies between a small area on the inner surface of the shaft and its ventral surface, and in *Ascaphus* it lies below the iliacus externus on the ventral surface. Parked as elsewhere: it ends in the fascia of the cruralis and has no skeletal insertion, so only the iliac origin is scored, and no record holds a muscle that inserts on fascia.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          }
+        ]
+      },
+      "muscle": null
+    }
+  ]
+}

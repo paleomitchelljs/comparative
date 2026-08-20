@@ -144,4 +144,64 @@ reach. Resolution is coarse throughout: Table 1 gives "Ilium", "Ischium", "Femur
 without a side for many muscles, and **no side is invented where the source gives
 none** — several rows are deliberately thinner than they could be made to look.
 
-The source stays `not-started`: one animal of thirteen is done.
+## *Ascaphus truei* and *Rana esculenta* added, 2026-08-20
+
+Three animals of thirteen. **Thirteen pelvic and thigh records now carry two or
+three frogs**, which is the first time this dataset can show within-clade
+variation in the anuran hindlimb rather than one exemplar.
+
+*Ascaphus* is described in full rather than as differences, so it gets 18 rows;
+*Rana* is written as differences from *Discoglossus* and gets 13.
+
+### What having three frogs immediately settles
+
+**The gemellus and quadratus femoris are not absent from anurans.** Prikryl et al.
+could not recognise either as an independent muscle in *Discoglossus*; both are
+fully formed in *Ascaphus* and in *Rana*, with attachments. So the *Discoglossus*
+condition is the odd one, and the parked negatives on that file now have two
+positives to be read against. All three remain parked — there is no `gemellus` or
+`quadratus-femoris` record, and the mammalian gemelli are a contested part of
+`puboischiofemoralis-externus` — but the case for filing them is now three frogs
+strong rather than nil.
+
+**The quadratus femoris and obturator externus are one field.** They are
+continuous in *Ascaphus*, continuous in *Rana* (separated only by the origin of
+the ventral head of the semitendinosus), and inseparable in *Discoglossus*. Three
+animals saying the same thing.
+
+**The obturator internus reaches the femur in *Ascaphus* and not in
+*Discoglossus*.** That matters because the *Discoglossus* row was parked precisely
+because the muscle ended on the joint capsule and so did not match
+`ischiotrochantericus`, whose consensus insertion is the proximal femur. The
+*Ascaphus* condition does match. Filing one and not the other would split a muscle
+across two treatments on the strength of one frog, so both wait — but the reason
+for waiting is now recorded on both rows.
+
+### Two homology arguments the paper makes with its own anatomy
+
+- **The tuber superius of *Discoglossus* is the posterior end of the dorsal crista
+  of the iliac shaft in *Rana*** — Prikryl et al. identify it by the fact that the
+  same three muscles arise there, the iliofibularis, iliofemoralis and glutaeus
+  maximus. The *Rana* rows carry the landmark on that reasoning.
+- **In *Ascaphus* the sartorius and semitendinosus are a single muscle mass**, two
+  heads separated by a shallow cleft, both arising from fascia and inserting by one
+  tendon. This dataset files the two on different records — `pubotibialis` and
+  `ischioflexorius` — so the row is parked on `division`, which is exactly what
+  that `blockedBy` value is for. Splitting the observation would assert a division
+  the animal does not show.
+
+### Where the two frogs differ from the baseline
+
+Neither is a minor variant. In *Ascaphus* the coccygeoiliacus and coccygeosacralis
+are one fan-like layer, the iliofibularis reaches bone where in *Discoglossus* it
+ends in the aponeurosis, both gracilis muscles reach bone, and the pectineus takes
+part of its origin from the rectus abdominis. In *Rana* the sartorius arises from
+the ilium rather than the ischium, the adductor magnus wraps around the femur to
+insert dorsally, and the dorsal crista of the ilium is palpable through the skin —
+an external landmark for an internal muscle boundary.
+
+The source stays `not-started`: **three animals of thirteen**. Still to do are
+*Barbourula busuangensis*, *Bombina orientalis*, *Pelobates fuscus*, *Bufo
+guttatus*, *Xenopus laevis* and *Pipa pipa*, each a differences section of 60–160
+lines, plus the three caudates. Use plain `pdftotext`; the section headings are
+`Genus species (Figs N–1 and N–2)`.

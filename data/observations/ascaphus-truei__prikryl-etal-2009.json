@@ -1,0 +1,424 @@
+{
+  "species": "ascaphus-truei",
+  "source": "prikryl-etal-2009",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Longissimus dorsi",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "urostyle",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Inserts along the whole dorsolateral surface of the urostyle **except the tip, which remains uncovered** — the difference from *Discoglossus*, where it runs the full length. Anterior to the sacral vertebra it cannot be told apart from the iliolumbaris except that the iliolumbaris ends on the anterior margin of the sacral diapophysis while this muscle continues onto the urostyle."
+    },
+    {
+      "name": "Coccygeoiliacus (with coccygeosacralis, indistinguishable here)",
+      "region": "pelvic",
+      "record": "iliocaudalis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "sacral-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "urostyle",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Origin on the medial surface of the anterior part of the iliac shaft, some fibres seeming to continue along the lateral surface of the iliosacral joint into the presacral region; insertion on the ventrolateral surface of the distal third of the urostyle. **In this animal the coccygeoiliacus and coccygeosacralis cannot be separated** — the fibres attached to the posterior margin of the lateral sacral diapophysis, which would be the coccygeosacralis, run continuously with it, and Prikryl et al. conclude it is a single fan-like muscle layer arising from both the iliac shaft and the sacral diapophysis. So one row carries both, where *Discoglossus* has two, and the sacral origin is on this row rather than on a separate epaxial one."
+    },
+    {
+      "name": "Caudalipuboischiotibialis",
+      "region": "pelvic",
+      "record": "caudalipuboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "urostyle",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, behind the origin of the pyriformis, inserting on the tendinous inscription that divides the semimembranosus about a third of the way from its origin. **No bony insertion, and this is the animal that shows it plainly** — the figures mark the inscription as the attachment site. Same arrangement as *Discoglossus*."
+    },
+    {
+      "name": "Pyriformis",
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "urostyle",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the ventrolateral surface of the tip of the urostyle, **penetrating between the iliofibularis and semimembranosus** to reach the posterior surface of the crista femoralis. In *Discoglossus* it attaches to the crista proximal to the iliofemoralis insertion; here the route between the two posterior thigh muscles is specified."
+    },
+    {
+      "name": "Iliacus externus and iliacus internus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "anterior"
+          },
+          {
+            "element": "ilium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Externus from the posterior half of the lateral surface of the iliac shaft onto the posterior surface of the femoral head. Internus from the anterior surface of the ilium and partly a small area on the ventral surface of the shaft, turning to run over the dorsal surface of the proximal femur and inserting on the crista femoralis. **Both differ from *Discoglossus*, where the externus runs the entire length of the lateral shaft and both insert on the anterior femur** — here the externus is confined to the posterior half and the internus reaches the crista."
+    },
+    {
+      "name": "Cruralis and glutaeus maximus",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ilium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "knee-aponeurosis"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Cruralis from the lateral surface of the ilium and the pubic cartilage along the acetabular margin, and from the adjacent joint capsule, into the knee aponeurosis. Glutaeus maximus from the dorsolateral surface of the proximal part of the iliac shaft, inserting by a narrow tendon on the dorsal surface of the distal cruralis — so it reaches the aponeurosis only through the other muscle, as in *Discoglossus*. **The glutaeus origin is on the iliac shaft here rather than on the tuber superius**, which is where *Discoglossus* has it."
+    },
+    {
+      "name": "Iliofibularis",
+      "region": "thigh",
+      "record": "iliofibularis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Arises by a tendon shared with the iliofemoralis, just behind the glutaeus maximus origin on the iliac shaft, and inserts on the fibular head of the tibiofibula. **A bony insertion, where in *Discoglossus* it ends in the knee aponeurosis** and only covers the fibular head — so the two frogs differ in whether this muscle reaches bone at all."
+    },
+    {
+      "name": "Iliofemoralis",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Shares its tendon of origin with the iliofibularis just posterior to the glutaeus maximus, and inserts on the **posterior** surface of the crista femoralis — *Discoglossus* has it on the dorsal surface. The shared origin is the constant feature across both frogs; which face of the crista it reaches is not."
+    },
+    {
+      "name": "Semimembranosus",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). From the lateral surface of the dorsal portion of the ischium, across the posterior thigh to the underside of the knee, inserting on the tibial head of the tibiofibula. **Divided about a third of the way down by an oblique tendinous inscription, into which the caudalipuboischiotibialis inserts** — that inscription is the reason this record and `caudalipuboischiotibialis` have to be read together in frogs. In *Discoglossus* the origin is on the pars ascendens ilii and the adjacent ischium; here it is ischial only."
+    },
+    {
+      "name": "Gracilis major and gracilis minor",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). The gracilis major occupies the most posterior part of the thigh, arising on the ischium behind the acetabulum and inserting on the proximal tibial portion of the tibiofibula, with a more or less distinct oblique tendinous inscription in its distal third. The gracilis minor arises on the fascia of the ventrolateral surface of the **postpubic rod** and inserts into the most ventral part of that inscription, which is continuous with the semimembranosus inscription. **So in this animal the pair reach bone**, where in *Discoglossus* both end in the knee aponeurosis and the minor arises partly from skin and cloacal wall."
+    },
+    {
+      "name": "Adductor magnus",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput ventrale"
+        },
+        {
+          "name": "Caput dorsale"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "ventral"
+          },
+          {
+            "element": "pubis"
+          },
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "crista-femoralis"
+          },
+          {
+            "element": "femur",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). Two heads. The ventral, partly covered by the sartorius–semitendinosus complex, runs from the ventral margin of the ischium and the adjacent pubis to the crista femoralis at the end of the femur; the dorsal from the posterior lateral margin of the ischium to the dorsal surface of the distal femur, where the two fuse. *Discoglossus* has a single undivided adductor magnus from the posteroventral ischium."
+    },
+    {
+      "name": "Pectineus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Ascaphus truei, Prikryl et al. (2009). The deep layer of the ventral muscles, from the lateral surface of the pubis, the praepubic plate, and **partly even from the most posterior segment of the rectus abdominis** — a muscle taking part of its origin from another muscle, which is not scored as a skeletal attachment. Insertion on the anterior surface of the crista femoralis. Its proximal part is exposed between the cruralis in front and the obturator externus behind. *Discoglossus* has this muscle from the ischium and pubic cartilage margin to the ventral crista femoralis."
+    },
+    {
+      "name": "Sartorius–semitendinosus complex",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "division",
+      "blockedNote": "**In *Ascaphus* these are one muscle mass, and this dataset files them on two different records.** The complex arises by two heads separated only by a shallow cleft — a sartorial head from the fascia of the obturator externus and a semitendinosal head from the fascia of the adductor magnus, neither from bone — and inserts by a single tendon on the tibial head of the tibiofibula. In *Discoglossus* the sartorius is filed on `pubotibialis` and the semitendinosus on `ischioflexorius`, and splitting this observation between them would assert a division the animal does not show; filing it whole on either would put half an observation on the wrong record. Both heads arise from fascia, so there is no skeletal origin to record either way. What would settle it is a treatment of whether the anuran sartorius and semitendinosus are separable homologues at all — Prikryl et al. give four author's names for the pair between them and do not resolve it.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "tibiofibula",
+            "side": "proximal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Obturator externus and quadratus femoris",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "**Both present in this animal and continuous with one another**, where *Discoglossus* has an obturator externus and no quadratus femoris recognisable as an independent muscle. The obturator externus arises along the posterior margin of the ischium, its origin running continuously into that of the quadratus femoris, and both insert on the proximal section of the crista femoralis. Parked for the same reason as in *Discoglossus*: the obturator externus lies against the pectineus, which is filed on `puboischiofemoralis-externus`, and is a plausible but undemonstrated part of that complex, while `ischiotrochantericus` — the other candidate — has an internal ischial origin and this muscle is external. There is no `quadratus-femoris` record at all. **That the two are continuous here and indistinguishable in *Discoglossus* is itself the argument** that they are parts of one field, and Diogo & Molnar (2014) on the tetrapod ventral thigh would settle which.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Gemellus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "**Present here with a complete attachment, where Prikryl et al. could not recognise it as an independent muscle in *Discoglossus*.** It lies behind the quadratus femoris, arises on the dorsolateral surface of the ischium and inserts on the posterior surface of the crista femoralis. Still parked because there is no `gemellus` record: in this dataset the mammalian gemelli are a contested part of `puboischiofemoralis-externus`, and the anuran muscle would have to be argued into that field rather than assumed into it. The pair of rows — absent in one frog, fully formed in another — is the comparison that would support the argument.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Obturator internus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "The deepest muscle of the pelvis, arising along the posterior margin of the acetabulum and inserting on the posterior surface of the head of the femur. **This is the row that weakens the reason the *Discoglossus* one was parked.** There the muscle ends on the capsule of the iliac joint and never reaches the femur, which is what blocked filing it on `ischiotrochantericus` — a record whose consensus insertion is the trochanteric region of the proximal femur. Here it does reach the proximal femur, so the *Ascaphus* condition matches the record and the *Discoglossus* one does not. Filing one and not the other would split a muscle across two treatments on a difference of one frog, so both wait on Diogo & Molnar (2014) or an equivalent tetrapod treatment.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Iliolumbaris",
+      "region": "axial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Attached to the anterior margin of the sacral diapophysis. **This animal is the reason the muscle is hard to place**: Prikryl et al. state that anterior to the sacral vertebra the iliolumbaris and the longissimus dorsi cannot be distinguished here, the only difference being that the longissimus continues onto the urostyle and this does not. Parked as in *Discoglossus* — it is axial-to-pelvis and no record holds that; whether it is a differentiated anterior part of the longissimus or an independent iliac muscle is the call, and Diogo & Molnar (2014) would settle it.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "sacral-vertebrae"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Tensor fasciae latae",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Origin below the iliacus externus on the ventral surface of the iliac shaft; inserts on the fascia of the cruralis close to the base of the thigh. Parked as in *Discoglossus*: it has no skeletal insertion and no record, ending in the fascia lata. Only the iliac origin is scored. A record would have to be created, or a case made that it belongs inside `extensor-iliotibialis` with the cruralis whose fascia it tensions.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "ventral"
+          }
+        ]
+      },
+      "muscle": null
+    }
+  ]
+}
