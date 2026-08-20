@@ -155,8 +155,8 @@ def main(outdir: pathlib.Path) -> int:
         w = csv.writer(fh)
         w.writerow(["muscle_id", "muscle_name", "region", "region_origin",
                     "region_insertion", "crosses_region", "mass", "layer", "segment",
-                    "species_id", "species", "taxon_id", "taxon_clade", "taxon_order",
-                    "state", "local_name", "sources"])
+                    "species_id", "species", "stage", "taxon_id", "taxon_clade",
+                    "taxon_order", "state", "local_name", "sources"])
         rows = 0
         for m in muscles:
             for occ in m.get("occurrences", []):
@@ -166,6 +166,7 @@ def main(outdir: pathlib.Path) -> int:
                            + [m.get("mass", ""),
                             m.get("layer", ""), m.get("segment", ""),
                             occ_species(occ), SPECIES_NAME.get(occ_species(occ), ""),
+                            occ.get("stage", ""),
                             tid, next((t["clade"] for t in taxa_doc["taxa"] if t["id"] == tid), tid),
                             taxon_order.get(tid, ""),
                             occ.get("present", "yes"), occ.get("name", ""),

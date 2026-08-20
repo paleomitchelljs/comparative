@@ -54,7 +54,7 @@ current.
 > refinements** — `ribs → true-ribs`, `mandible → retroarticular-process` — and is
 > the one worth doing first.
 
-## Two schema limits closed, 2026-08-20
+## Three schema limits closed, 2026-08-20
 
 Both were costing yield on every mining round, and both are now derived rather
 than authored — see [`SCHEMA.md`](SCHEMA.md).
@@ -77,11 +77,19 @@ is the second pair of region columns, computed from the elements at each end:
 identical for a muscle that stays put, and the point of the pair for a boundary
 crosser. The app has a facet for it and `presence.csv` has three columns.
 
-**Still open**, in the order they cost most (the audit is in the session that
-produced these two): an occurrence has no **ontogenetic stage**, so Bauer's larvae
-park; **fusion is not expressible**, so *fused with its neighbour* has to be
-demoted to a `division` note; and the extraction key must name exactly one record,
-so a source's umbrella term spanning two records cannot be a key.
+**`stage`.** An occurrence is now one per (record, species, **stage**). It was one
+per (record, species), which is why a source describing both stages of one animal
+could not be scored: Bauer (1997) gives the salamandrid depressor mandibulae as one
+muscle in the adult and two separate muscles in the larva, and the two collided on
+`division`. Six rows were parked for want of the field; they are filed, and
+*Salamandra salamandra* now carries `larval / divided` beside `adult / heads`.
+Absent is its own value and **does not mean adult** — nearly every row in the
+dataset says nothing, because nearly every source does not distinguish.
+
+**Still open**, in the order they cost most: **fusion is not expressible**, so
+*fused with its neighbour* has to be demoted to a `division` note — it came up four
+times in one paper; and the extraction key must name exactly one record, so a
+source's umbrella term spanning two records cannot be a key.
 
 ## Task board
 
@@ -122,10 +130,10 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 10 | 769 |
+| `remined` | 10 | 775 |
 | `not-started` | 65 | 1734 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2583** |
+| **total** | **79** | **2589** |
 
 **10 of 79 cited sources re-mined** (12%).
 <!-- /counts:remine -->
@@ -341,9 +349,6 @@ reading that will not have to be done again.
 | `prikryl-etal-2009` | *barbourula-busuangensis* | 4 | no-record 2, homology 2 |
 | `prikryl-etal-2009` | *rana-esculenta* | 3 | no-record 3 |
 | `prikryl-etal-2009` | *xenopus-laevis* | 3 | no-record 2, homology 1 |
-| `bauer-1997` | *salamandra-salamandra* | 2 | occupied 2 |
-| `bauer-1997` | *triturus-cristatus* | 2 | occupied 2 |
-| `bauer-1997` | *triturus-vulgaris* | 2 | occupied 2 |
 | `prikryl-etal-2009` | *bombina-orientalis* | 2 | no-record 1, homology 1 |
 | `prikryl-etal-2009` | *bufo-guttatus* | 2 | homology 1, no-record 1 |
 | `prikryl-etal-2009` | *pipa-pipa* | 2 | no-record 2 |

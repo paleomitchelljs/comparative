@@ -750,9 +750,14 @@ function sourceLink(key) {
 }
 
 function renderOccTable(m) {
+  const STAGE_RANK = { larval: 1, metamorphic: 2, juvenile: 3, adult: 4 };
   const occ = [...(m.occurrences || [])].sort(
     (a, b) => (state.taxonOrder.get(a.taxon) ?? 99) - (state.taxonOrder.get(b.taxon) ?? 99)
-           || String(a.species).localeCompare(String(b.species)));
+           || String(a.species).localeCompare(String(b.species))
+           /* An animal's stages sit together, in developmental order, so the
+              larva reads above the adult it becomes rather than wherever the
+              build happened to place it. */
+           || (STAGE_RANK[a.stage] || 0) - (STAGE_RANK[b.stage] || 0));
   if (!occ.length) return `<p class="cellnote">No taxon-level records yet.</p>`;
 
   const rows = occ.map(o => {
@@ -783,6 +788,8 @@ function renderOccTable(m) {
         <span class="clade">${esc(t.clade)}</span></div>
         ${sp ? `<span class="binomial">${esc(sp.binomial)}</span>` : ''}
         <span class="common">${esc((sp && sp.common) || t.label || '')}</span>
+        ${o.stage ? `<span class="stage stage-${esc(o.stage)}"
+            title="The developmental stage this row describes. An occurrence is one per species AND stage, so an animal's larva and its adult are separate rows — which is the only way a record can say the muscle is one in the adult and two in the larva.">${esc(o.stage)}</span>` : ''}
         ${o.speciesBasis && o.speciesBasis !== 'note' && o.speciesBasis !== 'source'
           ? `<span class="basis${o.speciesBasis === 'generalised' ? ' basis-gen' : ''}"
               title="How this row was attributed to a species: ${

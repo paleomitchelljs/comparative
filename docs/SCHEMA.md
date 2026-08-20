@@ -147,6 +147,7 @@ source addresses it; that is different from a source reporting absence.
 | Field | Req | Notes |
 |---|---|---|
 | `species` | ✔ | An `id` from `species.json`. The clade is derived from it and is never stored |
+| `stage` | | `embryonic` · `larval` · `metamorphic` · `juvenile` · `adult`. **Part of the occurrence's identity** — see below |
 | `speciesBasis` | ✔ | How the attribution was made — see above |
 | `present` | | `yes` (default) · `no` · `variable` · `uncertain` · `inferred`. Use `inferred` for fossil reconstructions. **`variable` is a clade rollup, not a species observation** — at species level use `yes`/`no`/`uncertain` and put within-species variation in the note. `validate.py` warns if a `variable` row also carries attachments, since somebody who wrote down where the muscle attached did not find its presence variable |
 | `name` | ✔ if present | What this muscle is called **in that taxon's literature** |
@@ -162,6 +163,31 @@ source addresses it; that is different from a source reporting absence.
 `present: "no"` means *this source examined this taxon and did not find the
 muscle*. It does not mean the muscle is absent from the clade. Abdala & Diogo
 (2010) repeatedly document muscles present in one lizard and absent in another.
+
+### `stage` — an animal's larva and its adult are two rows
+
+**An occurrence is one per (record, species, stage).** It was one per (record,
+species) until 2026-08-20, and that is why a source describing both stages of one
+animal could not be scored: Bauer (1997) gives the salamandrid depressor mandibulae
+as **one muscle in the adult and two separate muscles in the larva**, and the two
+readings collided on `division`. Six rows were parked on `blockedBy: "occupied"`
+for want of this field, and the axolotl pass had wanted it earlier for the same
+reason.
+
+```jsonc
+{ "species": "salamandra-salamandra", "stage": "larval",  "division": "divided",  … }
+{ "species": "salamandra-salamandra", "stage": "adult",   "division": "heads",    … }
+```
+
+**Absent is its own value and does not mean adult.** Nearly every row in the
+dataset says nothing about stage, because nearly every source does not
+distinguish; reading those as adult would assert an ontogeny nobody recorded. Flag
+a row only where the source itself separates the stages.
+
+`validate.py` errors if one species appears twice at the same stage — that is the
+old "an animal cannot be in its record twice" check, widened rather than relaxed.
+Rows sort in developmental order within a species, so the larva reads above the
+adult it becomes, and an unstated row keeps the position it had.
 
 ### `division` — how far the group has split in this taxon
 

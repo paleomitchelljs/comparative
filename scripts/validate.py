@@ -79,6 +79,12 @@ HUMAN_ONLY = re.compile(
     re.I)
 MEMBERSHIP = {"established", "disputed", "variable"}
 
+# Developmental stage of the individuals a row describes. Absent is the common
+# case and means the source did not distinguish — it is NOT a synonym for adult.
+# An occurrence is identified by (record, species, stage), so a flagged row is a
+# row of its own rather than a competitor for the species' one slot.
+STAGE = {"embryonic", "larval", "metamorphic", "juvenile", "adult"}
+
 errors: list[str] = []
 warnings: list[str] = []
 
@@ -745,7 +751,7 @@ def main():
         "occupied": "another worker's row already holds this record for this species",
     }
     occ_keys, muscle_ids, region_of = set(), set(), {}
-    named_by = collections.defaultdict(dict)   # (record, species) -> {name: [source]}
+    named_by = collections.defaultdict(dict)   # (record, species, stage) -> {name: [source]}
     for path in MUSCLE_FILES:
         for mm in load(path)["muscles"]:
             muscle_ids.add(mm.get("id"))
@@ -778,7 +784,7 @@ def main():
             rec = ob.get("record")
             if rec:
                 if ob.get("name"):
-                    named_by[(rec, fsp)].setdefault(ob["name"], []).append(fsrc)
+                    named_by[(rec, fsp, ob.get("stage"))].setdefault(ob["name"], []).append(fsrc)
                 if rec not in muscle_ids:
                     err(f"{where}: record '{rec}' is not a muscle record")
                 elif ob.get("region") != region_of[rec]:
@@ -818,7 +824,7 @@ def main():
     # cost of not declaring it is visible here: these rows' attachments are in
     # the occurrence union and nowhere else, and the fix is one field.
     unheld = collections.defaultdict(list)
-    occ_by = {(mm["id"], oo.get("species")): oo
+    occ_by = {(mm["id"], oo.get("species"), oo.get("stage")): oo
               for path in MUSCLE_FILES for mm in load(path)["muscles"]
               for oo in (mm.get("occurrences") or [])}
     for f in sorted(OBS_DIR.glob("*.json")):
@@ -826,18 +832,19 @@ def main():
         per = collections.defaultdict(list)
         for ob in doc.get("observations") or []:
             if ob.get("record") and ob.get("name") and ob.get("attachments"):
-                per[ob["record"]].append(ob["name"])
-        for rec, names in per.items():
+                per[(ob["record"], ob.get("stage"))].append(ob["name"])
+        for (rec, stage), names in per.items():
             if len(names) < 2:
                 continue
-            occ = occ_by.get((rec, doc["species"]))
+            occ = occ_by.get((rec, doc["species"], stage))
             if occ is None or occ.get("division") in ("heads", "divided", "variable"):
                 continue
             extra = [n for n in names if n != occ.get("name")]
             if extra:
-                unheld[(rec, doc["species"])].extend(extra)
-    for (rec, sp), names in sorted(unheld.items()):
-        warn(f"{rec}/{sp}: {len(names)} named muscles share this occurrence and "
+                unheld[(rec, doc["species"], stage)].extend(extra)
+    for (rec, sp, stage), names in sorted(unheld.items(), key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or "")):
+        warn(f"{rec}/{sp}{f' ({stage})' if stage else ''}: {len(names)} named "
+             f"muscles share this occurrence and "
              f"their attachments are held only in the union "
              f"({', '.join(sorted(names))}). Declare `division` on the row that "
              f"carries the occurrence and the join breaks them out onto parts")
@@ -856,11 +863,13 @@ def main():
     # intercostals plus transversus thoracis are one sheet here, and the source
     # meets them separately because a dissector does. Firing on that buried the
     # cross-source synonymies this check exists to surface.
-    for (rec, sp), names in sorted(named_by.items()):
+    for (rec, sp, stage), names in sorted(named_by.items(),
+                                          key=lambda kv: (kv[0][0], kv[0][1], kv[0][2] or "")):
         if len({s for v in names.values() for s in v}) > 1 and len(names) > 1:
             says = "; ".join(f"{n!r} ({', '.join(sorted(set(v)))})"
                              for n, v in sorted(names.items()))
-            warn(f"{rec}/{sp}: sources disagree on the name — {says}. The "
+            warn(f"{rec}/{sp}{f' ({stage})' if stage else ''}: sources disagree "
+                 f"on the name — {says}. The "
                  f"occurrence keeps the first; data/mapping/ keeps them all")
 
     # Joint internal consistency. A joint's two sides use exactly the
@@ -999,14 +1008,14 @@ def main():
         # muscle may therefore carry several rows for one clade (Gallus, the
         # ostrich, the tinamou, a penguin), and their agreement or disagreement
         # is what produces the clade's presence state.
-        seen_species = Counter()
+        seen_species = Counter()   # (species, stage), which is the occurrence key
         for occ in m.get("occurrences", []):
             sid = occ.get("species")
             if sid not in species_ids:
                 err(f"{where}: occurrence references unknown species '{sid}'")
                 continue
             tid = species_clade[sid]
-            seen_species[sid] += 1
+            seen_species[(sid, occ.get("stage"))] += 1
 
             # A clade-level placeholder and a real animal must not be able to
             # pass for one another in either direction.
@@ -1020,6 +1029,10 @@ def main():
             if basis == "generalised" and not is_gen:
                 err(f"{where}/{sid}: speciesBasis='generalised' but '{sid}' is a real "
                     f"species — say which basis actually attributed it")
+
+            st = occ.get("stage")
+            if st is not None and st not in STAGE:
+                err(f"{where}/{sid}: stage='{st}' not in {sorted(STAGE)}")
 
             check_rows(occ.get("attachments", {}), f"{where}/{sid}", taxon=tid)
 
@@ -1088,9 +1101,16 @@ def main():
             if pres in {"yes", "inferred"} and not occ.get("name") and not subdivided:
                 warn(f"{where}/{tid}: present='{pres}' but no local name given")
 
-        for sid, n in seen_species.items():
+        # One row per (species, stage). Two rows for one animal are legitimate
+        # only when they are two ontogenetic stages of it — a larval and an adult
+        # description are two observations of two different things. Two rows with
+        # the same stage are the old error: an animal cannot be in its record
+        # twice.
+        for (sid, st), n in seen_species.items():
             if n > 1:
-                err(f"{where}: species '{sid}' appears in {n} occurrence rows")
+                err(f"{where}: species '{sid}'"
+                    f"{f' at stage {st}' if st else ' with no stage'} appears in "
+                    f"{n} occurrence rows")
 
         hom = m.get("homology", {})
         conf = hom.get("confidence")

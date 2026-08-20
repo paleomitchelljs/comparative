@@ -696,3 +696,13 @@ td .binomial + .common { display: block; }
    an unrecorded one — and marked when it crosses. */
 .chip.span { font-variant-numeric: tabular-nums; color: var(--ink-2); }
 .chip.span.crosses { color: var(--mod); background: var(--mod-bg); }
+
+/* Developmental stage. Only on rows where a source distinguished one, because
+   absent means unstated and not adult — most of the dataset says nothing. */
+.stage {
+  display: inline-block; font-family: var(--font-ui); font-size: 0.66rem;
+  text-transform: uppercase; letter-spacing: 0.05em; margin-left: 0.35rem;
+  padding: 0.05rem 0.32rem; border-radius: 3px;
+  color: var(--unc); background: var(--unc-bg);
+}
+.stage-adult { color: var(--ink-3); background: var(--bg-sunken); }

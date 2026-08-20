@@ -89,7 +89,7 @@ helveticus*, *T. karelini*, *T. marmoratus*, *T. vulgaris* — and this file hel
 the rule `MINING.md` says is broken most often, and this is the second source in two
 days to break it.
 
-**Now: 10 adults filed in 12 rows, 3 larval columns parked, `remined`.** Nine species
+**Now: 10 adults and 3 larval columns filed, 18 rows, nothing parked, `remined`.** Nine species
 added to `species.json`. Caudata attachment coverage 76% → 79%, cranial 51% → 52%.
 
 ### Four of these muscles had never been described
@@ -138,16 +138,30 @@ jaw openers pulling from two anchors, one cranial and one axial, which is the sa
 functional split the ceratomandibularis makes in *Necturus* against the hyobranchial
 apparatus.
 
-### The larvae are parked, and the blocker is the schema
+### ~~The larvae are parked~~ — filed 2026-08-20, and they are why `stage` exists
 
 Bauer's Results open with larvae and state that *Salamandra salamandra*, *Triturus
 cristatus* and *T. vulgaris* show **no noteworthy differences among their depressor
 muscles**. The larval muscle is two separate muscles where the salamandrid adult's is
-one; an occurrence carries no ontogenetic stage, so a larval row would either collide
-with the adult row on `division` or stand in for the species. Both are parked on
-`occupied` in all three species' files, with attachments, and `muscle` set to
-`depressor-mandibulae` so the validator keeps asking. **A stage field on the
-occurrence settles it** — the same thing the axolotl pass wanted.
+one, and an occurrence carried no ontogenetic stage — so a larval row would either
+collide with the adult row on `division` or stand in for the species. Six rows parked
+on `occupied` for want of one field.
+
+**The field exists now.** An occurrence is one per (record, species, *stage*), and
+these six are the rows it was added for. *Salamandra salamandra* carries two rows on
+`depressor-mandibulae`: **larval, `divided`, two separate muscles**, and **adult,
+`heads`, two slips of one**. That transformation is the paper's subject and the
+dataset could not hold it a day ago.
+
+*Triturus cristatus* is now a larval column and nothing else, which is exactly right
+— Bauer describes its larva and takes his adult *Triturus* from four other species.
+
+The larval posterior muscle is the one to read: anterior fibres from the squamosal,
+posterior fibres **from the fascia of the anterior muscle itself** — scored as an
+attachment onto this same record — converging with it onto the ligamentum
+hyomandibulare. A jaw opener that arises partly off its own partner, and the same
+ligament most of *Necturus*'s ceratomandibularis inserts on, so two muscles of two
+different arches share a tendon and neither reaches the mandible directly.
 
 The larval posterior muscle is the one to read: anterior fibres from the squamosal,
 posterior fibres **from the fascia of the anterior muscle itself**, converging with it

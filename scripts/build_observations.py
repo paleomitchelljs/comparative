@@ -73,6 +73,14 @@ NOTE_SEP = "\n\n"
 # and the filename declares the animal now.
 FIRST_WINS = ("name", "speciesBasis")
 
+# Developmental order, for sorting an animal's rows. 0 is "not stated", which is
+# most of the dataset and is NOT a synonym for adult — it means the source did
+# not distinguish, and reading it as adult would assert an ontogeny nobody
+# recorded. It sorts first so a species keeps the position it had before any
+# stage existed.
+STAGE_ORDER = {None: 0, "embryonic": 1, "larval": 2, "metamorphic": 3,
+               "juvenile": 4, "adult": 5}
+
 
 def occurrence_keys(row):
     """The occurrence's field order, for a row `split()` did not write.
@@ -409,17 +417,28 @@ def join(into):
     for path in muscle_files():
         doc = json.load(open(path))
         for m in doc["muscles"]:
-            # An occurrence is identified by (record, species): that pair is
-            # unique across all 1649 committed occurrences, which is why the
-            # merge can key on the species the filename already declares rather
-            # than on `_occ`. `_occ` survives as what it always was underneath —
-            # the occurrence's ORDER within its record — so a row written by
-            # hand needs no index and lands after the rows that have one.
-            fields = {}                           # species -> {field: value}
-            keys = {}                             # species -> field order
-            order = {}                            # species -> [_occ, first seen]
-            said_by = {}                          # (species, field) -> source
-            contributed = collections.defaultdict(set)   # (species, field) -> notes
+            # An occurrence is identified by (record, species, stage). It was
+            # (record, species) until a stage field existed, and that pair being
+            # unique is what let the merge key on the species the filename
+            # declares rather than on `_occ`. Adding the stage widens the key
+            # rather than changing the idea: an animal's larva and its adult are
+            # two observations of two different things, and a record that holds
+            # one muscle in the adult and two in the larva — Bauer's salamandrid
+            # depressor mandibulae — could not say so while they shared a row.
+            #
+            # `stage` absent is its own value, and means the source did not
+            # distinguish. It is NOT a synonym for adult: nearly every row in the
+            # dataset is unstated, and reading those as adult would assert an
+            # ontogeny nobody recorded.
+            #
+            # `_occ` survives as what it always was underneath — the occurrence's
+            # ORDER within its record — so a row written by hand needs no index
+            # and lands after the rows that have one.
+            fields = {}                           # (species, stage) -> {field: value}
+            keys = {}                             # (species, stage) -> field order
+            order = {}                            # (species, stage) -> [_occ, first seen]
+            said_by = {}                          # (species, stage, field) -> source
+            contributed = collections.defaultdict(set)
             srcs_of = collections.defaultdict(list)
             # Rows carrying an `_occ` — the ones that came out of the previous
             # store — merge before rows written by hand. So an established
@@ -428,22 +447,23 @@ def join(into):
             # them, and a new source's paragraph reads after the older one.
             # Every committed row has an `_occ`, so this does not reorder
             # anything that exists today.
-            # (species, source) -> [row], for the part synthesis below. A group
-            # of several named rows from ONE source is several muscles the
-            # source distinguishes inside one homology group; several rows from
-            # DIFFERENT sources are one muscle described twice. Only the first
-            # is a division, which is why this is keyed on the source too.
+            # (species, stage, source) -> [row], for the part synthesis below.
+            # A group of several named rows from ONE source is several muscles
+            # the source distinguishes inside one homology group; several rows
+            # from DIFFERENT sources are one muscle described twice. Only the
+            # first is a division, which is why this is keyed on the source too.
             per_source = collections.defaultdict(list)
             settled = sorted(enumerate(by_record.get(m["id"], [])),
                              key=lambda t: (t[1][2].get("_occ") is None, t[0]))
             for seen, (sp, src, row) in ((i, t) for i, t in settled):
+                who = (sp, row.get("stage"))
                 if row.get("name") and row.get("attachments"):
-                    per_source[(sp, src)].append(row)
-                slot = order.setdefault(sp, [UNPLACED, seen])
+                    per_source[(who, src)].append(row)
+                slot = order.setdefault(who, [UNPLACED, seen])
                 if row.get("_occ") is not None:
                     slot[0] = min(slot[0], row["_occ"])
-                got = fields.setdefault(sp, {})
-                shape = keys.setdefault(sp, [])
+                got = fields.setdefault(who, {})
+                shape = keys.setdefault(who, [])
                 for k in occurrence_keys(row):
                     if k not in shape:
                         shape.append(k)
@@ -451,9 +471,9 @@ def join(into):
                         continue
                     if k not in got:
                         got[k] = copy.deepcopy(row[k]) if k in ACCUMULATE else row[k]
-                        said_by[(sp, k)] = src
+                        said_by[(who, k)] = src
                         if k in PROSE:
-                            contributed[(sp, k)].add(row[k])
+                            contributed[(who, k)].add(row[k])
                     elif k == "attachments":
                         for end, rows in row[k].items():
                             into_end = got[k].setdefault(end, [])
@@ -468,39 +488,51 @@ def join(into):
                         # text: many of these notes carry blank lines of their
                         # own, so splitting the accumulated string never finds a
                         # multi-paragraph note and every build appended it again.
-                        if row[k] not in contributed[(sp, k)]:
+                        if row[k] not in contributed[(who, k)]:
                             got[k] += NOTE_SEP + row[k]
-                            contributed[(sp, k)].add(row[k])
+                            contributed[(who, k)].add(row[k])
                     elif got[k] != row[k]:
+                        stage_note = f" ({who[1]})" if who[1] else ""
                         conflicts.append(
-                            f"  {m['id']} / {sp}: '{k}' — {said_by[(sp, k)]} and "
-                            f"{src} say different things")
-                if src != "(unsourced)" and src not in srcs_of[sp]:
-                    srcs_of[sp].append(src)
+                            f"  {m['id']} / {sp}{stage_note}: '{k}' — "
+                            f"{said_by[(who, k)]} and {src} say different things")
+                if src != "(unsourced)" and src not in srcs_of[who]:
+                    srcs_of[who].append(src)
                     # Restore the order the record had, not the order the files
                     # happen to be read in.
                     was = row.get("_srcs") or []
-                    srcs_of[sp].sort(
+                    srcs_of[who].sort(
                         key=lambda x: was.index(x) if x in was else len(was))
-            for (sp, src), group in per_source.items():
-                if sp in fields:
-                    attach_parts(fields[sp], src, group, m["id"], sp, unheld)
+            for (who, src), group in per_source.items():
+                if who in fields:
+                    attach_parts(fields[who], src, group, m["id"], who[0], unheld)
 
             out = []
-            for sp in sorted(order, key=lambda s: tuple(order[s])):
+            # Unstated stage sorts before a stated one, so an animal described
+            # without reference to ontogeny keeps the position it had and its
+            # larva follows. Within a species the vocabulary's own order applies,
+            # which is developmental order and not alphabetical.
+            for who in sorted(order, key=lambda w: (tuple(order[w]),
+                                                    STAGE_ORDER.get(w[1], 0))):
+                sp, stage = who
                 occ = {}
-                for k in keys[sp]:
+                for k in keys[who]:
                     if k == "species":
                         occ["species"] = sp
                     elif k == "sources":
-                        if srcs_of[sp]:
-                            occ["sources"] = srcs_of[sp]
-                    elif k in fields[sp]:
-                        occ[k] = fields[sp][k]
+                        if srcs_of[who]:
+                            occ["sources"] = srcs_of[who]
+                    elif k in fields[who]:
+                        occ[k] = fields[who][k]
+                # `stage` sits immediately after `species`, where a reader looks
+                # for which animal this row is about — it is part of that answer.
+                if stage and "stage" not in occ:
+                    occ = {"species": sp, "stage": stage,
+                           **{k: v for k, v in occ.items() if k != "species"}}
                 # `parts` can be gained by the synthesis above on an occurrence
                 # whose recorded key order never had it.
-                if "parts" in fields[sp] and "parts" not in occ:
-                    occ["parts"] = fields[sp]["parts"]
+                if "parts" in fields[who] and "parts" not in occ:
+                    occ["parts"] = fields[who]["parts"]
                 occ.pop("spans", None)
                 sp_spans = spans_of(occ.get("attachments"))
                 if sp_spans:

@@ -6,6 +6,7 @@
   "observations": [
     {
       "speciesBasis": "note",
+      "stage": "adult",
       "name": "Depressor mandibulae",
       "present": "yes",
       "division": "single",
@@ -26,11 +27,11 @@
       "record": "depressor-mandibulae"
     },
     {
-      "name": "Depressor mandibulae anterior (larva)",
-      "region": "cranial",
-      "record": null,
-      "blockedBy": "occupied",
-      "blockedNote": "**This dataset holds one occurrence per (record, species) and has no ontogenetic stage.** A larval row here would either collide with this animal's adult row on `division` — the adult depressor mandibulae is undivided or two-slipped, the larval one is two separate muscles — or, where there is no adult row, stand in for the species as though the larval condition were its condition. Neither is true, so both larval muscles are parked with their attachments. Settled by a stage field on the occurrence, which the axolotl pass wanted for the same reason. Bauer states that the salamandrid larvae he examined — *Salamandra salamandra*, *Triturus cristatus* and *T. vulgaris* — show **no noteworthy differences among their depressor muscles**, so the three parked columns are one description of three animals rather than three descriptions.",
+      "speciesBasis": "note",
+      "stage": "larval",
+      "name": "Depressor mandibulae anterior",
+      "present": "yes",
+      "division": "divided",
       "attachments": {
         "origin": [
           {
@@ -50,14 +51,15 @@
           }
         ]
       },
-      "muscle": "depressor-mandibulae"
+      "attachmentNote": "**Larval salamandrid**, Bauer (1997). The anterior muscle makes up the bulk of the larval depressor: origin on the squamosal by anterior fibres and on the otic capsule by posterior ones, deep to the posterior muscle, inserting lateral to it on the gonial — Bauer's prearticular — and on the postarticular part of Meckel's cartilage. Bauer records **no noteworthy differences among the larvae he examined**, so this row and its counterparts in *Triturus cristatus* and *T. vulgaris* are one description of three animals rather than three descriptions.\n\nRead it against the adult row on this record: the adult salamandrid depressor mandibulae is one muscle and the larval one is two, which is the difference a stage field exists to hold. It could not be held at all until 2026-08-20, when these rows were parked on `occupied` because an occurrence carried no stage.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
     },
     {
-      "name": "Depressor mandibulae posterior (larva)",
-      "region": "cranial",
-      "record": null,
-      "blockedBy": "occupied",
-      "blockedNote": "**This dataset holds one occurrence per (record, species) and has no ontogenetic stage.** A larval row here would either collide with this animal's adult row on `division` — the adult depressor mandibulae is undivided or two-slipped, the larval one is two separate muscles — or, where there is no adult row, stand in for the species as though the larval condition were its condition. Neither is true, so both larval muscles are parked with their attachments. Settled by a stage field on the occurrence, which the axolotl pass wanted for the same reason. Bauer states that the salamandrid larvae he examined — *Salamandra salamandra*, *Triturus cristatus* and *T. vulgaris* — show **no noteworthy differences among their depressor muscles**, so the three parked columns are one description of three animals rather than three descriptions. The posterior muscle is the more interesting of the two to have parked: it is a flat sheet lying lateral to the anterior muscle, taking its anterior fibres from the squamosal and its posterior fibres **from the fascia of the anterior muscle itself**, and converging with it onto a common tendon — the ligamentum hyomandibulare. A jaw opener that arises partly off its own partner.",
+      "speciesBasis": "note",
+      "stage": "larval",
+      "name": "Depressor mandibulae posterior",
+      "present": "yes",
       "attachments": {
         "origin": [
           {
@@ -73,7 +75,9 @@
           }
         ]
       },
-      "muscle": "depressor-mandibulae"
+      "attachmentNote": "**Larval salamandrid**, Bauer (1997). A flat muscle lateral to the anterior one, taking its anterior fibres from the squamosal and its **posterior fibres from the fascia of the anterior muscle itself** — scored as an attachment onto this same record — and converging with it onto a common tendon, the ligamentum hyomandibulare. A jaw opener that arises partly off its own partner.\n\nIt is also the route by which the larval ceratomandibularis reaches the jaw: in *Necturus* most of that muscle inserts on the same ligament, so two muscles of two different arches share a tendon and neither reaches the mandible directly.",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
     }
   ]
 }
