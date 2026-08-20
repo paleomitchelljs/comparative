@@ -113,3 +113,44 @@ language that says in one word what English says in four.
 Four of the ten works in `WORKLIST.md`'s acquisition table are German, so the check
 would have told a future reader to skip Gaupp, Ribbing, Lakjer and Ogushi on
 arrival. `MINING.md` is corrected.
+
+## Re-mine, first pass: the cranial half, and a correction to the audit
+
+The audit said "Osawa describes the cranial and axial musculature and none of it
+was taken", and drew the conclusion that Lepidosauria's thin cranial column was
+the gap. **The first half is true and the conclusion is wrong.** *Sphenodon*
+already carries ten cranial rows from Haas (1973), a dedicated Rhynchocephalia and
+Squamata jaw-muscle monograph, which is the better source for that animal's jaw
+and is `homologyScope` besides. Osawa is a second independent worker on an animal
+already scored, not an empty column.
+
+That matters for what to do with him. The dataset holds **one row per record per
+species**, so a second description cannot simply be added alongside — it has to be
+merged into Haas's row or left out. Osawa's Kaumuskeln are therefore **parked on
+`occupied`**, a `blockedBy` kind this pass added for exactly this: two workers, one
+animal, one row.
+
+His jaw musculature, in full:
+
+| Osawa's name | Belongs on | Innervation |
+|---|---|---|
+| M. capiti-mandibularis s. temporo-massetericus | `adductor-mandibulae-externus` | V3 |
+| M. pterygoideus externus | `adductor-mandibulae-internus` | V3 |
+| M. pterygoideus internus | `adductor-mandibulae-internus` | V3 |
+| M. parieto-mandibularis | `depressor-mandibulae` | **VII** |
+
+**Two things in that table are worth carrying across whatever is done with the
+rows.** Osawa states that no portion answering to a *masseter* is yet
+differentiated in *Hatteria* — a presence claim, not an absence of description.
+And he innervates the parieto-mandibularis from the **facialis**, noting that the
+"Digastricus" of earlier authors is justified on that ground and that the muscle
+ought really to be discussed apart from the other three. That is the arch-2
+identity of the depressor mandibulae argued from innervation in 1898.
+
+He also remarks that the pterygoideus externus and internus insertions are
+continuous and that the two cannot be sharply separated — the boundary is only
+indicated by the course of the third trigeminal branch.
+
+**Still not taken:** the axial musculature, the neck (he divides it into ventral
+and deep groups and names five ventral muscles on the page after the Kaumuskeln),
+and Part III on the nerves, which describes the plexuses in their own right.

@@ -95,7 +95,7 @@ decides which homology group it belongs to. Those rows live in
 and move no coverage figure. See [`SCHEMA.md`](SCHEMA.md#observationsjson).
 
 <!-- counts:parked -->
-205 extracted observations from 3 sources are waiting for a record (139 on partial, 28 on no-record, 26 on nomenclature, 11 on division, 1 on homology). They carry no coverage weight — they are mining already done.
+209 extracted observations from 4 sources are waiting for a record (139 on partial, 28 on no-record, 26 on nomenclature, 11 on division, 4 on occupied, 1 on homology). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->

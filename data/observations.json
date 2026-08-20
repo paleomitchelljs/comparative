@@ -5,7 +5,8 @@
     "homology": "The muscle is identified but which record it belongs to is an open question in the literature.",
     "no-record": "The muscle has no record in this dataset yet, and creating one needs a cross-taxon treatment that has not been read.",
     "division": "The source splits or fuses a muscle differently from the record, and which part maps where is unsettled.",
-    "partial": "The source states a difference, an extent or a variation rather than a complete attachment — 'the origin ranges from the lateral half in Testudo to the lateral fifth in Emys'. The record is usually known; what needs judgement is whether the statement stands as an occurrence on its own or only refines one."
+    "partial": "The source states a difference, an extent or a variation rather than a complete attachment — 'the origin ranges from the lateral half in Testudo to the lateral fifth in Emys'. The record is usually known; what needs judgement is whether the statement stands as an occurrence on its own or only refines one.",
+    "occupied": "The record already carries a row for this species from another worker, and the dataset holds one row per (record, species). Two independent descriptions of one animal do not conflict — METHODS is explicit that an attachment is an observation and does not age — but merging them into one row, or deciding which worker's reading the row should state, is judgement."
   },
   "observations": [
     {
@@ -487,6 +488,42 @@
       "blockedBy": "no-record",
       "blockedNote": "Avian tracheal, laryngeal and lingual muscles. `hypobranchial-muscles` takes the geniohyoid and hypoglossal group; these sit outside it and outside `constrictor-laryngis`, whose occurrences are the salamander and lizard condition. Needs an avian cranial treatment — Jones et al. (2019) on the pigeon head is the nearest thing in the corpus.",
       "attachmentNote": "**Origin.** The ventro-lateral surfaces of three or four tracheal rings pro- vide fleshy origin. Insertion —The medio-ventral edge of the posterior rim of the cricoid cartilage receives the fleshy anterior end of the muscle (fig. 10). MUSCLES OF THE TONGUE REGION 315) **Insertion.** The medio-ventral edge of the posterior rim of the cricoid cartilage receives the fleshy anterior end of the muscle (fig. 10). MUSCLES OF THE TONGUE REGION 315) (Anconal and palmar are dorsal and ventral in this paper's usage. Prose only — the structured rows wait on the record, not on another reading.)"
+    },
+    {
+      "id": "osawa-1898:capiti-mandibularis",
+      "source": "osawa-1898",
+      "species": "sphenodon-punctatus",
+      "name": "M. capiti-mandibularis s. temporo-massetericus",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `adductor-mandibulae-externus`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "Ein sehr kräftiger, breiter Muskel, covered laterally by the fascia temporalis et masseterica and by both jugal arches, filling most of the fossa temporalis. **Origin** from the parietal, squamosal, quadrate, the inner surface of the upper jugal arch, and the covering fascia temporalis. It descends on the medial side of the lower jugal arch without attaching to it. **Insertion** on the tip of the coronoid, its inner surface, and the outer surface of the posterior third of the lower jaw. **Osawa states that no separate portion answering to a masseter is yet differentiated.** Innervated by the third branch of the trigeminal."
+    },
+    {
+      "id": "osawa-1898:parieto-mandibularis",
+      "source": "osawa-1898",
+      "species": "sphenodon-punctatus",
+      "name": "M. parieto-mandibularis",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `depressor-mandibulae`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "An equally powerful muscle. **Origin** from the posterior margin of the parietal and, in smaller part, from the squamosal and the ligamentum nuchae. After a weakly arched course it **inserts** on the posterior end of the lower jaw. **Innervated by the facialis, not the trigeminal** — Osawa notes that the designation 'Digastricus' proposed by earlier authors is justified in that respect, and that this muscle really ought to be discussed separately from the other three jaw muscles."
+    },
+    {
+      "id": "osawa-1898:pterygoideus-externus",
+      "source": "osawa-1898",
+      "species": "sphenodon-punctatus",
+      "name": "M. pterygoideus externus",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `adductor-mandibulae-internus`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "A strong but somewhat slenderer muscle. **Origin** from the parietal, postfrontal, prootic, the columella, the membrane stretched between prootic and columella, and the outer face of the pterygoid. **Insertion** on the inner surface of the coronoid. Trigeminal V3."
+    },
+    {
+      "id": "osawa-1898:pterygoideus-internus",
+      "source": "osawa-1898",
+      "species": "sphenodon-punctatus",
+      "name": "M. pterygoideus internus",
+      "blockedBy": "occupied",
+      "blockedNote": "Belongs on `adductor-mandibulae-internus`, which already carries a *Sphenodon* row from Haas (1973) — a dedicated Rhynchocephalia/Squamata jaw-muscle monograph and the record's better source. Osawa is an independent description of the same animal fifteen years earlier, so the two do not conflict; the dataset holds one row per record per species, so merging them, or deciding which reading the row should state, is judgement. **Osawa's innervation of the parieto-mandibularis by the facialis is the detail most worth carrying across.**",
+      "attachmentNote": "A shorter but very powerful muscle. **Origin** from the ventral margin and inner surface of the quadrate, the infraorbital floor, the pterygoid and the transversum. It raises a strong bulge into the pharyngeal cavity — the Prominentia muscularis of Holl. **Insertion** on the medial surface and ventral margin of the posterior fifth of the lower jaw. Its insertion is continuous with that of the pterygoideus externus; Osawa says the two cannot be sharply separated and that the boundary is really only indicated by the course of the third trigeminal branch. V3."
     },
     {
       "id": "walker-1973:caretta-caretta-049",
