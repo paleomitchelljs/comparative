@@ -44,6 +44,40 @@ and `STATUS.md` reports them separately as mining already done.
 The validator warns if a record already carries an occurrence for the same source,
 species and name.
 
+### Never drop an attachment for want of somewhere to put it
+
+**If the source states an attachment, it gets recorded.** Not having a record for
+the muscle is what `record: null` is for; not having an *element* for the thing it
+attaches to is not a reason to score one end and lose the other. Add the element.
+
+`epipubic-cartilage-anuran` and `dorsal-fascia-anuran` were both added on
+2026-08-20 after a pass scored only the iliac end of three *Xenopus* attachments —
+a muscle running to the cartilaginous epipubis, and two whose whole origin is on
+the dorsal fascia. The reasoning at the time was that using the existing
+`epipubic-cartilage` would assert a homology the paper does not make, and it would
+have; but the conclusion was wrong. **A new element plus a `possibly-corresponds-to`
+edge records the observation and the open question at once**, which is what that
+relation exists for, and it is how `epipubic-cartilage` and `epipubic-bone` are
+already handled.
+
+The asymmetry is the whole argument. Fixing a homology call later costs an edit.
+Recovering a dropped attachment costs reading the paper again — and the paper is
+cited from `sources.json`, so anything you *did* record can always be checked, but
+only if it is there to check.
+
+Three things are genuinely not scorable, and the note is their home:
+
+- **An attachment onto another muscle.** Liparini's ambiens pars II ends on the
+  femoro-tibialis; *Xenopus*'s latissimus dorsi ends on two thigh muscles. There is
+  no element and inventing one would be worse.
+- **An either/or the source refuses to resolve.** Liparini & Schultz give two
+  candidate origins for each puboischiofemoralis internus and decline to choose;
+  attachment rows can only say "and", so scoring both would assert a claim the
+  authors explicitly withhold.
+- **What the source does not state.** An empty `attachments` reads as unrecorded,
+  which is true and useful. Springer & Johnson could not determine the cleithral
+  origin of PCl in *Anguilla* and say so; that is a fact about the specimen.
+
 ---
 
 ## Check the paper before you open it

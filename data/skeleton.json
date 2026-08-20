@@ -1212,6 +1212,24 @@
       }
     },
     {
+      "id": "dorsal-fascia-anuran",
+      "label": "Dorsal fascia (anuran)",
+      "kind": "fascia",
+      "region": "pelvic",
+      "segment": "girdle",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "The sheet over the anuran pelvic region, thickened posteriorly into a ligamentous plate that runs from the anterior part of one iliac shaft across to its counterpart. Added because two muscles in *Xenopus laevis* take their whole origin from it and had nowhere to attach: the outer of the three layers of the iliacus externus arises from that ligamentous plate, and the latissimus dorsi is attached to the fascia as well as covering the suprascapula.\n\nA soft-tissue element on the same footing as `knee-aponeurosis` and `iliotibial-tract` — carried because muscles demonstrably end on it, not because it is skeletal. It leaves no osteological trace, so `correlate` is false, and it belongs with the finding that a large part of the anuran thigh has no bony distal attachment."
+      }
+    },
+    {
       "id": "dorsomesial-ridge-radius",
       "label": "Dorsomesial ridge of the radius",
       "kind": "bone",
@@ -1430,6 +1448,37 @@
             "reilly-white-2003"
           ],
           "note": "Both are an anterior process of the pubis, which is the whole of the case for calling them one element, and these two were one record until that was noticed. **No cited source demonstrates the homology.** Walker describes the turtle cartilage and compares no mammal; Cunningham describes three marsupials and compares no reptile; Reilly & White (2003) is a two-page functional study of *Monodelphis* locomotion that never mentions a turtle.\n\nThree things argue against merging them, none decisive. The reptilian structure is cartilage and the mammalian one an ossification with its own joint. The mammalian element is not uniform even within Cunningham's three marsupials — a large paired bone in the cuscus, a cartilaginous nodule in the thylacine. And the muscles differ: in this dataset the turtle cartilage carries the puboischiofemoralis internus while the mammalian bone carries the adductor femoris and the puboischiotibialis, so the shared-attachment argument the old note made is not borne out by its own rows."
+        }
+      ]
+    },
+    {
+      "id": "epipubic-cartilage-anuran",
+      "label": "Epipubic cartilage (anuran)",
+      "kind": "cartilage",
+      "region": "pelvic",
+      "segment": "girdle",
+      "partOf": "pelvic-girdle",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "anura"
+        ],
+        "sources": [
+          "prikryl-etal-2009"
+        ],
+        "note": "The anterior cartilage of the anuran pelvis. Prikryl et al. (2009) record a short muscle running from the descending part of the ilium onto its ventral surface in *Xenopus laevis*, standing where the other frogs' coccygeosacralis stands, and also described by Grobbelaar (1924).\n\n**Prikryl et al. use two terms and do not say whether they mean one structure.** They call this the *cartilaginous epipubis* where that muscle inserts, and the *praepubis* where the sartorius and the rectus abdominis attach in the same animal. The rows follow the paper term by term: attachments the paper calls epipubic are on this element, attachments it calls praepubic are on `pubis` with the term in the note. If the two are one structure, those rows move here and nothing else changes."
+      },
+      "correspondences": [
+        {
+          "relation": "possibly-corresponds-to",
+          "to": "epipubic-cartilage",
+          "basis": "positional",
+          "confidence": "undemonstrated",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "note": "Both are an anterior cartilaginous continuation of the pubis, which is the whole of the case. **No cited source demonstrates the homology**, and none of the sources here treats the anuran structure alongside the turtle and lepidosaur one. Kept as a separate element on the same reasoning that keeps `epipubic-cartilage` and `epipubic-bone` apart — those two were one record until it was noticed that nothing demonstrated it. Merge if a source establishes it; the correspondence is what records that the question is open rather than unasked."
         }
       ]
     },

@@ -10643,10 +10643,17 @@
           "name": "Latissimus dorsi",
           "present": "yes",
           "speciesBasis": "source",
-          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **No bony attachment is stated and none is scored**: both ends as described are muscle or fascia, and this record's other anuran rows come from sources that did give bone.",
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **Neither end is bone.** The origin on the dorsal fascia is scored on `dorsal-fascia-anuran`; the insertion is onto the superficial layers of the glutaeus maximus and cruralis, muscle onto muscle, and there is no element for that. So the row carries one attachment and the note carries the other end — which is the accurate shape of this observation, not a gap in it.",
           "sources": [
             "prikryl-etal-2009"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "dorsal-fascia-anuran"
+              }
+            ]
+          }
         }
       ],
       "homology": {

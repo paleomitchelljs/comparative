@@ -200,15 +200,34 @@ the ilium rather than the ischium, the adductor magnus wraps around the femur to
 insert dorsally, and the dorsal crista of the ilium is palpable through the skin —
 an external landmark for an internal muscle boundary.
 
+### Two elements this animal needed
+
+`epipubic-cartilage-anuran` and `dorsal-fascia-anuran`. The first pass at *Xenopus*
+scored only the iliac end of three attachments for want of somewhere to put the
+other end, which was the wrong call and is now the worked example in
+[`MINING.md`](MINING.md#never-drop-an-attachment-for-want-of-somewhere-to-put-it):
+a new element plus a `possibly-corresponds-to` edge records the observation and the
+open homology question at once, where dropping the attachment records neither.
+
+`epipubic-cartilage-anuran` carries a `possibly-corresponds-to` edge to
+`epipubic-cartilage`, which is **not** mammalian — it is the turtle and lepidosaur
+anterior pubic cartilage, and the case for calling the anuran structure the same
+thing is positional and undemonstrated, exactly as `epipubic-cartilage` and
+`epipubic-bone` already stand to each other. Prikryl et al. also use *praepubis*
+for what may be the same structure and do not say whether it is; the rows follow
+the paper term by term and the element's note records the question.
+
+`dorsal-fascia-anuran` carries the whole origin of two muscles here — the outer of
+the three iliacus externus layers, from the ligamentous plate thickening its
+posterior margin, and the latissimus dorsi. Both had been unscored.
+
 ### *Xenopus laevis* — the most divergent of the four
 
 Its **iliacus externus is in three layers**, the outermost arising not from bone
 but from a ligamentous plate in the dorsal fascia that crosses to its counterpart
 on the other side. Its **coccygeosacralis is absent**, and in its place is a short
-unnamed muscle from the descending ilium to the cartilaginous epipubis — parked
-twice over, since no record holds an ilium-to-epipubis muscle and `epipubic-cartilage`
-is scoped to mammals, so calling the anuran praepubic cartilage that structure
-would be a homology claim the paper does not make. Its **rectus abdominis reaches
+unnamed muscle from the descending ilium to the cartilaginous epipubis — parked,
+because no record holds an ilium-to-epipubis muscle, but **scored at both ends**. Its **rectus abdominis reaches
 the femur**, and its **latissimus dorsi ends on two thigh muscles** — which is why
 a pelvic-and-thigh paper describes a shoulder muscle at all.
 

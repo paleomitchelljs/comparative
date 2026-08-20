@@ -65,6 +65,9 @@
           {
             "element": "ilium",
             "side": "dorsal"
+          },
+          {
+            "element": "dorsal-fascia-anuran"
           }
         ],
         "insertion": [
@@ -79,7 +82,7 @@
           }
         ]
       },
-      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **Split into three layers, which Prikryl et al. call a peculiar feature of this animal** — against two more or less independent parts in *Discoglossus* and a single pars externa in *Rana*. Only the inner and middle layers arise from the ilium; the outer arises from a ligamentous plate in the dorsal fascia and is not scored as a skeletal origin. This is the widest range of iliac surfaces any anuran occurrence on this record carries: lateral, ventral, medial and dorsal."
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **Split into three layers, which Prikryl et al. call a peculiar feature of this animal** — against two more or less independent parts in *Discoglossus* and a single pars externa in *Rana*. Only the inner and middle layers arise from the ilium; the outer arises from the ligamentous plate thickening the posterior margin of the dorsal fascia, which is scored on `dorsal-fascia-anuran` — an element added for it, since a muscle layer with its whole origin on fascia would otherwise leave no row at all. This is the widest range of iliac surfaces any anuran occurrence on this record carries: lateral, ventral, medial and dorsal."
     },
     {
       "name": "Gracilis major and gracilis minor",
@@ -106,7 +109,7 @@
           }
         ]
       },
-      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Origin partly on the ischium but **predominantly on the praepubis**, which the row carries as the anterior pubis for want of a separate element. Prikryl et al. add that de Sá & Hillis (1990) observed partial fusion of the sartorius and semitendinosus in *Xenopus* and *Silurana*, and that the semitendinosus's anterior margin may fuse with the sartorius surface (Grobbelaar 1924). **That is the same fusion *Ascaphus* shows completely**, where the two are a single mass — so the complex appears independently in a pipid and in the basal-most frog, which is worth a second look before either is treated as diagnostic."
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Origin partly on the ischium but **predominantly on the praepubis**, which the row carries as the anterior pubis because that is the term the paper uses here — it calls the structure the *cartilaginous epipubis* where the ilio-epipubic muscle inserts, and does not say whether the two names mean one thing. See `epipubic-cartilage-anuran`, which records the question. Prikryl et al. add that de Sá & Hillis (1990) observed partial fusion of the sartorius and semitendinosus in *Xenopus* and *Silurana*, and that the semitendinosus's anterior margin may fuse with the sartorius surface (Grobbelaar 1924). **That is the same fusion *Ascaphus* shows completely**, where the two are a single mass — so the complex appears independently in a pipid and in the basal-most frog, which is worth a second look before either is treated as diagnostic."
     },
     {
       "name": "Semitendinosus",
@@ -141,7 +144,14 @@
       "record": "latissimus-dorsi",
       "present": "yes",
       "speciesBasis": "source",
-      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **No bony attachment is stated and none is scored**: both ends as described are muscle or fascia, and this record's other anuran rows come from sources that did give bone."
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **Neither end is bone.** The origin on the dorsal fascia is scored on `dorsal-fascia-anuran`; the insertion is onto the superficial layers of the glutaeus maximus and cruralis, muscle onto muscle, and there is no element for that. So the row carries one attachment and the note carries the other end — which is the accurate shape of this observation, not a gap in it.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "dorsal-fascia-anuran"
+          }
+        ]
+      }
     },
     {
       "name": "Rectus abdominis",
@@ -161,7 +171,7 @@
           }
         ]
       },
-      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A body-wall muscle that reaches the femur.** It comes from the ventral surface of the body and attaches posteriorly partly to the praepubis and partly to the ventral surface of the proximal third of the femur, penetrating from the surface layer between the cruralis and the sartorius — on the anterior margin of the sartorius, according to Grobbelaar (1924). The femoral attachment is the reason this row is here at all in a pelvic-and-thigh paper. The praepubis is carried as the anterior pubis; the trunk origin is not stated in terms this dataset can hold."
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A body-wall muscle that reaches the femur.** It comes from the ventral surface of the body and attaches posteriorly partly to the praepubis and partly to the ventral surface of the proximal third of the femur, penetrating from the surface layer between the cruralis and the sartorius — on the anterior margin of the sartorius, according to Grobbelaar (1924). The femoral attachment is the reason this row is here at all in a pelvic-and-thigh paper. The praepubis is carried as the anterior pubis, following the paper's own term — see `epipubic-cartilage-anuran` for why that is not simply merged with the epipubis. The trunk origin is not stated in terms this dataset can hold."
     },
     {
       "name": "Obturator externus and quadratus femoris",
@@ -202,11 +212,18 @@
       "region": "pelvic",
       "record": null,
       "blockedBy": "no-record",
-      "blockedNote": "**A muscle *Xenopus* has and the other frogs do not, standing where their coccygeosacralis stands.** Prikryl et al. record the coccygeosacralis as absent in this animal and note that instead there is a short muscle from the descending part of the ilium to the ventral surface of the cartilaginous epipubis, also described by Grobbelaar (1924). They give it no name, so the row's `name` is descriptive and flagged as such. Parked twice over: no record holds an ilium-to-epipubis muscle, and the epipubis itself has no element that can safely carry it — `epipubic-cartilage` exists but is scoped to mammals, and asserting that the anuran praepubic cartilage is that structure would be a homology claim this paper does not make. Only the iliac end is scored.",
+      "blockedNote": "**A muscle *Xenopus* has and the other frogs do not, standing where their coccygeosacralis stands.** Prikryl et al. record the coccygeosacralis as absent in this animal and note that instead there is a short muscle from the descending part of the ilium to the ventral surface of the cartilaginous epipubis, also described by Grobbelaar (1924). They give it no name, so the row's `name` is descriptive and flagged as such. Parked because no record holds an ilium-to-epipubis muscle — not because anything about the observation is in doubt. **Both ends are scored**: `epipubic-cartilage-anuran` was added for the insertion, as a separate element carrying a `possibly-corresponds-to` edge to `epipubic-cartilage`, which records that the homology is open rather than asserting or discarding it. What would settle the record is a treatment of whether this muscle is a differentiated coccygeosacralis, a pipid novelty, or part of the iliac series.",
       "attachments": {
         "origin": [
           {
-            "element": "ilium"
+            "element": "ilium",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epipubic-cartilage-anuran",
+            "side": "ventral"
           }
         ]
       },
