@@ -86,9 +86,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 8 | 718 |
-| `not-started` | 67 | 1739 |
+| `not-started` | 67 | 1756 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2537** |
+| **total** | **79** | **2554** |
 
 **8 of 79 cited sources re-mined** (10%).
 <!-- /counts:remine -->
@@ -294,6 +294,7 @@ reading that will not have to be done again.
 | `prikryl-etal-2009` | *pelobates-fuscus* | 1 | homology 1 |
 | `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
 | `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |
+| `widrig-etal-2023` | *nothoprocta-pentlandii* | 1 | no-record 1 |
 <!-- /counts:parked-detail -->
 
 ## Decisions taken, so they are not relitigated
