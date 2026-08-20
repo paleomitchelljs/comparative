@@ -155,7 +155,9 @@ identical origin and insertion text; one pair that survives that test,
 `linguae, transversus` and `linguae, verticalis`, is two real muscles sharing a
 table entry.
 
-**240 distinct muscles.**
+**239 distinct muscles**, plus the one cross-reference. The per-region split is in
+the table below and does not match a naive count of the seven regional files, which
+between them repeat several muscles.
 
 ## The re-mine, region by region
 
@@ -186,10 +188,15 @@ one occurrence.
 | Back | 16 | 16 | 16 | 0 | **done** |
 | Thorax | 7 | 7 | 7 | 0 | **done** |
 | Abdomen | 13 | 11 | 10 | 1 | **done** |
-| Pelvis and perineum | 21 | 15 | 7 | 8 | **done** |
+| Pelvis and perineum | 21 | 17 | 7 | 10 | **done** |
 | Upper limb | 54 | 52 | 51 | 1 | **done** |
-| Lower limb | 58 | 52 | | | |
-| Head and neck | 105 | 87 | | | |
+| Lower limb | 58 | 53 | 51 | 2 | **done** |
+| Head and neck | 105 | 83 | | | |
+| **total** | **274** | **239** | | | |
+
+Pelvis counts bulbospongiosus and sphincter urethrae twice, once per sex, which is
+how Gest lists them; they are 15 muscles and get one row each, so eight parked rows
+cover ten distinct entries.
 
 ### Back, done
 
@@ -350,6 +357,59 @@ ficiales` already names it as a candidate for that layer and is scored *uncertai
 a human because of it, so filing it there would settle by fiat the question that
 record's own note says is open. The other candidate is the dermal musculature — a
 muscle that ends in skin is doing what a panniculus carnosus does.
+
+### Lower limb, done — 51 of 53 filed
+
+Fifty-eight entries, one of them a cross-reference (`peroneus mm.`), four of them
+the alphabetical listing repeating itself: 53 muscles. Thirty-seven rows added, two
+parked.
+
+Almost every call here was already made and written down by whoever wrote the group
+rows, and the pass is mostly the work of acting on notes that named muscles they
+could not score. Three of them are worth restating because they cut against the
+obvious grouping:
+
+- **Fibularis tertius goes with the long extensors, not with the fibularis group
+  whose name it carries.** Gest puts it in the anterior compartment on the deep
+  fibular nerve while longus and brevis are lateral-compartment muscles on the
+  superficial fibular nerve. The `fibularis-group` record's assessment already said
+  the innervation cut against the name; the row is what acting on that looks like.
+- **Pectineus has two nerves and that is the whole interest of it.** Femoral and the
+  anterior division of the obturator — one from the dorsal divisions of the plexus
+  and one from the ventral — so a muscle lying in the ventral adductor mass is
+  supplied in part from the dorsal side. It stays on `adductor-femoris`, where the
+  existing row already put it in prose.
+- **The gemelli end on another muscle.** Both insert on the obturator internus
+  tendon and neither reaches the femur, so both rows are scored
+  `{"muscle": "ischiotrochantericus"}` — filed on `puboischiofemoralis-externus`,
+  ending on a record they are not part of. Their nerves come from either side of
+  that boundary: superior takes the nerve to obturator internus, inferior the nerve
+  to quadratus femoris.
+
+**Quadriceps femoris gets no row**, for the same reason deltoid does not: it is one
+Gest entry spanning `extensor-iliotibialis` (rectus femoris) and `femorotibialis`
+(the three vasti), and the extraction key must name one record. The rectus crossing
+the hip and the vasti not is the tell, and both rows say so.
+
+**Sartorius parks on `homology`,** which preserves a decision rather than making
+one. `ambiens` scores it absent with the argument — Diogo & Molnar reject the
+'ambiens'-to-sartorius equation because the 'ambiens' is a dorsal muscle in a ventral
+position — while `puboischiofemoralis-internus` carries the competing derivation in
+its synonyms and does not act on it either. Parking holds the attachments without
+choosing.
+
+**Lumbricals of the foot park on `no-record`, and that is an omission rather than a
+judgement.** `lumbricales` is a hand record and a row's region must equal its
+record's, so the four pedal lumbricals have nowhere to go. Every other intrinsic
+group in this dataset is doubled — `flexores-breves-superficiales-pes`,
+`contrahentes-digitorum-pes`, `extensores-digitorum-breves-pes`,
+`abductor-digiti-minimi-pes` — which is what makes the gap look accidental.
+Creating `lumbricales-pes` settles it and the row is promoted.
+
+One new element, `knee-capsule`, for the articularis genu: a few fascicles deep to
+vastus intermedius that stop at the capsule instead of running on to the patella,
+and pull it clear as the knee extends. The smallest thing in this dataset that still
+counts as a muscle, and the only one ending on a joint capsule.
 
 ### The name-disagreement warning was firing on one source
 

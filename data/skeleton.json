@@ -2593,6 +2593,20 @@
       ]
     },
     {
+      "id": "knee-capsule",
+      "label": "Knee joint capsule",
+      "kind": "membrane",
+      "region": "hindlimb",
+      "segment": "zeugopod",
+      "presence": {
+        "default": "yes",
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The fibrous capsule of the knee. It is here because one muscle ends on it and on nothing else: the articularis genu, a few fascicles deep to vastus intermedius that stop at the capsule instead of running on to the patella, and pull it clear of the joint during extension. Distinct from `knee-aponeurosis`, which is the anuran sheet several thigh muscles insert into."
+      }
+    },
+    {
       "id": "ligamentum-calcanei",
       "label": "Ligamentum calcanei",
       "kind": "ligament",

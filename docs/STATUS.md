@@ -23,7 +23,7 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1618 present occurrences · 287 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1618 present occurrences · 288 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
@@ -95,7 +95,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-749 extracted observations from 8 sources are waiting for a record (639 on partial, 53 on no-record, 27 on nomenclature, 14 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
+751 extracted observations from 8 sources are waiting for a record (639 on partial, 54 on no-record, 27 on nomenclature, 15 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
@@ -109,11 +109,11 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 |---|---:|---:|
 | pectoral | 16 | 758 |
 | forearm | 19 | 629 |
-| foot | 12 | 463 |
-| thigh | 10 | 438 |
+| foot | 12 | 467 |
+| thigh | 10 | 440 |
 | cranial | 51 | 401 |
-| pelvic | 8 | 345 |
-| leg | 10 | 345 |
+| leg | 10 | 350 |
+| pelvic | 8 | 347 |
 | arm | 5 | 282 |
 | hand | 9 | 238 |
 | axial | 15 | 164 |
@@ -128,10 +128,10 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 287, of which 266 (93%) carry at least one attachment |
-| Observed attachment rows | 4120 |
-| Rows naming a **landmark** | 1083 (26%) |
-| Rows naming a **side** | 2282 (55%) |
+| Elements | 288, of which 267 (93%) carry at least one attachment |
+| Observed attachment rows | 4133 |
+| Rows naming a **landmark** | 1084 (26%) |
+| Rows naming a **side** | 2288 (55%) |
 | Osteological correlates | 128 flagged, 122 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -145,7 +145,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
 | cranial | 27 | 73 | 2.7 |
-| hindlimb | 44 | 52 | 1.2 |
+| hindlimb | 44 | 53 | 1.2 |
 | axial | 37 | 35 | 0.9 |
 | pectoral | 35 | 32 | 0.9 |
 | forelimb | 59 | 46 | 0.8 |
