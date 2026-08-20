@@ -117,6 +117,23 @@ def block_headline(d):
             f"{len(d['taxa'])} operational taxa")
 
 
+def block_parked_detail(d):
+    """Where the parked material actually is, so it can be scoped without
+    opening a 486-row JSON file."""
+    rows = d["parked"]
+    if not rows:
+        return "Nothing parked."
+    by = collections.Counter((r.get("source"), r.get("species")) for r in rows)
+    reasons = collections.defaultdict(collections.Counter)
+    for r in rows:
+        reasons[(r.get("source"), r.get("species"))][r.get("blockedBy") or "assigned"] += 1
+    out = ["| Source | Species | Rows | Blocked on |", "|---|---|---:|---|"]
+    for (src, sp), n in sorted(by.items(), key=lambda x: (-x[1], x[0])):
+        why = ", ".join(f"{k} {v}" for k, v in reasons[(src, sp)].most_common())
+        out.append(f"| `{src}` | *{sp}* | {n} | {why} |")
+    return "\n".join(out)
+
+
 def block_remine(d):
     """Re-mine progress, by source. Authored status, generated arithmetic."""
     src = d["remine"]["sources"]
@@ -346,6 +363,7 @@ BLOCKS = {
     "authority": block_authority,
     "parked": block_parked,
     "remine": block_remine,
+    "parked-detail": block_parked_detail,
     "remine-blocked": block_remine_blocked,
 }
 

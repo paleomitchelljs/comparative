@@ -26,10 +26,10 @@ Update it in the same commit that changes a file's standing. State is in
 | `skeleton.json` | authoritative | **This is already the "skeletal feature file" the migration wants.** 274 elements, `partOf` containment, per-taxon presence, landmarks validated inside their element. One subtlety to preserve: `fusedFrom` is deliberately *not* containment, which is why an avian cnemial crest is reached through `tibia` and not `tibiotarsus` |
 | `nerves.json` | authoritative | Homology groups, like elements. Unchanged |
 | `joints.json` | authoritative | Unchanged. `jointgraph.py` derives which joints a muscle spans |
-| `remine-status.json` | authoritative | Per-source re-mine status. Drives the table in `MIGRATION-STATE.md` |
 | `taxa.json` | derived | Clade rollups computed from species. Also carries topology, so it is the seed for `phylogeny.json` |
 | `muscles-*.json` | **partial** | **Known incomplete.** The audit found drops in 4 of 4 sources examined, so treat every source's rows as a partial extraction until `remine-status.json` says otherwise. Becomes `derived` at Task 5 and git-ignored |
-| `observations.json` | **defunct** | A special-cased version of the extraction layer, built before the per-(species × study) model was chosen. Its 66 rows migrate into `data/observations/` at Task 2. **Do not add to it** — park new rows here only while `data/observations/` does not exist |
+| `remine-status.json` | authoritative | Per-source re-mine status. Drives the tables in `MIGRATION-STATE.md` |
+| `observations.json` | **partial** | The parked-extraction layer. 486 rows and growing — while `data/observations/` is still generated and git-ignored, this is where a re-mine puts what it cannot file. It merges into `data/observations/` at Task 5, not Task 2 |
 | `raw/` | ignored | Verbatim extractions. Git-ignored for copyright. Never commit or quote into `data/` |
 
 | `observations/` | **derived, for now** | 220 files, one per (species × study), written by `build_observations.py --split`. Every one carries `"status": "scaffolded"` — the previous pass's extraction in a new shape, **not checked against any paper**. Becomes `authoritative` at Task 5, file by file, as each is re-mined |

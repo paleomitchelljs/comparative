@@ -10,10 +10,22 @@ current.
 
 ## Next action
 
-> **Task 4 — re-mine.** Tasks 1, 2 and 3 are done: the extraction key is unique,
-> the round trip is proven byte-identical, and `after:` can now carry a reported
-> observation. Nothing structural blocks any source. Walker (1973) is the best
-> first target — nine turtle genera, first-hand, into a thin column.
+> **Task 4 — re-mine.** Tasks 1, 2 and 3 are done. Nothing structural blocks any
+> source. Four have had a first pass (Fisher & Goodman and Widrig et al. to
+> exhaustion; Walker, Osawa and Russell & Bauer partially), and 486 observations
+> are parked and waiting for a record.
+>
+> **The three decisions waiting on you**, each blocking a large parked block:
+>
+> 1. **How many lizards?** Russell & Bauer's other seventeen genera need species
+>    records before their statements can be parked — *Lacerta* 38 statements,
+>    *Tupinambis* 27, *Phrynosoma* 21, *Ameiva* 18, *Heloderma* 17.
+> 2. **Does a variation statement stand as an occurrence?** 416 rows are parked on
+>    `partial` because Walker and Russell & Bauer mostly state a *difference*
+>    rather than a complete attachment. Answering it once unblocks all of them.
+> 3. **Two workers, one animal.** Osawa's *Sphenodon* jaw muscles are parked on
+>    `occupied` because Haas already holds those rows. Merge, replace, or keep the
+>    better source and leave the other in prose?
 
 ## Task board
 
@@ -121,6 +133,32 @@ notes carry the detail; each is `not-started` until re-mined.
 | Walker (1973) | 22 rows, all *Trachemys* | 90 statements across 9 other turtle genera, **first-hand**. Best target |
 | Osawa (1898) | 63 rows, all limb | The whole cranial and axial myology |
 | Burch (2014) | 38 rows, all *Tawa* | A bracket table of 35 extant taxa, 7 already species here |
+
+## Parked material, by where it came from
+
+Extracted and waiting for a record. Nothing here has coverage weight; all of it is
+reading that will not have to be done again.
+
+<!-- counts:parked-detail -->
+| Source | Species | Rows | Blocked on |
+|---|---|---:|---|
+| `russell-bauer-2008` | *sphenodon-punctatus* | 84 | partial 84 |
+| `russell-bauer-2008` | *varanus-exanthematicus* | 78 | partial 78 |
+| `russell-bauer-2008` | *gekko-gecko* | 66 | partial 66 |
+| `fisher-goodman-1955` | *grus-americana* | 50 | no-record 20, nomenclature 19, division 11 |
+| `russell-bauer-2008` | *chamaeleo-calyptratus* | 43 | partial 43 |
+| `walker-1973` | *pelomedusa-subrufa* | 30 | partial 30 |
+| `walker-1973` | *testudo-graeca* | 25 | partial 25 |
+| `walker-1973` | *trionyx-spiniferus* | 24 | partial 24 |
+| `walker-1973` | *chelodina-longicollis* | 23 | partial 23 |
+| `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
+| `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
+| `walker-1973` | *caretta-caretta* | 12 | partial 12 |
+| `walker-1973` | *geochelone-elephantopus* | 9 | partial 9 |
+| `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
+| `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
+| `walker-1973` | *lepidochelys-kempii* | 2 | partial 2 |
+<!-- /counts:parked-detail -->
 
 ## Decisions taken, so they are not relitigated
 
