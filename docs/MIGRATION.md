@@ -41,10 +41,16 @@ study describes for that animal, with the study's own name for it, its region, i
 attachments as structured rows, innervation, architecture, and prose. Nothing about
 homology.
 
-**The mapping file is the interpretation.** It says which record each of that
-study's names belongs to, and it is **per source**, because two authors disagreeing
-is the thing this dataset exists to preserve. A single global name table would
-destroy it.
+**The mapping file is the interpretation, read on its own.** It says which record
+each of that study's names belongs to, per source — two authors disagreeing is the
+thing this dataset exists to preserve, and a single global name table would destroy
+it.
+
+**Settled 2026-08-20: it is generated, not authoritative.** The assignment lives on
+each observation row as `record`, and the join derives the view from those rows.
+That keeps writing a new row to one file instead of two, while still letting the
+homology layer be read alone — and each key lists the species it covers, so the
+cost of moving a name is visible before you move it.
 
 ## Three facts the data forced, before you design anything
 

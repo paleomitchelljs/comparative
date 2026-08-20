@@ -8,7 +8,7 @@ Three kinds of file live in `data/`:
 | `species.json` | The unit of observation: one record per animal anybody dissected |
 | `sources.json` | Bibliography, keyed by `key` |
 | `observations/` | **The source of truth.** One file per study per animal: what that study says about that animal. `record` names the homology group each row was assigned to, `null` means unassigned |
-| `mapping/` | Per source: `name\|region` → muscle record |
+| `mapping/` | **Derived.** A read-only view of the homology layer: per source, `name\|region` → `{record, species[]}` |
 | `skeleton.json` | Skeletal/soft attachment sites: `partOf` hierarchy, per-taxon presence, osteological-correlate flags |
 | `nerves.json` | Nerves as homology groups: `partOf` chain to the plexus, limb-bud division, per-taxon names |
 | `joints.json` | Joints as homology groups: which bone surfaces articulate, and what motions happen there |

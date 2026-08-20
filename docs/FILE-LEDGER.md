@@ -32,7 +32,7 @@ Update it in the same commit that changes a file's standing. State is in
 | `raw/` | ignored | Verbatim extractions. Git-ignored for copyright. Never commit or quote into `data/` |
 
 | `observations/` | **authoritative** | **The source of truth as of Task 5.** 248 files, one per (species × study). A row's `record` names the homology group it was assigned to; `null` means unassigned and `blockedBy` says why |
-| `mapping/` | **authoritative** | 78 files, one per source: `name\|region` → muscle record. **Written and never read** — the join resolves a row's record from the row itself, so this is not yet the integration layer it looks like. See the open design question in `MIGRATION-STATE.md` |
+| `mapping/` | **derived** | A generated **view** of the homology layer, one file per source: `name\|region` → `{record, species[]}`. The assignment itself lives on each observation row as `record`; the join rewrites this from those rows and `validate.py` errors if it is stale or hand-edited. It exists so the homology decisions can be read on their own, and so the cost of moving a name is visible — each key lists the species it covers |
 
 ### Not yet created
 
