@@ -592,14 +592,26 @@ the record's own region — the mapping view is keyed on `name|region` and the j
 drops the field, so a wrong one files the source's name under a key nobody will
 look it up by. Enforced.
 
-**One occurrence per (record, species), whatever the number of sources.** Two
-studies of the same muscle in the same animal are two rows in two files, and the
-join takes the **union** of what they say. It will not choose between them: a
-field both rows set to different values stops the build and names the record, the
-animal, the field and both sources. That is deliberate — two workers disagreeing
-about a muscle is what this dataset exists to hold, and it belongs in an
-`attachmentNote` under both names rather than being decided by which filename
-sorts first.
+### One occurrence per (record, species), whatever the number of sources
+
+Two studies of the same muscle in the same animal are two rows in two files and
+one occurrence. Write in each file only what **that** study says; the join merges
+them, and the three kinds of field merge differently.
+
+| Fields | Rule | Why |
+|---|---|---|
+| `attachments` | **Union** of distinct element/side/landmark rows | An attachment is an observation and does not age. Two workers who each dissected an animal cannot conflict, because they are different rows |
+| `attachmentNote`, `note` | **Concatenated**, distinct paragraphs in source order | These are already written a paragraph per source. Concatenating is what lets a source's reading live in that source's file instead of being copied into every other file touching the occurrence |
+| `name`, `speciesBasis` | The established value is **kept** | What each source calls the muscle is recorded per source in `mapping/`, which exists for exactly that; the occurrence carries one label, and a new pass should not silently relabel a curated one. `speciesBasis` is historical — see above |
+| everything else | Must **agree**, or the build stops | Whether the pectoralis has two parts or three is one claim about one muscle. The join has no business picking the alphabetically luckier source: somebody has to decide, and say why |
+
+"Established" is precise: rows carrying an `_occ` merge before rows written by
+hand, so a newly mined attachment is appended after the ones already recorded and
+a new source's paragraph reads after the older one.
+
+Where two sources name one animal's muscle differently the validator **warns**,
+naming both — the occurrence can only show one label, and which one a reader sees
+should not quietly become a fact about merge order.
 
 Three underscore fields — `_occ`, `_keys`, `_srcs` — are round-trip machinery
 written by `--split`: the occurrence's order within its record, its original field

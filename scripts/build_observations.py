@@ -26,6 +26,7 @@ The extraction key is (species, source, name, region). `validate.py` errors if
 that ever resolves to two records; see Task 1 in `docs/MIGRATION.md`.
 """
 import collections
+import copy
 import glob
 import json
 import pathlib
@@ -51,8 +52,26 @@ EXTRACTION_ONLY = {"record", "region", "blockedBy", "blockedNote", "muscle",
                    "_occ", "_keys", "_srcs", "_id"}
 
 # Sorts a row with no `_occ` after every row that has one, without inventing an
-# index for it. See `occurrence_order`.
+# index for it. See `join`.
 UNPLACED = float("inf")
+
+# Fields that accumulate across the sources describing one occurrence rather than
+# having to agree between them. `attachments` because an observation of where a
+# muscle attaches does not age or get outvoted; the prose because it is already
+# written a paragraph per source, and concatenating is what keeps each source's
+# reading in that source's own file.
+PROSE = ("attachmentNote", "note")
+ACCUMULATE = ("attachments",) + PROSE
+NOTE_SEP = "\n\n"
+
+# Fields where the sources may differ and the occurrence keeps the established
+# value. `name` because what each source calls the muscle is recorded per source
+# in `data/mapping/` — that layer exists for it — while the occurrence carries one
+# label, and a new mining pass has no business silently relabelling a curated one.
+# `speciesBasis` because SCHEMA.md records it as historical: it said how strongly
+# a species attribution was evidenced back when the species had to be inferred,
+# and the filename declares the animal now.
+FIRST_WINS = ("name", "speciesBasis")
 
 
 def occurrence_keys(row):
@@ -226,17 +245,33 @@ def join(into):
     """observations/ + mapping/ -> muscle occurrences, written into `into`.
 
     Two studies of the same muscle in the same animal are two rows in two files
-    and one occurrence. The join takes the **union** of what they say and
-    refuses to choose when they disagree: a field set by two sources to two
-    different values stops the build and names the record, the animal, the field
-    and both sources. It cannot resolve that itself — two workers disagreeing
-    about where a muscle attaches is the thing this dataset exists to hold, and
-    it belongs in an `attachmentNote` under both their names.
+    and one occurrence, and the three kinds of field merge differently.
+
+    **Attachments accumulate.** `CLAUDE.md`: an attachment is an observation and
+    does not age, and two workers who each dissected an animal cannot conflict,
+    because they are different rows. So origin and insertion are unions of
+    distinct element/side/landmark rows. Freitas et al. put the iguana's
+    deltoideus clavicularis on the interclavicle and Russell & Bauer put it on
+    the clavicle; the occurrence carries both, under both names, which is what
+    two dissections of one animal actually amount to.
+
+    **Prose accumulates too, per source.** `attachmentNote` and `note` are
+    already written a paragraph per source — nearly every one opens by naming its
+    author — so the join concatenates the distinct ones in source order. That is
+    what lets a source's reading live in that source's file instead of being
+    copied into every other file that touches the same occurrence.
+
+    **Everything else must agree.** A field two sources set to two different
+    values stops the build and names the record, the animal, the field and both
+    sources. Whether the pectoralis has two parts or three is one claim about one
+    muscle, and the join has no business picking the alphabetically luckier
+    source: somebody has to decide, and say why.
 
     The alternative, which this replaced, was for the first row read to win.
     That was harmless only while `--split` wrote every source's row from one
-    merged occurrence, so the copies could not differ. The first hand-mined row
-    added beside an older one would have been dropped on filename order.
+    merged occurrence, so the copies could not differ — which is also why none of
+    this moves the committed data. The first hand-mined row added beside an
+    older one would have been dropped on filename order.
     """
     by_record = collections.defaultdict(list)   # record -> [(species, source, row)]
     for f in sorted(OBS.glob("*.json")):
@@ -262,8 +297,18 @@ def join(into):
             keys = {}                             # species -> field order
             order = {}                            # species -> [_occ, first seen]
             said_by = {}                          # (species, field) -> source
+            contributed = collections.defaultdict(set)   # (species, field) -> notes
             srcs_of = collections.defaultdict(list)
-            for seen, (sp, src, row) in enumerate(by_record.get(m["id"], [])):
+            # Rows carrying an `_occ` — the ones that came out of the previous
+            # store — merge before rows written by hand. So an established
+            # label survives a new mining pass, a newly mined attachment is
+            # appended after the ones already recorded rather than in front of
+            # them, and a new source's paragraph reads after the older one.
+            # Every committed row has an `_occ`, so this does not reorder
+            # anything that exists today.
+            settled = sorted(enumerate(by_record.get(m["id"], [])),
+                             key=lambda t: (t[1][2].get("_occ") is None, t[0]))
+            for seen, (sp, src, row) in ((i, t) for i, t in settled):
                 slot = order.setdefault(sp, [UNPLACED, seen])
                 if row.get("_occ") is not None:
                     slot[0] = min(slot[0], row["_occ"])
@@ -275,8 +320,27 @@ def join(into):
                     if k in ("species", "sources") or k not in row:
                         continue
                     if k not in got:
-                        got[k] = row[k]
+                        got[k] = copy.deepcopy(row[k]) if k in ACCUMULATE else row[k]
                         said_by[(sp, k)] = src
+                        if k in PROSE:
+                            contributed[(sp, k)].add(row[k])
+                    elif k == "attachments":
+                        for end, rows in row[k].items():
+                            into_end = got[k].setdefault(end, [])
+                            for one in rows:
+                                if one not in into_end:
+                                    into_end.append(one)
+                    elif k in FIRST_WINS:
+                        pass
+                    elif k in PROSE:
+                        # Membership is tested against the paragraphs actually
+                        # contributed, not against a re-split of the running
+                        # text: many of these notes carry blank lines of their
+                        # own, so splitting the accumulated string never finds a
+                        # multi-paragraph note and every build appended it again.
+                        if row[k] not in contributed[(sp, k)]:
+                            got[k] += NOTE_SEP + row[k]
+                            contributed[(sp, k)].add(row[k])
                     elif got[k] != row[k]:
                         conflicts.append(
                             f"  {m['id']} / {sp}: '{k}' — {said_by[(sp, k)]} and "

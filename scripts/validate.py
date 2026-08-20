@@ -706,6 +706,7 @@ def main():
         "occupied": "another worker's row already holds this record for this species",
     }
     occ_keys, muscle_ids, region_of = set(), set(), {}
+    named_by = collections.defaultdict(dict)   # (record, species) -> {name: [source]}
     for path in MUSCLE_FILES:
         for mm in load(path)["muscles"]:
             muscle_ids.add(mm.get("id"))
@@ -737,6 +738,8 @@ def main():
             where = f"observations/{f.name}:{ob.get('name') or ob.get('_id') or '?'}"
             rec = ob.get("record")
             if rec:
+                if ob.get("name"):
+                    named_by[(rec, fsp)].setdefault(ob["name"], []).append(fsrc)
                 if rec not in muscle_ids:
                     err(f"{where}: record '{rec}' is not a muscle record")
                 elif ob.get("region") != region_of[rec]:
@@ -764,6 +767,18 @@ def main():
                     f"citation with a year")
             clade = species_clade.get(fsp)
             check_rows(ob.get("attachments") or {}, where, clade)
+
+    # Two studies calling one animal's muscle two things is a synonymy, and it is
+    # held per source in data/mapping/. The occurrence can only carry one label,
+    # so this is not an error — but which label a reader sees is then a fact
+    # about merge order rather than about the literature, and that is worth
+    # saying out loud.
+    for (rec, sp), names in sorted(named_by.items()):
+        if len(names) > 1:
+            says = "; ".join(f"{n!r} ({', '.join(sorted(set(v)))})"
+                             for n, v in sorted(names.items()))
+            warn(f"{rec}/{sp}: sources disagree on the name — {says}. The "
+                 f"occurrence keeps the first; data/mapping/ keeps them all")
 
     # Joint internal consistency. A joint's two sides use exactly the
     # element/side/landmark row form that attachments use, so the same

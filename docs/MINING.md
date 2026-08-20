@@ -148,6 +148,15 @@ files; you write one per animal and the accounting closes per file.
    being kept instead of dropped, which is the whole point.
 4. `attachments` is `{origin: [row], insertion: [row]}`, a row being
    `{element, side?, landmark?}`. Element ids come from `data/skeleton.json`.
+
+   **Where the animal already has an occurrence on that record from another
+   study, write only what your study says.** The join unions the attachments and
+   appends your paragraph after the existing one; it keeps the established `name`
+   and records yours in `data/mapping/`. Do not restate the other source's
+   reading, and do not edit the other source's file to match yours. If your study
+   contradicts it on something structural — how many parts, whether the muscle is
+   present — the build stops and names both sources, because that is a decision
+   somebody has to take and write down.
 5. **Never invent a side.** Absent means unrecorded.
 6. Put the reasoning, the caveats and the species-level differences in
    `attachmentNote`. That is where the argument lives.
