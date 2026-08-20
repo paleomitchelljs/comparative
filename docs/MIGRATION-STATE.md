@@ -69,9 +69,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 6 | 214 |
-| `not-started` | 69 | 1863 |
+| `not-started` | 69 | 1874 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2157** |
+| **total** | **79** | **2168** |
 
 **6 of 79 cited sources re-mined** (7%).
 <!-- /counts:remine -->
@@ -249,6 +249,7 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *uroplatus-sp* | 2 | partial 2 |
 | `walker-1973` | *lepidochelys-kempii* | 2 | partial 2 |
 | `freitas-etal-2017` | *iguana-iguana* | 1 | nomenclature 1 |
+| `gest-anatomy-tables` | *homo-sapiens* | 1 | no-record 1 |
 | `prikryl-etal-2009` | *pelobates-fuscus* | 1 | homology 1 |
 | `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
 | `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |

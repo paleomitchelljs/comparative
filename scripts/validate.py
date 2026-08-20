@@ -808,8 +808,17 @@ def main():
     # so this is not an error — but which label a reader sees is then a fact
     # about merge order rather than about the literature, and that is worth
     # saying out loud.
+    #
+    # ONE source using several names for one occurrence is a different thing and
+    # not worth saying: it is a record coarser than the source's nomenclature,
+    # which is the normal case whenever a paper names muscles this dataset lumps.
+    # Gest's human table alone puts five names on `intercostales-interni` and four
+    # on `hypaxial-musculature` — the internal, innermost and subcostal
+    # intercostals plus transversus thoracis are one sheet here, and the source
+    # meets them separately because a dissector does. Firing on that buried the
+    # cross-source synonymies this check exists to surface.
     for (rec, sp), names in sorted(named_by.items()):
-        if len(names) > 1:
+        if len({s for v in names.values() for s in v}) > 1 and len(names) > 1:
             says = "; ".join(f"{n!r} ({', '.join(sorted(set(v)))})"
                              for n, v in sorted(names.items()))
             warn(f"{rec}/{sp}: sources disagree on the name — {says}. The "

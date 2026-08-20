@@ -706,6 +706,9 @@
           {
             "element": "ilium",
             "landmark": "iliac-crest"
+          },
+          {
+            "element": "inguinal-ligament"
           }
         ],
         "insertion": [
@@ -720,7 +723,7 @@
           }
         ]
       },
-      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Thoracolumbar fascia, the anterior two-thirds of the iliac crest and the inguinal ligament, to the lower three or four ribs, the linea alba and the pubic crest — fibres running upward and forward, at right angles to the external oblique outside it. Gest also lists the cremaster, which is a slip of this sheet carried down onto the spermatic cord and has no counterpart in this dataset.",
+      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Thoracolumbar fascia, the anterior two-thirds of the iliac crest and the inguinal ligament, to the lower three or four ribs, the linea alba and the pubic crest — fibres running upward and forward, at right angles to the external oblique outside it. The inguinal end went unscored until 2026-08-20 for want of an element; the cremaster, which Gest calls this sheet's contribution to the coverings of the cord, now has a row of its own on this record.",
       "nerves": [
         {
           "nerve": "ventral-rami"
@@ -959,7 +962,8 @@
         ],
         "insertion": [
           {
-            "element": "sternum"
+            "element": "sternum",
+            "landmark": "xiphoid-process"
           },
           {
             "element": "costal-cartilage"
@@ -1102,6 +1106,9 @@
           {
             "element": "ilium",
             "landmark": "iliac-crest"
+          },
+          {
+            "element": "inguinal-ligament"
           }
         ],
         "insertion": [
@@ -1113,7 +1120,7 @@
           }
         ]
       },
-      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lower six ribs, thoracolumbar fascia, the anterior three-quarters of the iliac crest and the inguinal ligament, to the linea alba and the pecten of the pubis, fibres running transversely. The innermost sheet; its fibres are the only ones of the three that run straight across.",
+      "attachmentNote": "Homo sapiens, Gest (Anatomy Tables). Lower six ribs, thoracolumbar fascia, the anterior three-quarters of the iliac crest and the inguinal ligament, to the linea alba and the pecten of the pubis, fibres running transversely. The innermost sheet; its fibres are the only ones of the three that run straight across. The inguinal end went unscored until 2026-08-20 for want of an element.",
       "nerves": [
         {
           "nerve": "ventral-rami"
@@ -6526,6 +6533,253 @@
       "attachmentNote": "**Spinalis** (Gest). Spines below to spines above, and to the base of the skull. Gest counts it as the medial of the three erector spinae columns and this record is the medial epaxial tract, so it is scored here rather than beside the iliocostalis and longissimus rows — which is how the human row on `epaxial-musculature` already lists it. It runs spine-to-spine, not transverse-process-to-spine, so the record's name misdescribes this member of it.",
       "region": "axial",
       "record": "transversospinalis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Diaphragm",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "landmark": "xiphoid-process"
+          },
+          {
+            "element": "costal-cartilage"
+          },
+          {
+            "element": "arcuate-ligaments"
+          },
+          {
+            "element": "lumbar-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "central-tendon-diaphragm"
+          }
+        ]
+      },
+      "attachmentNote": "**Diaphragm** (Gest). Xiphoid process, costal margin, the medial and lateral arcuate ligaments over psoas major and quadratus lumborum, and the bodies of L1-L3 by the two crura — the left from L1-L2 and the right from L1-L3 — all converging on the central tendon. The attachments were in this occurrence's prose from the start and in no element row, because three of the five sites had no element; they do now. Read the origin as an itinerary. A muscle built from cervical myotome, dragged caudally with the phrenic nerve trailing from C3-C5 behind it, has ended up arising from the fascia of two lumbar muscles and inserting on nothing but itself.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Quadratus lumborum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "landmark": "iliac-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          },
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Quadratus lumborum** (Gest). Posterior iliac crest and the iliolumbar ligament to the transverse processes of L1-L4 and the twelfth rib. The subvertebral member of the hypaxial series and the one with no record of its own; Schilling's mammalian ventrovertebral group, already quoted in this record's homology note, is this muscle plus psoas minor.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Psoas minor",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracic-vertebrae"
+          },
+          {
+            "element": "lumbar-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pelvic-girdle"
+          }
+        ]
+      },
+      "attachmentNote": "**Psoas minor** (Gest). Bodies of T12 and L1 to the iliopubic eminence, scored on `pelvic-girdle` because the eminence straddles the junction of ilium and superior pubic ramus and naming one of them would pick a side the source does not. It never reaches the femur, which is why it is a body-wall muscle and not part of the iliopsoas: psoas major moves the thigh, psoas minor moves the lumbar column on the pelvis. Gest records it absent in 40% of people, which is variation within the species and belongs in prose rather than in `present`.",
+      "region": "axial",
+      "record": "hypaxial-musculature"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Internal intercostal",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Internal intercostal** (Gest). Upper border of a rib to the lower border of the rib above, fibres running up and medially. Eleven of them, from the sternal margin back to the angle of the rib and continued behind that by the internal intercostal membrane.",
+      "region": "axial",
+      "record": "intercostales-interni"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Innermost intercostal",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Innermost intercostal** (Gest). Same attachments and same fibre direction as the internal intercostal; the only difference Gest records is that it lies deep to the intercostal neurovascular bundle rather than superficial to it. A muscle sheet split into two named muscles by a nerve running through it.",
+      "region": "axial",
+      "record": "intercostales-interni"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcostalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ribs"
+          }
+        ]
+      },
+      "attachmentNote": "**Subcostalis** (Gest). Angle of a rib to the angle of a rib two or three above — the same sheet as the innermost intercostal, spanning more than one interspace, at the back of the thorax.",
+      "region": "axial",
+      "record": "intercostales-interni"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Transversus thoracis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "costal-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "**Transversus thoracis** (Gest). Posterior surface of the sternum out onto the inner surfaces of costal cartilages 2-6. Gest groups it with subcostalis and the innermost intercostals as the deepest layer, which is why it is scored here; on the developmental account it is the thoracic continuation of transversus abdominis and would sit on that record instead. The two readings differ about whether the innermost thoracic layer belongs with the intercostals or with the transversus sheet, and nothing in this source decides it.",
+      "region": "axial",
+      "record": "intercostales-interni"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pyramidalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "linea-alba"
+          }
+        ]
+      },
+      "attachmentNote": "**Pyramidalis** (Gest). Pubis, in front of the rectus abdominis, up onto the linea alba. Often absent. It is already named as a part of the rectus row; this gives it the two attachments the part could not carry.",
+      "region": "axial",
+      "record": "rectus-abdominis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cremaster",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "inguinal-ligament"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "spermatic-cord"
+          }
+        ]
+      },
+      "attachmentNote": "**Cremaster** (Gest). From the inguinal ligament, thinning into a net of fascicles over the spermatic cord and testis — or over the round ligament of the uterus, where it is not developed. Gest calls it the internal oblique's contribution to the coverings of the cord, which is the source's own homology statement and the reason it is filed on this record rather than parked. Each body-wall layer the cord passes through wraps it in a fascia; this is the one layer that stays muscular, and its reflex arc is the clinical reason anyone learns it.",
+      "region": "axial",
+      "record": "obliquus-internus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interfoveolar",
+      "attachments": {},
+      "attachmentNote": "**Interfoveolar** (Gest). An inconstant slip of transversus abdominis, running from the fibres of that muscle superficial to the inferior epigastric vessels down to the anterior lamina of the femoral sheath, and often replaced altogether by a ligament. Neither end is scored: one is the parent muscle itself, and the other is the fascial sleeve around the femoral vessels, for which adding an element would put a piece of human inguinal fascia in a controlled vocabulary no other column can use. Filed rather than parked because Gest states the homology — it is part of transversus abdominis — and that is the question parking exists to defer.",
+      "region": "axial",
+      "record": "transversus-abdominis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Psoas major",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "lumbar-vertebrae"
+          },
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "lesser-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "**Psoas major** (Gest). Bodies and transverse processes of the lumbar vertebrae to the lesser trochanter, by the iliopsoas tendon it shares with iliacus. Gest lists it in the abdomen and iliacus in the lower limb, which is where the two halves of this record sit in a human dissection; they are one muscle by the tendon and one record by descent from the reptilian puboischiofemoralis internus.",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus"
+    },
+    {
+      "name": "Dartos",
+      "region": "axial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Smooth muscle, not striated: Gest describes it as modified arrector pili in the subcutaneous tissue of the scrotum and penis, inserting into the overlying skin, driven by postganglionic sympathetic fibres rather than by a somatic nerve. Every record in this dataset is a striated somatic muscle, so there is no record it could go on and creating one would put a different tissue type in the same table. Parked so the reading is not repeated. The same applies to trachealis, the detrusor and the intrinsic muscles of the iris, which are still to come in the head and neck.",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "muscle": null
     }
   ]
 }

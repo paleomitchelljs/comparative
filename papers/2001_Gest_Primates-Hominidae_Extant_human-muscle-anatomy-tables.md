@@ -184,8 +184,8 @@ one occurrence.
 | Region | Entries | Distinct | Filed | Parked | State |
 |---|---:|---:|---:|---:|---|
 | Back | 16 | 16 | 16 | 0 | **done** |
-| Thorax | 7 | 7 | | | |
-| Abdomen | 13 | 11 | | | |
+| Thorax | 7 | 7 | 7 | 0 | **done** |
+| Abdomen | 13 | 11 | 10 | 1 | **done** |
 | Pelvis and perineum | 21 | 15 | | | |
 | Upper limb | 54 | 52 | | | |
 | Lower limb | 58 | 52 | | | |
@@ -217,6 +217,69 @@ Two things came out of it worth keeping:
   the whole series dorsal rami, so the row follows him, but most accounts supply the
   cervical and lumbar members at least partly from ventral rami. If that is right the
   row lumps an epaxial and a hypaxial muscle under one name. The row says so.
+
+### Thorax and abdomen, done
+
+Twenty entries, eighteen distinct after the two obliques' double listing. Twelve
+rows added, one parked, and three existing rows corrected.
+
+**The diaphragm was the point of the batch.** It had been described in the
+`hypaxial-musculature` note since that row was written — xiphoid, costal margin,
+arcuate ligaments, the crura on L1-L3, all onto the central tendon — and carried
+**not one attachment row**, because three of its five sites had no element. It has
+them now. Read as an itinerary the origin is the muscle's own history: cervical
+myotome dragged caudally with the phrenic nerve paying out behind it from C3-C5,
+ending up arising from the fascia of two lumbar muscles and inserting on nothing but
+itself.
+
+Five new elements, four of them for muscle ends that had been dropped rather than
+recorded: `arcuate-ligaments`, `central-tendon-diaphragm`, `xiphoid-process`,
+`inguinal-ligament`, `spermatic-cord`. The inguinal ligament is the one worth
+noticing — it is made by the external oblique aponeurosis and then carries the
+origins of the two layers underneath it, so a ligament built by one body-wall sheet
+is the attachment site of the next two. The internal oblique and transversus
+abdominis rows had both been scored without it.
+
+Three calls that could have gone the other way:
+
+- **Transversus thoracis is on `intercostales-interni`,** following Gest, who groups
+  it with subcostalis and the innermost intercostals as the deepest thoracic layer.
+  On the developmental account it is the thoracic continuation of transversus
+  abdominis and belongs on that record. The two readings disagree about whether the
+  innermost thoracic layer goes with the intercostals or with the transversus sheet,
+  and nothing in this source decides it. In the note, not resolved.
+- **Psoas minor is a body-wall muscle, not half of the iliopsoas.** It ends on the
+  iliopubic eminence and never reaches the femur, so it is on
+  `hypaxial-musculature` with quadratus lumborum — which is also the pairing
+  Schilling's mammalian ventrovertebral series makes, already quoted in that
+  record's homology note. Psoas *major* goes to
+  `puboischiofemoralis-internus` with iliacus, because the iliopsoas tendon is what
+  makes them one muscle.
+- **Dartos is parked, and the reason generalises.** It is smooth muscle — Gest calls
+  it modified arrector pili — driven by postganglionic sympathetic fibres. Every
+  record here is a striated somatic muscle, so no record can be right and creating
+  one would put a second tissue type in the same table. Trachealis, the detrusor and
+  the intrinsic muscles of the iris are the same case and are still to come in the
+  head and neck.
+
+The interfoveolar muscle is filed on `transversus-abdominis` with **no** attachment
+rows, which is the one place in this pass that the never-drop-an-attachment rule was
+knowingly not followed. Its two ends are the parent muscle itself and the anterior
+lamina of the femoral sheath; adding a `femoral-sheath` element for one inconstant
+human slip would put a piece of inguinal fascia in a controlled vocabulary that no
+other column can use. Both ends are in the row's prose.
+
+### The name-disagreement warning was firing on one source
+
+`validate.py` warned whenever a (record, species) occurrence carried more than one
+name, on the reasoning that which label a reader sees should not be an accident of
+merge order. That is right when two studies disagree. It is wrong when **one** source
+uses several names for a group this dataset lumps, which is the normal case and
+exactly what per-muscle rows produce: Gest alone puts five names on
+`intercostales-interni` and four on `hypaxial-musculature`. The check now requires
+the names to come from different sources. It dropped 16 warnings, and 9 of them
+predate this pass — Prikryl's two iliacus rows, Liparini's PIFI 1 and 2, and the
+anuran adductor pairs were all being reported as synonymy disputes with themselves.
 
 **Do not paste the table's prose into `data/`.** It is a copyrighted teaching
 resource; paraphrase the attachments into element rows as everywhere else, and let

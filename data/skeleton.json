@@ -174,6 +174,24 @@
       }
     },
     {
+      "id": "arcuate-ligaments",
+      "label": "Arcuate ligaments of the diaphragm",
+      "kind": "ligament",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The medial and lateral arcuate ligaments, thickenings of the fascia over psoas major and quadratus lumborum that the diaphragm arches across on its way to the vertebral bodies. Added 2026-08-20 so the diaphragm's origin can be recorded: part of it is on the fascia of two other muscles rather than on bone, which is a fact about how the muscle got there and not a gap in the description."
+      }
+    },
+    {
       "id": "articular",
       "label": "Articular / malleus",
       "kind": "bone",
@@ -614,6 +632,24 @@
           "anura"
         ],
         "note": "Replaced by the urostyle in anurans and shortened to the pygostyle in birds — both associated with caudofemoralis reduction."
+      }
+    },
+    {
+      "id": "central-tendon-diaphragm",
+      "label": "Central tendon of the diaphragm",
+      "kind": "aponeurosis",
+      "region": "axial",
+      "segment": "axial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The trefoil aponeurosis every fibre of the diaphragm converges on. A muscle sheet that inserts on itself; there is no bony insertion to record."
       }
     },
     {
@@ -2235,6 +2271,23 @@
         "sources": [
           "ercoli-etal-2014"
         ]
+      }
+    },
+    {
+      "id": "inguinal-ligament",
+      "label": "Inguinal ligament",
+      "kind": "ligament",
+      "region": "pelvic",
+      "segment": "girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The rolled lower border of the external oblique aponeurosis, running from the anterior superior iliac spine to the pubic tubercle. It is a muscle attachment site in its own right: the internal oblique and transversus abdominis arise from its lateral part and the cremaster from it directly, so a ligament made by one body-wall layer carries the two beneath it."
       }
     },
     {
@@ -4041,6 +4094,23 @@
       }
     },
     {
+      "id": "spermatic-cord",
+      "label": "Spermatic cord",
+      "kind": "soft",
+      "region": "pelvic",
+      "segment": "girdle",
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The bundle of duct, vessels and nerve running from the abdomen to the testis, wrapped in fascia contributed by each body-wall layer it passes through. The cremaster is the internal oblique's contribution and is the only one of those layers that stays muscular, which is why the cord is an attachment site here."
+      }
+    },
+    {
       "id": "spiracle",
       "label": "Spiracle",
       "kind": "group",
@@ -4961,6 +5031,26 @@
       "partOf": "neurocranium",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "xiphoid-process",
+      "label": "Xiphoid process",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "sternum",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "theria",
+          "monotremata"
+        ],
+        "sources": [
+          "gest-anatomy-tables"
+        ],
+        "note": "The caudal element of the sternum, and the attachment three muscles share in the human column: rectus abdominis ends on it, the diaphragm starts on it, and the linea alba runs from it. Listed for mammals only because no other source here names it; a xiphisternum is present in lepidosaurs too and the presence list should grow when one does."
       }
     },
     {
