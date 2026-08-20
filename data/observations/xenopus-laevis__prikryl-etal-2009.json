@@ -1,0 +1,216 @@
+{
+  "species": "xenopus-laevis",
+  "source": "prikryl-etal-2009",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "name": "Longissimus dorsi",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column",
+            "landmark": "transverse-process"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "urostyle",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Lies in a deeper layer than usual, beneath the latissimus dorsi, attached as in *Discoglossus* to the transverse processes of the vertebrae, and inserting posteriorly on the lateral surface of the **anterior two-thirds** of the urostyle. Compare *Ascaphus*, where it runs the whole dorsolateral length except the tip, and *Discoglossus*, where it takes the whole length.",
+      "note": "**The coccygeosacralis is absent in this animal** — recorded here rather than as its own row, because it would otherwise be a second occurrence of this record for this species. *Discoglossus* has it from the sacral diapophysis to the urostyle, and in *Ascaphus* it cannot be separated from the coccygeoiliacus. In its place *Xenopus* has a short muscle running from the descending part of the ilium to the ventral surface of the cartilaginous epipubis, which is parked separately."
+    },
+    {
+      "name": "Iliacus externus",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Inner layer",
+          "note": "Origin on the lateral, ventral and medial surfaces of the iliac shaft; insertion on the anterior surface of the proximal third of the femur."
+        },
+        {
+          "name": "Middle layer",
+          "note": "Origin on the lateral, dorsal and medial surfaces of the iliac shaft; insertion slightly more proximal on the femur than the inner layer. Its origin joins that of the inner layer posteriorly on the lateral side of the shaft."
+        },
+        {
+          "name": "Outer layer",
+          "note": "**Origin not on bone at all** — on the dorsal fascia, specifically a ligamentous plate running from the anterior part of the iliac shaft across to its counterpart on the other side, forming the thickened posterior margin of that fascia. Insertion on the crista femoralis, on the dorsal surface of the proximal third of the femur."
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "ventral"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "ilium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "dorsal",
+            "landmark": "crista-femoralis"
+          }
+        ]
+      },
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **Split into three layers, which Prikryl et al. call a peculiar feature of this animal** — against two more or less independent parts in *Discoglossus* and a single pars externa in *Rana*. Only the inner and middle layers arise from the ilium; the outer arises from a ligamentous plate in the dorsal fascia and is not scored as a skeletal origin. This is the widest range of iliac surfaces any anuran occurrence on this record carries: lateral, ventral, medial and dorsal."
+    },
+    {
+      "name": "Gracilis major and gracilis minor",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **The gracilis minor is thick here and shares its attachments with the gracilis major**, where in *Discoglossus* it is very slender and in *Ascaphus* it inserts only into the ventralmost part of the major's tendinous inscription. Its proximal origin is partly on the wall of the cloaca. No skeletal attachment is stated for either muscle in this animal, so none is scored — the row records presence and the difference in build."
+    },
+    {
+      "name": "Sartorius",
+      "region": "thigh",
+      "record": "pubotibialis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium"
+          },
+          {
+            "element": "pubis",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Origin partly on the ischium but **predominantly on the praepubis**, which the row carries as the anterior pubis for want of a separate element. Prikryl et al. add that de Sá & Hillis (1990) observed partial fusion of the sartorius and semitendinosus in *Xenopus* and *Silurana*, and that the semitendinosus's anterior margin may fuse with the sartorius surface (Grobbelaar 1924). **That is the same fusion *Ascaphus* shows completely**, where the two are a single mass — so the complex appears independently in a pipid and in the basal-most frog, which is worth a second look before either is treated as diagnostic."
+    },
+    {
+      "name": "Semitendinosus",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Rather extensive compared with the other species, its origin lying between the gracilis major and the sartorius, and its anterior margin possibly fusing with the surface of the sartorius. No bony attachment stated, so none is scored."
+    },
+    {
+      "name": "Adductor magnus",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "yes",
+      "speciesBasis": "source",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Caput dorsale",
+          "note": "Covered by the gracilis major."
+        },
+        {
+          "name": "Caput ventrale",
+          "note": "Covered by the semitendinosus."
+        }
+      ],
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Divided proximally into two heads, as in *Ascaphus* and *Rana* and unlike *Discoglossus*, which has one. The two are distinguished here by what covers them rather than by their origins, which are not separately stated for this animal — so no attachments are scored."
+    },
+    {
+      "name": "Latissimus dorsi",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A peculiar feature of this animal, and the reason a pelvic-and-thigh paper describes a forelimb muscle**: it covers the suprascapula and runs back as far as the glutaeus maximus and cruralis, fusing with their superficial layers, so a shoulder muscle ends on two thigh muscles. Superficial, also attached to a dorsal fascia. Its function remains rotation of the forelimb backwards despite the posterior extent. **No bony attachment is stated and none is scored**: both ends as described are muscle or fascia, and this record's other anuran rows come from sources that did give bone."
+    },
+    {
+      "name": "Rectus abdominis",
+      "region": "axial",
+      "record": "rectus-abdominis",
+      "present": "yes",
+      "speciesBasis": "source",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "pubis",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **A body-wall muscle that reaches the femur.** It comes from the ventral surface of the body and attaches posteriorly partly to the praepubis and partly to the ventral surface of the proximal third of the femur, penetrating from the surface layer between the cruralis and the sartorius — on the anterior margin of the sartorius, according to Grobbelaar (1924). The femoral attachment is the reason this row is here at all in a pelvic-and-thigh paper. The praepubis is carried as the anterior pubis; the trunk origin is not stated in terms this dataset can hold."
+    },
+    {
+      "name": "Obturator externus and quadratus femoris",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "**Confluent in this animal**, as they are continuous in *Ascaphus* and in *Rana* and inseparable in *Discoglossus*. Four frogs now say the two are one field, which is the strongest form the argument takes anywhere in this dataset. Still parked for the reason given on the other three: the obturator externus is a plausible but undemonstrated part of `puboischiofemoralis-externus`, which already carries the pectineus; `ischiotrochantericus` has an internal ischial origin where this muscle is external; and there is no `quadratus-femoris` record at all. Diogo & Molnar (2014) on the tetrapod ventral thigh would settle it, and with four frogs agreeing it is worth going and looking.",
+      "muscle": null
+    },
+    {
+      "name": "Gemellus",
+      "region": "thigh",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Present, arising on the lateral surface of the dorsal part of the ilium **and** the ischium — a wider origin than in *Rana*, where it is ischial only, or *Ascaphus*, where it is on the dorsolateral ischium — and inserting on the femur close to its proximal head. Covered by the semimembranosus. Three frogs now have it fully formed against one, *Discoglossus*, where Prikryl et al. could not recognise it as independent. Still parked because no `gemellus` record exists and the mammalian gemelli are a contested part of `puboischiofemoralis-externus`.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ischium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "proximal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Ilio-epipubic muscle (unnamed)",
+      "region": "pelvic",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "**A muscle *Xenopus* has and the other frogs do not, standing where their coccygeosacralis stands.** Prikryl et al. record the coccygeosacralis as absent in this animal and note that instead there is a short muscle from the descending part of the ilium to the ventral surface of the cartilaginous epipubis, also described by Grobbelaar (1924). They give it no name, so the row's `name` is descriptive and flagged as such. Parked twice over: no record holds an ilium-to-epipubis muscle, and the epipubis itself has no element that can safely carry it — `epipubic-cartilage` exists but is scoped to mammals, and asserting that the anuran praepubic cartilage is that structure would be a homology claim this paper does not make. Only the iliac end is scored.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium"
+          }
+        ]
+      },
+      "muscle": null
+    }
+  ]
+}

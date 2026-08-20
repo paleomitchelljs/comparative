@@ -26,11 +26,11 @@ derived — and "description of other species is confined to differences from th
 basic scheme observed in *Discoglossus*". Those differences sections are
 first-hand observations of eight more frogs, each running several pages.
 
-**The dataset holds one of the thirteen animals.** That is the largest single piece
-of unmined reading in this source and it is not a hard problem — the sections are
-short and explicitly framed as differences from a baseline that is now complete.
-*Ascaphus truei*, *Xenopus laevis*, *Necturus maculosus* and *Ambystoma mexicanum*
-are already in `species.json`; the other seven would need adding.
+**The dataset holds three of the thirteen animals** as of 2026-08-20 — see below.
+The remaining ten are the largest single piece of unmined reading in this source
+and not a hard problem: the sections are short and explicitly framed as differences
+from a baseline that is now complete. *Xenopus laevis*, *Necturus maculosus* and
+*Ambystoma mexicanum* are already in `species.json`; the rest need adding.
 
 ## Re-mine of 2026-08-20 — *Discoglossus pictus* complete
 
@@ -144,11 +144,11 @@ reach. Resolution is coarse throughout: Table 1 gives "Ilium", "Ischium", "Femur
 without a side for many muscles, and **no side is invented where the source gives
 none** — several rows are deliberately thinner than they could be made to look.
 
-## *Ascaphus truei* and *Rana esculenta* added, 2026-08-20
+## *Ascaphus*, *Rana* and *Xenopus* added, 2026-08-20
 
-Three animals of thirteen. **Thirteen pelvic and thigh records now carry two or
-three frogs**, which is the first time this dataset can show within-clade
-variation in the anuran hindlimb rather than one exemplar.
+Four animals of thirteen. **Ten records now carry three or four frogs**, which is the
+first time this dataset can show within-clade variation in the anuran hindlimb
+rather than one exemplar.
 
 *Ascaphus* is described in full rather than as differences, so it gets 18 rows;
 *Rana* is written as differences from *Discoglossus* and gets 13.
@@ -200,8 +200,25 @@ the ilium rather than the ischium, the adductor magnus wraps around the femur to
 insert dorsally, and the dorsal crista of the ilium is palpable through the skin —
 an external landmark for an internal muscle boundary.
 
-The source stays `not-started`: **three animals of thirteen**. Still to do are
+### *Xenopus laevis* — the most divergent of the four
+
+Its **iliacus externus is in three layers**, the outermost arising not from bone
+but from a ligamentous plate in the dorsal fascia that crosses to its counterpart
+on the other side. Its **coccygeosacralis is absent**, and in its place is a short
+unnamed muscle from the descending ilium to the cartilaginous epipubis — parked
+twice over, since no record holds an ilium-to-epipubis muscle and `epipubic-cartilage`
+is scoped to mammals, so calling the anuran praepubic cartilage that structure
+would be a homology claim the paper does not make. Its **rectus abdominis reaches
+the femur**, and its **latissimus dorsi ends on two thigh muscles** — which is why
+a pelvic-and-thigh paper describes a shoulder muscle at all.
+
+It also bears on *Ascaphus*: de Sá & Hillis (1990) report partial fusion of the
+sartorius and semitendinosus in *Xenopus* and *Silurana*, and *Ascaphus* has the
+two completely fused. **The same complex in a pipid and in the basal-most frog** is
+worth checking before either is treated as diagnostic of anything.
+
+The source stays `not-started`: **four animals of thirteen**. Still to do are
 *Barbourula busuangensis*, *Bombina orientalis*, *Pelobates fuscus*, *Bufo
-guttatus*, *Xenopus laevis* and *Pipa pipa*, each a differences section of 60–160
+guttatus* and *Pipa pipa*, each a differences section of 60–160
 lines, plus the three caudates. Use plain `pdftotext`; the section headings are
 `Genus species (Figs N–1 and N–2)`.

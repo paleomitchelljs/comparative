@@ -764,6 +764,62 @@
             ]
           },
           "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Origin **only** on the lateral surface of the dorsal crista of the iliac shaft, which Prikryl et al. take as making it the homologue of the pars externa alone in *Discoglossus* — where the muscle has an externa and an interna running more or less independently. It inserts on the anterior surface of the femur and **the insertion never extends over the crista femoralis**, an explicit negative worth keeping: in *Ascaphus* the corresponding muscle does reach the crista.\n\nRana esculenta, Prikryl et al. (2009). **Always** originates on the medial surface of the ilium and inserts on the anterior surface of the femur about midway along its length. The emphasis is the paper's: in *Discoglossus* this origin is variable and may instead lie on the anterior rounded margin of the acetabular portion of the ilium, so the model frog is the more constant of the two."
+        },
+        {
+          "species": "xenopus-laevis",
+          "name": "Iliacus externus",
+          "present": "yes",
+          "speciesBasis": "source",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Inner layer",
+              "note": "Origin on the lateral, ventral and medial surfaces of the iliac shaft; insertion on the anterior surface of the proximal third of the femur."
+            },
+            {
+              "name": "Middle layer",
+              "note": "Origin on the lateral, dorsal and medial surfaces of the iliac shaft; insertion slightly more proximal on the femur than the inner layer. Its origin joins that of the inner layer posteriorly on the lateral side of the shaft."
+            },
+            {
+              "name": "Outer layer",
+              "note": "**Origin not on bone at all** — on the dorsal fascia, specifically a ligamentous plate running from the anterior part of the iliac shaft across to its counterpart on the other side, forming the thickened posterior margin of that fascia. Insertion on the crista femoralis, on the dorsal surface of the proximal third of the femur."
+            }
+          ],
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ilium",
+                "side": "lateral"
+              },
+              {
+                "element": "ilium",
+                "side": "ventral"
+              },
+              {
+                "element": "ilium",
+                "side": "medial"
+              },
+              {
+                "element": "ilium",
+                "side": "dorsal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "femur",
+                "side": "anterior"
+              },
+              {
+                "element": "femur",
+                "side": "dorsal",
+                "landmark": "crista-femoralis"
+              }
+            ]
+          },
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **Split into three layers, which Prikryl et al. call a peculiar feature of this animal** — against two more or less independent parts in *Discoglossus* and a single pars externa in *Rana*. Only the inner and middle layers arise from the ilium; the outer arises from a ligamentous plate in the dorsal fascia and is not scored as a skeletal origin. This is the widest range of iliac surfaces any anuran occurrence on this record carries: lateral, ventral, medial and dorsal."
         }
       ],
       "homology": {
@@ -6077,6 +6133,27 @@
             ]
           },
           "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Two heads, both from the lateral surface of the ischium — the dorsal from its posterior part, the ventral from its ventral part — fusing about midway down the thigh. **Distally the muscle turns around the femur and inserts on the dorsal side**, which is the difference from *Discoglossus*, where it ends on the posterodorsal surface of the distal femur without wrapping. Two heads here against one there, and two here again in *Ascaphus*."
+        },
+        {
+          "species": "xenopus-laevis",
+          "name": "Adductor magnus",
+          "present": "yes",
+          "speciesBasis": "source",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Caput dorsale",
+              "note": "Covered by the gracilis major."
+            },
+            {
+              "name": "Caput ventrale",
+              "note": "Covered by the semitendinosus."
+            }
+          ],
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Divided proximally into two heads, as in *Ascaphus* and *Rana* and unlike *Discoglossus*, which has one. The two are distinguished here by what covers them rather than by their origins, which are not separately stated for this animal — so no attachments are scored.",
+          "sources": [
+            "prikryl-etal-2009"
+          ]
         }
       ],
       "homology": {
@@ -7186,6 +7263,16 @@
             ]
           },
           "attachmentNote": "Rana esculenta, Prikryl et al. (2009). **The gracilis major can be so robust that in some individuals it extends beyond the semimembranosus in dorsal view** — within-species variation in bulk rather than in attachment. The gracilis minor arises by a ligament from the wall of the cloaca, its distal insertion the same as in *Discoglossus*, that is, into the knee aponeurosis. Neither origin is skeletal, so only the aponeurotic insertion is scored."
+        },
+        {
+          "species": "xenopus-laevis",
+          "name": "Gracilis major and gracilis minor",
+          "present": "yes",
+          "speciesBasis": "source",
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). **The gracilis minor is thick here and shares its attachments with the gracilis major**, where in *Discoglossus* it is very slender and in *Ascaphus* it inserts only into the ventralmost part of the major's tendinous inscription. Its proximal origin is partly on the wall of the cloaca. No skeletal attachment is stated for either muscle in this animal, so none is scored — the row records presence and the difference in build.",
+          "sources": [
+            "prikryl-etal-2009"
+          ]
         }
       ],
       "homology": {
@@ -8124,6 +8211,16 @@
             ]
           },
           "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Two thin proximal heads: the dorsal attached to the ischium between the semimembranosus and the gemellus, the ventral between the ventral head of the adductor magnus and the obturator internus. Both fuse and insert into the knee aponeurosis as in *Discoglossus*. **The heads are described by what lies either side of them rather than by a landmark**, which is only possible because this animal has a gemellus and a distinct obturator internus — *Discoglossus* has neither as separable muscles, and its semitendinosus is described with a dorsal ischial head and a ventral head arising from the adductor magnus itself."
+        },
+        {
+          "species": "xenopus-laevis",
+          "name": "Semitendinosus",
+          "present": "yes",
+          "speciesBasis": "source",
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Rather extensive compared with the other species, its origin lying between the gracilis major and the sartorius, and its anterior margin possibly fusing with the surface of the sartorius. No bony attachment stated, so none is scored.",
+          "sources": [
+            "prikryl-etal-2009"
+          ]
         }
       ],
       "homology": {
@@ -16529,6 +16626,27 @@
             ]
           },
           "attachmentNote": "Rana esculenta, Prikryl et al. (2009). Robust, and arising on the **lateral surface of the anterior part of the acetabular portion of the ilium** — where in *Discoglossus* it arises by a flat tendon from the ventral surface of the ischium. Different bone, and one of the sharper contrasts in the paper. Filed on `pubotibialis` on the source's own synonymy, as for *Discoglossus*: Mivart and Iordansky & Morozov call this muscle the pubotibialis."
+        },
+        {
+          "species": "xenopus-laevis",
+          "name": "Sartorius",
+          "present": "yes",
+          "speciesBasis": "source",
+          "sources": [
+            "prikryl-etal-2009"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ischium"
+              },
+              {
+                "element": "pubis",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Xenopus laevis, Prikryl et al. (2009). Origin partly on the ischium but **predominantly on the praepubis**, which the row carries as the anterior pubis for want of a separate element. Prikryl et al. add that de Sá & Hillis (1990) observed partial fusion of the sartorius and semitendinosus in *Xenopus* and *Silurana*, and that the semitendinosus's anterior margin may fuse with the sartorius surface (Grobbelaar 1924). **That is the same fusion *Ascaphus* shows completely**, where the two are a single mass — so the complex appears independently in a pipid and in the basal-most frog, which is worth a second look before either is treated as diagnostic."
         }
       ],
       "homology": {

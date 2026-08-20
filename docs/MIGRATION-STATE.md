@@ -69,9 +69,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 5 | 105 |
-| `not-started` | 70 | 1892 |
+| `not-started` | 70 | 1900 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2077** |
+| **total** | **79** | **2085** |
 
 **5 of 79 cited sources re-mined** (6%).
 <!-- /counts:remine -->
@@ -179,7 +179,7 @@ notes carry the detail; each is `not-started` until re-mined.
 
 | Source | Held | Also contains |
 |---|---|---|
-| Přikryl et al. (2009) | 53 rows on **three** frogs; *Discoglossus* complete at 25 of 25 | **Six more dissected frogs and three caudates.** Each written as differences from the *Discoglossus* baseline, so the expensive part is done. Best target |
+| Přikryl et al. (2009) | 64 rows on **four** frogs; *Discoglossus* complete at 25 of 25 | **Five more dissected frogs and three caudates.** Each written as differences from the *Discoglossus* baseline, so the expensive part is done. Best target |
 | Russell & Bauer (2008) | 71 rows, 70 on *Iguana* | 558 statements across 22 lepidosaur genera. Mostly **secondary** — needs Task 3 |
 | Walker (1973) | 22 rows, all *Trachemys* | 90 statements across 9 other turtle genera, **first-hand**. Best target |
 | Osawa (1898) | 63 rows, all limb | The whole cranial and axial myology |
@@ -223,6 +223,7 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |
 | `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
 | `prikryl-etal-2009` | *rana-esculenta* | 3 | no-record 3 |
+| `prikryl-etal-2009` | *xenopus-laevis* | 3 | no-record 2, homology 1 |
 | `russell-bauer-2008` | *cnemidophorus-sp* | 2 | partial 2 |
 | `russell-bauer-2008` | *uroplatus-sp* | 2 | partial 2 |
 | `walker-1973` | *lepidochelys-kempii* | 2 | partial 2 |
