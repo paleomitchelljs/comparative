@@ -16,6 +16,11 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
+> **Widrig et al. (2023) is done too**, and the way it opened is the thing to carry
+> forward: a reading note's tooling verdict was retested and failed. Before planning
+> around any note that says a paper cannot be extracted, retest it — three of those
+> have now fallen.
+>
 > **Molnar et al. (2017) on chameleon limbs is done** — it was the top of the
 > density ranking with zero rows filed, and both tables are now mined: 78 muscle
 > entries across *Chamaeleo calyptratus*, *Trioceros melleri* and *Aspidoscelis
@@ -85,18 +90,28 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 8 | 718 |
-| `not-started` | 67 | 1756 |
+| `remined` | 9 | 756 |
+| `not-started` | 66 | 1736 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2554** |
+| **total** | **79** | **2572** |
 
-**8 of 79 cited sources re-mined** (10%).
+**9 of 79 cited sources re-mined** (11%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Eight sources have cleared that bar:
+parked**, and the note states the arithmetic. Nine sources have cleared that bar:
+
+- **Widrig et al. (2023)** — tinamou pectoral atlas. **All 44 muscle sections: 38
+  filed, 6 parked.** It held 3 rows, and the reading note said the rest could not be
+  read because the two-column PDF interleaves under `pdftotext`. It does not: the
+  `-layout` output already holds both columns side by side, and slicing each page at
+  the column boundary gives every section cleanly. **Third expired tooling verdict**,
+  after Liparini & Schultz and Fisher & Goodman. Nothing in the distal wing was
+  mapped by eye — Abdala & Diogo (2010) carries the avian synonymies, and two of them
+  matter because the names lie: the avian *pronator superficialis* is the flexor
+  carpi radialis and the avian *pronator profundus* is the pronator teres.
 
 - **Molnar et al. (2017)** — chameleon limbs. **78 muscle entries, three animals,
   227 rows, and the source had never been mined at all.** It topped the
@@ -279,6 +294,7 @@ reading that will not have to be done again.
 | `prikryl-etal-2009` | *discoglossus-pictus* | 6 | homology 3, no-record 3 |
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
 | `russell-bauer-2008` | *ophisaurus-sp* | 6 | partial 6 |
+| `widrig-etal-2023` | *nothoprocta-pentlandii* | 6 | homology 4, no-record 1, nomenclature 1 |
 | `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |
 | `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
 | `prikryl-etal-2009` | *barbourula-busuangensis* | 4 | no-record 2, homology 2 |
@@ -294,7 +310,6 @@ reading that will not have to be done again.
 | `prikryl-etal-2009` | *pelobates-fuscus* | 1 | homology 1 |
 | `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
 | `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |
-| `widrig-etal-2023` | *nothoprocta-pentlandii* | 1 | no-record 1 |
 <!-- /counts:parked-detail -->
 
 ## Decisions taken, so they are not relitigated

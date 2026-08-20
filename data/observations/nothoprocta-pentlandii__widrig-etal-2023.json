@@ -1,12 +1,12 @@
 {
   "species": "nothoprocta-pentlandii",
   "source": "widrig-etal-2023",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
   "observations": [
     {
       "speciesBasis": "note",
-      "name": "Deltoideus clavicularis",
+      "name": "M. deltoideus pars minor",
       "present": "yes",
       "attachments": {
         "origin": [
@@ -25,7 +25,7 @@
           }
         ]
       },
-      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word.",
+      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. deltoideus pars minor: fleshy origin on the lateral aspect of the acrocoracoid process of the coracoid and on the acromial process of the furcula, ventral and lateral to the origin of M. deltoideus pars propatagialis. Short-bellied, inserting on the proximodorsal margin of the humeral head. **The furcular head is the point of interest** — this record is the clavicular deltoid, and the avian furcula is the fused clavicles, so the homology is carried by a bone that no longer exists as a pair. Scored on the furcula without a landmark: the 'acromial process of the furcula' is not the scapular acromion, which skeleton.json correctly records as absent in birds — the validator rejected the row on both counts. Two different structures sharing a word. Renamed 2026-08-20 from 'Deltoideus clavicularis' to the source's own name: `name` is what the study calls the muscle, and the mapping layer is keyed on it, so a reader looking up Widrig et al.'s term has to find it there.",
       "region": "pectoral",
       "record": "deltoideus-clavicularis",
       "_occ": 10,
@@ -45,7 +45,7 @@
     },
     {
       "speciesBasis": "note",
-      "name": "Scapulohumeralis anterior",
+      "name": "M. scapulohumeralis cranialis",
       "present": "yes",
       "note": "= scapulohumeralis cranialis sensu Dilkes (2000) and Maxwell & Larsson (2007).",
       "attachments": {
@@ -62,7 +62,7 @@
           }
         ]
       },
-      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis cranialis, a thin cord between scapula and humerus with a fleshy origin and insertion. It arises on the lateral surface of the scapular neck, cranial to the origin of the lateral head of M. subscapularis, and inserts on the proximal humerus at the distal edge of the pneumatic foramen. The scapular neck and the pneumatic foramen have no elements of their own here, so both ends are scored at bone level with the detail in this note.",
+      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis cranialis, a thin cord between scapula and humerus with a fleshy origin and insertion. It arises on the lateral surface of the scapular neck, cranial to the origin of the lateral head of M. subscapularis, and inserts on the proximal humerus at the distal edge of the pneumatic foramen. The scapular neck and the pneumatic foramen have no elements of their own here, so both ends are scored at bone level with the detail in this note. Renamed 2026-08-20 from 'Scapulohumeralis anterior' to the source's own name: `name` is what the study calls the muscle, and the mapping layer is keyed on it, so a reader looking up Widrig et al.'s term has to find it there.",
       "region": "pectoral",
       "record": "scapulohumeralis-anterior",
       "_occ": 5,
@@ -83,7 +83,7 @@
     },
     {
       "speciesBasis": "note",
-      "name": "Scapulohumeralis posterior",
+      "name": "M. scapulohumeralis caudalis",
       "present": "yes",
       "attachments": {
         "origin": [
@@ -103,7 +103,7 @@
           }
         ]
       },
-      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis caudalis, substantially larger than the cranialis. Its fleshy origin runs along the lateral scapula from the caudal margin of the cranialis origin to the caudal end of the bone; its thick insertion tendon passes ventral to the cranialis and spreads widely across the ventral margin of the proximal bicipital crest of the humerus.",
+      "attachmentNote": "Nothoprocta pentlandii, from Widrig et al.'s contrast-enhanced CT atlas. M. scapulohumeralis caudalis, substantially larger than the cranialis. Its fleshy origin runs along the lateral scapula from the caudal margin of the cranialis origin to the caudal end of the bone; its thick insertion tendon passes ventral to the cranialis and spreads widely across the ventral margin of the proximal bicipital crest of the humerus. Renamed 2026-08-20 from 'Scapulohumeralis posterior' to the source's own name: `name` is what the study calls the muscle, and the mapping layer is keyed on it, so a reader looking up Widrig et al.'s term has to find it there.",
       "region": "pectoral",
       "record": "scapulohumeralis-posterior",
       "_occ": 5,
@@ -580,6 +580,529 @@
         "origin": [
           {
             "muscle": "scapulohumeralis-posterior"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pronator superficialis",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Origin on the ventral epicondyle of the humerus — not resolved in the scan and taken from Hudson et al. (1972) and Suzuki et al. (2014) — running along the cranioventral radius to the distal third of its shaft. **Filed on the flexor carpi radialis and not on a pronator record.** The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. The *Gallus* row on `flexor-carpi-radialis` carries the note that it 'seems to correspond to the pronator superficialis sensu Sullivan (1962), Shellswell & Wolpert (1977), Meyers (1996) and Dilkes (2000)'. The avian pronator names do not mean what they say.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. pronator profundus",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). The smaller of the two pronators, deep to the superficialis and arising distal to it on the ventral epicondyle, inserting midway down the caudal margin of the radial shaft. Filed on `pronator-teres`, whose synonym list gives 'pronator profundus' *sensu* the same four avian authors. **Absent in ostriches, emus and kiwi and possibly in rheas**, and Beddard (1898) held that ratites have only one pronator — so a tinamou with two is the palaeognath that kept the pair.",
+      "region": "forearm",
+      "record": "pronator-teres"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. entepicondylo-ulnaris",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Tendon of origin not visible; Hudson et al. (1972) and Suzuki et al. (2014) report it fused with the pronator profundus tendon. Fleshy near the origin, tapering onto the ventral ulnar shaft about a third of the way down. `epitrochleoanconeus` lists 'entepicondylo-ulnaris (Maxwell & Larsson 2007)' among its synonyms, which is the bridge. **Found only in palaeognaths and galloanserans**, so Widrig et al. read it as present in the last common ancestor of crown birds and lost in stem Neoaves — a muscle whose distribution is a phylogenetic character.",
+      "region": "forearm",
+      "record": "epitrochleoanconeus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digitorum superficialis",
+      "present": "yes",
+      "after": "Suzuki et al. 2014",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Said to arise from a thick superficial fascia of the ventral forearm, which the scan could not see; Suzuki et al. (2014) read that fascia as a thin tendinous origin distal to the pronator profundus on the ventral epicondyle. The belly is visible between the proximal ulna and the ulnare, deep to the flexor carpi ulnaris and superficial to the profundus. It becomes tendinous at the wrist, passes a groove on the ventral ulnare and reaches the ventral surface of the distal phalanx of the major digit.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digitorum profundus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Origin along the ventral margin of the ulnar shaft, running its whole length. **Its tendon divides at the wrist, one branch to the alular phalanx and the other fusing with the flexor digitorum superficialis tendon to the distal phalanx of the major digit** — the two-layer deep-and-superficial flexor arrangement that this record exists to trace, in a wing.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulnare"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). A large muscle along the ventrocaudal ulna, inserting by a thick tendon on the ventrocaudal ulnare. **Eight clear connection points for the bases of the secondary remiges run along its caudal margin** — Vanden Berge & Zweers (1993) call that the pars remigalis. A wrist flexor that also anchors flight feathers, which is a job no other tetrapod's flexor carpi ulnaris has.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor carpi radialis",
+      "present": "yes",
+      "after": "Suzuki et al. 2014",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). From the proximal dorsal epicondyle of the humerus, dorsal to the supinator origin, large and fleshy along most of its length, narrowing abruptly into a thin tendon at the distal radius. Suzuki et al. (2014) give the insertion as the cranioproximal alular metacarpus; Hudson et al. (1972) have it fusing with the extensor longus alulae tendon first.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. supinator",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Tendinous origin on the dorsal epicondyle, narrow throughout, fleshy insertion midway down the craniodorsal radial shaft, deep to the extensor carpi radialis. A human has this muscle and a chameleon does not — Molnar et al. (2017) find it fused into the brachioradialis in all three of their lizards — so the bird row is the third state of the same record.",
+      "region": "forearm",
+      "record": "supinator"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor digitorum communis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus"
+          },
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). A long tendon of origin from the dorsal epicondyle, through a retinaculum on the dorsal wrist, dividing to insert on the dorsocaudal alula near the base of the digit, the base of the first phalanx of the major digit and separately on its distal phalanx. Abdala & Diogo (2010) state that the avian extensor digitorum probably includes the 'extensor digitorum communis' of the avian literature, which is the bridge. **The three accounts disagree about where its origin sits relative to the supinator and extensor carpi radialis** — Suzuki et al. put it distal to both, Hudson et al. proximal to the supinator and distal to the extensor carpi radialis, and this specimen proximal to both. Recorded because it is the sort of detail a homology argument later rests on.",
+      "region": "forearm",
+      "record": "extensor-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. ectepicondylo-ulnaris",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "dorsal"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Origin not resolved in the scan; Hudson et al. (1972) and Suzuki et al. (2014) give a common tendon with the extensor carpi ulnaris off the dorsal epicondyle. The belly stretches across the interosseous space and inserts on the craniodorsal distal midshaft of the ulna. `anconeus` lists 'ectepicondylo-ulnaris (Meyers 1996; Maxwell & Larsson 2007)' among its synonyms, which is the bridge.",
+      "region": "forearm",
+      "record": "anconeus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor carpi ulnaris",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "anconeus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). A thin strip that in this specimen appears to arise **from the fascia of the ectepicondylo-ulnaris** rather than from bone, where Hudson et al. (1972) and Suzuki et al. (2014) give it a common tendon with that muscle off the dorsal epicondyle. Scored as ending on `anconeus`, which is the record the ectepicondylo-ulnaris is on. The insertion is not visible past the distal ulna; the other two accounts carry it along the extensor digitorum communis tendon to the caudal margin of the major metacarpus.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. abductor alulae",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "extensor-antebrachii-carpi-radialis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Not identified with confidence in this specimen. Hudson et al. (1972) give it a fleshy origin from the ventral surface of the distal extensor carpi radialis tendon and an insertion on the anteroventral alular phalanx; Suzuki et al. (2014) put the origin near that muscle's insertion and the insertion on the lateral alular phalanx. Scored as arising on `extensor-antebrachii-carpi-radialis`, the record that tendon belongs to. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Their *Gallus* column names this record 'Abductor alulae' outright and explains it: the abductor alulae *sensu* Meyers (1996) is the abductor indicis *sensu* Sullivan (1962), goes to digit 1, and so corresponds to the abductor pollicis brevis.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor alulae",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). Poorly visualised, probably for its size. Hudson et al. (1972) place the origin on the ventral carpometacarpus between the ankylosed first metacarpal and the pisiform process, Suzuki et al. (2014) simply on the proximal ventral carpometacarpus; both put the insertion on the caudoventral edge of the alular phalanx. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo state that the 'flexor indicis' goes to digit 1 and corresponds to the 'flexor alulae' *sensu* Meyers (1996), and place it in the flexores breves superficiales.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. adductor alulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). From the cranial margin of the proximal major metacarpus to the caudal margin of the alular phalanx, fleshy throughout; in *Eudromia elegans* it also reaches the two quills of the alula. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. **Their verdict is hedged and the row keeps the hedge**: the 'adductor indicis' of Sullivan (1962) and Shellswell & Wolpert (1977), which corresponds to Meyers's 'adductor alulae', is *possibly* part of the contrahentes digitorum. Filed here because that is the only candidate anyone names, not because it is settled.",
+      "region": "hand",
+      "record": "contrahentes-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. extensor brevis alulae",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). From the proximal dorsal alular metacarpus — Hudson et al. (1972) instead give it the common tendon of the extensor carpi radialis and extensor longus alulae — along the cranial margin of the alula to the cranial margin of the alular phalanx, proximal to the abductor alulae insertion. Hudson et al. found the extent of the insertion variable among tinamid genera. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo state that the extensores digitorum breves include the 'extensor indicis brevis' of Sullivan (1962), which corresponds to the 'extensor brevis alulae' *sensu* Meyers (1996).",
+      "region": "hand",
+      "record": "extensores-digitorum-breves"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. interosseus dorsalis",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). From the caudodorsal margin of the major metacarpus across to the craniodorsal margin of the minor metacarpus, **filling the intermetacarpal space**, narrowing to a thin tendon that appears to reach the dorsal phalanx of the minor digit. Hudson et al. (1972) instead describe the tendon splitting to the second and third phalanges of the major digit. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. **Hedged in the source and hedged here**: Abdala & Diogo say the intermetacarpales *probably correspond to part of* the avian 'interossei dorsales' and/or 'interossei ventrales'. The muscle's own description is what makes the row defensible — it fills the space between two metacarpals, which is what an intermetacarpal muscle is.",
+      "region": "hand",
+      "record": "intermetacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. interosseus ventralis",
+      "present": "yes",
+      "after": "Hudson et al. 1972",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). The ventral counterpart, from the caudoventral major metacarpus and the cranioventral minor metacarpus, filling the ventral part of the intermetacarpal space and craniocaudally wider than the dorsal muscle. Insertion tendons not found in the scan; Hudson et al. (1972) put it near the distal end of the distal phalanx of the major digit and Suzuki et al. (2014) on the proximal cranial surfaces of both major-digit phalanges. Same hedge as the dorsal muscle.",
+      "region": "hand",
+      "record": "intermetacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "M. flexor digiti minoris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Nothoprocta pentlandii, Widrig et al. (2023). A tiny muscle from the caudal margin of the minor metacarpus to the caudal edge of the phalanx of the minor digit. The bridge is Abdala & Diogo (2010), which `MINING.md` names as the forelimb equivalence table and which this dataset already cites for *Gallus*. Abdala & Diogo place the 'flexor digiti quarti', which goes to digit 3 and corresponds to Meyers's 'flexor digiti minoris', in the flexores breves superficiales — **and add in the same sentence that they cannot completely discard the possibility that some of these muscles correspond to something else.** The row carries that caveat.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales"
+    },
+    {
+      "name": "M. ulnometacarpalis ventralis",
+      "region": "hand",
+      "record": null,
+      "blockedBy": "nomenclature",
+      "blockedNote": "No published equivalence for this name. Abdala & Diogo (2010), the forelimb bridge, discuss the 'ulnimetacarpalis dorsalis' of the avian literature and say nothing about a ventral counterpart. The muscle has a fleshy origin on the ventral surface of the distal ulna and, per Suzuki et al. (2014) and Hudson et al. (1972), becomes tendinous ventral to the wrist, turns round the cranial radiale and inserts on the craniodorsal proximal carpometacarpus. Settled by a source that maps it; the attachments are recorded meanwhile.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "ventral"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "M. ulnometacarpalis dorsalis",
+      "region": "hand",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Abdala & Diogo (2010) say the 'ulnimetacarpalis dorsalis' of Sullivan (1962), Shellswell & Wolpert (1977) and Meyers (1996) **might correspond to a reduced short extensor** — a hedge, not an assignment, and `extensores-digitorum-breves` already carries a *Nothoprocta* row from the extensor brevis alulae. Filing this one there on 'might' would make a second member of that group out of a guess. Origin on the caudal margin of the distalmost ulna and the dorsal ulnare, inserting as a long strip along the caudal minor metacarpus; Hudson et al. (1972) put the origin on the craniodorsal distal ulna instead.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "distal"
+          },
+          {
+            "element": "ulnare",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "M. extensor longus alulae",
+      "region": "hand",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Two fleshy origins, one on the dorsal proximal ulna distal to the radial articular surface and one over the caudal margin of the proximal radial shaft; the insertion tendon was not visible past the wrist, and Suzuki et al. (2014) carry it to the proximodorsal alular metacarpus while Hudson et al. (1972) have it fusing with the extensor carpi radialis tendon first. The candidate is `extensor-digitorum`: Abdala & Diogo (2010) state that the 'extensor indicis longus' of Sullivan (1962) is part of the long extensors of the hand, i.e. of the extensor digitorum, and the alula is digit 1. But they never write the equation 'extensor longus alulae = extensor indicis longus', and joining two synonymies to reach a third is exactly what `MINING.md` means by mapping by eye.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "dorsal"
+          },
+          {
+            "element": "radius",
+            "side": "proximal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpometacarpus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "M. extensor longus digiti majoris",
+      "region": "hand",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "A proximodistally long origin on the caudoventral margin of the distal two-thirds of the radius, crossing the craniodistal rim of the dorsal ulnar condyle before becoming tendinous; Hudson et al. (1972) and Suzuki et al. (2014) describe an insertion on the first phalanx of the major digit, though Suzuki et al.'s own figure shows the second, which they note contradicts their text. Abdala & Diogo (2010) mention the 'extensor metacarpi longus digiti majoris' of Meyers (1996) inside their extensor digitorum discussion and pass no verdict on it. Settled by a source that does.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "M. abductor digiti majoris",
+      "region": "hand",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "**Two records claim it and Abdala & Diogo (2010) leave the choice open in one sentence.** The 'abductor medius' of Sullivan (1962) and Shellswell & Wolpert (1977), which is Meyers's 'abductor digiti majoris', is discussed under the lumbricales and again under the intermetacarpales, which they say 'might also/instead include' it. `lumbricales` is scored absent in *Gallus* on their own data, which does not settle it either. Long fleshy origin on the ventral surface of the major metacarpus; the insertion was not located here and is given by both other accounts as the cranial margin of the proximal first phalanx of the major digit.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpometacarpus",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
           }
         ]
       },

@@ -11,7 +11,7 @@ modern, open access, contrast-enhanced CT of *Nothoprocta pentlandii*, with clea
 text and current avian nomenclature — the highest yield per effort left in the
 avian corpus.
 
-Scored: **21 rows on 12 records**, plus one parked. Three came from the first pass —
+Scored: **38 rows on 21 records, plus 6 parked — the whole atlas, `remined`.** Three came from the first pass —
 `scapulohumeralis-anterior`, `scapulohumeralis-posterior`, `deltoideus-clavicularis`
 — and 18 more once the column problem below turned out not to be one.
 
@@ -49,12 +49,52 @@ attributions live in each part's prose.
 remiges and no non-avian tetrapod has anything to correspond to it; filing it means
 first deciding whether feather muscles get records at all.
 
-### Still to do — sections 3.2.23 to 3.2.45
+### The antebrachium and manus, mined the same day — sections 3.2.23 to 3.2.45
 
-Twenty-three antebrachial and manual muscles, from the pronators to the alular and
-interosseous groups. Many are avian novelties that will park; the pronators,
-supinator, the carpal extensor and flexor groups and extensor digitorum communis map
-onto records this dataset holds. The source stays `not-started` until they are done.
+Twenty-three more entries: **18 filed, 5 parked**, which finishes the atlas. All 44
+muscle sections are now accounted for — section 3.2.15 is the propatagial ligaments
+and is not a muscle. **38 filed and 6 parked in total, and the source is `remined`.**
+
+**Nothing here was mapped by eye.** Abdala & Diogo (2010) is the forelimb equivalence
+table `MINING.md` names, this dataset already cites it for *Gallus*, and it carries
+the avian synonymies one at a time. Four of them matter because the names lie:
+
+| Widrig's name | Record | What states it |
+|---|---|---|
+| M. pronator superficialis | `flexor-carpi-radialis` | The *Gallus* row on that record already says it "seems to correspond to the pronator superficialis *sensu* Sullivan (1962)…" |
+| M. pronator profundus | `pronator-teres` | `pronator-teres` lists 'pronator profundus' *sensu* the same four avian authors as a synonym |
+| M. entepicondylo-ulnaris | `epitrochleoanconeus` | Synonym list, *sensu* Maxwell & Larsson (2007) |
+| M. ectepicondylo-ulnaris | `anconeus` | Synonym list, *sensu* Meyers (1996) and Maxwell & Larsson (2007) |
+
+**The two avian pronators are not the two tetrapod pronators.** The superficial one
+is the flexor carpi radialis and the deep one is the pronator teres. Reading the
+names straight would have put two muscles on the wrong records and made the tinamou
+look like it had lost its flexor carpi radialis.
+
+**Three rows keep a hedge the source put there**, rather than dropping it: the
+adductor alulae is "possibly part of the contrahentes digitorum"; both interossei
+"probably correspond to part of" the intermetacarpales; and the flexor digiti minoris
+is placed in the flexores breves superficiales in a sentence that ends by declining
+to rule out an alternative. Each row says so.
+
+**Five parked, and each names what would settle it.** M. ulnometacarpalis ventralis
+has no published equivalence at all — Abdala & Diogo discuss the dorsal one and are
+silent on a ventral counterpart. M. ulnometacarpalis dorsalis "might correspond to a
+reduced short extensor", which is a hedge and not an assignment. M. extensor longus
+alulae has a candidate reachable only by joining two synonymies to make a third,
+which is what mapping by eye means. M. extensor longus digiti majoris is mentioned by
+Abdala & Diogo without a verdict. And **M. abductor digiti majoris is claimed by two
+records in one sentence** — they discuss it under the lumbricales and then say the
+intermetacarpales "might also/instead include" it. All five carry their attachments,
+so the reading is done whichever way the calls go.
+
+Three rows were **renamed to the source's own names** — M. scapulohumeralis
+cranialis, M. scapulohumeralis caudalis, M. deltoideus pars minor — where the first
+pass had labelled them with this dataset's terms. `name` is what the study calls the
+muscle and the mapping layer is keyed on it. The rename made three genuine
+cross-source disagreements visible, because Abdala & Diogo also have *Nothoprocta*
+rows on those records; the occurrences keep the established labels and `data/mapping/`
+now holds both.
 
 ## ~~Why only three: the columns interleave~~ — overturned 2026-08-20
 
