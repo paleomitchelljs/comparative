@@ -145,3 +145,29 @@ Bauer.
 source reports another worker's observation". `observations.json` has `blockedBy`
 for *which record*, and nothing for *whose observation*. Until that exists, this
 material stays in the note rather than in the data.
+
+## Re-mine, first pass: 277 statements parked, and why none was filed
+
+The audit found 558 attachment-adjacent statements across 22 genera against 70
+*Iguana* rows. **277 of them are now parked**, for the five genera that already
+have a species record: *Sphenodon* 84, *Varanus* 78, *Gekko* 66, *Chamaeleo* 43,
+*Ctenosaura* 6.
+
+**Not one was filed, deliberately.** Their own descriptive animal is *Iguana*;
+every statement about another genus reports somebody else's dissection. Filing
+those under `russell-bauer-2008` would claim observations the paper never made —
+the error that put Dick & Clemente's compiled table on a monitor nobody dissected.
+Each parked row names the citation standing beside it in the text where one is
+recoverable, and says that promoting it means setting `after` to that worker.
+
+`after` exists as of this pass precisely so these can eventually be filed without
+the lie. What it does not do is invent the species records for the other
+seventeen genera — *Lacerta* 38 statements, *Tupinambis* 27, *Phrynosoma* 21,
+*Ameiva* 18, *Heloderma* 17, *Crotaphytus* 14, *Plestiodon* 10 and the rest — which
+is the remaining half of this paper and needs a decision about how many lizards
+this dataset wants to carry.
+
+**The *Sphenodon* 84 are the lowest-value of the five** despite being the largest:
+they are secondary to Osawa (1898), which this dataset already holds directly with
+63 first-hand rows. *Varanus*, *Gekko* and *Chamaeleo* are where the return is,
+because those species carry few or no forelimb rows of their own.
