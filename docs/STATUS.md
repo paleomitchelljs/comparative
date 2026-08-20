@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1516 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1527 present occurrences · 274 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **78%** of 1516 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Testudines at 72%; the thinnest regions are cranial, fin, hand. `side` is on 55% of observed rows and `landmark` on 28%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **78%** of 1527 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Anura at 53%, Testudines at 72%; the thinnest regions are cranial, fin, hand. `side` is on 55% of observed rows and `landmark` on 27%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -37,16 +37,16 @@ Taxon-specific attachments cover **78%** of 1516 present occurrences. The thinne
 |---|---:|---:|---:|---:|
 | foot | 12 | 150 | 142 | 95% |
 | leg | 10 | 108 | 102 | 94% |
-| thigh | 10 | 98 | 90 | 92% |
+| thigh | 10 | 106 | 98 | 92% |
 | arm | 5 | 106 | 92 | 87% |
-| pelvic | 8 | 72 | 62 | 86% |
+| pelvic | 8 | 75 | 65 | 87% |
 | pectoral | 16 | 279 | 239 | 86% |
 | forearm | 19 | 280 | 233 | 83% |
 | axial | 15 | 48 | 35 | 73% |
 | hand | 9 | 120 | 81 | 68% |
 | fin | 9 | 39 | 23 | 59% |
 | cranial | 51 | 216 | 87 | 40% |
-| **all** | 164 | 1516 | 1186 | **78%** |
+| **all** | 164 | 1527 | 1197 | **78%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -55,7 +55,7 @@ Taxon-specific attachments cover **78%** of 1516 present occurrences. The thinne
 | Taxon | Present occurrences | Scored | %att |
 |---|---:|---:|---:|
 | Dipnoi | 7 | 7 | 100% |
-| Pseudosuchia (stem) | 1 | 1 | 100% |
+| Pseudosuchia (stem) | 12 | 12 | 100% |
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Theropoda (stem) | 38 | 34 | 89% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1186 of 1516 present occurrences (78%).**
+**Taxon-specific attachments: 1197 of 1527 present occurrences (78%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -112,10 +112,10 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 | foot | 12 | 463 |
 | cranial | 51 | 373 |
 | leg | 10 | 345 |
-| thigh | 10 | 316 |
+| thigh | 10 | 340 |
 | arm | 5 | 282 |
+| pelvic | 8 | 243 |
 | hand | 9 | 237 |
-| pelvic | 8 | 231 |
 | axial | 15 | 123 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
@@ -129,9 +129,9 @@ name a side or a landmark rather than the bare bone.
 | | |
 |---|---|
 | Elements | 274, of which 256 (93%) carry at least one attachment |
-| Observed attachment rows | 3809 |
-| Rows naming a **landmark** | 1049 (28%) |
-| Rows naming a **side** | 2097 (55%) |
+| Observed attachment rows | 3845 |
+| Rows naming a **landmark** | 1057 (27%) |
+| Rows naming a **side** | 2127 (55%) |
 | Osteological correlates | 126 flagged, 120 carry a muscle |
 <!-- /counts:skeleton -->
 

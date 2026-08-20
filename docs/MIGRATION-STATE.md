@@ -30,7 +30,7 @@ current.
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | **done** |
 | 3 | `after:` field for secondary attribution | **done** |
-| 4 | Re-mine every cited source | **in progress — 3 of 79 to exhaustion, 3 more partly** |
+| 4 | Re-mine every cited source | **in progress — 4 of 79 to exhaustion, 3 more partly** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | **done** |
 | 6 | Retire what the flip made defunct | **done — 7 scripts deleted** |
 | 7 | `phylogeny.json` | not started |
@@ -62,12 +62,12 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 3 | 83 |
-| `not-started` | 72 | 1867 |
+| `remined` | 4 | 99 |
+| `not-started` | 71 | 1866 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2030** |
+| **total** | **79** | **2045** |
 
-**3 of 79 cited sources re-mined** (3%).
+**4 of 79 cited sources re-mined** (5%).
 <!-- /counts:remine -->
 
 ### What counts as done
@@ -80,6 +80,14 @@ parked**, and the note states the arithmetic. Three sources have cleared that ba
   any single pass so far; the figures are in `STATUS.md`.
 - **Widrig et al. (2026)** — 38 blocks: 20 filed, 16 parked, 2 folded into
   existing rows.
+- **Liparini & Schultz (2013)** — 16 muscles in its Table 2: 16 filed, 0 parked,
+  merging into 13 occurrences. It had been carrying **one** row, and its note
+  recorded why: the two-column layout interleaved under `pdftotext`, so only
+  claims verifiable from context were scored. That note also named the fix —
+  plain `pdftotext`, which `MINING.md` documents — and **nobody ran it**. The
+  paper carries a table of origin, insertion and inference level for every muscle.
+  *Prestosuchus* went from 1 occurrence to 13, the first real body of pseudosuchian
+  stem myology here.
 - **Freitas et al. (2017)** — 21 muscles: 20 filed, 1 parked. It had been carrying
   **one** row, on the reasoning that Russell & Bauer already covered the same
   animal at higher resolution and this source therefore "confirms rather than opens
@@ -89,10 +97,20 @@ parked**, and the note states the arithmetic. Three sources have cleared that ba
   tendinous-arc origin for the caudal triceps head, previously known only in
   crocodilians — was not in the dataset at all.
 
-**The lesson generalises past this source.** "Already covered by a better paper" is
-not a reason to leave a dissection unmined, and wherever a reading note argues that,
-the source needs re-reading. An attachment is an observation; two workers who each
-opened an animal do not compete.
+**Both passes found the same shape of failure, and it is not in the papers.** Each
+source was left nearly unmined for a stated reason, recorded in its reading note,
+which did not survive being checked:
+
+| Source | The reason given | What was true |
+|---|---|---|
+| Freitas et al. | Russell & Bauer already cover this animal better | The two dissections **disagree on eight of twenty muscles** |
+| Liparini & Schultz | The PDF's columns interleave under `pdftotext` | Plain `pdftotext` reads it cleanly, and the note said so itself |
+
+So: **"already covered by a better paper" is not a reason** — an attachment is an
+observation, and two workers who each opened an animal do not compete. And **a
+tooling verdict expires** — one cost 15 of 16 muscles. Where a reading note explains
+why a source yielded little, treat that explanation as the least-checked claim in
+the repository and check it first.
 
 ### Sources that cannot be re-mined
 

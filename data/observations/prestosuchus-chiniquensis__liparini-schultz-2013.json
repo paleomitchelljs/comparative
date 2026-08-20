@@ -1,7 +1,7 @@
 {
   "species": "prestosuchus-chiniquensis",
   "source": "liparini-schultz-2013",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
   "observations": [
     {
@@ -17,7 +17,7 @@
           }
         ]
       },
-      "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur.",
+      "attachmentNote": "Reconstructed at Witmer inference level I over a muscular scar on the craniolateral face of the greater trochanter, on the proximolateral tuberosity of the femur, and over the adjacent concavity on the craniolateral side of the trochanter. **The origin is deliberately not scored.** Liparini & Schultz leave it as an unresolved ambiguity between the ventrolateral border of the preacetabular ilium, cranial and ventral to the PIFI 1 origin, and the ventral surfaces of the transverse processes and centra of the last truncal vertebrae — the avian and crocodylian conditions respectively, neither of which they will call ancestral. Recording either would manufacture a decision the authors refuse to make.",
       "region": "pelvic",
       "record": "puboischiofemoralis-internus",
       "_occ": 3,
@@ -33,6 +33,341 @@
       "_srcs": [
         "liparini-schultz-2013"
       ]
+    },
+    {
+      "name": "Puboischiofemoralis internus pars I (PIFI 1)",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-internus",
+      "present": "inferred",
+      "attachments": {
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "medial",
+            "landmark": "fourth-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Insertion at level I on the proximal portion of a caudomedial crest of the femoral shaft, medial to the distal depression of the fourth trochanter. **Origin unscored for the same reason as the PIFI 2**: level II′, an unresolved choice between the ventral margin of the preacetabular ilium and the medial face of the ilium with the ventral surfaces of the sacral transverse processes. The authors set out why it cannot be settled — if the whole deep dorsal group arose laterally on the ilium in the reptilian and saurian ancestors, then the crocodylian medial origin and the avian preacetabular one are both derived, and whether the shift happened once before the archosaur split or twice afterwards is open. Schachner et al. (2011) put the PIFI 1 of *Poposaurus gracilis* on a medial iliac depression; the same depression is present here **without muscle scars**, and Liparini & Schultz decline to read it as an attachment. They also note their PIFI 1 insertion stays caudomedial, where *Poposaurus* has it craniolateral — a difference that would reverse the muscle's rotational moment from supination to pronation."
+    },
+    {
+      "name": "Ilio-femoralis (IF)",
+      "region": "pelvic",
+      "record": "iliofemoralis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Origin at level II′ on the lateral surface of the ilium, on a smooth area just caudal to the subvertical crest and dorsal to the supra-acetabular crest — level II′ because the authors do not accept that the avian and crocodylian origins are homologous. Insertion at level I over muscular striations on a slightly elevated area of the proximal craniomedial femoral shaft, just distal to the femoral head. **One insertion, so one muscle.** *Tyrannosaurus* has a clearly divided insertion, the iliofemoralis externus on a proximolateral ridge and the iliotrochantericus caudalis on the lesser trochanter; *Prestosuchus* has no homologue of the lesser trochanter and only the one structure, which Liparini & Schultz take as strengthening a single undivided ilio-femoralis in this animal. Its homology is contested in the direction of the PIFI 2: the avian iliotrochantericus cranialis and medialis may belong here rather than there."
+    },
+    {
+      "name": "Ilio-fibularis (ILFB)",
+      "region": "thigh",
+      "record": "iliofibularis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fibula",
+            "landmark": "iliofibular-tubercle"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Origin at level II′ on the lateral surface of the postacetabular ilium, with no osteological structure marking where; insertion at level I on the iliofibular tubercle, which is as secure as this reconstruction gets — the same prominent tubercle carries the muscle in birds, crocodylians, *Tyrannosaurus* and *Poposaurus*. The uncertainty is all at the iliac end: *Prestosuchus* has a crest running the whole dorsal and dorsolateral margin of the ilium with a rugose oval area caudally, and the authors state they could not determine whether that crest carries the ilio-tibialis group alone, as in crocodylians, or shares it with the ilio-fibularis, as in birds. They also reject the ridge Carrano & Hutchinson use in *Tyrannosaurus* to divide iliofemoralis from iliofibularis: no living archosaur supports a vertical ridge doing that."
+    },
+    {
+      "name": "Ambiens (AMB)",
+      "region": "thigh",
+      "record": "ambiens",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "dorsal"
+          },
+          {
+            "element": "pubis",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Both ends at level I** — the strongest reconstruction in the paper, and one of only two muscles scoring level I at the origin. Muscular scars on the dorsal tubercle, dorsal crest, lateral crest and cranial tubercle of the pubis, and on the iliac peduncle where it contacts the pubis; insertion on the cnemial crest by the knee extensor tendon shared with the femoro-tibialis and ilio-tibialis. In both extant archosaur groups a secondary tendon perforates that extensor tendon — in birds to reach the tendon of origin of the digital flexors and gastrocnemius lateralis, in crocodylians to reach the gastrocnemius lateralis itself — and the reconstruction carries that perforating portion over."
+    },
+    {
+      "name": "Ambiens pars II (AMB 2)",
+      "region": "thigh",
+      "record": "ambiens",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pubis",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). A second ambiens head, at level II′, from the proximal medial surface of the pubis over the pubo-ischiadic plate. **It has no bony insertion and none is scored**: like its counterpart in extant lepidosaurs and crocodylians it inserts on the femoro-tibialis, muscle to muscle, and an empty insertion here is the accurate record of that. Carrano & Hutchinson treat the two-headed ambiens as a crocodylian autapomorphy with no avian homologue, and reconstruct it in neither *Tyrannosaurus* nor *Poposaurus*; Liparini & Schultz restore it here on the argument that the crocodylian condition is plesiomorphic and matched in lepidosaurs. **It is one of the two muscles this paper adds to the pseudosuchian stem that the bird-line reconstructions do not carry.**"
+    },
+    {
+      "name": "Femoro-tibialis (FMT)",
+      "region": "thigh",
+      "record": "femorotibialis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "femur",
+            "side": "medial"
+          },
+          {
+            "element": "femur",
+            "side": "anterior"
+          },
+          {
+            "element": "femur",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Origin at level I′ over the medial, cranial and lateral surfaces of the femoral shaft; insertion at level I on the cnemial crest, by the extensor tendon it shares with the ambiens and ilio-tibialis. The three rows record the three surfaces, not three muscles: the authors say the group was possibly divided into two or three portions — lateralis, intermedius and internus in the extant nomenclature — and decline to fix the number, so no `parts` are asserted. Inferred function is knee extension, and the muscle is placed in the stance phase of the stride with the caudofemorales, flexor cruris and adductores."
+    },
+    {
+      "name": "Ilio-tibialis (IT)",
+      "region": "thigh",
+      "record": "extensor-iliotibialis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "landmark": "cnemial-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Both ends at level I.** Muscle scars on the dorsal crest and the subtriangular rugosity of the ilium carry the first head, and the dorsolateral crest carries the second and third together; insertion on the cnemial crest through the common knee extensor tendon. *Prestosuchus* shows no osteological structure dividing the second head from the third, and Liparini & Schultz leave them undivided where Schachner et al. (2011) restore three separate heads in *Poposaurus* on parsimony alone. Function: the group as a whole a knee extensor, but its preacetabular portion capable of acting as a hip flexor."
+    },
+    {
+      "name": "Adductores femores (ADD 1, ADD 2)",
+      "region": "thigh",
+      "record": "adductor-femoris",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "anterior"
+          },
+          {
+            "element": "ischium",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Two heads at the pelvis, one insertion at the femur. The first arises on the cranial border of the ischium at a proximal cranioventral keel; the second on the caudolateral surface of the ischial shaft with no specific osteological correlate, which is why the origin is level II′ and rests on the crocodylian and lepidosaur condition being the most parsimonious. The insertion is level I on a single slightly elevated area of the caudal and caudodistal femoral shaft — **the authors state explicitly that they could not distinguish separate insertion sites for the two heads**, so one insertion row is the whole of what they claim."
+    },
+    {
+      "name": "Pubo-ischio-femorales externi (PIFE 1, PIFE 2, PIFE 3)",
+      "region": "pelvic",
+      "record": "puboischiofemoralis-externus",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "lateral"
+          },
+          {
+            "element": "pubis",
+            "side": "lateral"
+          },
+          {
+            "element": "pubis",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "posterior"
+          },
+          {
+            "element": "femur",
+            "side": "medial",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). The third head from the lateral surface of the ischium; the first and second from the ventral surface of the pubic apron, the expanded lateral surface of the pubic shaft and the distal concavity of the pubis. Insertion at level I on muscle scars on the caudal tuberosity of the femoral head and the caudomedial concavity of the greater trochanter. **The pubic origin is the weak point and the authors say so**: the pubis of *Prestosuchus* is markedly unlike that of either extant archosaur group, it bears no muscle scars and no specific features along the expanded shaft, so how the muscle was arranged there and whether the first and second heads were separate at all remain undecided. The third head may be homologous with the avian obturatorius lateralis pars dorsalis."
+    },
+    {
+      "name": "Flexor cruris (FTE, FTI 3 + FTI 4)",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ischium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Two portions reconstructed: a lateral one, the flexor tibialis externus, arising caudally from the lateral surface of the postacetabular ilium, and a medial one, the third and fourth flexores tibiales interni, from the dorsal tubercle of the ischium. Both insert at level I on the proximocaudal tuberosity of the tibia, **combined in a single tendon** — which is why one insertion row carries both. The same osteological features supporting the medial portion here were the ones Carrano & Hutchinson used in *Tyrannosaurus*."
+    },
+    {
+      "name": "Flexor tibialis internus pars I and II (FTI 1 + FTI 2)",
+      "region": "thigh",
+      "record": "ischioflexorius",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ischium",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). The second head at level II′ on the lateral surface of the postacetabular ilium; the first at level II, running mediolaterally from the distal tubercle of the ischium along muscle scars on the distal caudomedial ischial surface to the distal caudodorsal groove. The pair insert on the craniomedial fossa of the tibia by a tendon **shared with the pubo-ischio-tibialis**, which is scored on its own record with the same insertion. Carrano & Hutchinson did not reconstruct the second head in *Tyrannosaurus* for want of muscle scars on the caudal postacetabular ilium; the scars are present here."
+    },
+    {
+      "name": "Ischio-trochantericus (ISTR)",
+      "region": "thigh",
+      "record": "ischiotrochantericus",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "side": "distal",
+            "landmark": "greater-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Origin at level II′ from the medial surface of the ischium, on the proximal dorsocaudal keel — level II′ because **no osteological structure could be tied to it**, and the reconstruction rests on the medial origin being shared by extant lepidosaurs and crocodylians. Insertion at level I on muscle scars at the distal base of the greater trochanter, on the caudodistal crest of the caudolateral tuberosity of the femur. Liparini & Schultz note the attachment sites are effectively the same in *Prestosuchus*, *Tyrannosaurus* and *Poposaurus*, and that the two other animals have the better evidence: both show muscle scars on the medial ischium that this specimen does not."
+    },
+    {
+      "name": "Caudofemorales (CFL, CFB)",
+      "region": "pelvic",
+      "record": "caudofemoralis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ilium",
+            "side": "lateral"
+          },
+          {
+            "element": "ilium",
+            "side": "medial"
+          },
+          {
+            "element": "caudal-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "femur",
+            "landmark": "fourth-trochanter"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). The brevis from the caudolateral surface and the postacetabular medial fossa of the ilium together with the first caudal vertebrae; the longus from the more posterior caudals, running by comparison with extant archosaurs from about the third to the fifteenth. **Those vertebrae are not preserved in the specimen**, so the extent of the longus origin is inferred from living animals rather than observed, and the row records the caudal series without a count. Insertion at level I on muscle scars on the fourth trochanter, with the longus continuing onto the adjacent distal impression."
+    },
+    {
+      "name": "Pubo-ischio-tibialis (PIT)",
+      "region": "thigh",
+      "record": "puboischiotibialis",
+      "present": "inferred",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ischium",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "tibia",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). Both ends at level II. Origin on muscle scars over the cranioventral border of the obturator process of the ischium — the row carries the ischium and the cranial side, since the obturator process is not a separate element here — and insertion on the craniomedial fossa of the proximal half of the tibia, by the tendon it shares with the first and second flexores tibiales interni. **Among living archosaurs this muscle survives only in Crocodylia.** Carrano & Hutchinson found nothing to support it in *Tyrannosaurus*, and Liparini & Schultz read its presence here plus its absence there as placing the loss on the avemetatarsalian line before theropods — which makes this row a datum about where a muscle disappeared, not only about where it attached."
+    },
+    {
+      "name": "Pubo-tibialis (PT)",
+      "region": "thigh",
+      "record": "pubotibialis",
+      "present": "no",
+      "attachmentNote": "Prestosuchus chiniquensis, Liparini & Schultz (2013). **Reconstructed as absent, and that is a claim rather than a gap.** The pubo-tibialis is rare among living archosaurs and residual where it survives at all; no evidence of it was found in this specimen and the authors did not restore it. Schachner et al. (2011) likewise left it out of *Poposaurus* for want of muscle scars, and Carrano & Hutchinson did not consider it for *Tyrannosaurus*. Were it present, Liparini & Schultz expect it would have arisen from the lateral surface of the pubis and inserted on the first head of the adductor femoris — muscle to muscle, so it would carry no bony insertion even then."
     }
   ]
 }
