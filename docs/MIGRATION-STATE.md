@@ -32,8 +32,8 @@ current.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 2 | 63 |
-| `not-started` | 69 | 1490 |
-| `blocked-no-source` | 8 | 458 |
+| `not-started` | 73 | 1868 |
+| `blocked-no-source` | 4 | 80 |
 | **total** | **79** | **2011** |
 
 **2 of 79 cited sources re-mined** (2%).
@@ -55,22 +55,37 @@ parked**, and the note states the arithmetic. Two sources have cleared that bar:
 <!-- counts:remine-blocked -->
 | Source | Rows |
 |---|---:|
-| `cunningham-1882` | 243 |
-| `gest-anatomy-tables` | 119 |
 | `walthall-ashley-ross-2006` | 63 |
-| `diogo-etal-2016-si` | 13 |
 | `pereyra-etal-2024` | 11 |
 | `fritzsch-2023` | 3 |
 | `navarro-etal-2023` | 3 |
-| `sefton-etal-2016` | 3 |
 
-**8 sources, 458 rows** that cannot be verified against a paper.
+**4 sources, 80 rows** that cannot be verified against a paper.
 <!-- /counts:remine-blocked -->
 
-These carry rows nobody can currently check against a paper. Cunningham, Gest and
-Walthall & Ashley-Ross are the large ones. **Do not quietly trust these rows** —
-they are the same class of claim the audit found wanting elsewhere, minus the
-ability to test them.
+These carry rows nobody can currently check against a paper. **Do not quietly
+trust them** — they are the same class of claim the audit found wanting elsewhere,
+minus the ability to test them.
+
+**Four of the original eight were acquired on 2026-08-19** and are now
+`not-started` rather than blocked: Cunningham (the whole Challenger part XVI, from
+archive.org), Sefton et al. (eLife, gold OA), the Diogo et al. supplementary (gold
+OA, and it is a `.docx`), and the Gest tables (eight region pages mirrored to
+`papers/gest-anatomy-tables/`). That moved 419 of the 458 unverifiable rows back
+into reach.
+
+The four that remain are not paywalled in the ordinary sense, and none should be
+worked around:
+
+| Source | Why | How to get it |
+|---|---|---|
+| `walthall-ashley-ross-2006` | Bronze OA — free to read on Wiley, no open licence. Wiley serves a bot-check page to scripts | Browser |
+| `pereyra-etal-2024` | In PMC but **not** in the PMC open-access subset, so there is no programmatic route | Browser |
+| `fritzsch-2023` | Open on Preprints.org; the download endpoint blocks scripted requests | Browser |
+| `navarro-etal-2023` | **Genuinely closed access** | Subscription or author copy |
+
+Drop them in `papers/` under the filename the reading note already implies, add the
+`pdf` field to `sources.json`, and set the status to `not-started`.
 
 ## Known-incomplete sources with a local copy
 

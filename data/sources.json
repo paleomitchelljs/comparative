@@ -244,8 +244,8 @@
       "journal": "Report on the Scientific Results of the Voyage of H.M.S. Challenger, Zoology 5, part XVI: 1-192",
       "url": "https://www.19thcenturyscience.org/HMSC/HMSC-Reports/Zool-16/htm/doc.html",
       "peerReviewed": false,
-      "pdf": null,
-      "role": "**The dataset's first marsupials.** Theria was a placental column — *Homo*, *Rattus*, *Galictis*, four cats — and `monodelphis-domestica` sat in `species.json` carrying no rows at all. Cunningham dissected the thylacine, the spotted cuscus and the red-tailed phascogale, muscle by muscle, with origin and insertion for each and a running concordance against Macalister, Owen, Meckel, Haughton, Young and Cuvier & Laurillard's plates for the wombat, koala, Tasmanian devil, kangaroos, bandicoot and opossum.\n\nThe fore limb is complete in all three animals. **The hind limb is complete in only two**: Cunningham says plainly that the pelvis and hind limbs of the *Phascogale* arrived so shattered with shot that he could not examine them, so that animal has no hindlimb row here and the absence is a fact about the specimen, not about the muscle.\n\nIts second half is a comparative survey of the intrinsic muscles and plantar nerves of the mammalian pes across some two dozen feet — monotreme, marsupial, carnivore, edentate, ungulate, rodent, bat and primate — which is where its platypus and echidna rows come from, and the only dissection in this bibliography that puts monotreme and marsupial foot muscles on the same page.\n\n**Mined: 243 rows across 27 species** — 153 from the limb myology of the three principal animals, 90 from the pes survey. That is the largest single-source pass this dataset has had. Nineteen species entered `species.json` for it.\n\n**It is a Victorian source and its names are Victorian.** Muscles are given human names — supinator longus, extensor secundi internodii pollicis, anconeus internus — and the mapping onto this dataset's comparative records runs through the human column, which is exactly what the human column was added for. Where Cunningham's own homology call differs from the record he lands on, the disagreement is in the row's note, attributed to him.",
+      "pdf": "1882_Cunningham_Marsupialia-Mammalia_Extant_thylacine-cuscus-phascogale-myology.pdf",
+      "role": "**The dataset's first marsupials.** Theria was a placental column — *Homo*, *Rattus*, *Galictis*, four cats — and `monodelphis-domestica` sat in `species.json` carrying no rows at all. Cunningham dissected the thylacine, the spotted cuscus and the red-tailed phascogale, muscle by muscle, with origin and insertion for each and a running concordance against Macalister, Owen, Meckel, Haughton, Young and Cuvier & Laurillard's plates for the wombat, koala, Tasmanian devil, kangaroos, bandicoot and opossum.\n\nThe fore limb is complete in all three animals. **The hind limb is complete in only two**: Cunningham says plainly that the pelvis and hind limbs of the *Phascogale* arrived so shattered with shot that he could not examine them, so that animal has no hindlimb row here and the absence is a fact about the specimen, not about the muscle.\n\nIts second half is a comparative survey of the intrinsic muscles and plantar nerves of the mammalian pes across some two dozen feet — monotreme, marsupial, carnivore, edentate, ungulate, rodent, bat and primate — which is where its platypus and echidna rows come from, and the only dissection in this bibliography that puts monotreme and marsupial foot muscles on the same page.\n\n**Mined: 243 rows across 27 species** — 153 from the limb myology of the three principal animals, 90 from the pes survey. That is the largest single-source pass this dataset has had. Nineteen species entered `species.json` for it.\n\n**It is a Victorian source and its names are Victorian.** Muscles are given human names — supinator longus, extensor secundi internodii pollicis, anconeus internus — and the mapping onto this dataset's comparative records runs through the human column, which is exactly what the human column was added for. Where Cunningham's own homology call differs from the record he lands on, the disagreement is in the row's note, attributed to him. Acquired 2026-08-19 from archive.org `reportonscientif188205grea` (Challenger Zoology v.5, pts 14 and 16); pp. 497-718 of that scan extracted, which is Cunningham's part XVI entire. Public domain.",
       "notes": "papers/1882_Cunningham_Marsupialia-Mammalia_Extant_thylacine-cuscus-phascogale-myology.md"
     },
     {
@@ -385,9 +385,9 @@
       "journal": "Scientific Reports 6: 37592 (supplementary)",
       "doi": "10.1038/srep37592",
       "openAccess": true,
-      "pdf": null,
+      "pdf": "2016_Diogo-Johnston-Molnar-EsteveAltava_Sarcopterygii_Extant_fin-to-limb-muscle-phenotype-SUPPL.docx",
       "notes": "papers/2016_Diogo-Johnston-Molnar-EsteveAltava_Sarcopterygii_Extant_fin-to-limb-muscle-phenotype.md",
-      "role": "Tables S1–S4 give per-muscle origin and insertion for the Neoceratodus and Latimeria pectoral and pelvic fins. Source of every fish attachment record here. Local copy at data/raw/diogo-etal-2016-supplementary.docx (git-ignored).",
+      "role": "Tables S1–S4 give per-muscle origin and insertion for the Neoceratodus and Latimeria pectoral and pelvic fins. Source of every fish attachment record here. Local copy at data/raw/diogo-etal-2016-supplementary.docx (git-ignored). Acquired 2026-08-19 from Springer Nature static content. Gold OA, CC-BY. **It is a .docx, not a PDF** — the supplementary tables ship as Word.",
       "homologyScope": true
     },
     {
@@ -545,8 +545,8 @@
       "journal": "Teaching resource (web), Texas Tech University Health Sciences Center",
       "url": "https://anatomy.ttuhscep.edu/anatomytables/muscles_alpha.html",
       "peerReviewed": false,
-      "pdf": null,
-      "role": "Origin, insertion, action, innervation and arterial supply for 279 HUMAN muscles across seven regions, in one table. **The human column runs on this**, and the column exists to be a baseline: it is the anatomy most readers already carry, and every other column in the dataset can be read against it. It is also the densest source here by rows per page.\n\nDissection-derived, and treated as such — the human body is the most dissected animal there has ever been, so these attachments rest on a larger sample than any single-specimen description in this corpus. It describes one animal and makes no cross-taxon homology claims, so it carries no `homologyScope`, exactly as Cunningham (1882) and Osawa (1898) do not; where a later comparative treatment homologises differently that treatment governs the homology and this one still governs the attachment.\n\nWeb resource with no archived snapshot held, so the rows in `data/` are the only in-repo record of it. Its rows are paraphrased, never copied.",
+      "pdf": "gest-anatomy-tables/",
+      "role": "Origin, insertion, action, innervation and arterial supply for 279 HUMAN muscles across seven regions, in one table. **The human column runs on this**, and the column exists to be a baseline: it is the anatomy most readers already carry, and every other column in the dataset can be read against it. It is also the densest source here by rows per page.\n\nDissection-derived, and treated as such — the human body is the most dissected animal there has ever been, so these attachments rest on a larger sample than any single-specimen description in this corpus. It describes one animal and makes no cross-taxon homology claims, so it carries no `homologyScope`, exactly as Cunningham (1882) and Osawa (1898) do not; where a later comparative treatment homologises differently that treatment governs the homology and this one still governs the attachment.\n\nWeb resource with no archived snapshot held, so the rows in `data/` are the only in-repo record of it. Its rows are paraphrased, never copied. Acquired 2026-08-19: the eight region pages of the web resource, mirrored to `papers/gest-anatomy-tables/` (git-ignored). Not a paper and not a PDF.",
       "notes": "papers/2001_Gest_Primates-Hominidae_Extant_human-muscle-anatomy-tables.md"
     },
     {
@@ -1219,8 +1219,8 @@
       "doi": "10.7554/eLife.09972",
       "openAccess": true,
       "notes": "papers/2016_Sefton-Bhullar-Mohaddes-Hanken_Gnathostomata_Extant_cucullaris-head-trunk-boundary.md",
-      "pdf": null,
-      "role": "Developmental origin of the cucullaris / trapezius complex and the head–trunk muscle boundary.",
+      "pdf": "2016_Sefton-Bhullar-Mohaddes-Hanken_Gnathostomata_Extant_cucullaris-head-trunk-boundary.pdf",
+      "role": "Developmental origin of the cucullaris / trapezius complex and the head–trunk muscle boundary. Acquired 2026-08-19 from the eLife CDN. Gold OA, CC-BY.",
       "homologyScope": true
     },
     {
