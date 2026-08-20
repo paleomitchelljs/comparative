@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-164 muscle records · 1619 present occurrences · 278 skeletal elements · 120 sources · 20 operational taxa
+164 muscle records · 1618 present occurrences · 278 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **79%** of 1619 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 56% of observed rows and `landmark` on 26%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **79%** of 1618 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 56% of observed rows and `landmark` on 26%; `layer` resolves for 58 of 98 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -45,8 +45,8 @@ Taxon-specific attachments cover **79%** of 1619 present occurrences. The thinne
 | axial | 15 | 59 | 45 | 76% |
 | hand | 9 | 120 | 81 | 68% |
 | fin | 9 | 39 | 23 | 59% |
-| cranial | 51 | 221 | 92 | 42% |
-| **all** | 164 | 1619 | 1285 | **79%** |
+| cranial | 51 | 220 | 92 | 42% |
+| **all** | 164 | 1618 | 1285 | **79%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -62,7 +62,7 @@ Taxon-specific attachments cover **79%** of 1619 present occurrences. The thinne
 | Actinistia | 7 | 6 | 86% |
 | Crocodylia | 75 | 64 | 85% |
 | Monotremata | 182 | 151 | 83% |
-| Theria | 440 | 359 | 82% |
+| Theria | 439 | 359 | 82% |
 | Lepidosauria | 271 | 217 | 80% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 106 | 82 | 77% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1285 of 1619 present occurrences (79%).**
+**Taxon-specific attachments: 1285 of 1618 present occurrences (79%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -99,7 +99,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
-334 present occurrences still have no attachment rows.
+333 present occurrences still have no attachment rows.
 <!-- /counts:unscored -->
 
 ### Observed attachment rows, by region

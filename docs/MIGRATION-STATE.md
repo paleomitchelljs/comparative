@@ -69,9 +69,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 6 | 214 |
-| `not-started` | 69 | 1854 |
+| `not-started` | 69 | 1851 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2148** |
+| **total** | **79** | **2145** |
 
 **6 of 79 cited sources re-mined** (7%).
 <!-- /counts:remine -->
@@ -180,6 +180,17 @@ Drop them in `papers/` under the filename the reading note already implies, add 
 `pdf` field to `sources.json`, and set the status to `not-started`.
 
 ## Known-incomplete sources with a local copy
+
+**The human column is the biggest single gap.** `gest-anatomy-tables` holds **272
+muscles** with origin, insertion, action, innervation and arterial supply; this
+dataset carries **116 rows under 94 names**, and 199 of the table's muscles match
+no record by name. The reading note has the measured breakdown and the diff recipe.
+Most will map on inspection — `deltoid`, the two `extensor carpi radialis`, the
+suboccipital group — but each is a homology call, and the table is finer than these
+records in the hand, foot, perineum and larynx, so expect to park a real fraction.
+Worth doing next: the human column is the baseline every other column is read
+against.
+
 
 The audit of 2026-08-19 examined four and found drops in all four. Their reading
 notes carry the detail; each is `not-started` until re-mined.

@@ -92,3 +92,56 @@ anatomy a student already has, so every comparative statement in the dataset can
 be delivered as a difference from it. The 17 absences are the teaching material:
 each one is a muscle some other vertebrate has and the reader does not, which is
 a more memorable fact than a list of what humans do have.
+
+## Two files removed, 2026-08-20 — a human table cited on a cheetah and a rat
+
+**Gest describes 279 human muscles and examines no other animal.** It was cited on
+three non-human occurrences:
+
+- *Acinonyx jubatus* on `cricoarytenoideus-lateralis`, sourced to **this table
+  alone**. Its own `speciesBasis` was `default` — the schema's word for "nothing
+  better, the clade's first exemplar, and a guess" — and its note is written about
+  a *human* row: "Diogo et al. (2008) Table 3 gives this muscle only to the rat
+  ... so the human row here rests on the descriptive source". A human observation
+  had landed on a cheetah. The occurrence is deleted; nothing is lost, because the
+  human reading it describes is in the table and will be filed under *Homo
+  sapiens*.
+- *Rattus norvegicus* on `musculus-uvulae` and `vocalis`. Both also cite
+  `diogo-etal-2008-head`, which genuinely covers the rat, so removing this source
+  leaves both rows properly sourced by the survey that made the observation.
+
+Fifth instance of the failure `MINING.md` opens with, after Werneburg, Johnston,
+Cieri and Molnar.
+
+## Scope of the human re-mine — measured, not estimated
+
+`muscles_alpha.html` is the complete alphabetical table and the one to work from;
+the seven regional files are subsets of it. Parsed, it holds **272 muscles**, each
+with origin, insertion, action, innervation, arterial supply and a comment column.
+
+| | |
+|---|---:|
+| Muscles in the table | 272 |
+| Already carrying a row of that name | 48 |
+| Missing, and an existing record's id, name or synonym matches | 25 |
+| **Missing, and no record matches by name** | **199** |
+
+The dataset holds 116 rows on *Homo sapiens* from this source, under 94 distinct
+names, so the gap is not a few stragglers — **it is most of the human body**.
+
+The 199 are not all hard. Many will map on inspection: `deltoid` onto the
+deltoideus records, `extensor carpi radialis longus` and `brevis` onto
+`extensor-antebrachii-carpi-radialis`, the four `rectus capitis posterior` and
+`obliquus capitis` muscles onto the suboccipital part of the epaxial series. But
+**each is a homology call**, which is the expensive part and cannot be batched.
+Expect to park a real fraction on `no-record`: the human table is finer than this
+dataset's records in the hand, the foot, the perineum and the larynx.
+
+To reproduce the diff, parse `<tr>` rows out of `muscles_alpha.html`, take cells
+`[name, origin, insertion, action, nerve, artery, comment]`, normalise the name to
+lowercase letters and spaces, and compare against the `name` fields in
+`data/observations/homo-sapiens__gest-anatomy-tables.json`.
+
+**Do not paste the table's prose into `data/`.** It is a copyrighted teaching
+resource; paraphrase the attachments into element rows as everywhere else, and let
+the citation carry the rest.
