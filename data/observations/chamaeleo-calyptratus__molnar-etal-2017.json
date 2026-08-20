@@ -1,0 +1,1138 @@
+{
+  "species": "chamaeleo-calyptratus",
+  "source": "molnar-etal-2017",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Ribs to the posterior margin of the scapula, in three bellies — two dorsal and one ventral. **The chameleon serratus bellies are longer than a terrestrial lizard's**, which lets the girdle slide further on the body wall; Peterson (1973) read that as part of the arboreal shoulder and this paper's measurements agree.",
+      "region": "pectoral",
+      "record": "serratus-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the fascia of the erector spinae and the ribs to the latissimus dorsi process on the medial aspect of the humeral head. Scored on `humerus`/medial because `latissimus-dorsi-process` is a stem-tetrapod element in this skeleton and not available to a lizard. **It lies posterior to the trapezius rather than deep to it**, which is the chameleon condition and the reverse of the whiptail's.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "no",
+      "note": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Not present as a distinct muscle. An absence stated against a table that lists it for the outgroup, so it is an observation rather than a silence.",
+      "region": "pectoral",
+      "record": "costocoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "basioccipital"
+          },
+          {
+            "element": "atlas"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Basioccipital and atlas to the anterior margin of the scapula and the suprascapula. A muscle running from the skull to the shoulder blade, which is what a lizard has instead of the mammalian trapezius-plus-levator arrangement. **The levator claviculae is fused into it** and Molnar et al. cannot separate the two, so this record carries one muscle here where the whiptail has two. That is a division difference, not a loss, and it is why there is no separate levator claviculae row for this animal — scoring one `present: \"no\"` would say the muscle is missing when the paper says it is merged.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "division": "single"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two parts: one from the anterior lateral scapula to the head of the humerus, one from the lateral scapula and suprascapula to the proximal deltopectoral crest. **Both insert more proximally than in terrestrial lizards and more axially**, which trades leverage for shoulder mobility — Peterson's (1973) arboreal signature, confirmed here.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus acromialis et clavicularis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracohumeralis anterior"
+        },
+        {
+          "name": "Sternohumeralis anterior"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          },
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two parts, one from the coracoid and one from the sternum, both onto the deltopectoral crest. **Neither reaches the clavicle**, which the record's name would lead you to expect: in chameleons these are the muscles the chameleon literature calls coracohumeralis anterior and sternohumeralis anterior, and Molnar et al. place them here on Russell & Bauer's (2008) scheme.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Only the internus part is present, from the internal surface of the sternum to the anteromedial coracoid.",
+      "region": "pectoral",
+      "record": "sternocoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the anterolateral coracoid and part of the scapula to the proximal humerus.",
+      "region": "pectoral",
+      "record": "supracoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulo-humeralis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the lateral scapula just dorsal to the glenoid to the proximal humerus, between the medial and lateral heads of the triceps.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulo-humeralis posterior",
+      "present": "no",
+      "note": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Not observed. **Recorded as absent in all three animals**, which is worth having: this is a muscle other lizards carry, and an absence stated across an arboreal and a terrestrial lizard together is a stronger negative than one animal's silence.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the posterior scapula just above the glenoid and from the scapulohumeral ligament, to the olecranon.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps humeralis lateralis and medialis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Medial head"
+        },
+        {
+          "name": "Internal head"
+        },
+        {
+          "name": "Lateral head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "anterior"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Three humeral heads — a medial head off the whole lateral surface and parts of the anterior and posterior surfaces, an internal head from the humerus just distal to the latissimus insertion, and a lateral head from the internal humerus at that level — all uniting with the scapular head on the olecranon. The naming is the paper's and crosses itself: the *medial* head arises laterally. **The coracoid head is not present as a distinct head** in either chameleon — lost or fused with the others, on Molnar et al.'s reading — so the whole triceps here is scapular plus humeral. That is a head-count difference and not an absence, which is why it is written into this row rather than scored `present: \"no\"` on a record the muscle plainly occupies. The paper reads the missing coracoid head with the proximally shifted pectoralis and deltoideus insertions as one arboreal package: a shoulder that trades leverage for mobility.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Sternum, the fascia of the external oblique and sternal ribs 1-3, to the deltopectoral crest. Its insertion sits more proximally than in terrestrial lizards, with the deltoideus — the second half of Peterson's arboreal shoulder signature.",
+      "region": "pectoral",
+      "record": "pectoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Subscapular head"
+        },
+        {
+          "name": "Subcoracoid head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "coracoid",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-medial-process"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two heads, subscapular from the medial scapula and subcoracoid from the internal coracoid, both onto the medial tuberosity of the humerus.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Medial belly"
+        },
+        {
+          "name": "Lateral belly"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. One tendon from the anterolateral coracoid beneath the supracoracoideus, through a fascial sling at the pectoralis insertion, then splitting into medial and lateral bellies blended with the triceps; part goes straight to the proximal radius and part joins the brachialis onto radius and ulna. **A coracoid origin and no humeral head** — the plesiomorphic amniote arrangement this record is built on, and the arrangement the human long head departs from only because the coracoid became a process of the scapula.",
+      "region": "arm",
+      "record": "biceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the whole anterolateral humerus distal to the deltopectoral crest, in two or three layers, uniting with the biceps to insert on the proximal radius and ulna. The radius-and-ulna insertion is the state the human muscle has restricted to the ulna alone.",
+      "region": "arm",
+      "record": "brachialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis longus and brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracobrachialis brevis"
+        },
+        {
+          "name": "Coracobrachialis longus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Brevis from the external coracoid to the proximal humerus between brachialis and triceps; longus from the posteroinferior corner of the coracoid to the distal humerus just above the medial condyle. **Two of the three parts the record carries in other tetrapods**, and the pair a human has reduced to one.",
+      "region": "arm",
+      "record": "coracobrachialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Distal humerus to the lateral first metacarpal, blending distally with the abductor pollicis longus.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the humeral lateral epicondyle to the distal two-thirds of the ventral radius with the pronator teres; fused with the extensor digitorum. **A dorsal muscle ending on the flexor surface of the radius**, which is why Molnar et al. reject Mivart's (1870) equation of it with part of the gastrocnemius externus — an extensor cannot correspond to a flexor.",
+      "region": "forearm",
+      "record": "brachioradialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "no",
+      "note": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Not present as a distinct muscle; what Mivart (1870) called the 'supinator brevis' here corresponds to part of his 'supinator longus', which is the brachioradialis. **Absent in all three animals**, so the negative covers an arboreal and a terrestrial lizard together.",
+      "region": "forearm",
+      "record": "supinator"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. The radial portion of the flexor carpi ulnaris, sending a tendon to metacarpal 5, and **not divided into antebrachial and carpal parts** as the record's name implies.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Belly 1"
+        },
+        {
+          "name": "Belly 2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          },
+          {
+            "element": "radius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two bellies, from the humeral lateral epicondyle and the radial shaft, to metacarpals 3 and 4 — the two metacarpals either side of the cleft. Connected to the brachioradialis.",
+      "region": "forearm",
+      "record": "extensor-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the humeral medial condyle to the proximal quarter of the posterior ulna. **Mivart (1870) did not describe it as a distinct muscle**; Gasc (1963) did, in chameleons, and Molnar et al. follow him. A muscle a human has lost and this record scores absent in *Homo sapiens*.",
+      "region": "forearm",
+      "record": "epitrochleoanconeus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Part 1"
+        },
+        {
+          "name": "Part 2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two parts: part 1 from the humeral medial epicondyle and the pronator accessorius tendon, connected to the flexor carpi ulnaris, onto the distal phalanges of digits 2-5; part 2 from the proximal half of the flexor surface of the ulna onto the distal phalanges of digits 1-4.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Humeral tendinous head"
+        },
+        {
+          "name": "Ulnar head"
+        },
+        {
+          "name": "Medial condylar head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Three heads — from the distal ventral humerus by a long tendon, from the posterior ulna, and from the humeral medial condyle — onto the pisiform and the flexor retinaculum; fused with the flexor digitorum longus.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the humeral medial epicondyle by two tendons that surround the origin of the pronator teres, to metacarpal 1.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator accessorius",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Humeral head"
+        },
+        {
+          "name": "Ulnar head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two heads, from the humeral medial condyle and the proximal half of the radial border of the ulna, to the distal two-thirds of the flexor aspect of the radius and the radiale. Molnar et al. note the palmaris profundus 1 is probably present but fused with this muscle and/or the pronator quadratus, so it is not scored separately.",
+      "region": "forearm",
+      "record": "pronator-accessorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the distal quarter of the radial flexor surface of the ulna to the distal quarter of the ulnar flexor surface of the radius — the short square muscle between the two bones, in the animal group where it is easiest to see why it pronates.",
+      "region": "forearm",
+      "record": "pronator-quadratus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the humeral medial epicondyle to the distal two-thirds of the radius, connected to the biceps.",
+      "region": "forearm",
+      "record": "pronator-teres"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor 1"
+        },
+        {
+          "name": "Extensor 2"
+        },
+        {
+          "name": "Extensor 3"
+        },
+        {
+          "name": "Extensor 4"
+        },
+        {
+          "name": "Extensor 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Five muscles, and their origins have shifted off the carpus onto the metacarpals: extensor 1 from the radial styloid to the proximal phalanx of digit 1; extensor 2 from the radial styloid and metacarpals 3-4 to that of digit 2; extensor 3 from the distal ulna, ulnare and metacarpals 3-4 to digits 2 and 3; extensor 4 from metacarpals 3-4 to digit 4; extensor 5 in several bundles from the distal ulna, ulnare and metacarpals 3-4 to metacarpal 5 and the proximal phalanx of digit 5. **Metacarpals 3 and 4 flank the cleft**, and four of the five muscles now start there.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the shafts of the radius and ulna to metacarpal 1. Well developed in chameleons, where it abducts the whole preaxial super-digit rather than one thumb.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Five muscles, from metacarpals 1-5 to the distal phalanx of the respective digit. Present and unmodified in a hand that has been radically rebuilt around them.",
+      "region": "hand",
+      "record": "dorsometacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "MC2 to MC1"
+        },
+        {
+          "name": "MC3 to MC2"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. **Two muscles, and this is the paper's only change in the number of muscles.** One from metacarpal 2 to metacarpal 1 and the proximal phalanx of digit 1, one from metacarpal 3 to metacarpal 2 and the proximal phalanx of digit 2. Most pentadactyl tetrapods have four per hand. **The missing ones are those that would have spanned the cleft**, and the same loss appears in the human split-hand/split-foot malformation, which is the basis of the paper's teratology argument.",
+      "region": "hand",
+      "record": "intermetacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Digit 1, radial"
+        },
+        {
+          "name": "Digit 2, radial"
+        },
+        {
+          "name": "Digit 3, radial"
+        },
+        {
+          "name": "Digit 4, radial"
+        },
+        {
+          "name": "Digit 5, radial"
+        },
+        {
+          "name": "Digit 1, ulnar"
+        },
+        {
+          "name": "Digit 2, ulnar"
+        },
+        {
+          "name": "Digit 3, ulnar"
+        },
+        {
+          "name": "Digit 4, ulnar"
+        },
+        {
+          "name": "Digit 5, ulnar"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-retinaculum"
+          },
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Ten muscles, two per digit on its radial and ulnar sides, from the flexor retinaculum and the palmar aponeurosis to the proximal, middle and distal phalanges of digits 1-5. **The count is unchanged and the job is not.** The broad V-shaped aponeurosis in the cleft reorients these fibres so that they adduct the two super-digits instead of flexing single digits — Mivart (1870) already named two of them 'adductor digiti tertii' and 'adductor digiti quarti' for that reason. Same muscle, same attachments in kind, different action, which is the paper's cleanest teaching case.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "To digit 3"
+        },
+        {
+          "name": "To digit 4"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two, from the flexor digitorum longus tendons to digits 3 and 4, onto the ulnar sides of the first phalanx of each. Digits 3 and 4 are the two that flank the cleft.",
+      "region": "hand",
+      "record": "lumbricales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Contrahentes",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Five muscles: four from the contrahens fascia and the ligaments joining metacarpals 3 and 4, to the proximal phalanges of digits 1, 2 and 3 — two of them to digit 3 — plus one from metacarpal 5 to the proximal phalanx of digit 4. Again the origins concentrate on the two metacarpals either side of the cleft.",
+      "region": "hand",
+      "record": "contrahentes-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Five muscles from metacarpals 1-5 to the proximal phalanx of the respective digit. Unchanged in number and attachment in a hand rebuilt around them, which is the paper's headline in one row.",
+      "region": "hand",
+      "record": "flexores-breves-profundi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radiale"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the radiale and the flexor retinaculum to the radial margin of the proximal phalanx of digit 1. **Well developed in chameleons**, where it abducts the whole preaxial super-digit — one of the four features Molnar et al. list as genuinely derived in the chameleon autopodium.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the pisiform to metacarpal 5. The postaxial counterpart of the abductor pollicis brevis, and enlarged for the same reason: it abducts a super-digit.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi"
+    }
+  ]
+}

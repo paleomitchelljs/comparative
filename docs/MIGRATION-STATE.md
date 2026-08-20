@@ -16,6 +16,13 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
+> **Molnar et al. (2017) on chameleon limbs was the top of the density ranking with
+> zero rows filed, and its forelimb is now done** — Table 2 in full, 41 of 41
+> entries across *Chamaeleo calyptratus*, *Trioceros melleri* and *Aspidoscelis
+> uniparens*, 119 rows in three new extraction files. **Table 3, the hindlimb, is
+> the next thing to do and is the same size**; the source stays `not-started` until
+> it is finished, and its reading note says what is left.
+>
 > **The Gest pass left one gap open and closed the other.** `lumbricales-pes` now
 > exists and carries five species; it was created because Gest's four human pedal
 > lumbricals had to be parked on `no-record` while every other intrinsic group of
@@ -80,9 +87,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 7 | 491 |
-| `not-started` | 68 | 1739 |
+| `not-started` | 68 | 1858 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2310** |
+| **total** | **79** | **2429** |
 
 **7 of 79 cited sources re-mined** (8%).
 <!-- /counts:remine -->

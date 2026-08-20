@@ -1504,6 +1504,75 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. serratus anterior.** The second and third and occasionally the fourth ribs, at the level of the uncinate processes, and the intercostal musculature here (figs. 19, 25, 29) furnish fleshy and aponeurotic origin. 56 THE MYOLOGY OF THE WHOOPING CRANE dors. axial mm. serr. prof. supracoracoid. delt. minor supracoracoid. ant. fleshy pt. joint tendons serr. post., proscapulohum. *Insertion.* The band-like tendon of insertion separates the fleshy bellies of Mm. proscapulohum. and subscap. before attaching to the ventral edge of the scapular blade some nine centimeters from the distal end of the scapula. This insertion is about one-third of the way caudad on the scapula."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Same attachments as the chameleons. The paper's own dissection found the same belly count; Fisher & Tanner (1970) described three dorsal and three ventral bellies in this animal, which Molnar et al. cite against their own observation without resolving it."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Ribs to the posterior margin of the scapula, in three bellies — two dorsal and one ventral. **The chameleon serratus bellies are longer than a terrestrial lizard's**, which lets the girdle slide further on the body wall; Peterson (1973) read that as part of the arboreal shoulder and this paper's measurements agree."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Serratus anterior",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -2835,6 +2904,98 @@
             ]
           },
           "attachmentNote": "Phascogale calura. Double as in the cuscus, differing in three ways Cunningham calls essential: both bands arise from the atlas alone, they stay distinct along their whole length instead of coalescing near the scapula, and **the superior band fuses by its upper margin with the rhomboideus** — so this muscle and the rhomboideus share an edge, and the rhomboideus thereby reaches the root of the scapular spine."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "atlas"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "anterior"
+              },
+              {
+                "element": "suprascapula"
+              },
+              {
+                "element": "scapula"
+              },
+              {
+                "element": "clavicle"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No origin from the basioccipital** — the whiptail's muscle starts on the atlas alone, so the chameleon's has extended forward onto the skull.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. A separate muscle in the whiptail: atlas to the suprascapula and scapula, and possibly to the clavicle. **The chameleons have fused it into the levator scapulae**, which is a division difference rather than a loss."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "basioccipital"
+              },
+              {
+                "element": "atlas"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "anterior"
+              },
+              {
+                "element": "suprascapula"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Basioccipital and atlas to the anterior margin of the scapula and the suprascapula. A muscle running from the skull to the shoulder blade, which is what a lizard has instead of the mammalian trapezius-plus-levator arrangement. **The levator claviculae is fused into it** and Molnar et al. cannot separate the two, so this record carries one muscle here where the whiptail has two. That is a division difference, not a loss, and it is why there is no separate levator claviculae row for this animal — scoring one `present: \"no\"` would say the muscle is missing when the paper says it is merged.",
+          "division": "single"
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Levator scapulae",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "basioccipital"
+              },
+              {
+                "element": "atlas"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula",
+                "side": "anterior"
+              },
+              {
+                "element": "suprascapula"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row. **The levator claviculae is fused into it** and Molnar et al. cannot separate the two, so this record carries one muscle here where the whiptail has two. That is a division difference, not a loss, and it is why there is no separate levator claviculae row for this animal — scoring one `present: \"no\"` would say the muscle is missing when the paper says it is merged.",
+          "division": "single"
         }
       ],
       "homology": {
@@ -3450,6 +3611,87 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. sternocoracoideus.** The dorsal fasciculus arises as mixed fleshy and tendinous fibers from the antero-lateral surfaces of the second rib, and the more ventral band comes from the posterior edge of the second sternal rib and the antero-lateral surfaces of the third sternal rib. The anterior bundle arises fleshily from the entire length of the sternocoracoidal process of the sternum, deep to the belly of M. coracobrach. post. Insertion.—There are also three parts to the insertion. The more pos- terior and superficial insertion is mixed fleshy and tendinous on the pos- terior edge of the sternocoracoidal process of the coracoid. The deeper insertion here is tendinous on the most dorsal aspect of the sternocora- *Insertion.* There are also three parts to the insertion. The more pos- terior and superficial insertion is mixed fleshy and tendinous on the pos- terior edge of the sternocoracoidal process of the coracoid. The deeper insertion here is tendinous on the most dorsal aspect of the sternocora- coidal process of the sternum. The most anterior bundle of the belly in- serts by means of fleshy and tendinous fibers in the usual sternocoracoidal impression on the coracoid."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Sternocoracoideus",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Externus"
+            },
+            {
+              "name": "Internus"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. An additional origin from the first ribs, and an externus head ventral to the internus running from sternum to coracoid. **Two heads in the whiptail against one in the chameleons.**"
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Sternocoracoideus",
+          "present": "yes",
+          "division": "single",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Only the internus part is present, from the internal surface of the sternum to the anteromedial coracoid."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Sternocoracoideus",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "coracoid",
+                "side": "anterior"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -3751,6 +3993,49 @@
             {
               "nerve": "ventral-rami"
             }
+          ]
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Costocoracoideus",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapula"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. From the anterior ribs to the scapula, mainly through the sternoscapular ligament — present in the whiptail and absent in both chameleons, which is one of the few muscles this paper finds missing in a chameleon."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Costocoracoideus",
+          "present": "no",
+          "note": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Not present as a distinct muscle. An absence stated against a table that lists it for the outgroup, so it is an observation rather than a silence.",
+          "sources": [
+            "molnar-etal-2017"
+          ]
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Costocoracoideus",
+          "present": "no",
+          "note": "Trioceros melleri, Molnar et al. (2017) Table 2. Not present as a distinct muscle, as in the veiled chameleon.",
+          "sources": [
+            "molnar-etal-2017"
           ]
         }
       ],
@@ -4774,6 +5059,78 @@
             ]
           },
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. pectoralis.** This massive muscle is the largest in the body. The origin is fleshy from the entire ventral surface of the sternal body, the membrane overlying M. supracoracoideus, the posterior half of the sternal keel extending to its caudalmost point, and extending cranially onto the sternolateral arm of the furcula. Intermuscular lines on the sternal keel separate the origin area of this muscle from that of M. supracoracoideus, and its furcular origin is indicated by intermuscular lines and an area of rugose texture on the bone’s surface. Closer to its insertion, there is a broad area of contact between this muscle and M. coracobrachialis cranialis. The massive, mixed fleshy and tendinous insertion is on the distal cranial face of the deltopectoral crest of the humerus, where it leaves a circular, rugose scar."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Pectoralis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences from *Trioceros melleri*. **Read that against the right animal**: the table's third column states differences from *T. melleri*, not from *C. calyptratus*, which the caption says and which matters exactly here, where the two chameleons differ."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Pectoralis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "sternum"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Sternum, the fascia of the external oblique and sternal ribs 1-3, to the deltopectoral crest. Its insertion sits more proximally than in terrestrial lizards, with the deltoideus — the second half of Peterson's arboreal shoulder signature."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Pectoralis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. **From sternal ribs 2 and/or 3**, where the veiled chameleon takes ribs 1-3 as well as the sternum and the oblique fascia — a narrower origin in the larger chameleon."
         }
       ],
       "homology": {
@@ -5810,6 +6167,87 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. supracoracoideus.** Fleshy origin comes from all the surfaces of the keel and the sternal plate covered by the belly (fig. 29). This extends anteriorly on to the proximal half of the anterior face of the coracoid and to the most anterior extent of the bony tracheal enclosure formed by the sternum. The anterior fleshy part arises from the medial edge of the coracoid, the lateral surface of the furculum, and the fascial sheet between the cora- coid and the furculum. Insertion—A strong tendon emerges from the dorsal end of the trios- seal canal, passes distally beneath M. delt. minor, and attaches to the an- conal surface of the external tuberosity of the humerus. *Insertion.* A strong tendon emerges from the dorsal end of the trios- seal canal, passes distally beneath M. delt. minor, and attaches to the an- conal surface of the external tuberosity of the humerus."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences from the chameleons — the undivided coracoid-to-humerus muscle that the therian scapular spine later splits into supraspinatus and infraspinatus."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the anterolateral coracoid and part of the scapula to the proximal humerus."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Supracoracoideus",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              },
+              {
+                "element": "scapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -6705,6 +7143,104 @@
             ]
           },
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. deltoideus pars major.** Fig. 5 Muscle origins and insertions on the humerus. A: Right humerus in cranial view, with osteological features labelled. B: Right humerus in caudal view, with osteological features labelled. C: Same as A, with muscle origins and insertions highlighted. D: Right humerus in dorsal view, with muscle origins and insertions highlighted. E: Same as B, with muscle origins and insertions highlighted. F: Right humerus in ventral view, with muscle origins and insertions highlighted. Scale bar = 40 mm. was found to be minute and threadlike, with a diameter of approximately 1mm. The origin was found to be directly caudal to that of M. scapulotriceps on the scapula, and the insertion is on the crest extending distally from the ventral tubercle, dorsal to the pneumatic foramen. There are no osteological correlates associated with this muscle. This large muscle has a fleshy origin that covers much of the lateral head of the scapula and extends onto the ventrolateral aspect of the furcular head. The fleshy insertion is broad, covering nearly all of the caudal surface of the deltopectoral crest and extending distally onto the humeral shaft. Despite its relatively large size, there are few osteological correlates associated with this muscle. A smooth area on the otherwise rugose ventral furcular head may be associated with this muscle’s origin, but no marks are present on the scapula. Some extremely faint intermuscular lines are present in some osteological specimens on the caudal deltopectoral crest."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "division": "single",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "suprascapula"
+              },
+              {
+                "element": "scapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **One part only**, from the suprascapula and scapula to the proximal humerus, against two in both chameleons."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Part 1"
+            },
+            {
+              "name": "Part 2"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "suprascapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two parts: one from the anterior lateral scapula to the head of the humerus, one from the lateral scapula and suprascapula to the proximal deltopectoral crest. **Both insert more proximally than in terrestrial lizards and more axially**, which trades leverage for shoulder mobility — Peterson's (1973) arboreal signature, confirmed here."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Deltoideus scapularis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "suprascapula"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -7535,6 +8071,97 @@
             ]
           },
           "attachmentNote": "Thylacinus cynocephalus, and the muscle in which this animal's vestigial clavicle is buried. **Three sources of fibres**: the trapezius, the cleido-mastoid, and — only in part — the lower border of the vestigial clavicle itself. So the bone contributes least to the muscle named after it. Inserted into a ridge on the antero-external shaft about its middle, below the scapular deltoid and partly fused with the pectoralis major. Cunningham's cephalo-humeral muscle in this animal is this muscle plus the cleido-mastoid plus the anterior trapezius; the acromial deltoid is not part of it, as it is in the cuscus."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Deltoideus acromialis et clavicularis",
+          "present": "yes",
+          "division": "single",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "clavicle"
+              },
+              {
+                "element": "scapula"
+              },
+              {
+                "element": "coracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **A single head, mainly from the clavicle**, and this is the difference that matters for the record's name: the whiptail's muscle is clavicular and the chameleons' has moved off the clavicle onto the coracoid and sternum."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Deltoideus acromialis et clavicularis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracohumeralis anterior"
+            },
+            {
+              "name": "Sternohumeralis anterior"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid"
+              },
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two parts, one from the coracoid and one from the sternum, both onto the deltopectoral crest. **Neither reaches the clavicle**, which the record's name would lead you to expect: in chameleons these are the muscles the chameleon literature calls coracohumeralis anterior and sternohumeralis anterior, and Molnar et al. place them here on Russell & Bauer's (2008) scheme."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Deltoideus acromialis et clavicularis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid"
+              },
+              {
+                "element": "sternum"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "deltopectoral-crest"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -8068,6 +8695,87 @@
             ]
           },
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. scapulohumeralis cranialis.** This muscle was not visible in our CT dataset, and it was listed as vestigial or absent by Livezey and Zusi (2006). Upon dissection of the stained specimen, this muscle Fig. 4 Digitally segmented osteology and myology of the coracoid and caudal humerus of Chauna torquata. A: right humerus and coracoid. B: same as A, with Mm. deltoideus minor, deltoideus major, supracoracoideus, and humerotriceps added. C: same as B, with Mm. coracobrachialis caudalis, latissimus dorsi, and scapulotriceps added. D: same as B, with Mm. subscapularis, subcoracoideus, and scapulohumeralis caudalis added. Scale bar = 40 mm. Anatomical atlas of the wing of Chauna 7"
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Scapulo-humeralis anterior",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "glenoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Scapulo-humeralis anterior",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "glenoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the lateral scapula just dorsal to the glenoid to the proximal humerus, between the medial and lateral heads of the triceps."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Scapulo-humeralis anterior",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "glenoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -8356,6 +9064,36 @@
             ]
           },
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. scapulohumeralis caudalis.** The origin is fleshy and extends down the distal three quarters of the lateral scapular blade. The origin is marked by a rugose area on the lateral scapula, bounded by intermuscular lines and a proximal rugose tubercle. It extends ventrally as a broad sheet of muscle before narrowing to a tendon, which inserts as a wide sheet on the crus ventrale of the humerus and leaves an oval rugose scar."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Scapulo-humeralis posterior",
+          "present": "no",
+          "note": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Not observed. **Recorded as absent in all three animals**, which is worth having: this is a muscle other lizards carry, and an absence stated across an arboreal and a terrestrial lizard together is a stronger negative than one animal's silence.",
+          "sources": [
+            "molnar-etal-2017"
+          ]
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Scapulo-humeralis posterior",
+          "present": "no",
+          "note": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Not observed. **Recorded as absent in all three animals**, which is worth having: this is a muscle other lizards carry, and an absence stated across an arboreal and a terrestrial lizard together is a stronger negative than one animal's silence.",
+          "sources": [
+            "molnar-etal-2017"
+          ]
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Scapulo-humeralis posterior",
+          "present": "no",
+          "note": "Trioceros melleri, Molnar et al. (2017) Table 2. Not observed. **Recorded as absent in all three animals**, which is worth having: this is a muscle other lizards carry, and an absence stated across an arboreal and a terrestrial lizard together is a stronger negative than one animal's silence.",
+          "sources": [
+            "molnar-etal-2017"
+          ]
         }
       ],
       "homology": {
@@ -9209,6 +9947,117 @@
               ]
             }
           ]
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Subscapular head"
+            },
+            {
+              "name": "Subcoracoid head"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              },
+              {
+                "element": "coracoid",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-medial-process"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Subscapular head"
+            },
+            {
+              "name": "Subcoracoid head"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              },
+              {
+                "element": "coracoid",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-medial-process"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Two heads, subscapular from the medial scapula and subcoracoid from the internal coracoid, both onto the medial tuberosity of the humerus."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Subcoracoscapularis",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Subscapular head"
+            },
+            {
+              "name": "Subcoracoid head"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "medial"
+              },
+              {
+                "element": "coracoid",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "landmark": "humerus-medial-process"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -10648,6 +11497,55 @@
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). "
         },
         {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracolumbar-fascia"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No origin from the ribs**, and the muscle lies mainly deep to the trapezius rather than behind it. Two differences from the chameleons in one muscle, and both are about how the girdle is slung."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracolumbar-fascia"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the fascia of the erector spinae and the ribs to the latissimus dorsi process on the medial aspect of the humeral head. Scored on `humerus`/medial because `latissimus-dorsi-process` is a stem-tetrapod element in this skeleton and not available to a lizard. **It lies posterior to the trapezius rather than deep to it**, which is the chameleon condition and the reverse of the whiptail's."
+        },
+        {
           "species": "pipa-pipa",
           "name": "Latissimus dorsi",
           "present": "yes",
@@ -10672,6 +11570,32 @@
             ]
           },
           "attachmentNote": "Pipa pipa, Prikryl et al. (2009). **Runs from the humerus to the pelvis.** It originates on the humerus and passes back along the flanks to insert on the posterior part of the lateral surface of the iliac shaft and on the dorsal fascia. Compare *Xenopus*, where the same muscle ends on two thigh muscles instead — the two pipids both extend it far past the shoulder, by different routes."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Latissimus dorsi",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "thoracolumbar-fascia"
+              },
+              {
+                "element": "ribs"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         },
         {
           "species": "xenopus-laevis",
@@ -11919,6 +12843,150 @@
             ]
           },
           "attachmentNote": "*Grus americana*, Fisher & Goodman (1955); anconal and palmar are dorsal and ventral in their usage. **M. triceps.** The origin of the scapular head of M. triceps is from a dorso- ventral line 1.5 centimeters wide which lies on the posterior edge of the head of the scapula and just posterior to the origin of M. delt. major. This is a mixed fleshy and tendinous origin. There is also strong fascial origin from the anterior edge of the proximal part of M. dorsalis scap. The external head arises fleshily from the posterior half of the anconal surface of the humerus from the proximal part of the bicipital surface distad to the beginning of the distal third of the humeral length. This includes part of the origin of the internal head, the rest of which has previously been described. Insertion—The strong, ba *Insertion.* The strong, band-like tendon formed at the level of the humeral condyles contributes to, or at least is attached to, the joint mem- brane but continues distally to insert on the anconal surface of the ulna MUSCLES OF THE WING 59 in an obliquely antero-posterior line some 3 centimeters long and 1.5 centimeters from the proximal end of the ulna (fig. 18)."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Triceps coracoideus",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid"
+              },
+              {
+                "element": "scapula",
+                "side": "posterior"
+              },
+              {
+                "element": "glenoid"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "landmark": "olecranon"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Coracoid to the proximal ulna — the head both chameleons have lost or fused away, and the one that crosses the shoulder.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.\n\nAspidoscelis uniparens, Molnar et al. (2017) Table 2. **No internus head.** So the whiptail has the coracoid head the chameleons lack and lacks a humeral head they have — the triceps is reorganised in both directions rather than simply reduced."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Triceps scapularis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              },
+              {
+                "element": "glenoid"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "posterior"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "landmark": "olecranon"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the posterior scapula just above the glenoid and from the scapulohumeral ligament, to the olecranon.\n\nChamaeleo calyptratus, Molnar et al. (2017) Table 2. Three humeral heads — a medial head off the whole lateral surface and parts of the anterior and posterior surfaces, an internal head from the humerus just distal to the latissimus insertion, and a lateral head from the internal humerus at that level — all uniting with the scapular head on the olecranon. The naming is the paper's and crosses itself: the *medial* head arises laterally. **The coracoid head is not present as a distinct head** in either chameleon — lost or fused with the others, on Molnar et al.'s reading — so the whole triceps here is scapular plus humeral. That is a head-count difference and not an absence, which is why it is written into this row rather than scored `present: \"no\"` on a record the muscle plainly occupies. The paper reads the missing coracoid head with the proximally shifted pectoralis and deltoideus insertions as one arboreal package: a shoulder that trades leverage for mobility.",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Medial head"
+            },
+            {
+              "name": "Internal head"
+            },
+            {
+              "name": "Lateral head"
+            }
+          ]
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Triceps scapularis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapula",
+                "side": "posterior"
+              },
+              {
+                "element": "glenoid"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "posterior"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "landmark": "olecranon"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.\n\nTrioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row. **The coracoid head is not present as a distinct head** in either chameleon — lost or fused with the others, on Molnar et al.'s reading — so the whole triceps here is scapular plus humeral. That is a head-count difference and not an absence, which is why it is written into this row rather than scored `present: \"no\"` on a record the muscle plainly occupies. The paper reads the missing coracoid head with the proximally shifted pectoralis and deltoideus insertions as one arboreal package: a shoulder that trades leverage for mobility."
         }
       ],
       "homology": {
@@ -12690,6 +13758,98 @@
             ]
           },
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. brachialis.** The origin of this muscle is in the deeply excavated brachial fossa of the distal cranial humerus. It stretches across the elbow joint to insert on the brachial impression of the proximal ventral ulna, deep to the insertion of M. entepicondyloulnaris."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Inserts mainly on the ulna, and in one layer only.** So the ulna-only insertion that looks like a mammalian and avian specialisation is already present in a terrestrial lizard, while the arboreal chameleons keep the two-bone insertion — which is a caution against reading it as a straightforward derived state."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. From the whole anterolateral humerus distal to the deltopectoral crest, in two or three layers, uniting with the biceps to insert on the proximal radius and ulna. The radius-and-ulna insertion is the state the human muscle has restricted to the ulna alone."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Brachialis",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "humerus",
+                "side": "anterior"
+              },
+              {
+                "element": "humerus",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna",
+                "side": "proximal"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -13571,6 +14731,97 @@
             ]
           },
           "attachmentNote": "*Chauna torquata*, Widrig et al. (2026), from diceCT of USNM 666527 with the osteological correlates read off dry skeletons. The avian dorsal epicondyle is the ectepicondyle (lateral) and the ventral epicondyle the entepicondyle (medial). **M. biceps brachii.** Fig. 7 Muscle origins on the coracoid. A: Right coracoid in dorsal view, with osteological features labelled. B: Right coracoid in ventral view, with osteological features labelled. C: same as A, with muscle origin areas highlighted. D: same as B, with muscle origin areas highlighted. Scale bar = 20 mm. termuscular line separates it from the coracoidal origin of M. supracoracoideus. The insertion is by a diffuse tendon covering the apex of the ventral tubercle of the humerus, which leaves a large, ovoid impression with a rugose texture."
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "division": "single",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **A single muscle belly**, where both chameleons split into medial and lateral bellies blended with the triceps."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "division": "heads",
+          "parts": [
+            {
+              "name": "Medial belly"
+            },
+            {
+              "name": "Lateral belly"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. One tendon from the anterolateral coracoid beneath the supracoracoideus, through a fascial sling at the pectoralis insertion, then splitting into medial and lateral bellies blended with the triceps; part goes straight to the proximal radius and part joins the brachialis onto radius and ulna. **A coracoid origin and no humeral head** — the plesiomorphic amniote arrangement this record is built on, and the arrangement the human long head departs from only because the coracoid became a process of the scapula."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Biceps brachii",
+          "present": "yes",
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid",
+                "side": "lateral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "radius",
+                "side": "proximal"
+              },
+              {
+                "element": "ulna"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {
@@ -14473,6 +15724,114 @@
               ]
             }
           ]
+        },
+        {
+          "species": "aspidoscelis-uniparens",
+          "speciesBasis": "note",
+          "name": "Coracobrachialis longus and brevis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracobrachialis brevis"
+            },
+            {
+              "name": "Coracobrachialis longus"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ]
+          },
+          "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences."
+        },
+        {
+          "species": "chamaeleo-calyptratus",
+          "speciesBasis": "note",
+          "name": "Coracobrachialis longus and brevis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracobrachialis brevis"
+            },
+            {
+              "name": "Coracobrachialis longus"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ]
+          },
+          "attachmentNote": "Chamaeleo calyptratus, Molnar et al. (2017) Table 2. Brevis from the external coracoid to the proximal humerus between brachialis and triceps; longus from the posteroinferior corner of the coracoid to the distal humerus just above the medial condyle. **Two of the three parts the record carries in other tetrapods**, and the pair a human has reduced to one."
+        },
+        {
+          "species": "trioceros-melleri",
+          "speciesBasis": "note",
+          "name": "Coracobrachialis longus and brevis",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracobrachialis brevis"
+            },
+            {
+              "name": "Coracobrachialis longus"
+            }
+          ],
+          "sources": [
+            "molnar-etal-2017"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "coracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "humerus",
+                "side": "proximal"
+              },
+              {
+                "element": "humerus",
+                "landmark": "medial-epicondyle"
+              }
+            ]
+          },
+          "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row."
         }
       ],
       "homology": {

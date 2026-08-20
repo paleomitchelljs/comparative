@@ -1,0 +1,989 @@
+{
+  "species": "trioceros-melleri",
+  "source": "molnar-etal-2017",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "serratus-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "no",
+      "note": "Trioceros melleri, Molnar et al. (2017) Table 2. Not present as a distinct muscle, as in the veiled chameleon.",
+      "region": "pectoral",
+      "record": "costocoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "basioccipital"
+          },
+          {
+            "element": "atlas"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row. **The levator claviculae is fused into it** and Molnar et al. cannot separate the two, so this record carries one muscle here where the whiptail has two. That is a division difference, not a loss, and it is why there is no separate levator claviculae row for this animal — scoring one `present: \"no\"` would say the muscle is missing when the paper says it is merged.",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "division": "single"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus acromialis et clavicularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          },
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "sternocoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "supracoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulo-humeralis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulo-humeralis posterior",
+      "present": "no",
+      "note": "Trioceros melleri, Molnar et al. (2017) Table 2. Not observed. **Recorded as absent in all three animals**, which is worth having: this is a muscle other lizards carry, and an absence stated across an arboreal and a terrestrial lizard together is a stronger negative than one animal's silence.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps humeralis lateralis and medialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "anterior"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row. **The coracoid head is not present as a distinct head** in either chameleon — lost or fused with the others, on Molnar et al.'s reading — so the whole triceps here is scapular plus humeral. That is a head-count difference and not an absence, which is why it is written into this row rather than scored `present: \"no\"` on a record the muscle plainly occupies. The paper reads the missing coracoid head with the proximally shifted pectoralis and deltoideus insertions as one arboreal package: a shoulder that trades leverage for mobility.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. **From sternal ribs 2 and/or 3**, where the veiled chameleon takes ribs 1-3 as well as the sternum and the oblique fascia — a narrower origin in the larger chameleon.",
+      "region": "pectoral",
+      "record": "pectoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Subscapular head"
+        },
+        {
+          "name": "Subcoracoid head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "coracoid",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-medial-process"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "arm",
+      "record": "biceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "arm",
+      "record": "brachialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis longus and brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracobrachialis brevis"
+        },
+        {
+          "name": "Coracobrachialis longus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "arm",
+      "record": "coracobrachialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "brachioradialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "no",
+      "note": "Trioceros melleri, Molnar et al. (2017) Table 2. Not present as a distinct muscle; what Mivart (1870) called the 'supinator brevis' here corresponds to part of his 'supinator longus', which is the brachioradialis. **Absent in all three animals**, so the negative covers an arboreal and a terrestrial lizard together.",
+      "region": "forearm",
+      "record": "supinator"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          },
+          {
+            "element": "radius"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "extensor-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "epitrochleoanconeus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. **Part 1 reaches digits 4 and 5 only**, where the veiled chameleon's reaches digits 2-5 — so the humeral part of the deep flexor serves only the postaxial super-digit in Meller's chameleon.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. **Arises by a single tendon**, not two.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator accessorius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "pronator-accessorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "pronator-quadratus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "pronator-teres"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna",
+            "side": "distal"
+          },
+          {
+            "element": "ulnare"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radius"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "dorsometacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "MC2 to MC1"
+        },
+        {
+          "name": "MC3 to MC2"
+        },
+        {
+          "name": "MC5 to MC4"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. **Three muscles**, not two: the veiled chameleon's pair plus one from metacarpal 5 to metacarpal 4 and the proximal phalanx of digit 4. So the two chameleons differ in the one count the paper singles out, and Meller's has kept a muscle inside the postaxial super-digit that the veiled chameleon has lost.",
+      "region": "hand",
+      "record": "intermetacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-retinaculum"
+          },
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus"
+          },
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "To digit 4, radial"
+        },
+        {
+          "name": "To digit 4, ulnar"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Two, but **both from the tendon to digit 4**, reaching the radial and ulnar sides of its first phalanx. The veiled chameleon's pair serve one digit each; Meller's serve one digit between them.",
+      "region": "hand",
+      "record": "lumbricales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Contrahentes",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "contrahentes-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "flexores-breves-profundi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radiale"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Trioceros melleri, Molnar et al. (2017) Table 2. Molnar et al. (2017) Table 2 records no difference from *Chamaeleo calyptratus*. Under `MINING.md` that is an observation of sameness in two animals, not a description of one, so it gets a row.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi"
+    }
+  ]
+}

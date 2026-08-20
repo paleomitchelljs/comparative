@@ -1,0 +1,1084 @@
+{
+  "species": "aspidoscelis-uniparens",
+  "source": "molnar-etal-2017",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Serratus anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Same attachments as the chameleons. The paper's own dissection found the same belly count; Fisher & Tanner (1970) described three dorsal and three ventral bellies in this animal, which Molnar et al. cite against their own observation without resolving it.",
+      "region": "pectoral",
+      "record": "serratus-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Latissimus dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "thoracolumbar-fascia"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No origin from the ribs**, and the muscle lies mainly deep to the trapezius rather than behind it. Two differences from the chameleons in one muscle, and both are about how the girdle is slung.",
+      "region": "pectoral",
+      "record": "latissimus-dorsi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Costocoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. From the anterior ribs to the scapula, mainly through the sternoscapular ligament — present in the whiptail and absent in both chameleons, which is one of the few muscles this paper finds missing in a chameleon.",
+      "region": "pectoral",
+      "record": "costocoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator scapulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          },
+          {
+            "element": "suprascapula"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No origin from the basioccipital** — the whiptail's muscle starts on the atlas alone, so the chameleon's has extended forward onto the skull.",
+      "region": "pectoral",
+      "record": "levator-scapulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator claviculae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "atlas"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "suprascapula"
+          },
+          {
+            "element": "scapula"
+          },
+          {
+            "element": "clavicle"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. A separate muscle in the whiptail: atlas to the suprascapula and scapula, and possibly to the clavicle. **The chameleons have fused it into the levator scapulae**, which is a division difference rather than a loss.",
+      "region": "pectoral",
+      "record": "levator-scapulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus scapularis",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "suprascapula"
+          },
+          {
+            "element": "scapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **One part only**, from the suprascapula and scapula to the proximal humerus, against two in both chameleons.",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Deltoideus acromialis et clavicularis",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "clavicle"
+          },
+          {
+            "element": "scapula"
+          },
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **A single head, mainly from the clavicle**, and this is the difference that matters for the record's name: the whiptail's muscle is clavicular and the chameleons' has moved off the clavicle onto the coracoid and sternum.",
+      "region": "pectoral",
+      "record": "deltoideus-clavicularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Sternocoracoideus",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Externus"
+        },
+        {
+          "name": "Internus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "sternum"
+          },
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "coracoid"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. An additional origin from the first ribs, and an externus head ventral to the internus running from sternum to coracoid. **Two heads in the whiptail against one in the chameleons.**",
+      "region": "pectoral",
+      "record": "sternocoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supracoracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          },
+          {
+            "element": "scapula"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences from the chameleons — the undivided coracoid-to-humerus muscle that the therian scapular spine later splits into supraspinatus and infraspinatus.",
+      "region": "pectoral",
+      "record": "supracoracoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulo-humeralis anterior",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-anterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Scapulo-humeralis posterior",
+      "present": "no",
+      "note": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Not observed. **Recorded as absent in all three animals**, which is worth having: this is a muscle other lizards carry, and an absence stated across an arboreal and a terrestrial lizard together is a stronger negative than one animal's silence.",
+      "region": "pectoral",
+      "record": "scapulohumeralis-posterior"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps coracoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Coracoid to the proximal ulna — the head both chameleons have lost or fused away, and the one that crosses the shoulder.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          },
+          {
+            "element": "glenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Triceps humeralis lateralis and medialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "anterior"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No internus head.** So the whiptail has the coracoid head the chameleons lack and lacks a humeral head they have — the triceps is reorganised in both directions rather than simply reduced.",
+      "region": "arm",
+      "record": "triceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences from *Trioceros melleri*. **Read that against the right animal**: the table's third column states differences from *T. melleri*, not from *C. calyptratus*, which the caption says and which matters exactly here, where the two chameleons differ.",
+      "region": "pectoral",
+      "record": "pectoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Subcoracoscapularis",
+      "present": "yes",
+      "division": "heads",
+      "parts": [
+        {
+          "name": "Subscapular head"
+        },
+        {
+          "name": "Subcoracoid head"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "medial"
+          },
+          {
+            "element": "coracoid",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "landmark": "humerus-medial-process"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "pectoral",
+      "record": "subcoracoscapularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Biceps brachii",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "proximal"
+          },
+          {
+            "element": "ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **A single muscle belly**, where both chameleons split into medial and lateral bellies blended with the triceps.",
+      "region": "arm",
+      "record": "biceps-brachii"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "anterior"
+          },
+          {
+            "element": "humerus",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Inserts mainly on the ulna, and in one layer only.** So the ulna-only insertion that looks like a mammalian and avian specialisation is already present in a terrestrial lizard, while the arboreal chameleons keep the two-bone insertion — which is a caution against reading it as a straightforward derived state.",
+      "region": "arm",
+      "record": "brachialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobrachialis longus and brevis",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Coracobrachialis brevis"
+        },
+        {
+          "name": "Coracobrachialis longus"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "proximal"
+          },
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "arm",
+      "record": "coracobrachialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Fused with the brachioradialis** in the whiptail and separate in both chameleons.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Brachioradialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "ventral"
+          },
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences in its own attachments, though here it is fused with the extensor carpi radialis.",
+      "region": "forearm",
+      "record": "brachioradialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Supinator",
+      "present": "no",
+      "note": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Not present as a distinct muscle; what Mivart (1870) called the 'supinator brevis' here corresponds to part of his 'supinator longus', which is the brachioradialis. **Absent in all three animals**, so the negative covers an arboreal and a terrestrial lizard together.",
+      "region": "forearm",
+      "record": "supinator"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor antebrachii et carpi ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **From the humerus** rather than off the flexor carpi ulnaris, partially fused with that muscle. The chameleon condition has moved the origin distally onto the neighbouring muscle.",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensor digitorum",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **A single belly inserting on metacarpals 2-5**, against two bellies reaching only metacarpals 3 and 4 in the chameleons. The chameleon muscle has narrowed onto the two digits that flank the cleft.",
+      "region": "forearm",
+      "record": "extensor-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epitrochleoanconeus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "forearm",
+      "record": "epitrochleoanconeus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor digitorum longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Two bellies forming a common tendon that splits to the distal phalanx of every digit, with a sesamoid in the tendon before the split, and a deep head from the carpals joining the tendon to digit 2. **A single common tendon with a sesamoid is the terrestrial arrangement**; the chameleons have two separately inserting parts and no such tendon, which is the clearest hand difference outside the cleft.",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi ulnaris",
+      "present": "yes",
+      "division": "single",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Medial epicondyle to the pisiform, mainly** — one head where the chameleons have three. The pisiform insertion is the constant, and Molnar et al. use exactly that relation elsewhere in the paper: the muscles associated with the pisiform and the plantar ossicle are what tie the two elements together developmentally.",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexor carpi radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. A single tendon of origin, as in Meller's chameleon. The split origin round the pronator teres is the veiled chameleon's alone among the three.",
+      "region": "forearm",
+      "record": "flexor-carpi-radialis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator accessorius",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **No insertion on the radius** — it reaches the radiale only.",
+      "region": "forearm",
+      "record": "pronator-accessorius"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator quadratus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "distal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "forearm",
+      "record": "pronator-quadratus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Pronator teres",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "forearm",
+      "record": "pronator-teres"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Extensores digitorum breves",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Extensor 1"
+        },
+        {
+          "name": "Extensor 2"
+        },
+        {
+          "name": "Extensor 3"
+        },
+        {
+          "name": "Extensor 4"
+        },
+        {
+          "name": "Extensor 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Five muscles from the carpal region to the proximal phalanx of each digit** — the same count as the chameleons, from the carpus rather than the metacarpals, and one muscle per digit rather than the chameleons' shared and doubled arrangement.",
+      "region": "hand",
+      "record": "extensores-digitorum-breves"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna"
+          },
+          {
+            "element": "ulnare"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Origin from the ulna and ulnare**, with no radial head — the chameleons have extended it onto the radius.",
+      "region": "forearm",
+      "record": "abductor-pollicis-longus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsometacarpales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "hand",
+      "record": "dorsometacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Intermetacarpales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          },
+          {
+            "element": "ungual-phalanges-manus"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Four muscles between the metacarpals**, some also reaching the distal phalanx — the pentadactyl complement. Four, three and two across whiptail, Meller's and veiled chameleon is the one graded series in this table.",
+      "region": "hand",
+      "record": "intermetacarpales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves superficiales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Digit 1, radial"
+        },
+        {
+          "name": "Digit 2, radial"
+        },
+        {
+          "name": "Digit 3, radial"
+        },
+        {
+          "name": "Digit 4, radial"
+        },
+        {
+          "name": "Digit 5, radial"
+        },
+        {
+          "name": "Digit 1, ulnar"
+        },
+        {
+          "name": "Digit 2, ulnar"
+        },
+        {
+          "name": "Digit 3, ulnar"
+        },
+        {
+          "name": "Digit 4, ulnar"
+        },
+        {
+          "name": "Digit 5, ulnar"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-retinaculum"
+          },
+          {
+            "element": "palmar-aponeurosis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          },
+          {
+            "element": "flexor-tendons"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. Ten muscles, two per digit, onto the proximal phalanges, then **fusing with the flexor digitorum longus tendons** so that they reach the middle and distal phalanges through that muscle rather than directly. Same number as the chameleons, different route to the far end of the digit.",
+      "region": "hand",
+      "record": "flexores-breves-superficiales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lumbricales",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "flexor-tendons"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Five**, from the tendons to digits 2-4, onto the radial sides of digits 3-4 and the ulnar sides of digits 2-4. Five against two in both chameleons — the largest count difference in the hand after the intermetacarpales.",
+      "region": "hand",
+      "record": "lumbricales"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Contrahentes",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. **Mainly from the contrahens fascia** to digits 1-5, without the metacarpal origins the chameleons have taken on.",
+      "region": "hand",
+      "record": "contrahentes-digitorum"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Flexores breves profundi",
+      "present": "yes",
+      "division": "divided",
+      "parts": [
+        {
+          "name": "Muscle 1"
+        },
+        {
+          "name": "Muscle 2"
+        },
+        {
+          "name": "Muscle 3"
+        },
+        {
+          "name": "Muscle 4"
+        },
+        {
+          "name": "Muscle 5"
+        }
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "metacarpals"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences.",
+      "region": "hand",
+      "record": "flexores-breves-profundi"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor pollicis brevis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "radiale"
+          },
+          {
+            "element": "flexor-retinaculum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "proximal"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences in attachment.",
+      "region": "hand",
+      "record": "abductor-pollicis-brevis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Abductor digiti minimi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "carpals",
+            "landmark": "pisiform"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metacarpals"
+          }
+        ]
+      },
+      "attachmentNote": "Aspidoscelis uniparens, Molnar et al. (2017) Table 2. No differences in attachment.",
+      "region": "hand",
+      "record": "abductor-digiti-minimi"
+    }
+  ]
+}

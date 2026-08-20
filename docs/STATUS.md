@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-165 muscle records · 1626 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
+165 muscle records · 1732 present occurrences · 296 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **81%** of 1626 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 54% of observed rows and `landmark` on 26%; `layer` resolves for 58 of 99 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **82%** of 1732 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 53% of observed rows and `landmark` on 25%; `layer` resolves for 58 of 99 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -39,14 +39,14 @@ Taxon-specific attachments cover **81%** of 1626 present occurrences. The thinne
 | leg | 10 | 108 | 102 | 94% |
 | thigh | 10 | 150 | 139 | 93% |
 | pelvic | 8 | 105 | 95 | 90% |
-| arm | 5 | 106 | 92 | 87% |
-| pectoral | 16 | 281 | 241 | 86% |
-| forearm | 19 | 280 | 233 | 83% |
+| arm | 5 | 118 | 104 | 88% |
+| pectoral | 16 | 312 | 272 | 87% |
+| forearm | 19 | 316 | 269 | 85% |
 | axial | 15 | 59 | 45 | 76% |
-| hand | 9 | 120 | 81 | 68% |
+| hand | 9 | 147 | 108 | 73% |
 | fin | 9 | 39 | 23 | 59% |
 | cranial | 51 | 223 | 111 | 50% |
-| **all** | 165 | 1626 | 1309 | **81%** |
+| **all** | 165 | 1732 | 1415 | **82%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -59,11 +59,11 @@ Taxon-specific attachments cover **81%** of 1626 present occurrences. The thinne
 | Crocodylomorpha (stem) | 3 | 3 | 100% |
 | Crocodyliformes (stem) | 7 | 7 | 100% |
 | Theropoda (stem) | 38 | 34 | 89% |
+| Lepidosauria | 379 | 325 | 86% |
 | Actinistia | 7 | 6 | 86% |
 | Theria | 444 | 380 | 86% |
 | Crocodylia | 75 | 64 | 85% |
 | Monotremata | 182 | 151 | 83% |
-| Lepidosauria | 273 | 219 | 80% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
 | Caudata | 106 | 82 | 77% |
 | Aves | 172 | 131 | 76% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1309 of 1626 present occurrences (81%).**
+**Taxon-specific attachments: 1415 of 1732 present occurrences (82%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -107,15 +107,15 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 <!-- counts:holes -->
 | Region | Muscles | Observed attachment rows |
 |---|---:|---:|
-| pectoral | 16 | 761 |
-| forearm | 19 | 629 |
+| pectoral | 16 | 852 |
+| forearm | 19 | 724 |
 | foot | 13 | 477 |
 | cranial | 51 | 462 |
 | thigh | 10 | 440 |
 | leg | 10 | 350 |
 | pelvic | 8 | 347 |
-| arm | 5 | 282 |
-| hand | 9 | 238 |
+| arm | 5 | 333 |
+| hand | 9 | 312 |
 | axial | 15 | 171 |
 | fin | 9 | 57 |
 <!-- /counts:holes -->
@@ -128,10 +128,10 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 296, of which 276 (93%) carry at least one attachment |
-| Observed attachment rows | 4214 |
-| Rows naming a **landmark** | 1086 (26%) |
-| Rows naming a **side** | 2292 (54%) |
+| Elements | 296, of which 277 (94%) carry at least one attachment |
+| Observed attachment rows | 4525 |
+| Rows naming a **landmark** | 1133 (25%) |
+| Rows naming a **side** | 2413 (53%) |
 | Osteological correlates | 129 flagged, 123 carry a muscle |
 <!-- /counts:skeleton -->
 
@@ -144,7 +144,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 46 | 82 | 1.8 |
+| cranial | 46 | 83 | 1.8 |
 | hindlimb | 45 | 53 | 1.2 |
 | axial | 37 | 35 | 0.9 |
 | pectoral | 35 | 32 | 0.9 |

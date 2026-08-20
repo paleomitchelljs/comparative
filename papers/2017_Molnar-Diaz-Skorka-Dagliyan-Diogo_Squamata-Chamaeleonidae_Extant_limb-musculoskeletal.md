@@ -82,10 +82,60 @@ after Werneburg on *Trachemys*, Johnston on *Ctenosaura* and Cieri on *Iguana*.
 The tell is the same every time: the row has a species, a source and a plausible
 note, and only the paper's own methods section disproves it.
 
+### The forelimb, mined 2026-08-20 — 41 of 41, three animals
+
+**Table 2 in full: 119 rows across three extraction files**, `chamaeleo-calyptratus`,
+`trioceros-melleri` and `aspidoscelis-uniparens`, all new. Every one of the table's
+41 entries is scored for the whiptail; the two chameleons carry 39 rows each and the
+other two entries deliberately, which is the arithmetic below. **This is the first
+data mined from this source.**
+
+Two entries get no row of their own in the chameleons, and the reason is the same
+both times: the paper reports a *fusion*, not an absence.
+
+- **Levator claviculae** is fused into the levator scapulae and Molnar et al. cannot
+  separate them. Scoring it `present: "no"` would say a muscle is missing when the
+  paper says it is merged, so the statement lives in the levator scapulae row with
+  `division: "single"`. It is a separate muscle in the whiptail and has a row there.
+- **Triceps coracoideus** is not a distinct head — lost or fused with the others. A
+  head count is not a presence, so it is written into the triceps humeralis row. The
+  whiptail has it, from coracoid to proximal ulna.
+
+**The third column is differences from *Trioceros melleri*, not from *Chamaeleo
+calyptratus***, and the caption says so. It matters in five rows where the two
+chameleons differ — pectoralis, flexor digitorum longus, flexor carpi radialis,
+intermetacarpales, lumbricales — and reading it against the wrong animal would put
+the whiptail's condition on the veiled chameleon. Flagged in the pectoralis row.
+
+**The intermetacarpales are the paper's one number-of-muscles change and they grade
+across all three animals**: two in *C. calyptratus*, three in *T. melleri*, four in
+*A. uniparens*. The chameleons have lost exactly the muscles that would have spanned
+the cleft, which is the same loss human split-hand/split-foot malformation produces
+and the whole basis of the teratology argument. It is the only graded series in the
+table.
+
+**What the conservatism claim looks like as rows.** The flexores breves profundi,
+dorsometacarpales, contrahentes and flexores breves superficiales all keep their
+counts and their kinds of attachment in a hand rebuilt around a cleft; the flexores
+breves superficiales change *job* — reoriented along the V-shaped palmar aponeurosis
+to adduct the two super-digits — without changing origin, insertion or name. Mivart
+(1870) had already named two of them adductors for that reason. That row is the
+paper's teaching case and it is now on the record.
+
+Three absences worth having, all stated across an arboreal and a terrestrial lizard
+together: **scapulohumeralis posterior** (not observed in any of the three),
+**supinator** (not a distinct muscle in any of the three), and **costocoracoideus**,
+which the whiptail has and neither chameleon does.
+
+### Still to do — Table 3, the hindlimb
+
+Same structure, same three animals, roughly the same size. The status stays
+`not-started` until it is done. The pedal counterparts of everything above are in it,
+including the intermetatarsales, which carry the cleft story in the foot.
+
 ### Scoped for a real pass
 
-Nothing has been mined from this paper. It is worth a full pass and the reading
-is already located:
+The reading is already located:
 
 - **Table 2 (forelimb) and Table 3 (hindlimb)** are the comparative dictionary,
   muscle by muscle with synonymy, across all three animals. Both extract cleanly
@@ -97,7 +147,8 @@ is already located:
 - Roughly 30 muscles per table, so **three animals × two limbs** is the scope.
   Do not start it without the room to finish a limb.
 - *Trioceros melleri* and *Aspidoscelis uniparens* were added to `species.json`
-  on 2026-08-20 so the extraction files have somewhere to go.
+  on 2026-08-20 so the extraction files have somewhere to go. They now exist and
+  carry the forelimb.
 
 The autopodial muscles are where the paper's contribution is, and several are
 records this dataset already holds thinly: `intermetacarpales` (two in the veiled
