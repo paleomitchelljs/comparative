@@ -10,18 +10,24 @@ current.
 
 ## Next action
 
-> **Task 4 — re-mine**, and **port the three normalisers**.
+> **Task 4 — re-mine.** Pick the next source with the ranking in
+> [`MINING.md`](MINING.md#then-divide-by-the-rows-the-source-already-carries):
+> attachment density per page divided by rows already filed. A dense paper holding
+> almost no rows is a source that was read badly, and it found both re-mines of
+> 2026-08-20.
 >
-> The structure is finished. `data/observations/` is the source of truth, 248
-> files, one per study per animal; `build.sh` rebuilds `muscles-*.json` from it as
-> step 0, byte-identical; seven defunct scripts are deleted.
+> Mining works end to end now. It did not before: `--join` read `_occ` and `_keys`
+> off every filed row, which only `--split` writes, so the first hand-written row
+> crashed step 0 of the build. Rows written the way `MINING.md` documents now
+> join, two studies of one animal merge by union, and a second dissection no
+> longer has to be recorded by copying the first one's prose into a new file.
 >
-> **The one thing the flip left half-done**: every remaining normaliser reads and
-> writes `muscles-*.json`, which is now generated, so its output cannot reach the
-> source of truth. `seed_nerves`, `seed_actions` and `promote_landmarks` are out of
-> `build.sh` until they are ported to read and write `data/observations/`.
-> **`promote_landmarks` has 79 pending refinements** — `ribs → true-ribs`,
-> `mandible → retroarticular-process` — and is the one worth doing first.
+> **Still half-done from the flip**: `seed_nerves`, `seed_actions` and
+> `promote_landmarks` read and write `muscles-*.json`, which is now generated, so
+> their output cannot reach the source of truth. They are out of `build.sh` until
+> ported to `data/observations/`. **`promote_landmarks` has 79 pending
+> refinements** — `ribs → true-ribs`, `mandible → retroarticular-process` — and is
+> the one worth doing first.
 
 ## Task board
 

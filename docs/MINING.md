@@ -83,6 +83,52 @@ it also *ranks*, and the ranking has twice put a paper the dataset was already
 citing above every unmined paper in `papers/`. A citation is not a mining: a
 source can be cited on fifteen rows and have its attachment data untouched.
 
+### Then divide by the rows the source already carries
+
+Density alone says which papers are worth reading. **Density over rows held says
+which have been read badly**, and that is the more useful list while Task 4 is
+open. Count filed rows per source out of `data/observations/`, divide the density
+by it, and sort:
+
+```sh
+python3 - <<'PY'
+import os, re, json, collections, subprocess
+rs = json.load(open('data/remine-status.json'))['sources']
+src = {s['key']: s for s in json.load(open('data/sources.json'))['sources']}
+filed = collections.Counter()
+for f in os.listdir('data/observations'):
+    d = json.load(open('data/observations/' + f))
+    filed[d['source']] += sum(1 for r in d['observations'] if r.get('record'))
+out = []
+for key, ent in rs.items():
+    if ent['status'] in ('remined', 'verified', 'blocked-no-source'):
+        continue
+    pdf = src.get(key, {}).get('pdf')
+    txt = pdf and 'papers/extracted/' + pdf[:-4] + '.txt'
+    if not txt or not os.path.exists(txt):
+        continue
+    t = open(txt, errors='ignore').read().replace('ﬂ', 'fl').replace('ﬁ', 'fi')
+    n = len(re.findall(r'origin|insert|ursprung|ansatz|entspringt|inserirt|naissance', t, re.I))
+    pages = int(re.search(r'Pages:\s+(\d+)', subprocess.run(
+        ['pdfinfo', 'papers/' + pdf], capture_output=True, text=True).stdout).group(1))
+    # German is about twice as compact; see the table above.
+    dens = n / max(pages, 1) * (2 if len(re.findall(r'ursprung|ansatz|entspringt|inserirt', t, re.I)) > 20 else 1)
+    out.append((dens / max(filed[key], 1), dens, filed[key], key))
+for r in sorted(out, reverse=True)[:15]:
+    print(f"{r[0]:7.1f}  density {r[1]:5.1f}  filed {r[2]:4d}   {r[3]}")
+PY
+```
+
+**A high-density paper holding almost no rows is the signal.** It found both of
+the 2026-08-20 re-mines: Freitas et al., 100 attachment statements in 11 pages
+against one filed row, and Liparini & Schultz, 300 in 29 against one. In each case
+the reading note gave a reason for the small yield, and in each case the reason was
+wrong. Read the note, then check it against the paper before believing it — see
+`MIGRATION-STATE.md` for what the two excuses were.
+
+This is a query, not a table, deliberately: the answer changes every time a source
+is mined, and a copy of it in a document would be stale within a pass.
+
 Four more things to check before scoring:
 
 1. **Ligatures.** Older PDFs use `ﬂ` and `ﬁ`, which break every grep. Replace them
