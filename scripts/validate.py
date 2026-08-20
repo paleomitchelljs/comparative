@@ -573,6 +573,37 @@ def main():
                             err(f"{label}: attaches to '{ref}', which "
                                 f"skeleton.json records as absent in {taxon}")
 
+    # ---- `after`: this source reports another worker's observation ----------
+    #
+    # A review states what someone else dissected. Russell & Bauer give Sphenodon
+    # on Miner (1925) and Byerly (1925); Burch gives her extant bracket on
+    # Jasinoski et al. (2006). Filing those under the reporting source claims
+    # observations it never made -- the error that put Dick & Clemente's compiled
+    # table on a monitor nobody dissected. `after` names the worker whose
+    # observation it is, so the row can be kept without the lie.
+    for path in MUSCLE_FILES:
+        for mm in load(path)["muscles"]:
+            for oo in mm.get("occurrences") or []:
+                aft = oo.get("after")
+                if aft is None:
+                    continue
+                where = f"{pathlib.Path(path).name}:{mm['id']}/{oo.get('species')}"
+                if not isinstance(aft, str) or not aft.strip():
+                    err(f"{where}: `after` must name the worker whose observation "
+                        f"this is")
+                    continue
+                # A key when the underlying work is in the bibliography, free text
+                # when it is not -- most of these are 19th-century papers nobody
+                # holds, and requiring a key would mean inventing entries.
+                if aft in source_keys:
+                    continue
+                if not re.search(r"\b(1[6-9]|20)\d{2}\b", aft):
+                    err(f"{where}: `after` is '{aft}', which is neither a source "
+                        f"key nor a citation with a year")
+                if not (oo.get("note") or oo.get("attachmentNote")):
+                    warn(f"{where}: `after` with no prose. Say what the reporting "
+                         f"source adds, or the row reads as its own observation")
+
     # ---- the extraction key must identify exactly one record ----------------
     #
     # Under extraction-first storage a row is looked up by what the source calls

@@ -10,11 +10,10 @@ current.
 
 ## Next action
 
-> **Task 3 — add the `after:` field for secondary attribution.** It is what
-> unblocks the largest drop the audit found (Russell & Bauer's 22 genera, most of
-> Burch's per-taxon prose). Tasks 1 and 2 are done and the round trip is proven
-> byte-identical, so the model is no longer a hypothesis. The re-mine (Task 4) can
-> start on any source at any time and is the long pole.
+> **Task 4 — re-mine.** Tasks 1, 2 and 3 are done: the extraction key is unique,
+> the round trip is proven byte-identical, and `after:` can now carry a reported
+> observation. Nothing structural blocks any source. Walker (1973) is the best
+> first target — nine turtle genera, first-hand, into a thin column.
 
 ## Task board
 
@@ -22,7 +21,7 @@ current.
 |---|---|---|
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | **done** |
-| 3 | `after:` field for secondary attribution | not started |
+| 3 | `after:` field for secondary attribution | **done** |
 | 4 | Re-mine every cited source | **in progress — 2 of 79** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | not started |
 | 6 | Retire `attribute_species.py` and friends | not started |

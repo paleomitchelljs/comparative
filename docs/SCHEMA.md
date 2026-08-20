@@ -335,6 +335,34 @@ across 128 of the 129 records. Adjacency and correspondence are different
 questions. If you can name the relation and cite it, it is a correspondence; if
 you are recording that two muscles sit next to each other, it is `related`.
 
+### `after` — this source reports someone else's observation
+
+```jsonc
+{ "species": "sphenodon-punctatus",
+  "sources": ["russell-bauer-2008", "osawa-1898"],
+  "after": "Osawa 1898; Günther 1868; Ribbing 1911, 1938; Haines 1939; Holmes 1977",
+  "note": "…what the reporting source adds" }
+```
+
+A review states what somebody else dissected. Russell & Bauer give *Sphenodon* on
+Miner (1925) and Byerly (1925); Burch gives her extant bracket on Jasinoski et al.
+(2006). Without a way to say so the options were to file the row under the
+reporting source — claiming an observation it never made, which is the error that
+put Dick & Clemente's compiled table on a monitor nobody dissected — or to drop
+it. The 2026-08-19 audit found roughly 650 statements across two sources sitting
+in that gap.
+
+| | |
+|---|---|
+| **Value** | A source `key` when the underlying work is in the bibliography; otherwise a citation **with a year**. Most are nineteenth-century papers nobody holds, and demanding a key would mean inventing entries for them |
+| **`sources`** | Still the source you actually read. `after` does not replace it |
+| **`note`** | Expected. Say what the reporting source *adds* — a synonymy, a correction, a comparison — or the row reads as its own observation |
+
+**It does not lower a row's standing.** An observation reported accurately by a
+comparative worker is still an observation; what changes is that the dataset can
+now say whose. It is also what makes review-shaped sources minable at all, which
+is most of `WORKLIST.md`'s acquisition table.
+
 ### `attachments` — element / side / landmark rows
 
 ```jsonc
