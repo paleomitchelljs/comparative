@@ -1,34 +1,25 @@
 {
   "species": "iguana-iguana",
   "source": "freitas-etal-2017",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
   "observations": [
     {
-      "speciesBasis": "note",
       "name": "M. pectoralis",
+      "region": "pectoral",
+      "record": "pectoralis",
       "present": "yes",
-      "division": "divided",
-      "parts": [
-        {
-          "name": "Superficial portion"
-        },
-        {
-          "name": "Deep portion"
-        }
-      ],
-      "innervation": "Pectoral branches arising from the ventral divisions of the brachial plexus; in South American lizards the plexus is typically formed from spinal nerves 5–9 with considerable interspecific variation in root composition (Navarro et al. 2023).",
       "attachments": {
         "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior"
+          },
           {
             "element": "sternum"
           },
           {
             "element": "interclavicle"
-          },
-          {
-            "element": "ribs",
-            "side": "lateral"
           }
         ],
         "insertion": [
@@ -39,39 +30,448 @@
           }
         ]
       },
-      "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Superficial portion from the entire midventral aspect of the posterior process of the interclavicle and the posterior border of its lateral process; deep portion from the posteriormost mesosternal rib, the body of the mesosternum, the interclavicle and the presternal plate. **Russell & Bauer make a point of what it does not arise from**: the fibres associate with no rib other than that one, and although they are bound to the sternal rim near the coracosternal joint they do not originate as far laterally as it. The two portions unite near a common insertion on the deltopectoral crest, bounded anteriorly by the deltoid complex and supracoracoideus insertions. Russell & Bauer corroborate the attachments this row already carried from Abdala & Diogo, Freitas et al. and Navarro et al., and add the division into two portions.",
-      "note": "Present in all major extant reptilian clades (Fürbringer 1876; Walker 1973; Holmes 1977; Dilkes 2000).",
-      "nerves": [
-        {
-          "nerve": "pectoral-nerves"
-        },
-        {
-          "nerve": "brachial-plexus"
-        }
-      ],
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Origin from the cranial margin of the sixth rib, from the sternum, and from the episternum along the midline — episternum being the interclavicle, which is the element the row carries. Insertion at the apex of the deltopectoral crest. **Freitas et al. count three parts, not two**: ascendant, transverse and descendent, which is the segmentation Jenkins & Goslow (1983) describe for *Varanus exanthematicus* and which Freitas et al. say they found again here. Russell & Bauer's two portions on this row are superficial and deep, so the two dissections of this animal disagree about how the muscle divides, not about where it ends. They also disagree about the rib: Russell & Bauer state that the fibres associate with no rib but the posteriormost mesosternal one, and Freitas et al. name the sixth."
+    },
+    {
+      "name": "M. deltoideus clavicularis",
       "region": "pectoral",
-      "record": "pectoralis",
-      "_occ": 10,
-      "_keys": [
-        "species",
-        "speciesBasis",
-        "name",
-        "present",
-        "division",
-        "parts",
-        "innervation",
-        "sources",
-        "attachments",
-        "attachmentNote",
-        "note",
-        "nerves"
-      ],
-      "_srcs": [
-        "abdala-diogo-2010",
-        "freitas-etal-2017",
-        "navarro-etal-2023",
-        "russell-bauer-2008"
-      ]
+      "record": "deltoideus-clavicularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "interclavicle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). **Origin from the middle portion of the interclavicle** — a different bone from the clavicle Russell & Bauer give for the same animal, and the clearest disagreement between the two dissections. Thin and elongate on the medioventral face of the girdle. Its fibres converge with those of the deltoideus scapularis onto a tendon the two muscles share, reaching the dorsocaudal surface of the deltopectoral crest; Freitas et al. report that same shared tendon in *Lacerta agilis exigua* and *V. exanthematicus* after Romer (1944) and Jenkins & Goslow (1983), and read it as a purchase that helps stabilise the forelimb in a climbing animal. Zaaf et al. (1999) call this muscle the clavodeltoideus and Romão et al. (2013) the deltoideus scapularis proximalis."
+    },
+    {
+      "name": "M. deltoideus scapularis",
+      "region": "pectoral",
+      "record": "deltoideus-scapularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Broad origin on the lateral surface of the scapula, and insertion by the tendon it shares with the deltoideus clavicularis onto the dorsocaudal deltopectoral crest. Cranially it is overlaid by the caudal projection of the trapezius. Freitas et al. note that the origin stays on the scapula here, where in *V. exanthematicus* and the two geckos of Zaaf et al. (1999) it extends onto the suprascapula and the clavicle — Russell & Bauer report exactly that wider origin for *Iguana*, so the two dissections differ on how far forward and how far dorsally the muscle reaches. Zaaf et al. call it the scapulodeltoideus, Romão et al. (2013) the deltoideus scapularis distalis."
+    },
+    {
+      "name": "M. trapezius",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). From the thoracodorsal fascia along the vertebral spinous processes in the midline — fascia, so the row carries the vertebral column and not a named vertebral group, because Freitas et al. do not say which vertebrae. It runs to the cranial margin of the scapula, some of its fibres intermingling with the dorsal margin of the deltoideus scapularis and passing over it, which Freitas et al. also report for *Alligator mississippiensis*. **They match the muscle to the crocodilian condition and explicitly against the lizard one**: the two-bellied *V. exanthematicus* trapezius of Jenkins & Goslow (1983), with its cranial belly from the supraspinal ligament and nuchal fascia and its caudal belly from a separate aponeurosis, is said to be quite unlike what they found. Russell & Bauer put this animal's trapezius on this record too, but as one unit with the episternocleidomastoideus and running the other way — skull to girdle — so the two readings differ over which end is the insertion as well as over the attachments."
+    },
+    {
+      "name": "M. latissimus dorsi",
+      "region": "pectoral",
+      "record": "latissimus-dorsi",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column"
+          },
+          {
+            "element": "ribs",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Flat and large, its fibres running obliquely forward, from the thoracodorsal fascia along the vertebral spinous processes in the midline and, ventrocaudally, from the dorsal margins of the first five ribs. Insertion on the caudal surface of the proximal humerus. **The costal origin is the difference from Russell & Bauer**, who give the neural spines of the last cervical and first seven thoracic vertebrae and no rib at all; Freitas et al. present the extension onto ribs as the *Varanus* condition after Jenkins & Goslow (1983) and report it here as well. Dorsally the muscle is continuous with the trapezius."
+    },
+    {
+      "name": "M. coracobrachialis brevis",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "anterior"
+          },
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus",
+            "side": "anterior",
+            "landmark": "deltopectoral-crest"
+          },
+          {
+            "element": "humerus",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Triangular, lying deep to the deltoideus clavicularis on the lateral margin of the pectoralis, from the cranial margin and ventral surface of the coracoid to a large stout tendon on the cranial edge of the deltopectoral crest and the medial face of the proximal humerus. Freitas et al. treat this muscle as anatomically conservative across reptiles and adopt the names Jenkins & Goslow (1983) and Romer (1944) use, which is why brevis and longus are separate entries in their tables where Russell & Bauer describe them as one two-part muscle. The insertion is the point of variation they draw out: on the deltopectoral crest here and in crocodilians and *V. exanthematicus*, but on the proximal humerus generally in the geckos and *L. agilis exigua*, and cranial to the crest in *Caiman latirostris*."
+    },
+    {
+      "name": "M. coracobrachialis longus",
+      "region": "arm",
+      "record": "coracobrachialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "humerus"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Fan-shaped, overlaid by the coracobrachialis brevis and the biceps brachii, with a belly of circular cross-section. Their table gives the origin simply as the coracoid; their discussion places it on the dorsal surface of the coracoid, alongside *L. agilis exigua* and the two geckos, so the row carries the dorsal side on the discussion's authority. It inserts on the middle third of the humerus, where Russell & Bauer trace the same muscle from the posterior coracoid process to the distal posteroventral shaft between the brachialis anticus and the medial triceps head. Freitas et al. contrast this with crocodilians, where the muscle arises from the scapula rather than the coracoid, and with *V. exanthematicus*, where it has two indistinct heads and reaches the epicondyle."
+    },
+    {
+      "name": "M. serratus thoracis",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "nomenclature",
+      "blockedNote": "Freitas et al. take this muscle from the cranial margins of the first and second ribs to the caudal margin of the scapula, and call it serratus thoracis. Russell & Bauer's *Iguana* serratus complex on `serratus-anterior` is entirely cervical — four bellies from the first three cervical ribs to the medial face of the suprascapula, plus a superficialis from the third and fourth — so the two accounts share neither the ribs nor the girdle attachment. Either Freitas et al. number the anterior ribs from the first rib-bearing vertebra and this is the same muscle under another name, or *Iguana* has a thoracic serratus distinct from the cervical one, which is the arrangement several lizard descriptions make. **Filing it on `serratus-anterior` would be assigning a record on the strength of the word 'serratus'.** What would settle it is Abdala & Diogo (2010) Tables 1–3, the published equivalence table this repository already uses as the bridge for forelimb nomenclature, read for whether the lepidosaur column carries one serratus or two.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ribs",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "M. levator scapulae",
+      "region": "pectoral",
+      "record": "levator-scapulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "cervical-ribs"
+          },
+          {
+            "element": "cervical-vertebrae"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapula",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Broad, thin and elongate on the lateral face of the girdle, completely overlaid by the trapezius, arising on the lateral surface of the neck from the cervical ribs and the vertebral processes and inserting along the cranial margin of the scapula. **Freitas et al. single out the vertebral part of the origin as their own observation**, against a literature that gives the cervical ribs alone. Russell & Bauer read the same muscle in this animal quite differently, with a tendinous origin from the transverse process of the atlas — one vertebra — and an insertion spread over the anterolateral suprascapula, the acromion and the clavicular bar."
+    },
+    {
+      "name": "M. biceps brachii",
+      "region": "arm",
+      "record": "biceps-brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "coracoid",
+            "side": "ventral"
+          },
+          {
+            "element": "humerus",
+            "side": "posterior",
+            "landmark": "deltopectoral-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "landmark": "radial-tuberosity"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Two heads inserting together on the radial tuberosity. The distal head arises from the ventral surface of the coracoid, under the descendent part of the pectoralis, and its flat thin tendon runs over the coracobrachialis brevis; the proximal head is fusiform with parallel fibres and a stout tendon, lying laterally on the cranial face of the limb, and **arises from the humerus — the caudal surface of the deltopectoral crest — lateral to the tendon of the first head.** That humeral head is the disagreement with Russell & Bauer, who describe this animal's biceps as digastric rather than two-headed, arising only from the girdle at the posteromedial border of the secondary coracoid fenestra and inserting on the proximal radius and ulna together with the brachialis anticus. Freitas et al. state the point directly: in *V. exanthematicus* both heads arise from the coracoid, and in *Iguana* only the distal one does."
+    },
+    {
+      "name": "M. triceps longus lateralis",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Fusiform, its fibres running along the lateral surface of the humerus, from the dorsal aspect of the deltopectoral crest to the olecranon. **Freitas et al. use Meers's (2003) crocodilian names for the four heads rather than the lizard ones**, on the ground that this animal's triceps resembles the crocodilian arrangement more closely; that is why the four heads appear here under names that do not match Russell & Bauer's scapular, coracoid, lateral humeral and medial humeral heads for the same animal. They also argue in passing that the group may not be a triceps at all, and that settling it would need ontogeny and innervation rather than topography."
+    },
+    {
+      "name": "M. triceps longus caudalis",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapula",
+            "side": "lateral"
+          },
+          {
+            "element": "humerus",
+            "side": "dorsal",
+            "landmark": "deltopectoral-crest"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). **The paper's headline observation.** This head arises by a tendinous arc on the lateral surface of the shoulder, spanning from the scapula to the dorsal surface of the deltopectoral crest, its thin tendon broadening where it meets the bone and the arc itself overlying the coracobrachialis brevis laterally. A tendinous arc origin for the long caudal head had been described only in crocodilians, where it spans scapula to coracoid (Meers 2003; Romão et al. 2016); Freitas et al. report it in a lizard for the first time and note that the second attachment is the deltopectoral crest rather than the coracoid. Romão et al. read the crocodilian arc as related to aquatic habits, which an iguana does not share, and Freitas et al. leave the question open rather than claiming convergence."
+    },
+    {
+      "name": "M. triceps brevis intermedius",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "medial"
+          },
+          {
+            "element": "sternum"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). From the medial surface of the proximal humerus to the olecranon, with a second tendon that Freitas et al. describe as arising medially on the sternum — an unusual attachment for a triceps head, and one they record without comment. It is scored because the table states it plainly and at both ends; a reader should know that no other source here gives this muscle a girdle origin, and that Russell & Bauer's medial humeral head in the same animal arises from a concavity on the dorsal proximal humerus with its ventral limit set by the coracobrachialis insertions, and reaches no further."
+    },
+    {
+      "name": "M. triceps brevis caudalis",
+      "region": "arm",
+      "record": "triceps-brachii",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna",
+            "landmark": "olecranon"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Long and narrow, from the craniodorsal surface of the humerus to the olecranon. In *V. exanthematicus* the corresponding lateral head takes an additional origin from an aponeurosis shared with the brachialis (Jenkins & Goslow 1983); Freitas et al. record only the humeral origin here. All four heads reach the olecranon through a common tendon."
+    },
+    {
+      "name": "M. extensor carpi ulnaris",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-ulnaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ulna"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Large and broad, lying medially on the zeugopodium, from the cranial epicondyle of the humerus to the shaft of the ulna. The cranial epicondyle is the ectepicondyle: Freitas et al. equate their cranial epicondyle with the crocodilian origin Meers (2003) describes, and Russell & Bauer's rows for this same animal carry the extensors on the ectepicondyle and the flexors and pronators on the entepicondyle, so the identification is the dataset's existing one and not a fresh inference. Freitas et al. side with Abdala & Diogo (2010) against Meers on what the muscle does — extension of the limb rather than flexion. Russell & Bauer add an ulnar head from the anterior olecranon that Freitas et al. do not report."
+    },
+    {
+      "name": "M. extensor digitorum longus",
+      "region": "forearm",
+      "record": "extensor-digitorum",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Fusiform with parallel fibres in the middle of the zeugopodium, from the cranial epicondyle of the humerus, its broad dorsal tendon dividing into three long thin tendons to the distal phalanges of digits I, II and III. **The insertion is the finding.** Freitas et al. set it against a reptilian norm of insertion on the metacarpal bases — II in crocodilians, II–IV in the geckos and the tegu, II, III and V in *Polychrus* — and against Russell & Bauer, whose *Iguana* row inserts on the metacarpals. A phalangeal insertion is otherwise mostly an avian character; they read the distal attachment as improving grip in a climbing animal, where the proximal one suits terrestrial locomotion. In crocodilians this muscle is named extensor carpi ulnaris longus (Meers 2003; Abdala & Diogo 2010), a difference Freitas et al. call purely conceptual since function and topography agree."
+    },
+    {
+      "name": "M. extensor carpi radialis",
+      "region": "forearm",
+      "record": "extensor-antebrachii-carpi-radialis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "lateral-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          },
+          {
+            "element": "carpals",
+            "landmark": "radiale"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). A large cross-sectional origin on the cranial epicondyle of the humerus, a belly reduced distally, and a wide tendon crossing the wrist laterally to the distal half of the radius and the radial carpal bone. **No division into heads**: Moro & Abdala (2004, 2006) and Casals et al. (2012) find three — superficialis, intermedium and profundus — in *Tupinambis*, *Polychrus*, *Liolaemus* and *Phymaturus*, and Freitas et al. report the undivided condition here, agreeing with Zaaf et al. (1999) on the two geckos. Russell & Bauer, dissecting the same animal, describe two heads, the second from the fascial sheath investing the first."
+    },
+    {
+      "name": "M. pronator teres",
+      "region": "forearm",
+      "record": "pronator-teres",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Broad and thin, broadening again at the insertion, from the caudal epicondyle of the humerus — the entepicondyle, matching the crocodilian origin — to the distal extremity of the radius; their discussion gives the distal third. Freitas et al. present the caudal epicondylar origin as the crocodilian condition and contrast it with *Polychrus*, *Liolaemus*, *Phymaturus* and *Varanus*, where the muscle arises from the distal head of the humerus generally, and with the same lizards' more proximal radial insertions. **Their table also prints an insertion along the caudal margin of the humerus, which is not scored**: a pronator teres cannot insert on the bone it arises from, the discussion names only the radius, and the phrase reads as a table error rather than an observation."
+    },
+    {
+      "name": "M. flexor digitorum longus",
+      "region": "forearm",
+      "record": "flexor-digitorum-longus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "humerus",
+            "landmark": "medial-epicondyle"
+          },
+          {
+            "element": "ulna",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "phalanges-manus",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Fusiform, the main flexor of the digits, from the caudal epicondyle of the humerus and the lateral margin of the ulna, converging on a broad tendon that divides on the palmar face into five long thin tendons to the bases of the distal phalanges of digits I–V. **The paper contradicts itself about the heads and the contradiction is worth keeping**: the table gives two distinct origins, humeral and ulnar, while the discussion says they did not observe a clear division into radial and ulnar heads in *Iguana* and reads that as a derived condition giving a larger cross-section and a stronger grip. Both origins are scored, since the muscle demonstrably reaches both bones however few bellies it has. Russell & Bauer describe three heads in the same animal, two from the entepicondylar tuberosities and one from the posterior ulnar shaft."
+    },
+    {
+      "name": "M. pronator profundus",
+      "region": "forearm",
+      "record": "pronator-quadratus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ulna",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "radius",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). Deep, broad and large, its oblique fibres running between the bones of the zeugopodium, broadly from the lateral margin of the ulna to the distal part of the medial face of the radius. Russell & Bauer give the same animal two ulnar bellies and no humeral origin, and take the insertion onto the posterior and lateral radius; the two dissections agree that the muscle is entirely antebrachial and differ on which face of the radius it reaches."
+    },
+    {
+      "name": "M. flexor carpi ulnaris",
+      "region": "forearm",
+      "record": "flexor-carpi-ulnaris",
+      "present": "yes",
+      "attachmentNote": "Iguana iguana, Freitas et al. (2017). **Identified but not described.** The muscle is labelled in their figure 2 of the ventral forelimb and appears nowhere in table 3, so the paper records its presence in this animal and states no attachment for it. The row is deliberately left without `attachments`: an empty attachment set reads as unrecorded, where copying Russell & Bauer's entepicondylar origin onto a Freitas row would assert an observation these authors did not publish."
     }
   ]
 }

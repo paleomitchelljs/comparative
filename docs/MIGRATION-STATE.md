@@ -30,17 +30,17 @@ current.
 | 1 | `region` on occurrence names; kill the 25 ambiguous keys | **done** |
 | 2 | Scaffold generator + lossless round-trip proof | **done** |
 | 3 | `after:` field for secondary attribution | **done** |
-| 4 | Re-mine every cited source | **in progress — 2 of 79 to exhaustion, 3 more partly** |
+| 4 | Re-mine every cited source | **in progress — 3 of 79 to exhaustion, 3 more partly** |
 | 5 | Flip source of truth to `observations/` + `mapping/` | **done** |
 | 6 | Retire what the flip made defunct | **done — 7 scripts deleted** |
 | 7 | `phylogeny.json` | not started |
 
 ## The model is proven
 
-`scripts/build_observations.py --check` splits the 164 records into **220
-observation files and 78 mapping files (2011 rows)**, rebuilds `muscles-*.json`
-from them, and diffs. The round trip is **byte-identical** — `git diff` is empty
-after a full split and join, and `build.sh` is still a fixed point.
+`scripts/build_observations.py --check` rebuilds `muscles-*.json` from the **248
+observation files and 78 mapping files (2740 rows)** and diffs. The round trip
+is **byte-identical** — `git diff` is empty after a full split and join, and
+`build.sh` is still a fixed point.
 
 That settles the only question the design could not answer on paper: the new shape
 holds everything the old one holds. It settles nothing about completeness, which
@@ -62,24 +62,37 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 2 | 63 |
-| `not-started` | 73 | 1868 |
+| `remined` | 3 | 83 |
+| `not-started` | 72 | 1867 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2011** |
+| **total** | **79** | **2030** |
 
-**2 of 79 cited sources re-mined** (2%).
+**3 of 79 cited sources re-mined** (3%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Two sources have cleared that bar:
+parked**, and the note states the arithmetic. Three sources have cleared that bar:
 
 - **Fisher & Goodman (1955)** — 111 muscles with an origin paragraph: 43 filed,
   50 parked, the rest inside multi-muscle rows. Moved the Aves column further than
   any single pass so far; the figures are in `STATUS.md`.
 - **Widrig et al. (2026)** — 38 blocks: 20 filed, 16 parked, 2 folded into
   existing rows.
+- **Freitas et al. (2017)** — 21 muscles: 20 filed, 1 parked. It had been carrying
+  **one** row, on the reasoning that Russell & Bauer already covered the same
+  animal at higher resolution and this source therefore "confirms rather than opens
+  new ground". Both halves were wrong, and the pass is worth reading as a pattern:
+  the two dissections **disagree on eight of the twenty muscles**, including which
+  bone the deltoideus clavicularis arises from, and the paper's own headline — a
+  tendinous-arc origin for the caudal triceps head, previously known only in
+  crocodilians — was not in the dataset at all.
+
+**The lesson generalises past this source.** "Already covered by a better paper" is
+not a reason to leave a dissection unmined, and wherever a reading note argues that,
+the source needs re-reading. An attachment is an observation; two workers who each
+opened an animal do not compete.
 
 ### Sources that cannot be re-mined
 
@@ -168,6 +181,7 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *cnemidophorus-sp* | 2 | partial 2 |
 | `russell-bauer-2008` | *uroplatus-sp* | 2 | partial 2 |
 | `walker-1973` | *lepidochelys-kempii* | 2 | partial 2 |
+| `freitas-etal-2017` | *iguana-iguana* | 1 | nomenclature 1 |
 | `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
 | `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |
 <!-- /counts:parked-detail -->

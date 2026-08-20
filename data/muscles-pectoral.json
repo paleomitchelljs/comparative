@@ -418,7 +418,8 @@
             }
           ],
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -434,6 +435,9 @@
               {
                 "element": "thoracic-vertebrae",
                 "landmark": "thoracic-neural-spines"
+              },
+              {
+                "element": "vertebral-column"
               }
             ],
             "insertion": [
@@ -451,10 +455,14 @@
               {
                 "element": "clavicle",
                 "side": "anterior"
+              },
+              {
+                "element": "scapula",
+                "side": "anterior"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Russell & Bauer reverse the usual reading of which end is which, and the reason is this record's own logic.** The episternocleidomastoideus is normally described as inserting on the skull; they argue that taken with its developmental associate the trapezius, the cranial attachment is a functional insertion but an anatomical origin, and the girdle attachment the true insertion — which is how the cucullaris is described for fishes. So the rows here run skull to girdle. Origin from the ascending process of the parietal and the posterolateral paroccipital process of the exoccipital, and from the neural spines of the third cervical to the fourth dorsal vertebra; insertion onto the lateral process of the interclavicle and the sternum, and onto the acromion and the anterodorsal clavicle. Fürbringer (1900) recognised the two as one unit in lizards, and they run from an undivided cucullaris-like sheet in *Gekko* and *Lacerta* to complete separation in *Phrynosoma*."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Russell & Bauer reverse the usual reading of which end is which, and the reason is this record's own logic.** The episternocleidomastoideus is normally described as inserting on the skull; they argue that taken with its developmental associate the trapezius, the cranial attachment is a functional insertion but an anatomical origin, and the girdle attachment the true insertion — which is how the cucullaris is described for fishes. So the rows here run skull to girdle. Origin from the ascending process of the parietal and the posterolateral paroccipital process of the exoccipital, and from the neural spines of the third cervical to the fourth dorsal vertebra; insertion onto the lateral process of the interclavicle and the sternum, and onto the acromion and the anterodorsal clavicle. Fürbringer (1900) recognised the two as one unit in lizards, and they run from an undivided cucullaris-like sheet in *Gekko* and *Lacerta* to complete separation in *Phrynosoma*.\n\nIguana iguana, Freitas et al. (2017). From the thoracodorsal fascia along the vertebral spinous processes in the midline — fascia, so the row carries the vertebral column and not a named vertebral group, because Freitas et al. do not say which vertebrae. It runs to the cranial margin of the scapula, some of its fibres intermingling with the dorsal margin of the deltoideus scapularis and passing over it, which Freitas et al. also report for *Alligator mississippiensis*. **They match the muscle to the crocodilian condition and explicitly against the lizard one**: the two-bellied *V. exanthematicus* trapezius of Jenkins & Goslow (1983), with its cranial belly from the supraspinal ligament and nuchal fascia and its caudal belly from a separate aponeurosis, is said to be quite unlike what they found. Russell & Bauer put this animal's trapezius on this record too, but as one unit with the episternocleidomastoideus and running the other way — skull to girdle — so the two readings differ over which end is the insertion as well as over the attachments."
         },
         {
           "species": "sphenodon-punctatus",
@@ -2631,12 +2639,19 @@
             }
           ],
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "atlas-transverse-process"
+              },
+              {
+                "element": "cervical-ribs"
+              },
+              {
+                "element": "cervical-vertebrae"
               }
             ],
             "insertion": [
@@ -2651,10 +2666,14 @@
               {
                 "element": "clavicle",
                 "side": "anterior"
+              },
+              {
+                "element": "scapula",
+                "side": "anterior"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Tendinous origin from the transverse process of the atlas — one vertebra, which is as discrete an origin as this muscle has anywhere in the dataset. The larger dorsal bundle fans out over the whole anterolateral face of the suprascapular cartilage; the ventral bundle ends on its extreme anteroventral aspect in the region of the acromion process and on the anterior border of the clavicular bar. Russell & Bauer note the two bellies have been called superior/inferior by some authors and superficialis/profundus by others, which is the same muscle carrying four names for two parts."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Tendinous origin from the transverse process of the atlas — one vertebra, which is as discrete an origin as this muscle has anywhere in the dataset. The larger dorsal bundle fans out over the whole anterolateral face of the suprascapular cartilage; the ventral bundle ends on its extreme anteroventral aspect in the region of the acromion process and on the anterior border of the clavicular bar. Russell & Bauer note the two bellies have been called superior/inferior by some authors and superficialis/profundus by others, which is the same muscle carrying four names for two parts.\n\nIguana iguana, Freitas et al. (2017). Broad, thin and elongate on the lateral face of the girdle, completely overlaid by the trapezius, arising on the lateral surface of the neck from the cervical ribs and the vertebral processes and inserting along the cranial margin of the scapula. **Freitas et al. single out the vertebral part of the origin as their own observation**, against a literature that gives the cervical ribs alone. Russell & Bauer read the same muscle in this animal quite differently, with a tendinous origin from the transverse process of the atlas — one vertebra — and an insertion spread over the anterolateral suprascapula, the acromion and the clavicular bar."
         },
         {
           "species": "sphenodon-punctatus",
@@ -4017,9 +4036,9 @@
           "innervation": "Pectoral branches arising from the ventral divisions of the brachial plexus; in South American lizards the plexus is typically formed from spinal nerves 5–9 with considerable interspecific variation in root composition (Navarro et al. 2023).",
           "sources": [
             "abdala-diogo-2010",
-            "freitas-etal-2017",
             "navarro-etal-2023",
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -4032,6 +4051,10 @@
               {
                 "element": "ribs",
                 "side": "lateral"
+              },
+              {
+                "element": "ribs",
+                "side": "anterior"
               }
             ],
             "insertion": [
@@ -4042,7 +4065,7 @@
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Superficial portion from the entire midventral aspect of the posterior process of the interclavicle and the posterior border of its lateral process; deep portion from the posteriormost mesosternal rib, the body of the mesosternum, the interclavicle and the presternal plate. **Russell & Bauer make a point of what it does not arise from**: the fibres associate with no rib other than that one, and although they are bound to the sternal rim near the coracosternal joint they do not originate as far laterally as it. The two portions unite near a common insertion on the deltopectoral crest, bounded anteriorly by the deltoid complex and supracoracoideus insertions. Russell & Bauer corroborate the attachments this row already carried from Abdala & Diogo, Freitas et al. and Navarro et al., and add the division into two portions.",
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Superficial portion from the entire midventral aspect of the posterior process of the interclavicle and the posterior border of its lateral process; deep portion from the posteriormost mesosternal rib, the body of the mesosternum, the interclavicle and the presternal plate. **Russell & Bauer make a point of what it does not arise from**: the fibres associate with no rib other than that one, and although they are bound to the sternal rim near the coracosternal joint they do not originate as far laterally as it. The two portions unite near a common insertion on the deltopectoral crest, bounded anteriorly by the deltoid complex and supracoracoideus insertions. Russell & Bauer corroborate the attachments this row already carried from Abdala & Diogo, Freitas et al. and Navarro et al., and add the division into two portions.\n\nIguana iguana, Freitas et al. (2017). Origin from the cranial margin of the sixth rib, from the sternum, and from the episternum along the midline — episternum being the interclavicle, which is the element the row carries. Insertion at the apex of the deltopectoral crest. **Freitas et al. count three parts, not two**: ascendant, transverse and descendent, which is the segmentation Jenkins & Goslow (1983) describe for *Varanus exanthematicus* and which Freitas et al. say they found again here. Russell & Bauer's two portions on this row are superficial and deep, so the two dissections of this animal disagree about how the muscle divides, not about where it ends. They also disagree about the rib: Russell & Bauer state that the fibres associate with no rib but the posteriormost mesosternal one, and Freitas et al. name the sixth.",
           "note": "Present in all major extant reptilian clades (Fürbringer 1876; Walker 1973; Holmes 1977; Dilkes 2000).",
           "nerves": [
             {
@@ -6454,7 +6477,8 @@
           "name": "M. scapulodeltoideus",
           "present": "yes",
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -6468,16 +6492,25 @@
               {
                 "element": "clavicle",
                 "side": "dorsal"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
               }
             ],
             "insertion": [
               {
                 "element": "humerus",
                 "landmark": "deltopectoral-crest"
+              },
+              {
+                "element": "humerus",
+                "side": "dorsal",
+                "landmark": "deltopectoral-crest"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A flat triangular muscle fanning over scapula and suprascapula, arising from a band joining the anteroventral and posteroventral corners of the lateral suprascapular face — so its origin reaches as far forward as the acromion — and from the ossified scapula behind the scapular fenestra, with a partial origin from the dorsolateral clavicle that several other workers also report. Its motor tendon passes deep to that of the clavodeltoideus and inserts on the deltopectoral crest along a line slightly medial and posterior to it. **Two records, one crest, two parallel lines** — which is what makes the deltoid complex separable here and not in a human."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A flat triangular muscle fanning over scapula and suprascapula, arising from a band joining the anteroventral and posteroventral corners of the lateral suprascapular face — so its origin reaches as far forward as the acromion — and from the ossified scapula behind the scapular fenestra, with a partial origin from the dorsolateral clavicle that several other workers also report. Its motor tendon passes deep to that of the clavodeltoideus and inserts on the deltopectoral crest along a line slightly medial and posterior to it. **Two records, one crest, two parallel lines** — which is what makes the deltoid complex separable here and not in a human.\n\nIguana iguana, Freitas et al. (2017). Broad origin on the lateral surface of the scapula, and insertion by the tendon it shares with the deltoideus clavicularis onto the dorsocaudal deltopectoral crest. Cranially it is overlaid by the caudal projection of the trapezius. Freitas et al. note that the origin stays on the scapula here, where in *V. exanthematicus* and the two geckos of Zaaf et al. (1999) it extends onto the suprascapula and the clavicle — Russell & Bauer report exactly that wider origin for *Iguana*, so the two dissections differ on how far forward and how far dorsally the muscle reaches. Zaaf et al. call it the scapulodeltoideus, Romão et al. (2013) the deltoideus scapularis distalis."
         },
         {
           "species": "sphenodon-punctatus",
@@ -7363,7 +7396,8 @@
           "name": "M. clavodeltoideus",
           "present": "yes",
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -7374,6 +7408,9 @@
               {
                 "element": "clavicle",
                 "side": "dorsal"
+              },
+              {
+                "element": "interclavicle"
               }
             ],
             "insertion": [
@@ -7381,10 +7418,15 @@
                 "element": "humerus",
                 "side": "anterior",
                 "landmark": "deltopectoral-crest"
+              },
+              {
+                "element": "humerus",
+                "side": "dorsal",
+                "landmark": "deltopectoral-crest"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). From the medial half of the clavicle by two fibre groups whose arrangement inverts on the way to the humerus: the ventral, superficial group winds around the anterior margin of the clavicle and emerges along its posterior border as the *dorsal* part of the muscle, while the deeper group from the dorsal clavicle passes straight back. Insertion anterodorsally on the deltopectoral crest with the scapulodeltoideus, and it is not linear — the fibres arising nearest the glenoid insert most proximally."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). From the medial half of the clavicle by two fibre groups whose arrangement inverts on the way to the humerus: the ventral, superficial group winds around the anterior margin of the clavicle and emerges along its posterior border as the *dorsal* part of the muscle, while the deeper group from the dorsal clavicle passes straight back. Insertion anterodorsally on the deltopectoral crest with the scapulodeltoideus, and it is not linear — the fibres arising nearest the glenoid insert most proximally.\n\nIguana iguana, Freitas et al. (2017). **Origin from the middle portion of the interclavicle** — a different bone from the clavicle Russell & Bauer give for the same animal, and the clearest disagreement between the two dissections. Thin and elongate on the medioventral face of the girdle. Its fibres converge with those of the deltoideus scapularis onto a tendon the two muscles share, reaching the dorsocaudal surface of the deltopectoral crest; Freitas et al. report that same shared tendon in *Lacerta agilis exigua* and *V. exanthematicus* after Romer (1944) and Jenkins & Goslow (1983), and read it as a purchase that helps stabilise the forelimb in a climbing animal. Zaaf et al. (1999) call this muscle the clavodeltoideus and Romão et al. (2013) the deltoideus scapularis proximalis."
         },
         {
           "species": "sphenodon-punctatus",
@@ -10395,7 +10437,8 @@
           "name": "M. latissimus dorsi",
           "present": "yes",
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -10405,16 +10448,27 @@
               {
                 "element": "thoracic-vertebrae",
                 "landmark": "thoracic-neural-spines"
+              },
+              {
+                "element": "vertebral-column"
+              },
+              {
+                "element": "ribs",
+                "side": "dorsal"
               }
             ],
             "insertion": [
               {
                 "element": "humerus",
                 "side": "dorsal"
+              },
+              {
+                "element": "humerus",
+                "side": "posterior"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A narrow aponeurotic band from the dorsal aspect of the neural spines of the posteriormost cervical and the first seven thoracic vertebrae, continuous across the midline with its fellow and filling the spaces between adjacent spines. It tapers markedly, passes **between the scapular and coracoid heads of the triceps**, and attaches to the dorsal aspect of the proximal humerus, the posterior fibres folding deep to the anterior ones to insert more proximally. Compare the avian rows on this record, where the insertion was for a time written onto the scapula and clavicle; the lizard shows the plesiomorphic arrangement plainly."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). A narrow aponeurotic band from the dorsal aspect of the neural spines of the posteriormost cervical and the first seven thoracic vertebrae, continuous across the midline with its fellow and filling the spaces between adjacent spines. It tapers markedly, passes **between the scapular and coracoid heads of the triceps**, and attaches to the dorsal aspect of the proximal humerus, the posterior fibres folding deep to the anterior ones to insert more proximally. Compare the avian rows on this record, where the insertion was for a time written onto the scapula and clavicle; the lizard shows the plesiomorphic arrangement plainly.\n\nIguana iguana, Freitas et al. (2017). Flat and large, its fibres running obliquely forward, from the thoracodorsal fascia along the vertebral spinous processes in the midline and, ventrocaudally, from the dorsal margins of the first five ribs. Insertion on the caudal surface of the proximal humerus. **The costal origin is the difference from Russell & Bauer**, who give the neural spines of the last cervical and first seven thoracic vertebrae and no rib at all; Freitas et al. present the extension onto ribs as the *Varanus* condition after Jenkins & Goslow (1983) and report it here as well. Dorsally the muscle is continuous with the trapezius."
         },
         {
           "species": "sphenodon-punctatus",
@@ -11482,7 +11536,8 @@
             }
           ],
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -11500,6 +11555,22 @@
               {
                 "element": "humerus",
                 "side": "posterior"
+              },
+              {
+                "element": "humerus",
+                "side": "dorsal",
+                "landmark": "deltopectoral-crest"
+              },
+              {
+                "element": "scapula",
+                "side": "lateral"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              },
+              {
+                "element": "sternum"
               }
             ],
             "insertion": [
@@ -11509,7 +11580,7 @@
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Four heads, and only two of them reach the girdle.** The scapular head arises from the dorsal glenoid buttress with its fibres bound into the Y-shaped scapulohumeral ligament complex; the coracoid head arises not from the coracoid at all but from a long ligamentous band forming part of the sternoscapular ligament, and the two together form a loop around the latissimus dorsi insertion. The lateral humeral head arises from a concavity dorsal to the deltopectoral crest and from much of the anterodorsal shaft; the medial from a concavity on the dorsal proximal humerus, its ventral limit set by the coracobrachialis insertions. Distally the two humeral heads enclose the dorsal border of the shaft for its distal half. All four interweave into one motor tendon onto the olecranon, with the **patella ulnaris** embedded in the humeral heads' common tendon. Compare *Tawa*, where Burch reconstructs three heads with the coracoid head already lost, and birds, which have lost the lateral head too."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Four heads, and only two of them reach the girdle.** The scapular head arises from the dorsal glenoid buttress with its fibres bound into the Y-shaped scapulohumeral ligament complex; the coracoid head arises not from the coracoid at all but from a long ligamentous band forming part of the sternoscapular ligament, and the two together form a loop around the latissimus dorsi insertion. The lateral humeral head arises from a concavity dorsal to the deltopectoral crest and from much of the anterodorsal shaft; the medial from a concavity on the dorsal proximal humerus, its ventral limit set by the coracobrachialis insertions. Distally the two humeral heads enclose the dorsal border of the shaft for its distal half. All four interweave into one motor tendon onto the olecranon, with the **patella ulnaris** embedded in the humeral heads' common tendon. Compare *Tawa*, where Burch reconstructs three heads with the coracoid head already lost, and birds, which have lost the lateral head too.\n\nIguana iguana, Freitas et al. (2017). Fusiform, its fibres running along the lateral surface of the humerus, from the dorsal aspect of the deltopectoral crest to the olecranon. **Freitas et al. use Meers's (2003) crocodilian names for the four heads rather than the lizard ones**, on the ground that this animal's triceps resembles the crocodilian arrangement more closely; that is why the four heads appear here under names that do not match Russell & Bauer's scapular, coracoid, lateral humeral and medial humeral heads for the same animal. They also argue in passing that the group may not be a triceps at all, and that settling it would need ontogeny and innervation rather than topography.\n\nIguana iguana, Freitas et al. (2017). **The paper's headline observation.** This head arises by a tendinous arc on the lateral surface of the shoulder, spanning from the scapula to the dorsal surface of the deltopectoral crest, its thin tendon broadening where it meets the bone and the arc itself overlying the coracobrachialis brevis laterally. A tendinous arc origin for the long caudal head had been described only in crocodilians, where it spans scapula to coracoid (Meers 2003; Romão et al. 2016); Freitas et al. report it in a lizard for the first time and note that the second attachment is the deltopectoral crest rather than the coracoid. Romão et al. read the crocodilian arc as related to aquatic habits, which an iguana does not share, and Freitas et al. leave the question open rather than claiming convergence.\n\nIguana iguana, Freitas et al. (2017). From the medial surface of the proximal humerus to the olecranon, with a second tendon that Freitas et al. describe as arising medially on the sternum — an unusual attachment for a triceps head, and one they record without comment. It is scored because the table states it plainly and at both ends; a reader should know that no other source here gives this muscle a girdle origin, and that Russell & Bauer's medial humeral head in the same animal arises from a concavity on the dorsal proximal humerus with its ventral limit set by the coracobrachialis insertions, and reaches no further.\n\nIguana iguana, Freitas et al. (2017). Long and narrow, from the craniodorsal surface of the humerus to the olecranon. In *V. exanthematicus* the corresponding lateral head takes an additional origin from an aponeurosis shared with the brachialis (Jenkins & Goslow 1983); Freitas et al. record only the humeral origin here. All four heads reach the olecranon through a common tendon."
         },
         {
           "species": "sphenodon-punctatus",
@@ -13199,13 +13270,23 @@
             }
           ],
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "coracoid",
                 "side": "medial"
+              },
+              {
+                "element": "coracoid",
+                "side": "ventral"
+              },
+              {
+                "element": "humerus",
+                "side": "posterior",
+                "landmark": "deltopectoral-crest"
               }
             ],
             "insertion": [
@@ -13216,10 +13297,14 @@
               {
                 "element": "ulna",
                 "side": "proximal"
+              },
+              {
+                "element": "radius",
+                "landmark": "radial-tuberosity"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Digastric, not two-headed** — a short muscular portion arising from the girdle over the secondary coracoid fenestra, then a tendinous band across the glenohumeral joint, then the main fleshy belly. The girdle origin is from the posteromedial border of the secondary coracoid fenestra and the medial coracoid plate nearby. Distally it unites with the brachialis anticus in a common pinnate insertion onto the proximal radius and ulna, described on that record. One head, from the coracoid, in the animal Burch uses as the lepidosaur outgroup for reconstructing the theropod biceps."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). **Digastric, not two-headed** — a short muscular portion arising from the girdle over the secondary coracoid fenestra, then a tendinous band across the glenohumeral joint, then the main fleshy belly. The girdle origin is from the posteromedial border of the secondary coracoid fenestra and the medial coracoid plate nearby. Distally it unites with the brachialis anticus in a common pinnate insertion onto the proximal radius and ulna, described on that record. One head, from the coracoid, in the animal Burch uses as the lepidosaur outgroup for reconstructing the theropod biceps.\n\nIguana iguana, Freitas et al. (2017). Two heads inserting together on the radial tuberosity. The distal head arises from the ventral surface of the coracoid, under the descendent part of the pectoralis, and its flat thin tendon runs over the coracobrachialis brevis; the proximal head is fusiform with parallel fibres and a stout tendon, lying laterally on the cranial face of the limb, and **arises from the humerus — the caudal surface of the deltopectoral crest — lateral to the tendon of the first head.** That humeral head is the disagreement with Russell & Bauer, who describe this animal's biceps as digastric rather than two-headed, arising only from the girdle at the posteromedial border of the secondary coracoid fenestra and inserting on the proximal radius and ulna together with the brachialis anticus. Freitas et al. state the point directly: in *V. exanthematicus* both heads arise from the coracoid, and in *Iguana* only the distal one does."
         },
         {
           "species": "sphenodon-punctatus",
@@ -14102,7 +14187,8 @@
             }
           ],
           "sources": [
-            "russell-bauer-2008"
+            "russell-bauer-2008",
+            "freitas-etal-2017"
           ],
           "attachments": {
             "origin": [
@@ -14113,16 +14199,36 @@
               {
                 "element": "coracoid",
                 "side": "posterior"
+              },
+              {
+                "element": "coracoid",
+                "side": "anterior"
+              },
+              {
+                "element": "coracoid",
+                "side": "dorsal"
               }
             ],
             "insertion": [
               {
                 "element": "humerus",
                 "side": "ventral"
+              },
+              {
+                "element": "humerus",
+                "side": "anterior",
+                "landmark": "deltopectoral-crest"
+              },
+              {
+                "element": "humerus",
+                "side": "medial"
+              },
+              {
+                "element": "humerus"
               }
             ]
           },
-          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Brevis is the anterior head, arising fleshily from the ventromedial coracoid behind the primary and secondary coracoid fenestrae, filling the area between the coracosternal articulation and the glenohumeral joint, and inserting on the posteroventral margin of the proximal humerus for about half its length. Longus lies deep to it, arises from the posterior coracoid process, and its belly twists and fans out to insert along the distal posteroventral humeral shaft between the brachialis anticus and the medial humeral head of triceps. **Both present and both coracoid** — which is the state Burch (2014) argues against for archosaurs, where he finds the longus absent in crocodyliforms and its homology with the neognath Coracobrachialis posterior broken."
+          "attachmentNote": "Iguana iguana, Russell & Bauer (2008). Brevis is the anterior head, arising fleshily from the ventromedial coracoid behind the primary and secondary coracoid fenestrae, filling the area between the coracosternal articulation and the glenohumeral joint, and inserting on the posteroventral margin of the proximal humerus for about half its length. Longus lies deep to it, arises from the posterior coracoid process, and its belly twists and fans out to insert along the distal posteroventral humeral shaft between the brachialis anticus and the medial humeral head of triceps. **Both present and both coracoid** — which is the state Burch (2014) argues against for archosaurs, where he finds the longus absent in crocodyliforms and its homology with the neognath Coracobrachialis posterior broken.\n\nIguana iguana, Freitas et al. (2017). Triangular, lying deep to the deltoideus clavicularis on the lateral margin of the pectoralis, from the cranial margin and ventral surface of the coracoid to a large stout tendon on the cranial edge of the deltopectoral crest and the medial face of the proximal humerus. Freitas et al. treat this muscle as anatomically conservative across reptiles and adopt the names Jenkins & Goslow (1983) and Romer (1944) use, which is why brevis and longus are separate entries in their tables where Russell & Bauer describe them as one two-part muscle. The insertion is the point of variation they draw out: on the deltopectoral crest here and in crocodilians and *V. exanthematicus*, but on the proximal humerus generally in the geckos and *L. agilis exigua*, and cranial to the crest in *Caiman latirostris*.\n\nIguana iguana, Freitas et al. (2017). Fan-shaped, overlaid by the coracobrachialis brevis and the biceps brachii, with a belly of circular cross-section. Their table gives the origin simply as the coracoid; their discussion places it on the dorsal surface of the coracoid, alongside *L. agilis exigua* and the two geckos, so the row carries the dorsal side on the discussion's authority. It inserts on the middle third of the humerus, where Russell & Bauer trace the same muscle from the posterior coracoid process to the distal posteroventral shaft between the brachialis anticus and the medial triceps head. Freitas et al. contrast this with crocodilians, where the muscle arises from the scapula rather than the coracoid, and with *V. exanthematicus*, where it has two indistinct heads and reaches the epicondyle."
         },
         {
           "species": "sphenodon-punctatus",
