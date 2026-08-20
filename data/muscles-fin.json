@@ -91,7 +91,16 @@
               }
             ]
           },
-          "attachmentNote": "Teleost condition: origin chiefly or entirely on the lateral cleithrum and the posterolateral side of its anterolateral flange, occasionally from the coracoid or even the radials. Insertion diffuse in generalised fishes, consolidating into tendons on the outer anterior bases of the fin rays in more advanced forms — seldom a tendon to the marginal ray."
+          "attachmentNote": "Teleost condition: origin chiefly or entirely on the lateral cleithrum and the posterolateral side of its anterolateral flange, occasionally from the coracoid or even the radials. Insertion diffuse in generalised fishes, consolidating into tendons on the outer anterior bases of the fin rays in more advanced forms — seldom a tendon to the marginal ray.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "latimeria-chalumnae",
@@ -126,7 +135,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the medial faces of cleithrum, extracleithrum and clavicle ventral to the articular process, by broad aponeurosis onto the lepidotrichial bases."
+          "attachmentNote": "Pectoral fin: from the medial faces of cleithrum, extracleithrum and clavicle ventral to the articular process, by broad aponeurosis onto the lepidotrichial bases.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "neoceratodus-forsteri",
@@ -159,7 +177,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the lateral faces of clavicle, cleithrum and scapulocoracoid ventral to the articular process. The ventral mirror of the adductor superficialis, and likewise partitioned by tendinous sheets at the axial joints."
+          "attachmentNote": "Pectoral fin: from the lateral faces of clavicle, cleithrum and scapulocoracoid ventral to the articular process. The ventral mirror of the adductor superficialis, and likewise partitioned by tendinous sheets at the axial joints.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "eusthenopteron-foordi",
@@ -189,7 +216,16 @@
               }
             ]
           },
-          "attachmentNote": "Eusthenopteron foordi. Origin on the ventral cleithral ridge, which Molnar et al. homologise with the longitudinal ridge carrying this muscle's origin on the cleithrum and clavicle of Neoceratodus and with the pectoralis origin of tetrapodomorph fish, the pectoralis being a derivative of this mass. Insertions on the ventral humeral ridge, confluent here with the entepicondyle, and on the strongly developed ventral postaxial process of the ulna, which Andrews & Westoll (1970a) read as a muscle insertion site and as the serial homologue of the ventral process of the humerus; in Latimeria the corresponding process anchors the tendinous intersection dividing the middle portion from the distal. That ventral process is a sarcopterygian synapomorphy, homologous with the tetrapod entepicondyle and ventral humeral ridge (Ahlberg 1989)."
+          "attachmentNote": "Eusthenopteron foordi. Origin on the ventral cleithral ridge, which Molnar et al. homologise with the longitudinal ridge carrying this muscle's origin on the cleithrum and clavicle of Neoceratodus and with the pectoralis origin of tetrapodomorph fish, the pectoralis being a derivative of this mass. Insertions on the ventral humeral ridge, confluent here with the entepicondyle, and on the strongly developed ventral postaxial process of the ulna, which Andrews & Westoll (1970a) read as a muscle insertion site and as the serial homologue of the ventral process of the humerus; in Latimeria the corresponding process anchors the tendinous intersection dividing the middle portion from the distal. That ventral process is a sarcopterygian synapomorphy, homologous with the tetrapod entepicondyle and ventral humeral ridge (Ahlberg 1989).",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "forelimb"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "tiktaalik-roseae",
@@ -208,7 +244,13 @@
               }
             ]
           },
-          "attachmentNote": "Tiktaalik roseae. The ventral humeral ridge is confluent with the entepicondyle and undivided — there is no pectoralis process — so the superficial ventral mass is what gets scored here, rather than a pectoralis. Several processes and rugosities on the ventral aspect of the ulna are interpreted as possible muscle attachments (Shubin et al. 2006) but are not assigned, and a crest runs along the preaxial edge of the radius. One node rootward, at Eotetrapodiformes, the ventral process of the radius appears, which Molnar et al. read as the separation of radial from ulnar and distal fin flexors."
+          "attachmentNote": "Tiktaalik roseae. The ventral humeral ridge is confluent with the entepicondyle and undivided — there is no pectoralis process — so the superficial ventral mass is what gets scored here, rather than a pectoralis. Several processes and rugosities on the ventral aspect of the ulna are interpreted as possible muscle attachments (Shubin et al. 2006) but are not assigned, and a crest runs along the preaxial edge of the radius. One node rootward, at Eotetrapodiformes, the ventral process of the radius appears, which Molnar et al. read as the separation of radial from ulnar and distal fin flexors.",
+          "spans": {
+            "insertion": [
+              "forelimb"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -247,7 +289,20 @@
         {
           "nerve": "ventral-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "axial",
+          "pectoral",
+          "pelvic"
+        ],
+        "insertion": [
+          "fin",
+          "forelimb",
+          "hindlimb"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "abductor-profundus",
@@ -327,7 +382,16 @@
               }
             ]
           },
-          "attachmentNote": "The deep layer of the ventrolateral (abductor) mass. Winterbottom notes the dorsomedial adductor mass separates into two layers before the abductor mass does, judging from Elops."
+          "attachmentNote": "The deep layer of the ventrolateral (abductor) mass. Winterbottom notes the dorsomedial adductor mass separates into two layers before the abductor mass does, judging from Elops.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "latimeria-chalumnae",
@@ -351,7 +415,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the medial endoskeleton ventral to the articular process, onto the deep face of the abductor superficialis. Source of the supinator series in Latimeria."
+          "attachmentNote": "Pectoral fin: from the medial endoskeleton ventral to the articular process, onto the deep face of the abductor superficialis. Source of the supinator series in Latimeria.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "neoceratodus-forsteri",
@@ -375,7 +448,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the scapulocoracoid adjacent and ventral to the articular process, onto the postaxial border of the first axial element."
+          "attachmentNote": "Pectoral fin: from the scapulocoracoid adjacent and ventral to the articular process, onto the postaxial border of the first axial element.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -409,7 +491,19 @@
         {
           "nerve": "ventral-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "pectoral",
+          "pelvic"
+        ],
+        "insertion": [
+          "fin",
+          "forelimb",
+          "hindlimb"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "adductor-superficialis",
@@ -495,7 +589,16 @@
               }
             ]
           },
-          "attachmentNote": "Dorsomedial mass; the first of the two masses to separate into superficial and deep layers."
+          "attachmentNote": "Dorsomedial mass; the first of the two masses to separate into superficial and deep layers.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "latimeria-chalumnae",
@@ -524,7 +627,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the posteromedial cleithrum between anocleithrum and endoskeleton, by a broad tendon onto the bases of the lepidotrichia, with bundles joining pronators 2-3 onto the preaxial radials."
+          "attachmentNote": "Pectoral fin: from the posteromedial cleithrum between anocleithrum and endoskeleton, by a broad tendon onto the bases of the lepidotrichia, with bundles joining pronators 2-3 onto the preaxial radials.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "neoceratodus-forsteri",
@@ -553,7 +665,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: arises from the cleithrum and the scapulocoracoid dorsal to the articular process, inserting by aponeurosis onto the distal radials and the bases of the lepidotrichia. The sheet is divided by tendinous partitions that land on the joints between axial elements — Gadow's proximo-distal partitioning, visible in a living fish."
+          "attachmentNote": "Pectoral fin: arises from the cleithrum and the scapulocoracoid dorsal to the articular process, inserting by aponeurosis onto the distal radials and the bases of the lepidotrichia. The sheet is divided by tendinous partitions that land on the joints between axial elements — Gadow's proximo-distal partitioning, visible in a living fish.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "eusthenopteron-foordi",
@@ -571,7 +692,13 @@
               }
             ]
           },
-          "attachmentNote": "Eusthenopteron foordi. The dorsal process of the sarcopterygian humerus — here the ectepicondyle with the deltoid-supinator ridge — carries the superficial dorsal musculature, and one correlate serves two roles because a tendinous intersection lands on it: insertion of the proximal portion, origin of the middle portion. Molnar et al.'s Level I reconstruction at the last common ancestor of Tetrapodomorpha is of exactly this, three divisions each of the superficial adductor and abductor plus the deep adductor; the individually named tetrapod muscles in this column are the speculative part. In tetrapods the same ridge carries the deltoideus and latissimus dorsi insertions and the origins of the extensor antebrachii et carpi radialis, brachioradialis, extensor digitorum and triceps humeralis."
+          "attachmentNote": "Eusthenopteron foordi. The dorsal process of the sarcopterygian humerus — here the ectepicondyle with the deltoid-supinator ridge — carries the superficial dorsal musculature, and one correlate serves two roles because a tendinous intersection lands on it: insertion of the proximal portion, origin of the middle portion. Molnar et al.'s Level I reconstruction at the last common ancestor of Tetrapodomorpha is of exactly this, three divisions each of the superficial adductor and abductor plus the deep adductor; the individually named tetrapod muscles in this column are the speculative part. In tetrapods the same ridge carries the deltoideus and latissimus dorsi insertions and the origins of the extensor antebrachii et carpi radialis, brachioradialis, extensor digitorum and triceps humeralis.",
+          "spans": {
+            "insertion": [
+              "forelimb"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -608,7 +735,20 @@
         {
           "nerve": "dorsal-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "axial",
+          "pectoral",
+          "pelvic"
+        ],
+        "insertion": [
+          "fin",
+          "forelimb",
+          "hindlimb"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "adductor-profundus",
@@ -687,7 +827,16 @@
               }
             ]
           },
-          "attachmentNote": "Deep layer of the dorsomedial mass."
+          "attachmentNote": "Deep layer of the dorsomedial mass.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "latimeria-chalumnae",
@@ -714,7 +863,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the medial cleithrum and endoskeleton at the articular process, onto the deep face of the adductor superficialis. In Latimeria this deep layer has given rise to the pronator series along the axis."
+          "attachmentNote": "Pectoral fin: from the medial cleithrum and endoskeleton at the articular process, onto the deep face of the adductor superficialis. In Latimeria this deep layer has given rise to the pronator series along the axis.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "neoceratodus-forsteri",
@@ -737,7 +895,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the scapulocoracoid dorsal to the articular process onto the dorsal face of the first axial element."
+          "attachmentNote": "Pectoral fin: from the scapulocoracoid dorsal to the articular process onto the dorsal face of the first axial element.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "eusthenopteron-foordi",
@@ -765,7 +932,13 @@
               }
             ]
           },
-          "attachmentNote": "Tiktaalik roseae. Faint rugosities above the glenoid and a hollow above the coracoid foramen, observed by Molnar et al. on the MCZ cast of NUFV 112 and 'well placed for the origins of deep dorsal musculature' — the mass, not a named muscle. They homologise the shallow fossa on the lateral scapulocoracoid anterodorsal to the glenoid across the whole transition: it carries this muscle's origin in Neoceratodus and Latimeria and the procoracohumeralis origin in Hynerpeton, Ossinodus and captorhinids. That is the girdle end of the fin-mass-to-limb-muscle argument."
+          "attachmentNote": "Tiktaalik roseae. Faint rugosities above the glenoid and a hollow above the coracoid foramen, observed by Molnar et al. on the MCZ cast of NUFV 112 and 'well placed for the origins of deep dorsal musculature' — the mass, not a named muscle. They homologise the shallow fossa on the lateral scapulocoracoid anterodorsal to the glenoid across the whole transition: it carries this muscle's origin in Neoceratodus and Latimeria and the procoracohumeralis origin in Hynerpeton, Ossinodus and captorhinids. That is the girdle end of the fin-mass-to-limb-muscle argument.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -799,7 +972,19 @@
         {
           "nerve": "dorsal-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "pectoral",
+          "pelvic"
+        ],
+        "insertion": [
+          "fin",
+          "forelimb",
+          "hindlimb"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "pterygialis-cranialis",
@@ -883,7 +1068,16 @@
               }
             ]
           },
-          "attachmentNote": "Pelvic fin: from the ventral face of the lateral process of the pelvis, running along the preaxial border to the preaxial lepidotrichial bases. In the pectoral fin it arises instead from the abductor superficialis itself."
+          "attachmentNote": "Pelvic fin: from the ventral face of the lateral process of the pelvis, running along the preaxial border to the preaxial lepidotrichial bases. In the pectoral fin it arises instead from the abductor superficialis itself.",
+          "spans": {
+            "origin": [
+              "pelvic"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "neoceratodus-forsteri",
@@ -909,7 +1103,16 @@
               }
             ]
           },
-          "attachmentNote": "Recorded from the PELVIC fin — the dipnoan pectoral fin is secondarily simplified to five muscles and lacks it. From the caudolateral face of the pubic ramus to the distal end of the first preaxial radial."
+          "attachmentNote": "Recorded from the PELVIC fin — the dipnoan pectoral fin is secondarily simplified to five muscles and lacks it. From the caudolateral face of the pubic ramus to the distal end of the first preaxial radial.",
+          "spans": {
+            "origin": [
+              "pelvic"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -941,7 +1144,19 @@
         {
           "nerve": "ventral-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "pectoral",
+          "pelvic"
+        ],
+        "insertion": [
+          "fin",
+          "forelimb",
+          "hindlimb"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "pterygialis-caudalis",
@@ -1024,7 +1239,16 @@
               }
             ]
           },
-          "attachmentNote": "Pectoral fin: from the postaxial borders of the first to third axial elements together with pronators and supinators 2-4, inserting on the postaxial border between the adductor and abductor superficialis aponeuroses — a postaxial muscle sitting between the dorsal and ventral sheets."
+          "attachmentNote": "Pectoral fin: from the postaxial borders of the first to third axial elements together with pronators and supinators 2-4, inserting on the postaxial border between the adductor and abductor superficialis aponeuroses — a postaxial muscle sitting between the dorsal and ventral sheets.",
+          "spans": {
+            "origin": [
+              "fin"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "neoceratodus-forsteri",
@@ -1047,7 +1271,16 @@
               }
             ]
           },
-          "attachmentNote": "Recorded from the PELVIC fin. From a midline raphe shared with its contralateral partner to the distal medial edge of the first axial element."
+          "attachmentNote": "Recorded from the PELVIC fin. From a midline raphe shared with its contralateral partner to the distal medial edge of the first axial element.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -1079,7 +1312,19 @@
         {
           "nerve": "dorsal-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "pectoral",
+          "pelvic"
+        ],
+        "insertion": [
+          "fin",
+          "forelimb",
+          "hindlimb"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "retractor-lateralis-ventralis-pectoralis",
@@ -1152,7 +1397,16 @@
               }
             ]
           },
-          "attachmentNote": "From a cranial rib to the medial face of the cleithrum — the only muscle connecting axial skeleton to pectoral girdle in the dipnoan, which is the basis for homologising it with the tetrapod serratus anterior and levator scapulae."
+          "attachmentNote": "From a cranial rib to the medial face of the cleithrum — the only muscle connecting axial skeleton to pectoral girdle in the dipnoan, which is the basis for homologising it with the tetrapod serratus anterior and levator scapulae.",
+          "spans": {
+            "origin": [
+              "axial"
+            ],
+            "insertion": [
+              "pectoral"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "ambystoma-mexicanum",
@@ -1195,7 +1449,16 @@
           "joint": "girdle-axial",
           "motion": "stabilisation"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "axial"
+        ],
+        "insertion": [
+          "pectoral"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "arrector-ventralis",
@@ -1252,7 +1515,16 @@
           },
           "sources": [
             "winterbottom-1973"
-          ]
+          ],
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {
@@ -1275,7 +1547,16 @@
         {
           "nerve": "ventral-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "pectoral"
+        ],
+        "insertion": [
+          "fin"
+        ],
+        "crosses": true
+      }
     },
     {
       "id": "arrector-dorsalis",
@@ -1337,7 +1618,16 @@
           },
           "sources": [
             "winterbottom-1973"
-          ]
+          ],
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {
@@ -1359,7 +1649,16 @@
         {
           "nerve": "dorsal-rami"
         }
-      ]
+      ],
+      "spans": {
+        "origin": [
+          "pectoral"
+        ],
+        "insertion": [
+          "fin"
+        ],
+        "crosses": true
+      }
     }
   ]
 }

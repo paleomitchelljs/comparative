@@ -64,6 +64,17 @@ def occ_species(occ):
     return occ.get("species", "")
 
 
+
+def span_cols(holder):
+    """The three region columns: where the muscle starts, where it ends, and
+    whether that crosses a boundary. Derived in the build from the attachments;
+    identical at both ends for a muscle that stays put, and the point of the
+    pair for one that does not."""
+    sp = holder.get("spans") or {}
+    return [";".join(sp.get("origin") or []),
+            ";".join(sp.get("insertion") or []),
+            "" if "crosses" not in sp else ("yes" if sp["crosses"] else "no")]
+
 def main(outdir: pathlib.Path) -> int:
     outdir.mkdir(parents=True, exist_ok=True)
 
@@ -142,14 +153,17 @@ def main(outdir: pathlib.Path) -> int:
     # ---- presence.csv (character matrix) -----------------------------------
     with open(outdir / "presence.csv", "w", newline="") as fh:
         w = csv.writer(fh)
-        w.writerow(["muscle_id", "muscle_name", "region", "mass", "layer", "segment",
+        w.writerow(["muscle_id", "muscle_name", "region", "region_origin",
+                    "region_insertion", "crosses_region", "mass", "layer", "segment",
                     "species_id", "species", "taxon_id", "taxon_clade", "taxon_order",
                     "state", "local_name", "sources"])
         rows = 0
         for m in muscles:
             for occ in m.get("occurrences", []):
                 tid = occ_taxon(occ)
-                w.writerow([m["id"], m["name"], m.get("region", ""), m.get("mass", ""),
+                w.writerow([m["id"], m["name"], m.get("region", "")]
+                           + span_cols(occ if occ.get("spans") else m)
+                           + [m.get("mass", ""),
                             m.get("layer", ""), m.get("segment", ""),
                             occ_species(occ), SPECIES_NAME.get(occ_species(occ), ""),
                             tid, next((t["clade"] for t in taxa_doc["taxa"] if t["id"] == tid), tid),

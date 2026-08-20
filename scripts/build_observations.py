@@ -37,12 +37,12 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 OBS = ROOT / "data/observations"
 MAP = ROOT / "data/mapping"
 
-# Everything on an occurrence belongs to the observation EXCEPT these two, which
+# Everything on an occurrence belongs to the observation EXCEPT these three, which
 # the join reconstructs: `species` from the filename, `sources` from which file
-# the row is in. Taking the complement rather than a whitelist is deliberate — a
-# whitelist silently drops any field added later, and this script's whole purpose
-# is to prove nothing is dropped.
-OCC_DROP = {"species", "sources"}
+# the row is in, and `spans` from the attachments. Taking the complement rather
+# than a whitelist is deliberate — a whitelist silently drops any field added
+# later, and this script's whole purpose is to prove nothing is dropped.
+OCC_DROP = {"species", "sources", "spans"}
 
 # Fields that belong to the extraction file and do not travel back into an
 # occurrence. `record` and `region` place the row; `blockedBy`, `blockedNote` and
@@ -252,6 +252,53 @@ def write_mapping():
     return len(keep)
 
 
+def element_regions():
+    """element id -> region, from skeleton.json. Cached on the function."""
+    if not hasattr(element_regions, "_map"):
+        doc = json.load(open(ROOT / "data/skeleton.json"))
+        element_regions._map = {e["id"]: e.get("region")
+                                for e in doc["elements"]}
+    return element_regions._map
+
+
+def spans_of(att):
+    """The body region at each end of a muscle, derived from where it attaches.
+
+    `region` on a record says where the muscle is *filed* — one value, used for
+    sort order and the region facet, and it has to be one value because it is
+    half the extraction key. It cannot also say where the muscle *goes*, and for
+    a muscle that crosses a boundary those are different questions: the human
+    latissimus dorsi is filed under `pectoral` and runs from the vertebrae,
+    ribs and ilium to the humerus, which is three regions to one.
+
+    So this is a second pair of region columns, computed rather than authored,
+    because every attachment row names an element and every element in
+    `skeleton.json` carries a region. For a muscle that stays put the two are
+    the same value and the pair reads as a tautology; for a boundary crosser
+    they are the whole point. Returns None where nothing is scored, which is
+    honest — a muscle with no attachments spans nothing anyone recorded.
+
+    The vocabulary is the element one — cranial, axial, pectoral, pelvic,
+    forelimb, hindlimb, fin — not the finer muscle one, because it is the bones
+    that are being asked.
+    """
+    reg = element_regions()
+    out = {}
+    for end in ("origin", "insertion"):
+        seen = []
+        for row in (att or {}).get(end, []) or []:
+            r = reg.get(row.get("element"))
+            if r and r not in seen:
+                seen.append(r)
+        if seen:
+            out[end] = sorted(seen)
+    if not out:
+        return None
+    touched = {r for v in out.values() for r in v}
+    out["crosses"] = len(touched) > 1
+    return out
+
+
 def attach_parts(got, src, group, record, species, unheld):
     """Give each named part its own attachments, from the rows that describe it.
 
@@ -454,9 +501,17 @@ def join(into):
                 # whose recorded key order never had it.
                 if "parts" in fields[sp] and "parts" not in occ:
                     occ["parts"] = fields[sp]["parts"]
+                occ.pop("spans", None)
+                sp_spans = spans_of(occ.get("attachments"))
+                if sp_spans:
+                    occ["spans"] = sp_spans
                 out.append(occ)
             if out or m.get("occurrences") is not None:
                 m["occurrences"] = out
+            m.pop("spans", None)
+            rec_spans = spans_of(m.get("attachments"))
+            if rec_spans:
+                m["spans"] = rec_spans
         pending.append((pathlib.Path(into) / pathlib.Path(path).name,
                         json.dumps(doc, indent=2, ensure_ascii=False) + "\n"))
 

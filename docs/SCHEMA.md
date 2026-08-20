@@ -125,6 +125,7 @@ So each record has:
 | `name` | ✔ | Preferred name. Quote it (`"'Rhomboideus'"`) when the name itself is disputed |
 | `region` | ✔ | One of `cranial axial fin pectoral arm forearm hand pelvic thigh leg foot`. Drives sort order and the region facet. Enforced |
 | `subregion` | | Free text, e.g. `"axio-appendicular"` |
+| `spans` | | **Derived.** The body region at each end — see below. Present on the record and on every occurrence that has attachments |
 | `mass` | | `dorsal` / `ventral` for limb muscles (the two fundamental limb-bud masses); `branchiomeric`, `somitic`, `somitic-axial`, `extraocular` for cranial and axial. Enforced |
 | `layer` | | `superficialis` · `profundus` · `preaxial` · `postaxial` · `primaxial`. With `mass`, gives the four-cell classification (abductor/adductor × superficialis/profundus) that Mansuit & Herrel (2021) use to compare architecture across the whole fin-to-limb transition. Currently populated on `region: "fin"` records; see `docs/ROADMAP.md` phase 1 |
 | `arch` | | Pharyngeal arch number, or a string like `"3–7"`. Cranial records only |
@@ -205,7 +206,8 @@ An occurrence holds **one** union of attachment rows. A record that is one muscl
 in a salamander and six in a human could therefore say that six sites are used and
 never which muscle uses which — the human `adductor-mandibulae` row named masseter,
 temporalis and both pterygoids and offered five origins between them, unassigned.
-Across the dataset that was 1,692 named parts carrying a name and nothing else.
+Before this existed every named part in the dataset carried a name and nothing
+else.
 
 The detail was not missing. It was in `data/observations/` all along, as one row
 per muscle, and `--join` was flattening it on the way in. So the join now carries
@@ -260,6 +262,40 @@ row names eleven units where its own note quotes Werneburg recording ten.
 muscles each ancestral fin muscle gave rise to, which is a `descends-from`
 correspondence on each of those muscles — already curated, and already reversed
 by the app. Recording it twice gives one fact two homes.
+
+### `spans` — the second pair of region columns, **derived**
+
+```jsonc
+"spans": { "origin": ["axial"], "insertion": ["forelimb"], "crosses": true }
+```
+
+`region` says where a record is **filed**. It has to be a single value because it
+is half the extraction key `(species, source, name, region)`, and it drives sort
+order and the region facet. It therefore cannot also say where the muscle *goes*,
+and for anything crossing a boundary those are different questions: the human
+latissimus dorsi is filed under `pectoral` and runs from the vertebrae, ribs and
+ilium to the humerus.
+
+So `spans` is a second pair of columns, computed in `--join` from the elements the
+muscle attaches to — every attachment row names an element and every element in
+`skeleton.json` carries a region. Written on the record from its consensus
+attachments and on each occurrence from that taxon's own. **Never authored;**
+`validate.py` recomputes it and errors on drift.
+
+- The vocabulary is the **element** one — `cranial axial pectoral pelvic forelimb
+  hindlimb fin` — not the finer muscle one, because it is the bones being asked.
+- Lists, because a muscle can arise in more than one region at the same end.
+- `crosses` is true when more than one region is touched in total. Roughly two
+  records in five, and rather more occurrences than that; `STATUS.md` has no
+  generated block for it yet, so read the figure off the app's facet rather than
+  from a number typed here.
+- Absent where nothing is scored, which is honest: a muscle with no attachments
+  spans nothing anyone recorded. The app's third filter option counts those
+  separately rather than lumping them with the muscles that stay put.
+
+For a muscle that stays put both ends read the same and the pair is a tautology.
+It is still shown, because a reader otherwise cannot tell that case from an
+unrecorded one.
 
 ### Homology block
 

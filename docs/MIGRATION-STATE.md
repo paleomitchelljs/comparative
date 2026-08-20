@@ -54,6 +54,35 @@ current.
 > refinements** — `ribs → true-ribs`, `mandible → retroarticular-process` — and is
 > the one worth doing first.
 
+## Two schema limits closed, 2026-08-20
+
+Both were costing yield on every mining round, and both are now derived rather
+than authored — see [`SCHEMA.md`](SCHEMA.md).
+
+**`parts[].attachments`.** An occurrence held one union of attachment rows, so a
+record that is one muscle in a salamander and six in a human could say that six
+sites were used and never which muscle used which. Every named part in the dataset
+carried a name and nothing else. The detail was never missing — it was in
+`observations/` as one row per muscle and `--join` was flattening it — so the join
+now carries each row's attachments onto the part of that name. No paper reopened.
+
+Two rules keep it honest: only rows from **one source** become parts, because rows
+from different sources are one muscle described twice; and it **never invents
+`division`**, because how far a group has split is a judgement. Where the
+occurrence declares nothing, `validate.py` warns and names the rows.
+
+**`spans`.** `region` says where a record is filed and must stay a single value —
+it is half the extraction key. It cannot also say where the muscle goes. `spans`
+is the second pair of region columns, computed from the elements at each end:
+identical for a muscle that stays put, and the point of the pair for a boundary
+crosser. The app has a facet for it and `presence.csv` has three columns.
+
+**Still open**, in the order they cost most (the audit is in the session that
+produced these two): an occurrence has no **ontogenetic stage**, so Bauer's larvae
+park; **fusion is not expressible**, so *fused with its neighbour* has to be
+demoted to a `division` note; and the extraction key must name exactly one record,
+so a source's umbrella term spanning two records cannot be a key.
+
 ## Task board
 
 | # | Task | State |

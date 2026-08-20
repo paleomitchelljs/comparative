@@ -56,7 +56,7 @@ const state = {
   query: '',
   // Keys must match FACET_MATCH — filtered() iterates these. Taxon is NOT one
   // of them: it is global (state.taxon) and scopes every view, not just this list.
-  filters: { region: null, segment: null, mass: null, layer: null,
+  filters: { region: null, spans: null, segment: null, mass: null, layer: null,
              confidence: null },
   view: 'browse',        // browse | detail | skeleton | hierarchy | phylogeny
   current: null
@@ -307,6 +307,11 @@ function scoreTerm(norm, q, words, kind) {
    both misreport it. */
 const FACET_MATCH = {
   region: (m, v) => m.region === v,
+  /* Not a classification facet but a derived one, and the only filter here that
+     asks about the muscle's geometry rather than its filing. */
+  spans: (m, v) => v === 'crosses' ? !!(m.spans && m.spans.crosses)
+                 : v === 'within' ? !!(m.spans && !m.spans.crosses)
+                 : !m.spans,
   segment: (m, v) => m.segment === v,
   mass: (m, v) => m.mass === v,
   layer: (m, v) => m.layer === v,
@@ -594,6 +599,7 @@ function renderDetail(m) {
     m.mass && `<span class="chip">${esc(m.mass)} mass</span>`,
     m.layer && `<span class="chip">${esc(m.layer)}</span>`,
     m.arch != null && `<span class="chip">arch ${esc(String(m.arch))}</span>`,
+    spanChip(m),
     h.confidence && `<span class="chip conf-${esc(h.confidence)}">homology: ${esc(h.confidence)}</span>`
   ].filter(Boolean).join('');
 
@@ -847,6 +853,23 @@ function partAttachments(part, taxon) {
       <span class="sep">&rarr;</span> ${end(a.insertion || [])}</span>`;
 }
 
+/* Where a muscle starts and where it ends, in body regions, derived in the build
+   from the elements it attaches to. `region` says where the record is FILED and
+   has to be a single value because it is half the extraction key; it cannot also
+   say where the muscle goes. For a muscle that stays put the two ends read the
+   same and the chip is a tautology worth showing anyway, because the reader
+   cannot otherwise tell that from an unrecorded span. For a boundary crosser it
+   is the whole point: the human latissimus dorsi is filed under `pectoral` and
+   runs from vertebrae, ribs and ilium to the humerus. */
+function spanChip(holder) {
+  const s = holder.spans;
+  if (!s || !s.origin || !s.insertion) return '';
+  const j = a => a.join(' + ');
+  return `<span class="chip span${s.crosses ? ' crosses' : ''}" title="${
+    s.crosses ? 'crosses a region boundary' : 'stays within one region'}">${
+    esc(j(s.origin))} &rarr; ${esc(j(s.insertion))}</span>`;
+}
+
 function renderDivision(o) {
   if (!o.division) return '';
   const firm = (o.parts || []).filter(x => (x.membership || 'established') === 'established');
@@ -1087,6 +1110,10 @@ function renderSidebar() {
   const plain = v => ({ value: v, label: v });
   el.innerHTML =
     facet('Region', 'region', regions.map(plain)) +
+    facet('Region span', 'spans', [
+      { value: 'crosses', label: 'crosses a boundary' },
+      { value: 'within', label: 'stays within one' },
+      { value: 'none', label: 'no attachments scored' }]) +
     facet('Segment', 'segment', segments.map(plain)) +
     facet('Developmental mass', 'mass', masses.map(plain)) +
     facet('Layer', 'layer', layers.map(plain)) +

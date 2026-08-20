@@ -83,6 +83,10 @@ errors: list[str] = []
 warnings: list[str] = []
 
 
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
+from build_observations import spans_of          # noqa: E402  derived, one home
+
+
 def err(msg):
     errors.append(msg)
 
@@ -986,6 +990,9 @@ def main():
                 err(f"{where}: unknown source key '{key}'")
 
         check_rows(m.get("attachments", {}), where)
+        if spans_of(m.get("attachments")) != m.get("spans"):
+            err(f"{where}: `spans` does not match the attachments. It is derived, "
+                f"not authored — run ./scripts/build.sh --write")
 
         # An occurrence is one SPECIES observed by one set of sources. The clade
         # it rolls up into is derived from species.json and is never stored — a
@@ -1015,6 +1022,10 @@ def main():
                     f"species — say which basis actually attributed it")
 
             check_rows(occ.get("attachments", {}), f"{where}/{sid}", taxon=tid)
+
+            if spans_of(occ.get("attachments")) != occ.get("spans"):
+                err(f"{where}/{sid}: `spans` does not match the attachments. It "
+                    f"is derived, not authored — run ./scripts/build.sh --write")
 
             # A part's own attachments, derived by the join from the rows that
             # describe it. Held to exactly the same rules as the occurrence's:

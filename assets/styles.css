@@ -690,3 +690,9 @@ td .binomial + .common { display: block; }
 .basis-gen { color: var(--warn); background: var(--warn-bg); }
 
 .taxonpick optgroup { font-style: normal; font-weight: 600; }
+
+/* The derived region span. Muted when both ends agree — a muscle that stays put
+   is the unremarkable case and the chip is there so the reader can tell it from
+   an unrecorded one — and marked when it crosses. */
+.chip.span { font-variant-numeric: tabular-nums; color: var(--ink-2); }
+.chip.span.crosses { color: var(--mod); background: var(--mod-bg); }
