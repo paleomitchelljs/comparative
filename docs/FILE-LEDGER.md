@@ -28,7 +28,7 @@ Update it in the same commit that changes a file's standing. State is in
 | `joints.json` | authoritative | Unchanged. `jointgraph.py` derives which joints a muscle spans |
 | `taxa.json` | derived | Clade rollups computed from species. Also carries topology, so it is the seed for `phylogeny.json` |
 | `muscles-*.json` | **derived** | **Generated** from `observations/` + `mapping/` by `build_observations.py --join`, which `build.sh` runs first. **Stays committed** — the app fetches it directly and there is no build step between the repo and the page. Also still **known incomplete**: the audit found drops in 4 of 4 sources examined, so treat any source's rows as partial until `remine-status.json` says `remined` |
-| `remine-status.json` | authoritative | Per-source re-mine status. Drives the tables in `MIGRATION-STATE.md` |
+| `remine-status.json` | authoritative | Per-source re-mine **status**, and nothing else. Whether a source has been read to exhaustion is a judgement and cannot be computed; how many rows it carries can be, so `doc_counts.py` counts those from `observations/` rather than storing them here. It used to store them, and the number went stale the first time a source was properly re-mined |
 | `raw/` | ignored | Verbatim extractions. Git-ignored for copyright. Never commit or quote into `data/` |
 
 | `observations/` | **authoritative** | **The source of truth as of Task 5.** 248 files, one per (species × study). A row's `record` names the homology group it was assigned to; `null` means unassigned and `blockedBy` says why |

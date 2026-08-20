@@ -63,11 +63,19 @@ def gather():
             muscles.append(m)
 
     parked = []
+    # How many rows a source carries is countable, so it is counted here rather
+    # than read off `rows` in remine-status.json. That field was authored, and
+    # re-mining Freitas et al. from 1 filed row to 20 left it reading 1 — a
+    # generated table quoting a hand-kept number that the work itself had just
+    # falsified. Only `status` is a judgement; the arithmetic is not.
+    filed_rows = collections.Counter()
     for f in sorted((ROOT / "data/observations").glob("*.json")):
         d = json.loads(f.read_text())
         for row in d.get("observations") or []:
             if not row.get("record"):
                 parked.append({**row, "source": d["source"], "species": d["species"]})
+            else:
+                filed_rows[d["source"]] += 1
     remine = load("data/remine-status.json")
     taxa = load("data/taxa.json")["taxa"]
     elements = load("data/skeleton.json")["elements"]
@@ -94,7 +102,7 @@ def gather():
     return dict(
         muscles=muscles, taxa=taxa, elements=elements, sources=sources,
         order=order, clade=clade, present=present, scored=scored, obs_rows=obs_rows,
-        carriers=carriers, parked=parked, remine=remine,
+        carriers=carriers, parked=parked, remine=remine, filed_rows=filed_rows,
         occ_rows=sum(len(m.get("occurrences", [])) for m in muscles),
     )
 
@@ -144,8 +152,8 @@ def block_remine(d):
     src = d["remine"]["sources"]
     by = collections.Counter(v["status"] for v in src.values())
     rows_by = collections.Counter()
-    for v in src.values():
-        rows_by[v["status"]] += v.get("rows", 0)
+    for k, v in src.items():
+        rows_by[v["status"]] += d["filed_rows"][k]
     order = ["verified", "remined", "scaffolded", "not-started",
              "blocked-no-source", "not-a-row-source"]
     out = ["| Status | Sources | Rows they carry |", "|---|---:|---:|"]
@@ -167,10 +175,10 @@ def block_remine_blocked(d):
     if not bad:
         return "None — every cited source has a local copy."
     out = ["| Source | Rows |", "|---|---:|"]
-    for k, v in sorted(bad.items(), key=lambda x: -x[1].get("rows", 0)):
-        out.append(f"| `{k}` | {v.get('rows', 0)} |")
+    for k in sorted(bad, key=lambda x: -d["filed_rows"][x]):
+        out.append(f"| `{k}` | {d['filed_rows'][k]} |")
     out.append("")
-    out.append(f"**{len(bad)} sources, {sum(v.get('rows', 0) for v in bad.values())} "
+    out.append(f"**{len(bad)} sources, {sum(d['filed_rows'][k] for k in bad)} "
                f"rows** that cannot be verified against a paper.")
     return "\n".join(out)
 
