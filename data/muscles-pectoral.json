@@ -937,6 +937,110 @@
             ],
             "crosses": true
           }
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "note",
+          "name": "Cucullaris superficialis",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapulocoracoid",
+                "landmark": "scapular-process"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The cucullaris superficialis and profundus originate upon the postorbital region of the chondrocranium, and insert onto the scapular process of the pectoral girdle, which they elevate and rotate.' `protractor-pectoralis`' synonym 'cucullaris' bridges directly; `scapular-process`'s own note says it is 'where the cucullaris lands' across this dataset already. Origin scored at plain `neurocranium` rather than a guessed 'postorbital region' landmark — no such site exists in skeleton.json and this dataset's own `postorbital` id is a dermal bone in a different homology group (MINING.md's own naming-collision caution). No prior occurrence exists on this record for this species.\n\nHydrolagus colliei, Huber et al. (2011). See the cucullaris superficialis row for the shared description.",
+          "parts": [
+            {
+              "name": "Cucullaris superficialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "scapulocoracoid",
+                    "landmark": "scapular-process"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Cucullaris profundus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "scapulocoracoid",
+                    "landmark": "scapular-process"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "pectoral"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Cucullaris",
+          "present": "yes",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapulocoracoid"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "propterygium"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'The cucullaris originates on the scapulocoracoid, inserts on the fifth dorsal superficial branchial constrictor, and elevates the pectoral fin.' Table 3 gives the insertion as the propterygium of the pectoral fin rather than the fifth branchial constrictor named in the running text — both are recorded, table as a structured row (below), text as prose, since the paper states them differently and neither should be silently dropped. This is the reverse of Squalus's own cucullaris (Huber et al.: origin epibranchial musculature, insertion scapulocoracoid) — in this batoid the muscle runs the other way, from girdle onto fin, which Huber et al. attribute generally to batoid subdivision beyond the squalomorph pattern. `protractor-pectoralis`' synonym list names 'cucullaris' directly, and the record already carries a Squalus cucullaris occurrence from Ziermann et al. (2014) / Diogo & Ziermann (2015).",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {

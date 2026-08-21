@@ -206,7 +206,7 @@ def split():
     return len(obs), 0, sum(len(v) for v in obs.values())
 
 
-def write_mapping():
+def write_mapping(dry_run=False):
     """Regenerate data/mapping/ as a READ-ONLY VIEW of the homology decisions.
 
     The assignment itself lives on each observation row, in `record`. This
@@ -217,6 +217,13 @@ def write_mapping():
     more than one species, and one of Cunningham's spans fourteen.
 
     Editing a file here does nothing. Change `record` on the rows.
+
+    `dry_run=True` builds the same documents and returns them without touching
+    the disk. `validate.py` needs that: it checks this directory is a fixed
+    point, and it used to do so by regenerating and diffing — which meant the
+    "read-only" validator wrote files, and a delegated mining pass that ran it
+    to check its own rows left `data/mapping/` dirty. Found by the first such
+    pass, which reverted it by hand and said so.
     """
     view = collections.defaultdict(lambda: collections.defaultdict(
         lambda: {"record": None, "covers": None, "species": set()}))
@@ -253,8 +260,9 @@ def write_mapping():
             e["record"] = row["record"]
             e["species"].add(doc["species"])
 
-    MAP.mkdir(parents=True, exist_ok=True)
-    keep = set()
+    if not dry_run:
+        MAP.mkdir(parents=True, exist_ok=True)
+    keep, built = set(), {}
     for src in sorted(set(view) | set(unassigned)):
         table = {k: ({"covers": v["covers"], "species": sorted(v["species"])}
                      if v["covers"] else
@@ -274,8 +282,13 @@ def write_mapping():
         out = MAP / f"{src}.json"
         keep.add(out.name)
         text = json.dumps(doc, indent=2, ensure_ascii=False) + "\n"
+        built[out.name] = text
+        if dry_run:
+            continue
         if not out.exists() or out.read_text() != text:
             out.write_text(text)
+    if dry_run:
+        return built
     for f in MAP.glob("*.json"):
         if f.name not in keep:
             f.unlink()

@@ -824,11 +824,13 @@
       "presence": {
         "default": "no",
         "present": [
-          "actinopterygii"
+          "actinopterygii",
+          "chondrichthyes"
         ],
-        "note": "The ventral limb of each branchial arch, and the element most of the ventral gill-arch muscles attach to — recti, obliqui ventrales, transversi ventrales and adductores all reach it. Added 2026-08-20 when the eel ventral series needed somewhere to attach: `epibranchials`, `pharyngobranchials` and `hypobranchials` had been added for the dorsal series and the ceratobranchial was the missing member.",
+        "note": "The ventral limb of each branchial arch, and the element most of the ventral gill-arch muscles attach to — recti, obliqui ventrales, transversi ventrales and adductores all reach it. Added 2026-08-20 when the eel ventral series needed somewhere to attach: `epibranchials`, `pharyngobranchials` and `hypobranchials` had been added for the dorsal series and the ceratobranchial was the missing member.\n\n**Chondrichthyes added 2026-08-20.** Huber et al. (2011) give ceratobranchial cartilages as the *Hydrolagus colliei* constrictor branchialis insertion.",
         "sources": [
-          "springer-johnson-2015"
+          "springer-johnson-2015",
+          "huber-etal-2011"
         ]
       }
     },
@@ -1541,12 +1543,14 @@
       "presence": {
         "default": "no",
         "present": [
-          "actinopterygii"
+          "actinopterygii",
+          "chondrichthyes"
         ],
         "sources": [
-          "jayaram-etal-1983"
+          "jayaram-etal-1983",
+          "huber-etal-2011"
         ],
-        "note": "Posterior element of the teleost hyoid bar, above the ceratohyal. Origin of the anterolateral part of the protractor hyoidei."
+        "note": "Posterior element of the teleost hyoid bar, above the ceratohyal. Origin of the anterolateral part of the protractor hyoidei.\n\n**Chondrichthyes added 2026-08-20.** Huber et al. (2011) name an epihyal cartilage as the *Hydrolagus colliei* levator hyoideus insertion. Holocephalan within Chondrichthyes; no source here shows one in an elasmobranch."
       }
     },
     {
@@ -2473,6 +2477,23 @@
       }
     },
     {
+      "id": "inferior-maxillary-cartilage",
+      "label": "Inferior maxillary cartilage (holocephalan)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Holocephalan jaw-region cartilage, and the origin of *Hydrolagus*'s intermandibularis — distinct from Meckel's cartilage, which the same table gives as that animal's adductor mandibulae origin."
+      }
+    },
+    {
       "id": "infraspinous-fossa",
       "label": "Infraspinous fossa",
       "kind": "bone",
@@ -3181,6 +3202,24 @@
       }
     },
     {
+      "id": "nasal-capsule",
+      "label": "Nasal capsule",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Cartilaginous nasal capsule of the chondrocranium. **Not `nasal`**, which is the dermal bone — the same collision `MINING.md` warns of for autopalatine against palatine."
+      }
+    },
+    {
       "id": "neural-spine",
       "label": "Neural spines",
       "kind": "bone",
@@ -3270,6 +3309,23 @@
           "jayaram-etal-1983"
         ],
         "note": "The main gill cover. **Not `operculum`**, which in this file is the amphibian otic operculum in the fenestra ovalis — two different structures that share a word, and scoring a fish gill cover on the ear bone is exactly the collision the containment checks exist to stop. The dilator and adductor operculi and the levator operculi all end here."
+      }
+    },
+    {
+      "id": "opercular-flap",
+      "label": "Opercular flap (holocephalan)",
+      "kind": "soft",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "The single soft covering over all four gill openings in holocephalans, against the separate `gill-slits` of elasmobranchs. **Not `opercle`**, the actinopterygian bone, and not `operculum`, the amphibian otic operculum. Scoped to chondrichthyes because the taxonomy has no Holocephali node; narrow it if one is added."
       }
     },
     {
@@ -3751,12 +3807,14 @@
       "presence": {
         "default": "no",
         "present": [
-          "actinopterygii"
+          "actinopterygii",
+          "chondrichthyes"
         ],
         "sources": [
-          "springer-johnson-2015"
+          "springer-johnson-2015",
+          "huber-etal-2011"
         ],
-        "note": "Most dorsal elements of the branchial arches, carrying the upper pharyngeal toothplates and the insertions of the levatores interni and the transversus dorsalis."
+        "note": "Most dorsal elements of the branchial arches, carrying the upper pharyngeal toothplates and the insertions of the levatores interni and the transversus dorsalis.\n\n**Chondrichthyes added 2026-08-20.** Huber et al. (2011) give pharyngobranchial cartilages as the *Hydrolagus colliei* adductor arcuum branchialium origin."
       },
       "synonyms": [
         "Pb2-3",
@@ -3912,6 +3970,23 @@
       }
     },
     {
+      "id": "premandibular-cartilage",
+      "label": "Premandibular cartilage (holocephalan)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Paired fibrocartilage at the holocephalan lower-jaw symphysis; the intermandibularis insertion."
+      }
+    },
+    {
       "id": "premaxilla",
       "label": "Premaxilla",
       "kind": "bone",
@@ -3920,6 +3995,23 @@
       "partOf": "neurocranium",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "premaxillary-cartilage",
+      "label": "Premaxillary cartilage (holocephalan)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Holocephalan labial-series cartilage. **Not `premaxilla`**, the dermal bone."
       }
     },
     {
@@ -4006,6 +4098,24 @@
         "present": [
           "aves"
         ]
+      }
+    },
+    {
+      "id": "propterygium",
+      "label": "Propterygium",
+      "kind": "cartilage",
+      "region": "fin",
+      "segment": "fin",
+      "partOf": "fin-radials",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Anteriormost basal cartilage of the pectoral fin. In *Rhinobatos percellens* the cucullaris, the ventral superficial branchial constrictor and the branchial trematic constrictor all attach to it — a batoid's pectoral fin reaches forward to the head, so head muscles end on fin cartilage. `partOf: fin-radials` is provisional: the miner who requested it flagged that it may belong beside `preaxial-radials` instead, and no source cited here settles the batoid fin skeleton."
       }
     },
     {
@@ -4284,6 +4394,24 @@
           "johnston-2011",
           "johnston-2014"
         ]
+      }
+    },
+    {
+      "id": "rostrum",
+      "label": "Rostrum",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Anterior extension of the chondrocranium, figured for both *Squalus* and *Rhinobatos* by Huber et al. (2011). The batoid levator and depressor rostri work it; both are parked for want of a record."
       }
     },
     {
@@ -4795,6 +4923,23 @@
       "correlate": true,
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "superior-maxillary-cartilage",
+      "label": "Superior maxillary cartilage (holocephalan)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "huber-etal-2011"
+        ],
+        "note": "Holocephalan labial-series cartilage: insertion of the labialis anterior and of both parts of the levator anguli oris. **Not `maxilla`**."
       }
     },
     {

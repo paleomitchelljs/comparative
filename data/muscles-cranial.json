@@ -427,7 +427,8 @@
           "present": "yes",
           "name": "Adductor mandibulae anterior + posterior",
           "sources": [
-            "anderson-2008"
+            "anderson-2008",
+            "huber-etal-2011"
           ],
           "division": "divided",
           "parts": [
@@ -436,10 +437,73 @@
             },
             {
               "name": "Adductor mandibulae posterior (AMP)"
+            },
+            {
+              "name": "Adductor mandibulae anterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Adductor mandibulae posterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "adductor-mandibulae"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
             }
           ],
           "note": "Hydrolagus colliei. Anderson's muscle group #1, the one group present and unambiguously homologous in all five gnathostomes he compares.",
-          "speciesBasis": "note"
+          "speciesBasis": "note",
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "landmark": "meckels-cartilage"
+              },
+              {
+                "muscle": "adductor-mandibulae"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'Deep to the levator anguli oris muscles, the adductor mandibulae anterior has a broad origin across the surface of the preorbital region of the chondrocranium. It is the primary jaw adductor and inserts via a stout tendon that wraps beneath the lower jaw.' Anderson (2008), already filed on this species and record as 'Adductor mandibulae anterior + posterior' (division: divided, hand-authored parts AMA/AMP, no structured attachments), calls this Anderson's muscle group #1, 'the one group present and unambiguously homologous in all five gnathostomes he compares' — the bridge for filing here rather than Huber et al.'s naming alone. This row adds the structured attachments Anderson's did not carry; per MINING.md, only this source's own contribution is written here, and the two rows will need reconciling at build time (Anderson's compound hand-parted row against these two per-muscle rows) — flagged in the reading note.\n\nHydrolagus colliei, Huber et al. (2011): 'The adductor mandibulae posterior originates upon the suborbital ridge of the chondrocranium and its tendon merges with that of the adductor mandibulae anterior.' Insertion scored as onto the anterior division (same record) rather than a separate mandible row, since the source states the tendons merge rather than each reaching the jaw independently. See the anterior row for the Anderson (2008) bridge.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "homo-sapiens",
@@ -1565,6 +1629,98 @@
             ],
             "crosses": false
           }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Adductor mandibulae lateral 1",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palatoquadrate-quadrate"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "mandible",
+                "landmark": "meckels-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens (southern guitarfish), Huber et al. (2011) Table 3 and text. The batoid adductor mandibulae complex has three divisions, all originating on the palatoquadrate and inserting on Meckel's cartilage: a medial division surrounding the mouth opening, with lateral 1 and 2 adjacent to it along the mandibular arch. Written here as division: divided with the three named parts; each carries the same origin/insertion, since the paper does not distinguish their attachments beyond the general pattern. Huber et al. note the adductor mandibulae complex is where batoid subdivision beyond the squalomorph shark pattern is most pronounced.\n\nRhinobatos percellens, Huber et al. (2011). See the lateral 1 row for the shared description.\n\nRhinobatos percellens, Huber et al. (2011). The medial division surrounds the mouth opening; lateral 1 and 2 sit adjacent to it along the mandibular arch. Same origin/insertion pattern as the lateral divisions.",
+          "parts": [
+            {
+              "name": "Adductor mandibulae lateral 1",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "palatoquadrate-quadrate"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Adductor mandibulae lateral 2",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "palatoquadrate-quadrate"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Adductor mandibulae medial",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "palatoquadrate-quadrate"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {
@@ -1885,10 +2041,33 @@
           "present": "yes",
           "name": "Intermandibularis",
           "sources": [
-            "anderson-2008"
+            "anderson-2008",
+            "huber-etal-2011"
           ],
           "note": "Hydrolagus colliei. Present in every taxon Anderson (2008) examines, stretching between the sides of the mandible on CN V. In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.",
-          "speciesBasis": "note"
+          "speciesBasis": "note",
+          "attachments": {
+            "origin": [
+              {
+                "element": "inferior-maxillary-cartilage"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "premandibular-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The intermandibularis originates upon the inferior maxillary cartilage and inserts onto the premandibular cartilages, a pair of fibrocartilaginous masses located at the lower jaw symphysis. Contraction of these muscles protracts the upper and lower sets of labial cartilages.' Topologically unlike the elasmobranch intermandibularis (floor-of-mouth elevator via Meckel's cartilage and the midventral raphe) — a labial-protraction muscle instead. Filed here on the strength of the existing Anderson (2008) occurrence on this record and species, which already treats it as the same field: 'Present in every taxon Anderson (2008) examines... In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.' This row adds the structured attachments Anderson's did not carry. Elements requested at the top of this note: `inferior-maxillary-cartilage` and `premandibular-cartilage`, both holocephalan-specific and distinct from the tetrapod maxilla/premaxilla and from Meckel's cartilage, which Table 4 uses as a separate insertion elsewhere on this same species (adductor mandibulae anterior/posterior).",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "homo-sapiens",
@@ -3195,6 +3374,38 @@
             ]
           },
           "attachmentNote": "Notophthalmus viridescens, adult, Bauer (1997). Origin on the caudal half of the elaborate squamosal, on its posterior process, and on the occipito-otic by posterior fibres that are superficially tendinous; insertion on the gonioarticular. **Kesteven's (1942-45) separation of the muscle into anteromedial and posterolateral parts could not be detected**, which is a negative worth carrying because it is exactly the division Bauer *does* find in *Salamandra* and *Hydromantes*. Deeper fibres attach partly to a sesamoid that presumably develops inside the muscle's own tendon; the sesamoid is not scored because this skeleton carries no cranial sesamoid element.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Levator hyomandibulae",
+          "present": "yes",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium",
+                "landmark": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'originates on the otic region of the chondrocranium and inserts onto the hyomandibulae, which it retracts following a gape cycle.' `depressor-mandibulae`'s synonym list carries 'levator hyomandibulae' unhedged (unlike its 'constrictor hyoideus dorsalis (partim)' entry — see the dorsal hyoid constrictor row above, parked on that distinction).",
           "spans": {
             "origin": [
               "cranial"
@@ -4828,6 +5039,34 @@
           "fusedWith": [
             "intermandibularis"
           ]
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Ventral hyoid constrictor",
+          "present": "yes",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "muscle": "branchial-constrictors"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "gill-slits"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): originates on the ventral superficial branchial constrictor, unites medially with its dorsal counterpart to form the anterior wall of the branchial chamber, which it compresses; Table 3 gives the insertion as the first gill pouch. `interhyoideus`'s synonym list carries 'constrictor hyoideus ventralis' unhedged — the direct English/Latin equivalent of Huber's 'ventral hyoid constrictor'. Note: Table 3 does not separately list an 'Interhyoideus' for batoids at all (unlike Squalus and Hydrolagus); Huber et al.'s hyoid-arch text for this species names only the dorsal and ventral hyoid constrictors, levator hyomandibulae, depressor rostri/mandibulae and depressor hyomandibularis, so this row is the only one on `interhyoideus` for this species from this source.",
+          "spans": {
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {
@@ -5175,6 +5414,41 @@
             "diogo-etal-2008-head"
           ],
           "attachmentNote": "Rattus norvegicus, Diogo et al. (2008), Table 2. Present, as in the platypus, the colugo, the tree-shrew and the human — **the one muscle of this field that every mammal in their table keeps**, while the styloideus, stylohyoideus, jugulohyoideus and digastricus posterior come and go around it. This record previously held a skate and a human and nothing between them."
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Depressor hyomandibularis",
+          "present": "yes",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "midventral-raphe"
+              },
+              {
+                "muscle": "hypobranchial-muscles"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'originates along the ventral surface of the hypobranchial musculature, inserts onto the distal tips of the hyomandibular cartilages, and abducts these structures.' `stapedius`'s own synonym is 'depressor hyomandibulae' — an unhedged, exact match (spelling variant only) — which is also the bridge the existing squalus-acanthias file leaves unused (see reading note).",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {
@@ -5887,6 +6161,110 @@
             ],
             "insertion": [
               "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "note",
+          "name": "Constrictor branchialis",
+          "present": "yes",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "epibranchials"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ceratobranchials"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The constrictor branchialis originates, and inserts upon, the epibranchial and ceratobranchial cartilages of the first three branchial arches, respectively.' `branchial-constrictors`' synonym 'constrictores branchiales' is the direct Latin plural of Huber's singular 'constrictor branchialis' — same root, grammatical number only. Scored on arches 1-3 as a species fact in prose; no per-arch element exists to structure that further.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Dorsal superficial branchial constrictor",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "muscle": "protractor-pectoralis"
+              },
+              {
+                "element": "propterygium"
+              }
+            ],
+            "insertion": [
+              {
+                "muscle": "branchial-constrictors"
+              },
+              {
+                "muscle": "interhyoideus"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): the dorsal and ventral superficial branchial constrictors surround the gill arches, dorsal originating on the cucullaris (filed on `protractor-pectoralis`), ventral on the propterygium (see the ventral row below); they insert onto each other and their respective hyoid constrictors, compressing the gills. `branchial-constrictors`' synonym 'constrictores branchiales' bridges the name directly (Latin singular/plural, English 'constrictor' — same root). Insertion here scored as onto the record itself (self-reference covers 'insert onto each other'); the hyoid-constrictor insertion is scored on the ventral/dorsal hyoid constrictor rows instead, where it is the origin.\n\nRhinobatos percellens, Huber et al. (2011) Table 3: origin propterygium of the pectoral fin, insertion the ventral hyoid constrictor (filed above on `interhyoideus`). See the dorsal superficial branchial constrictor row for the shared description.",
+          "parts": [
+            {
+              "name": "Dorsal superficial branchial constrictor",
+              "attachments": {
+                "origin": [
+                  {
+                    "muscle": "protractor-pectoralis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "branchial-constrictors"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Ventral superficial branchial constrictor",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "propterygium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "interhyoideus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "fin"
             ],
             "crosses": false
           }
@@ -6762,6 +7140,290 @@
             ],
             "crosses": false
           }
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "note",
+          "name": "Dorsal oblique",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "eye-bulbus"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011) Table 4: all six standard gnathostome extrinsic eye muscles, each originating on the chondrocranium and inserting on the eyeball. Same bridge as the Rhinobatos file's eye-muscle rows via `extraocular-muscles`'s own dorsal/ventral-equivalent synonym list — see that file's note for the full reasoning. Six named rows on one record, division: divided declared here.\n\nHydrolagus colliei. See the dorsal oblique row.",
+          "parts": [
+            {
+              "name": "Dorsal oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Dorsal rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Lateral rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Medial rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Ventral oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Ventral rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Dorsal oblique",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "eye-bulbus"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011) Table 3 and Figure 6 (extrinsic eye muscles figured specifically for this species, in dorsal view). All six standard gnathostome extrinsic eye muscles, each originating on the chondrocranium and inserting on the eyeball. `extraocular-muscles`'s own synonym list gives the superior/inferior naming convention ('rectus superior / inferior / medialis / lateralis', 'obliquus superior / inferior'); Huber et al. use the dorsal/ventral convention standard in non-primate comparative literature for the same six muscles — the record's own homology note calls this 'the most conserved muscle group in the vertebrate head: same six muscles... from lampreys to mammals.' Written as six named rows on one record, division: divided declared here, each carrying the same origin/insertion since Huber et al. do not distinguish them further.\n\nRhinobatos percellens. See the dorsal oblique row.",
+          "parts": [
+            {
+              "name": "Dorsal oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Dorsal rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Lateral rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Medial rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Ventral oblique",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Ventral rectus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "eye-bulbus"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {
@@ -7149,7 +7811,8 @@
           "present": "yes",
           "name": "Coracomandibularis + coracohyoideus + mandibulohyoideus",
           "sources": [
-            "anderson-2008"
+            "anderson-2008",
+            "huber-etal-2011"
           ],
           "division": "divided",
           "parts": [
@@ -7161,10 +7824,101 @@
             },
             {
               "name": "Mandibulohyoideus (MH)"
+            },
+            {
+              "name": "Coracobranchialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "branchial-arches",
+                    "landmark": "ceratobranchials"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Coracohyoideus",
+              "attachments": {
+                "origin": [
+                  {
+                    "muscle": "hypobranchial-muscles"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid",
+                    "landmark": "corpus-hyoidei"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Coracomandibularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
             }
           ],
           "note": "Hydrolagus colliei, and the record's most interesting column. Anderson (2008) finds a coracomandibularis in all five gnathostomes and argues from it that basal jaw depression was NOT coupled to hyoid movement but worked directly through this muscle — the osteichthyan coracohyoideus-through-mandibulohyoid-ligament system being the derived arrangement. He also renames a Hydrolagus muscle called geniohyoideus by some authors and interhyoideus by others to `mandibulohyoideus`, because it matches neither and is apomorphic. Its consequence is that Hydrolagus has TWO ways to depress the jaw, the chondrichthyan coracomandibularis and a geniohyoideus-like mandibulohyoideus, which Anderson raises as possible independent acquisition of an osteichthyan-style depression in chimaeroids.",
-          "speciesBasis": "note"
+          "speciesBasis": "note",
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              },
+              {
+                "muscle": "hypobranchial-muscles"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "branchial-arches",
+                "landmark": "ceratobranchials"
+              },
+              {
+                "element": "hyoid",
+                "landmark": "corpus-hyoidei"
+              },
+              {
+                "element": "mandible",
+                "landmark": "meckels-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The coracobranchialis originates on the coracoid bar of the pectoral girdle, and inserts onto, and abducts the branchial arches' — Table 4 gives the origin as 'Pectoral girdle' plainly; 'coracoid bar' is scored at that coarser element rather than a guessed landmark. Has multiple divisions (Table 4/text), not further specified. `hypobranchial-muscles`' synonym list names 'coracobranchialis' directly. No prior occurrence exists on this record for this species (Anderson 2008 does not describe it), so this is a fresh row, not a merge.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracohyoideus originates on the coracomandibularis and inserts onto the basihyal cartilage, which it abducts.' Origin scored coarsely as the record itself, since the specific origin (coracomandibularis) is a part of the same record rather than a separately citable one. Insertion onto 'basihyal cartilage' scored against `corpus-hyoidei` — see the equivalent Rhinobatos row for the substitution reasoning. `hypobranchial-muscles`' synonym list names 'coracohyoideus' directly. **Anderson (2008) already carries a `hypobranchial-muscles` occurrence for this species** (division: divided, hand-authored parts 'Coracomandibularis anterior + posterior', 'Coracohyoideus anterior + posterior', 'Mandibulohyoideus', no structured attachments) — flagged for reconciliation in the reading note, same issue as the adductor mandibulae rows above. Huber et al. do not mention a mandibulohyoideus at all.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracomandibularis originates on the coracoid bar of the pectoral girdle, and inserts onto, and abducts the lower jaw.' `hypobranchial-muscles`' synonym list names 'coracomandibularis' directly. See the coracohyoideus row above for the Anderson (2008) reconciliation flag — this row is part of the same occurrence.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "callorhinchus-milii",
@@ -7738,6 +8492,65 @@
             "origin": [
               "cranial"
             ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Coracohyoideus",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "insertion": [
+              {
+                "element": "hyoid",
+                "landmark": "corpus-hyoidei"
+              },
+              {
+                "element": "mandible",
+                "landmark": "meckels-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011). Origin from the coracoarcualis (a muscle, parked above with no record of its own — see that row) is left unstructured here; only the resolvable insertion end is scored. Insertion onto the 'basihyal cartilage' is scored against `corpus-hyoidei`, this dataset's median-hyoid-body element (synonym 'basibranchial' / 'body of the hyoid') — substitution flagged for review rather than a new element, since the two are almost certainly the same structure under different regional names. `hypobranchial-muscles`' own synonym list names 'coracohyoideus' directly. Anderson (2008) already carries a `hypobranchial-muscles` occurrence for Hydrolagus colliei with a hand-authored parts list under different names (see that species' file); no such prior occurrence exists for this species, so no reconciliation is needed here.\n\nRhinobatos percellens, Huber et al. (2011). Origin from the coracoarcualis left unstructured, as on the coracohyoideus row — see that row's note. Insertion onto Meckel's cartilage, abducting the lower jaw. `hypobranchial-muscles`' synonym list names 'coracomandibularis' directly.",
+          "parts": [
+            {
+              "name": "Coracohyoideus",
+              "attachments": {
+                "insertion": [
+                  {
+                    "element": "hyoid",
+                    "landmark": "corpus-hyoidei"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Coracomandibularis",
+              "attachments": {
+                "insertion": [
+                  {
+                    "element": "mandible",
+                    "landmark": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
             "insertion": [
               "cranial"
             ],
@@ -8578,6 +9391,92 @@
               },
               "sources": [
                 "jayaram-etal-1983"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "rhinobatos-percellens",
+          "speciesBasis": "note",
+          "name": "Levator palatoquadrati",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium",
+                "landmark": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palatoquadrate-quadrate"
+              },
+              {
+                "element": "spiracle",
+                "landmark": "spiracular-cartilage"
+              },
+              {
+                "element": "hyomandibula-stapes",
+                "side": "distal"
+              }
+            ]
+          },
+          "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'The levator palatoquadrati and the spiracularis originate on the otic region of the chondrocranium. The levator palatoquadrati inserts onto and elevates the upper jaw.' `levator-arcus-palatini`'s synonym list carries both 'levator palatoquadrati' and 'spiracularis' directly, matching how the existing squalus-acanthias file already scores this record.\n\nRhinobatos percellens, Huber et al. (2011): 'The spiracularis inserts onto the spiracular cartilage and distal tip of the hyomandibular cartilage to form the anterior wall of the spiracle, which is closed via contraction of this muscle.' Same two-insertion pattern as the existing squalus-acanthias row on this record.",
+          "parts": [
+            {
+              "name": "Levator palatoquadrati",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium",
+                    "landmark": "otic-capsule"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "palatoquadrate-quadrate"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Spiracularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium",
+                    "landmark": "otic-capsule"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "spiracle",
+                    "landmark": "spiracular-cartilage"
+                  },
+                  {
+                    "element": "hyomandibula-stapes",
+                    "side": "distal"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
               ]
             }
           ],
@@ -11627,6 +12526,76 @@
             "haas-1973"
           ],
           "note": "Maticora sp., Haas (1973), from his own dissection of a very large specimen in the Field Museum, Chicago. **No trace of any M. levator anguli oris**, and the absence carries an argument. Haas's reading is that the proteroglyphous snakes descend from colubrids that had already lost this muscle, and that only after the centre of the semicircular adductor mandibulae externus 1b became attached to the venom gland capsule did the dorsal half differentiate further, as in *Dendroaspis*. So on this record — whose identification this dataset calls the crux of the lizard–snake problem — the snake end is an absence used as a phylogenetic character. Compare the *Sphenodon* row, where the muscle exists but four workers disagreed about whether it does."
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "note",
+          "name": "Levator anguli oris anterior",
+          "present": "yes",
+          "division": "divided",
+          "sources": [
+            "huber-etal-2011"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "superior-maxillary-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The levator anguli oris anterior and posterior muscles originate upon the antorbital crest of the chondrocranium and insert onto the superior maxillary cartilage, from where they retract the labial cartilages via a series of ligamentous attachments.' `levator-anguli-oris`'s own synonym list names 'levator anguli oris' directly. Origin scored at plain `neurocranium` — 'antorbital crest' has no landmark in skeleton.json and is not requested here, since parking would not improve on the coarser element (the crest is a ridge on the same bone, not a separately homologisable site). Insertion onto `superior-maxillary-cartilage`, the same requested element as `Labialis anterior` above.\n\nHydrolagus colliei. See the levator anguli oris anterior row.",
+          "parts": [
+            {
+              "name": "Levator anguli oris anterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "superior-maxillary-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Levator anguli oris posterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "superior-maxillary-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {

@@ -398,8 +398,11 @@ Two people mining two sources never contend for either.
 So a delegated pass **requests** rather than writes: put the elements and species it
 needs at the top of its reading note, as a list with the `partOf`, `presence` and
 one-line note each would carry, and let whoever integrates apply them and run the
-build once. Run `python3 scripts/validate.py` to check your own rows if you like —
-it is read-only — but not `build.sh --write`.
+build once. Run `python3 scripts/validate.py` to check your own rows if you like — it is
+read-only — but not `build.sh --write`. (It was *not* read-only until 2026-08-20:
+it checked `data/mapping/` was a fixed point by regenerating it, so the validator
+wrote to disk and left a delegated pass's tree dirty. The first delegated pass hit
+that, reverted it by hand and reported it; the mapping check now builds in memory.)
 
 ### The one rule that matters more than the others
 

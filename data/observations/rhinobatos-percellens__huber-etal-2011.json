@@ -1,0 +1,396 @@
+{
+  "species": "rhinobatos-percellens",
+  "source": "huber-etal-2011",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json: `scaffolded` means these rows came out of the old storage and NOBODY HAS CHECKED THEM AGAINST THE PAPER.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae lateral 1",
+      "present": "yes",
+      "division": "divided",
+      "attachments": {
+        "origin": [ { "element": "palatoquadrate-quadrate" } ],
+        "insertion": [ { "element": "mandible", "landmark": "meckels-cartilage" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens (southern guitarfish), Huber et al. (2011) Table 3 and text. The batoid adductor mandibulae complex has three divisions, all originating on the palatoquadrate and inserting on Meckel's cartilage: a medial division surrounding the mouth opening, with lateral 1 and 2 adjacent to it along the mandibular arch. Written here as division: divided with the three named parts; each carries the same origin/insertion, since the paper does not distinguish their attachments beyond the general pattern. Huber et al. note the adductor mandibulae complex is where batoid subdivision beyond the squalomorph shark pattern is most pronounced.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae lateral 2",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "palatoquadrate-quadrate" } ],
+        "insertion": [ { "element": "mandible", "landmark": "meckels-cartilage" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011). See the lateral 1 row for the shared description.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Adductor mandibulae medial",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "palatoquadrate-quadrate" } ],
+        "insertion": [ { "element": "mandible", "landmark": "meckels-cartilage" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011). The medial division surrounds the mouth opening; lateral 1 and 2 sit adjacent to it along the mandibular arch. Same origin/insertion pattern as the lateral divisions.",
+      "region": "cranial",
+      "record": "adductor-mandibulae"
+    },
+    {
+      "name": "Branchial trematic constrictor",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "nomenclature",
+      "blockedNote": "Origin under the propterygium of the pectoral fin, inserting onto the superficial branchial constrictors (Huber et al. 2011 text) or, per their own Table 3, onto the gill slits directly — the table and the running text disagree on the insertion, and both are recorded here rather than one silently chosen. 'Trematic constrictor' is a naming lineage this dataset has not bridged: `branchial-constrictors`' synonyms are 'constrictores branchiales' and 'levatores arcuum branchialium', which cover the superficial-constrictor/levator series (filed on this record below) but not the trematic-constrictor series, which Huber et al. also name separately at the hyoid arch ('hyoid trematic constrictor', unfiled for Squalus). Filing it onto `branchial-constrictors` on name-similarity alone would be exactly the guess MINING.md warns against. What would settle it: a source establishing whether Huber's 'trematic constrictor' muscles are the same field as the '(super)ficial) constrictor(es)/levator(es)' series or a separate one — Mallatt (1997) or Miyake et al. (1992), both in Huber et al.'s own further reading, are candidates nobody here has read yet.",
+      "attachments": {
+        "origin": [ { "element": "propterygium" } ],
+        "insertion": [
+          { "element": "gill-slits" },
+          { "muscle": "branchial-constrictors" }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Coracoarcualis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Paired, segmented muscle from the scapulocoracoid cartilage, providing origin support for the coracomandibularis and coracohyoideus (both filed below on `hypobranchial-muscles`) rather than reaching the jaw or hyoid itself — Huber et al. (2011): 'assisting these muscles in abducting the oropharyngeal cavity'. No record here covers it: `hypobranchial-muscles`' synonym list names coracomandibularis, coracohyoideus and coracobranchialis explicitly but not coracoarcualis, and its own function (support muscle for the others, not itself reaching mandible or hyoid) is different in kind. Also unfiled for Squalus, where Huber et al. describe the identical muscle. What would settle it: a treatment of the chondrichthyan hypobranchial series that states whether the coracoarcualis is part of that field or an accessory to it — Miyake et al. (1992) is Huber et al.'s own cited source for ventral gill-arch musculature and has not been read here.",
+      "attachments": {
+        "origin": [ { "element": "scapulocoracoid" } ],
+        "insertion": [ { "muscle": "hypobranchial-muscles" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens. Insertion recorded coarsely as the hypobranchial-muscles record because the coracoarcualis ends specifically on the coracomandibularis and coracohyoideus, which are parts of that record here, not on the record generally.",
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracohyoideus",
+      "present": "yes",
+      "division": "divided",
+      "attachments": {
+        "insertion": [ { "element": "hyoid", "landmark": "corpus-hyoidei" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011). Origin from the coracoarcualis (a muscle, parked above with no record of its own — see that row) is left unstructured here; only the resolvable insertion end is scored. Insertion onto the 'basihyal cartilage' is scored against `corpus-hyoidei`, this dataset's median-hyoid-body element (synonym 'basibranchial' / 'body of the hyoid') — substitution flagged for review rather than a new element, since the two are almost certainly the same structure under different regional names. `hypobranchial-muscles`' own synonym list names 'coracohyoideus' directly. Anderson (2008) already carries a `hypobranchial-muscles` occurrence for Hydrolagus colliei with a hand-authored parts list under different names (see that species' file); no such prior occurrence exists for this species, so no reconciliation is needed here.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "name": "Coracohyomandibularis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011): originates along the hypobranchial musculature and raphe ventral to the gill arches, inserts by tendon onto the hyomandibulae, 'further aiding the depressor hyomandibularis in abducting the structures' (filed below as `stapedius`). Straddles two fields — hypobranchial origin, hyomandibular insertion — and is not named in `hypobranchial-muscles`' synonym list (which covers coracomandibularis/coracohyoideus/coracobranchialis, all mandible- or hyoid-body-directed, not hyomandibula-directed) nor anywhere else in this dataset. What would settle it: a source treating the batoid accessory hyomandibular abductors as part of the hypobranchial series or as their own field.",
+      "attachments": {
+        "origin": [
+          { "element": "midventral-raphe" },
+          { "muscle": "hypobranchial-muscles" }
+        ],
+        "insertion": [ { "element": "hyomandibula-stapes" } ]
+      },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracomandibularis",
+      "present": "yes",
+      "attachments": {
+        "insertion": [ { "element": "mandible", "landmark": "meckels-cartilage" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011). Origin from the coracoarcualis left unstructured, as on the coracohyoideus row — see that row's note. Insertion onto Meckel's cartilage, abducting the lower jaw. `hypobranchial-muscles`' synonym list names 'coracomandibularis' directly.",
+      "region": "cranial",
+      "record": "hypobranchial-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cucullaris",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "scapulocoracoid" } ],
+        "insertion": [ { "element": "propterygium" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'The cucullaris originates on the scapulocoracoid, inserts on the fifth dorsal superficial branchial constrictor, and elevates the pectoral fin.' Table 3 gives the insertion as the propterygium of the pectoral fin rather than the fifth branchial constrictor named in the running text — both are recorded, table as a structured row (below), text as prose, since the paper states them differently and neither should be silently dropped. This is the reverse of Squalus's own cucullaris (Huber et al.: origin epibranchial musculature, insertion scapulocoracoid) — in this batoid the muscle runs the other way, from girdle onto fin, which Huber et al. attribute generally to batoid subdivision beyond the squalomorph pattern. `protractor-pectoralis`' synonym list names 'cucullaris' directly, and the record already carries a Squalus cucullaris occurrence from Ziermann et al. (2014) / Diogo & Ziermann (2015).",
+      "region": "pectoral",
+      "record": "protractor-pectoralis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Depressor hyomandibularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          { "element": "midventral-raphe" },
+          { "muscle": "hypobranchial-muscles" }
+        ],
+        "insertion": [ { "element": "hyomandibula-stapes", "side": "distal" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'originates along the ventral surface of the hypobranchial musculature, inserts onto the distal tips of the hyomandibular cartilages, and abducts these structures.' `stapedius`'s own synonym is 'depressor hyomandibulae' — an unhedged, exact match (spelling variant only) — which is also the bridge the existing squalus-acanthias file leaves unused (see reading note).",
+      "region": "cranial",
+      "record": "stapedius"
+    },
+    {
+      "name": "Depressor mandibulae",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "nomenclature",
+      "blockedNote": "**Not the same field as this dataset's `depressor-mandibulae` record**, which is the tetrapod arch-2 (CN VII) jaw opener. Huber et al. (2011) state plainly that this muscle 'appears to be a division of the depressor rostri' (parked below, no-record): same hypobranchial-musculature-and-raphe origin, but inserting on Meckel's cartilage rather than the rostrum, and 'assists in the abduction of the lower jaw.' A hypobranchial-derived jaw opener is a different developmental field from the branchiomeric arch-2 depressor mandibulae this dataset's record is built around — filing on name alone would be the exact trap MINING.md calls out. Parked alongside `depressor-rostri`, its parent muscle. What would settle it: a source on chondrichthyan hypobranchial jaw depression relative to the tetrapod digastric/depressor-mandibulae field.",
+      "attachments": {
+        "origin": [
+          { "element": "midventral-raphe" },
+          { "muscle": "hypobranchial-muscles" }
+        ],
+        "insertion": [ { "element": "mandible", "landmark": "meckels-cartilage" } ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Depressor rostri",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011): originates along the ventral surface of the hypobranchial musculature and hypobranchial raphe, inserts onto the rostrum via a long tendon. No rostral-muscle record exists in this dataset (the rostrum itself is requested at the top of the reading note). 'Depressor mandibulae' (parked above) is stated to be a division of this muscle. What would settle it: the same source that would settle depressor mandibulae above.",
+      "attachments": {
+        "origin": [
+          { "element": "midventral-raphe" },
+          { "muscle": "hypobranchial-muscles" }
+        ],
+        "insertion": [ { "element": "rostrum" } ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Dorsal hyoid constrictor",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011): originates on the dorsal superficial branchial constrictor (filed below), unites medially with its ventral counterpart to form the anterior wall of the branchial chamber, which it compresses; Table 3 gives the insertion as the first gill pouch. Two candidate records exist and neither is a clean fit. `depressor-mandibulae`'s synonym list carries 'constrictor hyoideus dorsalis (partim)' — hedged, only part of the field. `constrictor-hyoideus-dorsalis`, created 2026-08-20 specifically to hold 'the dorsal division of the hyoid constrictor' that 'this dataset had no record of at all', is built entirely from Winterbottom's (1973) teleost synonymy and Edgeworth (1935) in a teleost context; nothing on that record or in this dataset's cited sources extends it to chondrichthyans, and its consensus attachments (parasphenoid, prootic, metapterygoid, opercle) are teleost bones with no chondrichthyan counterpart scored. Filing here would mean choosing between a hedged partial match and an unextended dedicated record, neither citable. The existing squalus-acanthias file already filed the equivalent Squalus muscle under `depressor-mandibulae` (as one compound row with 'levator hyomandibulae') without addressing this — see the reading note. What would settle it: Edgeworth (1935) itself, which both candidate records' notes point to but which nobody here has read for the chondrichthyan condition.",
+      "attachments": {
+        "origin": [ { "muscle": "branchial-constrictors" } ],
+        "insertion": [ { "element": "gill-slits" } ]
+      },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal oblique",
+      "present": "yes",
+      "division": "divided",
+      "attachments": {
+        "origin": [ { "element": "neurocranium" } ],
+        "insertion": [ { "element": "eye-bulbus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011) Table 3 and Figure 6 (extrinsic eye muscles figured specifically for this species, in dorsal view). All six standard gnathostome extrinsic eye muscles, each originating on the chondrocranium and inserting on the eyeball. `extraocular-muscles`'s own synonym list gives the superior/inferior naming convention ('rectus superior / inferior / medialis / lateralis', 'obliquus superior / inferior'); Huber et al. use the dorsal/ventral convention standard in non-primate comparative literature for the same six muscles — the record's own homology note calls this 'the most conserved muscle group in the vertebrate head: same six muscles... from lampreys to mammals.' Written as six named rows on one record, division: divided declared here, each carrying the same origin/insertion since Huber et al. do not distinguish them further.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium" } ],
+        "insertion": [ { "element": "eye-bulbus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens. See the dorsal oblique row.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal superficial branchial constrictor",
+      "present": "yes",
+      "division": "divided",
+      "attachments": {
+        "origin": [ { "muscle": "protractor-pectoralis" } ],
+        "insertion": [ { "muscle": "branchial-constrictors" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): the dorsal and ventral superficial branchial constrictors surround the gill arches, dorsal originating on the cucullaris (filed on `protractor-pectoralis`), ventral on the propterygium (see the ventral row below); they insert onto each other and their respective hyoid constrictors, compressing the gills. `branchial-constrictors`' synonym 'constrictores branchiales' bridges the name directly (Latin singular/plural, English 'constrictor' — same root). Insertion here scored as onto the record itself (self-reference covers 'insert onto each other'); the hyoid-constrictor insertion is scored on the ventral/dorsal hyoid constrictor rows instead, where it is the origin.",
+      "region": "cranial",
+      "record": "branchial-constrictors"
+    },
+    {
+      "name": "Epaxialis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011) Table 3: origin scapulocoracoid cartilage, insertion chondrocranium, action elevate chondrocranium. The batoid name for what the shark table calls 'Epibranchial' and the holocephalan table also calls 'Epibranchial' (parked in the hydrolagus-colliei file with the same reasoning) — the cranial extension of the epaxial trunk musculature. No cranial-muscle record exists for it; `epaxial-musculature` is the trunk axial record (region: axial) and filing a cranial-region row there would require deciding whether this is the same occurrence under a different region, which is a record-scoping decision rather than a homology bridge this pass can make. Also unfiled for Squalus. What would settle it: whether this dataset wants a dedicated cranial 'epibranchial' record or treats it as an axial-record occurrence spanning into the cranial region.",
+      "attachments": {
+        "origin": [ { "element": "scapulocoracoid" } ],
+        "insertion": [ { "element": "neurocranium" } ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Interbranchial",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011): 'The interbranchial muscles originate on the coracohyoideus and coracohyomandibularis, and insert onto and adduct the gill arches.' Origin from coracohyoideus (a named part of `hypobranchial-muscles`, filed above) is scored against that record; origin from coracohyomandibularis (parked above, no record) is not structurable and is noted in prose only. No record here is named 'interbranchial' or carries it as a synonym — `branchial-constrictors` is the nearest functional neighbour but its synonym list does not reach this name and Huber et al. treat interbranchial, adductor and constrictor/levator muscles of the branchial arches as separately named groups throughout (see also `Branchial trematic constrictor` and `Coracoarcualis` above, parked for the same reason). What would settle it: a source establishing whether the interbranchial muscles are part of the branchial-constrictor field or their own.",
+      "attachments": {
+        "origin": [ { "muscle": "hypobranchial-muscles" } ],
+        "insertion": [ { "element": "branchial-arches" } ]
+      },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lateral rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium" } ],
+        "insertion": [ { "element": "eye-bulbus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens. See the dorsal oblique row.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator hyomandibulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium", "landmark": "otic-capsule" } ],
+        "insertion": [ { "element": "hyomandibula-stapes" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'originates on the otic region of the chondrocranium and inserts onto the hyomandibulae, which it retracts following a gape cycle.' `depressor-mandibulae`'s synonym list carries 'levator hyomandibulae' unhedged (unlike its 'constrictor hyoideus dorsalis (partim)' entry — see the dorsal hyoid constrictor row above, parked on that distinction).",
+      "region": "cranial",
+      "record": "depressor-mandibulae"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator palatoquadrati",
+      "present": "yes",
+      "division": "divided",
+      "attachments": {
+        "origin": [ { "element": "neurocranium", "landmark": "otic-capsule" } ],
+        "insertion": [ { "element": "palatoquadrate-quadrate" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'The levator palatoquadrati and the spiracularis originate on the otic region of the chondrocranium. The levator palatoquadrati inserts onto and elevates the upper jaw.' `levator-arcus-palatini`'s synonym list carries both 'levator palatoquadrati' and 'spiracularis' directly, matching how the existing squalus-acanthias file already scores this record.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini"
+    },
+    {
+      "name": "Levator rostri",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011): 'the levator rostri originates on the epaxial musculature and otic capsule, and it inserts via a stout tendon between the nasal capsule and rostral cartilage.' No rostral-muscle record exists (see `depressor-rostri` above). What would settle it: the same treatment that would settle the rostral-muscle group generally.",
+      "attachments": {
+        "origin": [
+          { "muscle": "epaxial-musculature" },
+          { "element": "neurocranium", "landmark": "otic-capsule" }
+        ],
+        "insertion": [
+          { "element": "nasal-capsule" },
+          { "element": "rostrum" }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Medial rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium" } ],
+        "insertion": [ { "element": "eye-bulbus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens. See the dorsal oblique row.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "name": "Preorbitalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011): 'the preorbitalis, which originates on the nasal capsule and inserts onto the lower jaw via a tendon that joins the adductor mandibulae complex... adducts the lower jaw and protrudes the upper.' No record in this dataset is named 'preorbitalis' or carries it as a synonym anywhere — also true for Squalus, where Huber et al. describe the same muscle (originating posterior to the nasal capsule rather than on it) unfiled. What would settle it: a source homologising the chondrichthyan preorbitalis, which has no obvious osteichthyan or tetrapod counterpart named in this dataset's existing cranial records.",
+      "attachments": {
+        "origin": [ { "element": "nasal-capsule" } ],
+        "insertion": [
+          { "element": "mandible", "landmark": "meckels-cartilage" },
+          { "muscle": "adductor-mandibulae" }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Spiracularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium", "landmark": "otic-capsule" } ],
+        "insertion": [
+          { "element": "spiracle", "landmark": "spiracular-cartilage" },
+          { "element": "hyomandibula-stapes", "side": "distal" }
+        ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): 'The spiracularis inserts onto the spiracular cartilage and distal tip of the hyomandibular cartilage to form the anterior wall of the spiracle, which is closed via contraction of this muscle.' Same two-insertion pattern as the existing squalus-acanthias row on this record.",
+      "region": "cranial",
+      "record": "levator-arcus-palatini"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral hyoid constrictor",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "muscle": "branchial-constrictors" } ],
+        "insertion": [ { "element": "gill-slits" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): originates on the ventral superficial branchial constrictor, unites medially with its dorsal counterpart to form the anterior wall of the branchial chamber, which it compresses; Table 3 gives the insertion as the first gill pouch. `interhyoideus`'s synonym list carries 'constrictor hyoideus ventralis' unhedged — the direct English/Latin equivalent of Huber's 'ventral hyoid constrictor'. Note: Table 3 does not separately list an 'Interhyoideus' for batoids at all (unlike Squalus and Hydrolagus); Huber et al.'s hyoid-arch text for this species names only the dorsal and ventral hyoid constrictors, levator hyomandibulae, depressor rostri/mandibulae and depressor hyomandibularis, so this row is the only one on `interhyoideus` for this species from this source.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral oblique",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium" } ],
+        "insertion": [ { "element": "eye-bulbus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens. See the dorsal oblique row.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral rectus",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "neurocranium" } ],
+        "insertion": [ { "element": "eye-bulbus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens. See the dorsal oblique row.",
+      "region": "cranial",
+      "record": "extraocular-muscles"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral superficial branchial constrictor",
+      "present": "yes",
+      "attachments": {
+        "origin": [ { "element": "propterygium" } ],
+        "insertion": [ { "muscle": "interhyoideus" } ]
+      },
+      "attachmentNote": "Rhinobatos percellens, Huber et al. (2011) Table 3: origin propterygium of the pectoral fin, insertion the ventral hyoid constrictor (filed above on `interhyoideus`). See the dorsal superficial branchial constrictor row for the shared description.",
+      "region": "cranial",
+      "record": "branchial-constrictors"
+    },
+    {
+      "name": "Branchial adductor",
+      "region": "cranial",
+      "present": "no",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011), Batoid Musculature: 'Although not found in R. percellens, many batoids possess branchial adductor muscles that originate and insert upon the epibranchial and ceratobranchial cartilages, and adduct these structures.' An explicit, species-specific absence rather than an unrecorded muscle — recorded present: \"no\" so the observation is not lost, and parked because no record here is named 'branchial adductor' or carries it as a synonym (the same gap as Squalus's own unfiled 'Branchial adductor', Table 2). No attachments to score, since the source states the muscle is absent.",
+      "muscle": null
+    }
+  ]
+}

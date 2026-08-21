@@ -16,6 +16,19 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
+> **Delegated mining works, with one integrator.** The first trial ran on
+> 2026-08-20: a subagent mined two of Huber et al.'s three animals, requested its
+> species and elements instead of adding them, touched nothing generated, parked
+> rather than guessed, and found three things nobody had — a whole animal missing
+> from the note, the wrong genus on a second, and two mislabelled rows in the
+> file that was already there. It also found that `validate.py` was not read-only.
+> The split that made it safe is in [`MINING.md`](MINING.md#mining-as-a-delegated-job):
+> the miner writes `observations/` and its reading note and nothing else.
+>
+> **Finish Huber et al.'s shark column next.** Table 2 lists 29 muscles; the file
+> holds 6 rows and two of those are mislabelled. It is the cheapest correction
+> outstanding.
+>
 > **Winterbottom (1973) is the biggest thing left and its cheek muscles are done.**
 > They created `constrictor-hyoideus-dorsalis` — a field this dataset had no record
 > for, between the CN V constrictor dorsalis and the CN VII ventral hyoid
@@ -155,9 +168,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 11 | 834 |
-| `not-started` | 64 | 1736 |
+| `not-started` | 64 | 1772 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2650** |
+| **total** | **79** | **2686** |
 
 **11 of 79 cited sources re-mined** (13%).
 <!-- /counts:remine -->
@@ -371,11 +384,13 @@ reading that will not have to be done again.
 | `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
 | `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
+| `huber-etal-2011` | *rhinobatos-percellens* | 11 | no-record 7, nomenclature 2, homology 2 |
 | `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |
 | `russell-bauer-2008` | *tarentola-sp* | 10 | partial 10 |
 | `russell-bauer-2008` | *anolis-sp* | 9 | partial 9 |
 | `walker-1973` | *geochelone-elephantopus* | 9 | partial 9 |
 | `russell-bauer-2008` | *sceloporus-sp* | 8 | partial 8 |
+| `huber-etal-2011` | *hydrolagus-colliei* | 7 | no-record 6, homology 1 |
 | `prikryl-etal-2009` | *ascaphus-truei* | 6 | homology 3, no-record 2, division 1 |
 | `prikryl-etal-2009` | *discoglossus-pictus* | 6 | homology 3, no-record 3 |
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
