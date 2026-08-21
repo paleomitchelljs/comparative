@@ -54,7 +54,7 @@ current.
 > refinements** — `ribs → true-ribs`, `mandible → retroarticular-process` — and is
 > the one worth doing first.
 
-## Four schema limits closed, 2026-08-20
+## Five schema limits closed, 2026-08-20
 
 Both were costing yield on every mining round, and both are now derived rather
 than authored — see [`SCHEMA.md`](SCHEMA.md).
@@ -94,10 +94,18 @@ went to prose. An entry naming a record is symmetric and the join closes it; an
 entry naming a muscle this dataset has no group for stays on the one row. `present`
 stays `yes`, because fusing and losing are different events on a branch.
 
-**Still open:** the extraction key must name exactly one record, so a source's
-umbrella term spanning two records cannot be a key — `deltoid`, `quadriceps
-femoris`, `epicranius`, `digastric`. The observations are not lost; the name a
-reader would search on is.
+**`covers`.** The extraction key must resolve to exactly one record, which is
+right and cost a source's umbrella terms any row at all: `deltoid`, `quadriceps
+femoris`, `epicranius`, `occipitofrontalis` and `digastric` were filed as their
+halves and unfindable by the name a reader would actually use. A row can now carry
+`covers` instead of `record` — a third state beside filed and parked, holding no
+observation, existing so the word resolves. `data/aliases.json` is generated from
+them and the app searches it, so `deltoid` returns both deltoid records and each
+card names the other.
+
+**Nothing on the list is open now.** The five limits audited on 2026-08-20 are all
+closed. What is left is not schema but coverage: 639 rows parked on `partial` from
+Russell & Bauer and Walker, and 69 sources still `not-started`.
 
 ## Task board
 
@@ -336,10 +344,10 @@ reading that will not have to be done again.
 | `walker-1973` | *trionyx-spiniferus* | 24 | partial 24 |
 | `russell-bauer-2008` | *crotaphytus-sp* | 23 | partial 23 |
 | `walker-1973` | *chelodina-longicollis* | 23 | partial 23 |
+| `gest-anatomy-tables` | *homo-sapiens* | 20 | no-record 13, assigned 5, homology 2 |
 | `russell-bauer-2008` | *ameiva-sp* | 19 | partial 19 |
 | `russell-bauer-2008` | *heloderma-sp* | 19 | partial 19 |
 | `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
-| `gest-anatomy-tables` | *homo-sapiens* | 15 | no-record 13, homology 2 |
 | `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
 | `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |

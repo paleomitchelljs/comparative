@@ -10048,6 +10048,56 @@
       "blockedBy": "no-record",
       "blockedNote": "Smooth muscle radiating across the iris, sympathetic through the superior cervical ganglion. It and the sphincter pupillae are the clearest antagonist pair in the body driven by the two divisions of the autonomic system. No record here can hold smooth muscle; see the Dartos row.",
       "muscle": null
+    },
+    {
+      "name": "Deltoid",
+      "region": "pectoral",
+      "record": null,
+      "covers": [
+        "deltoideus-clavicularis",
+        "deltoideus-scapularis"
+      ],
+      "note": "Gest gives the deltoid one entry with three origins — the lateral third of the clavicle, the acromion, and the lower lip of the scapular spine — and one insertion on the deltoid tuberosity. **This dataset splits it at the clavicle**, because the clavicular and scapular deltoids are separate muscles in the outgroups and only fuse into a single mass in mammals. The three origins are on the two rows between them: the clavicular head on `deltoideus-clavicularis`, the acromial and spinous heads on `deltoideus-scapularis`. This row carries no observation — it exists so the commonest name for the muscle finds them."
+    },
+    {
+      "name": "Quadriceps femoris",
+      "region": "thigh",
+      "record": null,
+      "covers": [
+        "extensor-iliotibialis",
+        "femorotibialis"
+      ],
+      "note": "Gest's single entry for the four-headed knee extensor. **The rectus femoris and the three vasti come from two different ancestral muscles**, which is why the rectus crosses the hip and the vasti do not: the rectus is on `extensor-iliotibialis` and the vasti on `femorotibialis`. One human muscle group, two homology groups, and the joint each part spans is the tell."
+    },
+    {
+      "name": "Epicranius",
+      "region": "cranial",
+      "record": null,
+      "covers": [
+        "occipitalis",
+        "interhyoideus"
+      ],
+      "note": "Frontalis and occipitalis, the two bellies of one muscle across the galea aponeurotica. The occipital belly has its own record; the frontal one does not and is scored on `interhyoideus`, the ancestral hyoid-arch sheet, with the rest of the facial musculature that has no record of its own. Gest lists the pair again under `occipitofrontalis`."
+    },
+    {
+      "name": "Occipitofrontalis",
+      "region": "cranial",
+      "record": null,
+      "covers": [
+        "occipitalis",
+        "interhyoideus"
+      ],
+      "note": "Gest's second name for the epicranius; see that row."
+    },
+    {
+      "name": "Digastric",
+      "region": "cranial",
+      "record": null,
+      "covers": [
+        "intermandibularis",
+        "depressor-mandibulae"
+      ],
+      "note": "**Two bellies, two arches, two nerves.** The anterior belly is a first-arch muscle on the mandibular trigeminal and is scored on `intermandibularis` with the mylohyoid; the posterior belly is a second-arch muscle on the facial nerve and is scored on `depressor-mandibulae` with the stylohyoid. They share a tendon and nothing else, and a reader who knows the muscle by its clinical name would otherwise find neither half."
     }
   ]
 }

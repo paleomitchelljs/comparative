@@ -796,6 +796,44 @@ def main():
                     err(f"{where}: region '{ob.get('region')}' but record '{rec}' "
                         f"is in '{region_of[rec]}'")
                 continue
+
+            # A row can carry no record for two different reasons, and they are
+            # not the same claim.
+            #
+            # `covers` is the third state: the source's name is an umbrella over
+            # several records — Gest's `deltoid`, `quadriceps femoris`,
+            # `digastric`. Nobody is stuck; the observation is on the rows for
+            # each half, and this row exists only so the word resolves. The
+            # extraction key has to name exactly one record, so before this
+            # existed such a term could not be written down at all and five of
+            # Gest's entries had no row of any kind.
+            cov = ob.get("covers")
+            if cov is not None:
+                if ob.get("blockedBy"):
+                    err(f"{where}: has both `covers` and `blockedBy`. An umbrella "
+                        f"name is resolved into several records, not blocked")
+                if not isinstance(cov, list) or len(cov) < 2:
+                    err(f"{where}: `covers` needs at least two records — one is "
+                        f"what `record` is for")
+                for r in cov if isinstance(cov, list) else []:
+                    if r not in muscle_ids:
+                        err(f"{where}: covers '{r}', which is not a muscle record")
+                    elif not any(o.get("species") == fsp
+                                 for o in muscles[r][0].get("occurrences") or []):
+                        err(f"{where}: covers '{r}', which has no occurrence for "
+                            f"{fsp} — the halves are where the observation lives, "
+                            f"and this row only points at them")
+                if not ob.get("name"):
+                    err(f"{where}: needs the source's own `name` — the name is the "
+                        f"entire content of a `covers` row")
+                if not (ob.get("note") or ob.get("blockedNote")):
+                    warn(f"{where}: `covers` with no prose. Say what the source's "
+                         f"term means and why this dataset splits it")
+                if ob.get("attachments"):
+                    err(f"{where}: `covers` row carries attachments. It is an index "
+                        f"entry, not an observation — put them on the halves")
+                continue
+
             # Unassigned. It must say what is missing.
             bb = ob.get("blockedBy")
             if bb not in blocked_kinds:

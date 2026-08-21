@@ -95,7 +95,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-760 extracted observations from 9 sources are waiting for a record (639 on partial, 58 on no-record, 28 on nomenclature, 19 on homology, 12 on division, 4 on occupied). They carry no coverage weight — they are mining already done.
+765 extracted observations from 9 sources are waiting for a record (639 on partial, 58 on no-record, 28 on nomenclature, 19 on homology, 12 on division, 5 on assigned, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->

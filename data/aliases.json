@@ -1,0 +1,75 @@
+{
+  "$comment": "GENERATED — do not edit. Names a source uses for something this dataset splits across several records. The extraction key (species, source, name, region) has to resolve to one record, so a term spanning two cannot be a key; these rows carry `covers` instead of `record`, hold no observation of their own, and exist so the word still finds its muscles. Written by build_observations.py --join.",
+  "aliases": [
+    {
+      "name": "deltoid",
+      "region": "pectoral",
+      "records": [
+        "deltoideus-clavicularis",
+        "deltoideus-scapularis"
+      ],
+      "sources": [
+        "gest-anatomy-tables"
+      ],
+      "species": [
+        "homo-sapiens"
+      ]
+    },
+    {
+      "name": "digastric",
+      "region": "cranial",
+      "records": [
+        "depressor-mandibulae",
+        "intermandibularis"
+      ],
+      "sources": [
+        "gest-anatomy-tables"
+      ],
+      "species": [
+        "homo-sapiens"
+      ]
+    },
+    {
+      "name": "epicranius",
+      "region": "cranial",
+      "records": [
+        "interhyoideus",
+        "occipitalis"
+      ],
+      "sources": [
+        "gest-anatomy-tables"
+      ],
+      "species": [
+        "homo-sapiens"
+      ]
+    },
+    {
+      "name": "occipitofrontalis",
+      "region": "cranial",
+      "records": [
+        "interhyoideus",
+        "occipitalis"
+      ],
+      "sources": [
+        "gest-anatomy-tables"
+      ],
+      "species": [
+        "homo-sapiens"
+      ]
+    },
+    {
+      "name": "quadriceps femoris",
+      "region": "thigh",
+      "records": [
+        "extensor-iliotibialis",
+        "femorotibialis"
+      ],
+      "sources": [
+        "gest-anatomy-tables"
+      ],
+      "species": [
+        "homo-sapiens"
+      ]
+    }
+  ]
+}

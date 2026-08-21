@@ -805,6 +805,41 @@ order and its original source order, which together make the join byte-identical
 **A row written by hand needs none of them.** It sorts after the rows that have
 one, and its own field order is used.
 
+### Rows with `covers` — the source's name spans several records
+
+```jsonc
+{ "name": "Digastric", "region": "cranial", "record": null,
+  "covers": ["intermandibularis", "depressor-mandibulae"],
+  "note": "Two bellies, two arches, two nerves…" }
+```
+
+The extraction key is `(species, source, name, region)` and **must resolve to
+exactly one record** — `validate.py` errors otherwise, because a name that means
+two things is a name nobody can look anything up by. That is right, and it has a
+cost: a source's umbrella term genuinely spanning two records could not be written
+down **at all**. Five of Gest's entries had no row of any kind: `deltoid`,
+`quadriceps femoris`, `epicranius`, `occipitofrontalis`, `digastric`.
+
+A `covers` row is the third state a row can be in, beside filed and parked:
+
+| | `record` | Means |
+|---|---|---|
+| filed | an id | Becomes an occurrence |
+| parked | `null` + `blockedBy` | Nobody has decided. See above |
+| **covers** | `null` + `covers` | **Resolved into several records.** The observation is on the rows for each half; this row exists so the word finds them |
+
+It is **not** parked and must not carry `blockedBy` — nobody is stuck. It carries
+no attachments either, and the validator errors on both: it is an index entry, not
+an observation, and putting attachments on it would give one reading two homes.
+Every covered record must already have an occurrence for that animal, because the
+halves are where the observation lives.
+
+**Two consumers.** `data/mapping/<source>.json` keys it like any other name, with
+`covers` in place of `record`. And `data/aliases.json` — generated, one flat file —
+is what the app reads, because it cannot fetch eighty mapping files to answer what
+the word *deltoid* means here. Searching `deltoid` returns both deltoid records and
+each card names the other.
+
 ### Rows with `record: null` — parked
 
 An occurrence has to sit inside a muscle record, so an observation whose record was

@@ -65,13 +65,14 @@ const state = {
 /* ---------- boot ---------- */
 
 async function boot() {
-  const [taxaDoc, speciesDoc, sourcesDoc, skeletonDoc, nervesDoc, jointsDoc, ...muscleDocs] = await Promise.all([
+  const [taxaDoc, speciesDoc, sourcesDoc, skeletonDoc, nervesDoc, jointsDoc, aliasDoc, ...muscleDocs] = await Promise.all([
     fetchJSON('data/taxa.json'),
     fetchJSON('data/species.json'),
     fetchJSON('data/sources.json'),
     fetchJSON('data/skeleton.json'),
     fetchJSON('data/nerves.json'),
     fetchJSON('data/joints.json'),
+    fetchJSON('data/aliases.json'),
     ...DATA_FILES.map(fetchJSON)
   ]);
 
@@ -84,6 +85,13 @@ async function boot() {
 
   state.joints = jointsDoc.joints;
   jointsDoc.joints.forEach(j => state.jointsById.set(j.id, j));
+
+  /* A source's name for something this dataset splits across several records —
+     `deltoid`, `quadriceps femoris`, `digastric`. The extraction key has to
+     resolve to one record, so these cannot be occurrence names and would
+     otherwise be unsearchable: the commonest word for a muscle finding nothing.
+     Indexed against every record it covers, so one query returns both halves. */
+  state.aliases = aliasDoc.aliases || [];
 
   state.taxa = taxaDoc.taxa;
   taxaDoc.taxa.forEach(t => state.taxaById.set(t.id, t));
@@ -134,6 +142,12 @@ function flattenTopology(node, out) {
    that matched is reported back so the result card can show WHY it matched —
    which is the whole point when the literature uses six names per muscle. */
 function buildIndex() {
+  const aliasFor = new Map();          // record id -> [{name, records}]
+  (state.aliases || []).forEach(a => a.records.forEach(r => {
+    if (!aliasFor.has(r)) aliasFor.set(r, []);
+    aliasFor.get(r).push(a);
+  }));
+
   state.index = state.muscles.map(m => {
     const terms = [];
     const push = (text, kind, extra) => {
@@ -143,6 +157,12 @@ function buildIndex() {
 
     push(m.name, 'name');
     (m.synonyms || []).forEach(s => push(s, 'synonym'));
+    (aliasFor.get(m.id) || []).forEach(a => push(
+      a.name, 'alias',
+      /* Say what else the word covers, so a hit explains itself: searching
+         "deltoid" returns two cards and each names the other. */
+      a.records.filter(r => r !== m.id)
+        .map(r => state.byId.get(r)?.name || r).join(', ')));
     (m.occurrences || []).forEach(o => {
       if (o.name && normalise(o.name) !== normalise(m.name)) {
         push(o.name, 'taxon-name', state.taxaById.get(o.taxon)?.clade || o.taxon);
@@ -269,7 +289,7 @@ function search(qRaw) {
    Bands are wider than the 0-4 match scale so they never interleave: every
    name match beats every description match, whatever the match quality. */
 const KIND_PENALTY = {
-  name: 0, synonym: 0, 'taxon-name': 0,
+  name: 0, synonym: 0, 'taxon-name': 0, alias: 0,
   attachment: 10, part: 10, group: 10, nerve: 10, joint: 10, motion: 10,
   origin: 20, insertion: 20, action: 20, innervation: 20, development: 20,
 };
@@ -523,6 +543,9 @@ function renderList() {
 
   const HIT_LABEL = {
     'taxon-name': 'name', synonym: 'also known as', attachment: 'attaches to',
+    /* A source's umbrella term. The card names the other records it covers, so
+       "deltoid" returns two cards and each says what the other is. */
+    alias: 'covers this and',
     part: 'part', group: 'group', development: 'development',
     joint: 'crosses', motion: 'motion',
     origin: 'origin', insertion: 'insertion',
@@ -550,7 +573,9 @@ function renderList() {
          and gives no reason. `extra` carries the clade for taxon-specific
          rows, so a hit on the therian innervation says so. */
       const base = HIT_LABEL[hit.kind] || 'also known as';
-      const label = hit.extra ? `${esc(hit.extra)} ${base}` : base;
+      const label = hit.kind === 'alias'
+        ? (hit.extra ? `${base} ${esc(hit.extra)}` : 'source term for this')
+        : hit.extra ? `${esc(hit.extra)} ${base}` : base;
       hitLine = `<div class="hit">${label}: <em>${esc(clip(hit.text))}</em></div>`;
     }
     return `<article class="mcard" data-goto="${m.id}" tabindex="0">

@@ -496,13 +496,19 @@ carries as a strut of its jaw suspension.
 
 **239 distinct muscles in `muscles_alpha.html`: 222 filed, 17 parked, none dropped.**
 
-Five entries are filed without a row of their own, and they are worth naming so the
-arithmetic can be checked. `epicranius` and `occipitofrontalis` are frontalis plus
-occipitalis; `quadriceps femoris` is rectus femoris plus the three vasti; `deltoid`
-is the clavicular plus the scapular deltoid; `digastric` is the anterior belly on
-`intermandibularis` plus the posterior belly on `depressor-mandibulae`. Each spans
-two records, the extraction key `(species, source, name, region)` has to name
-exactly one, and the halves carry the observation between them.
+Five entries are filed as their halves and are worth naming so the arithmetic can be
+checked. `epicranius` and `occipitofrontalis` are frontalis plus occipitalis;
+`quadriceps femoris` is rectus femoris plus the three vasti; `deltoid` is the
+clavicular plus the scapular deltoid; `digastric` is the anterior belly on
+`intermandibularis` plus the posterior belly on `depressor-mandibulae`.
+
+**Each spans two records, and until 2026-08-20 that meant no row at all.** The
+extraction key `(species, source, name, region)` has to resolve to one record, so
+the five commonest names in the table — a clinician would use every one of them —
+were unfindable. They now have `covers` rows: no observation of their own, the
+halves still carrying it, and the word resolving to both. Searching *digastric*
+returns the intermandibularis and the depressor mandibulae, and each card names the
+other.
 
 **The seven regional files were parsed and checked against the alphabetical one.**
 They carry 283 names between them and not one that the alphabetical table lacks, so

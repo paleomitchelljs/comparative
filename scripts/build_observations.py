@@ -50,7 +50,7 @@ OCC_DROP = {"species", "sources", "spans", "fusedWith"}
 # `muscle` only exist while it is unassigned; the underscore fields are the
 # round-trip machinery `split()` wrote and a hand-written row will not have.
 EXTRACTION_ONLY = {"record", "region", "blockedBy", "blockedNote", "muscle",
-                   "_occ", "_keys", "_srcs", "_id"}
+                   "covers", "_occ", "_keys", "_srcs", "_id"}
 
 # Sorts a row with no `_occ` after every row that has one, without inventing an
 # index for it. See `join`.
@@ -219,12 +219,31 @@ def write_mapping():
     Editing a file here does nothing. Change `record` on the rows.
     """
     view = collections.defaultdict(lambda: collections.defaultdict(
-        lambda: {"record": None, "species": set()}))
+        lambda: {"record": None, "covers": None, "species": set()}))
     unassigned = collections.Counter()
+    aliases = collections.defaultdict(lambda: {"records": set(), "sources": set(),
+                                               "species": set(), "region": None})
     for f in sorted(OBS.glob("*.json")):
         doc = json.load(open(f))
         for row in doc.get("observations") or []:
             nm = (row.get("name") or "").strip().lower()
+            # A name the SOURCE uses for something this dataset splits across
+            # several records — Gest's `deltoid`, `quadriceps femoris`,
+            # `digastric`. The observation lives on the rows for each half; this
+            # row exists only so the name resolves, because the extraction key
+            # has to name exactly one record and a term spanning two therefore
+            # could not be written down at all.
+            if row.get("covers"):
+                if nm:
+                    e = view[doc["source"]][f"{nm}|{row.get('region')}"]
+                    e["covers"] = sorted(row["covers"])
+                    e["species"].add(doc["species"])
+                    a = aliases[(nm, row.get("region"))]
+                    a["records"].update(row["covers"])
+                    a["sources"].add(doc["source"])
+                    a["species"].add(doc["species"])
+                    a["region"] = row.get("region")
+                continue
             if not row.get("record"):
                 unassigned[doc["source"]] += 1
                 continue
@@ -237,7 +256,9 @@ def write_mapping():
     MAP.mkdir(parents=True, exist_ok=True)
     keep = set()
     for src in sorted(set(view) | set(unassigned)):
-        table = {k: {"record": v["record"], "species": sorted(v["species"])}
+        table = {k: ({"covers": v["covers"], "species": sorted(v["species"])}
+                     if v["covers"] else
+                     {"record": v["record"], "species": sorted(v["species"])})
                  for k, v in sorted(view.get(src, {}).items())}
         doc = {
             "source": src,
@@ -258,6 +279,28 @@ def write_mapping():
     for f in MAP.glob("*.json"):
         if f.name not in keep:
             f.unlink()
+
+    # One flat file for the app, which cannot fetch eighty mapping files to
+    # answer "what does the word deltoid mean here". Generated from the same
+    # rows; never edited.
+    alias_doc = {
+        "$comment": ("GENERATED — do not edit. Names a source uses for something "
+                     "this dataset splits across several records. The extraction "
+                     "key (species, source, name, region) has to resolve to one "
+                     "record, so a term spanning two cannot be a key; these rows "
+                     "carry `covers` instead of `record`, hold no observation of "
+                     "their own, and exist so the word still finds its muscles. "
+                     "Written by build_observations.py --join."),
+        "aliases": [
+            {"name": nm, "region": v["region"], "records": sorted(v["records"]),
+             "sources": sorted(v["sources"]), "species": sorted(v["species"])}
+            for (nm, _), v in sorted(aliases.items())
+        ],
+    }
+    ap = ROOT / "data/aliases.json"
+    text = json.dumps(alias_doc, indent=2, ensure_ascii=False) + "\n"
+    if not ap.exists() or ap.read_text() != text:
+        ap.write_text(text)
     return len(keep)
 
 
