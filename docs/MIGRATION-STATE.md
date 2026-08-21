@@ -16,10 +16,13 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
-> **Winterbottom (1973) is the next job and fifteen parked rows point at it.**
-> Jayaram et al.'s palatal and opercular muscles have no records here, and
-> Winterbottom's 93-page teleost synonymy carries every one of those names. It is
-> cited already, for the fin muscles, and `not-started`.
+> **Winterbottom (1973) is the biggest thing left and its cheek muscles are done.**
+> They created `constrictor-hyoideus-dorsalis` — a field this dataset had no record
+> for, between the CN V constrictor dorsalis and the CN VII ventral hyoid
+> constrictor — and unparked all fifteen Jayaram rows. The ventral head, both
+> branchial series and the body musculature remain, and every name in them carries
+> a full synonymy. **It is the largest body of scorable teleost myology in the
+> corpus.**
 >
 > **Bauer (1997) is done: 12 animals of 12, where the file had one.** Re-run the
 > ranking fresh — four sources came off it today.
@@ -151,10 +154,10 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 11 | 819 |
-| `not-started` | 64 | 1731 |
+| `remined` | 11 | 834 |
+| `not-started` | 64 | 1736 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2630** |
+| **total** | **79** | **2650** |
 
 **11 of 79 cited sources re-mined** (13%).
 <!-- /counts:remine -->
@@ -162,7 +165,9 @@ second copy.
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Eleven sources have cleared that bar:
+parked**, and the note states the arithmetic. Eleven sources have cleared that bar
+(Jayaram et al. finished with nothing parked at all, because the record its parks
+were waiting for was created the same day):
 
 - **Jayaram, Dhanze & Singh (1983)** — cranial muscles of three *Arius* catfishes.
   **20 muscles, three animals, 59 rows: 44 filed, 15 parked.** It had held **three
@@ -376,9 +381,6 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
 | `russell-bauer-2008` | *ophisaurus-sp* | 6 | partial 6 |
 | `widrig-etal-2023` | *nothoprocta-pentlandii* | 6 | homology 4, no-record 1, nomenclature 1 |
-| `jayaram-etal-1983` | *arius-arius* | 5 | no-record 5 |
-| `jayaram-etal-1983` | *arius-caelatus* | 5 | no-record 5 |
-| `jayaram-etal-1983` | *arius-thalassinus* | 5 | no-record 5 |
 | `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |
 | `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
 | `prikryl-etal-2009` | *barbourula-busuangensis* | 4 | no-record 2, homology 2 |

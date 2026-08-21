@@ -3756,9 +3756,10 @@
         "notes": "Jaw opening is an arch 2 (CN VII) function, jaw closing an arch 1 (CN V) function, throughout Gnathostomata. The digastric preserves both in one named muscle.\n\n**Diogo et al. (2008) trace where this muscle goes in mammals, and it is not one muscle.** Against Edgeworth (1935), who derived the monotreme styloideus and the therian stylohyoideus from the interhyoideus, they follow Huber (1930a) and Saban (1968, 1971): the monotreme **styloideus and stapedius**, and the therian **stylohyoideus, digastricus posterior, jugulohyoideus, stapedius** and possibly mandibulo-auricularis, all correspond to the depressor mandibulae of reptiles such as *Timon*. Gasser's (1967) developmental work supports it from the other end — in modern humans the digastricus posterior, stapedius and stylohyoideus arise from one anlage. So the reptilian jaw opener is the source of a middle-ear muscle, a hyoid suspensor and half a digastric, and the human row on this record holds only part of what the reptilian row holds.",
         "related": [
           "adductor-mandibulae",
+          "ceratomandibularis",
+          "constrictor-hyoideus-dorsalis",
           "interhyoideus",
-          "stapedius",
-          "ceratomandibularis"
+          "stapedius"
         ],
         "teaching": "The digastric is the cleanest single dissection for making the arch system tangible — one muscle, two nerves, two arches, one tendon.",
         "authority": {
@@ -4837,6 +4838,7 @@
           "buccinatorius",
           "ceratomandibularis",
           "cervicalis-transversa",
+          "constrictor-hyoideus-dorsalis",
           "depressor-mandibulae",
           "dilatator-nasi",
           "interhyoideus-profundus",
@@ -8595,6 +8597,7 @@
         "notes": "The spiracular series is important for the origin of the tetrapod middle ear: the spiracular pouch is the ancestor of the tympanic cavity, and the mandibular-arch identity of the region is preserved by trigeminal innervation. Gai et al. (2022) trace the spiracular region from jawless fishes to tetrapods, which is the fossil evidence behind treating the spiracular pouch as antecedent to the tympanic cavity — a claim this record previously made without a source.\n\nDistribution, as the sources give it: present in chondrichthyans and osteichthyans, and probably lost in holocephalans, which Ziermann & Diogo (2019) relate to the fusion of the palatoquadrate with the neurocranium in that clade (after Ziermann et al. 2014; Miyake et al. 1992; Anderson 2008). **No source here states the muscle's fate in mammals.** This record carried a *present: \"no\"* row for Acinonyx jubatus with no source and a guessed species, reasoning from suspensorium-to-braincase fusion — which is the holocephalan argument transplanted to a mammal by nobody in particular. The row is gone: an unobserved absence is unrecorded, not observed. Didier (1987), a holocephalan myology thesis already in `papers/`, is the way to turn the chimaera loss into a species-level row.",
         "related": [
           "adductor-mandibulae",
+          "constrictor-hyoideus-dorsalis",
           "stapedius"
         ],
         "teaching": "Connects jaw suspension, gill slits and the middle ear in one developmental field.",
@@ -8626,6 +8629,826 @@
         {
           "joint": "suspensorium",
           "motion": "elevation"
+        }
+      ],
+      "spans": {
+        "origin": [
+          "cranial"
+        ],
+        "insertion": [
+          "cranial"
+        ],
+        "crosses": false
+      }
+    },
+    {
+      "id": "constrictor-hyoideus-dorsalis",
+      "name": "Constrictor hyoideus dorsalis",
+      "region": "cranial",
+      "subregion": "hyoid arch (arch 2) — dorsal",
+      "segment": "cranial",
+      "mass": "branchiomeric",
+      "arch": 2,
+      "developmental": "Second (hyoid) pharyngeal arch mesoderm, dorsal division. Winterbottom (1973), after Edgeworth (1935), derives the adductor arcus palatini from its anterior portion and the levator and adductor operculi from its posterior portion.",
+      "synonyms": [
+        "adductor arcus palatini",
+        "levator operculi",
+        "adductor operculi",
+        "adductor hyomandibulae",
+        "extensor tentaculi (siluriforms)",
+        "retractor arcus palatini (tetraodontiforms, acanthurids)"
+      ],
+      "consensus": {
+        "origin": "Lateral wall and floor of the braincase — chiefly the parasphenoid and prootic, and variously the pterotic, sphenotic, opisthotic, orbitosphenoid, basisphenoid, lateral ethmoid and the dorsal elements of the pectoral girdle.",
+        "insertion": "Hyomandibular and metapterygoid, and the dorsal or dorsomedial face of the opercle.",
+        "action": "Adducts the suspensorium and the opercle against the braincase — the closing half of the respiratory cycle, against the abducting levator arcus palatini and dilatator operculi.",
+        "innervation": "Ramus hyomandibularis of the facial nerve (CN VII)."
+      },
+      "attachments": {
+        "origin": [
+          {
+            "element": "parasphenoid"
+          },
+          {
+            "element": "prootic"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          },
+          {
+            "element": "metapterygoid"
+          },
+          {
+            "element": "opercle"
+          }
+        ]
+      },
+      "occurrences": [
+        {
+          "species": "arius-arius",
+          "speciesBasis": "note",
+          "name": "Adductor arcus palatini",
+          "present": "yes",
+          "division": "divided",
+          "divisionNote": "Jayaram et al. describe five of the sheet's named muscles as separate entities in *Arius* — adductor arcus palatini, extensor tentaculi, levator operculi, adductor operculi and adductor hyomandibulae — where Winterbottom (1973) says the boundaries between them hold in some fishes and not others. Here they are separable, so the record is divided and the five are its parts.",
+          "sources": [
+            "jayaram-etal-1983"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "parasphenoid",
+                "side": "lateral"
+              },
+              {
+                "element": "lateral-ethmoid",
+                "side": "ventral"
+              },
+              {
+                "element": "orbitosphenoid"
+              },
+              {
+                "element": "pterotic",
+                "side": "lateral"
+              },
+              {
+                "element": "post-temporal"
+              },
+              {
+                "element": "pterotic",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              },
+              {
+                "element": "metapterygoid"
+              },
+              {
+                "element": "autopalatine",
+                "side": "distal"
+              },
+              {
+                "element": "ectopterygoid"
+              },
+              {
+                "element": "opercle",
+                "side": "dorsal"
+              },
+              {
+                "element": "hyomandibula-stapes",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Arius arius, Jayaram et al. (1983). Massively developed, filling the space between the braincase and the pterygo-hyomandibular arch, lying under the mucous membrane of the mouth roof beside the parasphenoid, and inserting on the hyomandibular and metapterygoid. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius arius, Jayaram et al. (1983). See the record's own notes. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius arius, Jayaram et al. (1983). Under the skin behind the dilator operculi, from the ventrolateral pterotic and the post-temporal onto the dorsomesial opercle. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius arius, Jayaram et al. (1983). Beneath the levator operculi and separated from it by a connective membrane. From the ventrolateral pterotic, running downwards in a divergent manner onto the inner dorsal opercle. One of the muscles the authors list as identical in all three species. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius arius, Jayaram et al. (1983). Moderately developed, under the levator operculi. From the ventral pterotic, running forward and down onto the posterodorsal projection of the hyomandibular, partly aponeurotic and partly musculous. Identical in all three species. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.",
+          "parts": [
+            {
+              "name": "Adductor arcus palatini",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "parasphenoid",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes"
+                  },
+                  {
+                    "element": "metapterygoid"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Extensor tentaculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "lateral-ethmoid",
+                    "side": "ventral"
+                  },
+                  {
+                    "element": "orbitosphenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "autopalatine",
+                    "side": "distal"
+                  },
+                  {
+                    "element": "ectopterygoid"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Levator operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "post-temporal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Adductor operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Adductor hyomandibulae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial",
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "arius-caelatus",
+          "speciesBasis": "note",
+          "name": "Adductor arcus palatini",
+          "present": "yes",
+          "division": "divided",
+          "divisionNote": "Jayaram et al. describe five of the sheet's named muscles as separate entities in *Arius* — adductor arcus palatini, extensor tentaculi, levator operculi, adductor operculi and adductor hyomandibulae — where Winterbottom (1973) says the boundaries between them hold in some fishes and not others. Here they are separable, so the record is divided and the five are its parts.",
+          "sources": [
+            "jayaram-etal-1983"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "parasphenoid",
+                "side": "lateral"
+              },
+              {
+                "element": "orbitosphenoid"
+              },
+              {
+                "element": "lateral-ethmoid",
+                "side": "ventral"
+              },
+              {
+                "element": "pterotic",
+                "side": "lateral"
+              },
+              {
+                "element": "post-temporal"
+              },
+              {
+                "element": "pterotic",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              },
+              {
+                "element": "metapterygoid"
+              },
+              {
+                "element": "autopalatine",
+                "side": "distal"
+              },
+              {
+                "element": "ectopterygoid"
+              },
+              {
+                "element": "opercle",
+                "side": "dorsal"
+              },
+              {
+                "element": "hyomandibula-stapes",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Arius caelatus, Jayaram et al. (1983). Massively developed, filling the space between the braincase and the pterygo-hyomandibular arch, lying under the mucous membrane of the mouth roof beside the parasphenoid, and inserting on the hyomandibular and metapterygoid. **In *A. caelatus* some fibres reach forward onto the orbitosphenoid**, which they do not in the other two. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius caelatus, Jayaram et al. (1983). See the record's own notes. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius caelatus, Jayaram et al. (1983). Under the skin behind the dilator operculi, from the ventrolateral pterotic and the post-temporal onto the dorsomesial opercle. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius caelatus, Jayaram et al. (1983). Beneath the levator operculi and separated from it by a connective membrane. From the ventrolateral pterotic, running downwards in a divergent manner onto the inner dorsal opercle. One of the muscles the authors list as identical in all three species. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius caelatus, Jayaram et al. (1983). Moderately developed, under the levator operculi. From the ventral pterotic, running forward and down onto the posterodorsal projection of the hyomandibular, partly aponeurotic and partly musculous. Identical in all three species. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.",
+          "parts": [
+            {
+              "name": "Adductor arcus palatini",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "parasphenoid",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "orbitosphenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes"
+                  },
+                  {
+                    "element": "metapterygoid"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Extensor tentaculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "lateral-ethmoid",
+                    "side": "ventral"
+                  },
+                  {
+                    "element": "orbitosphenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "autopalatine",
+                    "side": "distal"
+                  },
+                  {
+                    "element": "ectopterygoid"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Levator operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "post-temporal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Adductor operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Adductor hyomandibulae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial",
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "arius-thalassinus",
+          "speciesBasis": "note",
+          "name": "Adductor arcus palatini",
+          "present": "yes",
+          "division": "divided",
+          "divisionNote": "Jayaram et al. describe five of the sheet's named muscles as separate entities in *Arius* — adductor arcus palatini, extensor tentaculi, levator operculi, adductor operculi and adductor hyomandibulae — where Winterbottom (1973) says the boundaries between them hold in some fishes and not others. Here they are separable, so the record is divided and the five are its parts.",
+          "sources": [
+            "jayaram-etal-1983"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "parasphenoid",
+                "side": "lateral"
+              },
+              {
+                "element": "lateral-ethmoid",
+                "side": "ventral"
+              },
+              {
+                "element": "orbitosphenoid"
+              },
+              {
+                "element": "pterotic",
+                "side": "lateral"
+              },
+              {
+                "element": "post-temporal"
+              },
+              {
+                "element": "pterotic",
+                "side": "ventral"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              },
+              {
+                "element": "metapterygoid"
+              },
+              {
+                "element": "autopalatine",
+                "side": "distal"
+              },
+              {
+                "element": "ectopterygoid"
+              },
+              {
+                "element": "opercle",
+                "side": "dorsal"
+              },
+              {
+                "element": "hyomandibula-stapes",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Arius thalassinus, Jayaram et al. (1983). Massively developed, filling the space between the braincase and the pterygo-hyomandibular arch, lying under the mucous membrane of the mouth roof beside the parasphenoid, and inserting on the hyomandibular and metapterygoid. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius thalassinus, Jayaram et al. (1983). See the record's own notes. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius thalassinus, Jayaram et al. (1983). Under the skin behind the dilator operculi, from the ventrolateral pterotic and the post-temporal onto the dorsomesial opercle, with some fibres attached by tendon. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius thalassinus, Jayaram et al. (1983). Beneath the levator operculi and separated from it by a connective membrane. From the ventrolateral pterotic, running downwards in a divergent manner onto the inner dorsal opercle, with some fibres attached aponeurotically on the pterotic here. One of the muscles the authors list as identical in all three species. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.\n\nArius thalassinus, Jayaram et al. (1983). Moderately developed, under the levator operculi. From the ventral pterotic, running forward and down onto the posterodorsal projection of the hyomandibular, partly aponeurotic and partly musculous. Identical in all three species. Parked on `no-record` when this source was mined and promoted the same day, once `constrictor-hyoideus-dorsalis` was created from Winterbottom (1973) — who derives every one of these muscles from one CN VII sheet.",
+          "parts": [
+            {
+              "name": "Adductor arcus palatini",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "parasphenoid",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes"
+                  },
+                  {
+                    "element": "metapterygoid"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Extensor tentaculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "lateral-ethmoid",
+                    "side": "ventral"
+                  },
+                  {
+                    "element": "orbitosphenoid"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "autopalatine",
+                    "side": "distal"
+                  },
+                  {
+                    "element": "ectopterygoid"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Levator operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "lateral"
+                  },
+                  {
+                    "element": "post-temporal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Adductor operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "lateral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            },
+            {
+              "name": "Adductor hyomandibulae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic",
+                    "side": "ventral"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "jayaram-etal-1983"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "cranial",
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "teleostei-generalised",
+          "speciesBasis": "generalised",
+          "name": "Adductor arcus palatini",
+          "present": "yes",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Adductor arcus palatini"
+            },
+            {
+              "name": "Levator operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pterotic"
+                  },
+                  {
+                    "element": "sphenotic"
+                  },
+                  {
+                    "element": "post-temporal"
+                  },
+                  {
+                    "element": "hyomandibula-stapes"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "winterbottom-1973"
+              ]
+            },
+            {
+              "name": "Adductor operculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "prootic"
+                  },
+                  {
+                    "element": "pterotic"
+                  },
+                  {
+                    "element": "opisthotic"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "opercle",
+                    "side": "dorsal"
+                  }
+                ]
+              },
+              "sources": [
+                "winterbottom-1973"
+              ]
+            },
+            {
+              "name": "Adductor hyomandibulae",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "prootic"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyomandibula-stapes",
+                    "side": "medial"
+                  }
+                ]
+              },
+              "sources": [
+                "winterbottom-1973"
+              ]
+            },
+            {
+              "name": "Extensor tentaculi",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "parasphenoid"
+                  },
+                  {
+                    "element": "orbitosphenoid"
+                  },
+                  {
+                    "element": "prootic"
+                  },
+                  {
+                    "element": "frontal"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "autopalatine"
+                  },
+                  {
+                    "element": "maxilla"
+                  }
+                ]
+              },
+              "sources": [
+                "winterbottom-1973"
+              ]
+            },
+            {
+              "name": "Retractor arcus palatini"
+            }
+          ],
+          "divisionNote": "Winterbottom's own headings, and he states that the boundaries between them do not hold: the levator operculi 'may not be separate from the adductor arcus palatini or from the adductor operculi', and the adductor operculi 'may be continuous anteriorly with the adductor arcus palatini'. The parts are named because the literature names them, not because they are separable everywhere.",
+          "sources": [
+            "winterbottom-1973"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "parasphenoid"
+              },
+              {
+                "element": "prootic"
+              },
+              {
+                "element": "pterotic"
+              },
+              {
+                "element": "sphenotic"
+              },
+              {
+                "element": "post-temporal"
+              },
+              {
+                "element": "hyomandibula-stapes"
+              },
+              {
+                "element": "opisthotic"
+              },
+              {
+                "element": "orbitosphenoid"
+              },
+              {
+                "element": "frontal"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              },
+              {
+                "element": "metapterygoid"
+              },
+              {
+                "element": "opercle",
+                "side": "dorsal"
+              },
+              {
+                "element": "hyomandibula-stapes",
+                "side": "medial"
+              },
+              {
+                "element": "autopalatine"
+              },
+              {
+                "element": "maxilla"
+              }
+            ]
+          },
+          "attachmentNote": "Teleostei, Winterbottom (1973). **Not a specimen** — the group's condition, which is what `generalised` says. In the primitive state the muscle stretches between the skull and the hyomandibular behind the orbit; in more advanced forms it expands forward to fill the fissura infraorbitalis and floor the orbit between skull and palatal arch. Origin generally parasphenoid and prootic, with the basisphenoid, pterotic, sphenotic, orbitosphenoid, lateral ethmoid and prefrontal reported in particular fishes; insertion primarily hyomandibular and metapterygoid, sometimes also mesopterygoid, ectopterygoid or symplectic. **It develops from the anterior portion of the constrictor hyoideus dorsalis and takes the ramus hyomandibularis of CN VII**, which is the fact this record is built on. In tetraodontids its anterior fibres cross the midline under the vomer; in ostraciids the whole muscle lies in front of the orbit; in some stomiatoids it is absent altogether.\n\nTeleostei, Winterbottom (1973). Between the lateral skull wall and the opercle, behind the dilatator operculi, **from the posterior portion of the constrictor hyoideus dorsalis** and on the ramus hyomandibularis of CN VII. Sometimes two well-separated slips, the anterior from the pterotic and the posterior from the dorsal elements of the pectoral girdle. It may not be separate from the adductor arcus palatini or from the adductor operculi — the same fibres carry three names depending on the fish.\n\nTeleostei, Winterbottom (1973). Connects the dorsomedial opercle to the lateral skull wall in the auditory region; posterior constrictor hyoideus dorsalis, CN VII. **Origin sites are very varied** — prootic, pterotic, opisthotic, epiotic, exoccipital, intercalar, and in stomiatoids the hyomandibular itself. Only the three that resolve to elements this skeleton holds are scored; the rest are here.\n\nTeleostei, Winterbottom (1973). **The clearest case that these are not stable muscles.** In generalised lower teleosts the adductor arcus palatini runs from the prootic to the dorsomedial hyomandibular and *is* morphologically an adductor hyomandibulae — the name only becomes inappropriate once the muscle expands forward along the floor of the orbit, and Winterbottom applies 'adductor arcus palatini' to both conditions for that reason. In certain fishes a distinct adductor hyomandibulae separates off, either from the posterior adductor arcus palatini or from the anterior fibres of the adductor operculi. Same fibres, two names, and which name applies is a fact about how far forward the muscle reaches.\n\nTeleostei, Winterbottom (1973). **Derived from the adductor arcus palatini**, and the antagonist of the retractor tentaculi in siluriforms; CN VII. It connects the skull to the anterior element of the palatal arch or to the maxilla, and its origin is extremely varied — palatine, metapterygoid, ethmoid, prefrontal, frontal, parasphenoid, orbitosphenoid and prootic have all been reported. This is the muscle that works a catfish's maxillary barbel, and it is a bundle of the dorsal hyoid constrictor that has been given a job the rest of the sheet does not do.",
+          "spans": {
+            "origin": [
+              "cranial",
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
+        }
+      ],
+      "homology": {
+        "confidence": "well-supported",
+        "notes": "**Created 2026-08-20 for a field this dataset had no record of at all.** It held `levator-arcus-palatini` for the *constrictor dorsalis* — mandibular arch, CN V — and `interhyoideus` for the *constrictor hyoideus ventralis*, and nothing for the dorsal division of the hyoid constrictor between them. Fifteen rows from Jayaram et al. (1983) were parked on `no-record` waiting for it.\n\nWinterbottom (1973) is the source it is built from, and he treats the named muscles as differentiations of one embryonic sheet rather than as separate muscles: the adductor arcus palatini from its anterior portion, the levator and adductor operculi from its posterior portion, and the adductor hyomandibulae, extensor tentaculi and retractor arcus palatini as bundles that separate from those. He states repeatedly that the boundaries do not hold — the levator operculi 'may not be separate from the adductor arcus palatini or from the adductor operculi', and the adductor operculi 'may be continuous anteriorly with the adductor arcus palatini'. **Every one of them takes the ramus hyomandibularis of CN VII**, which is what makes the field one field.\n\nThe adductor hyomandibulae is the clearest case that these are not stable muscles. Winterbottom points out that in generalised lower teleosts the adductor arcus palatini runs prootic to hyomandibular and *is* morphologically an adductor hyomandibulae; the name only becomes inappropriate once the muscle expands forward along the floor of the orbit. So the same muscle has two names depending on how far forward it reaches.",
+        "openQuestion": "Whether the dorsal hyoid constrictor of tetrapods — the depressor mandibulae and the stapedius — is the same field. Both are CN VII and both are dorsal hyoid arch, which would make this record their fish counterpart, but no source cited here states it and the tetrapod records are kept separate until one does.",
+        "related": [
+          "interhyoideus",
+          "levator-arcus-palatini",
+          "depressor-mandibulae"
+        ],
+        "teaching": "The pair to teach beside `levator-arcus-palatini`: two constrictor sheets on two arches and two cranial nerves, working the same suspensorium in opposite directions. A fish opens its mouth by abducting the suspensorium with the CN V sheet and closes it by adducting with the CN VII one.",
+        "authority": {
+          "source": "winterbottom-1973",
+          "basis": "computed"
+        }
+      },
+      "sources": [
+        "winterbottom-1973",
+        "jayaram-etal-1983"
+      ],
+      "nerves": [
+        {
+          "nerve": "facial"
         }
       ],
       "spans": {

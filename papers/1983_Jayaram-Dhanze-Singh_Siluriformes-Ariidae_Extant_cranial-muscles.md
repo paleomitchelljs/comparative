@@ -120,18 +120,19 @@ the three carry the paper's sharpest species characters:
 Three species, three states, twice over. That is the taxonomic signal the paper was
 written to look for, and a genus-level row could not have carried either.
 
-**Five muscles park on `no-record`**, and it is a gap in this dataset rather than in
-the paper. The adductor arcus palatini, levator operculi, adductor operculi and
-adductor hyomandibulae are the palatal and opercular series, and the only constrictor
-dorsalis record here is `levator-arcus-palatini`, whose consensus says *elevates and
-abducts the palatoquadrate* — the opposite of what the adductor does. **Winterbottom
-(1973) is what settles them**: 93 pages of teleost synonymy, in `papers/`, already
-cited here for the fin muscles, carrying every one of these names, and `not-started`.
-Mining it is the obvious next job and these fifteen rows point at it.
+**Five muscles parked on `no-record` for a few hours, and were then unparked.** The
+adductor arcus palatini, extensor tentaculi, levator operculi, adductor operculi and
+adductor hyomandibulae had no record here: the only constrictor dorsalis record was
+`levator-arcus-palatini`, whose consensus says *elevates and abducts the
+palatoquadrate*, which is the opposite of what the adductor does — and which turns out
+to be the right instinct for the right reason. **They are not constrictor dorsalis at
+all.** Winterbottom (1973) derives every one of them from the *constrictor hyoideus
+dorsalis*: a different arch, a different nerve, CN VII against CN V.
 
-The fifth is the **extensor tentaculi**, the muscle that works a catfish's maxillary
-barbel. Nothing in this corpus describes a barbel muscle, so it needs a record and a
-comparative source, not just a synonymy.
+`constrictor-hyoideus-dorsalis` was created from Winterbottom the same day and all
+fifteen rows were promoted onto it. The park did its job exactly as `MINING.md`
+describes — the reading was done once, held with its attachments, and cost nothing to
+file when the record appeared.
 
 Eleven new elements for this section: `parasphenoid`, `orbitosphenoid`,
 `lateral-ethmoid`, `autopalatine`, `ectopterygoid`, `metapterygoid`, `post-temporal`,
