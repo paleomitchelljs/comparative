@@ -147,9 +147,9 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 10 | 775 |
-| `not-started` | 65 | 1734 |
+| `not-started` | 65 | 1764 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2589** |
+| **total** | **79** | **2619** |
 
 **10 of 79 cited sources re-mined** (12%).
 <!-- /counts:remine -->

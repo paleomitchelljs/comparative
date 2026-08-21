@@ -751,12 +751,17 @@ def main():
         "occupied": "another worker's row already holds this record for this species",
     }
     occ_keys, muscle_ids, region_of = set(), set(), {}
+    # (record) -> {species}, so a `covers` row can be checked against the halves
+    # it points at without reaching for the `muscles` index, which is not built
+    # until much further down this function.
+    species_on = collections.defaultdict(set)
     named_by = collections.defaultdict(dict)   # (record, species, stage) -> {name: [source]}
     for path in MUSCLE_FILES:
         for mm in load(path)["muscles"]:
             muscle_ids.add(mm.get("id"))
             region_of[mm.get("id")] = mm.get("region")
             for oo in mm.get("occurrences") or []:
+                species_on[mm.get("id")].add(oo.get("species"))
                 for k in oo.get("sources") or []:
                     occ_keys.add((k, oo.get("species"), (oo.get("name") or "").lower()))
 
@@ -818,8 +823,7 @@ def main():
                 for r in cov if isinstance(cov, list) else []:
                     if r not in muscle_ids:
                         err(f"{where}: covers '{r}', which is not a muscle record")
-                    elif not any(o.get("species") == fsp
-                                 for o in muscles[r][0].get("occurrences") or []):
+                    elif fsp not in species_on.get(r, ()):
                         err(f"{where}: covers '{r}', which has no occurrence for "
                             f"{fsp} — the halves are where the observation lives, "
                             f"and this row only points at them")
