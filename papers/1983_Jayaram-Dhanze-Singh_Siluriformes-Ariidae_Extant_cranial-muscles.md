@@ -34,10 +34,9 @@ workers**, which is why the source is cited here for names as well as for rows.
 
 ## Scored
 
-**33 rows across three species**, 11 muscles each — the mandibular and constrictor
-dorsalis groups in full. Until 2026-08-20 it was **3 rows on *Arius* sp. with no
-attachments at all**, and that file is gone: the paper describes three animals and
-now has three columns.
+**Remined 2026-08-20. Twenty muscles across three species: 59 rows, 44 filed and 15
+parked.** Until that day it was **3 rows on *Arius* sp. with no attachments at all**,
+and that file is gone: the paper describes three animals and now has three columns.
 
 ### The genus-level fudge, and why it had to go
 
@@ -65,17 +64,28 @@ source no longer does.
 Four attachment differences in eleven muscles, and every one of them is invisible in
 a genus-level row.
 
-### A contradiction inside the paper, recorded rather than resolved
+### A contradiction inside the paper, and the Discussion settles it
 
-The introduction to the adductor mandibularis says it has **six elements in *A.
-arius* and *A. thalassinus* and five in *A. caelatus***. The descriptions that follow
-then give *A. caelatus* all six — every one of the six numbered sections names it,
-several of them describing its condition in detail. The summary sentence and the
-observations contradict each other.
+The introduction to the adductor mandibularis says six elements in *A. arius* and *A.
+thalassinus* and **five in *A. caelatus***. The descriptions that follow then name *A.
+caelatus* in all six numbered sections, including a sentence about the nature of
+element 2's origin "in all the three species".
 
-All three species are scored with six, because the descriptions are the observations
-and the count is a claim about them. The `divisionNote` on each row says so. A reader
-who wants the published figure has it here.
+**The Discussion names the missing one**: *"the absence of Adductor mandibularis 2 in
+A. caelatus unlike that of the other two species where it is present"*. And the
+description of element 1 agrees without saying so — in *A. caelatus* its deep layer is
+overlapped by element 3, where in the other two it is overlapped by element 2.
+
+Three statements against one. **Element 2 is scored absent in *A. caelatus***, which
+is why that species carries six parts and the others seven, and the `divisionNote` on
+all three rows records the passage that says otherwise rather than deleting it.
+
+A second inconsistency is left standing because nothing resolves it: the Discussion
+lists adductor mandibularis 3 and 4 among the muscles with "a common pattern in
+respect of the origin, insertion, disposition and morphology" in all three species —
+but §1.1.1.4 gives element 4 a **preopercular** origin in *A. arius* and *A.
+thalassinus* and a **hyomandibular** one in *A. caelatus*. The rows follow the
+description.
 
 ### Four new skeletal elements, and a word collision avoided
 
@@ -88,13 +98,45 @@ muscle pulls on. Scoring a catfish gill cover on it would have put a dilator ope
 insertion in a salamander's ear. Two structures, one word, and the only thing between
 them is that somebody looked.
 
-## Still to do — section 2, the hyoid groups
+### Section 2 — the hyoid groups, and where this dataset runs out
 
-Sections 2.1 and 2.2: adductor arcus palatini, extensor tentaculi, levator operculi,
-adductor operculi, adductor hyomandibulae, protractor hyoidei, hyohyoides inferioris,
-hyohyoidei abductores and adductores. Seven more muscles across the same three
-species. They need `parasphenoid`, `orbitosphenoid`, `metapterygoid`,
-`lateral-ethmoid`, `post-temporal` and `epihyal`, none of which this skeleton has yet.
+Nine more muscles. Four file and five park, and the split is not about the paper.
+
+**The protractor hyoidei is two records fused, and the source says so.** Jayaram et
+al. call it a compound of the intermandibularis posterior and the interhyoideus, after
+Edgeworth (1935) and Winterbottom (1974). It is scored on `intermandibularis` with
+`fusedWith: ["interhyoideus"]` — the first use of that field where the *source*
+states the fusion rather than a dissector failing to separate two bellies.
+
+**The hyohyoid series goes to `interhyoideus`**, whose consensus is ceratohyal-or-
+hyomandibula to a midline raphe of the throat, which is what these muscles are. Two of
+the three carry the paper's sharpest species characters:
+
+- **The hyohyoides inferioris takes a different branchiostegal ray in each species** —
+  the fourth in *A. thalassinus*, the fifth in *A. arius*, the sixth in *A. caelatus*.
+- **The hyohyoidei adductores form a different number of bands in each** — six, six or
+  seven, and five.
+
+Three species, three states, twice over. That is the taxonomic signal the paper was
+written to look for, and a genus-level row could not have carried either.
+
+**Five muscles park on `no-record`**, and it is a gap in this dataset rather than in
+the paper. The adductor arcus palatini, levator operculi, adductor operculi and
+adductor hyomandibulae are the palatal and opercular series, and the only constrictor
+dorsalis record here is `levator-arcus-palatini`, whose consensus says *elevates and
+abducts the palatoquadrate* — the opposite of what the adductor does. **Winterbottom
+(1973) is what settles them**: 93 pages of teleost synonymy, in `papers/`, already
+cited here for the fin muscles, carrying every one of these names, and `not-started`.
+Mining it is the obvious next job and these fifteen rows point at it.
+
+The fifth is the **extensor tentaculi**, the muscle that works a catfish's maxillary
+barbel. Nothing in this corpus describes a barbel muscle, so it needs a record and a
+comparative source, not just a synonymy.
+
+Eleven new elements for this section: `parasphenoid`, `orbitosphenoid`,
+`lateral-ethmoid`, `autopalatine`, `ectopterygoid`, `metapterygoid`, `post-temporal`,
+`epihyal`, `hypohyal`, `branchiostegal-rays`, `urohyal`. `autopalatine` is kept apart
+from `palatine`, which in this file is the tetrapod dermal bone.
 
 ## Limitations
 

@@ -432,6 +432,25 @@
       }
     },
     {
+      "id": "autopalatine",
+      "label": "Autopalatine",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "palatal-arch",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "The endochondral palatine of teleosts, and the bone a siluriform maxillary barbel swings on. Distinct from `palatine`, which in this file is the tetrapod dermal palatine."
+      }
+    },
+    {
       "id": "axial-skeleton",
       "label": "Axial skeleton",
       "kind": "group",
@@ -540,6 +559,25 @@
           "dipnoi",
           "caudata"
         ]
+      }
+    },
+    {
+      "id": "branchiostegal-rays",
+      "label": "Branchiostegal rays",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "The bony rays of the gill membrane, hung from the hyoid bar. The hyohyoidei adductores are stretched between them in a series of bands, and the number of bands differs between all three *Arius* species."
       }
     },
     {
@@ -1372,6 +1410,25 @@
       }
     },
     {
+      "id": "ectopterygoid",
+      "label": "Ectopterygoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "palatal-arch",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Lateral bone of the teleost palatal arch, between the autopalatine and the quadrate."
+      }
+    },
+    {
       "id": "element-y",
       "label": "Element Y",
       "kind": "cartilage",
@@ -1471,6 +1528,25 @@
           "gest-anatomy-tables"
         ],
         "note": "The epiglottis. Two of the intrinsic laryngeal muscles end on it — aryepiglottic from the arytenoid apex and thyroepiglottic from the inside of the thyroid cartilage — so the flap that closes the airway in swallowing is moved by muscles of the same branchial series that works the vocal folds."
+      }
+    },
+    {
+      "id": "epihyal",
+      "label": "Epihyal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Posterior element of the teleost hyoid bar, above the ceratohyal. Origin of the anterolateral part of the protractor hyoidei."
       }
     },
     {
@@ -2298,6 +2374,25 @@
       ]
     },
     {
+      "id": "hypohyal",
+      "label": "Hypohyal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Anterior ventral element of the teleost hyoid bar. With the ceratohyal it carries the hyohyoides inferioris."
+      }
+    },
+    {
       "id": "iliac-crest",
       "label": "Iliac crest",
       "kind": "bone",
@@ -2610,6 +2705,25 @@
       "presence": {
         "default": "yes",
         "note": "Common origin of the extensor (dorsal-mass, radial-innervated) forearm musculature throughout Tetrapoda. **Deliberately carries both names in the label rather than a `taxonNames` entry.** The ecte-/ent- and lateral/medial pairs split by author tradition, not by taxon, so a per-taxon name would assert a pattern that is not there. Ercoli et al. (2014) use ectepicondyle for a mustelid; Hattori & Tsuihiji (2021) use lateral epicondyle across the sauropsids; Molnar et al. (2018) use ecte-/ent- throughout the tetrapod stem. Counted over the extracted sources the palaeontological and comparative literature prefers one pair and the mammalian-clinical the other, and both appear inside single clades. The synonym is the right home for the alternative. The chelonian literature calls it the **radial epicondyle** — Walker (1973) uses that pair throughout, naming the bone the muscles run toward rather than the side of the body they sit on. A third naming tradition on the same two landmarks."
+      }
+    },
+    {
+      "id": "lateral-ethmoid",
+      "label": "Lateral ethmoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Paired bone at the front of the braincase. Origin of the extensor tentaculi, the muscle that works a catfish's maxillary barbel."
       }
     },
     {
@@ -2955,6 +3069,25 @@
       }
     },
     {
+      "id": "metapterygoid",
+      "label": "Metapterygoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "palatal-arch",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Dorsal bone of the teleost suspensorium, between the hyomandibular and the pterygoids. Insertion of the adductor arcus palatini."
+      }
+    },
+    {
       "id": "metatarsal-striae",
       "label": "Metatarsal striations",
       "kind": "bone",
@@ -3192,6 +3325,25 @@
       }
     },
     {
+      "id": "orbitosphenoid",
+      "label": "Orbitosphenoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Braincase bone in front of the parasphenoid. In *Arius caelatus* the adductor arcus palatini reaches forward onto it, which it does not in the other two species."
+      }
+    },
+    {
       "id": "otic-capsule",
       "label": "Otic capsule",
       "kind": "bone",
@@ -3382,6 +3534,25 @@
         "entoglossum",
         "os entoglossum"
       ]
+    },
+    {
+      "id": "parasphenoid",
+      "label": "Parasphenoid",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "The long dermal bone of the teleost braincase floor. The adductor arcus palatini fills the space between it and the suspensorium on either side."
+      }
     },
     {
       "id": "parietal",
@@ -3630,6 +3801,25 @@
           "walker-1973"
         ],
         "note": "The ventral shell, and the origin of the pectoralis, which in *Pseudemys* sweeps an arc from the midventral line back to the bridge."
+      }
+    },
+    {
+      "id": "post-temporal",
+      "label": "Post-temporal",
+      "kind": "bone",
+      "region": "pectoral",
+      "segment": "girdle",
+      "partOf": "pectoral-girdle",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Dermal bone linking the teleost pectoral girdle to the back of the skull; the levator operculi reaches it. Part of the chain whose loss along the tetrapod stem frees the girdle from the head."
       }
     },
     {
@@ -5184,6 +5374,25 @@
           "pereyra-etal-2024"
         ],
         "note": "Split from a single `ungual-phalanges` element, which was parented to the pes alone while carrying the id a manual row would reach for — the same trap that put pedal phalanges on three forelimb records before Walthall & Ashley-Ross was mined. Paired with ungual-phalanges-manus on the intermedium-manus / intermedium-pes pattern."
+      }
+    },
+    {
+      "id": "urohyal",
+      "label": "Urohyal",
+      "kind": "bone",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "correlate": true,
+      "presence": {
+        "default": "no",
+        "present": [
+          "actinopterygii"
+        ],
+        "sources": [
+          "jayaram-etal-1983"
+        ],
+        "note": "Median bone below the hyoid bar. The hyohyoidei abductores meet their fellows in a raphe above it."
       }
     },
     {

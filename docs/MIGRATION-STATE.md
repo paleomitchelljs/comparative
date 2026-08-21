@@ -16,8 +16,13 @@ current.
 > almost no rows is a source that was read badly, and it found both re-mines of
 > 2026-08-20.
 >
-> **Bauer (1997) is done: 12 animals of 12, where the file had one.** The next
-> ranking run should be done fresh — three sources came off it today.
+> **Winterbottom (1973) is the next job and fifteen parked rows point at it.**
+> Jayaram et al.'s palatal and opercular muscles have no records here, and
+> Winterbottom's 93-page teleost synonymy carries every one of those names. It is
+> cited already, for the fin muscles, and `not-started`.
+>
+> **Bauer (1997) is done: 12 animals of 12, where the file had one.** Re-run the
+> ranking fresh — four sources came off it today.
 >
 > **Widrig et al. (2023) is done too**, and the way it opened is the thing to carry
 > forward: a reading note's tooling verdict was retested and failed. Before planning
@@ -146,18 +151,29 @@ second copy.
 <!-- counts:remine -->
 | Status | Sources | Rows they carry |
 |---|---:|---:|
-| `remined` | 10 | 775 |
-| `not-started` | 65 | 1764 |
+| `remined` | 11 | 819 |
+| `not-started` | 64 | 1731 |
 | `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2619** |
+| **total** | **79** | **2630** |
 
-**10 of 79 cited sources re-mined** (12%).
+**11 of 79 cited sources re-mined** (13%).
 <!-- /counts:remine -->
 
 ### What counts as done
 
 A source is `remined` only when **every muscle it describes is either filed or
-parked**, and the note states the arithmetic. Ten sources have cleared that bar:
+parked**, and the note states the arithmetic. Eleven sources have cleared that bar:
+
+- **Jayaram, Dhanze & Singh (1983)** — cranial muscles of three *Arius* catfishes.
+  **20 muscles, three animals, 59 rows: 44 filed, 15 parked.** It had held **three
+  rows on *Arius* sp. with no attachments at all**, scored to the genus because "the
+  shared condition is what was taken" — which threw away the paper's entire point,
+  since it was written to test whether cranial myology separates species that are
+  hard to separate, and nine of eighteen muscles differ. Fifteen new skeletal
+  elements, the teleost opercular, palatal and hyoid series, which this file had none
+  of despite carrying four fish sources. The parks are the palatal and opercular
+  muscles and they point at **Winterbottom (1973)**, whose 93-page teleost synonymy
+  carries every one of those names and is `not-started` — the obvious next job.
 
 - **Bauer (1997)** — urodele jaw openers. **12 animals of 12**: 10 adults filed in 12
   rows, 3 larval columns parked, nine species added. The file held **one**. Its
@@ -360,6 +376,9 @@ reading that will not have to be done again.
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
 | `russell-bauer-2008` | *ophisaurus-sp* | 6 | partial 6 |
 | `widrig-etal-2023` | *nothoprocta-pentlandii* | 6 | homology 4, no-record 1, nomenclature 1 |
+| `jayaram-etal-1983` | *arius-arius* | 5 | no-record 5 |
+| `jayaram-etal-1983` | *arius-caelatus* | 5 | no-record 5 |
+| `jayaram-etal-1983` | *arius-thalassinus* | 5 | no-record 5 |
 | `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |
 | `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
 | `prikryl-etal-2009` | *barbourula-busuangensis* | 4 | no-record 2, homology 2 |

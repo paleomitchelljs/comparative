@@ -1,7 +1,7 @@
 {
   "species": "arius-arius",
   "source": "jayaram-etal-1983",
-  "status": "not-started",
+  "status": "remined",
   "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing. `status` mirrors data/remine-status.json.",
   "observations": [
     {
@@ -9,7 +9,7 @@
       "name": "Adductor mandibularis 1",
       "present": "yes",
       "division": "divided",
-      "divisionNote": "Jayaram et al. say the adductor mandibularis has six elements in *A. arius* and *A. thalassinus* and **five in *A. caelatus***, and then describe all six for *A. caelatus* as well — every one of the six sections names it. The summary sentence and the descriptions contradict each other, and this dataset scores the descriptions, because they are the observations. Six parts on all three, with the discrepancy recorded rather than resolved.",
+      "divisionNote": "Jayaram et al. contradict themselves about this muscle and the contradiction is worth more than either statement. Their summary says six elements in *A. arius* and *A. thalassinus* and **five in *A. caelatus***; their Discussion names the missing one — *'the absence of Adductor mandibularis 2 in A. caelatus unlike that of the other two species where it is present'*; and their description of element 1 says that in *A. caelatus* its deep layer is overlapped by element 3, where in the other two it is overlapped by element 2. Three statements agree. **Against them, section 1.1.1.2 describes element 2's origin 'in all the three species'**, naming *A. caelatus* explicitly for the nature of its attachment. Scored as absent, because the count, the Discussion and the overlap all say so and one passage does not; the passage is recorded here rather than deleted.",
       "attachments": {
         "origin": [
           {
@@ -261,6 +261,8 @@
       "speciesBasis": "note",
       "name": "Intermandibularis",
       "present": "yes",
+      "division": "divided",
+      "divisionNote": "Two separate muscles here: the intermandibularis proper, stretched between the dentaries behind the symphysis, and the protractor hyoidei, which Jayaram et al. read as the intermandibularis posterior fused with the interhyoideus. The second is scored on this record with `fusedWith` naming the other half.",
       "attachments": {
         "origin": [
           {
@@ -276,6 +278,222 @@
       "attachmentNote": "Arius arius, Jayaram et al. (1983). Moderately developed, stretched transversely between the two dentaries just behind the symphysis; attachment mainly musculous, with some posterior fibres aponeurotic. **Dentary to dentary and nothing else** — the plesiomorphic intermandibularis, and the same sheet that becomes the mylohyoid and the anterior belly of digastric in a mammal.",
       "region": "cranial",
       "record": "intermandibularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Protractor hyoidei",
+      "present": "yes",
+      "fusedWith": [
+        "interhyoideus"
+      ],
+      "attachments": {
+        "origin": [
+          {
+            "element": "epihyal"
+          },
+          {
+            "element": "ceratohyal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "dentary",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Arius arius, Jayaram et al. (1983). **A compound muscle formed by the fusion of the intermandibularis posterior and the interhyoideus**, which the authors state outright and attribute to Edgeworth (1935) and Winterbottom (1974). Two records, one muscle, and `fusedWith` is what says so. The anterolateral segment arises from the epihyal and the ceratohyal junction, musculously and aponeurotically, and ends on the mesial dentary; the posteroinner portion, massive and covering almost the whole anteroventral head, arises directly from the ceratohyal, meets its fellow at the midventral line, and divides anteriorly into a superior and an inferior slip onto the mesial dentary near the symphysis. The inferior slip passes below the intermandibularis and the superior slip over it. It supports the mandibular barbels.",
+      "region": "cranial",
+      "record": "intermandibularis"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hyohyoides inferioris",
+      "present": "yes",
+      "division": "divided",
+      "divisionNote": "Three named muscles of the ventral hyoid sheet: the hyohyoides inferioris, the hyohyoidei abductores and the hyohyoidei adductores. Two of the three differ between all three *Arius* species — the branchiostegal ray the inferioris takes, and the number of bands the adductores form.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ceratohyal"
+          },
+          {
+            "element": "hypohyal"
+          },
+          {
+            "element": "branchiostegal-rays"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Arius arius, Jayaram et al. (1983). Massive, behind and under the protractor hyoidei. From the ceratohyal and hypohyal in all three species, and **from the fifth branchiostegal ray here** — the fourth in *A. thalassinus*, the fifth in *A. arius*, the sixth in *A. caelatus*. Three species, three different rays, and it is the cleanest species-level character in the paper. The fibres run transversely and fuse with their fellows along the midventral line. Filed on `interhyoideus`, the ventral hyoid constrictor, whose consensus is ceratohyal-or-hyomandibula to a midline raphe of the throat.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hyohyoidei abductores",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "midventral-raphe"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "branchiostegal-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Arius arius, Jayaram et al. (1983). Beneath and behind the hyohyoides inferioris. The fibres of the two sides meet in a raphe along the midventral line **above the urohyal** and spread transversely onto the whole of the first branchiostegal ray. One of the muscles the authors list as identical in all three species.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hyohyoidei adductores",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "branchiostegal-rays"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "opercle"
+          }
+        ]
+      },
+      "attachmentNote": "Arius arius, Jayaram et al. (1983). Stretched between the branchiostegal rays and the opercle in a series of bands — **six here**, against six in *A. arius*, six or seven in *A. caelatus* and five in *A. thalassinus*. The fibres are well developed distally on each branchiostegal and thin to nothing proximally. A count that differs in all three species, like the branchiostegal ray the hyohyoides inferioris takes.",
+      "region": "cranial",
+      "record": "interhyoideus"
+    },
+    {
+      "name": "Adductor arcus palatini",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Massively developed, filling the space between the braincase and the pterygo-hyomandibular arch, lying under the mucous membrane of the mouth roof beside the parasphenoid, and inserting on the hyomandibular and metapterygoid. This dataset has no record for the muscle. **Winterbottom (1973) is the source that would settle it** — 93 pages reconciling teleost muscle names across the group, already in `papers/`, already cited here for the fin muscles, and `not-started`. It carries a full synonymy for this name. Until it is mined, filing this on `levator-arcus-palatini` — the only constrictor dorsalis record here, and one whose consensus says *elevates and abducts the palatoquadrate* — would put a muscle on a record whose stated action is the opposite of its own.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "parasphenoid",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          },
+          {
+            "element": "metapterygoid"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Extensor tentaculi",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "**The muscle that works a catfish's maxillary barbel**, and there is no record for it here or anywhere in this dataset — no other source in the corpus describes a barbel muscle. From the ventral lateral ethmoid and the orbitosphenoid to the distal autopalatine and the ectopterygoid, mainly musculous with some posterior fibres aponeurotic. It is poorly developed in this species; the authors grade it poorly, moderately and well in *A. arius*, *A. thalassinus* and *A. caelatus* and record no difference in its attachments. Settled by creating a record for the siluriform barbel musculature, which wants a source that treats it comparatively rather than one catfish genus.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "lateral-ethmoid",
+            "side": "ventral"
+          },
+          {
+            "element": "orbitosphenoid"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "autopalatine",
+            "side": "distal"
+          },
+          {
+            "element": "ectopterygoid"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Levator operculi",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Under the skin behind the dilator operculi, from the ventrolateral pterotic and the post-temporal onto the dorsomesial opercle. This dataset has no record for the muscle. **Winterbottom (1973) is the source that would settle it** — 93 pages reconciling teleost muscle names across the group, already in `papers/`, already cited here for the fin muscles, and `not-started`. It carries a full synonymy for this name. Until it is mined, filing this on `levator-arcus-palatini` — the only constrictor dorsalis record here, and one whose consensus says *elevates and abducts the palatoquadrate* — would put a muscle on a record whose stated action is the opposite of its own.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterotic",
+            "side": "lateral"
+          },
+          {
+            "element": "post-temporal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "opercle",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Adductor operculi",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Beneath the levator operculi and separated from it by a connective membrane. From the ventrolateral pterotic, running downwards in a divergent manner onto the inner dorsal opercle. One of the muscles the authors list as identical in all three species. This dataset has no record for the muscle. **Winterbottom (1973) is the source that would settle it** — 93 pages reconciling teleost muscle names across the group, already in `papers/`, already cited here for the fin muscles, and `not-started`. It carries a full synonymy for this name. Until it is mined, filing this on `levator-arcus-palatini` — the only constrictor dorsalis record here, and one whose consensus says *elevates and abducts the palatoquadrate* — would put a muscle on a record whose stated action is the opposite of its own.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterotic",
+            "side": "lateral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "opercle",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "muscle": null
+    },
+    {
+      "name": "Adductor hyomandibulae",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Moderately developed, under the levator operculi. From the ventral pterotic, running forward and down onto the posterodorsal projection of the hyomandibular, partly aponeurotic and partly musculous. Identical in all three species. This dataset has no record for the muscle. **Winterbottom (1973) is the source that would settle it** — 93 pages reconciling teleost muscle names across the group, already in `papers/`, already cited here for the fin muscles, and `not-started`. It carries a full synonymy for this name. Until it is mined, filing this on `levator-arcus-palatini` — the only constrictor dorsalis record here, and one whose consensus says *elevates and abducts the palatoquadrate* — would put a muscle on a record whose stated action is the opposite of its own.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pterotic",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes",
+            "side": "posterior"
+          }
+        ]
+      },
+      "muscle": null
     }
   ]
 }

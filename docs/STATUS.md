@@ -23,11 +23,11 @@ Definitions, because earlier versions of this file used at least two:
 ## The dataset
 
 <!-- counts:headline -->
-166 muscle records · 1875 present occurrences · 300 skeletal elements · 120 sources · 20 operational taxa
+166 muscle records · 1878 present occurrences · 311 skeletal elements · 120 sources · 20 operational taxa
 <!-- /counts:headline -->
 
 <!-- counts:summary -->
-Taxon-specific attachments cover **83%** of 1875 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 52% of observed rows and `landmark` on 23%; `layer` resolves for 58 of 100 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
+Taxon-specific attachments cover **83%** of 1878 present occurrences. The thinnest columns of any size are Chondrichthyes at 48%, Testudines at 72%, Anura at 75%; the thinnest regions are cranial, fin, hand. `side` is on 52% of observed rows and `landmark` on 23%; `layer` resolves for 58 of 100 appendicular muscles; architecture data covers 21 muscle–taxon pairs across 2 taxa.
 <!-- /counts:summary -->
 
 ## By region
@@ -45,8 +45,8 @@ Taxon-specific attachments cover **83%** of 1875 present occurrences. The thinne
 | axial | 15 | 59 | 45 | 76% |
 | hand | 9 | 152 | 113 | 74% |
 | fin | 9 | 39 | 23 | 59% |
-| cranial | 51 | 245 | 133 | 54% |
-| **all** | 166 | 1875 | 1558 | **83%** |
+| cranial | 51 | 248 | 136 | 55% |
+| **all** | 166 | 1878 | 1561 | **83%** |
 <!-- /counts:regions -->
 
 ## By taxon
@@ -67,7 +67,7 @@ Taxon-specific attachments cover **83%** of 1875 present occurrences. The thinne
 | Caudata | 119 | 95 | 80% |
 | Aves | 197 | 156 | 79% |
 | Tetrapodomorpha (stem) | 42 | 33 | 79% |
-| Actinopterygii | 28 | 21 | 75% |
+| Actinopterygii | 31 | 24 | 77% |
 | Anura | 146 | 109 | 75% |
 | Testudines | 58 | 42 | 72% |
 | Myxini | 4 | 2 | 50% |
@@ -84,7 +84,7 @@ where **two** taxa are scored for the same muscle, so the distribution matters
 more than the total.
 
 <!-- counts:scored -->
-**Taxon-specific attachments: 1558 of 1875 present occurrences (83%).**
+**Taxon-specific attachments: 1561 of 1878 present occurrences (83%).**
 <!-- /counts:scored -->
 
 ### Extracted, not yet filed
@@ -95,7 +95,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 — they are not occurrences and move no coverage figure.
 
 <!-- counts:parked -->
-765 extracted observations from 9 sources are waiting for a record (639 on partial, 58 on no-record, 28 on nomenclature, 19 on homology, 12 on division, 5 on assigned, 4 on occupied). They carry no coverage weight — they are mining already done.
+780 extracted observations from 10 sources are waiting for a record (639 on partial, 73 on no-record, 28 on nomenclature, 19 on homology, 12 on division, 5 on assigned, 4 on occupied). They carry no coverage weight — they are mining already done.
 <!-- /counts:parked -->
 
 <!-- counts:unscored -->
@@ -109,7 +109,7 @@ the study's own extraction file with `record: null`, and are **not** counted abo
 |---|---:|---:|
 | pectoral | 16 | 881 |
 | forearm | 19 | 748 |
-| cranial | 51 | 577 |
+| cranial | 51 | 607 |
 | foot | 14 | 556 |
 | thigh | 10 | 516 |
 | leg | 10 | 427 |
@@ -128,11 +128,11 @@ name a side or a landmark rather than the bare bone.
 <!-- counts:skeleton -->
 | | |
 |---|---|
-| Elements | 300, of which 281 (94%) carry at least one attachment |
-| Observed attachment rows | 5011 |
+| Elements | 311, of which 284 (91%) carry at least one attachment |
+| Observed attachment rows | 5041 |
 | Rows naming a **landmark** | 1168 (23%) |
-| Rows naming a **side** | 2629 (52%) |
-| Osteological correlates | 133 flagged, 127 carry a muscle |
+| Rows naming a **side** | 2632 (52%) |
+| Osteological correlates | 144 flagged, 130 carry a muscle |
 <!-- /counts:skeleton -->
 
 ### Elements per muscle, by region
@@ -144,7 +144,7 @@ a finely divided skull. The pelvis, fin and forelimb run low.
 <!-- counts:parity -->
 | Region | Muscles | Elements | Elements per muscle |
 |---|---:|---:|---:|
-| cranial | 47 | 87 | 1.9 |
+| cranial | 47 | 90 | 1.9 |
 | hindlimb | 46 | 53 | 1.2 |
 | axial | 37 | 35 | 0.9 |
 | pectoral | 35 | 32 | 0.9 |
