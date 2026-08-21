@@ -176,14 +176,43 @@ Four more things to check before scoring:
 
 1. **Ligatures.** Older PDFs use `ﬂ` and `ﬁ`, which break every grep. Replace them
    first or you will conclude a paper has no flexors.
-2. **Column order.** Two-column PDFs interleave under `pdftotext`. Use plain
-   `pdftotext` if reading order matters, `-layout` if table columns matter. Check
-   that a heading actually sits above its own text.
+2. **Column order — and the advice that used to be here was wrong.** Two-column
+   PDFs interleave under `pdftotext`, and this file used to say "use plain
+   `pdftotext` if reading order matters". **That does not work**: on a two-column
+   page the plain output alternates between the columns line by line, so a heading
+   sits above its neighbour's text either way. Following it cost Widrig et al.
+   forty-two of forty-five muscles, on a note that concluded the paper needed
+   "the figures, or a column-aware extraction".
+
+   A column-aware extraction is one command. `-layout` already keeps both columns
+   side by side on every line, so **slice each page at the column boundary and read
+   the left half, then the right**:
+
+   ```sh
+   python3 - <<'PY'
+   CUT = 73          # find it by eye: where the right column's first character sits
+   for page in open(TXT, errors='ignore').read().split('\f'):
+       lines = page.split('\n')
+       print('\n'.join(l[:CUT].rstrip() for l in lines))
+       print('\n'.join(l[CUT:].rstrip() for l in lines))
+   PY
+   ```
+
+   Find `CUT` from one page, or take the mode of the positions where a run of
+   spaces ends. It worked on Widrig (73), Hattori & Tsuihiji (70), Ercoli (72) and
+   Jayaram (52) — every two-column paper tried so far. Figure captions stay
+   scrambled; the running text comes out clean.
+
+   **A tooling verdict expires.** Three notes in this repo have now claimed a paper
+   could not be extracted and been wrong. Retest before planning around one.
 3. **Whether the tables are text.** Grep for a caption, then for a row of it. Four
    rows of output between a caption and the next paragraph means the table is a
    picture and the prose is the route.
 4. **The species.** Every row needs one. If the paper dissects an animal the corpus
    does not list, add it to `data/species.json` first.
+5. **The elements.** Score the attachment the source states, and if the thing it
+   attaches to has no element, **add one** — see the recipe below. Never drop an
+   end for want of a bone.
 
 ## Check the methods section, every time
 
@@ -279,6 +308,59 @@ names it: it is the evidence that the file is named correctly.
 it is not the same as `generalised: true`, which means the source described a clade
 and dissected nobody.
 
+## Six fields a row can carry that a row could not carry before
+
+All are in [`SCHEMA.md`](SCHEMA.md) in full. They exist because a mining pass kept
+having something true to say and nowhere to put it, so **check this list before
+demoting anything to prose.**
+
+| Field | Use it when | Do not |
+|---|---|---|
+| `stage` | The source distinguishes larva from adult. An occurrence is one per (record, species, **stage**), so both get rows | Read absent as "adult". Absent means the source did not distinguish, which is nearly every row |
+| `fusedWith` | The source says a muscle is present but **not separable** from a named neighbour | Score it `present: "no"`. A fused muscle is not an absent one, and the build will refuse the contradiction |
+| `covers` | The source's name is an umbrella over **several records** — `deltoid`, `digastric`. The row carries no observation, only the name | Give it attachments or a `blockedBy`. It is an index entry and nobody is stuck |
+| `division` + `parts` | The source names several muscles inside one record | Hand-write `parts[].attachments`. See below |
+| `after` | The source is **reporting someone else's** dissection | Put two workers on one occurrence — it holds one `after` |
+| `speciesBasis: "generalised"` | The source describes a clade and dissected nobody | Reach for it because you are unsure which animal. That is `source` or a missing species record |
+
+**Part attachments are derived, and hand-authoring `parts` costs you them.** Write
+**one row per muscle the source names**, all pointing at the same `record`, each with
+its own attachments; declare `division` on one of them; and the join gives every part
+its own origin and insertion. If you also write a `parts` list by hand, the join reads
+your named row as the *umbrella* — the `Masseter, temporalis and the pterygoids` case —
+and excludes it from the breakdown, so one muscle silently loses its attachments. This
+bit twice in one day. Declare `division`, write the rows, leave `parts` alone.
+
+## Adding a skeletal element
+
+The rule is in the section above: never drop an attachment for want of a bone. The
+mechanics:
+
+```jsonc
+{ "id": "preopercle", "label": "Preopercle", "kind": "bone",
+  "region": "cranial", "segment": "cranial", "partOf": "neurocranium",
+  "correlate": true,
+  "presence": { "default": "no", "present": ["actinopterygii"],
+                "sources": ["jayaram-etal-1983"],
+                "note": "What it is, and what needed it." } }
+```
+
+- `partOf` is containment, and a landmark must sit inside its element — the check is
+  on the whole chain, so `{"element": "mandible", "landmark": "coronoid-process-mandible"}`
+  works because the process is `partOf` the mandible.
+- `presence.default: "no"` plus a `present` list for anything clade-restricted;
+  `"yes"` for something general. **Under-claim.** Adding a taxon later is an edit;
+  asserting a bone into an animal that lacks it is an error the validator will catch
+  only if somebody attaches a muscle to it.
+- `kind` from the file's own list — `bone`, `cartilage`, `ligament`, `fascia`,
+  `aponeurosis`, `membrane`, `soft`, `group`. Soft-tissue attachment sites are
+  legitimate: `linea-alba`, `spermatic-cord`, `plantar-aponeurosis`.
+- Keep `elements` sorted by `id`.
+- **Check the name is not already taken by something else.** `operculum` in this file
+  is the amphibian otic operculum; a fish gill cover is `opercle`. `palatine` is the
+  tetrapod dermal bone; the teleost one is `autopalatine`. Two structures sharing a
+  word is how a dilator operculi nearly ended up in a salamander's ear.
+
 ## Bridging nomenclature
 
 Most sources use their own names. **Do not map by eye.** Abdala & Diogo (2010)
@@ -291,6 +373,49 @@ Where the source's own term is ambiguous, assert nothing: a femoral "crista
 ventralis" is scored as `femur` / ventral rather than as the fourth trochanter,
 because the identification is plausible, unestablished, and asserting it would
 manufacture an osteological correlate no source claims.
+
+## Mining as a delegated job
+
+A pass splits cleanly into a part that parallelises and a part that does not, and the
+split is by file rather than by judgement.
+
+**Private to one source — write these freely:**
+
+- `data/observations/<species>__<source>.json` — one file per animal
+- `papers/<source>.md` — the reading note
+
+Two people mining two sources never contend for either.
+
+**Shared — do not write these:**
+
+- Anything generated: `data/muscles-*.json`, `data/mapping/`, `data/aliases.json`,
+  `docs/STATUS.md`, `README.md`. `./scripts/build.sh --write` regenerates all of them
+  **from the whole dataset**, so two passes running it produce conflicts on files
+  nobody edited, and a careless merge yields a `muscles-*.json` matching neither.
+- `data/skeleton.json`, `data/species.json`, `data/remine-status.json`,
+  `docs/MIGRATION-STATE.md` — shared, and the first is re-sorted whole on every edit.
+
+So a delegated pass **requests** rather than writes: put the elements and species it
+needs at the top of its reading note, as a list with the `partOf`, `presence` and
+one-line note each would carry, and let whoever integrates apply them and run the
+build once. Run `python3 scripts/validate.py` to check your own rows if you like —
+it is read-only — but not `build.sh --write`.
+
+### The one rule that matters more than the others
+
+**Never assign a `record` you cannot cite a bridge for.** Quote the sentence — from
+the source itself, from a synonymy in the record, or from a `homologyScope` paper —
+or write `record: null` with `blockedBy` and say what would settle it.
+
+A parked row costs somebody an edit later. A wrongly filed one puts an observation in
+the wrong homology group, which is the worst failure this dataset has and is nearly
+invisible once made: the row validates, renders, and reads as evidence. Parking is
+cheap and it is not a failure — `record: null` exists precisely so that a pass can be
+exhaustive without guessing.
+
+Three signs you are guessing rather than bridging: the names simply look alike; you
+have joined two synonymies to reach a third; or the only argument is that the muscle
+is nearby. All three have produced errors in this repo.
 
 ## Writing the reading note
 
