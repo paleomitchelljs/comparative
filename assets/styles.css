@@ -715,3 +715,7 @@ td .binomial + .common { display: block; }
   letter-spacing: 0.05em; color: var(--warn);
   background: var(--warn-bg); padding: 0.05rem 0.32rem; border-radius: 3px;
 }
+
+.ghost-link { font-family: var(--font-ui); font-size: 0.82rem; color: var(--link); text-decoration: none;
+  padding: 0.3rem 0.6rem; align-self: center; }
+.ghost-link:hover { text-decoration: underline; }

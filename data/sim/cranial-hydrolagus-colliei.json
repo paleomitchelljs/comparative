@@ -1,0 +1,172 @@
+{
+  "id": "cranial-hydrolagus-colliei",
+  "region": "cranial",
+  "species": "hydrolagus-colliei",
+  "label": "Hydrolagus colliei",
+  "common": "Spotted ratfish",
+  "group": "Chimaera",
+  "suspension": "holostylic",
+  "view": "lateral, snout right",
+  "viewBox": [0, 0, 640, 380],
+  "sources": ["huber-etal-2011", "anderson-2008"],
+  "summary": "Holostylic: the palatoquadrate is fused to the braincase, so there is no free upper jaw to protrude, and the muscles that move one are gone. Only the lower jaw swings. Mouth-region movement is taken up instead by a set of labial cartilages.",
+  "note": "Outlines, lever arms and ranges of motion are schematic. The muscles, attachments and credited actions come from Huber et al. (2011) Table 4 and its text, and the absences from Anderson (2008); tests/sim.test.js checks the geometry against them. The fused palatoquadrate is drawn as a separate shape so the missing joint is visible. The opercular constrictors are drawn as one dorsoventral chord because the dorsal and ventral muscles share an insertion on the opercular sheath, and the flap really closes by swinging inward, out of the plane of this view. The labial cartilages are one piece sliding forward and back.",
+
+  "segments": [
+    { "id": "trunk", "label": "Trunk (epaxial block)", "parent": null,
+      "paths": [ { "d": "M-10 92 L100 98 L100 232 L-10 236 Z", "class": "soft" } ] },
+
+    { "id": "flap", "label": "Opercular flap", "parent": "trunk",
+      "paths": [ { "d": "M112 244 C150 236 250 236 290 248 L292 298 C250 308 150 308 114 298 Z", "class": "soft" } ] },
+    { "id": "gillfloor", "label": "Floor of the pharynx", "parent": "trunk",
+      "paths": [ { "d": "M114 314 L284 314", "class": "raphe" } ] },
+
+    { "id": "girdle", "label": "Pectoral girdle (coracoid bar)", "element": "pectoral-girdle", "parent": "trunk",
+      "labelAt": [80, 340],
+      "paths": [ { "d": "M44 336 C44 318 90 310 150 314 L218 322 C218 342 150 356 96 356 C64 356 44 350 44 336 Z", "class": "cart" } ] },
+
+    { "id": "ceratohyal", "label": "Ceratohyal / hyoid arch", "element": "ceratohyal", "parent": "cranium",
+      "labelAt": [340, 318],
+      "paths": [ { "d": "M284 232 C292 226 304 230 308 240 L338 290 C342 300 332 306 322 300 L290 254 C282 246 280 238 284 232 Z", "class": "cart" } ] },
+
+    { "id": "cranium", "label": "Neurocranium", "element": "neurocranium", "parent": "trunk",
+      "labelAt": [250, 130],
+      "paths": [
+        { "d": "M100 196 C96 132 150 88 250 84 L380 90 C450 96 510 120 530 160 C540 180 532 196 512 204 L470 212 L400 216 L330 224 L240 228 L150 232 C118 228 100 214 100 196 Z", "class": "cart" },
+        { "d": "M238 150 a44 44 0 1 0 88 0 a44 44 0 1 0 -88 0", "class": "aux" },
+        { "d": "M142 164 a34 28 0 1 0 68 0 a34 28 0 1 0 -68 0", "class": "aux" }
+      ] },
+
+    { "id": "pq", "label": "Palatoquadrate (fused to the braincase)", "element": "palatoquadrate-quadrate", "parent": "cranium",
+      "labelAt": [400, 224],
+      "paths": [ { "d": "M330 214 C330 206 350 202 380 204 L470 206 C492 208 496 218 488 224 L430 227 L350 231 C336 231 330 224 330 214 Z", "class": "cart fused" } ] },
+
+    { "id": "mandible", "label": "Meckel's cartilage (lower jaw)", "element": "meckels-cartilage", "parent": "pq",
+      "labelAt": [410, 276],
+      "paths": [ { "d": "M338 242 C338 232 352 228 370 230 L440 230 C462 230 478 234 482 244 C482 256 466 262 446 262 L380 264 C356 264 338 256 338 242 Z", "class": "cart" } ] },
+
+    { "id": "labials", "label": "Labial cartilages", "parent": "cranium",
+      "labelAt": [520, 250],
+      "paths": [
+        { "d": "M490 206 C512 202 536 212 540 228 C538 238 524 240 510 236 C500 232 494 222 490 216 Z", "class": "cart" },
+        { "d": "M436 248 C452 244 470 246 476 254 C474 262 458 264 444 262 C436 260 432 254 436 248 Z", "class": "cart" }
+      ] }
+  ],
+
+  "links": [],
+
+  "dofs": [
+    { "id": "jaw", "range": [0, 26], "unit": "°",
+      "drives": [ { "segment": "mandible", "type": "rotation", "pivot": [350, 240], "sign": 1 } ],
+      "handle": "mk-tip" },
+    { "id": "hyoid", "range": [0, 22], "unit": "°",
+      "drives": [ { "segment": "ceratohyal", "type": "rotation", "pivot": [292, 234], "sign": 1 } ],
+      "handle": "ch-basi" },
+    { "id": "labial", "range": [-12, 12], "unit": "px",
+      "drives": [ { "segment": "labials", "type": "translation", "axis": [0.98, 0.2] } ] },
+    { "id": "gill", "range": [0, 18], "unit": "px",
+      "drives": [
+        { "segment": "gillfloor", "type": "translation", "axis": [0, -1] },
+        { "segment": "flap", "type": "scale", "anchor": [200, 244], "axis": [0, 1], "k": 0.012 }
+      ] }
+  ],
+
+  "landmarks": {
+    "tr-d":    { "segment": "trunk",     "at": [180, 238, 20], "label": "Vertebral column and pectoral girdle (origin of the dorsal opercular constrictor)" },
+    "gl-v":    { "segment": "gillfloor", "at": [180, 314, 0],  "label": "Midventral raphe (origin of the ventral opercular constrictor)" },
+    "gd-cm":   { "segment": "girdle",    "at": [210, 328, 8],  "label": "Coracoid bar (origin of coracomandibularis)", "element": "pectoral-girdle" },
+    "gd-ch":   { "segment": "girdle",    "at": [210, 342, 8],  "label": "Coracomandibularis (origin of coracohyoideus)", "element": "pectoral-girdle" },
+    "nc-am1":  { "segment": "cranium",   "at": [402, 176, 14], "label": "Preorbital chondrocranium", "element": "neurocranium" },
+    "nc-am2":  { "segment": "cranium",   "at": [360, 204, 14], "label": "Suborbital ridge of the chondrocranium", "element": "suborbital-shelf" },
+    "nc-lao":  { "segment": "cranium",   "at": [440, 176, 12], "label": "Antorbital crest of the chondrocranium", "element": "neurocranium" },
+    "nc-lh":   { "segment": "cranium",   "at": [312, 224, 14], "label": "Ventral chondrocranium beneath the orbit", "element": "neurocranium" },
+    "mk-am1":  { "segment": "mandible",  "at": [414, 258, 10], "label": "Meckel's cartilage (tendon wraps beneath the lower jaw)", "element": "meckels-cartilage" },
+    "mk-am2":  { "segment": "mandible",  "at": [410, 252, 10], "label": "Meckel's cartilage (tendon merges with the anterior division's)", "element": "meckels-cartilage" },
+    "mk-sym":  { "segment": "mandible",  "at": [478, 252, 0],  "label": "Meckel's cartilage, symphysis (premandibular cartilage)", "element": "premandibular-cartilage" },
+    "mk-tip":  { "segment": "mandible",  "at": [482, 244, 0],  "label": "Lower-jaw tip" },
+    "ch-basi": { "segment": "ceratohyal","at": [330, 298, 0],   "label": "Basihyal", "element": "ceratohyal" },
+    "ch-epi":  { "segment": "ceratohyal","at": [320, 264, 14],  "label": "Epihyal", "element": "epihyal" },
+    "lb-sup":  { "segment": "labials",   "at": [512, 224, 12], "label": "Superior maxillary cartilage", "element": "superior-maxillary-cartilage" },
+    "lb-inf":  { "segment": "labials",   "at": [446, 254, 16], "label": "Inferior maxillary cartilage", "element": "inferior-maxillary-cartilage" }
+  },
+
+  "muscles": [
+    { "id": "adductor-mandibulae-anterior", "short": "AMa", "label": "Adductor mandibulae anterior", "group": "adductor-mandibulae",
+      "record": "adductor-mandibulae", "status": "recorded",
+      "paths": [ ["nc-am1", "mk-am1"] ],
+      "sources": ["huber-etal-2011", "anderson-2008"],
+      "actionText": "Closes the lower jaw. Broad origin across the preorbital chondrocranium and a stout tendon that wraps beneath the jaw; the primary adductor.",
+      "expect": [ { "dof": "jaw", "dir": -1 } ] },
+
+    { "id": "adductor-mandibulae-posterior", "short": "AMp", "label": "Adductor mandibulae posterior", "group": "adductor-mandibulae",
+      "record": "adductor-mandibulae", "status": "recorded",
+      "paths": [ ["nc-am2", "mk-am2"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Closes the lower jaw. From the suborbital ridge; its tendon merges with the anterior division's.",
+      "expect": [ { "dof": "jaw", "dir": -1 } ] },
+
+    { "id": "coracomandibularis", "short": "CM", "label": "Coracomandibularis", "group": "coracomandibularis",
+      "record": "hypobranchial-muscles", "status": "recorded",
+      "paths": [ ["gd-cm", "mk-sym"] ],
+      "sources": ["huber-etal-2011", "anderson-2008"],
+      "actionText": "Opens the lower jaw, from the coracoid bar to the jaw.",
+      "note": "Anderson (2008) argues that jaw depression in this lineage worked directly through this muscle, and that the ratfish also has a second route (his mandibulohyoideus).",
+      "expect": [ { "dof": "jaw", "dir": 1 } ] },
+
+    { "id": "coracohyoideus", "short": "CH", "label": "Coracohyoideus", "group": "coracohyoideus",
+      "record": "hypobranchial-muscles", "status": "recorded",
+      "paths": [ ["gd-ch", "ch-basi"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Depresses the hyoid arch, acting on the basihyal.",
+      "expect": [ { "dof": "hyoid", "dir": 1 } ] },
+
+    { "id": "levator-hyoideus", "short": "LHy", "label": "Levator hyoideus", "group": "levator-hyoideus",
+      "record": null, "status": "recorded",
+      "paths": [ ["nc-lh", "ch-epi"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the underside of the chondrocranium beneath the orbit onto the epihyal; lifts the epihyal.",
+      "note": "Parked in the dataset: whether it is the levator hyomandibulae of the other two animals is not settled, and it is not drawn as that muscle here.",
+      "expect": [ { "dof": "hyoid", "dir": -1 } ] },
+
+    { "id": "intermandibularis", "short": "IM", "label": "Intermandibularis", "group": "intermandibularis",
+      "record": "intermandibularis", "status": "recorded",
+      "paths": [ ["lb-inf", "mk-sym"] ],
+      "sources": ["huber-etal-2011", "anderson-2008"],
+      "actionText": "From the inferior maxillary cartilage to the premandibular cartilages at the jaw symphysis; protracts the labial cartilages.",
+      "note": "Not a floor-of-the-mouth elevator as in the shark: here the same muscle works the lip.",
+      "expect": [ { "dof": "labial", "dir": 1 } ] },
+
+    { "id": "levator-anguli-oris", "short": "LAO", "label": "Levator anguli oris", "group": "levator-anguli-oris",
+      "record": "levator-anguli-oris", "status": "recorded",
+      "paths": [ ["nc-lao", "lb-sup"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the antorbital crest to the superior maxillary cartilage; retracts the labial cartilages through ligaments.",
+      "expect": [ { "dof": "labial", "dir": -1 } ] },
+
+    { "id": "opercular-constrictors", "short": "OC", "label": "Opercular constrictors (dorsal + ventral)", "group": "constrictors",
+      "record": null, "status": "recorded",
+      "paths": [ ["tr-d", "gl-v"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "The dorsal division from the vertebral column and pectoral girdle and the ventral from the midventral raphe share an insertion on the opercular sheath; together they squeeze the pharyngeal cavity.",
+      "note": "Both are parked in the dataset without a record.",
+      "expect": [ { "dof": "gill", "dir": 1 } ] },
+
+    { "id": "levator-arcus-palatini", "short": "LPQ", "label": "Levator palatoquadrati", "group": "levator-palatoquadrati",
+      "record": "levator-arcus-palatini", "status": "absent", "paths": [],
+      "sources": ["anderson-2008"],
+      "actionText": "Absent.",
+      "reason": "Anderson (2008) reads it as a secondary loss: the palatoquadrate is fused to the braincase, so there is nothing free to lift." },
+
+    { "id": "interhyoideus", "short": "IH", "label": "Interhyoideus", "group": "interhyoideus",
+      "record": "interhyoideus", "status": "contested", "paths": [],
+      "sources": ["anderson-2008", "huber-etal-2011"],
+      "actionText": "Huber et al. describe an interhyoideus from the jaw symphysis to the ceratohyals that abducts the hyoid arch.",
+      "reason": "Anderson (2008) finds no homologous interhyoideus in this animal and reads a secondary loss; Huber et al.'s muscle of that name is parked in the dataset as unresolved. Not drawn." },
+
+    { "id": "epibranchial", "short": "EB", "label": "Epibranchial (epaxial) muscle", "group": "cranial-elevators",
+      "record": "epaxial-musculature", "status": "recorded", "paths": [],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Inserts on the chondrocranium but contributes little to head lift.",
+      "reason": "The holocephalan braincase is relatively akinetic, so no cranial-lift joint is modelled." }
+  ]
+}

@@ -37,6 +37,7 @@ Nothing carries two of these jobs.
 | `docs/WORKLIST.md` | What to do next, and the open decisions |
 | `docs/MINING.md` | How to mine a paper. Procedure, changes rarely |
 | `docs/ROADMAP.md` | Where the interface is going, and why the spine is mass-and-layer |
+| `docs/SIMULATOR.md` | How the muscle simulator is built and how to add a taxon or region |
 | `docs/MIGRATION.md` | The plan for extraction-first storage. Changes rarely |
 | `docs/MIGRATION-STATE.md` | Where the migration has got to. **Read first**; update every commit |
 | `docs/FILE-LEDGER.md` | Which files are authoritative, derived, partial or defunct |

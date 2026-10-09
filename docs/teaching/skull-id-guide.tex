@@ -1,0 +1,709 @@
+% =====================================================================
+%  skull-id-guide.tex -- Identifying Skulls
+%  Build:  latexmk -pdf skull-id-guide.tex
+%  Figures in skull-id-figures.tex. See README.md.
+% =====================================================================
+\documentclass[11pt]{article}
+
+\usepackage[letterpaper,margin=0.8in,top=0.75in,bottom=0.8in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xltabular}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\usetikzlibrary{calc,positioning,shapes.geometric,arrows.meta}
+
+% Colours follow the lab handouts: dermatocranium pink, neurocranium blue,
+% splanchnocranium green.
+\definecolor{dermcol}{HTML}{F7D9E3}
+\definecolor{neurocol}{HTML}{D3E3F2}
+\definecolor{splanchcol}{HTML}{D6E8D2}
+% Figure 1 codes stability, which is the axis that varies on a skull-roof map.
+\definecolor{stablecol}{HTML}{D6E8D2}
+\definecolor{labilecol}{HTML}{FBE3C8}
+\definecolor{hingecol}{HTML}{F6D6DC}
+\definecolor{bonecol}{HTML}{F2E8D5}
+\definecolor{boneline}{HTML}{6B5B4A}
+\definecolor{fencol}{HTML}{DCE9F2}
+\definecolor{barcol}{HTML}{B5561B}
+\definecolor{stubgrey}{HTML}{6E6E6E}
+\definecolor{headcol}{HTML}{2E4756}
+
+\setlist[itemize]{leftmargin=1.05em, topsep=2pt, itemsep=1.2pt, parsep=0pt}
+\setlist[enumerate]{leftmargin=1.5em, topsep=2pt, itemsep=2.5pt, parsep=0pt}
+
+\titleformat{\section}{\large\bfseries\color{headcol}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{13pt}{4pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\footnotesize\color{stubgrey} Identifying Skulls}
+\rhead{\footnotesize\color{stubgrey} \thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newtcolorbox{cladebox}[2][]{
+  enhanced, breakable,
+  colback=white, colframe=headcol, boxrule=0.7pt,
+  arc=2pt, left=6pt, right=6pt, top=4pt, bottom=4pt,
+  title={\bfseries #2}, fonttitle=\normalsize,
+  coltitle=white, colbacktitle=headcol,
+  attach boxed title to top left={xshift=4pt, yshift=-2pt},
+  boxed title style={arc=1.5pt, boxrule=0pt}, #1
+}
+
+\newtcolorbox{watchbox}[1][]{
+  enhanced, breakable,
+  colback=fencol!55, colframe=barcol, boxrule=0.6pt,
+  arc=2pt, left=6pt, right=6pt, top=4pt, bottom=4pt, #1
+}
+
+\newcommand{\bone}[1]{\textbf{#1}}
+\newcommand{\term}[1]{\textsl{#1}}
+\newcommand{\lost}{\textcolor{barcol}{\textbf{lost}}}
+
+\input{skull-id-figures}
+
+% ======================================================================
+\begin{document}
+
+\begin{center}
+  {\LARGE\bfseries\color{headcol} Identifying Skulls}
+\end{center}
+\vspace{2pt}
+\hrule height 0.8pt
+\vspace{6pt}
+
+% ======================================================================
+\section{Three Skull ``Zones''}
+
+\begin{itemize}
+\item \bone{Neurocranium} (brain case): endochondral bone replacing the
+  cartilage capsule around brain, ear and nose. Four ossification centers: \term{ethmoid}, \term{sphenoid}, \term{otic}, \term{occipital}.
+\item \bone{Splanchnocranium} (pharyngeal arches): Arch 1 gives the
+  \bone{palatoquadrate} and \bone{Meckel's cartilage}, arch 2 the
+  \bone{hyomandibula}, arches 3--7 the gill skeleton (hyoid and
+  larynx in tetrapods).
+\item \bone{Dermatocranium} (everything else): Dermal bone that ossifies in the skin without a cartilage precursor. The dermatocranium is the most labile, and frequently loses bones. In series:
+  \emph{midline} (nasal, frontal, parietal, postparietal), \emph{marginal
+  tooth-bearing} (premaxilla, maxilla, septomaxilla), \emph{circumorbital}
+  (lacrimal, prefrontal, postfrontal, postorbital, jugal), \emph{cheek}
+  (squamosal, quadratojugal), \emph{opercular} (preopercular, opercular,
+  subopercular, branchiostegals; lost in tetrapods), \emph{palate} (vomer,
+  pterygoid, palatine, ectopterygoid), and the sheath around Meckel's cartilage
+  (dentary, splenial, angular, surangular, coronoid, prearticular).
+\end{itemize}
+
+Different bones in the skull often end up fusing to each other, producing composite bones (e.g., frontoparietal). Mammals and birds have high degrees of bone fusion, but if you examine the \textit{Amia} skull you can see a highly unfused state.
+
+\subsection*{Neurocranium derivatives}
+\figNeurocranium
+
+\subsection*{Splanchnocranium derivatives}
+\figArches
+
+\section{General skull map}
+
+\figBoneMap
+
+\figSkullVariants
+
+
+\section{The jaw joint and the ear}
+
+\figOssicles
+
+\noindent
+{\footnotesize Vertebrates have lower jaws in many separate bones (often five or more), with the jaw joint being between the quadrate and the articular. But the mammal lower jaw has been reduced to a single bone (dentary). The other bones are largely still present in the mammals but are no longer part of the jaw. Instead, on a mammal skull the \term{tympanic bulla} ventral to the ear region is the \bone{angular} of a reptile jaw, and the human \term{temporal} bone is four bones fused into one (petrosal, squamosal, angular,
+styloid process).\par}
+
+\section{Consistent skull bones}
+
+Stable in \emph{position}, though several of them get renamed when they fuse
+or migrate (see the synonymy table further down).
+
+\begingroup\footnotesize
+\begin{xltabular}{\linewidth}{L{2.3cm} L{1.5cm} X}
+\toprule
+\textbf{Bone} & \textbf{Unit} & \textbf{Position \& Variation} \\
+\midrule
+\endhead
+Premaxilla & dermal &
+  Front of the upper jaw, bears the front teeth or the front of the beak.
+  Fused to its partner in birds and many mammals. Enormous in birds and
+  rodents. \\
+Maxilla & dermal &
+  Main tooth-bearing bone of the upper jaw. A strut of the beak in birds, part
+  of the \term{maxillopalatine} in caecilians, tiny or absent in some salamanders. \\
+Nasal & dermal &
+  Roofs the nasal capsule, in front of the frontal. Usually absent in turtles,
+  where the prefrontals meet instead. \\
+Frontal & dermal &
+  \emph{The reference bone}, positioned as above. Fused with
+  the parietal in frogs (\term{frontoparietal}); the pair fuse into one in
+  crocodilians, birds and many mammals; lost outright in monotremes. \\
+Parietal & dermal &
+  Roof behind the frontal. Often carries a \term{parietal foramen} for the
+  pineal eye in lepidosaurs. That hole is lost in birds, crocodilians and mammals. \\
+Squamosal & dermal &
+  Posterior cheek, above and behind the jaw joint, bracing the quadrate. Takes
+  over the jaw joint in mammals and ends up inside the \term{temporal} bone.
+  What gets called ``squamosal'' in snakes is really the supratemporal. \\
+Vomer, palatine, pterygoid & dermal &
+  The palate, front to back. Tooth-bearing in fish and amphibians. The
+  pterygoid is the big posterior one and your best palatal landmark. \\
+Quadrate & arch 1 &
+  Upper half of the primary jaw joint. Locked in crocodilians and turtles,
+  swinging in squamates and birds, and the \term{incus} in mammals. \\
+Articular & arch 1 &
+  Lower half of the primary jaw joint. The ossified back end of Meckel's
+  cartilage, and the \term{malleus} in mammals. \\
+Dentary & dermal &
+  The tooth-bearing bone of the lower jaw. The \emph{only} lower jaw bone in
+  mammals, one of five to eight in everything else. \\
+Occipital ring \newline (basi-, ex-, supra-) & neurocranial &
+  Rings the foramen magnum (literally ``biggest hole'') and carries the
+  occipital condyle(s). Salamanders keep the exoccipitals and drop the other
+  two. \\
+Sphenoid series \newline (basi-, pre-, latero-, orbito-) & neurocranial &
+  Floors and walls the braincase in front of the occiput. The
+  \bone{basisphenoid} sits under the midbrain everywhere; a \bone{presphenoid}
+  appears in front of it in some mammals; \bone{laterosphenoids} wall the
+  braincase in birds and other archosaurs, with an \bone{orbitosphenoid}
+  septum. These cartilages ossify separately in different amniote lineages, so
+  the terminology is genuinely inconsistent. In most mammals the whole set
+  fuses into one \term{sphenoid}, with the \term{sella turcica} cradling the
+  pituitary. \\
+Ethmoid series & neurocranial &
+  The most anterior centres, and cartilaginous in most vertebrates. Frogs
+  ossify a single \bone{sphenethmoid} across both; amniotes form a
+  \bone{mesethmoid} (nasal septum in mammals, orbital septum in birds) plus
+  \term{turbinates}, and mammals add the \term{cribriform plate} that the
+  olfactory nerve passes through. \emph{Sphenodon} forms an enigmatic
+  \bone{ectethmoid}. \\
+Otic capsule \newline (prootic, opisthotic, epiotic) & neurocranial &
+  Wraps the inner ear. The opisthotic fuses to the exoccipital in frogs and most
+  amniotes. All three fuse in birds and mammals, but differently: birds
+  ankylose the epiotic and opisthotic onto the occipital first and the result
+  is usually called the \term{periotic}, while mammals fuse prootic and
+  opisthotic into a discrete \term{petrosal} (the epiotic's share is
+  disputed). \\
+Stapes / columella & arch 2 &
+  The hyomandibula. Already a sound-conducting rod in tetrapods, innermost ear
+  ossicle in mammals. \\
+\bottomrule
+\end{xltabular}\endgroup
+
+% ----------------------------------------------------------------------
+
+\section{Commonly lost bones}
+
+\begingroup\footnotesize
+\begin{xltabular}{\linewidth}{L{2.9cm} L{4.0cm} X}
+\toprule
+\textbf{Bone} & \textbf{Lost in} & \textbf{Relevance} \\
+\midrule
+\endhead
+\bone{Jugal} &
+  All lissamphibians; snakes. Reduced to a rod in birds &
+  Kept in mammals, where it is the middle of the zygomatic arch. \\
+\bone{Quadratojugal} &
+  Salamanders, caecilians; snakes; mammals. Usually \emph{present} in frogs &
+  Present in frogs, absent in salamanders and caecilians. A fast split. \\
+\bone{Postorbital} &
+  All lissamphibians; birds; mammals &
+  Its loss drops the bar behind the eye, so orbit and temporal fossa run
+  together. Obvious in the hand. \\
+\bone{Postfrontal} &
+  Salamanders, frogs; turtles; birds; mammals &
+  Kept in lizards and the tuatara. \\
+\bone{Prefrontal} &
+  Frogs; birds; mammals &
+  Kept in salamanders. Present-in-salamanders, absent-in-frogs is another fast
+  split. \\
+\bone{Lacrimal} &
+  Most salamanders; frogs; turtles; snakes &
+  Carries the tear duct where it survives. In caecilians the nasolacrimal duct
+  enlarges and rotates forward instead. \\
+\bone{Postparietal, tabular, supratemporal} &
+  Essentially every living tetrapod, except that snakes keep the supratemporal &
+  The back edge of the ancestral roof. Their loss is why living skulls look
+  short behind the parietal next to fossil ones. \\
+\bone{Ectopterygoid} &
+  Turtles; birds; mammals &
+  Simplifies the back of the palate. \\
+\bone{Epipterygoid} &
+  Frogs, salamanders; snakes; birds; crocodilians. Kept in lizards, the tuatara
+  and turtles &
+  Probably becomes the mammalian \term{alisphenoid}, which would make part of
+  your orbit wall a piece of the ancestral jaw suspension. Widely believed,
+  not demonstrated. \\
+\bone{Postdentary jaw bones} \newline (surangular, angular, coronoid, splenial,
+  prearticular) &
+  Mammals, which keep the dentary and nothing else &
+  The defining mammal character. \\
+\bone{Opercular series} \newline (preopercular, opercular, subopercular) and
+  branchiostegals &
+  Everything except ray-finned fishes &
+  The fastest bony-fish character to check. \\
+\bottomrule
+\end{xltabular}\endgroup
+
+\section{Common synonymous names}
+
+\begingroup\footnotesize
+\begin{xltabular}{\linewidth}{L{4.5cm} L{4.5cm} X}
+\toprule
+\textbf{Usually called} & \textbf{Also called} & \\
+\midrule
+\endhead
+Hyomandibula & Columella; stapes in mammals & Same arch-2 element throughout. \\
+Quadrate & Incus (mammals) & \\
+Articular & Malleus (mammals) & \\
+Angular & Tympanic bulla / ectotympanic (mammals) & \\
+Epipterygoid & Alisphenoid (mammals) & Probable. Nobody has shown it. \\
+Prootic + opisthotic + epiotic & Periotic (birds) / petrosal (mammals) & A
+  fusion of three, and the two groups do it by different routes. \\
+Frontal + parietal & Frontoparietal (frogs) & \\
+Prootic + exoccipital & Otoccipital (frogs) & \\
+Sphenoid + parasphenoid + otic + occipital & Os basale (caecilians) &
+  One bone doing the work of a dozen. \\
+Maxilla + palatine & Maxillopalatine (caecilians) & \\
+Dentary + splenial & Pseudodentary (caecilians) & \\
+Angular + prearticular + surangular + articular & Pseudoangular (caecilians) &
+  Carries the giant retroarticular process. \\
+Supratemporal & ``squamosal'' (snakes) & Mislabelled constantly. The true
+  squamosal is lost in most snakes. \\
+Petrosal + squamosal + angular + styloid & Temporal (mammals) & \\
+Jugal + squamosal + maxilla & Zygomatic arch (mammals) & An arch of three
+bones. \\
+\bottomrule
+\end{xltabular}\endgroup
+
+% ----------------------------------------------------------------------
+
+\clearpage
+\section{Working through a skull}
+
+Each step assumes the ones above it.
+
+\begin{enumerate}[leftmargin=1.9em]
+\item \textbf{Any bone at all?} No, all cartilage, no tooth-bearing marginal
+  bones $\rightarrow$ \textbf{Chondrichthyes}. No jaws either, plus a round
+  sucking mouth $\rightarrow$ \textbf{lamprey}; no jaws and a tooth-plate
+  tongue $\rightarrow$ \textbf{hagfish}.
+\item \textbf{A bony gill cover?} Flat plates behind the cheek (opercular,
+  preopercular, subopercular) and a fan of \term{branchiostegals} under the jaw
+  $\rightarrow$ \textbf{Actinopterygii}. Nothing else has them (expect a great many small bones too, a ring of
+  circumorbitals, and a long parasphenoid flooring the braincase).
+\item \textbf{How many occipital condyles?} Two $\rightarrow$
+  \textbf{Lissamphibia} or \textbf{Mammalia}, go to 4. One $\rightarrow$
+  \textbf{Reptilia}, birds included, go to 5. The doubling happened twice independently, so it does not group amphibians
+  with mammals.
+\item \textbf{How many bones in the lower jaw?} One, hinged on the squamosal,
+  with a bony secondary palate and teeth of several shapes $\rightarrow$
+  \textbf{Mammalia}. Two or three, small and lightly built, roof reduced and
+  full of gaps $\rightarrow$ \textbf{Lissamphibia}, go to 6.
+\item \textbf{Teeth?} None, horny beak, one condyle: either
+  \textbf{Testudines} (solid or emarginate cheek, no fenestrae) or
+  \textbf{Aves} (huge orbits, thin bone, braincase fused smooth with no
+  sutures). You will not confuse these twice. Teeth present $\rightarrow$ go
+  to 7.
+\item \textbf{Which lissamphibian?} Heavily ossified, solid roof, tiny orbits,
+  an extra hole between eye and nostril, huge backward process on the jaw
+  $\rightarrow$ \textbf{Gymnophiona}. Frontal and parietal fused into a
+  frontoparietal, no dentary teeth $\rightarrow$ \textbf{Anura}. Frontal and
+  parietal separate, vomerine teeth, teeth top and bottom $\rightarrow$
+  \textbf{Caudata}.
+\item \textbf{A hole in the side of the lower jaw?} \term{Mandibular fenestra}
+  $\rightarrow$ \textbf{Archosauria}. Long solid snout, bony palate, teeth in sockets $\rightarrow$ \textbf{Crocodylia}.
+\item \textbf{Upper fenestra complete, lower one open below?} $\rightarrow$
+  \textbf{Squamata}. Face loose, braincase a sealed box,
+  the two halves of the lower jaw not joined at the chin $\rightarrow$
+  \textbf{Serpentes}. Both bars complete, premaxillary ``beak'', acrodont teeth
+  $\rightarrow$ \textbf{Sphenodontia}.
+\end{enumerate}
+
+\clearpage
+% ======================================================================
+
+\clearpage
+\section{The clades}
+
+\begin{cladebox}{Agnatha}
+\begin{multicols}{2}
+\begin{itemize}
+\item No jaws, and so no palatoquadrate and no Meckel's cartilage (the mandibular
+  arch is there, just never built into a jaw).
+\item No bone at all in lampreys: the whole head skeleton is cartilage, and the
+  braincase is a cartilaginous trough left open dorsally.
+\item Lamprey: \term{annular cartilage} ringing the oral disc, \term{piston
+  cartilage} driving the rasping tongue.
+\item Hagfish: \term{lingual cartilage} carrying the tooth plates.
+\item Everything else here is a modification of a jawed skull; this is a head
+  without one.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Chondrichthyes}
+\begin{multicols}{2}
+\begin{itemize}
+\item Loss of the dermatocranium: no roof, no palate, no tooth-bearing
+  marginal bones,
+  and teeth that sit in the skin and get replaced in rows. They had bone and they
+  got rid of it.
+\item The \term{chondrocranium} is one continuous cartilage box, its parts fused
+  into a single complex structure (highly derived, and still the clearest look at a neurocranium you will get).
+\item Jaws are the bare arch elements, \bone{palatoquadrate} above and
+  \bone{Meckel's cartilage} below (the clearest place to see what a jaw
+  \emph{is} before dermal bone covers it).
+\item \term{Rostrum} projecting forward past the olfactory capsules (what gives
+  sharks their head shape).
+\item Jaw suspension: \term{hyostyly} in sharks and rays, where the
+  hyomandibula props the jaw and gives the gape;
+  \term{holostyly} in chimaeras, where the palatoquadrate fuses directly onto the braincase and needs no prop.
+\item Separate gill slits with no bony cover, and a spiracle retained in rays and
+  many sharks.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Actinopterygii}
+\begin{multicols}{2}
+\begin{itemize}
+\item The most separate skull bones of any vertebrate (well over a hundred), and
+  everything after this is subtraction.
+\item \textbf{Opercular series} and \textbf{branchiostegals}, which nothing else has
+  (\emph{branchio-} means gill, \emph{stega-} means roof, \emph{gular} means
+  throat, for what it's worth).
+\item Complete \term{circumorbital ring} round the eye, and a long dermal
+  \bone{Parasphenoid} flooring the braincase from below.
+\item Several separate palatal bones (autopalatine, ectopterygoid,
+  metapterygoid, pterygoids) making a mobile \term{suspensorium}.
+\item Teleosts: protrusible upper jaw (the premaxilla slides forward off the skull).
+\item Extra bones of uncertain homology (rostrals, extrascapular), so that diagrams
+  don't throw you.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Lissamphibia}
+\begin{multicols}{2}
+\begin{itemize}
+\item Major reduction of the cranial skeleton, and pedicellate teeth (crown and base
+  separated by a ring of uncalcified tissue).
+\item Loss of the \bone{jugal} and \bone{postorbital} in all three orders, so there is no bony bar behind or below the eye and the orbit continues back
+  into the cheek without a boundary you can point at.
+\item Also lost: postparietal, tabular and supratemporal (the back edge of the
+  ancestral roof).
+\item Vomer and palatine teeth retained in most (palatal teeth are normal here and
+  abnormal in amniotes).
+\item Two occipital condyles, on the \bone{exoccipitals} (mammals doubled theirs
+  independently).
+\item No separate basisphenoid; the dermal \bone{parasphenoid} floors the braincase
+  instead.
+\item Ear: \term{columella} plus a cartilaginous \term{operculum} in the oval window
+  (a second sound path, and nothing else has one).
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Caudata}
+\begin{multicols}{2}
+\begin{itemize}
+\item Frontals and parietals unfused, so four separate roofing bones where a frog
+  has two (the quickest frog/salamander split).
+\item Vomerine teeth in long rows (the first thing to check on a salamander palate).
+\item Gone: postorbital, postparietal, tabular, supratemporal, jugal, quadratojugal,
+  supraoccipital, basioccipital and ectopterygoid (lacrimal too, in most).
+\item \bone{Prefrontal} usually present and teeth on both jaws, unlike frogs on
+  both counts.
+\item No supraoccipital and no basioccipital, so the occiput is the two
+  \bone{exoccipitals} alone and they carry both condyles.
+\item \bone{Squamosal} is a free strut running down to brace the quadrate (easy to
+  see, and easy to snap on a dry specimen).
+\item Some salamandrids have a \term{frontosquamosal arch}, which looks like the
+  cranial arches of amniotes and is unique among salamanders.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Anura}
+\begin{multicols}{2}
+\begin{itemize}
+\item Frontal and parietal fused into a \term{frontoparietal}, which is diagnostic
+  on its own.
+\item Neurocranium largely unossified. The \bone{sphenethmoid} in front and the
+  \term{otoccipital} (prootic + exoccipital) behind are often all the
+  endochondral bone there is.
+\item \bone{Quadratojugal} usually present, joining maxilla to suspensorium, unlike
+  salamanders and caecilians (reduced or lost in some families).
+\item \bone{Squamosal} a T- or Y-shaped strut and \bone{pterygoid} triradiate
+  (between them they hold the jaw on).
+\item Gone: lacrimal, prefrontal, postfrontal, postorbital, jugal.
+\item Loss of teeth on the dentary. Total loss of teeth in some groups
+  (\emph{Bufo} and kin). The one frog with lower teeth, \emph{Gastrotheca
+  guentheri}, is famous for being the only one.
+\item Huge orbits and a broad interorbital space (the eyeballs are part of the
+  swallowing mechanism).
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Gymnophiona}
+\begin{multicols}{2}
+\begin{itemize}
+\item Thoroughly ossified skull with massive reduction in the number of bones, the
+  opposite of the other two orders (this is a burrowing head used as a ram).
+\item \term{Stegokrotaphic} (temporal region fully roofed) in most, some
+  \term{zygokrotaphic} with an opening between squamosal and parietal.
+\item The nasolacrimal duct is dramatically enlarged and rotated forward, creating
+  an extra set of post-nasal holes (and in some species the orbit is
+  completely covered with bone).
+\item Gigantic retroarticular process on the lower jaw, carrying the \emph{m.\
+  interhyoideus posterior} and giving caecilians a second jaw-\emph{closing}
+  mechanism (nothing else has one).
+\item Compound bones throughout: \term{os basale}, \term{maxillopalatine},
+  \term{pseudodentary}, \term{pseudoangular}.
+\item Teeth on both jaws, often two rows on the upper. Very cool skulls.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Testudines}
+\begin{multicols}{2}
+\begin{itemize}
+\item Turtles have an absurd number of skeletal apomorphies, and their skull is
+  among the least derived things about them (it is still pretty insanely
+  derived).
+\item They have totally lost their dentition, they have closed up the temporal
+  fenestrae they inherited from their common ancestor (and some have re-opened an
+  alternate, posterior-facing opening for the jaw musculature), and their skulls
+  are highly akinetic with the bones fused to a level comparable to that of
+  mammals.
+\item Horny \term{rhamphotheca} on premaxilla, maxilla and dentary (beak plus one
+  condyle plus no fenestrae keys a turtle immediately).
+\item Deep \term{emarginations} in the posterior and ventral margins of the
+  cheek, to different depths in different families.
+\item Lost in most: nasals, lacrimal, postfrontal,
+  supratemporal, postparietal, ectopterygoid, splenial.
+\item \bone{Epipterygoid} present, and in cryptodires it builds a secondary lateral
+  braincase wall (pleurodires build the same wall from a descending flange of
+  the parietal instead).
+\item Occipital condyle tripartite (basioccipital plus both exoccipitals), but
+  functionally single.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Squamata}
+\begin{multicols}{2}
+\begin{itemize}
+\item Lower temporal bar lost, so the quadrate swings freely on the squamosal
+  (\term{streptostyly}), and the skull is highly mobile throughout. The upper
+  fenestra and its bar stay.
+\item Teeth primitively \term{pleurodont}, on the side of the jaw (some lineages
+  evolve \term{acrodont} teeth), and essentially never on the vomer.
+\item Lower jaw: dentary, splenial, coronoid, angular, surangular, prearticular,
+  articular (the back three often fuse into one \term{compound bone} in
+  adults).
+\item \bone{Postfrontal} and \bone{postorbital} both present, unlike birds and
+  mammals.
+\item Often a \term{parietal foramen} for the parietal eye.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Serpentes}
+\begin{multicols}{2}
+\begin{itemize}
+\item One lineage of legless lizards, out of at least a dozen independent
+  evolutions of leglessness, with \emph{particularly} mobile skulls.
+\item The face is looser than any other vertebrate's while the braincase is a
+  completely enclosed, solidly ossified box, and both follow from swallowing prey
+  wider than your own head: the jaws have to move, and the brain has to be
+  protected from them moving.
+\item Gone: \bone{jugal}, \bone{quadratojugal}, \bone{epipterygoid},
+  \bone{lacrimal}, and the true \bone{squamosal} in most snakes.
+\item \bone{Supratemporal} retained, and it suspends the quadrate (mislabelled
+  ``squamosal'' in old keys and on museum drawers).
+\item No mandibular symphysis: an elastic ligament joins the two dentaries at the
+  chin, and they move independently.
+\item Recurved teeth on maxilla, palatine and pterygoid drive the maxillary walk,
+  distinctive to snakes out of all vertebrates: they bite, lift one maxilla,
+  move it forward, bite down again, and walk the jaw along without ever letting go (other animals have to open the
+  mouth to adjust; snakes don't).
+\item No temporal bars in the usual sense, so don't try to apply the diapsid scheme
+  here.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Sphenodontia}
+\begin{multicols}{2}
+\begin{itemize}
+\item The lower \term{temporal bar} is intact, and it is \emph{re-evolved}
+  (sphenodontians lost the bar and then built it again).
+\item Teeth fused straight to the bone as spikes, \term{acrodont} (\emph{acro-},
+  like acrobat, means on top of).
+\item Pronounced premaxillary ``beak''.
+\item One living species (\emph{Sphenodon punctatus}), and it turns up in every
+  teaching collection.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Archosauria}
+\begin{multicols}{2}
+\begin{itemize}
+\item \term{Mandibular fenestra} in the lower jaw, between dentary, surangular
+  and angular.
+\item Teeth, where present, \term{thecodont}: single root sitting in a socket.
+\item Primitively an \term{antorbital fenestra} (a novel hole between orbit and
+  nares), lost independently by both living archosaur groups, so you only ever
+  see it in extinct ones.
+\item Both temporal fenestrae present ancestrally, both bars complete.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Crocodylia}
+\begin{multicols}{2}
+\begin{itemize}
+\item Secondary bony palate from premaxilla, maxilla, palatine and pterygoid,
+  carrying the choanae right to the back of the throat so the animal can breathe
+  with a mouth full of water (convergent with the mammalian one).
+\item Loss of the antorbital fenestra, mandibular fenestra kept, osteoderms
+  present.
+\item Completely akinetic and heavily built, with the frontals and the
+  parietals each fused into a single bone (the opposite design decision from a
+  squamate).
+\item Teeth thecodont, deep sockets, all one shape, replaced continually.
+\item Nares at the tip of a long snout and orbits on top (both ambush-predator
+  features, and you can read them straight off the bone).
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Aves}
+\begin{multicols}{2}
+\begin{itemize}
+\item Massive fusion and reduction: sutures obliterate in adults, so a bird
+  braincase looks like a single bone, and air-sac invasion leaves the skeleton pneumatic.
+\item Total loss of dentition, with a horny \term{rhamphotheca} over fused
+  premaxillae.
+\item Loss of the \bone{postorbital}, and with it the postorbital bar, so the temporal region opens into the orbit (don't go looking for upper and lower fenestrae on a bird).
+\item Enormous orbits split by a thin \term{interorbital septum} with a
+  \bone{mesethmoid} contribution (the eyes are so big the braincase is pushed
+  behind them).
+\item Highly mobile upper jaw (\term{prokinesis}): the whole beak rotates at a
+  flexion zone where the nasals meet the frontals, driven by a push forward
+  through the pterygoid and palate, with the mobile, double-headed
+  \bone{quadrate} as the crank.
+\item One occipital condyle, set well under the skull.
+\item \bone{Jugal} and \bone{quadratojugal} reduced to a bare \term{jugal bar} under
+  the orbit (prefrontal and mandibular fenestra both lost).
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Mammalia}
+\begin{multicols}{2}
+\begin{itemize}
+\item One bone in the lower jaw, the \bone{dentary}, hinged directly on the
+  \bone{squamosal} (that is the definition, and the rest of this list follows
+  from it).
+\item Movement of the quadrate and articular into the middle ear as
+  \bone{incus} and \bone{malleus}, and fusion of the angular to the skull as
+  the \term{tympanic bulla}.
+\item One temporal fenestra, hugely enlarged, floored by the \term{zygomatic
+  arch}: jugal plus squamosal, with the maxilla in front.
+\item Loss of the \bone{postorbital}, so in most mammals the temporal fossa is
+  confluent with the orbit (primates and some others rebuild a bar from the
+  frontal and jugal, long after their ancestors lost it).
+\item Two occipital condyles, on the exoccipitals (convergent with lissamphibians).
+\item Rampant fusion of skull bones (the otic bones fuse into the \term{petrosal}).
+\item Secondary bony palate from premaxilla, maxilla and palatine (convergent with
+  the crocodilian one).
+\item Strong heterodont dentition, multiple-rooted and thecodont, with a derived
+  loss of tooth replacement beyond a single round (you identify most mammals from tooth shape).
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+\begin{cladebox}{Inside Mammalia}
+\begin{multicols}{2}
+\begin{itemize}
+\item Eutherians have three molars and four premolars.
+\item Metatherians have four molars and three premolars, plus a medial
+  deflection of the angular process of the dentary that you can feel by running
+  a finger along the inside of the jaw's back corner. Palatal vacuities open in
+  the secondary palate, and the jugal runs far back along the zygomatic arch to
+  reach the jaw joint, which in placentals the squamosal takes alone.
+\item Monotremes are egg-layers that have lost their frontal bones, and both
+  living lineages have also lost their teeth. The skull is strikingly flat and
+  the braincase relatively smooth.
+\end{itemize}
+\end{multicols}
+\end{cladebox}
+
+% ----------------------------------------------------------------------
+
+\section{Glossary}
+
+\begingroup\footnotesize
+\begin{xltabular}{\linewidth}{L{3.3cm} X}
+\toprule
+\endhead
+\term{acrodont} & Teeth fused on top of the jaw, no root. \emph{Acro-}, like
+  acrobat, means on top of. Chameleons, agamids, tuatara. \\
+\term{akinetic} & Nothing in the skull moves relative to anything else.
+  Crocodilians, turtles, mammals. \\
+\term{antorbital fenestra} & Novel hole between orbit and nares. Archosaur
+  character, lost independently in both living groups. \\
+\term{chondrocranium} & The cartilage braincase, and the bone that replaces it. \\
+\term{dermatocranium} & Dermal bone, ossified in the skin with no cartilage
+  precursor. \\
+\term{diphyodont} & Two tooth generations only. Mammals. \\
+\term{emargination} & A notch cut in from a free edge. Not a fenestra.
+  Turtles. \\
+\term{fenestra} & An opening enclosed by bone on every side. \\
+\term{foramen magnum} & Literally ``biggest hole''. Where the spinal cord
+  enters. \\
+\term{heterodont} & Teeth of several shapes along the jaw. \\
+\term{hyostyly} & Jaw suspension where the hyomandibula props the
+  palatoquadrate. Sharks, bony fishes. \\
+\term{kinesis} & Movement between units of the skull. \term{Prokinesis} is the
+  avian form, hinging the whole beak. \\
+\term{pedicellate} & Crown and base of the tooth separated by uncalcified
+  tissue. Lissamphibians. \\
+\term{pleurodont} & Teeth fused to the side of the jaw. \emph{Pleuro-} means
+  side. Most lizards, all snakes. \\
+\term{rhamphotheca} & Horny beak sheath. Turtles, birds. \\
+\term{splanchnocranium} & The pharyngeal arch skeleton: jaws, jaw suspension,
+  hyoid, gill skeleton. \\
+\term{stegokrotaphic} & Temporal region completely roofed by bone. Most
+  caecilians. \term{Zygokrotaphic}: with an opening. \\
+\term{streptostyly} & Mobile quadrate, swinging on the squamosal. Squamates,
+  birds. \\
+\term{thecodont} & Teeth in sockets. Archosaurs, mammals. \\
+\bottomrule
+\end{xltabular}\endgroup
+
+
+\end{document}

@@ -32,6 +32,7 @@ Update it in the same commit that changes a file's standing. State is in
 | `remine-status.json` | authoritative | Per-source re-mine **status**, and nothing else. Whether a source has been read to exhaustion is a judgement and cannot be computed; how many rows it carries can be, so `doc_counts.py` counts those from `observations/` rather than storing them here. It used to store them, and the number went stale the first time a source was properly re-mined |
 | `raw/` | ignored | Verbatim extractions. Git-ignored for copyright. Never commit or quote into `data/` |
 
+| `sim/` | **authoritative** | Muscle-simulator models (`<region>-<species>.json`) and `index.json`. Anatomy cited to sources; geometry schematic and checked against them by `tests/sim.test.js`. Not read by the dataset build |
 | `observations/` | **authoritative** | **The source of truth as of Task 5.** 248 files, one per (species × study). A row's `record` names the homology group it was assigned to; `null` means unassigned and `blockedBy` says why |
 | `mapping/` | **derived** | A generated **view** of the homology layer, one file per source: `name\|region` → `{record, species[]}`. The assignment itself lives on each observation row as `record`; the join rewrites this from those rows and `validate.py` errors if it is stale or hand-edited. It exists so the homology decisions can be read on their own, and so the cost of moving a name is visible — each key lists the species it covers |
 
@@ -87,6 +88,7 @@ the build until they are ported. See the table below.
 | `MIGRATION.md` · `MIGRATION-STATE.md` · `FILE-LEDGER.md` | authoritative | This migration |
 | `WORKLIST.md` | authoritative | What to do next in the *data*, and the open decisions |
 | `ROADMAP.md` | authoritative | Where the interface is going |
+| `SIMULATOR.md` | authoritative | How the muscle simulator is built; how to add a taxon or region |
 | `homology-system-guide.md` | authoritative | What the four correspondence relations mean |
 | `STATUS.md` | derived | Entirely generated |
 | `papers/*.md` | authoritative | What one source says and what one pass found. **Where history lives** — a re-mine writes its accounting here |

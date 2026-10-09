@@ -1,0 +1,204 @@
+{
+  "id": "cranial-rhinobatos-percellens",
+  "region": "cranial",
+  "species": "rhinobatos-percellens",
+  "label": "Rhinobatos percellens",
+  "common": "Southern guitarfish",
+  "group": "Ray",
+  "suspension": "hyostylic",
+  "view": "lateral, snout right",
+  "viewBox": [0, 0, 640, 380],
+  "sources": ["huber-etal-2011"],
+  "summary": "Hyostylic like the shark, but the head is flattened and the mouth is ventral, so the upper jaw is thrust down and forward rather than straight forward. Hypobranchial muscles that the shark has only as a coracomandibularis and coracohyoideus are extended into depressors that reach the jaw and the hyomandibula.",
+  "note": "Outlines, lever arms and ranges of motion are schematic. The muscles, attachments and credited actions come from Huber et al. (2011) Table 3 and its text; tests/sim.test.js checks that the geometry reproduces them. Protrusion is a slide of the palatoquadrate complex down and forward, as in the shark but along a steeper axis. The depressor rostri and levator rostri are recorded in the dataset's source but not simulated, because no rostral joint is modelled.",
+
+  "segments": [
+    { "id": "trunk", "label": "Trunk (epaxial block)", "parent": null,
+      "paths": [ { "d": "M-10 90 L80 96 L80 182 L-10 198 Z", "class": "soft" } ] },
+
+    { "id": "pouches", "label": "Gill pouches", "parent": "trunk",
+      "paths": [
+        { "d": "M83 244 a7 36 0 1 0 14 0 a7 36 0 1 0 -14 0", "class": "aux" },
+        { "d": "M105 244 a7 36 0 1 0 14 0 a7 36 0 1 0 -14 0", "class": "aux" },
+        { "d": "M127 244 a7 36 0 1 0 14 0 a7 36 0 1 0 -14 0", "class": "aux" },
+        { "d": "M149 244 a7 36 0 1 0 14 0 a7 36 0 1 0 -14 0", "class": "aux" }
+      ] },
+    { "id": "gillfloor", "label": "Floor of the gill chamber", "parent": "trunk",
+      "paths": [ { "d": "M76 286 L176 292", "class": "raphe" } ] },
+
+    { "id": "girdle", "label": "Scapulocoracoid", "element": "scapulocoracoid", "parent": "trunk",
+      "labelAt": [88, 324],
+      "paths": [ { "d": "M40 318 C40 298 90 288 150 292 L214 300 C214 320 150 336 96 336 C62 336 40 330 40 318 Z", "class": "cart" } ] },
+
+    { "id": "hypobr", "label": "Hypobranchial muscles and raphe", "parent": "girdle",
+      "paths": [ { "d": "M214 304 L342 324", "class": "raphe" } ] },
+
+    { "id": "ceratohyal", "label": "Ceratohyal / hyoid arch", "element": "ceratohyal", "parent": "pq",
+      "labelAt": [352, 300],
+      "paths": [ { "d": "M266 246 C274 238 286 242 294 250 L334 274 C344 280 340 292 328 290 L286 270 C270 262 264 254 266 246 Z", "class": "cart" } ] },
+
+    { "id": "cranium", "label": "Neurocranium", "element": "neurocranium", "parent": "trunk",
+      "labelAt": [236, 124],
+      "paths": [
+        { "d": "M70 160 C66 128 98 110 160 108 L300 104 C400 104 520 120 612 150 C560 160 500 164 440 168 L360 174 L330 180 L205 186 L120 192 C90 190 72 182 70 160 Z", "class": "cart" },
+        { "d": "M114 148 a46 30 0 1 0 92 0 a46 30 0 1 0 -92 0", "class": "aux" },
+        { "d": "M290 136 a30 22 0 1 0 60 0 a30 22 0 1 0 -60 0", "class": "aux" },
+        { "d": "M436 148 a34 20 0 1 0 68 0 a34 20 0 1 0 -68 0", "class": "aux" },
+        { "d": "M504 152 L606 152", "class": "aux" }
+      ] },
+
+    { "id": "pq", "label": "Palatoquadrate (upper jaw)", "element": "palatoquadrate-quadrate", "parent": "cranium",
+      "labelAt": [360, 186],
+      "paths": [ { "d": "M262 214 C262 202 282 196 312 196 L376 192 C398 190 420 194 426 204 C426 214 410 220 392 220 L330 226 C306 232 288 238 274 236 C266 232 262 224 262 214 Z", "class": "cart" } ] },
+
+    { "id": "mandible", "label": "Meckel's cartilage (lower jaw)", "element": "meckels-cartilage", "parent": "pq",
+      "labelAt": [372, 272],
+      "paths": [ { "d": "M260 242 C260 232 274 228 292 230 L330 231 L390 226 C406 224 422 222 428 228 C430 238 420 246 402 250 L330 260 C302 264 276 262 266 256 C262 252 260 248 260 242 Z", "class": "cart" } ] }
+  ],
+
+  "links": [
+    { "id": "hyomandibula", "label": "Hyomandibula", "element": "hyomandibula-stapes", "from": "nc-hy", "to": "pq-rear", "width": 10, "class": "cart" }
+  ],
+
+  "dofs": [
+    { "id": "cranium", "range": [0, 6], "unit": "°",
+      "drives": [ { "segment": "cranium", "type": "rotation", "pivot": [76, 172], "sign": -1 } ] },
+    { "id": "upper-jaw", "range": [0, 40], "unit": "px",
+      "drives": [ { "segment": "pq", "type": "translation", "axis": [0.88, 0.48] } ] },
+    { "id": "jaw", "range": [0, 26], "unit": "°",
+      "drives": [ { "segment": "mandible", "type": "rotation", "pivot": [272, 238], "sign": 1 } ],
+      "handle": "mk-tip" },
+    { "id": "hyoid", "range": [0, 20], "unit": "°",
+      "drives": [ { "segment": "ceratohyal", "type": "rotation", "pivot": [276, 246], "sign": 1 } ],
+      "handle": "ch-basi" },
+    { "id": "gill", "range": [0, 18], "unit": "px",
+      "drives": [
+        { "segment": "gillfloor", "type": "translation", "axis": [0, -1] },
+        { "segment": "pouches", "type": "scale", "anchor": [120, 200], "axis": [0, 1], "k": 0.018 }
+      ] }
+  ],
+
+  "landmarks": {
+    "tr-ep":   { "segment": "trunk",     "at": [24, 104, 14],  "label": "Epaxial muscle mass" },
+    "tr-gd1":  { "segment": "trunk",     "at": [92, 200, 20],  "label": "Dorsal raphe 1" },
+    "tr-gd2":  { "segment": "trunk",     "at": [114, 200, 20], "label": "Dorsal raphe 2" },
+    "tr-gd3":  { "segment": "trunk",     "at": [136, 200, 20], "label": "Dorsal raphe 3" },
+    "gl-v1":   { "segment": "gillfloor", "at": [92, 286, 0],   "label": "Ventral gill raphe 1" },
+    "gl-v2":   { "segment": "gillfloor", "at": [114, 287, 0],  "label": "Ventral gill raphe 2" },
+    "gl-v3":   { "segment": "gillfloor", "at": [136, 288, 0],  "label": "Ventral gill raphe 3" },
+    "gd-cm":   { "segment": "girdle",    "at": [206, 302, 8],  "label": "Coracoarcualis (origin of coracomandibularis)", "element": "scapulocoracoid" },
+    "gd-ch":   { "segment": "girdle",    "at": [206, 316, 8],  "label": "Coracoarcualis (origin of coracohyoideus)", "element": "scapulocoracoid" },
+    "hb-dh":   { "segment": "hypobr",    "at": [292, 314, 8],  "label": "Hypobranchial muscles and raphe (depressor hyomandibularis)" },
+    "hb-dm":   { "segment": "hypobr",    "at": [334, 320, 8],  "label": "Hypobranchial muscles and raphe (depressor mandibulae)" },
+    "nc-ep":   { "segment": "cranium",   "at": [96, 114, 14],  "label": "Chondrocranium, dorsal", "element": "neurocranium" },
+    "nc-hy":   { "segment": "cranium",   "at": [186, 188, 0],  "label": "Otic region, hyomandibular articulation", "element": "otic-capsule" },
+    "nc-pre":  { "segment": "cranium",   "at": [470, 166, 12], "label": "Nasal capsule", "element": "nasal-capsule" },
+    "nc-lpq":  { "segment": "cranium",   "at": [212, 188, 16], "label": "Otic region, ventrolateral", "element": "otic-capsule" },
+    "nc-lh":   { "segment": "cranium",   "at": [166, 188, 16], "label": "Otic region, posterior", "element": "otic-capsule" },
+    "pq-rear": { "segment": "pq",        "at": [270, 230, 10], "label": "Distal tip of the hyomandibula, at the jaw joint", "element": "hyomandibula-stapes" },
+    "pq-am1":  { "segment": "pq",        "at": [296, 206, 16], "label": "Palatoquadrate, lateral face", "element": "palatoquadrate-quadrate" },
+    "pq-am2":  { "segment": "pq",        "at": [322, 204, 14], "label": "Palatoquadrate, lateral face (anterior)", "element": "palatoquadrate-quadrate" },
+    "pq-dorsal": { "segment": "pq",      "at": [336, 196, 14], "label": "Palatoquadrate, dorsal edge", "element": "palatoquadrate-quadrate" },
+    "mk-am1":  { "segment": "mandible",  "at": [318, 242, 16], "label": "Meckel's cartilage, lateral face", "element": "meckels-cartilage" },
+    "mk-am2":  { "segment": "mandible",  "at": [346, 240, 14], "label": "Meckel's cartilage, lateral face (anterior)", "element": "meckels-cartilage" },
+    "mk-po":   { "segment": "mandible",  "at": [360, 238, 16], "label": "Adductor mandibulae complex (tendon of the preorbitalis)", "element": "meckels-cartilage" },
+    "mk-sym":  { "segment": "mandible",  "at": [424, 246, 0],  "label": "Meckel's cartilage, symphysis", "element": "meckels-cartilage" },
+    "mk-dm":   { "segment": "mandible",  "at": [324, 256, 14], "label": "Meckel's cartilage, ventral", "element": "meckels-cartilage" },
+    "mk-tip":  { "segment": "mandible",  "at": [432, 234, 0],  "label": "Lower-jaw tip" },
+    "ch-basi": { "segment": "ceratohyal","at": [336, 284, 0],   "label": "Basihyal", "element": "ceratohyal" }
+  },
+
+  "muscles": [
+    { "id": "adductor-mandibulae", "short": "AM", "label": "Adductor mandibulae (3 divisions)", "group": "adductor-mandibulae",
+      "record": "adductor-mandibulae", "status": "recorded",
+      "paths": [ ["pq-am1", "mk-am1"], ["pq-am2", "mk-am2"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Closes the lower jaw. Lateral divisions 1 and 2 and a medial division, all from the palatoquadrate to Meckel's cartilage; two are drawn.",
+      "expect": [ { "dof": "jaw", "dir": -1 } ] },
+
+    { "id": "preorbitalis", "short": "PO", "label": "Preorbitalis", "group": "preorbitalis",
+      "record": null, "status": "recorded",
+      "paths": [ ["nc-pre", "mk-po"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the nasal capsule, by a tendon that joins the adductor mandibulae complex; closes the lower jaw and thrusts the upper jaw out.",
+      "note": "No muscle record yet: the dataset parks the row for want of a homology group.",
+      "expect": [ { "dof": "jaw", "dir": -1 }, { "dof": "upper-jaw", "dir": 1 } ] },
+
+    { "id": "levator-palatoquadrati", "short": "LPQ", "label": "Levator palatoquadrati", "group": "levator-palatoquadrati",
+      "record": "levator-arcus-palatini", "status": "recorded",
+      "paths": [ ["nc-lpq", "pq-dorsal"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the otic region onto the palatoquadrate; raises the upper jaw back to rest.",
+      "expect": [ { "dof": "upper-jaw", "dir": -1 } ] },
+
+    { "id": "levator-hyomandibulae", "short": "LH", "label": "Levator hyomandibulae", "group": "levator-hyomandibulae",
+      "record": "depressor-mandibulae", "status": "recorded",
+      "paths": [ ["nc-lh", "pq-rear"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the otic region onto the hyomandibula; retracts it after a gape cycle.",
+      "note": "The dataset files it on the same record as the tetrapod depressor mandibulae.",
+      "expect": [ { "dof": "upper-jaw", "dir": -1 } ] },
+
+    { "id": "coracomandibularis", "short": "CM", "label": "Coracomandibularis", "group": "coracomandibularis",
+      "record": "hypobranchial-muscles", "status": "recorded",
+      "paths": [ ["gd-cm", "mk-sym"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Opens the lower jaw.",
+      "expect": [ { "dof": "jaw", "dir": 1 } ] },
+
+    { "id": "coracohyoideus", "short": "CH", "label": "Coracohyoideus", "group": "coracohyoideus",
+      "record": "hypobranchial-muscles", "status": "recorded",
+      "paths": [ ["gd-ch", "ch-basi"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Depresses the hyoid arch by acting on the basihyal.",
+      "expect": [ { "dof": "hyoid", "dir": 1 } ] },
+
+    { "id": "depressor-mandibulae", "short": "DM", "label": "Depressor mandibulae (batoid)", "group": "depressor-mandibulae-batoid",
+      "record": null, "status": "recorded",
+      "paths": [ ["hb-dm", "mk-dm"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the hypobranchial muscles and raphe onto Meckel's cartilage; opens the lower jaw. Huber et al. read it as a division of the depressor rostri.",
+      "note": "Not the tetrapod depressor mandibulae, which is a hyoid-arch derivative. Parked in the dataset on nomenclature.",
+      "expect": [ { "dof": "jaw", "dir": 1 } ] },
+
+    { "id": "depressor-hyomandibularis", "short": "DH", "label": "Depressor hyomandibularis", "group": "depressor-hyomandibularis",
+      "record": "stapedius", "status": "recorded",
+      "paths": [ ["hb-dh", "pq-rear"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "From the ventral hypobranchial muscles onto the distal hyomandibula, which it abducts; the coracohyomandibularis assists. Abducting the hyomandibula carries the upper jaw down and out.",
+      "expect": [ { "dof": "upper-jaw", "dir": 1 } ] },
+
+    { "id": "branchial-constrictors", "short": "BC", "label": "Hyoid and branchial constrictors", "group": "constrictors",
+      "record": "branchial-constrictors", "status": "recorded",
+      "paths": [ ["tr-gd1", "gl-v1"], ["tr-gd2", "gl-v2"], ["tr-gd3", "gl-v3"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "The dorsal and ventral superficial branchial constrictors and the hyoid constrictors that continue them squeeze the gills.",
+      "note": "The dataset files the ventral hyoid constrictor on the interhyoideus record; Huber et al. give it a compressive action, so it is shown here with the constrictors.",
+      "expect": [ { "dof": "gill", "dir": 1 } ] },
+
+    { "id": "epaxialis", "short": "EB", "label": "Epaxialis", "group": "cranial-elevators",
+      "record": "epaxial-musculature", "status": "recorded",
+      "paths": [ ["tr-ep", "nc-ep"] ],
+      "sources": ["huber-etal-2011"],
+      "actionText": "In batoids the epaxial muscle inserts directly on the chondrocranium and lifts the head.",
+      "expect": [ { "dof": "cranium", "dir": 1 } ] },
+
+    { "id": "interhyoideus", "short": "IH", "label": "Ventral hyoid constrictor (filed as interhyoideus)", "group": "interhyoideus",
+      "record": "interhyoideus", "status": "recorded", "paths": [],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Compresses the first gill pouch; shown with the constrictors.",
+      "reason": "Huber et al. record no floor-raising interhyoideus in the guitarfish; the dataset's interhyoideus row is the ventral hyoid constrictor." },
+
+    { "id": "depressor-rostri", "short": "DR", "label": "Depressor rostri", "group": "rostral-muscles",
+      "record": null, "status": "recorded", "paths": [],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Pulls the rostrum down by a long tendon from the hypobranchial muscles.",
+      "reason": "No rostral joint is modelled." },
+
+    { "id": "levator-rostri", "short": "LR", "label": "Levator rostri", "group": "rostral-muscles",
+      "record": null, "status": "recorded", "paths": [],
+      "sources": ["huber-etal-2011"],
+      "actionText": "Lifts the rostrum, by a tendon between the nasal capsule and the rostral cartilage.",
+      "reason": "No rostral joint is modelled." }
+  ]
+}

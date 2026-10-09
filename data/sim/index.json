@@ -1,0 +1,53 @@
+{
+  "$comment": "Registry for the muscle simulator (simulator.html). A MODEL is one region of one taxon, in its own file named <region>-<species>.json. Models share degree-of-freedom ids (jaw, hyoid, ...), so one slider or one 'open the jaw' button drives every taxon that has that joint. `joints` says what each DOF id means and what its two directions are called; `groups` lines muscles up across taxa for the comparison table. Neither carries any anatomy: attachments, geometry and credited actions live in the model files, and tests/sim.test.js checks them against the sources.\n\nTo add a taxon: write a model file, list it under its region's `models`. To add a region: add it here with `status: available`, add its joints and groups, and write models for it. The page and the engine need no change.",
+  "maxTaxa": 4,
+
+  "regions": [
+    { "id": "cranial", "label": "Skull and jaws", "status": "available",
+      "records": ["muscles-cranial.json", "muscles-axial.json"],
+      "models": [
+        "cranial-squalus-acanthias",
+        "cranial-rhinobatos-percellens",
+        "cranial-hydrolagus-colliei"
+      ] },
+    { "id": "pectoral-girdle", "label": "Pectoral girdle", "status": "planned", "models": [] },
+    { "id": "forelimb", "label": "Forelimb", "status": "planned", "models": [] },
+    { "id": "pelvic-girdle", "label": "Pelvic girdle", "status": "planned", "models": [] },
+    { "id": "hindlimb", "label": "Hindlimb", "status": "planned", "models": [] }
+  ],
+
+  "joints": [
+    { "id": "jaw", "region": "cranial", "label": "Lower jaw", "joint": "jaw-joint",
+      "pos": "Open", "neg": "Close", "rest": "closed", "unitLabel": "gape" },
+    { "id": "upper-jaw", "region": "cranial", "label": "Upper jaw", "joint": "suspensorium",
+      "pos": "Protrude", "neg": "Retract", "rest": "at rest", "unitLabel": "protrusion" },
+    { "id": "hyoid", "region": "cranial", "label": "Hyoid arch", "joint": null,
+      "pos": "Depress", "neg": "Elevate", "rest": "at rest", "unitLabel": "depression" },
+    { "id": "floor", "region": "cranial", "label": "Floor of the mouth", "joint": null,
+      "pos": "Raise", "neg": "Lower", "rest": "at rest", "unitLabel": "raised" },
+    { "id": "gill", "region": "cranial", "label": "Gill chamber", "joint": null,
+      "pos": "Compress", "neg": "Expand", "rest": "open", "unitLabel": "compression" },
+    { "id": "cranium", "region": "cranial", "label": "Head (braincase)", "joint": null,
+      "pos": "Lift", "neg": "Lower", "rest": "level", "unitLabel": "lift" },
+    { "id": "labial", "region": "cranial", "label": "Labial cartilages", "joint": null,
+      "pos": "Protract", "neg": "Retract", "rest": "at rest", "unitLabel": "protraction" }
+  ],
+
+  "groups": [
+    { "id": "adductor-mandibulae", "region": "cranial", "label": "Adductor mandibulae" },
+    { "id": "preorbitalis", "region": "cranial", "label": "Preorbitalis" },
+    { "id": "levator-palatoquadrati", "region": "cranial", "label": "Levator palatoquadrati" },
+    { "id": "levator-hyomandibulae", "region": "cranial", "label": "Levator hyomandibulae" },
+    { "id": "levator-hyoideus", "region": "cranial", "label": "Levator hyoideus (holocephalan)" },
+    { "id": "coracomandibularis", "region": "cranial", "label": "Coracomandibularis" },
+    { "id": "coracohyoideus", "region": "cranial", "label": "Coracohyoideus" },
+    { "id": "depressor-mandibulae-batoid", "region": "cranial", "label": "Depressor mandibulae (batoid)" },
+    { "id": "depressor-hyomandibularis", "region": "cranial", "label": "Depressor hyomandibularis" },
+    { "id": "intermandibularis", "region": "cranial", "label": "Intermandibularis" },
+    { "id": "interhyoideus", "region": "cranial", "label": "Interhyoideus" },
+    { "id": "constrictors", "region": "cranial", "label": "Constrictors" },
+    { "id": "levator-anguli-oris", "region": "cranial", "label": "Levator anguli oris" },
+    { "id": "cranial-elevators", "region": "cranial", "label": "Epaxial head-lifters" },
+    { "id": "rostral-muscles", "region": "cranial", "label": "Rostral muscles" }
+  ]
+}

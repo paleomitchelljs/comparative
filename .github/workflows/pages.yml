@@ -97,7 +97,7 @@ jobs:
       - name: Stage site
         run: |
           mkdir -p _site
-          cp -r index.html assets data _site/
+          cp -r index.html simulator.html assets data _site/
           cp README.md _site/ 2>/dev/null || true
           du -sh _site
 

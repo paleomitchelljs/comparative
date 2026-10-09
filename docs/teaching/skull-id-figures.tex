@@ -1,0 +1,550 @@
+% =====================================================================
+%  skull-id-figures.tex
+%  Figures for skull-id-guide.tex. Kept separate so they can be reused
+%  (and so the schematics can be exported to SVG for a web version).
+%
+%  Two kinds of figure live here:
+%
+%   * SCHEMATICS, drawn in TikZ. Always available, no licence attached,
+%     ours to relabel. These are deliberately diagrams: a beginner needs
+%     the topology, and an honest map teaches that better than a mediocre
+%     drawing of a real skull would.
+%
+%   * PLATES, clipped from the literature by docs/teaching/clip-plates.py
+%     into docs/teaching/plates/ (git-ignored). Every one is wrapped in
+%     \IfFileExists, so the guide compiles whether or not they are there.
+%     Credit lines are set by the licences and are not optional.
+%
+%  Requires the colours defined in skull-id-guide.tex.
+% =====================================================================
+
+% ---------------------------------------------------------------------
+%  Plate helper: include if clipped, otherwise leave a visible stub
+% ---------------------------------------------------------------------
+\newcommand{\plate}[4]{%
+  % #1 = file stem in plates/  #2 = width  #3 = caption  #4 = credit
+  \par\medskip
+  \IfFileExists{plates/#1.png}{%
+    \begin{center}\includegraphics[width=#2\linewidth]{plates/#1}\end{center}
+    \vspace{-2pt}
+    {\footnotesize #3\ {\color{stubgrey}\itshape #4}\par}
+  }{%
+    \begin{center}
+      \fcolorbox{stubgrey}{white}{\parbox{0.86\linewidth}{\footnotesize
+        \color{stubgrey}\textbf{Plate not clipped:} \texttt{plates/#1.png}.
+        Run \texttt{python3 docs/teaching/clip-plates.py} with the PDFs in
+        \texttt{papers/}.\\[3pt] #3\ \itshape #4}}
+    \end{center}
+  }%
+  \par\medskip
+}
+
+% =====================================================================
+%  FIGURE 1: skull-roof topology map
+%  Tiles in their correct relative positions. What a beginner has to hold
+%  is which bone touches which, so this is drawn as a map. Coordinates are
+%  in centimetres so nothing collides when the text width changes.
+% =====================================================================
+\tikzset{
+  bonetile/.style  = {draw=boneline, line width=0.5pt, rounded corners=1.5pt,
+                      font=\scriptsize, align=center, inner sep=2.2pt,
+                      minimum height=0.48cm},
+  tstable/.style   = {bonetile, fill=stablecol},   % present, in position, ~always
+  tlabile/.style   = {bonetile, fill=labilecol},   % lost or fused somewhere
+  thinge/.style    = {bonetile, fill=hingecol},    % leaves the jaw in mammals
+}
+
+% \bonetile places a bone box at a named coordinate, rotated to sit roughly
+% the way the bone sits. Contact lines are drawn BEFORE the boxes, so each one
+% is occluded except where it crosses the gap between two neighbours -- which
+% is exactly where an articulation is.
+\tikzset{
+  bonebox/.style   = {draw=boneline, line width=0.5pt, rounded corners=1.2pt,
+                      align=center, inner xsep=1.6pt, inner ysep=1pt,
+                      font=\tiny},
+  bstable/.style   = {bonebox, fill=stablecol},
+  blabile/.style   = {bonebox, fill=labilecol},
+  bhinge/.style    = {bonebox, fill=hingecol},
+  bdeep/.style     = {bonebox, fill=hingecol, densely dashed},
+  bextra/.style    = {bonebox, fill=stubgrey!22},
+  contact/.style   = {draw=stubgrey, line width=0.4pt},
+  leader/.style    = {draw=stubgrey, line width=0.4pt},
+  exlab/.style     = {font=\scriptsize, color=black, inner sep=1pt, align=left},
+}
+
+\newcommand{\figBoneMap}{%
+  \par\medskip
+  \noindent\begin{minipage}{\linewidth}
+  \centering
+  \begin{tikzpicture}[x=1cm, y=1cm]
+
+    % ---------- bone centres -------------------------------------------
+    \coordinate (pmx) at (0.80,2.28);   \coordinate (mx)  at (3.05,1.92);
+    \coordinate (na)  at (2.45,3.62);   \coordinate (la)  at (4.30,2.78);
+    \coordinate (prf) at (4.45,3.58);   \coordinate (fr)  at (5.40,4.10);
+    \coordinate (pof) at (6.85,3.58);   \coordinate (po)  at (7.05,2.74);
+    \coordinate (pa)  at (8.25,4.08);   \coordinate (ju)  at (6.40,2.02);
+    \coordinate (sq)  at (9.35,3.18);   \coordinate (qj)  at (8.70,1.98);
+    \coordinate (qu)  at (9.72,1.88);   \coordinate (st)  at (10.42,2.48);
+    \coordinate (de)  at (3.35,0.88);   \coordinate (co)  at (6.30,1.44);
+    \coordinate (sa)  at (7.50,1.00);   \coordinate (an)  at (7.20,0.44);
+    \coordinate (sp)  at (4.90,0.46);   \coordinate (ar)  at (9.38,0.70);
+
+    % ---------- articulations (drawn first, occluded by the boxes) ------
+    \foreach \bxa/\bxb in {pmx/mx, pmx/na, na/fr, na/prf, na/la, mx/la, mx/ju,
+                           la/prf, prf/fr, fr/pof, fr/pa, pof/po, pof/pa,
+                           po/ju, po/sq, pa/sq, ju/qj, qj/qu, sq/qu, qu/ar,
+                           de/sp, de/co, de/sa, de/an, sa/an, sa/ar, an/ar,
+                           co/sa, sq/st}
+      {\draw[contact] (\bxa) -- (\bxb);}
+
+    % ---------- orbit ---------------------------------------------------
+    \draw[draw=boneline, line width=0.6pt, densely dashed]
+      (5.72,3.02) ellipse (0.80 and 0.62);
+    \node[font=\scriptsize\itshape, color=boneline] at (5.72,3.02) {orbit};
+
+    % ---------- upper skull --------------------------------------------
+    \node[blabile, minimum width=0.92cm, minimum height=1.20cm, rotate=-18] at (pmx)
+      {Pre-\\maxilla};
+    \node[bstable, minimum width=3.6cm, minimum height=0.76cm, rotate=-4] at (mx) {Maxilla};
+    \node[bstable, minimum width=2.8cm, minimum height=0.62cm, rotate=8]  at (na) {Nasal};
+    \node[blabile, minimum width=0.82cm, minimum height=0.78cm] at (la) {};
+    \node[blabile, minimum width=0.82cm, minimum height=0.70cm, rotate=20] at (prf) {};
+    \node[bstable, minimum width=1.85cm, minimum height=0.64cm, rotate=3]  at (fr) {Frontal};
+    \node[blabile, minimum width=0.84cm, minimum height=0.62cm, rotate=-18] at (pof) {};
+    \node[blabile, minimum width=2.5cm, minimum height=0.60cm, rotate=9]  at (ju) {Jugal*};
+    \node[blabile, minimum width=1.12cm, minimum height=1.02cm, rotate=-6] at (po)
+      {Post-\\orbital*};
+    \node[bstable, minimum width=1.95cm, minimum height=0.64cm, rotate=-5] at (pa) {Parietal};
+    \node[bstable, minimum width=1.55cm, minimum height=0.92cm, rotate=-24] at (sq)
+      {Squa-\\mosal};
+    \node[blabile, minimum width=1.15cm, minimum height=0.56cm, rotate=-10] at (qj) {};
+    \node[bhinge, minimum width=0.70cm, minimum height=1.55cm, rotate=7] at (qu) {};
+    
+
+    % ---------- lower jaw ------------------------------------------------
+    \node[bstable, minimum width=4.5cm, minimum height=0.72cm, rotate=-3] at (de) {Dentary};
+    \node[blabile, minimum width=0.98cm, minimum height=0.48cm, rotate=12] at (co)
+      {Coronoid*};
+    \node[blabile, minimum width=1.95cm, minimum height=0.56cm, rotate=3] at (sa)
+      {Surangular*};
+    \node[blabile, minimum width=2.05cm, minimum height=0.46cm, rotate=3] at (an)
+      {Angular*};
+    \node[blabile, minimum width=1.85cm, minimum height=0.42cm, rotate=-2] at (sp)
+      {Splenial*};
+    \node[bhinge, minimum width=0.78cm, minimum height=0.54cm, rotate=5] at (ar) {};
+    \node[bdeep,  minimum width=0.95cm, minimum height=0.32cm, rotate=-14] at (st) {};
+
+    % ---------- external labels: the small, crowded elements -------------
+    % above the roof
+    \draw[leader] (4.40,3.96) -- (4.15,4.95);
+    \node[exlab, anchor=south] at (4.15,4.98) {Prefrontal*};
+    \draw[leader] (6.88,3.92) -- (7.05,4.95);
+    \node[exlab, anchor=south] at (7.05,4.98) {Postfrontal*};
+    % in front
+    \draw[leader] (3.95,2.92) -- (3.34,2.98);
+    \node[exlab, anchor=east] at (3.30,2.98) {Lacrimal*};
+    % behind
+    \draw[leader] (10.86,2.60) -- (11.25,3.45);
+    \node[exlab, anchor=west] at (11.22,3.62)
+      {\textbf{Stapes} / columella\\[-1pt]{\tiny the hyomandibula, deep to the cheek}};
+    \draw[leader] (10.10,1.95) -- (11.25,2.20);
+    \node[exlab, anchor=west] at (11.25,2.20)
+      {\textbf{Quadrate}\\[-1pt]{\tiny$\rightarrow$ incus}};
+    \draw[leader] (9.78,0.70) -- (11.25,0.80);
+    \node[exlab, anchor=west] at (11.25,0.80)
+      {\textbf{Articular}\\[-1pt]{\tiny$\rightarrow$ malleus}};
+    \draw[leader] (8.78,1.72) -- (8.58,-0.22);
+    \node[exlab, anchor=north] at (8.58,-0.25) {Quadratojugal*};
+    
+
+    % ---------- the jaw joint -------------------------------------------
+    
+
+  \end{tikzpicture}
+
+  \vspace{2pt}
+  {\footnotesize\raggedright Generalised amniote, left lateral view. Boxes sit
+   roughly where and how the bones sit, and the thin grey lines mark the usual
+   contacts. The two pink elements meet at the jaw joint, and the stapes is
+   dashed because it lies deep to the cheek.\par}
+  \vspace{4pt}
+  {\footnotesize\raggedright
+   \tikz[baseline=-0.6ex]\node[bstable, minimum width=0.42cm,
+     minimum height=0.28cm]{};\,\textbf{Stable}: present, and in this position,
+   across essentially all bony jawed vertebrates.\quad
+   \tikz[baseline=-0.6ex]\node[blabile, minimum width=0.42cm,
+     minimum height=0.28cm]{};\,\textbf{Labile*}: lost or fused to a neighbour
+   somewhere, and worth learning as absences.\quad
+   \tikz[baseline=-0.6ex]\node[bhinge, minimum width=0.42cm,
+     minimum height=0.28cm]{};\,\textbf{Hinge}: leaves the jaw entirely in
+   mammals.\par}
+  \end{minipage}
+  \par\medskip
+}
+
+% =====================================================================
+%  FIGURES 0a/0b: where the bones come from
+%  Derivation trees for the neurocranium and the first two arches. Deliberately
+%  uncoloured: figure 1 already spends colour on stability, and reusing the
+%  lab's unit colours here would make pink and green mean two things each.
+% =====================================================================
+\tikzset{
+  srcbox/.style  = {draw=boneline, line width=0.7pt, rounded corners=2pt,
+                    fill=bonecol!70, font=\scriptsize\bfseries, align=center,
+                    inner sep=3pt, minimum height=0.6cm},
+  derbox/.style  = {draw=boneline, line width=0.4pt, rounded corners=2pt,
+                    fill=bonecol!35, font=\tiny, align=center,
+                    inner sep=2.5pt, minimum height=0.55cm},
+  endbox/.style  = {derbox, fill=white, densely dashed},
+  flow/.style    = {-{Stealth[length=4pt]}, draw=barcol, line width=0.6pt},
+  qual/.style    = {font=\tiny\itshape, color=stubgrey, align=left},
+}
+
+\newcommand{\figNeurocranium}{%
+  \par\smallskip
+  \noindent\begin{minipage}{\linewidth}
+  \centering
+  \begin{tikzpicture}[x=1cm, y=1cm]
+    \foreach \yy/\name in {4.35/Ethmoid, 2.95/Sphenoid, 1.55/Otic, 0.15/Occipital}
+      {\node[srcbox, minimum width=1.8cm] at (0.9,\yy) {\name};
+       \draw[flow] (1.85,\yy) -- (2.35,\yy);}
+
+    % ethmoid
+    \node[derbox] (e1) at (3.25,4.35) {Sphen-\\ethmoid};
+    \node[derbox] (e2) at (4.75,4.35) {Mes-\\ethmoid};
+    \node[derbox] (e3) at (6.15,4.35) {Turbinates};
+    \node[derbox] (e4) at (7.75,4.35) {Cribriform\\plate};
+    \node[derbox] (e5) at (9.35,4.35) {Ect-\\ethmoid};
+    \node[qual, anchor=west] at (10.25,4.35)
+      {Mostly stays cartilage. Sphenethmoid in frogs,\\
+       cribriform plate in mammals, ectethmoid in \emph{Sphenodon}.};
+
+    % sphenoid
+    \node[derbox] (s1) at (3.35,2.95) {Basi-\\sphenoid};
+    \node[derbox] (s2) at (4.95,2.95) {Pre-\\sphenoid};
+    \node[derbox] (s3) at (6.65,2.95) {Latero-\\sphenoid};
+    \node[derbox] (s4) at (8.35,2.95) {Orbito-\\sphenoid};
+    \node[qual, anchor=west] at (9.35,2.95)
+      {Basisphenoid under the midbrain everywhere. Presphenoid in some\\
+       mammals, the other two in archosaurs. In most mammals all of them\\
+       fuse into one \textbf{sphenoid}, its \emph{sella turcica} holding the pituitary.};
+
+    % otic
+    \node[derbox] (o1) at (3.25,1.55) {Prootic};
+    \node[derbox] (o2) at (4.75,1.55) {Opisthotic};
+    \node[derbox] (o3) at (6.15,1.55) {Epiotic};
+    \node[qual, anchor=west] at (7.05,1.55)
+      {Opisthotic fuses to the exoccipital in frogs and most amniotes; all three\\
+       fuse in birds (the \textbf{periotic}) and in mammals (the \textbf{petrosal}).};
+
+    % occipital
+    \node[derbox] (c1) at (3.35,0.15) {Basi-\\occipital};
+    \node[derbox] (c2) at (5.05,0.15) {Exoccipitals\\(paired)};
+    \node[derbox] (c3) at (6.85,0.15) {Supra-\\occipital};
+    \node[qual, anchor=west] at (7.85,0.15)
+      {Ring the \emph{foramen magnum}. The exoccipitals carry the condyles,\\
+       and salamanders keep only those two.};
+  \end{tikzpicture}
+
+  \vspace{2pt}
+  {\footnotesize\raggedright The four neurocranial ossification centers (anterior to posterior) \& their derivatives.\par}
+  \end{minipage}
+  \par\smallskip
+}
+
+\newcommand{\figArches}{%
+  \par\smallskip
+  \noindent\begin{minipage}{\linewidth}
+  \centering
+  \begin{tikzpicture}[x=1cm, y=1cm]
+    % ---------------- arch 1
+    \node[font=\scriptsize\bfseries, color=headcol, anchor=west] at (0,3.75)
+      {Arch 1 (mandibular)};
+    \node[srcbox, minimum width=2.3cm] (pq) at (1.35,2.95) {Palato-\\quadrate};
+    \node[srcbox, minimum width=2.3cm] (mc) at (1.35,1.45) {Meckel's\\cartilage};
+
+    \node[derbox, minimum width=1.5cm] (qd) at (4.45,3.35) {Quadrate};
+    \node[derbox, minimum width=1.5cm] (ep) at (4.45,2.45) {Epi-\\pterygoid};
+    \node[derbox, minimum width=1.5cm] (ar) at (4.45,1.45) {Articular};
+
+    \node[endbox, minimum width=1.9cm] (ic) at (7.30,3.35) {Incus\\{\tiny mammals}};
+    \node[endbox, minimum width=1.9cm] (al) at (7.30,2.45) {Alisphenoid\\{\tiny mammals, probable}};
+    \node[endbox, minimum width=1.9cm] (ma) at (7.30,1.45) {Malleus\\{\tiny mammals}};
+
+    \foreach \a/\b in {pq/qd, pq/ep, mc/ar} {\draw[flow] (\a) -- (\b);}
+    \foreach \a/\b in {qd/ic, ep/al, ar/ma} {\draw[flow] (\a) -- (\b);}
+
+    \node[qual, anchor=west] at (8.60,2.40)
+      {The dentary, splenial, angular, surangular and\\
+       coronoid that sheath Meckel's cartilage are\\
+       \textbf{dermal} bone, not arch 1.};
+
+    % ---------------- arch 2
+    \draw[draw=stubgrey, line width=0.3pt] (0,0.85) -- (16.2,0.85);
+    \node[font=\scriptsize\bfseries, color=headcol, anchor=west] at (0,0.42)
+      {Arch 2 (hyoid)};
+    \node[srcbox, minimum width=2.3cm] (hm) at (1.35,-0.55) {Hyoman-\\dibula};
+    \node[srcbox, minimum width=2.3cm] (ch) at (1.35,-1.85) {Cerato-\\hyal};
+
+    \node[derbox, minimum width=2.1cm] (cl) at (4.70,-0.55) {Columella};
+    \node[endbox, minimum width=1.9cm] (st) at (7.40,-0.55) {Stapes\\{\tiny mammals}};
+    \node[derbox, minimum width=4.8cm] (sty) at (6.05,-1.85)
+      {Styloid process, lesser horn of the hyoid,\\stylohyoid ligament};
+
+    \foreach \a/\b in {hm/cl, cl/st, ch/sty} {\draw[flow] (\a) -- (\b);}
+    \node[qual, anchor=west] at (8.60,-1.85)
+      {Arches 3--7 give the rest of the hyoid\\and the laryngeal cartilages.};
+  \end{tikzpicture}
+
+  \vspace{2pt}
+  {\footnotesize\raggedright The first two pharyngeal arches.\par}
+  \end{minipage}
+  \par\smallskip
+}
+
+% =====================================================================
+%  FIGURE 1b: the same stylised skull across four groups
+%  Same coordinates as figure 1, carrying the bone abbreviations. A bone that
+%  a group lacks is simply not drawn, so the silhouette of what is missing is
+%  the whole point. Codes are baked into the \bXX macros so the panels and the
+%  caption key cannot drift apart.
+% =====================================================================
+% #1 x  #2 y  #3 w  #4 h  #5 rotation  #6 style  #7 abbreviation
+\newcommand{\bn}[7]{\node[#6, minimum width=#3cm, minimum height=#4cm,
+  rotate=#5, inner xsep=1pt, inner ysep=0.5pt] at (#1,#2) {#7};}
+
+% every element of the generalised skull, as its own macro
+\newcommand{\bPMX}[1]{\bn{0.80}{2.28}{0.92}{1.20}{-18}{#1}{PM}}
+\newcommand{\bMX} [1]{\bn{3.05}{1.92}{3.60}{0.76}{-4}{#1}{MX}}
+\newcommand{\bNA} [1]{\bn{2.45}{3.62}{2.80}{0.62}{8}{#1}{NA}}
+\newcommand{\bLA} [1]{\bn{4.30}{2.78}{0.82}{0.78}{0}{#1}{LA}}
+\newcommand{\bPRF}[1]{\bn{4.45}{3.58}{0.82}{0.70}{20}{#1}{PRF}}
+\newcommand{\bFR} [1]{\bn{5.40}{4.10}{1.85}{0.64}{3}{#1}{FR}}
+\newcommand{\bPOF}[1]{\bn{6.85}{3.58}{0.84}{0.62}{-18}{#1}{POF}}
+\newcommand{\bPO} [1]{\bn{7.05}{2.74}{1.12}{1.02}{-6}{#1}{PO}}
+\newcommand{\bPA} [1]{\bn{8.25}{4.08}{1.95}{0.64}{-5}{#1}{PA}}
+\newcommand{\bJU} [1]{\bn{6.40}{2.02}{2.50}{0.60}{9}{#1}{JU}}
+\newcommand{\bSQ} [1]{\bn{9.35}{3.18}{1.55}{0.92}{-24}{#1}{SQ}}
+\newcommand{\bQJ} [1]{\bn{8.70}{1.98}{1.15}{0.56}{-10}{#1}{QJ}}
+\newcommand{\bQU} [1]{\bn{9.72}{1.88}{0.70}{1.55}{7}{#1}{QU}}
+\newcommand{\bST} [1]{\bn{10.98}{2.62}{0.95}{0.32}{-14}{#1}{ST}}
+\newcommand{\bDE} [1]{\bn{3.35}{0.88}{4.50}{0.72}{-3}{#1}{DE}}
+\newcommand{\bCO} [1]{\bn{6.30}{1.44}{0.98}{0.48}{12}{#1}{CO}}
+\newcommand{\bSA} [1]{\bn{7.50}{1.00}{1.95}{0.56}{3}{#1}{SA}}
+\newcommand{\bAN} [1]{\bn{7.20}{0.44}{2.05}{0.46}{3}{#1}{AN}}
+\newcommand{\bSP} [1]{\bn{4.90}{0.46}{1.85}{0.42}{-2}{#1}{SP}}
+\newcommand{\bAR} [1]{\bn{9.38}{0.70}{0.78}{0.54}{5}{#1}{AR}}
+\newcommand{\bORB}{\draw[draw=boneline, line width=0.5pt, densely dashed]
+  (5.72,3.02) ellipse (0.80 and 0.62);}
+
+% \minipanel{caption}{body}
+\newcommand{\minipanel}[2]{%
+  \begin{minipage}[t]{0.48\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=0.55, transform shape, x=1cm, y=1cm,
+        every node/.append style={font=\large\bfseries}]
+      #2
+    \end{tikzpicture}\\[1pt]
+    {\raggedright\scriptsize #1\par}
+  \end{minipage}%
+}
+
+\newcommand{\figSkullVariants}{%
+  \par\medskip
+  \noindent
+  \minipanel{\textbf{Actinopterygian.} Generalized skull retains everything with some bonus bones. Many, \textit{many} actinopterygians reduce and alter their skull dramatically. The base, ``generic'' skull has well over a hundred elements.}{%
+      \bORB \bPMX{bstable}\bMX{bstable}\bNA{bstable}\bLA{blabile}\bPRF{blabile}
+      \bFR{bstable}\bPOF{blabile}\bJU{blabile}\bPO{blabile}\bPA{bstable}
+      \bSQ{bstable}\bQJ{blabile}\bQU{bhinge}\bDE{bstable}\bCO{blabile}
+      \bSA{blabile}\bAN{blabile}\bSP{blabile}\bAR{bhinge}
+      \bn{10.95}{2.20}{1.20}{2.00}{-5}{bextra}{POP}
+      \bn{12.35}{3.00}{1.50}{2.20}{-6}{bextra}{OP}
+      \bn{12.45}{1.35}{1.30}{1.20}{-8}{bextra}{SOP}
+      \bn{11.30}{0.35}{2.20}{0.50}{-12}{bextra}{BR}}
+  \hfill
+  \minipanel{\textbf{Salamander.} Jugal, quadratojugal, postorbital, postfrontal
+    and lacrimal all lost.}{%
+      \bORB \bPMX{bstable}\bMX{bstable}\bNA{bstable}\bPRF{blabile}
+      \bFR{bstable}\bPA{bstable}\bSQ{bstable}\bQU{bhinge}\bST{bdeep}
+      \bDE{bstable}\bCO{blabile}\bSA{blabile}\bAN{blabile}\bSP{blabile}
+      \bAR{bhinge}}
+  \par\medskip
+  \noindent
+  \minipanel{\textbf{Lizard.} The quadratojugal is lost, resulting in no lower temporal bar and a situation where the quadrate can swing freely on the squamosal.}{%
+      \bORB \bPMX{bstable}\bMX{bstable}\bNA{bstable}\bLA{blabile}\bPRF{blabile}
+      \bFR{bstable}\bPOF{blabile}\bJU{blabile}\bPO{blabile}\bPA{bstable}
+      \bSQ{bstable}\bQU{bhinge}\bST{bdeep}\bDE{bstable}\bCO{blabile}
+      \bSA{blabile}\bAN{blabile}\bSP{blabile}\bAR{bhinge}}
+  \hfill
+  \minipanel{\textbf{Mammal.} Lower jaw is only the mandible, with the post-dentary bones moving or fusing. The jaw joint is now dentary to squamosal directly. Postorbital, postfrontal, prefrontal and quadratojugal all lost.}{%
+      \bORB \bPMX{bstable}\bMX{bstable}\bNA{bstable}\bLA{blabile}
+      \bFR{bstable}\bJU{blabile}\bPA{bstable}\bSQ{bstable}
+      \bDE{bstable}
+      \bn{10.80}{3.20}{0.80}{0.55}{8}{bhinge}{IN}
+      \bn{12.00}{3.20}{0.85}{0.55}{-4}{bhinge}{MA}
+      \bn{13.20}{3.20}{0.80}{0.45}{-10}{bdeep}{ST}}
+  \par\medskip
+  {\footnotesize\raggedright Generalized skull diagrams for major clades. Colors as in the map above; grey boxes show bones actinopterygians have that aren't part of the tetrapod skull.
+   AN, angular; AR, articular; BR, branchiostegals; CO, coronoid; DE, dentary;
+   FR, frontal; IN, incus; JU, jugal; LA, lacrimal; MA, malleus; MX, maxilla;
+   NA, nasal; OP, opercular; PA, parietal; PM, premaxilla; PO, postorbital;
+   POF, postfrontal; POP, preopercular; PRF, prefrontal; QJ, quadratojugal; QU, quadrate; SA,
+   surangular; SOP, subopercular; SP, splenial; SQ, squamosal; ST, stapes.\par}
+  \par\medskip
+}
+
+% =====================================================================
+%  FIGURE 2: the temporal series
+% =====================================================================
+\tikzset{
+  skullfill/.style = {fill=bonecol, draw=boneline, line width=0.6pt},
+  openfill/.style  = {fill=white, draw=boneline, line width=0.5pt},
+  fenfill/.style   = {fill=fencol, draw=boneline, line width=0.5pt},
+  barbold/.style   = {draw=barcol, line width=1.7pt, line cap=round},
+  cuthint/.style   = {draw=barcol, line width=0.8pt,
+                      dash pattern=on 2pt off 1.7pt},
+}
+
+% Generic amniote lateral silhouette. Snout left, occiput right.
+\newcommand{\skulloutline}{%
+  \path[skullfill]
+    (0,0.60)
+      .. controls (0.55,1.00) and (1.35,1.22) .. (2.15,1.26)
+      .. controls (2.85,1.29) and (3.32,1.16) .. (3.42,0.90)
+    -- (3.38,0.34) -- (2.60,0.16) -- (0.06,0.14) -- cycle;
+}
+% Orbit and naris never move. That is the point: only the back changes.
+\newcommand{\skullorbit}{%
+  \path[openfill] (1.85,0.76) circle (0.30);
+  \path[openfill] (0.30,0.66) ellipse (0.12 and 0.09);
+}
+
+% \fenpanel{title}{note}{extra tikz}
+\newcommand{\fenpanel}[3]{%
+  \begin{minipage}[t]{0.235\linewidth}
+    \centering
+    \begin{tikzpicture}[scale=1.02]
+      \skulloutline #3 \skullorbit
+    \end{tikzpicture}\\[3pt]
+    {\footnotesize\bfseries #1}\\[2pt]
+    \begin{minipage}{\linewidth}
+      \raggedright\scriptsize\color{stubgrey}\setlength{\parskip}{0pt}#2
+    \end{minipage}
+  \end{minipage}%
+}
+
+\newcommand{\figFenestration}{%
+  \par\medskip
+  \noindent
+  \begin{tabular}{@{}c@{\hspace{0.012\linewidth}}c@{\hspace{0.012\linewidth}}%
+                   c@{\hspace{0.012\linewidth}}c@{}}
+  \fenpanel{Anapsid}{No opening at all. Stem amniotes, and the starting
+    condition for everything else in this figure.}{}
+  &
+  \fenpanel{Synapsid}{One opening, and it is \emph{low}. The postorbital
+    and squamosal meet above it to close the top.}{%
+      \path[fenfill] (2.72,0.55) ellipse (0.33 and 0.20);
+      \draw[barbold] (2.32,0.92) -- (3.20,0.88);}
+  &
+  \fenpanel{Diapsid}{Two openings, one above the other, separated by the
+    postorbital--squamosal bar. Tuatara, crocodilians.}{%
+      \path[fenfill] (2.78,1.02) ellipse (0.32 and 0.14);
+      \path[fenfill] (2.74,0.55) ellipse (0.31 and 0.19);
+      \draw[barbold] (2.34,0.82) -- (3.22,0.78);
+      \draw[barbold] (2.36,0.28) -- (3.30,0.30);}
+  &
+  \fenpanel{Lizard}{Upper opening and its bar kept. The \emph{lower bar}
+    is gone, so that opening runs out to the margin.}{%
+      \path[fenfill] (2.78,1.02) ellipse (0.32 and 0.14);
+      \path[fenfill] (2.28,0.62) -- (3.36,0.58) -- (3.38,0.22)
+                     -- (2.52,0.16) -- cycle;
+      \draw[barbold] (2.34,0.82) -- (3.22,0.78);
+      \draw[cuthint] (2.42,0.24) -- (3.34,0.26);}
+  \\[10pt]
+  \fenpanel{Turtle}{No fenestra anywhere, but the cheek is deeply
+    \emph{emarginated}, notched inwards from the free rear edge.}{%
+      \path[fill=white]
+        (3.46,1.02) .. controls (2.88,0.86) and (2.74,0.46) ..
+        (3.04,0.12) -- (3.54,0.12) -- (3.54,1.02) -- cycle;
+      \draw[draw=boneline, line width=0.6pt]
+        (3.42,0.92) .. controls (2.88,0.84) and (2.76,0.46) ..
+        (3.05,0.14);}
+  &
+  \fenpanel{Bird}{Postorbital bar lost, so orbit and temporal region run
+    together into one great opening. The jugal bar is a bare rod.}{%
+      \path[fill=white, draw=boneline, line width=0.5pt]
+        (2.12,1.10) .. controls (2.70,1.12) and (3.06,0.96) ..
+        (3.14,0.64) .. controls (3.00,0.48) and (2.50,0.50) ..
+        (2.14,0.56) -- cycle;
+      \draw[barbold] (1.30,0.28) -- (3.20,0.33);}
+  &
+  \fenpanel{Mammal}{One opening, hugely enlarged; postorbital bar usually
+    gone, and the \emph{zygomatic arch} forms the floor of the fossa.}{%
+      \path[fill=white, draw=boneline, line width=0.5pt]
+        (2.08,1.16) .. controls (2.80,1.18) and (3.24,1.00) ..
+        (3.30,0.62) .. controls (3.00,0.50) and (2.40,0.52) ..
+        (2.10,0.58) -- cycle;
+      \draw[barbold] (1.55,0.42) .. controls (2.40,0.28) and (3.00,0.30)
+        .. (3.32,0.42);}
+  &
+  \begin{minipage}[t]{0.235\linewidth}
+    \raggedright\footnotesize
+    \textbf{Reading the panels}\\[3pt]
+    {\scriptsize
+     \tikz[baseline=-0.5ex]\draw[barbold](0,0)--(0.5,0); \; a \textbf{bar}:
+     bone you can trace with a finger.\\[3pt]
+     \tikz[baseline=-0.5ex]\path[fenfill](0,0) ellipse (0.26 and 0.13);
+     \; a \textbf{fenestra}: a hole ringed by bone.\\[3pt]
+     \tikz[baseline=-0.5ex]\draw[cuthint](0,0)--(0.5,0); \; where a bar has
+     been \textbf{lost}.\\[4pt]
+     Orbit and nostril are drawn in the same place every time. Only the
+     temporal region changes.}
+  \end{minipage}
+  \end{tabular}
+  \par\medskip
+}
+
+% =====================================================================
+%  FIGURE 3: the jaw joint becomes the middle ear
+% =====================================================================
+\newcommand{\figOssicles}{%
+  \par\medskip
+  \begin{center}
+  \begin{tikzpicture}[x=1cm, y=1cm,
+      oldbox/.style={draw=boneline, line width=0.5pt, rounded corners=2.5pt,
+                     fill=bonecol, font=\small, align=center,
+                     minimum width=2.9cm, minimum height=0.68cm},
+      newbox/.style={draw=boneline, line width=0.5pt, rounded corners=2.5pt,
+                     fill=hingecol, font=\small, align=center,
+                     minimum width=2.9cm, minimum height=0.68cm},
+      arr/.style={-{Stealth[length=5pt]}, line width=0.9pt, color=barcol},
+      viaz/.style={font=\scriptsize\itshape, color=stubgrey, align=center,
+                   fill=white, inner sep=1.5pt}]
+
+    \node[font=\footnotesize\bfseries, color=headcol] at (0,3.45)
+      {Non-mammal: in the jaw};
+    \node[font=\footnotesize\bfseries, color=headcol] at (8.2,3.45)
+      {Mammal: in the middle ear};
+
+    \foreach \y/\old/\new/\via in {
+        2.7/Hyomandibula/Stapes/{already a sound conductor},
+        1.8/Quadrate/Incus/{upper half of the jaw joint},
+        0.9/Articular/Malleus/{lower half of the jaw joint},
+        0.0/Angular/{Tympanic bulla}/{fuses to the skull}}
+    {
+      \node[oldbox] (o) at (0,\y) {\old};
+      \node[newbox] (n) at (8.2,\y) {\new};
+      \draw[arr] (1.48,\y) -- (6.72,\y);
+      \node[viaz] at (4.1,\y) {\via};
+    }
+
+    \node[draw=barcol, line width=0.7pt, rounded corners=2.5pt,
+          fill=fencol, font=\footnotesize, align=center, text width=10.4cm,
+          inner sep=5pt]
+      at (4.1,-1.25)
+      {With the hinge elements gone, the \textbf{dentary} articulates directly with the \textbf{squamosal}.};
+  \end{tikzpicture}
+  \end{center}
+  \par\medskip
+}

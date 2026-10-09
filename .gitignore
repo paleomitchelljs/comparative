@@ -75,3 +75,18 @@ export/
 # them but stays committed, because the app fetches it directly and there is no
 # build step between the repo and the page.
 .roundtrip/
+
+# Teaching plates clipped out of the copyrighted PDFs in papers/.
+# Regenerate with `python3 docs/teaching/clip-plates.py`.
+docs/teaching/plates/
+
+# LaTeX build artefacts
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+docs/teaching/*.pdf
+
+# Voice corpus: lecture transcripts and lab handouts. Local reference only.
+docs/teaching/text/

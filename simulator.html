@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muscle simulator — Vertebrate Muscle Homology &amp; Topology</title>
+<meta name="description" content="Compare up to four taxa side by side: a schematic skeleton with its muscles attached, a joint to move, and the muscles that move it.">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/sim/sim.css">
+</head>
+<body class="sim">
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <h1 class="wordmark">Muscle <span>simulator</span></h1>
+    <div class="masthead-actions">
+      <a class="ghost-link" href="index.html">← Muscle lookup</a>
+      <button class="ghost" id="btn-theme" title="Toggle light/dark">◐</button>
+    </div>
+  </div>
+</header>
+
+<div class="simshell">
+  <aside class="simside" aria-label="Controls">
+
+    <section class="ctl">
+      <h2>Region</h2>
+      <select id="region" aria-label="Region of the skeleton"></select>
+    </section>
+
+    <section class="ctl">
+      <h2>Taxa <span class="count" id="taxa-count"></span></h2>
+      <ol id="slots" class="slots"></ol>
+      <button class="ghost" id="add-taxon">+ Add a taxon</button>
+    </section>
+
+    <section class="ctl">
+      <h2>Action</h2>
+      <select id="act-joint" aria-label="Joint to move"></select>
+      <div class="actbtns" id="act-btns"></div>
+      <label class="range">Extent <input type="range" id="act-amount" min="20" max="100" value="100" step="5"><output id="act-amount-out">100%</output></label>
+    </section>
+
+    <section class="ctl">
+      <h2>Muscles</h2>
+      <p class="hint">Pick one to watch it contract on its own, in every taxon that has it.</p>
+      <ul id="mlist" class="mlist"></ul>
+      <label class="check"><input type="radio" name="startfrom" value="stretched" checked> start from stretched</label>
+      <label class="check"><input type="radio" name="startfrom" value="current"> start from the current pose</label>
+    </section>
+
+    <section class="ctl">
+      <h2>Display</h2>
+      <label class="check"><input type="checkbox" id="opt-labels" checked> muscle labels</label>
+      <label class="check"><input type="checkbox" id="opt-bones"> skeleton labels</label>
+      <label class="check"><input type="checkbox" id="opt-strain" checked> colour muscles by length change</label>
+    </section>
+  </aside>
+
+  <main class="simmain" id="simmain">
+    <div class="legend" aria-hidden="true">
+      <span><i class="sw short"></i> shorter than at rest</span>
+      <span><i class="sw rest"></i> at rest</span>
+      <span><i class="sw long"></i> stretched</span>
+      <span><i class="dot open"></i> origin</span>
+      <span><i class="dot solid"></i> insertion</span>
+      <span class="grab">drag a ringed point to move that joint</span>
+    </div>
+
+    <div id="panels" class="panels" data-n="0"></div>
+
+    <div class="transport">
+      <button class="ghost" id="play" aria-pressed="false">▶ Play</button>
+      <button class="ghost" id="reset">↺ Reset</button>
+      <input type="range" id="playhead" min="0" max="1000" value="0" aria-label="Progress through the movement">
+      <label class="check"><input type="checkbox" id="loop"> loop</label>
+      <span id="status" class="status" aria-live="polite"></span>
+    </div>
+
+    <details class="posebox" open>
+      <summary>Pose — set the joints by hand</summary>
+      <div id="pose" class="pose"></div>
+    </details>
+
+    <section id="compare" class="compare" aria-live="polite"></section>
+    <section id="detail" class="detail"></section>
+
+    <details class="howto">
+      <summary>How to read this</summary>
+      <ul>
+        <li><strong>The muscles and what they do come from the sources.</strong> Each muscle's attachments and the action credited to it are taken from the cited paper and paraphrased. The model file says where the muscle attaches; the page works out what shortening it does from the geometry.</li>
+        <li><strong>The geometry is schematic.</strong> Outlines, lever arms and ranges of motion are illustrative. <code>tests/sim.test.js</code> checks that every drawn muscle moves its joints the way its source says, so a landmark cannot be moved for looks and quietly reverse a muscle. It does not make the drawing a measurement.</li>
+        <li><strong>One muscle at a time is unopposed.</strong> Contracting a muscle on its own shows the direction of its pull from a starting pose, stopping at the joint limits. Real movements are made by several muscles at once.</li>
+        <li><strong>Gaps are shown, not filled.</strong> A dot in the comparison table means the source table for that animal does not record the muscle. <em>Absent</em> means a source says it is missing. Muscles the dataset has parked, or has not yet scored for the animal, are marked in the detail card.</li>
+      </ul>
+    </details>
+  </main>
+</div>
+
+<footer class="foot">
+  <p><a href="index.html">Muscle lookup</a> ·
+     <a href="https://github.com/paleomitchelljs/comparative/blob/main/docs/SIMULATOR.md" target="_blank" rel="noopener">How the simulator is built</a> ·
+     <a href="https://github.com/paleomitchelljs/comparative" target="_blank" rel="noopener">Source</a></p>
+</footer>
+
+<script src="assets/sim/engine.js"></script>
+<script src="assets/sim/sim.js"></script>
+</body>
+</html>
