@@ -96,10 +96,13 @@
             "insertion": [
               {
                 "element": "mandible"
+              },
+              {
+                "element": "meckels-cartilage"
               }
             ]
           },
-          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. From the palatoquadrate onto Meckel's cartilage — the primary jaw adductor in all cartilaginous fishes, with multiple divisions. Both elements are homology groups here: the palatoquadrate is the same record as the amniote quadrate and the mammalian incus, so this row and the mammalian masseter's are visibly on descendants of one bone.",
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. From the palatoquadrate onto Meckel's cartilage — the primary jaw adductor in all cartilaginous fishes, with multiple divisions. Both elements are homology groups here: the palatoquadrate is the same record as the amniote quadrate and the mammalian incus, so this row and the mammalian masseter's are visibly on descendants of one bone.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. Connects the palatoquadrate to Meckel's cartilage and is divided into superficial, ventral and dorsal parts. Ziermann et al. divide it into superficial, ventral and dorsal parts; Huber et al. (2011) call it relatively undivided.",
           "spans": {
             "origin": [
               "cranial"
@@ -428,7 +431,9 @@
           "name": "Adductor mandibulae anterior + posterior",
           "sources": [
             "anderson-2008",
-            "huber-etal-2011"
+            "didier-1987",
+            "huber-etal-2011",
+            "ziermann-etal-2014"
           ],
           "division": "divided",
           "parts": [
@@ -437,6 +442,44 @@
             },
             {
               "name": "Adductor mandibulae posterior (AMP)"
+            },
+            {
+              "name": "Adductor mandibulae anterior, pars orbitalis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "orbit"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "meckels-cartilage",
+                    "side": "lateral"
+                  }
+                ]
+              },
+              "sources": [
+                "didier-1987"
+              ]
+            },
+            {
+              "name": "Adductor mandibulae posterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "muscle": "adductor-mandibulae"
+                  }
+                ]
+              },
+              "sources": [
+                "didier-1987",
+                "huber-etal-2011"
+              ]
             },
             {
               "name": "Adductor mandibulae anterior",
@@ -458,7 +501,7 @@
               ]
             },
             {
-              "name": "Adductor mandibulae posterior",
+              "name": "Adductor mandibulae A2 anterior",
               "attachments": {
                 "origin": [
                   {
@@ -467,12 +510,30 @@
                 ],
                 "insertion": [
                   {
-                    "muscle": "adductor-mandibulae"
+                    "element": "meckels-cartilage"
                   }
                 ]
               },
               "sources": [
-                "huber-etal-2011"
+                "ziermann-etal-2014"
+              ]
+            },
+            {
+              "name": "Adductor mandibulae A2 posterior",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
               ]
             }
           ],
@@ -481,20 +542,30 @@
           "attachments": {
             "origin": [
               {
+                "element": "orbit"
+              },
+              {
                 "element": "neurocranium"
               }
             ],
             "insertion": [
+              {
+                "element": "meckels-cartilage",
+                "side": "lateral"
+              },
               {
                 "element": "mandible",
                 "landmark": "meckels-cartilage"
               },
               {
                 "muscle": "adductor-mandibulae"
+              },
+              {
+                "element": "meckels-cartilage"
               }
             ]
           },
-          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'Deep to the levator anguli oris muscles, the adductor mandibulae anterior has a broad origin across the surface of the preorbital region of the chondrocranium. It is the primary jaw adductor and inserts via a stout tendon that wraps beneath the lower jaw.' Anderson (2008), already filed on this species and record as 'Adductor mandibulae anterior + posterior' (division: divided, hand-authored parts AMA/AMP, no structured attachments), calls this Anderson's muscle group #1, 'the one group present and unambiguously homologous in all five gnathostomes he compares' — the bridge for filing here rather than Huber et al.'s naming alone. This row adds the structured attachments Anderson's did not carry; per MINING.md, only this source's own contribution is written here, and the two rows will need reconciling at build time (Anderson's compound hand-parted row against these two per-muscle rows) — flagged in the reading note.\n\nHydrolagus colliei, Huber et al. (2011): 'The adductor mandibulae posterior originates upon the suborbital ridge of the chondrocranium and its tendon merges with that of the adductor mandibulae anterior.' Insertion scored as onto the anterior division (same record) rather than a separate mandible row, since the source states the tendons merge rather than each reaching the jaw independently. See the anterior row for the Anderson (2008) bridge.",
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). From connective tissue at the front lower edge of the orbit, with some fibres from cartilage at its front upper edge, by a tendon to the outer face of Meckel's cartilage, together with the pars nasalis. Didier is the first to describe the anterior adductor as having two parts. Vetter takes the whole adductor of the ratfish as homologous to the selachian adductor.\n\nHydrolagus colliei, Didier (1987). A flat muscle lying in a depression of the chondrocranium below the orbit, from about the postorbital ridge to the back of the nasal capsule, almost wholly covered by the two parts of the anterior adductor, inserting by several tendons onto the lower outer face of Meckel's cartilage a little above the levator anguli oris. Vetter takes it as part of the selachian adductor; Edgeworth as homologous to the dipnoan anterior and posterior mandibular levators.\n\nHydrolagus colliei, Huber et al. (2011): 'Deep to the levator anguli oris muscles, the adductor mandibulae anterior has a broad origin across the surface of the preorbital region of the chondrocranium. It is the primary jaw adductor and inserts via a stout tendon that wraps beneath the lower jaw.' Anderson (2008), already filed on this species and record as 'Adductor mandibulae anterior + posterior' (division: divided, hand-authored parts AMA/AMP, no structured attachments), calls this Anderson's muscle group #1, 'the one group present and unambiguously homologous in all five gnathostomes he compares' — the bridge for filing here rather than Huber et al.'s naming alone. This row adds the structured attachments Anderson's did not carry; per MINING.md, only this source's own contribution is written here, and the two rows will need reconciling at build time (Anderson's compound hand-parted row against these two per-muscle rows) — flagged in the reading note.\n\nHydrolagus colliei, Huber et al. (2011): 'The adductor mandibulae posterior originates upon the suborbital ridge of the chondrocranium and its tendon merges with that of the adductor mandibulae anterior.' Insertion scored as onto the anterior division (same record) rather than a separate mandible row, since the source states the tendons merge rather than each reaching the jaw independently. See the anterior row for the Anderson (2008) bridge.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. Three portions arising from the preorbital lamina, the preorbital fascia and the suborbital fascia.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. A distinct deeper muscle under the anterior part, from the suborbital ridge to the lower jaw.",
           "spans": {
             "origin": [
               "cranial"
@@ -1631,6 +1702,69 @@
           }
         },
         {
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
+          "name": "Adductor mandibulae anterior",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "meckels-cartilage",
+                "side": "posterior"
+              }
+            ]
+          },
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. Larger than the posterior part and wholly in front of the orbit. A very broad origin from the preorbital fascia, across the inner part of the antorbital process and along the ethmoid crest, narrowing to a tendon sheet slung round the lower jaw and joining the posterior part of Meckel's cartilage. An internal sheet divides its back quarter from the rest. In males it is tied functionally to the frontal tenaculum.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Adductor mandibulae A2",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palatoquadrate-quadrate"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "meckels-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. Joins upper and lower jaws in two main portions: a small medial portion from the front border of the palatoquadrate to Meckel's cartilage near the symphysis, and a lateral portion split into superficial and deep bundles; the deep bundle starts from the front edge and the muscular process of the palatoquadrate.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
           "species": "rhinobatos-percellens",
           "speciesBasis": "note",
           "name": "Adductor mandibulae lateral 1",
@@ -1717,6 +1851,35 @@
               "cranial"
             ],
             "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Adductor mandibulae",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "palatoquadrate-quadrate",
+                "side": "lateral"
+              },
+              {
+                "element": "meckels-cartilage",
+                "side": "lateral"
+              }
+            ],
+            "insertion": []
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Two parts, dorsal and ventral, separated by an internal fascia below and to the side of the jaw joint, on which both insert. The dorsal part arises in a shallow fossa in the back third of the side of the palatoquadrate; the ventral part in a shallow fossa in the back half of the side of Meckel's cartilage. The insertion is the internal fascia and is not scored as an element.",
+          "spans": {
+            "origin": [
               "cranial"
             ],
             "crosses": false
@@ -2042,7 +2205,8 @@
           "name": "Intermandibularis",
           "sources": [
             "anderson-2008",
-            "huber-etal-2011"
+            "huber-etal-2011",
+            "ziermann-etal-2014"
           ],
           "note": "Hydrolagus colliei. Present in every taxon Anderson (2008) examines, stretching between the sides of the mandible on CN V. In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.",
           "speciesBasis": "note",
@@ -2050,15 +2214,21 @@
             "origin": [
               {
                 "element": "inferior-maxillary-cartilage"
+              },
+              {
+                "element": "superior-maxillary-cartilage"
               }
             ],
             "insertion": [
               {
                 "element": "premandibular-cartilage"
+              },
+              {
+                "element": "skin"
               }
             ]
           },
-          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The intermandibularis originates upon the inferior maxillary cartilage and inserts onto the premandibular cartilages, a pair of fibrocartilaginous masses located at the lower jaw symphysis. Contraction of these muscles protracts the upper and lower sets of labial cartilages.' Topologically unlike the elasmobranch intermandibularis (floor-of-mouth elevator via Meckel's cartilage and the midventral raphe) — a labial-protraction muscle instead. Filed here on the strength of the existing Anderson (2008) occurrence on this record and species, which already treats it as the same field: 'Present in every taxon Anderson (2008) examines... In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.' This row adds the structured attachments Anderson's did not carry. Elements requested at the top of this note: `inferior-maxillary-cartilage` and `premandibular-cartilage`, both holocephalan-specific and distinct from the tetrapod maxilla/premaxilla and from Meckel's cartilage, which Table 4 uses as a separate insertion elsewhere on this same species (adductor mandibulae anterior/posterior).",
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The intermandibularis originates upon the inferior maxillary cartilage and inserts onto the premandibular cartilages, a pair of fibrocartilaginous masses located at the lower jaw symphysis. Contraction of these muscles protracts the upper and lower sets of labial cartilages.' Topologically unlike the elasmobranch intermandibularis (floor-of-mouth elevator via Meckel's cartilage and the midventral raphe) — a labial-protraction muscle instead. Filed here on the strength of the existing Anderson (2008) occurrence on this record and species, which already treats it as the same field: 'Present in every taxon Anderson (2008) examines... In the elasmobranchs it is continuous with the superficial constrictors; in Hydrolagus and the osteichthyans it is separate, which is the topological difference his group #3 has to absorb.' This row adds the structured attachments Anderson's did not carry. Elements requested at the top of this note: `inferior-maxillary-cartilage` and `premandibular-cartilage`, both holocephalan-specific and distinct from the tetrapod maxilla/premaxilla and from Meckel's cartilage, which Table 4 uses as a separate insertion elsewhere on this same species (adductor mandibulae anterior/posterior).\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. Starts from the maxillary cartilage, bends ventrally, and ends on the infralabial tissue next to Meckel's cartilage. In some individuals of this species and other holocephalans it has separate front and back parts.",
           "spans": {
             "origin": [
               "cranial"
@@ -2595,6 +2765,104 @@
           "fusedWith": [
             "interhyoideus"
           ]
+        },
+        {
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
+          "name": "Intermandibularis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "superior-maxillary-cartilage",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "premandibular-cartilage"
+              },
+              {
+                "element": "meckels-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. A thin muscle from the back end and dorsal process of the superior maxillary cartilage, running ventrally past the inferior maxillary cartilage with a kink at an internal sheet, interrupted by an insertion on the back and inner edges of the premandibular cartilage, then continuing forward to the mandibular symphysis. Reported as two muscles by Edgeworth, Kesteven and Luther; here taken as one, following Didier (1995).",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Intermandibularis anterior",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "meckels-cartilage"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "meckels-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. A thin muscle joining the front regions of the two Meckel's cartilages; absent in some specimens according to Marion (1905).",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Intermandibularis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "meckels-cartilage",
+                "side": "posterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midventral-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A broad flat triangular muscle from the back margin of the Meckel's cartilages, extending back as a sheet to the lower midline of the constrictor hyoideus aponeurosis. The exact insertion is hard to see because the sheet is so thin.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {
@@ -2746,7 +3014,7 @@
         {
           "species": "squalus-acanthias",
           "speciesBasis": "note",
-          "name": "Constrictor hyoideus dorsalis (levator hyomandibulae)",
+          "name": "Levator hyomandibulae",
           "present": "yes",
           "sources": [
             "ziermann-etal-2014",
@@ -2765,7 +3033,7 @@
               }
             ]
           },
-          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Recorded here as the levator hyomandibulae, which originates on the otic capsule of the chondrocranium and on the epibranchial musculature. The dorsal and ventral hyoid constrictors insert on the tendinous sheath overlying the hyomandibular cartilage, the dorsal arising from the otic capsule and the cucullaris and the ventral alongside the interhyoideus on the raphe of the first gill slit.",
+          "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2: from the chondrocranium (and the epibranchial muscles) onto the hyomandibular cartilage, which it elevates, returning it to rest after a gape. Renamed on 2026-10-08: this row used to be labelled with the constrictor hyoideus dorsalis as well, which Table 2 lists as a separate muscle (see that row). Ziermann et al. (2014) call a muscle with these ends the adductor arcus palatini and keep it apart from the constrictor hyoideus dorsalis, so the record this sits on (`depressor-mandibulae`, which lists 'levator hyomandibulae' as a synonym) is the dataset's reading, not the sources'.\n\nSqualus acanthias, from Huber et al.'s descriptions. Recorded here as the levator hyomandibulae, which originates on the otic capsule of the chondrocranium and on the epibranchial musculature. The dorsal and ventral hyoid constrictors insert on the tendinous sheath overlying the hyomandibular cartilage, the dorsal arising from the otic capsule and the cucullaris and the ventral alongside the interhyoideus on the raphe of the first gill slit.",
           "spans": {
             "origin": [
               "cranial"
@@ -4068,7 +4336,7 @@
         {
           "species": "squalus-acanthias",
           "speciesBasis": "note",
-          "name": "Constrictor hyoideus ventralis",
+          "name": "Interhyoideus",
           "present": "yes",
           "sources": [
             "ziermann-etal-2014",
@@ -4079,6 +4347,9 @@
               {
                 "element": "hyoid",
                 "landmark": "ceratohyal"
+              },
+              {
+                "element": "ceratohyal"
               }
             ],
             "insertion": [
@@ -4087,7 +4358,7 @@
               }
             ]
           },
-          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. A thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. The hyoid-arch counterpart of the intermandibularis, and it shares its insertion.",
+          "attachmentNote": "Squalus acanthias, Huber et al. (2011): a thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. Renamed on 2026-10-08: the attachments here are Huber et al.'s interhyoideus paragraph and Table 2 row, not those of the constrictor hyoideus ventralis, which is a separate muscle (parked below).\n\nSqualus acanthias, from Huber et al.'s descriptions. A thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. The hyoid-arch counterpart of the intermandibularis, and it shares its insertion.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. A thin sheet that is hard to separate from the intermandibularis; it runs from the ceratohyal to a median raphe where it joins its fellow, and covers the ventral branchial region behind.",
           "spans": {
             "origin": [
               "cranial"
@@ -5041,6 +5312,30 @@
           ]
         },
         {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Interhyoideus",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ],
+            "insertion": []
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. Starts partly from the horizontal tendon tied to the hyomandibula and is continuous behind with the ventral branchial muscles.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
           "species": "rhinobatos-percellens",
           "speciesBasis": "note",
           "name": "Ventral hyoid constrictor",
@@ -5063,6 +5358,34 @@
           "attachmentNote": "Rhinobatos percellens, Huber et al. (2011): originates on the ventral superficial branchial constrictor, unites medially with its dorsal counterpart to form the anterior wall of the branchial chamber, which it compresses; Table 3 gives the insertion as the first gill pouch. `interhyoideus`'s synonym list carries 'constrictor hyoideus ventralis' unhedged — the direct English/Latin equivalent of Huber's 'ventral hyoid constrictor'. Note: Table 3 does not separately list an 'Interhyoideus' for batoids at all (unlike Squalus and Hydrolagus); Huber et al.'s hyoid-arch text for this species names only the dorsal and ventral hyoid constrictors, levator hyomandibulae, depressor rostri/mandibulae and depressor hyomandibularis, so this row is the only one on `interhyoideus` for this species from this source.",
           "spans": {
             "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Constrictor hyoideus ventralis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "midventral-raphe"
+              }
+            ],
+            "insertion": [
+              {
+                "muscle": "constrictor-hyoideus-dorsalis"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A thin flat muscle from the midline aponeurosis under the coracomandibularis, covering the hyoid rays and inserting into the fibres of the dorsal constrictor.",
+          "spans": {
+            "origin": [
               "cranial"
             ],
             "crosses": false
@@ -5607,6 +5930,42 @@
             },
             {
               "name": "Levatores arcuum branchialium"
+            },
+            {
+              "name": "Dorsal superficial branchial constrictor",
+              "attachments": {
+                "origin": [
+                  {
+                    "muscle": "protractor-pectoralis"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "gill-slits"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Ventral superficial branchial constrictor",
+              "attachments": {
+                "origin": [
+                  {
+                    "muscle": "hypobranchial-muscles"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "gill-slits"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
             }
           ],
           "nerves": [
@@ -5621,6 +5980,12 @@
             "origin": [
               {
                 "element": "branchial-arches"
+              },
+              {
+                "muscle": "protractor-pectoralis"
+              },
+              {
+                "muscle": "hypobranchial-muscles"
               }
             ],
             "insertion": [
@@ -5629,7 +5994,7 @@
               }
             ]
           },
-          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. The superficial branchial constrictors take origin from the tendinous intersections between the dorsal and ventral series and insert on each of the gill slits, compressing the pharynx during the expulsion phase. Scored at the arch and the slit: the tendinous intersections are the real proximal attachment and have no element.",
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. The superficial branchial constrictors take origin from the tendinous intersections between the dorsal and ventral series and insert on each of the gill slits, compressing the pharynx during the expulsion phase. Scored at the arch and the slit: the tendinous intersections are the real proximal attachment and have no element.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the cucullaris onto the tendinous sheaths of the gill slits; compresses the gill pouches.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis onto the tendinous sheaths of the gill slits; compresses the gill pouches. The origin is scored against `hypobranchial-muscles`, the record the coracoarcualis belongs to.",
           "spans": {
             "origin": [
               "cranial"
@@ -6100,6 +6465,37 @@
           }
         },
         {
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
+          "name": "Constrictores branchiales",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "epibranchials"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ceratobranchials"
+              }
+            ]
+          },
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. Three small thin muscles, from the sides of epibranchials II and III and the back pharyngobranchial complex, onto the ceratobranchials of arches I-III. The fourth that Edgeworth described could not be found, possibly because it is too thin to resolve.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
           "species": "conger-cinereus",
           "name": "Dorsal and ventral gill-arch muscles",
           "present": "yes",
@@ -6171,7 +6567,8 @@
           "name": "Constrictor branchialis",
           "present": "yes",
           "sources": [
-            "huber-etal-2011"
+            "huber-etal-2011",
+            "ziermann-etal-2014"
           ],
           "attachments": {
             "origin": [
@@ -6185,7 +6582,7 @@
               }
             ]
           },
-          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The constrictor branchialis originates, and inserts upon, the epibranchial and ceratobranchial cartilages of the first three branchial arches, respectively.' `branchial-constrictors`' synonym 'constrictores branchiales' is the direct Latin plural of Huber's singular 'constrictor branchialis' — same root, grammatical number only. Scored on arches 1-3 as a species fact in prose; no per-arch element exists to structure that further.",
+          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The constrictor branchialis originates, and inserts upon, the epibranchial and ceratobranchial cartilages of the first three branchial arches, respectively.' `branchial-constrictors`' synonym 'constrictores branchiales' is the direct Latin plural of Huber's singular 'constrictor branchialis' — same root, grammatical number only. Scored on arches 1-3 as a species fact in prose; no per-arch element exists to structure that further.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. Four, from epibranchials I-IV to the ceratobranchials of the same arches.",
           "spans": {
             "origin": [
               "cranial"
@@ -6265,6 +6662,37 @@
           "spans": {
             "origin": [
               "fin"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Constrictores superficiales",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "extrabranchial-cartilages"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midventral-raphe"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Very thin sheets from inside the deep cucullaris, where they insert between the dorsal extrabranchial cartilages, running down to the gill bars and inserting ventrally into the midline aponeurosis.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
             ],
             "crosses": false
           }
@@ -6798,7 +7226,8 @@
           "innervation": "CN III, IV and CN VI, but not the crown-osteichthyan pattern.",
           "note": "Squalus acanthias, and the chondrichthyan set is neither the lamprey's nor the tetrapod's. Fritzsch gives elasmobranchs and lungfish a contralateral nasal rectus on a dorsal ramus of CN III that crown osteichthyans lack, and no medial rectus; the caudal rectus of lampreys is already gone. The earlier reading of this row as 'the standard gnathostome pattern' flattened two differences in both directions.",
           "sources": [
-            "fritzsch-2023"
+            "fritzsch-2023",
+            "huber-etal-2011"
           ],
           "nerves": [
             {
@@ -6807,7 +7236,29 @@
             {
               "nerve": "abducens"
             }
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "eye-bulbus"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "testudines-generalised",
@@ -7142,6 +7593,37 @@
           }
         },
         {
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
+          "name": "Rectus dorsalis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "eye-bulbus"
+              }
+            ]
+          },
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. From the orbit in front of the trigeminal entrance; inserts dorsally around the eye.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. From the orbit in front of the trigeminal entrance, below the profundus nerve; inserts ventrally, broadly.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. From the orbit in front of the trigeminal entrance; inserts at the back of the eye.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. From the orbit, further forward than the other recti; inserts at the front of the eye.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. From just below the antorbital crest, well forward in the orbit; inserts at the front-lower side of the eye.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. From just inside the antorbital crest by the ophthalmic foramen; inserts at the front-upper side of the eye.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
           "species": "hydrolagus-colliei",
           "speciesBasis": "note",
           "name": "Dorsal oblique",
@@ -7424,6 +7906,37 @@
             ],
             "crosses": false
           }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Rectus dorsalis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "eye-bulbus"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From the back of the orbit, above the V+VII foramen; inserts dorsally over the eye.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From just behind the origin of the dorsal rectus, above the V+VII foramen; inserts ventrally around the eye.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From the orbit, below the origin of the ventral rectus; inserts at the back of the eye.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From a relatively forward origin in the orbit; inserts at the front of the eye.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From in front of the foramen for the trochlear nerve; inserts at the front-lower side of the eye.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From just above the origin of the ventral oblique; inserts at the front-upper side of the eye.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
         }
       ],
       "homology": {
@@ -7552,12 +8065,16 @@
           "note": "The coracoid origin makes the mechanical link between the pectoral girdle and the feeding apparatus explicit — the same link that must be broken for a neck to evolve.",
           "sources": [
             "diogo-ziermann-2015",
-            "ziermann-etal-2014"
+            "ziermann-etal-2014",
+            "huber-etal-2011"
           ],
           "attachments": {
             "origin": [
               {
                 "element": "pectoral-girdle"
+              },
+              {
+                "element": "scapulocoracoid"
               }
             ],
             "insertion": [
@@ -7569,20 +8086,120 @@
               },
               {
                 "element": "branchial-arches"
+              },
+              {
+                "element": "hyoid",
+                "landmark": "corpus-hyoidei"
+              },
+              {
+                "element": "meckels-cartilage"
+              },
+              {
+                "element": "ceratohyal"
               }
             ]
           },
-          "attachmentNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck.",
+          "attachmentNote": "Origin on the coracoid bar ties the feeding apparatus mechanically to the pectoral girdle. Loosening that link is a precondition for a neck.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the scapulocoracoid, supporting the origin of the coracomandibularis and coracohyoideus; expands the oropharyngeal cavity.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis and the pectoral girdle onto the basihyal, hypobranchial and basibranchial cartilages; abducts the hyoid and branchial arches.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis onto the basihyal cartilage; abducts the hyoid arch.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis onto Meckel's cartilage; abducts the lower jaw.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. From the coracoid bar forward, some fibres to the pericardium and most to the ceratohyal. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. From the aponeurosis it shares with the coracobranchiales and coracoarcualis, onto the basihyal.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. A paired muscle along the ventral midline from the fascia between the coracoarcuales to the symphysis of Meckel's cartilage.",
           "division": "divided",
           "parts": [
             {
-              "name": "Coracomandibularis"
+              "name": "Coracomandibularis",
+              "attachments": {
+                "origin": [],
+                "insertion": [
+                  {
+                    "element": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
             },
             {
-              "name": "Coracohyoideus"
+              "name": "Coracohyoideus",
+              "attachments": {
+                "origin": [],
+                "insertion": [
+                  {
+                    "element": "hyoid",
+                    "landmark": "corpus-hyoidei"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
             },
             {
-              "name": "Coracobranchialis"
+              "name": "Coracobranchialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "branchial-arches"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Coracoarcualis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "scapulocoracoid"
+                  }
+                ],
+                "insertion": []
+              },
+              "sources": [
+                "ziermann-etal-2014",
+                "huber-etal-2011"
+              ]
+            },
+            {
+              "name": "Sternohyoideus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid",
+                    "landmark": "corpus-hyoidei"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
+              ]
+            },
+            {
+              "name": "Coracomandibularis (Ziermann)",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
+              ]
             }
           ],
           "nerves": [
@@ -7812,7 +8429,9 @@
           "name": "Coracomandibularis + coracohyoideus + mandibulohyoideus",
           "sources": [
             "anderson-2008",
-            "huber-etal-2011"
+            "didier-1987",
+            "huber-etal-2011",
+            "ziermann-etal-2014"
           ],
           "division": "divided",
           "parts": [
@@ -7824,6 +8443,26 @@
             },
             {
               "name": "Mandibulohyoideus (MH)"
+            },
+            {
+              "name": "Coracomandibularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "didier-1987",
+                "huber-etal-2011",
+                "ziermann-etal-2014"
+              ]
             },
             {
               "name": "Coracobranchialis",
@@ -7841,6 +8480,7 @@
                 ]
               },
               "sources": [
+                "didier-1987",
                 "huber-etal-2011"
               ]
             },
@@ -7860,11 +8500,12 @@
                 ]
               },
               "sources": [
+                "didier-1987",
                 "huber-etal-2011"
               ]
             },
             {
-              "name": "Coracomandibularis",
+              "name": "Coracobranchiales",
               "attachments": {
                 "origin": [
                   {
@@ -7873,13 +8514,32 @@
                 ],
                 "insertion": [
                   {
-                    "element": "mandible",
-                    "landmark": "meckels-cartilage"
+                    "element": "ceratobranchials",
+                    "side": "ventral"
                   }
                 ]
               },
               "sources": [
-                "huber-etal-2011"
+                "ziermann-etal-2014"
+              ]
+            },
+            {
+              "name": "Sternohyoideus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid",
+                    "landmark": "corpus-hyoidei"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
               ]
             }
           ],
@@ -7888,6 +8548,15 @@
           "attachments": {
             "origin": [
               {
+                "element": "pectoral-girdle",
+                "side": "anterior"
+              },
+              {
+                "element": "hyoid",
+                "landmark": "corpus-hyoidei",
+                "side": "posterior"
+              },
+              {
                 "element": "pectoral-girdle"
               },
               {
@@ -7895,6 +8564,18 @@
               }
             ],
             "insertion": [
+              {
+                "element": "meckels-cartilage",
+                "side": "posterior"
+              },
+              {
+                "element": "ceratobranchials",
+                "side": "posterior"
+              },
+              {
+                "element": "pectoral-girdle",
+                "side": "anterior"
+              },
               {
                 "element": "branchial-arches",
                 "landmark": "ceratobranchials"
@@ -7906,16 +8587,25 @@
               {
                 "element": "mandible",
                 "landmark": "meckels-cartilage"
+              },
+              {
+                "element": "ceratobranchials",
+                "side": "ventral"
+              },
+              {
+                "element": "meckels-cartilage"
               }
             ]
           },
-          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The coracobranchialis originates on the coracoid bar of the pectoral girdle, and inserts onto, and abducts the branchial arches' — Table 4 gives the origin as 'Pectoral girdle' plainly; 'coracoid bar' is scored at that coarser element rather than a guessed landmark. Has multiple divisions (Table 4/text), not further specified. `hypobranchial-muscles`' synonym list names 'coracobranchialis' directly. No prior occurrence exists on this record for this species (Anderson 2008 does not describe it), so this is a fresh row, not a merge.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracohyoideus originates on the coracomandibularis and inserts onto the basihyal cartilage, which it abducts.' Origin scored coarsely as the record itself, since the specific origin (coracomandibularis) is a part of the same record rather than a separately citable one. Insertion onto 'basihyal cartilage' scored against `corpus-hyoidei` — see the equivalent Rhinobatos row for the substitution reasoning. `hypobranchial-muscles`' synonym list names 'coracohyoideus' directly. **Anderson (2008) already carries a `hypobranchial-muscles` occurrence for this species** (division: divided, hand-authored parts 'Coracomandibularis anterior + posterior', 'Coracohyoideus anterior + posterior', 'Mandibulohyoideus', no structured attachments) — flagged for reconciliation in the reading note, same issue as the adductor mandibulae rows above. Huber et al. do not mention a mandibulohyoideus at all.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracomandibularis originates on the coracoid bar of the pectoral girdle, and inserts onto, and abducts the lower jaw.' `hypobranchial-muscles`' synonym list names 'coracomandibularis' directly. See the coracohyoideus row above for the Anderson (2008) reconciliation flag — this row is part of the same occurrence.",
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). From the front edge of the lowest part of the pectoral girdle, onto the back and lower edge of Meckel's cartilage. Edgeworth's geniocoracoid; Shann takes it as homologous to the coracomandibularis of selachians. A V-shaped septum divides it, and deep fibres run up inside the body to the girdle in front of the fin.\n\nHydrolagus colliei, Didier (1987). A large flat sheet making most of the back-and-outer border of the branchium, from the front edge of the lowest third of the girdle, onto the back edge of the ceratobranchial cartilages, including the junction of arches four and five. Shann takes it as homologous to the selachian coracobranchialis.\n\nHydrolagus colliei, Didier (1987). As Didier states it, from the back edge of the basihyal onto the front edge of the girdle above the joint surface, with fibres to the V-shaped septum of the coracomandibularis. It runs partly under the coracomandibularis, which sits in a furrow along it. With that muscle it is homologous to the selachian coraco-arcualis communis (Shann); Edgeworth calls it the rectus cervicus. The ends are given in Didier's order, which is the reverse of the usual convention.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracobranchialis originates on the coracoid bar of the pectoral girdle, and inserts onto, and abducts the branchial arches' — Table 4 gives the origin as 'Pectoral girdle' plainly; 'coracoid bar' is scored at that coarser element rather than a guessed landmark. Has multiple divisions (Table 4/text), not further specified. `hypobranchial-muscles`' synonym list names 'coracobranchialis' directly. No prior occurrence exists on this record for this species (Anderson 2008 does not describe it), so this is a fresh row, not a merge.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracohyoideus originates on the coracomandibularis and inserts onto the basihyal cartilage, which it abducts.' Origin scored coarsely as the record itself, since the specific origin (coracomandibularis) is a part of the same record rather than a separately citable one. Insertion onto 'basihyal cartilage' scored against `corpus-hyoidei` — see the equivalent Rhinobatos row for the substitution reasoning. `hypobranchial-muscles`' synonym list names 'coracohyoideus' directly. **Anderson (2008) already carries a `hypobranchial-muscles` occurrence for this species** (division: divided, hand-authored parts 'Coracomandibularis anterior + posterior', 'Coracohyoideus anterior + posterior', 'Mandibulohyoideus', no structured attachments) — flagged for reconciliation in the reading note, same issue as the adductor mandibulae rows above. Huber et al. do not mention a mandibulohyoideus at all.\n\nHydrolagus colliei, Huber et al. (2011): 'The coracomandibularis originates on the coracoid bar of the pectoral girdle, and inserts onto, and abducts the lower jaw.' `hypobranchial-muscles`' synonym list names 'coracomandibularis' directly. See the coracohyoideus row above for the Anderson (2008) reconciliation flag — this row is part of the same occurrence.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. Five, from the coracoid to the lower part of the ceratobranchials. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. A continuous sheet from the coracoid that fuses with its fellow in the ventral midline at the lower jaw. Illustrated elsewhere as having anterior and posterior portions, which Ziermann et al. call artificial, as does Anderson (2008). The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. From the coracoid and/or the fascia of the coracomandibularis to the basihyal. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans.",
           "spans": {
             "origin": [
+              "cranial",
               "pectoral"
             ],
             "insertion": [
-              "cranial"
+              "cranial",
+              "pectoral"
             ],
             "crosses": true
           }
@@ -7933,7 +8623,41 @@
               "name": "Coracomandibularis"
             },
             {
-              "name": "Coracohyoideus"
+              "name": "Coracohyoideus",
+              "attachments": {
+                "origin": [],
+                "insertion": [
+                  {
+                    "element": "hyoid",
+                    "landmark": "corpus-hyoidei",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "dearden-etal-2020"
+              ]
+            },
+            {
+              "name": "Coracobranchiales",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  },
+                  {
+                    "element": "scapular-process"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "branchial-arches"
+                  }
+                ]
+              },
+              "sources": [
+                "dearden-etal-2020"
+              ]
             }
           ],
           "attachments": {
@@ -7941,15 +8665,29 @@
               {
                 "element": "pectoral-girdle",
                 "side": "anterior"
+              },
+              {
+                "element": "pectoral-girdle"
+              },
+              {
+                "element": "scapular-process"
               }
             ],
             "insertion": [
               {
                 "element": "meckels-cartilage"
+              },
+              {
+                "element": "hyoid",
+                "landmark": "corpus-hyoidei",
+                "side": "posterior"
+              },
+              {
+                "element": "branchial-arches"
               }
             ]
           },
-          "attachmentNote": "Callorhinchus milii. A very large coracomandibularis with its main origin on the T-shaped anteroventral face of the coracoid region of the pectoral girdle, inserting along Meckel's cartilage — triangular in ventral view, broadening forwards. This is the muscle Anderson (2008) finds in all five gnathostomes he compares and argues from: basal jaw depression pulled on the mandible directly from the girdle, and was not coupled to the hyoid. Scoring it here puts the same attachment in a holocephalan and a selachian.",
+          "attachmentNote": "Callorhinchus milii. A very large coracomandibularis with its main origin on the T-shaped anteroventral face of the coracoid region of the pectoral girdle, inserting along Meckel's cartilage — triangular in ventral view, broadening forwards. This is the muscle Anderson (2008) finds in all five gnathostomes he compares and argues from: basal jaw depression pulled on the mandible directly from the girdle, and was not coupled to the hyoid. Scoring it here puts the same attachment in a holocephalan and a selachian.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. A long thin muscle whose whole origin lies on the top of the coracomandibularis in front of its V-shaped septum, running forward to the back of the basihyal. Didier was unsure whether it arose from the coracoid or the coracomandibularis.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. Long thin muscles from the upper-outer corner of the coracoid and the base of the scapular process, onto the hypobranchials: the front three to hypobranchials I-III, the fourth and fifth to the last. The hypobranchials have no element here and are scored on `branchial-arches`.",
           "speciesBasis": "note",
           "spans": {
             "origin": [
@@ -8499,6 +9237,100 @@
           }
         },
         {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Coracoarcualis",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "ceratohyal"
+              },
+              {
+                "element": "meckels-cartilage"
+              },
+              {
+                "element": "hyoid"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. From the coracoid bar; medial fibres to the pericardium and lateral fibres to the ceratohyal. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans.\n\nLeucoraja erinacea, Ziermann et al. (2014), own dissections. From the fascia between the right and left coracoarcuales to the mandibular symphysis along the midline.\n\nLeucoraja erinacea, Ziermann et al. (2014), own dissections. From the fascia below the coracohyomandibularis to the hypohyal cartilage. The hypohyal cartilage is scored on `hyoid`; `hypohyal` is not recorded in chondrichthyans.",
+          "division": "divided",
+          "parts": [
+            {
+              "name": "Coracoarcualis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "ceratohyal"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
+              ]
+            },
+            {
+              "name": "Coracomandibularis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "meckels-cartilage"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
+              ]
+            },
+            {
+              "name": "Sternohyoideus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "pectoral-girdle"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "hyoid"
+                  }
+                ]
+              },
+              "sources": [
+                "ziermann-etal-2014"
+              ]
+            }
+          ],
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
+        },
+        {
           "species": "rhinobatos-percellens",
           "speciesBasis": "note",
           "name": "Coracohyoideus",
@@ -8555,6 +9387,55 @@
               "cranial"
             ],
             "crosses": false
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Coracomandibularis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "meckels-cartilage",
+                "side": "posterior"
+              },
+              {
+                "element": "hyoid",
+                "landmark": "corpus-hyoidei",
+                "side": "ventral"
+              },
+              {
+                "element": "ceratobranchials"
+              },
+              {
+                "element": "scapulocoracoid",
+                "side": "anterior"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "midventral-raphe"
+              },
+              {
+                "element": "scapulocoracoid"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A long thin muscle from the back of Meckel's cartilage, running back to join the coracohyoideus and coracobranchiales on the ventral aponeurosis of the ventral hyoid constrictor. The origin and insertion are given in the order the paper states them, which is the reverse of the usual convention.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A long thin muscle from the underside of the basihyal, back and down to the ventral aponeurosis. Edgeworth calls it the rectus cervicis. Ends as the paper states them.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Five: the first from in front of the first ceratobranchial's lower tip, and so on back, the fifth from ceratobranchial V and the copula; the first inserts medially with the coracohyoideus and coracomandibularis, and II-V on the coracoid process of the scapulocoracoid.\n\nScyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A short broad muscle from the front face of the ventral symphysis of the shoulder girdle to the ventral aponeurosis, between the coracohyoideus and the coracobranchiales.",
+          "spans": {
+            "origin": [
+              "cranial",
+              "pectoral"
+            ],
+            "insertion": [
+              "cranial",
+              "pectoral"
+            ],
+            "crosses": true
           }
         }
       ],
@@ -8675,12 +9556,29 @@
           "note": "The spiracle is the reduced first (mandibular) gill slit; its musculature is arch 1 and trigeminal.",
           "sources": [
             "ziermann-etal-2014",
-            "huber-etal-2011"
+            "huber-etal-2011",
+            "wilga-etal-2001"
           ],
           "division": "divided",
           "parts": [
             {
-              "name": "Levator palatoquadrati"
+              "name": "Levator palatoquadrati",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "neurocranium",
+                    "landmark": "otic-capsule"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "palatoquadrate-quadrate"
+                  }
+                ]
+              },
+              "sources": [
+                "huber-etal-2011"
+              ]
             },
             {
               "name": "Spiracularis"
@@ -8691,6 +9589,9 @@
               {
                 "element": "neurocranium",
                 "landmark": "otic-capsule"
+              },
+              {
+                "element": "neurocranium"
               }
             ],
             "insertion": [
@@ -8707,7 +9608,7 @@
               }
             ]
           },
-          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Two muscles on this record. The levator palatoquadrati runs from the otic capsule of the chondrocranium onto the palatoquadrate, elevating the upper jaw into its resting position during the recovery phase of the gape cycle. The spiracularis inserts on the spiracular cartilage and the distal hyomandibula, forming the anterior wall of the spiracular valve.",
+          "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Two muscles on this record. The levator palatoquadrati runs from the otic capsule of the chondrocranium onto the palatoquadrate, elevating the upper jaw into its resting position during the recovery phase of the gape cycle. The spiracularis inserts on the spiracular cartilage and the distal hyomandibula, forming the anterior wall of the spiracular valve.\n\nSqualus acanthias, Huber et al. (2011) Table 2. From the otic capsule onto the palatoquadrate, which it lifts to its resting position in the recovery phase after the jaws have closed.\n\nSqualus acanthias. Wilga et al. (2001): the ancestral levator palatoquadrati runs dorsoventrally from the postorbital region of the cranium to the posterior palatoquadrate, as in squaleans, lamniforms and batoids. In Squalus it is active during retraction of the upper jaw and never during protrusion. Origin scored on the neurocranium: the postorbital region has no landmark of its own, and the postorbital bone is a dermal element Chondrichthyes lack.",
           "spans": {
             "origin": [
               "cranial"
@@ -9405,6 +10306,40 @@
           }
         },
         {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Levator arcus palatini",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palatoquadrate-quadrate"
+              },
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. A dorsal bundle starting below the postorbital process and inserting on the palatoquadrate, and a ventral bundle that ends on the membranous wall of the palate and, by a tendon, on the hyomandibular cartilage.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
           "species": "rhinobatos-percellens",
           "speciesBasis": "note",
           "name": "Levator palatoquadrati",
@@ -9480,6 +10415,38 @@
               ]
             }
           ],
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Levator palatoquadrati",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "palatoquadrate-quadrate",
+                "side": "medial"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A thin muscle from the lower-outer side of the otic process just behind the postorbital process, to the inner side of the palatoquadrate just in front of the jaw joint, in a shallow depression.",
           "spans": {
             "origin": [
               "cranial"
@@ -10141,6 +11108,121 @@
           }
         },
         {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "source",
+          "name": "Constrictor hyoideus dorsalis",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "opercular-flap"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. From connective tissue lengthwise along the notochord up to the front edge of the scapular process, to the connective tissue of the opercular flap. The fleshy operculum joins it above.",
+          "spans": {
+            "origin": [
+              "axial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Constrictor hyoideus dorsalis",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [],
+            "insertion": []
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. Starts between the adductor arcus palatini and the front edge of the branchial constrictors and ends on the horizontal tendon tied to the hyomandibula."
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Constrictor hyoideus dorsalis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "otic-capsule",
+                "side": "lateral"
+              },
+              {
+                "muscle": "epaxial-musculature"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A large thin muscle with a broad origin over the first superficial constrictor and the side of the epaxial muscle, and a further origin on the side wall of the otic capsule; it overlies the eyelid muscles. The front part inserts along the lower two-thirds of the hyomandibula; behind, it covers the hyoid rays and inserts into the upper fibres of the ventral constrictor. It includes the levator hyomandibulae, whose front fibres cannot be separated. The facial nerve supplies it.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "squalus-acanthias",
+          "speciesBasis": "note",
+          "name": "Constrictor hyoideus dorsalis",
+          "present": "yes",
+          "sources": [
+            "huber-etal-2011",
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "neurocranium"
+              },
+              {
+                "muscle": "protractor-pectoralis"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "hyomandibula-stapes"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium and the cucullaris onto the tendinous sheath over the hyomandibular cartilage; compresses the first gill pouch. Table 2 lists it apart from the levator hyomandibulae, with which this row used to be merged.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. A sheet over the branchial region, starting at the fascia above the cucullaris and blended into both the adductor arcus palatini and the interhyoideus, with no clear skeletal attachments. The earlier row for this animal that scores a 'constrictor hyoideus dorsalis (levator hyomandibulae)' joins two muscles that Ziermann et al. keep apart.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
           "species": "teleostei-generalised",
           "speciesBasis": "generalised",
           "name": "Adductor arcus palatini",
@@ -10337,7 +11419,7 @@
         ],
         "teaching": "The pair to teach beside `levator-arcus-palatini`: two constrictor sheets on two arches and two cranial nerves, working the same suspensorium in opposite directions. A fish opens its mouth by abducting the suspensorium with the CN V sheet and closes it by adducting with the CN VII one.",
         "authority": {
-          "source": "winterbottom-1973",
+          "source": "ziermann-etal-2014",
           "basis": "computed"
         }
       },
@@ -12528,13 +13610,12 @@
           "note": "Maticora sp., Haas (1973), from his own dissection of a very large specimen in the Field Museum, Chicago. **No trace of any M. levator anguli oris**, and the absence carries an argument. Haas's reading is that the proteroglyphous snakes descend from colubrids that had already lost this muscle, and that only after the centre of the semicircular adductor mandibulae externus 1b became attached to the venom gland capsule did the dorsal half differentiate further, as in *Dendroaspis*. So on this record — whose identification this dataset calls the crux of the lizard–snake problem — the snake end is an absence used as a phylogenetic character. Compare the *Sphenodon* row, where the muscle exists but four workers disagreed about whether it does."
         },
         {
-          "species": "hydrolagus-colliei",
-          "speciesBasis": "note",
-          "name": "Levator anguli oris anterior",
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
+          "name": "Levator anguli oris posterior",
           "present": "yes",
-          "division": "divided",
           "sources": [
-            "huber-etal-2011"
+            "dearden-etal-2020"
           ],
           "attachments": {
             "origin": [
@@ -12544,28 +13625,90 @@
             ],
             "insertion": [
               {
-                "element": "superior-maxillary-cartilage"
+                "element": "premandibular-cartilage"
+              },
+              {
+                "element": "inferior-maxillary-cartilage"
+              },
+              {
+                "element": "superior-maxillary-cartilage",
+                "side": "medial"
+              },
+              {
+                "element": "prelabial-cartilage",
+                "side": "posterior"
               }
             ]
           },
-          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The levator anguli oris anterior and posterior muscles originate upon the antorbital crest of the chondrocranium and insert onto the superior maxillary cartilage, from where they retract the labial cartilages via a series of ligamentous attachments.' `levator-anguli-oris`'s own synonym list names 'levator anguli oris' directly. Origin scored at plain `neurocranium` — 'antorbital crest' has no landmark in skeleton.json and is not requested here, since parking would not improve on the coarser element (the crest is a ridge on the same bone, not a separately homologisable site). Insertion onto `superior-maxillary-cartilage`, the same requested element as `Labialis anterior` above.\n\nHydrolagus colliei. See the levator anguli oris anterior row.",
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. From the antorbital crest and preorbital fascia, down over the anterior adductor, by a tendon into the lip tissue between the premandibular and inferior maxillary cartilages. Didier (1995) also reports an insertion on the supramaxillary cartilage; in the scans it passes inside it, separated by the intermandibularis. Ziermann et al. (2014) call this muscle the preorbitalis.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. From the connective tissue at the antorbital crest, onto the inner side of the front of the superior maxillary cartilage. A bundle (pars rostralis) runs forward to the back of the upper prelabial cartilage; Didier (1995) had that bundle on the rostral rod, which these authors do not find. In males it is tied to the frontal tenaculum.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial"
+            ],
+            "crosses": false
+          }
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "source",
+          "name": "Levator anguli oris anterior",
+          "present": "yes",
+          "sources": [
+            "didier-1987",
+            "huber-etal-2011",
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "head-clasper-plate"
+              },
+              {
+                "element": "orbit"
+              },
+              {
+                "element": "neurocranium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "superior-maxillary-cartilage",
+                "side": "distal"
+              },
+              {
+                "element": "skin"
+              },
+              {
+                "element": "superior-maxillary-cartilage"
+              },
+              {
+                "element": "prelabial-cartilage"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). Together with the levator cartilaginous prelabialis, from the plate at the front of the head clasper's base, onto the far edge of the maxillary cartilage at its junction with the prelabial cartilage. Vetter suggests it is the selachian levator palatoquadrati or part of the adductor.\n\nHydrolagus colliei, Didier (1987). From connective tissue at the front lower edge of the orbit, by a tendon down to the skin of the lower lip; some fibres join the anterior muscle near its origin. This differs from Huber et al. (2011), who have both levatores inserting on the superior maxillary cartilage.\n\nHydrolagus colliei, Huber et al. (2011): 'The levator anguli oris anterior and posterior muscles originate upon the antorbital crest of the chondrocranium and insert onto the superior maxillary cartilage, from where they retract the labial cartilages via a series of ligamentous attachments.' `levator-anguli-oris`'s own synonym list names 'levator anguli oris' directly. Origin scored at plain `neurocranium` — 'antorbital crest' has no landmark in skeleton.json and is not requested here, since parking would not improve on the coarser element (the crest is a ridge on the same bone, not a separately homologisable site). Insertion onto `superior-maxillary-cartilage`, the same requested element as `Labialis anterior` above.\n\nHydrolagus colliei. See the levator anguli oris anterior row.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. From the antorbital crest to the prelabial cartilage of the nasolabial fold.",
+          "division": "divided",
           "parts": [
             {
               "name": "Levator anguli oris anterior",
               "attachments": {
                 "origin": [
                   {
-                    "element": "neurocranium"
+                    "element": "head-clasper-plate"
                   }
                 ],
                 "insertion": [
                   {
-                    "element": "superior-maxillary-cartilage"
+                    "element": "superior-maxillary-cartilage",
+                    "side": "distal"
                   }
                 ]
               },
               "sources": [
-                "huber-etal-2011"
+                "didier-1987"
               ]
             },
             {
@@ -12583,6 +13726,7 @@
                 ]
               },
               "sources": [
+                "didier-1987",
                 "huber-etal-2011"
               ]
             }
@@ -12608,7 +13752,7 @@
         ],
         "teaching": "A muscle whose insertion target itself evolved into a novel organ — the venom gland.",
         "authority": {
-          "source": "johnston-2014",
+          "source": "ziermann-etal-2014",
           "basis": "computed"
         }
       },

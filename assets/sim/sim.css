@@ -155,4 +155,18 @@ body.sim { --short: #cf4a1c; --long: #2f6db3; --rest: #a98a76; }
 .howto li { margin: 0.4rem 0; line-height: 1.5; }
 .howto code { font-family: var(--font-mono); font-size: 0.8rem; }
 
+/* ---------- text-light view (default); add #v=full for everything ---------- */
+
+.lite-only { display: none; }
+body.lite .lite-only { display: block; }
+body.lite .legend, body.lite .hint, body.lite .howto, body.lite #detail, body.lite #compare,
+body.lite .panel details, body.lite .readout, body.lite .status, body.lite .posebox,
+body.lite .panel .tags, body.lite .panel .common, body.lite #mlist, body.lite .ctl label.check,
+body.lite .full-only, body.lite .foot, body.lite .ctl h2 .count { display: none; }
+body.lite .simshell { grid-template-columns: 14rem minmax(0, 1fr); }
+body.lite .ctl { padding: 0.5rem 0.6rem; }
+body.lite .range { grid-template-columns: auto 1fr 2.4rem; gap: 0.3rem; }
+body.lite .simshell { grid-template-columns: 15rem minmax(0, 1fr); }
+body.lite .transport { margin-top: 0.6rem; }
+
 @media (prefers-reduced-motion: reduce) { .simsvg .m-line { transition: none; } }

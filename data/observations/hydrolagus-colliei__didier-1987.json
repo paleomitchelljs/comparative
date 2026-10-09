@@ -1,0 +1,665 @@
+{
+  "species": "hydrolagus-colliei",
+  "source": "didier-1987",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Labialis anterior",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011) also list a labialis anterior for this animal, parked for the same reason: no record covers the labial muscles. Didier's maxillary and prelabial cartilages are scored on `superior-maxillary-cartilage` and the new `prelabial-cartilage`; whether Huber's premaxillary cartilage is the same structure as the prelabial is open (see the element).",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "superior-maxillary-cartilage",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "prelabial-cartilage",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the front edge of the maxillary cartilage at its junction with the prelabial cartilage, onto the outer side of the prelabial cartilage's far end. Vetter's muscle Csd."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Labialis posterior",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011) score an intermandibularis for this animal on `intermandibularis`, running between labial cartilages and the premandibular cartilages, and Anderson (2008) accepts one. Didier doubts there is one at all. Two sources describe different muscles under one name here, and no source equates Didier's labialis posterior with Huber's intermandibularis. What would settle it: a treatment of the holocephalan lip muscles that compares both.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "superior-maxillary-cartilage",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). A paired muscle along the front border of the lower lip, from the inner side of the joint between the maxillary and prelabial cartilages, by a tendon onto the underside of Meckel's cartilage and across to its antimere. Didier says it is the only muscle in ratfishes that could be an intermandibularis; Edgeworth calls it the intermandibularis anterior and Luther described a tiny labialis inferior behind it."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae anterior, pars nasalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Luther's name for this part is 'preorbitalis'. The dataset has no record for the preorbitalis and the sources here do not say whether a holocephalan part is the shark muscle of that name, so it is not filed on `adductor-mandibulae` with the other two divisions. What would settle it: a comparative source treating the holocephalan adductor divisions against the elasmobranch preorbitalis.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the midline ridge of the chondrocranium in front of the head clasper and above the rostral process, by a tendon to the lower outer face of Meckel's cartilage, just below the levator anguli oris posterior's insertion. A large mass divided by dense connective tissue into two parts whose fibres run in different directions. Vetter calls the whole adductor the adductor mandibulae and this part the levator labii superior; Luther calls this part the preorbitalis; Edgeworth does not separate it."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae anterior, pars orbitalis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "adductor-mandibulae",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From connective tissue at the front lower edge of the orbit, with some fibres from cartilage at its front upper edge, by a tendon to the outer face of Meckel's cartilage, together with the pars nasalis. Didier is the first to describe the anterior adductor as having two parts. Vetter takes the whole adductor of the ratfish as homologous to the selachian adductor.",
+      "division": "divided"
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae posterior",
+      "region": "cranial",
+      "present": "yes",
+      "record": "adductor-mandibulae",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). A flat muscle lying in a depression of the chondrocranium below the orbit, from about the postorbital ridge to the back of the nasal capsule, almost wholly covered by the two parts of the anterior adductor, inserting by several tendons onto the lower outer face of Meckel's cartilage a little above the levator anguli oris. Vetter takes it as part of the selachian adductor; Edgeworth as homologous to the dipnoan anterior and posterior mandibular levators."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator cartilaginous prelabialis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record covers it. Didier reads it, with the two levatores anguli oris, either as a modified first-arch levator or as a piece broken off the adductor; he does not settle which.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "head-clasper-plate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "prelabial-cartilage",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). By a tendon from the plate at the front of the head clasper's base, onto the middle of the inner face of the prelabial cartilage. Luther separated it from the levator anguli oris anterior, but its fibres blend with that muscle near the origin. With the two levatores anguli oris it forms a complex that lies over the front of the adductor and is unique to holocephalans."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator anguli oris anterior",
+      "region": "cranial",
+      "present": "yes",
+      "record": "levator-anguli-oris",
+      "attachments": {
+        "origin": [
+          {
+            "element": "head-clasper-plate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "superior-maxillary-cartilage",
+            "side": "distal"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). Together with the levator cartilaginous prelabialis, from the plate at the front of the head clasper's base, onto the far edge of the maxillary cartilage at its junction with the prelabial cartilage. Vetter suggests it is the selachian levator palatoquadrati or part of the adductor."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator anguli oris posterior",
+      "region": "cranial",
+      "present": "yes",
+      "record": "levator-anguli-oris",
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From connective tissue at the front lower edge of the orbit, by a tendon down to the skin of the lower lip; some fibres join the anterior muscle near its origin. This differs from Huber et al. (2011), who have both levatores inserting on the superior maxillary cartilage."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor ventralis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011) describe a ventral opercular constrictor from the midventral raphe, also parked. Neither source says whether Didier's constrictor ventralis is the elasmobranch constrictor hyoideus ventralis (`interhyoideus` record) or an opercular muscle of its own, and Anderson (2008) reports no interhyoideus in this animal.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "midventral-raphe"
+          },
+          {
+            "element": "meckels-cartilage",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "opercular-flap"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). Fibres run dorsoventrally from the ventral midline fascia, with a few from the lower jaw near the corner of the mouth that run front to back and fuse with the rest, to the lower edge of the tough fibrous operculum. Vetter saw six fused constrictors; Edgeworth calls it the constrictor hyoideus. Didier's 'ventral mid-line fascia (linea alba)' is scored on `midventral-raphe`, since `linea-alba` is not recorded in chondrichthyans."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor dorsalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011) describe a dorsal opercular constrictor from the vertebral column and pectoral girdle, parked. Whether it is the elasmobranch constrictor hyoideus dorsalis is not settled by either source.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "postcranial-ridge"
+          },
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "opercular-flap"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). By a fibrous connection to the lower edge of the postcranial ridge below the first dorsal fin, with some fibres from the postorbital ridge, to the upper edge of the operculum. Vetter does not separate dorsal and ventral constrictors."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor operculi",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The insertion is on another muscle, the constrictor ventralis, which has no record yet, so the row cannot name it. When that muscle is filed, add the insertion as `{muscle: ...}`.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle",
+            "side": "anterior"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From a small area on the front outer edge of the pectoral girdle just below the insertion of the trapezius superior, fused into the back edge of the ventral constrictor, forming the outer edge of the opercular opening. Not previously described as a separate muscle; Vetter counted it with the constrictors."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Hyoideus superior",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011) have a levator hyoideus in this animal, also parked. The two are probably one muscle but neither source says so, and neither source equates it with the elasmobranch levator hyomandibulae.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). A small flat muscle on the upper surface of the whole branchial apparatus, from the deep inner face of the postorbital ridge at the back of the orbit, onto the front edge of the fused hyoid rays. Edgeworth calls it the levator hyomandibulae. Didier reads it as the most likely modified levator of the hyoid arch, lifting it."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Hyoideus inferior",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Huber et al. (2011) describe an interhyoideus with the same attachments, also parked. Anderson (2008) finds no homologous interhyoideus in this animal, so two sources describe a muscle and one denies the homology.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "meckels-cartilage",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratohyal",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the inner face of the lowest part of Meckel's cartilage, onto the outer face of the near end of the ceratohyal just below its joint with the epihyal. Edgeworth calls it the interhyoideus. Vetter takes both hyoid muscles of the holocephalan as homologous to the second dorsal and ventral constrictors of the selachian."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Trapezius superficialis",
+      "region": "pectoral",
+      "present": "yes",
+      "record": "protractor-pectoralis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pectoral-girdle",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the postorbital ridge with some fibres from dorsal fascia, onto the back edge of the girdle just above the origin of the constrictor operculi. Edgeworth calls it the cucullaris superficialis, which is how Huber et al.'s cucullaris superficialis for this animal came to be filed on this record; Shann calls it the levator pectoralis."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Trapezius profundus",
+      "region": "pectoral",
+      "present": "yes",
+      "record": "protractor-pectoralis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epibranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the postorbital ridge inside the superficial part, with which it is fused in front; fibres pass under the girdle to the last epibranchial. Edgeworth calls it the cucullaris profundus."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracomandibularis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the front edge of the lowest part of the pectoral girdle, onto the back and lower edge of Meckel's cartilage. Edgeworth's geniocoracoid; Shann takes it as homologous to the coracomandibularis of selachians. A V-shaped septum divides it, and deep fibres run up inside the body to the girdle in front of the fin."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracobranchialis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). A large flat sheet making most of the back-and-outer border of the branchium, from the front edge of the lowest third of the girdle, onto the back edge of the ceratobranchial cartilages, including the junction of arches four and five. Shann takes it as homologous to the selachian coracobranchialis."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductores arcuum branchialium",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber et al. (2011) park the same muscles under the same name. See their note for what would settle where the branchial-arch adductors belong.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). Four muscles from the inner face of the epibranchials to the back edge of the ceratobranchials. Edgeworth calls them the constrictores branchiales."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracohyoideus",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pectoral-girdle",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). As Didier states it, from the back edge of the basihyal onto the front edge of the girdle above the joint surface, with fibres to the V-shaped septum of the coracomandibularis. It runs partly under the coracomandibularis, which sits in a furrow along it. With that muscle it is homologous to the selachian coraco-arcualis communis (Shann); Edgeworth calls it the rectus cervicus. The ends are given in Didier's order, which is the reverse of the usual convention."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor dorsalis pectoralis",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The dataset has no record for the dorsal pectoral retractors. Didier's equivalence to two selachian muscles means it cannot go on a single record without a decision about whether those two are one muscle here.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapular-process",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the side epaxial muscle above the lateral line to the back edge of the scapular process. Shann derives it from part of the mesio-dorsal and all the latero-dorsal posterior muscles, so it corresponds to the selachian retractor mesio-dorsalis and retractor latero-dorsalis pectoralis."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor latero-ventralis pectoralis externus",
+      "region": "fin",
+      "present": "yes",
+      "record": "retractor-lateralis-ventralis-pectoralis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pectoral-girdle",
+            "side": "lateral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the latero-ventral muscle mass of the body wall, onto the outer face of the girdle below the dorsal retractor. Shann takes it as homologous to the selachian retractor latero-ventralis pectoralis; it is also two-part in holocephalans and homologous to the serratus of dipnoans."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor latero-ventralis pectoralis internus",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Fused to the externus, which is filed. Whether the pair are two muscles or one is the point at issue; the record's division handling needs a decision before this is promoted.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pectoral-girdle",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the same latero-ventral mass, onto the inner face of the girdle deep to the externus, to which it is fused."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor mesio-ventralis pectoralis superior",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the mesio-ventral retractors.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pectoral-girdle",
+            "side": "posterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From fascia just below the lateral line, running back and fusing gradually into the lateral muscle mass, onto the back edge of the girdle below the externus. Shann's three mesio-ventral retractors are together homologous to the dipnoan latissimus dorsi pectoralis."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor mesio-ventralis pectoralis medius",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No attachments stated in the paper; Shann (1919) describes them.",
+      "muscle": null,
+      "attachments": {
+        "origin": [],
+        "insertion": []
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). Shown in Didier's figures and named but not described, so no attachments are stated."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor mesio-ventralis pectoralis inferior",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No attachments stated in the paper; Shann (1919) describes them.",
+      "muscle": null,
+      "attachments": {
+        "origin": [],
+        "insertion": []
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). Shown in Didier's figures and named but not described, so no attachments are stated."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Protractor dorsalis pectoralis lateralis",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the dorsal protractors of the girdle.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapular-process",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the postorbital ridge under the deep trapezius, onto the front edge of the scapular process; Shann has it arising from the latero-dorsal portion."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Protractor dorsalis pectoralis medialis",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the dorsal protractors of the girdle.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapular-process",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the postorbital ridge slightly inside the lateral part and extending higher, onto the inner face of the scapular process. Not previously described as having lateral and medial parts; the different origin and insertion are Didier's evidence for the division."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor superficialis",
+      "region": "fin",
+      "present": "yes",
+      "record": "adductor-superficialis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "propterygium"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the back border of the scapula and from fascia of the retractor latero-ventralis at the lateral line, onto the propterygial radial of the fin; described by Shann, who has it raise the pectoral fin. The insertion is Didier's 'propterygial radial', scored on `propterygium` as in Huber et al.'s fin rows."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Abductor superficialis",
+      "region": "fin",
+      "present": "yes",
+      "record": "abductor-superficialis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "propterygium"
+          },
+          {
+            "element": "metapterygium"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). From the front edge of the lower part of the girdle, onto the propterygium and propterygial radial, with deep fibres to the metapterygium; described by Shann, who has it lower the pectoral fin."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Latero-ventralis (lateral muscle of the body wall)",
+      "region": "pectoral",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "A trunk muscle; no record in the dataset's cranial or axial files obviously covers it, and Didier gives no synonymy.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Didier (1987). A thick columnar mass making much of the lateral body wall, running front to back, ending by a tendon at the fork of the postorbital ridge. Stahl shows it without description."
+    }
+  ]
+}

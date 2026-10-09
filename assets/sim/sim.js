@@ -437,6 +437,10 @@
       $('button', li).addEventListener('click', () => selectGroup(S.sel === g.id ? null : g.id));
       ul.append(li);
     }
+    const ms = $('#muscle-select');
+    ms.innerHTML = '<option value="">Muscle…</option>' + groupsPresent().map(g =>
+      `<option value="${esc(g.id)}"${S.sel === g.id ? ' selected' : ''}>${esc(g.label)}</option>`).join('');
+    ms.onchange = () => selectGroup(ms.value || null);
   }
 
   function renderPoseSliders() {
@@ -548,6 +552,7 @@
   function writeHash() {
     const p = new URLSearchParams();
     p.set('r', S.region);
+    if (!S.lite) p.set('v', 'full');
     p.set('t', S.slots.map(id => id.slice(S.region.length + 1)).join(','));
     if (S.mode === 'action' && S.action) p.set('a', `${S.action.joint}:${S.action.dir}`);
     if (S.sel) p.set('m', S.sel);
@@ -555,7 +560,7 @@
   }
   function readHash() {
     const p = new URLSearchParams(location.hash.slice(1));
-    return { r: p.get('r'), t: (p.get('t') || '').split(',').filter(Boolean), a: p.get('a'), m: p.get('m') };
+    return { v: p.get('v'), r: p.get('r'), t: (p.get('t') || '').split(',').filter(Boolean), a: p.get('a'), m: p.get('m') };
   }
 
   /* ---------- boot ---------- */
@@ -585,6 +590,17 @@
     for (const s of sources.sources) S.sources.set(s.key, s.short || s.key);
 
     const h = readHash();
+    S.lite = h.v !== 'full';
+    document.body.classList.toggle('lite', S.lite);
+    const tog = $('#view-toggle');
+    const syncToggle = () => { tog.textContent = S.lite ? 'Full version' : 'Text-light version'; };
+    syncToggle();
+    tog.addEventListener('click', ev => {
+      ev.preventDefault();
+      S.lite = !S.lite;
+      document.body.classList.toggle('lite', S.lite);
+      syncToggle(); writeHash();
+    });
     const startRegion = index.regions.find(r => r.id === h.r && r.status === 'available') ? h.r : 'cranial';
     await loadRegion(startRegion);
 

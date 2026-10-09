@@ -64,7 +64,29 @@
             "diogo-etal-2016",
             "diogo-ziermann-2015"
           ],
-          "attachmentNote": "Squalus acanthias. Origin: Ventral pectoral or pelvic girdle bar. Insertion: Ventral surface of the basal and radial cartilages. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment."
+          "attachmentNote": "Squalus acanthias. Origin: Ventral pectoral or pelvic girdle bar. Insertion: Ventral surface of the basal and radial cartilages. Not yet resolved to skeleton.json ids — this is the source's prose, carried here so it is not mistaken for a scored attachment.\n\nSqualus acanthias, Diogo & Ziermann (2015), own dissections. Pectoral fin abductor, superficial bundle: from the coracoid bar to the ventral surfaces of the radial cartilages. No difference between specimens was found.",
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "ventral"
+              }
+            ]
+          },
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "teleostei-generalised",
@@ -260,6 +282,81 @@
           "sources": [
             "diogo-etal-2016"
           ]
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "source",
+          "name": "Abductor superficialis",
+          "present": "yes",
+          "sources": [
+            "didier-1987",
+            "diogo-ziermann-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle",
+                "side": "anterior"
+              },
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "propterygium"
+              },
+              {
+                "element": "metapterygium"
+              },
+              {
+                "element": "fin-radials",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). From the front edge of the lower part of the girdle, onto the propterygium and propterygial radial, with deep fibres to the metapterygium; described by Shann, who has it lower the pectoral fin.\n\nHydrolagus colliei, Diogo & Ziermann (2015), own dissections. Mainly from the coracoid bar to the ventral surfaces of the radials, with superficial and deep bundles as in sharks.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Pectoral fin abductor",
+          "sources": [
+            "diogo-ziermann-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Diogo & Ziermann (2015), own dissections. From the pectoral girdle to the ventral surfaces of the radials, with a superficial bundle and a deep bundle from the propterygium and metapterygium inserting more proximally. Scored on the superficial record; the deep bundle is the same muscle's second part.",
+          "present": "yes",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {
@@ -357,7 +454,33 @@
           "sources": [
             "diogo-etal-2016",
             "diogo-ziermann-2015"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "propterygium"
+              },
+              {
+                "element": "metapterygium"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "ventral"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, Diogo & Ziermann (2015), own dissections. Pectoral fin abductor, deep bundle: from the propterygium, metapterygium and mesopterygium to a point more proximal than the superficial bundle's insertion. The mesopterygium has no element and is not scored. No difference between specimens was found.",
+          "spans": {
+            "origin": [
+              "fin"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": false
+          }
         },
         {
           "species": "teleostei-generalised",
@@ -563,7 +686,30 @@
           "sources": [
             "diogo-etal-2016",
             "diogo-ziermann-2015"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, Diogo & Ziermann (2015), own dissections. Pectoral fin adductor, superficial bundle: from the pectoral girdle, mainly the scapular region, to the dorsal surfaces of the radial cartilages. Some fibres also touch the propterygium, metapterygium and mesopterygium. No difference between specimens was found.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "teleostei-generalised",
@@ -708,6 +854,78 @@
           "sources": [
             "diogo-etal-2016"
           ]
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "source",
+          "name": "Adductor superficialis",
+          "present": "yes",
+          "sources": [
+            "didier-1987",
+            "diogo-ziermann-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapulocoracoid",
+                "side": "posterior"
+              },
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "propterygium"
+              },
+              {
+                "element": "fin-radials",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). From the back border of the scapula and from fascia of the retractor latero-ventralis at the lateral line, onto the propterygial radial of the fin; described by Shann, who has it raise the pectoral fin. The insertion is Didier's 'propterygial radial', scored on `propterygium` as in Huber et al.'s fin rows.\n\nHydrolagus colliei, Diogo & Ziermann (2015), own dissections. From the pectoral girdle, mainly the scapular region, to the dorsal surfaces of the radials, some fibres touching the propterygium and metapterygium; superficial and deep bundles as in sharks.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Pectoral fin adductor",
+          "sources": [
+            "diogo-ziermann-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Diogo & Ziermann (2015), own dissections. From the pectoral girdle to the dorsal surfaces of the radials, some fibres touching the propterygium and metapterygium, with superficial and deep bundles as in Squalus.",
+          "present": "yes",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {
@@ -802,7 +1020,30 @@
           "sources": [
             "diogo-etal-2016",
             "diogo-ziermann-2015"
-          ]
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "fin-radials",
+                "side": "dorsal"
+              }
+            ]
+          },
+          "attachmentNote": "Squalus acanthias, Diogo & Ziermann (2015), own dissections. Pectoral fin adductor, deep bundle: attaches on a more proximal region of the fin than the superficial bundle's insertion, with fibres touching the propterygium, metapterygium and mesopterygium. No difference between specimens was found.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         },
         {
           "species": "teleostei-generalised",
@@ -1122,6 +1363,37 @@
           "sources": [
             "diogo-etal-2016"
           ]
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Pterygialis cranialis",
+          "sources": [
+            "diogo-ziermann-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "pectoral-girdle"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "propterygium"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Diogo & Ziermann (2015), own dissections. Corresponds topologically to the shark muscle; runs mainly forward, not back as in sharks, because of the odd position of the skate's propterygium.",
+          "present": "yes",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "fin"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {
@@ -1416,6 +1688,101 @@
           "sources": [
             "diogo-etal-2016"
           ]
+        },
+        {
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
+          "name": "Retractor latero-ventralis pectoralis",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "scapular-process"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "body-wall"
+              }
+            ]
+          },
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. Two parts, from the outer and inner faces of the scapular process, into the dorsal muscle of the body cavity. Whether it is a trunk or branchial muscle is disputed.",
+          "spans": {
+            "origin": [
+              "pectoral"
+            ],
+            "insertion": [
+              "axial"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "source",
+          "name": "Retractor latero-ventralis pectoralis externus",
+          "present": "yes",
+          "sources": [
+            "didier-1987"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "body-wall"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "pectoral-girdle",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). From the latero-ventral muscle mass of the body wall, onto the outer face of the girdle below the dorsal retractor. Shann takes it as homologous to the selachian retractor latero-ventralis pectoralis; it is also two-part in holocephalans and homologous to the serratus of dipnoans.",
+          "spans": {
+            "origin": [
+              "axial"
+            ],
+            "insertion": [
+              "pectoral"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Retractor latero-ventralis pectoralis",
+          "sources": [
+            "diogo-ziermann-2015"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "body-wall"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "pectoral-girdle",
+                "side": "lateral"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Diogo & Ziermann (2015), own dissections. From the epaxial musculature to the outer surface of the pectoral girdle.",
+          "present": "yes",
+          "spans": {
+            "origin": [
+              "axial"
+            ],
+            "insertion": [
+              "pectoral"
+            ],
+            "crosses": true
+          }
         }
       ],
       "homology": {

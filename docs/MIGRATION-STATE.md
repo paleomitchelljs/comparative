@@ -168,11 +168,11 @@ second copy.
 | Status | Sources | Rows they carry |
 |---|---:|---:|
 | `remined` | 11 | 834 |
-| `not-started` | 64 | 1772 |
-| `blocked-no-source` | 4 | 80 |
-| **total** | **79** | **2686** |
+| `not-started` | 66 | 1868 |
+| `blocked-no-source` | 5 | 80 |
+| **total** | **82** | **2782** |
 
-**11 of 79 cited sources re-mined** (13%).
+**11 of 82 cited sources re-mined** (13%).
 <!-- /counts:remine -->
 
 ### What counts as done
@@ -306,8 +306,9 @@ broken.
 | `pereyra-etal-2024` | 11 |
 | `fritzsch-2023` | 3 |
 | `navarro-etal-2023` | 3 |
+| `wilga-2005` | 0 |
 
-**4 sources, 80 rows** that cannot be verified against a paper.
+**5 sources, 80 rows** that cannot be verified against a paper.
 <!-- /counts:remine-blocked -->
 
 These carry rows nobody can currently check against a paper. **Do not quietly
@@ -381,26 +382,36 @@ reading that will not have to be done again.
 | `gest-anatomy-tables` | *homo-sapiens* | 20 | no-record 13, assigned 5, homology 2 |
 | `russell-bauer-2008` | *ameiva-sp* | 19 | partial 19 |
 | `russell-bauer-2008` | *heloderma-sp* | 19 | partial 19 |
+| `didier-1987` | *hydrolagus-colliei* | 18 | no-record 12, homology 6 |
 | `widrig-etal-2026` | *chauna-torquata* | 16 | no-record 8, nomenclature 7, homology 1 |
+| `dearden-etal-2020` | *callorhinchus-milii* | 15 | no-record 13, homology 2 |
 | `walker-1973` | *chelydra-serpentina* | 14 | partial 14 |
 | `walker-1973` | *caretta-caretta* | 12 | partial 12 |
 | `huber-etal-2011` | *rhinobatos-percellens* | 11 | no-record 7, nomenclature 2, homology 2 |
+| `huber-etal-2011` | *squalus-acanthias* | 10 | no-record 9, homology 1 |
 | `russell-bauer-2008` | *plestiodon-sp* | 10 | partial 10 |
 | `russell-bauer-2008` | *tarentola-sp* | 10 | partial 10 |
 | `russell-bauer-2008` | *anolis-sp* | 9 | partial 9 |
 | `walker-1973` | *geochelone-elephantopus* | 9 | partial 9 |
+| `dearden-etal-2020` | *scyliorhinus-canicula* | 8 | no-record 7, homology 1 |
 | `russell-bauer-2008` | *sceloporus-sp* | 8 | partial 8 |
 | `huber-etal-2011` | *hydrolagus-colliei* | 7 | no-record 6, homology 1 |
+| `ziermann-etal-2014` | *hydrolagus-colliei* | 7 | no-record 4, homology 3 |
 | `prikryl-etal-2009` | *ascaphus-truei* | 6 | homology 3, no-record 2, division 1 |
 | `prikryl-etal-2009` | *discoglossus-pictus* | 6 | homology 3, no-record 3 |
 | `russell-bauer-2008` | *ctenosaura-pectinata* | 6 | partial 6 |
 | `russell-bauer-2008` | *ophisaurus-sp* | 6 | partial 6 |
 | `widrig-etal-2023` | *nothoprocta-pentlandii* | 6 | homology 4, no-record 1, nomenclature 1 |
+| `ziermann-etal-2014` | *leucoraja-erinacea* | 6 | no-record 5, homology 1 |
+| `diogo-ziermann-2015` | *squalus-acanthias* | 5 | no-record 5 |
 | `russell-bauer-2008` | *dipsosaurus-sp* | 5 | partial 5 |
+| `diogo-ziermann-2015` | *leucoraja-erinacea* | 4 | no-record 4 |
 | `osawa-1898` | *sphenodon-punctatus* | 4 | occupied 4 |
 | `prikryl-etal-2009` | *barbourula-busuangensis* | 4 | no-record 2, homology 2 |
+| `ziermann-etal-2014` | *squalus-acanthias* | 4 | no-record 3, homology 1 |
 | `prikryl-etal-2009` | *rana-esculenta* | 3 | no-record 3 |
 | `prikryl-etal-2009` | *xenopus-laevis* | 3 | no-record 2, homology 1 |
+| `diogo-ziermann-2015` | *hydrolagus-colliei* | 2 | no-record 2 |
 | `prikryl-etal-2009` | *bombina-orientalis* | 2 | no-record 1, homology 1 |
 | `prikryl-etal-2009` | *bufo-guttatus* | 2 | homology 1, no-record 1 |
 | `prikryl-etal-2009` | *pipa-pipa* | 2 | no-record 2 |
@@ -411,6 +422,7 @@ reading that will not have to be done again.
 | `prikryl-etal-2009` | *pelobates-fuscus* | 1 | homology 1 |
 | `russell-bauer-2008` | *eumeces-sp* | 1 | partial 1 |
 | `russell-bauer-2008` | *xantusia-sp* | 1 | partial 1 |
+| `wilga-etal-2001` | *squalus-acanthias* | 1 | no-record 1 |
 <!-- /counts:parked-detail -->
 
 ## Decisions taken, so they are not relitigated

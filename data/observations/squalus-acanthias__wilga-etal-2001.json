@@ -1,0 +1,50 @@
+{
+  "species": "squalus-acanthias",
+  "source": "wilga-etal-2001",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing.",
+  "observations": [
+    {
+      "speciesBasis": "note",
+      "name": "Preorbitalis",
+      "region": "cranial",
+      "present": "yes",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No muscle record exists for the preorbitalis; it needs one, or a named part on the adductor mandibulae record.",
+      "attachments": {
+        "origin": [
+          {
+            "element": "nasal-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "adductor-mandibulae"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias. Wilga et al. (2001) describe a single, undivided preorbitalis in basal sharks running from the nasal capsule to the quadratomandibularis, the adductor proper. The attachments are stated for basal sharks as a group, with Squalus given as an animal whose motor activity was recorded; the insertion is scored on the adductor mandibulae record because the paper names the quadratomandibularis, which with the preorbitalis forms the adductor complex. It is active during jaw closure, when it pulls the posterior upper jaw forward so that the anterior part slides ventrally down a groove in the braincase."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator palatoquadrati",
+      "region": "cranial",
+      "present": "yes",
+      "record": "levator-arcus-palatini",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias. Wilga et al. (2001): the ancestral levator palatoquadrati runs dorsoventrally from the postorbital region of the cranium to the posterior palatoquadrate, as in squaleans, lamniforms and batoids. In Squalus it is active during retraction of the upper jaw and never during protrusion. Origin scored on the neurocranium: the postorbital region has no landmark of its own, and the postorbital bone is a dermal element Chondrichthyes lack."
+    }
+  ]
+}

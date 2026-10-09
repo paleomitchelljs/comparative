@@ -1,0 +1,554 @@
+{
+  "species": "scyliorhinus-canicula",
+  "source": "dearden-etal-2020",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Levator labii superioris",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "No source here says whether this is the preorbitalis of Squalus (Wilga, Ziermann, Huber); the ends are close but the names differ and the dataset has no record for either.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "nasal-capsule",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "adductor-mandibulae"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A long thin muscle from the back of the nasal capsule, just in front of the orbit, backward and down to the fibres of the dorsal adductor, from which the trigeminal nerve separates it though the border is indistinct in the scans; fibres reach the fascia between the dorsal and ventral adductor parts. Variable in galeomorph sharks. Origin and insertion resemble the preorbitalis of other sharks."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae",
+      "region": "cranial",
+      "record": "adductor-mandibulae",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "lateral"
+          },
+          {
+            "element": "meckels-cartilage",
+            "side": "lateral"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Two parts, dorsal and ventral, separated by an internal fascia below and to the side of the jaw joint, on which both insert. The dorsal part arises in a shallow fossa in the back third of the side of the palatoquadrate; the ventral part in a shallow fossa in the back half of the side of Meckel's cartilage. The insertion is the internal fascia and is not scored as an element."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Intermandibularis",
+      "region": "cranial",
+      "record": "intermandibularis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "meckels-cartilage",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A broad flat triangular muscle from the back margin of the Meckel's cartilages, extending back as a sheet to the lower midline of the constrictor hyoideus aponeurosis. The exact insertion is hard to see because the sheet is so thin."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator palatoquadrati",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatoquadrate-quadrate",
+            "side": "medial"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A thin muscle from the lower-outer side of the otic process just behind the postorbital process, to the inner side of the palatoquadrate just in front of the jaw joint, in a shallow depression."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator palpebrae nictitantis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "An eyelid muscle; no record.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A thin muscle over the levator palatoquadrati, from the upper-outer corner of the otic process, forward and down to the lower eyelid."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Retractor palpebrae superioris",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "An eyelid muscle; no record.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A short fat muscle over the nictitating levator, from the otic region, forward and up to the upper eyelid. Matches Ridewood and Edgeworth, not Soares and Carvalho's two eyelid muscles."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor hyoideus dorsalis",
+      "region": "cranial",
+      "record": "constrictor-hyoideus-dorsalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "otic-capsule",
+            "side": "lateral"
+          },
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A large thin muscle with a broad origin over the first superficial constrictor and the side of the epaxial muscle, and a further origin on the side wall of the otic capsule; it overlies the eyelid muscles. The front part inserts along the lower two-thirds of the hyomandibula; behind, it covers the hyoid rays and inserts into the upper fibres of the ventral constrictor. It includes the levator hyomandibulae, whose front fibres cannot be separated. The facial nerve supplies it."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor hyoideus ventralis",
+      "region": "cranial",
+      "record": "interhyoideus",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "midventral-raphe"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "constrictor-hyoideus-dorsalis"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A thin flat muscle from the midline aponeurosis under the coracomandibularis, covering the hyoid rays and inserting into the fibres of the dorsal constrictor."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor spiracularis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No attachments stated in the paper.",
+      "muscle": null,
+      "attachments": {
+        "origin": [],
+        "insertion": []
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Said by Ridewood to lie behind the spiracle; the contrast around the spiracle was too poor to resolve it, so no attachments are stated."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductores branchiales",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber and Didier park the branchial adductors in the other animals.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "ceratobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epibranchials"
+          },
+          {
+            "element": "pharyngobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Five small muscles, one per arch, from the spoon-shaped fossae on the top of each ceratobranchial to the shallow fossae on the underside of the matching epibranchial; the fifth inserts on the back pharyngobranchial complex. One muscle per arch, unlike Callorhinchus."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Arcuales dorsales",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the interarcual muscles.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Four muscles from the sides of epibranchials I-IV to the lower-outer edge of each pharyngobranchial, between its front and side processes. Allis calls them the arcuales; Dearden et al. use Edgeworth's name."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictores superficiales",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "extrabranchial-cartilages"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Very thin sheets from inside the deep cucullaris, where they insert between the dorsal extrabranchial cartilages, running down to the gill bars and inserting ventrally into the midline aponeurosis."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Subspinalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the epibranchial muscles of the branchial basket.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          },
+          {
+            "element": "vertebral-column"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A thin flat muscle from the back-lower edge of the neurocranium below the occipital condyle and from the underside of the spinal column, back to the inner tip of pharyngobranchial I."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Interpharyngobranchiales",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the epibranchial muscles of the branchial basket.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Three muscles passing between the pharyngobranchials."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracomandibularis",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "meckels-cartilage",
+            "side": "posterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A long thin muscle from the back of Meckel's cartilage, running back to join the coracohyoideus and coracobranchiales on the ventral aponeurosis of the ventral hyoid constrictor. The origin and insertion are given in the order the paper states them, which is the reverse of the usual convention."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracohyoideus",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei",
+            "side": "ventral"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A long thin muscle from the underside of the basihyal, back and down to the ventral aponeurosis. Edgeworth calls it the rectus cervicis. Ends as the paper states them."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracobranchiales",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ceratobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapulocoracoid"
+          },
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Five: the first from in front of the first ceratobranchial's lower tip, and so on back, the fifth from ceratobranchial V and the copula; the first inserts medially with the coracohyoideus and coracomandibularis, and II-V on the coracoid process of the scapulocoracoid."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Cucullaris profundus",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [],
+        "insertion": [
+          {
+            "element": "epibranchials",
+            "side": "posterior"
+          },
+          {
+            "element": "scapular-process"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A large triangular muscle divided by an internal septum. The front part arises between the hyoid constrictor and the epaxial muscles and inserts on the last epibranchial; the back part inserts along the scapular process."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracoarcualis",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid",
+            "side": "anterior"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A short broad muscle from the front face of the ventral symphysis of the shoulder girdle to the ventral aponeurosis, between the coracohyoideus and the coracobranchiales."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Epaxialis",
+      "region": "axial",
+      "record": "epaxial-musculature",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "side": "dorsal"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. Segmented muscles from the back of the top of the neurocranium, in broad fossae over the otic capsule, inserting behind on the dorsal myomeres."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Rectus dorsalis",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From the back of the orbit, above the V+VII foramen; inserts dorsally over the eye."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Rectus ventralis",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From just behind the origin of the dorsal rectus, above the V+VII foramen; inserts ventrally around the eye."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Rectus lateralis",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From the orbit, below the origin of the ventral rectus; inserts at the back of the eye."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Rectus medialis",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From a relatively forward origin in the orbit; inserts at the front of the eye."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Obliquus ventralis",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From in front of the foramen for the trochlear nerve; inserts at the front-lower side of the eye."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Obliquus dorsalis",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. From just above the origin of the ventral oblique; inserts at the front-upper side of the eye."
+    }
+  ]
+}

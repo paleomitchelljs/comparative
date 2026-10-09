@@ -1,0 +1,391 @@
+{
+  "species": "hydrolagus-colliei",
+  "source": "ziermann-etal-2014",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Intermandibularis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "intermandibularis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "superior-maxillary-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "skin"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Starts from the maxillary cartilage, bends ventrally, and ends on the infralabial tissue next to Meckel's cartilage. In some individuals of this species and other holocephalans it has separate front and back parts."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae A2 anterior",
+      "region": "cranial",
+      "present": "yes",
+      "record": "adductor-mandibulae",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Three portions arising from the preorbital lamina, the preorbital fascia and the suborbital fascia.",
+      "division": "divided"
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae A2 posterior",
+      "region": "cranial",
+      "present": "yes",
+      "record": "adductor-mandibulae",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. A distinct deeper muscle under the anterior part, from the suborbital ridge to the lower jaw."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Preorbitalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The same muscle is the levator anguli oris posterior (Didier, Huber) and the preorbitalis (Ziermann et al., and Luther for the pars nasalis); the dataset has a record for the first name and not the second.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "orbit"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "superior-maxillary-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Often called the levator anguli oris posterior in other accounts: from the lower edge of the orbit to the maxillary labial cartilage. Didier (1987) gives a muscle with these ends under that name and ends it on the lower-lip skin."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator anguli oris anterior",
+      "region": "cranial",
+      "present": "yes",
+      "record": "levator-anguli-oris",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "prelabial-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. From the antorbital crest to the prelabial cartilage of the nasolabial fold."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator prelabialis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record; the same muscle is Didier's levator cartilaginous prelabialis.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "prelabial-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Reduced to a few fibres in this species and blended with the levator anguli oris anterior."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Labialis anterior",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the labial muscles. Didier's labialis anterior has the same ends.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "superior-maxillary-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "prelabial-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Nearly vertical, from the maxillary cartilage to the prelabial cartilage."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Interhyoideus",
+      "region": "cranial",
+      "record": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "opercular-flap"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. From the fibrous operculum to the ventral midline, where it fuses with its fellow; joined to the fleshy operculum below. Anderson (2008), who finds no interhyoideus in this animal, is cited by Ziermann et al. elsewhere in the paper.",
+      "blockedBy": "homology",
+      "muscle": null,
+      "blockedNote": "Ziermann et al. describe an interhyoideus in this animal, from the fibrous operculum to the ventral midline. Anderson (2008) records none, reading a secondary loss, and the dataset holds that as `present: no` on the `interhyoideus` record for this species; the join will not merge a presence with an absence. Parked until a source settles whether Ziermann et al.'s muscle is the elasmobranch interhyoideus, and so whether Anderson's absence stands."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Mandibulohyoideus",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "The same ends as Didier's hyoideus inferior and Huber's interhyoideus; Anderson (2008) renames this muscle mandibulohyoideus. A name for one muscle in four sources, filed on none.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratohyal"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Connects the ceratohyal and Meckel's cartilage."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor hyoideus dorsalis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "constrictor-hyoideus-dorsalis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "vertebral-column"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "opercular-flap"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. From connective tissue lengthwise along the notochord up to the front edge of the scapular process, to the connective tissue of the opercular flap. The fleshy operculum joins it above."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor arcus palatini",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Didier's hyoideus superior has the same ends; Huber's levator hyoideus is the same again. Whether it is the elasmobranch adductor arcus palatini, the levator hyomandibulae or neither is the open question.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid-rays"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. From the postorbital ridge to the hyoid rays and epihyal."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Cucullaris superficialis",
+      "region": "pectoral",
+      "present": "yes",
+      "record": "protractor-pectoralis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapulocoracoid"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. One of two heads, blended with the deep head at the origin; the superficial part ends on the outer part of the scapula."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Cucullaris profundus",
+      "region": "pectoral",
+      "present": "yes",
+      "record": "protractor-pectoralis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "postorbital-ridge"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "scapulocoracoid"
+          },
+          {
+            "element": "branchial-arches"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. In two specimens it ended on the branchial arches, as Didier (1987) and Anderson (2008) describe; in the others it ended on the inner surface of the scapula."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictores branchiales",
+      "region": "cranial",
+      "present": "yes",
+      "record": "branchial-constrictors",
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Four, from epibranchials I-IV to the ceratobranchials of the same arches."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductores branchiales",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "Huber and Didier park the same muscles; no record for the branchial adductors.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials"
+          },
+          {
+            "element": "pharyngobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Four, from epibranchials I-III and the pharyngobranchial complex of arches IV and V to ceratobranchials I-IV."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracobranchiales",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. Five, from the coracoid to the lower part of the ceratobranchials. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracomandibularis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. A continuous sheet from the coracoid that fuses with its fellow in the ventral midline at the lower jaw. Illustrated elsewhere as having anterior and posterior portions, which Ziermann et al. call artificial, as does Anderson (2008). The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Sternohyoideus",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Ziermann et al. (2014), own dissections. From the coracoid and/or the fascia of the coracomandibularis to the basihyal. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans."
+    }
+  ]
+}

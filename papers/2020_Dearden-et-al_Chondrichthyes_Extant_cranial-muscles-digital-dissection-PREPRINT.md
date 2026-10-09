@@ -55,3 +55,27 @@ tomography adds: muscles traced in three dimensions without the dissection destr
 the relationships between them. Pair with **Ziermann et al. (2014)** for hagfish,
 lamprey and skate, **Huber et al. (2011)** for the shark jaw, and **Anderson (2008)**,
 which reconciles holocephalan names against the rest of the gnathostomes.
+
+## Both animals mined, 2026-10-08
+
+The earlier note above said only half the paper was mined. The *Scyliorhinus*
+half is now filed: 26 rows in
+`data/observations/scyliorhinus-canicula__dearden-etal-2020.json`, and the
+*Callorhinchus* file grew from 2 rows to 34. Every muscle in the two cranial-muscle
+sections is a row, including the six extraocular muscles and the eyelid muscles;
+about half are filed and half parked, each with a `blockedNote`. The three
+ligaments (ethmopalatine, labial, rostral) are described but are not muscles, so
+they have no rows; the ethmopalatine ligament is the one a jaw-mechanics model
+would want.
+
+**Worth carrying forward.**
+- Their *Scyliorhinus* levator labii superioris runs from the back of the nasal
+  capsule to the dorsal adductor, close to what Wilga et al. (2001) and Huber et
+  al. (2011) call the preorbitalis in *Squalus*. Nothing here equates them.
+- Their constrictor hyoideus dorsalis includes the levator hyomandibulae, whose
+  front fibres cannot be separated. The dataset's record for it assumes they are
+  distinct.
+- Their *Callorhinchus* muscles agree closely with Didier (1987) on *Hydrolagus*,
+  with the differences noted in the rows (the pars rostralis insertion; the
+  levator anguli oris posterior's insertion; the interpharyngobranchialis, which
+  Didier found absent).

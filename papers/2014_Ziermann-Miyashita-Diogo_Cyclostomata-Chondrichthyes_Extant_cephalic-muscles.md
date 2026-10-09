@@ -119,3 +119,28 @@ Paper is the best single source for three lectures. First, a **cyclostome head-m
 - Discussion (on jaw-muscle origin): "The gnathostome jaw muscles represent neomorphs that evolved along with the jaws."
 - Discussion (on lamprey hyoid): "No muscle identified by us is innervated by CNVII. Therefore, sea lampreys lack hyoid muscles."
 - Conclusions (on cucullaris evolution): "The general evolutionary trend seen in vertebrates towards a greater separation between the head and pectoral girdle later culminated in the separation of the cucullaris into the protractor pectoralis and levatores arcuum branchialium in osteichthyans and finally in the formation of the tetrapod neck with sternocleidomastoideus and trapezius derived from the protractor pectoralis."
+
+## Chondrichthyan pass, 2026-10-08
+
+Mined from the Results text for the three chondrichthyans: `hydrolagus-colliei`
+(18 rows), `squalus-acanthias` (11 added to the 8 already there), and
+`leucoraja-erinacea` (16 added to 1). Roughly half are filed on records and the rest
+parked, each with a `blockedNote`.
+
+**Not done, so the source stays `not-started`.** The authors count 29 muscles for
+*Hydrolagus*, 39 for *Squalus* and 44 for *Leucoraja*, and the rows cover the
+mandibular, hyoid, hypobranchial and cucullaris groups but not the branchial
+series (constrictores, interarcuales, interbranchiales, adductores and
+coracobranchiales are filed only for *Hydrolagus*, and only as groups). Tables 1–4
+also carry the cyclostomes, which are not part of this pass.
+
+**Two things worth carrying forward.**
+
+- For *Squalus* they run the preorbitalis from a tendon on Meckel's cartilage to
+  the ethmoid region of the chondrocranium. Wilga et al. (2001) have it from the
+  nasal capsule to the quadratomandibularis, and Huber et al. (2011) end it on the
+  median raphe of the adductor. All three join the cranium at the front to the
+  adductor-jaw region behind, which a simulator drawing should respect.
+- For *Hydrolagus* the preorbitalis is, in their terminology, what Didier (1987)
+  and Huber et al. (2011) call the levator anguli oris posterior. The dataset has a
+  record for the second name and none for the first.

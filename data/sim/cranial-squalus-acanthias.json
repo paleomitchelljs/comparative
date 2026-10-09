@@ -7,185 +7,863 @@
   "group": "Shark",
   "suspension": "hyostylic",
   "view": "lateral, snout right",
-  "viewBox": [0, 0, 640, 380],
-  "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+  "viewBox": [
+    0,
+    0,
+    640,
+    380
+  ],
+  "sources": [
+    "huber-etal-2011",
+    "ziermann-etal-2014",
+    "wilga-etal-2001",
+    "wilga-2005"
+  ],
   "summary": "Hyostylic: the palatoquadrate hangs from the braincase on the hyomandibula, so the whole upper-jaw complex can slide forward (protrusion) as well as the lower jaw swinging open.",
   "note": "Outlines, lever arms and ranges of motion are schematic. The muscles, their attachments and the action each one is credited with come from Huber et al. (2011) Table 2 and its text; tests/sim.test.js checks that the geometry reproduces those actions. Upper-jaw protrusion is drawn as a forward slide of the palatoquadrate complex along the underside of the braincase, because that is the movement the preorbitalis is described as producing and a single hinge cannot be made to do it. The hyomandibula is drawn as a rod that follows the jaw joint rather than a separate degree of freedom.",
-
   "segments": [
-    { "id": "trunk", "label": "Trunk (epaxial block)", "parent": null,
-      "paths": [ { "d": "M-10 92 L80 98 L80 188 L-10 204 Z", "class": "soft" } ] },
-
-    { "id": "pouches", "label": "Gill pouches", "parent": "trunk",
+    {
+      "id": "trunk",
+      "label": "Trunk (epaxial block)",
+      "parent": null,
       "paths": [
-        { "d": "M83 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0", "class": "aux" },
-        { "d": "M105 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0", "class": "aux" },
-        { "d": "M127 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0", "class": "aux" },
-        { "d": "M149 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0", "class": "aux" }
-      ] },
-    { "id": "gillfloor", "label": "Floor of the gill chamber", "parent": "trunk",
-      "paths": [ { "d": "M76 292 L176 298", "class": "raphe" } ] },
-
-    { "id": "girdle", "label": "Pectoral girdle (coracoid bar)", "element": "pectoral-girdle", "parent": "trunk",
-      "labelAt": [88, 330],
-      "paths": [ { "d": "M44 324 C44 304 90 294 150 298 L214 306 C214 326 150 340 96 340 C64 340 44 334 44 324 Z", "class": "cart" } ] },
-
-    { "id": "floor-h", "label": "Midventral raphe (hyoid part)", "parent": "ceratohyal",
-      "paths": [ { "d": "M316 308 L356 304", "class": "raphe" } ] },
-    { "id": "floor-m", "label": "Midventral raphe (mandibular part)", "parent": "mandible",
-      "paths": [ { "d": "M380 288 L450 266", "class": "raphe" } ] },
-
-    { "id": "ceratohyal", "label": "Ceratohyal / hyoid arch", "element": "ceratohyal", "parent": "pq",
-      "labelAt": [352, 312],
-      "paths": [ { "d": "M272 254 C280 246 292 250 300 258 L346 284 C356 290 352 302 340 300 L292 278 C276 270 270 262 272 254 Z", "class": "cart" } ] },
-
-    { "id": "cranium", "label": "Neurocranium", "element": "neurocranium", "parent": "trunk",
-      "labelAt": [236, 124],
+        {
+          "d": "M-10 92 L80 98 L80 188 L-10 204 Z",
+          "class": "soft"
+        }
+      ]
+    },
+    {
+      "id": "pouches",
+      "label": "Gill pouches",
+      "parent": "trunk",
       "paths": [
-        { "d": "M72 168 C68 126 102 100 168 98 L300 92 C365 90 432 96 500 120 C538 134 566 148 572 162 C548 172 512 172 478 176 L414 184 L335 190 L205 194 L125 198 C92 196 74 188 72 168 Z", "class": "cart" },
-        { "d": "M122 152 a48 36 0 1 0 96 0 a48 36 0 1 0 -96 0", "class": "aux" },
-        { "d": "M305 138 a30 25 0 1 0 60 0 a30 25 0 1 0 -60 0", "class": "aux" },
-        { "d": "M462 150 a36 25 0 1 0 72 0 a36 25 0 1 0 -72 0", "class": "aux" }
-      ] },
-
-    { "id": "pq", "label": "Palatoquadrate (upper jaw)", "element": "palatoquadrate-quadrate", "parent": "cranium",
-      "labelAt": [370, 190],
-      "paths": [ { "d": "M268 224 C268 208 290 202 320 202 L398 198 C420 196 442 198 448 210 C448 222 432 228 412 228 L340 234 C314 240 294 246 280 244 C272 240 268 232 268 224 Z", "class": "cart" } ] },
-
-    { "id": "mandible", "label": "Meckel's cartilage (lower jaw)", "element": "meckels-cartilage", "parent": "pq",
-      "labelAt": [380, 280],
-      "paths": [ { "d": "M266 250 C266 240 282 236 300 238 L340 239 L410 233 C428 231 446 228 452 234 C454 244 442 254 422 258 L340 268 C310 272 282 270 272 264 C268 260 266 256 266 250 Z", "class": "cart" } ] }
+        {
+          "d": "M83 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0",
+          "class": "aux"
+        },
+        {
+          "d": "M105 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0",
+          "class": "aux"
+        },
+        {
+          "d": "M127 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0",
+          "class": "aux"
+        },
+        {
+          "d": "M149 250 a7 38 0 1 0 14 0 a7 38 0 1 0 -14 0",
+          "class": "aux"
+        }
+      ]
+    },
+    {
+      "id": "gillfloor",
+      "label": "Floor of the gill chamber",
+      "parent": "trunk",
+      "paths": [
+        {
+          "d": "M76 292 L176 298",
+          "class": "raphe"
+        }
+      ]
+    },
+    {
+      "id": "girdle",
+      "label": "Pectoral girdle (coracoid bar)",
+      "element": "pectoral-girdle",
+      "parent": "trunk",
+      "labelAt": [
+        88,
+        330
+      ],
+      "paths": [
+        {
+          "d": "M44 324 C44 304 90 294 150 298 L214 306 C214 326 150 340 96 340 C64 340 44 334 44 324 Z",
+          "class": "cart"
+        }
+      ]
+    },
+    {
+      "id": "floor-h",
+      "label": "Midventral raphe (hyoid part)",
+      "parent": "ceratohyal",
+      "paths": [
+        {
+          "d": "M316 308 L356 304",
+          "class": "raphe"
+        }
+      ]
+    },
+    {
+      "id": "floor-m",
+      "label": "Midventral raphe (mandibular part)",
+      "parent": "mandible",
+      "paths": [
+        {
+          "d": "M380 288 L450 266",
+          "class": "raphe"
+        }
+      ]
+    },
+    {
+      "id": "ceratohyal",
+      "label": "Ceratohyal / hyoid arch",
+      "element": "ceratohyal",
+      "parent": "pq",
+      "labelAt": [
+        352,
+        312
+      ],
+      "paths": [
+        {
+          "d": "M272 254 C280 246 292 250 300 258 L346 284 C356 290 352 302 340 300 L292 278 C276 270 270 262 272 254 Z",
+          "class": "cart"
+        }
+      ]
+    },
+    {
+      "id": "cranium",
+      "label": "Neurocranium",
+      "element": "neurocranium",
+      "parent": "trunk",
+      "labelAt": [
+        236,
+        124
+      ],
+      "paths": [
+        {
+          "d": "M72 168 C68 126 102 100 168 98 L300 92 C365 90 432 96 500 120 C538 134 566 148 572 162 C548 172 512 172 478 176 L414 184 L335 190 L205 194 L125 198 C92 196 74 188 72 168 Z",
+          "class": "cart"
+        },
+        {
+          "d": "M122 152 a48 36 0 1 0 96 0 a48 36 0 1 0 -96 0",
+          "class": "aux"
+        },
+        {
+          "d": "M305 138 a30 25 0 1 0 60 0 a30 25 0 1 0 -60 0",
+          "class": "aux"
+        },
+        {
+          "d": "M462 150 a36 25 0 1 0 72 0 a36 25 0 1 0 -72 0",
+          "class": "aux"
+        }
+      ]
+    },
+    {
+      "id": "pq",
+      "label": "Palatoquadrate (upper jaw)",
+      "element": "palatoquadrate-quadrate",
+      "parent": "cranium",
+      "labelAt": [
+        370,
+        190
+      ],
+      "paths": [
+        {
+          "d": "M268 224 C268 208 290 202 320 202 L398 198 C420 196 442 198 448 210 C448 222 432 228 412 228 L340 234 C314 240 294 246 280 244 C272 240 268 232 268 224 Z",
+          "class": "cart"
+        }
+      ]
+    },
+    {
+      "id": "am-raphe",
+      "label": "Median raphe of the adductor mandibulae",
+      "parent": "pq",
+      "paths": [
+        {
+          "d": "M318 236 L392 231",
+          "class": "raphe"
+        }
+      ]
+    },
+    {
+      "id": "mandible",
+      "label": "Meckel's cartilage (lower jaw)",
+      "element": "meckels-cartilage",
+      "parent": "pq",
+      "labelAt": [
+        380,
+        280
+      ],
+      "paths": [
+        {
+          "d": "M266 250 C266 240 282 236 300 238 L340 239 L410 233 C428 231 446 228 452 234 C454 244 442 254 422 258 L340 268 C310 272 282 270 272 264 C268 260 266 256 266 250 Z",
+          "class": "cart"
+        }
+      ]
+    }
   ],
-
   "links": [
-    { "id": "hyomandibula", "label": "Hyomandibula", "element": "hyomandibula-stapes", "from": "nc-hy", "to": "pq-rear", "width": 9, "class": "cart" }
+    {
+      "id": "hyomandibula",
+      "label": "Hyomandibula",
+      "element": "hyomandibula-stapes",
+      "from": "nc-hy",
+      "to": "pq-rear",
+      "width": 9,
+      "class": "cart"
+    }
   ],
-
   "dofs": [
-    { "id": "cranium", "range": [0, 6], "unit": "°",
-      "drives": [ { "segment": "cranium", "type": "rotation", "pivot": [78, 178], "sign": -1 } ] },
-    { "id": "upper-jaw", "range": [0, 26], "unit": "px",
-      "drives": [ { "segment": "pq", "type": "translation", "axis": [0.97, 0.2] } ] },
-    { "id": "jaw", "range": [0, 30], "unit": "°",
-      "drives": [ { "segment": "mandible", "type": "rotation", "pivot": [278, 246], "sign": 1 } ],
-      "handle": "mk-tip" },
-    { "id": "hyoid", "range": [0, 22], "unit": "°",
-      "drives": [ { "segment": "ceratohyal", "type": "rotation", "pivot": [282, 254], "sign": 1 } ],
-      "handle": "ch-basi" },
-    { "id": "floor", "range": [0, 20], "unit": "px",
+    {
+      "id": "cranium",
+      "range": [
+        0,
+        6
+      ],
+      "unit": "°",
       "drives": [
-        { "segment": "floor-m", "type": "translation", "axis": [0, -1] },
-        { "segment": "floor-h", "type": "translation", "axis": [0, -1] }
-      ] },
-    { "id": "gill", "range": [0, 18], "unit": "px",
+        {
+          "segment": "cranium",
+          "type": "rotation",
+          "pivot": [
+            78,
+            178
+          ],
+          "sign": -1
+        }
+      ]
+    },
+    {
+      "id": "upper-jaw",
+      "range": [
+        0,
+        26
+      ],
+      "unit": "px",
       "drives": [
-        { "segment": "gillfloor", "type": "translation", "axis": [0, -1] },
-        { "segment": "pouches", "type": "scale", "anchor": [120, 205], "axis": [0, 1], "k": 0.018 }
-      ] }
+        {
+          "segment": "pq",
+          "type": "translation",
+          "axis": [
+            0.97,
+            0.2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jaw",
+      "range": [
+        0,
+        30
+      ],
+      "unit": "°",
+      "drives": [
+        {
+          "segment": "mandible",
+          "type": "rotation",
+          "pivot": [
+            278,
+            246
+          ],
+          "sign": 1
+        },
+        {
+          "segment": "am-raphe",
+          "type": "rotation",
+          "pivot": [
+            278,
+            246
+          ],
+          "sign": 0.5
+        }
+      ],
+      "handle": "mk-tip"
+    },
+    {
+      "id": "hyoid",
+      "range": [
+        0,
+        22
+      ],
+      "unit": "°",
+      "drives": [
+        {
+          "segment": "ceratohyal",
+          "type": "rotation",
+          "pivot": [
+            282,
+            254
+          ],
+          "sign": 1
+        }
+      ],
+      "handle": "ch-basi"
+    },
+    {
+      "id": "floor",
+      "range": [
+        0,
+        20
+      ],
+      "unit": "px",
+      "drives": [
+        {
+          "segment": "floor-m",
+          "type": "translation",
+          "axis": [
+            0,
+            -1
+          ]
+        },
+        {
+          "segment": "floor-h",
+          "type": "translation",
+          "axis": [
+            0,
+            -1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gill",
+      "range": [
+        0,
+        18
+      ],
+      "unit": "px",
+      "drives": [
+        {
+          "segment": "gillfloor",
+          "type": "translation",
+          "axis": [
+            0,
+            -1
+          ]
+        },
+        {
+          "segment": "pouches",
+          "type": "scale",
+          "anchor": [
+            120,
+            205
+          ],
+          "axis": [
+            0,
+            1
+          ],
+          "k": 0.018
+        }
+      ]
+    }
   ],
-
   "landmarks": {
-    "tr-ep":   { "segment": "trunk",     "at": [24, 110, 14],  "label": "Epaxial muscle mass" },
-    "tr-gd1":  { "segment": "trunk",     "at": [92, 206, 20],  "label": "Dorsal raphe 1" },
-    "tr-gd2":  { "segment": "trunk",     "at": [114, 206, 20], "label": "Dorsal raphe 2" },
-    "tr-gd3":  { "segment": "trunk",     "at": [136, 206, 20], "label": "Dorsal raphe 3" },
-    "gl-v1":   { "segment": "gillfloor", "at": [92, 292, 0],   "label": "Ventral gill raphe 1" },
-    "gl-v2":   { "segment": "gillfloor", "at": [114, 293, 0],  "label": "Ventral gill raphe 2" },
-    "gl-v3":   { "segment": "gillfloor", "at": [136, 294, 0],  "label": "Ventral gill raphe 3" },
-    "gd-cm":   { "segment": "girdle",    "at": [206, 308, 8],  "label": "Coracoarcualis (origin of coracomandibularis)", "element": "pectoral-girdle" },
-    "gd-ch":   { "segment": "girdle",    "at": [206, 322, 8],  "label": "Coracoarcualis (origin of coracohyoideus)", "element": "pectoral-girdle" },
-    "nc-ep":   { "segment": "cranium",   "at": [96, 110, 14],  "label": "Otic capsule, dorsal", "element": "otic-capsule" },
-    "nc-hy":   { "segment": "cranium",   "at": [196, 196, 0],  "label": "Otic capsule, hyomandibular articulation", "element": "otic-capsule" },
-    "nc-pre":  { "segment": "cranium",   "at": [456, 180, 14], "label": "Chondrocranium behind the nasal capsule", "element": "nasal-capsule" },
-    "nc-lpq":  { "segment": "cranium",   "at": [216, 198, 16], "label": "Otic capsule, ventrolateral", "element": "otic-capsule" },
-    "nc-lh":   { "segment": "cranium",   "at": [168, 196, 16], "label": "Otic capsule, posterior", "element": "otic-capsule" },
-    "pq-rear": { "segment": "pq",        "at": [276, 238, 10], "label": "Hyomandibular end of the palatoquadrate", "element": "hyomandibula-stapes" },
-    "pq-am":   { "segment": "pq",        "at": [306, 214, 16], "label": "Palatoquadrate, lateral face", "element": "palatoquadrate-quadrate" },
-    "pq-dorsal": { "segment": "pq",      "at": [336, 204, 14], "label": "Palatoquadrate, dorsal edge", "element": "palatoquadrate-quadrate" },
-    "mk-am":   { "segment": "mandible",  "at": [332, 248, 18], "label": "Meckel's cartilage, lateral face", "element": "meckels-cartilage" },
-    "mk-po":   { "segment": "mandible",  "at": [352, 242, 18], "label": "Median raphe of the adductor mandibulae", "element": "meckels-cartilage" },
-    "mk-sym":  { "segment": "mandible",  "at": [446, 252, 0],  "label": "Meckel's cartilage, symphysis", "element": "meckels-cartilage" },
-    "mk-im":   { "segment": "mandible",  "at": [398, 264, 26], "label": "Meckel's cartilage, ventral", "element": "meckels-cartilage" },
-    "mk-tip":  { "segment": "mandible",  "at": [452, 240, 0],  "label": "Lower-jaw tip" },
-    "ch-basi": { "segment": "ceratohyal","at": [346, 294, 0],   "label": "Basihyal", "element": "ceratohyal" },
-    "ch-ih":   { "segment": "ceratohyal","at": [330, 286, 24],  "label": "Ceratohyal, lateral", "element": "ceratohyal" },
-    "fl-im":   { "segment": "floor-m",   "at": [398, 286, 0],   "label": "Midventral raphe (intermandibularis)" },
-    "fl-ih":   { "segment": "floor-h",   "at": [332, 308, 0],   "label": "Midventral raphe (interhyoideus)" }
+    "tr-ep": {
+      "segment": "trunk",
+      "at": [
+        24,
+        110,
+        14
+      ],
+      "label": "Epaxial muscle mass"
+    },
+    "tr-gd1": {
+      "segment": "trunk",
+      "at": [
+        92,
+        206,
+        20
+      ],
+      "label": "Dorsal raphe 1"
+    },
+    "tr-gd2": {
+      "segment": "trunk",
+      "at": [
+        114,
+        206,
+        20
+      ],
+      "label": "Dorsal raphe 2"
+    },
+    "tr-gd3": {
+      "segment": "trunk",
+      "at": [
+        136,
+        206,
+        20
+      ],
+      "label": "Dorsal raphe 3"
+    },
+    "gl-v1": {
+      "segment": "gillfloor",
+      "at": [
+        92,
+        292,
+        0
+      ],
+      "label": "Ventral gill raphe 1"
+    },
+    "gl-v2": {
+      "segment": "gillfloor",
+      "at": [
+        114,
+        293,
+        0
+      ],
+      "label": "Ventral gill raphe 2"
+    },
+    "gl-v3": {
+      "segment": "gillfloor",
+      "at": [
+        136,
+        294,
+        0
+      ],
+      "label": "Ventral gill raphe 3"
+    },
+    "gd-cm": {
+      "segment": "girdle",
+      "at": [
+        206,
+        308,
+        8
+      ],
+      "label": "Coracoarcualis (origin of coracomandibularis)",
+      "element": "pectoral-girdle"
+    },
+    "gd-ch": {
+      "segment": "girdle",
+      "at": [
+        206,
+        322,
+        8
+      ],
+      "label": "Coracoarcualis (origin of coracohyoideus)",
+      "element": "pectoral-girdle"
+    },
+    "nc-ep": {
+      "segment": "cranium",
+      "at": [
+        96,
+        110,
+        14
+      ],
+      "label": "Otic capsule, dorsal",
+      "element": "otic-capsule"
+    },
+    "nc-hy": {
+      "segment": "cranium",
+      "at": [
+        196,
+        196,
+        0
+      ],
+      "label": "Otic capsule, hyomandibular articulation",
+      "element": "otic-capsule"
+    },
+    "nc-pre": {
+      "segment": "cranium",
+      "at": [
+        456,
+        180,
+        14
+      ],
+      "label": "Chondrocranium behind the nasal capsule",
+      "element": "nasal-capsule"
+    },
+    "nc-lpq": {
+      "segment": "cranium",
+      "at": [
+        216,
+        198,
+        16
+      ],
+      "label": "Otic capsule, ventrolateral",
+      "element": "otic-capsule"
+    },
+    "nc-lh": {
+      "segment": "cranium",
+      "at": [
+        168,
+        196,
+        16
+      ],
+      "label": "Otic capsule, posterior",
+      "element": "otic-capsule"
+    },
+    "pq-rear": {
+      "segment": "pq",
+      "at": [
+        276,
+        238,
+        10
+      ],
+      "label": "Hyomandibular end of the palatoquadrate",
+      "element": "hyomandibula-stapes"
+    },
+    "pq-am": {
+      "segment": "pq",
+      "at": [
+        306,
+        214,
+        16
+      ],
+      "label": "Palatoquadrate, lateral face",
+      "element": "palatoquadrate-quadrate"
+    },
+    "pq-dorsal": {
+      "segment": "pq",
+      "at": [
+        336,
+        204,
+        14
+      ],
+      "label": "Palatoquadrate, dorsal edge",
+      "element": "palatoquadrate-quadrate"
+    },
+    "mk-am": {
+      "segment": "mandible",
+      "at": [
+        332,
+        248,
+        18
+      ],
+      "label": "Meckel's cartilage, lateral face",
+      "element": "meckels-cartilage"
+    },
+    "am-po": {
+      "segment": "am-raphe",
+      "at": [
+        352,
+        234,
+        18
+      ],
+      "label": "Median raphe of the adductor mandibulae (between its dorsal and ventral divisions)"
+    },
+    "mk-sym": {
+      "segment": "mandible",
+      "at": [
+        446,
+        252,
+        0
+      ],
+      "label": "Meckel's cartilage, symphysis",
+      "element": "meckels-cartilage"
+    },
+    "mk-im": {
+      "segment": "mandible",
+      "at": [
+        398,
+        264,
+        26
+      ],
+      "label": "Meckel's cartilage, ventral",
+      "element": "meckels-cartilage"
+    },
+    "mk-tip": {
+      "segment": "mandible",
+      "at": [
+        452,
+        240,
+        0
+      ],
+      "label": "Lower-jaw tip"
+    },
+    "ch-basi": {
+      "segment": "ceratohyal",
+      "at": [
+        346,
+        294,
+        0
+      ],
+      "label": "Basihyal",
+      "element": "ceratohyal"
+    },
+    "ch-ih": {
+      "segment": "ceratohyal",
+      "at": [
+        330,
+        286,
+        24
+      ],
+      "label": "Ceratohyal, lateral",
+      "element": "ceratohyal"
+    },
+    "fl-im": {
+      "segment": "floor-m",
+      "at": [
+        398,
+        286,
+        0
+      ],
+      "label": "Midventral raphe (intermandibularis)"
+    },
+    "fl-ih": {
+      "segment": "floor-h",
+      "at": [
+        332,
+        308,
+        0
+      ],
+      "label": "Midventral raphe (interhyoideus)"
+    }
   },
-
   "muscles": [
-    { "id": "adductor-mandibulae", "short": "AM", "label": "Adductor mandibulae", "group": "adductor-mandibulae",
-      "record": "adductor-mandibulae", "status": "recorded",
-      "paths": [ ["pq-am", "mk-am"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+    {
+      "id": "adductor-mandibulae",
+      "short": "AM",
+      "label": "Adductor mandibulae",
+      "group": "adductor-mandibulae",
+      "record": "adductor-mandibulae",
+      "status": "recorded",
+      "paths": [
+        [
+          "pq-am",
+          "mk-am"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014"
+      ],
       "actionText": "Closes the lower jaw; the primary jaw adductor, with several divisions.",
-      "expect": [ { "dof": "jaw", "dir": -1 } ] },
-
-    { "id": "preorbitalis", "short": "PO", "label": "Preorbitalis", "group": "preorbitalis",
-      "record": null, "status": "recorded",
-      "paths": [ ["nc-pre", "mk-po"] ],
-      "sources": ["huber-etal-2011"],
-      "actionText": "Closes the lower jaw and slides the upper jaw forward (protrusion). Huber et al. also credit it with depressing the cranium, which is not modelled here.",
-      "note": "No muscle record yet: the dataset parks it for want of a homology group. Huber et al. give the origin as the chondrocranium behind the nasal capsule and the insertion as the median raphe of the adductor mandibulae.",
-      "expect": [ { "dof": "jaw", "dir": -1 }, { "dof": "upper-jaw", "dir": 1 } ] },
-
-    { "id": "levator-palatoquadrati", "short": "LPQ", "label": "Levator palatoquadrati", "group": "levator-palatoquadrati",
-      "record": "levator-arcus-palatini", "status": "recorded",
-      "paths": [ ["nc-lpq", "pq-dorsal"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
-      "actionText": "Pulls the upper jaw back to its resting position at the end of the gape cycle.",
-      "expect": [ { "dof": "upper-jaw", "dir": -1 } ] },
-
-    { "id": "levator-hyomandibulae", "short": "LH", "label": "Levator hyomandibulae", "group": "levator-hyomandibulae",
-      "record": "depressor-mandibulae", "status": "recorded",
-      "paths": [ ["nc-lh", "pq-rear"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+      "expect": [
+        {
+          "dof": "jaw",
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "id": "preorbitalis",
+      "short": "PO",
+      "label": "Preorbitalis",
+      "group": "preorbitalis",
+      "record": null,
+      "status": "recorded",
+      "paths": [
+        [
+          "nc-pre",
+          "am-po"
+        ]
+      ],
+      "sources": [
+        "wilga-etal-2001",
+        "ziermann-etal-2014",
+        "wilga-2005",
+        "huber-etal-2011"
+      ],
+      "actionText": "Protrudes the upper jaw: it pulls the back of the palatoquadrate forward, so the front slides down a groove in the braincase. Recorded active, with the quadratomandibularis, as the jaws close.",
+      "note": "Wilga et al. (2001) report preorbitalis activity and upper-jaw protrusion during jaw closure in Squalus, not during opening, and give the lower-jaw lift to the quadratomandibularis, which pulls the upper jaw toward the rising lower jaw. They do not describe a stabilising role. Huber et al. (2011) credit the muscle with elevating the lower jaw as well; the model draws no direct jaw-closing action for it, and the lower jaw simply rides with the palatoquadrate. Wilga (2005, abstract only) calls it the primary protractor in squalean sharks. Ziermann et al. (2014), from their own dissections, run it from a tendon on Meckel's cartilage to the ethmoid region of the braincase; Wilga et al. give nasal capsule and quadratomandibularis; Huber et al. the raphe of the adductor. The drawing follows Wilga et al. for the cranial end; the insertion is a raphe inside the adductor, on its own segment that follows the jaw at half its angle. No muscle record yet; the dataset parks the row.",
+      "expect": [
+        {
+          "dof": "upper-jaw",
+          "dir": 1
+        }
+      ]
+    },
+    {
+      "id": "levator-palatoquadrati",
+      "short": "LPQ",
+      "label": "Levator palatoquadrati",
+      "group": "levator-palatoquadrati",
+      "record": "levator-arcus-palatini",
+      "status": "recorded",
+      "paths": [
+        [
+          "nc-lpq",
+          "pq-dorsal"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014",
+        "wilga-etal-2001"
+      ],
+      "actionText": "Pulls the upper jaw back to its resting position at the end of the gape cycle. Recorded active during retraction of the upper jaw, never during protrusion.",
+      "expect": [
+        {
+          "dof": "upper-jaw",
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "id": "levator-hyomandibulae",
+      "short": "LH",
+      "label": "Levator hyomandibulae",
+      "group": "levator-hyomandibulae",
+      "record": "depressor-mandibulae",
+      "status": "recorded",
+      "paths": [
+        [
+          "nc-lh",
+          "pq-rear"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014",
+        "wilga-2005"
+      ],
       "actionText": "Raises and retracts the hyomandibula after the gape, returning the jaw suspension to rest.",
       "note": "The dataset files it as the dorsal hyoid constrictor on the same record as the tetrapod depressor mandibulae.",
-      "expect": [ { "dof": "upper-jaw", "dir": -1 } ] },
-
-    { "id": "coracomandibularis", "short": "CM", "label": "Coracomandibularis", "group": "coracomandibularis",
-      "record": "hypobranchial-muscles", "status": "recorded",
-      "paths": [ ["gd-cm", "mk-sym"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+      "expect": [
+        {
+          "dof": "upper-jaw",
+          "dir": -1
+        }
+      ]
+    },
+    {
+      "id": "coracomandibularis",
+      "short": "CM",
+      "label": "Coracomandibularis",
+      "group": "coracomandibularis",
+      "record": "hypobranchial-muscles",
+      "status": "recorded",
+      "paths": [
+        [
+          "gd-cm",
+          "mk-sym"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014"
+      ],
       "actionText": "Opens the lower jaw by pulling its symphysis back towards the pectoral girdle.",
-      "expect": [ { "dof": "jaw", "dir": 1 } ] },
-
-    { "id": "coracohyoideus", "short": "CH", "label": "Coracohyoideus", "group": "coracohyoideus",
-      "record": "hypobranchial-muscles", "status": "recorded",
-      "paths": [ ["gd-ch", "ch-basi"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+      "expect": [
+        {
+          "dof": "jaw",
+          "dir": 1
+        }
+      ]
+    },
+    {
+      "id": "coracohyoideus",
+      "short": "CH",
+      "label": "Coracohyoideus",
+      "group": "coracohyoideus",
+      "record": "hypobranchial-muscles",
+      "status": "recorded",
+      "paths": [
+        [
+          "gd-ch",
+          "ch-basi"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014"
+      ],
       "actionText": "Depresses the hyoid arch by pulling the basihyal back.",
-      "expect": [ { "dof": "hyoid", "dir": 1 } ] },
-
-    { "id": "intermandibularis", "short": "IM", "label": "Intermandibularis", "group": "intermandibularis",
-      "record": "intermandibularis", "status": "recorded",
-      "paths": [ ["mk-im", "fl-im"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+      "expect": [
+        {
+          "dof": "hyoid",
+          "dir": 1
+        }
+      ]
+    },
+    {
+      "id": "intermandibularis",
+      "short": "IM",
+      "label": "Intermandibularis",
+      "group": "intermandibularis",
+      "record": "intermandibularis",
+      "status": "recorded",
+      "paths": [
+        [
+          "mk-im",
+          "fl-im"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014"
+      ],
       "actionText": "A thin sheet between the two halves of the lower jaw, inserting on the midventral raphe; raises the floor of the mouth.",
       "note": "A transverse sheet seen end-on from the side. It is drawn as a chord from the jaw (z offset) to the raphe, so its length change is the sling flattening, not a lateral measurement.",
-      "expect": [ { "dof": "floor", "dir": 1 } ] },
-
-    { "id": "interhyoideus", "short": "IH", "label": "Interhyoideus", "group": "interhyoideus",
-      "record": "interhyoideus", "status": "recorded",
-      "paths": [ ["ch-ih", "fl-ih"] ],
-      "sources": ["huber-etal-2011"],
+      "expect": [
+        {
+          "dof": "floor",
+          "dir": 1
+        }
+      ]
+    },
+    {
+      "id": "interhyoideus",
+      "short": "IH",
+      "label": "Interhyoideus",
+      "group": "interhyoideus",
+      "record": "interhyoideus",
+      "status": "recorded",
+      "paths": [
+        [
+          "ch-ih",
+          "fl-ih"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011"
+      ],
       "actionText": "A thin sheet dorsal to the intermandibularis, from the ceratohyal to the midventral raphe; raises the floor of the mouth.",
-      "expect": [ { "dof": "floor", "dir": 1 } ] },
-
-    { "id": "branchial-constrictors", "short": "BC", "label": "Hyoid and branchial constrictors", "group": "constrictors",
-      "record": "branchial-constrictors", "status": "recorded",
-      "paths": [ ["tr-gd1", "gl-v1"], ["tr-gd2", "gl-v2"], ["tr-gd3", "gl-v3"] ],
-      "sources": ["huber-etal-2011", "ziermann-etal-2014"],
+      "expect": [
+        {
+          "dof": "floor",
+          "dir": 1
+        }
+      ]
+    },
+    {
+      "id": "branchial-constrictors",
+      "short": "BC",
+      "label": "Hyoid and branchial constrictors",
+      "group": "constrictors",
+      "record": "branchial-constrictors",
+      "status": "recorded",
+      "paths": [
+        [
+          "tr-gd1",
+          "gl-v1"
+        ],
+        [
+          "tr-gd2",
+          "gl-v2"
+        ],
+        [
+          "tr-gd3",
+          "gl-v3"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011",
+        "ziermann-etal-2014"
+      ],
       "actionText": "Squeeze the gill pouches shut during the compressive phase.",
       "note": "Three of the sheets are drawn. They run dorsal raphe to ventral raphe; the real fibres wrap each pouch, so the squeeze is shown as a dorsoventral one.",
-      "expect": [ { "dof": "gill", "dir": 1 } ] },
-
-    { "id": "epibranchial", "short": "EB", "label": "Epibranchial (epaxial) muscle", "group": "cranial-elevators",
-      "record": "epaxial-musculature", "status": "recorded",
-      "paths": [ ["tr-ep", "nc-ep"] ],
-      "sources": ["huber-etal-2011"],
+      "expect": [
+        {
+          "dof": "gill",
+          "dir": 1
+        }
+      ]
+    },
+    {
+      "id": "epibranchial",
+      "short": "EB",
+      "label": "Epibranchial (epaxial) muscle",
+      "group": "cranial-elevators",
+      "record": "epaxial-musculature",
+      "status": "recorded",
+      "paths": [
+        [
+          "tr-ep",
+          "nc-ep"
+        ]
+      ],
+      "sources": [
+        "huber-etal-2011"
+      ],
       "actionText": "A cranial extension of the epaxial muscle mass; lifts the chondrocranium on the trunk in prey capture.",
-      "expect": [ { "dof": "cranium", "dir": 1 } ] }
+      "expect": [
+        {
+          "dof": "cranium",
+          "dir": 1
+        }
+      ]
+    }
   ]
 }

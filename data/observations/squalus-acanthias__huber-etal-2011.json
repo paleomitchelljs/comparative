@@ -52,7 +52,7 @@
     },
     {
       "speciesBasis": "note",
-      "name": "Constrictor hyoideus dorsalis (levator hyomandibulae)",
+      "name": "Levator hyomandibulae",
       "present": "yes",
       "attachments": {
         "origin": [
@@ -67,7 +67,7 @@
           }
         ]
       },
-      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. Recorded here as the levator hyomandibulae, which originates on the otic capsule of the chondrocranium and on the epibranchial musculature. The dorsal and ventral hyoid constrictors insert on the tendinous sheath overlying the hyomandibular cartilage, the dorsal arising from the otic capsule and the cucullaris and the ventral alongside the interhyoideus on the raphe of the first gill slit.",
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2: from the chondrocranium (and the epibranchial muscles) onto the hyomandibular cartilage, which it elevates, returning it to rest after a gape. Renamed on 2026-10-08: this row used to be labelled with the constrictor hyoideus dorsalis as well, which Table 2 lists as a separate muscle (see that row). Ziermann et al. (2014) call a muscle with these ends the adductor arcus palatini and keep it apart from the constrictor hyoideus dorsalis, so the record this sits on (`depressor-mandibulae`, which lists 'levator hyomandibulae' as a synonym) is the dataset's reading, not the sources'.",
       "region": "cranial",
       "record": "depressor-mandibulae",
       "_occ": 0,
@@ -87,7 +87,7 @@
     },
     {
       "speciesBasis": "note",
-      "name": "Constrictor hyoideus ventralis",
+      "name": "Interhyoideus",
       "present": "yes",
       "attachments": {
         "origin": [
@@ -102,7 +102,7 @@
           }
         ]
       },
-      "attachmentNote": "Squalus acanthias, from Huber et al.'s descriptions. A thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. The hyoid-arch counterpart of the intermandibularis, and it shares its insertion.",
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011): a thin sheet lying dorsal to the intermandibularis, from the ceratohyal cartilages of the hyoid arch onto the midventral raphe, elevating the floor of the mouth. Renamed on 2026-10-08: the attachments here are Huber et al.'s interhyoideus paragraph and Table 2 row, not those of the constrictor hyoideus ventralis, which is a separate muscle (parked below).",
       "region": "cranial",
       "record": "interhyoideus",
       "_occ": 0,
@@ -265,6 +265,521 @@
         "ziermann-etal-2014",
         "huber-etal-2011"
       ]
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Preorbitalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No muscle record exists for the preorbitalis; three sources give three attachments for the jaw end.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "muscle": "adductor-mandibulae"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium, behind the nasal capsule per the text, onto the median raphe between the dorsal and ventral divisions of the adductor mandibulae (Table 2 gives the insertion simply as the adductor mandibulae). Table 2 credits it with adducting the lower jaw and protruding the upper; the text adds depressing the cranium. Wilga et al. (2001) and Ziermann et al. (2014) give the ends differently; see the Wilga and Ziermann files."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Spiracularis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The dataset files the spiracularis inside the combined levator arcus palatini row; Huber et al. list it separately in Table 2.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "spiracle"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the lateral wall of the chondrocranium behind the levator palatoquadrati onto the spiracle, which it closes."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Levator palatoquadrati",
+      "region": "cranial",
+      "record": "levator-arcus-palatini",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "landmark": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the otic capsule onto the palatoquadrate, which it lifts to its resting position in the recovery phase after the jaws have closed."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor hyoideus dorsalis",
+      "region": "cranial",
+      "record": "constrictor-hyoideus-dorsalis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          },
+          {
+            "muscle": "protractor-pectoralis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium and the cucullaris onto the tendinous sheath over the hyomandibular cartilage; compresses the first gill pouch. Table 2 lists it apart from the levator hyomandibulae, with which this row used to be merged."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Constrictor hyoideus ventralis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Table 2 lists it as a muscle distinct from the interhyoideus. The dataset's `interhyoideus` record carries 'constrictor hyoideus ventralis' in its name, but the attachments here (first gill slit raphe to the hyomandibular sheath) differ from the interhyoideus's (ceratohyal to the midventral raphe), so it is not filed there.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "gill-slits"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the raphe of the first gill slit onto the tendinous sheath over the hyomandibular cartilage; compresses the first gill pouch."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Hyoid trematic constrictor",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the trematic constrictors.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gill-slits"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the tendinous sheath of the hyomandibular cartilage onto the first gill slit; compresses the first gill pouch."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Branchial trematic constrictor",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the trematic constrictors.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "gill-slits"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gill-slits"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the tendinous sheath of a gill slit onto the slit itself; compresses the gill pouch. Both ends are the soft gill-slit sheath."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal superficial branchial constrictor",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "protractor-pectoralis"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gill-slits"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the cucullaris onto the tendinous sheaths of the gill slits; compresses the gill pouches.",
+      "division": "divided"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral superficial branchial constrictor",
+      "region": "cranial",
+      "record": "branchial-constrictors",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "hypobranchial-muscles"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "gill-slits"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis onto the tendinous sheaths of the gill slits; compresses the gill pouches. The origin is scored against `hypobranchial-muscles`, the record the coracoarcualis belongs to."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Branchial adductor",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the branchial adductors; Huber et al. (2011) park the same muscles in the other two animals.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the epibranchial to the ceratobranchial cartilage; adducts the gill arch."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal interarcual",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the interarcual muscles.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. Between pharyngobranchial cartilages; adducts the gill arch."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lateral interarcual",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the interarcual muscles.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "epibranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From a pharyngobranchial to an epibranchial cartilage; adducts the gill arch."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Interbranchial",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the interbranchial muscles.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "gill-slits"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "branchial-arches"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the gill rays to the gill rays, adducting the gill arches and moving the interbranchial septa. Both ends are gill-ray tissue; scored on the nearest elements."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracoarcualis",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "scapulocoracoid"
+          }
+        ],
+        "insertion": []
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the scapulocoracoid, supporting the origin of the coracomandibularis and coracohyoideus; expands the oropharyngeal cavity.",
+      "division": "divided"
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracobranchialis",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "branchial-arches"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis and the pectoral girdle onto the basihyal, hypobranchial and basibranchial cartilages; abducts the hyoid and branchial arches."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracohyoideus",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [],
+        "insertion": [
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis onto the basihyal cartilage; abducts the hyoid arch."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Coracomandibularis",
+      "region": "cranial",
+      "record": "hypobranchial-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the coracoarcualis onto Meckel's cartilage; abducts the lower jaw."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Epibranchial",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The epibranchial muscles are a cranial extension of the epaxial mass; no record covers them as a separate muscle.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "muscle": "epaxial-musculature"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "neurocranium"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the epaxialis onto the otic region of the chondrocranium; elevates the chondrocranium during prey capture."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal oblique",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Dorsal rectus",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Lateral rectus",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Medial rectus",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral oblique",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Ventral rectus",
+      "region": "cranial",
+      "record": "extraocular-muscles",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "eye-bulbus"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2. From the chondrocranium onto the eyeball; rotates it."
+    },
+    {
+      "speciesBasis": "note",
+      "name": "Cucullaris",
+      "region": "pectoral",
+      "record": "protractor-pectoralis",
+      "present": "yes",
+      "attachments": {
+        "origin": [
+          {
+            "element": "epibranchials"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Huber et al. (2011) Table 2: origin given as the epibranchial and insertion the pectoral girdle, which it elevates. Ziermann et al. (2014) give the cucullaris as a continuous sheet from the fascia near the epaxial muscle to the scapular process, back epibranchials and front extrabranchial cartilages; the two descriptions differ on which end is which."
     }
   ]
 }

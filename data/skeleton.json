@@ -2194,6 +2194,25 @@
       ]
     },
     {
+      "id": "head-clasper-plate",
+      "label": "Cartilage plate at the base of the head clasper",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "didier-1987"
+        ],
+        "note": "The plate at the anterior base of the male's head clasper in *Hydrolagus colliei*; origin of the levator anguli oris anterior and the levator cartilaginous prelabialis in Didier (1987). Holocephalan-specific."
+      }
+    },
+    {
       "id": "horizontal-septum",
       "label": "Horizontal septum",
       "kind": "soft",
@@ -2278,6 +2297,25 @@
       "segment": "cranial",
       "presence": {
         "default": "yes"
+      }
+    },
+    {
+      "id": "hyoid-rays",
+      "label": "Hyoid rays",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "hyoid",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "didier-1987"
+        ],
+        "note": "The fused rays of the hyoid arch in *Hydrolagus colliei*, where Didier (1987) has the hyoideus superior insert."
       }
     },
     {
@@ -3090,6 +3128,25 @@
       }
     },
     {
+      "id": "metapterygium",
+      "label": "Metapterygium",
+      "kind": "cartilage",
+      "region": "fin",
+      "segment": "fin",
+      "partOf": "fin-radials",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "didier-1987"
+        ],
+        "note": "The posterior basal cartilage of the chondrichthyan pectoral fin. Deep fibres of the abductor superficialis insert here in *Hydrolagus colliei* (Didier 1987)."
+      }
+    },
+    {
       "id": "metapterygoid",
       "label": "Metapterygoid",
       "kind": "bone",
@@ -3881,6 +3938,25 @@
       }
     },
     {
+      "id": "postcranial-ridge",
+      "label": "Postcranial ridge (chondrocranium)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "didier-1987"
+        ],
+        "note": "Ridge at the back of the chondrocranium, below the first dorsal fin, from which Didier (1987) has the dorsal constrictor arise in *Hydrolagus colliei*."
+      }
+    },
+    {
       "id": "posterior-ulnar-crest",
       "label": "Posterior ulnar crest (extensor crest)",
       "kind": "bone",
@@ -3912,6 +3988,25 @@
           "theria",
           "aves"
         ]
+      }
+    },
+    {
+      "id": "postorbital-ridge",
+      "label": "Postorbital ridge (chondrocranium)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "partOf": "neurocranium",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "didier-1987"
+        ],
+        "note": "The cartilaginous ridge at the back of the orbit of *Hydrolagus colliei*, named by Didier (1987) as the origin of both trapezius muscles, the hyoideus superior and the dorsal protractors of the pectoral girdle. **Not `postorbital`**, the dermal bone of the skull roof, which chondrichthyans lack."
       }
     },
     {
@@ -3968,6 +4063,36 @@
         ],
         "note": "Pedal counterpart of the prepollex, with its own abductor and flexor musculature in anurans."
       }
+    },
+    {
+      "id": "prelabial-cartilage",
+      "label": "Prelabial cartilage (holocephalan)",
+      "kind": "cartilage",
+      "region": "cranial",
+      "segment": "cranial",
+      "correlate": false,
+      "presence": {
+        "default": "no",
+        "present": [
+          "chondrichthyes"
+        ],
+        "sources": [
+          "didier-1987"
+        ],
+        "note": "Didier (1987) names a maxillary and a prelabial cartilage in the lips of *Hydrolagus colliei*. Holocephalan-specific within chondrichthyes. **Not `premaxilla`**, the dermal bone."
+      },
+      "correspondences": [
+        {
+          "relation": "possibly-corresponds-to",
+          "to": "premaxillary-cartilage",
+          "basis": "positional",
+          "confidence": "undemonstrated",
+          "sources": [
+            "didier-1987"
+          ],
+          "note": "Huber et al. (2011) name a premaxillary and a superior and inferior maxillary cartilage for the same animal; Didier names a maxillary and a prelabial. **Neither source equates the two sets.** Kept apart so that each paper's attachments stay on its own term; merge if a source matches them."
+        }
+      ]
     },
     {
       "id": "premandibular-cartilage",

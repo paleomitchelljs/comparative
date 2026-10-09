@@ -397,6 +397,235 @@
         "ziermann-etal-2014",
         "diogo-ziermann-2015"
       ]
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Preorbitalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No muscle record exists for the preorbitalis. Three sources give three attachments for the jaw end of the same muscle in this animal, which a record would have to hold as one muscle with a stated range.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "meckels-cartilage",
+            "side": "medial"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "neurocranium"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. The only labial muscle in the spiny dogfish. It starts by a tendon from Meckel's cartilage, medial to the insertion of the ventral part of the adductor mandibulae A2, and ends in front of the palatoquadrate on the ethmoid region of the chondrocranium. The insertion is scored on the neurocranium because the ethmoid region has no landmark of its own. This differs from Wilga et al. (2001), who run it from the nasal capsule to the quadratomandibularis, and from Huber et al. (2011), who give the median raphe of the adductor; the three agree that it joins the cranium at the front to the adductor-jaw region behind."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor mandibulae A2",
+      "region": "cranial",
+      "present": "yes",
+      "record": "adductor-mandibulae",
+      "attachments": {
+        "origin": [
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. Connects the palatoquadrate to Meckel's cartilage and is divided into superficial, ventral and dorsal parts. Ziermann et al. divide it into superficial, ventral and dorsal parts; Huber et al. (2011) call it relatively undivided."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Interhyoideus",
+      "region": "cranial",
+      "present": "yes",
+      "record": "interhyoideus",
+      "attachments": {
+        "origin": [
+          {
+            "element": "ceratohyal"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "midventral-raphe"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. A thin sheet that is hard to separate from the intermandibularis; it runs from the ceratohyal to a median raphe where it joins its fellow, and covers the ventral branchial region behind."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Constrictor hyoideus dorsalis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "constrictor-hyoideus-dorsalis",
+      "attachments": {
+        "origin": [],
+        "insertion": []
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. A sheet over the branchial region, starting at the fascia above the cucullaris and blended into both the adductor arcus palatini and the interhyoideus, with no clear skeletal attachments. The earlier row for this animal that scores a 'constrictor hyoideus dorsalis (levator hyomandibulae)' joins two muscles that Ziermann et al. keep apart."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Adductor arcus palatini",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "homology",
+      "blockedNote": "Ziermann et al. separate this muscle from the constrictor hyoideus dorsalis; the earlier row merges them. Which of the two is the 'levator hyomandibulae' is the question, and no source settles it.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "landmark": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyomandibula-stapes"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. From the otic capsule to the hyomandibula. Huber et al. (2011) and the earlier row for this animal call a muscle with these ends the levator hyomandibulae, scored on the depressor mandibulae record."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Spiracularis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "The dataset files the spiracularis inside `levator-arcus-palatini` as a combined row; Ziermann et al. describe it as its own muscle with its own attachments, so a decision is needed on whether it is a part of that record.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium",
+            "landmark": "otic-capsule"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "palatoquadrate-quadrate"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. From the otic capsule, above the levator arcus palatini, onto the palatoquadrate; runs parallel to the levator arcus palatini."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Cucullaris (Ziermann)",
+      "region": "pectoral",
+      "present": "yes",
+      "record": "protractor-pectoralis",
+      "attachments": {
+        "origin": [],
+        "insertion": [
+          {
+            "element": "scapular-process"
+          },
+          {
+            "element": "epibranchials",
+            "side": "posterior"
+          },
+          {
+            "element": "extrabranchial-cartilages",
+            "side": "anterior"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. A continuous sheet from the fascia near the epaxial muscle to the scapular process of the girdle, the back epibranchial cartilages and the front extrabranchial cartilages. They could not find the levatores arcuum branchialium described by Kesteven, after careful dissection of this animal and of Mustelus laevis."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracoarcualis",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "ceratohyal"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. From the coracoid bar forward, some fibres to the pericardium and most to the ceratohyal. The coracoid bar is scored on `pectoral-girdle`; `coracoid` is not recorded in chondrichthyans.",
+      "division": "divided"
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Sternohyoideus",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "hyoid",
+            "landmark": "corpus-hyoidei"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. From the aponeurosis it shares with the coracobranchiales and coracoarcualis, onto the basihyal."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Coracomandibularis (Ziermann)",
+      "region": "cranial",
+      "present": "yes",
+      "record": "hypobranchial-muscles",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "meckels-cartilage"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. A paired muscle along the ventral midline from the fascia between the coracoarcuales to the symphysis of Meckel's cartilage."
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Subspinalis",
+      "region": "cranial",
+      "record": null,
+      "blockedBy": "no-record",
+      "blockedNote": "No record for the epibranchial muscles of the branchial basket.",
+      "muscle": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "neurocranium"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "pharyngobranchials"
+          }
+        ]
+      },
+      "attachmentNote": "Squalus acanthias, Ziermann et al. (2014), own dissections. An epibranchial muscle in Edgeworth's sense, from the cranium near the foramen magnum to the first pharyngobranchial."
     }
   ]
 }

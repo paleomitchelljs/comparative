@@ -93,3 +93,18 @@ Extant, with explicit comparison to Devonian *Parayunnanolepis* antiarch (Zhu et
 - For the **vertebrate neck lecture**: the three-step cucullaris → protractor pectoralis → trapezius/sternocleidomastoideus pathway is a clean evolutionary-morphology narrative. Shows that "having a neck" is a muscular liberation event, not just a cervical-vertebrae count.
 - For **fin-to-limb transition**: supports the Gillis, Dahn & Shubin 2009 view that the pectoral girdle is developmentally descended from branchial-arch patterning. Use the cucullaris continuity as the evolutionary evidence for the developmental claim.
 - Classroom exercise: hand students Fig. 10 and the Diogo & Abdala 2010 muscle table, ask them to score fore/hindlimb correspondences in their favorite tetrapod, and debate whether the pattern they find is "homology" or "convergent similarity via shared developmental toolkit."
+
+## Chondrichthyan fin muscles mined, 2026-10-08
+
+The *Squalus* fin rows had no attachments; they now carry the origins and
+insertions stated in the Results text (adductor and abductor, superficial and
+deep, pterygialis cranialis). New rows from the same section: the *Squalus* pelvic
+fin (adductor bundles, abductor proximalis and distalis, protractor; parked, since
+the dataset's fin records cover the pectoral fin), the *Leucoraja* pectoral and
+pelvic fin muscles, and the *Hydrolagus* pectoral fin muscles including the
+levator 2 and levator 3.
+
+**Not mined.** The eight extra *Leucoraja* pelvic muscles that attach to the
+propterygium (four ventral, four dorsal) are described in a sentence each and are
+not rows. The *Hydrolagus* pelvic fin and the pelvic muscles of *Hydrolagus* are
+not covered in the Results text I read. The source stays `not-started`.

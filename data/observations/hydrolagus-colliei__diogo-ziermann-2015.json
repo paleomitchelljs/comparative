@@ -1,0 +1,100 @@
+{
+  "species": "hydrolagus-colliei",
+  "source": "diogo-ziermann-2015",
+  "status": "not-started",
+  "$comment": "What this study says about this animal. `record` names the homology group a row has been assigned to; null means nobody has assigned it yet, and `blockedBy` says what is missing.",
+  "observations": [
+    {
+      "speciesBasis": "source",
+      "name": "Pectoral fin adductor",
+      "region": "fin",
+      "record": "adductor-superficialis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-radials",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Diogo & Ziermann (2015), own dissections. From the pectoral girdle, mainly the scapular region, to the dorsal surfaces of the radials, some fibres touching the propterygium and metapterygium; superficial and deep bundles as in sharks.",
+      "present": "yes"
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator 3 of the pectoral fin",
+      "region": "fin",
+      "record": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "propterygium",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Diogo & Ziermann (2015), own dissections. From the fascia of the epaxial musculature to the dorsal surface of the propterygium. Didier (1987) named it the adductor superficialis; Diogo & Ziermann think it very likely not the osteichthyan adductor superficialis. It elevates and adducts the fin and rotates it laterally.",
+      "blockedBy": "no-record",
+      "blockedNote": "No record covers this muscle.",
+      "muscle": null
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Levator 2 of the pectoral fin",
+      "region": "fin",
+      "record": null,
+      "attachments": {
+        "origin": [
+          {
+            "element": "body-wall"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "metapterygium",
+            "side": "dorsal"
+          },
+          {
+            "element": "fin-radials",
+            "side": "dorsal"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Diogo & Ziermann (2015), own dissections. From the fascia of the hypaxial musculature, ventro-medial to the origin of levator 3, to the dorsal surface of the metapterygium and the more medial radials; elevates and adducts the fin and rotates it medially.",
+      "blockedBy": "no-record",
+      "blockedNote": "No record covers this muscle.",
+      "muscle": null
+    },
+    {
+      "speciesBasis": "source",
+      "name": "Pectoral fin abductor",
+      "region": "fin",
+      "record": "abductor-superficialis",
+      "attachments": {
+        "origin": [
+          {
+            "element": "pectoral-girdle"
+          }
+        ],
+        "insertion": [
+          {
+            "element": "fin-radials",
+            "side": "ventral"
+          }
+        ]
+      },
+      "attachmentNote": "Hydrolagus colliei, Diogo & Ziermann (2015), own dissections. Mainly from the coracoid bar to the ventral surfaces of the radials, with superficial and deep bundles as in sharks.",
+      "present": "yes"
+    }
+  ]
+}

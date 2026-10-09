@@ -62,7 +62,8 @@
           "innervation": "Vagus (X), caudal branchial branches.",
           "sources": [
             "ziermann-etal-2014",
-            "diogo-ziermann-2015"
+            "diogo-ziermann-2015",
+            "huber-etal-2011"
           ],
           "attachments": {
             "insertion": [
@@ -77,10 +78,21 @@
               {
                 "element": "extrabranchial-cartilages",
                 "side": "anterior"
+              },
+              {
+                "element": "pectoral-girdle"
+              },
+              {
+                "element": "scapular-process"
+              }
+            ],
+            "origin": [
+              {
+                "element": "epibranchials"
               }
             ]
           },
-          "attachmentNote": "Squalus acanthias. The information was in this row's own `origin`/`insertion` prose and had never been structured; Ziermann et al. also resolve the insertion further than the prose did, naming the scapular process, the posterior epibranchial cartilages and the anterior extrabranchial cartilages as three separate ends. No origin row: the sheet arises from the fascia beside the epaxial musculature and touches no element there, which is why a muscle that spans the head-trunk boundary leaves nothing for a fossil to record at its front end. The same dissection failed to find the 'levatores arcuum branchialium' of Kesteven (1942) in either Squalus or Mustelus laevis, so the levator half of this record's Chondrichthyes name is on Kesteven's authority and not on theirs.",
+          "attachmentNote": "Squalus acanthias. The information was in this row's own `origin`/`insertion` prose and had never been structured; Ziermann et al. also resolve the insertion further than the prose did, naming the scapular process, the posterior epibranchial cartilages and the anterior extrabranchial cartilages as three separate ends. No origin row: the sheet arises from the fascia beside the epaxial musculature and touches no element there, which is why a muscle that spans the head-trunk boundary leaves nothing for a fossil to record at its front end. The same dissection failed to find the 'levatores arcuum branchialium' of Kesteven (1942) in either Squalus or Mustelus laevis, so the levator half of this record's Chondrichthyes name is on Kesteven's authority and not on theirs.\n\nSqualus acanthias, Huber et al. (2011) Table 2: origin given as the epibranchial and insertion the pectoral girdle, which it elevates. Ziermann et al. (2014) give the cucullaris as a continuous sheet from the fascia near the epaxial muscle to the scapular process, back epibranchials and front extrabranchial cartilages; the two descriptions differ on which end is which.\n\nSqualus acanthias, Ziermann et al. (2014), own dissections. A continuous sheet from the fascia near the epaxial muscle to the scapular process of the girdle, the back epibranchial cartilages and the front extrabranchial cartilages. They could not find the levatores arcuum branchialium described by Kesteven, after careful dissection of this animal and of Mustelus laevis.",
           "nerves": [
             {
               "nerve": "vagus-branchial"
@@ -97,6 +109,9 @@
             }
           ],
           "spans": {
+            "origin": [
+              "cranial"
+            ],
             "insertion": [
               "cranial",
               "pectoral"
@@ -939,46 +954,139 @@
           }
         },
         {
-          "species": "hydrolagus-colliei",
-          "speciesBasis": "note",
+          "species": "callorhinchus-milii",
+          "speciesBasis": "source",
           "name": "Cucullaris superficialis",
           "present": "yes",
-          "division": "divided",
           "sources": [
-            "huber-etal-2011"
+            "dearden-etal-2020"
           ],
           "attachments": {
             "origin": [
+              {
+                "element": "neurocranium"
+              },
+              {
+                "element": "otic-capsule"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "scapular-process"
+              },
+              {
+                "element": "pharyngobranchials"
+              }
+            ]
+          },
+          "attachmentNote": "Callorhinchus milii, Dearden et al. (2020), synchrotron tomography. A large muscle with a broad origin on the postorbital crest over the epaxial muscles, inserting on the scapular process above the origin of the dorsal opercular constrictor.\n\nCallorhinchus milii, Dearden et al. (2020), synchrotron tomography. A short thin muscle from the underside of the otic region to the lower back end of the posterior pharyngobranchial complex.",
+          "spans": {
+            "origin": [
+              "cranial"
+            ],
+            "insertion": [
+              "cranial",
+              "pectoral"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "hydrolagus-colliei",
+          "speciesBasis": "source",
+          "name": "Trapezius superficialis",
+          "present": "yes",
+          "sources": [
+            "didier-1987",
+            "huber-etal-2011",
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "postorbital-ridge"
+              },
               {
                 "element": "neurocranium"
               }
             ],
             "insertion": [
               {
+                "element": "pectoral-girdle",
+                "side": "posterior"
+              },
+              {
+                "element": "epibranchials"
+              },
+              {
                 "element": "scapulocoracoid",
                 "landmark": "scapular-process"
+              },
+              {
+                "element": "scapulocoracoid"
+              },
+              {
+                "element": "branchial-arches"
               }
             ]
           },
-          "attachmentNote": "Hydrolagus colliei, Huber et al. (2011): 'The cucullaris superficialis and profundus originate upon the postorbital region of the chondrocranium, and insert onto the scapular process of the pectoral girdle, which they elevate and rotate.' `protractor-pectoralis`' synonym 'cucullaris' bridges directly; `scapular-process`'s own note says it is 'where the cucullaris lands' across this dataset already. Origin scored at plain `neurocranium` rather than a guessed 'postorbital region' landmark — no such site exists in skeleton.json and this dataset's own `postorbital` id is a dermal bone in a different homology group (MINING.md's own naming-collision caution). No prior occurrence exists on this record for this species.\n\nHydrolagus colliei, Huber et al. (2011). See the cucullaris superficialis row for the shared description.",
+          "attachmentNote": "Hydrolagus colliei, Didier (1987). From the postorbital ridge with some fibres from dorsal fascia, onto the back edge of the girdle just above the origin of the constrictor operculi. Edgeworth calls it the cucullaris superficialis, which is how Huber et al.'s cucullaris superficialis for this animal came to be filed on this record; Shann calls it the levator pectoralis.\n\nHydrolagus colliei, Didier (1987). From the postorbital ridge inside the superficial part, with which it is fused in front; fibres pass under the girdle to the last epibranchial. Edgeworth calls it the cucullaris profundus.\n\nHydrolagus colliei, Huber et al. (2011): 'The cucullaris superficialis and profundus originate upon the postorbital region of the chondrocranium, and insert onto the scapular process of the pectoral girdle, which they elevate and rotate.' `protractor-pectoralis`' synonym 'cucullaris' bridges directly; `scapular-process`'s own note says it is 'where the cucullaris lands' across this dataset already. Origin scored at plain `neurocranium` rather than a guessed 'postorbital region' landmark — no such site exists in skeleton.json and this dataset's own `postorbital` id is a dermal bone in a different homology group (MINING.md's own naming-collision caution). No prior occurrence exists on this record for this species.\n\nHydrolagus colliei, Huber et al. (2011). See the cucullaris superficialis row for the shared description.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. One of two heads, blended with the deep head at the origin; the superficial part ends on the outer part of the scapula.\n\nHydrolagus colliei, Ziermann et al. (2014), own dissections. In two specimens it ended on the branchial arches, as Didier (1987) and Anderson (2008) describe; in the others it ended on the inner surface of the scapula.",
+          "division": "divided",
           "parts": [
+            {
+              "name": "Trapezius superficialis",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "postorbital-ridge"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "pectoral-girdle",
+                    "side": "posterior"
+                  }
+                ]
+              },
+              "sources": [
+                "didier-1987"
+              ]
+            },
+            {
+              "name": "Trapezius profundus",
+              "attachments": {
+                "origin": [
+                  {
+                    "element": "postorbital-ridge"
+                  }
+                ],
+                "insertion": [
+                  {
+                    "element": "epibranchials"
+                  }
+                ]
+              },
+              "sources": [
+                "didier-1987"
+              ]
+            },
             {
               "name": "Cucullaris superficialis",
               "attachments": {
                 "origin": [
                   {
-                    "element": "neurocranium"
+                    "element": "postorbital-ridge"
                   }
                 ],
                 "insertion": [
                   {
-                    "element": "scapulocoracoid",
-                    "landmark": "scapular-process"
+                    "element": "scapulocoracoid"
                   }
                 ]
               },
               "sources": [
-                "huber-etal-2011"
+                "huber-etal-2011",
+                "ziermann-etal-2014"
               ]
             },
             {
@@ -986,18 +1094,21 @@
               "attachments": {
                 "origin": [
                   {
-                    "element": "neurocranium"
+                    "element": "postorbital-ridge"
                   }
                 ],
                 "insertion": [
                   {
-                    "element": "scapulocoracoid",
-                    "landmark": "scapular-process"
+                    "element": "scapulocoracoid"
+                  },
+                  {
+                    "element": "branchial-arches"
                   }
                 ]
               },
               "sources": [
-                "huber-etal-2011"
+                "huber-etal-2011",
+                "ziermann-etal-2014"
               ]
             }
           ],
@@ -1006,6 +1117,42 @@
               "cranial"
             ],
             "insertion": [
+              "cranial",
+              "pectoral"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "leucoraja-erinacea",
+          "speciesBasis": "source",
+          "name": "Cucullaris",
+          "present": "yes",
+          "sources": [
+            "ziermann-etal-2014"
+          ],
+          "attachments": {
+            "origin": [
+              {
+                "element": "vertebral-column"
+              }
+            ],
+            "insertion": [
+              {
+                "element": "pectoral-girdle"
+              },
+              {
+                "element": "branchial-arches"
+              }
+            ]
+          },
+          "attachmentNote": "Leucoraja erinacea, Ziermann et al. (2014), own dissections. Divided into a medial bundle (first vertebra to the suprascapular region) and a lateral bundle (near the first branchial arch). In one of two dissected specimens the lateral bundle ends on some branchial arches and on the girdle; in the other no branchial insertion could be found.",
+          "spans": {
+            "origin": [
+              "axial"
+            ],
+            "insertion": [
+              "cranial",
               "pectoral"
             ],
             "crosses": true
@@ -1038,6 +1185,35 @@
             ],
             "insertion": [
               "fin"
+            ],
+            "crosses": true
+          }
+        },
+        {
+          "species": "scyliorhinus-canicula",
+          "speciesBasis": "source",
+          "name": "Cucullaris profundus",
+          "present": "yes",
+          "sources": [
+            "dearden-etal-2020"
+          ],
+          "attachments": {
+            "origin": [],
+            "insertion": [
+              {
+                "element": "epibranchials",
+                "side": "posterior"
+              },
+              {
+                "element": "scapular-process"
+              }
+            ]
+          },
+          "attachmentNote": "Scyliorhinus canicula, Dearden et al. (2020), synchrotron tomography. A large triangular muscle divided by an internal septum. The front part arises between the hyoid constrictor and the epaxial muscles and inserts on the last epibranchial; the back part inserts along the scapular process.",
+          "spans": {
+            "insertion": [
+              "cranial",
+              "pectoral"
             ],
             "crosses": true
           }

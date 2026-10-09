@@ -15,6 +15,7 @@
     <h1 class="wordmark">Muscle <span>simulator</span></h1>
     <div class="masthead-actions">
       <a class="ghost-link" href="index.html">← Muscle lookup</a>
+      <a class="ghost-link" id="view-toggle" href="#">Full version</a>
       <button class="ghost" id="btn-theme" title="Toggle light/dark">◐</button>
     </div>
   </div>
@@ -44,12 +45,13 @@
     <section class="ctl">
       <h2>Muscles</h2>
       <p class="hint">Pick one to watch it contract on its own, in every taxon that has it.</p>
+      <select id="muscle-select" class="lite-only" aria-label="Muscle"></select>
       <ul id="mlist" class="mlist"></ul>
       <label class="check"><input type="radio" name="startfrom" value="stretched" checked> start from stretched</label>
       <label class="check"><input type="radio" name="startfrom" value="current"> start from the current pose</label>
     </section>
 
-    <section class="ctl">
+    <section class="ctl full-only">
       <h2>Display</h2>
       <label class="check"><input type="checkbox" id="opt-labels" checked> muscle labels</label>
       <label class="check"><input type="checkbox" id="opt-bones"> skeleton labels</label>
